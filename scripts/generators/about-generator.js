@@ -187,9 +187,11 @@ async function generateContentWithOpenAI(formattedData) {
       console.log('Falling back to default content');
       
       // Return default content if no API key is available
-      return `<p>Professor Fabio Giglietto is a researcher specializing in Digital Media Analysis at the Department of Communication Sciences, Humanities and International Studies at the University of Urbino Carlo Bo. His research focuses on social media data analysis, online communication patterns, and computational methods for studying digital media.</p>
-<p>With expertise in computational analysis of social media platforms, Dr. Giglietto has published extensively in leading journals including the Journal of Communication, Information, Communication & Society, and Social Media + Society. His work examines how digital technologies shape communication practices and social dynamics.</p>
-<p>Beyond his research, Professor Giglietto is dedicated to teaching and mentoring students in the field of Internet Studies. His academic website serves as a hub for his publications, research projects, and teaching activities. Feel free to explore his work or reach out with collaboration ideas.</p>`;
+      return `<p>Fabio Giglietto is a Full Professor of Sociology of Cultural and Communication Processes at the University of Urbino Carlo Bo, Italy. His research focuses on the intersection of Internet Studies, computational social science, and digital media analysis, with particular emphasis on political communication and disinformation.</p>
+
+<p>He has made significant contributions to the field through his pioneering work on Coordinated Link Sharing Behavior (CLSB) and the development of CooRnet, an open-source tool for detecting coordinated activity on social platforms. He leads several major research initiatives, including the MINE project, the EU-funded vera.ai project, and is a key partner in PROMPT, which focuses on detecting and analyzing disinformation narratives across Europe.</p>
+
+<p>His publications appear in leading journals such as Journal of Communication, Information, Communication & Society, and Social Media + Society. Since 2014, he has served as editor of the Journal of Sociocybernetics and is active in professional organizations including the International Communication Association and the Association of Internet Researchers.</p>`;
     }
     
     // Create the prompt
@@ -240,17 +242,21 @@ Generate ONLY the HTML content for the "About Me" section. Do not include any ex
       } catch (fallbackError) {
         console.error('Fallback model also failed:', fallbackError);
         // Return default content if both models fail
-        return `<p>Professor Fabio Giglietto is a researcher specializing in Digital Media Analysis at the Department of Communication Sciences, Humanities and International Studies at the University of Urbino Carlo Bo. His research focuses on social media data analysis, online communication patterns, and computational methods for studying digital media.</p>
-<p>With expertise in computational analysis of social media platforms, Dr. Giglietto has published extensively in leading journals including the Journal of Communication, Information, Communication & Society, and Social Media + Society. His work examines how digital technologies shape communication practices and social dynamics.</p>
-<p>Beyond his research, Professor Giglietto is dedicated to teaching and mentoring students in the field of Internet Studies. His academic website serves as a hub for his publications, research projects, and teaching activities. Feel free to explore his work or reach out with collaboration ideas.</p>`;
+        return `<p>Fabio Giglietto is a Full Professor of Sociology of Cultural and Communication Processes at the University of Urbino Carlo Bo, Italy. His research focuses on the intersection of Internet Studies, computational social science, and digital media analysis, with particular emphasis on political communication and disinformation.</p>
+
+<p>He has made significant contributions to the field through his pioneering work on Coordinated Link Sharing Behavior (CLSB) and the development of CooRnet, an open-source tool for detecting coordinated activity on social platforms. He leads several major research initiatives, including the MINE project, the EU-funded vera.ai project, and is a key partner in PROMPT, which focuses on detecting and analyzing disinformation narratives across Europe.</p>
+
+<p>His publications appear in leading journals such as Journal of Communication, Information, Communication & Society, and Social Media + Society. Since 2014, he has served as editor of the Journal of Sociocybernetics and is active in professional organizations including the International Communication Association and the Association of Internet Researchers.</p>`;
       }
     }
   } catch (error) {
     console.error('Error generating content with OpenAI:', error);
     // Return default content if there's an error
-    return `<p>Professor Fabio Giglietto is a researcher specializing in Digital Media Analysis at the Department of Communication Sciences, Humanities and International Studies at the University of Urbino Carlo Bo. His research focuses on social media data analysis, online communication patterns, and computational methods for studying digital media.</p>
-<p>With expertise in computational analysis of social media platforms, Dr. Giglietto has published extensively in leading journals including the Journal of Communication, Information, Communication & Society, and Social Media + Society. His work examines how digital technologies shape communication practices and social dynamics.</p>
-<p>Beyond his research, Professor Giglietto is dedicated to teaching and mentoring students in the field of Internet Studies. His academic website serves as a hub for his publications, research projects, and teaching activities. Feel free to explore his work or reach out with collaboration ideas.</p>`;
+    return `<p>Fabio Giglietto is a Full Professor of Sociology of Cultural and Communication Processes at the University of Urbino Carlo Bo, Italy. His research focuses on the intersection of Internet Studies, computational social science, and digital media analysis, with particular emphasis on political communication and disinformation.</p>
+
+<p>He has made significant contributions to the field through his pioneering work on Coordinated Link Sharing Behavior (CLSB) and the development of CooRnet, an open-source tool for detecting coordinated activity on social platforms. He leads several major research initiatives, including the MINE project, the EU-funded vera.ai project, and is a key partner in PROMPT, which focuses on detecting and analyzing disinformation narratives across Europe.</p>
+
+<p>His publications appear in leading journals such as Journal of Communication, Information, Communication & Society, and Social Media + Society. Since 2014, he has served as editor of the Journal of Sociocybernetics and is active in professional organizations including the International Communication Association and the Association of Internet Researchers.</p>`;
   }
 }
 
