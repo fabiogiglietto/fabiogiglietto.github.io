@@ -52,10 +52,8 @@ layout: page
     {{ content }}
   </div>
   
-  {% if page.citation %}
   <div class="publication-citation">
-    <h3>Citation</h3>
-    <pre>{{ page.citation }}</pre>
+    <h3>Citation ({{ site.citation_style }})</h3>
+    <pre>{% include apa7-citation.html publication=page %}</pre>
   </div>
-  {% endif %}
 </article>

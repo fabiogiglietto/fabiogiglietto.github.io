@@ -10,8 +10,8 @@ const cheerio = require('cheerio');
 async function collect() {
   console.log('Collecting Google Scholar data...');
   
-  // Example Scholar ID - replace with actual ID
-  const scholarId = 'SCHOLAR_ID';
+  // Google Scholar ID for Fabio Giglietto
+  const scholarId = 'FmenbcUAAAAJ';
   
   try {
     const response = await axios.get(`https://scholar.google.com/citations?user=${scholarId}`, {

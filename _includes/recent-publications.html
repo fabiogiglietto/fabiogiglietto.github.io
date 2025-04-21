@@ -5,8 +5,9 @@
     {% for publication in publications limit:5 %}
     <div class="publication-item">
       <h3 class="publication-title">{{ publication.title }}</h3>
-      <p class="publication-authors">{{ publication.authors }}</p>
-      <p class="publication-venue">{{ publication.venue }}, {{ publication.year }}</p>
+      <p class="publication-citation">
+        {% include apa7-citation.html publication=publication %}
+      </p>
       <div class="publication-links">
         {% if publication.doi %}
         <a href="https://doi.org/{{ publication.doi }}" class="publication-link" target="_blank">DOI</a>

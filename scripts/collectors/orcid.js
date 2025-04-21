@@ -9,8 +9,8 @@ const axios = require('axios');
 async function collect() {
   console.log('Collecting ORCID data...');
   
-  // Example ORCID ID - replace with actual ID
-  const orcidId = '0000-0000-0000-0000';
+  // ORCID ID for Fabio Giglietto
+  const orcidId = '0000-0001-8019-1035';
   
   try {
     const response = await axios.get(`https://pub.orcid.org/v3.0/${orcidId}`, {

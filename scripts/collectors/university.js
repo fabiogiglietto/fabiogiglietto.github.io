@@ -10,8 +10,8 @@ const cheerio = require('cheerio');
 async function collect() {
   console.log('Collecting University profile data...');
   
-  // Example university profile URL - replace with actual URL
-  const profileUrl = 'https://example.edu/faculty/profile';
+  // University of Urbino profile URL
+  const profileUrl = 'https://www.uniurb.it/persone/fabio-giglietto';
   
   try {
     const response = await axios.get(profileUrl);

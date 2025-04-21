@@ -4,10 +4,18 @@
  * Fetches repository and contribution data from GitHub API
  */
 
-const { Octokit } = require('@octokit/rest');
+// Use dynamic import for ESM module
+let Octokit;
+async function importOctokit() {
+  const { Octokit: OctokitClass } = await import('@octokit/rest');
+  Octokit = OctokitClass;
+}
 
 async function collect() {
   console.log('Collecting GitHub data...');
+  
+  // Import Octokit first
+  await importOctokit();
   
   // Create Octokit client with GitHub token
   const octokit = new Octokit({

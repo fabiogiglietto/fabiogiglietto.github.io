@@ -1,0 +1,31 @@
+{% comment %}
+  Formats publication data in APA 7 Style
+  Usage: {% include apa7-citation.html publication=publication %}
+{% endcomment %}
+
+{% assign pub = include.publication %}
+
+{% comment %} Format authors for APA 7 {% endcomment %}
+{% assign authors_array = pub.authors | split: ", " %}
+{% assign last_author_index = authors_array.size | minus: 1 %}
+
+{% for author in authors_array %}
+  {% if forloop.first == false and forloop.last == true %}
+    {% if authors_array.size > 1 %}&amp; {% endif %}
+  {% endif %}
+  {{ author }}{% unless forloop.last %}{% if authors_array.size > 2 %}, {% endif %}{% endunless %}
+{% endfor %}
+
+{% if pub.year %}
+ ({{ pub.year }}).
+{% endif %}
+
+{{ pub.title }}.
+
+{% if pub.venue %}
+  <em>{{ pub.venue }}</em>{% if pub.volume %}, {{ pub.volume }}{% endif %}{% if pub.issue %}({{ pub.issue }}){% endif %}{% if pub.pages %}, {{ pub.pages }}{% endif %}.
+{% endif %}
+
+{% if pub.doi %}
+  https://doi.org/{{ pub.doi }}
+{% endif %}

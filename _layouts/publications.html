@@ -45,8 +45,9 @@ layout: page
            data-year="{{ publication.year }}" 
            data-type="{{ publication.type | default: 'article' }}">
         <h3 class="publication-title">{{ publication.title }}</h3>
-        <p class="publication-authors">{{ publication.authors }}</p>
-        <p class="publication-venue">{{ publication.venue }}{% if publication.year %}, {{ publication.year }}{% endif %}</p>
+        <p class="publication-citation">
+          {% include apa7-citation.html publication=publication %}
+        </p>
         
         <div class="publication-links">
           {% if publication.doi %}

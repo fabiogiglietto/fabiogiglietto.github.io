@@ -962,12 +962,30 @@ blockquote p:last-child {
   background-color: var(--light-gray);
   border-radius: 4px;
   overflow-x: auto;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .publication-citation pre {
-  font-family: monospace;
-  font-size: 0.9rem;
+  font-family: var(--font-sans);
   white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-indent: -2em;
+  padding-left: 2em;
+}
+
+/* APA 7 Citation Styles */
+p.publication-citation {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: var(--spacing);
+  text-indent: -2em;
+  padding-left: 2em;
+  font-family: var(--font-sans);
 }
 
 /* Project page styles */

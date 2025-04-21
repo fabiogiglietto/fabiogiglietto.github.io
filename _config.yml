@@ -1,23 +1,31 @@
 # Site settings
 title: Fabio Giglietto - Academic Profile
 name: Fabio Giglietto
-email: email@example.com
+email: fabio.giglietto@uniurb.it
 description: >-
   Academic profile and portfolio for Fabio Giglietto, featuring research, 
   publications, projects, and teaching information.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://fabiogiglietto.github.io" # the base hostname & protocol
 
+# Content settings
+citation_style: "APA 7" # Publication citation style
+
 # Profile settings
 profile_image: /assets/images/profile.jpg
 position: Professor
-affiliation: University
-location: Department, University
+affiliation: University of Urbino
+location: Department of Communication Sciences, Humanities and International Studies
 
 # Social links
 github_username: fabiogiglietto
-orcid_id: 0000-0000-0000-0000
-scholar_id: SCHOLAR_ID
+orcid_id: 0000-0001-8019-1035
+scholar_id: FmenbcUAAAAJ
+threads_username: fabiogiglietto
+linkedin_username: fabiogiglietto
+mastodon_instance: aoir.social
+mastodon_username: fabiogiglietto
+bluesky_username: fabiogiglietto.bsky.social
 
 # Build settings
 markdown: kramdown
