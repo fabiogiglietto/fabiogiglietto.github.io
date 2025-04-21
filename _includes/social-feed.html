@@ -1,0 +1,50 @@
+<section class="social-feed">
+  <h2 class="section-title">Social Media Activity</h2>
+  
+  <div class="tabs">
+    <div class="tab-header">
+      <div class="tab-btn active" data-tab="bluesky">
+        <i class="fa-solid fa-cloud"></i> Bluesky
+      </div>
+      <div class="tab-btn" data-tab="mastodon">
+        <i class="fa-brands fa-mastodon"></i> Mastodon
+      </div>
+      <div class="tab-btn" data-tab="threads">
+        <i class="fa-brands fa-threads"></i> Threads
+      </div>
+    </div>
+    
+    <div class="tab-content">
+      <div class="tab-pane active" id="tab-bluesky">
+        <div class="post-feed" id="bluesky-feed">
+          <!-- Bluesky posts will be loaded dynamically -->
+          <div class="loading">
+            <i class="fas fa-circle-notch fa-spin"></i> Loading Bluesky posts...
+          </div>
+        </div>
+      </div>
+      
+      <div class="tab-pane" id="tab-mastodon">
+        <div class="post-feed" id="mastodon-feed">
+          <!-- Mastodon posts will be loaded dynamically -->
+          <div class="loading">
+            <i class="fas fa-circle-notch fa-spin"></i> Loading Mastodon posts...
+          </div>
+        </div>
+      </div>
+      
+      <div class="tab-pane" id="tab-threads">
+        <div class="post-feed" id="threads-feed">
+          <!-- Threads posts will be loaded dynamically -->
+          <div class="loading">
+            <i class="fas fa-circle-notch fa-spin"></i> Loading Threads posts...
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="social-feed-footer">
+    <p>Follow me on <a href="https://bsky.app/profile/fabiogiglietto.bsky.social" target="_blank">Bluesky</a>, <a href="https://aoir.social/@fabiogiglietto" target="_blank">Mastodon</a>, and <a href="https://www.threads.net/@fabiogiglietto" target="_blank">Threads</a></p>
+  </div>
+</section>

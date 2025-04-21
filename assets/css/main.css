@@ -515,6 +515,244 @@ a:hover {
   margin-right: var(--spacing-sm);
 }
 
+/* Social Media Feed */
+.social-feed {
+  background-color: white;
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.tabs {
+  width: 100%;
+  margin-top: var(--spacing);
+}
+
+.tab-header {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: var(--spacing);
+}
+
+.tab-btn {
+  padding: var(--spacing-sm) var(--spacing);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-right: var(--spacing);
+  font-weight: 500;
+  color: var(--text-light);
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+  color: var(--primary-color);
+}
+
+.tab-btn.active {
+  border-bottom: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.tab-content {
+  margin-top: var(--spacing);
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.post-feed {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  min-height: 300px;
+}
+
+.post-card {
+  background-color: var(--light-gray);
+  padding: var(--spacing);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--primary-color);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.post-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: var(--spacing-sm);
+  object-fit: cover;
+}
+
+.post-author {
+  flex-grow: 1;
+}
+
+.post-name {
+  font-weight: 600;
+  display: block;
+  font-size: 0.95rem;
+}
+
+.post-username {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+.post-date {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+.post-content {
+  margin-bottom: var(--spacing-sm);
+  word-break: break-word;
+}
+
+.post-media {
+  margin-bottom: var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.post-media img {
+  max-width: 100%;
+  height: auto;
+}
+
+.post-actions {
+  display: flex;
+  gap: var(--spacing);
+  color: var(--text-light);
+  font-size: 0.85rem;
+}
+
+.post-action {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.post-action i {
+  font-size: 1rem;
+}
+
+.social-feed-footer {
+  margin-top: var(--spacing);
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* Social Media Insights */
+.social-media-insights {
+  background-color: white;
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.insights-summary {
+  margin-bottom: var(--spacing-lg);
+}
+
+.insights-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing);
+  margin-bottom: var(--spacing-lg);
+}
+
+.metric-card {
+  background-color: var(--light-gray);
+  padding: var(--spacing);
+  border-radius: var(--radius-sm);
+  text-align: center;
+}
+
+.metric-title {
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-light);
+}
+
+.metric-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.insights-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.insights-column h3 {
+  margin-bottom: var(--spacing);
+  font-size: 1.2rem;
+}
+
+.themes-list, .recommendations-list {
+  list-style: none;
+}
+
+.theme-item, .recommendation-item {
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.4;
+}
+
+.theme-name {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.top-content h3 {
+  margin-bottom: var(--spacing);
+  font-size: 1.2rem;
+}
+
+.top-content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing);
+}
+
+.content-card {
+  background-color: var(--light-gray);
+  padding: var(--spacing);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--primary-color);
+}
+
+.content-text {
+  font-style: italic;
+  margin-bottom: var(--spacing-sm);
+}
+
+.content-meta {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.platform-name i {
+  margin-right: var(--spacing-xs);
+}
+
 /* Web mentions */
 .web-mentions {
   background-color: var(--light-gray);
