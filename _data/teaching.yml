@@ -1,0 +1,63 @@
+# Teaching data file
+# This file is generated automatically by the teaching-generator.js script
+# Manual changes will be overwritten when the script runs
+
+courses:
+  - title: Digital Media Analysis
+    code: SPS/08
+    description: Digital Media Analysis
+    level: Master
+    academic_year: 2024-2025
+    credits: 9
+    current: true
+    semester: Fall
+    schedule: ""
+    syllabus_url: https://www.uniurb.it/syllabi/digitalmedia2024
+  - title: Metodi di Ricerca per la Comunicazione
+    code: SPS/08
+    description: Research Methods for Communication
+    level: Bachelor
+    academic_year: 2024-2025
+    credits: 6
+    current: true
+    semester: Spring
+    schedule: ""
+    syllabus_url: https://www.uniurb.it/syllabi/metodiricerca2024
+  - title: Big Data e Social Media Analytics
+    code: SPS/08
+    description: Big Data and Social Media Analytics
+    level: Master
+    academic_year: 2023-2024
+    credits: 6
+    current: false
+    semester: Fall
+    schedule: ""
+    syllabus_url: https://www.uniurb.it/syllabi/bigdata2023
+office_hours: |-
+  Monday 14:00-16:00, Room 3.12
+  Wednesday 10:00-12:00, Room 3.12
+  Or by appointment (email: fabio.giglietto@uniurb.it)
+tutorials:
+  - title: Introduction to R for Communication Research
+    description: A beginner's guide to R programming for communication and media research
+    url: https://github.com/fabiogiglietto/R-for-communication-research
+  - title: Social Media Data Analysis with Python
+    description: Tutorial series on collecting and analyzing social media data with Python
+    url: https://github.com/fabiogiglietto/social-media-python
+supervision: >-
+  I am available to supervise Bachelor's and Master's theses in the following areas:
+
+
+  - Digital Media Analysis
+
+  - Social Media Research
+
+  - Computational Social Science
+
+  - Media Studies
+
+  - Online Misinformation and Disinformation
+
+
+  If you are interested in working with me, please email me with a brief outline of your research
+  interests.
