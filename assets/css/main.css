@@ -300,6 +300,8 @@ a:hover {
   flex-direction: column;
   gap: var(--spacing-xl);
   padding: var(--spacing) 0;
+  width: 100%;
+  align-items: stretch;
 }
 
 .intro-section {
@@ -317,7 +319,6 @@ a:hover {
 .intro {
   max-width: var(--content-width);
   margin: 0 auto;
-  display: block;
   padding: var(--spacing);
   background-color: white;
   border-radius: var(--radius-lg);
