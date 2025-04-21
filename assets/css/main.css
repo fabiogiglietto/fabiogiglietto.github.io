@@ -302,6 +302,13 @@ a:hover {
 .intro {
   max-width: var(--content-width);
   margin: 0 auto;
+  display: block;
+}
+
+.intro p {
+  margin-bottom: var(--spacing-md);
+  line-height: 1.6;
+  font-size: 1.1rem;
 }
 
 .section-title {
