@@ -39,34 +39,45 @@ async function collect() {
     let publicationsMap = new Map();
     
     // Process ORCID works first (as the canonical source)
-    if (orcidData && orcidData.works) {
+    if (orcidData && orcidData.works && orcidData.works.length > 0) {
       console.log(`Processing ${orcidData.works.length} works from ORCID`);
       
       // Remove duplicate works (some works have multiple entries in ORCID)
       const uniqueWorks = new Map();
       
       orcidData.works.forEach(workGroup => {
-        // Each work group can contain multiple versions of the same work
-        const work = workGroup['work-summary'][0];
-        
-        // Skip if no title (should not happen, but just in case)
-        if (!work?.title?.title?.value) {
-          console.log('Skipping work with no title');
-          return;
-        }
-        
-        // Create a work identifier based on title for deduplication
-        const titleKey = work.title.title.value.toLowerCase().replace(/[^\w\s]/g, '');
-        
-        // Check if we've already seen this work (prefer works with DOIs)
-        let hasDoi = false;
-        if (work['external-ids'] && work['external-ids']['external-id']) {
-          hasDoi = work['external-ids']['external-id'].some(id => id['external-id-type'] === 'doi');
-        }
-        
-        // Only add this work if we haven't seen it before or if this version has a DOI and the previous one didn't
-        if (!uniqueWorks.has(titleKey) || (hasDoi && !uniqueWorks.get(titleKey).hasDoi)) {
-          uniqueWorks.set(titleKey, { work, hasDoi });
+        try {
+          // Each work group can contain multiple versions of the same work
+          // Make sure the work-summary array exists and has at least one item
+          if (!workGroup['work-summary'] || !Array.isArray(workGroup['work-summary']) || workGroup['work-summary'].length === 0) {
+            console.log('Skipping work group without valid work-summary array');
+            return;
+          }
+          
+          const work = workGroup['work-summary'][0];
+          
+          // Skip if no title (should not happen, but just in case)
+          if (!work?.title?.title?.value) {
+            console.log('Skipping work with no title');
+            return;
+          }
+          
+          // Create a work identifier based on title for deduplication
+          const titleKey = work.title.title.value.toLowerCase().replace(/[^\w\s]/g, '');
+          
+          // Check if we've already seen this work (prefer works with DOIs)
+          let hasDoi = false;
+          if (work['external-ids'] && work['external-ids']['external-id']) {
+            hasDoi = work['external-ids']['external-id'].some(id => id['external-id-type'] === 'doi');
+          }
+          
+          // Only add this work if we haven't seen it before or if this version has a DOI and the previous one didn't
+          if (!uniqueWorks.has(titleKey) || (hasDoi && !uniqueWorks.get(titleKey).hasDoi)) {
+            uniqueWorks.set(titleKey, { work, hasDoi });
+          }
+        } catch (workError) {
+          console.error('Error processing work group:', workError);
+          console.log('Problematic work group:', JSON.stringify(workGroup).substring(0, 200) + '...');
         }
       });
       
@@ -74,6 +85,7 @@ async function collect() {
       
       // Process the unique works
       for (const { work } of uniqueWorks.values()) {
+        try {
         
         // Get the DOI if available
         let doi = null;
@@ -125,6 +137,10 @@ async function collect() {
           },
           metrics: {}
         });
+        } catch (workProcessError) {
+          console.error('Error processing work:', workProcessError);
+          console.log('Problematic work:', JSON.stringify(work).substring(0, 200) + '...');
+        }
       }
     }
     
