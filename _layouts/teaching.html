@@ -1,0 +1,101 @@
+---
+layout: default
+---
+
+<div class="teaching-page">
+  <header class="page-header">
+    <h1>{{ page.title }}</h1>
+    <p class="page-description">{{ page.description }}</p>
+  </header>
+  
+  {% if site.data.teaching and site.data.teaching.courses.size > 0 %}
+    <section class="current-courses">
+      <h2 class="section-title">Current Courses</h2>
+      <div class="courses-grid">
+        {% for course in site.data.teaching.courses %}
+          {% if course.current %}
+            <div class="course-card">
+              <h3 class="course-title">{{ course.title }}</h3>
+              <p class="course-code">{{ course.code }}</p>
+              <p class="course-description">{{ course.description }}</p>
+              <div class="course-details">
+                <p><strong>Level:</strong> {{ course.level }}</p>
+                <p><strong>Academic Year:</strong> {{ course.academic_year }}</p>
+                <p><strong>Credits:</strong> {{ course.credits }} CFU</p>
+                {% if course.schedule %}
+                  <p><strong>Schedule:</strong> {{ course.schedule }}</p>
+                {% endif %}
+              </div>
+              {% if course.syllabus_url %}
+                <a href="{{ course.syllabus_url }}" class="course-link" target="_blank">View Syllabus</a>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+  
+  {% if site.data.teaching and site.data.teaching.courses.size > 0 %}
+    <section class="past-courses">
+      <h2 class="section-title">Past Courses</h2>
+      <div class="courses-grid">
+        {% for course in site.data.teaching.courses %}
+          {% unless course.current %}
+            <div class="course-card">
+              <h3 class="course-title">{{ course.title }}</h3>
+              <p class="course-code">{{ course.code }}</p>
+              <p class="course-description">{{ course.description }}</p>
+              <div class="course-details">
+                <p><strong>Level:</strong> {{ course.level }}</p>
+                <p><strong>Academic Year:</strong> {{ course.academic_year }}</p>
+                <p><strong>Credits:</strong> {{ course.credits }} CFU</p>
+              </div>
+              {% if course.syllabus_url %}
+                <a href="{{ course.syllabus_url }}" class="course-link" target="_blank">View Syllabus</a>
+              {% endif %}
+            </div>
+          {% endunless %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+  
+  {% if site.data.teaching.office_hours %}
+    <section class="office-hours">
+      <h2 class="section-title">Office Hours</h2>
+      <div class="office-hours-content">
+        {{ site.data.teaching.office_hours | markdownify }}
+      </div>
+    </section>
+  {% endif %}
+  
+  {% if site.data.teaching.tutorials.size > 0 %}
+    <section class="tutorials">
+      <h2 class="section-title">Tutorials & Resources</h2>
+      <ul class="tutorials-list">
+        {% for tutorial in site.data.teaching.tutorials %}
+          <li class="tutorial-item">
+            <h3 class="tutorial-title">
+              {% if tutorial.url %}
+                <a href="{{ tutorial.url }}" target="_blank">{{ tutorial.title }}</a>
+              {% else %}
+                {{ tutorial.title }}
+              {% endif %}
+            </h3>
+            <p class="tutorial-description">{{ tutorial.description }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+  
+  {% if site.data.teaching.supervision %}
+    <section class="supervision">
+      <h2 class="section-title">Research Supervision</h2>
+      <div class="supervision-content">
+        {{ site.data.teaching.supervision | markdownify }}
+      </div>
+    </section>
+  {% endif %}
+</div>
