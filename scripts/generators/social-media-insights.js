@@ -9,10 +9,16 @@ const fs = require('fs');
 const path = require('path');
 const { OpenAI } = require('openai');
 
-// Initialize OpenAI client
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+// Initialize OpenAI client with fallback if API key is missing
+let openai = null;
+try {
+  openai = new OpenAI({
+    apiKey: process.env.OPENAI_API_KEY || '',
+  });
+} catch (error) {
+  console.warn('Failed to initialize OpenAI client:', error.message);
+  // Continue execution - we'll use fallback data
+}
 
 /**
  * Analyzes social media data and generates insights
@@ -88,8 +94,8 @@ function formatDataForPrompt(data) {
 async function generateInsightsWithOpenAI(formattedData) {
   try {
     // Check if API key is available
-    if (!process.env.OPENAI_API_KEY) {
-      console.error('OpenAI API key is not available');
+    if (!process.env.OPENAI_API_KEY || !openai) {
+      console.error('OpenAI API key is not available or client failed to initialize');
       console.log('Using fallback insights');
       return getFallbackInsights();
     }
