@@ -40,8 +40,40 @@ async function collect() {
     
     // Process ORCID works first (as the canonical source)
     if (orcidData && orcidData.works) {
+      console.log(`Processing ${orcidData.works.length} works from ORCID`);
+      
+      // Remove duplicate works (some works have multiple entries in ORCID)
+      const uniqueWorks = new Map();
+      
       orcidData.works.forEach(workGroup => {
+        // Each work group can contain multiple versions of the same work
         const work = workGroup['work-summary'][0];
+        
+        // Skip if no title (should not happen, but just in case)
+        if (!work?.title?.title?.value) {
+          console.log('Skipping work with no title');
+          return;
+        }
+        
+        // Create a work identifier based on title for deduplication
+        const titleKey = work.title.title.value.toLowerCase().replace(/[^\w\s]/g, '');
+        
+        // Check if we've already seen this work (prefer works with DOIs)
+        let hasDoi = false;
+        if (work['external-ids'] && work['external-ids']['external-id']) {
+          hasDoi = work['external-ids']['external-id'].some(id => id['external-id-type'] === 'doi');
+        }
+        
+        // Only add this work if we haven't seen it before or if this version has a DOI and the previous one didn't
+        if (!uniqueWorks.has(titleKey) || (hasDoi && !uniqueWorks.get(titleKey).hasDoi)) {
+          uniqueWorks.set(titleKey, { work, hasDoi });
+        }
+      });
+      
+      console.log(`After deduplication: ${uniqueWorks.size} unique works`);
+      
+      // Process the unique works
+      for (const { work } of uniqueWorks.values()) {
         
         // Get the DOI if available
         let doi = null;
@@ -57,9 +89,21 @@ async function collect() {
           `doi:${doi.toLowerCase()}` : 
           `title:${work.title.title.value.toLowerCase().replace(/[^\w\s]/g, '')}`;
         
+        // Extract journal title if available
+        let journalTitle = null;
+        if (work['journal-title'] && work['journal-title'].value) {
+          journalTitle = work['journal-title'].value;
+        }
+        
+        // Get authors if available (from specific source)
+        let authors = null;
+        // ORCID doesn't provide authors in the summary view
+        
         publicationsMap.set(key, {
           title: work.title.title.value,
           type: work.type,
+          venue: journalTitle,
+          authors: authors,
           year: work['publication-date'] ? parseInt(work['publication-date'].year.value) : null,
           doi: doi,
           citations: {
@@ -81,7 +125,7 @@ async function collect() {
           },
           metrics: {}
         });
-      });
+      }
     }
     
     // Process Google Scholar publications
