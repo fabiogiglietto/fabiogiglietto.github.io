@@ -10,33 +10,44 @@ const path = require('path');
 const yaml = require('js-yaml');
 
 /**
- * Generates the teaching.yml file from university data
+ * Generates the teaching.yml file from teaching data
  * @returns {boolean} Success status
  */
 async function generateTeachingData() {
   try {
     console.log('Generating teaching data...');
     
-    // Read university data
-    const dataPath = path.join(__dirname, '../../public/data/university.json');
+    // Try to read from dedicated teaching data first
+    const teachingPath = path.join(__dirname, '../../public/data/teaching.json');
+    const universityPath = path.join(__dirname, '../../public/data/university.json');
     
-    // Check if the file exists
-    if (!fs.existsSync(dataPath)) {
-      console.error('University data file does not exist');
+    let teachingData;
+    
+    // First try to read from dedicated teaching.json
+    if (fs.existsSync(teachingPath)) {
+      console.log('Using dedicated teaching data file');
+      const data = JSON.parse(fs.readFileSync(teachingPath, 'utf8'));
+      teachingData = formatTeachingData(data);
+    }
+    // Fall back to university.json if teaching.json doesn't exist
+    else if (fs.existsSync(universityPath)) {
+      console.log('Teaching data file not found, falling back to university data');
+      
+      // Read and parse the university data
+      const universityData = JSON.parse(fs.readFileSync(universityPath, 'utf8'));
+      
+      // Check if teaching data exists in university data
+      if (!universityData.teaching) {
+        console.error('No teaching data found in university data');
+        return false;
+      }
+      
+      // Format the teaching data
+      teachingData = formatTeachingData(universityData.teaching);
+    } else {
+      console.error('No data files found for teaching information');
       return false;
     }
-    
-    // Read and parse the JSON data
-    const universityData = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
-    
-    // Check if teaching data exists
-    if (!universityData.teaching) {
-      console.error('No teaching data found in university data');
-      return false;
-    }
-    
-    // Format the teaching data
-    const teachingData = formatTeachingData(universityData.teaching);
     
     // Convert data to YAML
     const yamlData = yaml.dump(teachingData, {
@@ -67,7 +78,7 @@ ${yamlData}`;
 
 /**
  * Formats the teaching data for YAML output
- * @param {Object} teachingData - Raw teaching data from university collector
+ * @param {Object} teachingData - Raw teaching data (from university or teaching collector)
  * @returns {Object} - Formatted teaching data
  */
 function formatTeachingData(teachingData) {
@@ -79,17 +90,17 @@ function formatTeachingData(teachingData) {
     supervision: teachingData.supervision || ''
   };
   
-  // Format courses data
+  // Format courses data from either source
   if (teachingData.courses && teachingData.courses.length) {
     teachingData.courses.forEach(course => {
       formatted.courses.push({
         title: course.title,
-        code: course.discipline_code || `CRS${formatted.courses.length + 1}`,
-        description: course.english_title || course.title,
+        code: course.code || course.discipline_code || `CRS${formatted.courses.length + 1}`,
+        description: course.description || course.english_title || course.title,
         level: course.level || 'Bachelor',
         academic_year: course.academic_year || '2024-2025',
         credits: course.credits || 6,
-        current: course.current || false,
+        current: typeof course.current === 'boolean' ? course.current : false,
         semester: course.semester || 'Fall',
         schedule: course.schedule || '',
         syllabus_url: course.syllabus_url || ''

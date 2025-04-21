@@ -1,70 +1,59 @@
 {
   "profile": {
-    "name": "Fabio Giglietto",
-    "title": "Professor",
+    "name": "Fabio Giglietto\t  \n\t  \t \n\t\t\t  \t\t  \n\n\t     \n\t\t\t/ Professore Ordinario",
+    "title": "Associate Professor",
     "department": "Department of Communication Sciences, Humanities and International Studies",
     "email": "fabio.giglietto@uniurb.it",
     "phone": "+39 0722 305726",
-    "office": "Via Saffi 15, 61029 Urbino (PU), Italy",
-    "bio": "Fabio Giglietto PhD, is Professor of Internet Studies at the Department of Communication Sciences, Humanities and International Studies at the University of Urbino Carlo Bo, where he also teaches Internet Studies. His main research interests are theory of information, communication, and society with a specific focus on the relationships between social systems, media and digital technologies.",
-    "research_interests": ["Digital Media Analysis", "Computational Social Science", "Social Media Research", "Online Disinformation", "Political Communication", "Internet Studies"]
+    "office": "Room 3.12, Via Saffi 15",
+    "bio": "",
+    "research_interests": [],
+    "office_hours": "Monday and Wednesday, 11:00-13:00 or by appointment"
   },
   "teaching": {
     "courses": [
       {
-        "title": "Internet Studies",
-        "code": "IS2025",
-        "description": "Advanced course exploring social, cultural, and political implications of internet technologies",
-        "level": "Master",
+        "title": "Digital Media Analysis",
+        "english_title": "Digital Media Analysis",
         "academic_year": "2024-2025",
+        "degree": "Laurea Magistrale in Comunicazione e Pubblicità per le Organizzazioni",
+        "degree_english": "Master's Degree in Communication and Advertising for Organizations",
         "credits": 9,
+        "discipline_code": "SPS/08",
         "current": true,
+        "syllabus_url": "https://www.uniurb.it/syllabi/digitalmedia2024",
         "semester": "Fall",
-        "schedule": "Monday 14:00-17:00, Room 1.1",
-        "syllabus_url": "https://www.uniurb.it/syllabi/internet-studies"
+        "level": "Master"
       },
       {
-        "title": "Computational Methods for Communication Research",
-        "code": "CMCR2025",
-        "description": "Introduction to computational approaches for analyzing digital media data",
-        "level": "Master",
+        "title": "Metodi di Ricerca per la Comunicazione",
+        "english_title": "Research Methods for Communication",
         "academic_year": "2024-2025",
+        "degree": "Laurea in Informazione, Media, Pubblicità",
+        "degree_english": "Bachelor's Degree in Information, Media, Advertising",
         "credits": 6,
+        "discipline_code": "SPS/08",
         "current": true,
+        "syllabus_url": "https://www.uniurb.it/syllabi/metodiricerca2024",
         "semester": "Spring",
-        "schedule": "Tuesday 10:00-13:00, Room 2.3",
-        "syllabus_url": "https://www.uniurb.it/syllabi/computational-methods"
+        "level": "Bachelor"
       },
       {
-        "title": "Digital Media Analytics",
-        "code": "DMA2024",
-        "description": "Techniques and tools for data collection and analysis of social media platforms",
-        "level": "Master",
+        "title": "Big Data e Social Media Analytics",
+        "english_title": "Big Data and Social Media Analytics",
         "academic_year": "2023-2024",
+        "degree": "Laurea Magistrale in Comunicazione e Pubblicità per le Organizzazioni",
+        "degree_english": "Master's Degree in Communication and Advertising for Organizations",
         "credits": 6,
+        "discipline_code": "SPS/08",
         "current": false,
+        "syllabus_url": "https://www.uniurb.it/syllabi/bigdata2023",
         "semester": "Fall",
-        "syllabus_url": "https://www.uniurb.it/syllabi/digital-media-analytics"
-      },
-      {
-        "title": "Social Media Research",
-        "code": "SMR2024",
-        "description": "Research methods for studying social media phenomena and dynamics",
-        "level": "Bachelor",
-        "academic_year": "2023-2024",
-        "credits": 6,
-        "current": false,
-        "semester": "Spring",
-        "syllabus_url": "https://www.uniurb.it/syllabi/social-media-research"
+        "level": "Master"
       }
     ],
     "office_hours": "Monday 14:00-16:00, Room 3.12\nWednesday 10:00-12:00, Room 3.12\nOr by appointment (email: fabio.giglietto@uniurb.it)",
     "tutorials": [
-      {
-        "title": "CooRnet Tutorial",
-        "description": "Guide to using CooRnet for detecting coordinated link sharing behavior on social media",
-        "url": "https://github.com/fabiogiglietto/CooRnet"
-      },
       {
         "title": "Introduction to R for Communication Research",
         "description": "A beginner's guide to R programming for communication and media research",
@@ -76,7 +65,7 @@
         "url": "https://github.com/fabiogiglietto/social-media-python"
       }
     ],
-    "supervision": "I am available to supervise Bachelor's and Master's theses in the following areas:\n\n- Digital Media Analysis\n- Social Media Research\n- Computational Social Science\n- Media Studies\n- Online Misinformation and Disinformation\n- Political Communication\n\nIf you are interested in working with me, please email me with a brief outline of your research interests."
+    "supervision": "I am available to supervise Bachelor's and Master's theses in the following areas:\n\n- Digital Media Analysis\n- Social Media Research\n- Computational Social Science\n- Media Studies\n- Online Misinformation and Disinformation\n\nIf you are interested in working with me, please email me with a brief outline of your research interests."
   },
-  "lastUpdated": "2025-04-21T14:30:00.000Z"
+  "lastUpdated": "2025-04-21T14:22:07.284Z"
 }

@@ -866,6 +866,113 @@ th {
   font-size: 0.9rem;
 }
 
+/* Social Media Insights */
+.social-media-insights {
+  margin-top: var(--spacing-xl);
+  padding: var(--spacing-lg);
+  background-color: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.insights-summary {
+  margin-bottom: var(--spacing-lg);
+}
+
+.insights-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--spacing);
+  margin-bottom: var(--spacing-lg);
+}
+
+.metric-card {
+  background-color: var(--light-gray);
+  padding: var(--spacing);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.metric-title {
+  font-size: 1rem;
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-light);
+}
+
+.metric-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.insights-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.themes-list, .recommendations-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+.theme-item, .recommendation-item {
+  margin-bottom: var(--spacing-sm);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.theme-item:last-child, .recommendation-item:last-child {
+  border-bottom: none;
+}
+
+.theme-name {
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.top-content {
+  margin-top: var(--spacing-lg);
+}
+
+.top-content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing);
+  margin-top: var(--spacing);
+}
+
+.content-card {
+  background-color: var(--light-gray);
+  padding: var(--spacing);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--primary-color);
+}
+
+.content-text {
+  font-style: italic;
+  margin-bottom: var(--spacing-sm);
+}
+
+.content-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+.platform-name {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.engagement-rate {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
 /* Web Mentions */
 .web-mentions {
   margin-top: var(--spacing-xl);

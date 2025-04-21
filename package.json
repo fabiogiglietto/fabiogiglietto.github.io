@@ -1,4 +1,15 @@
 {
+  "name": "fabiogiglietto-website",
+  "version": "1.0.0",
+  "description": "Academic website for Fabio Giglietto",
+  "scripts": {
+    "collect": "node scripts/collect-all.js",
+    "generate-about": "node scripts/generate-about-ai.js",
+    "generate-teaching": "node scripts/generators/teaching-generator.js",
+    "generate-social-insights": "node scripts/generators/social-media-insights.js",
+    "build": "bundle exec jekyll build",
+    "serve": "bundle exec jekyll serve"
+  },
   "dependencies": {
     "@octokit/rest": "^21.1.1",
     "axios": "^1.8.4",

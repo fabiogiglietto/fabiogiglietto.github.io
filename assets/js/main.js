@@ -155,19 +155,145 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize teaching page content
   const initTeachingPage = async () => {
     try {
-      // Try to fetch teaching data from university.json
-      const response = await fetch('/public/data/university.json');
+      // First try to fetch teaching data from dedicated teaching.json
+      let response = await fetch('/public/data/teaching.json');
+      let teachingData = null;
+      
       if (response.ok) {
-        const data = await response.json();
-        // If the teaching data exists, use it to update the teaching sections
-        if (data.teaching) {
-          const teachingData = data.teaching;
-          updateTeachingPage(teachingData);
+        // Use the dedicated teaching data file
+        teachingData = await response.json();
+        updateTeachingPage(teachingData);
+      } else {
+        // Fall back to university.json if teaching.json isn't available
+        console.log('Teaching data file not found, falling back to university data');
+        response = await fetch('/public/data/university.json');
+        
+        if (response.ok) {
+          const data = await response.json();
+          if (data.teaching) {
+            teachingData = data.teaching;
+            updateTeachingPage(teachingData);
+          }
         }
+      }
+      
+      if (!teachingData) {
+        console.error('No teaching data available');
       }
     } catch (error) {
       console.error('Error loading teaching data:', error);
     }
+  };
+  
+  // Initialize social media insights
+  const initSocialMediaInsights = async () => {
+    try {
+      // Check if the social media insights section exists on the page
+      const insightsSection = document.querySelector('.social-media-insights');
+      if (!insightsSection) return;
+      
+      // Try to fetch insights data
+      const response = await fetch('/public/data/social-media-insights.json');
+      if (response.ok) {
+        const insights = await response.json();
+        updateSocialMediaInsights(insights, insightsSection);
+      }
+    } catch (error) {
+      console.error('Error loading social media insights:', error);
+    }
+  };
+  
+  // Update social media insights with data
+  const updateSocialMediaInsights = (insights, container) => {
+    // Update summary
+    const summaryEl = container.querySelector('.insights-summary p');
+    if (summaryEl) {
+      summaryEl.textContent = insights.overallSummary;
+    }
+    
+    // Update metrics
+    const metricsCards = container.querySelectorAll('.metric-card');
+    if (metricsCards.length >= 3) {
+      const totalFollowersEl = metricsCards[0].querySelector('.metric-value');
+      const avgEngagementEl = metricsCards[1].querySelector('.metric-value');
+      const topPlatformEl = metricsCards[2].querySelector('.metric-value');
+      
+      if (totalFollowersEl) {
+        totalFollowersEl.textContent = insights.engagementMetrics.totalFollowers.toLocaleString();
+      }
+      
+      if (avgEngagementEl) {
+        avgEngagementEl.textContent = insights.engagementMetrics.averageEngagementRate + '%';
+      }
+      
+      if (topPlatformEl) {
+        topPlatformEl.textContent = insights.engagementMetrics.mostEngagingPlatform;
+      }
+    }
+    
+    // Update content themes
+    const themesList = container.querySelector('.themes-list');
+    if (themesList && insights.contentThemes) {
+      themesList.innerHTML = '';
+      insights.contentThemes.forEach(theme => {
+        const themeEl = document.createElement('li');
+        themeEl.className = 'theme-item';
+        themeEl.innerHTML = `<span class="theme-name">${theme.theme}:</span> ${theme.description}`;
+        themesList.appendChild(themeEl);
+      });
+    }
+    
+    // Update recommendations
+    const recommendationsList = container.querySelector('.recommendations-list');
+    if (recommendationsList && insights.recommendations) {
+      recommendationsList.innerHTML = '';
+      insights.recommendations.forEach(rec => {
+        const recEl = document.createElement('li');
+        recEl.className = 'recommendation-item';
+        recEl.textContent = rec;
+        recommendationsList.appendChild(recEl);
+      });
+    }
+    
+    // Update top performing content
+    const contentGrid = container.querySelector('.top-content-grid');
+    if (contentGrid && insights.topPerformingContent) {
+      contentGrid.innerHTML = '';
+      insights.topPerformingContent.forEach(item => {
+        const cardEl = document.createElement('div');
+        cardEl.className = 'content-card';
+        
+        // Get platform icon
+        const platformIcon = getPlatformIcon(item.platform);
+        
+        cardEl.innerHTML = `
+          <p class="content-text">"${item.content}"</p>
+          <div class="content-meta">
+            <span class="platform-name"><i class="${platformIcon}"></i> ${capitalizeFirstLetter(item.platform)}</span>
+            <span class="engagement-rate">${item.engagementRate}% engagement</span>
+          </div>
+        `;
+        contentGrid.appendChild(cardEl);
+      });
+    }
+  };
+  
+  // Get platform icon class
+  const getPlatformIcon = (platform) => {
+    const icons = {
+      twitter: 'fab fa-x-twitter',
+      bluesky: 'fa-solid fa-cloud',
+      mastodon: 'fab fa-mastodon',
+      linkedin: 'fab fa-linkedin',
+      threads: 'fab fa-threads'
+    };
+    
+    return icons[platform.toLowerCase()] || 'fas fa-globe';
+  };
+  
+  // Capitalize first letter
+  const capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
   };
   
   // Update teaching page with data from university.json
@@ -282,6 +408,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupMobileNav();
   setupHeaderScroll();
   initDynamicContent();
+  initSocialMediaInsights();
 
   // Add animation for elements as they scroll into view
   const setupScrollAnimations = () => {

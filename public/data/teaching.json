@@ -1,0 +1,54 @@
+{
+  "courses": [
+    {
+      "title": "Digital Media Analysis",
+      "code": "DMA2024",
+      "description": "Introduction to digital and social media data analysis using computational methods",
+      "level": "Master",
+      "academic_year": "2024-2025",
+      "credits": 9,
+      "current": true,
+      "semester": "Fall",
+      "schedule": "Monday 14:00-17:00, Room 1.1",
+      "syllabus_url": "https://www.uniurb.it/syllabi/dma2024"
+    },
+    {
+      "title": "Research Methods for Communication",
+      "code": "RMC2024",
+      "description": "Introduction to research methods for communication studies with focus on digital media",
+      "level": "Bachelor",
+      "academic_year": "2024-2025",
+      "credits": 6,
+      "current": true,
+      "semester": "Spring",
+      "schedule": "Tuesday 10:00-13:00, Room 2.3",
+      "syllabus_url": "https://www.uniurb.it/syllabi/rmc2024"
+    },
+    {
+      "title": "Big Data Analytics",
+      "code": "BDA2023",
+      "description": "Advanced techniques for large-scale data analysis in social science research",
+      "level": "Master",
+      "academic_year": "2023-2024",
+      "credits": 6,
+      "current": false,
+      "semester": "Fall",
+      "syllabus_url": "https://www.uniurb.it/syllabi/bda2023"
+    }
+  ],
+  "office_hours": "Monday 14:00-16:00, Room 3.12\nWednesday 10:00-12:00, Room 3.12\nOr by appointment (email: fabio.giglietto@uniurb.it)",
+  "tutorials": [
+    {
+      "title": "Introduction to R for Communication Research",
+      "description": "A beginner's guide to R programming for communication and media research",
+      "url": "https://github.com/fabiogiglietto/R-for-communication-research"
+    },
+    {
+      "title": "Social Media Data Analysis with Python",
+      "description": "Tutorial series on collecting and analyzing social media data with Python",
+      "url": "https://github.com/fabiogiglietto/social-media-python"
+    }
+  ],
+  "supervision": "I am available to supervise Bachelor's and Master's theses in the following areas:\n\n- Digital Media Analysis\n- Social Media Research\n- Computational Social Science\n- Media Studies\n- Online Misinformation and Disinformation\n\nIf you are interested in working with me, please email me with a brief outline of your research interests.",
+  "lastUpdated": "2025-04-21T12:30:00.000Z"
+}

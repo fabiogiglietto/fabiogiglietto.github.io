@@ -9,10 +9,16 @@ const fs = require('fs');
 const path = require('path');
 const { OpenAI } = require('openai');
 
-// Initialize OpenAI client
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+// Initialize OpenAI client with better error handling
+let openai = null;
+try {
+  openai = new OpenAI({
+    apiKey: process.env.OPENAI_API_KEY || '', // Handle empty string case
+  });
+} catch (error) {
+  console.warn('Failed to initialize OpenAI client:', error.message);
+  // Continue execution - we'll check openai before using it
+}
 
 /**
  * Reads all collected data and generates an "About Me" section
@@ -20,6 +26,13 @@ const openai = new OpenAI({
 async function generateAboutMe() {
   try {
     console.log('Generating About Me section...');
+    
+    // Check if OpenAI API key is available early
+    if (!process.env.OPENAI_API_KEY) {
+      console.warn('OPENAI_API_KEY environment variable is not set');
+      console.log('Generating fallback content instead of using OpenAI API');
+      return generateFallbackContent();
+    }
     
     // Path to data directory
     const dataDir = path.join(__dirname, '../../public/data');
@@ -36,22 +49,31 @@ async function generateAboutMe() {
       'summary.json'
     ];
     
+    // Track which files were successfully loaded
+    const loadedFiles = [];
+    
     // Load each data file if it exists
     for (const file of dataFiles) {
       const filePath = path.join(dataDir, file);
       if (fs.existsSync(filePath)) {
         try {
-          data[file.replace('.json', '')] = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+          const fileContent = fs.readFileSync(filePath, 'utf8');
+          data[file.replace('.json', '')] = JSON.parse(fileContent);
+          loadedFiles.push(file);
         } catch (err) {
-          console.error(`Error reading ${file}:`, err);
+          console.error(`Error reading ${file}:`, err.message);
         }
+      } else {
+        console.log(`File ${file} not found in ${dataDir}`);
       }
     }
     
-    // If no data was collected, return early
+    console.log(`Successfully loaded ${loadedFiles.length} data files: ${loadedFiles.join(', ')}`);
+    
+    // If no data was collected, return early with fallback
     if (Object.keys(data).length === 0) {
       console.error('No data available for generating About Me section');
-      return false;
+      return generateFallbackContent();
     }
     
     // Format the data for the OpenAI prompt
@@ -62,7 +84,7 @@ async function generateAboutMe() {
     
     if (!aboutMeContent) {
       console.error('Failed to generate About Me content');
-      return false;
+      return generateFallbackContent();
     }
     
     // Save the generated content
@@ -72,7 +94,33 @@ async function generateAboutMe() {
     console.log('About Me section generated successfully');
     return true;
   } catch (error) {
-    console.error('Error generating About Me section:', error);
+    console.error('Error generating About Me section:', error.message);
+    return generateFallbackContent();
+  }
+}
+
+/**
+ * Generates fallback content when OpenAI generation fails
+ */
+async function generateFallbackContent() {
+  try {
+    console.log('Generating fallback About Me content...');
+    
+    // Create fallback content
+    const aboutMeContent = `<p>Fabio Giglietto is a Full Professor of Sociology of Cultural and Communication Processes at the University of Urbino Carlo Bo, Italy. His research focuses on the intersection of Internet Studies, computational social science, and digital media analysis, with particular emphasis on political communication and disinformation.</p>
+
+<p>He has made significant contributions to the field through his pioneering work on Coordinated Link Sharing Behavior (CLSB) and the development of CooRnet, an open-source tool for detecting coordinated activity on social platforms. He leads several major research initiatives, including the MINE project, the EU-funded vera.ai project, and is a key partner in PROMPT, which focuses on detecting and analyzing disinformation narratives across Europe.</p>
+
+<p>His publications appear in leading journals such as Journal of Communication, Information, Communication & Society, and Social Media + Society. Since 2014, he has served as editor of the Journal of Sociocybernetics and is active in professional organizations including the International Communication Association and the Association of Internet Researchers.</p>`;
+    
+    // Save the generated content
+    const includePath = path.join(__dirname, '../../_includes/generated-about.html');
+    fs.writeFileSync(includePath, aboutMeContent);
+    
+    console.log('Fallback About Me content saved successfully');
+    return true;
+  } catch (error) {
+    console.error('Error generating fallback content:', error.message);
     return false;
   }
 }
@@ -91,7 +139,7 @@ function formatDataForPrompt(data) {
     
     if (data.orcid.profile && data.orcid.profile.name) {
       const name = data.orcid.profile.name;
-      formattedData += `Name: ${name['given-names'].value} ${name['family-name'].value}\n`;
+      formattedData += `Name: ${name['given-names']?.value || ''} ${name['family-name']?.value || ''}\n`;
     }
     
     if (data.orcid.profile && data.orcid.profile.biography) {
@@ -181,17 +229,10 @@ function formatDataForPrompt(data) {
  */
 async function generateContentWithOpenAI(formattedData) {
   try {
-    // Check if API key is available
-    if (!process.env.OPENAI_API_KEY) {
-      console.error('OpenAI API key is not available');
-      console.log('Falling back to default content');
-      
-      // Return default content if no API key is available
-      return `<p>Fabio Giglietto is a Full Professor of Sociology of Cultural and Communication Processes at the University of Urbino Carlo Bo, Italy. His research focuses on the intersection of Internet Studies, computational social science, and digital media analysis, with particular emphasis on political communication and disinformation.</p>
-
-<p>He has made significant contributions to the field through his pioneering work on Coordinated Link Sharing Behavior (CLSB) and the development of CooRnet, an open-source tool for detecting coordinated activity on social platforms. He leads several major research initiatives, including the MINE project, the EU-funded vera.ai project, and is a key partner in PROMPT, which focuses on detecting and analyzing disinformation narratives across Europe.</p>
-
-<p>His publications appear in leading journals such as Journal of Communication, Information, Communication & Society, and Social Media + Society. Since 2014, he has served as editor of the Journal of Sociocybernetics and is active in professional organizations including the International Communication Association and the Association of Internet Researchers.</p>`;
+    // Check if OpenAI client is properly initialized
+    if (!openai) {
+      console.error('OpenAI client not initialized');
+      return null;
     }
     
     // Create the prompt
@@ -208,6 +249,8 @@ ${formattedData}
 Generate ONLY the HTML content for the "About Me" section. Do not include any explanations or notes outside the HTML content.
 `;
 
+    console.log('Calling OpenAI API with GPT-4o...');
+    
     try {
       // Call OpenAI API
       const response = await openai.chat.completions.create({
@@ -221,10 +264,12 @@ Generate ONLY the HTML content for the "About Me" section. Do not include any ex
       });
       
       // Extract and return the generated content
-      return response.choices[0].message.content.trim();
+      const content = response.choices[0].message.content.trim();
+      console.log('Successfully generated content with GPT-4o');
+      return content;
     } catch (apiError) {
-      console.error('Error calling OpenAI API:', apiError);
-      console.log('Using fallback model due to API error');
+      console.error('Error calling OpenAI API with GPT-4o:', apiError.message);
+      console.log('Trying fallback model GPT-3.5-turbo...');
       
       // Try with a different model if the first one fails
       try {
@@ -238,25 +283,17 @@ Generate ONLY the HTML content for the "About Me" section. Do not include any ex
           max_tokens: 1000,
         });
         
-        return fallbackResponse.choices[0].message.content.trim();
+        const content = fallbackResponse.choices[0].message.content.trim();
+        console.log('Successfully generated content with GPT-3.5-turbo');
+        return content;
       } catch (fallbackError) {
-        console.error('Fallback model also failed:', fallbackError);
-        // Return default content if both models fail
-        return `<p>Fabio Giglietto is a Full Professor of Sociology of Cultural and Communication Processes at the University of Urbino Carlo Bo, Italy. His research focuses on the intersection of Internet Studies, computational social science, and digital media analysis, with particular emphasis on political communication and disinformation.</p>
-
-<p>He has made significant contributions to the field through his pioneering work on Coordinated Link Sharing Behavior (CLSB) and the development of CooRnet, an open-source tool for detecting coordinated activity on social platforms. He leads several major research initiatives, including the MINE project, the EU-funded vera.ai project, and is a key partner in PROMPT, which focuses on detecting and analyzing disinformation narratives across Europe.</p>
-
-<p>His publications appear in leading journals such as Journal of Communication, Information, Communication & Society, and Social Media + Society. Since 2014, he has served as editor of the Journal of Sociocybernetics and is active in professional organizations including the International Communication Association and the Association of Internet Researchers.</p>`;
+        console.error('Fallback model also failed:', fallbackError.message);
+        return null;
       }
     }
   } catch (error) {
-    console.error('Error generating content with OpenAI:', error);
-    // Return default content if there's an error
-    return `<p>Fabio Giglietto is a Full Professor of Sociology of Cultural and Communication Processes at the University of Urbino Carlo Bo, Italy. His research focuses on the intersection of Internet Studies, computational social science, and digital media analysis, with particular emphasis on political communication and disinformation.</p>
-
-<p>He has made significant contributions to the field through his pioneering work on Coordinated Link Sharing Behavior (CLSB) and the development of CooRnet, an open-source tool for detecting coordinated activity on social platforms. He leads several major research initiatives, including the MINE project, the EU-funded vera.ai project, and is a key partner in PROMPT, which focuses on detecting and analyzing disinformation narratives across Europe.</p>
-
-<p>His publications appear in leading journals such as Journal of Communication, Information, Communication & Society, and Social Media + Society. Since 2014, he has served as editor of the Journal of Sociocybernetics and is active in professional organizations including the International Communication Association and the Association of Internet Researchers.</p>`;
+    console.error('Error generating content with OpenAI:', error.message);
+    return null;
   }
 }
 
