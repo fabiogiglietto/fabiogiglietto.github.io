@@ -103,6 +103,13 @@ function extractTeachingFromProfilePage($) {
         const englishTitleElement = courseColumn.find('small a').first();
         const englishTitle = englishTitleElement.length > 0 ? englishTitleElement.text().trim() : '';
         
+        // Check if this is a "mutuato" course (borrowed course) that should be skipped
+        const isMutuato = courseColumn.text().toLowerCase().includes('mutuato');
+        if (isMutuato) {
+          console.log(`Skipping "mutuato" course: ${courseTitle} (${academicYearText})`);
+          return; // Skip this course and continue with the next one
+        }
+        
         // Course URL
         const courseUrl = courseColumn.find('a').first().attr('href') || '';
         // Syllabus URL (second link or first if only one exists)
