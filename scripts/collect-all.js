@@ -15,9 +15,13 @@ const universityCollector = require('./collectors/university');
 const githubCollector = require('./collectors/github');
 const newsCollector = require('./collectors/news');
 const webSearchCollector = require('./collectors/websearch');
+const socialMediaCollector = require('./collectors/social-media');
 
-// Import the about generator
+// Import generators
 const aboutGenerator = require('./generators/about-generator');
+const teachingGenerator = require('./generators/teaching-generator');
+const socialMediaInsightsGenerator = require('./generators/social-media-insights');
+const publicationsGenerator = require('./generators/publications-generator');
 
 // Ensure data directory exists
 const dataDir = path.join(__dirname, '../public/data');
@@ -31,7 +35,7 @@ async function collectAll() {
     console.log('Starting data collection...');
     
     // Run all collectors in parallel
-    const [orcidData, scholarData, universityData, githubData, newsData, webSearchData] = await Promise.all([
+    const [orcidData, scholarData, universityData, githubData, newsData, webSearchData, socialMediaData] = await Promise.all([
       orcidCollector.collect().catch(err => {
         console.error('ORCID collection error:', err);
         return null;
@@ -55,6 +59,10 @@ async function collectAll() {
       webSearchCollector().catch(err => {
         console.error('Web Search collection error:', err);
         return null;
+      }),
+      socialMediaCollector.collect().catch(err => {
+        console.error('Social Media collection error:', err);
+        return null;
       })
     ]);
     
@@ -65,6 +73,7 @@ async function collectAll() {
     if (githubData) fs.writeFileSync(path.join(dataDir, 'github.json'), JSON.stringify(githubData, null, 2));
     if (newsData) fs.writeFileSync(path.join(dataDir, 'news.json'), JSON.stringify(newsData, null, 2));
     if (webSearchData) fs.writeFileSync(path.join(dataDir, 'websearch.json'), JSON.stringify(webSearchData, null, 2));
+    if (socialMediaData) fs.writeFileSync(path.join(dataDir, 'social-media.json'), JSON.stringify(socialMediaData, null, 2));
     
     // Create a summary file with collection timestamp
     const summary = {
@@ -75,7 +84,8 @@ async function collectAll() {
         university: !!universityData,
         github: !!githubData,
         news: !!newsData,
-        websearch: !!webSearchData
+        websearch: !!webSearchData,
+        socialMedia: !!socialMediaData
       }
     };
     
@@ -93,6 +103,45 @@ async function collectAll() {
       }
     } catch (genError) {
       console.error('Error generating About Me section:', genError);
+      // Continue execution even if the generation fails
+    }
+    
+    // Generate Teaching data
+    try {
+      const teachingGenerated = await teachingGenerator.generateTeachingData();
+      if (teachingGenerated) {
+        console.log('Teaching data generated successfully');
+      } else {
+        console.log('Teaching data generation skipped or failed');
+      }
+    } catch (genError) {
+      console.error('Error generating teaching data:', genError);
+      // Continue execution even if the generation fails
+    }
+    
+    // Generate Social Media Insights
+    try {
+      const insightsGenerated = await socialMediaInsightsGenerator.generateSocialMediaInsights();
+      if (insightsGenerated) {
+        console.log('Social media insights generated successfully');
+      } else {
+        console.log('Social media insights generation skipped or failed');
+      }
+    } catch (genError) {
+      console.error('Error generating social media insights:', genError);
+      // Continue execution even if the generation fails
+    }
+    
+    // Generate Publications Data from Scholar
+    try {
+      const publicationsGenerated = await publicationsGenerator.generatePublicationsData();
+      if (publicationsGenerated) {
+        console.log('Publications data generated successfully');
+      } else {
+        console.log('Publications data generation skipped or failed');
+      }
+    } catch (genError) {
+      console.error('Error generating publications data:', genError);
       // Continue execution even if the generation fails
     }
   } catch (error) {
