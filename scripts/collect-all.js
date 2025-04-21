@@ -14,6 +14,7 @@ const scholarCollector = require('./collectors/scholar');
 const universityCollector = require('./collectors/university');
 const githubCollector = require('./collectors/github');
 const newsCollector = require('./collectors/news');
+const webSearchCollector = require('./collectors/websearch');
 
 // Ensure data directory exists
 const dataDir = path.join(__dirname, '../public/data');
@@ -27,7 +28,7 @@ async function collectAll() {
     console.log('Starting data collection...');
     
     // Run all collectors in parallel
-    const [orcidData, scholarData, universityData, githubData, newsData] = await Promise.all([
+    const [orcidData, scholarData, universityData, githubData, newsData, webSearchData] = await Promise.all([
       orcidCollector.collect().catch(err => {
         console.error('ORCID collection error:', err);
         return null;
@@ -47,6 +48,10 @@ async function collectAll() {
       newsCollector.collect().catch(err => {
         console.error('News collection error:', err);
         return null;
+      }),
+      webSearchCollector().catch(err => {
+        console.error('Web Search collection error:', err);
+        return null;
       })
     ]);
     
@@ -56,6 +61,7 @@ async function collectAll() {
     if (universityData) fs.writeFileSync(path.join(dataDir, 'university.json'), JSON.stringify(universityData, null, 2));
     if (githubData) fs.writeFileSync(path.join(dataDir, 'github.json'), JSON.stringify(githubData, null, 2));
     if (newsData) fs.writeFileSync(path.join(dataDir, 'news.json'), JSON.stringify(newsData, null, 2));
+    if (webSearchData) fs.writeFileSync(path.join(dataDir, 'websearch.json'), JSON.stringify(webSearchData, null, 2));
     
     // Create a summary file with collection timestamp
     const summary = {
@@ -65,7 +71,8 @@ async function collectAll() {
         scholar: !!scholarData,
         university: !!universityData,
         github: !!githubData,
-        news: !!newsData
+        news: !!newsData,
+        websearch: !!webSearchData
       }
     };
     
