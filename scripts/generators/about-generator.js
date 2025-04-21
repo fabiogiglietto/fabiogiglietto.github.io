@@ -277,8 +277,17 @@ Generate ONLY the HTML content for the "About Me" section. Do not include any ex
           { role: "user", content: prompt }
         ],
         temperature: 0.7,
-        max_tokens: 1000,
-        tools: [{ "type": "web_search_preview" }]
+        max_tokens: 1000
+        // Web search may not be supported in your current tier
+        // Uncomment this if you have the appropriate access:
+        /*
+        tools: [{
+          "type": "web_search",
+          "web_search": {
+            "enable_cite_command": false
+          }
+        }]
+        */
       });
       
       // Extract the generated content
@@ -317,8 +326,8 @@ Generate ONLY the HTML content for the "About Me" section. Do not include any ex
             { role: "user", content: prompt }
           ],
           temperature: 0.7,
-          max_tokens: 1000,
-          tools: [{ "type": "web_search_preview" }]
+          max_tokens: 1000
+          // No tools parameter for the fallback model as it may not support web search
         });
         
         // Extract the generated content
