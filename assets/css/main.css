@@ -415,7 +415,13 @@ a:hover {
 .project-card__image {
   width: 100%;
   height: 180px;
+}
+
+.project-card__image img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .project-card__content {

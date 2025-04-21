@@ -3,11 +3,9 @@
   <div class="projects-grid">
     {% for project in site.data.projects limit:3 %}
     <div class="project-card">
-      {% if project.image %}
       <div class="project-card__image">
-        <img src="{{ project.image }}" alt="{{ project.title }}">
+        <img src="{{ project.image | default: '/assets/images/projects/default-project.jpg' }}" alt="{{ project.title }}">
       </div>
-      {% endif %}
       <div class="project-card__content">
         <h3 class="project-title">{{ project.title }}</h3>
         <p class="project-description">{{ project.description }}</p>
