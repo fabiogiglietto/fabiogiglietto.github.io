@@ -9,10 +9,10 @@
       </div>
       {% endif %}
       <div class="project-card__content">
-        <h3 class="project-card__title">{{ project.title }}</h3>
-        <p class="project-card__description">{{ project.description }}</p>
+        <h3 class="project-title">{{ project.title }}</h3>
+        <p class="project-description">{{ project.description }}</p>
         {% if project.url %}
-        <a href="{{ project.url }}" class="btn btn-small">Learn more</a>
+        <a href="{{ project.url }}" class="btn btn-small" target="_blank">Learn more</a>
         {% endif %}
       </div>
     </div>
