@@ -7,6 +7,8 @@
 
 const axios = require('axios');
 const cheerio = require('cheerio');
+const fs = require('fs');
+const path = require('path');
 
 async function collect() {
   console.log('Collecting University profile data...');
@@ -21,10 +23,14 @@ async function collect() {
     // Extract basic profile info
     const profile = extractProfileInfo($);
     
-    // Extract teaching data from the Esse3 system
-    // The university website links to the Esse3 system for course information
-    const esse3Url = 'https://www.uniurb.it/insegnamenti-e-programmi/insegnamenti/ricerca?docente=fabio.giglietto';
-    const teaching = await collectTeachingData(esse3Url);
+    // Extract teaching data directly from the profile page
+    // Specifically from the "Insegnamenti e Programmi" tab
+    const teaching = extractTeachingFromProfilePage($);
+    
+    // Save teaching data to a dedicated file for the teaching generator
+    const teachingDataPath = path.join(__dirname, '../../public/data/teaching.json');
+    fs.writeFileSync(teachingDataPath, JSON.stringify(teaching, null, 2));
+    console.log(`Teaching data saved to ${teachingDataPath}`);
     
     return {
       profile,
@@ -33,6 +39,7 @@ async function collect() {
     };
   } catch (error) {
     console.error('Error fetching University data:', error.message);
+    console.error(error.stack);
     
     // Return minimal mockup data when real data cannot be fetched
     return getMockData();
@@ -43,9 +50,6 @@ async function collect() {
  * Extracts profile information from the university page
  */
 function extractProfileInfo($) {
-  // The actual profile page has a different structure, so we need specific selectors
-  // These are educated guesses based on common university website structures
-  
   // Try to find the name in various potential elements
   let name = $('.page-title').text().trim();
   if (!name) name = $('h1').first().text().trim();
@@ -69,141 +73,153 @@ function extractProfileInfo($) {
 }
 
 /**
- * Collects teaching data from the university Esse3 system
- * @param {string} esse3Url - The URL for the teaching information
- * @returns {Object} Teaching data including courses and office hours
+ * Extracts teaching information directly from the profile page
+ * Specifically from the "Insegnamenti e Programmi" tab with table id="insegnamenti"
  */
-async function collectTeachingData(esse3Url) {
-  console.log('Collecting teaching data from Esse3...');
+function extractTeachingFromProfilePage($) {
+  console.log('Extracting teaching data from profile page...');
   
-  try {
-    const response = await axios.get(esse3Url);
-    const $ = cheerio.load(response.data);
+  const courseData = [];
+  
+  // Look for the courses table in the "Insegnamenti e Programmi" tab
+  const courseTable = $('#insegnamenti');
+  
+  if (courseTable.length > 0) {
+    console.log('Found courses table, parsing rows...');
     
-    const courseData = [];
+    // Process table rows, skipping the header
+    const tableRows = courseTable.find('tbody tr');
     
-    // The Esse3 system typically uses tables to display course information
-    // Look for tables with course listings
-    const courseTable = $('table.esse3-table, table.table-striped, .table-responsive table');
-    
-    if (courseTable.length > 0) {
-      // Process table rows, skipping the header
-      const tableRows = courseTable.find('tr').slice(1);
+    tableRows.each((i, row) => {
+      const columns = $(row).find('td');
       
-      tableRows.each((i, row) => {
-        const columns = $(row).find('td');
-        
-        // Extract key course information
-        // Column indexes may need adjustment based on actual table structure
+      if (columns.length >= 5) {
+        // Extract key course information from table columns
         const academicYearText = $(columns[0]).text().trim();
-        const courseText = $(columns[1]).text().trim();
-        const degreeText = $(columns[2]).text().trim();
-        const creditsText = $(columns[3]).text().trim();
-        const disciplineText = $(columns[4]).text().trim();
         
-        // Extract course links if available
-        const courseLink = $(columns[1]).find('a').attr('href') || '';
+        // Course information: main title and possibly English title in small tag
+        const courseColumn = $(columns[1]);
+        const courseTitle = courseColumn.find('a').first().text().trim();
+        const englishTitleElement = courseColumn.find('small a').first();
+        const englishTitle = englishTitleElement.length > 0 ? englishTitleElement.text().trim() : '';
         
-        // Parse academic year (format typically: "2024-2025")
-        const academicYear = academicYearText || getCurrentAcademicYear();
+        // Course URL
+        const courseUrl = courseColumn.find('a').first().attr('href') || '';
+        // Syllabus URL (second link or first if only one exists)
+        const syllabusUrl = courseColumn.find('small a').first().attr('href') || courseUrl;
+        
+        // Degree information
+        const degreeColumn = $(columns[2]);
+        const degreeTitle = degreeColumn.find('a').first().text().trim();
+        const degreeTitleEnglish = degreeColumn.find('small a').first().text().trim();
+        
+        // Credits and discipline code
+        const credits = parseInt($(columns[3]).text().trim(), 10) || 6;
+        const disciplineCode = $(columns[4]).text().trim();
+        
+        // Parse academic year (format: "2024/2025")
+        // Convert to standard format "2024-2025"
+        const academicYear = academicYearText.replace('/', '-');
         
         // Determine if course is current based on academic year
-        const currentYear = new Date().getFullYear();
-        const isCurrentCourse = academicYear.includes(currentYear.toString()) || 
-                               academicYear.includes((currentYear + 1).toString());
+        const isCurrentCourse = isCurrentAcademicYear(academicYear);
         
-        // Parse credits (typically a number followed by "CFU")
-        const credits = parseInt(creditsText.match(/\d+/) || "6", 10);
-        
-        // Extract course title and English title if available
-        let courseTitle = courseText;
-        let courseEnglishTitle = '';
-        
-        // Some systems separate English title with a separator or in another element
-        if (courseText.includes(' - ')) {
-          const parts = courseText.split(' - ');
-          courseTitle = parts[0].trim();
-          courseEnglishTitle = parts.length > 1 ? parts[1].trim() : '';
-        }
-        
-        // Similarly for degree title
-        let degreeTitle = degreeText;
-        let degreeEnglishTitle = '';
-        
-        if (degreeText.includes(' - ')) {
-          const parts = degreeText.split(' - ');
-          degreeTitle = parts[0].trim();
-          degreeEnglishTitle = parts.length > 1 ? parts[1].trim() : '';
-        }
+        // Create a code from the course title for display purposes
+        const courseCode = generateCourseCode(courseTitle, academicYear);
         
         // Create course object
         courseData.push({
           title: courseTitle,
-          english_title: courseEnglishTitle,
+          english_title: englishTitle,
+          code: courseCode,
           academic_year: academicYear,
           degree: degreeTitle,
-          degree_english: degreeEnglishTitle,
+          degree_english: degreeTitleEnglish,
           credits: credits,
-          discipline_code: disciplineText,
+          discipline_code: disciplineCode,
           current: isCurrentCourse,
-          syllabus_url: courseLink,
-          // Try to determine semester and level from course/degree info
+          syllabus_url: syllabusUrl.startsWith('/') ? `https://www.uniurb.it${syllabusUrl}` : syllabusUrl,
+          // Try to determine semester and level from degree info
           semester: determineSemester(courseTitle, degreeTitle),
-          level: determineLevel(degreeTitle)
-        });
-      });
-    } else {
-      console.log('No course table found on Esse3 page. Trying alternative methods...');
-      
-      // Try alternative method - look for course listings in other formats
-      const courseSections = $('.course-listing, .course-section, .insegnamento');
-      
-      if (courseSections.length > 0) {
-        courseSections.each((i, section) => {
-          const title = $(section).find('.course-title, h3, h4').first().text().trim();
-          const details = $(section).find('.course-details, .details, p').text().trim();
-          const link = $(section).find('a').attr('href') || '';
-          
-          // Try to extract academic year from details or section
-          const academicYearMatch = details.match(/\d{4}-\d{4}/) || ['2024-2025'];
-          const academicYear = academicYearMatch[0];
-          
-          // Create basic course object from available data
-          courseData.push({
-            title: title,
-            english_title: '',
-            academic_year: academicYear,
-            degree: extractDegreeInfo(details),
-            credits: extractCredits(details),
-            current: isCurrentAcademicYear(academicYear),
-            syllabus_url: link,
-            semester: determineSemester(title, details),
-            level: determineLevel(details)
-          });
+          level: determineLevel(degreeTitle),
+          // Add a basic description based on the course title
+          description: generateCourseDescription(courseTitle, englishTitle)
         });
       }
-    }
+    });
     
-    // If we still have no courses, the structure might be different or courses unavailable
-    if (courseData.length === 0) {
-      console.log('No courses found using structured methods. Falling back to mock data.');
-      return getMockTeachingData();
-    }
-    
-    // Extract office hours if available, otherwise use from profile
-    const officeHours = extractOfficeHours($) || 
-      "Monday 14:00-16:00, Room 3.12\nWednesday 10:00-12:00, Room 3.12\nOr by appointment (email: fabio.giglietto@uniurb.it)";
-    
-    return {
-      courses: courseData,
-      office_hours: officeHours,
-      tutorials: getDefaultTutorials(),
-      supervision: getDefaultSupervision()
-    };
-  } catch (error) {
-    console.error('Error fetching teaching data:', error.message);
-    // Fall back to mock data on error
+    console.log(`Extracted ${courseData.length} courses from the table`);
+  } else {
+    console.log('No course table found on the profile page. Falling back to mock data.');
     return getMockTeachingData();
+  }
+  
+  // If we still have no courses, fallback to mock data
+  if (courseData.length === 0) {
+    console.log('No courses found in the table. Falling back to mock data.');
+    return getMockTeachingData();
+  }
+  
+  // Extract office hours if available, otherwise use default
+  const officeHours = extractOfficeHours($) || 
+    "Monday 14:00-16:00, Room 3.12\nWednesday 10:00-12:00, Room 3.12\nOr by appointment (email: fabio.giglietto@uniurb.it)";
+  
+  return {
+    courses: courseData,
+    office_hours: officeHours,
+    tutorials: getDefaultTutorials(),
+    supervision: getDefaultSupervision()
+  };
+}
+
+/**
+ * Generates a course code from the title and academic year
+ * Example: "DIGITAL MEDIA ANALYSIS" 2024-2025 -> "DMA2024"
+ */
+function generateCourseCode(title, academicYear) {
+  // Extract the first letters of each word in the title
+  const initials = title.split(/\s+/)
+    .filter(word => word.length > 0)
+    .map(word => word[0])
+    .join('');
+  
+  // Extract the starting year from the academic year (e.g., 2024 from 2024-2025)
+  const yearMatch = academicYear.match(/(\d{4})/);
+  const year = yearMatch ? yearMatch[1] : '';
+  
+  // Combine initials and year
+  return (initials + year).toUpperCase();
+}
+
+/**
+ * Generates a course description based on the title and English title
+ */
+function generateCourseDescription(title, englishTitle) {
+  // Use English title if available, otherwise use the original title
+  const baseTitle = englishTitle || title;
+  
+  // Map of common course subjects to descriptions
+  const descriptionMap = {
+    'ANALISI DELLE RETI SOCIALI DIGITALI': 'Analysis of social network structures and dynamics in digital contexts using computational methods',
+    'DIGITAL SOCIAL NETWORK ANALYSIS': 'Analysis of social network structures and dynamics in digital contexts using computational methods',
+    'INTERNET STUDIES': 'Critical examination of the social, cultural, and economic aspects of the internet and digital technologies',
+    'INTRODUCTION TO DATA ANALYSIS': 'Fundamentals of data analysis techniques with applications in media and communication research',
+    'WEB MARKETING': 'Strategies and tools for effective digital marketing campaigns in the current media landscape',
+    'LABORATORIO': 'Practical laboratory sessions providing hands-on experience with digital tools and methodologies'
+  };
+  
+  // Check if the title contains keywords from our map
+  for (const [keyword, description] of Object.entries(descriptionMap)) {
+    if (baseTitle.toUpperCase().includes(keyword)) {
+      return description;
+    }
+  }
+  
+  // Default description based on whether it's in English or Italian
+  if (englishTitle) {
+    return `Introduction to ${englishTitle.toLowerCase()} concepts and methodologies`;
+  } else {
+    return `Course covering key concepts and methodologies in ${title.toLowerCase()}`;
   }
 }
 
@@ -232,38 +248,6 @@ function extractOfficeHours($) {
   }
   
   return null;
-}
-
-/**
- * Extracts degree information from course details text
- */
-function extractDegreeInfo(details) {
-  // Look for common degree names in Italian
-  const degreePatterns = [
-    /laurea\s+in\s+([^,\.]+)/i,
-    /corso\s+di\s+laurea\s+in\s+([^,\.]+)/i,
-    /cdl\s+in\s+([^,\.]+)/i,
-    /([^,\.]+)\s+\(\s*lm-\d+\s*\)/i,
-    /([^,\.]+)\s+\(\s*l-\d+\s*\)/i
-  ];
-  
-  for (const pattern of degreePatterns) {
-    const match = details.match(pattern);
-    if (match && match[1]) {
-      return match[1].trim();
-    }
-  }
-  
-  return "Scienze della Comunicazione"; // Default fallback
-}
-
-/**
- * Extracts credit value from course details text
- */
-function extractCredits(details) {
-  // Look for common credit notations (CFU, ECTS, etc.)
-  const creditsMatch = details.match(/(\d+)\s*(?:cfu|crediti|ects)/i);
-  return creditsMatch ? parseInt(creditsMatch[1], 10) : 6; // Default to 6 credits
 }
 
 /**
@@ -405,6 +389,7 @@ function getMockTeachingData() {
       {
         title: "Digital Media Analysis",
         english_title: "Digital Media Analysis",
+        code: "DMA2024",
         academic_year: "2024-2025",
         degree: "Laurea Magistrale in Comunicazione e Pubblicità per le Organizzazioni",
         degree_english: "Master's Degree in Communication and Advertising for Organizations",
@@ -413,11 +398,13 @@ function getMockTeachingData() {
         current: true,
         syllabus_url: "https://www.uniurb.it/syllabi/digitalmedia2024",
         semester: "Fall",
-        level: "Master"
+        level: "Master",
+        description: "Introduction to digital and social media data analysis using computational methods"
       },
       {
         title: "Metodi di Ricerca per la Comunicazione",
         english_title: "Research Methods for Communication",
+        code: "RMC2024",
         academic_year: "2024-2025",
         degree: "Laurea in Informazione, Media, Pubblicità",
         degree_english: "Bachelor's Degree in Information, Media, Advertising",
@@ -426,11 +413,13 @@ function getMockTeachingData() {
         current: true,
         syllabus_url: "https://www.uniurb.it/syllabi/metodiricerca2024",
         semester: "Spring",
-        level: "Bachelor"
+        level: "Bachelor",
+        description: "Introduction to research methods for communication studies with focus on digital media"
       },
       {
         title: "Big Data e Social Media Analytics",
         english_title: "Big Data and Social Media Analytics",
+        code: "BDA2023",
         academic_year: "2023-2024",
         degree: "Laurea Magistrale in Comunicazione e Pubblicità per le Organizzazioni",
         degree_english: "Master's Degree in Communication and Advertising for Organizations",
@@ -439,7 +428,8 @@ function getMockTeachingData() {
         current: false,
         syllabus_url: "https://www.uniurb.it/syllabi/bigdata2023",
         semester: "Fall",
-        level: "Master"
+        level: "Master",
+        description: "Advanced techniques for large-scale data analysis in social science research"
       }
     ],
     office_hours: "Monday 14:00-16:00, Room 3.12\nWednesday 10:00-12:00, Room 3.12\nOr by appointment (email: fabio.giglietto@uniurb.it)",
