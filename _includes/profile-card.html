@@ -1,0 +1,21 @@
+<section class="profile-card">
+  <div class="profile-card__content">
+    <div class="profile-card__image">
+      <img src="{{ site.profile_image | default: '/assets/images/profile.jpg' }}" alt="Fabio Giglietto" class="profile-image">
+    </div>
+    <div class="profile-card__info">
+      <h1 class="profile-card__name">Fabio Giglietto</h1>
+      <h2 class="profile-card__title">{{ site.title | default: 'Professor' }}</h2>
+      <p class="profile-card__affiliation">{{ site.affiliation | default: 'University' }}</p>
+      <div class="profile-card__contact">
+        <p><i class="fas fa-envelope"></i> <a href="mailto:{{ site.email | default: 'email@example.com' }}">{{ site.email | default: 'email@example.com' }}</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> {{ site.location | default: 'Department, University' }}</p>
+      </div>
+      <div class="profile-card__social">
+        <a href="https://github.com/fabiogiglietto" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+        <a href="https://scholar.google.com/citations?user=SCHOLAR_ID" aria-label="Google Scholar Profile"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://orcid.org/0000-0000-0000-0000" aria-label="ORCID Profile"><i class="fab fa-orcid"></i></a>
+      </div>
+    </div>
+  </div>
+</section>

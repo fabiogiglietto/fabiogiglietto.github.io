@@ -1,0 +1,88 @@
+---
+layout: page
+---
+
+<article class="project">
+  {% if page.image %}
+  <div class="project-header">
+    <img src="{{ page.image }}" alt="{{ page.title }}" class="project-image">
+  </div>
+  {% endif %}
+  
+  <div class="project-meta">
+    <div class="project-info">
+      {% if page.status %}
+      <span class="project-status project-status--{{ page.status | downcase }}">{{ page.status }}</span>
+      {% endif %}
+      
+      {% if page.timeframe %}
+      <span class="project-timeframe">{{ page.timeframe }}</span>
+      {% endif %}
+    </div>
+    
+    {% if page.collaborators %}
+    <div class="project-collaborators">
+      <h3>Collaborators</h3>
+      <ul>
+        {% for collaborator in page.collaborators %}
+        <li>
+          {% if collaborator.url %}
+          <a href="{{ collaborator.url }}" target="_blank">{{ collaborator.name }}</a>
+          {% else %}
+          {{ collaborator.name }}
+          {% endif %}
+          {% if collaborator.affiliation %}
+          <span class="collaborator-affiliation">({{ collaborator.affiliation }})</span>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    
+    {% if page.funding %}
+    <div class="project-funding">
+      <h3>Funding</h3>
+      <p>{{ page.funding }}</p>
+    </div>
+    {% endif %}
+    
+    {% if page.links %}
+    <div class="project-links">
+      <h3>Links</h3>
+      <ul>
+        {% for link in page.links %}
+        <li><a href="{{ link.url }}" target="_blank">{{ link.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+  
+  <div class="project-content">
+    {{ content }}
+  </div>
+  
+  {% if page.publications %}
+  <div class="project-publications">
+    <h3>Related Publications</h3>
+    <ul>
+      {% for publication in page.publications %}
+      <li>
+        {% if publication.url %}
+        <a href="{{ publication.url }}">{{ publication.title }}</a>
+        {% else %}
+        {{ publication.title }}
+        {% endif %}
+        {% if publication.authors %}
+        <p class="publication-authors">{{ publication.authors }}</p>
+        {% endif %}
+        {% if publication.venue %}
+        <p class="publication-venue">{{ publication.venue }}</p>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</article>

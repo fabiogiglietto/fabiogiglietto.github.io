@@ -1,0 +1,27 @@
+<section class="recent-publications">
+  <h2 class="section-title">Recent Publications</h2>
+  <div class="publications-list">
+    {% assign publications = site.data.publications | sort: 'year' | reverse %}
+    {% for publication in publications limit:5 %}
+    <div class="publication-item">
+      <h3 class="publication-title">{{ publication.title }}</h3>
+      <p class="publication-authors">{{ publication.authors }}</p>
+      <p class="publication-venue">{{ publication.venue }}, {{ publication.year }}</p>
+      <div class="publication-links">
+        {% if publication.doi %}
+        <a href="https://doi.org/{{ publication.doi }}" class="publication-link" target="_blank">DOI</a>
+        {% endif %}
+        {% if publication.pdf %}
+        <a href="{{ publication.pdf }}" class="publication-link" target="_blank">PDF</a>
+        {% endif %}
+        {% if publication.url %}
+        <a href="{{ publication.url }}" class="publication-link" target="_blank">Link</a>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="section-more">
+    <a href="/publications" class="btn btn-outline">View all publications</a>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+<section class="news">
+  <h2 class="section-title">News & Updates</h2>
+  <ul class="news-list">
+    {% assign news_items = site.data.news | sort: 'date' | reverse %}
+    {% for item in news_items limit:3 %}
+    <li class="news-item">
+      <span class="news-date">{{ item.date | date: "%B %d, %Y" }}</span>
+      <p class="news-content">{{ item.content }}</p>
+      {% if item.url %}
+      <a href="{{ item.url }}" class="news-link">Read more</a>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>

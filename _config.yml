@@ -1,0 +1,42 @@
+# Site settings
+title: Fabio Giglietto - Academic Profile
+name: Fabio Giglietto
+email: email@example.com
+description: >-
+  Academic profile and portfolio for Fabio Giglietto, featuring research, 
+  publications, projects, and teaching information.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://fabiogiglietto.github.io" # the base hostname & protocol
+
+# Profile settings
+profile_image: /assets/images/profile.jpg
+position: Professor
+affiliation: University
+location: Department, University
+
+# Social links
+github_username: fabiogiglietto
+orcid_id: 0000-0000-0000-0000
+scholar_id: SCHOLAR_ID
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - scripts/
+  - README.md
+  - package.json
+  - package-lock.json
+  - LICENSE
+  - CLAUDE.md

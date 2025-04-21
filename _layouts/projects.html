@@ -1,0 +1,72 @@
+---
+layout: page
+---
+
+<section class="projects-container">
+  <div class="projects-filter">
+    <div class="filter-options">
+      <label for="status-filter">Filter by status:</label>
+      <select id="status-filter" class="filter-select">
+        <option value="all">All projects</option>
+        <option value="active">Active</option>
+        <option value="completed">Completed</option>
+        <option value="planned">Planned</option>
+      </select>
+    </div>
+    
+    <div class="search-projects">
+      <label for="project-search">Search:</label>
+      <input type="text" id="project-search" class="search-input" placeholder="Search projects...">
+    </div>
+  </div>
+  
+  <div class="projects-grid">
+    {% assign sorted_projects = site.data.projects | sort: "year" | reverse %}
+    {% for project in sorted_projects %}
+    <div class="project-card" data-status="{{ project.status | downcase }}">
+      {% if project.image %}
+      <div class="project-card__image">
+        <img src="{{ project.image }}" alt="{{ project.title }}">
+      </div>
+      {% endif %}
+      <div class="project-card__content">
+        <div class="project-meta-info">
+          <span class="project-status project-status--{{ project.status | downcase }}">{{ project.status }}</span>
+          {% if project.year %}
+          <span class="project-year">{{ project.year }}</span>
+          {% endif %}
+        </div>
+        <h3 class="project-card__title">{{ project.title }}</h3>
+        <p class="project-card__description">{{ project.description }}</p>
+        {% if project.url %}
+        <a href="{{ project.url }}" class="btn btn-small">Learn more</a>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const statusFilter = document.getElementById('status-filter');
+  const searchInput = document.getElementById('project-search');
+  const projects = document.querySelectorAll('.project-card');
+  
+  function applyFilters() {
+    const statusValue = statusFilter.value;
+    const searchValue = searchInput.value.toLowerCase();
+    
+    projects.forEach(project => {
+      const statusMatch = statusValue === 'all' || project.dataset.status === statusValue;
+      const searchMatch = searchValue === '' || 
+        project.textContent.toLowerCase().includes(searchValue);
+      
+      project.style.display = statusMatch && searchMatch ? 'block' : 'none';
+    });
+  }
+  
+  statusFilter.addEventListener('change', applyFilters);
+  searchInput.addEventListener('input', applyFilters);
+});
+</script>

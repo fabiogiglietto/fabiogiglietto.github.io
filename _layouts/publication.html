@@ -1,0 +1,61 @@
+---
+layout: page
+---
+
+<article class="publication">
+  <div class="publication-meta">
+    {% if page.authors %}
+    <p class="publication-authors">{{ page.authors }}</p>
+    {% endif %}
+    
+    {% if page.venue or page.year %}
+    <p class="publication-venue">
+      {% if page.venue %}{{ page.venue }}{% endif %}
+      {% if page.venue and page.year %}, {% endif %}
+      {% if page.year %}{{ page.year }}{% endif %}
+    </p>
+    {% endif %}
+    
+    {% if page.doi or page.url or page.pdf %}
+    <div class="publication-links">
+      {% if page.doi %}
+      <a href="https://doi.org/{{ page.doi }}" class="publication-link" target="_blank">DOI</a>
+      {% endif %}
+      
+      {% if page.pdf %}
+      <a href="{{ page.pdf }}" class="publication-link" target="_blank">PDF</a>
+      {% endif %}
+      
+      {% if page.publication_url %}
+      <a href="{{ page.publication_url }}" class="publication-link" target="_blank">Publisher</a>
+      {% endif %}
+      
+      {% if page.code %}
+      <a href="{{ page.code }}" class="publication-link" target="_blank">Code</a>
+      {% endif %}
+      
+      {% if page.slides %}
+      <a href="{{ page.slides }}" class="publication-link" target="_blank">Slides</a>
+      {% endif %}
+    </div>
+    {% endif %}
+  </div>
+  
+  {% if page.abstract %}
+  <div class="publication-abstract">
+    <h3>Abstract</h3>
+    <p>{{ page.abstract }}</p>
+  </div>
+  {% endif %}
+  
+  <div class="publication-content">
+    {{ content }}
+  </div>
+  
+  {% if page.citation %}
+  <div class="publication-citation">
+    <h3>Citation</h3>
+    <pre>{{ page.citation }}</pre>
+  </div>
+  {% endif %}
+</article>

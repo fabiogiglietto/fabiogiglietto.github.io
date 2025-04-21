@@ -1,0 +1,115 @@
+---
+layout: page
+---
+
+<section class="publications-container">
+  <div class="publications-filter">
+    <div class="filter-controls">
+      <label for="year-filter">Filter by year:</label>
+      <select id="year-filter" class="filter-select">
+        <option value="all">All years</option>
+        {% assign years = site.data.publications | map: "year" | uniq | sort | reverse %}
+        {% for year in years %}
+        <option value="{{ year }}">{{ year }}</option>
+        {% endfor %}
+      </select>
+      
+      <label for="type-filter">Filter by type:</label>
+      <select id="type-filter" class="filter-select">
+        <option value="all">All types</option>
+        {% assign types = site.data.publications | map: "type" | uniq | sort %}
+        {% for type in types %}
+        {% if type %}
+        <option value="{{ type }}">{{ type }}</option>
+        {% endif %}
+        {% endfor %}
+      </select>
+    </div>
+    
+    <div class="search-controls">
+      <label for="search-publications">Search:</label>
+      <input type="text" id="search-publications" class="search-input" placeholder="Search by title, author, keywords...">
+    </div>
+  </div>
+  
+  <div class="publications-list">
+    {% assign grouped_publications = site.data.publications | group_by: "year" | sort: "name" | reverse %}
+    
+    {% for year_group in grouped_publications %}
+    <div class="publication-year" data-year="{{ year_group.name }}">
+      <h2 class="year-heading">{{ year_group.name }}</h2>
+      
+      {% assign sorted_items = year_group.items | sort: "title" %}
+      {% for publication in sorted_items %}
+      <div class="publication-item" 
+           data-year="{{ publication.year }}" 
+           data-type="{{ publication.type | default: 'article' }}">
+        <h3 class="publication-title">{{ publication.title }}</h3>
+        <p class="publication-authors">{{ publication.authors }}</p>
+        <p class="publication-venue">{{ publication.venue }}{% if publication.year %}, {{ publication.year }}{% endif %}</p>
+        
+        <div class="publication-links">
+          {% if publication.doi %}
+          <a href="https://doi.org/{{ publication.doi }}" class="publication-link" target="_blank">DOI</a>
+          {% endif %}
+          
+          {% if publication.pdf %}
+          <a href="{{ publication.pdf }}" class="publication-link" target="_blank">PDF</a>
+          {% endif %}
+          
+          {% if publication.url %}
+          <a href="{{ publication.url }}" class="publication-link" target="_blank">Link</a>
+          {% endif %}
+          
+          {% if publication.code %}
+          <a href="{{ publication.code }}" class="publication-link" target="_blank">Code</a>
+          {% endif %}
+          
+          {% if publication.slides %}
+          <a href="{{ publication.slides }}" class="publication-link" target="_blank">Slides</a>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const yearFilter = document.getElementById('year-filter');
+  const typeFilter = document.getElementById('type-filter');
+  const searchInput = document.getElementById('search-publications');
+  const publications = document.querySelectorAll('.publication-item');
+  
+  function applyFilters() {
+    const yearValue = yearFilter.value;
+    const typeValue = typeFilter.value;
+    const searchValue = searchInput.value.toLowerCase();
+    
+    publications.forEach(pub => {
+      const yearMatch = yearValue === 'all' || pub.dataset.year === yearValue;
+      const typeMatch = typeValue === 'all' || pub.dataset.type === typeValue;
+      
+      const searchMatch = searchValue === '' || 
+        pub.textContent.toLowerCase().includes(searchValue);
+      
+      pub.style.display = yearMatch && typeMatch && searchMatch ? 'block' : 'none';
+    });
+    
+    // Show/hide year headings based on visible publications
+    document.querySelectorAll('.publication-year').forEach(yearGroup => {
+      const hasVisiblePublications = Array.from(
+        yearGroup.querySelectorAll('.publication-item')
+      ).some(item => item.style.display !== 'none');
+      
+      yearGroup.style.display = hasVisiblePublications ? 'block' : 'none';
+    });
+  }
+  
+  yearFilter.addEventListener('change', applyFilters);
+  typeFilter.addEventListener('change', applyFilters);
+  searchInput.addEventListener('input', applyFilters);
+});
+</script>

@@ -1,0 +1,55 @@
+---
+layout: default
+title: Home
+---
+
+{% include profile-card.html %}
+
+<div class="home-content">
+  <section class="intro animate-on-scroll">
+    <h2 class="section-title">About Me</h2>
+    <p>Welcome to my academic website. I am a researcher and professor specializing in Digital Media Analysis. My research focuses on social media data analysis, online communication patterns, and computational methods for studying digital media.</p>
+    <p>I am currently a Professor at the Department of Communication Sciences at the University. Previously, I worked at several research institutions focusing on digital communication and media studies.</p>
+    <p>This website serves as a hub for my academic activities, research projects, and publications. Feel free to explore and reach out if you have any questions or collaboration ideas.</p>
+    
+    <div class="mt-lg flex gap-md">
+      <a href="/publications" class="btn">View Publications</a>
+      <a href="/contact" class="btn btn-outline">Contact Me</a>
+    </div>
+  </section>
+
+  <div class="animate-on-scroll">
+    {% include recent-publications.html %}
+  </div>
+  
+  <div class="animate-on-scroll">
+    {% include research-projects.html %}
+  </div>
+
+  <div class="grid grid-col-2 gap-lg mt-xl">
+    <section class="news animate-on-scroll">
+      <h2 class="section-title">News & Updates</h2>
+      <ul class="news-list">
+        {% assign sorted_news = site.data.news | sort: 'date' | reverse %}
+        {% for item in sorted_news limit:3 %}
+        <li class="news-item">
+          <span class="news-date">{{ item.date | date: "%B %d, %Y" }}</span>
+          <div class="news-content">
+            <p>{{ item.content }}</p>
+            {% if item.url %}
+            <a href="{{ item.url }}" class="news-link">Read more</a>
+            {% endif %}
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    
+    <section class="github-activity animate-on-scroll">
+      <!-- GitHub activity will be loaded dynamically via JavaScript -->
+      <div class="loading">
+        <i class="fas fa-circle-notch fa-spin"></i> Loading GitHub activity...
+      </div>
+    </section>
+  </div>
+</div>

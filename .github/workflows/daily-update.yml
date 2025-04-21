@@ -1,0 +1,35 @@
+name: Daily Profile Update
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Run at 00:00 UTC every day
+  workflow_dispatch:     # Allow manual trigger
+
+jobs:
+  update-profile-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Run data collection
+        run: node scripts/collect-all.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Add other API keys as needed
+      
+      - name: Commit and push if there are changes
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add public/data/
+          git diff --staged --quiet || (git commit -m "Auto-update profile data" && git push)
