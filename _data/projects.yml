@@ -1,20 +1,32 @@
-- title: "Social Media Analysis Platform"
-  description: "A project to develop tools for analyzing social media content and networks, with a focus on identifying patterns and trends in online communication."
-  image: "/assets/images/projects/social-media-project.jpg"
-  url: "/projects/social-media-analysis"
+- title: "vera.ai - VERification Assisted by Artificial Intelligence"
+  description: "An EU-funded Horizon Europe project developing advanced AI-based tools to assist journalists and fact-checkers in verifying multimedia content and combating disinformation. As Work Package 4 leader, I focus on the detection of coordinated behavior and inauthentic networks spreading misleading content."
+  image: "/assets/images/projects/veraai-project.jpg"
+  url: "https://www.veraai.eu/home"
   status: "Active"
   year: 2023
+  news:
+    - date: "2024-03-15"
+      content: "vera.ai team presented findings on coordinated networks at the International Fact-Checking Conference"
+      url: "https://www.veraai.eu/news"
 
-- title: "Digital Methods for Communication Research"
-  description: "Development of methodological approaches and tools for studying digital communication using computational methods and data analysis."
-  image: "/assets/images/projects/digital-methods-project.jpg"
-  url: "/projects/digital-methods"
+- title: "PROMPT - Predictive Research On Misinformation and Narratives Propagation Trajectories"
+  description: "An EU-funded initiative focused on detecting and analyzing disinformation narratives across Europe, addressing sensitive issues including the war in Ukraine, LGBTQI+ rights, and European elections through the development of language models, monitoring dashboards, and educational resources for fact-checkers and journalists."
+  image: "/assets/images/projects/prompt-project.jpg"
+  url: "https://disinfo-prompt.eu/"
   status: "Active"
   year: 2022
+  news:
+    - date: "2024-02-20"
+      content: "PROMPT launches new monitoring dashboard for tracking disinformation about the 2024 European elections"
+      url: "https://disinfo-prompt.eu/news"
 
-- title: "Online Information Ecosystems"
-  description: "Research into how information spreads across different platforms and communities online, examining factors that influence information flow."
-  image: "/assets/images/projects/info-ecosystems-project.jpg"
-  url: "/projects/information-ecosystems"
-  status: "Completed"
+- title: "MINE - Mapping Italian News Research Program"
+  description: "A research program investigating Italian news media coverage and the impact of social media on Italian elections, leveraging data from Social Science One and grant funding from the Social Science Research Council (SSRC)."
+  image: "/assets/images/projects/mine-project.jpg"
+  url: "https://mine.uniurb.it"
+  status: "Active"
   year: 2021
+  news:
+    - date: "2023-11-10"
+      content: "MINE project releases new findings on influence networks during the 2022 Italian elections"
+      url: "https://mine.uniurb.it/news"
