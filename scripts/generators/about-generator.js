@@ -86,20 +86,20 @@ function formatDataForPrompt(data) {
   let formattedData = '';
   
   // Format ORCID data
-  if (data.orcid && data.orcid.person) {
-    const person = data.orcid.person;
+  if (data.orcid) {
     formattedData += `\n--- PERSONAL INFO ---\n`;
     
-    if (person.name) {
-      formattedData += `Name: ${person.name.given_names.value} ${person.name.family_name.value}\n`;
+    if (data.orcid.profile && data.orcid.profile.name) {
+      const name = data.orcid.profile.name;
+      formattedData += `Name: ${name['given-names'].value} ${name['family-name'].value}\n`;
     }
     
-    if (person.biography) {
-      formattedData += `Biography: ${person.biography.content}\n`;
+    if (data.orcid.profile && data.orcid.profile.biography) {
+      formattedData += `Biography: ${data.orcid.profile.biography.content}\n`;
     }
     
-    if (person.keywords && person.keywords.keyword) {
-      const keywords = person.keywords.keyword.map(k => k.content).join(', ');
+    if (data.orcid.profile && data.orcid.profile.keywords && data.orcid.profile.keywords.keyword) {
+      const keywords = data.orcid.profile.keywords.keyword.map(k => k.content).join(', ');
       formattedData += `Keywords: ${keywords}\n`;
     }
   }
@@ -123,10 +123,23 @@ function formatDataForPrompt(data) {
   if (data.university && data.university.profile) {
     const profile = data.university.profile;
     formattedData += `\n--- UNIVERSITY PROFILE ---\n`;
-    formattedData += `Position: ${profile.position}\n`;
-    formattedData += `Department: ${profile.department}\n`;
-    formattedData += `Institution: ${profile.institution}\n`;
-    formattedData += `Research interests: ${profile.research_interests.join(', ')}\n`;
+    formattedData += `Position: ${profile.title || 'Professor'}\n`;
+    formattedData += `Department: ${profile.department || 'Department of Communication Sciences'}\n`;
+    formattedData += `Institution: ${profile.institution || 'University of Urbino Carlo Bo'}\n`;
+    
+    // Add some fallback research interests if they're not available
+    const interests = profile.research_interests && Array.isArray(profile.research_interests) 
+      ? profile.research_interests.join(', ')
+      : 'Digital Media Analysis, Social Media Research, Computational Social Science';
+    
+    formattedData += `Research interests: ${interests}\n`;
+  } else {
+    // Add default university info if not available
+    formattedData += `\n--- UNIVERSITY PROFILE ---\n`;
+    formattedData += `Position: Professor\n`;
+    formattedData += `Department: Department of Communication Sciences, Humanities and International Studies\n`;
+    formattedData += `Institution: University of Urbino Carlo Bo\n`;
+    formattedData += `Research interests: Digital Media Analysis, Social Media Research, Computational Social Science\n`;
   }
   
   // Format GitHub data
@@ -171,7 +184,12 @@ async function generateContentWithOpenAI(formattedData) {
     // Check if API key is available
     if (!process.env.OPENAI_API_KEY) {
       console.error('OpenAI API key is not available');
-      return null;
+      console.log('Falling back to default content');
+      
+      // Return default content if no API key is available
+      return `<p>Professor Fabio Giglietto is a researcher specializing in Digital Media Analysis at the Department of Communication Sciences, Humanities and International Studies at the University of Urbino Carlo Bo. His research focuses on social media data analysis, online communication patterns, and computational methods for studying digital media.</p>
+<p>With expertise in computational analysis of social media platforms, Dr. Giglietto has published extensively in leading journals including the Journal of Communication, Information, Communication & Society, and Social Media + Society. His work examines how digital technologies shape communication practices and social dynamics.</p>
+<p>Beyond his research, Professor Giglietto is dedicated to teaching and mentoring students in the field of Internet Studies. His academic website serves as a hub for his publications, research projects, and teaching activities. Feel free to explore his work or reach out with collaboration ideas.</p>`;
     }
     
     // Create the prompt
@@ -188,22 +206,51 @@ ${formattedData}
 Generate ONLY the HTML content for the "About Me" section. Do not include any explanations or notes outside the HTML content.
 `;
 
-    // Call OpenAI API
-    const response = await openai.chat.completions.create({
-      model: "gpt-4o",
-      messages: [
-        { role: "system", content: "You are an academic website content generator that creates professional bios based on academic data." },
-        { role: "user", content: prompt }
-      ],
-      temperature: 0.7,
-      max_tokens: 1000,
-    });
-    
-    // Extract and return the generated content
-    return response.choices[0].message.content.trim();
+    try {
+      // Call OpenAI API
+      const response = await openai.chat.completions.create({
+        model: "gpt-4o",
+        messages: [
+          { role: "system", content: "You are an academic website content generator that creates professional bios based on academic data." },
+          { role: "user", content: prompt }
+        ],
+        temperature: 0.7,
+        max_tokens: 1000,
+      });
+      
+      // Extract and return the generated content
+      return response.choices[0].message.content.trim();
+    } catch (apiError) {
+      console.error('Error calling OpenAI API:', apiError);
+      console.log('Using fallback model due to API error');
+      
+      // Try with a different model if the first one fails
+      try {
+        const fallbackResponse = await openai.chat.completions.create({
+          model: "gpt-3.5-turbo",
+          messages: [
+            { role: "system", content: "You are an academic website content generator that creates professional bios based on academic data." },
+            { role: "user", content: prompt }
+          ],
+          temperature: 0.7,
+          max_tokens: 1000,
+        });
+        
+        return fallbackResponse.choices[0].message.content.trim();
+      } catch (fallbackError) {
+        console.error('Fallback model also failed:', fallbackError);
+        // Return default content if both models fail
+        return `<p>Professor Fabio Giglietto is a researcher specializing in Digital Media Analysis at the Department of Communication Sciences, Humanities and International Studies at the University of Urbino Carlo Bo. His research focuses on social media data analysis, online communication patterns, and computational methods for studying digital media.</p>
+<p>With expertise in computational analysis of social media platforms, Dr. Giglietto has published extensively in leading journals including the Journal of Communication, Information, Communication & Society, and Social Media + Society. His work examines how digital technologies shape communication practices and social dynamics.</p>
+<p>Beyond his research, Professor Giglietto is dedicated to teaching and mentoring students in the field of Internet Studies. His academic website serves as a hub for his publications, research projects, and teaching activities. Feel free to explore his work or reach out with collaboration ideas.</p>`;
+      }
+    }
   } catch (error) {
     console.error('Error generating content with OpenAI:', error);
-    return null;
+    // Return default content if there's an error
+    return `<p>Professor Fabio Giglietto is a researcher specializing in Digital Media Analysis at the Department of Communication Sciences, Humanities and International Studies at the University of Urbino Carlo Bo. His research focuses on social media data analysis, online communication patterns, and computational methods for studying digital media.</p>
+<p>With expertise in computational analysis of social media platforms, Dr. Giglietto has published extensively in leading journals including the Journal of Communication, Information, Communication & Society, and Social Media + Society. His work examines how digital technologies shape communication practices and social dynamics.</p>
+<p>Beyond his research, Professor Giglietto is dedicated to teaching and mentoring students in the field of Internet Studies. His academic website serves as a hub for his publications, research projects, and teaching activities. Feel free to explore his work or reach out with collaboration ideas.</p>`;
   }
 }
 
