@@ -16,6 +16,9 @@ const githubCollector = require('./collectors/github');
 const newsCollector = require('./collectors/news');
 const webSearchCollector = require('./collectors/websearch');
 
+// Import the about generator
+const aboutGenerator = require('./generators/about-generator');
+
 // Ensure data directory exists
 const dataDir = path.join(__dirname, '../public/data');
 if (!fs.existsSync(dataDir)) {
@@ -79,6 +82,19 @@ async function collectAll() {
     fs.writeFileSync(path.join(dataDir, 'summary.json'), JSON.stringify(summary, null, 2));
     
     console.log('Data collection completed successfully');
+    
+    // Generate About Me section using OpenAI
+    try {
+      const aboutGenerated = await aboutGenerator.generateAboutMe();
+      if (aboutGenerated) {
+        console.log('About Me section generated successfully');
+      } else {
+        console.log('About Me section generation skipped or failed');
+      }
+    } catch (genError) {
+      console.error('Error generating About Me section:', genError);
+      // Continue execution even if the generation fails
+    }
   } catch (error) {
     console.error('Error in data collection process:', error);
     process.exit(1);

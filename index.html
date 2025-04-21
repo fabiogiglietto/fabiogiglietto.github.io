@@ -8,9 +8,13 @@ title: Home
 <div class="home-content">
   <section class="intro animate-on-scroll">
     <h2 class="section-title">About Me</h2>
-    <p>Welcome to my academic website. I am a researcher and professor specializing in Digital Media Analysis. My research focuses on social media data analysis, online communication patterns, and computational methods for studying digital media.</p>
-    <p>I am currently a Professor at the Department of Communication Sciences at the University. Previously, I worked at several research institutions focusing on digital communication and media studies.</p>
-    <p>This website serves as a hub for my academic activities, research projects, and publications. Feel free to explore and reach out if you have any questions or collaboration ideas.</p>
+    {% if site.use_generated_about and site.use_generated_about != false %}
+      {% include generated-about.html %}
+    {% else %}
+      <p>Welcome to my academic website. I am a researcher and professor specializing in Digital Media Analysis. My research focuses on social media data analysis, online communication patterns, and computational methods for studying digital media.</p>
+      <p>I am currently a Professor at the Department of Communication Sciences at the University. Previously, I worked at several research institutions focusing on digital communication and media studies.</p>
+      <p>This website serves as a hub for my academic activities, research projects, and publications. Feel free to explore and reach out if you have any questions or collaboration ideas.</p>
+    {% endif %}
     
     <div class="mt-lg flex gap-md">
       <a href="/publications" class="btn">View Publications</a>
