@@ -5,6 +5,9 @@
  * about the user's online presence, engagement patterns, and content themes.
  */
 
+// Load environment variables from .env file for local development
+require('dotenv').config();
+
 const fs = require('fs');
 const path = require('path');
 const { OpenAI } = require('openai');

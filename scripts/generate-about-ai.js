@@ -8,6 +8,9 @@
  * or fall back to mock data when run locally without the API key.
  */
 
+// Load environment variables from .env file for local development
+require('dotenv').config();
+
 const fs = require('fs');
 const path = require('path');
 

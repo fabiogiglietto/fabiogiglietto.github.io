@@ -12,8 +12,14 @@ async function collect() {
   // This would typically use an API key stored in an environment variable
   const apiKey = process.env.WOS_API_KEY;
   
+  // Check if this is running on GitHub Actions
+  const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
+  
   if (!apiKey) {
-    console.warn('Web of Science API key not found. Using mock data instead.');
+    // Only show warning in GitHub Actions environment
+    if (isGitHubActions) {
+      console.warn('Web of Science API key not found. Add WOS_API_KEY to repository secrets for live data.');
+    }
     return getMockData();
   }
   

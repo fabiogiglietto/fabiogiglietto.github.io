@@ -15,8 +15,14 @@ async function collect() {
   // Author ID for Fabio Giglietto in Scopus (example, replace with actual ID)
   const authorId = '57195370155';
   
+  // Check if this is running on GitHub Actions
+  const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
+  
   if (!apiKey) {
-    console.warn('Scopus API key not found. Using mock data instead.');
+    // Only show warning in GitHub Actions environment
+    if (isGitHubActions) {
+      console.warn('Scopus API key not found. Add SCOPUS_API_KEY to repository secrets for live data.');
+    }
     return getMockData();
   }
   

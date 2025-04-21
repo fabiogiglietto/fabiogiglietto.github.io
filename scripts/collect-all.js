@@ -5,6 +5,9 @@
  * and handles error logging and data saving.
  */
 
+// Load environment variables from .env file for local development
+require('dotenv').config();
+
 const fs = require('fs');
 const path = require('path');
 
@@ -37,46 +40,70 @@ async function collectAll() {
   try {
     console.log('Starting data collection...');
     
-    // Run all collectors in parallel
+    // Check if running in GitHub Actions to manage verbose warnings
+    const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
+    const hasOpenAIKey = process.env.OPENAI_API_KEY && process.env.OPENAI_API_KEY.startsWith('sk-');
+    
+    // Show API setup status once at the beginning
+    if (isGitHubActions) {
+      console.log('Running in GitHub Actions environment');
+      console.log('API keys status:');
+      console.log(`- OpenAI API key: ${hasOpenAIKey ? 'Available' : 'Missing'}`);
+      console.log(`- Web of Science API key: ${process.env.WOS_API_KEY ? 'Available' : 'Missing'}`);
+      console.log(`- Scopus API key: ${process.env.SCOPUS_API_KEY ? 'Available' : 'Missing'}`);
+    }
+    
+    // Run all collectors in parallel with quiet error handling
     const [orcidData, scholarData, universityData, githubData, newsData, webSearchData, socialMediaData, wosData, scopusData, aggregatedPublicationsData] = await Promise.all([
       orcidCollector.collect().catch(err => {
-        console.error('ORCID collection error:', err);
+        console.error('ORCID collection error:', err.message);
         return null;
       }),
       scholarCollector.collect().catch(err => {
-        console.error('Scholar collection error:', err);
+        console.error('Scholar collection error:', err.message);
         return null;
       }),
       universityCollector.collect().catch(err => {
-        console.error('University collection error:', err);
+        console.error('University collection error:', err.message);
         return null;
       }),
       githubCollector.collect().catch(err => {
-        console.error('GitHub collection error:', err);
+        console.error('GitHub collection error:', err.message);
         return null;
       }),
       newsCollector.collect().catch(err => {
-        console.error('News collection error:', err);
+        console.error('News collection error:', err.message);
         return null;
       }),
       webSearchCollector().catch(err => {
-        console.error('Web Search collection error:', err);
+        // Don't show detailed errors for OpenAI when not in GitHub Actions
+        if (!isGitHubActions && err.message.includes('OpenAI')) {
+          console.log('Web Search requires OpenAI API key, using mock data');
+        } else {
+          console.error('Web Search collection error:', err.message);
+        }
         return null;
       }),
       socialMediaCollector.collect().catch(err => {
-        console.error('Social Media collection error:', err);
+        console.error('Social Media collection error:', err.message);
         return null;
       }),
       wosCollector.collect().catch(err => {
-        console.error('Web of Science collection error:', err);
+        // Only show detailed WoS errors in GitHub Actions
+        if (isGitHubActions) {
+          console.error('Web of Science collection error:', err.message);
+        }
         return null;
       }),
       scopusCollector.collect().catch(err => {
-        console.error('Scopus collection error:', err);
+        // Only show detailed Scopus errors in GitHub Actions
+        if (isGitHubActions) {
+          console.error('Scopus collection error:', err.message);
+        }
         return null;
       }),
       publicationsAggregator.collect().catch(err => {
-        console.error('Publications aggregation error:', err);
+        console.error('Publications aggregation error:', err.message);
         return null;
       })
     ]);
