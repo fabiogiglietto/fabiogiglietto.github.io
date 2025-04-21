@@ -28,8 +28,8 @@ async function generateAboutMe() {
     console.log('Generating About Me section...');
     
     // Check if OpenAI API key is available early
-    if (!process.env.OPENAI_API_KEY) {
-      console.warn('OPENAI_API_KEY environment variable is not set');
+    if (!process.env.OPENAI_API_KEY || !openai) {
+      console.warn('OPENAI_API_KEY environment variable is not set or OpenAI client failed to initialize');
       console.log('Generating fallback content instead of using OpenAI API');
       return generateFallbackContent();
     }
@@ -235,6 +235,12 @@ async function generateContentWithOpenAI(formattedData) {
       return null;
     }
     
+    // Double-check that the API key is still set (could have been unset between checks)
+    if (!process.env.OPENAI_API_KEY) {
+      console.error('OPENAI_API_KEY no longer available');
+      return null;
+    }
+    
     // Create the prompt
     const prompt = `
 You are an academic website content generator. Your task is to create a professional "About Me" section for an academic's personal website.
@@ -246,25 +252,56 @@ Keep the tone professional but approachable. The content should be 3-4 paragraph
 Here is the academic's information:
 ${formattedData}
 
-Generate ONLY the HTML content for the "About Me" section. Do not include any explanations or notes outside the HTML content.
+Additionally, search the web for recent information about Fabio Giglietto, particularly focusing on:
+1. Recent publications or research projects
+2. University of Urbino Carlo Bo affiliations
+3. Current research on social media analysis, disinformation, or computational social science
+4. Any recent grants, awards, or important professional activities
+5. Latest posts and activity on BlueSky (@fabiogiglietto.bsky.social), Mastodon, Threads, and LinkedIn
+
+For the social media content, don't create a separate social media section, but instead use this information to understand his current work and interests, then incorporate these insights naturally into the biography. Focus on the professional content from his social profiles that reveals what projects he's currently working on.
+
+Include any relevant up-to-date information you find in the biography, but maintain a professional tone.
+
+Generate ONLY the HTML content for the "About Me" section. Do not include any explanations, notes, or markdown formatting outside the HTML content. Your response should be valid HTML that starts with <p> and ends with </p> without any additional formatting or explanation.
 `;
 
     console.log('Calling OpenAI API with GPT-4o...');
     
     try {
-      // Call OpenAI API
+      // Call OpenAI API with web search capability
       const response = await openai.chat.completions.create({
         model: "gpt-4o",
         messages: [
-          { role: "system", content: "You are an academic website content generator that creates professional bios based on academic data." },
+          { role: "system", content: "You are an academic website content generator that creates professional bios based on academic data. Output ONLY valid HTML without any markdown formatting or additional text." },
           { role: "user", content: prompt }
         ],
         temperature: 0.7,
         max_tokens: 1000,
+        tools: [{ "type": "web_search_preview" }]
       });
       
-      // Extract and return the generated content
-      const content = response.choices[0].message.content.trim();
+      // Extract the generated content
+      let content = response.choices[0].message.content.trim();
+      
+      // Validate that the response is HTML content (starts with <p> or similar)
+      if (!content.startsWith('<p') && !content.startsWith('<div') && !content.startsWith('<section')) {
+        console.warn('Generated content does not appear to be properly formatted HTML');
+        // Try to fix if it seems like valid content but incorrectly formatted
+        if (content.includes('<p>')) {
+          // Extract just the HTML portion
+          const htmlStart = content.indexOf('<p>');
+          const htmlEnd = content.lastIndexOf('</p>') + 4;
+          if (htmlStart >= 0 && htmlEnd > htmlStart) {
+            content = content.substring(htmlStart, htmlEnd);
+            console.log('Fixed content formatting to extract HTML portion');
+          }
+        } else {
+          console.error('Could not extract valid HTML from response');
+          return null;
+        }
+      }
+      
       console.log('Successfully generated content with GPT-4o');
       return content;
     } catch (apiError) {
@@ -276,14 +313,35 @@ Generate ONLY the HTML content for the "About Me" section. Do not include any ex
         const fallbackResponse = await openai.chat.completions.create({
           model: "gpt-3.5-turbo",
           messages: [
-            { role: "system", content: "You are an academic website content generator that creates professional bios based on academic data." },
+            { role: "system", content: "You are an academic website content generator that creates professional bios based on academic data. Output ONLY valid HTML without any markdown formatting or additional text." },
             { role: "user", content: prompt }
           ],
           temperature: 0.7,
           max_tokens: 1000,
+          tools: [{ "type": "web_search_preview" }]
         });
         
-        const content = fallbackResponse.choices[0].message.content.trim();
+        // Extract the generated content
+        let content = fallbackResponse.choices[0].message.content.trim();
+        
+        // Validate that the response is HTML content (starts with <p> or similar)
+        if (!content.startsWith('<p') && !content.startsWith('<div') && !content.startsWith('<section')) {
+          console.warn('Generated content from fallback model does not appear to be properly formatted HTML');
+          // Try to fix if it seems like valid content but incorrectly formatted
+          if (content.includes('<p>')) {
+            // Extract just the HTML portion
+            const htmlStart = content.indexOf('<p>');
+            const htmlEnd = content.lastIndexOf('</p>') + 4;
+            if (htmlStart >= 0 && htmlEnd > htmlStart) {
+              content = content.substring(htmlStart, htmlEnd);
+              console.log('Fixed content formatting to extract HTML portion');
+            }
+          } else {
+            console.error('Could not extract valid HTML from fallback response');
+            return null;
+          }
+        }
+        
         console.log('Successfully generated content with GPT-3.5-turbo');
         return content;
       } catch (fallbackError) {

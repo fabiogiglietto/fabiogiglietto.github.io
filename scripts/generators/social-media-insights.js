@@ -239,9 +239,9 @@ function generateHtmlInclude(insights) {
  */
 function getPlatformIcon(platform) {
   const icons = {
-    twitter: 'fab fa-x-twitter',
     mastodon: 'fab fa-mastodon',
-    linkedin: 'fab fa-linkedin'
+    linkedin: 'fab fa-linkedin',
+    bluesky: 'fa-solid fa-cloud'
   };
   
   return icons[platform.toLowerCase()] || 'fas fa-globe';
@@ -262,7 +262,7 @@ function capitalizeFirstLetter(string) {
  */
 function getFallbackInsights() {
   const fallbackInsights = {
-    "overallSummary": "Fabio Giglietto maintains an active presence across Twitter, Mastodon, and LinkedIn with a combined following of over 3,800 followers. His content primarily focuses on academic research, computational methods for social media analysis, and disinformation studies. Engagement is highest on LinkedIn, where professional research announcements receive substantial interaction.",
+    "overallSummary": "Fabio Giglietto maintains an active presence across Bluesky, Mastodon, and LinkedIn with a combined following of over 3,800 followers. His content primarily focuses on academic research, computational methods for social media analysis, and disinformation studies. Engagement is highest on LinkedIn, where professional research announcements receive substantial interaction.",
     "engagementMetrics": {
       "totalFollowers": 3880,
       "averageEngagementRate": 4.2,
@@ -276,7 +276,7 @@ function getFallbackInsights() {
     ],
     "recommendations": [
       "Increase cross-platform content sharing to maximize reach across different audience segments",
-      "Develop more visual content to improve engagement rates, particularly on Twitter",
+      "Develop more visual content to improve engagement rates, particularly on Bluesky",
       "Consider creating short-form explanatory content about research methods to build audience engagement",
       "Establish a consistent posting schedule to maintain regular audience interaction"
     ],
@@ -293,7 +293,7 @@ function getFallbackInsights() {
       },
       {
         "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
-        "platform": "Twitter",
+        "platform": "Bluesky",
         "engagementRate": 4.8
       },
       {

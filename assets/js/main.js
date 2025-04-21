@@ -281,7 +281,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // Get platform icon class
   const getPlatformIcon = (platform) => {
     const icons = {
-      twitter: 'fab fa-x-twitter',
       bluesky: 'fa-solid fa-cloud',
       mastodon: 'fab fa-mastodon',
       linkedin: 'fab fa-linkedin',

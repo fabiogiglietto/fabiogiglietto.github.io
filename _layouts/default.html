@@ -25,12 +25,11 @@
   <meta property="og:image" content="{{ site.url }}{{ page.image }}">
   {% endif %}
   
-  <!-- Twitter Card Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title | default: 'Fabio Giglietto' }}{% endif %}">
-  <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+  <!-- Social Card Meta Tags -->
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   {% if page.image %}
-  <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+  <meta property="og:image:alt" content="{{ page.title | default: site.title }}">
   {% endif %}
   
   <!-- Favicon -->
