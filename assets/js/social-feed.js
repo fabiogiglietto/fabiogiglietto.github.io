@@ -41,7 +41,7 @@ function initializeTabs() {
 async function loadSocialPosts() {
   try {
     // Load all social media data
-    const response = await fetch('/public/data/social-media.json');
+    const response = await fetch('/data/social-media.json');
     
     if (response.ok) {
       const data = await response.json();
