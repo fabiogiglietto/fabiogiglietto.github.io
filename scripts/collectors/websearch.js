@@ -4,12 +4,31 @@ const { promisify } = require('util');
 const writeFileAsync = promisify(fs.writeFile);
 const OpenAI = require('openai');
 
+// Check for API key in environment
+const hasValidApiKey = process.env.OPENAI_API_KEY && process.env.OPENAI_API_KEY.startsWith('sk-');
+
+// Check if running in GitHub Actions
+const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
+
 /**
  * Collector for fetching web search results about Fabio Giglietto
  * using OpenAI Web Search API
  */
 async function collectWebSearchResults() {
   try {
+    // Early check for API key
+    if (!hasValidApiKey) {
+      if (isGitHubActions) {
+        console.error('OPENAI_API_KEY environment variable is missing or invalid in GitHub Actions!');
+        console.error('Please add the OPENAI_API_KEY secret to the repository settings.');
+      } else {
+        console.log('OPENAI_API_KEY environment variable is not set or OpenAI client failed to initialize');
+      }
+      
+      // Generate mock data when no API key is available
+      return await saveMockData();
+    }
+    
     // Configure OpenAI API
     const openai = new OpenAI({
       apiKey: process.env.OPENAI_API_KEY,
@@ -29,37 +48,48 @@ async function collectWebSearchResults() {
     for (const query of queries) {
       console.log(`Searching for: ${query}`);
       
-      const response = await openai.chat.completions.create({
-        model: "gpt-3.5-turbo",
-        messages: [
-          {
-            role: "system",
-            content: "You are a helpful assistant that searches the web."
-          },
-          {
-            role: "user",
-            content: `Search the web for recent information about: ${query}. Return only the most relevant and recent results from the past year.`
+      try {
+        const response = await openai.chat.completions.create({
+          model: "gpt-3.5-turbo",
+          messages: [
+            {
+              role: "system",
+              content: "You are a helpful assistant that searches the web."
+            },
+            {
+              role: "user",
+              content: `Search the web for recent information about: ${query}. Return only the most relevant and recent results from the past year.`
+            }
+          ],
+          tools: [{ type: "web_search" }],
+          tool_choice: { type: "web_search" }
+        });
+  
+        // Process tool calls and extract search results
+        const toolCall = response.choices[0]?.message?.tool_calls?.[0];
+        let searchResults = [];
+        
+        if (toolCall && toolCall.function && toolCall.function.arguments) {
+          try {
+            const args = JSON.parse(toolCall.function.arguments);
+            searchResults = args.results || [];
+          } catch (e) {
+            console.error('Error parsing search results:', e);
           }
-        ],
-        tools: [{ type: "web_search" }],
-        tool_choice: { type: "web_search" }
-      });
-
-      // Process tool calls and extract search results
-      const toolCall = response.choices[0]?.message?.tool_calls?.[0];
-      let searchResults = [];
-      
-      if (toolCall && toolCall.function && toolCall.function.arguments) {
-        try {
-          const args = JSON.parse(toolCall.function.arguments);
-          searchResults = args.results || [];
-        } catch (e) {
-          console.error('Error parsing search results:', e);
         }
+        
+        // Add to all results
+        allResults = [...allResults, ...searchResults];
+      } catch (queryError) {
+        console.error(`Error searching for "${query}":`, queryError.message);
+        // Continue with other queries even if one fails
       }
-      
-      // Add to all results
-      allResults = [...allResults, ...searchResults];
+    }
+
+    // If we didn't get any results, fall back to mock data
+    if (allResults.length === 0) {
+      console.log('No search results found. Using mock data instead.');
+      return await saveMockData();
     }
 
     // Remove duplicates by URL
@@ -82,24 +112,28 @@ async function collectWebSearchResults() {
     // Limit to most recent 20 results
     const recentResults = formattedResults.slice(0, 20);
 
-    // Create mock data for testing if no results are found (used in development)
-    const finalResults = recentResults.length > 0 ? recentResults : createMockResults();
-
     // Write to JSON file
     const outputPath = path.join(__dirname, '../../public/data/websearch.json');
-    await writeFileAsync(outputPath, JSON.stringify(finalResults, null, 2));
+    await writeFileAsync(outputPath, JSON.stringify(recentResults, null, 2));
 
     console.log(`Successfully collected web search results and saved to ${outputPath}`);
-    return finalResults;
+    return recentResults;
   } catch (error) {
     console.error('Error collecting web search results:', error);
     // Return mock data if there's an error
-    const mockData = createMockResults();
-    const outputPath = path.join(__dirname, '../../public/data/websearch.json');
-    await writeFileAsync(outputPath, JSON.stringify(mockData, null, 2));
-    console.log(`Created mock data and saved to ${outputPath}`);
-    return mockData;
+    return await saveMockData();
   }
+}
+
+/**
+ * Save mock data to the output file
+ */
+async function saveMockData() {
+  const mockData = createMockResults();
+  const outputPath = path.join(__dirname, '../../public/data/websearch.json');
+  await writeFileAsync(outputPath, JSON.stringify(mockData, null, 2));
+  console.log(`Created mock data and saved to ${outputPath}`);
+  return mockData;
 }
 
 /**
