@@ -58,6 +58,21 @@ layout: page
           <a href="{{ publication.pdf }}" class="publication-link" target="_blank">PDF</a>
           {% endif %}
           
+          {% if publication.urls %}
+            {% if publication.urls.doi %}
+            <a href="{{ publication.urls.doi }}" class="publication-link" target="_blank">DOI</a>
+            {% endif %}
+            {% if publication.urls.scholar %}
+            <a href="{{ publication.urls.scholar }}" class="publication-link" target="_blank">Scholar</a>
+            {% endif %}
+            {% if publication.urls.wos %}
+            <a href="{{ publication.urls.wos }}" class="publication-link" target="_blank">WoS</a>
+            {% endif %}
+            {% if publication.urls.scopus %}
+            <a href="{{ publication.urls.scopus }}" class="publication-link" target="_blank">Scopus</a>
+            {% endif %}
+          {% endif %}
+          
           {% if publication.url %}
           <a href="{{ publication.url }}" class="publication-link" target="_blank">Link</a>
           {% endif %}
@@ -68,6 +83,27 @@ layout: page
           
           {% if publication.slides %}
           <a href="{{ publication.slides }}" class="publication-link" target="_blank">Slides</a>
+          {% endif %}
+          
+          {% if publication.citation_sources %}
+            <span class="citation-count">
+              <i class="fas fa-quote-right"></i> {{ publication.citations }}
+              {% if publication.citation_sources.scholar %}
+                <span class="citation-source" title="Google Scholar citations: {{ publication.citation_sources.scholar }}">
+                  GS:{{ publication.citation_sources.scholar }}
+                </span>
+              {% endif %}
+              {% if publication.citation_sources.wos %}
+                <span class="citation-source" title="Web of Science citations: {{ publication.citation_sources.wos }}">
+                  WoS:{{ publication.citation_sources.wos }}
+                </span>
+              {% endif %}
+              {% if publication.citation_sources.scopus %}
+                <span class="citation-source" title="Scopus citations: {{ publication.citation_sources.scopus }}">
+                  Sco:{{ publication.citation_sources.scopus }}
+                </span>
+              {% endif %}
+            </span>
           {% endif %}
         </div>
       </div>

@@ -396,6 +396,32 @@ a:hover {
   text-decoration: none;
 }
 
+.citation-count {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin-left: var(--spacing-sm);
+  background-color: var(--light-gray);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+}
+
+.citation-count i {
+  margin-right: 0.25rem;
+  color: var(--accent-color);
+}
+
+.citation-source {
+  display: inline-block;
+  font-size: 0.75rem;
+  background-color: rgba(0,0,0,0.05);
+  color: var(--secondary-light);
+  border-radius: var(--radius-sm);
+  padding: 0.1rem 0.3rem;
+  margin-left: 0.25rem;
+}
+
 /* Projects */
 .projects-grid {
   display: grid;

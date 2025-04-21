@@ -15,6 +15,20 @@
         {% if publication.pdf %}
         <a href="{{ publication.pdf }}" class="publication-link" target="_blank">PDF</a>
         {% endif %}
+        {% if publication.urls %}
+          {% if publication.urls.doi %}
+          <a href="{{ publication.urls.doi }}" class="publication-link" target="_blank">DOI</a>
+          {% endif %}
+          {% if publication.urls.scholar %}
+          <a href="{{ publication.urls.scholar }}" class="publication-link" target="_blank">Scholar</a>
+          {% endif %}
+          {% if publication.urls.wos %}
+          <a href="{{ publication.urls.wos }}" class="publication-link" target="_blank">WoS</a>
+          {% endif %}
+          {% if publication.urls.scopus %}
+          <a href="{{ publication.urls.scopus }}" class="publication-link" target="_blank">Scopus</a>
+          {% endif %}
+        {% endif %}
         {% if publication.url %}
         <a href="{{ publication.url }}" class="publication-link" target="_blank">Link</a>
         {% endif %}

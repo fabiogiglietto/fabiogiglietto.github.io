@@ -16,6 +16,9 @@ const githubCollector = require('./collectors/github');
 const newsCollector = require('./collectors/news');
 const webSearchCollector = require('./collectors/websearch');
 const socialMediaCollector = require('./collectors/social-media');
+const wosCollector = require('./collectors/wos');
+const scopusCollector = require('./collectors/scopus');
+const publicationsAggregator = require('./collectors/publications-aggregator');
 
 // Import generators
 const aboutGenerator = require('./generators/about-generator');
@@ -35,7 +38,7 @@ async function collectAll() {
     console.log('Starting data collection...');
     
     // Run all collectors in parallel
-    const [orcidData, scholarData, universityData, githubData, newsData, webSearchData, socialMediaData] = await Promise.all([
+    const [orcidData, scholarData, universityData, githubData, newsData, webSearchData, socialMediaData, wosData, scopusData, aggregatedPublicationsData] = await Promise.all([
       orcidCollector.collect().catch(err => {
         console.error('ORCID collection error:', err);
         return null;
@@ -63,6 +66,18 @@ async function collectAll() {
       socialMediaCollector.collect().catch(err => {
         console.error('Social Media collection error:', err);
         return null;
+      }),
+      wosCollector.collect().catch(err => {
+        console.error('Web of Science collection error:', err);
+        return null;
+      }),
+      scopusCollector.collect().catch(err => {
+        console.error('Scopus collection error:', err);
+        return null;
+      }),
+      publicationsAggregator.collect().catch(err => {
+        console.error('Publications aggregation error:', err);
+        return null;
       })
     ]);
     
@@ -74,6 +89,9 @@ async function collectAll() {
     if (newsData) fs.writeFileSync(path.join(dataDir, 'news.json'), JSON.stringify(newsData, null, 2));
     if (webSearchData) fs.writeFileSync(path.join(dataDir, 'websearch.json'), JSON.stringify(webSearchData, null, 2));
     if (socialMediaData) fs.writeFileSync(path.join(dataDir, 'social-media.json'), JSON.stringify(socialMediaData, null, 2));
+    if (wosData) fs.writeFileSync(path.join(dataDir, 'wos.json'), JSON.stringify(wosData, null, 2));
+    if (scopusData) fs.writeFileSync(path.join(dataDir, 'scopus.json'), JSON.stringify(scopusData, null, 2));
+    if (aggregatedPublicationsData) fs.writeFileSync(path.join(dataDir, 'aggregated-publications.json'), JSON.stringify(aggregatedPublicationsData, null, 2));
     
     // Create a summary file with collection timestamp
     const summary = {
@@ -85,7 +103,10 @@ async function collectAll() {
         github: !!githubData,
         news: !!newsData,
         websearch: !!webSearchData,
-        socialMedia: !!socialMediaData
+        socialMedia: !!socialMediaData,
+        wos: !!wosData,
+        scopus: !!scopusData,
+        aggregatedPublications: !!aggregatedPublicationsData
       }
     };
     
