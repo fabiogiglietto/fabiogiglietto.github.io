@@ -15,39 +15,6 @@ async function collect() {
   const orcidId = '0000-0001-8019-1035';
   
   try {
-    // Get profile information
-    const profileResponse = await axios.get(`https://pub.orcid.org/v3.0/${orcidId}`, {
-      headers: {
-        'Accept': 'application/json'
-      }
-    });
-    
-    const profile = profileResponse.data.person;
-    
-    // Fetch works with pagination to get all publications
-    const allWorks = await fetchAllWorks(orcidId);
-    
-    console.log(`Collected ${allWorks.length} works from ORCID`);
-    
-    // Process and return the data
-    return {
-      profile: profile,
-      works: allWorks,
-      lastUpdated: new Date().toISOString()
-    };
-  } catch (error) {
-    console.error('Error fetching ORCID data:', error.message);
-    throw error;
-  }
-}
-
-/**
- * Fetches all works from ORCID using OAuth token
- * @param {string} orcidId The ORCID identifier
- * @returns {Array} All work groups
- */
-async function fetchAllWorks(orcidId) {
-  try {
     console.log('Getting OAuth token for ORCID API access...');
     
     // First get an OAuth token using client credentials flow
@@ -64,36 +31,79 @@ async function fetchAllWorks(orcidId) {
     const accessToken = tokenResponse.data.access_token;
     console.log(`Obtained access token: ${accessToken.substring(0, 10)}...`);
     
-    // Now fetch all works using the token
-    console.log('Fetching all works with token...');
-    const worksResponse = await axios.get(
-      `https://pub.orcid.org/v3.0/${orcidId}/works`, {
+    // Fetch the complete ORCID record using the proper endpoint with JSON-LD format
+    console.log('Fetching complete ORCID record with token in JSON-LD format...');
+    const recordResponse = await axios.get(
+      `https://pub.orcid.org/v3.0/${orcidId}/record`, {
         headers: { 
-          'Accept': 'application/json',
+          'Accept': 'application/ld+json; qs=4',
           'Authorization': `Bearer ${accessToken}`  
         }
       }
     );
     
-    const works = worksResponse.data.group || [];
-    console.log(`Retrieved ${works.length} works from ORCID`);
+    console.log('Response type:', recordResponse.headers['content-type']);
     
-    // Debug: Save the works data to file
+    // Handle the response based on content type
+    let profile = {};
+    let works = [];
+    
     try {
-      fs.writeFileSync('/tmp/orcid-works-full.json', JSON.stringify(worksResponse.data, null, 2));
-      console.log('Works data saved to /tmp/orcid-works-full.json');
-    } catch (writeError) {
-      console.error('Error saving works data to file:', writeError);
+      // For JSON-LD format
+      if (recordResponse.headers['content-type'].includes('application/ld+json')) {
+        console.log('Processing JSON-LD response');
+        const data = recordResponse.data;
+        
+        // Extract profile information from JSON-LD
+        profile = {
+          name: data.name || {},
+          biography: data.description || '',
+          // Extract other profile information as needed
+        };
+        
+        // Extract works from JSON-LD format
+        works = Array.isArray(data.hasOccupation) ? data.hasOccupation : [];
+        console.log(`Retrieved ${works.length} works from JSON-LD format`);
+      } 
+      // For standard JSON format
+      else {
+        console.log('Processing standard JSON response');
+        profile = recordResponse.data.person || {};
+        works = recordResponse.data.activities?.['works']?.group || [];
+        console.log(`Retrieved ${works.length} works from standard JSON format`);
+      }
+    } catch (parseError) {
+      console.error('Error parsing ORCID response:', parseError);
+      console.log('Response data:', recordResponse.data);
     }
     
-    return works;
+    // Debug: Save the record data to file
+    try {
+      fs.writeFileSync('/tmp/orcid-record-full.json', JSON.stringify(recordResponse.data, null, 2));
+      console.log('Complete record data saved to /tmp/orcid-record-full.json');
+    } catch (writeError) {
+      console.error('Error saving record data to file:', writeError);
+    }
+    
+    // Process and return the data
+    return {
+      profile: profile,
+      works: works,
+      lastUpdated: new Date().toISOString()
+    };
   } catch (error) {
-    console.error('Error in ORCID OAuth flow:', error);
+    console.error('Error fetching ORCID data:', error.message);
     console.error('Error details:', error.response?.data || 'No response data');
     
-    // Return empty array on error
-    return [];
+    // Return minimal data structure on error
+    return {
+      profile: {},
+      works: [],
+      lastUpdated: new Date().toISOString(),
+      error: error.message
+    };
   }
 }
+
 
 module.exports = { collect };
