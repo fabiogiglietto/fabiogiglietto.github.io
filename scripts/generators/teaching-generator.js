@@ -119,13 +119,37 @@ function formatTeachingData(teachingData) {
       return yearB.localeCompare(yearA);
     });
     
-    // Get all current courses
-    const currentCourses = allCourses.filter(course => course.current);
+    // Get all current courses and remove duplicates by title
+    const currentCourses = [];
+    const currentCourseTitles = new Set();
+    
+    // Filter current courses and remove duplicates
+    allCourses.filter(course => course.current).forEach(course => {
+      // Create a unique key from the title and academic year
+      const courseKey = `${course.title}-${course.academic_year}`;
+      
+      // Only add the course if we haven't seen this title+year combination
+      if (!currentCourseTitles.has(courseKey)) {
+        currentCourseTitles.add(courseKey);
+        currentCourses.push(course);
+      }
+    });
     
     // Get past courses (limit to most recent 10 courses)
-    const pastCourses = allCourses
-      .filter(course => !course.current)
-      .slice(0, 10);
+    const pastCourseTitles = new Set();
+    const pastCourses = [];
+    
+    // Filter past courses, remove duplicates, and limit to 10
+    allCourses.filter(course => !course.current).forEach(course => {
+      // Create a unique key from the title and academic year
+      const courseKey = `${course.title}-${course.academic_year}`;
+      
+      // Only add the course if we haven't seen this title+year combination and we haven't reached 10 past courses
+      if (!pastCourseTitles.has(courseKey) && pastCourses.length < 10) {
+        pastCourseTitles.add(courseKey);
+        pastCourses.push(course);
+      }
+    });
     
     // Combine current and past courses
     formatted.courses = [...currentCourses, ...pastCourses];
@@ -158,6 +182,24 @@ function hashString(str) {
     hash = hash & hash; // Convert to 32bit integer
   }
   return Math.abs(hash);
+}
+
+// Run the generator if this file is called directly
+if (require.main === module) {
+  (async () => {
+    try {
+      const result = await generateTeachingData();
+      if (result) {
+        console.log('Teaching data generated successfully when run directly.');
+      } else {
+        console.error('Failed to generate teaching data when run directly.');
+        process.exit(1);
+      }
+    } catch (error) {
+      console.error('Error running teaching generator directly:', error);
+      process.exit(1);
+    }
+  })();
 }
 
 module.exports = { generateTeachingData };
