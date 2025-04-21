@@ -6,10 +6,22 @@
     "mostEngagingPlatform": "LinkedIn"
   },
   "contentThemes": [
-    { "theme": "Research Announcements", "description": "Updates about publications, grants, and new research findings" },
-    { "theme": "Computational Methods", "description": "Content about tools and techniques for analyzing social media data" },
-    { "theme": "Disinformation Studies", "description": "Posts about research on coordinated inauthentic behavior and misinformation" },
-    { "theme": "Academic Opportunities", "description": "Information about job openings, PhD positions, and research collaborations" }
+    {
+      "theme": "Research Announcements",
+      "description": "Updates about publications, grants, and new research findings"
+    },
+    {
+      "theme": "Computational Methods",
+      "description": "Content about tools and techniques for analyzing social media data"
+    },
+    {
+      "theme": "Disinformation Studies",
+      "description": "Posts about research on coordinated inauthentic behavior and misinformation"
+    },
+    {
+      "theme": "Academic Opportunities",
+      "description": "Information about job openings, PhD positions, and research collaborations"
+    }
   ],
   "recommendations": [
     "Increase cross-platform content sharing to maximize reach across different audience segments",
@@ -18,7 +30,7 @@
     "Establish a consistent posting schedule to maintain regular audience interaction"
   ],
   "platformInsights": {
-    "bluesky": "Content with hashtags receives 30% more engagement than posts without them. Research announcements perform well but could benefit from more visual elements.",
+    "bluesky": "The academic community on Bluesky responds well to detailed research updates and announcements. Posts with hashtags receive significantly more engagement and reach.",
     "mastodon": "The academic community on Mastodon responds well to technical content about research methods and tools. Conversations about methodological approaches generate the most replies.",
     "linkedin": "Professional announcements about grants, job openings, and major research milestones receive the highest engagement, particularly from academic and industry professionals."
   },
