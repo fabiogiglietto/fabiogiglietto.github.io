@@ -1,22 +1,19 @@
-<div class="card my-4">
-  <div class="card-header">
-    <h5 class="card-title mb-0">Recent Web Mentions</h5>
-  </div>
-  <div class="card-body">
-    <div class="list-group list-group-flush">
-      {% for mention in site.data.websearch limit:5 %}
-      <a href="{{ mention.url }}" class="list-group-item list-group-item-action" target="_blank">
-        <div class="d-flex w-100 justify-content-between">
-          <h6 class="mb-1">{{ mention.title }}</h6>
-          <small>{{ mention.date }}</small>
-        </div>
-        <p class="mb-1">{{ mention.snippet }}</p>
-        <small>{{ mention.source }}</small>
-      </a>
-      {% endfor %}
+<section class="web-mentions">
+  <h2 class="section-title">Recent Web Mentions</h2>
+  <div class="mentions-list">
+    {% for mention in site.data.websearch.mentions limit:5 %}
+    <div class="mention-item">
+      <h3 class="mention-title">
+        <a href="{{ mention.url }}" target="_blank">{{ mention.title }}</a>
+      </h3>
+      <p class="mention-source">{{ mention.source }}</p>
+      {% if mention.snippet %}
+      <p class="mention-snippet">{{ mention.snippet }}</p>
+      {% endif %}
     </div>
+    {% endfor %}
   </div>
-  <div class="card-footer">
-    <small class="text-muted">Last updated: {{ site.data.summary.lastUpdated | date: "%Y-%m-%d" }}</small>
+  <div class="section-more">
+    <small>Last updated: {{ site.data.summary.lastUpdated | date: "%Y-%m-%d" }}</small>
   </div>
-</div>
+</section>
