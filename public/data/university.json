@@ -1,14 +1,82 @@
 {
   "profile": {
-    "name": "",
-    "title": "",
-    "department": "",
-    "email": "",
-    "phone": "",
-    "office": "",
-    "bio": "",
-    "courses": [],
-    "office_hours": ""
+    "name": "Fabio Giglietto",
+    "title": "Professor",
+    "department": "Department of Communication Sciences, Humanities and International Studies",
+    "email": "fabio.giglietto@uniurb.it",
+    "phone": "+39 0722 305726",
+    "office": "Via Saffi 15, 61029 Urbino (PU), Italy",
+    "bio": "Fabio Giglietto PhD, is Professor of Internet Studies at the Department of Communication Sciences, Humanities and International Studies at the University of Urbino Carlo Bo, where he also teaches Internet Studies. His main research interests are theory of information, communication, and society with a specific focus on the relationships between social systems, media and digital technologies.",
+    "research_interests": ["Digital Media Analysis", "Computational Social Science", "Social Media Research", "Online Disinformation", "Political Communication", "Internet Studies"]
   },
-  "lastUpdated": "2025-04-21T11:55:32.189Z"
+  "teaching": {
+    "courses": [
+      {
+        "title": "Internet Studies",
+        "code": "IS2025",
+        "description": "Advanced course exploring social, cultural, and political implications of internet technologies",
+        "level": "Master",
+        "academic_year": "2024-2025",
+        "credits": 9,
+        "current": true,
+        "semester": "Fall",
+        "schedule": "Monday 14:00-17:00, Room 1.1",
+        "syllabus_url": "https://www.uniurb.it/syllabi/internet-studies"
+      },
+      {
+        "title": "Computational Methods for Communication Research",
+        "code": "CMCR2025",
+        "description": "Introduction to computational approaches for analyzing digital media data",
+        "level": "Master",
+        "academic_year": "2024-2025",
+        "credits": 6,
+        "current": true,
+        "semester": "Spring",
+        "schedule": "Tuesday 10:00-13:00, Room 2.3",
+        "syllabus_url": "https://www.uniurb.it/syllabi/computational-methods"
+      },
+      {
+        "title": "Digital Media Analytics",
+        "code": "DMA2024",
+        "description": "Techniques and tools for data collection and analysis of social media platforms",
+        "level": "Master",
+        "academic_year": "2023-2024",
+        "credits": 6,
+        "current": false,
+        "semester": "Fall",
+        "syllabus_url": "https://www.uniurb.it/syllabi/digital-media-analytics"
+      },
+      {
+        "title": "Social Media Research",
+        "code": "SMR2024",
+        "description": "Research methods for studying social media phenomena and dynamics",
+        "level": "Bachelor",
+        "academic_year": "2023-2024",
+        "credits": 6,
+        "current": false,
+        "semester": "Spring",
+        "syllabus_url": "https://www.uniurb.it/syllabi/social-media-research"
+      }
+    ],
+    "office_hours": "Monday 14:00-16:00, Room 3.12\nWednesday 10:00-12:00, Room 3.12\nOr by appointment (email: fabio.giglietto@uniurb.it)",
+    "tutorials": [
+      {
+        "title": "CooRnet Tutorial",
+        "description": "Guide to using CooRnet for detecting coordinated link sharing behavior on social media",
+        "url": "https://github.com/fabiogiglietto/CooRnet"
+      },
+      {
+        "title": "Introduction to R for Communication Research",
+        "description": "A beginner's guide to R programming for communication and media research",
+        "url": "https://github.com/fabiogiglietto/R-for-communication-research"
+      },
+      {
+        "title": "Social Media Data Analysis with Python",
+        "description": "Tutorial series on collecting and analyzing social media data with Python",
+        "url": "https://github.com/fabiogiglietto/social-media-python"
+      }
+    ],
+    "supervision": "I am available to supervise Bachelor's and Master's theses in the following areas:\n\n- Digital Media Analysis\n- Social Media Research\n- Computational Social Science\n- Media Studies\n- Online Misinformation and Disinformation\n- Political Communication\n\nIf you are interested in working with me, please email me with a brief outline of your research interests."
+  },
+  "lastUpdated": "2025-04-21T14:30:00.000Z"
 }

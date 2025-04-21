@@ -82,6 +82,11 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Error loading publications data:', error);
       }
     }
+    
+    // Initialize teaching page content if we're on the teaching page
+    if (document.querySelector('.teaching-page')) {
+      initTeachingPage();
+    }
   };
 
   // Update GitHub activity section with dynamic data
@@ -145,6 +150,108 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       }
     }
+  };
+  
+  // Initialize teaching page content
+  const initTeachingPage = async () => {
+    try {
+      // Try to fetch teaching data from university.json
+      const response = await fetch('/public/data/university.json');
+      if (response.ok) {
+        const data = await response.json();
+        // If the teaching data exists, use it to update the teaching sections
+        if (data.teaching) {
+          const teachingData = data.teaching;
+          updateTeachingPage(teachingData);
+        }
+      }
+    } catch (error) {
+      console.error('Error loading teaching data:', error);
+    }
+  };
+  
+  // Update teaching page with data from university.json
+  const updateTeachingPage = (teachingData) => {
+    // Update courses sections if we have course data
+    if (teachingData.courses && teachingData.courses.length > 0) {
+      // Get course containers
+      const currentCoursesSection = document.querySelector('.current-courses .courses-grid');
+      const pastCoursesSection = document.querySelector('.past-courses .courses-grid');
+      
+      if (currentCoursesSection && pastCoursesSection) {
+        // Clear existing content
+        currentCoursesSection.innerHTML = '';
+        pastCoursesSection.innerHTML = '';
+        
+        // Add each course to the appropriate section
+        teachingData.courses.forEach(course => {
+          const courseHtml = createCourseCard(course);
+          if (course.current) {
+            currentCoursesSection.innerHTML += courseHtml;
+          } else {
+            pastCoursesSection.innerHTML += courseHtml;
+          }
+        });
+      }
+    }
+    
+    // Update office hours section if available
+    if (teachingData.office_hours) {
+      const officeHoursSection = document.querySelector('.office-hours-content');
+      if (officeHoursSection) {
+        officeHoursSection.textContent = teachingData.office_hours;
+      }
+    }
+    
+    // Update tutorials section if available
+    if (teachingData.tutorials && teachingData.tutorials.length > 0) {
+      const tutorialsList = document.querySelector('.tutorials-list');
+      if (tutorialsList) {
+        tutorialsList.innerHTML = '';
+        
+        teachingData.tutorials.forEach(tutorial => {
+          const tutorialHtml = `
+            <li class="tutorial-item">
+              <h3 class="tutorial-title">
+                ${tutorial.url ? 
+                  `<a href="${tutorial.url}" target="_blank">${tutorial.title}</a>` : 
+                  tutorial.title}
+              </h3>
+              <p class="tutorial-description">${tutorial.description}</p>
+            </li>
+          `;
+          tutorialsList.innerHTML += tutorialHtml;
+        });
+      }
+    }
+    
+    // Update supervision section if available
+    if (teachingData.supervision) {
+      const supervisionSection = document.querySelector('.supervision-content');
+      if (supervisionSection) {
+        supervisionSection.textContent = teachingData.supervision;
+      }
+    }
+  };
+  
+  // Create HTML for a course card
+  const createCourseCard = (course) => {
+    return `
+      <div class="course-card">
+        <h3 class="course-title">${course.title}</h3>
+        <p class="course-code">${course.code}</p>
+        <p class="course-description">${course.description}</p>
+        <div class="course-details">
+          <p><strong>Level:</strong> ${course.level}</p>
+          <p><strong>Academic Year:</strong> ${course.academic_year}</p>
+          <p><strong>Credits:</strong> ${course.credits} CFU</p>
+          ${course.schedule ? `<p><strong>Schedule:</strong> ${course.schedule}</p>` : ''}
+        </div>
+        ${course.syllabus_url ? 
+          `<a href="${course.syllabus_url}" class="course-link" target="_blank">View Syllabus</a>` : 
+          ''}
+      </div>
+    `;
   };
   
   // Helper to format dates
