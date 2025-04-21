@@ -12,9 +12,10 @@
         <p><i class="fas fa-map-marker-alt"></i> {{ site.location | default: 'Department, University' }}</p>
       </div>
       <div class="profile-card__social">
-        <a href="https://github.com/fabiogiglietto" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
-        <a href="https://scholar.google.com/citations?user=SCHOLAR_ID" aria-label="Google Scholar Profile"><i class="fas fa-graduation-cap"></i></a>
-        <a href="https://orcid.org/0000-0000-0000-0000" aria-label="ORCID Profile"><i class="fab fa-orcid"></i></a>
+        <a href="https://github.com/{{ site.github_username | default: 'fabiogiglietto' }}" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+        <a href="https://scholar.google.com/citations?user={{ site.scholar_id | default: 'FmenbcUAAAAJ' }}" aria-label="Google Scholar Profile"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://orcid.org/{{ site.orcid_id | default: '0000-0001-8019-1035' }}" aria-label="ORCID Profile"><i class="fab fa-orcid"></i></a>
+        <a href="https://{{ site.mastodon_instance | default: 'aoir.social' }}/@{{ site.mastodon_username | default: 'fabiogiglietto' }}" aria-label="Mastodon Profile"><i class="fab fa-mastodon"></i></a>
       </div>
     </div>
   </div>

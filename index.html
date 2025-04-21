@@ -6,11 +6,13 @@ title: Home
 {% include profile-card.html %}
 
 <div class="home-content">
-  <section class="intro animate-on-scroll">
+  <section class="intro-section animate-on-scroll">
     <h2 class="section-title">About Me</h2>
-    {% include generated-about.html %}
+    <div class="intro">
+      {% include generated-about.html %}
+    </div>
     
-    <div class="mt-lg flex gap-md">
+    <div class="mt-lg flex gap-md intro-buttons">
       <a href="/publications" class="btn">View Publications</a>
       <a href="mailto:{{ site.email }}" class="btn btn-outline">Contact Me</a>
     </div>
