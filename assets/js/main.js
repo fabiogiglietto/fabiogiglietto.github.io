@@ -308,5 +308,19 @@ document.addEventListener('DOMContentLoaded', () => {
   // Set up scroll animations if the browser supports IntersectionObserver
   if ('IntersectionObserver' in window) {
     setupScrollAnimations();
+  } else {
+    // For browsers that don't support IntersectionObserver,
+    // immediately show all animated elements
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+      el.classList.add('animate-in');
+    });
   }
+  
+  // Force all animations to complete after 1 second regardless,
+  // in case any animation is stuck
+  setTimeout(() => {
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+      el.classList.add('animate-in');
+    });
+  }, 1000);
 });
