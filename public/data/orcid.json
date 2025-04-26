@@ -1395,7 +1395,7 @@
     },
     {
       "last-modified-date": {
-        "value": 1723592373223
+        "value": 1745367650709
       },
       "external-ids": {
         "external-id": [
@@ -1413,21 +1413,22 @@
             "external-id-relationship": "self"
           },
           {
-            "external-id-type": "eid",
-            "external-id-value": "2-s2.0-85189447205",
-            "external-id-normalized": {
-              "value": "2-s2.0-85189447205",
+            "external-id-type": "doi",
+            "external-id-value": "11576/2740791",
+            "external-id-normalized": null,
+            "external-id-normalized-error": {
+              "error-code": "8001",
+              "error-message": "Cannot normalize identifier value doi:11576/2740791",
               "transient": true
             },
-            "external-id-normalized-error": null,
             "external-id-url": null,
             "external-id-relationship": "self"
           },
           {
-            "external-id-type": "doi",
-            "external-id-value": "10.3270/108997",
+            "external-id-type": "eid",
+            "external-id-value": "11576/2740791",
             "external-id-normalized": {
-              "value": "10.3270/108997",
+              "value": "11576/2740791",
               "transient": true
             },
             "external-id-normalized-error": null,
@@ -1443,7 +1444,7 @@
             "value": 1723504606520
           },
           "last-modified-date": {
-            "value": 1723592373223
+            "value": 1745367650709
           },
           "source": {
             "source-orcid": null,
@@ -1483,20 +1484,21 @@
               },
               {
                 "external-id-type": "doi",
-                "external-id-value": "10.3270/108997",
-                "external-id-normalized": {
-                  "value": "10.3270/108997",
+                "external-id-value": "11576/2740791",
+                "external-id-normalized": null,
+                "external-id-normalized-error": {
+                  "error-code": "8001",
+                  "error-message": "Cannot normalize identifier value doi:11576/2740791",
                   "transient": true
                 },
-                "external-id-normalized-error": null,
                 "external-id-url": null,
                 "external-id-relationship": "self"
               },
               {
                 "external-id-type": "eid",
-                "external-id-value": "2-s2.0-85189447205",
+                "external-id-value": "11576/2740791",
                 "external-id-normalized": {
-                  "value": "2-s2.0-85189447205",
+                  "value": "11576/2740791",
                   "transient": true
                 },
                 "external-id-normalized-error": null,
@@ -1506,7 +1508,7 @@
             ]
           },
           "url": {
-            "value": "https://ora.uniurb.it/handle/11576/2740791"
+            "value": "https://ora.uniurb.it/handle/11576/2740791.2"
           },
           "type": "journal-article",
           "publication-date": {
@@ -16939,117 +16941,117 @@
       ]
     }
   ],
-  "lastUpdated": "2025-04-21T16:56:31.606Z",
+  "lastUpdated": "2025-04-26T08:25:09.997Z",
   "logs": {
-    "timestamp": "2025-04-21T16:56:13.875Z",
+    "timestamp": "2025-04-26T08:25:06.838Z",
     "steps": [
       {
-        "timestamp": "2025-04-21T16:56:13.875Z",
+        "timestamp": "2025-04-26T08:25:06.838Z",
         "type": "start",
         "message": "Starting ORCID data collection"
       },
       {
-        "timestamp": "2025-04-21T16:56:13.875Z",
+        "timestamp": "2025-04-26T08:25:06.838Z",
         "type": "info",
         "message": "Getting OAuth token for ORCID API access..."
       },
       {
-        "timestamp": "2025-04-21T16:56:13.875Z",
+        "timestamp": "2025-04-26T08:25:06.838Z",
         "type": "info",
         "message": "Attempting to use public API without authentication"
       },
       {
-        "timestamp": "2025-04-21T16:56:13.876Z",
+        "timestamp": "2025-04-26T08:25:06.839Z",
         "type": "info",
         "message": "OAuth token response received: {\n  \"status\": 200,\n  \"data\": {\n    \"access_token\": \"public_endpoint_no_token_needed\"\n  }\n}"
       },
       {
-        "timestamp": "2025-04-21T16:56:13.876Z",
+        "timestamp": "2025-04-26T08:25:06.839Z",
         "type": "info",
         "message": "Obtained access token: public_end..."
       },
       {
-        "timestamp": "2025-04-21T16:56:13.876Z",
+        "timestamp": "2025-04-26T08:25:06.839Z",
         "type": "info",
         "message": "Attempting to fetch ORCID record with JSON format..."
       },
       {
-        "timestamp": "2025-04-21T16:56:26.850Z",
+        "timestamp": "2025-04-26T08:25:08.625Z",
         "type": "info",
         "message": "Successfully retrieved record in JSON format"
       },
       {
-        "timestamp": "2025-04-21T16:56:26.850Z",
+        "timestamp": "2025-04-26T08:25:08.625Z",
         "type": "info",
         "message": "Retrieved ORCID record in JSON format"
       },
       {
-        "timestamp": "2025-04-21T16:56:26.850Z",
+        "timestamp": "2025-04-26T08:25:08.625Z",
         "type": "info",
         "message": "Response content type: application/json;charset=UTF-8"
       },
       {
-        "timestamp": "2025-04-21T16:56:26.850Z",
+        "timestamp": "2025-04-26T08:25:08.625Z",
         "type": "info",
         "message": "Trying to fetch works directly from /works endpoint for comparison..."
       },
       {
-        "timestamp": "2025-04-21T16:56:31.587Z",
+        "timestamp": "2025-04-26T08:25:09.985Z",
         "type": "info",
         "message": "Works endpoint returned 141 works"
       },
       {
-        "timestamp": "2025-04-21T16:56:31.587Z",
+        "timestamp": "2025-04-26T08:25:09.985Z",
         "type": "info",
         "message": "Processing JSON response"
       },
       {
-        "timestamp": "2025-04-21T16:56:31.587Z",
+        "timestamp": "2025-04-26T08:25:09.985Z",
         "type": "info",
         "message": "Found person data with keys: last-modified-date, name, other-names, biography, researcher-urls, emails, addresses, keywords, external-identifiers, path"
       },
       {
-        "timestamp": "2025-04-21T16:56:31.587Z",
+        "timestamp": "2025-04-26T08:25:09.985Z",
         "type": "info",
         "message": "Record endpoint response structure differs from expected format"
       },
       {
-        "timestamp": "2025-04-21T16:56:31.588Z",
+        "timestamp": "2025-04-26T08:25:09.985Z",
         "type": "info",
         "message": "Works endpoint has 141 works, record endpoint has 0 works"
       },
       {
-        "timestamp": "2025-04-21T16:56:31.588Z",
+        "timestamp": "2025-04-26T08:25:09.985Z",
         "type": "warning",
         "message": "DISCREPANCY: Works endpoint has 141 works, but record endpoint has 0 works"
       },
       {
-        "timestamp": "2025-04-21T16:56:31.588Z",
+        "timestamp": "2025-04-26T08:25:09.985Z",
         "type": "info",
         "message": "Using 141 works from /works endpoint instead of /record endpoint"
       },
       {
-        "timestamp": "2025-04-21T16:56:31.588Z",
+        "timestamp": "2025-04-26T08:25:09.985Z",
         "type": "info",
         "message": "Sample work structure: {\"keys\":[\"last-modified-date\",\"external-ids\",\"work-summary\"],\"hasSummary\":true,\"summaryCount\":2,\"summaryKeys\":[\"put-code\",\"created-date\",\"last-modified-date\",\"source\",\"title\",\"external-ids\",\"url\",\"type\",\"publication-date\",\"journal-title\",\"visibility\",\"path\",\"display-index\"],\"title\":\"Integrating Large Language Models in Political Discourse Studies on Social Media: Challenges of Validating an LLMs-in-the-loop Pipeline\",\"type\":\"journal-article\",\"pubDate\":\"2024-10-30\"}"
       },
       {
-        "timestamp": "2025-04-21T16:56:31.598Z",
+        "timestamp": "2025-04-26T08:25:09.991Z",
         "type": "info",
         "message": "Complete record data saved to /tmp/orcid-record-full.json"
       },
       {
-        "timestamp": "2025-04-21T16:56:31.605Z",
+        "timestamp": "2025-04-26T08:25:09.996Z",
         "type": "info",
         "message": "Works data saved to /tmp/orcid-works-full.json"
       },
       {
-        "timestamp": "2025-04-21T16:56:31.606Z",
+        "timestamp": "2025-04-26T08:25:09.996Z",
         "type": "info",
         "message": "Detailed logs saved to /tmp/orcid-collection-log.json"
       },
       {
-        "timestamp": "2025-04-21T16:56:31.606Z",
+        "timestamp": "2025-04-26T08:25:09.996Z",
         "type": "complete",
         "message": "Collection completed with 141 works retrieved"
       }
@@ -17057,7 +17059,7 @@
     "errors": [],
     "warnings": [
       {
-        "timestamp": "2025-04-21T16:56:31.588Z",
+        "timestamp": "2025-04-26T08:25:09.985Z",
         "message": "Works count discrepancy: /works endpoint: 141, /record endpoint: 0"
       }
     ],
@@ -17075,11 +17077,11 @@
         "contentType": "application/json;charset=UTF-8",
         "status": 200,
         "headers": {
-          "date": "Mon, 21 Apr 2025 16:56:28 GMT",
+          "date": "Sat, 26 Apr 2025 08:25:09 GMT",
           "content-type": "application/json;charset=UTF-8",
           "transfer-encoding": "chunked",
           "connection": "close",
-          "cf-ray": "933e6a32ddc8edac-MXP",
+          "cf-ray": "9364b0137b4cedd7-MXP",
           "cf-cache-status": "DYNAMIC",
           "access-control-allow-origin": "*",
           "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
@@ -17090,8 +17092,8 @@
           "cf-apo-via": "origin,host",
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
-          "x-target": "reg-prod-papi-use2-a1",
-          "x-via": "a1",
+          "x-target": "reg-prod-papi-use2-b1",
+          "x-via": "b1",
           "x-xss-protection": "1; mode=block",
           "server": "cloudflare"
         },
