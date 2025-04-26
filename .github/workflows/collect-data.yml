@@ -11,6 +11,8 @@ jobs:
     
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      SCOPUS_API_KEY: ${{ secrets.SCOPUS_API_KEY }}
+      WOS_API_KEY: ${{ secrets.WOS_API_KEY }}
     
     steps:
       - name: Checkout repository

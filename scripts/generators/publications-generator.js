@@ -25,64 +25,79 @@ async function generatePublicationsData() {
       console.log('Using aggregated publications data from multiple sources');
       const aggregatedData = JSON.parse(fs.readFileSync(aggregatedDataPath, 'utf8'));
       
-      // Convert aggregated data to publications format
-      publications = aggregatedData.publications.map(pub => {
-        return {
-          title: pub.title,
-          authors: pub.authors || formatAuthorsFromTitle(pub.title),
-          venue: pub.venue || '',
-          year: pub.year || new Date().getFullYear(),
-          doi: pub.doi,
-          citations: pub.metrics.total_citations || 0,
-          citation_sources: {
-            scholar: pub.citations.scholar,
-            wos: pub.citations.wos,
-            scopus: pub.citations.scopus
-          },
-          type: determinePublicationType(pub.venue || ''),
-          urls: {
-            doi: pub.doi ? `https://doi.org/${pub.doi}` : null,
-            orcid: pub.source_urls.orcid,
-            scholar: pub.source_urls.scholar,
-            wos: pub.source_urls.wos,
-            scopus: pub.source_urls.scopus
+      // Convert aggregated data to publications format and filter out those without a valid year
+      publications = aggregatedData.publications
+        .map(pub => {
+          if (!pub.year) {
+            console.log(`Skipping publication without year: "${pub.title}"`);
+            return null;
           }
-        };
-      });
+          
+          return {
+            title: pub.title,
+            authors: pub.authors || formatAuthorsFromTitle(pub.title),
+            venue: pub.venue || '',
+            year: pub.year, // Only use the explicitly provided year
+            doi: pub.doi,
+            citations: pub.metrics.total_citations || 0,
+            citation_sources: {
+              scholar: pub.citations.scholar,
+              wos: pub.citations.wos,
+              scopus: pub.citations.scopus
+            },
+            type: determinePublicationType(pub.venue || ''),
+            urls: {
+              doi: pub.doi ? `https://doi.org/${pub.doi}` : null,
+              orcid: pub.source_urls.orcid,
+              scholar: pub.source_urls.scholar,
+              wos: pub.source_urls.wos,
+              scopus: pub.source_urls.scopus
+            }
+          };
+        })
+        .filter(pub => pub !== null);
     } 
     // Fall back to Google Scholar data if aggregated data doesn't exist
     else if (fs.existsSync(scholarDataPath)) {
       console.log('Falling back to Google Scholar data');
       const scholarData = JSON.parse(fs.readFileSync(scholarDataPath, 'utf8'));
       
-      // Convert to publications format
-      publications = scholarData.publications.map(pub => {
-        // Extract DOI from venue if available
-        const doiMatch = pub.venue.match(/doi\.org\/(\S+)/i);
-        const doi = doiMatch ? doiMatch[1] : null;
-        
-        // Format authors
-        const authors = formatAuthorList(pub.authors);
-        
-        return {
-          title: pub.title,
-          authors: authors,
-          venue: pub.venue.replace(/,\s*\d{4}$/, ''), // Remove year from venue if present
-          year: parseInt(pub.year) || new Date().getFullYear(),
-          doi: doi,
-          citations: parseInt(pub.citations) || 0,
-          citation_sources: {
-            scholar: parseInt(pub.citations) || 0,
-            wos: null,
-            scopus: null
-          },
-          type: determinePublicationType(pub.venue),
-          urls: {
-            doi: doi ? `https://doi.org/${doi}` : null,
-            scholar: `https://scholar.google.com/citations?user=FmenbcUAAAAJ&view_op=list_works&sortby=pubdate`
+      // Convert to publications format and filter out those without a valid year
+      publications = scholarData.publications
+        .map(pub => {
+          // Skip publications without a year
+          if (!pub.year) {
+            console.log(`Skipping Scholar publication without year: "${pub.title}"`);
+            return null;
           }
-        };
-      });
+          
+          // Extract DOI from venue if available
+          const doiMatch = pub.venue?.match(/doi\.org\/(\S+)/i);
+          const doi = doiMatch ? doiMatch[1] : null;
+          
+          // Format authors
+          const authors = formatAuthorList(pub.authors || '');
+          
+          return {
+            title: pub.title,
+            authors: authors,
+            venue: pub.venue?.replace(/,\s*\d{4}$/, '') || '', // Remove year from venue if present
+            year: parseInt(pub.year), // Only use the explicitly provided year
+            doi: doi,
+            citations: parseInt(pub.citations) || 0,
+            citation_sources: {
+              scholar: parseInt(pub.citations) || 0,
+              wos: null,
+              scopus: null
+            },
+            type: determinePublicationType(pub.venue || ''),
+            urls: {
+              doi: doi ? `https://doi.org/${doi}` : null,
+              scholar: `https://scholar.google.com/citations?user=FmenbcUAAAAJ&view_op=list_works&sortby=pubdate`
+            }
+          };
+        })
+        .filter(pub => pub !== null);
     } else {
       console.log('No publication data found. Skipping publications generation.');
       return false;
