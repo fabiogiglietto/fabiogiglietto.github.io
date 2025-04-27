@@ -167,6 +167,11 @@ async function collect() {
               publication.year = parseInt(pub.year);
             }
             
+            // Update authors if available and original is null
+            if (!publication.authors && pub.authors) {
+              publication.authors = pub.authors;
+            }
+            
             found = true;
             break;
           }
@@ -218,6 +223,12 @@ async function collect() {
             publication.citations.wos = pub.citations || 0;
             publication.source_urls.wos = pub.url;
             publication.source_ids.wos = pub.wosId;
+            
+            // Update authors if available from WoS and current is null
+            if (!publication.authors && pub.authors) {
+              publication.authors = pub.authors;
+            }
+            
             console.log(`Matched WoS publication by DOI: "${pub.title}" with ${pub.citations || 0} citations`);
             matched = true;
           }
@@ -238,6 +249,11 @@ async function collect() {
               // Add DOI if missing
               if (!publication.doi && pub.doi) {
                 publication.doi = pub.doi;
+              }
+              
+              // Update authors if available from WoS and current is null
+              if (!publication.authors && pub.authors) {
+                publication.authors = pub.authors;
               }
               
               console.log(`Matched WoS publication by title: "${pub.title}" with ${pub.citations || 0} citations`);
@@ -296,6 +312,11 @@ async function collect() {
             publication.citations.scopus = pub.citations || 0;
             publication.source_urls.scopus = pub.url;
             publication.source_ids.scopus = pub.scopusId;
+            
+            // Update authors if available from Scopus and current is null
+            if (!publication.authors && pub.authors) {
+              publication.authors = pub.authors;
+            }
             console.log(`Matched Scopus publication by DOI: "${pub.title}" with ${pub.citations || 0} citations`);
             matched = true;
           }
@@ -316,6 +337,11 @@ async function collect() {
               // Add DOI if missing
               if (!publication.doi && pub.doi) {
                 publication.doi = pub.doi;
+              }
+              
+              // Update authors if available from Scopus and current is null
+              if (!publication.authors && pub.authors) {
+                publication.authors = pub.authors;
               }
               
               console.log(`Matched Scopus publication by title: "${pub.title}" with ${pub.citations || 0} citations`);
