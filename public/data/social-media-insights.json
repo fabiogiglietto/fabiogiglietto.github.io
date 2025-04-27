@@ -1,54 +1,43 @@
 {
-  "overallSummary": "Fabio Giglietto maintains an active presence across Bluesky, Mastodon, and LinkedIn with a combined following of over 3,800 followers. His content primarily focuses on academic research, computational methods for social media analysis, and disinformation studies. Engagement is highest on LinkedIn, where professional research announcements receive substantial interaction.",
+  "overallSummary": "Fabio Giglietto maintains a robust social media presence across Mastodon, LinkedIn, and Bluesky, with a total of 3,580 followers. His content primarily focuses on research and academic topics related to social media, disinformation, and computational methods. Engagement varies across platforms, with the highest interaction observed on LinkedIn.",
   "engagementMetrics": {
-    "totalFollowers": 3880,
-    "averageEngagementRate": 4.2,
-    "mostEngagingPlatform": "LinkedIn"
+    "totalFollowers": 3580,
+    "averageEngagementRate": 5.47,
+    "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
       "theme": "Research Announcements",
-      "description": "Updates about publications, grants, and new research findings"
+      "description": "Posts about new research papers, grants, and academic achievements."
     },
     {
-      "theme": "Computational Methods",
-      "description": "Content about tools and techniques for analyzing social media data"
+      "theme": "Collaboration Opportunities",
+      "description": "Content related to hiring and research opportunities in the field of computational social science."
     },
     {
-      "theme": "Disinformation Studies",
-      "description": "Posts about research on coordinated inauthentic behavior and misinformation"
-    },
-    {
-      "theme": "Academic Opportunities",
-      "description": "Information about job openings, PhD positions, and research collaborations"
+      "theme": "Methodological Discussions",
+      "description": "Discussions on methodologies for studying disinformation and coordinated behaviors."
     }
   ],
   "recommendations": [
-    "Increase cross-platform content sharing to maximize reach across different audience segments",
-    "Develop more visual content to improve engagement rates, particularly on Bluesky",
-    "Consider creating short-form explanatory content about research methods to build audience engagement",
-    "Establish a consistent posting schedule to maintain regular audience interaction"
+    "Increase visual content, such as infographics or short videos, to capture more engagement.",
+    "Engage with followers by responding to comments and encouraging discussions, especially on LinkedIn."
   ],
   "platformInsights": {
-    "bluesky": "The academic community on Bluesky responds well to detailed research updates and announcements. Posts with hashtags receive significantly more engagement and reach.",
-    "mastodon": "The academic community on Mastodon responds well to technical content about research methods and tools. Conversations about methodological approaches generate the most replies.",
-    "linkedin": "Professional announcements about grants, job openings, and major research milestones receive the highest engagement, particularly from academic and industry professionals."
+    "twitter": "No data available for Twitter.",
+    "mastodon": "Moderate engagement with academic-focused content; increase interaction through replies and boosting posts.",
+    "linkedin": "Strong engagement with professional announcements and opportunities; capitalize on this by sharing more research insights."
   },
   "topPerformingContent": [
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
-      "platform": "LinkedIn",
-      "engagementRate": 5.7
+      "platform": "linkedin",
+      "engagementRate": 5.78
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
-      "platform": "Bluesky",
-      "engagementRate": 4.8
-    },
-    {
-      "content": "Our team has just released v2.0 of CooRnet, with improved algorithms for detecting coordinated link sharing behavior.",
-      "platform": "Mastodon",
-      "engagementRate": 4.5
+      "platform": "bluesky",
+      "engagementRate": 7.37
     }
   ]
 }
