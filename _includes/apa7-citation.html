@@ -7,14 +7,32 @@
 
 {% comment %} Format authors for APA 7 {% endcomment %}
 {% if pub.authors %}
-  {% assign authors_array = pub.authors | split: ", " %}
+  {% assign authors_array = pub.authors | split: "; " %}
   {% assign last_author_index = authors_array.size | minus: 1 %}
 
   {% for author in authors_array %}
-    {% if forloop.first == false and forloop.last == true %}
-      {% if authors_array.size > 1 %}&amp; {% endif %}
+    {% assign name_parts = author | split: ", " %}
+    {% if name_parts.size > 1 %}
+      {% assign last_name = name_parts[0] %}
+      {% assign first_name = name_parts[1] %}
+      {% assign initials = "" %}
+      {% for word in first_name | split: " " %}
+        {% assign initial = word | slice: 0, 1 | append: "." %}
+        {% assign initials = initials | append: initial | append: " " %}
+      {% endfor %}
+      
+      {% if forloop.last == true and forloop.first == false %}
+        &amp; {{ last_name }}, {{ initials | strip }}
+      {% else %}
+        {{ last_name }}, {{ initials | strip }}{% unless forloop.last %}, {% endunless %}
+      {% endif %}
+    {% else %}
+      {% if forloop.last == true and forloop.first == false %}
+        &amp; {{ author }}
+      {% else %}
+        {{ author }}{% unless forloop.last %}, {% endunless %}
+      {% endif %}
     {% endif %}
-    {{ author }}{% unless forloop.last %}{% if authors_array.size > 2 %}, {% endif %}{% endunless %}
   {% endfor %}
 {% endif %}
 
