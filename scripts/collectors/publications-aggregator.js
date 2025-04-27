@@ -206,6 +206,8 @@ async function collect() {
     
     // Process Web of Science publications
     if (wosData && wosData.publications) {
+      console.log(`Processing ${wosData.publications.length} publications from Web of Science`);
+      
       wosData.publications.forEach(pub => {
         // Try to match by DOI first
         let matched = false;
@@ -213,9 +215,10 @@ async function collect() {
           const doiKey = `doi:${pub.doi.toLowerCase()}`;
           if (publicationsMap.has(doiKey)) {
             const publication = publicationsMap.get(doiKey);
-            publication.citations.wos = pub.citations;
+            publication.citations.wos = pub.citations || 0;
             publication.source_urls.wos = pub.url;
             publication.source_ids.wos = pub.wosId;
+            console.log(`Matched WoS publication by DOI: "${pub.title}" with ${pub.citations || 0} citations`);
             matched = true;
           }
         }
@@ -228,7 +231,7 @@ async function collect() {
             const pubTitle = publication.title.toLowerCase().replace(/[^\w\s]/g, '');
             
             if (isSimilarTitle(pubTitle, wosTitle)) {
-              publication.citations.wos = pub.citations;
+              publication.citations.wos = pub.citations || 0;
               publication.source_urls.wos = pub.url;
               publication.source_ids.wos = pub.wosId;
               
@@ -237,6 +240,7 @@ async function collect() {
                 publication.doi = pub.doi;
               }
               
+              console.log(`Matched WoS publication by title: "${pub.title}" with ${pub.citations || 0} citations`);
               matched = true;
               break;
             }
@@ -280,6 +284,8 @@ async function collect() {
     
     // Process Scopus publications
     if (scopusData && scopusData.publications) {
+      console.log(`Processing ${scopusData.publications.length} publications from Scopus`);
+      
       scopusData.publications.forEach(pub => {
         // Try to match by DOI first
         let matched = false;
@@ -287,9 +293,10 @@ async function collect() {
           const doiKey = `doi:${pub.doi.toLowerCase()}`;
           if (publicationsMap.has(doiKey)) {
             const publication = publicationsMap.get(doiKey);
-            publication.citations.scopus = pub.citations;
+            publication.citations.scopus = pub.citations || 0;
             publication.source_urls.scopus = pub.url;
             publication.source_ids.scopus = pub.scopusId;
+            console.log(`Matched Scopus publication by DOI: "${pub.title}" with ${pub.citations || 0} citations`);
             matched = true;
           }
         }
@@ -302,7 +309,7 @@ async function collect() {
             const pubTitle = publication.title.toLowerCase().replace(/[^\w\s]/g, '');
             
             if (isSimilarTitle(pubTitle, scopusTitle)) {
-              publication.citations.scopus = pub.citations;
+              publication.citations.scopus = pub.citations || 0;
               publication.source_urls.scopus = pub.url;
               publication.source_ids.scopus = pub.scopusId;
               
@@ -311,6 +318,7 @@ async function collect() {
                 publication.doi = pub.doi;
               }
               
+              console.log(`Matched Scopus publication by title: "${pub.title}" with ${pub.citations || 0} citations`);
               matched = true;
               break;
             }
