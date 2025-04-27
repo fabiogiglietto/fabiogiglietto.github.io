@@ -6,15 +6,17 @@
 {% assign pub = include.publication %}
 
 {% comment %} Format authors for APA 7 {% endcomment %}
-{% assign authors_array = pub.authors | split: ", " %}
-{% assign last_author_index = authors_array.size | minus: 1 %}
+{% if pub.authors %}
+  {% assign authors_array = pub.authors | split: ", " %}
+  {% assign last_author_index = authors_array.size | minus: 1 %}
 
-{% for author in authors_array %}
-  {% if forloop.first == false and forloop.last == true %}
-    {% if authors_array.size > 1 %}&amp; {% endif %}
-  {% endif %}
-  {{ author }}{% unless forloop.last %}{% if authors_array.size > 2 %}, {% endif %}{% endunless %}
-{% endfor %}
+  {% for author in authors_array %}
+    {% if forloop.first == false and forloop.last == true %}
+      {% if authors_array.size > 1 %}&amp; {% endif %}
+    {% endif %}
+    {{ author }}{% unless forloop.last %}{% if authors_array.size > 2 %}, {% endif %}{% endunless %}
+  {% endfor %}
+{% endif %}
 
 {% if pub.year %}
  ({{ pub.year }}).

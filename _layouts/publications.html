@@ -59,9 +59,11 @@ layout: page
           {% endif %}
           
           {% if publication.urls %}
-            {% if publication.urls.doi %}
-            <a href="{{ publication.urls.doi }}" class="publication-link" target="_blank">DOI</a>
-            {% endif %}
+            {% unless publication.doi %}
+              {% if publication.urls.doi %}
+              <a href="{{ publication.urls.doi }}" class="publication-link" target="_blank">DOI</a>
+              {% endif %}
+            {% endunless %}
             {% if publication.urls.scholar %}
             <a href="{{ publication.urls.scholar }}" class="publication-link" target="_blank">Scholar</a>
             {% endif %}
@@ -85,20 +87,20 @@ layout: page
           <a href="{{ publication.slides }}" class="publication-link" target="_blank">Slides</a>
           {% endif %}
           
-          {% if publication.citation_sources %}
+          {% if publication.citation_sources and publication.citations > 0 %}
             <span class="citation-count">
               <i class="fas fa-quote-right"></i> {{ publication.citations }}
-              {% if publication.citation_sources.scholar %}
+              {% if publication.citation_sources.scholar and publication.citation_sources.scholar > 0 %}
                 <span class="citation-source" title="Google Scholar citations: {{ publication.citation_sources.scholar }}">
                   GS:{{ publication.citation_sources.scholar }}
                 </span>
               {% endif %}
-              {% if publication.citation_sources.wos %}
+              {% if publication.citation_sources.wos and publication.citation_sources.wos > 0 %}
                 <span class="citation-source" title="Web of Science citations: {{ publication.citation_sources.wos }}">
                   WoS:{{ publication.citation_sources.wos }}
                 </span>
               {% endif %}
-              {% if publication.citation_sources.scopus %}
+              {% if publication.citation_sources.scopus and publication.citation_sources.scopus > 0 %}
                 <span class="citation-source" title="Scopus citations: {{ publication.citation_sources.scopus }}">
                   Sco:{{ publication.citation_sources.scopus }}
                 </span>
