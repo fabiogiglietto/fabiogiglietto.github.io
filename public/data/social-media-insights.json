@@ -1,38 +1,43 @@
 {
-  "overallSummary": "Fabio Giglietto has a strong presence across multiple social media platforms, with a total following of 3580. Engagement is driven primarily by content related to research announcements and academic opportunities, with LinkedIn showing the highest levels of interaction.",
+  "overallSummary": "Fabio Giglietto has a strong social media presence across multiple platforms, engaging with a diverse audience interested in computational social science, disinformation, and information operations. The engagement across platforms is steady, with LinkedIn showing the highest interaction rates, particularly for professional and research announcements.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 4.77,
+    "averageEngagementRate": 5.9,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
-      "theme": "Research Announcements",
-      "description": "Posts about new research papers, grants, and academic achievements."
+      "theme": "Research and Development",
+      "description": "Posts about new research papers, grants, and technological advancements."
     },
     {
-      "theme": "Academic Opportunities",
-      "description": "Opportunities for academic positions and collaborations in computational social science."
+      "theme": "Opportunities and Collaborations",
+      "description": "Announcements for hiring and new research opportunities."
     },
     {
-      "theme": "Disinformation Studies",
-      "description": "Discussions on methodologies and findings in the study of disinformation across platforms."
+      "theme": "Conferences and Presentations",
+      "description": "Sharing information about upcoming talks and conferences attended."
     }
   ],
   "recommendations": [
-    "Increase the frequency of posts related to research achievements and opportunities, as they drive high engagement.",
-    "Utilize engaging multimedia content such as images or videos to further boost interaction."
+    "Increase interaction with followers by posting more frequently and engaging directly with comments and discussions.",
+    "Leverage LinkedIn for professional networking and enhancing visibility of research outputs."
   ],
   "platformInsights": {
-    "twitter": "Not applicable as no data provided for Twitter.",
-    "mastodon": "Mastodon posts focus on methodological discussions and tool announcements, drawing moderate engagement.",
-    "linkedin": "LinkedIn is the most engaging platform, with posts about research grants and job opportunities receiving significant interaction."
+    "twitter": "No data available for Twitter.",
+    "mastodon": "Engagement is moderate with a focus on methodological discussions and tool updates.",
+    "linkedin": "High engagement with posts related to research grants and job opportunities. Professional announcements resonate well with the audience."
   },
   "topPerformingContent": [
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
       "platform": "linkedin",
-      "engagementRate": 5.78
+      "engagementRate": 5.8
+    },
+    {
+      "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
+      "platform": "bluesky",
+      "engagementRate": 7.4
     }
   ]
 }
