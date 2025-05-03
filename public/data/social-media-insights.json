@@ -1,48 +1,44 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a strong social media presence across multiple platforms, with a total of 3,580 followers and a diverse range of content focused on research, information operations, and academic opportunities. Engagement is notably high on LinkedIn, where professional announcements and opportunities garner significant interaction.",
+  "overallSummary": "Fabio Giglietto maintains a strong social media presence across multiple platforms, with a total follower base of 3,580. Engagement is particularly strong on LinkedIn, where academic and professional updates resonate well with the audience. The content shared frequently addresses topics related to social media research and computational methods, attracting considerable interactions in the form of likes, comments, and reposts.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 3.47,
-    "mostEngagingPlatform": "linkedin"
+    "averageEngagementRate": 5.75,
+    "mostEngagingPlatform": "LinkedIn"
   },
   "contentThemes": [
     {
-      "theme": "Research and Academic Opportunities",
-      "description": "Posts frequently discuss research projects, new findings, and opportunities for academic collaboration."
+      "theme": "Social Media Research",
+      "description": "Posts focusing on research findings, methodologies, and grants related to social media."
     },
     {
-      "theme": "Information Operations and Disinformation",
-      "description": "Content often revolves around understanding and combating disinformation and coordinated inauthentic behavior on social media."
+      "theme": "Professional Opportunities",
+      "description": "Content related to job postings and research opportunities in computational social science."
     },
     {
-      "theme": "Conferences and Presentations",
-      "description": "Posts highlight upcoming conferences and presentations, emphasizing Fabio's involvement in academic events."
+      "theme": "Academic Conferences",
+      "description": "Announcements and preparations for participation in academic conferences."
     }
   ],
   "recommendations": [
-    "Increase interaction on Mastodon by diversifying content to mimic successful LinkedIn strategies.",
-    "Leverage Bluesky’s growing follower base by engaging more directly with followers, perhaps through interactive content like Q&A sessions."
+    "Increase the frequency of posts related to research findings and professional opportunities to maintain high engagement.",
+    "Expand the audience by engaging more with followers on platforms with lower engagement, such as Mastodon."
   ],
   "platformInsights": {
-    "twitter": "No data available for Twitter.",
-    "mastodon": "Engagement is moderate, with posts about new tool versions and research discussions. Increasing the frequency of personal insights might improve interaction.",
-    "linkedin": "LinkedIn posts show the highest engagement, particularly those announcing grants and job opportunities. This suggests a professional audience highly interested in academic and career advancements."
+    "twitter": null,
+    "mastodon": "Mastodon engagement is moderate, with research updates generating interest. Increasing interaction with followers here could boost engagement.",
+    "linkedin": "LinkedIn is the most engaging platform, with professional announcements and research grants capturing significant attention.",
+    "bluesky": "Bluesky shows potential with steady engagement on research publications and conference participation posts."
   },
   "topPerformingContent": [
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
-      "platform": "linkedin",
+      "platform": "LinkedIn",
       "engagementRate": 5.78
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
-      "platform": "bluesky",
+      "platform": "Bluesky",
       "engagementRate": 7.37
-    },
-    {
-      "content": "Now hiring: Two postdoctoral researchers to join our team working on computational methods for social media analysis.",
-      "platform": "linkedin",
-      "engagementRate": 3.95
     }
   ]
 }
