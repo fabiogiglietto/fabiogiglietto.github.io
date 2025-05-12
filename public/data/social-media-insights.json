@@ -1,43 +1,42 @@
 {
-  "overallSummary": "Fabio Giglietto's social media presence is diverse, spanning multiple platforms including Mastodon, LinkedIn, and Bluesky. The engagement is robust with a total follower count of 3,580 and active interaction through likes, reposts, and comments. The content mostly revolves around academic achievements, research opportunities, and discussions on disinformation.",
+  "overallSummary": "Fabio Giglietto maintains a diverse social media presence across Mastodon, LinkedIn, and Bluesky, with a total of 3,580 followers. Engagement levels vary across platforms, with content related to research announcements and academic opportunities receiving significant interaction.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 4.75,
-    "mostEngagingPlatform": "LinkedIn"
+    "averageEngagementRate": 3.87,
+    "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
       "theme": "Research Announcements",
-      "description": "Posts related to new research findings and academic papers."
+      "description": "Posts announcing new research papers, grants, and updates on ongoing projects."
     },
     {
-      "theme": "Professional Opportunities",
-      "description": "Content about job openings and research opportunities in the field."
+      "theme": "Academic Opportunities",
+      "description": "Posts about job openings, postdoctoral positions, and PhD opportunities."
     },
     {
-      "theme": "Conferences and Events",
-      "description": "Mentions of participation in or anticipation of academic conferences."
+      "theme": "Conferences and Presentations",
+      "description": "Posts about participating in or presenting at academic conferences."
     }
   ],
   "recommendations": [
-    "Increase frequency of interactive content such as polls or Q&A sessions to boost engagement.",
-    "Leverage cross-platform promotion to maximize reach and engagement, especially for major announcements."
+    "Increase frequency of posts announcing research outcomes and academic opportunities to boost follower engagement.",
+    "Utilize more interactive content like polls or Q&A sessions to enhance engagement on less active platforms."
   ],
   "platformInsights": {
-    "twitter": "N/A",
-    "mastodon": "Engagement is steady, with a focus on methodological discussions and tool releases.",
-    "linkedin": "Highly engaging platform, particularly for professional announcements and networking opportunities.",
-    "bluesky": "Shows strong engagement with posts related to research publications and conferences."
+    "twitter": "Twitter data not available.",
+    "mastodon": "Mastodon posts show moderate engagement, with technical updates and discussions generating interest.",
+    "linkedin": "LinkedIn is the most engaging platform, particularly for research announcements and career opportunities."
   },
   "topPerformingContent": [
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
-      "platform": "LinkedIn",
+      "platform": "linkedin",
       "engagementRate": 5.78
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
-      "platform": "Bluesky",
+      "platform": "bluesky",
       "engagementRate": 7.37
     }
   ]
