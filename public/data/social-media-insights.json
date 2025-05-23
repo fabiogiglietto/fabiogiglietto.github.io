@@ -1,42 +1,43 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a strong and diverse social media presence across multiple platforms, including Mastodon, LinkedIn, and Bluesky. With a total of 3,580 followers and active engagement in topics related to computational methods and disinformation studies, his content resonates well with a niche audience interested in social media research and operations.",
+  "overallSummary": "Fabio Giglietto maintains an active and engaging presence across Mastodon, LinkedIn, and Bluesky, with a total of 3,580 followers. The content primarily revolves around research in social media analysis, disinformation, and computational methods, resonating well with his audience and generating significant engagement.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 3.87,
-    "mostEngagingPlatform": "linkedin"
+    "averageEngagementRate": 3.37,
+    "mostEngagingPlatform": "LinkedIn"
   },
   "contentThemes": [
     {
-      "theme": "Research Announcements",
-      "description": "Posts about new grants, research papers, and methodological advancements are frequent and engage a scholarly audience."
+      "theme": "Research and Development",
+      "description": "Posts announcing research advancements, new grants, and opportunities in social media studies."
     },
     {
-      "theme": "Opportunities and Collaborations",
-      "description": "Content related to job opportunities and collaborative research projects, targeting professionals and academics in the field."
+      "theme": "Career Opportunities",
+      "description": "Content related to hiring and opportunities for researchers in the computational social science field."
     },
     {
-      "theme": "Conference Presentations",
-      "description": "Updates about upcoming conference presentations, often generating interest and engagement from peers."
+      "theme": "Conferences and Presentations",
+      "description": "Posts discussing upcoming presentations and conferences related to disinformation and social media campaigns."
     }
   ],
   "recommendations": [
-    "Increase visual content such as infographics or short videos to boost engagement.",
-    "Engage more with followers by responding to comments and encouraging discussions to build community and increase platform interaction."
+    "Increase frequency of engaging content like research announcements and paper publications to maintain high engagement.",
+    "Utilize LinkedIn's strong engagement by sharing more detailed insights or articles related to ongoing research projects."
   ],
   "platformInsights": {
-    "mastodon": "With a smaller but dedicated follower base, Mastodon posts see moderate engagement. Focus on community discussions to enhance engagement.",
-    "linkedin": "LinkedIn is the most engaging platform, particularly for professional announcements and opportunities. Continue leveraging LinkedIn for professional networking and research dissemination.",
-    "bluesky": "Bluesky shows strong engagement rates with recent posts. Maintain frequent updates and interactive content to sustain audience interest."
+    "twitter": "Not applicable",
+    "mastodon": "Mastodon has a moderate level of engagement with a strong focus on methodological discussions and tool updates.",
+    "linkedin": "LinkedIn is the most engaging platform, particularly for professional updates and research announcements, showing high likes and comments.",
+    "bluesky": "Bluesky shows a growing engagement with a younger audience, especially on academic and research-related posts."
   },
   "topPerformingContent": [
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
-      "platform": "linkedin",
+      "platform": "LinkedIn",
       "engagementRate": 5.78
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
-      "platform": "bluesky",
+      "platform": "Bluesky",
       "engagementRate": 7.37
     }
   ]
