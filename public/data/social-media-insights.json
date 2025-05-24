@@ -1,52 +1,43 @@
 {
-  "overallSummary": "Fabio Giglietto has a strong social media presence across multiple platforms with a total of 3580 followers. His content focuses on computational social science, disinformation, and coordinated inauthentic behavior, attracting engagements in the form of likes, reposts, and comments. LinkedIn appears to be the most engaging platform, with posts related to research grants and hiring generating significant interest.",
+  "overallSummary": "Fabio Giglietto has a diverse social media presence across Mastodon, LinkedIn, and BlueSky, reaching a total of 3,580 followers. Engagement is driven by a blend of professional announcements, research updates, and academic opportunities, with LinkedIn showing the highest direct engagement through likes and comments. The content resonates well with an audience interested in social media research and computational methods.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 5.4,
+    "averageEngagementRate": 3.94,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
-      "theme": "Computational Social Science",
-      "description": "Posts discussing research and opportunities in computational methods for social media analysis."
-    },
-    {
-      "theme": "Disinformation",
-      "description": "Content related to disinformation studies and related conferences."
-    },
-    {
       "theme": "Research Announcements",
-      "description": "Updates about new research papers, grants, and project milestones."
+      "description": "Updates on new research papers, grants, and findings related to social media analysis."
     },
     {
       "theme": "Career Opportunities",
-      "description": "Posts about hiring and research opportunities in the field."
+      "description": "Posts about hiring and academic opportunities in computational social science."
+    },
+    {
+      "theme": "Conferences and Presentations",
+      "description": "Discussions about upcoming presentations and participation in conferences focused on disinformation."
     }
   ],
   "recommendations": [
-    "Increase posting frequency on platforms with high engagement like LinkedIn to capitalize on the existing interest.",
-    "Diversify content themes to include more interactive elements such as polls or Q&A sessions to boost engagement."
+    "Increase interaction with followers through Q&A sessions or live discussions to boost engagement.",
+    "Utilize multimedia content such as infographics or videos to present research findings, making them more engaging."
   ],
   "platformInsights": {
     "twitter": "No data available for Twitter.",
-    "mastodon": "Mastodon posts receive moderate engagement, primarily through likes. Highlighting more interactive content could enhance engagement.",
-    "linkedin": "LinkedIn generates high engagement, especially for posts about research grants and hiring. Continued focus on professional updates can maintain this trend."
+    "mastodon": "Engagement is moderate, with a focus on research updates. Increasing frequency of posts could enhance visibility.",
+    "linkedin": "The platform with the highest engagement, particularly for professional updates and job postings, indicating a strong professional following."
   },
   "topPerformingContent": [
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
       "platform": "linkedin",
-      "engagementRate": 6.5
+      "engagementRate": 5.78
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
       "platform": "bluesky",
       "engagementRate": 7.37
-    },
-    {
-      "content": "Now hiring: Two postdoctoral researchers to join our team working on computational methods for social media analysis. Background in data science, computational social science, or related fields preferred.",
-      "platform": "linkedin",
-      "engagementRate": 3.94
     }
   ]
 }
