@@ -1,44 +1,43 @@
 {
-  "overallSummary": "Fabio Giglietto maintains an active social media presence across multiple platforms, including Mastodon, LinkedIn, and Bluesky, with a focus on research and academic achievements. The engagement rates are diverse, with LinkedIn showing the highest interaction levels. The content primarily centers around research updates, new publications, and academic opportunities.",
+  "overallSummary": "Fabio Giglietto maintains an active presence across Mastodon, LinkedIn, and Bluesky, engaging a total of 3,580 followers. His content primarily focuses on academic and professional topics related to social media analysis and disinformation, garnering a steady level of interaction from his audience.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 3.81,
+    "averageEngagementRate": 3.5,
     "mostEngagingPlatform": "LinkedIn"
   },
   "contentThemes": [
     {
-      "theme": "Research and Academic Achievements",
-      "description": "Posts about new research papers, grants, and academic conferences."
+      "theme": "Research and Development",
+      "description": "Posts related to new research findings, software releases, and academic grants."
     },
     {
-      "theme": "Opportunities and Hiring",
-      "description": "Posts about job openings and research opportunities within the academic field."
+      "theme": "Professional Opportunities",
+      "description": "Announcements about job openings and opportunities for collaboration."
     },
     {
-      "theme": "Methodological Insights",
-      "description": "Discussions and insights on methodological approaches to studying disinformation and social media analysis."
+      "theme": "Conferences and Presentations",
+      "description": "Discussions and announcements regarding upcoming conferences and talks."
     }
   ],
   "recommendations": [
-    "Increase frequency of posts on LinkedIn to capitalize on higher engagement rates.",
-    "Diversify content types by including more multimedia elements such as videos and infographics to enhance engagement."
+    "Increase multimedia content such as images or videos to boost engagement.",
+    "Engage more with followers by responding to comments and encouraging discussions."
   ],
   "platformInsights": {
     "twitter": "No data available for Twitter.",
-    "mastodon": "Engagement is moderate with a focus on methodological discussions and tool updates.",
-    "linkedin": "Highest engagement among platforms, especially for posts related to research grants and hiring opportunities.",
-    "bluesky": "Engagement is driven by academic content and research publications, with a good balance between likes and reposts."
+    "mastodon": "Mastodon posts receive moderate engagement, with a focus on research updates and discussions.",
+    "linkedin": "LinkedIn is the most engaging platform, with posts about grants and hiring receiving significant attention."
   },
   "topPerformingContent": [
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
       "platform": "LinkedIn",
-      "engagementRate": 5.78
+      "engagementRate": 5.8
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
       "platform": "Bluesky",
-      "engagementRate": 7.37
+      "engagementRate": 7.4
     }
   ]
 }
