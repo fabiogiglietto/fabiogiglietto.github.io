@@ -3,8 +3,8 @@
   <div class="projects-grid">
     {% for project in site.data.projects limit:3 %}
     <div class="project-card">
-      <div class="project-card__image">
-        <img src="{{ project.image | default: '/assets/images/projects/default-project.jpg' }}" alt="{{ project.title }}">
+      <div class="project-image-container">
+        <img src="{{ project.image | default: '/assets/images/projects/default-project.jpg' }}" alt="{{ project.title }}" class="project-image">
       </div>
       <div class="project-card__content">
         <h3 class="project-title">{{ project.title }}</h3>
