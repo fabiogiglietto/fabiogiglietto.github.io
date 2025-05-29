@@ -1,33 +1,32 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a diverse social media presence across Mastodon, LinkedIn, and Bluesky, engaging with a total of 3,580 followers. Recent posts have focused on research advancements and opportunities in the field of computational social science and disinformation studies. Engagement metrics indicate a strong connection with his professional audience, particularly on LinkedIn.",
+  "overallSummary": "Fabio Giglietto's social media presence is robust across Mastodon, LinkedIn, and Bluesky, with a total of 3,580 followers and active engagement in topics related to social media analysis, disinformation, and computational methods. Engagement levels vary across platforms, with LinkedIn showing high interaction through likes and comments.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 7.57,
+    "averageEngagementRate": 5.53,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
+      "theme": "Disinformation Studies",
+      "description": "Discussions on methodological approaches to studying disinformation across platforms."
+    },
+    {
       "theme": "Research Announcements",
-      "description": "Posts about new research papers, grants, and project updates related to social media analysis and disinformation."
+      "description": "Updates about new research papers, grants, and project developments."
     },
     {
-      "theme": "Career Opportunities",
-      "description": "Information on job openings and opportunities for postdoctoral researchers and PhD students in related fields."
-    },
-    {
-      "theme": "Conferences and Presentations",
-      "description": "Announcements related to upcoming conferences and speaking engagements."
+      "theme": "Job Opportunities",
+      "description": "Posts about hiring for research positions and new research opportunities."
     }
   ],
   "recommendations": [
-    "Increase the frequency of posts on platforms showing higher engagement like LinkedIn to capitalize on professional interest.",
-    "Engage more with followers by responding to comments and reposts to foster community interaction and increase visibility."
+    "Increase the frequency of posts on Bluesky to leverage its high engagement potential.",
+    "Engage more with followers by replying to comments and encouraging discussion."
   ],
   "platformInsights": {
-    "twitter": "Data not available for Twitter.",
-    "mastodon": "Engagement is moderate, with technical updates on tools like CooRnet receiving good interaction.",
-    "linkedin": "Highest engagement levels are observed here, particularly with posts related to research grants and job opportunities.",
-    "bluesky": "Consistent engagement with posts related to academic papers and conference participation, indicating a growing interest in research content."
+    "twitter": "N/A",
+    "mastodon": "Posts on Mastodon receive moderate engagement, indicating a dedicated but smaller audience.",
+    "linkedin": "LinkedIn posts have the highest engagement, with significant likes and comments, suggesting a professional audience interested in research and job opportunities."
   },
   "topPerformingContent": [
     {
