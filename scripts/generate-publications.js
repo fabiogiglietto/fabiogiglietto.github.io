@@ -21,42 +21,8 @@ async function generatePublicationsData() {
     // Check if aggregated data exists
     let publications = [];
     
-    // ALWAYS use Google Scholar data directly for now, bypass aggregation
-    if (fs.existsSync(scholarDataPath)) {
-      console.log('Using Google Scholar data directly for all publications');
-      const scholarData = JSON.parse(fs.readFileSync(scholarDataPath, 'utf8'));
-      
-      // Convert to publications format
-      publications = scholarData.publications.map(pub => {
-        // Extract DOI from venue if available
-        const doiMatch = pub.venue?.match(/doi\.org\/(\S+)/i);
-        const doi = doiMatch ? doiMatch[1] : null;
-        
-        // Format authors
-        const authors = formatAuthorList(pub.authors || '');
-        
-        return {
-          title: pub.title,
-          authors: authors,
-          venue: pub.venue?.replace(/,\s*\d{4}$/, '') || '', // Remove year from venue if present
-          year: parseInt(pub.year) || new Date().getFullYear(),
-          doi: doi,
-          citations: parseInt(pub.citations) || 0,
-          citation_sources: {
-            scholar: parseInt(pub.citations) || 0,
-            wos: null,
-            scopus: null
-          },
-          type: determinePublicationType(pub.venue || ''),
-          urls: {
-            doi: doi ? `https://doi.org/${doi}` : null,
-            scholar: `https://scholar.google.com/citations?user=FmenbcUAAAAJ&view_op=list_works&sortby=pubdate`
-          }
-        };
-      });
-    }
-    // If Google Scholar data isn't available, try aggregated data
-    else if (fs.existsSync(aggregatedDataPath)) {
+    // Prioritize aggregated data which has complete author information
+    if (fs.existsSync(aggregatedDataPath)) {
       console.log('Using aggregated publications data from multiple sources');
       const aggregatedData = JSON.parse(fs.readFileSync(aggregatedDataPath, 'utf8'));
       
@@ -70,7 +36,7 @@ async function generatePublicationsData() {
           
           return {
             title: pub.title,
-            authors: pub.authors || formatAuthorsFromTitle(pub.title),
+            authors: pub.authors || "Giglietto, F.",
             venue: pub.venue || '',
             year: pub.year, // Only use the explicitly provided year
             doi: pub.doi,
