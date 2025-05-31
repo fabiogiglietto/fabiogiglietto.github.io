@@ -15,16 +15,25 @@
     {% if name_parts.size > 1 %}
       {% assign last_name = name_parts[0] %}
       {% assign first_name = name_parts[1] %}
-      {% assign initials = "" %}
-      {% for word in first_name | split: " " %}
-        {% assign initial = word | slice: 0, 1 | append: "." %}
-        {% assign initials = initials | append: initial | append: " " %}
-      {% endfor %}
+      
+      {% comment %} Check if first_name is already in abbreviated format (e.g., "F." or "F. G.") {% endcomment %}
+      {% if first_name contains "." %}
+        {% comment %} Already abbreviated, use as is {% endcomment %}
+        {% assign formatted_initials = first_name %}
+      {% else %}
+        {% comment %} Convert full name to initials {% endcomment %}
+        {% assign initials = "" %}
+        {% for word in first_name | split: " " %}
+          {% assign initial = word | slice: 0, 1 | append: "." %}
+          {% assign initials = initials | append: initial | append: " " %}
+        {% endfor %}
+        {% assign formatted_initials = initials | strip %}
+      {% endif %}
       
       {% if forloop.last == true and forloop.first == false %}
-        &amp; {{ last_name }}, {{ initials | strip }}
+        &amp; {{ last_name }}, {{ formatted_initials }}
       {% else %}
-        {{ last_name }}, {{ initials | strip }}{% unless forloop.last %}, {% endunless %}
+        {{ last_name }}, {{ formatted_initials }}{% unless forloop.last %}, {% endunless %}
       {% endif %}
     {% else %}
       {% if forloop.last == true and forloop.first == false %}
