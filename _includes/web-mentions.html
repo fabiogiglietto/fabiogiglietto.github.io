@@ -1,7 +1,8 @@
+{% if site.data.websearch and site.data.websearch.size > 0 %}
 <section class="web-mentions">
   <h2 class="section-title">Recent Web Mentions</h2>
   <div class="mentions-list">
-    {% for mention in site.data.websearch.mentions limit:5 %}
+    {% for mention in site.data.websearch limit:5 %}
     <div class="mention-item">
       <h3 class="mention-title">
         <a href="{{ mention.url }}" target="_blank">{{ mention.title }}</a>
@@ -17,3 +18,4 @@
     <small>Last updated: {{ site.data.summary.lastUpdated | date: "%Y-%m-%d" }}</small>
   </div>
 </section>
+{% endif %}

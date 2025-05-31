@@ -15,9 +15,11 @@ const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
 
 /**
  * Collector for fetching web search results about Fabio Giglietto
- * using OpenAI Web Search API
+ * using OpenAI Web Search API - ONLY REAL RESULTS
  */
 async function collectWebSearchResults() {
+  console.log('Starting web search collection...');
+  
   try {
     // Early check for API key
     if (!hasValidApiKey) {
@@ -26,73 +28,88 @@ async function collectWebSearchResults() {
         console.error('Please add the OPENAI_API_KEY secret to the repository settings.');
       } else {
         console.log('OPENAI_API_KEY environment variable is not set or OpenAI client failed to initialize');
+        console.log('Clearing web mentions data - section will be hidden without valid API key');
       }
       
-      // Generate mock data when no API key is available
-      return await saveMockData();
+      // Save empty results when no API key is available - DO NOT use mock data
+      return await saveEmptyResults();
     }
+    
+    console.log('API key found, configuring OpenAI client...');
     
     // Configure OpenAI API
     const openai = new OpenAI({
       apiKey: process.env.OPENAI_API_KEY,
     });
 
-    // Search queries
+    // Search queries - only for real web search
     const queries = [
-      "Fabio Giglietto research",
-      "Fabio Giglietto social media research",
-      "Fabio Giglietto computational methods",
-      "Fabio Giglietto recent publications"
+      "Fabio Giglietto recent publications",
+      "Fabio Giglietto news OR notizie media coverage",
+      "Fabio Giglietto interviews OR intervista",
+      "Fabio Giglietto conference presentations 2024"
     ];
 
     let allResults = [];
 
-    // Run searches for each query
+    // Run searches for each query using the Responses API
     for (const query of queries) {
       console.log(`Searching for: ${query}`);
       
       try {
-        const response = await openai.chat.completions.create({
-          model: "gpt-3.5-turbo",
-          messages: [
-            {
-              role: "system",
-              content: "You are a helpful assistant that searches the web."
-            },
-            {
-              role: "user",
-              content: `Search the web for recent information about: ${query}. Return only the most relevant and recent results from the past year.`
-            }
-          ],
-          tools: [{ type: "web_search" }],
-          tool_choice: { type: "web_search" }
-        });
-  
-        // Process tool calls and extract search results
-        const toolCall = response.choices[0]?.message?.tool_calls?.[0];
+        let response;
         let searchResults = [];
         
-        if (toolCall && toolCall.function && toolCall.function.arguments) {
-          try {
-            const args = JSON.parse(toolCall.function.arguments);
-            searchResults = args.results || [];
-          } catch (e) {
-            console.error('Error parsing search results:', e);
+        try {
+          // Create search prompt for real web search
+          const searchPrompt = `Search the web for real, recent mentions of Fabio Giglietto from verifiable sources. Look for actual news articles, academic publications, conference presentations, and media coverage from the past year. Only return real, verifiable results with actual URLs.`;
+          
+          response = await openai.responses.create({
+            model: "gpt-4o",
+            input: searchPrompt,
+            tools: [
+              {
+                type: "web_search"
+              }
+            ]
+          });
+          
+          // Extract ONLY real search results from the response
+          if (response && response.tool_outputs && response.tool_outputs.length > 0) {
+            for (const toolOutput of response.tool_outputs) {
+              if (toolOutput.type === 'web_search' && toolOutput.results) {
+                // Filter out any results that look fake or fabricated
+                const realResults = toolOutput.results.filter(result => 
+                  result.url && 
+                  result.url.startsWith('http') &&
+                  !result.url.includes('example.com') &&
+                  result.title &&
+                  result.snippet
+                );
+                searchResults = [...searchResults, ...realResults];
+              }
+            }
+            console.log(`Found ${searchResults.length} REAL results from web search`);
           }
+        } catch (responsesError) {
+          console.log(`Web search API not available for ${query}:`, responsesError.message);
+          // Do not fall back to mock data - continue to next query
         }
         
-        // Add to all results
+        // Add only real results
         allResults = [...allResults, ...searchResults];
+        console.log(`Total REAL results so far: ${allResults.length}`);
+        
       } catch (queryError) {
         console.error(`Error searching for "${query}":`, queryError.message);
         // Continue with other queries even if one fails
       }
     }
 
-    // If we didn't get any results, fall back to mock data
+    // If we didn't get any REAL results, save empty results (hide section)
     if (allResults.length === 0) {
-      console.log('No search results found. Using mock data instead.');
-      return await saveMockData();
+      console.log('No real search results found. Saving empty results to hide section.');
+      return await saveEmptyResults();
     }
 
     // Remove duplicates by URL
@@ -100,86 +117,55 @@ async function collectWebSearchResults() {
       index === self.findIndex(r => r.url === result.url)
     );
 
-    // Format results
+    // Format results - only real ones
     const formattedResults = uniqueResults.map(result => ({
-      title: result.title || 'Untitled',
-      snippet: result.snippet || result.content || 'No description available',
+      title: result.title,
+      snippet: result.snippet,
       url: result.url,
-      date: result.published_date || new Date().toISOString().split('T')[0],
-      source: result.source || 'Web Search'
+      date: result.published_date || result.date || new Date().toISOString().split('T')[0],
+      source: result.source || extractDomainFromUrl(result.url)
     }));
 
     // Sort by date (newest first)
     formattedResults.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-    // Limit to most recent 20 results
-    const recentResults = formattedResults.slice(0, 20);
+    // Limit to most recent 10 results
+    const recentResults = formattedResults.slice(0, 10);
 
     // Write to JSON file
     const outputPath = path.join(__dirname, '../../public/data/websearch.json');
     await writeFileAsync(outputPath, JSON.stringify(recentResults, null, 2));
 
-    console.log(`Successfully collected web search results and saved to ${outputPath}`);
+    console.log(`Successfully collected ${recentResults.length} REAL web search results and saved to ${outputPath}`);
     return recentResults;
   } catch (error) {
     console.error('Error collecting web search results:', error);
-    // Return mock data if there's an error
-    return await saveMockData();
+    // Return empty results if there's an error - DO NOT use mock data
+    return await saveEmptyResults();
   }
 }
 
 /**
- * Save mock data to the output file
+ * Save empty results to hide the web mentions section
  */
-async function saveMockData() {
-  const mockData = createMockResults();
+async function saveEmptyResults() {
+  const emptyData = [];
   const outputPath = path.join(__dirname, '../../public/data/websearch.json');
-  await writeFileAsync(outputPath, JSON.stringify(mockData, null, 2));
-  console.log(`Created mock data and saved to ${outputPath}`);
-  return mockData;
+  await writeFileAsync(outputPath, JSON.stringify(emptyData, null, 2));
+  console.log(`Saved empty results to ${outputPath} - web mentions section will be hidden`);
+  return emptyData;
 }
 
 /**
- * Create mock results for testing purposes
+ * Extract domain from URL for source attribution
  */
-function createMockResults() {
-  return [
-    {
-      title: "Digital Methods for Social Science: An Interdisciplinary Guide to Research Innovation",
-      snippet: "Featuring contributions from Fabio Giglietto on computational methods for social media analysis.",
-      url: "https://example.com/digital-methods",
-      date: "2024-03-15",
-      source: "Academic Publisher"
-    },
-    {
-      title: "Understanding Social Media Information Flows: A Computational Approach",
-      snippet: "Research paper by Fabio Giglietto examining information diffusion in social networks.",
-      url: "https://example.com/social-media-flows",
-      date: "2024-02-10",
-      source: "Journal of Digital Media Research"
-    },
-    {
-      title: "Conference on Computational Social Science features keynote by Fabio Giglietto",
-      snippet: "Professor Giglietto presented his latest research on social media data analysis methods.",
-      url: "https://example.com/conference-2024",
-      date: "2024-01-20",
-      source: "University News"
-    },
-    {
-      title: "New techniques for analyzing disinformation campaigns on social platforms",
-      snippet: "Research collaboration led by Fabio Giglietto introduces innovative methods for tracking disinformation.",
-      url: "https://example.com/disinformation-research",
-      date: "2023-12-05",
-      source: "Tech News"
-    },
-    {
-      title: "Social Media Analysis Toolkit released by research team",
-      snippet: "Open-source tools developed by Fabio Giglietto's research lab for analyzing social media content at scale.",
-      url: "https://example.com/toolkit-release",
-      date: "2023-11-18",
-      source: "GitHub Blog"
-    }
-  ];
+function extractDomainFromUrl(url) {
+  try {
+    const urlObj = new URL(url);
+    return urlObj.hostname.replace('www.', '');
+  } catch (error) {
+    return 'Web';
+  }
 }
 
 module.exports = collectWebSearchResults;

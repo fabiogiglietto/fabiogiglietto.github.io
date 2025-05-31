@@ -19,6 +19,7 @@ const githubCollector = require('./collectors/github');
 const newsCollector = require('./collectors/news');
 const webSearchCollector = require('./collectors/websearch');
 const socialMediaCollector = require('./collectors/social-media');
+const socialMediaAggregator = require('./collectors/social-media-aggregator');
 const wosCollector = require('./collectors/wos');
 const scopusCollector = require('./collectors/scopus');
 const publicationsAggregator = require('./collectors/publications-aggregator');
@@ -140,6 +141,16 @@ async function collectAll() {
     fs.writeFileSync(path.join(dataDir, 'summary.json'), JSON.stringify(summary, null, 2));
     
     console.log('Data collection completed successfully');
+    
+    // Update News & Updates section with social media content
+    try {
+      console.log('Aggregating social media posts for News & Updates...');
+      await socialMediaAggregator();
+      console.log('Social media aggregation completed successfully');
+    } catch (socialError) {
+      console.error('Error aggregating social media posts:', socialError.message);
+      // Continue execution even if social media aggregation fails
+    }
     
     // Generate About Me section using OpenAI
     try {
