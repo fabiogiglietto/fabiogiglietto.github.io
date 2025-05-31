@@ -68,9 +68,10 @@ async function collect() {
     console.log('Attempting Scopus API call with multiple authentication methods...');
     
     const baseUrl = 'https://api.elsevier.com/content/search/scopus';
+    // Try with STANDARD view first (more likely to be accessible)
     const queryParams = {
       query: `AU-ID(${authorId})`,
-      view: 'COMPLETE',
+      view: 'STANDARD',
       sort: 'citedby-count desc',
       count: 100  // Retrieve up to 100 publications
     };
@@ -148,8 +149,26 @@ async function collect() {
           // Still throw the original error to trigger fallback
           throw secondError;
         } catch (finalError) {
-          // All methods failed, throw the original error
-          throw error;
+          // Try one more time with minimal parameters
+          console.log('Trying minimal query parameters...');
+          try {
+            const minimalParams = new URLSearchParams({
+              query: `AU-ID(${authorId})`,
+              count: 25  // Smaller count
+            }).toString();
+            
+            response = await axios.get(`${baseUrl}?${minimalParams}`, {
+              headers: {
+                'Accept': 'application/json',
+                'X-ELS-APIKey': apiKey
+              }
+            });
+            
+            console.log('Minimal query succeeded!');
+          } catch (minimalError) {
+            // All methods failed, throw the original error
+            throw error;
+          }
         }
       }
     }
