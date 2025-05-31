@@ -575,6 +575,9 @@ th {
   position: relative;
   margin-bottom: var(--spacing-lg);
   padding-bottom: var(--spacing-sm);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--secondary-color);
 }
 
 .section-title::after {

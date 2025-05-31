@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
         .slice(0, 3);
         
-      let html = '<h3 class="section-title">Recent GitHub Activity</h3>';
+      let html = '<h2 class="section-title">Recent GitHub Activity</h2>';
       html += '<ul class="github-repos">';
       
       recentRepos.forEach(repo => {
