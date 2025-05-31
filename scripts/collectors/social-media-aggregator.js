@@ -287,10 +287,17 @@ Analyze these social media posts from Prof. Fabio Giglietto and:
    - Retweets/shares without substantial commentary
    - Very short posts (< 20 meaningful words)
 
-3. **PROCESS**: For included posts:
+3. **WRITING STYLE**: Create varied, engaging summaries that:
+   - AVOID starting every item with "Professor Giglietto" or "Fabio Giglietto"
+   - Use varied sentence structures and openings
+   - Focus on the news/event itself, not who announced it
+   - Write in third person but vary the subject
+   - Use natural, journalistic language
+   - Keep a professional academic tone
+
+4. **PROCESS**: For included posts:
    - Group similar topics together
    - Create professional, third-person summaries
-   - Use academic/professional tone
    - Keep most recent date for grouped topics
 
 Posts to analyze:
@@ -300,13 +307,20 @@ Return a JSON object with a "news" property containing an array of professional 
 {
   "news": [
     {
-      "content": "Professor Giglietto [professional summary of the academic/research update]",
+      "content": "[Engaging summary focusing on the event/news itself, avoiding repetitive name mentions]",
       "date": "YYYY-MM-DD", 
       "platforms": ["Platform1"],
       "url": "most_relevant_url"
     }
   ]
 }
+
+Example varied openings:
+- "A third PhD scholarship has been announced..."
+- "New research reveals..."
+- "The PROMPT project released..."
+- "A comprehensive guide for researchers..."
+- "Coordinated inauthentic behavior was detected..."
 
 Focus on quality over quantity. Return only 3-5 most significant academic/professional updates.`;
 
