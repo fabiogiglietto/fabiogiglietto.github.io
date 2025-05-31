@@ -34,9 +34,16 @@ async function generatePublicationsData() {
             return null;
           }
           
+          // Use authors from aggregated data (which includes Crossref authoritative data)
+          let correctedAuthors = pub.authors;
+          
+          if (!pub.authors) {
+            correctedAuthors = formatAuthorsFromTitle(pub.title);
+          }
+          
           return {
             title: pub.title,
-            authors: pub.authors || "Giglietto, F.",
+            authors: correctedAuthors || "Giglietto, F.",
             venue: pub.venue || '',
             year: pub.year, // Only use the explicitly provided year
             doi: pub.doi,
@@ -76,8 +83,8 @@ async function generatePublicationsData() {
           const doiMatch = pub.venue?.match(/doi\.org\/(\S+)/i);
           const doi = doiMatch ? doiMatch[1] : null;
           
-          // Format authors
-          const authors = formatAuthorList(pub.authors || '');
+          // Format authors from Scholar data
+          let authors = formatAuthorList(pub.authors || '');
           
           return {
             title: pub.title,
@@ -151,6 +158,8 @@ function formatAuthorList(authorStr) {
   
   return formattedAuthors.join(', ');
 }
+
+// Manual corrections are no longer needed since Crossref provides authoritative data
 
 // Try to extract authors from publication title when no author data is available
 function formatAuthorsFromTitle(title) {

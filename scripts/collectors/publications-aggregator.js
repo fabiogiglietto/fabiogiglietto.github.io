@@ -10,13 +10,14 @@ const orcidCollector = require('./orcid');
 const scholarCollector = require('./scholar');
 const wosCollector = require('./wos');
 const scopusCollector = require('./scopus');
+const crossrefCollector = require('./crossref');
 
 async function collect() {
   console.log('Aggregating publication data from multiple sources...');
   
   try {
     // Collect data from all sources in parallel
-    const [orcidData, scholarData, wosData, scopusData] = await Promise.all([
+    const [orcidData, scholarData, wosData, scopusData, crossrefData] = await Promise.all([
       orcidCollector.collect().catch(err => {
         console.error('ORCID collection error:', err);
         return null;
@@ -31,6 +32,10 @@ async function collect() {
       }),
       scopusCollector.collect().catch(err => {
         console.error('Scopus collection error:', err);
+        return null;
+      }),
+      crossrefCollector.collect().catch(err => {
+        console.error('Crossref collection error:', err);
         return null;
       })
     ]);
@@ -386,6 +391,73 @@ async function collect() {
       });
     }
     
+    // Process Crossref publications (AUTHORITATIVE SOURCE for author information)
+    if (crossrefData && crossrefData.publications) {
+      console.log(`Processing ${crossrefData.publications.length} publications from Crossref (authoritative source)`);
+      
+      crossrefData.publications.forEach(pub => {
+        // Match by DOI (Crossref is DOI-based, so this should always work)
+        if (pub.doi) {
+          const doiKey = `doi:${pub.doi.toLowerCase()}`;
+          if (publicationsMap.has(doiKey)) {
+            const publication = publicationsMap.get(doiKey);
+            
+            // PRIORITIZE Crossref authors as the authoritative source
+            if (pub.authors) {
+              publication.authors = pub.authors;
+              console.log(`✓ Updated authoritative authors from Crossref for: "${pub.title.substring(0, 60)}..."`);
+            }
+            
+            // Add other Crossref metadata
+            publication.source_urls.crossref = pub.url;
+            publication.crossref_type = pub.crossref_type;
+            publication.publisher = pub.publisher;
+            
+            // Update venue if more complete in Crossref
+            if (pub.venue && (!publication.venue || publication.venue.length < pub.venue.length)) {
+              publication.venue = pub.venue;
+            }
+            
+            // Update year if missing
+            if (!publication.year && pub.year) {
+              publication.year = pub.year;
+            }
+          } else {
+            // Add new publication from Crossref
+            console.log(`Adding new publication from Crossref: "${pub.title.substring(0, 60)}..."`);
+            publicationsMap.set(doiKey, {
+              title: pub.title,
+              authors: pub.authors,
+              venue: pub.venue,
+              year: pub.year,
+              doi: pub.doi,
+              citations: {
+                scholar: null,
+                wos: null,
+                scopus: null
+              },
+              source_urls: {
+                orcid: null,
+                scholar: null,
+                wos: null,
+                scopus: null,
+                crossref: pub.url
+              },
+              source_ids: {
+                orcid: null,
+                scholar: null,
+                wos: null,
+                scopus: null
+              },
+              crossref_type: pub.crossref_type,
+              publisher: pub.publisher,
+              metrics: {}
+            });
+          }
+        }
+      });
+    }
+    
     // Convert map to array and calculate aggregate metrics
     const publications = Array.from(publicationsMap.values()).map(pub => {
       // Calculate best citation count
@@ -415,7 +487,8 @@ async function collect() {
       citation_sources: {
         with_scholar: publications.filter(pub => pub.citations.scholar !== null).length,
         with_wos: publications.filter(pub => pub.citations.wos !== null).length,
-        with_scopus: publications.filter(pub => pub.citations.scopus !== null).length
+        with_scopus: publications.filter(pub => pub.citations.scopus !== null).length,
+        with_crossref: publications.filter(pub => pub.source_urls && pub.source_urls.crossref).length
       }
     };
     
