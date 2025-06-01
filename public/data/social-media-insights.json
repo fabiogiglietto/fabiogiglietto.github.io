@@ -1,48 +1,43 @@
 {
-  "overallSummary": "Fabio Giglietto's social media presence spans multiple platforms including Mastodon, LinkedIn, and Bluesky, with a strong focus on topics related to social media analysis, disinformation, and research opportunities. The engagement is varied across platforms, with LinkedIn showing the highest engagement per post.",
+  "overallSummary": "Fabio Giglietto maintains a diverse and engaging social media presence across multiple platforms, including Mastodon, LinkedIn, and Bluesky. With a total of 3580 followers, his content primarily focuses on research in social media analysis, disinformation, and computational methods, attracting significant engagement through likes, reposts, and comments.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 4.38,
-    "mostEngagingPlatform": "LinkedIn"
+    "averageEngagementRate": 4.7,
+    "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
-      "theme": "Social Media Analysis",
-      "description": "Posts focusing on computational methods and algorithms for analyzing social media behavior."
+      "theme": "Research Announcements",
+      "description": "Posts announcing new research papers, grants, and findings in the field of social media analysis and disinformation."
     },
     {
-      "theme": "Research Opportunities",
-      "description": "Posts announcing job openings and grants related to social media research."
+      "theme": "Career Opportunities",
+      "description": "Posts related to job openings and opportunities for collaboration in computational social science."
     },
     {
-      "theme": "Disinformation",
-      "description": "Discussion and research on disinformation and coordinated inauthentic behavior on social platforms."
+      "theme": "Disinformation and Coordination",
+      "description": "Discussions and announcements related to studying and detecting coordinated inauthentic behavior on social media."
     }
   ],
   "recommendations": [
-    "Increase engagement by incorporating more interactive content, such as polls or Q&A sessions, especially on platforms like LinkedIn where professional engagement is high.",
-    "Leverage visual content, such as infographics and short videos, to enhance the understanding of complex topics and increase shareability."
+    "Increase frequency of posts related to recent achievements and ongoing research projects to sustain and boost engagement.",
+    "Engage with followers by responding to comments and encouraging discussions to enhance interaction and visibility."
   ],
   "platformInsights": {
-    "twitter": "No data available for Twitter.",
-    "mastodon": "Mastodon posts have moderate engagement, with a focus on algorithmic developments and methodological discussions.",
-    "linkedin": "LinkedIn posts show the highest engagement, particularly for announcements related to grants and hiring, indicating an audience interested in professional growth and opportunities."
+    "twitter": "No data available.",
+    "mastodon": "Mastodon posts receive moderate engagement; increasing interaction with followers could boost visibility.",
+    "linkedin": "LinkedIn shows the highest engagement, especially with posts related to research achievements and career opportunities."
   },
   "topPerformingContent": [
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
-      "platform": "LinkedIn",
+      "platform": "linkedin",
       "engagementRate": 5.78
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
-      "platform": "Bluesky",
+      "platform": "bluesky",
       "engagementRate": 7.37
-    },
-    {
-      "content": "Now hiring: Two postdoctoral researchers to join our team working on computational methods for social media analysis. Background in data science, computational social science, or related fields preferred.",
-      "platform": "LinkedIn",
-      "engagementRate": 3.95
     }
   ]
 }
