@@ -107,7 +107,7 @@ async function generateFallbackContent() {
     console.log('Generating fallback About Me content...');
     
     // Create fallback content
-    const aboutMeContent = `<p>Fabio Giglietto is a Full Professor of Sociology of Cultural and Communication Processes at the University of Urbino Carlo Bo, Italy. His research focuses on the intersection of Internet Studies, computational social science, and digital media analysis, with particular emphasis on political communication and disinformation.</p>
+    const aboutMeContent = `<p>Fabio Giglietto is a Full Professor of Internet Studies at the University of Urbino Carlo Bo, Italy. His research focuses on the intersection of Internet Studies, computational social science, and digital media analysis, with particular emphasis on political communication and disinformation.</p>
 
 <p>He has made significant contributions to the field through his pioneering work on Coordinated Link Sharing Behavior (CLSB) and the development of CooRnet, an open-source tool for detecting coordinated activity on social platforms. He leads several major research initiatives, including the MINE project, the EU-funded vera.ai project, and is a key partner in PROMPT, which focuses on detecting and analyzing disinformation narratives across Europe.</p>
 
@@ -245,6 +245,7 @@ async function generateContentWithOpenAI(formattedData) {
     const prompt = `
 You are an academic website content generator. Your task is to create a professional "About Me" section for an academic's personal website.
 Use the provided information to create a well-written, engaging, and professional biography that highlights the academic's expertise, research interests, achievements, and current position.
+Ensure the biography accurately reflects the academic's current title as 'Full Professor of Internet Studies' or 'Professor of Internet Studies'. Avoid using 'Associate Professor' or other outdated titles.
 
 Format the content as clean HTML that can be included directly in the website. Use appropriate paragraph tags (<p>) for text and include appropriate semantic HTML elements.
 Keep the tone professional but approachable. The content should be 3-4 paragraphs long.
