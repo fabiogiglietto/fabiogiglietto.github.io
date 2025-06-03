@@ -27,9 +27,6 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           npm run collect
-          npm run generate-about
-          npm run generate-teaching
-          npm run generate-social-insights
       
       - name: Commit and push if changed
         run: |
