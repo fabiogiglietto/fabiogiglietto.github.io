@@ -1,43 +1,43 @@
 {
-  "overallSummary": "Fabio Giglietto has a strong presence across multiple social media platforms with a total of 3,580 followers. Engagement rates vary, with LinkedIn showing the highest interaction through likes and comments, reflecting the professional nature of the audience. Content primarily focuses on research, academic collaboration, and social media analytics.",
+  "overallSummary": "Fabio Giglietto exhibits a strong social media presence across multiple platforms, with a focus on academic and research-related content. With a collective following of 3,580, his posts often engage with topics like disinformation, computational social science, and information operations. Engagement is moderate across platforms, with LinkedIn showing the highest activity in terms of likes and comments.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 9.5,
+    "averageEngagementRate": 4.97,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
-      "theme": "Research and Development",
-      "description": "Posts about new research papers, grants, and algorithm updates."
+      "theme": "Disinformation and Information Operations",
+      "description": "Posts frequently discuss the study and analysis of disinformation across platforms."
     },
     {
-      "theme": "Academic Opportunities",
-      "description": "Announcements for hiring or collaboration opportunities in computational social science."
+      "theme": "Research and Academic Opportunities",
+      "description": "Announcements about research grants, hiring opportunities, and academic discussions."
     },
     {
-      "theme": "Methodological Discussions",
-      "description": "Insights into methodologies for studying disinformation and coordinated behaviors."
+      "theme": "Coordinated Behavior Detection",
+      "description": "Content related to the development and release of tools like CooRnet for analyzing coordinated activities."
     }
   ],
   "recommendations": [
-    "Increase the frequency of posts on LinkedIn to leverage its high engagement rate.",
-    "Diversify content to include more interactive elements such as polls or questions to boost engagement."
+    "Increase the frequency of posts on platforms with lower engagement to boost visibility.",
+    "Engage more actively with followers through comments and discussions to foster community interaction."
   ],
   "platformInsights": {
-    "twitter": "Twitter data not provided.",
-    "mastodon": "Engagement is moderate, with discussions around methodological approaches to disinformation.",
-    "linkedin": "Strong engagement, especially with posts related to research grants and hiring opportunities."
+    "twitter": "No data available for Twitter; consider expanding presence there for broader reach.",
+    "mastodon": "Engagement is steady but could improve with more interactive content or discussions.",
+    "linkedin": "Highest engagement observed; continue leveraging it for professional and academic announcements."
   },
   "topPerformingContent": [
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
       "platform": "linkedin",
-      "engagementRate": 5.8
+      "engagementRate": 5.78
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
       "platform": "bluesky",
-      "engagementRate": 7.4
+      "engagementRate": 7.37
     }
   ]
 }
