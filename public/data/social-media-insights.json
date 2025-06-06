@@ -1,42 +1,42 @@
 {
-  "overallSummary": "Fabio Giglietto's social media presence spans three platforms: Mastodon, LinkedIn, and Bluesky, reaching a total of 3,580 followers. Engagement metrics indicate active interaction with followers, particularly through likes and reposts, with LinkedIn showing the highest engagement due to its professional audience.",
+  "overallSummary": "Fabio Giglietto maintains a robust social media presence across multiple platforms, including Mastodon, LinkedIn, and Bluesky. With a combined total of 3,580 followers, his posts cover topics related to social media research, coordinated behavior, and academic opportunities. Engagement is relatively consistent, with LinkedIn showing the highest individual post interactions.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 6.85,
-    "mostEngagingPlatform": "linkedin"
+    "averageEngagementRate": 3.85,
+    "mostEngagingPlatform": "LinkedIn"
   },
   "contentThemes": [
     {
-      "theme": "Research and Development",
-      "description": "Posts related to new research findings, algorithm updates, and grant announcements."
+      "theme": "Coordinated Behavior Detection",
+      "description": "Frequent mentions of research and tools related to detecting coordinated inauthentic behavior on social media platforms."
     },
     {
-      "theme": "Career Opportunities",
-      "description": "Posts announcing job openings and opportunities for research collaborations."
+      "theme": "Academic Opportunities",
+      "description": "Posts about hiring and research opportunities in social media analysis and computational social science."
     },
     {
       "theme": "Conferences and Presentations",
-      "description": "Posts about upcoming conferences and speaking engagements."
+      "description": "Engagement with the academic community through conferences and discussions on methodological approaches to disinformation."
     }
   ],
   "recommendations": [
-    "Increase cross-platform promotion to enhance visibility across different audiences.",
-    "Engage more with followers by responding to comments and initiating discussions to improve interaction rates."
+    "Increase cross-promotion between platforms to leverage follower bases and enhance engagement.",
+    "Utilize more multimedia content like videos or infographics to potentially increase engagement rates."
   ],
   "platformInsights": {
-    "twitter": "Twitter data is not available, but utilizing hashtags for research topics could enhance reach.",
-    "mastodon": "Engagement is moderate, focus on increasing follower count to boost post visibility.",
-    "linkedin": "Highest engagement, especially for professional updates. Continue leveraging for career and research announcements."
+    "twitter": "No data available for Twitter.",
+    "mastodon": "Mastodon has moderate engagement with a focus on research updates and discussions.",
+    "linkedin": "LinkedIn demonstrates the highest engagement, particularly for posts related to professional achievements and opportunities."
   },
   "topPerformingContent": [
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
-      "platform": "linkedin",
+      "platform": "LinkedIn",
       "engagementRate": 5.78
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
-      "platform": "bluesky",
+      "platform": "Bluesky",
       "engagementRate": 7.37
     }
   ]
