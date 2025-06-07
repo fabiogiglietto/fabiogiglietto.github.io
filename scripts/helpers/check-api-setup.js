@@ -45,6 +45,12 @@ function checkAPISetup() {
       required: process.env.SCOPUS_API_KEY,
       description: 'Optional for enhanced publication data',
       setup: 'Get API key from https://dev.elsevier.com/'
+    },
+    semanticScholar: {
+      name: 'Semantic Scholar',
+      required: process.env.S2_API_KEY,
+      description: 'Optional for comprehensive publication data and metrics',
+      setup: 'Get API key from https://www.semanticscholar.org/product/api'
     }
   };
   
