@@ -25,6 +25,12 @@ jobs:
       - name: Update data
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          WOS_API_KEY: ${{ secrets.WOS_API_KEY }}
+          SCOPUS_API_KEY: ${{ secrets.SCOPUS_API_KEY }}
+          S2_API_KEY: ${{ secrets.S2_API_KEY }}
+          LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+          LINKEDIN_PERSON_ID: ${{ secrets.LINKEDIN_PERSON_ID }}
+          MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
         run: |
           npm run collect
       
