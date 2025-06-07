@@ -15,6 +15,7 @@ OPENAI_API_KEY=sk-your-openai-api-key
 # Academic APIs (for publication data)
 WOS_API_KEY=your-web-of-science-api-key
 SCOPUS_API_KEY=your-scopus-api-key
+S2_API_KEY=your-semantic-scholar-api-key
 ```
 
 ### Social Media APIs (For News & Updates section)

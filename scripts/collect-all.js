@@ -22,6 +22,7 @@ const socialMediaCollector = require('./collectors/social-media');
 const socialMediaAggregator = require('./collectors/social-media-aggregator');
 const wosCollector = require('./collectors/wos');
 const scopusCollector = require('./collectors/scopus');
+const semanticScholarCollector = require('./collectors/semantic-scholar');
 const publicationsAggregator = require('./collectors/publications-aggregator');
 
 // Import generators
@@ -52,10 +53,11 @@ async function collectAll() {
       console.log(`- OpenAI API key: ${hasOpenAIKey ? 'Available' : 'Missing'}`);
       console.log(`- Web of Science API key: ${process.env.WOS_API_KEY ? 'Available' : 'Missing'}`);
       console.log(`- Scopus API key: ${process.env.SCOPUS_API_KEY ? 'Available' : 'Missing'}`);
+      console.log(`- Semantic Scholar API key: ${process.env.S2_API_KEY ? 'Available' : 'Missing'}`);
     }
     
     // Run all collectors in parallel with quiet error handling
-    const [orcidData, scholarData, universityData, githubData, newsData, webSearchData, socialMediaData, wosData, scopusData, aggregatedPublicationsData] = await Promise.all([
+    const [orcidData, scholarData, universityData, githubData, newsData, webSearchData, socialMediaData, wosData, scopusData, semanticScholarData, aggregatedPublicationsData] = await Promise.all([
       orcidCollector.collect().catch(err => {
         console.error('ORCID collection error:', err.message);
         return null;
@@ -103,6 +105,13 @@ async function collectAll() {
         }
         return null;
       }),
+      semanticScholarCollector.collect().catch(err => {
+        // Only show detailed Semantic Scholar errors in GitHub Actions
+        if (isGitHubActions) {
+          console.error('Semantic Scholar collection error:', err.message);
+        }
+        return null;
+      }),
       publicationsAggregator.collect().catch(err => {
         console.error('Publications aggregation error:', err.message);
         return null;
@@ -119,6 +128,7 @@ async function collectAll() {
     if (socialMediaData) fs.writeFileSync(path.join(dataDir, 'social-media.json'), JSON.stringify(socialMediaData, null, 2));
     if (wosData) fs.writeFileSync(path.join(dataDir, 'wos.json'), JSON.stringify(wosData, null, 2));
     if (scopusData) fs.writeFileSync(path.join(dataDir, 'scopus.json'), JSON.stringify(scopusData, null, 2));
+    if (semanticScholarData) fs.writeFileSync(path.join(dataDir, 'semantic-scholar.json'), JSON.stringify(semanticScholarData, null, 2));
     if (aggregatedPublicationsData) fs.writeFileSync(path.join(dataDir, 'aggregated-publications.json'), JSON.stringify(aggregatedPublicationsData, null, 2));
     
     // Create a summary file with collection timestamp
@@ -134,6 +144,7 @@ async function collectAll() {
         socialMedia: !!socialMediaData,
         wos: !!wosData,
         scopus: !!scopusData,
+        semanticScholar: !!semanticScholarData,
         aggregatedPublications: !!aggregatedPublicationsData
       }
     };

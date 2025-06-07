@@ -2,7 +2,7 @@
  * Publications Aggregator
  * 
  * Aggregates publication data from multiple sources (ORCID, Google Scholar, 
- * Web of Science, Scopus) and combines it into a unified format with 
+ * Web of Science, Scopus, Semantic Scholar) and combines it into a unified format with 
  * comprehensive citation metrics.
  */
 
@@ -11,13 +11,14 @@ const scholarCollector = require('./scholar');
 const wosCollector = require('./wos');
 const scopusCollector = require('./scopus');
 const crossrefCollector = require('./crossref');
+const semanticScholarCollector = require('./semantic-scholar');
 
 async function collect() {
   console.log('Aggregating publication data from multiple sources...');
   
   try {
     // Collect data from all sources in parallel
-    const [orcidData, scholarData, wosData, scopusData, crossrefData] = await Promise.all([
+    const [orcidData, scholarData, wosData, scopusData, crossrefData, semanticScholarData] = await Promise.all([
       orcidCollector.collect().catch(err => {
         console.error('ORCID collection error:', err);
         return null;
@@ -36,6 +37,10 @@ async function collect() {
       }),
       crossrefCollector.collect().catch(err => {
         console.error('Crossref collection error:', err);
+        return null;
+      }),
+      semanticScholarCollector.collect().catch(err => {
+        console.error('Semantic Scholar collection error:', err);
         return null;
       })
     ]);
@@ -126,19 +131,22 @@ async function collect() {
           citations: {
             scholar: null,
             wos: null,
-            scopus: null
+            scopus: null,
+            semanticScholar: null
           },
           source_urls: {
             orcid: work.url ? work.url.value : null,
             scholar: null,
             wos: null,
-            scopus: null
+            scopus: null,
+            semanticScholar: null
           },
           source_ids: {
             orcid: work['put-code'],
             scholar: null,
             wos: null,
-            scopus: null
+            scopus: null,
+            semanticScholar: null
           },
           metrics: {}
         });
@@ -194,19 +202,22 @@ async function collect() {
             citations: {
               scholar: pub.citations ? parseInt(pub.citations) : 0,
               wos: null,
-              scopus: null
+              scopus: null,
+              semanticScholar: null
             },
             source_urls: {
               orcid: null,
               scholar: `https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:${pub.id}`,
               wos: null,
-              scopus: null
+              scopus: null,
+              semanticScholar: null
             },
             source_ids: {
               orcid: null,
               scholar: pub.id,
               wos: null,
-              scopus: null
+              scopus: null,
+              semanticScholar: null
             },
             metrics: {}
           });
@@ -283,19 +294,22 @@ async function collect() {
             citations: {
               scholar: null,
               wos: pub.citations,
-              scopus: null
+              scopus: null,
+              semanticScholar: null
             },
             source_urls: {
               orcid: null,
               scholar: null,
               wos: pub.url,
-              scopus: null
+              scopus: null,
+              semanticScholar: null
             },
             source_ids: {
               orcid: null,
               scholar: null,
               wos: pub.wosId,
-              scopus: null
+              scopus: null,
+              semanticScholar: null
             },
             metrics: {}
           });
@@ -371,19 +385,22 @@ async function collect() {
             citations: {
               scholar: null,
               wos: null,
-              scopus: pub.citations
+              scopus: pub.citations,
+              semanticScholar: null
             },
             source_urls: {
               orcid: null,
               scholar: null,
               wos: null,
-              scopus: pub.url
+              scopus: pub.url,
+              semanticScholar: null
             },
             source_ids: {
               orcid: null,
               scholar: null,
               wos: null,
-              scopus: pub.scopusId
+              scopus: pub.scopusId,
+              semanticScholar: null
             },
             metrics: {}
           });
@@ -434,20 +451,23 @@ async function collect() {
               citations: {
                 scholar: null,
                 wos: null,
-                scopus: null
+                scopus: null,
+                semanticScholar: null
               },
               source_urls: {
                 orcid: null,
                 scholar: null,
                 wos: null,
                 scopus: null,
-                crossref: pub.url
+                crossref: pub.url,
+                semanticScholar: null
               },
               source_ids: {
                 orcid: null,
                 scholar: null,
                 wos: null,
-                scopus: null
+                scopus: null,
+                semanticScholar: null
               },
               crossref_type: pub.crossref_type,
               publisher: pub.publisher,
@@ -458,13 +478,122 @@ async function collect() {
       });
     }
     
+    // Process Semantic Scholar publications
+    if (semanticScholarData && semanticScholarData.publications) {
+      console.log(`Processing ${semanticScholarData.publications.length} publications from Semantic Scholar`);
+      
+      semanticScholarData.publications.forEach(pub => {
+        // Try to match by DOI first
+        let matched = false;
+        if (pub.doi) {
+          const doiKey = `doi:${pub.doi.toLowerCase()}`;
+          if (publicationsMap.has(doiKey)) {
+            const publication = publicationsMap.get(doiKey);
+            publication.citations.semanticScholar = pub.citations || 0;
+            publication.source_urls.semanticScholar = `https://www.semanticscholar.org/paper/${pub.semanticScholarId}`;
+            publication.source_ids.semanticScholar = pub.semanticScholarId;
+            
+            // Add additional Semantic Scholar specific data
+            publication.influentialCitations = pub.influentialCitations;
+            publication.isOpenAccess = pub.isOpenAccess;
+            publication.openAccessPdf = pub.openAccessPdf;
+            publication.fieldsOfStudy = pub.fieldsOfStudy;
+            
+            // Update authors if available from Semantic Scholar and current is null
+            if (!publication.authors && pub.authors) {
+              publication.authors = pub.authors;
+            }
+            
+            console.log(`Matched Semantic Scholar publication by DOI: "${pub.title}" with ${pub.citations || 0} citations`);
+            matched = true;
+          }
+        }
+        
+        // If no DOI match, try by title
+        if (!matched) {
+          const s2Title = pub.title.toLowerCase().replace(/[^\w\s]/g, '');
+          
+          for (const [key, publication] of publicationsMap.entries()) {
+            const pubTitle = publication.title.toLowerCase().replace(/[^\w\s]/g, '');
+            
+            if (isSimilarTitle(pubTitle, s2Title)) {
+              publication.citations.semanticScholar = pub.citations || 0;
+              publication.source_urls.semanticScholar = `https://www.semanticscholar.org/paper/${pub.semanticScholarId}`;
+              publication.source_ids.semanticScholar = pub.semanticScholarId;
+              
+              // Add additional Semantic Scholar specific data
+              publication.influentialCitations = pub.influentialCitations;
+              publication.isOpenAccess = pub.isOpenAccess;
+              publication.openAccessPdf = pub.openAccessPdf;
+              publication.fieldsOfStudy = pub.fieldsOfStudy;
+              
+              // Add DOI if missing
+              if (!publication.doi && pub.doi) {
+                publication.doi = pub.doi;
+              }
+              
+              // Update authors if available from Semantic Scholar and current is null
+              if (!publication.authors && pub.authors) {
+                publication.authors = pub.authors;
+              }
+              
+              console.log(`Matched Semantic Scholar publication by title: "${pub.title}" with ${pub.citations || 0} citations`);
+              matched = true;
+              break;
+            }
+          }
+        }
+        
+        // If still no match, add as new entry
+        if (!matched) {
+          const key = pub.doi ? 
+            `doi:${pub.doi.toLowerCase()}` : 
+            `title:${pub.title.toLowerCase().replace(/[^\w\s]/g, '')}`;
+            
+          publicationsMap.set(key, {
+            title: pub.title,
+            authors: pub.authors,
+            venue: pub.venue,
+            year: pub.year || null,
+            doi: pub.doi,
+            citations: {
+              scholar: null,
+              wos: null,
+              scopus: null,
+              semanticScholar: pub.citations
+            },
+            source_urls: {
+              orcid: null,
+              scholar: null,
+              wos: null,
+              scopus: null,
+              semanticScholar: `https://www.semanticscholar.org/paper/${pub.semanticScholarId}`
+            },
+            source_ids: {
+              orcid: null,
+              scholar: null,
+              wos: null,
+              scopus: null,
+              semanticScholar: pub.semanticScholarId
+            },
+            influentialCitations: pub.influentialCitations,
+            isOpenAccess: pub.isOpenAccess,
+            openAccessPdf: pub.openAccessPdf,
+            fieldsOfStudy: pub.fieldsOfStudy,
+            metrics: {}
+          });
+        }
+      });
+    }
+    
     // Convert map to array and calculate aggregate metrics
     const publications = Array.from(publicationsMap.values()).map(pub => {
       // Calculate best citation count
       const citationCounts = [
         pub.citations.scholar, 
         pub.citations.wos, 
-        pub.citations.scopus
+        pub.citations.scopus,
+        pub.citations.semanticScholar
       ].filter(count => count !== null);
       
       pub.metrics = {
@@ -488,6 +617,7 @@ async function collect() {
         with_scholar: publications.filter(pub => pub.citations.scholar !== null).length,
         with_wos: publications.filter(pub => pub.citations.wos !== null).length,
         with_scopus: publications.filter(pub => pub.citations.scopus !== null).length,
+        with_semanticScholar: publications.filter(pub => pub.citations.semanticScholar !== null).length,
         with_crossref: publications.filter(pub => pub.source_urls && pub.source_urls.crossref).length
       }
     };
