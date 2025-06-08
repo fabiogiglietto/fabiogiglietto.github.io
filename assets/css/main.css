@@ -1130,7 +1130,7 @@ th {
 
 .papers-carousel {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* Changed for 3-pane desktop */
   gap: var(--spacing-lg);
   padding: 0 60px;
   min-height: 400px;

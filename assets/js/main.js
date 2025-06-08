@@ -415,12 +415,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const cards = carousel.querySelectorAll('.paper-card');
     if (cards.length === 0) return;
     
-    let currentIndex = 0;
-    const cardsPerView = getCardsPerView();
-    const totalPages = Math.ceil(cards.length / cardsPerView);
+    let currentIndex = 0; // Current page index
+    let currentCardsPerView = getCardsPerView(); // Cards visible at once
+    let currentTotalPages = Math.ceil(cards.length / currentCardsPerView); // Total pages
     
     // Create indicators
-    createIndicators(totalPages, indicatorsContainer);
+    createIndicators(currentTotalPages, indicatorsContainer);
     
     // Set initial state
     updateCarousel();
@@ -441,7 +441,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (rightArrow) {
       rightArrow.addEventListener('click', () => {
-        if (currentIndex < totalPages - 1) {
+        if (currentIndex < currentTotalPages - 1) {
           currentIndex++;
           updateCarousel();
           updateArrows();
@@ -451,56 +451,69 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     // Event listeners for indicators
-    const indicators = indicatorsContainer?.querySelectorAll('.carousel-indicator');
-    indicators?.forEach((indicator, index) => {
-      indicator.addEventListener('click', () => {
-        currentIndex = index;
-        updateCarousel();
-        updateArrows();
-        updateIndicators();
+    function setupIndicatorEventListeners() {
+      const indicators = indicatorsContainer?.querySelectorAll('.carousel-indicator');
+      indicators?.forEach((indicator, index) => {
+        // Remove old listener before adding new one to prevent duplicates
+        indicator.replaceWith(indicator.cloneNode(true)); // Simple way to remove listeners
       });
-    });
+      // Re-query after cloning
+      indicatorsContainer?.querySelectorAll('.carousel-indicator').forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+          currentIndex = index;
+          updateCarousel();
+          updateArrows();
+          updateIndicators();
+        });
+      });
+    }
+    setupIndicatorEventListeners(); // Initial setup
     
     // Handle window resize
     window.addEventListener('resize', () => {
       const newCardsPerView = getCardsPerView();
-      if (newCardsPerView !== cardsPerView) {
-        location.reload(); // Simple approach - reload to recalculate
+      if (newCardsPerView !== currentCardsPerView) {
+        currentCardsPerView = newCardsPerView;
+        currentTotalPages = Math.ceil(cards.length / currentCardsPerView);
+        currentIndex = 0; // Reset to the first page to avoid inconsistent states
+
+        createIndicators(currentTotalPages, indicatorsContainer);
+        setupIndicatorEventListeners(); // Re-attach listeners to new indicators
+
+        updateCarousel();
+        updateArrows();
+        updateIndicators();
       }
     });
     
     function getCardsPerView() {
-      const containerWidth = carousel.parentElement.offsetWidth - 120; // Account for arrows
-      const cardWidth = 420; // Max card width + gap
       const isMobile = window.innerWidth <= 768;
-      return isMobile ? 1 : Math.max(1, Math.floor(containerWidth / cardWidth));
+      return isMobile ? 1 : 3; // 1 for mobile, 3 for desktop
     }
     
     function createIndicators(count, container) {
       if (!container) return;
-      
-      container.innerHTML = '';
+      container.innerHTML = ''; // Clear old indicators
       for (let i = 0; i < count; i++) {
         const indicator = document.createElement('div');
         indicator.className = 'carousel-indicator';
-        if (i === 0) indicator.classList.add('active');
+        if (i === currentIndex) indicator.classList.add('active'); // Ensure current index is active
         container.appendChild(indicator);
       }
     }
     
     function updateCarousel() {
-      // Hide all cards first
       cards.forEach(card => {
-        card.style.display = 'none';
+        card.style.display = 'none'; // Hide all cards
       });
       
       // Show cards for current page
-      const startIndex = currentIndex * cardsPerView;
-      const endIndex = Math.min(startIndex + cardsPerView, cards.length);
+      const startIndex = currentIndex * currentCardsPerView;
+      const endIndex = startIndex + currentCardsPerView;
       
       for (let i = startIndex; i < endIndex; i++) {
         if (cards[i]) {
-          cards[i].style.display = 'block';
+          cards[i].style.display = 'block'; // Show cards for the current page
         }
       }
     }
@@ -510,7 +523,7 @@ document.addEventListener('DOMContentLoaded', () => {
         leftArrow.disabled = currentIndex === 0;
       }
       if (rightArrow) {
-        rightArrow.disabled = currentIndex >= totalPages - 1;
+        rightArrow.disabled = currentIndex >= currentTotalPages - 1;
       }
     }
     
@@ -521,7 +534,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   };
-
   // Global function for inline onclick handlers
   window.scrollCarousel = (direction) => {
     const event = new CustomEvent('carouselScroll', { detail: { direction } });
