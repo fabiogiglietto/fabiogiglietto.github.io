@@ -70,7 +70,7 @@ async function collectWebSearchResults() {
           } else if (query.includes('interviews')) {
             searchPrompt = `Find recent interviews, podcasts, or Q&A sessions featuring "Fabio Giglietto" from the past 3 months. Look for external interviews where he is featured as a guest or expert source.`;
           } else {
-            searchPrompt = `Search for recent conference presentations, talks, or academic events featuring "Fabio Giglietto" from the past 3 months. Look for conference programs, event announcements, or presentation abstracts.`;
+            searchPrompt = `Search for recent and upcoming conference presentations, talks, speeches, or academic events featuring "Fabio Giglietto" from the past 3 months and next 6 months. Look for conference programs, event announcements, presentation abstracts, keynote speeches, or future speaking engagements.`;
           }
           
           console.log(`Attempting web search with prompt: "${searchPrompt}"`);
