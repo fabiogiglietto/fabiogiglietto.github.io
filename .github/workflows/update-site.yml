@@ -2,7 +2,7 @@ name: Update Website Data
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Run daily at midnight
+    - cron: '0 6 * * *'  # Run daily at 6 AM UTC
   workflow_dispatch:  # Allow manual triggering
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
         
-      - name: Update data
+      - name: Update core data (daily)
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           WOS_API_KEY: ${{ secrets.WOS_API_KEY }}
@@ -31,12 +31,57 @@ jobs:
           LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
           LINKEDIN_PERSON_ID: ${{ secrets.LINKEDIN_PERSON_ID }}
           MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
+          SKIP_ABOUT_GENERATION: 'true'
+          SKIP_TEACHING_GENERATION: 'true'
         run: |
           npm run collect
+          
+      - name: Update bio (weekly on Monday)
+        if: github.event.schedule && github.event_name == 'schedule'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ $(date +%u) -eq 1 ]; then
+            echo "Monday detected - updating bio"
+            npm run generate-about
+          else
+            echo "Not Monday - skipping bio update"
+          fi
+          
+      - name: Update teaching (monthly on 1st)
+        if: github.event.schedule && github.event_name == 'schedule'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ $(date +%d) -eq 01 ]; then
+            echo "First of month detected - updating teaching"
+            npm run generate-teaching
+          else
+            echo "Not first of month - skipping teaching update"
+          fi
       
       - name: Commit and push if changed
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git add .
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update site data $(date +%Y-%m-%d)" -m "This is an automated update triggered by the daily workflow." && git push)
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            # Determine what was updated
+            COMMIT_MSG="Auto-update site data $(date +%Y-%m-%d)"
+            COMMIT_BODY="Automated update: "
+            
+            if [ $(date +%u) -eq 1 ]; then
+              COMMIT_BODY="${COMMIT_BODY}bio (weekly), "
+            fi
+            
+            if [ $(date +%d) -eq 01 ]; then
+              COMMIT_BODY="${COMMIT_BODY}teaching (monthly), "
+            fi
+            
+            COMMIT_BODY="${COMMIT_BODY}core data (daily)"
+            
+            git commit -m "$COMMIT_MSG" -m "$COMMIT_BODY"
+            git push
+          fi

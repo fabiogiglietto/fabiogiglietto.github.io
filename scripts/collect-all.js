@@ -178,30 +178,38 @@ async function collectAll() {
       // Continue execution even if social media aggregation fails
     }
     
-    // Generate About Me section using OpenAI
-    try {
-      const aboutGenerated = await aboutGenerator.generateAboutMe();
-      if (aboutGenerated) {
-        console.log('About Me section generated successfully');
-      } else {
-        console.log('About Me section generation skipped or failed');
+    // Generate About Me section using OpenAI (weekly or on-demand)
+    if (process.env.SKIP_ABOUT_GENERATION !== 'true') {
+      try {
+        const aboutGenerated = await aboutGenerator.generateAboutMe();
+        if (aboutGenerated) {
+          console.log('About Me section generated successfully');
+        } else {
+          console.log('About Me section generation skipped or failed');
+        }
+      } catch (genError) {
+        console.error('Error generating About Me section:', genError);
+        // Continue execution even if the generation fails
       }
-    } catch (genError) {
-      console.error('Error generating About Me section:', genError);
-      // Continue execution even if the generation fails
+    } else {
+      console.log('Skipping About Me generation (will be handled separately)');
     }
     
-    // Generate Teaching data
-    try {
-      const teachingGenerated = await teachingGenerator.generateTeachingData();
-      if (teachingGenerated) {
-        console.log('Teaching data generated successfully');
-      } else {
-        console.log('Teaching data generation skipped or failed');
+    // Generate Teaching data (monthly or on-demand)
+    if (process.env.SKIP_TEACHING_GENERATION !== 'true') {
+      try {
+        const teachingGenerated = await teachingGenerator.generateTeachingData();
+        if (teachingGenerated) {
+          console.log('Teaching data generated successfully');
+        } else {
+          console.log('Teaching data generation skipped or failed');
+        }
+      } catch (genError) {
+        console.error('Error generating teaching data:', genError);
+        // Continue execution even if the generation fails
       }
-    } catch (genError) {
-      console.error('Error generating teaching data:', genError);
-      // Continue execution even if the generation fails
+    } else {
+      console.log('Skipping Teaching generation (will be handled separately)');
     }
     
     // Generate Social Media Insights
