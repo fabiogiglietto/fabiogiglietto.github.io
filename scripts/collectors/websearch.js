@@ -119,6 +119,12 @@ async function collectWebSearchResults() {
                           continue;
                         }
                         
+                        // Skip direct links to Fabio Giglietto authored papers (not discussions about them)
+                        if (isDirectPaperLink(annotation.title, annotation.url)) {
+                          console.log(`Skipping direct paper link: ${annotation.url}`);
+                          continue;
+                        }
+                        
                         if (!urlMap.has(annotation.url)) {
                           // Clean up snippet to remove markdown-style URL references
                           let snippet = content.text.substring(annotation.start_index, annotation.end_index);
@@ -216,6 +222,53 @@ async function saveEmptyResults() {
   await writeFileAsync(outputPath, JSON.stringify(emptyData, null, 2));
   console.log(`Saved empty results to ${outputPath} - web mentions section will be hidden`);
   return emptyData;
+}
+
+/**
+ * Check if this is a direct link to a Fabio Giglietto authored paper
+ * vs. a discussion/mention of his work
+ */
+function isDirectPaperLink(title, url) {
+  // Check for direct paper patterns - titles that are just paper titles with Fabio as author
+  const directPaperPatterns = [
+    // Journal paper patterns
+    /^[^:]+:\s*.*Fabio Giglietto.*,.*\d{4}$/,  // "Journal: Title - Fabio Giglietto, Author2, 2023"
+    /^.*\s-\s.*Fabio Giglietto.*,.*\d{4}$/,    // "Title - Fabio Giglietto, Author2, 2023"
+    
+    // Repository/database patterns for papers authored by Fabio
+    /Rivisteweb:.*Fabio Giglietto.*\d{4}$/,    // Rivisteweb direct paper links
+  ];
+  
+  // URLs that are typically direct paper links (not discussions)
+  const directPaperUrls = [
+    'journals.sagepub.com/doi/',           // Direct SAGE journal articles
+    'rivisteweb.it/doi/',                  // Direct Rivisteweb articles
+    'link.springer.com/article/',         // Direct Springer articles
+    'www.tandfonline.com/doi/',           // Direct Taylor & Francis articles
+    'onlinelibrary.wiley.com/doi/',       // Direct Wiley articles
+    'www.sciencedirect.com/science/article/', // Direct ScienceDirect articles
+    'ieeexplore.ieee.org/document/',      // Direct IEEE articles
+  ];
+  
+  // Check if title matches direct paper patterns
+  const titleIsDirectPaper = directPaperPatterns.some(pattern => pattern.test(title));
+  
+  // Check if URL is a direct paper link
+  const urlIsDirectPaper = directPaperUrls.some(pattern => url.includes(pattern));
+  
+  // If both title and URL suggest this is a direct paper link, skip it
+  if (titleIsDirectPaper && urlIsDirectPaper) {
+    return true;
+  }
+  
+  // Special case: Rivisteweb entries that are just paper titles
+  if (url.includes('rivisteweb.it/doi/') && title.includes('Rivisteweb:') && 
+      title.includes('Fabio Giglietto') && !title.includes('discusses') && 
+      !title.includes('references') && !title.includes('cites')) {
+    return true;
+  }
+  
+  return false;
 }
 
 /**

@@ -1449,7 +1449,7 @@ th {
   padding-top: var(--spacing);
   border-top: 1px solid var(--border-color);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: var(--spacing);

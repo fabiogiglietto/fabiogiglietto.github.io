@@ -1,9 +1,6 @@
 {% if site.data.websearch and site.data.websearch.size > 0 %}
 <section class="web-mentions">
   <h2 class="section-title">Recent Web Mentions</h2>
-  <p class="section-description">
-    Recent mentions of Fabio Giglietto's research and work found across the web, excluding self-authored content.
-  </p>
   
   <div class="mentions-list">
     {% for mention in site.data.websearch limit:5 %}
@@ -30,15 +27,6 @@
   </div>
   
   <div class="section-footer">
-    <div class="collection-info">
-      <small>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
-          <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        Last updated: {{ site.data.summary.lastUpdated | date: "%B %d, %Y at %I:%M %p" }}
-      </small>
-    </div>
     <div class="collection-method">
       <small>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
