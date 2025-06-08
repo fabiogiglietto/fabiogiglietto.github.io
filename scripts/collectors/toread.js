@@ -1,0 +1,83 @@
+/**
+ * Toread Papers Collector
+ * Collects papers from a reading list (could be RSS, API, or static data)
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+class ToreadCollector {
+  constructor() {
+    this.baseDir = path.join(__dirname, '..', '..', 'public', 'data');
+  }
+
+  async collect() {
+    try {
+      // For now, create sample data representing papers to read
+      // In a real implementation, this could fetch from:
+      // - RSS feeds
+      // - Paperpile API 
+      // - BibTeX files
+      // - Reading list services
+      
+      const toreadData = {
+        papers: [
+          {
+            id: "sample-1",
+            title: "Large Language Models in Social Media Research: Opportunities and Challenges",
+            authors: ["Smith, J.", "Johnson, A.", "Williams, B."],
+            venue: "Journal of Computational Social Science",
+            year: 2024,
+            url: "https://example.com/paper1",
+            doi: "10.1234/example.2024.001",
+            abstract: "This paper examines the application of large language models in social media research, highlighting both opportunities for enhanced analysis and challenges in validation.",
+            tags: ["LLMs", "Social Media", "Computational Methods"],
+            dateAdded: "2025-06-08T00:00:00Z",
+            status: "to-read"
+          },
+          {
+            id: "sample-2", 
+            title: "Coordinated Inauthentic Behavior Detection: A Systematic Review",
+            authors: ["Chen, L.", "Davis, R."],
+            venue: "Information, Communication & Society",
+            year: 2024,
+            url: "https://example.com/paper2",
+            doi: "10.1234/example.2024.002",
+            abstract: "A comprehensive review of methods and approaches for detecting coordinated inauthentic behavior across social media platforms.",
+            tags: ["Disinformation", "Coordinated Behavior", "Detection"],
+            dateAdded: "2025-06-07T00:00:00Z",
+            status: "to-read"
+          },
+          {
+            id: "sample-3",
+            title: "The Future of Digital Ethnography in Platform Studies",
+            authors: ["Martinez, C.", "Taylor, K.", "Brown, M."],
+            venue: "Social Media + Society",
+            year: 2024,
+            url: "https://example.com/paper3",
+            doi: "10.1234/example.2024.003",
+            abstract: "Exploring methodological innovations in digital ethnography for studying social media platforms and online communities.",
+            tags: ["Digital Ethnography", "Platform Studies", "Methods"],
+            dateAdded: "2025-06-06T00:00:00Z",
+            status: "in-progress"
+          }
+        ],
+        metadata: {
+          totalPapers: 3,
+          toRead: 2,
+          inProgress: 1,
+          completed: 0
+        },
+        lastUpdated: new Date().toISOString()
+      };
+
+      return toreadData;
+      
+    } catch (error) {
+      console.error('Error collecting toread data:', error);
+      return null;
+    }
+  }
+}
+
+module.exports = new ToreadCollector();

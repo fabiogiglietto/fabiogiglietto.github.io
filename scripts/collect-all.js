@@ -24,6 +24,7 @@ const wosCollector = require('./collectors/wos');
 const scopusCollector = require('./collectors/scopus');
 const semanticScholarCollector = require('./collectors/semantic-scholar');
 const publicationsAggregator = require('./collectors/publications-aggregator');
+const toreadCollector = require('./collectors/toread');
 
 // Import generators
 const aboutGenerator = require('./generators/about-generator');
@@ -57,7 +58,7 @@ async function collectAll() {
     }
     
     // Run all collectors in parallel with quiet error handling
-    const [orcidData, scholarData, universityData, githubData, newsData, webSearchData, socialMediaData, wosData, scopusData, semanticScholarData, aggregatedPublicationsData] = await Promise.all([
+    const [orcidData, scholarData, universityData, githubData, newsData, webSearchData, socialMediaData, wosData, scopusData, semanticScholarData, aggregatedPublicationsData, toreadData] = await Promise.all([
       orcidCollector.collect().catch(err => {
         console.error('ORCID collection error:', err.message);
         return null;
@@ -115,6 +116,10 @@ async function collectAll() {
       publicationsAggregator.collect().catch(err => {
         console.error('Publications aggregation error:', err.message);
         return null;
+      }),
+      toreadCollector.collect().catch(err => {
+        console.error('Toread collection error:', err.message);
+        return null;
       })
     ]);
     
@@ -130,6 +135,7 @@ async function collectAll() {
     if (scopusData) fs.writeFileSync(path.join(dataDir, 'scopus.json'), JSON.stringify(scopusData, null, 2));
     if (semanticScholarData) fs.writeFileSync(path.join(dataDir, 'semantic-scholar.json'), JSON.stringify(semanticScholarData, null, 2));
     if (aggregatedPublicationsData) fs.writeFileSync(path.join(dataDir, 'aggregated-publications.json'), JSON.stringify(aggregatedPublicationsData, null, 2));
+    if (toreadData) fs.writeFileSync(path.join(dataDir, 'toread.json'), JSON.stringify(toreadData, null, 2));
     
     // Create a summary file with collection timestamp
     const summary = {
@@ -145,7 +151,8 @@ async function collectAll() {
         wos: !!wosData,
         scopus: !!scopusData,
         semanticScholar: !!semanticScholarData,
-        aggregatedPublications: !!aggregatedPublicationsData
+        aggregatedPublications: !!aggregatedPublicationsData,
+        toread: !!toreadData
       }
     };
     

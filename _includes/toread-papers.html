@@ -1,0 +1,94 @@
+<section class="toread-papers">
+  <h2 class="section-title">📚 Papers to Read</h2>
+  
+  {% assign toread_data = site.data.toread %}
+  {% if toread_data and toread_data.papers %}
+    <div class="toread-stats">
+      <div class="stat-item">
+        <span class="stat-number">{{ toread_data.metadata.toRead }}</span>
+        <span class="stat-label">To Read</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">{{ toread_data.metadata.inProgress }}</span>
+        <span class="stat-label">In Progress</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">{{ toread_data.metadata.totalPapers }}</span>
+        <span class="stat-label">Total Papers</span>
+      </div>
+    </div>
+    
+    <div class="papers-grid">
+      {% assign recent_papers = toread_data.papers | sort: 'dateAdded' | reverse %}
+      {% for paper in recent_papers limit:3 %}
+        <article class="paper-card">
+          <div class="paper-header">
+            <h3 class="paper-title">
+              {% if paper.url %}
+                <a href="{{ paper.url }}" target="_blank" rel="noopener">{{ paper.title }}</a>
+              {% else %}
+                {{ paper.title }}
+              {% endif %}
+            </h3>
+            <div class="paper-status status-{{ paper.status }}">
+              {% case paper.status %}
+                {% when 'to-read' %}
+                  📖 To Read
+                {% when 'in-progress' %}
+                  🔄 Reading
+                {% when 'completed' %}
+                  ✅ Done
+                {% else %}
+                  📄 {{ paper.status }}
+              {% endcase %}
+            </div>
+          </div>
+          
+          <div class="paper-meta">
+            <div class="paper-authors">
+              {% for author in paper.authors %}
+                <span class="author">{{ author }}</span>{% unless forloop.last %}, {% endunless %}
+              {% endfor %}
+            </div>
+            <div class="paper-venue">{{ paper.venue }} ({{ paper.year }})</div>
+          </div>
+          
+          {% if paper.abstract %}
+            <div class="paper-abstract">
+              {{ paper.abstract | truncate: 150 }}
+            </div>
+          {% endif %}
+          
+          {% if paper.tags and paper.tags.size > 0 %}
+            <div class="paper-tags">
+              {% for tag in paper.tags %}
+                <span class="tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+          
+          <div class="paper-footer">
+            <span class="date-added">Added {{ paper.dateAdded | date: "%b %d, %Y" }}</span>
+            {% if paper.doi %}
+              <a href="https://doi.org/{{ paper.doi }}" class="doi-link" target="_blank" rel="noopener">
+                DOI: {{ paper.doi }}
+              </a>
+            {% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+    
+    {% if toread_data.papers.size > 3 %}
+      <div class="view-all-papers">
+        <a href="#" class="btn btn-outline">View All Papers ({{ toread_data.papers.size }})</a>
+      </div>
+    {% endif %}
+    
+  {% else %}
+    <div class="empty-state">
+      <div class="empty-icon">📚</div>
+      <p>No papers in reading list yet.</p>
+    </div>
+  {% endif %}
+</section>
