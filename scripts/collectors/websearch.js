@@ -44,10 +44,10 @@ async function collectWebSearchResults() {
 
     // Search queries - only for real web search
     const queries = [
-      "Fabio Giglietto recent publications",
-      "Fabio Giglietto news OR notizie media coverage",
-      "Fabio Giglietto interviews OR intervista",
-      "Fabio Giglietto conference presentations 2024"
+      "Fabio Giglietto recent web mentions",
+      "Fabio Giglietto recent news OR media coverage",
+      "Fabio Giglietto recent interviews",
+      "Fabio Giglietto recent or upcoming conference presentations"
     ];
 
     let allResults = [];
@@ -61,38 +61,68 @@ async function collectWebSearchResults() {
         let searchResults = [];
         
         try {
-          // Create search prompt for real web search
-          const searchPrompt = `Search the web for real, recent mentions of Fabio Giglietto from verifiable sources. Look for actual news articles, academic publications, conference presentations, and media coverage from the past year. Only return real, verifiable results with actual URLs.`;
+          // Create search prompt using the specific query
+          const searchPrompt = `Search the web for: "${query}" from the last month. Find mentions from authoritative sources including university websites, conference websites, academic organizations websites, reliable news outlets, reliable organization websites, social media posts, and blogs. Exclude only unofficial sources. Focus on verifiable content with actual URLs. For each result, provide a brief one sentence summary of the content. Discard results older than one month.`;
+          
+          console.log(`Attempting web search with prompt: "${searchPrompt}"`);
           
           response = await openai.responses.create({
             model: "gpt-4o",
             input: searchPrompt,
             tools: [
               {
-                type: "web_search"
+                type: "web_search_preview",
+                search_context_size: "high"
               }
-            ]
+            ],
+            tool_choice: { type: "web_search_preview" }
           });
           
-          // Extract ONLY real search results from the response
-          if (response && response.tool_outputs && response.tool_outputs.length > 0) {
-            for (const toolOutput of response.tool_outputs) {
-              if (toolOutput.type === 'web_search' && toolOutput.results) {
-                // Filter out any results that look fake or fabricated
-                const realResults = toolOutput.results.filter(result => 
-                  result.url && 
-                  result.url.startsWith('http') &&
-                  !result.url.includes('example.com') &&
-                  result.title &&
-                  result.snippet
-                );
-                searchResults = [...searchResults, ...realResults];
+          console.log(`API response received for query "${query}"`);
+          
+          // Extract search results from the new API structure
+          if (response && response.output && response.output.length > 0) {
+            for (const output of response.output) {
+              if (output.type === 'message' && output.content && output.content.length > 0) {
+                for (const content of output.content) {
+                  if (content.type === 'output_text' && content.annotations) {
+                    console.log(`Found ${content.annotations.length} URL citations`);
+                    
+                    // Extract unique URLs with titles
+                    const urlMap = new Map();
+                    for (const annotation of content.annotations) {
+                      if (annotation.type === 'url_citation' && annotation.url && annotation.title) {
+                        if (!urlMap.has(annotation.url)) {
+                          urlMap.set(annotation.url, {
+                            title: annotation.title,
+                            url: annotation.url,
+                            snippet: content.text.substring(annotation.start_index, annotation.end_index),
+                            date: new Date().toISOString().split('T')[0], // Today's date as fallback
+                            source: extractDomainFromUrl(annotation.url)
+                          });
+                        }
+                      }
+                    }
+                    
+                    const uniqueResults = Array.from(urlMap.values());
+                    console.log(`Extracted ${uniqueResults.length} unique results`);
+                    searchResults = [...searchResults, ...uniqueResults];
+                  }
+                }
               }
             }
-            console.log(`Found ${searchResults.length} REAL results from web search`);
+            console.log(`Found ${searchResults.length} results from web search`);
+          } else {
+            console.log(`No output in response or empty response`);
           }
         } catch (responsesError) {
-          console.log(`Web search API not available for ${query}:`, responsesError.message);
+          console.log(`Web search API error for ${query}:`, responsesError.message);
+          console.log(`Error details:`, JSON.stringify({
+            name: responsesError.name,
+            message: responsesError.message,
+            status: responsesError.status,
+            code: responsesError.code
+          }, null, 2));
           // Do not fall back to mock data - continue to next query
         }
         

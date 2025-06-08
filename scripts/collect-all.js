@@ -129,7 +129,11 @@ async function collectAll() {
     if (universityData) fs.writeFileSync(path.join(dataDir, 'university.json'), JSON.stringify(universityData, null, 2));
     if (githubData) fs.writeFileSync(path.join(dataDir, 'github.json'), JSON.stringify(githubData, null, 2));
     if (newsData) fs.writeFileSync(path.join(dataDir, 'news.json'), JSON.stringify(newsData, null, 2));
-    if (webSearchData) fs.writeFileSync(path.join(dataDir, 'websearch.json'), JSON.stringify(webSearchData, null, 2));
+    if (webSearchData) {
+      fs.writeFileSync(path.join(dataDir, 'websearch.json'), JSON.stringify(webSearchData, null, 2));
+      // Also copy to Jekyll _data directory for site.data.websearch access
+      fs.writeFileSync(path.join(__dirname, '../_data/websearch.json'), JSON.stringify(webSearchData, null, 2));
+    }
     if (socialMediaData) fs.writeFileSync(path.join(dataDir, 'social-media.json'), JSON.stringify(socialMediaData, null, 2));
     if (wosData) fs.writeFileSync(path.join(dataDir, 'wos.json'), JSON.stringify(wosData, null, 2));
     if (scopusData) fs.writeFileSync(path.join(dataDir, 'scopus.json'), JSON.stringify(scopusData, null, 2));
