@@ -1093,6 +1093,36 @@ th {
   margin-top: var(--spacing-xl);
 }
 
+.toread-papers .section-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-lg);
+}
+
+.toread-papers .section-header .section-title {
+  margin: 0;
+}
+
+.json-source-link {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-xs);
+  border-radius: var(--radius-sm);
+  color: var(--text-light);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.json-source-link:hover {
+  color: var(--primary-color);
+  background-color: var(--primary-light);
+}
+
+.json-source-link svg {
+  transition: color 0.2s ease;
+}
+
 .toread-stats {
   display: flex;
   gap: var(--spacing-lg);
