@@ -1469,6 +1469,29 @@ th {
   color: var(--primary-color);
 }
 
+/* Bio generation note */
+.bio-note {
+  margin-top: var(--spacing);
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio-note small {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: 0.85rem;
+  color: var(--dark-gray);
+  font-style: italic;
+}
+
+.bio-note svg {
+  color: var(--primary-color);
+}
+
 @media (max-width: 768px) {
   .section-footer {
     flex-direction: column;
