@@ -61,8 +61,17 @@ async function collectWebSearchResults() {
         let searchResults = [];
         
         try {
-          // Create search prompt using the specific query
-          const searchPrompt = `Search the web for: "${query}" from the last month. Find mentions from authoritative sources including university websites, conference websites, academic organizations websites, reliable news outlets, reliable organization websites, social media posts, and blogs. Exclude only unofficial sources. Focus on verifiable content with actual URLs. For each result, provide a brief one sentence summary of the content. Discard results older than one month.`;
+          // Create search prompt using the specific query - try different strategies per query type
+          let searchPrompt;
+          if (query.includes('web mentions')) {
+            searchPrompt = `Find recent web mentions of "Fabio Giglietto" from the past 3 months. Look for citations, references, or discussions of his research by others in academic papers, news articles, conference proceedings, or professional blogs. Exclude content authored by Fabio Giglietto himself. Focus on third-party mentions of his work.`;
+          } else if (query.includes('news OR media coverage')) {
+            searchPrompt = `Search for recent news articles and media coverage mentioning "Fabio Giglietto" from the past 3 months. Look for journalism, press releases, or media reports that reference his research or quote him. Exclude self-authored content.`;
+          } else if (query.includes('interviews')) {
+            searchPrompt = `Find recent interviews, podcasts, or Q&A sessions featuring "Fabio Giglietto" from the past 3 months. Look for external interviews where he is featured as a guest or expert source.`;
+          } else {
+            searchPrompt = `Search for recent conference presentations, talks, or academic events featuring "Fabio Giglietto" from the past 3 months. Look for conference programs, event announcements, or presentation abstracts.`;
+          }
           
           console.log(`Attempting web search with prompt: "${searchPrompt}"`);
           
@@ -92,6 +101,18 @@ async function collectWebSearchResults() {
                     const urlMap = new Map();
                     for (const annotation of content.annotations) {
                       if (annotation.type === 'url_citation' && annotation.url && annotation.title) {
+                        // Skip Kudos/GrowKudos results
+                        if (annotation.url.includes('kudos.com') || annotation.url.includes('growkudos.com')) {
+                          console.log(`Skipping Kudos result: ${annotation.url}`);
+                          continue;
+                        }
+                        
+                        // Skip self-authored Medium articles
+                        if (annotation.url.includes('medium.com/%40fabiogiglietto')) {
+                          console.log(`Skipping self-authored Medium article: ${annotation.url}`);
+                          continue;
+                        }
+                        
                         if (!urlMap.has(annotation.url)) {
                           urlMap.set(annotation.url, {
                             title: annotation.title,
