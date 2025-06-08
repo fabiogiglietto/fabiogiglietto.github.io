@@ -1123,11 +1123,39 @@ th {
   margin-top: var(--spacing-xs);
 }
 
-.papers-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: var(--spacing-lg);
+.papers-carousel-container {
+  position: relative;
   margin-bottom: var(--spacing-lg);
+  overflow: hidden;
+}
+
+.papers-carousel {
+  display: flex;
+  gap: var(--spacing-lg);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  padding-bottom: var(--spacing-sm);
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-color) transparent;
+}
+
+.papers-carousel::-webkit-scrollbar {
+  height: 6px;
+}
+
+.papers-carousel::-webkit-scrollbar-track {
+  background: var(--light-gray);
+  border-radius: 3px;
+}
+
+.papers-carousel::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
+
+.papers-carousel::-webkit-scrollbar-thumb:hover {
+  background: var(--gray);
 }
 
 .paper-card {
@@ -1136,6 +1164,22 @@ th {
   border-radius: var(--border-radius);
   padding: var(--spacing-lg);
   transition: all 0.2s ease;
+  min-width: 350px;
+  max-width: 400px;
+  flex-shrink: 0;
+}
+
+/* Mobile responsive adjustments for carousel */
+@media (max-width: 768px) {
+  .papers-carousel {
+    gap: var(--spacing);
+  }
+  
+  .paper-card {
+    min-width: 280px;
+    max-width: 320px;
+    padding: var(--spacing);
+  }
 }
 
 .paper-card:hover {
@@ -1248,10 +1292,6 @@ th {
   text-decoration: underline;
 }
 
-.view-all-papers {
-  text-align: center;
-  margin-top: var(--spacing-lg);
-}
 
 .empty-state {
   text-align: center;
