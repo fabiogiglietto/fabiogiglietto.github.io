@@ -1,23 +1,8 @@
 <section class="toread-papers">
-  <h2 class="section-title">📚 Papers to Read</h2>
+  <h2 class="section-title">📚 FG's #toread</h2>
   
   {% assign toread_data = site.data.toread %}
   {% if toread_data and toread_data.papers %}
-    <div class="toread-stats">
-      <div class="stat-item">
-        <span class="stat-number">{{ toread_data.metadata.toRead }}</span>
-        <span class="stat-label">To Read</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">{{ toread_data.metadata.inProgress }}</span>
-        <span class="stat-label">In Progress</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number">{{ toread_data.metadata.totalPapers }}</span>
-        <span class="stat-label">Total Papers</span>
-      </div>
-    </div>
-    
     <div class="papers-grid">
       {% assign recent_papers = toread_data.papers | sort: 'dateAdded' | reverse %}
       {% for paper in recent_papers limit:3 %}
@@ -30,18 +15,6 @@
                 {{ paper.title }}
               {% endif %}
             </h3>
-            <div class="paper-status status-{{ paper.status }}">
-              {% case paper.status %}
-                {% when 'to-read' %}
-                  📖 To Read
-                {% when 'in-progress' %}
-                  🔄 Reading
-                {% when 'completed' %}
-                  ✅ Done
-                {% else %}
-                  📄 {{ paper.status }}
-              {% endcase %}
-            </div>
           </div>
           
           <div class="paper-meta">
