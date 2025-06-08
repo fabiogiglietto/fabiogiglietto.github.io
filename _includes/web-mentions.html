@@ -22,7 +22,7 @@
         <span class="mention-date">{{ mention.date | date: "%b %d, %Y" }}</span>
         {% endif %}
       </div>
-      {% if mention.snippet %}
+      {% if mention.snippet and mention.snippet.size > 10 %}
       <div class="mention-snippet">{{ mention.snippet | strip_html | truncate: 200 }}</div>
       {% endif %}
     </article>

@@ -120,10 +120,15 @@ async function collectWebSearchResults() {
                         }
                         
                         if (!urlMap.has(annotation.url)) {
+                          // Clean up snippet to remove markdown-style URL references
+                          let snippet = content.text.substring(annotation.start_index, annotation.end_index);
+                          // Remove markdown links like ([domain.com](url))
+                          snippet = snippet.replace(/\(\[.*?\]\(.*?\)\)/g, '').trim();
+                          
                           urlMap.set(annotation.url, {
                             title: annotation.title,
                             url: annotation.url,
-                            snippet: content.text.substring(annotation.start_index, annotation.end_index),
+                            snippet: snippet,
                             date: new Date().toISOString().split('T')[0], // Today's date as fallback
                             source: extractDomainFromUrl(annotation.url)
                           });
