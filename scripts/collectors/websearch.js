@@ -113,6 +113,12 @@ async function collectWebSearchResults() {
                           continue;
                         }
                         
+                        // Skip SSRN author pages (self-referential)
+                        if (annotation.url.includes('papers.ssrn.com') && annotation.title.includes('Author Page for Fabio Giglietto')) {
+                          console.log(`Skipping SSRN author page: ${annotation.url}`);
+                          continue;
+                        }
+                        
                         if (!urlMap.has(annotation.url)) {
                           urlMap.set(annotation.url, {
                             title: annotation.title,
