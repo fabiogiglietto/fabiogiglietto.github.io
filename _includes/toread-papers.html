@@ -9,7 +9,9 @@
         <article class="paper-card">
           <div class="paper-header">
             <h3 class="paper-title">
-              {% if paper.url %}
+              {% if paper.doi %}
+                <a href="https://doi.org/{{ paper.doi }}" target="_blank" rel="noopener">{{ paper.title }}</a>
+              {% elsif paper.url %}
                 <a href="{{ paper.url }}" target="_blank" rel="noopener">{{ paper.title }}</a>
               {% else %}
                 {{ paper.title }}
@@ -43,8 +45,10 @@
           <div class="paper-footer">
             <span class="date-added">Added {{ paper.dateAdded | date: "%b %d, %Y" }}</span>
             {% if paper.doi %}
-              <a href="https://doi.org/{{ paper.doi }}" class="doi-link" target="_blank" rel="noopener">
-                DOI: {{ paper.doi }}
+              <span class="doi-text">DOI: {{ paper.doi }}</span>
+            {% elsif paper.url %}
+              <a href="{{ paper.url }}" class="url-link" target="_blank" rel="noopener">
+                View Paper
               </a>
             {% endif %}
           </div>
