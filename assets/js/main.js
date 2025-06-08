@@ -403,11 +403,137 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
+  // Initialize papers carousel
+  const initPapersCarousel = () => {
+    const carousel = document.getElementById('papersCarousel');
+    const leftArrow = document.querySelector('.carousel-arrow-left');
+    const rightArrow = document.querySelector('.carousel-arrow-right');
+    const indicatorsContainer = document.getElementById('carouselIndicators');
+    
+    if (!carousel) return;
+    
+    const cards = carousel.querySelectorAll('.paper-card');
+    if (cards.length === 0) return;
+    
+    let currentIndex = 0;
+    const cardsPerView = getCardsPerView();
+    const totalPages = Math.ceil(cards.length / cardsPerView);
+    
+    // Create indicators
+    createIndicators(totalPages, indicatorsContainer);
+    
+    // Set initial state
+    updateCarousel();
+    updateArrows();
+    updateIndicators();
+    
+    // Event listeners for arrows
+    if (leftArrow) {
+      leftArrow.addEventListener('click', () => {
+        if (currentIndex > 0) {
+          currentIndex--;
+          updateCarousel();
+          updateArrows();
+          updateIndicators();
+        }
+      });
+    }
+    
+    if (rightArrow) {
+      rightArrow.addEventListener('click', () => {
+        if (currentIndex < totalPages - 1) {
+          currentIndex++;
+          updateCarousel();
+          updateArrows();
+          updateIndicators();
+        }
+      });
+    }
+    
+    // Event listeners for indicators
+    const indicators = indicatorsContainer?.querySelectorAll('.carousel-indicator');
+    indicators?.forEach((indicator, index) => {
+      indicator.addEventListener('click', () => {
+        currentIndex = index;
+        updateCarousel();
+        updateArrows();
+        updateIndicators();
+      });
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', () => {
+      const newCardsPerView = getCardsPerView();
+      if (newCardsPerView !== cardsPerView) {
+        location.reload(); // Simple approach - reload to recalculate
+      }
+    });
+    
+    function getCardsPerView() {
+      const containerWidth = carousel.parentElement.offsetWidth - 120; // Account for arrows
+      const cardWidth = 420; // Max card width + gap
+      const isMobile = window.innerWidth <= 768;
+      return isMobile ? 1 : Math.max(1, Math.floor(containerWidth / cardWidth));
+    }
+    
+    function createIndicators(count, container) {
+      if (!container) return;
+      
+      container.innerHTML = '';
+      for (let i = 0; i < count; i++) {
+        const indicator = document.createElement('div');
+        indicator.className = 'carousel-indicator';
+        if (i === 0) indicator.classList.add('active');
+        container.appendChild(indicator);
+      }
+    }
+    
+    function updateCarousel() {
+      // Hide all cards first
+      cards.forEach(card => {
+        card.style.display = 'none';
+      });
+      
+      // Show cards for current page
+      const startIndex = currentIndex * cardsPerView;
+      const endIndex = Math.min(startIndex + cardsPerView, cards.length);
+      
+      for (let i = startIndex; i < endIndex; i++) {
+        if (cards[i]) {
+          cards[i].style.display = 'block';
+        }
+      }
+    }
+    
+    function updateArrows() {
+      if (leftArrow) {
+        leftArrow.disabled = currentIndex === 0;
+      }
+      if (rightArrow) {
+        rightArrow.disabled = currentIndex >= totalPages - 1;
+      }
+    }
+    
+    function updateIndicators() {
+      const indicators = indicatorsContainer?.querySelectorAll('.carousel-indicator');
+      indicators?.forEach((indicator, index) => {
+        indicator.classList.toggle('active', index === currentIndex);
+      });
+    }
+  };
+
+  // Global function for inline onclick handlers
+  window.scrollCarousel = (direction) => {
+    const event = new CustomEvent('carouselScroll', { detail: { direction } });
+    document.dispatchEvent(event);
+  };
+
   // Initialize all components
   setupMobileNav();
   setupHeaderScroll();
   initDynamicContent();
   initSocialMediaInsights();
+  initPapersCarousel();
 
   // Add animation for elements as they scroll into view
   const setupScrollAnimations = () => {

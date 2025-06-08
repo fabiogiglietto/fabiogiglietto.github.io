@@ -1126,36 +1126,81 @@ th {
 .papers-carousel-container {
   position: relative;
   margin-bottom: var(--spacing-lg);
-  overflow: hidden;
 }
 
 .papers-carousel {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: var(--spacing-lg);
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-behavior: smooth;
-  padding-bottom: var(--spacing-sm);
-  scrollbar-width: thin;
-  scrollbar-color: var(--border-color) transparent;
+  padding: 0 60px;
+  min-height: 400px;
 }
 
-.papers-carousel::-webkit-scrollbar {
-  height: 6px;
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-md);
 }
 
-.papers-carousel::-webkit-scrollbar-track {
+.carousel-arrow:hover {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+  box-shadow: var(--shadow-lg);
+}
+
+.carousel-arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
   background: var(--light-gray);
-  border-radius: 3px;
 }
 
-.papers-carousel::-webkit-scrollbar-thumb {
+.carousel-arrow:disabled:hover {
+  background: var(--light-gray);
+  border-color: var(--border-color);
+  color: var(--text-light);
+  box-shadow: var(--shadow-md);
+}
+
+.carousel-arrow-left {
+  left: 10px;
+}
+
+.carousel-arrow-right {
+  right: 10px;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing);
+}
+
+.carousel-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
   background: var(--border-color);
-  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-.papers-carousel::-webkit-scrollbar-thumb:hover {
-  background: var(--gray);
+.carousel-indicator.active {
+  background: var(--primary-color);
+  transform: scale(1.2);
 }
 
 .paper-card {
@@ -1164,20 +1209,33 @@ th {
   border-radius: var(--border-radius);
   padding: var(--spacing-lg);
   transition: all 0.2s ease;
-  min-width: 350px;
+  width: 100%;
   max-width: 400px;
-  flex-shrink: 0;
 }
 
 /* Mobile responsive adjustments for carousel */
 @media (max-width: 768px) {
   .papers-carousel {
+    grid-template-columns: 1fr;
     gap: var(--spacing);
+    padding: 0 50px;
+  }
+  
+  .carousel-arrow {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .carousel-arrow-left {
+    left: 5px;
+  }
+  
+  .carousel-arrow-right {
+    right: 5px;
   }
   
   .paper-card {
-    min-width: 280px;
-    max-width: 320px;
+    max-width: none;
     padding: var(--spacing);
   }
 }
