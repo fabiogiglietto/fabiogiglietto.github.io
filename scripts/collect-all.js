@@ -135,7 +135,11 @@ async function collectAll() {
     if (scopusData) fs.writeFileSync(path.join(dataDir, 'scopus.json'), JSON.stringify(scopusData, null, 2));
     if (semanticScholarData) fs.writeFileSync(path.join(dataDir, 'semantic-scholar.json'), JSON.stringify(semanticScholarData, null, 2));
     if (aggregatedPublicationsData) fs.writeFileSync(path.join(dataDir, 'aggregated-publications.json'), JSON.stringify(aggregatedPublicationsData, null, 2));
-    if (toreadData) fs.writeFileSync(path.join(dataDir, 'toread.json'), JSON.stringify(toreadData, null, 2));
+    if (toreadData) {
+      fs.writeFileSync(path.join(dataDir, 'toread.json'), JSON.stringify(toreadData, null, 2));
+      // Also copy to Jekyll _data directory for site.data.toread access
+      fs.writeFileSync(path.join(__dirname, '../_data/toread.json'), JSON.stringify(toreadData, null, 2));
+    }
     
     // Create a summary file with collection timestamp
     const summary = {
