@@ -26,7 +26,7 @@ app.get('/auth', (req, res) => {
     `response_type=code&` +
     `client_id=${CLIENT_ID}&` +
     `redirect_uri=${encodeURIComponent(REDIRECT_URI)}&` +
-    `scope=profile%20w_member_social`;
+    `scope=r_liteprofile%20r_basicprofile%20w_member_social%20r_member_social`;
   
   res.redirect(authUrl);
 });
@@ -65,13 +65,14 @@ app.get('/callback', async (req, res) => {
     // Automatically get the Person ID
     try {
       console.log('\n=== Getting LinkedIn Person ID ===');
-      const personResponse = await axios.get('https://api.linkedin.com/v2/userinfo', {
+      const personResponse = await axios.get('https://api.linkedin.com/v2/people/~', {
         headers: {
-          'Authorization': `Bearer ${accessToken}`
+          'Authorization': `Bearer ${accessToken}`,
+          'X-Restli-Protocol-Version': '2.0.0'
         }
       });
 
-      const personId = personResponse.data.sub;
+      const personId = personResponse.data.id;
       console.log('Add this to your .env file:');
       console.log(`LINKEDIN_PERSON_ID=${personId}`);
       

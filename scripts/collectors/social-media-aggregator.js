@@ -102,33 +102,63 @@ async function collectLinkedInPosts() {
       return [];
     }
 
-    // LinkedIn API endpoint for user posts
-    // Note: This requires LinkedIn API access and proper authentication
-    const response = await axios.get('https://api.linkedin.com/v2/shares', {
-      headers: {
-        'Authorization': `Bearer ${process.env.LINKEDIN_ACCESS_TOKEN}`,
-        'X-Restli-Protocol-Version': '2.0.0'
-      },
-      params: {
-        q: 'owners',
-        owners: 'urn:li:person:' + process.env.LINKEDIN_PERSON_ID,
-        count: 20
-      }
-    });
+    // Try the current LinkedIn API endpoint for posts
+    // Note: LinkedIn has deprecated many endpoints, so we'll try the profile endpoint first
+    console.log('Attempting to fetch LinkedIn profile and posts...');
+    
+    try {
+      // First try to get profile info to verify the token works
+      const profileResponse = await axios.get('https://api.linkedin.com/v2/people/~', {
+        headers: {
+          'Authorization': `Bearer ${process.env.LINKEDIN_ACCESS_TOKEN}`,
+          'X-Restli-Protocol-Version': '2.0.0'
+        }
+      });
+      
+      console.log('LinkedIn profile access successful, user ID:', profileResponse.data.id);
+      
+      // Try to get posts using the newer posts endpoint
+      const postsResponse = await axios.get('https://api.linkedin.com/v2/posts', {
+        headers: {
+          'Authorization': `Bearer ${process.env.LINKEDIN_ACCESS_TOKEN}`,
+          'X-Restli-Protocol-Version': '2.0.0'
+        },
+        params: {
+          q: 'author',
+          author: 'urn:li:person:' + process.env.LINKEDIN_PERSON_ID,
+          count: 20
+        }
+      });
 
-    const posts = response.data.elements || [];
-    return posts.map(post => ({
-      id: post.id,
-      content: extractLinkedInContent(post),
-      date: new Date(post.created.time).toISOString(),
-      platform: 'LinkedIn',
-      url: `https://linkedin.com/posts/fabiogiglietto_${post.id}`,
-      originalData: post
-    }));
+      const posts = postsResponse.data.elements || [];
+      console.log(`Found ${posts.length} LinkedIn posts`);
+      
+      return posts.map(post => ({
+        id: post.id,
+        content: extractLinkedInContent(post),
+        date: new Date(post.created.time || post.createdAt).toISOString(),
+        platform: 'LinkedIn',
+        url: `https://linkedin.com/posts/fabiogiglietto_${post.id}`,
+        originalData: post
+      }));
+      
+    } catch (postsError) {
+      console.log('Posts endpoint failed, trying alternative approach...');
+      
+      // Fallback: LinkedIn's API has become very restrictive
+      // For now, return empty array rather than failing
+      console.log('LinkedIn API access is limited. Posts collection not available with current permissions.');
+      return [];
+    }
+    
   } catch (error) {
     console.error('Error collecting LinkedIn posts:', error.message);
     if (error.response?.status === 401) {
-      console.log('LinkedIn API authentication failed. Please check your access token.');
+      console.log('LinkedIn API authentication failed. Token may be expired or have insufficient permissions.');
+    } else if (error.response?.status === 400) {
+      console.log('LinkedIn API request failed. The API endpoint may have changed or access is restricted.');
+    } else if (error.response?.status === 403) {
+      console.log('LinkedIn API access forbidden. Your app may need additional permissions or approval.');
     }
     return [];
   }
