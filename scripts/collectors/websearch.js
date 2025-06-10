@@ -64,13 +64,13 @@ async function collectWebSearchResults() {
           // Create search prompt using the specific query - try different strategies per query type
           let searchPrompt;
           if (query.includes('web mentions')) {
-            searchPrompt = `Find recent web mentions of "Fabio Giglietto" from the past 3 months. Look for citations, references, or discussions of his research by others in academic papers, news articles, conference proceedings, or professional blogs. Exclude content authored by Fabio Giglietto himself. Focus on third-party mentions of his work.`;
+            searchPrompt = `Find recent web mentions of "Fabio Giglietto" from the past 3 months. IMPORTANT: Only include results about Fabio Giglietto who is a Professor of Internet Studies at University of Urbino Carlo Bo, specializing in social media research, disinformation, computational social science, and media communication. Look for citations, references, or discussions of his media/communication research by others in academic papers, news articles, conference proceedings, or professional blogs. Exclude content authored by Fabio Giglietto himself. Focus on third-party mentions of his work in internet studies, social media analysis, or communication research.`;
           } else if (query.includes('news OR media coverage')) {
-            searchPrompt = `Search for recent news articles and media coverage mentioning "Fabio Giglietto" from the past 3 months. Look for journalism, press releases, or media reports that reference his research or quote him. Exclude self-authored content.`;
+            searchPrompt = `Search for recent news articles and media coverage mentioning "Fabio Giglietto" from the past 3 months. IMPORTANT: Only include results about Fabio Giglietto who is a Professor of Internet Studies at University of Urbino Carlo Bo. Look for journalism, press releases, or media reports that reference his research in social media, disinformation, computational social science, or communication studies. Exclude self-authored content.`;
           } else if (query.includes('interviews')) {
-            searchPrompt = `Find recent interviews, podcasts, or Q&A sessions featuring "Fabio Giglietto" from the past 3 months. Look for external interviews where he is featured as a guest or expert source.`;
+            searchPrompt = `Find recent interviews, podcasts, or Q&A sessions featuring "Fabio Giglietto" from the past 3 months. IMPORTANT: Only include results about Fabio Giglietto who is a Professor of Internet Studies at University of Urbino Carlo Bo specializing in social media and communication research. Look for external interviews where he is featured as a guest or expert source discussing internet studies, social media research, or media analysis.`;
           } else {
-            searchPrompt = `Search for recent and upcoming conference presentations, talks, speeches, or academic events featuring "Fabio Giglietto" from the past 3 months and next 6 months. Look for conference programs, event announcements, presentation abstracts, keynote speeches, or future speaking engagements.`;
+            searchPrompt = `Search for recent and upcoming conference presentations, talks, speeches, or academic events featuring "Fabio Giglietto" from the past 3 months and next 6 months. IMPORTANT: Only include results about Fabio Giglietto who is a Professor of Internet Studies at University of Urbino Carlo Bo. Look for conference programs, event announcements, presentation abstracts, keynote speeches, or future speaking engagements related to internet studies, social media research, communication science, or computational social science.`;
           }
           
           console.log(`Attempting web search with prompt: "${searchPrompt}"`);
@@ -122,6 +122,12 @@ async function collectWebSearchResults() {
                         // Skip direct links to Fabio Giglietto authored papers (not discussions about them)
                         if (isDirectPaperLink(annotation.title, annotation.url)) {
                           console.log(`Skipping direct paper link: ${annotation.url}`);
+                          continue;
+                        }
+                        
+                        // Skip medical/hematology results about Fabio Giglio (wrong person)
+                        if (isMedicalResult(annotation.title, annotation.url)) {
+                          console.log(`Skipping medical result (wrong Fabio): ${annotation.url}`);
                           continue;
                         }
                         
@@ -222,6 +228,55 @@ async function saveEmptyResults() {
   await writeFileAsync(outputPath, JSON.stringify(emptyData, null, 2));
   console.log(`Saved empty results to ${outputPath} - web mentions section will be hidden`);
   return emptyData;
+}
+
+/**
+ * Check if this is a medical/hematology result about Fabio Giglio (wrong person)
+ * vs. communication/internet studies about Fabio Giglietto
+ */
+function isMedicalResult(title, url) {
+  // Medical terms that indicate this is about Fabio Giglio the medical researcher
+  const medicalKeywords = [
+    'ematologia', 'hematology', 'haematology',
+    'trapianto midollo osseo', 'bone marrow transplant', 'BMT',
+    'san raffaele', 'scientific institute',
+    'oncologia', 'oncology',
+    'leucemia', 'leukemia', 'leukaemia',
+    'chemioterapia', 'chemotherapy',
+    'medicina', 'medical', 'medico',
+    'ospedale', 'hospital',
+    'clinica', 'clinic', 'clinical',
+    'paziente', 'patient',
+    'terapia', 'therapy', 'treatment'
+  ];
+  
+  // Check if title contains medical keywords
+  const titleLower = title.toLowerCase();
+  const hasMedicalKeywords = medicalKeywords.some(keyword => titleLower.includes(keyword));
+  
+  // Check URL for medical domains/paths
+  const urlLower = url.toLowerCase();
+  const medicalDomains = [
+    'sanraffaele',
+    'hsr.it',
+    'medicine',
+    'medical',
+    'hospital',
+    'clinic'
+  ];
+  const hasMedicalDomain = medicalDomains.some(domain => urlLower.includes(domain));
+  
+  // Check for specific patterns indicating medical research
+  const medicalPatterns = [
+    /specialit[àa]\s+in\s+ematologia/i,
+    /bone\s+marrow\s+transplant/i,
+    /hematology\s+department/i,
+    /milano.*ematologia/i,
+    /milan.*hematology/i
+  ];
+  const hasMedialPattern = medicalPatterns.some(pattern => pattern.test(title) || pattern.test(url));
+  
+  return hasMedicalKeywords || hasMedicalDomain || hasMedialPattern;
 }
 
 /**
