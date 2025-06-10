@@ -191,24 +191,75 @@ async function collectWebSearchResults() {
       index === self.findIndex(r => r.url === result.url)
     );
 
-    // Format results - only real ones
-    const formattedResults = uniqueResults.map(result => ({
-      title: result.title,
-      snippet: result.snippet,
-      url: result.url,
-      date: result.published_date || result.date || new Date().toISOString().split('T')[0],
-      source: result.source || extractDomainFromUrl(result.url)
-    }));
+    // Add validation layer - verify each result with OpenAI 4o
+    console.log(`\n=== Starting validation of ${uniqueResults.length} results ===`);
+    const validatedResults = [];
+    
+    for (let i = 0; i < uniqueResults.length; i++) {
+      const result = uniqueResults[i];
+      console.log(`\nValidating result ${i + 1}/${uniqueResults.length}: ${result.title}`);
+      
+      try {
+        const validation = await validateWebMention(openai, result);
+        if (validation.isRelevant) {
+          console.log(`✓ Validated: ${result.title}`);
+          console.log(`  - Mentioned by name: ${validation.mentionedByName}`);
+          console.log(`  - Person match: ${validation.personMatch}`);
+          console.log(`  - Is recent: ${validation.isRecent}`);
+          console.log(`  - Relevance score: ${validation.relevanceScore}`);
+          validatedResults.push({
+            title: result.title,
+            snippet: result.snippet,
+            url: result.url,
+            date: result.published_date || result.date || new Date().toISOString().split('T')[0],
+            source: result.source || extractDomainFromUrl(result.url),
+            description: validation.description,
+            relevanceScore: validation.relevanceScore,
+            mentionedByName: validation.mentionedByName,
+            personMatch: validation.personMatch,
+            isRecent: validation.isRecent
+          });
+        } else {
+          console.log(`✗ Filtered out: ${result.title}`);
+          console.log(`  - Reason: ${validation.reason}`);
+          console.log(`  - Mentioned by name: ${validation.mentionedByName}`);
+          console.log(`  - Person match: ${validation.personMatch}`);
+          console.log(`  - Is recent: ${validation.isRecent}`);
+        }
+      } catch (validationError) {
+        console.error(`Error validating result "${result.title}":`, validationError.message);
+        // Include result without validation if validation fails
+        validatedResults.push({
+          title: result.title,
+          snippet: result.snippet,
+          url: result.url,
+          date: result.published_date || result.date || new Date().toISOString().split('T')[0],
+          source: result.source || extractDomainFromUrl(result.url),
+          description: "Description unavailable due to validation error",
+          relevanceScore: 0.5
+        });
+      }
+    }
 
-    // Sort by date (newest first)
-    formattedResults.sort((a, b) => new Date(b.date) - new Date(a.date));
+    console.log(`\nValidation complete: ${validatedResults.length}/${uniqueResults.length} results passed validation`);
 
-    // Limit to most recent 10 results
-    const recentResults = formattedResults.slice(0, 10);
+    // Sort by relevance score (highest first), then by date
+    validatedResults.sort((a, b) => {
+      if (b.relevanceScore !== a.relevanceScore) {
+        return b.relevanceScore - a.relevanceScore;
+      }
+      return new Date(b.date) - new Date(a.date);
+    });
 
-    // Write to JSON file
+    // Limit to most recent/relevant 10 results
+    const recentResults = validatedResults.slice(0, 10);
+
+    // Write current results to JSON file
     const outputPath = path.join(__dirname, '../../public/data/websearch.json');
     await writeFileAsync(outputPath, JSON.stringify(recentResults, null, 2));
+
+    // Maintain historical log of all validated web mentions
+    await updateHistoricalLog(recentResults);
 
     console.log(`Successfully collected ${recentResults.length} REAL web search results and saved to ${outputPath}`);
     return recentResults;
@@ -216,6 +267,244 @@ async function collectWebSearchResults() {
     console.error('Error collecting web search results:', error);
     // Return empty results if there's an error - DO NOT use mock data
     return await saveEmptyResults();
+  }
+}
+
+/**
+ * Update historical log of validated web mentions
+ */
+async function updateHistoricalLog(newResults) {
+  try {
+    const logPath = path.join(__dirname, '../../public/data/websearch-history.json');
+    
+    // Load existing historical log
+    let historicalLog = [];
+    try {
+      if (fs.existsSync(logPath)) {
+        const existingData = fs.readFileSync(logPath, 'utf8');
+        historicalLog = JSON.parse(existingData);
+      }
+    } catch (readError) {
+      console.log('Could not read existing historical log, starting fresh:', readError.message);
+      historicalLog = [];
+    }
+
+    // Add metadata to new results
+    const timestamp = new Date().toISOString();
+    const resultsWithMetadata = newResults.map(result => ({
+      ...result,
+      collectedAt: timestamp,
+      collectionRun: timestamp.split('T')[0] // Date part for grouping
+    }));
+
+    // Check for duplicates by URL and only add new ones
+    const existingUrls = new Set(historicalLog.map(item => item.url));
+    const newEntries = resultsWithMetadata.filter(result => !existingUrls.has(result.url));
+    
+    if (newEntries.length > 0) {
+      // Add new entries to the historical log
+      historicalLog = [...historicalLog, ...newEntries];
+      
+      // Sort by collection date (newest first)
+      historicalLog.sort((a, b) => new Date(b.collectedAt) - new Date(a.collectedAt));
+      
+      // Optionally limit historical log size (keep last 500 entries)
+      if (historicalLog.length > 500) {
+        historicalLog = historicalLog.slice(0, 500);
+      }
+
+      // Save updated historical log
+      await writeFileAsync(logPath, JSON.stringify(historicalLog, null, 2));
+      console.log(`Historical log updated: added ${newEntries.length} new entries, total: ${historicalLog.length}`);
+    } else {
+      console.log('Historical log: no new entries to add (all URLs already exist)');
+    }
+
+    // Create a summary log for easy analysis
+    await createHistoricalSummary(historicalLog);
+
+  } catch (error) {
+    console.error('Error updating historical log:', error.message);
+    // Don't fail the main process if logging fails
+  }
+}
+
+/**
+ * Create a summary of historical web mentions for analysis
+ */
+async function createHistoricalSummary(historicalLog) {
+  try {
+    const summaryPath = path.join(__dirname, '../../public/data/websearch-summary.json');
+    
+    // Group by collection date
+    const byDate = {};
+    const bySource = {};
+    const byRelevanceScore = { high: 0, medium: 0, low: 0 };
+    
+    historicalLog.forEach(entry => {
+      const date = entry.collectionRun || entry.collectedAt?.split('T')[0] || 'unknown';
+      const source = entry.source || 'unknown';
+      const score = entry.relevanceScore || 0;
+      
+      // Group by date
+      if (!byDate[date]) byDate[date] = [];
+      byDate[date].push(entry);
+      
+      // Group by source
+      if (!bySource[source]) bySource[source] = 0;
+      bySource[source]++;
+      
+      // Group by relevance score
+      if (score >= 0.8) byRelevanceScore.high++;
+      else if (score >= 0.5) byRelevanceScore.medium++;
+      else byRelevanceScore.low++;
+    });
+
+    const summary = {
+      totalEntries: historicalLog.length,
+      lastUpdated: new Date().toISOString(),
+      dateRange: {
+        earliest: historicalLog.length > 0 ? historicalLog[historicalLog.length - 1].collectedAt : null,
+        latest: historicalLog.length > 0 ? historicalLog[0].collectedAt : null
+      },
+      byDate: Object.keys(byDate).sort().reverse().slice(0, 10).reduce((obj, key) => {
+        obj[key] = byDate[key].length;
+        return obj;
+      }, {}),
+      bySource: Object.entries(bySource)
+        .sort(([,a], [,b]) => b - a)
+        .slice(0, 10)
+        .reduce((obj, [key, value]) => {
+          obj[key] = value;
+          return obj;
+        }, {}),
+      byRelevanceScore,
+      recentHighQuality: historicalLog
+        .filter(entry => (entry.relevanceScore || 0) >= 0.8)
+        .slice(0, 5)
+        .map(entry => ({
+          title: entry.title,
+          url: entry.url,
+          source: entry.source,
+          relevanceScore: entry.relevanceScore,
+          collectedAt: entry.collectedAt
+        }))
+    };
+
+    await writeFileAsync(summaryPath, JSON.stringify(summary, null, 2));
+    console.log(`Historical summary created: ${summary.totalEntries} total entries`);
+
+  } catch (error) {
+    console.error('Error creating historical summary:', error.message);
+  }
+}
+
+/**
+ * Validate a web mention using OpenAI 4o to verify relevance and generate description
+ */
+async function validateWebMention(openai, result) {
+  try {
+    const prompt = `You are analyzing a web mention to determine if it's about the correct person, if it actually mentions them, and if the content is recent.
+
+TARGET PERSON: Fabio Giglietto
+- Professor of Internet Studies at University of Urbino Carlo Bo, Italy
+- Specializes in: social media research, disinformation studies, computational social science, media communication
+- Expert in: internet studies, social media analysis, digital communication, misinformation detection
+
+WEB MENTION TO ANALYZE:
+Title: "${result.title}"
+URL: ${result.url}
+Source: ${result.source}
+Context: ${result.snippet || 'No snippet available'}
+
+CRITICAL VALIDATION STEPS:
+1. MENTION VERIFICATION: Does this content actually mention "Fabio Giglietto" by name? Look carefully in the title, URL, and any available context.
+2. PERSON IDENTIFICATION: If Fabio Giglietto is mentioned, is it the Professor of Internet Studies at University of Urbino Carlo Bo (not a medical researcher or someone else)?
+3. RECENCY CHECK: Is this content recent (within the last 6 months) or does it discuss recent work/events?
+4. RELEVANCE ASSESSMENT: Does it relate to his academic work in social media, disinformation, or communication research?
+
+RESPONSE FORMAT (JSON):
+{
+  "isRelevant": boolean,
+  "mentionedByName": boolean,
+  "relevanceScore": number (0.0-1.0, where 1.0 = highly relevant),
+  "reason": "brief explanation if not relevant",
+  "description": "1-2 sentence professional description of the content",
+  "personMatch": "confirmed" | "uncertain" | "different_person" | "not_mentioned",
+  "isRecent": boolean
+}
+
+STRICT EVALUATION CRITERIA:
+- isRelevant = true ONLY if ALL of these are true:
+  * mentionedByName = true (Fabio Giglietto is explicitly mentioned)
+  * personMatch = "confirmed" (it's the correct academic researcher)
+  * isRecent = true (content is from the last 6 months or discusses recent work)
+  * Content relates to his research areas (social media, disinformation, communication)
+  * Not a direct link to his own authored papers (we want third-party mentions)
+
+- mentionedByName = true only if "Fabio Giglietto" appears in the title, URL, or context
+- isRecent = true only if the content appears to be from 2024-2025 or discusses recent events/research
+- relevanceScore should be high (0.8-1.0) only for high-quality third-party mentions that clearly discuss his work
+
+Be very strict - if you cannot confirm Fabio Giglietto is mentioned by name, set isRelevant to false.
+
+Please analyze and respond with valid JSON only.`;
+
+    const response = await openai.chat.completions.create({
+      model: "gpt-4o",
+      messages: [
+        {
+          role: "user",
+          content: prompt
+        }
+      ],
+      temperature: 0.1,
+      max_tokens: 500
+    });
+
+    const content = response.choices[0].message.content.trim();
+    
+    // Try to parse JSON response
+    let validation;
+    try {
+      validation = JSON.parse(content);
+    } catch (parseError) {
+      console.log('Failed to parse validation JSON, attempting extraction...');
+      // Try to extract JSON from response if it's wrapped in markdown or other text
+      const jsonMatch = content.match(/\{[\s\S]*\}/);
+      if (jsonMatch) {
+        validation = JSON.parse(jsonMatch[0]);
+      } else {
+        throw new Error('Could not extract valid JSON from validation response');
+      }
+    }
+
+    // Validate the response structure
+    if (typeof validation.isRelevant !== 'boolean') {
+      throw new Error('Invalid validation response: missing or invalid isRelevant field');
+    }
+
+    // Ensure all required fields exist with defaults
+    return {
+      isRelevant: validation.isRelevant,
+      mentionedByName: validation.mentionedByName || false,
+      relevanceScore: validation.relevanceScore || (validation.isRelevant ? 0.7 : 0.1),
+      reason: validation.reason || (validation.isRelevant ? 'Validated as relevant' : 'Not relevant'),
+      description: validation.description || result.title,
+      personMatch: validation.personMatch || 'uncertain',
+      isRecent: validation.isRecent || false
+    };
+
+  } catch (error) {
+    console.error('Error in validation API call:', error.message);
+    // Return a fallback validation that includes the item
+    return {
+      isRelevant: true,
+      relevanceScore: 0.5,
+      reason: 'Validation failed, included by default',
+      description: result.title,
+      personMatch: 'uncertain'
+    };
   }
 }
 
