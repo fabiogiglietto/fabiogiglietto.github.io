@@ -12,6 +12,16 @@
   },
   "repositories": [
     {
+      "name": "tiktok_csbn",
+      "description": "TikTok coordinated account live map",
+      "url": "https://github.com/fabiogiglietto/tiktok_csbn",
+      "language": "HTML",
+      "stars": 4,
+      "forks": 1,
+      "created_at": "2024-04-01T15:13:40Z",
+      "updated_at": "2025-06-10T00:23:01Z"
+    },
+    {
       "name": "toread",
       "description": "Consume a feed BibTeX export from a Paperpile folder, complete the publication metadata with Crossref and Semantic Scholar and create an RSS feed",
       "url": "https://github.com/fabiogiglietto/toread",
@@ -19,7 +29,7 @@
       "stars": 0,
       "forks": 0,
       "created_at": "2025-06-07T09:12:59Z",
-      "updated_at": "2025-06-09T16:27:41Z"
+      "updated_at": "2025-06-09T23:51:53Z"
     },
     {
       "name": "fabiogiglietto.github.io",
@@ -29,17 +39,7 @@
       "stars": 1,
       "forks": 1,
       "created_at": "2025-04-21T09:41:33Z",
-      "updated_at": "2025-06-09T16:01:22Z"
-    },
-    {
-      "name": "tiktok_csbn",
-      "description": "TikTok coordinated account live map",
-      "url": "https://github.com/fabiogiglietto/tiktok_csbn",
-      "language": "HTML",
-      "stars": 4,
-      "forks": 1,
-      "created_at": "2024-04-01T15:13:40Z",
-      "updated_at": "2025-06-09T12:45:40Z"
+      "updated_at": "2025-06-09T16:42:14Z"
     },
     {
       "name": "italian-facebook-analysis",
@@ -192,14 +192,6 @@
       "description": "Code and data repository for the \"Detecting Coordinated Link Sharing Behaviour with CooRnet\" tutorial of the Digital Media Initiative 2023 Winter School",
       "url": "https://github.com/fabiogiglietto/CooRnet_at_DMI_WS_2023",
       "stars": 4,
-      "forks": 0,
-      "activity": {}
-    },
-    {
-      "name": "Global_CLSB",
-      "description": "List of coordinated networks and accounts that circulated on Facebook problematic news stories rated as problematic by third-party fact-checkers",
-      "url": "https://github.com/fabiogiglietto/Global_CLSB",
-      "stars": 3,
       "forks": 0,
       "activity": [
         {
@@ -879,7 +871,15 @@
           "week": 1749340800
         }
       ]
+    },
+    {
+      "name": "Global_CLSB",
+      "description": "List of coordinated networks and accounts that circulated on Facebook problematic news stories rated as problematic by third-party fact-checkers",
+      "url": "https://github.com/fabiogiglietto/Global_CLSB",
+      "stars": 3,
+      "forks": 0,
+      "activity": {}
     }
   ],
-  "lastUpdated": "2025-06-09T16:41:06.022Z"
+  "lastUpdated": "2025-06-10T00:45:03.434Z"
 }
