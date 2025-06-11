@@ -134,7 +134,7 @@
         "scholar": null,
         "wos": 0,
         "scopus": 91,
-        "semanticScholar": 101
+        "semanticScholar": 102
       },
       "source_urls": {
         "orcid": "https://doi.org/10.1080/1369118X.2020.1739732",
@@ -152,7 +152,7 @@
         "semanticScholar": "a8b5ebbca42d8760de06f3271caa5a9d09db0c85"
       },
       "metrics": {
-        "total_citations": 101,
+        "total_citations": 102,
         "citation_sources": 3
       },
       "crossref_type": "journal-article",
@@ -816,7 +816,7 @@
         "scholar": null,
         "wos": 0,
         "scopus": null,
-        "semanticScholar": 10
+        "semanticScholar": 11
       },
       "source_urls": {
         "orcid": null,
@@ -834,7 +834,7 @@
         "semanticScholar": "9c3d8469098969eb207ef8ab0a0e274349cce661"
       },
       "metrics": {
-        "total_citations": 10,
+        "total_citations": 11,
         "citation_sources": 2
       },
       "crossref_type": "journal-article",
@@ -1192,6 +1192,42 @@
       "fieldsOfStudy": []
     },
     {
+      "title": "POLITICAL ADVERTISEMENT AND COORDINATED BEHAVIOR ON SOCIAL MEDIA IN THE LEAD-UP TO THE 2021 GERMAN FEDERAL ELECTIONS",
+      "type": "other",
+      "venue": null,
+      "authors": "Nicola Righetti, Fabio Giglietto, Azade E. Kakavand, Aytalina Kulichkina, Giada Marino, Massimo Terenzi",
+      "year": 2022,
+      "doi": null,
+      "citations": {
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": 3
+      },
+      "source_urls": {
+        "orcid": "https://ora.uniurb.it/handle/11576/2733992",
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": "https://www.semanticscholar.org/paper/4a044175aa5dc64f60379f7028fc7baa8024d473"
+      },
+      "source_ids": {
+        "orcid": 156334502,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": "4a044175aa5dc64f60379f7028fc7baa8024d473"
+      },
+      "metrics": {
+        "total_citations": 3,
+        "citation_sources": 1
+      },
+      "influentialCitations": 0,
+      "isOpenAccess": false,
+      "openAccessPdf": null,
+      "fieldsOfStudy": []
+    },
+    {
       "title": "COORNET: AN INTEGRATED APPROACH TO SURFACE PROBLEMATIC CONTENT, MALICIOUS ACTORS, AND COORDINATED NETWORKS",
       "type": "conference-paper",
       "venue": "AoIR Selected Papers of Internet Research",
@@ -1383,42 +1419,6 @@
       },
       "crossref_type": "book-chapter",
       "publisher": "Springer Nature Switzerland"
-    },
-    {
-      "title": "POLITICAL ADVERTISEMENT AND COORDINATED BEHAVIOR ON SOCIAL MEDIA IN THE LEAD-UP TO THE 2021 GERMAN FEDERAL ELECTIONS",
-      "type": "other",
-      "venue": null,
-      "authors": "Nicola Righetti, Fabio Giglietto, Azade E. Kakavand, Aytalina Kulichkina, Giada Marino, Massimo Terenzi",
-      "year": 2022,
-      "doi": null,
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 2
-      },
-      "source_urls": {
-        "orcid": "https://ora.uniurb.it/handle/11576/2733992",
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/4a044175aa5dc64f60379f7028fc7baa8024d473"
-      },
-      "source_ids": {
-        "orcid": 156334502,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "4a044175aa5dc64f60379f7028fc7baa8024d473"
-      },
-      "metrics": {
-        "total_citations": 2,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": []
     },
     {
       "title": "Binge-watching the Algorithmic Catalog: Making Sense of Netflix in the Aftermath of the Italian Launch",
@@ -5546,7 +5546,7 @@
   ],
   "metrics": {
     "total_publications": 156,
-    "total_citations": 1535,
+    "total_citations": 1538,
     "h_index": 18,
     "i10_index": 22,
     "citation_sources": {
@@ -5557,5 +5557,5 @@
       "with_crossref": 60
     }
   },
-  "lastUpdated": "2025-06-10T06:59:53.486Z"
+  "lastUpdated": "2025-06-11T00:45:53.203Z"
 }
