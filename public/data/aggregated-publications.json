@@ -253,14 +253,14 @@
         "scholar": null,
         "wos": 0,
         "scopus": 34,
-        "semanticScholar": 36
+        "semanticScholar": 0
       },
       "source_urls": {
         "orcid": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85059463786&partnerID=MN8TOARS",
         "scholar": null,
         "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000548660600007&DestLinkType=FullRecord&DestApp=WOS_CPL",
         "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85059463786&origin=inward",
-        "semanticScholar": "https://www.semanticscholar.org/paper/ed3dbf400b5349482ce280354a62067599399448",
+        "semanticScholar": "https://www.semanticscholar.org/paper/582bc6d59217f2a3e52a747b3bed0549be12dd5b",
         "crossref": "https://doi.org/10.1177/0894439318816638"
       },
       "source_ids": {
@@ -268,20 +268,18 @@
         "scholar": null,
         "wos": "WOS:000548660600007",
         "scopus": "85059463786",
-        "semanticScholar": "ed3dbf400b5349482ce280354a62067599399448"
+        "semanticScholar": "582bc6d59217f2a3e52a747b3bed0549be12dd5b"
       },
       "metrics": {
-        "total_citations": 36,
+        "total_citations": 34,
         "citation_sources": 3
       },
       "crossref_type": "journal-article",
       "publisher": "SAGE Publications",
       "influentialCitations": 0,
-      "isOpenAccess": true,
-      "openAccessPdf": "https://ora.uniurb.it/bitstream/11576/2663342/11/Iannelli_Giglietto_Rossi_Zurovac_2020_Accepted_Manuscript.pdf",
-      "fieldsOfStudy": [
-        "Sociology"
-      ]
+      "isOpenAccess": false,
+      "openAccessPdf": null,
+      "fieldsOfStudy": []
     },
     {
       "title": "Fakes, News and the Election: A New Taxonomy for the Study of Misleading Information within the Hybrid Media System",
@@ -293,7 +291,7 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": 33
+        "semanticScholar": 34
       },
       "source_urls": {
         "orcid": null,
@@ -316,7 +314,7 @@
         "Political Science"
       ],
       "metrics": {
-        "total_citations": 33,
+        "total_citations": 34,
         "citation_sources": 1
       }
     },
@@ -5546,7 +5544,7 @@
   ],
   "metrics": {
     "total_publications": 156,
-    "total_citations": 1538,
+    "total_citations": 1537,
     "h_index": 18,
     "i10_index": 22,
     "citation_sources": {
@@ -5557,5 +5555,5 @@
       "with_crossref": 60
     }
   },
-  "lastUpdated": "2025-06-11T00:45:53.203Z"
+  "lastUpdated": "2025-06-12T00:45:55.908Z"
 }
