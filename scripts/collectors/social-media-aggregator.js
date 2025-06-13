@@ -92,8 +92,12 @@ async function collectSocialMediaPosts() {
  */
 async function collectLinkedInPosts() {
   try {
+    console.log('Collecting LinkedIn posts...');
+    
     if (!hasLinkedInKey) {
       console.log('LinkedIn access token not available, skipping LinkedIn posts');
+      console.log('Note: LinkedIn has severely restricted API access for personal posts in 2024.');
+      console.log('Consider using manual post data or alternative social media platforms.');
       return [];
     }
 
@@ -102,12 +106,10 @@ async function collectLinkedInPosts() {
       return [];
     }
 
-    // Try the current LinkedIn API endpoint for posts
-    // Note: LinkedIn has deprecated many endpoints, so we'll try the profile endpoint first
-    console.log('Attempting to fetch LinkedIn profile and posts...');
+    console.log('Attempting to access LinkedIn API...');
     
     try {
-      // First try to get profile info to verify the token works
+      // First verify profile access with current scopes
       const profileResponse = await axios.get('https://api.linkedin.com/v2/people/~', {
         headers: {
           'Authorization': `Bearer ${process.env.LINKEDIN_ACCESS_TOKEN}`,
@@ -115,51 +117,110 @@ async function collectLinkedInPosts() {
         }
       });
       
-      console.log('LinkedIn profile access successful, user ID:', profileResponse.data.id);
+      console.log('✓ LinkedIn profile access successful');
+      console.log(`  Profile ID: ${profileResponse.data.id}`);
       
-      // Try to get posts using the newer posts endpoint
-      const postsResponse = await axios.get('https://api.linkedin.com/v2/posts', {
-        headers: {
-          'Authorization': `Bearer ${process.env.LINKEDIN_ACCESS_TOKEN}`,
-          'X-Restli-Protocol-Version': '2.0.0'
+      // Try multiple API endpoints for posts (LinkedIn has changed these frequently)
+      const postEndpoints = [
+        // Current Posts API (requires specific permissions)
+        {
+          url: 'https://api.linkedin.com/v2/posts',
+          params: {
+            q: 'authors',
+            authors: `List(urn:li:person:${process.env.LINKEDIN_PERSON_ID})`,
+            sortBy: 'LAST_MODIFIED',
+            count: 20
+          },
+          name: 'Posts API v2'
         },
-        params: {
-          q: 'author',
-          author: 'urn:li:person:' + process.env.LINKEDIN_PERSON_ID,
-          count: 20
+        // Alternative UGC Posts endpoint (may still work for some apps)
+        {
+          url: 'https://api.linkedin.com/v2/ugcPosts',
+          params: {
+            q: 'authors',
+            authors: `List(urn:li:person:${process.env.LINKEDIN_PERSON_ID})`,
+            sortBy: 'LAST_MODIFIED',
+            count: 20
+          },
+          name: 'UGC Posts API'
+        },
+        // Shares endpoint (legacy but might work)
+        {
+          url: 'https://api.linkedin.com/v2/shares',
+          params: {
+            q: 'owners',
+            owners: `urn:li:person:${process.env.LINKEDIN_PERSON_ID}`,
+            count: 20
+          },
+          name: 'Shares API'
         }
-      });
+      ];
 
-      const posts = postsResponse.data.elements || [];
-      console.log(`Found ${posts.length} LinkedIn posts`);
+      for (const endpoint of postEndpoints) {
+        try {
+          console.log(`Trying ${endpoint.name}...`);
+          
+          const postsResponse = await axios.get(endpoint.url, {
+            headers: {
+              'Authorization': `Bearer ${process.env.LINKEDIN_ACCESS_TOKEN}`,
+              'X-Restli-Protocol-Version': '2.0.0'
+            },
+            params: endpoint.params,
+            timeout: 10000
+          });
+
+          const posts = postsResponse.data.elements || [];
+          if (posts.length > 0) {
+            console.log(`✓ Found ${posts.length} LinkedIn posts via ${endpoint.name}`);
+            
+            return posts.map((post, index) => ({
+              id: post.id || `linkedin_${Date.now()}_${index}`,
+              content: extractLinkedInContent(post),
+              date: extractLinkedInDate(post),
+              platform: 'LinkedIn',
+              url: constructLinkedInUrl(post),
+              originalData: post
+            }));
+          } else {
+            console.log(`  ${endpoint.name}: No posts returned`);
+          }
+          
+        } catch (endpointError) {
+          console.log(`  ${endpoint.name} failed: ${endpointError.response?.status || endpointError.message}`);
+          
+          if (endpointError.response?.status === 403) {
+            console.log(`  → This endpoint requires additional LinkedIn permissions`);
+          } else if (endpointError.response?.status === 422) {
+            console.log(`  → Invalid parameters for this endpoint`);
+          }
+        }
+      }
       
-      return posts.map(post => ({
-        id: post.id,
-        content: extractLinkedInContent(post),
-        date: new Date(post.created.time || post.createdAt).toISOString(),
-        platform: 'LinkedIn',
-        url: `https://linkedin.com/posts/fabiogiglietto_${post.id}`,
-        originalData: post
-      }));
+      // If all endpoints fail, provide helpful guidance
+      console.log('\n⚠️  LinkedIn API Limitations Detected:');
+      console.log('   LinkedIn has significantly restricted API access for personal posts in 2024.');
+      console.log('   Options to consider:');
+      console.log('   1. Apply for LinkedIn Marketing Developer Platform access');
+      console.log('   2. Use manual post entry in _data/news.yml');
+      console.log('   3. Focus on other social platforms (BlueSky, Mastodon) that have better API access');
+      console.log('   4. Use RSS feeds if available for your LinkedIn profile');
       
-    } catch (postsError) {
-      console.log('Posts endpoint failed, trying alternative approach...');
+      return [];
       
-      // Fallback: LinkedIn's API has become very restrictive
-      // For now, return empty array rather than failing
-      console.log('LinkedIn API access is limited. Posts collection not available with current permissions.');
+    } catch (profileError) {
+      console.error('LinkedIn profile access failed:', profileError.response?.status || profileError.message);
+      
+      if (profileError.response?.status === 401) {
+        console.log('→ Access token expired or invalid. Please re-run LinkedIn OAuth setup.');
+      } else if (profileError.response?.status === 403) {
+        console.log('→ Insufficient permissions. Your LinkedIn app may need approval for additional scopes.');
+      }
+      
       return [];
     }
     
   } catch (error) {
-    console.error('Error collecting LinkedIn posts:', error.message);
-    if (error.response?.status === 401) {
-      console.log('LinkedIn API authentication failed. Token may be expired or have insufficient permissions.');
-    } else if (error.response?.status === 400) {
-      console.log('LinkedIn API request failed. The API endpoint may have changed or access is restricted.');
-    } else if (error.response?.status === 403) {
-      console.log('LinkedIn API access forbidden. Your app may need additional permissions or approval.');
-    }
+    console.error('Error in LinkedIn posts collection:', error.message);
     return [];
   }
 }
@@ -482,7 +543,48 @@ function extractLinkedInContent(post) {
   if (post.text && post.text.text) {
     return post.text.text;
   }
-  return post.commentary || 'LinkedIn post content';
+  if (post.commentary) {
+    return post.commentary;
+  }
+  if (post.specificContent && post.specificContent.com && post.specificContent.com.linkedin && post.specificContent.com.linkedin.ugc && post.specificContent.com.linkedin.ugc.ShareContent && post.specificContent.com.linkedin.ugc.ShareContent.shareCommentary && post.specificContent.com.linkedin.ugc.ShareContent.shareCommentary.text) {
+    return post.specificContent.com.linkedin.ugc.ShareContent.shareCommentary.text;
+  }
+  return 'LinkedIn post content';
+}
+
+function extractLinkedInDate(post) {
+  // Try different date field formats that LinkedIn uses
+  if (post.created && post.created.time) {
+    return new Date(post.created.time).toISOString();
+  }
+  if (post.createdAt) {
+    return new Date(post.createdAt).toISOString();
+  }
+  if (post.lastModified && post.lastModified.time) {
+    return new Date(post.lastModified.time).toISOString();
+  }
+  if (post.createdTime) {
+    return new Date(post.createdTime).toISOString();
+  }
+  // Fallback to current date
+  return new Date().toISOString();
+}
+
+function constructLinkedInUrl(post) {
+  // Try to construct a proper LinkedIn URL
+  if (post.id) {
+    // Extract activity ID from various LinkedIn ID formats
+    let activityId = post.id;
+    if (activityId.includes('urn:li:activity:')) {
+      activityId = activityId.replace('urn:li:activity:', '');
+    }
+    if (activityId.includes('urn:li:share:')) {
+      activityId = activityId.replace('urn:li:share:', '');
+    }
+    return `https://linkedin.com/posts/fabiogiglietto_${activityId}`;
+  }
+  // Fallback to profile URL
+  return 'https://linkedin.com/in/fabiogiglietto';
 }
 
 function stripHtmlTags(html) {
