@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ page.description | default: site.description }}">
   
+  <!-- Google Search Console Verification -->
+  {% if site.google_site_verification %}
+  <meta name="google-site-verification" content="{{ site.google_site_verification }}">
+  {% endif %}
+  
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title | default: 'Fabio Giglietto' }}</title>
   
   <!-- Stylesheets -->
