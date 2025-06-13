@@ -27,10 +27,16 @@ Use `node scripts/helpers/setup-linkedin.js` for LinkedIn OAuth setup.
 
 ## Security Notes for Forks/Clones
 If someone forks this repository to create their own academic website:
-- Verification files (`google*.html`) are gitignored to prevent conflicts
-- Personal verification codes should be set via environment variables
-- All API keys and personal identifiers must be updated in `_config.yml`
-- The `.env` file contains sensitive data and is never committed
+- **Site verification files** (`google*.html`, `bing*.html`) are gitignored to prevent domain ownership conflicts
+- **Meta tag verification removed** - Only local HTML file verification supported to prevent security issues
+- **Personal data protection** - All API keys and personal identifiers must be updated in `_config.yml`
+- **Environment variables** - The `.env` file contains sensitive data and is never committed
+
+## Site Verification Setup
+To set up Google Search Console verification:
+1. Create your verification HTML file (e.g., `google123abc.html`) in the site root
+2. The file will be ignored by git but served by GitHub Pages
+3. This prevents forks from inheriting your domain verification while keeping it functional
 
 ## Architecture Overview
 The site uses a multi-stage data pipeline:
