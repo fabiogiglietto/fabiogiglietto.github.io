@@ -20,9 +20,17 @@ Before running data collection, set up `.env` file with required API keys:
 - `OPENAI_API_KEY`: Required for AI content generation
 - `WOS_API_KEY`: Web of Science publication data
 - `SCOPUS_API_KEY`: Scopus publication data
+- `GOOGLE_SITE_VERIFICATION`: Your Google Search Console verification code (optional)
 - Optional social media APIs (LinkedIn, Mastodon)
 
 Use `node scripts/helpers/setup-linkedin.js` for LinkedIn OAuth setup.
+
+## Security Notes for Forks/Clones
+If someone forks this repository to create their own academic website:
+- Verification files (`google*.html`) are gitignored to prevent conflicts
+- Personal verification codes should be set via environment variables
+- All API keys and personal identifiers must be updated in `_config.yml`
+- The `.env` file contains sensitive data and is never committed
 
 ## Architecture Overview
 The site uses a multi-stage data pipeline:

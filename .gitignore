@@ -79,6 +79,11 @@ web_modules/
 .env.production.local
 .env.local
 
+# Site verification files (personal to site owner)
+google*.html
+bing*.html
+yandex*.html
+
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 .parcel-cache

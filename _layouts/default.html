@@ -8,6 +8,8 @@
   <!-- Google Search Console Verification -->
   {% if site.google_site_verification %}
   <meta name="google-site-verification" content="{{ site.google_site_verification }}">
+  {% elsif site.env.GOOGLE_SITE_VERIFICATION %}
+  <meta name="google-site-verification" content="{{ site.env.GOOGLE_SITE_VERIFICATION }}">
   {% endif %}
   
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title | default: 'Fabio Giglietto' }}</title>
