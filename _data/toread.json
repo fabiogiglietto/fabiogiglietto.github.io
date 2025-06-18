@@ -41,8 +41,8 @@
       "doi": "10.1038/s41562-025-02223-4",
       "abstract": "Much of the research quantifying volume and spread of online misinformation measures the construct at the source level, identifying a set of specific unreliable domains that account for a relatively small share of news consumption. This source-level dichotomy obscures the potential for users to repurpose factually true information from reliable sources to advance misleading narratives. We demonstrate this potentially far more prevalent form of misinformation by identifying articles from reliable...",
       "tags": [
-        "Article",
-        "Nature Human Behaviour"
+        "Nature Human Behaviour",
+        "Article"
       ],
       "dateAdded": "2025-06-10T00:00:00Z",
       "status": "to-read",
@@ -169,11 +169,11 @@
       "doi": "10.1038/s41598-025-00233-w",
       "abstract": "Malicious actors regularly attempt to manipulate social media using coordinated posting. Many existing methods for detecting this coordination, though, have relied primarily on post-timing, which is trivially easy to change. In this paper, we make a significant methodological advancement in coordination detection, leveraging highly regular statistical patterns in the speed and frequency of sharing. We apply and validate this approach on Facebook, using 11.2 million link posts from a list of 16,1...",
       "tags": [
-        "Social media",
         "Facebook",
-        "Article",
         "Coordination",
-        "Scientific Reports"
+        "Article",
+        "Scientific Reports",
+        "Social media"
       ],
       "dateAdded": "2025-05-05T00:00:00Z",
       "status": "to-read",
@@ -199,8 +199,8 @@
       "doi": "10.1080/10584609.2024.2439317",
       "abstract": "Published in Polit. Commun. | Year: 2025 | Authors: Votta, Fabio, Dobber, Tom, Guinaudeau, Benjamin, Helberger, Natali, de Vreese, Claes",
       "tags": [
-        "Article",
-        "Political Communication"
+        "Political Communication",
+        "Article"
       ],
       "dateAdded": "2025-05-04T00:00:00Z",
       "status": "to-read",
@@ -250,8 +250,8 @@
       "doi": "10.1609/aaai.v39i27.35046",
       "abstract": "<jats:p>Social media platforms have become vital spaces for public discourse, serving as modern agorás where a wide range of voices influence societal narratives. However, their open nature also makes them vulnerable to exploitation by malicious actors, including state-sponsored entities, who can conduct information operations (IOs) to manipulate public opinion.\nThe spread of misinformation, false news, and misleading claims threatens democratic processes and societal cohesion, making it crucial...",
       "tags": [
-        "Article",
-        "Proceedings of the AAAI Conference on Artificial Intelligence"
+        "Proceedings of the AAAI Conference on Artificial Intelligence",
+        "Article"
       ],
       "dateAdded": "2025-04-11T00:00:00Z",
       "status": "to-read",
@@ -275,13 +275,13 @@
       "doi": "10.1093/pnasnexus/pgaf106",
       "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>As they evolve, social networks tend to form transitive triads more often than random chance and structural constraints would suggest. However, the mechanisms by which triads in these networks become transitive are largely unexplored. We leverage a unique combination of data and methods to demonstrate a causal link between amplification and triad transitivity in a directed social network. Additionally, we develop the concept of the “attent...",
       "tags": [
-        "social media",
-        "amplification",
-        "triad transitivity",
-        "tertius iungens",
-        "PNAS Nexus",
         "social networks",
-        "Article"
+        "amplification",
+        "social media",
+        "Article",
+        "PNAS Nexus",
+        "tertius iungens",
+        "triad transitivity"
       ],
       "dateAdded": "2025-03-27T00:00:00Z",
       "status": "to-read",
@@ -408,8 +408,8 @@
       "doi": "10.1017/pan.2024.29",
       "abstract": "<jats:title>Abstract</jats:title>\n\t  <jats:p>We use instruction-tuned large language models (LLMs) like GPT-4, Llama 3, MiXtral, or Aya to position political texts within policy and ideological spaces. We ask an LLM where a tweet or a sentence of a political text stands on the focal dimension and take the average of the LLM responses to position political actors such as US Senators, or longer texts such as UK party manifestos or EU policy speeches given in 10 different languages. The correlation...",
       "tags": [
-        "Article",
-        "Political Analysis"
+        "Political Analysis",
+        "Article"
       ],
       "dateAdded": "2025-01-27T00:00:00Z",
       "status": "to-read",
@@ -587,8 +587,8 @@
       "doi": "10.1080/10584609.2024.2446351",
       "abstract": "Published in Polit. Commun. | Year: 2025 | Authors: Munger, Kevin",
       "tags": [
-        "Article",
-        "Political Communication"
+        "Political Communication",
+        "Article"
       ],
       "dateAdded": "2025-01-02T00:00:00Z",
       "status": "to-read",
@@ -597,6 +597,31 @@
       "publisher": "Informa UK Limited",
       "type": "article",
       "confidenceScore": 0.8999999999999999
+    },
+    {
+      "id": "bibtex:Renault2025-uh",
+      "title": "Republicans are flagged more often than Democrats for sharing misinformation on X’s Community Notes",
+      "authors": [
+        "Thomas Renault",
+        "Mohsen Mosleh",
+        "David Gertler Rand"
+      ],
+      "venue": "Proceedings of the National Academy of Sciences",
+      "year": 2025,
+      "url": "https://doi.org/10.31234/osf.io/vk5yj_v1",
+      "doi": "10.31234/osf.io/vk5yj_v1",
+      "abstract": "<p>We use crowd-sourced assessments from X’s Community Notes program to examine whether there are partisan differences in the sharing of misleading information. Unlike previous studies, misleadingness here is determined by agreement across a diverse community of platform users, rather than by fact-checkers. We find that 67% more posts by Republicans are flagged as misleading compared to posts by Democrats. These results are not base rate artifacts, as we find no meaningful over-representation of...",
+      "tags": [
+        "Article",
+        "Proc. Natl. Acad. Sci. U. S. A."
+      ],
+      "dateAdded": "2025-01-01T00:00:00Z",
+      "status": "to-read",
+      "citationCount": 0,
+      "referenceCount": 0,
+      "publisher": "Proceedings of the National Academy of Sciences",
+      "type": "article",
+      "confidenceScore": 0.8333333333333333
     },
     {
       "id": "bibtex:Unknown2025-qj",
@@ -614,8 +639,8 @@
       "year": 2025,
       "abstract": "This report offers a vision for red-teaming in the public interest: a process that goes beyond system-centric testing of already built systems to consider the full range of ways the public can be involved in evaluating genAI harms.",
       "tags": [
-        "Data & Society",
-        "Techreport"
+        "Techreport",
+        "Data & Society"
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -738,8 +763,8 @@
       "doi": "10.1177/20563051251331748",
       "abstract": "<jats:p>\n            This article introduces the analytical approach of\n            <jats:italic>practice mapping</jats:italic>\n            , using vector embeddings of network actions and interactions to map commonalities and disjunctures in the practices of social media users, as a framework for methodological advancement beyond the limitations of conventional network analysis and visualization. In particular, the methodological framework we outline here has the potential to incorporate multip...",
       "tags": [
-        "Article",
-        "Social Media + Society"
+        "Social Media + Society",
+        "Article"
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -761,8 +786,8 @@
       "doi": "10.1177/20563051251332421",
       "abstract": "<jats:p>Conflict and disagreement are integral to healthy democracies, but the extreme polarization observed on many social media platforms poses a serious risk to the core functions of public communication. This theoretical article draws on the concept of connective democracy, further theorizing it to bridge the gap between empirical online deliberation and polarization research. It introduces and refines the concept of destructive polarization and its symptoms—manifested in user-generated cont...",
       "tags": [
-        "Article",
-        "Social Media + Society"
+        "Social Media + Society",
+        "Article"
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -835,14 +860,14 @@
       "abstract": "This study conceptualizes influence operations (IOs), an enterprise that orchestrates manipulative and inauthentic activities to achieve political advantage, as a contemporary form of brokerage during elections. It investigates the empirical case of IOs engaged in covert political campaigning in the 2022 Philippine General Elections through qualitative field research. Drawing from 22 in-depth interviews with IO leads and staff, we define IOs’ broker attributes, their brokerage processes, and the...",
       "tags": [
         "elections",
-        "influence operations",
-        "brokerage",
-        "Philippines",
         "Article",
-        "computational propaganda",
-        "Int. J. Commun.",
+        "brokerage",
+        "trolls",
         "disinformation",
-        "trolls"
+        "influence operations",
+        "Philippines",
+        "Int. J. Commun.",
+        "computational propaganda"
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -885,8 +910,8 @@
       "doi": "10.1177/20563051251323652",
       "abstract": "<jats:p>The Twitter Moderation Research Consortium is a database of network propaganda and influence operations that includes 115,474 unique Twitter accounts, millions of tweets, and over one terabyte of media removed from the platform between 2017 and 2022. We probe this database using Google’s Vision API and Keras with TensorFlow to test whether foreign influence operations can be identified based on the visual presentation of fake user profiles emphasizing gender, race, camera angle, sensuali...",
       "tags": [
-        "Article",
-        "Social Media + Society"
+        "Social Media + Society",
+        "Article"
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -955,8 +980,8 @@
       "doi": "10.1177/20563051251318172",
       "abstract": "<jats:p> Emotionality is a well-established strategy for boosting audience engagement on social media. While fact-checking is positioned to provide objective information, fact-checking posts on social media often involve heightened emotionality. How much emotionality is present and how emotionality influences audience engagement and public sentiment toward fact-checked targets remain largely understudied. Informed by social psychological frameworks explicating message-level factors influencing p...",
       "tags": [
-        "Article",
-        "Social Media + Society"
+        "Social Media + Society",
+        "Article"
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -991,6 +1016,30 @@
       "type": "article"
     },
     {
+      "id": "bibtex:Simeone2025-vo",
+      "title": "Network ripple effects: How Twitter deplatforming flipped authority structure and discourse of the Arizona Election Review community",
+      "authors": [
+        "Michael Simeone",
+        "Steven R. Corman"
+      ],
+      "venue": "SAGE Publications",
+      "year": 2025,
+      "url": "https://doi.org/10.1177/21582440251314538",
+      "doi": "10.1177/21582440251314538",
+      "abstract": "<jats:p> Content moderation decisions can have variable impacts on the events and discourses they aim to regulate. This study analyzes Twitter data from before and after the removal of key Arizona Election Audit Twitter accounts in March of 2021. After collecting tweets that refer to the election audit in Arizona in this designated timeframe, a before/after comparison examines the structure of the networks, the volume of the participating population, and the themes of their discourse. Several si...",
+      "tags": [
+        "Sage Open",
+        "Article"
+      ],
+      "dateAdded": "2025-01-01T00:00:00Z",
+      "status": "to-read",
+      "citationCount": 0,
+      "referenceCount": 28,
+      "publisher": "SAGE Publications",
+      "type": "article",
+      "confidenceScore": 0.8428571428571427
+    },
+    {
       "id": "bibtex:DiGiuseppe2025-es",
       "title": "Scaling open-ended survey responses using LLM-paired comparisons",
       "authors": [
@@ -1014,30 +1063,6 @@
       "confidenceScore": 0.8999999999999999
     },
     {
-      "id": "bibtex:Simeone2025-vo",
-      "title": "Network ripple effects: How Twitter deplatforming flipped authority structure and discourse of the Arizona Election Review community",
-      "authors": [
-        "Michael Simeone",
-        "Steven R. Corman"
-      ],
-      "venue": "SAGE Publications",
-      "year": 2025,
-      "url": "https://doi.org/10.1177/21582440251314538",
-      "doi": "10.1177/21582440251314538",
-      "abstract": "<jats:p> Content moderation decisions can have variable impacts on the events and discourses they aim to regulate. This study analyzes Twitter data from before and after the removal of key Arizona Election Audit Twitter accounts in March of 2021. After collecting tweets that refer to the election audit in Arizona in this designated timeframe, a before/after comparison examines the structure of the networks, the volume of the participating population, and the themes of their discourse. Several si...",
-      "tags": [
-        "Article",
-        "Sage Open"
-      ],
-      "dateAdded": "2025-01-01T00:00:00Z",
-      "status": "to-read",
-      "citationCount": 0,
-      "referenceCount": 28,
-      "publisher": "SAGE Publications",
-      "type": "article",
-      "confidenceScore": 0.8428571428571427
-    },
-    {
       "id": "bibtex:Marwick2025-vx",
       "title": "True costs of misinformation| mountains of evidence: Processual “redpilling” as a Socio-technical effect of disinformation",
       "authors": [
@@ -1048,14 +1073,14 @@
       "year": 2025,
       "abstract": "How do people come to believe Far-Right, extremist, and conspiratorial ideas they encounter online? This article examines how participants in primarily U.S.-based Far-Right online communities describe their adoption of “redpill” beliefs and the role of disinformation in these accounts. Applying the socio-technical theory of media effects, we conduct a qualitative content analysis of “redpilling narratives” gathered from Reddit, Gab, and Discord. While many users frame redpilling as a moment of c...",
       "tags": [
-        "online radicalization",
-        "Far-Right",
         "evidence",
+        "online radicalization",
         "extremism",
         "redpill",
         "Article",
-        "Int. J. Commun.",
-        "disinformation"
+        "Far-Right",
+        "disinformation",
+        "Int. J. Commun."
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -1102,9 +1127,9 @@
       "url": "http://arxiv.org/abs/2412.00479v1",
       "abstract": "As the exploration of digital behavioral data revolutionizes communication\nresearch, understanding the nuances of data collection methodologies becomes\nincreasingly pertinent. This study focuses on one prominent data collection\napproach, web scraping, and more specifically, its application in the growing\nfield of research relying on web browsing data. We investigate discrepancies\nbetween content obtained directly during user interaction with a website\n(in-situ) and content scraped using the URLs...",
       "tags": [
+        "cs.CY",
         "Article",
-        "arXiv [cs.CY]",
-        "cs.CY"
+        "arXiv [cs.CY]"
       ],
       "dateAdded": "2024-11-30T00:00:00Z",
       "status": "to-read",
@@ -1329,12 +1354,12 @@
       "doi": "10.1126/science.aaa1160",
       "abstract": "<jats:title>Not getting all sides of the news?</jats:title><jats:p>People are increasingly turning away from mass media to social media as a way of learning news and civic information. Bakshy<jats:italic>et al.</jats:italic>examined the news that millions of Facebook users' peers shared, what information these users were presented with, and what they ultimately consumed (see the Perspective by Lazer). Friends shared substantially less cross-cutting news from sources aligned with an opposing ideo...",
       "tags": [
-        "facebook",
+        "Science",
+        "Article",
+        "homophily",
         "news",
         "newsfeed",
-        "Science",
-        "homophily",
-        "Article"
+        "facebook"
       ],
       "dateAdded": "2015-06-05T00:00:00Z",
       "status": "to-read",
@@ -1346,8 +1371,8 @@
     }
   ],
   "metadata": {
-    "totalPapers": 51,
-    "toRead": 51,
+    "totalPapers": 52,
+    "toRead": 52,
     "inProgress": 0,
     "completed": 0,
     "feedInfo": {
@@ -1355,6 +1380,6 @@
       "description": "Academic papers from Paperpile enriched with metadata"
     }
   },
-  "lastUpdated": "2025-06-17T00:45:41.918Z",
+  "lastUpdated": "2025-06-18T00:45:28.393Z",
   "source": "https://github.com/fabiogiglietto/toread"
 }
