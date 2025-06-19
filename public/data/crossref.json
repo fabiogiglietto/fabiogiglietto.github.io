@@ -171,7 +171,9 @@
       "isbn": null,
       "subject": [],
       "abstract": null,
-      "license": [],
+      "license": [
+        "https://www.acm.org/publications/policies/copyright_policy#Background"
+      ],
       "funder": [
         {
           "DOI": "10.13039/501100000155",
@@ -1356,7 +1358,7 @@
       "crossref_score": 1
     }
   ],
-  "lastUpdated": "2025-06-18T00:45:55.331Z",
+  "lastUpdated": "2025-06-19T00:46:05.294Z",
   "metadata": {
     "total_requested": 95,
     "successful_requests": 62,
