@@ -435,7 +435,9 @@
       "isbn": null,
       "subject": [],
       "abstract": "<jats:p>This paper provides an interdisciplinary perspective concerning the role of prosumers on future Internet design based on the current trend of Internet user empowerment. The paper debates the prosumer role, and addresses models to develop a symmetric Internet architecture and supply-chain based on the integration of social capital aspects. It has as goal to ignite the discussion concerning a socially-driven Internet architectural design.</jats:p>",
-      "license": [],
+      "license": [
+        "https://www.acm.org/publications/policies/copyright_policy#Background"
+      ],
       "funder": [],
       "crossref_score": 1
     },
@@ -478,25 +480,6 @@
       "crossref_score": 1
     },
     {
-      "doi": "10.5210/spir.v2020i0.11219",
-      "title": "DETECTING COORDINATED LINK SHARING BEHAVIOR ON FACEBOOK DURING THE\t\t\tITALIAN CORONAVIRUS OUTBREAK",
-      "authors": "Giglietto, Fabio; Righetti, Nicola; Marino, Giada",
-      "venue": "AoIR Selected Papers of Internet Research",
-      "year": 2020,
-      "type": "journal-article",
-      "url": "https://doi.org/10.5210/spir.v2020i0.11219",
-      "crossref_type": "journal-article",
-      "publisher": "University of Illinois Libraries",
-      "container_title": "AoIR Selected Papers of Internet Research",
-      "issn": "2162-3317",
-      "isbn": null,
-      "subject": [],
-      "abstract": "<jats:p>Social media, as many scholars have shown, can be used to influence political behavior through coordinated disinformation campaigns in which participants pretend to be ordinary citizens. With a specific reference to Facebook, a recent study has spotlighted patterns of coordinated activity aimed at fueling online circulation of specific news stories before the 2018 and 2019 Italian elections, an activity called by the authors “Coordinated Link Sharing Behavior” (CLSB). More precisely, CLSB refers to the coordinated shares of the same news articles in a very short time by networks of entities composed by Facebook pages, groups and verified public profiles. The uncertainty related to the coronavirus outbreak is a unique chance for malicious actors to leverage the anxiety of online publics to reach their goals, filling the information void with problematic content. Considering the association between coordination, media manipulation, and problematic information, the entities involved in coordinated online activities represent a privileged perspective on these phenomena. Thus, against the backdrop of the literature and the already conducted studies, this proposal will discuss Coordinated Link Sharing Behavior in the context of the coronavirus outbreak informational void, analyzing network mutations over time and the content strategies used to exploit the ambiguity associated with the topic.</jats:p>",
-      "license": [],
-      "funder": [],
-      "crossref_score": 1
-    },
-    {
       "doi": "10.1177/20563051231196866",
       "title": "A Workflow to Detect, Monitor, and Update Lists of Coordinated Social Media Accounts Across Time: The Case of the 2022 Italian Election",
       "authors": "Giglietto, Fabio; Marino, Giada; Mincigrucci, Roberto; Stanziano, Anna",
@@ -516,6 +499,25 @@
       "license": [
         "https://creativecommons.org/licenses/by-nc/4.0/"
       ],
+      "funder": [],
+      "crossref_score": 1
+    },
+    {
+      "doi": "10.5210/spir.v2020i0.11219",
+      "title": "DETECTING COORDINATED LINK SHARING BEHAVIOR ON FACEBOOK DURING THE\t\t\tITALIAN CORONAVIRUS OUTBREAK",
+      "authors": "Giglietto, Fabio; Righetti, Nicola; Marino, Giada",
+      "venue": "AoIR Selected Papers of Internet Research",
+      "year": 2020,
+      "type": "journal-article",
+      "url": "https://doi.org/10.5210/spir.v2020i0.11219",
+      "crossref_type": "journal-article",
+      "publisher": "University of Illinois Libraries",
+      "container_title": "AoIR Selected Papers of Internet Research",
+      "issn": "2162-3317",
+      "isbn": null,
+      "subject": [],
+      "abstract": "<jats:p>Social media, as many scholars have shown, can be used to influence political behavior through coordinated disinformation campaigns in which participants pretend to be ordinary citizens. With a specific reference to Facebook, a recent study has spotlighted patterns of coordinated activity aimed at fueling online circulation of specific news stories before the 2018 and 2019 Italian elections, an activity called by the authors “Coordinated Link Sharing Behavior” (CLSB). More precisely, CLSB refers to the coordinated shares of the same news articles in a very short time by networks of entities composed by Facebook pages, groups and verified public profiles. The uncertainty related to the coronavirus outbreak is a unique chance for malicious actors to leverage the anxiety of online publics to reach their goals, filling the information void with problematic content. Considering the association between coordination, media manipulation, and problematic information, the entities involved in coordinated online activities represent a privileged perspective on these phenomena. Thus, against the backdrop of the literature and the already conducted studies, this proposal will discuss Coordinated Link Sharing Behavior in the context of the coronavirus outbreak informational void, analyzing network mutations over time and the content strategies used to exploit the ambiguity associated with the topic.</jats:p>",
+      "license": [],
       "funder": [],
       "crossref_score": 1
     },
@@ -1358,7 +1360,7 @@
       "crossref_score": 1
     }
   ],
-  "lastUpdated": "2025-06-19T00:46:05.294Z",
+  "lastUpdated": "2025-06-20T00:46:10.157Z",
   "metadata": {
     "total_requested": 95,
     "successful_requests": 62,
