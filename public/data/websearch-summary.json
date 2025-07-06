@@ -1,24 +1,33 @@
 {
-  "totalEntries": 3,
-  "lastUpdated": "2025-07-05T00:44:26.480Z",
+  "totalEntries": 4,
+  "lastUpdated": "2025-07-06T00:52:48.466Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2025-07-05T00:44:26.479Z"
+    "latest": "2025-07-06T00:52:48.465Z"
   },
   "byDate": {
+    "2025-07-06": 1,
     "2025-07-05": 2,
     "2025-06-10": 1
   },
   "bySource": {
     "uniurb.it": 2,
+    "research.qut.edu.au": 1,
     "arxiv.org": 1
   },
   "byRelevanceScore": {
-    "high": 3,
+    "high": 4,
     "medium": 0,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "DMRC Visitor Seminar: Prof. Fabio Giglietto - QUT Digital Media Research Centre",
+      "url": "https://research.qut.edu.au/dmrc/2023/06/08/dmrc-visitor-seminar-prof-fabio-giglietto/?utm_source=openai",
+      "source": "research.qut.edu.au",
+      "relevanceScore": 0.9,
+      "collectedAt": "2025-07-06T00:52:48.465Z"
+    },
     {
       "title": "INTRODUCTION TO DATA ANALYSIS FOR MEDIA STUDIES - Lecturer: Fabio Giglietto - A.Y. 2024/2025 - Credits 5",
       "url": "https://www.uniurb.it/syllabi/267263?utm_source=openai",
