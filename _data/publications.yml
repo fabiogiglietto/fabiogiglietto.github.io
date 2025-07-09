@@ -20,6 +20,26 @@
     scholar: null
     wos: null
     scopus: null
+- title: >-
+    Integrating Large Language Models in Political Discourse Studies on Social Media: Challenges of Validating an
+    LLMs-in-the-loop Pipeline
+  authors: Marino, Giada; Giglietto, Fabio
+  venue: Sociologica
+  year: 2024
+  doi: 10.6092/issn.1971-8853/19524
+  citations: 1
+  citation_sources:
+    scholar: null
+    wos: 0
+    scopus: 1
+  type: article
+  urls:
+    doi: https://doi.org/10.6092/issn.1971-8853/19524
+    orcid: null
+    scholar: null
+    wos: >-
+      https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:001356688800005&DestLinkType=FullRecord&DestApp=WOS_CPL
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85213417206&origin=inward
 - title: "Facebook reactions in the context of politics and social issues: a systematic literature review"
   authors: Anwar, Sawood; Giglietto, Fabio
   venue: Frontiers in Sociology
@@ -29,7 +49,7 @@
   citation_sources:
     scholar: null
     wos: 0
-    scopus: null
+    scopus: 1
   type: article
   urls:
     doi: https://doi.org/10.3389/fsoc.2024.1379265
@@ -37,27 +57,7 @@
     scholar: null
     wos: >-
       https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:001234645400001&DestLinkType=FullRecord&DestApp=WOS_CPL
-    scopus: null
-- title: >-
-    Integrating Large Language Models in Political Discourse Studies on Social Media: Challenges of Validating an
-    LLMs-in-the-loop Pipeline
-  authors: Marino, Giada; Giglietto, Fabio
-  venue: Sociologica
-  year: 2024
-  doi: 10.6092/issn.1971-8853/19524
-  citations: 0
-  citation_sources:
-    scholar: null
-    wos: 0
-    scopus: null
-  type: article
-  urls:
-    doi: https://doi.org/10.6092/issn.1971-8853/19524
-    orcid: null
-    scholar: null
-    wos: >-
-      https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:001356688800005&DestLinkType=FullRecord&DestApp=WOS_CPL
-    scopus: null
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85194859097&origin=inward
 - title: >-
     Evaluating Embedding Models for Clustering Italian Political News: A Comparative Study of Text-Embedding-3-Large and
     UmBERTo
@@ -120,11 +120,11 @@
   venue: Social Media + Society
   year: 2023
   doi: 10.1177/20563051231196866
-  citations: 4
+  citations: 5
   citation_sources:
     scholar: null
     wos: 0
-    scopus: null
+    scopus: 5
   type: article
   urls:
     doi: https://doi.org/10.1177/20563051231196866
@@ -132,7 +132,24 @@
     scholar: null
     wos: >-
       https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:001070115200001&DestLinkType=FullRecord&DestApp=WOS_CPL
-    scopus: null
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85170566346&origin=inward
+- title: Citizens’ Engagement with the ‘Seaside Campaign’ on Instagram and Facebook
+  authors: Boccia Artieri, Giovanni; Giglietto, Fabio; Stanziano, Anna
+  venue: Italy at the Polls 2022
+  year: 2023
+  doi: 10.1007/978-3-031-29298-9_4
+  citations: 2
+  citation_sources:
+    scholar: null
+    wos: null
+    scopus: 2
+  type: article
+  urls:
+    doi: https://doi.org/10.1007/978-3-031-29298-9_4
+    orcid: https://doi.org/10.1007/978-3-031-29298-9_4
+    scholar: null
+    wos: null
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85172153178&origin=inward
 - title: Political polarization in the frequency British newspapers mention scientists with different views on COVID-19
   authors: Ghezzi, Pietro; Giglietto, Fabio; Martinisi, Alessandro
   venue: Center for Open Science
@@ -168,7 +185,7 @@
     wos: null
     scopus: null
 - title: Hyperpartisan Networks on Facebook. The Case of the Five Star Movement Network During the 2022 Italian Election
-  authors: Giglietto, F.
+  authors: Stanziano A.
   venue: ""
   year: 2023
   doi: 11576/2740791
@@ -176,14 +193,14 @@
   citation_sources:
     scholar: null
     wos: null
-    scopus: null
+    scopus: 0
   type: article
   urls:
     doi: https://doi.org/11576/2740791
     orcid: https://ora.uniurb.it/handle/11576/2740791.2
     scholar: null
     wos: null
-    scopus: null
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85189447205&origin=inward
 - title: I cittadini nella campagna balneare su Instagram e Facebook
   authors: Giglietto, F.
   venue: ""
@@ -251,23 +268,6 @@
   urls:
     doi: https://doi.org/10.1445/106772
     orcid: https://ora.uniurb.it/handle/11576/2714451
-    scholar: null
-    wos: null
-    scopus: null
-- title: Citizens’ Engagement with the ‘Seaside Campaign’ on Instagram and Facebook
-  authors: Boccia Artieri, Giovanni; Giglietto, Fabio; Stanziano, Anna
-  venue: Italy at the Polls 2022
-  year: 2023
-  doi: 10.1007/978-3-031-29298-9_4
-  citations: 0
-  citation_sources:
-    scholar: null
-    wos: null
-    scopus: null
-  type: article
-  urls:
-    doi: https://doi.org/10.1007/978-3-031-29298-9_4
-    orcid: https://doi.org/10.1007/978-3-031-29298-9_4
     scholar: null
     wos: null
     scopus: null
@@ -426,14 +426,14 @@
   citation_sources:
     scholar: null
     wos: null
-    scopus: null
+    scopus: 0
   type: article
   urls:
     doi: https://doi.org/10.4337/9781800374263.coordinated.inauthentic.behavior
     orcid: https://ora.uniurb.it/handle/11576/2705551
     scholar: null
     wos: null
-    scopus: null
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85172796327&origin=inward
 - title: MAPPING NEFARIOUS SOCIAL MEDIA ACTORS TO SPEED-UP COVID-19 FACT-CHECKING - SINTESI IN ITALIANO
   authors: Giglietto, F.
   venue: ""
@@ -505,22 +505,22 @@
     wos: null
     scopus: null
 - title: Social TV and second screen
-  authors: Giglietto, F.
+  authors: Giglietto F.
   venue: ""
   year: 2022
-  doi: null
+  doi: 10.4337/9781800374263.social.tv.second
   citations: 0
   citation_sources:
     scholar: null
     wos: null
-    scopus: null
+    scopus: 0
   type: article
   urls:
-    doi: null
+    doi: https://doi.org/10.4337/9781800374263.social.tv.second
     orcid: https://ora.uniurb.it/handle/11576/2706570
     scholar: null
     wos: null
-    scopus: null
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85172790603&origin=inward
 - title: Social TV and second screen
   authors: Giglietto, Fabio
   venue: Elgar Encyclopedia of Technology and Politics
@@ -591,6 +591,23 @@
     scholar: null
     wos: null
     scopus: null
+- title: Ciarlatani. Post-verità, contropubblici online e nuove articolazioni della fiducia nel sistema della medicina
+  authors: Gemini, Laura; Boccia Artieri, Giovanni; Giglietto, Fabio; Farci, Manolo; Brilli, Stefano; Zurovac, Elisabetta
+  venue: SALUTE E SOCIETÀ
+  year: 2021
+  doi: 10.3280/SES2021-002014
+  citations: 3
+  citation_sources:
+    scholar: null
+    wos: null
+    scopus: 3
+  type: article
+  urls:
+    doi: https://doi.org/10.3280/SES2021-002014
+    orcid: https://ora.uniurb.it/handle/11576/2689498
+    scholar: null
+    wos: null
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85109552617&origin=inward
 - title: Coordinated Hateful Disinformation on Italian Politics and Social Issues, since 2017
   authors: Giglietto, Fabio; Marino, Giada; Terenzi, Massimo; Righetti, Nicola; Rossi, Luca
   venue: SSRN Electronic Journal
@@ -605,23 +622,6 @@
   urls:
     doi: https://doi.org/10.2139/ssrn.3777263
     orcid: https://ora.uniurb.it/handle/11576/2703872
-    scholar: null
-    wos: null
-    scopus: null
-- title: Ciarlatani. Post-verità, contropubblici online e nuove articolazioni della fiducia nel sistema della medicina
-  authors: Gemini, Laura; Boccia Artieri, Giovanni; Giglietto, Fabio; Farci, Manolo; Brilli, Stefano; Zurovac, Elisabetta
-  venue: SALUTE E SOCIETÀ
-  year: 2021
-  doi: 10.3280/SES2021-002014
-  citations: 0
-  citation_sources:
-    scholar: null
-    wos: null
-    scopus: null
-  type: article
-  urls:
-    doi: https://doi.org/10.3280/SES2021-002014
-    orcid: https://ora.uniurb.it/handle/11576/2689498
     scholar: null
     wos: null
     scopus: null
@@ -689,7 +689,7 @@
   citation_sources:
     scholar: null
     wos: 0
-    scopus: null
+    scopus: 92
   type: article
   urls:
     doi: https://doi.org/10.1080/1369118X.2020.1739732
@@ -697,7 +697,7 @@
     scholar: null
     wos: >-
       https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000527692500001&DestLinkType=FullRecord&DestApp=WOS_CPL
-    scopus: null
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85081723807&origin=inward
 - title: Coordinated Link Sharing Behavior as a Signal to Surface Sources of Problematic Information on Facebook
   authors: Giglietto, Fabio; Righetti, Nicola; Rossi, Luca; Marino, Giada
   venue: International Conference on Social Media and Society
@@ -707,7 +707,7 @@
   citation_sources:
     scholar: null
     wos: 0
-    scopus: null
+    scopus: 20
   type: conference
   urls:
     doi: https://doi.org/10.1145/3400806.3400817
@@ -715,7 +715,7 @@
     scholar: null
     wos: >-
       https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000779244300011&DestLinkType=FullRecord&DestApp=WOS_CPL
-    scopus: null
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85088113452&origin=inward
 - title: Detecting Coordinated Link Sharing During The Italian Coronavirus Outbreak
   authors: Giglietto, Fabio; Righetti, Nicola; Marino, Giada
   venue: AoIR Selected Papers of Internet Research
@@ -804,7 +804,7 @@
     wos: null
     scopus: null
 - title: Three Consequences of Big Data on the Practices and Scholarships of Political Communication
-  authors: Fabio Giglietto
+  authors: Giglietto F.
   venue: ""
   year: 2020
   doi: 10.3270/96423
@@ -812,14 +812,14 @@
   citation_sources:
     scholar: null
     wos: null
-    scopus: null
+    scopus: 0
   type: article
   urls:
     doi: https://doi.org/10.3270/96423
     orcid: https://ora.uniurb.it/handle/11576/2676145
     scholar: null
     wos: null
-    scopus: null
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85090963134&origin=inward
 - title: Correction
   authors: Fabio Giglietto, Nicola Righetti, L. Rossi, Giada Marino
   venue: Information, Communication &amp; Society
@@ -846,7 +846,7 @@
   citation_sources:
     scholar: null
     wos: 170
-    scopus: 163
+    scopus: 85
   type: article
   urls:
     doi: https://doi.org/10.1177/0011392119837536
@@ -854,7 +854,7 @@
     scholar: null
     wos: >-
       https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000471719800011&DestLinkType=FullRecord&DestApp=WOS_CPL
-    scopus: https://www.scopus.com/record/display.uri?eid=2-s2.0-85064248987
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85064223856&origin=inward
 - title: >-
     Diverging patterns of interaction around news on social media: insularity and partisanship during the 2018 Italian
     election campaign
@@ -862,11 +862,11 @@
   venue: Information, Communication &amp; Society
   year: 2019
   doi: 10.1080/1369118X.2019.1629692
-  citations: 16
+  citations: 19
   citation_sources:
     scholar: null
     wos: 0
-    scopus: null
+    scopus: 19
   type: article
   urls:
     doi: https://doi.org/10.1080/1369118X.2019.1629692
@@ -874,7 +874,7 @@
     scholar: null
     wos: >-
       https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000484480900007&DestLinkType=FullRecord&DestApp=WOS_CPL
-    scopus: null
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85067685716&origin=inward
 - title: >-
     Understanding Coordinated and Inauthentic Link Sharing Behavior on Facebook in the Run-up to 2018 General Election
     and 2019 European Election in Italy
@@ -897,7 +897,7 @@
 - title: >-
     Multi-Party Media Partisanship Attention Score. Estimating Partisan Attention of News Media Sources Using Twitter
     Data in the Lead-up to 2018 Italian Election
-  authors: Fabio Giglietto, Nicola Righetti, Giada Marino, L. Rossi
+  authors: Giglietto F.
   venue: ""
   year: 2019
   doi: 10.3270/93030
@@ -905,14 +905,14 @@
   citation_sources:
     scholar: null
     wos: null
-    scopus: null
+    scopus: 10
   type: article
   urls:
     doi: https://doi.org/10.3270/93030
     orcid: https://ora.uniurb.it/handle/11576/2665758
     scholar: null
     wos: null
-    scopus: null
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85067663157&origin=inward
 - title: "Steering the world from where we are: An introduction to the sociocybernetics perspective"
   authors: Almaguer-Kalixto, Patricia Eugenia; Giglietto, Fabio
   venue: Current Sociology
@@ -922,7 +922,7 @@
   citation_sources:
     scholar: null
     wos: 0
-    scopus: null
+    scopus: 2
   type: article
   urls:
     doi: https://doi.org/10.1177/0011392119837573
@@ -930,7 +930,24 @@
     scholar: null
     wos: >-
       https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000471719800002&DestLinkType=FullRecord&DestApp=WOS_CPL
-    scopus: null
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85064685029&origin=inward
+- title: "Binge-watching the Algorithmic Catalog: Making Sense of Netflix in the Aftermath of the Italian Launch"
+  authors: Giglietto F.
+  venue: ""
+  year: 2019
+  doi: null
+  citations: 2
+  citation_sources:
+    scholar: null
+    wos: null
+    scopus: 2
+  type: article
+  urls:
+    doi: null
+    orcid: https://ora.uniurb.it/handle/11576/2754418.5
+    scholar: null
+    wos: null
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85091957205&origin=inward
 - title: >-
     Replication Data for: Multi-party Media Partisanship Attention Score: estimating partisan attention of news media
     sources using Twitter data in the lead up of the 2018 Italian election
@@ -947,23 +964,6 @@
   urls:
     doi: https://doi.org/10.7910/dvn/xnoarv
     orcid: null
-    scholar: null
-    wos: null
-    scopus: null
-- title: "Binge-watching the Algorithmic Catalog: Making Sense of Netflix in the Aftermath of the Italian Launch"
-  authors: Giglietto, F.
-  venue: ""
-  year: 2019
-  doi: null
-  citations: 0
-  citation_sources:
-    scholar: null
-    wos: null
-    scopus: null
-  type: article
-  urls:
-    doi: null
-    orcid: https://ora.uniurb.it/handle/11576/2754418.5
     scholar: null
     wos: null
     scopus: null
@@ -1243,6 +1243,26 @@
     scholar: null
     wos: null
     scopus: null
+- title: >-
+    Facebook Digital Traces for Survey Research: Assessing the Efficiency and Effectiveness of a Facebook Ad–Based
+    Procedure for Recruiting Online Survey Respondents in Niche and Difficult-to-Reach Populations
+  authors: Iannelli, Laura; Giglietto, Fabio; Rossi, Luca; Zurovac, Elisabetta
+  venue: Social Science Computer Review
+  year: 2018
+  doi: 10.1177/0894439318816638
+  citations: 34
+  citation_sources:
+    scholar: null
+    wos: 0
+    scopus: 34
+  type: journal
+  urls:
+    doi: https://doi.org/10.1177/0894439318816638
+    orcid: http://www.scopus.com/inward/record.url?eid=2-s2.0-85059463786&partnerID=MN8TOARS
+    scholar: null
+    wos: >-
+      https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000548660600007&DestLinkType=FullRecord&DestApp=WOS_CPL
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85059463786&origin=inward
 - title: Mapping Italian News Media Political Coverage in the Lead-Up of 2018 General Election
   authors: >-
     Giglietto, Fabio; Iannelli, Laura; Rossi, Luca; Valeriani, Augusto; Righetti, Nicola; Carabini, Francesca; Marino,
@@ -1296,26 +1316,6 @@
     scholar: null
     wos: null
     scopus: null
-- title: >-
-    Facebook Digital Traces for Survey Research: Assessing the Efficiency and Effectiveness of a Facebook Ad–Based
-    Procedure for Recruiting Online Survey Respondents in Niche and Difficult-to-Reach Populations
-  authors: Iannelli, Laura; Giglietto, Fabio; Rossi, Luca; Zurovac, Elisabetta
-  venue: Social Science Computer Review
-  year: 2018
-  doi: 10.1177/0894439318816638
-  citations: 0
-  citation_sources:
-    scholar: null
-    wos: 0
-    scopus: null
-  type: journal
-  urls:
-    doi: https://doi.org/10.1177/0894439318816638
-    orcid: http://www.scopus.com/inward/record.url?eid=2-s2.0-85059463786&partnerID=MN8TOARS
-    scholar: null
-    wos: >-
-      https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000548660600007&DestLinkType=FullRecord&DestApp=WOS_CPL
-    scopus: null
 - title: Media Partisanship Attention in 2018 Italian Election
   authors: Giglietto, F.
   venue: Harvard Dataverse
@@ -1344,7 +1344,7 @@
   citation_sources:
     scholar: null
     wos: 0
-    scopus: null
+    scopus: 54
   type: article
   urls:
     doi: https://doi.org/10.1177/2056305116686992
@@ -1352,17 +1352,17 @@
     scholar: null
     wos: >-
       https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000443457700002&DestLinkType=FullRecord&DestApp=WOS_CPL
-    scopus: null
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85043760110&origin=inward
 - title: Networked intimacy. Intimacy and friendship among Italian Facebook users
   authors: Farci, Manolo; Rossi, Luca; Boccia Artieri, Giovanni; Giglietto, Fabio
   venue: Information, Communication &amp; Society
   year: 2017
   doi: 10.1080/1369118X.2016.1203970
-  citations: 24
+  citations: 26
   citation_sources:
     scholar: null
     wos: 0
-    scopus: null
+    scopus: 26
   type: article
   urls:
     doi: https://doi.org/10.1080/1369118X.2016.1203970
@@ -1370,7 +1370,7 @@
     scholar: null
     wos: >-
       https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000396827700010&DestLinkType=FullRecord&DestApp=WOS_CPL
-    scopus: null
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=84976566310&origin=inward
 - title: Dai dati all'informazione
   authors: Giglietto, F.
   venue: ""
@@ -1448,7 +1448,7 @@
   citation_sources:
     scholar: null
     wos: 0
-    scopus: null
+    scopus: 19
   type: journal
   urls:
     doi: https://doi.org/10.1080/08838151.2016.1164162
@@ -1456,7 +1456,27 @@
     scholar: null
     wos: >-
       https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000383728400008&DestLinkType=FullRecord&DestApp=WOS_CPL
-    scopus: null
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=84974603482&origin=inward
+- title: >-
+    Understanding engagement and willingness to speak up in social television: A full-season, cross-genre analysis of TV
+    audience participation on Twitter
+  authors: Giglietto, Fabio; Artieri, Giovanni Boccia; Gemini, Laura; Orefice, Mario
+  venue: International Journal of Communication
+  year: 2016
+  doi: null
+  citations: 5
+  citation_sources:
+    scholar: null
+    wos: 0
+    scopus: 5
+  type: journal
+  urls:
+    doi: null
+    orcid: http://www.scopus.com/inward/record.url?eid=2-s2.0-85030472910&partnerID=MN8TOARS
+    scholar: null
+    wos: >-
+      https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000386944800001&DestLinkType=FullRecord&DestApp=WOS_CPL
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85030472910&origin=inward
 - title: "#JeNeSuisPaCharlie"
   authors: Giglietto, F.
   venue: Figshare
@@ -1480,20 +1500,20 @@
     Pelechrinis, Konstantinos; Quercia, Daniele; Weller, Katrin; Zubiaga, Arkaitz
   venue: AI Magazine
   year: 2016
-  doi: null
+  doi: 10.1609/aimag.v37i4.2692
   citations: 0
   citation_sources:
     scholar: null
     wos: 0
-    scopus: null
+    scopus: 0
   type: article
   urls:
-    doi: null
+    doi: https://doi.org/10.1609/aimag.v37i4.2692
     orcid: http://www.scopus.com/inward/record.url?eid=2-s2.0-85019996457&partnerID=MN8TOARS
     scholar: null
     wos: >-
       https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000391082300012&DestLinkType=FullRecord&DestApp=WOS_CPL
-    scopus: null
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85019996457&origin=inward
 - title: "Servizio Pubblico Edition 2012/2013 - Twitter #serviziopubblico Ids dataset"
   authors: Giglietto, F.
   venue: Figshare
@@ -1527,26 +1547,6 @@
     orcid: null
     scholar: null
     wos: null
-    scopus: null
-- title: >-
-    Understanding engagement and willingness to speak up in social television: A full-season, cross-genre analysis of TV
-    audience participation on Twitter
-  authors: Giglietto, Fabio; Artieri, Giovanni Boccia; Gemini, Laura; Orefice, Mario
-  venue: International Journal of Communication
-  year: 2016
-  doi: null
-  citations: 0
-  citation_sources:
-    scholar: null
-    wos: 0
-    scopus: null
-  type: journal
-  urls:
-    doi: null
-    orcid: http://www.scopus.com/inward/record.url?eid=2-s2.0-85030472910&partnerID=MN8TOARS
-    scholar: null
-    wos: >-
-      https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000386944800001&DestLinkType=FullRecord&DestApp=WOS_CPL
     scopus: null
 - title: "X-Factor 6th Italian Edition 2012 - Twitter #XF6 Ids dataset"
   authors: Giglietto, F.
@@ -1666,7 +1666,7 @@
 - title: >-
     To be or not to be charlie: Twitter hashtags as a discourse and counter-discourse in the aftermath of the 2015
     charlie hebdo shooting in France
-  authors: Fabio Giglietto, Yenn Lee
+  authors: Giglietto F.
   venue: CEUR Workshop Proceedings
   year: 2015
   doi: null
@@ -1674,14 +1674,32 @@
   citation_sources:
     scholar: null
     wos: null
-    scopus: null
+    scopus: 12
   type: conference
   urls:
     doi: null
     orcid: http://www.scopus.com/inward/record.url?eid=2-s2.0-84938536467&partnerID=MN8TOARS
     scholar: null
     wos: null
-    scopus: null
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=84938536467&origin=inward
+- title: "Hybrid spaces of politics: the 2013 general elections in Italy, between talk shows and Twitter"
+  authors: Iannelli, Laura; Giglietto, Fabio
+  venue: Information, Communication &amp; Society
+  year: 2015
+  doi: 10.1080/1369118x.2015.1006658
+  citations: 21
+  citation_sources:
+    scholar: null
+    wos: 0
+    scopus: 21
+  type: article
+  urls:
+    doi: https://doi.org/10.1080/1369118x.2015.1006658
+    orcid: null
+    scholar: null
+    wos: >-
+      https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000357088700002&DestLinkType=FullRecord&DestApp=WOS_CPL
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=84934436383&origin=inward
 - title: >-
     Understanding Engagement and Willingness to Speak Up in Social-Television: A Full-Season, Cross-Genre Analysis of TV
     Audience Participation on Twitter
@@ -1717,24 +1735,6 @@
     orcid: null
     scholar: null
     wos: null
-    scopus: null
-- title: "Hybrid spaces of politics: the 2013 general elections in Italy, between talk shows and Twitter"
-  authors: Iannelli, Laura; Giglietto, Fabio
-  venue: Information, Communication &amp; Society
-  year: 2015
-  doi: 10.1080/1369118x.2015.1006658
-  citations: 1
-  citation_sources:
-    scholar: null
-    wos: 0
-    scopus: null
-  type: article
-  urls:
-    doi: https://doi.org/10.1080/1369118x.2015.1006658
-    orcid: null
-    scholar: null
-    wos: >-
-      https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000357088700002&DestLinkType=FullRecord&DestApp=WOS_CPL
     scopus: null
 - title: Limiti e possibilità degli online social data
   authors: Giglietto, Fabio; Rossi, Luca
@@ -1813,7 +1813,7 @@
   citation_sources:
     scholar: null
     wos: 410
-    scopus: 402
+    scopus: 176
   type: journal
   urls:
     doi: https://doi.org/10.1111/jcom.12085
@@ -1821,7 +1821,7 @@
     scholar: null
     wos: >-
       https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000334367600006&DestLinkType=FullRecord&DestApp=WOS_CPL
-    scopus: https://www.scopus.com/record/display.uri?eid=2-s2.0-84897640661
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=84898915306&origin=inward
 - title: "Social tv: audience engagement e auto-rappresentazione dell'identità in rete"
   authors: Giglietto, Fabio; Selva, Donatella
   venue: SOCIOLOGIA DELLA COMUNICAZIONE
@@ -2197,7 +2197,7 @@
   citation_sources:
     scholar: null
     wos: 289
-    scopus: 280
+    scopus: null
   type: journal
   urls:
     doi: https://doi.org/10.1080/15228835.2012.743797
@@ -2205,7 +2205,7 @@
     scholar: null
     wos: >-
       https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000212197600002&DestLinkType=FullRecord&DestApp=WOS_CPL
-    scopus: https://www.scopus.com/record/display.uri?eid=2-s2.0-84871345071
+    scopus: null
 - title: "If Likes Were Votes: An Empirical Study on the 2011 Italian Administrative Elections"
   authors: Giglietto, Fabio
   venue: SSRN Electronic Journal
