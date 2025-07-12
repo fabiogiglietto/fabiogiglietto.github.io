@@ -172,8 +172,8 @@
       "url": "http://arxiv.org/abs/2505.08359v1",
       "abstract": "News sharing on digital platforms shapes the digital spaces millions of users\nnavigate. Trace data from these platforms also enables researchers to study\nonline news circulation. In this context, research on the types of news shared\nby users of differential political leaning has received considerable attention.\nWe argue that most existing approaches (i) rely on an overly simplified\nmeasurement of political leaning, (ii) consider only the outlet level in their\nanalyses, and/or (iii) study news ci...",
       "tags": [
-        "cs.SI",
         "arXiv [cs.SI]",
+        "cs.SI",
         "Article"
       ],
       "dateAdded": "2025-05-13T00:00:00Z",
@@ -227,11 +227,11 @@
       "doi": "10.1038/s41598-025-00233-w",
       "abstract": "Malicious actors regularly attempt to manipulate social media using coordinated posting. Many existing methods for detecting this coordination, though, have relied primarily on post-timing, which is trivially easy to change. In this paper, we make a significant methodological advancement in coordination detection, leveraging highly regular statistical patterns in the speed and frequency of sharing. We apply and validate this approach on Facebook, using 11.2 million link posts from a list of 16,1...",
       "tags": [
-        "Social media",
         "Facebook",
-        "Coordination",
         "Scientific Reports",
-        "Article"
+        "Article",
+        "Social media",
+        "Coordination"
       ],
       "dateAdded": "2025-05-05T00:00:00Z",
       "status": "to-read",
@@ -333,13 +333,13 @@
       "doi": "10.1093/pnasnexus/pgaf106",
       "abstract": "<jats:title>Abstract</jats:title>\n               <jats:p>As they evolve, social networks tend to form transitive triads more often than random chance and structural constraints would suggest. However, the mechanisms by which triads in these networks become transitive are largely unexplored. We leverage a unique combination of data and methods to demonstrate a causal link between amplification and triad transitivity in a directed social network. Additionally, we develop the concept of the “attent...",
       "tags": [
-        "amplification",
         "Article",
-        "social networks",
+        "amplification",
         "tertius iungens",
-        "PNAS Nexus",
         "social media",
-        "triad transitivity"
+        "social networks",
+        "triad transitivity",
+        "PNAS Nexus"
       ],
       "dateAdded": "2025-03-27T00:00:00Z",
       "status": "to-read",
@@ -364,10 +364,10 @@
       "url": "http://arxiv.org/abs/2503.20960v3",
       "abstract": "Automated frame analysis of political communication is a popular task in computational social science that is used to study how authors select aspects of a topic to frame its reception. So far, such studies have been narrow, in that they use a fixed set of pre-defined frames and focus only on the text, ignoring the visual contexts in which those texts appear. Especially for framing in the news, this leaves out valuable information about editorial choices, which include not just the written artic...",
       "tags": [
-        "cs.LG",
         "arXiv [cs.CL]",
-        "cs.CL",
         "Article",
+        "cs.LG",
+        "cs.CL",
         "cs.CY"
       ],
       "dateAdded": "2025-03-26T00:00:00Z",
@@ -938,15 +938,15 @@
       "year": 2025,
       "abstract": "This study conceptualizes influence operations (IOs), an enterprise that orchestrates manipulative and inauthentic activities to achieve political advantage, as a contemporary form of brokerage during elections. It investigates the empirical case of IOs engaged in covert political campaigning in the 2022 Philippine General Elections through qualitative field research. Drawing from 22 in-depth interviews with IO leads and staff, we define IOs’ broker attributes, their brokerage processes, and the...",
       "tags": [
-        "Int. J. Commun.",
-        "trolls",
-        "computational propaganda",
-        "brokerage",
-        "Article",
         "influence operations",
+        "Article",
         "Philippines",
         "disinformation",
-        "elections"
+        "Int. J. Commun.",
+        "elections",
+        "brokerage",
+        "computational propaganda",
+        "trolls"
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -1158,13 +1158,13 @@
       "year": 2025,
       "abstract": "How do people come to believe Far-Right, extremist, and conspiratorial ideas they encounter online? This article examines how participants in primarily U.S.-based Far-Right online communities describe their adoption of “redpill” beliefs and the role of disinformation in these accounts. Applying the socio-technical theory of media effects, we conduct a qualitative content analysis of “redpilling narratives” gathered from Reddit, Gab, and Discord. While many users frame redpilling as a moment of c...",
       "tags": [
+        "online radicalization",
+        "Article",
         "Int. J. Commun.",
         "disinformation",
-        "Article",
         "Far-Right",
-        "evidence",
-        "online radicalization",
         "extremism",
+        "evidence",
         "redpill"
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
@@ -1415,12 +1415,12 @@
       "doi": "10.1126/science.aaa1160",
       "abstract": "<jats:title>Not getting all sides of the news?</jats:title><jats:p>People are increasingly turning away from mass media to social media as a way of learning news and civic information. Bakshy<jats:italic>et al.</jats:italic>examined the news that millions of Facebook users' peers shared, what information these users were presented with, and what they ultimately consumed (see the Perspective by Lazer). Friends shared substantially less cross-cutting news from sources aligned with an opposing ideo...",
       "tags": [
-        "news",
-        "homophily",
-        "newsfeed",
-        "Science",
         "Article",
-        "facebook"
+        "news",
+        "Science",
+        "facebook",
+        "homophily",
+        "newsfeed"
       ],
       "dateAdded": "2015-06-05T00:00:00Z",
       "status": "to-read",
@@ -1441,6 +1441,6 @@
       "description": "Academic papers from Paperpile enriched with metadata"
     }
   },
-  "lastUpdated": "2025-07-11T00:47:37.844Z",
+  "lastUpdated": "2025-07-12T00:49:11.036Z",
   "source": "https://github.com/fabiogiglietto/toread"
 }
