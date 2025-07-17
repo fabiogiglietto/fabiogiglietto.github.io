@@ -1,43 +1,42 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a strong social media presence across Mastodon, LinkedIn, and Bluesky, engaging with a total of 3,580 followers. His posts frequently focus on topics related to social media analysis, disinformation, and computational methods, achieving notable engagement through likes, reposts, and comments.",
+  "overallSummary": "Fabio Giglietto maintains a robust social media presence across platforms like Mastodon, LinkedIn, and Bluesky, with a total of 3580 followers. Engagement rates vary across platforms, with LinkedIn showing particularly strong interaction through likes and comments. Content related to research announcements and academic discussions tends to perform well.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 4.48,
-    "mostEngagingPlatform": "LinkedIn"
+    "averageEngagementRate": 5.97,
+    "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
-      "theme": "Social Media Analysis",
-      "description": "Posts discussing research and tools for analyzing social media behavior and information operations."
+      "theme": "Research Announcements",
+      "description": "Updates on new research papers, grants, and findings."
     },
     {
-      "theme": "Disinformation",
-      "description": "Content related to the study and detection of disinformation across platforms."
+      "theme": "Career Opportunities",
+      "description": "Posts about job openings and opportunities for researchers."
     },
     {
-      "theme": "Research Opportunities",
-      "description": "Announcements for hiring and research opportunities in computational social science."
+      "theme": "Disinformation and Social Media Analysis",
+      "description": "Discussions and content related to the study of disinformation and computational methods."
     }
   ],
   "recommendations": [
-    "Increase cross-promotion of content between platforms to boost visibility and follower growth.",
-    "Consider creating more interactive content, such as polls or Q&A sessions, to increase engagement rates."
+    "Increase posting frequency on the most engaging platform, LinkedIn, to leverage high engagement rates.",
+    "Experiment with multimedia content such as videos or infographics to diversify content types and potentially increase engagement."
   ],
   "platformInsights": {
-    "twitter": "N/A",
-    "mastodon": "Mastodon posts receive moderate engagement, with a focus on academic discussions and tool releases.",
-    "linkedin": "LinkedIn is the most engaging platform, with significant interaction on posts related to research achievements and opportunities.",
-    "bluesky": "Bluesky posts show strong engagement, particularly with content focused on academic publications and conference presentations."
+    "twitter": "No data available for Twitter.",
+    "mastodon": "Engagement is moderate with a focus on academic discussions and tool updates.",
+    "linkedin": "LinkedIn has the highest engagement with significant interaction on posts related to research announcements."
   },
   "topPerformingContent": [
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
-      "platform": "LinkedIn",
+      "platform": "linkedin",
       "engagementRate": 5.78
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
-      "platform": "Bluesky",
+      "platform": "bluesky",
       "engagementRate": 7.37
     }
   ]
