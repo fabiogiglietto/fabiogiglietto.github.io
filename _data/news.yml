@@ -1,14 +1,19 @@
 - date: "2025-07-17"
-  content: "The D4.2 report from the VERA AI project introduces innovative tools like the CooRTweet engine and GUI, CIB Detection Tree, and Vera AI Alerts. This comprehensive update also includes a TikTok detection project and a spatio-temporal narratives tool, showcasing advancements in AI-driven research."
+  content: "The D4.2 report from the VERA AI project introduces several innovative tools, including the CooRTweet engine, CIB Detection Tree, and Vera AI Alerts. This comprehensive report also covers a TikTok detection project and a stress-test of the DSA Research API."
   url: "https://bsky.app/profile/fabiogiglietto.bsky.social/post/3lu5p77qjf226"
   platforms: ["BlueSky"]
 
 - date: "2025-06-20"
-  content: "A critical audit titled 'Forgetful by Design?' examines YouTube's search API, shedding light on its implications for academic research. This study by Rieder, Padilla, and Coromina offers insights into the challenges faced by researchers utilizing digital platforms."
-  url: "https://aoir.social/@fabiogiglietto/114714162379166646"
-  platforms: ["Mastodon"]
+  content: "A critical audit of YouTube's search API for academic research has been published, highlighting potential limitations and biases. This paper, authored by Bernhard Rieder and colleagues, is a valuable resource for researchers relying on YouTube data."
+  url: "https://scholar.google.com/scholar?q=Forgetful%20by%20design%20A%20critical%20audit%20of%20YouTubes%20search%20API%20for%20academic%20research"
+  platforms: ["Mastodon","BlueSky"]
 
-- date: "2025-07-12"
-  content: "A new paper explores the domain-specific adaptation of large language models for conflict event classification. Authored by Shreyas Meher and Patrick T. Brandt, this research, titled 'ConflLlama,' presents advancements in applying AI to social sciences."
-  url: "https://aoir.social/@fabiogiglietto/114839087052662993"
-  platforms: ["Mastodon"]
+- date: "2025-07-19"
+  content: "New insights into hashtag hijacking in public opinion dynamics are explored in a recent paper by Bei Zhao and collaborators. The study examines attention, narratives, and the role of social bots in this complex phenomenon."
+  url: "https://doi.org/10.1080/1369118x.2025.2531130"
+  platforms: ["Mastodon","BlueSky"]
+
+- date: "2025-07-17"
+  content: "A recent study by Yu Fan and team challenges the notion that the medium is the message, focusing on deconfounding text embeddings through linear concept erasure. This research offers a fresh perspective on text analysis."
+  url: "https://doi.org/10.2139/ssrn.5340592"
+  platforms: ["Mastodon","BlueSky"]
