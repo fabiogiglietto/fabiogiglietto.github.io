@@ -2,12 +2,14 @@ name: Update Website Data
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Run daily at midnight UTC
+    # Run at 6:00 AM UTC (8:00 AM CEST) for better reliability
+    - cron: '0 6 * * *'  # Daily data collection
   workflow_dispatch:  # Allow manual triggering
 
 jobs:
   update-data:
     runs-on: ubuntu-latest
+    timeout-minutes: 30  # Prevent hanging workflows
     
     steps:
       - name: Checkout repository
@@ -62,26 +64,46 @@ jobs:
       
       - name: Commit and push if changed
         run: |
-          git config --global user.name 'GitHub Action'
-          git config --global user.email 'action@github.com'
+          git config --global user.name 'Website Data Bot'
+          git config --global user.email 'bot@fabiogiglietto.github.io'
           git add .
+          
+          # Check if there are any changes to commit
           if git diff --quiet && git diff --staged --quiet; then
-            echo "No changes to commit"
-          else
-            # Determine what was updated
-            COMMIT_MSG="Auto-update site data $(date +%Y-%m-%d)"
-            COMMIT_BODY="Automated update: "
-            
-            if [ $(date +%u) -eq 1 ]; then
-              COMMIT_BODY="${COMMIT_BODY}bio (weekly), "
-            fi
-            
-            if [ $(date +%d) -eq 01 ]; then
-              COMMIT_BODY="${COMMIT_BODY}teaching (monthly), "
-            fi
-            
-            COMMIT_BODY="${COMMIT_BODY}core data (daily)"
-            
-            git commit -m "$COMMIT_MSG" -m "$COMMIT_BODY"
-            git push
+            echo "📊 No data changes detected - skipping commit"
+            exit 0
           fi
+          
+          # Build commit message based on what was updated
+          UPDATES=""
+          CURRENT_DAY=$(date +%u)  # 1=Monday, 7=Sunday
+          CURRENT_DATE=$(date +%d)
+          
+          # Always include core data
+          UPDATES="core data"
+          
+          # Add weekly updates (Mondays)
+          if [ "$CURRENT_DAY" -eq 1 ]; then
+            UPDATES="$UPDATES, AI biography"
+          fi
+          
+          # Add monthly updates (1st of month)  
+          if [ "$CURRENT_DATE" = "01" ]; then
+            UPDATES="$UPDATES, teaching data"
+          fi
+          
+          # Create commit
+          git commit -m "🤖 Auto-update: $UPDATES ($(date +%Y-%m-%d))" -m "
+          Automated daily website data collection including:
+          - Publications from multiple academic sources
+          - Social media activity and insights  
+          - Reading list from research papers
+          - Web mentions and citations
+          $([ "$CURRENT_DAY" -eq 1 ] && echo "- AI-generated biography refresh")
+          $([ "$CURRENT_DATE" = "01" ] && echo "- Teaching data update")
+          
+          🤖 Generated with [GitHub Actions](https://github.com/fabiogiglietto/fabiogiglietto.github.io/actions)
+          "
+          
+          echo "📤 Pushing updates to repository..."
+          git push

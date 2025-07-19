@@ -57,8 +57,9 @@ async function collectAll() {
       console.log(`- Semantic Scholar API key: ${process.env.S2_API_KEY ? 'Available' : 'Missing'}`);
     }
     
-    // Run all collectors in parallel with quiet error handling
-    const [orcidData, scholarData, universityData, githubData, newsData, webSearchData, socialMediaData, wosData, scopusData, semanticScholarData, aggregatedPublicationsData, toreadData] = await Promise.all([
+    // Phase 1: Collect basic data sources in parallel
+    console.log('Phase 1: Collecting basic data sources...');
+    const [orcidData, scholarData, universityData, githubData, newsData, webSearchData, socialMediaData, wosData, scopusData, semanticScholarData, toreadData] = await Promise.all([
       orcidCollector.collect().catch(err => {
         console.error('ORCID collection error:', err.message);
         return null;
@@ -113,17 +114,13 @@ async function collectAll() {
         }
         return null;
       }),
-      publicationsAggregator.collect().catch(err => {
-        console.error('Publications aggregation error:', err.message);
-        return null;
-      }),
       toreadCollector.collect().catch(err => {
         console.error('Toread collection error:', err.message);
         return null;
       })
     ]);
     
-    // Save all collected data
+    // Save Phase 1 data
     if (orcidData) fs.writeFileSync(path.join(dataDir, 'orcid.json'), JSON.stringify(orcidData, null, 2));
     if (scholarData) fs.writeFileSync(path.join(dataDir, 'scholar.json'), JSON.stringify(scholarData, null, 2));
     if (universityData) fs.writeFileSync(path.join(dataDir, 'university.json'), JSON.stringify(universityData, null, 2));
@@ -138,12 +135,21 @@ async function collectAll() {
     if (wosData) fs.writeFileSync(path.join(dataDir, 'wos.json'), JSON.stringify(wosData, null, 2));
     if (scopusData) fs.writeFileSync(path.join(dataDir, 'scopus.json'), JSON.stringify(scopusData, null, 2));
     if (semanticScholarData) fs.writeFileSync(path.join(dataDir, 'semantic-scholar.json'), JSON.stringify(semanticScholarData, null, 2));
-    if (aggregatedPublicationsData) fs.writeFileSync(path.join(dataDir, 'aggregated-publications.json'), JSON.stringify(aggregatedPublicationsData, null, 2));
     if (toreadData) {
       fs.writeFileSync(path.join(dataDir, 'toread.json'), JSON.stringify(toreadData, null, 2));
       // Also copy to Jekyll _data directory for site.data.toread access
       fs.writeFileSync(path.join(__dirname, '../_data/toread.json'), JSON.stringify(toreadData, null, 2));
     }
+    
+    // Phase 2: Aggregate publications (using saved data from Phase 1)
+    console.log('Phase 2: Aggregating publications...');
+    const aggregatedPublicationsData = await publicationsAggregator.collect().catch(err => {
+      console.error('Publications aggregation error:', err.message);
+      return null;
+    });
+    
+    // Save Phase 2 aggregated data
+    if (aggregatedPublicationsData) fs.writeFileSync(path.join(dataDir, 'aggregated-publications.json'), JSON.stringify(aggregatedPublicationsData, null, 2));
     
     // Create a summary file with collection timestamp
     const summary = {

@@ -13,37 +13,43 @@ const scopusCollector = require('./scopus');
 const crossrefCollector = require('./crossref');
 const semanticScholarCollector = require('./semantic-scholar');
 
+// Helper function to load existing data files
+async function loadDataFile(filePath) {
+  try {
+    if (fs.existsSync(filePath)) {
+      const data = fs.readFileSync(filePath, 'utf8');
+      return JSON.parse(data);
+    } else {
+      console.log(`Data file not found: ${filePath}`);
+      return null;
+    }
+  } catch (error) {
+    console.error(`Error loading data file ${filePath}:`, error.message);
+    return null;
+  }
+}
+
 async function collect() {
   console.log('Aggregating publication data from multiple sources...');
   
   try {
-    // Collect data from all sources in parallel
-    const [orcidData, scholarData, wosData, scopusData, crossrefData, semanticScholarData] = await Promise.all([
-      orcidCollector.collect().catch(err => {
-        console.error('ORCID collection error:', err);
-        return null;
-      }),
-      scholarCollector.collect().catch(err => {
-        console.error('Scholar collection error:', err);
-        return null;
-      }),
-      wosCollector.collect().catch(err => {
-        console.error('Web of Science collection error:', err);
-        return null;
-      }),
-      scopusCollector.collect().catch(err => {
-        console.error('Scopus collection error:', err);
-        return null;
-      }),
-      crossrefCollector.collect().catch(err => {
-        console.error('Crossref collection error:', err);
-        return null;
-      }),
-      semanticScholarCollector.collect().catch(err => {
-        console.error('Semantic Scholar collection error:', err);
-        return null;
-      })
+    const dataDir = path.join(__dirname, '../../public/data');
+    
+    // Load existing data files instead of re-collecting
+    console.log('Loading existing data files...');
+    const [orcidData, scholarData, wosData, scopusData, semanticScholarData] = await Promise.all([
+      loadDataFile(path.join(dataDir, 'orcid.json')),
+      loadDataFile(path.join(dataDir, 'scholar.json')),
+      loadDataFile(path.join(dataDir, 'wos.json')),
+      loadDataFile(path.join(dataDir, 'scopus.json')),
+      loadDataFile(path.join(dataDir, 'semantic-scholar.json'))
     ]);
+    
+    // Collect crossref data which depends on aggregated data
+    const crossrefData = await crossrefCollector.collect().catch(err => {
+      console.error('Crossref collection error:', err);
+      return null;
+    });
     
     // Extract work summaries from ORCID data - this is our base list
     let publicationsMap = new Map();
