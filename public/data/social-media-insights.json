@@ -1,43 +1,44 @@
 {
-  "overallSummary": "Fabio Giglietto has a diverse social media presence across Mastodon, LinkedIn, and Bluesky, with a total of 3,580 followers. Engagement varies across platforms, with LinkedIn showing the highest levels of interaction, particularly in terms of likes and comments on posts. The content often revolves around research updates, academic opportunities, and discussions about disinformation and social media analysis.",
+  "overallSummary": "Fabio Giglietto has a strong presence across multiple social media platforms, with a total follower count of 3,580. His engagement is primarily driven by professional and academic discussions, with LinkedIn being the most engaging platform. Content related to research, disinformation, and computational methods consistently attracts attention.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 4.93,
-    "mostEngagingPlatform": "LinkedIn"
+    "averageEngagementRate": 6.5,
+    "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
-      "theme": "Research and Development",
-      "description": "Updates on research papers, newly released tools, and academic grants."
+      "theme": "Research Announcements",
+      "description": "Posts announcing new research projects, papers, or findings, such as new grants or publications."
     },
     {
-      "theme": "Opportunities and Hiring",
-      "description": "Posts about job opportunities and calls for applications for research positions."
+      "theme": "Academic Opportunities",
+      "description": "Content related to job openings and opportunities for researchers and students in the academic field."
     },
     {
-      "theme": "Disinformation and Social Media Analysis",
-      "description": "Discussions and presentations on methods and findings related to disinformation."
+      "theme": "Disinformation and Computational Methods",
+      "description": "Discussions and content related to the study of disinformation and the use of computational methods in research."
     }
   ],
   "recommendations": [
-    "Increase cross-platform promotion to leverage followers from higher engagement platforms like LinkedIn.",
-    "Incorporate more visual content, such as infographics or videos, to enhance engagement across all platforms."
+    "Increase the frequency of posts related to academic opportunities and research findings to engage with a broader professional audience.",
+    "Utilize more multimedia content, such as images or videos, to enhance engagement, especially on platforms like LinkedIn and Bluesky."
   ],
   "platformInsights": {
-    "twitter": "Fabio Giglietto does not currently have a presence on Twitter.",
-    "mastodon": "Engagement is steady with academic-focused content; increasing interaction through reposts could be beneficial.",
-    "linkedin": "This platform is the most engaging, with high interaction on posts related to research announcements and hiring."
+    "twitter": "No data available for Twitter.",
+    "mastodon": "Engagement is moderate; posts related to methodological discussions attract considerable interest.",
+    "linkedin": "Most engaging platform with high interaction on posts related to research grants and hiring announcements.",
+    "bluesky": "Strong engagement with content related to new publications and academic conferences."
   },
   "topPerformingContent": [
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
-      "platform": "LinkedIn",
-      "engagementRate": 5.78
+      "platform": "linkedin",
+      "engagementRate": 5.8
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
-      "platform": "Bluesky",
-      "engagementRate": 7.37
+      "platform": "bluesky",
+      "engagementRate": 7.4
     }
   ]
 }

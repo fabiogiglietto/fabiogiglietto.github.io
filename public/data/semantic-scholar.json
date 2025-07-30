@@ -30,7 +30,7 @@
       "year": 2012,
       "doi": "10.1080/15228835.2012.743797",
       "arxivId": null,
-      "citations": 143,
+      "citations": 144,
       "influentialCitations": 4,
       "references": 62,
       "semanticScholarId": "7b88268bdcfa24f2682aef645ef5c3aa11ea7c01",
@@ -48,7 +48,7 @@
       "year": 2020,
       "doi": "10.1080/1369118X.2020.1739732",
       "arxivId": null,
-      "citations": 103,
+      "citations": 104,
       "influentialCitations": 11,
       "references": 86,
       "semanticScholarId": "a8b5ebbca42d8760de06f3271caa5a9d09db0c85",
@@ -66,7 +66,7 @@
       "year": 2021,
       "doi": "10.3270/100321",
       "arxivId": null,
-      "citations": 84,
+      "citations": 85,
       "influentialCitations": 3,
       "references": 68,
       "semanticScholarId": "805412ad610c0d74282e6a345f2acbf569c7078b",
@@ -84,7 +84,7 @@
       "year": 2018,
       "doi": "10.1177/0011392119837536",
       "arxivId": null,
-      "citations": 82,
+      "citations": 83,
       "influentialCitations": 1,
       "references": 62,
       "semanticScholarId": "c84a169e6df175c4662012d3ba7dbf8fa1b5abc9",
@@ -103,7 +103,7 @@
       "year": 2017,
       "doi": "10.1177/2056305116686992",
       "arxivId": null,
-      "citations": 62,
+      "citations": 63,
       "influentialCitations": 4,
       "references": 47,
       "semanticScholarId": "1a415874dbd4a3571d10ce4073a7ed505f0c66fc",
@@ -369,6 +369,24 @@
       ]
     },
     {
+      "title": "Moving towards a socially-driven internet architectural design",
+      "authors": "Rute C. Sofia, P. Mendes, M. Damásio, Sara Henriques, Fabio Giglietto, Erica Giambitto, A. Bogliolo",
+      "venue": "CCRV",
+      "year": 2012,
+      "doi": "10.1145/2317307.2317316",
+      "arxivId": "1508.01087",
+      "citations": 11,
+      "influentialCitations": 0,
+      "references": 33,
+      "semanticScholarId": "9c3d8469098969eb207ef8ab0a0e274349cce661",
+      "isOpenAccess": true,
+      "openAccessPdf": "http://arxiv.org/pdf/1508.01087",
+      "abstract": "This paper provides an interdisciplinary perspective concerning the role of prosumers on future Internet design based on the current trend of Internet user empowerment. The paper debates the prosumer role, and addresses models to develop a symmetric Internet architecture and supply-chain based on the integration of social capital aspects. It has as goal to ignite the discussion concerning a socially-driven Internet architectural design.",
+      "fieldsOfStudy": [
+        "Computer Science"
+      ]
+    },
+    {
       "title": "You Are Fake News",
       "authors": "Fabio Giglietto",
       "venue": "",
@@ -384,24 +402,6 @@
       "abstract": null,
       "fieldsOfStudy": [
         "Art"
-      ]
-    },
-    {
-      "title": "Moving towards a socially-driven internet architectural design",
-      "authors": "Rute C. Sofia, P. Mendes, M. Damásio, Sara Henriques, Fabio Giglietto, Erica Giambitto, A. Bogliolo",
-      "venue": "CCRV",
-      "year": 2012,
-      "doi": "10.1145/2317307.2317316",
-      "arxivId": "1508.01087",
-      "citations": 10,
-      "influentialCitations": 0,
-      "references": 33,
-      "semanticScholarId": "9c3d8469098969eb207ef8ab0a0e274349cce661",
-      "isOpenAccess": true,
-      "openAccessPdf": "http://arxiv.org/pdf/1508.01087",
-      "abstract": "This paper provides an interdisciplinary perspective concerning the role of prosumers on future Internet design based on the current trend of Internet user empowerment. The paper debates the prosumer role, and addresses models to develop a symmetric Internet architecture and supply-chain based on the integration of social capital aspects. It has as goal to ignite the discussion concerning a socially-driven Internet architectural design.",
-      "fieldsOfStudy": [
-        "Computer Science"
       ]
     },
     {
@@ -623,7 +623,7 @@
       "arxivId": null,
       "citations": 2,
       "influentialCitations": 0,
-      "references": 4,
+      "references": 5,
       "semanticScholarId": "c03aaea6f1198a79fa14f82ff5c08d4a788242d1",
       "isOpenAccess": false,
       "openAccessPdf": null,
@@ -1342,5 +1342,5 @@
     "citationCount": 1101,
     "influentialCitationCount": 54
   },
-  "lastUpdated": "2025-07-29T06:30:32.021Z"
+  "lastUpdated": "2025-07-30T06:31:58.195Z"
 }
