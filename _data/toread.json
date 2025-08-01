@@ -176,8 +176,8 @@
       "year": 2025,
       "abstract": "Detecting coordinated inauthentic behavior (CIB) is central to the study of online influence operations. However, most methods focus on text-centric platforms, leaving video-first ecosystems like TikTok largely unexplored. To address this gap, we develop and evaluate a computational framework for detecting CIB on TikTok, leveraging a network-based approach adapted to the platform's unique content and interaction structures. Building on existing approaches, we construct user similarity networks b...",
       "tags": [
-        "Article",
-        "arXiv [cs.SI]"
+        "arXiv [cs.SI]",
+        "Article"
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -197,8 +197,8 @@
       "year": 2025,
       "abstract": "News sharing on digital platforms shapes the digital spaces millions of users navigate. Trace data from these platforms also enables researchers to study online news circulation. In this context, research on the types of news shared by users of differential political leaning has received considerable attention. We argue that most existing approaches (i) rely on an overly simplified measurement of political leaning, (ii) consider only the outlet level in their analyses, and/or (iii) study news ci...",
       "tags": [
-        "Article",
-        "arXiv [cs.SI]"
+        "arXiv [cs.SI]",
+        "Article"
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -221,10 +221,10 @@
       "year": 2025,
       "abstract": "Malicious actors regularly attempt to manipulate social media using coordinated posting. Many existing methods for detecting this coordination, though, have relied primarily on post-timing, which is trivially easy to change. In this paper, we make a significant methodological advancement in coordination detection, leveraging highly regular statistical patterns in the speed and frequency of sharing. We apply and validate this approach on Facebook, using 11.2 million link posts from a list of 16,1...",
       "tags": [
+        "Facebook",
+        "Social media",
         "Sci. Rep.",
         "Article",
-        "Social media",
-        "Facebook",
         "Coordination"
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
@@ -245,8 +245,8 @@
       "year": 2025,
       "abstract": "Published in Comun. Politica | Year: 2025 | Authors: Kristensen, Jakob Bæk, Kristensen, Jakob Bæk",
       "tags": [
-        "Comun. Politica",
-        "Article"
+        "Article",
+        "Comun. Politica"
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -330,8 +330,8 @@
       "year": 2025,
       "abstract": "This chapter reviews the historical contribution of Twitter before it was rebranded as X in July 2023. Twitter was an open platform for social sciences research, particularly political communication, a source of social data so prevalent in the early 21st century that researchers referred to this scholarship as ‘Twitter studies.’ We revisit the many Application Programming Interfaces that Twitter offered to developers and researchers, including the REST, Search, Streaming, Academic, and Complianc...",
       "tags": [
-        "SSRN Electron. J.",
-        "Article"
+        "Article",
+        "SSRN Electron. J."
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -353,8 +353,8 @@
       "year": 2025,
       "abstract": "Abstract This systematic review synthesizes research on echo chambers and filter bubbles to explore the reasons behind dissent regarding their existence, antecedents, and effects. It provides a taxonomy of conceptualizations and operationalizations, analyzing how measurement approaches and contextual factors influence outcomes. The review of 129 studies identifies variations in measurement approaches, as well as regional, political, cultural, and platform-specific biases, as key factors contribu...",
       "tags": [
-        "Article",
-        "J. Comput. Soc. Sci."
+        "J. Comput. Soc. Sci.",
+        "Article"
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -376,13 +376,13 @@
       "year": 2025,
       "abstract": "As they evolve, social networks tend to form transitive triads more often than random chance and structural constraints would suggest. However, the mechanisms by which triads in these networks become transitive are largely unexplored. We leverage a unique combination of data and methods to demonstrate a causal link between amplification and triad transitivity in a directed social network. Additionally, we develop the concept of the ``attention broker,'' an extension of the previously theorized t...",
       "tags": [
-        "Article",
-        "amplification",
-        "triad transitivity",
         "social networks",
         "PNAS Nexus",
-        "social media",
-        "tertius iungens"
+        "Article",
+        "tertius iungens",
+        "triad transitivity",
+        "amplification",
+        "social media"
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -404,15 +404,15 @@
       "year": 2025,
       "abstract": "This study conceptualizes influence operations (IOs), an enterprise that orchestrates manipulative and inauthentic activities to achieve political advantage, as a contemporary form of brokerage during elections. It investigates the empirical case of IOs engaged in covert political campaigning in the 2022 Philippine General Elections through qualitative field research. Drawing from 22 in-depth interviews with IO leads and staff, we define IOs’ broker attributes, their brokerage processes, and the...",
       "tags": [
-        "elections",
-        "Article",
-        "computational propaganda",
-        "Philippines",
-        "disinformation",
-        "trolls",
-        "Int. J. Commun.",
         "influence operations",
-        "brokerage"
+        "computational propaganda",
+        "Int. J. Commun.",
+        "brokerage",
+        "Philippines",
+        "trolls",
+        "Article",
+        "elections",
+        "disinformation"
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -434,12 +434,12 @@
       "year": 2025,
       "abstract": "Automated frame analysis of political communication is a popular task in computational social science that is used to study how authors select aspects of a topic to frame its reception. So far, such studies have been narrow, in that they use a fixed set of pre-defined frames and focus only on the text, ignoring the visual contexts in which those texts appear. Especially for framing in the news, this leaves out valuable information about editorial choices, which include not just the written artic...",
       "tags": [
+        "Machine Learning (cs.LG)",
         "FOS: Computer and information sciences",
-        "Computation and Language (cs.CL)",
         "Computers and Society (cs.CY)",
-        "arXiv [cs.CL]",
         "Misc",
-        "Machine Learning (cs.LG)"
+        "Computation and Language (cs.CL)",
+        "arXiv [cs.CL]"
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -594,8 +594,8 @@
       "year": 2025,
       "abstract": "Social media platforms have become key tools for coordinated influence operations, enabling state actors to manipulate public opinion through strategic, collective actions. While previous research has suggested collaboration between states, such research failed to leverage state-of-the-art coordination indicators or control datasets. In this study, we investigate inter-state coordination by analyzing multiple online behavioral traces and using sophisticated coordination detection models. By inco...",
       "tags": [
-        "Article",
-        "arXiv [cs.SI]"
+        "arXiv [cs.SI]",
+        "Article"
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -749,8 +749,8 @@
       "year": 2025,
       "abstract": "Information on social media is characterized by networked curation processes in which users select other users from whom to receive information, and those users in turn share information that promotes their identities and interests. We argue this allows for partisan “curation bubbles” of users who share and consume content with consistent appeal drawn from a variety of sources. Yet, research concerning the extent of filter bubbles, echo chambers, or other forms of politically segregated informat...",
       "tags": [
-        "Am. Polit. Sci. Rev.",
-        "Article"
+        "Article",
+        "Am. Polit. Sci. Rev."
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -811,8 +811,8 @@
       "year": 2025,
       "abstract": "Published in Polit. Commun. | Year: 2025 | Authors: Munger, Kevin",
       "tags": [
-        "Polit. Commun.",
-        "Article"
+        "Article",
+        "Polit. Commun."
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -835,8 +835,8 @@
       "year": 2025,
       "abstract": "Published in Polit. Commun. | Year: 2025 | Authors: Votta, Fabio, Dobber, Tom, Guinaudeau, Benjamin, Helberger, Natali, de Vreese, Claes",
       "tags": [
-        "Polit. Commun.",
-        "Article"
+        "Article",
+        "Polit. Commun."
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -881,8 +881,8 @@
       "year": 2025,
       "abstract": "Much of the research quantifying volume and spread of online misinformation measures the construct at the source level, identifying a set of specific unreliable domains that account for a relatively small share of news consumption. This source-level dichotomy obscures the potential for users to repurpose factually true information from reliable sources to advance misleading narratives. We demonstrate this potentially far more prevalent form of misinformation by identifying articles from reliable...",
       "tags": [
-        "Nat. Hum. Behav.",
-        "Article"
+        "Article",
+        "Nat. Hum. Behav."
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -925,8 +925,8 @@
       "year": 2025,
       "abstract": "The growth of social networks has raised concerns about the misuse of these platforms by disinformation campaigns, social bots, and coordinated activities. Among these platforms, WhatsApp has become a focal point for this abuse, particularly in Brazil, one of the countries with the highest use of the platform. Despite acknowledging the presence of coordinated campaigns and implementing restrictions on the number of messages forwarded per user, the platform continues to be abused. Due to its priv...",
       "tags": [
-        "Proceedings of the International AAAI Conference on Web and Social Media",
-        "Article"
+        "Article",
+        "Proceedings of the International AAAI Conference on Web and Social Media"
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -946,14 +946,14 @@
       "year": 2025,
       "abstract": "How do people come to believe Far-Right, extremist, and conspiratorial ideas they encounter online? This article examines how participants in primarily U.S.-based Far-Right online communities describe their adoption of “redpill” beliefs and the role of disinformation in these accounts. Applying the socio-technical theory of media effects, we conduct a qualitative content analysis of “redpilling narratives” gathered from Reddit, Gab, and Discord. While many users frame redpilling as a moment of c...",
       "tags": [
-        "Article",
-        "evidence",
         "redpill",
-        "extremism",
-        "Far-Right",
         "Int. J. Commun.",
+        "Far-Right",
+        "Article",
         "online radicalization",
-        "disinformation"
+        "extremism",
+        "disinformation",
+        "evidence"
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -1064,8 +1064,8 @@
       "year": 2025,
       "abstract": "Coordinated online behavior, which spans from beneficial collective actions to harmful manipulation such as disinformation campaigns, has become a key focus in digital ecosystem analysis. Traditional methods often rely on monomodal approaches, focusing on single types of interactions like co-retweets or co-hashtags, or consider multiple modalities independently of each other. However, these approaches may overlook the complex dynamics inherent in multimodal coordination. This study compares diff...",
       "tags": [
-        "Article",
-        "arXiv [cs.SI]"
+        "arXiv [cs.SI]",
+        "Article"
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -1177,8 +1177,8 @@
       "year": 2024,
       "abstract": "Social media platforms have become vital spaces for public discourse, serving as modern agoràs where a wide range of voices influence societal narratives. However, their open nature also makes them vulnerable to exploitation by malicious actors, including state-sponsored entities, who can conduct information operations (IOs) to manipulate public opinion. The spread of misinformation, false news, and misleading claims threatens democratic processes and societal cohesion, making it crucial to deve...",
       "tags": [
-        "Article",
-        "arXiv [cs.SI]"
+        "arXiv [cs.SI]",
+        "Article"
       ],
       "dateAdded": "2024-01-01T00:00:00Z",
       "status": "to-read",
@@ -1221,8 +1221,8 @@
       "year": 2024,
       "abstract": "TikTok has emerged as a powerful platform for the dissemination of mis- and disinformation about the war in Ukraine. During the initial three months after the Russian invasion in February 2022, videos under the hashtag \\#Ukraine garnered 36.9 billion views, with individual videos scaling up to 88 million views. Beyond the traditional methods of spreading misleading information through images and text, the medium of sound has emerged as a novel, platform-specific audiovisual technique. Our analys...",
       "tags": [
-        "New Media Soc.",
-        "Article"
+        "Article",
+        "New Media Soc."
       ],
       "dateAdded": "2024-01-01T00:00:00Z",
       "status": "to-read",
@@ -1331,8 +1331,8 @@
       "year": 2024,
       "abstract": "Algorithms profoundly shape user experiences on digital platforms, raising concerns about their negative impacts and highlighting the importance of algorithm literacy. Research on individuals’ understanding of algorithms and their effects is expanding rapidly but lacks a cohesive framework. We conducted a systematic integrative literature review across social sciences and humanities (n = 169), addressing algorithm literacy in terms of its key conceptualizations and the endogenous, exogenous, and...",
       "tags": [
-        "New Media Soc.",
-        "Article"
+        "Article",
+        "New Media Soc."
       ],
       "dateAdded": "2024-01-01T00:00:00Z",
       "status": "to-read",
@@ -1355,8 +1355,8 @@
       "year": 2024,
       "abstract": "As the exploration of digital behavioral data revolutionizes communication research, understanding the nuances of data collection methodologies becomes increasingly pertinent. This study focuses on one prominent data collection approach, web scraping, and more specifically, its application in the growing field of research relying on web browsing data. We investigate discrepancies between content obtained directly during user interaction with a website (in-situ) and content scraped using the URLs...",
       "tags": [
-        "arXiv [cs.CY]",
-        "Article"
+        "Article",
+        "arXiv [cs.CY]"
       ],
       "dateAdded": "2024-01-01T00:00:00Z",
       "status": "to-read",
@@ -1398,12 +1398,12 @@
       "year": 2015,
       "abstract": "Exposure to news, opinion, and civic information increasingly occurs through social media. How do these online networks influence exposure to perspectives that cut across ideological lines? Using deidentified data, we examined how 10.1 million U.S. Facebook users interact with socially shared news. We directly measured ideological homophily in friend networks and examined the extent to which heterogeneous friends could potentially expose individuals to cross-cutting content. We then quantified t...",
       "tags": [
-        "Article",
-        "news",
-        "newsfeed",
         "facebook",
+        "news",
+        "Article",
+        "homophily",
         "Science",
-        "homophily"
+        "newsfeed"
       ],
       "dateAdded": "2015-01-01T00:00:00Z",
       "status": "to-read",
@@ -1423,6 +1423,6 @@
       "description": "Academic papers from Paperpile enriched with metadata"
     }
   },
-  "lastUpdated": "2025-07-31T06:30:36.013Z",
+  "lastUpdated": "2025-08-01T06:31:44.547Z",
   "source": "https://github.com/fabiogiglietto/toread"
 }
