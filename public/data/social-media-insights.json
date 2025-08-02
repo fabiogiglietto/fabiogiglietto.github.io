@@ -1,43 +1,43 @@
 {
-  "overallSummary": "Fabio Giglietto maintains an active presence across Mastodon, LinkedIn, and Bluesky with a total of 3,580 followers. His posts predominantly focus on research, methodological advancements, and career opportunities in computational social science. The engagement levels vary across platforms, with LinkedIn showing the highest interaction in terms of likes and comments.",
+  "overallSummary": "Fabio Giglietto demonstrates a strong social media presence across multiple platforms, with a total following of 3,580. Engagement is particularly robust on LinkedIn, where posts receive high levels of interaction, indicating a well-targeted audience interested in research and academic opportunities.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 4.7,
-    "mostEngagingPlatform": "LinkedIn"
+    "averageEngagementRate": 6.25,
+    "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
-      "theme": "Research and Development",
-      "description": "Updates on research projects, new papers, and advancements in methodologies."
+      "theme": "Research Announcements",
+      "description": "Posts related to new research findings, grants, and publications."
     },
     {
       "theme": "Career Opportunities",
-      "description": "Announcements regarding job openings and research opportunities for scholars."
+      "description": "Information about job openings and opportunities for researchers in related fields."
     },
     {
       "theme": "Conferences and Presentations",
-      "description": "Information about upcoming conference presentations and public speaking engagements."
+      "description": "Updates and participation in academic conferences."
     }
   ],
   "recommendations": [
-    "Increase the frequency of posts related to career opportunities as they show high engagement.",
-    "Leverage LinkedIn's higher engagement by sharing more detailed insights and discussions related to ongoing research."
+    "Increase the frequency of posts related to research findings and career opportunities to maintain high engagement.",
+    "Utilize cross-platform strategies to share content from the most engaging posts on LinkedIn to other platforms like Mastodon and Bluesky."
   ],
   "platformInsights": {
-    "twitter": "Data not available.",
-    "mastodon": "Moderate engagement with a focus on methodological discussions and tool updates.",
-    "linkedin": "High engagement with significant interaction on posts announcing research grants and job openings."
+    "twitter": "Twitter is not included in the current data set.",
+    "mastodon": "Mastodon posts have moderate engagement; increasing interactions through more frequent updates and community involvement could enhance visibility.",
+    "linkedin": "LinkedIn posts are the most engaging, with high likes and comments, suggesting a professional audience eager for research updates and job opportunities."
   },
   "topPerformingContent": [
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
-      "platform": "LinkedIn",
-      "engagementRate": 5.8
+      "platform": "linkedin",
+      "engagementRate": 5.78
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
-      "platform": "Bluesky",
-      "engagementRate": 7.4
+      "platform": "bluesky",
+      "engagementRate": 7.37
     }
   ]
 }
