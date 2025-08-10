@@ -267,32 +267,39 @@ Include any relevant up-to-date information you find in the biography, but maint
 Generate ONLY the HTML content for the "About Me" section. Do not include any explanations, notes, or markdown formatting outside the HTML content. Your response should be valid HTML that starts with <p> and ends with </p> without any additional formatting or explanation.
 `;
 
-    console.log('Calling OpenAI API with GPT-4o...');
+    console.log('Calling OpenAI API with GPT-5...');
     
     try {
-      // Call OpenAI API with web search capability
-      const response = await openai.chat.completions.create({
-        model: "gpt-4o",
-        messages: [
-          { role: "system", content: "You are an academic website content generator that creates professional bios based on academic data. Output ONLY valid HTML without any markdown formatting or additional text." },
-          { role: "user", content: prompt }
-        ],
-        temperature: 0.7,
-        max_tokens: 1000
-        // Web search may not be supported in your current tier
-        // Uncomment this if you have the appropriate access:
-        /*
-        tools: [{
-          "type": "web_search",
-          "web_search": {
-            "enable_cite_command": false
-          }
-        }]
-        */
+      // Call OpenAI API using the new Responses API with GPT-5
+      const response = await openai.responses.create({
+        model: "gpt-5",
+        input: `You are an academic website content generator that creates professional bios based on academic data. Output ONLY valid HTML without any markdown formatting or additional text.
+
+${prompt}`,
+        reasoning: {
+          effort: "minimal"  // Fast generation for bio content
+        },
+        text: {
+          verbosity: "medium"  // Good balance for 3-4 paragraph bio
+        }
       });
       
-      // Extract the generated content
-      let content = response.choices[0].message.content.trim();
+      // Extract the generated content from GPT-5 Responses API
+      let content;
+      
+      // GPT-5 Responses API uses output_text field
+      if (response.output_text) {
+        content = response.output_text.trim();
+      } else if (response.text) {
+        content = typeof response.text === 'string' ? response.text.trim() : String(response.text).trim();
+      } else if (response.message && response.message.content) {
+        content = response.message.content.trim();
+      } else if (response.choices && response.choices[0] && response.choices[0].message) {
+        content = response.choices[0].message.content.trim();
+      } else {
+        console.error('Unknown response structure from GPT-5:', Object.keys(response));
+        return null;
+      }
       
       // Validate that the response is HTML content (starts with <p> or similar)
       if (!content.startsWith('<p') && !content.startsWith('<div') && !content.startsWith('<section')) {
@@ -312,27 +319,43 @@ Generate ONLY the HTML content for the "About Me" section. Do not include any ex
         }
       }
       
-      console.log('Successfully generated content with GPT-4o');
+      console.log('Successfully generated content with GPT-5');
       return content;
     } catch (apiError) {
-      console.error('Error calling OpenAI API with GPT-4o:', apiError.message);
-      console.log('Trying fallback model GPT-3.5-turbo...');
+      console.error('Error calling OpenAI API with GPT-5:', apiError.message);
+      console.log('Trying fallback model GPT-5-mini...');
       
-      // Try with a different model if the first one fails
+      // Try with GPT-5-mini if GPT-5 fails
       try {
-        const fallbackResponse = await openai.chat.completions.create({
-          model: "gpt-3.5-turbo",
-          messages: [
-            { role: "system", content: "You are an academic website content generator that creates professional bios based on academic data. Output ONLY valid HTML without any markdown formatting or additional text." },
-            { role: "user", content: prompt }
-          ],
-          temperature: 0.7,
-          max_tokens: 1000
-          // No tools parameter for the fallback model as it may not support web search
+        const fallbackResponse = await openai.responses.create({
+          model: "gpt-5-mini",
+          input: `You are an academic website content generator that creates professional bios based on academic data. Output ONLY valid HTML without any markdown formatting or additional text.
+
+${prompt}`,
+          reasoning: {
+            effort: "minimal"
+          },
+          text: {
+            verbosity: "medium"
+          }
         });
         
         // Extract the generated content
-        let content = fallbackResponse.choices[0].message.content.trim();
+        let content;
+        
+        // GPT-5-mini Responses API also uses output_text field
+        if (fallbackResponse.output_text) {
+          content = fallbackResponse.output_text.trim();
+        } else if (fallbackResponse.text) {
+          content = typeof fallbackResponse.text === 'string' ? fallbackResponse.text.trim() : String(fallbackResponse.text).trim();
+        } else if (fallbackResponse.message && fallbackResponse.message.content) {
+          content = fallbackResponse.message.content.trim();
+        } else if (fallbackResponse.choices && fallbackResponse.choices[0] && fallbackResponse.choices[0].message) {
+          content = fallbackResponse.choices[0].message.content.trim();
+        } else {
+          console.error('Unknown response structure from GPT-5-mini:', Object.keys(fallbackResponse));
+          return null;
+        }
         
         // Validate that the response is HTML content (starts with <p> or similar)
         if (!content.startsWith('<p') && !content.startsWith('<div') && !content.startsWith('<section')) {
@@ -352,10 +375,10 @@ Generate ONLY the HTML content for the "About Me" section. Do not include any ex
           }
         }
         
-        console.log('Successfully generated content with GPT-3.5-turbo');
+        console.log('Successfully generated content with GPT-5-mini');
         return content;
       } catch (fallbackError) {
-        console.error('Fallback model also failed:', fallbackError.message);
+        console.error('GPT-5-mini fallback also failed:', fallbackError.message);
         return null;
       }
     }

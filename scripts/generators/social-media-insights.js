@@ -149,21 +149,24 @@ Format your response as a JSON object with the following structure:
 Ensure your response is ONLY the JSON object, without any other text.
 `;
 
-    // Call OpenAI API
+    // Call OpenAI API using GPT-5 Responses API
     try {
-      const response = await openai.chat.completions.create({
-        model: "gpt-4o",
-        messages: [
-          { role: "system", content: "You are a social media analytics expert that generates insights in JSON format." },
-          { role: "user", content: prompt }
-        ],
-        temperature: 0.7,
-        response_format: { type: "json_object" },
-        max_tokens: 1500,
+      const response = await openai.responses.create({
+        model: "gpt-5",
+        input: `You are a social media analytics expert that generates insights in JSON format.
+
+${prompt}`,
+        reasoning: {
+          effort: "minimal"  // Fast generation for analytics
+        },
+        text: {
+          verbosity: "medium"  // Good balance for detailed insights
+        },
+        response_format: { type: "json_object" }
       });
       
-      // Extract and return the generated content
-      return response.choices[0].message.content.trim();
+      // Extract and return the generated content from GPT-5 response
+      return response.output_text.trim();
     } catch (apiError) {
       console.error('Error calling OpenAI API:', apiError);
       return getFallbackInsights();

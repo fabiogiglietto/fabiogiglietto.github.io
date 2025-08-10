@@ -415,23 +415,21 @@ Example varied openings:
 
 Focus on quality over quantity. Return only 3-5 most significant academic/professional updates.`;
 
-    const response = await openai.chat.completions.create({
-      model: "gpt-4o",
-      messages: [
-        {
-          role: "system",
-          content: "You are an expert at analyzing and summarizing academic social media content. You must return ONLY a valid JSON array, no other text."
-        },
-        {
-          role: "user",
-          content: prompt
-        }
-      ],
-      temperature: 0.3,
+    const response = await openai.responses.create({
+      model: "gpt-5",
+      input: `You are an expert at analyzing and summarizing academic social media content. You must return ONLY a valid JSON array, no other text.
+
+${prompt}`,
+      reasoning: {
+        effort: "minimal"  // Fast processing for social media analysis
+      },
+      text: {
+        verbosity: "low"  // Concise JSON output
+      },
       response_format: { type: "json_object" }
     });
 
-    const aiResponse = response.choices[0]?.message?.content;
+    const aiResponse = response.output_text;
     console.log('AI response received, length:', aiResponse?.length);
     
     try {

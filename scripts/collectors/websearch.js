@@ -450,19 +450,18 @@ Be very strict - if you cannot confirm Fabio Giglietto is mentioned by name, set
 
 Please analyze and respond with valid JSON only.`;
 
-    const response = await openai.chat.completions.create({
-      model: "gpt-4o",
-      messages: [
-        {
-          role: "user",
-          content: prompt
-        }
-      ],
-      temperature: 0.1,
-      max_tokens: 500
+    const response = await openai.responses.create({
+      model: "gpt-5",
+      input: prompt,
+      reasoning: {
+        effort: "minimal"  // Fast analysis for web search validation
+      },
+      text: {
+        verbosity: "low"  // Concise JSON response
+      }
     });
 
-    const content = response.choices[0].message.content.trim();
+    const content = response.output_text.trim();
     
     // Try to parse JSON response
     let validation;
