@@ -121,7 +121,7 @@
       "year": 2018,
       "doi": "10.1177/0894439318816638",
       "arxivId": null,
-      "citations": 38,
+      "citations": 39,
       "influentialCitations": 0,
       "references": 42,
       "semanticScholarId": "ed3dbf400b5349482ce280354a62067599399448",
@@ -369,24 +369,6 @@
       ]
     },
     {
-      "title": "Moving towards a socially-driven internet architectural design",
-      "authors": "Rute C. Sofia, P. Mendes, M. Damásio, Sara Henriques, Fabio Giglietto, Erica Giambitto, A. Bogliolo",
-      "venue": "CCRV",
-      "year": 2012,
-      "doi": "10.1145/2317307.2317316",
-      "arxivId": "1508.01087",
-      "citations": 11,
-      "influentialCitations": 0,
-      "references": 33,
-      "semanticScholarId": "9c3d8469098969eb207ef8ab0a0e274349cce661",
-      "isOpenAccess": true,
-      "openAccessPdf": "http://arxiv.org/pdf/1508.01087",
-      "abstract": "This paper provides an interdisciplinary perspective concerning the role of prosumers on future Internet design based on the current trend of Internet user empowerment. The paper debates the prosumer role, and addresses models to develop a symmetric Internet architecture and supply-chain based on the integration of social capital aspects. It has as goal to ignite the discussion concerning a socially-driven Internet architectural design.",
-      "fieldsOfStudy": [
-        "Computer Science"
-      ]
-    },
-    {
       "title": "You Are Fake News",
       "authors": "Fabio Giglietto",
       "venue": "",
@@ -402,6 +384,24 @@
       "abstract": null,
       "fieldsOfStudy": [
         "Art"
+      ]
+    },
+    {
+      "title": "Moving towards a socially-driven internet architectural design",
+      "authors": "Rute C. Sofia, P. Mendes, M. Damásio, Sara Henriques, Fabio Giglietto, Erica Giambitto, A. Bogliolo",
+      "venue": "CCRV",
+      "year": 2012,
+      "doi": "10.1145/2317307.2317316",
+      "arxivId": "1508.01087",
+      "citations": 10,
+      "influentialCitations": 0,
+      "references": 33,
+      "semanticScholarId": "9c3d8469098969eb207ef8ab0a0e274349cce661",
+      "isOpenAccess": true,
+      "openAccessPdf": "http://arxiv.org/pdf/1508.01087",
+      "abstract": "This paper provides an interdisciplinary perspective concerning the role of prosumers on future Internet design based on the current trend of Internet user empowerment. The paper debates the prosumer role, and addresses models to develop a symmetric Internet architecture and supply-chain based on the integration of social capital aspects. It has as goal to ignite the discussion concerning a socially-driven Internet architectural design.",
+      "fieldsOfStudy": [
+        "Computer Science"
       ]
     },
     {
@@ -1339,8 +1339,8 @@
   "metrics": {
     "hIndex": 17,
     "documentCount": 76,
-    "citationCount": 1110,
+    "citationCount": 1111,
     "influentialCitationCount": 54
   },
-  "lastUpdated": "2025-08-12T06:29:16.461Z"
+  "lastUpdated": "2025-08-13T06:29:38.812Z"
 }
