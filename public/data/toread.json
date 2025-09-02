@@ -81,8 +81,8 @@
       "year": 2025,
       "abstract": "We present ConflLlama, demonstrating how efficient fine-tuning of large language models can advance automated classification tasks in political science research. While classification of political events has traditionally relied on manual coding or rigid rule-based systems, modern language models offer the potential for more nuanced, context-aware analysis. However, deploying these models requires overcoming significant technical and resource barriers. We demonstrate how to adapt open-source lang...",
       "tags": [
-        "Article",
-        "Res. Politics"
+        "Res. Politics",
+        "Article"
       ],
       "dateAdded": "2025-07-15T00:00:00Z",
       "status": "to-read",
@@ -129,8 +129,8 @@
       "year": 2025,
       "abstract": "Embedding-based similarity metrics between text sequences can be influenced not just by the content dimensions we most care about, but can also be biased by spurious attributes like the text's source or language. These document confounders cause problems for many applications, but especially those that need to pool texts from different corpora. This paper shows that a debiasing algorithm that removes information about observed confounders from the encoder representations substantially reduces th...",
       "tags": [
-        "Article",
-        "arXiv [cs.CL]"
+        "arXiv [cs.CL]",
+        "Article"
       ],
       "dateAdded": "2025-07-15T00:00:00Z",
       "status": "to-read",
@@ -304,8 +304,8 @@
       "year": 2025,
       "abstract": "Implicit content plays a crucial role in political discourse, where speakers systematically employ pragmatic strategies such as implicatures and presuppositions to influence their audiences. Large Language Models (LLMs) have demonstrated strong performance in tasks requiring complex semantic and pragmatic understanding, highlighting their potential for detecting and explaining the meaning of implicit content. However, their ability to do this within political discourse remains largely underexplo...",
       "tags": [
-        "Article",
-        "arXiv [cs.CL]"
+        "arXiv [cs.CL]",
+        "Article"
       ],
       "dateAdded": "2025-06-15T00:00:00Z",
       "status": "to-read",
@@ -348,13 +348,13 @@
       "abstract": "How do people come to believe Far-Right, extremist, and conspiratorial ideas they encounter online? This article examines how participants in primarily U.S.-based Far-Right online communities describe their adoption of “redpill” beliefs and the role of disinformation in these accounts. Applying the socio-technical theory of media effects, we conduct a qualitative content analysis of “redpilling narratives” gathered from Reddit, Gab, and Discord. While many users frame redpilling as a moment of c...",
       "tags": [
         "Int. J. Commun.",
-        "Article",
-        "disinformation",
-        "extremism",
-        "Far-Right",
-        "online radicalization",
         "evidence",
-        "redpill"
+        "extremism",
+        "redpill",
+        "online radicalization",
+        "disinformation",
+        "Far-Right",
+        "Article"
       ],
       "dateAdded": "2025-06-15T00:00:00Z",
       "status": "to-read",
@@ -518,11 +518,11 @@
       "year": 2025,
       "abstract": "Malicious actors regularly attempt to manipulate social media using coordinated posting. Many existing methods for detecting this coordination, though, have relied primarily on post-timing, which is trivially easy to change. In this paper, we make a significant methodological advancement in coordination detection, leveraging highly regular statistical patterns in the speed and frequency of sharing. We apply and validate this approach on Facebook, using 11.2 million link posts from a list of 16,1...",
       "tags": [
-        "Article",
         "Facebook",
+        "Sci. Rep.",
         "Coordination",
         "Social media",
-        "Sci. Rep."
+        "Article"
       ],
       "dateAdded": "2025-05-15T00:00:00Z",
       "status": "to-read",
@@ -568,8 +568,8 @@
       "year": 2025,
       "abstract": "Published in Polit. Commun. | Year: 2025 | Authors: Votta, Fabio, Dobber, Tom, Guinaudeau, Benjamin, Helberger, Natali, de Vreese, Claes",
       "tags": [
-        "Article",
-        "Polit. Commun."
+        "Polit. Commun.",
+        "Article"
       ],
       "dateAdded": "2025-05-15T00:00:00Z",
       "status": "to-read",
@@ -591,8 +591,8 @@
       "year": 2025,
       "abstract": "In the last few years, social media has gained an unprecedented amount of attention, playing a pivotal role in shaping the contemporary landscape of communication and connection. However, Coordinated inauthentic Behaviour (CIB), defined as orchestrated efforts by entities to deceive or mislead users about their identity and intentions, has emerged as a tactic to exploit the online discourse. In this study, we quantify the efficacy of CIB tactics by defining a general framework for evaluating the...",
       "tags": [
-        "Article",
-        "ACM Trans. Web"
+        "ACM Trans. Web",
+        "Article"
       ],
       "dateAdded": "2025-05-15T00:00:00Z",
       "status": "to-read",
@@ -700,13 +700,13 @@
       "year": 2025,
       "abstract": "As they evolve, social networks tend to form transitive triads more often than random chance and structural constraints would suggest. However, the mechanisms by which triads in these networks become transitive are largely unexplored. We leverage a unique combination of data and methods to demonstrate a causal link between amplification and triad transitivity in a directed social network. Additionally, we develop the concept of the ``attention broker,'' an extension of the previously theorized t...",
       "tags": [
-        "triad transitivity",
-        "Article",
-        "social networks",
-        "amplification",
         "tertius iungens",
+        "triad transitivity",
+        "social networks",
+        "social media",
         "PNAS Nexus",
-        "social media"
+        "amplification",
+        "Article"
       ],
       "dateAdded": "2025-04-15T00:00:00Z",
       "status": "to-read",
@@ -750,15 +750,15 @@
       "year": 2025,
       "abstract": "This study conceptualizes influence operations (IOs), an enterprise that orchestrates manipulative and inauthentic activities to achieve political advantage, as a contemporary form of brokerage during elections. It investigates the empirical case of IOs engaged in covert political campaigning in the 2022 Philippine General Elections through qualitative field research. Drawing from 22 in-depth interviews with IO leads and staff, we define IOs’ broker attributes, their brokerage processes, and the...",
       "tags": [
-        "brokerage",
         "Int. J. Commun.",
-        "trolls",
-        "Article",
-        "disinformation",
-        "Philippines",
-        "elections",
         "influence operations",
-        "computational propaganda"
+        "elections",
+        "brokerage",
+        "computational propaganda",
+        "Philippines",
+        "disinformation",
+        "trolls",
+        "Article"
       ],
       "dateAdded": "2025-03-15T00:00:00Z",
       "status": "to-read",
@@ -781,11 +781,11 @@
       "abstract": "Automated frame analysis of political communication is a popular task in computational social science that is used to study how authors select aspects of a topic to frame its reception. So far, such studies have been narrow, in that they use a fixed set of pre-defined frames and focus only on the text, ignoring the visual contexts in which those texts appear. Especially for framing in the news, this leaves out valuable information about editorial choices, which include not just the written artic...",
       "tags": [
         "Computers and Society (cs.CY)",
-        "FOS: Computer and information sciences",
+        "Machine Learning (cs.LG)",
         "arXiv [cs.CL]",
-        "Misc",
+        "FOS: Computer and information sciences",
         "Computation and Language (cs.CL)",
-        "Machine Learning (cs.LG)"
+        "Misc"
       ],
       "dateAdded": "2025-03-15T00:00:00Z",
       "status": "to-read",
@@ -851,8 +851,8 @@
       "year": 2025,
       "abstract": "Researchers have proposed the use of generative large language models (LLMs) to label data for research and applied settings. This literature emphasizes the improved performance of these models relative to other natural language models, noting that generative LLMs typically outperform other models and even humans across several metrics. Previous literature has examined bias across many applications and contexts, but less work has focused specifically on bias in generative LLMs' responses to subj...",
       "tags": [
-        "Article",
-        "arXiv [cs.CL]"
+        "arXiv [cs.CL]",
+        "Article"
       ],
       "dateAdded": "2025-03-15T00:00:00Z",
       "status": "to-read",
@@ -942,8 +942,8 @@
       "year": 2025,
       "abstract": "This study investigates the concept of frames in the realm of online polarization, with a focus on social media platforms. The research extends the understanding of how frames—emerging, complex, and often subtle concepts—become prominent in online conversations that are polarized. The study proposes a comprehensive methodology for identifying and characterizing these frames, integrating machine learning techniques, network analysis algorithms, and natural language processing tools. This method a...",
       "tags": [
-        "Article",
-        "ACM Trans. Web"
+        "ACM Trans. Web",
+        "Article"
       ],
       "dateAdded": "2025-01-15T00:00:00Z",
       "status": "to-read",
@@ -962,8 +962,8 @@
       "year": 2025,
       "abstract": "Published in Crit. Stud. Media Commun. | Year: 2025 | Authors: Graham, Timothy",
       "tags": [
-        "Article",
-        "Crit. Stud. Media Commun."
+        "Crit. Stud. Media Commun.",
+        "Article"
       ],
       "dateAdded": "2025-01-15T00:00:00Z",
       "status": "to-read",
@@ -1029,8 +1029,8 @@
       "year": 2025,
       "abstract": "Content moderation decisions can have variable impacts on the events and discourses they aim to regulate. This study analyzes Twitter data from before and after the removal of key Arizona Election Audit Twitter accounts in March of 2021. After collecting tweets that refer to the election audit in Arizona in this designated timeframe, a before/after comparison examines the structure of the networks, the volume of the participating population, and the themes of their discourse. Several significant...",
       "tags": [
-        "Article",
-        "SAGE Open"
+        "SAGE Open",
+        "Article"
       ],
       "dateAdded": "2025-01-15T00:00:00Z",
       "status": "to-read",
@@ -1179,8 +1179,8 @@
       "year": 2025,
       "abstract": "Published in Polit. Commun. | Year: 2025 | Authors: Munger, Kevin",
       "tags": [
-        "Article",
-        "Polit. Commun."
+        "Polit. Commun.",
+        "Article"
       ],
       "dateAdded": "2025-01-15T00:00:00Z",
       "status": "to-read",
@@ -1484,12 +1484,12 @@
       "year": 2015,
       "abstract": "Exposure to news, opinion, and civic information increasingly occurs through social media. How do these online networks influence exposure to perspectives that cut across ideological lines? Using deidentified data, we examined how 10.1 million U.S. Facebook users interact with socially shared news. We directly measured ideological homophily in friend networks and examined the extent to which heterogeneous friends could potentially expose individuals to cross-cutting content. We then quantified t...",
       "tags": [
-        "Article",
-        "facebook",
-        "Science",
         "homophily",
+        "facebook",
         "newsfeed",
-        "news"
+        "Science",
+        "news",
+        "Article"
       ],
       "dateAdded": "2015-06-15T00:00:00Z",
       "status": "to-read",
@@ -1509,6 +1509,6 @@
       "description": "Academic papers from Paperpile enriched with metadata"
     }
   },
-  "lastUpdated": "2025-09-01T06:29:32.822Z",
+  "lastUpdated": "2025-09-02T06:27:52.727Z",
   "source": "https://github.com/fabiogiglietto/toread"
 }
