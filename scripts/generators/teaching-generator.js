@@ -77,6 +77,70 @@ ${yamlData}`;
 }
 
 /**
+ * Determines course level based on Italian university degree classification
+ * @param {Object} course - Course data
+ * @returns {string} - Course level ('Bachelor', 'Master', or 'PhD')
+ */
+function determineCourseLevel(course) {
+  // Determine course level based on Italian university degree classification
+  // LM = Laurea Magistrale (Master's degree)
+  // L = Laurea (Bachelor's degree)
+  
+  const degreeText = course.degree || course.degree_english || '';
+  
+  // Look for LM- pattern which indicates Laurea Magistrale (Master's)
+  if (degreeText.includes('(LM-') || degreeText.includes('LM-')) {
+    return 'Master';
+  }
+  
+  // Look for L- pattern which indicates Laurea (Bachelor's)
+  if (degreeText.includes('(L-') || degreeText.includes('L-')) {
+    return 'Bachelor';
+  }
+  
+  // Manual mapping based on known degree programs
+  // These mappings are based on checking the syllabus URLs for classification codes
+  const masterDegreePrograms = [
+    'Informatica e Innovazione Digitale', // LM-18
+    'Informatics and Digital Innovation', // LM-18
+    'Comunicazione e Pubblicità per le Organizzazioni', // LM-59
+    'Advertising and Organizations Communication', // LM-59
+  ];
+  
+  const phdDegreePrograms = [
+    'Studi Umanistici', // PhD level
+    'Humanities', // PhD level
+  ];
+  
+  const bachelorDegreePrograms = [
+    'Informazione, Media, Pubblicità', // L-20
+    'Information, media and advertisement', // L-20
+    'Informatica Applicata', // Typically L- level 
+    'Applied Informatics', // Typically L- level
+    'Scienze della Comunicazione', // L- level
+    'Communication Sciences', // L- level
+  ];
+  
+  // Check if degree program is known PhD level
+  if (phdDegreePrograms.some(program => degreeText.includes(program))) {
+    return 'PhD';
+  }
+  
+  // Check if degree program is known Master's level
+  if (masterDegreePrograms.some(program => degreeText.includes(program))) {
+    return 'Master';
+  }
+  
+  // Check if degree program is known Bachelor's level
+  if (bachelorDegreePrograms.some(program => degreeText.includes(program))) {
+    return 'Bachelor';
+  }
+  
+  // Default to Bachelor for unknown degree programs
+  return 'Bachelor';
+}
+
+/**
  * Formats the teaching data for YAML output
  * @param {Object} teachingData - Raw teaching data (from university or teaching collector)
  * @returns {Object} - Formatted teaching data
@@ -97,7 +161,7 @@ function formatTeachingData(teachingData) {
       title: course.title,
       code: course.code || course.discipline_code || `CRS${formatted.courses.length + 1}`,
       description: course.description || course.english_title || course.title,
-      level: course.level || 'Bachelor',
+      level: determineCourseLevel(course),
       academic_year: course.academic_year || '2024-2025',
       credits: course.credits || 6,
       current: typeof course.current === 'boolean' ? course.current : false,
