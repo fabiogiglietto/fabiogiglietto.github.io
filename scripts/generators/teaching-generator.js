@@ -65,10 +65,14 @@ async function generateTeachingData() {
 ${yamlData}`;
     
     // Write to _data/teaching.yml
-    const outputPath = path.join(__dirname, '../../_data/teaching.yml');
-    fs.writeFileSync(outputPath, yamlWithHeader);
+    const yamlOutputPath = path.join(__dirname, '../../_data/teaching.yml');
+    fs.writeFileSync(yamlOutputPath, yamlWithHeader);
     
-    console.log('Teaching data generated successfully');
+    // Also write to public/data/teaching.json for JavaScript loading
+    const jsonOutputPath = path.join(__dirname, '../../public/data/teaching.json');
+    fs.writeFileSync(jsonOutputPath, JSON.stringify(teachingData, null, 2));
+    
+    console.log('Teaching data generated successfully (both YAML and JSON)');
     return true;
   } catch (error) {
     console.error('Error generating teaching data:', error);
