@@ -128,16 +128,16 @@
       "year": 2025,
       "abstract": "Technology has reshaped political communication, allowing fake engagement to drive real influence in the democratic process. Hyperactive social media users, who are over-proportionally active in relation to the mean, are the new political activists, spreading partisan content at scale on social media platforms. Using The Authenticity Matrix tool, this study revealed Facebook accounts of hyperactive users exhibiting inauthentic behaviour that were used during the electoral campaign (May 10, 2024,...",
       "tags": [
-        "fake accounts",
         "Article",
+        "inauthentic behavior",
+        "election campaign",
+        "political communication",
+        "Media Commun.",
+        "fake accounts",
+        "Facebook",
         "manipulation",
         "social media",
-        "political communication",
-        "Facebook",
-        "inauthentic behavior",
-        "Meta",
-        "election campaign",
-        "Media Commun."
+        "Meta"
       ],
       "dateAdded": "2025-09-15T00:00:00Z",
       "status": "to-read",
@@ -493,14 +493,14 @@
       "year": 2025,
       "abstract": "How do people come to believe Far-Right, extremist, and conspiratorial ideas they encounter online? This article examines how participants in primarily U.S.-based Far-Right online communities describe their adoption of “redpill” beliefs and the role of disinformation in these accounts. Applying the socio-technical theory of media effects, we conduct a qualitative content analysis of “redpilling narratives” gathered from Reddit, Gab, and Discord. While many users frame redpilling as a moment of c...",
       "tags": [
-        "online radicalization",
-        "Article",
-        "extremism",
-        "disinformation",
         "evidence",
+        "Article",
+        "online radicalization",
+        "disinformation",
+        "extremism",
+        "Far-Right",
         "redpill",
-        "Int. J. Commun.",
-        "Far-Right"
+        "Int. J. Commun."
       ],
       "dateAdded": "2025-06-15T00:00:00Z",
       "status": "to-read",
@@ -664,11 +664,11 @@
       "year": 2025,
       "abstract": "Malicious actors regularly attempt to manipulate social media using coordinated posting. Many existing methods for detecting this coordination, though, have relied primarily on post-timing, which is trivially easy to change. In this paper, we make a significant methodological advancement in coordination detection, leveraging highly regular statistical patterns in the speed and frequency of sharing. We apply and validate this approach on Facebook, using 11.2 million link posts from a list of 16,1...",
       "tags": [
-        "Social media",
         "Article",
         "Facebook",
         "Coordination",
-        "Sci. Rep."
+        "Sci. Rep.",
+        "Social media"
       ],
       "dateAdded": "2025-05-15T00:00:00Z",
       "status": "to-read",
@@ -846,13 +846,13 @@
       "year": 2025,
       "abstract": "As they evolve, social networks tend to form transitive triads more often than random chance and structural constraints would suggest. However, the mechanisms by which triads in these networks become transitive are largely unexplored. We leverage a unique combination of data and methods to demonstrate a causal link between amplification and triad transitivity in a directed social network. Additionally, we develop the concept of the ``attention broker,'' an extension of the previously theorized t...",
       "tags": [
-        "PNAS Nexus",
-        "triad transitivity",
-        "social networks",
         "Article",
-        "social media",
+        "tertius iungens",
+        "PNAS Nexus",
         "amplification",
-        "tertius iungens"
+        "triad transitivity",
+        "social media",
+        "social networks"
       ],
       "dateAdded": "2025-04-15T00:00:00Z",
       "status": "to-read",
@@ -897,14 +897,14 @@
       "abstract": "This study conceptualizes influence operations (IOs), an enterprise that orchestrates manipulative and inauthentic activities to achieve political advantage, as a contemporary form of brokerage during elections. It investigates the empirical case of IOs engaged in covert political campaigning in the 2022 Philippine General Elections through qualitative field research. Drawing from 22 in-depth interviews with IO leads and staff, we define IOs’ broker attributes, their brokerage processes, and the...",
       "tags": [
         "influence operations",
-        "trolls",
-        "brokerage",
         "Article",
         "elections",
         "disinformation",
+        "brokerage",
         "Philippines",
-        "Int. J. Commun.",
-        "computational propaganda"
+        "computational propaganda",
+        "trolls",
+        "Int. J. Commun."
       ],
       "dateAdded": "2025-03-15T00:00:00Z",
       "status": "to-read",
@@ -926,11 +926,11 @@
       "year": 2025,
       "abstract": "Automated frame analysis of political communication is a popular task in computational social science that is used to study how authors select aspects of a topic to frame its reception. So far, such studies have been narrow, in that they use a fixed set of pre-defined frames and focus only on the text, ignoring the visual contexts in which those texts appear. Especially for framing in the news, this leaves out valuable information about editorial choices, which include not just the written artic...",
       "tags": [
-        "Misc",
+        "FOS: Computer and information sciences",
         "Machine Learning (cs.LG)",
         "Computation and Language (cs.CL)",
+        "Misc",
         "Computers and Society (cs.CY)",
-        "FOS: Computer and information sciences",
         "arXiv [cs.CL]"
       ],
       "dateAdded": "2025-03-15T00:00:00Z",
@@ -1630,11 +1630,11 @@
       "year": 2015,
       "abstract": "Exposure to news, opinion, and civic information increasingly occurs through social media. How do these online networks influence exposure to perspectives that cut across ideological lines? Using deidentified data, we examined how 10.1 million U.S. Facebook users interact with socially shared news. We directly measured ideological homophily in friend networks and examined the extent to which heterogeneous friends could potentially expose individuals to cross-cutting content. We then quantified t...",
       "tags": [
-        "homophily",
         "Article",
-        "Science",
-        "news",
         "facebook",
+        "homophily",
+        "news",
+        "Science",
         "newsfeed"
       ],
       "dateAdded": "2015-06-15T00:00:00Z",
@@ -1655,6 +1655,6 @@
       "description": "Academic papers from Paperpile enriched with metadata"
     }
   },
-  "lastUpdated": "2025-10-13T06:28:49.989Z",
+  "lastUpdated": "2025-10-14T06:27:28.238Z",
   "source": "https://github.com/fabiogiglietto/toread"
 }
