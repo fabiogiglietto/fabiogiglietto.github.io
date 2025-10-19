@@ -269,7 +269,7 @@
       "year": 2012,
       "doi": "10.4256/mio.2012.003",
       "arxivId": null,
-      "citations": 21,
+      "citations": 22,
       "influentialCitations": 0,
       "references": 33,
       "semanticScholarId": "b91a9c0cc4369a8dccd94a2a210efff3e6fe47b8",
@@ -475,6 +475,24 @@
       "fieldsOfStudy": []
     },
     {
+      "title": "COORNET: AN INTEGRATED APPROACH TO SURFACE PROBLEMATIC CONTENT,\n MALICIOUS ACTORS, AND COORDINATED NETWORKS",
+      "authors": "Fabio Giglietto, Nicola Righetti, L. Rossi, Giada Marino",
+      "venue": "AoIR Selected Papers of Internet Research",
+      "year": 2021,
+      "doi": "10.5210/spir.v2021i0.12170",
+      "arxivId": null,
+      "citations": 5,
+      "influentialCitations": 0,
+      "references": 14,
+      "semanticScholarId": "8934fa18f260a702d351f96823c7b69361c74f0d",
+      "isOpenAccess": true,
+      "openAccessPdf": "https://journals.uic.edu/ojs/index.php/spir/article/download/12170/10455",
+      "abstract": "As much as the field of mis/disinformation studies flourished during\n the last few years, the efforts to measure its prevalence and effects are often hindered or\n significantly limited by the fuzziness of the phenomenon under study. Differently from\n approaches based on sole content or actors detection, the authors implement an integrated\n approach to understand the interplay between manipulative actors, deceptive behavior, and\n harmful content. To do so, the authors present a study on patterns of coordinated activity\n on Facebook (named “Coordinated Link Sharing Behavior”) during the first and second waves of\n the COVID-19 pandemic in Italy. Coordinated Link Sharing Behavior” (CLSB) refers to the\n coordinated shares of the same news article in a very short timeframe by networks of pages,\n groups, and verified public profiles. CLSB is a strategy used to boost the reach of content\n by gaming algorithms that govern the distribution of posts. Additionally, this coordinated\n activity has been proven to be consistently associated with the spread of problematic\n information before the 2018 and 2019 Italian elections. In this paper, the authors devote\n specific attention to discuss the methodology and tool employed in the context of existing\n literature on mis/disinformation as well as to present the results of the case\n study.",
+      "fieldsOfStudy": [
+        "Computer Science"
+      ]
+    },
+    {
       "title": "DETECTING COORDINATED LINK SHARING BEHAVIOR ON FACEBOOK DURING THE ITALIAN CORONAVIRUS OUTBREAK",
       "authors": "Fabio Giglietto, Nicola Righetti, Giada Marino",
       "venue": "AoIR Selected Papers of Internet Research",
@@ -508,24 +526,6 @@
       "abstract": null,
       "fieldsOfStudy": [
         "Political Science"
-      ]
-    },
-    {
-      "title": "COORNET: AN INTEGRATED APPROACH TO SURFACE PROBLEMATIC CONTENT,\n MALICIOUS ACTORS, AND COORDINATED NETWORKS",
-      "authors": "Fabio Giglietto, Nicola Righetti, L. Rossi, Giada Marino",
-      "venue": "AoIR Selected Papers of Internet Research",
-      "year": 2021,
-      "doi": "10.5210/spir.v2021i0.12170",
-      "arxivId": null,
-      "citations": 4,
-      "influentialCitations": 0,
-      "references": 14,
-      "semanticScholarId": "8934fa18f260a702d351f96823c7b69361c74f0d",
-      "isOpenAccess": true,
-      "openAccessPdf": "https://journals.uic.edu/ojs/index.php/spir/article/download/12170/10455",
-      "abstract": "As much as the field of mis/disinformation studies flourished during\n the last few years, the efforts to measure its prevalence and effects are often hindered or\n significantly limited by the fuzziness of the phenomenon under study. Differently from\n approaches based on sole content or actors detection, the authors implement an integrated\n approach to understand the interplay between manipulative actors, deceptive behavior, and\n harmful content. To do so, the authors present a study on patterns of coordinated activity\n on Facebook (named “Coordinated Link Sharing Behavior”) during the first and second waves of\n the COVID-19 pandemic in Italy. Coordinated Link Sharing Behavior” (CLSB) refers to the\n coordinated shares of the same news article in a very short timeframe by networks of pages,\n groups, and verified public profiles. CLSB is a strategy used to boost the reach of content\n by gaming algorithms that govern the distribution of posts. Additionally, this coordinated\n activity has been proven to be consistently associated with the spread of problematic\n information before the 2018 and 2019 Italian elections. In this paper, the authors devote\n specific attention to discuss the methodology and tool employed in the context of existing\n literature on mis/disinformation as well as to present the results of the case\n study.",
-      "fieldsOfStudy": [
-        "Computer Science"
       ]
     },
     {
@@ -1342,5 +1342,5 @@
     "citationCount": 1128,
     "influentialCitationCount": 54
   },
-  "lastUpdated": "2025-10-18T06:24:21.585Z"
+  "lastUpdated": "2025-10-19T06:25:32.247Z"
 }
