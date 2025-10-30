@@ -66,7 +66,7 @@
       "year": 2021,
       "doi": "10.3270/100321",
       "arxivId": null,
-      "citations": 86,
+      "citations": 87,
       "influentialCitations": 3,
       "references": 68,
       "semanticScholarId": "805412ad610c0d74282e6a345f2acbf569c7078b",
@@ -190,6 +190,25 @@
       ]
     },
     {
+      "title": "If Likes Were Votes: An Empirical Study on the 2011 Italian Administrative Elections",
+      "authors": "Fabio Giglietto",
+      "venue": "International Conference on Web and Social Media",
+      "year": 2012,
+      "doi": "10.2139/ssrn.1982736",
+      "arxivId": null,
+      "citations": 25,
+      "influentialCitations": 1,
+      "references": 28,
+      "semanticScholarId": "dbc3773ad563818b1bd074874d52bc70405f8020",
+      "isOpenAccess": true,
+      "openAccessPdf": "https://cdn.aaai.org/ojs/14286/14286-28-17804-1-2-20201228.pdf",
+      "abstract": "\n \n Is it possible to forecast electoral results by analyzing social media conversations? This paper aims to contribute to the debate raised by authors claiming to have successfully predicted the outcomes of an election from Twitter or Facebook data. Our work tested the purported predictive power of social media metrics against the 2011 Italian administrative elections. During the months before the election day, we collected the amount of Likes received on the Facebook pages of 229 candidates running for the mayor offices of the 29 provincial capitals. We built two forecast models with the goal of predicting the outcomes of the elections: the aim of the first one was to predict the candidates’ vote shares, while the second was to forecast the name of the winning candidate. We found a non-significant correlation between the share of candidate popularity on Facebook and the respective share of votes. However, in 39% of the cases, the most popular candidate on Facebook actually won the contest, and in another 43%, that candidate came in second. The contribution to the ongoing debate is therefore two-sided: on the one hand, we provide a new case study from a cultural context and political system never analyzed before by this kind of study; on the other side, we propose two forecasting models that, although proven to be partially unsuccessful, can provide a foundation for improved forecasting models.\n \n",
+      "fieldsOfStudy": [
+        "Computer Science",
+        "Sociology"
+      ]
+    },
+    {
       "title": "Networked intimacy. Intimacy and friendship among Italian Facebook users",
       "authors": "Manolo Farci, L. Rossi, Giovanni Boccia Artieri, Fabio Giglietto",
       "venue": "",
@@ -223,25 +242,6 @@
       "abstract": null,
       "fieldsOfStudy": [
         "Psychology"
-      ]
-    },
-    {
-      "title": "If Likes Were Votes: An Empirical Study on the 2011 Italian Administrative Elections",
-      "authors": "Fabio Giglietto",
-      "venue": "International Conference on Web and Social Media",
-      "year": 2012,
-      "doi": "10.2139/ssrn.1982736",
-      "arxivId": null,
-      "citations": 24,
-      "influentialCitations": 1,
-      "references": 28,
-      "semanticScholarId": "dbc3773ad563818b1bd074874d52bc70405f8020",
-      "isOpenAccess": true,
-      "openAccessPdf": "https://cdn.aaai.org/ojs/14286/14286-28-17804-1-2-20201228.pdf",
-      "abstract": "\n \n Is it possible to forecast electoral results by analyzing social media conversations? This paper aims to contribute to the debate raised by authors claiming to have successfully predicted the outcomes of an election from Twitter or Facebook data. Our work tested the purported predictive power of social media metrics against the 2011 Italian administrative elections. During the months before the election day, we collected the amount of Likes received on the Facebook pages of 229 candidates running for the mayor offices of the 29 provincial capitals. We built two forecast models with the goal of predicting the outcomes of the elections: the aim of the first one was to predict the candidates’ vote shares, while the second was to forecast the name of the winning candidate. We found a non-significant correlation between the share of candidate popularity on Facebook and the respective share of votes. However, in 39% of the cases, the most popular candidate on Facebook actually won the contest, and in another 43%, that candidate came in second. The contribution to the ongoing debate is therefore two-sided: on the one hand, we provide a new case study from a cultural context and political system never analyzed before by this kind of study; on the other side, we propose two forecasting models that, although proven to be partially unsuccessful, can provide a foundation for improved forecasting models.\n \n",
-      "fieldsOfStudy": [
-        "Computer Science",
-        "Sociology"
       ]
     },
     {
@@ -1342,5 +1342,5 @@
     "citationCount": 1128,
     "influentialCitationCount": 54
   },
-  "lastUpdated": "2025-10-29T06:29:07.949Z"
+  "lastUpdated": "2025-10-30T06:28:00.601Z"
 }
