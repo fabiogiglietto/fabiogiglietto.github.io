@@ -541,6 +541,96 @@
     },
     {
       "last-modified-date": {
+        "value": 1762391883972
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "handle",
+            "external-id-value": "11576/2765591",
+            "external-id-normalized": {
+              "value": "11576/2765591",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://ora.uniurb.it/handle/11576/2765591"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 196156190,
+          "created-date": {
+            "value": 1762391883972
+          },
+          "last-modified-date": {
+            "value": 1762391883972
+          },
+          "source": {
+            "source-orcid": null,
+            "source-client-id": {
+              "uri": "https://orcid.org/client/APP-ERL34HCK6D9LSO6D",
+              "path": "APP-ERL34HCK6D9LSO6D",
+              "host": "orcid.org"
+            },
+            "source-name": {
+              "value": "ORA - Iris UNIURB"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Viralità"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "handle",
+                "external-id-value": "11576/2765591",
+                "external-id-normalized": {
+                  "value": "11576/2765591",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://ora.uniurb.it/handle/11576/2765591"
+                },
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "url": {
+            "value": "https://ora.uniurb.it/handle/11576/2765591"
+          },
+          "type": "book-chapter",
+          "publication-date": {
+            "year": {
+              "value": "2025"
+            },
+            "month": {
+              "value": "01"
+            },
+            "day": {
+              "value": "01"
+            }
+          },
+          "journal-title": null,
+          "visibility": "public",
+          "path": "/0000-0001-8019-1035/work/196156190",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
         "value": 1744762805256
       },
       "external-ids": {
@@ -17181,126 +17271,126 @@
       ]
     }
   ],
-  "lastUpdated": "2025-11-05T06:28:20.086Z",
+  "lastUpdated": "2025-11-06T06:28:10.423Z",
   "logs": {
-    "timestamp": "2025-11-05T06:28:18.380Z",
+    "timestamp": "2025-11-06T06:28:09.154Z",
     "steps": [
       {
-        "timestamp": "2025-11-05T06:28:18.380Z",
+        "timestamp": "2025-11-06T06:28:09.154Z",
         "type": "start",
         "message": "Starting ORCID data collection"
       },
       {
-        "timestamp": "2025-11-05T06:28:18.380Z",
+        "timestamp": "2025-11-06T06:28:09.154Z",
         "type": "info",
         "message": "Getting OAuth token for ORCID API access..."
       },
       {
-        "timestamp": "2025-11-05T06:28:18.380Z",
+        "timestamp": "2025-11-06T06:28:09.154Z",
         "type": "info",
         "message": "Attempting to use public API without authentication"
       },
       {
-        "timestamp": "2025-11-05T06:28:18.381Z",
+        "timestamp": "2025-11-06T06:28:09.154Z",
         "type": "info",
         "message": "OAuth token response received: {\n  \"status\": 200,\n  \"data\": {\n    \"access_token\": \"public_endpoint_no_token_needed\"\n  }\n}"
       },
       {
-        "timestamp": "2025-11-05T06:28:18.381Z",
+        "timestamp": "2025-11-06T06:28:09.154Z",
         "type": "info",
         "message": "Obtained access token: public_end..."
       },
       {
-        "timestamp": "2025-11-05T06:28:18.381Z",
+        "timestamp": "2025-11-06T06:28:09.154Z",
         "type": "info",
         "message": "Attempting to fetch ORCID record with JSON format..."
       },
       {
-        "timestamp": "2025-11-05T06:28:19.590Z",
+        "timestamp": "2025-11-06T06:28:10.054Z",
         "type": "info",
         "message": "Successfully retrieved record in JSON format"
       },
       {
-        "timestamp": "2025-11-05T06:28:19.590Z",
+        "timestamp": "2025-11-06T06:28:10.054Z",
         "type": "info",
         "message": "Retrieved ORCID record in JSON format"
       },
       {
-        "timestamp": "2025-11-05T06:28:19.590Z",
+        "timestamp": "2025-11-06T06:28:10.054Z",
         "type": "info",
         "message": "Response content type: application/json;charset=UTF-8"
       },
       {
-        "timestamp": "2025-11-05T06:28:19.590Z",
+        "timestamp": "2025-11-06T06:28:10.054Z",
         "type": "info",
         "message": "Trying to fetch works directly from /works endpoint for comparison..."
       },
       {
-        "timestamp": "2025-11-05T06:28:20.076Z",
+        "timestamp": "2025-11-06T06:28:10.412Z",
         "type": "info",
-        "message": "Works endpoint returned 142 works"
+        "message": "Works endpoint returned 143 works"
       },
       {
-        "timestamp": "2025-11-05T06:28:20.076Z",
+        "timestamp": "2025-11-06T06:28:10.412Z",
         "type": "info",
         "message": "Processing JSON response"
       },
       {
-        "timestamp": "2025-11-05T06:28:20.076Z",
+        "timestamp": "2025-11-06T06:28:10.412Z",
         "type": "info",
         "message": "Found person data with keys: last-modified-date, name, other-names, biography, researcher-urls, emails, addresses, keywords, external-identifiers, path"
       },
       {
-        "timestamp": "2025-11-05T06:28:20.076Z",
+        "timestamp": "2025-11-06T06:28:10.412Z",
         "type": "info",
         "message": "Record endpoint response structure differs from expected format"
       },
       {
-        "timestamp": "2025-11-05T06:28:20.076Z",
+        "timestamp": "2025-11-06T06:28:10.413Z",
         "type": "info",
-        "message": "Works endpoint has 142 works, record endpoint has 0 works"
+        "message": "Works endpoint has 143 works, record endpoint has 0 works"
       },
       {
-        "timestamp": "2025-11-05T06:28:20.076Z",
+        "timestamp": "2025-11-06T06:28:10.413Z",
         "type": "warning",
-        "message": "DISCREPANCY: Works endpoint has 142 works, but record endpoint has 0 works"
+        "message": "DISCREPANCY: Works endpoint has 143 works, but record endpoint has 0 works"
       },
       {
-        "timestamp": "2025-11-05T06:28:20.076Z",
+        "timestamp": "2025-11-06T06:28:10.413Z",
         "type": "info",
-        "message": "Using 142 works from /works endpoint instead of /record endpoint"
+        "message": "Using 143 works from /works endpoint instead of /record endpoint"
       },
       {
-        "timestamp": "2025-11-05T06:28:20.076Z",
+        "timestamp": "2025-11-06T06:28:10.413Z",
         "type": "info",
         "message": "Sample work structure: {\"keys\":[\"last-modified-date\",\"external-ids\",\"work-summary\"],\"hasSummary\":true,\"summaryCount\":3,\"summaryKeys\":[\"put-code\",\"created-date\",\"last-modified-date\",\"source\",\"title\",\"external-ids\",\"url\",\"type\",\"publication-date\",\"journal-title\",\"visibility\",\"path\",\"display-index\"],\"title\":\"The State of Social Media Research APIs &amp; Tools in the Digital Service Act Era\",\"type\":\"report\",\"pubDate\":\"2025-07-21\"}"
       },
       {
-        "timestamp": "2025-11-05T06:28:20.081Z",
+        "timestamp": "2025-11-06T06:28:10.418Z",
         "type": "info",
         "message": "Complete record data saved to /tmp/orcid-record-full.json"
       },
       {
-        "timestamp": "2025-11-05T06:28:20.085Z",
+        "timestamp": "2025-11-06T06:28:10.422Z",
         "type": "info",
         "message": "Works data saved to /tmp/orcid-works-full.json"
       },
       {
-        "timestamp": "2025-11-05T06:28:20.086Z",
+        "timestamp": "2025-11-06T06:28:10.422Z",
         "type": "info",
         "message": "Detailed logs saved to /tmp/orcid-collection-log.json"
       },
       {
-        "timestamp": "2025-11-05T06:28:20.086Z",
+        "timestamp": "2025-11-06T06:28:10.423Z",
         "type": "complete",
-        "message": "Collection completed with 142 works retrieved"
+        "message": "Collection completed with 143 works retrieved"
       }
     ],
     "errors": [],
     "warnings": [
       {
-        "timestamp": "2025-11-05T06:28:20.076Z",
-        "message": "Works count discrepancy: /works endpoint: 142, /record endpoint: 0"
+        "timestamp": "2025-11-06T06:28:10.413Z",
+        "message": "Works count discrepancy: /works endpoint: 143, /record endpoint: 0"
       }
     ],
     "results": {
@@ -17317,11 +17407,11 @@
         "contentType": "application/json;charset=UTF-8",
         "status": 200,
         "headers": {
-          "date": "Wed, 05 Nov 2025 06:28:19 GMT",
+          "date": "Thu, 06 Nov 2025 06:28:10 GMT",
           "content-type": "application/json;charset=UTF-8",
           "transfer-encoding": "chunked",
           "connection": "close",
-          "cf-ray": "999a4a4f9e821ffb-LAX",
+          "cf-ray": "99a28775c982387d-IAD",
           "cf-cache-status": "DYNAMIC",
           "access-control-allow-origin": "*",
           "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
@@ -17354,7 +17444,7 @@
           "group",
           "path"
         ],
-        "groupCount": 142
+        "groupCount": 143
       },
       "recordStructure": {
         "dataKeys": [
@@ -17395,7 +17485,7 @@
         "type": "report",
         "pubDate": "2025-07-21"
       },
-      "finalWorkCount": 142,
+      "finalWorkCount": 143,
       "profileKeys": [
         "last-modified-date",
         "name",
