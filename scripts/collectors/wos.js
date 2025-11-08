@@ -55,8 +55,8 @@ async function collect() {
     return getMockData();
   }
   
-  // Log a message about using the API key
-  console.log(`Using Web of Science API key: ${apiKey.substring(0, 4)}...${apiKey.substring(apiKey.length - 4)}`);
+  // API key is available and validated
+  console.log('Using Web of Science API key (configured)');
   
   try {
     console.log('Attempting to connect to Web of Science Starter API with rate limit handling...');

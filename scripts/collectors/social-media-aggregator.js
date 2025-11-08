@@ -7,6 +7,7 @@ const { promisify } = require('util');
 const writeFileAsync = promisify(fs.writeFile);
 const axios = require('axios');
 const OpenAI = require('openai');
+const yaml = require('js-yaml');
 
 // Check for API keys
 const hasOpenAIKey = process.env.OPENAI_API_KEY && process.env.OPENAI_API_KEY.startsWith('sk-');
@@ -72,10 +73,14 @@ async function collectSocialMediaPosts() {
     const processedNews = await deduplicateAndSummarize(recentPosts);
 
     // Save to news.yml (overwriting any existing manual entries)
+    // Use js-yaml to safely generate YAML and prevent injection attacks
     const outputPath = path.join(__dirname, '../../_data/news.yml');
-    const yamlContent = processedNews.map(item => 
-      `- date: "${item.date}"\n  content: "${item.content}"\n  url: "${item.url || ''}"\n  platforms: ${JSON.stringify(item.platforms)}`
-    ).join('\n\n') + '\n';
+    const yamlContent = yaml.dump(processedNews.map(item => ({
+      date: String(item.date || ''),
+      content: String(item.content || ''),
+      url: String(item.url || ''),
+      platforms: Array.isArray(item.platforms) ? item.platforms : []
+    })));
 
     await writeFileAsync(outputPath, yamlContent);
     console.log(`Successfully saved ${processedNews.length} news items to ${outputPath}`);
@@ -415,21 +420,23 @@ Example varied openings:
 
 Focus on quality over quantity. Return only 3-5 most significant academic/professional updates.`;
 
-    const response = await openai.responses.create({
-      model: "gpt-5",
-      input: `You are an expert at analyzing and summarizing academic social media content. You must return ONLY a valid JSON array, no other text.
-
-${prompt}`,
-      reasoning: {
-        effort: "minimal"  // Fast processing for social media analysis
-      },
-      text: {
-        verbosity: "low"  // Concise JSON output
-      },
-      response_format: { type: "json_object" }
+    const response = await openai.chat.completions.create({
+      model: "gpt-4-turbo-preview",
+      messages: [
+        {
+          role: "system",
+          content: "You are an expert at analyzing and summarizing academic social media content. You must return ONLY a valid JSON object with a 'news' array property, no other text."
+        },
+        {
+          role: "user",
+          content: prompt
+        }
+      ],
+      response_format: { type: "json_object" },
+      temperature: 0.7
     });
 
-    const aiResponse = response.output_text;
+    const aiResponse = response.choices[0].message.content;
     console.log('AI response received, length:', aiResponse?.length);
     
     try {

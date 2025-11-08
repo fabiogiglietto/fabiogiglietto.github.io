@@ -250,22 +250,8 @@ async function collect() {
       addLog('No works found from either endpoint', 'warning');
     }
     
-    // Debug: Save the record data and log data to files
-    try {
-      fs.writeFileSync('/tmp/orcid-record-full.json', JSON.stringify(recordResponse.data, null, 2));
-      addLog('Complete record data saved to /tmp/orcid-record-full.json');
-      
-      if (worksResponse) {
-        fs.writeFileSync('/tmp/orcid-works-full.json', JSON.stringify(worksResponse.data, null, 2));
-        addLog('Works data saved to /tmp/orcid-works-full.json');
-      }
-      
-      // Save the detailed logs
-      fs.writeFileSync('/tmp/orcid-collection-log.json', JSON.stringify(logs, null, 2));
-      addLog('Detailed logs saved to /tmp/orcid-collection-log.json');
-    } catch (writeError) {
-      addError('Error saving data to files', writeError);
-    }
+    // Debug logging (sensitive data not written to disk for security)
+    addLog(`Collection completed successfully with ${works.length} works`);
     
     logs.results.finalWorkCount = works.length;
     logs.results.profileKeys = Object.keys(profile);
@@ -281,14 +267,7 @@ async function collect() {
     };
   } catch (error) {
     addError('Fatal error in ORCID data collection', error);
-    
-    // Save logs even on failure
-    try {
-      fs.writeFileSync('/tmp/orcid-collection-error-log.json', JSON.stringify(logs, null, 2));
-      console.log('Error logs saved to /tmp/orcid-collection-error-log.json');
-    } catch (logError) {
-      console.error('Failed to save error logs:', logError);
-    }
+    console.error('ORCID collection failed:', error.message);
     
     // Return minimal data structure on error
     return {

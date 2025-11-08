@@ -63,8 +63,8 @@ async function collect() {
     return getMockData();
   }
   
-  // Log a message about using the API key
-  console.log(`Using Semantic Scholar API key: ${apiKey.substring(0, 4)}...${apiKey.substring(apiKey.length - 4)}`);
+  // API key is available and validated
+  console.log('Using Semantic Scholar API key (configured)');
   console.log(`Fetching publications for author ID: ${authorId}`);
   
   try {
