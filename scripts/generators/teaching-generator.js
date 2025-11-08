@@ -87,61 +87,74 @@ ${yamlData}`;
  */
 function determineCourseLevel(course) {
   // Determine course level based on Italian university degree classification
-  // LM = Laurea Magistrale (Master's degree)
-  // L = Laurea (Bachelor's degree)
-  
-  const degreeText = course.degree || course.degree_english || '';
-  
-  // Look for LM- pattern which indicates Laurea Magistrale (Master's)
+  // (LM-XX) = Laurea Magistrale = Master's degree
+  // (L-XX) = Laurea = Bachelor's degree
+  // No code = PhD Program
+
+  // Prefer degree_full_text if available (has codes), otherwise use degree fields
+  const degreeText = course.degree_full_text || course.degree || course.degree_english || '';
+
+  // Check for degree codes in parentheses first (most reliable)
+  // LM- indicates Laurea Magistrale (Master's degree)
   if (degreeText.includes('(LM-') || degreeText.includes('LM-')) {
     return 'Master';
   }
-  
-  // Look for L- pattern which indicates Laurea (Bachelor's)
-  if (degreeText.includes('(L-') || degreeText.includes('L-')) {
+
+  // L- (but not LM-) indicates Laurea (Bachelor's degree)
+  // Check for (L- pattern while ensuring it's not (LM-
+  if ((degreeText.includes('(L-') || degreeText.match(/\bL-\d/)) &&
+      !degreeText.includes('LM-')) {
     return 'Bachelor';
   }
-  
-  // Manual mapping based on known degree programs
-  // These mappings are based on checking the syllabus URLs for classification codes
+
+  // Additional checks for text-based indicators
+  const lowerDegree = degreeText.toLowerCase();
+
+  if (lowerDegree.includes('magistrale') ||
+      lowerDegree.includes('specialistica') ||
+      lowerDegree.includes('master') ||
+      lowerDegree.includes('secondo livello')) {
+    return 'Master';
+  }
+
+  if (lowerDegree.includes('dottorato') ||
+      lowerDegree.includes('phd') ||
+      lowerDegree.includes('doctoral')) {
+    return 'PhD';
+  }
+
+  // Manual mapping based on known degree programs (fallback)
   const masterDegreePrograms = [
     'Informatica e Innovazione Digitale', // LM-18
     'Informatics and Digital Innovation', // LM-18
     'Comunicazione e Pubblicità per le Organizzazioni', // LM-59
     'Advertising and Organizations Communication', // LM-59
   ];
-  
-  const phdDegreePrograms = [
-    'Studi Umanistici', // PhD level
-    'Humanities', // PhD level
-  ];
-  
+
   const bachelorDegreePrograms = [
-    'Informazione, Media, Pubblicità', // L-20
+    'Informazione, Media, Pubblicit', // L-20 (partial match to handle encoding issues)
     'Information, media and advertisement', // L-20
-    'Informatica Applicata', // Typically L- level 
-    'Applied Informatics', // Typically L- level
-    'Scienze della Comunicazione', // L- level
-    'Communication Sciences', // L- level
+    'Informatica Applicata', // L-31
+    'Applied Informatics', // L-31
   ];
-  
-  // Check if degree program is known PhD level
-  if (phdDegreePrograms.some(program => degreeText.includes(program))) {
-    return 'PhD';
-  }
-  
+
   // Check if degree program is known Master's level
   if (masterDegreePrograms.some(program => degreeText.includes(program))) {
     return 'Master';
   }
-  
+
   // Check if degree program is known Bachelor's level
   if (bachelorDegreePrograms.some(program => degreeText.includes(program))) {
     return 'Bachelor';
   }
-  
-  // Default to Bachelor for unknown degree programs
-  return 'Bachelor';
+
+  // If degree info is empty or has no code, assume PhD Program
+  if (!degreeText || degreeText.trim() === '') {
+    return 'PhD';
+  }
+
+  // Default to PhD if no specific code found (per user's requirement)
+  return 'PhD';
 }
 
 /**

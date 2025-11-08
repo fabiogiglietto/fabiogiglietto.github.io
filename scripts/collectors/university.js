@@ -117,6 +117,8 @@ function extractTeachingFromProfilePage($) {
         
         // Degree information
         const degreeColumn = $(columns[2]);
+        // Get full text of the degree column to capture codes like (LM-XX) or (L-XX)
+        const degreeFullText = degreeColumn.text().trim();
         const degreeTitle = degreeColumn.find('a').first().text().trim();
         const degreeTitleEnglish = degreeColumn.find('small a').first().text().trim();
         
@@ -142,13 +144,14 @@ function extractTeachingFromProfilePage($) {
           academic_year: academicYear,
           degree: degreeTitle,
           degree_english: degreeTitleEnglish,
+          degree_full_text: degreeFullText,  // Store full text with codes
           credits: credits,
           discipline_code: disciplineCode,
           current: isCurrentCourse,
           syllabus_url: syllabusUrl.startsWith('/') ? `https://www.uniurb.it${syllabusUrl}` : syllabusUrl,
           // Try to determine semester and level from degree info
           semester: determineSemester(courseTitle, degreeTitle),
-          level: determineLevel(degreeTitle),
+          level: determineLevel(degreeFullText),  // Use full text for better detection
           // Add a basic description based on the course title
           description: generateCourseDescription(courseTitle, englishTitle)
         });
@@ -284,25 +287,73 @@ function determineSemester(title, details) {
 
 /**
  * Tries to determine the course level from degree information
+ * Based on Italian university degree classification codes:
+ * - (LM-XX) = Laurea Magistrale = Master's degree
+ * - (L-XX) = Laurea = Bachelor's degree
+ * - No code = PhD Program
  */
 function determineLevel(degreeInfo) {
+  // Check for degree codes in parentheses first (most reliable)
+  // LM- indicates Laurea Magistrale (Master's degree)
+  if (degreeInfo.includes('(LM-') || degreeInfo.includes('LM-')) {
+    return "Master";
+  }
+
+  // L- (but not LM-) indicates Laurea (Bachelor's degree)
+  // Check for (L- pattern while ensuring it's not (LM-
+  if ((degreeInfo.includes('(L-') || degreeInfo.match(/\bL-\d/)) &&
+      !degreeInfo.includes('LM-')) {
+    return "Bachelor";
+  }
+
+  // Additional checks for text-based indicators
   const lowerDegree = degreeInfo.toLowerCase();
-  
-  if (lowerDegree.includes("magistrale") || 
-      lowerDegree.includes("specialistica") || 
-      lowerDegree.includes("lm-") || 
-      lowerDegree.includes("master") || 
+
+  if (lowerDegree.includes("magistrale") ||
+      lowerDegree.includes("specialistica") ||
+      lowerDegree.includes("master") ||
       lowerDegree.includes("secondo livello")) {
     return "Master";
   }
-  
-  if (lowerDegree.includes("dottorato") || 
-      lowerDegree.includes("phd") || 
+
+  if (lowerDegree.includes("dottorato") ||
+      lowerDegree.includes("phd") ||
       lowerDegree.includes("doctoral")) {
     return "PhD";
   }
-  
-  return "Bachelor"; // Default to Bachelor level
+
+  // Manual mapping based on known degree programs (when codes aren't in the page)
+  const masterDegreePrograms = [
+    'Informatica e Innovazione Digitale', // LM-18
+    'Informatics and Digital Innovation', // LM-18
+    'Comunicazione e Pubblicità per le Organizzazioni', // LM-59
+    'Advertising and Organizations Communication', // LM-59
+  ];
+
+  const bachelorDegreePrograms = [
+    'Informazione, Media, Pubblicit', // L-20 (partial match to handle encoding issues)
+    'Information, media and advertisement', // L-20
+    'Informatica Applicata', // L-31
+    'Applied Informatics', // L-31
+  ];
+
+  // Check if degree program is known Master's level
+  if (masterDegreePrograms.some(program => degreeInfo.includes(program))) {
+    return "Master";
+  }
+
+  // Check if degree program is known Bachelor's level
+  if (bachelorDegreePrograms.some(program => degreeInfo.includes(program))) {
+    return "Bachelor";
+  }
+
+  // If degree info is empty or has no code, assume PhD Program
+  if (!degreeInfo || degreeInfo.trim() === '') {
+    return "PhD";
+  }
+
+  // Default to PhD if no specific code found (per user's requirement)
+  return "PhD";
 }
 
 /**
