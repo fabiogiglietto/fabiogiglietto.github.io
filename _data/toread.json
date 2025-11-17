@@ -25,6 +25,26 @@
       "type": "article"
     },
     {
+      "id": "bibtex:Triedman2025-uy",
+      "title": "What did Elon change? A comprehensive analysis of Grokipedia",
+      "authors": [
+        "Triedman, Harold",
+        "Mantzarlis, Alexios"
+      ],
+      "venue": null,
+      "year": 2025,
+      "abstract": "Elon Musk released Grokipedia on 27 October 2025 to provide an alternative to Wikipedia, the crowdsourced online encyclopedia. In this paper, we provide the first comprehensive analysis of Grokipedia and compare it to a dump of Wikipedia, with a focus on article similarity and citation practices. Although Grokipedia articles are much longer than their corresponding English Wikipedia articles, we find that much of Grokipedia's content (including both articles with and without Creative Commons lic...",
+      "tags": [
+        "Article",
+        "arXiv [cs.SI]"
+      ],
+      "dateAdded": "2025-11-15T00:00:00Z",
+      "status": "to-read",
+      "citationCount": 0,
+      "referenceCount": 0,
+      "type": "article"
+    },
+    {
       "id": "bibtex:Frischlich2025-vn",
       "title": "The complexity of misinformation extends beyond virus and warfare analogies",
       "authors": [
@@ -215,7 +235,7 @@
       "title": "Behind the screen: The use of Facebook accounts with inauthentic behavior during European elections",
       "authors": [
         "Oprea, Bogdan",
-        "Pașnicu, Paula",
+        "Pa��nicu, Paula",
         "Niculae, Alexandru-Ninel",
         "Bonciu, Constantin-Cozmin",
         "Tudorașcu-Dobre, Dragoș"
@@ -224,16 +244,16 @@
       "year": 2025,
       "abstract": "Technology has reshaped political communication, allowing fake engagement to drive real influence in the democratic process. Hyperactive social media users, who are over-proportionally active in relation to the mean, are the new political activists, spreading partisan content at scale on social media platforms. Using The Authenticity Matrix tool, this study revealed Facebook accounts of hyperactive users exhibiting inauthentic behaviour that were used during the electoral campaign (May 10, 2024,...",
       "tags": [
-        "Media Commun.",
-        "fake accounts",
-        "Meta",
-        "political communication",
-        "election campaign",
         "social media",
-        "inauthentic behavior",
-        "Article",
         "Facebook",
-        "manipulation"
+        "Media Commun.",
+        "election campaign",
+        "political communication",
+        "Article",
+        "inauthentic behavior",
+        "Meta",
+        "manipulation",
+        "fake accounts"
       ],
       "dateAdded": "2025-09-15T00:00:00Z",
       "status": "to-read",
@@ -589,14 +609,14 @@
       "year": 2025,
       "abstract": "How do people come to believe Far-Right, extremist, and conspiratorial ideas they encounter online? This article examines how participants in primarily U.S.-based Far-Right online communities describe their adoption of “redpill” beliefs and the role of disinformation in these accounts. Applying the socio-technical theory of media effects, we conduct a qualitative content analysis of “redpilling narratives” gathered from Reddit, Gab, and Discord. While many users frame redpilling as a moment of c...",
       "tags": [
-        "evidence",
-        "Int. J. Commun.",
         "online radicalization",
-        "Far-Right",
-        "extremism",
-        "disinformation",
         "redpill",
-        "Article"
+        "Int. J. Commun.",
+        "disinformation",
+        "evidence",
+        "extremism",
+        "Article",
+        "Far-Right"
       ],
       "dateAdded": "2025-06-15T00:00:00Z",
       "status": "to-read",
@@ -760,10 +780,10 @@
       "year": 2025,
       "abstract": "Malicious actors regularly attempt to manipulate social media using coordinated posting. Many existing methods for detecting this coordination, though, have relied primarily on post-timing, which is trivially easy to change. In this paper, we make a significant methodological advancement in coordination detection, leveraging highly regular statistical patterns in the speed and frequency of sharing. We apply and validate this approach on Facebook, using 11.2 million link posts from a list of 16,1...",
       "tags": [
-        "Social media",
-        "Coordination",
-        "Article",
         "Facebook",
+        "Coordination",
+        "Social media",
+        "Article",
         "Sci. Rep."
       ],
       "dateAdded": "2025-05-15T00:00:00Z",
@@ -942,13 +962,13 @@
       "year": 2025,
       "abstract": "As they evolve, social networks tend to form transitive triads more often than random chance and structural constraints would suggest. However, the mechanisms by which triads in these networks become transitive are largely unexplored. We leverage a unique combination of data and methods to demonstrate a causal link between amplification and triad transitivity in a directed social network. Additionally, we develop the concept of the ``attention broker,'' an extension of the previously theorized t...",
       "tags": [
-        "amplification",
-        "triad transitivity",
-        "tertius iungens",
         "social media",
+        "amplification",
         "social networks",
+        "PNAS Nexus",
         "Article",
-        "PNAS Nexus"
+        "triad transitivity",
+        "tertius iungens"
       ],
       "dateAdded": "2025-04-15T00:00:00Z",
       "status": "to-read",
@@ -992,15 +1012,15 @@
       "year": 2025,
       "abstract": "This study conceptualizes influence operations (IOs), an enterprise that orchestrates manipulative and inauthentic activities to achieve political advantage, as a contemporary form of brokerage during elections. It investigates the empirical case of IOs engaged in covert political campaigning in the 2022 Philippine General Elections through qualitative field research. Drawing from 22 in-depth interviews with IO leads and staff, we define IOs’ broker attributes, their brokerage processes, and the...",
       "tags": [
-        "Int. J. Commun.",
         "influence operations",
+        "computational propaganda",
+        "brokerage",
+        "Int. J. Commun.",
         "trolls",
         "elections",
-        "brokerage",
-        "Philippines",
         "disinformation",
-        "Article",
-        "computational propaganda"
+        "Philippines",
+        "Article"
       ],
       "dateAdded": "2025-03-15T00:00:00Z",
       "status": "to-read",
@@ -1023,11 +1043,11 @@
       "abstract": "Automated frame analysis of political communication is a popular task in computational social science that is used to study how authors select aspects of a topic to frame its reception. So far, such studies have been narrow, in that they use a fixed set of pre-defined frames and focus only on the text, ignoring the visual contexts in which those texts appear. Especially for framing in the news, this leaves out valuable information about editorial choices, which include not just the written artic...",
       "tags": [
         "Computation and Language (cs.CL)",
+        "Misc",
+        "Machine Learning (cs.LG)",
         "FOS: Computer and information sciences",
         "arXiv [cs.CL]",
-        "Computers and Society (cs.CY)",
-        "Misc",
-        "Machine Learning (cs.LG)"
+        "Computers and Society (cs.CY)"
       ],
       "dateAdded": "2025-03-15T00:00:00Z",
       "status": "to-read",
@@ -1726,11 +1746,11 @@
       "year": 2015,
       "abstract": "Exposure to news, opinion, and civic information increasingly occurs through social media. How do these online networks influence exposure to perspectives that cut across ideological lines? Using deidentified data, we examined how 10.1 million U.S. Facebook users interact with socially shared news. We directly measured ideological homophily in friend networks and examined the extent to which heterogeneous friends could potentially expose individuals to cross-cutting content. We then quantified t...",
       "tags": [
-        "facebook",
         "newsfeed",
         "news",
         "Science",
         "homophily",
+        "facebook",
         "Article"
       ],
       "dateAdded": "2015-06-15T00:00:00Z",
@@ -1793,8 +1813,8 @@
     }
   ],
   "metadata": {
-    "totalPapers": 77,
-    "toRead": 77,
+    "totalPapers": 78,
+    "toRead": 78,
     "inProgress": 0,
     "completed": 0,
     "feedInfo": {
@@ -1802,6 +1822,6 @@
       "description": "Academic papers from Paperpile enriched with metadata"
     }
   },
-  "lastUpdated": "2025-11-16T06:26:43.490Z",
+  "lastUpdated": "2025-11-17T06:29:21.283Z",
   "source": "https://github.com/fabiogiglietto/toread"
 }
