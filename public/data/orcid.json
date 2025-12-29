@@ -301,6 +301,96 @@
   "works": [
     {
       "last-modified-date": {
+        "value": 1766957834918
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.31235/osf.io/8dqag_v1",
+            "external-id-normalized": {
+              "value": "10.31235/osf.io/8dqag_v1",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.31235/osf.io/8dqag_v1"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 200901239,
+          "created-date": {
+            "value": 1766957834918
+          },
+          "last-modified-date": {
+            "value": 1766957834918
+          },
+          "source": {
+            "source-orcid": null,
+            "source-client-id": {
+              "uri": "https://orcid.org/client/0000-0001-9884-1913",
+              "path": "0000-0001-9884-1913",
+              "host": "orcid.org"
+            },
+            "source-name": {
+              "value": "Crossref"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "\"A Pretty Blunt Approach\": Meta's Political Content Reduction Policy and Italian Parliamentarians' Facebook Visibility"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.31235/osf.io/8dqag_v1",
+                "external-id-normalized": {
+                  "value": "10.31235/osf.io/8dqag_v1",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.31235/osf.io/8dqag_v1"
+                },
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "url": {
+            "value": "https://doi.org/10.31235/osf.io/8dqag_v1"
+          },
+          "type": "preprint",
+          "publication-date": {
+            "year": {
+              "value": "2025"
+            },
+            "month": {
+              "value": "12"
+            },
+            "day": {
+              "value": "28"
+            }
+          },
+          "journal-title": null,
+          "visibility": "public",
+          "path": "/0000-0001-8019-1035/work/200901239",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
         "value": 1753143360975
       },
       "external-ids": {
@@ -17361,116 +17451,116 @@
       ]
     }
   ],
-  "lastUpdated": "2025-12-28T06:30:12.257Z",
+  "lastUpdated": "2025-12-29T06:33:30.934Z",
   "logs": {
-    "timestamp": "2025-12-28T06:30:10.712Z",
+    "timestamp": "2025-12-29T06:33:29.342Z",
     "steps": [
       {
-        "timestamp": "2025-12-28T06:30:10.712Z",
+        "timestamp": "2025-12-29T06:33:29.342Z",
         "type": "start",
         "message": "Starting ORCID data collection"
       },
       {
-        "timestamp": "2025-12-28T06:30:10.712Z",
+        "timestamp": "2025-12-29T06:33:29.342Z",
         "type": "info",
         "message": "Getting OAuth token for ORCID API access..."
       },
       {
-        "timestamp": "2025-12-28T06:30:10.712Z",
+        "timestamp": "2025-12-29T06:33:29.343Z",
         "type": "info",
         "message": "Attempting to use public API without authentication"
       },
       {
-        "timestamp": "2025-12-28T06:30:10.712Z",
+        "timestamp": "2025-12-29T06:33:29.343Z",
         "type": "info",
         "message": "OAuth token response received: {\n  \"status\": 200,\n  \"data\": {\n    \"access_token\": \"public_endpoint_no_token_needed\"\n  }\n}"
       },
       {
-        "timestamp": "2025-12-28T06:30:10.712Z",
+        "timestamp": "2025-12-29T06:33:29.343Z",
         "type": "info",
         "message": "Obtained access token: public_end..."
       },
       {
-        "timestamp": "2025-12-28T06:30:10.712Z",
+        "timestamp": "2025-12-29T06:33:29.343Z",
         "type": "info",
         "message": "Attempting to fetch ORCID record with JSON format..."
       },
       {
-        "timestamp": "2025-12-28T06:30:11.726Z",
+        "timestamp": "2025-12-29T06:33:30.512Z",
         "type": "info",
         "message": "Successfully retrieved record in JSON format"
       },
       {
-        "timestamp": "2025-12-28T06:30:11.726Z",
+        "timestamp": "2025-12-29T06:33:30.512Z",
         "type": "info",
         "message": "Retrieved ORCID record in JSON format"
       },
       {
-        "timestamp": "2025-12-28T06:30:11.726Z",
+        "timestamp": "2025-12-29T06:33:30.512Z",
         "type": "info",
         "message": "Response content type: application/json;charset=UTF-8"
       },
       {
-        "timestamp": "2025-12-28T06:30:11.726Z",
+        "timestamp": "2025-12-29T06:33:30.512Z",
         "type": "info",
         "message": "Trying to fetch works directly from /works endpoint for comparison..."
       },
       {
-        "timestamp": "2025-12-28T06:30:12.257Z",
+        "timestamp": "2025-12-29T06:33:30.933Z",
         "type": "info",
-        "message": "Works endpoint returned 144 works"
+        "message": "Works endpoint returned 145 works"
       },
       {
-        "timestamp": "2025-12-28T06:30:12.257Z",
+        "timestamp": "2025-12-29T06:33:30.933Z",
         "type": "info",
         "message": "Processing JSON response"
       },
       {
-        "timestamp": "2025-12-28T06:30:12.257Z",
+        "timestamp": "2025-12-29T06:33:30.933Z",
         "type": "info",
         "message": "Found person data with keys: last-modified-date, name, other-names, biography, researcher-urls, emails, addresses, keywords, external-identifiers, path"
       },
       {
-        "timestamp": "2025-12-28T06:30:12.257Z",
+        "timestamp": "2025-12-29T06:33:30.934Z",
         "type": "info",
         "message": "Record endpoint response structure differs from expected format"
       },
       {
-        "timestamp": "2025-12-28T06:30:12.257Z",
+        "timestamp": "2025-12-29T06:33:30.934Z",
         "type": "info",
-        "message": "Works endpoint has 144 works, record endpoint has 0 works"
+        "message": "Works endpoint has 145 works, record endpoint has 0 works"
       },
       {
-        "timestamp": "2025-12-28T06:30:12.257Z",
+        "timestamp": "2025-12-29T06:33:30.934Z",
         "type": "warning",
-        "message": "DISCREPANCY: Works endpoint has 144 works, but record endpoint has 0 works"
+        "message": "DISCREPANCY: Works endpoint has 145 works, but record endpoint has 0 works"
       },
       {
-        "timestamp": "2025-12-28T06:30:12.257Z",
+        "timestamp": "2025-12-29T06:33:30.934Z",
         "type": "info",
-        "message": "Using 144 works from /works endpoint instead of /record endpoint"
+        "message": "Using 145 works from /works endpoint instead of /record endpoint"
       },
       {
-        "timestamp": "2025-12-28T06:30:12.257Z",
+        "timestamp": "2025-12-29T06:33:30.934Z",
         "type": "info",
-        "message": "Sample work structure: {\"keys\":[\"last-modified-date\",\"external-ids\",\"work-summary\"],\"hasSummary\":true,\"summaryCount\":3,\"summaryKeys\":[\"put-code\",\"created-date\",\"last-modified-date\",\"source\",\"title\",\"external-ids\",\"url\",\"type\",\"publication-date\",\"journal-title\",\"visibility\",\"path\",\"display-index\"],\"title\":\"The State of Social Media Research APIs &amp; Tools in the Digital Service Act Era\",\"type\":\"report\",\"pubDate\":\"2025-07-21\"}"
+        "message": "Sample work structure: {\"keys\":[\"last-modified-date\",\"external-ids\",\"work-summary\"],\"hasSummary\":true,\"summaryCount\":1,\"summaryKeys\":[\"put-code\",\"created-date\",\"last-modified-date\",\"source\",\"title\",\"external-ids\",\"url\",\"type\",\"publication-date\",\"journal-title\",\"visibility\",\"path\",\"display-index\"],\"title\":\"\\\"A Pretty Blunt Approach\\\": Meta's Political Content Reduction Policy and Italian Parliamentarians' Facebook Visibility\",\"type\":\"preprint\",\"pubDate\":\"2025-12-28\"}"
       },
       {
-        "timestamp": "2025-12-28T06:30:12.257Z",
+        "timestamp": "2025-12-29T06:33:30.934Z",
         "type": "info",
-        "message": "Collection completed successfully with 144 works"
+        "message": "Collection completed successfully with 145 works"
       },
       {
-        "timestamp": "2025-12-28T06:30:12.257Z",
+        "timestamp": "2025-12-29T06:33:30.934Z",
         "type": "complete",
-        "message": "Collection completed with 144 works retrieved"
+        "message": "Collection completed with 145 works retrieved"
       }
     ],
     "errors": [],
     "warnings": [
       {
-        "timestamp": "2025-12-28T06:30:12.257Z",
-        "message": "Works count discrepancy: /works endpoint: 144, /record endpoint: 0"
+        "timestamp": "2025-12-29T06:33:30.934Z",
+        "message": "Works count discrepancy: /works endpoint: 145, /record endpoint: 0"
       }
     ],
     "results": {
@@ -17487,12 +17577,12 @@
         "contentType": "application/json;charset=UTF-8",
         "status": 200,
         "headers": {
-          "date": "Sun, 28 Dec 2025 06:30:11 GMT",
+          "date": "Mon, 29 Dec 2025 06:33:30 GMT",
           "content-type": "application/json;charset=UTF-8",
           "transfer-encoding": "chunked",
           "connection": "close",
           "server": "cloudflare",
-          "cf-ray": "9b4f01edfa33e625-IAD",
+          "cf-ray": "9b5744286f7ac9a8-IAD",
           "cf-cache-status": "DYNAMIC",
           "access-control-allow-origin": "*",
           "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
@@ -17506,7 +17596,7 @@
           "x-target": "reg-prod-papi-use2-b1",
           "x-via": "a1",
           "x-xss-protection": "1; mode=block",
-          "set-cookie": "__cf_bm=pYGBRKF7qNJLuf9sgo1WcjJiS.bIVBCbMldLrHi0IYQ-1766903411-1.0.1.1-I7ThjSFPQwszCK5CoO2OW5CZnI5eYJTTFAJuSCh7nKQw_ulALf9pJgh08pM5FSlwr6H2tE2kPGzF_q20EO7hjid9vamvHEMkGPUkWgDJcLk; path=/; expires=Sun, 28-Dec-25 07:00:11 GMT; domain=.orcid.org; HttpOnly; Secure; SameSite=None"
+          "set-cookie": "__cf_bm=cEl7FjWHmeWV855a8VHfmnOsRJlK1sFE3zjruhjLoNM-1766990010-1.0.1.1-DGAHs3vefsu51rKeFdAgbxUlhZbnY7qK6AnLZPl1O6IcQxGR6WXODh3SBniNhJNhqXnC531HCc7PCeaqbFDzoc4npGYNacMU1jRV8FWXqt0; path=/; expires=Mon, 29-Dec-25 07:03:30 GMT; domain=.orcid.org; HttpOnly; Secure; SameSite=None"
         },
         "dataKeys": [
           "orcid-identifier",
@@ -17525,7 +17615,7 @@
           "group",
           "path"
         ],
-        "groupCount": 144
+        "groupCount": 145
       },
       "recordStructure": {
         "dataKeys": [
@@ -17546,7 +17636,7 @@
           "work-summary"
         ],
         "hasSummary": true,
-        "summaryCount": 3,
+        "summaryCount": 1,
         "summaryKeys": [
           "put-code",
           "created-date",
@@ -17562,11 +17652,11 @@
           "path",
           "display-index"
         ],
-        "title": "The State of Social Media Research APIs &amp; Tools in the Digital Service Act Era",
-        "type": "report",
-        "pubDate": "2025-07-21"
+        "title": "\"A Pretty Blunt Approach\": Meta's Political Content Reduction Policy and Italian Parliamentarians' Facebook Visibility",
+        "type": "preprint",
+        "pubDate": "2025-12-28"
       },
-      "finalWorkCount": 144,
+      "finalWorkCount": 145,
       "profileKeys": [
         "last-modified-date",
         "name",
