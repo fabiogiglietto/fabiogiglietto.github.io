@@ -6,6 +6,7 @@ const path = require('path');
 const { promisify } = require('util');
 const writeFileAsync = promisify(fs.writeFile);
 const { GoogleGenerativeAI } = require('@google/generative-ai');
+const axios = require('axios');
 
 // Check for API key in environment
 const hasValidApiKey = !!process.env.GEMINI_API_KEY;
@@ -44,12 +45,12 @@ async function collectWebSearchResults() {
       tools: [{ googleSearch: {} }],
     });
 
-    // Search queries - only for real web search
+    // Search queries - focused on NEWS coverage, not academic papers
     const queries = [
-      "Fabio Giglietto recent web mentions",
-      "Fabio Giglietto recent news OR media coverage",
-      "Fabio Giglietto recent interviews",
-      "Fabio Giglietto recent or upcoming conference presentations"
+      "\"Fabio Giglietto\" news article -site:researchgate.net -site:academia.edu",
+      "\"Fabio Giglietto\" interview OR quoted OR commented -site:researchgate.net",
+      "\"Fabio Giglietto\" disinformation OR misinformation news coverage",
+      "\"Fabio Giglietto\" expert OR researcher mentioned in news"
     ];
 
     let allResults = [];
@@ -61,77 +62,37 @@ async function collectWebSearchResults() {
       try {
         let searchResults = [];
 
-        // Create search prompt using the specific query
-        let searchPrompt;
-        if (query.includes('web mentions')) {
-          searchPrompt = `Search the web for recent mentions of "Fabio Giglietto" from the past 3 months.
+        // Create search prompt - all focused on NEWS coverage
+        const searchPrompt = `Search for recent NEWS ARTICLES and MEDIA COVERAGE that mention "Fabio Giglietto" from the past 6 months.
 
-IMPORTANT: Only include results about Fabio Giglietto who is a Professor of Internet Studies at University of Urbino Carlo Bo, specializing in social media research, disinformation, computational social science, and media communication.
+IMPORTANT CONTEXT:
+- Fabio Giglietto is a Professor of Internet Studies at University of Urbino Carlo Bo, Italy
+- He specializes in: disinformation research, social media analysis, computational social science
+- He is often quoted as an expert on misinformation, fake news, and coordinated online behavior
 
-Look for:
-- Citations, references, or discussions of his media/communication research by others
-- Academic papers, news articles, conference proceedings, or professional blogs that mention him
-- Exclude content authored by Fabio Giglietto himself
-- Focus on third-party mentions of his work in internet studies, social media analysis, or communication research
+WHAT TO FIND (prioritize these):
+1. News articles from newspapers, magazines, or news websites that quote or mention him
+2. Media interviews, podcasts, or TV/radio appearances
+3. Press coverage about his research findings
+4. Articles where journalists cite him as an expert source
+5. Conference or event announcements where he is a speaker
 
-For each result found, provide:
-1. The exact title of the page
-2. The full URL
-3. A brief description of how Fabio Giglietto is mentioned
-4. The source domain
+WHAT TO EXCLUDE (do NOT include):
+- His own profile pages (ORCID, Google Scholar, ResearchGate profile, LinkedIn, personal website)
+- Direct links to his academic papers or publications
+- Academic repository pages (IRIS, arXiv, SSRN)
+- Pages that just list his publications without news context
+- ResearchGate "Request PDF" pages
 
-Format your response as a JSON array of objects with keys: title, url, description, source`;
-        } else if (query.includes('news OR media coverage')) {
-          searchPrompt = `Search the web for recent news articles and media coverage mentioning "Fabio Giglietto" from the past 3 months.
+For each NEWS result found, provide:
+1. The exact title of the news article/page
+2. The full URL (must be a real URL, not a Google redirect)
+3. A brief description of how he is mentioned in the news
+4. The source domain (e.g., "bbc.com", "wired.it", "ansa.it")
 
-IMPORTANT: Only include results about Fabio Giglietto who is a Professor of Internet Studies at University of Urbino Carlo Bo.
+Format your response as a JSON array of objects with keys: title, url, description, source
 
-Look for:
-- Journalism, press releases, or media reports that reference his research
-- Topics: social media, disinformation, computational social science, or communication studies
-- Exclude self-authored content
-
-For each result found, provide:
-1. The exact title of the page
-2. The full URL
-3. A brief description of the coverage
-4. The source domain
-
-Format your response as a JSON array of objects with keys: title, url, description, source`;
-        } else if (query.includes('interviews')) {
-          searchPrompt = `Search the web for recent interviews, podcasts, or Q&A sessions featuring "Fabio Giglietto" from the past 3 months.
-
-IMPORTANT: Only include results about Fabio Giglietto who is a Professor of Internet Studies at University of Urbino Carlo Bo specializing in social media and communication research.
-
-Look for:
-- External interviews where he is featured as a guest or expert source
-- Topics: internet studies, social media research, or media analysis
-
-For each result found, provide:
-1. The exact title of the page
-2. The full URL
-3. A brief description of the interview
-4. The source domain
-
-Format your response as a JSON array of objects with keys: title, url, description, source`;
-        } else {
-          searchPrompt = `Search the web for recent and upcoming conference presentations, talks, speeches, or academic events featuring "Fabio Giglietto" from the past 3 months and next 6 months.
-
-IMPORTANT: Only include results about Fabio Giglietto who is a Professor of Internet Studies at University of Urbino Carlo Bo.
-
-Look for:
-- Conference programs, event announcements, presentation abstracts
-- Keynote speeches, or future speaking engagements
-- Topics: internet studies, social media research, communication science, or computational social science
-
-For each result found, provide:
-1. The exact title of the page
-2. The full URL
-3. A brief description of the event/presentation
-4. The source domain
-
-Format your response as a JSON array of objects with keys: title, url, description, source`;
-        }
+Only include results with REAL, direct URLs to news sources.`;
 
         console.log(`Attempting web search with Gemini...`);
 
@@ -151,18 +112,25 @@ Format your response as a JSON array of objects with keys: title, url, descripti
               // Filter and process results
               for (const item of parsed) {
                 if (item.url && item.title) {
+                  // Resolve redirect URLs first
+                  let resolvedUrl = item.url;
+                  if (item.url.includes('vertexaisearch.cloud.google.com') ||
+                      item.url.includes('grounding-api-redirect')) {
+                    resolvedUrl = await resolveRedirectUrl(item.url);
+                  }
+
                   // Skip unwanted results
-                  if (shouldSkipResult(item.url, item.title)) {
-                    console.log(`Skipping filtered result: ${item.url}`);
+                  if (shouldSkipResult(resolvedUrl, item.title)) {
+                    console.log(`Skipping filtered result: ${resolvedUrl || item.url}`);
                     continue;
                   }
 
                   searchResults.push({
                     title: item.title,
-                    url: item.url,
+                    url: resolvedUrl,
                     snippet: item.description || '',
                     date: new Date().toISOString().split('T')[0],
-                    source: item.source || extractDomainFromUrl(item.url)
+                    source: item.source || extractDomainFromUrl(resolvedUrl)
                   });
                 }
               }
@@ -181,11 +149,17 @@ Format your response as a JSON array of objects with keys: title, url, descripti
           console.log(`Found ${groundingMetadata.groundingChunks.length} grounding chunks`);
           for (const chunk of groundingMetadata.groundingChunks) {
             if (chunk.web?.uri && chunk.web?.title) {
-              const url = chunk.web.uri;
+              let url = chunk.web.uri;
               const title = chunk.web.title;
 
+              // Resolve redirect URLs
+              if (url.includes('vertexaisearch.cloud.google.com') ||
+                  url.includes('grounding-api-redirect')) {
+                url = await resolveRedirectUrl(url);
+              }
+
               // Skip if already added or should be filtered
-              if (searchResults.some(r => r.url === url)) continue;
+              if (!url || searchResults.some(r => r.url === url)) continue;
               if (shouldSkipResult(url, title)) {
                 console.log(`Skipping filtered grounding result: ${url}`);
                 continue;
@@ -308,21 +282,106 @@ Format your response as a JSON array of objects with keys: title, url, descripti
 }
 
 /**
+ * Resolve Google redirect URL to get the real destination URL
+ */
+async function resolveRedirectUrl(url) {
+  if (!url.includes('vertexaisearch.cloud.google.com') &&
+      !url.includes('grounding-api-redirect')) {
+    return url; // Not a redirect, return as-is
+  }
+
+  try {
+    console.log(`Resolving redirect URL...`);
+    const response = await axios.head(url, {
+      maxRedirects: 0,
+      validateStatus: status => status >= 200 && status < 400,
+      timeout: 5000
+    });
+
+    // Check for redirect location header
+    if (response.headers.location) {
+      console.log(`Resolved to: ${response.headers.location}`);
+      return response.headers.location;
+    }
+
+    return url;
+  } catch (error) {
+    // If redirect, the location will be in the error response
+    if (error.response && error.response.headers && error.response.headers.location) {
+      console.log(`Resolved redirect to: ${error.response.headers.location}`);
+      return error.response.headers.location;
+    }
+    console.log(`Could not resolve redirect: ${error.message}`);
+    return null; // Return null to indicate we should skip this
+  }
+}
+
+/**
  * Check if a result should be skipped based on URL or title
  */
 function shouldSkipResult(url, title) {
+  // Handle null/undefined URLs (failed redirect resolution)
+  if (!url) return true;
+
+  const urlLower = url.toLowerCase();
+  const titleLower = title.toLowerCase();
+
   // Skip Kudos/GrowKudos results
-  if (url.includes('kudos.com') || url.includes('growkudos.com')) {
+  if (urlLower.includes('kudos.com') || urlLower.includes('growkudos.com')) {
     return true;
   }
 
   // Skip self-authored Medium articles
-  if (url.includes('medium.com/@fabiogiglietto') || url.includes('medium.com/%40fabiogiglietto')) {
+  if (urlLower.includes('medium.com/@fabiogiglietto') || urlLower.includes('medium.com/%40fabiogiglietto')) {
+    return true;
+  }
+
+  // Skip own profile pages and bio pages
+  if (urlLower.includes('fabiogiglietto.github.io') ||
+      urlLower.includes('orcid.org/0000-0001-8019-1035') ||
+      urlLower.includes('scholar.google.com/citations?user=FmenbcUAAAAJ') ||
+      urlLower.includes('ora.uniurb.it/cris/rp/rp03290')) {
+    return true;
+  }
+
+  // Skip ResearchGate profile and own paper pages
+  if (urlLower.includes('researchgate.net/profile/fabio-giglietto') ||
+      urlLower.includes('researchgate.net/publication') && titleLower.includes('fabio giglietto')) {
+    return true;
+  }
+
+  // Skip academic repository pages that are just paper listings
+  if (urlLower.includes('iris.') || urlLower.includes('/handle/11576/')) {
+    return true;
+  }
+
+  // Skip LinkedIn profile
+  if (urlLower.includes('linkedin.com/in/fabiogiglietto')) {
+    return true;
+  }
+
+  // Skip social media profiles (Mastodon, Twitter/X, BlueSky, etc.)
+  if (urlLower.includes('/@fabiogiglietto') ||
+      urlLower.includes('/fabiogiglietto') && (
+        urlLower.includes('twitter.com') ||
+        urlLower.includes('x.com') ||
+        urlLower.includes('bsky.social') ||
+        urlLower.includes('mastodon') ||
+        urlLower.includes('aoir.social') ||
+        urlLower.includes('threads.net')
+      )) {
     return true;
   }
 
   // Skip SSRN author pages (self-referential)
-  if (url.includes('papers.ssrn.com') && title.includes('Author Page for Fabio Giglietto')) {
+  if (urlLower.includes('papers.ssrn.com') && titleLower.includes('author page')) {
+    return true;
+  }
+
+  // Skip generic profile page titles
+  if (titleLower === 'fabio giglietto' ||
+      titleLower.includes('professor of internet studies') ||
+      titleLower.startsWith('home |')) {
     return true;
   }
 
