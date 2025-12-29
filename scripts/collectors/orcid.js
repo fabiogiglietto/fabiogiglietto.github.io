@@ -6,7 +6,7 @@
  */
 
 const axios = require('axios');
-const fs = require('fs');
+const config = require('../config');
 
 async function collect() {
   // Create a detailed log object
@@ -49,9 +49,9 @@ async function collect() {
   };
   
   addLog('Starting ORCID data collection', 'start');
-  
-  // ORCID ID for Fabio Giglietto
-  const orcidId = '0000-0001-8019-1035';
+
+  // ORCID ID from centralized config
+  const orcidId = config.orcidId;
   logs.results.orcidId = orcidId;
   
   try {
@@ -281,4 +281,7 @@ async function collect() {
 }
 
 
-module.exports = { collect };
+module.exports = {
+  collect,
+  name: 'orcid'
+};

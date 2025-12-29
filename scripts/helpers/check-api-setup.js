@@ -15,11 +15,11 @@ function checkAPISetup() {
   console.log('='.repeat(60));
   
   const apis = {
-    openai: {
-      name: 'OpenAI',
-      required: process.env.OPENAI_API_KEY && process.env.OPENAI_API_KEY.startsWith('sk-'),
-      description: 'Required for AI content generation and analysis',
-      setup: 'Get API key from https://platform.openai.com/'
+    gemini: {
+      name: 'Google Gemini',
+      required: !!process.env.GEMINI_API_KEY,
+      description: 'Required for AI content generation and web search grounding',
+      setup: 'Get API key from https://aistudio.google.com/apikey'
     },
     linkedin: {
       name: 'LinkedIn',
@@ -65,15 +65,15 @@ function checkAPISetup() {
                    api.partial ? '⚠️  Partial' : 
                    '❌ Missing';
     
-    const priority = key === 'openai' ? '(Required)' : 
-                     key === 'linkedin' ? '(Recommended)' : 
+    const priority = key === 'gemini' ? '(Required)' :
+                     key === 'linkedin' ? '(Recommended)' :
                      '(Optional)';
     
     console.log(`${status} ${api.name.padEnd(15)} ${priority}`);
     console.log(`   ${api.description}`);
     
     if (!api.required) {
-      if (key === 'openai') {
+      if (key === 'gemini') {
         allRequired = false;
       } else {
         anyOptional = true;
@@ -94,8 +94,8 @@ function checkAPISetup() {
   
   if (!allRequired) {
     console.log('🚨 Required Setup Needed:');
-    console.log('   OpenAI API key is required for basic functionality');
-    console.log('   Get it from: https://platform.openai.com/');
+    console.log('   Gemini API key is required for AI content generation');
+    console.log('   Get it from: https://aistudio.google.com/apikey');
     console.log('');
   }
   

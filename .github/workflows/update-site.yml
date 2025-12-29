@@ -26,7 +26,7 @@ jobs:
         
       - name: Update core data (daily)
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           WOS_API_KEY: ${{ secrets.WOS_API_KEY }}
           SCOPUS_API_KEY: ${{ secrets.SCOPUS_API_KEY }}
           S2_API_KEY: ${{ secrets.S2_API_KEY }}
@@ -41,7 +41,7 @@ jobs:
       - name: Update bio (weekly on Monday)
         if: github.event.schedule && github.event_name == 'schedule'
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           if [ $(date +%u) -eq 1 ]; then
             echo "Monday detected - updating bio"
@@ -53,7 +53,7 @@ jobs:
       - name: Update teaching (monthly on 1st)
         if: github.event.schedule && github.event_name == 'schedule'
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           if [ $(date +%d) -eq 01 ]; then
             echo "First of month detected - updating teaching"

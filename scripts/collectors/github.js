@@ -1,8 +1,10 @@
 /**
  * GitHub data collector
- * 
+ *
  * Fetches repository and contribution data from GitHub API
  */
+
+const config = require('../config');
 
 // Use dynamic import for ESM module
 let Octokit;
@@ -22,8 +24,8 @@ async function collect() {
     auth: process.env.GITHUB_TOKEN
   });
   
-  // Replace with actual GitHub username
-  const username = 'fabiogiglietto';
+  // GitHub username from centralized config
+  const username = config.social.github.username;
   
   try {
     // Get user profile
@@ -105,4 +107,7 @@ async function collect() {
   }
 }
 
-module.exports = { collect };
+module.exports = {
+  collect,
+  name: 'github'
+};

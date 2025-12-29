@@ -1,8 +1,8 @@
 /**
  * Standalone About Me Generator
- * 
+ *
  * This script creates a fallback About Me section that can be used
- * when the OpenAI-powered generator fails or API key is not available.
+ * when the Gemini-powered generator fails or API key is not available.
  */
 
 const fs = require('fs');

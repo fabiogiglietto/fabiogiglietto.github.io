@@ -8,7 +8,7 @@ A sophisticated, AI-powered academic portfolio website featuring automated data 
 
 ### 🤖 AI-Powered Content Generation
 - **Automated Biography**: Weekly AI-generated bio using aggregated academic data
-- **Dynamic Web Mentions**: Real-time discovery of third-party research references via OpenAI web search
+- **Dynamic Web Mentions**: Real-time discovery of third-party research references via Google Search grounding
 - **Smart Content Curation**: Intelligent filtering and deduplication of academic content
 
 ### 📊 Multi-Source Data Integration
@@ -33,7 +33,7 @@ A sophisticated, AI-powered academic portfolio website featuring automated data 
 
 - **Frontend**: Jekyll, HTML5, CSS3, JavaScript
 - **Backend**: Node.js data collectors and generators
-- **AI Integration**: OpenAI GPT-4 for content generation and web search
+- **AI Integration**: Google Gemini 1.5 Pro for content generation with Google Search grounding
 - **APIs**: Multiple academic and social platforms
 - **Deployment**: GitHub Pages with automated workflows
 - **Hosting**: GitHub Actions for CI/CD
@@ -87,7 +87,7 @@ A sophisticated, AI-powered academic portfolio website featuring automated data 
 
 | Service | Purpose | Frequency |
 |---------|---------|-----------|
-| **OpenAI** | Biography generation, web mentions | Weekly/Daily |
+| **Google Gemini** | Biography generation with web search | Weekly/Daily |
 | **Scopus** | Academic publication data | Daily |
 | **Web of Science** | Publication metrics | Daily |
 | **Semantic Scholar** | Citation data | Daily |
@@ -99,8 +99,8 @@ A sophisticated, AI-powered academic portfolio website featuring automated data 
 Create a `.env` file in the project root:
 
 ```env
-# Required for AI features
-OPENAI_API_KEY=sk-proj-...
+# Required for AI features with Google Search grounding
+GEMINI_API_KEY=your-gemini-api-key
 
 # Publication APIs
 SCOPUS_API_KEY=your-scopus-key
@@ -119,7 +119,7 @@ Add these secrets to your repository settings:
 
 1. Navigate to **Settings > Secrets and variables > Actions**
 2. Add each API key as a repository secret:
-   - `OPENAI_API_KEY`
+   - `GEMINI_API_KEY`
    - `SCOPUS_API_KEY`
    - `WOS_API_KEY`
    - `S2_API_KEY`
@@ -154,7 +154,7 @@ All workflows can be triggered manually via GitHub Actions interface for immedia
 - **Updates**: Real-time sync with reading list repository
 
 ### 🌐 Recent Web Mentions
-- **Source**: OpenAI web search across academic platforms
+- **Source**: Google Search grounding across academic platforms
 - **Filtering**: Excludes self-authored content, focuses on third-party references
 - **Quality**: Only authoritative sources (universities, journals, conferences)
 
@@ -225,7 +225,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- **OpenAI** for GPT-4 integration and web search capabilities
+- **Google** for Gemini API and Google Search grounding capabilities
 - **Jekyll** for the static site generation framework
 - **GitHub Pages** for hosting and automation
 - Academic APIs (ORCID, Scopus, Web of Science, Semantic Scholar) for publication data

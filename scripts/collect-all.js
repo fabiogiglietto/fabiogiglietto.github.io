@@ -45,13 +45,13 @@ async function collectAll() {
     
     // Check if running in GitHub Actions to manage verbose warnings
     const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
-    const hasOpenAIKey = process.env.OPENAI_API_KEY && process.env.OPENAI_API_KEY.startsWith('sk-');
-    
+    const hasGeminiKey = !!process.env.GEMINI_API_KEY;
+
     // Show API setup status once at the beginning
     if (isGitHubActions) {
       console.log('Running in GitHub Actions environment');
       console.log('API keys status:');
-      console.log(`- OpenAI API key: ${hasOpenAIKey ? 'Available' : 'Missing'}`);
+      console.log(`- Gemini API key: ${hasGeminiKey ? 'Available' : 'Missing'}`);
       console.log(`- Web of Science API key: ${process.env.WOS_API_KEY ? 'Available' : 'Missing'}`);
       console.log(`- Scopus API key: ${process.env.SCOPUS_API_KEY ? 'Available' : 'Missing'}`);
       console.log(`- Semantic Scholar API key: ${process.env.S2_API_KEY ? 'Available' : 'Missing'}`);
@@ -80,10 +80,10 @@ async function collectAll() {
         console.error('News collection error:', err.message);
         return null;
       }),
-      webSearchCollector().catch(err => {
-        // Don't show detailed errors for OpenAI when not in GitHub Actions
-        if (!isGitHubActions && err.message.includes('OpenAI')) {
-          console.log('Web Search requires OpenAI API key, using mock data');
+      webSearchCollector.collect().catch(err => {
+        // Don't show detailed errors for Gemini when not in GitHub Actions
+        if (!isGitHubActions && err.message.includes('Gemini')) {
+          console.log('Web Search requires Gemini API key, using mock data');
         } else {
           console.error('Web Search collection error:', err.message);
         }
@@ -177,14 +177,14 @@ async function collectAll() {
     // Update News & Updates section with social media content
     try {
       console.log('Aggregating social media posts for News & Updates...');
-      await socialMediaAggregator();
+      await socialMediaAggregator.collect();
       console.log('Social media aggregation completed successfully');
     } catch (socialError) {
       console.error('Error aggregating social media posts:', socialError.message);
       // Continue execution even if social media aggregation fails
     }
     
-    // Generate About Me section using OpenAI (weekly or on-demand)
+    // Generate About Me section using Gemini API (weekly or on-demand)
     if (process.env.SKIP_ABOUT_GENERATION !== 'true') {
       try {
         const aboutGenerated = await aboutGenerator.generateAboutMe();

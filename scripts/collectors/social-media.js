@@ -177,4 +177,7 @@ async function collectLinkedInData() {
   };
 }
 
-module.exports = { collect };
+module.exports = {
+  collect,
+  name: 'social-media'
+};

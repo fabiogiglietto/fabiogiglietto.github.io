@@ -132,4 +132,7 @@ async function collect() {
   }
 }
 
-module.exports = { collect };
+module.exports = {
+  collect,
+  name: 'news'
+};

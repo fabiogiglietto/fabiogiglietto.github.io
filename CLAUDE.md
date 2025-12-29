@@ -17,7 +17,7 @@ This is a Jekyll-based GitHub Pages academic website that integrates automated d
 
 ## API Setup Requirements
 Before running data collection, set up `.env` file with required API keys:
-- `OPENAI_API_KEY`: Required for AI content generation
+- `GEMINI_API_KEY`: Required for AI content generation (Google Gemini API with Search grounding)
 - `WOS_API_KEY`: Web of Science publication data
 - `SCOPUS_API_KEY`: Scopus publication data
 - `GOOGLE_SITE_VERIFICATION`: Your Google Search Console verification code (optional)
@@ -42,7 +42,7 @@ To set up Google Search Console verification:
 The site uses a multi-stage data pipeline:
 1. **Collectors** (`scripts/collectors/`): Fetch data from external APIs (ORCID, Google Scholar, GitHub, social media)
 2. **Aggregators**: Combine and deduplicate data from multiple sources
-3. **Generators** (`scripts/generators/`): Use OpenAI to create content summaries and insights
+3. **Generators** (`scripts/generators/`): Use Google Gemini API to create content summaries and insights with real-time web search
 4. **Jekyll**: Renders static site from aggregated data in `public/data/`
 
 ## Data Flow
@@ -55,4 +55,4 @@ The site uses a multi-stage data pipeline:
 - All data collectors handle missing API keys gracefully
 - Error handling uses try/catch with fallbacks to continue processing
 - Generated content files prefixed with `generated-`
-- Social media content automatically deduplicates using OpenAI or fallback logic
+- Social media content automatically deduplicates using Gemini API or fallback logic

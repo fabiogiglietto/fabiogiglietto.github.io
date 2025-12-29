@@ -8,18 +8,32 @@
     "generate-teaching": "node scripts/generators/teaching-generator.js",
     "generate-social-insights": "node scripts/generators/social-media-insights.js",
     "build": "bundle exec jekyll build",
-    "serve": "bundle exec jekyll serve"
+    "serve": "bundle exec jekyll serve",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint scripts/ tests/",
+    "lint:fix": "eslint scripts/ tests/ --fix",
+    "format": "prettier --write scripts/ tests/",
+    "format:check": "prettier --check scripts/ tests/"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.21.0",
     "@octokit/rest": "^21.1.1",
     "axios": "^1.8.4",
     "cheerio": "^1.0.0",
     "dotenv": "^16.5.0",
     "js-yaml": "^4.1.0",
     "octokit": "^4.1.3",
-    "openai": "^4.32.0",
     "puppeteer": "^24.14.0",
     "react-to-pdf": "^2.0.0",
-    "sanitize-html": "^2.17.0"
+    "sanitize-html": "^2.17.0",
+    "string-similarity": "^4.0.4"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "jest": "^30.2.0",
+    "prettier": "^3.7.4"
   }
 }

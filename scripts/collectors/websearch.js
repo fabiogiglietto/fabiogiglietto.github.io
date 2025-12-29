@@ -5,41 +5,43 @@ const fs = require('fs');
 const path = require('path');
 const { promisify } = require('util');
 const writeFileAsync = promisify(fs.writeFile);
-const OpenAI = require('openai');
+const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 // Check for API key in environment
-const hasValidApiKey = process.env.OPENAI_API_KEY && process.env.OPENAI_API_KEY.startsWith('sk-');
+const hasValidApiKey = !!process.env.GEMINI_API_KEY;
 
 // Check if running in GitHub Actions
 const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
 
 /**
  * Collector for fetching web search results about Fabio Giglietto
- * using OpenAI Web Search API - ONLY REAL RESULTS
+ * using Gemini API with Google Search grounding - ONLY REAL RESULTS
  */
 async function collectWebSearchResults() {
   console.log('Starting web search collection...');
-  
+
   try {
     // Early check for API key
     if (!hasValidApiKey) {
       if (isGitHubActions) {
-        console.error('OPENAI_API_KEY environment variable is missing or invalid in GitHub Actions!');
-        console.error('Please add the OPENAI_API_KEY secret to the repository settings.');
+        console.error('GEMINI_API_KEY environment variable is missing in GitHub Actions!');
+        console.error('Please add the GEMINI_API_KEY secret to the repository settings.');
       } else {
-        console.log('OPENAI_API_KEY environment variable is not set or OpenAI client failed to initialize');
+        console.log('GEMINI_API_KEY environment variable is not set');
         console.log('Clearing web mentions data - section will be hidden without valid API key');
       }
-      
+
       // Save empty results when no API key is available - DO NOT use mock data
       return await saveEmptyResults();
     }
-    
-    console.log('API key found, configuring OpenAI client...');
-    
-    // Configure OpenAI API
-    const openai = new OpenAI({
-      apiKey: process.env.OPENAI_API_KEY,
+
+    console.log('API key found, configuring Gemini client...');
+
+    // Configure Gemini API with Google Search grounding
+    const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+    const model = genAI.getGenerativeModel({
+      model: 'gemini-2.0-flash',
+      tools: [{ googleSearch: {} }],
     });
 
     // Search queries - only for real web search
@@ -52,128 +54,158 @@ async function collectWebSearchResults() {
 
     let allResults = [];
 
-    // Run searches for each query using the Responses API
+    // Run searches for each query using Gemini with Google Search
     for (const query of queries) {
       console.log(`Searching for: ${query}`);
-      
+
       try {
-        let response;
         let searchResults = [];
-        
+
+        // Create search prompt using the specific query
+        let searchPrompt;
+        if (query.includes('web mentions')) {
+          searchPrompt = `Search the web for recent mentions of "Fabio Giglietto" from the past 3 months.
+
+IMPORTANT: Only include results about Fabio Giglietto who is a Professor of Internet Studies at University of Urbino Carlo Bo, specializing in social media research, disinformation, computational social science, and media communication.
+
+Look for:
+- Citations, references, or discussions of his media/communication research by others
+- Academic papers, news articles, conference proceedings, or professional blogs that mention him
+- Exclude content authored by Fabio Giglietto himself
+- Focus on third-party mentions of his work in internet studies, social media analysis, or communication research
+
+For each result found, provide:
+1. The exact title of the page
+2. The full URL
+3. A brief description of how Fabio Giglietto is mentioned
+4. The source domain
+
+Format your response as a JSON array of objects with keys: title, url, description, source`;
+        } else if (query.includes('news OR media coverage')) {
+          searchPrompt = `Search the web for recent news articles and media coverage mentioning "Fabio Giglietto" from the past 3 months.
+
+IMPORTANT: Only include results about Fabio Giglietto who is a Professor of Internet Studies at University of Urbino Carlo Bo.
+
+Look for:
+- Journalism, press releases, or media reports that reference his research
+- Topics: social media, disinformation, computational social science, or communication studies
+- Exclude self-authored content
+
+For each result found, provide:
+1. The exact title of the page
+2. The full URL
+3. A brief description of the coverage
+4. The source domain
+
+Format your response as a JSON array of objects with keys: title, url, description, source`;
+        } else if (query.includes('interviews')) {
+          searchPrompt = `Search the web for recent interviews, podcasts, or Q&A sessions featuring "Fabio Giglietto" from the past 3 months.
+
+IMPORTANT: Only include results about Fabio Giglietto who is a Professor of Internet Studies at University of Urbino Carlo Bo specializing in social media and communication research.
+
+Look for:
+- External interviews where he is featured as a guest or expert source
+- Topics: internet studies, social media research, or media analysis
+
+For each result found, provide:
+1. The exact title of the page
+2. The full URL
+3. A brief description of the interview
+4. The source domain
+
+Format your response as a JSON array of objects with keys: title, url, description, source`;
+        } else {
+          searchPrompt = `Search the web for recent and upcoming conference presentations, talks, speeches, or academic events featuring "Fabio Giglietto" from the past 3 months and next 6 months.
+
+IMPORTANT: Only include results about Fabio Giglietto who is a Professor of Internet Studies at University of Urbino Carlo Bo.
+
+Look for:
+- Conference programs, event announcements, presentation abstracts
+- Keynote speeches, or future speaking engagements
+- Topics: internet studies, social media research, communication science, or computational social science
+
+For each result found, provide:
+1. The exact title of the page
+2. The full URL
+3. A brief description of the event/presentation
+4. The source domain
+
+Format your response as a JSON array of objects with keys: title, url, description, source`;
+        }
+
+        console.log(`Attempting web search with Gemini...`);
+
+        const result = await model.generateContent(searchPrompt);
+        const response = result.response;
+        const text = response.text();
+
+        console.log(`API response received for query "${query}"`);
+
+        // Extract JSON from response
         try {
-          // Create search prompt using the specific query - try different strategies per query type
-          let searchPrompt;
-          if (query.includes('web mentions')) {
-            searchPrompt = `Find recent web mentions of "Fabio Giglietto" from the past 3 months. IMPORTANT: Only include results about Fabio Giglietto who is a Professor of Internet Studies at University of Urbino Carlo Bo, specializing in social media research, disinformation, computational social science, and media communication. Look for citations, references, or discussions of his media/communication research by others in academic papers, news articles, conference proceedings, or professional blogs. Exclude content authored by Fabio Giglietto himself. Focus on third-party mentions of his work in internet studies, social media analysis, or communication research.`;
-          } else if (query.includes('news OR media coverage')) {
-            searchPrompt = `Search for recent news articles and media coverage mentioning "Fabio Giglietto" from the past 3 months. IMPORTANT: Only include results about Fabio Giglietto who is a Professor of Internet Studies at University of Urbino Carlo Bo. Look for journalism, press releases, or media reports that reference his research in social media, disinformation, computational social science, or communication studies. Exclude self-authored content.`;
-          } else if (query.includes('interviews')) {
-            searchPrompt = `Find recent interviews, podcasts, or Q&A sessions featuring "Fabio Giglietto" from the past 3 months. IMPORTANT: Only include results about Fabio Giglietto who is a Professor of Internet Studies at University of Urbino Carlo Bo specializing in social media and communication research. Look for external interviews where he is featured as a guest or expert source discussing internet studies, social media research, or media analysis.`;
-          } else {
-            searchPrompt = `Search for recent and upcoming conference presentations, talks, speeches, or academic events featuring "Fabio Giglietto" from the past 3 months and next 6 months. IMPORTANT: Only include results about Fabio Giglietto who is a Professor of Internet Studies at University of Urbino Carlo Bo. Look for conference programs, event announcements, presentation abstracts, keynote speeches, or future speaking engagements related to internet studies, social media research, communication science, or computational social science.`;
-          }
-          
-          console.log(`Attempting web search with prompt: "${searchPrompt}"`);
-          
-          response = await openai.responses.create({
-            model: "gpt-4o",
-            input: searchPrompt,
-            tools: [
-              {
-                type: "web_search_preview",
-                search_context_size: "high"
-              }
-            ],
-            tool_choice: { type: "web_search_preview" }
-          });
-          
-          console.log(`API response received for query "${query}"`);
-          
-          // Extract search results from the new API structure
-          if (response && response.output && response.output.length > 0) {
-            for (const output of response.output) {
-              if (output.type === 'message' && output.content && output.content.length > 0) {
-                for (const content of output.content) {
-                  if (content.type === 'output_text' && content.annotations) {
-                    console.log(`Found ${content.annotations.length} URL citations`);
-                    
-                    // Extract unique URLs with titles
-                    const urlMap = new Map();
-                    for (const annotation of content.annotations) {
-                      if (annotation.type === 'url_citation' && annotation.url && annotation.title) {
-                        // Skip Kudos/GrowKudos results
-                        if (annotation.url.includes('kudos.com') || annotation.url.includes('growkudos.com')) {
-                          console.log(`Skipping Kudos result: ${annotation.url}`);
-                          continue;
-                        }
-                        
-                        // Skip self-authored Medium articles
-                        if (annotation.url.includes('medium.com/%40fabiogiglietto')) {
-                          console.log(`Skipping self-authored Medium article: ${annotation.url}`);
-                          continue;
-                        }
-                        
-                        // Skip SSRN author pages (self-referential)
-                        if (annotation.url.includes('papers.ssrn.com') && annotation.title.includes('Author Page for Fabio Giglietto')) {
-                          console.log(`Skipping SSRN author page: ${annotation.url}`);
-                          continue;
-                        }
-                        
-                        // Skip direct links to Fabio Giglietto authored papers (not discussions about them)
-                        if (isDirectPaperLink(annotation.title, annotation.url)) {
-                          console.log(`Skipping direct paper link: ${annotation.url}`);
-                          continue;
-                        }
-                        
-                        // Skip medical/hematology results about Fabio Giglio (wrong person)
-                        if (isMedicalResult(annotation.title, annotation.url)) {
-                          console.log(`Skipping medical result (wrong Fabio): ${annotation.url}`);
-                          continue;
-                        }
-                        
-                        if (!urlMap.has(annotation.url)) {
-                          // Clean up snippet to remove markdown-style URL references
-                          let snippet = content.text.substring(annotation.start_index, annotation.end_index);
-                          // Remove markdown links like ([domain.com](url))
-                          snippet = snippet.replace(/\(\[.*?\]\(.*?\)\)/g, '').trim();
-                          
-                          urlMap.set(annotation.url, {
-                            title: annotation.title,
-                            url: annotation.url,
-                            snippet: snippet,
-                            date: new Date().toISOString().split('T')[0], // Today's date as fallback
-                            source: extractDomainFromUrl(annotation.url)
-                          });
-                        }
-                      }
-                    }
-                    
-                    const uniqueResults = Array.from(urlMap.values());
-                    console.log(`Extracted ${uniqueResults.length} unique results`);
-                    searchResults = [...searchResults, ...uniqueResults];
+          // Try to find JSON array in the response
+          const jsonMatch = text.match(/\[[\s\S]*\]/);
+          if (jsonMatch) {
+            const parsed = JSON.parse(jsonMatch[0]);
+            if (Array.isArray(parsed)) {
+              // Filter and process results
+              for (const item of parsed) {
+                if (item.url && item.title) {
+                  // Skip unwanted results
+                  if (shouldSkipResult(item.url, item.title)) {
+                    console.log(`Skipping filtered result: ${item.url}`);
+                    continue;
                   }
+
+                  searchResults.push({
+                    title: item.title,
+                    url: item.url,
+                    snippet: item.description || '',
+                    date: new Date().toISOString().split('T')[0],
+                    source: item.source || extractDomainFromUrl(item.url)
+                  });
                 }
               }
+              console.log(`Extracted ${searchResults.length} results from Gemini response`);
             }
-            console.log(`Found ${searchResults.length} results from web search`);
           } else {
-            console.log(`No output in response or empty response`);
+            console.log('No JSON array found in response');
           }
-        } catch (responsesError) {
-          console.log(`Web search API error for ${query}:`, responsesError.message);
-          console.log(`Error details:`, JSON.stringify({
-            name: responsesError.name,
-            message: responsesError.message,
-            status: responsesError.status,
-            code: responsesError.code
-          }, null, 2));
-          // Do not fall back to mock data - continue to next query
+        } catch (parseError) {
+          console.log(`Failed to parse JSON from response: ${parseError.message}`);
         }
-        
-        // Add only real results
+
+        // Also extract grounding metadata if available
+        const groundingMetadata = response.candidates?.[0]?.groundingMetadata;
+        if (groundingMetadata?.groundingChunks) {
+          console.log(`Found ${groundingMetadata.groundingChunks.length} grounding chunks`);
+          for (const chunk of groundingMetadata.groundingChunks) {
+            if (chunk.web?.uri && chunk.web?.title) {
+              const url = chunk.web.uri;
+              const title = chunk.web.title;
+
+              // Skip if already added or should be filtered
+              if (searchResults.some(r => r.url === url)) continue;
+              if (shouldSkipResult(url, title)) {
+                console.log(`Skipping filtered grounding result: ${url}`);
+                continue;
+              }
+
+              searchResults.push({
+                title: title,
+                url: url,
+                snippet: '',
+                date: new Date().toISOString().split('T')[0],
+                source: extractDomainFromUrl(url)
+              });
+            }
+          }
+        }
+
+        // Add results to collection
         allResults = [...allResults, ...searchResults];
-        console.log(`Total REAL results so far: ${allResults.length}`);
-        
+        console.log(`Total results so far: ${allResults.length}`);
+
       } catch (queryError) {
         console.error(`Error searching for "${query}":`, queryError.message);
         // Continue with other queries even if one fails
@@ -191,16 +223,21 @@ async function collectWebSearchResults() {
       index === self.findIndex(r => r.url === result.url)
     );
 
-    // Add validation layer - verify each result with OpenAI 4o
+    // Add validation layer - verify each result with Gemini
     console.log(`\n=== Starting validation of ${uniqueResults.length} results ===`);
     const validatedResults = [];
-    
+
+    // Create a model without search for validation
+    const validationModel = genAI.getGenerativeModel({
+      model: 'gemini-2.0-flash',
+    });
+
     for (let i = 0; i < uniqueResults.length; i++) {
       const result = uniqueResults[i];
       console.log(`\nValidating result ${i + 1}/${uniqueResults.length}: ${result.title}`);
-      
+
       try {
-        const validation = await validateWebMention(openai, result);
+        const validation = await validateWebMention(validationModel, result);
         if (validation.isRelevant) {
           console.log(`✓ Validated: ${result.title}`);
           console.log(`  - Mentioned by name: ${validation.mentionedByName}`);
@@ -271,12 +308,44 @@ async function collectWebSearchResults() {
 }
 
 /**
+ * Check if a result should be skipped based on URL or title
+ */
+function shouldSkipResult(url, title) {
+  // Skip Kudos/GrowKudos results
+  if (url.includes('kudos.com') || url.includes('growkudos.com')) {
+    return true;
+  }
+
+  // Skip self-authored Medium articles
+  if (url.includes('medium.com/@fabiogiglietto') || url.includes('medium.com/%40fabiogiglietto')) {
+    return true;
+  }
+
+  // Skip SSRN author pages (self-referential)
+  if (url.includes('papers.ssrn.com') && title.includes('Author Page for Fabio Giglietto')) {
+    return true;
+  }
+
+  // Skip direct paper links
+  if (isDirectPaperLink(title, url)) {
+    return true;
+  }
+
+  // Skip medical/hematology results about Fabio Giglio (wrong person)
+  if (isMedicalResult(title, url)) {
+    return true;
+  }
+
+  return false;
+}
+
+/**
  * Update historical log of validated web mentions
  */
 async function updateHistoricalLog(newResults) {
   try {
     const logPath = path.join(__dirname, '../../public/data/websearch-history.json');
-    
+
     // Load existing historical log
     let historicalLog = [];
     try {
@@ -300,14 +369,14 @@ async function updateHistoricalLog(newResults) {
     // Check for duplicates by URL and only add new ones
     const existingUrls = new Set(historicalLog.map(item => item.url));
     const newEntries = resultsWithMetadata.filter(result => !existingUrls.has(result.url));
-    
+
     if (newEntries.length > 0) {
       // Add new entries to the historical log
       historicalLog = [...historicalLog, ...newEntries];
-      
+
       // Sort by collection date (newest first)
       historicalLog.sort((a, b) => new Date(b.collectedAt) - new Date(a.collectedAt));
-      
+
       // Optionally limit historical log size (keep last 500 entries)
       if (historicalLog.length > 500) {
         historicalLog = historicalLog.slice(0, 500);
@@ -335,25 +404,25 @@ async function updateHistoricalLog(newResults) {
 async function createHistoricalSummary(historicalLog) {
   try {
     const summaryPath = path.join(__dirname, '../../public/data/websearch-summary.json');
-    
+
     // Group by collection date
     const byDate = {};
     const bySource = {};
     const byRelevanceScore = { high: 0, medium: 0, low: 0 };
-    
+
     historicalLog.forEach(entry => {
       const date = entry.collectionRun || entry.collectedAt?.split('T')[0] || 'unknown';
       const source = entry.source || 'unknown';
       const score = entry.relevanceScore || 0;
-      
+
       // Group by date
       if (!byDate[date]) byDate[date] = [];
       byDate[date].push(entry);
-      
+
       // Group by source
       if (!bySource[source]) bySource[source] = 0;
       bySource[source]++;
-      
+
       // Group by relevance score
       if (score >= 0.8) byRelevanceScore.high++;
       else if (score >= 0.5) byRelevanceScore.medium++;
@@ -400,9 +469,9 @@ async function createHistoricalSummary(historicalLog) {
 }
 
 /**
- * Validate a web mention using OpenAI 4o to verify relevance and generate description
+ * Validate a web mention using Gemini to verify relevance and generate description
  */
-async function validateWebMention(openai, result) {
+async function validateWebMention(model, result) {
   try {
     const prompt = `You are analyzing a web mention to determine if it's about the correct person, if it actually mentions them, and if the content is recent.
 
@@ -423,7 +492,7 @@ CRITICAL VALIDATION STEPS:
 3. RECENCY CHECK: Is this content recent (within the last 6 months) or does it discuss recent work/events?
 4. RELEVANCE ASSESSMENT: Does it relate to his academic work in social media, disinformation, or communication research?
 
-RESPONSE FORMAT (JSON):
+RESPONSE FORMAT (JSON only, no other text):
 {
   "isRelevant": boolean,
   "mentionedByName": boolean,
@@ -448,21 +517,11 @@ STRICT EVALUATION CRITERIA:
 
 Be very strict - if you cannot confirm Fabio Giglietto is mentioned by name, set isRelevant to false.
 
-Please analyze and respond with valid JSON only.`;
+Respond with valid JSON only.`;
 
-    const response = await openai.responses.create({
-      model: "gpt-5",
-      input: prompt,
-      reasoning: {
-        effort: "minimal"  // Fast analysis for web search validation
-      },
-      text: {
-        verbosity: "low"  // Concise JSON response
-      }
-    });
+    const response = await model.generateContent(prompt);
+    const content = response.response.text().trim();
 
-    const content = response.output_text.trim();
-    
     // Try to parse JSON response
     let validation;
     try {
@@ -537,11 +596,11 @@ function isMedicalResult(title, url) {
     'paziente', 'patient',
     'terapia', 'therapy', 'treatment'
   ];
-  
+
   // Check if title contains medical keywords
   const titleLower = title.toLowerCase();
   const hasMedicalKeywords = medicalKeywords.some(keyword => titleLower.includes(keyword));
-  
+
   // Check URL for medical domains/paths
   const urlLower = url.toLowerCase();
   const medicalDomains = [
@@ -553,7 +612,7 @@ function isMedicalResult(title, url) {
     'clinic'
   ];
   const hasMedicalDomain = medicalDomains.some(domain => urlLower.includes(domain));
-  
+
   // Check for specific patterns indicating medical research
   const medicalPatterns = [
     /specialit[àa]\s+in\s+ematologia/i,
@@ -563,7 +622,7 @@ function isMedicalResult(title, url) {
     /milan.*hematology/i
   ];
   const hasMedialPattern = medicalPatterns.some(pattern => pattern.test(title) || pattern.test(url));
-  
+
   return hasMedicalKeywords || hasMedicalDomain || hasMedialPattern;
 }
 
@@ -577,11 +636,11 @@ function isDirectPaperLink(title, url) {
     // Journal paper patterns
     /^[^:]+:\s*.*Fabio Giglietto.*,.*\d{4}$/,  // "Journal: Title - Fabio Giglietto, Author2, 2023"
     /^.*\s-\s.*Fabio Giglietto.*,.*\d{4}$/,    // "Title - Fabio Giglietto, Author2, 2023"
-    
+
     // Repository/database patterns for papers authored by Fabio
     /Rivisteweb:.*Fabio Giglietto.*\d{4}$/,    // Rivisteweb direct paper links
   ];
-  
+
   // URLs that are typically direct paper links (not discussions)
   const directPaperUrls = [
     'journals.sagepub.com/doi/',           // Direct SAGE journal articles
@@ -592,25 +651,25 @@ function isDirectPaperLink(title, url) {
     'www.sciencedirect.com/science/article/', // Direct ScienceDirect articles
     'ieeexplore.ieee.org/document/',      // Direct IEEE articles
   ];
-  
+
   // Check if title matches direct paper patterns
   const titleIsDirectPaper = directPaperPatterns.some(pattern => pattern.test(title));
-  
+
   // Check if URL is a direct paper link
   const urlIsDirectPaper = directPaperUrls.some(pattern => url.includes(pattern));
-  
+
   // If both title and URL suggest this is a direct paper link, skip it
   if (titleIsDirectPaper && urlIsDirectPaper) {
     return true;
   }
-  
+
   // Special case: Rivisteweb entries that are just paper titles
-  if (url.includes('rivisteweb.it/doi/') && title.includes('Rivisteweb:') && 
-      title.includes('Fabio Giglietto') && !title.includes('discusses') && 
+  if (url.includes('rivisteweb.it/doi/') && title.includes('Rivisteweb:') &&
+      title.includes('Fabio Giglietto') && !title.includes('discusses') &&
       !title.includes('references') && !title.includes('cites')) {
     return true;
   }
-  
+
   return false;
 }
 
@@ -626,4 +685,7 @@ function extractDomainFromUrl(url) {
   }
 }
 
-module.exports = collectWebSearchResults;
+module.exports = {
+  collect: collectWebSearchResults,
+  name: 'websearch'
+};

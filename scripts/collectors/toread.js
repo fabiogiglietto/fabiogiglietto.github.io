@@ -148,4 +148,9 @@ class ToreadCollector {
   }
 }
 
-module.exports = new ToreadCollector();
+const collector = new ToreadCollector();
+
+module.exports = {
+  collect: () => collector.collect(),
+  name: 'toread'
+};

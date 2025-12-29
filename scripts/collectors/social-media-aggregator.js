@@ -6,11 +6,11 @@ const path = require('path');
 const { promisify } = require('util');
 const writeFileAsync = promisify(fs.writeFile);
 const axios = require('axios');
-const OpenAI = require('openai');
+const { GoogleGenerativeAI } = require('@google/generative-ai');
 const yaml = require('js-yaml');
 
 // Check for API keys
-const hasOpenAIKey = process.env.OPENAI_API_KEY && process.env.OPENAI_API_KEY.startsWith('sk-');
+const hasGeminiKey = !!process.env.GEMINI_API_KEY;
 const hasLinkedInKey = process.env.LINKEDIN_ACCESS_TOKEN;
 const hasMastodonKey = process.env.MASTODON_ACCESS_TOKEN;
 
@@ -339,20 +339,21 @@ async function collectMastodonPosts() {
 }
 
 /**
- * Deduplicate and summarize posts using OpenAI
+ * Deduplicate and summarize posts using Gemini
  */
 async function deduplicateAndSummarize(posts) {
   try {
-    if (!hasOpenAIKey) {
-      console.log('OpenAI API key not available, using basic deduplication');
+    if (!hasGeminiKey) {
+      console.log('Gemini API key not available, using basic deduplication');
       return basicDeduplication(posts);
     }
 
-    const openai = new OpenAI({
-      apiKey: process.env.OPENAI_API_KEY,
+    const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+    const model = genAI.getGenerativeModel({
+      model: 'gemini-2.0-flash',
     });
 
-    console.log('Using AI to deduplicate and summarize posts...');
+    console.log('Using Gemini AI to deduplicate and summarize posts...');
 
     // Prepare posts for AI analysis
     const postsForAnalysis = posts.map((post, index) => ({
@@ -363,7 +364,7 @@ async function deduplicateAndSummarize(posts) {
       url: post.url
     }));
 
-    const prompt = `You are helping to curate news updates for an academic researcher's website. 
+    const prompt = `You are helping to curate news updates for an academic researcher's website.
 
 Analyze these social media posts from Prof. Fabio Giglietto and:
 
@@ -399,12 +400,12 @@ Analyze these social media posts from Prof. Fabio Giglietto and:
 Posts to analyze:
 ${JSON.stringify(postsForAnalysis, null, 2)}
 
-Return a JSON object with a "news" property containing an array of professional news items in this format:
+Return ONLY a JSON object (no markdown, no explanation) with a "news" property containing an array of professional news items in this format:
 {
   "news": [
     {
       "content": "[Engaging summary focusing on the event/news itself, avoiding repetitive name mentions]",
-      "date": "YYYY-MM-DD", 
+      "date": "YYYY-MM-DD",
       "platforms": ["Platform1"],
       "url": "most_relevant_url"
     }
@@ -418,30 +419,19 @@ Example varied openings:
 - "A comprehensive guide for researchers..."
 - "Coordinated inauthentic behavior was detected..."
 
-Focus on quality over quantity. Return only 3-5 most significant academic/professional updates.`;
+Focus on quality over quantity. Return only 3-5 most significant academic/professional updates.
+Respond with valid JSON only, no other text.`;
 
-    const response = await openai.chat.completions.create({
-      model: "gpt-4-turbo-preview",
-      messages: [
-        {
-          role: "system",
-          content: "You are an expert at analyzing and summarizing academic social media content. You must return ONLY a valid JSON object with a 'news' array property, no other text."
-        },
-        {
-          role: "user",
-          content: prompt
-        }
-      ],
-      response_format: { type: "json_object" },
-      temperature: 0.7
-    });
-
-    const aiResponse = response.choices[0].message.content;
+    const result = await model.generateContent(prompt);
+    const aiResponse = result.response.text();
     console.log('AI response received, length:', aiResponse?.length);
-    
+
     try {
       // Clean the response in case there's extra text
       let cleanResponse = aiResponse?.trim();
+
+      // Remove markdown code blocks if present
+      cleanResponse = cleanResponse.replace(/^```json\s*/i, '').replace(/\s*```$/i, '').trim();
       
       // If the response is wrapped in a JSON object, extract the array
       let parsed = JSON.parse(cleanResponse);
@@ -603,4 +593,7 @@ async function saveEmptyNews() {
   return [];
 }
 
-module.exports = collectSocialMediaPosts;
+module.exports = {
+  collect: collectSocialMediaPosts,
+  name: 'social-media-aggregator'
+};

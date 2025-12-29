@@ -496,4 +496,7 @@ function getMockTeachingData() {
   };
 }
 
-module.exports = { collect };
+module.exports = {
+  collect,
+  name: 'university'
+};

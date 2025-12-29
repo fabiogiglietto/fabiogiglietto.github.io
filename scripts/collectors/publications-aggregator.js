@@ -6,12 +6,19 @@
  * comprehensive citation metrics.
  */
 
-const orcidCollector = require('./orcid');
-const scholarCollector = require('./scholar');
-const wosCollector = require('./wos');
-const scopusCollector = require('./scopus');
+const fs = require('fs');
+const path = require('path');
+const stringSimilarity = require('string-similarity');
+const config = require('../config');
+
+// Note: These collector imports are kept for potential future use
+// but data is loaded from files instead of re-collecting
+const _orcidCollector = require('./orcid');
+const _scholarCollector = require('./scholar');
+const _wosCollector = require('./wos');
+const _scopusCollector = require('./scopus');
 const crossrefCollector = require('./crossref');
-const semanticScholarCollector = require('./semantic-scholar');
+const _semanticScholarCollector = require('./semantic-scholar');
 
 // Helper function to load existing data files
 async function loadDataFile(filePath) {
@@ -28,6 +35,158 @@ async function loadDataFile(filePath) {
     return null;
   }
 }
+
+/**
+ * Generic processor for merging publications from a data source
+ * Reduces code duplication across WoS, Scopus, Semantic Scholar processing
+ *
+ * @param {Object} sourceData - The source data containing publications array
+ * @param {string} sourceName - Name of the source (wos, scopus, semanticScholar)
+ * @param {Map} publicationsMap - The map of existing publications
+ * @param {Object} fieldMapping - Maps source fields to publication fields
+ */
+function processPublicationSource(sourceData, sourceName, publicationsMap, fieldMapping) {
+  if (!sourceData?.publications) return;
+
+  console.log(`Processing ${sourceData.publications.length} publications from ${fieldMapping.displayName}`);
+
+  sourceData.publications.forEach(pub => {
+    let matched = false;
+
+    // Try to match by DOI first
+    if (pub.doi) {
+      const doiKey = `doi:${pub.doi.toLowerCase()}`;
+      if (publicationsMap.has(doiKey)) {
+        const publication = publicationsMap.get(doiKey);
+        updatePublicationFromSource(publication, pub, sourceName, fieldMapping);
+        console.log(`Matched ${fieldMapping.displayName} publication by DOI: "${pub.title}" with ${pub.citations || 0} citations`);
+        matched = true;
+      }
+    }
+
+    // If no DOI match, try by title
+    if (!matched) {
+      const sourceTitle = pub.title.toLowerCase().replace(/[^\w\s]/g, '');
+
+      for (const [_key, publication] of publicationsMap.entries()) {
+        const pubTitle = publication.title.toLowerCase().replace(/[^\w\s]/g, '');
+
+        if (isSimilarTitle(pubTitle, sourceTitle)) {
+          updatePublicationFromSource(publication, pub, sourceName, fieldMapping);
+
+          // Add DOI if missing
+          if (!publication.doi && pub.doi) {
+            publication.doi = pub.doi;
+          }
+
+          console.log(`Matched ${fieldMapping.displayName} publication by title: "${pub.title}" with ${pub.citations || 0} citations`);
+          matched = true;
+          break;
+        }
+      }
+    }
+
+    // If still no match, add as new entry
+    if (!matched) {
+      const key = pub.doi
+        ? `doi:${pub.doi.toLowerCase()}`
+        : `title:${pub.title.toLowerCase().replace(/[^\w\s]/g, '')}`;
+
+      const newPublication = createNewPublication(pub, sourceName, fieldMapping);
+      publicationsMap.set(key, newPublication);
+    }
+  });
+}
+
+/**
+ * Updates an existing publication with data from a source
+ */
+function updatePublicationFromSource(publication, sourcePub, sourceName, fieldMapping) {
+  publication.citations[sourceName] = sourcePub.citations || 0;
+  publication.source_urls[sourceName] = fieldMapping.buildUrl ? fieldMapping.buildUrl(sourcePub) : sourcePub.url;
+  publication.source_ids[sourceName] = sourcePub[fieldMapping.idField];
+
+  // Update authors if available and current is null
+  if (!publication.authors && sourcePub.authors) {
+    publication.authors = sourcePub.authors;
+  }
+
+  // Handle source-specific extra fields
+  if (fieldMapping.extraFields) {
+    fieldMapping.extraFields(publication, sourcePub);
+  }
+}
+
+/**
+ * Creates a new publication entry from a source
+ */
+function createNewPublication(sourcePub, sourceName, fieldMapping) {
+  const publication = {
+    title: sourcePub.title,
+    authors: sourcePub.authors,
+    venue: sourcePub.venue,
+    year: sourcePub.year ? parseInt(sourcePub.year) : null,
+    doi: sourcePub.doi,
+    citations: {
+      scholar: null,
+      wos: null,
+      scopus: null,
+      semanticScholar: null
+    },
+    source_urls: {
+      orcid: null,
+      scholar: null,
+      wos: null,
+      scopus: null,
+      semanticScholar: null
+    },
+    source_ids: {
+      orcid: null,
+      scholar: null,
+      wos: null,
+      scopus: null,
+      semanticScholar: null
+    },
+    metrics: {}
+  };
+
+  // Set source-specific fields
+  publication.citations[sourceName] = sourcePub.citations || 0;
+  publication.source_urls[sourceName] = fieldMapping.buildUrl ? fieldMapping.buildUrl(sourcePub) : sourcePub.url;
+  publication.source_ids[sourceName] = sourcePub[fieldMapping.idField];
+
+  // Handle source-specific extra fields
+  if (fieldMapping.extraFields) {
+    fieldMapping.extraFields(publication, sourcePub);
+  }
+
+  return publication;
+}
+
+// Field mappings for each source
+const SOURCE_MAPPINGS = {
+  wos: {
+    displayName: 'Web of Science',
+    idField: 'wosId',
+    buildUrl: null // Uses pub.url directly
+  },
+  scopus: {
+    displayName: 'Scopus',
+    idField: 'scopusId',
+    buildUrl: null // Uses pub.url directly
+  },
+  semanticScholar: {
+    displayName: 'Semantic Scholar',
+    idField: 'semanticScholarId',
+    buildUrl: (pub) => `https://www.semanticscholar.org/paper/${pub.semanticScholarId}`,
+    extraFields: (publication, sourcePub) => {
+      publication.influentialCitations = sourcePub.influentialCitations;
+      publication.isOpenAccess = sourcePub.isOpenAccess;
+      publication.openAccessPdf = sourcePub.openAccessPdf;
+      publication.fieldsOfStudy = sourcePub.fieldsOfStudy;
+    }
+  }
+};
 
 async function collect() {
   console.log('Aggregating publication data from multiple sources...');
@@ -178,7 +337,7 @@ async function collect() {
           if (key.startsWith('title:') && isSimilarTitle(pubTitle, scholarTitle)) {
             // Update with Scholar data
             publication.citations.scholar = pub.citations ? parseInt(pub.citations) : 0;
-            publication.source_urls.scholar = `https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:${pub.id}`;
+            publication.source_urls.scholar = config.buildScholarUrl(pub.id);
             publication.source_ids.scholar = pub.id;
             
             // Add year if missing
@@ -213,7 +372,7 @@ async function collect() {
             },
             source_urls: {
               orcid: null,
-              scholar: `https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:${pub.id}`,
+              scholar: config.buildScholarUrl(pub.id),
               wos: null,
               scopus: null,
               semanticScholar: null
@@ -231,188 +390,11 @@ async function collect() {
       });
     }
     
-    // Process Web of Science publications
-    if (wosData && wosData.publications) {
-      console.log(`Processing ${wosData.publications.length} publications from Web of Science`);
-      
-      wosData.publications.forEach(pub => {
-        // Try to match by DOI first
-        let matched = false;
-        if (pub.doi) {
-          const doiKey = `doi:${pub.doi.toLowerCase()}`;
-          if (publicationsMap.has(doiKey)) {
-            const publication = publicationsMap.get(doiKey);
-            publication.citations.wos = pub.citations || 0;
-            publication.source_urls.wos = pub.url;
-            publication.source_ids.wos = pub.wosId;
-            
-            // Update authors if available from WoS and current is null
-            if (!publication.authors && pub.authors) {
-              publication.authors = pub.authors;
-            }
-            
-            console.log(`Matched WoS publication by DOI: "${pub.title}" with ${pub.citations || 0} citations`);
-            matched = true;
-          }
-        }
-        
-        // If no DOI match, try by title
-        if (!matched) {
-          const wosTitle = pub.title.toLowerCase().replace(/[^\w\s]/g, '');
-          
-          for (const [key, publication] of publicationsMap.entries()) {
-            const pubTitle = publication.title.toLowerCase().replace(/[^\w\s]/g, '');
-            
-            if (isSimilarTitle(pubTitle, wosTitle)) {
-              publication.citations.wos = pub.citations || 0;
-              publication.source_urls.wos = pub.url;
-              publication.source_ids.wos = pub.wosId;
-              
-              // Add DOI if missing
-              if (!publication.doi && pub.doi) {
-                publication.doi = pub.doi;
-              }
-              
-              // Update authors if available from WoS and current is null
-              if (!publication.authors && pub.authors) {
-                publication.authors = pub.authors;
-              }
-              
-              console.log(`Matched WoS publication by title: "${pub.title}" with ${pub.citations || 0} citations`);
-              matched = true;
-              break;
-            }
-          }
-        }
-        
-        // If still no match, add as new entry
-        if (!matched) {
-          const key = pub.doi ? 
-            `doi:${pub.doi.toLowerCase()}` : 
-            `title:${pub.title.toLowerCase().replace(/[^\w\s]/g, '')}`;
-            
-          publicationsMap.set(key, {
-            title: pub.title,
-            authors: pub.authors,
-            venue: pub.venue,
-            year: pub.year ? parseInt(pub.year) : null,
-            doi: pub.doi,
-            citations: {
-              scholar: null,
-              wos: pub.citations,
-              scopus: null,
-              semanticScholar: null
-            },
-            source_urls: {
-              orcid: null,
-              scholar: null,
-              wos: pub.url,
-              scopus: null,
-              semanticScholar: null
-            },
-            source_ids: {
-              orcid: null,
-              scholar: null,
-              wos: pub.wosId,
-              scopus: null,
-              semanticScholar: null
-            },
-            metrics: {}
-          });
-        }
-      });
-    }
+    // Process Web of Science publications using generic processor
+    processPublicationSource(wosData, 'wos', publicationsMap, SOURCE_MAPPINGS.wos);
     
-    // Process Scopus publications
-    if (scopusData && scopusData.publications) {
-      console.log(`Processing ${scopusData.publications.length} publications from Scopus`);
-      
-      scopusData.publications.forEach(pub => {
-        // Try to match by DOI first
-        let matched = false;
-        if (pub.doi) {
-          const doiKey = `doi:${pub.doi.toLowerCase()}`;
-          if (publicationsMap.has(doiKey)) {
-            const publication = publicationsMap.get(doiKey);
-            publication.citations.scopus = pub.citations || 0;
-            publication.source_urls.scopus = pub.url;
-            publication.source_ids.scopus = pub.scopusId;
-            
-            // Update authors if available from Scopus and current is null
-            if (!publication.authors && pub.authors) {
-              publication.authors = pub.authors;
-            }
-            console.log(`Matched Scopus publication by DOI: "${pub.title}" with ${pub.citations || 0} citations`);
-            matched = true;
-          }
-        }
-        
-        // If no DOI match, try by title
-        if (!matched) {
-          const scopusTitle = pub.title.toLowerCase().replace(/[^\w\s]/g, '');
-          
-          for (const [key, publication] of publicationsMap.entries()) {
-            const pubTitle = publication.title.toLowerCase().replace(/[^\w\s]/g, '');
-            
-            if (isSimilarTitle(pubTitle, scopusTitle)) {
-              publication.citations.scopus = pub.citations || 0;
-              publication.source_urls.scopus = pub.url;
-              publication.source_ids.scopus = pub.scopusId;
-              
-              // Add DOI if missing
-              if (!publication.doi && pub.doi) {
-                publication.doi = pub.doi;
-              }
-              
-              // Update authors if available from Scopus and current is null
-              if (!publication.authors && pub.authors) {
-                publication.authors = pub.authors;
-              }
-              
-              console.log(`Matched Scopus publication by title: "${pub.title}" with ${pub.citations || 0} citations`);
-              matched = true;
-              break;
-            }
-          }
-        }
-        
-        // If still no match, add as new entry
-        if (!matched) {
-          const key = pub.doi ? 
-            `doi:${pub.doi.toLowerCase()}` : 
-            `title:${pub.title.toLowerCase().replace(/[^\w\s]/g, '')}`;
-            
-          publicationsMap.set(key, {
-            title: pub.title,
-            authors: pub.authors,
-            venue: pub.venue,
-            year: pub.year ? parseInt(pub.year) : null,
-            doi: pub.doi,
-            citations: {
-              scholar: null,
-              wos: null,
-              scopus: pub.citations,
-              semanticScholar: null
-            },
-            source_urls: {
-              orcid: null,
-              scholar: null,
-              wos: null,
-              scopus: pub.url,
-              semanticScholar: null
-            },
-            source_ids: {
-              orcid: null,
-              scholar: null,
-              wos: null,
-              scopus: pub.scopusId,
-              semanticScholar: null
-            },
-            metrics: {}
-          });
-        }
-      });
-    }
+    // Process Scopus publications using generic processor
+    processPublicationSource(scopusData, 'scopus', publicationsMap, SOURCE_MAPPINGS.scopus);
     
     // Process Crossref publications (AUTHORITATIVE SOURCE for author information)
     if (crossrefData && crossrefData.publications) {
@@ -484,113 +466,8 @@ async function collect() {
       });
     }
     
-    // Process Semantic Scholar publications
-    if (semanticScholarData && semanticScholarData.publications) {
-      console.log(`Processing ${semanticScholarData.publications.length} publications from Semantic Scholar`);
-      
-      semanticScholarData.publications.forEach(pub => {
-        // Try to match by DOI first
-        let matched = false;
-        if (pub.doi) {
-          const doiKey = `doi:${pub.doi.toLowerCase()}`;
-          if (publicationsMap.has(doiKey)) {
-            const publication = publicationsMap.get(doiKey);
-            publication.citations.semanticScholar = pub.citations || 0;
-            publication.source_urls.semanticScholar = `https://www.semanticscholar.org/paper/${pub.semanticScholarId}`;
-            publication.source_ids.semanticScholar = pub.semanticScholarId;
-            
-            // Add additional Semantic Scholar specific data
-            publication.influentialCitations = pub.influentialCitations;
-            publication.isOpenAccess = pub.isOpenAccess;
-            publication.openAccessPdf = pub.openAccessPdf;
-            publication.fieldsOfStudy = pub.fieldsOfStudy;
-            
-            // Update authors if available from Semantic Scholar and current is null
-            if (!publication.authors && pub.authors) {
-              publication.authors = pub.authors;
-            }
-            
-            console.log(`Matched Semantic Scholar publication by DOI: "${pub.title}" with ${pub.citations || 0} citations`);
-            matched = true;
-          }
-        }
-        
-        // If no DOI match, try by title
-        if (!matched) {
-          const s2Title = pub.title.toLowerCase().replace(/[^\w\s]/g, '');
-          
-          for (const [key, publication] of publicationsMap.entries()) {
-            const pubTitle = publication.title.toLowerCase().replace(/[^\w\s]/g, '');
-            
-            if (isSimilarTitle(pubTitle, s2Title)) {
-              publication.citations.semanticScholar = pub.citations || 0;
-              publication.source_urls.semanticScholar = `https://www.semanticscholar.org/paper/${pub.semanticScholarId}`;
-              publication.source_ids.semanticScholar = pub.semanticScholarId;
-              
-              // Add additional Semantic Scholar specific data
-              publication.influentialCitations = pub.influentialCitations;
-              publication.isOpenAccess = pub.isOpenAccess;
-              publication.openAccessPdf = pub.openAccessPdf;
-              publication.fieldsOfStudy = pub.fieldsOfStudy;
-              
-              // Add DOI if missing
-              if (!publication.doi && pub.doi) {
-                publication.doi = pub.doi;
-              }
-              
-              // Update authors if available from Semantic Scholar and current is null
-              if (!publication.authors && pub.authors) {
-                publication.authors = pub.authors;
-              }
-              
-              console.log(`Matched Semantic Scholar publication by title: "${pub.title}" with ${pub.citations || 0} citations`);
-              matched = true;
-              break;
-            }
-          }
-        }
-        
-        // If still no match, add as new entry
-        if (!matched) {
-          const key = pub.doi ? 
-            `doi:${pub.doi.toLowerCase()}` : 
-            `title:${pub.title.toLowerCase().replace(/[^\w\s]/g, '')}`;
-            
-          publicationsMap.set(key, {
-            title: pub.title,
-            authors: pub.authors,
-            venue: pub.venue,
-            year: pub.year || null,
-            doi: pub.doi,
-            citations: {
-              scholar: null,
-              wos: null,
-              scopus: null,
-              semanticScholar: pub.citations
-            },
-            source_urls: {
-              orcid: null,
-              scholar: null,
-              wos: null,
-              scopus: null,
-              semanticScholar: `https://www.semanticscholar.org/paper/${pub.semanticScholarId}`
-            },
-            source_ids: {
-              orcid: null,
-              scholar: null,
-              wos: null,
-              scopus: null,
-              semanticScholar: pub.semanticScholarId
-            },
-            influentialCitations: pub.influentialCitations,
-            isOpenAccess: pub.isOpenAccess,
-            openAccessPdf: pub.openAccessPdf,
-            fieldsOfStudy: pub.fieldsOfStudy,
-            metrics: {}
-          });
-        }
-      });
-    }
+    // Process Semantic Scholar publications using generic processor
+    processPublicationSource(semanticScholarData, 'semanticScholar', publicationsMap, SOURCE_MAPPINGS.semanticScholar);
     
     // Convert map to array and calculate aggregate metrics
     const publications = Array.from(publicationsMap.values()).map(pub => {
@@ -661,43 +538,47 @@ function calculateHIndex(citations) {
 
 /**
  * Check if two titles are similar enough to be considered the same paper
+ * Uses Dice coefficient via string-similarity library for robust matching
+ *
+ * @param {string} title1 - First title to compare
+ * @param {string} title2 - Second title to compare
+ * @param {number} threshold - Similarity threshold (default 0.8)
+ * @returns {boolean} - True if titles are similar enough
  */
-function isSimilarTitle(title1, title2) {
-  // Simple check: see if one title contains most of the other
-  // A more robust implementation would use string similarity algorithms
-  
+function isSimilarTitle(title1, title2, threshold = 0.8) {
   // Clean and normalize titles
   const t1 = title1.toLowerCase().replace(/[^\w\s]/g, '').replace(/\s+/g, ' ').trim();
   const t2 = title2.toLowerCase().replace(/[^\w\s]/g, '').replace(/\s+/g, ' ').trim();
-  
-  // Calculate overlap threshold based on title length (higher for short titles)
-  const minLength = Math.min(t1.length, t2.length);
-  const maxLength = Math.max(t1.length, t2.length);
-  const ratioThreshold = minLength < 30 ? 0.9 : 0.75;
-  
-  // Calculate similarity ratio
-  if (maxLength === 0) return false;
+
+  // Handle edge cases
+  if (!t1 || !t2) return false;
   if (t1 === t2) return true;
-  
-  // Check if one is a substring of the other
+
+  // Check if one is a substring of the other (common with subtitles)
   if (t1.includes(t2) || t2.includes(t1)) {
     return true;
   }
-  
-  // Check if significant words match
-  const words1 = t1.split(' ').filter(w => w.length > 3);
-  const words2 = t2.split(' ').filter(w => w.length > 3);
-  
-  // If either has no significant words, we can't compare
-  if (words1.length === 0 || words2.length === 0) {
-    return false;
-  }
-  
-  // Count matching words
-  const matchingWords = words1.filter(w => words2.includes(w));
-  const matchRatio = matchingWords.length / Math.min(words1.length, words2.length);
-  
-  return matchRatio >= ratioThreshold;
+
+  // Use Dice coefficient for string similarity (more robust than Levenshtein for titles)
+  const similarity = stringSimilarity.compareTwoStrings(t1, t2);
+
+  // Use higher threshold for short titles to avoid false positives
+  const minLength = Math.min(t1.length, t2.length);
+  const adjustedThreshold = minLength < 30 ? 0.85 : threshold;
+
+  return similarity >= adjustedThreshold;
 }
 
-module.exports = { collect };
+module.exports = {
+  collect,
+  // Export utilities for testing
+  _testing: {
+    isSimilarTitle,
+    calculateHIndex,
+    loadDataFile,
+    processPublicationSource,
+    updatePublicationFromSource,
+    createNewPublication,
+    SOURCE_MAPPINGS
+  }
+};

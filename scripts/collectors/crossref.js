@@ -226,4 +226,7 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-module.exports = { collect };
+module.exports = {
+  collect,
+  name: 'crossref'
+};

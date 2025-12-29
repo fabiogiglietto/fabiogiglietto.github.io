@@ -1,24 +1,32 @@
 /**
  * About Me Generator Module
- * 
- * This module uses OpenAI API to generate a personalized "About Me" section
+ *
+ * This module uses Google Gemini API to generate a personalized "About Me" section
  * based on collected data from various sources (ORCID, Google Scholar, GitHub, etc.)
+ * Features Google Search grounding for up-to-date information about recent activities.
  */
 
 const fs = require('fs');
 const path = require('path');
-const { OpenAI } = require('openai');
+const { GoogleGenerativeAI } = require('@google/generative-ai');
 const sanitizeHtml = require('sanitize-html');
 
-// Initialize OpenAI client with better error handling
-let openai = null;
+// Initialize Gemini client with better error handling
+let genAI = null;
+let model = null;
 try {
-  openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY || '', // Handle empty string case
-  });
+  if (process.env.GEMINI_API_KEY) {
+    genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+    // Use Gemini 1.5 Pro for best quality with Google Search grounding
+    model = genAI.getGenerativeModel({
+      model: "gemini-1.5-pro",
+      // Enable Google Search grounding for web search capabilities
+      tools: [{ googleSearch: {} }]
+    });
+  }
 } catch (error) {
-  console.warn('Failed to initialize OpenAI client:', error.message);
-  // Continue execution - we'll check openai before using it
+  console.warn('Failed to initialize Gemini client:', error.message);
+  // Continue execution - we'll check model before using it
 }
 
 /**
@@ -27,11 +35,11 @@ try {
 async function generateAboutMe() {
   try {
     console.log('Generating About Me section...');
-    
-    // Check if OpenAI API key is available early
-    if (!process.env.OPENAI_API_KEY || !openai) {
-      console.warn('OPENAI_API_KEY environment variable is not set or OpenAI client failed to initialize');
-      console.log('Generating fallback content instead of using OpenAI API');
+
+    // Check if Gemini API key is available early
+    if (!process.env.GEMINI_API_KEY || !model) {
+      console.warn('GEMINI_API_KEY environment variable is not set or Gemini client failed to initialize');
+      console.log('Generating fallback content instead of using Gemini API');
       return generateFallbackContent();
     }
     
@@ -77,11 +85,11 @@ async function generateAboutMe() {
       return generateFallbackContent();
     }
     
-    // Format the data for the OpenAI prompt
+    // Format the data for the Gemini prompt
     const formattedData = formatDataForPrompt(data);
-    
-    // Generate content using OpenAI
-    const aboutMeContent = await generateContentWithOpenAI(formattedData);
+
+    // Generate content using Gemini
+    const aboutMeContent = await generateContentWithGemini(formattedData);
     
     if (!aboutMeContent) {
       console.error('Failed to generate About Me content');
@@ -110,7 +118,7 @@ async function generateAboutMe() {
 }
 
 /**
- * Generates fallback content when OpenAI generation fails
+ * Generates fallback content when Gemini API generation fails
  */
 async function generateFallbackContent() {
   try {
@@ -136,7 +144,7 @@ async function generateFallbackContent() {
 }
 
 /**
- * Formats collected data for the OpenAI prompt
+ * Formats collected data for the Gemini API prompt
  * @param {Object} data The collected data
  * @return {String} Formatted data for the prompt
  */
@@ -233,24 +241,24 @@ function formatDataForPrompt(data) {
 }
 
 /**
- * Generates content using OpenAI API
+ * Generates content using Gemini API with Google Search grounding
  * @param {String} formattedData Formatted data for the prompt
  * @return {String} Generated HTML content
  */
-async function generateContentWithOpenAI(formattedData) {
+async function generateContentWithGemini(formattedData) {
   try {
-    // Check if OpenAI client is properly initialized
-    if (!openai) {
-      console.error('OpenAI client not initialized');
+    // Check if Gemini model is properly initialized
+    if (!model) {
+      console.error('Gemini model not initialized');
       return null;
     }
-    
+
     // Double-check that the API key is still set (could have been unset between checks)
-    if (!process.env.OPENAI_API_KEY) {
-      console.error('OPENAI_API_KEY no longer available');
+    if (!process.env.GEMINI_API_KEY) {
+      console.error('GEMINI_API_KEY no longer available');
       return null;
     }
-    
+
     // Create the prompt
     const prompt = `
 You are an academic website content generator. Your task is to create a professional "About Me" section for an academic's personal website.
@@ -263,7 +271,7 @@ Keep the tone professional but approachable. The content should be 3-4 paragraph
 Here is the academic's information:
 ${formattedData}
 
-Additionally, search the web for recent information about Fabio Giglietto, particularly focusing on:
+Additionally, use Google Search to find recent information about Fabio Giglietto, particularly focusing on:
 1. Recent publications or research projects
 2. University of Urbino Carlo Bo affiliations
 3. Current research on social media analysis, disinformation, or computational social science
@@ -274,31 +282,32 @@ For the social media content, don't create a separate social media section, but 
 
 Include any relevant up-to-date information you find in the biography, but maintain a professional tone.
 
-Generate ONLY the HTML content for the "About Me" section. Do not include any explanations, notes, or markdown formatting outside the HTML content. Your response should be valid HTML that starts with <p> and ends with </p> without any additional formatting or explanation.
+Generate ONLY the HTML content for the "About Me" section. Do not include any explanations, notes, markdown code blocks, or additional text. Your response should be valid HTML that starts with <p> and ends with </p> without any additional formatting or explanation.
 `;
 
-    console.log('Calling OpenAI API with GPT-4...');
+    console.log('Calling Gemini API with gemini-1.5-pro and Google Search grounding...');
 
     try {
-      // Call OpenAI Chat Completions API with GPT-4
-      const response = await openai.chat.completions.create({
-        model: "gpt-4-turbo-preview",
-        messages: [
-          {
-            role: "system",
-            content: "You are an academic website content generator that creates professional bios based on academic data. Output ONLY valid HTML without any markdown formatting or additional text."
-          },
-          {
-            role: "user",
-            content: prompt
-          }
-        ],
-        temperature: 0.7,
-        max_tokens: 1000
+      // Call Gemini API with Google Search grounding enabled
+      const result = await model.generateContent({
+        contents: [{ role: 'user', parts: [{ text: prompt }] }],
+        generationConfig: {
+          temperature: 0.7,
+          maxOutputTokens: 2000,
+        },
       });
 
-      // Extract the generated content from Chat Completions API
-      const content = response.choices[0].message.content.trim();
+      const response = await result.response;
+      let content = response.text().trim();
+
+      // Remove markdown code blocks if present
+      if (content.startsWith('```html')) {
+        content = content.replace(/^```html\n/, '').replace(/\n```$/, '');
+      } else if (content.startsWith('```')) {
+        content = content.replace(/^```\n/, '').replace(/\n```$/, '');
+      }
+
+      content = content.trim();
 
       // Validate that the response is HTML content (starts with <p> or similar)
       if (!content.startsWith('<p') && !content.startsWith('<div') && !content.startsWith('<section')) {
@@ -319,39 +328,48 @@ Generate ONLY the HTML content for the "About Me" section. Do not include any ex
         }
       }
 
-      console.log('Successfully generated content with GPT-4');
+      // Log if grounding metadata is available
+      if (response.candidates && response.candidates[0].groundingMetadata) {
+        console.log('Google Search grounding was used for this generation');
+      }
+
+      console.log('Successfully generated content with Gemini 1.5 Pro');
       return content;
     } catch (apiError) {
-      console.error('Error calling OpenAI API with GPT-4:', apiError.message);
-      console.log('Trying fallback model GPT-3.5-turbo...');
+      console.error('Error calling Gemini API:', apiError.message);
 
-      // Try with GPT-3.5-turbo if GPT-4 fails
+      // Try with Gemini 1.5 Flash as fallback (faster, cheaper model)
+      console.log('Trying fallback model gemini-1.5-flash...');
       try {
-        const fallbackResponse = await openai.chat.completions.create({
-          model: "gpt-3.5-turbo",
-          messages: [
-            {
-              role: "system",
-              content: "You are an academic website content generator that creates professional bios based on academic data. Output ONLY valid HTML without any markdown formatting or additional text."
-            },
-            {
-              role: "user",
-              content: prompt
-            }
-          ],
-          temperature: 0.7,
-          max_tokens: 1000
+        const flashModel = genAI.getGenerativeModel({
+          model: "gemini-1.5-flash",
+          tools: [{ googleSearch: {} }]
         });
 
-        // Extract the generated content
-        const content = fallbackResponse.choices[0].message.content.trim();
+        const result = await flashModel.generateContent({
+          contents: [{ role: 'user', parts: [{ text: prompt }] }],
+          generationConfig: {
+            temperature: 0.7,
+            maxOutputTokens: 2000,
+          },
+        });
 
-        // Validate that the response is HTML content (starts with <p> or similar)
+        const response = await result.response;
+        let content = response.text().trim();
+
+        // Remove markdown code blocks if present
+        if (content.startsWith('```html')) {
+          content = content.replace(/^```html\n/, '').replace(/\n```$/, '');
+        } else if (content.startsWith('```')) {
+          content = content.replace(/^```\n/, '').replace(/\n```$/, '');
+        }
+
+        content = content.trim();
+
+        // Validate HTML format
         if (!content.startsWith('<p') && !content.startsWith('<div') && !content.startsWith('<section')) {
           console.warn('Generated content from fallback model does not appear to be properly formatted HTML');
-          // Try to fix if it seems like valid content but incorrectly formatted
           if (content.includes('<p>')) {
-            // Extract just the HTML portion
             const htmlStart = content.indexOf('<p>');
             const htmlEnd = content.lastIndexOf('</p>') + 4;
             if (htmlStart >= 0 && htmlEnd > htmlStart) {
@@ -365,15 +383,15 @@ Generate ONLY the HTML content for the "About Me" section. Do not include any ex
           }
         }
 
-        console.log('Successfully generated content with GPT-3.5-turbo');
+        console.log('Successfully generated content with Gemini 1.5 Flash');
         return content;
       } catch (fallbackError) {
-        console.error('GPT-3.5-turbo fallback also failed:', fallbackError.message);
+        console.error('Gemini 1.5 Flash fallback also failed:', fallbackError.message);
         return null;
       }
     }
   } catch (error) {
-    console.error('Error generating content with OpenAI:', error.message);
+    console.error('Error generating content with Gemini:', error.message);
     return null;
   }
 }

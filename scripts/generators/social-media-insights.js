@@ -1,7 +1,7 @@
 /**
  * Social Media Insights Generator
- * 
- * Uses OpenAI to analyze social media data and generate insights
+ *
+ * Uses Google Gemini to analyze social media data and generate insights
  * about the user's online presence, engagement patterns, and content themes.
  */
 
@@ -10,18 +10,10 @@ require('dotenv').config();
 
 const fs = require('fs');
 const path = require('path');
-const { OpenAI } = require('openai');
+const { GoogleGenerativeAI } = require('@google/generative-ai');
 
-// Initialize OpenAI client with fallback if API key is missing
-let openai = null;
-try {
-  openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY || '',
-  });
-} catch (error) {
-  console.warn('Failed to initialize OpenAI client:', error.message);
-  // Continue execution - we'll use fallback data
-}
+// Check for Gemini API key
+const hasGeminiKey = !!process.env.GEMINI_API_KEY;
 
 /**
  * Analyzes social media data and generates insights
@@ -43,18 +35,18 @@ async function generateSocialMediaInsights() {
     // Read social media data
     const socialMediaData = JSON.parse(fs.readFileSync(socialMediaFile, 'utf8'));
     
-    // Format the data for the OpenAI prompt
+    // Format the data for the Gemini prompt
     const formattedData = formatDataForPrompt(socialMediaData);
-    
-    // Generate insights using OpenAI
-    const insightsContent = await generateInsightsWithOpenAI(formattedData);
-    
+
+    // Generate insights using Gemini
+    const insightsContent = await generateInsightsWithGemini(formattedData);
+
     if (!insightsContent) {
       console.error('Failed to generate social media insights');
       return false;
     }
-    
-    // Parse the JSON response from OpenAI
+
+    // Parse the JSON response from Gemini
     const insights = JSON.parse(insightsContent);
     
     // Save the generated insights
@@ -75,7 +67,7 @@ async function generateSocialMediaInsights() {
 }
 
 /**
- * Formats social media data for the OpenAI prompt
+ * Formats social media data for the Gemini prompt
  * @param {Object} data The social media data
  * @return {String} Formatted data for the prompt
  */
@@ -90,22 +82,26 @@ function formatDataForPrompt(data) {
 }
 
 /**
- * Generates insights using OpenAI API
+ * Generates insights using Google Gemini API
  * @param {String} formattedData Formatted social media data
  * @return {String} Generated insights in JSON format
  */
-async function generateInsightsWithOpenAI(formattedData) {
+async function generateInsightsWithGemini(formattedData) {
   try {
     // Check if API key is available
-    if (!process.env.OPENAI_API_KEY || !openai) {
-      console.error('OpenAI API key is not available or client failed to initialize');
+    if (!hasGeminiKey) {
+      console.error('Gemini API key is not available');
       console.log('Using fallback insights');
       return getFallbackInsights();
     }
-    
+
+    const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+    const model = genAI.getGenerativeModel({
+      model: 'gemini-2.0-flash',
+    });
+
     // Create the prompt
-    const prompt = `
-You are a social media analytics expert. Your task is to analyze social media data and generate insights.
+    const prompt = `You are a social media analytics expert. Your task is to analyze social media data and generate insights.
 
 Here is the social media data in JSON format:
 ${formattedData}
@@ -133,7 +129,7 @@ Format your response as a JSON object with the following structure:
     "recommendation 2"
   ],
   "platformInsights": {
-    "twitter": "insight for twitter",
+    "bluesky": "insight for bluesky",
     "mastodon": "insight for mastodon",
     "linkedin": "insight for linkedin"
   },
@@ -146,33 +142,22 @@ Format your response as a JSON object with the following structure:
   ]
 }
 
-Ensure your response is ONLY the JSON object, without any other text.
-`;
+Respond with ONLY the JSON object, no markdown code blocks, no explanation.`;
 
-    // Call OpenAI API using GPT-5 Responses API
     try {
-      const response = await openai.responses.create({
-        model: "gpt-5",
-        input: `You are a social media analytics expert that generates insights in JSON format.
+      const result = await model.generateContent(prompt);
+      let response = result.response.text().trim();
 
-${prompt}`,
-        reasoning: {
-          effort: "minimal"  // Fast generation for analytics
-        },
-        text: {
-          verbosity: "medium"  // Good balance for detailed insights
-        },
-        response_format: { type: "json_object" }
-      });
-      
-      // Extract and return the generated content from GPT-5 response
-      return response.output_text.trim();
+      // Remove markdown code blocks if present
+      response = response.replace(/^```json\s*/i, '').replace(/\s*```$/i, '').trim();
+
+      return response;
     } catch (apiError) {
-      console.error('Error calling OpenAI API:', apiError);
+      console.error('Error calling Gemini API:', apiError);
       return getFallbackInsights();
     }
   } catch (error) {
-    console.error('Error generating insights with OpenAI:', error);
+    console.error('Error generating insights with Gemini:', error);
     return getFallbackInsights();
   }
 }
@@ -269,7 +254,7 @@ function capitalizeFirstLetter(string) {
 }
 
 /**
- * Get fallback insights when OpenAI API is unavailable
+ * Get fallback insights when Gemini API is unavailable
  * @return {String} Fallback insights JSON string
  */
 function getFallbackInsights() {

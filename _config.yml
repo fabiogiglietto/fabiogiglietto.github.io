@@ -47,6 +47,9 @@ exclude:
   - node_modules/
   - vendor/
   - scripts/
+  - tests/
+  - coverage/
+  - jest.config.js
   - README.md
   - package.json
   - package-lock.json

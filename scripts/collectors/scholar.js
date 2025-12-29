@@ -6,12 +6,13 @@
 
 const axios = require('axios');
 const cheerio = require('cheerio');
+const config = require('../config');
 
 async function collect() {
   console.log('Collecting Google Scholar data...');
-  
-  // Google Scholar ID for Fabio Giglietto
-  const scholarId = 'FmenbcUAAAAJ';
+
+  // Scholar ID from centralized config
+  const scholarId = config.scholarId;
   
   try {
     const response = await axios.get(`https://scholar.google.com/citations?user=${scholarId}`, {
@@ -53,4 +54,7 @@ async function collect() {
   }
 }
 
-module.exports = { collect };
+module.exports = {
+  collect,
+  name: 'scholar'
+};

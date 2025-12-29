@@ -9,8 +9,8 @@ Create a `.env` file in the root directory with the following variables:
 ### Essential APIs
 
 ```env
-# OpenAI API (Required for AI-powered content generation and analysis)
-OPENAI_API_KEY=sk-your-openai-api-key
+# Google Gemini API (Required for AI-powered content generation and web search grounding)
+GEMINI_API_KEY=your-gemini-api-key
 
 # Academic APIs (for publication data)
 WOS_API_KEY=your-web-of-science-api-key
@@ -128,12 +128,12 @@ node scripts/collectors/social-media-aggregator.js
 - **LinkedIn**: Requires proper OAuth flow and has rate limits
 - **BlueSky**: Public API, no authentication needed for public posts
 - **Mastodon**: Public posts accessible without token, token provides enhanced access
-- **OpenAI**: Required for content deduplication and summarization
+- **Gemini**: Required for AI content generation, web search grounding, and smart summarization
 
 ## Fallback Behavior
 
 The system will work with partial API availability:
-- Without OpenAI: Uses basic deduplication instead of AI summarization
+- Without Gemini: Uses basic deduplication instead of AI summarization
 - Without LinkedIn: Skips LinkedIn posts
 - Without Mastodon token: Uses public API (limited)
 - Without any social APIs: Falls back to manual news entries in `_data/news.yml`
