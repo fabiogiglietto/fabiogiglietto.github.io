@@ -45,6 +45,15 @@ const config = {
     }
   },
 
+  // Institutional Repository (ORA UNIURB / IRIS)
+  ora: {
+    baseUrl: 'https://ora.uniurb.it',
+    oaiEndpoint: 'https://ora.uniurb.it/oai/request',
+    searchUrl: 'https://ora.uniurb.it/simple-search',
+    researcherProfileId: 'rp03290',
+    profileUrl: 'https://ora.uniurb.it/cris/rp/rp03290'
+  },
+
   // External Resource URLs
   urls: {
     toreadFeed: 'https://raw.githubusercontent.com/fabiogiglietto/toread/main/output/feed.json',

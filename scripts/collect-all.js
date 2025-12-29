@@ -25,6 +25,7 @@ const scopusCollector = require('./collectors/scopus');
 const semanticScholarCollector = require('./collectors/semantic-scholar');
 const publicationsAggregator = require('./collectors/publications-aggregator');
 const toreadCollector = require('./collectors/toread');
+const oraCollector = require('./collectors/ora');
 
 // Import generators
 const aboutGenerator = require('./generators/about-generator');
@@ -59,7 +60,7 @@ async function collectAll() {
     
     // Phase 1: Collect basic data sources in parallel
     console.log('Phase 1: Collecting basic data sources...');
-    const [orcidData, scholarData, universityData, githubData, newsData, webSearchData, socialMediaData, wosData, scopusData, semanticScholarData, toreadData] = await Promise.all([
+    const [orcidData, scholarData, universityData, githubData, newsData, webSearchData, socialMediaData, wosData, scopusData, semanticScholarData, toreadData, oraData] = await Promise.all([
       orcidCollector.collect().catch(err => {
         console.error('ORCID collection error:', err.message);
         return null;
@@ -117,6 +118,10 @@ async function collectAll() {
       toreadCollector.collect().catch(err => {
         console.error('Toread collection error:', err.message);
         return null;
+      }),
+      oraCollector.collect().catch(err => {
+        console.error('ORA UNIURB collection error:', err.message);
+        return null;
       })
     ]);
     
@@ -140,7 +145,8 @@ async function collectAll() {
       // Also copy to Jekyll _data directory for site.data.toread access
       fs.writeFileSync(path.join(__dirname, '../_data/toread.json'), JSON.stringify(toreadData, null, 2));
     }
-    
+    if (oraData) fs.writeFileSync(path.join(dataDir, 'ora.json'), JSON.stringify(oraData, null, 2));
+
     // Phase 2: Aggregate publications (using saved data from Phase 1)
     console.log('Phase 2: Aggregating publications...');
     const aggregatedPublicationsData = await publicationsAggregator.collect().catch(err => {
@@ -166,7 +172,8 @@ async function collectAll() {
         scopus: !!scopusData,
         semanticScholar: !!semanticScholarData,
         aggregatedPublications: !!aggregatedPublicationsData,
-        toread: !!toreadData
+        toread: !!toreadData,
+        ora: !!oraData
       }
     };
     

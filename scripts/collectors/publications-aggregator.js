@@ -138,14 +138,16 @@ function createNewPublication(sourcePub, sourceName, fieldMapping) {
       scholar: null,
       wos: null,
       scopus: null,
-      semanticScholar: null
+      semanticScholar: null,
+      ora: null
     },
     source_ids: {
       orcid: null,
       scholar: null,
       wos: null,
       scopus: null,
-      semanticScholar: null
+      semanticScholar: null,
+      ora: null
     },
     metrics: {}
   };
@@ -185,6 +187,18 @@ const SOURCE_MAPPINGS = {
       publication.openAccessPdf = sourcePub.openAccessPdf;
       publication.fieldsOfStudy = sourcePub.fieldsOfStudy;
     }
+  },
+  ora: {
+    displayName: 'ORA UNIURB',
+    idField: 'handle',
+    buildUrl: (pub) => pub.url || `https://ora.uniurb.it/handle/${pub.handle}`,
+    extraFields: (publication, sourcePub) => {
+      publication.oraHandle = sourcePub.handle;
+      publication.oraType = sourcePub.type;
+      if (sourcePub.abstract) {
+        publication.abstract = sourcePub.abstract;
+      }
+    }
   }
 };
 
@@ -196,12 +210,13 @@ async function collect() {
     
     // Load existing data files instead of re-collecting
     console.log('Loading existing data files...');
-    const [orcidData, scholarData, wosData, scopusData, semanticScholarData] = await Promise.all([
+    const [orcidData, scholarData, wosData, scopusData, semanticScholarData, oraData] = await Promise.all([
       loadDataFile(path.join(dataDir, 'orcid.json')),
       loadDataFile(path.join(dataDir, 'scholar.json')),
       loadDataFile(path.join(dataDir, 'wos.json')),
       loadDataFile(path.join(dataDir, 'scopus.json')),
-      loadDataFile(path.join(dataDir, 'semantic-scholar.json'))
+      loadDataFile(path.join(dataDir, 'semantic-scholar.json')),
+      loadDataFile(path.join(dataDir, 'ora.json'))
     ]);
     
     // Collect crossref data which depends on aggregated data
@@ -304,14 +319,16 @@ async function collect() {
             scholar: null,
             wos: null,
             scopus: null,
-            semanticScholar: null
+            semanticScholar: null,
+            ora: null
           },
           source_ids: {
             orcid: work['put-code'],
             scholar: null,
             wos: null,
             scopus: null,
-            semanticScholar: null
+            semanticScholar: null,
+            ora: null
           },
           metrics: {}
         });
@@ -375,21 +392,115 @@ async function collect() {
               scholar: config.buildScholarUrl(pub.id),
               wos: null,
               scopus: null,
-              semanticScholar: null
+              semanticScholar: null,
+              ora: null
             },
             source_ids: {
               orcid: null,
               scholar: pub.id,
               wos: null,
               scopus: null,
-              semanticScholar: null
+              semanticScholar: null,
+              ora: null
             },
             metrics: {}
           });
         }
       });
     }
-    
+
+    // Process ORA UNIURB publications (institutional repository)
+    if (oraData && oraData.publications) {
+      console.log(`Processing ${oraData.publications.length} publications from ORA UNIURB`);
+
+      oraData.publications.forEach(pub => {
+        let matched = false;
+
+        // Try to match by DOI first
+        if (pub.doi) {
+          const doiKey = `doi:${pub.doi.toLowerCase()}`;
+          if (publicationsMap.has(doiKey)) {
+            const publication = publicationsMap.get(doiKey);
+            publication.source_urls.ora = pub.url;
+            publication.source_ids.ora = pub.handle;
+            publication.oraHandle = pub.handle;
+            if (pub.abstract && !publication.abstract) {
+              publication.abstract = pub.abstract;
+            }
+            console.log(`Matched ORA publication by DOI: "${pub.title}"`);
+            matched = true;
+          }
+        }
+
+        // If no DOI match, try by title
+        if (!matched) {
+          const oraTitle = pub.title.toLowerCase().replace(/[^\w\s]/g, '');
+
+          for (const [_key, publication] of publicationsMap.entries()) {
+            const pubTitle = publication.title.toLowerCase().replace(/[^\w\s]/g, '');
+
+            if (isSimilarTitle(pubTitle, oraTitle)) {
+              publication.source_urls.ora = pub.url;
+              publication.source_ids.ora = pub.handle;
+              publication.oraHandle = pub.handle;
+              if (pub.abstract && !publication.abstract) {
+                publication.abstract = pub.abstract;
+              }
+              // Add DOI if missing
+              if (!publication.doi && pub.doi) {
+                publication.doi = pub.doi;
+              }
+              console.log(`Matched ORA publication by title: "${pub.title}"`);
+              matched = true;
+              break;
+            }
+          }
+        }
+
+        // If still no match, add as new entry (ORA has full-text access)
+        if (!matched) {
+          const key = pub.doi
+            ? `doi:${pub.doi.toLowerCase()}`
+            : `title:${pub.title.toLowerCase().replace(/[^\w\s]/g, '')}`;
+
+          publicationsMap.set(key, {
+            title: pub.title,
+            authors: pub.authors,
+            venue: pub.journal || pub.publisher,
+            year: pub.year,
+            doi: pub.doi,
+            citations: {
+              scholar: null,
+              wos: null,
+              scopus: null,
+              semanticScholar: null
+            },
+            source_urls: {
+              orcid: null,
+              scholar: null,
+              wos: null,
+              scopus: null,
+              semanticScholar: null,
+              ora: pub.url
+            },
+            source_ids: {
+              orcid: null,
+              scholar: null,
+              wos: null,
+              scopus: null,
+              semanticScholar: null,
+              ora: pub.handle
+            },
+            oraHandle: pub.handle,
+            oraType: pub.type,
+            abstract: pub.abstract,
+            metrics: {}
+          });
+          console.log(`Added new publication from ORA: "${pub.title}"`);
+        }
+      });
+    }
+
     // Process Web of Science publications using generic processor
     processPublicationSource(wosData, 'wos', publicationsMap, SOURCE_MAPPINGS.wos);
     
@@ -501,7 +612,8 @@ async function collect() {
         with_wos: publications.filter(pub => pub.citations.wos !== null).length,
         with_scopus: publications.filter(pub => pub.citations.scopus !== null).length,
         with_semanticScholar: publications.filter(pub => pub.citations.semanticScholar !== null).length,
-        with_crossref: publications.filter(pub => pub.source_urls && pub.source_urls.crossref).length
+        with_crossref: publications.filter(pub => pub.source_urls && pub.source_urls.crossref).length,
+        with_ora: publications.filter(pub => pub.source_urls && pub.source_urls.ora !== null).length
       }
     };
     
