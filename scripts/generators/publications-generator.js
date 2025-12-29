@@ -38,6 +38,7 @@ async function generatePublicationsData() {
             authors: pub.authors || formatAuthorsFromTitle(pub.title),
             venue: pub.venue || '',
             year: pub.year, // Only use the explicitly provided year
+            date: pub.publicationDate || null, // Full date for sorting (YYYY-MM-DD)
             doi: pub.doi,
             citations: pub.metrics.total_citations || 0,
             citation_sources: {
@@ -103,9 +104,13 @@ async function generatePublicationsData() {
       return false;
     }
     
-    // Sort by year (newest first), then by citations (highest first)
+    // Sort by full date (newest first), then by citations (highest first)
     publications.sort((a, b) => {
-      if (b.year !== a.year) return b.year - a.year;
+      // First compare by full date if available
+      const dateA = a.date || `${a.year}-01-01`;
+      const dateB = b.date || `${b.year}-01-01`;
+      if (dateB !== dateA) return dateB.localeCompare(dateA);
+      // Then by citations
       return b.citations - a.citations;
     });
     

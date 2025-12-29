@@ -301,12 +301,37 @@ async function collect() {
         let authors = null;
         // ORCID doesn't provide authors in the summary view
         
+        // Extract full publication date (year, month, day) from ORCID
+        let year = null;
+        let month = null;
+        let day = null;
+        let publicationDate = null;
+
+        if (work['publication-date']) {
+          if (work['publication-date'].year) {
+            year = parseInt(work['publication-date'].year.value);
+          }
+          if (work['publication-date'].month) {
+            month = parseInt(work['publication-date'].month.value);
+          }
+          if (work['publication-date'].day) {
+            day = parseInt(work['publication-date'].day.value);
+          }
+          // Create ISO date string for sorting (YYYY-MM-DD)
+          if (year) {
+            publicationDate = `${year}-${String(month || 1).padStart(2, '0')}-${String(day || 1).padStart(2, '0')}`;
+          }
+        }
+
         publicationsMap.set(key, {
           title: work.title.title.value,
           type: work.type,
           venue: journalTitle,
           authors: authors,
-          year: work['publication-date'] ? parseInt(work['publication-date'].year.value) : null,
+          year: year,
+          month: month,
+          day: day,
+          publicationDate: publicationDate,
           doi: doi,
           citations: {
             scholar: null,

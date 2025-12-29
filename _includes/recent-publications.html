@@ -1,8 +1,8 @@
 <section class="recent-publications">
   <h2 class="section-title">Recent Publications</h2>
   <div class="publications-list">
-    {% assign publications = site.data.publications | sort: 'year' | reverse %}
-    {% for publication in publications limit:5 %}
+    {% comment %} Publications are pre-sorted by year (desc) then citations (desc) in publications.yml {% endcomment %}
+    {% for publication in site.data.publications limit:5 %}
     <div class="publication-item">
       <h3 class="publication-title">{{ publication.title }}</h3>
       <p class="publication-citation">
