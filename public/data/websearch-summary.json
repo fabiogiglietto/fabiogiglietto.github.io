@@ -1,55 +1,64 @@
 {
-  "totalEntries": 5,
-  "lastUpdated": "2025-12-29T06:34:20.332Z",
+  "totalEntries": 13,
+  "lastUpdated": "2025-12-29T16:15:44.970Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2025-10-27T06:31:21.929Z"
+    "latest": "2025-12-29T16:15:44.968Z"
   },
   "byDate": {
+    "2025-12-29": 8,
     "2025-10-27": 1,
     "2025-07-06": 1,
     "2025-07-05": 2,
     "2025-06-10": 1
   },
   "bySource": {
+    "vertexaisearch.cloud.google.com": 8,
     "uniurb.it": 2,
     "ilrestodelcarlino.it": 1,
     "research.qut.edu.au": 1,
     "arxiv.org": 1
   },
   "byRelevanceScore": {
-    "high": 4,
+    "high": 12,
     "medium": 1,
     "low": 0
   },
   "recentHighQuality": [
     {
-      "title": "DMRC Visitor Seminar: Prof. Fabio Giglietto - QUT Digital Media Research Centre",
-      "url": "https://research.qut.edu.au/dmrc/2023/06/08/dmrc-visitor-seminar-prof-fabio-giglietto/?utm_source=openai",
-      "source": "research.qut.edu.au",
+      "title": "Fabio Giglietto",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFT5BQCSZgRjlBeGa6HaG4vUZCNp384VUJomCedYOagNJJMfpAJiAs3DgtyuimxVBDozacpTkfLPwrJq7apwKpENxM7lcO-B0TtqwOdjO0mYTbmqxD4Z8VM5y6kgw==",
+      "source": "vertexaisearch.cloud.google.com",
       "relevanceScore": 0.9,
-      "collectedAt": "2025-07-06T00:52:48.465Z"
+      "collectedAt": "2025-12-29T16:15:44.968Z"
     },
     {
-      "title": "INTRODUCTION TO DATA ANALYSIS FOR MEDIA STUDIES - Lecturer: Fabio Giglietto - A.Y. 2024/2025 - Credits 5",
-      "url": "https://www.uniurb.it/syllabi/267263?utm_source=openai",
-      "source": "uniurb.it",
+      "title": "People - Summer Institute in Computational Social Science",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGetM3MFpYDA_QvKXyjdXCA9Ka19Yvq0XorW-JdVKZ6_afmyvf4AukpBNYiwpbDNH5zKLWt6MyvP0O26JWqqB7iCZNyDWztlgWWmuBIcTv7qbLN0whvWLgV",
+      "source": "vertexaisearch.cloud.google.com",
       "relevanceScore": 0.9,
-      "collectedAt": "2025-07-05T00:44:26.479Z"
+      "collectedAt": "2025-12-29T16:15:44.968Z"
     },
     {
-      "title": "DIGITAL SOCIAL NETWORK ANALYSIS - Lecturer: Fabio Giglietto - A.Y. 2024/2025 - Credits 6",
-      "url": "https://www.uniurb.it/syllabi/265964?utm_source=openai",
-      "source": "uniurb.it",
+      "title": "Italy at the Polls 2022: The Right Strikes Back 3031292979, 9783031292972 - dokumen.pub",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG5U8gjYASzp5iYl0PiKscOT_aocB3rDpAfFr-tcvRIFvr79qEAgo7ORNpLYN3qUI0-6lXexxey6LNqboL3L4oQoYVhuTPrls56uW6WeaYkRcARSgNkT6PfdlImTJQVAcqJc_F2X3pMcENXNvD9dwbTVVXWsiztiAN0hAdgD9LPQjLcQu8MROXy9hp_AmBFeenEufnmjrFGVChsKw==",
+      "source": "vertexaisearch.cloud.google.com",
       "relevanceScore": 0.9,
-      "collectedAt": "2025-07-05T00:44:26.479Z"
+      "collectedAt": "2025-12-29T16:15:44.968Z"
     },
     {
-      "title": "Decoding the News Media Diet of Disinformation Spreaders",
-      "url": "https://arxiv.org/abs/2402.02173?utm_source=openai",
-      "source": "arxiv.org",
+      "title": "REVISITING KEY CONCEPTS IN DIGITAL MEDIA RESEARCH: INFLUENCE, POPULISM, PARTISANSHIP, POLARISATION",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8BtmG9-5kxvWsW7jpYC9lqINCKIHk2iF-yKfAGGuyLKxRDNhRg60T9h3-VrC2GXEIvSMl374O0-G6OtxAh3BeYar_Gq4gv6DVIMeImujexQI7DhPpvh0R-hCSOR0cQXnhQ50q0Zwx5ijbyEPm9qO3NAGu-zuIWJXwojP0L_RC7j1hFFEXeA==",
+      "source": "vertexaisearch.cloud.google.com",
       "relevanceScore": 0.9,
-      "collectedAt": "2025-06-10T06:45:26.015Z"
+      "collectedAt": "2025-12-29T16:15:44.968Z"
+    },
+    {
+      "title": "A Workflow to Detect, Monitor, and Update Lists of Coordinated Social Media Accounts Across Time - Uniurb",
+      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFor1PjVx2iG6gSpZISQ51FQcsOYA6wSISmKqdXXYl_XkId65spFrGM6XXO5Gox1HVjVQscc64kyLLsO1J5UgA4UUWLA_R7TpVPnXEljfoXN5sI8mqZqApBgqF1_OUbD-9n9zKkkXEyqAFMLyplVwihxR4jxLSSHhzp8uzzbfz4S30Oq6_9DQFJWZkBc8anDFSM8pcUmQx9dfEV4bgZi1hBQoDqDvDGXCq1F8zps_H9c6E5bcXV_64cs0iNQK8ZB_n1__7fJ8CNuEWXSucV-r5S4TYIeKTxOXd9i4p8xBwtVdFDOeTykhcOW6S6J-HQUj1F_MfQjsQiA6zqOw==",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2025-12-29T16:15:44.968Z"
     }
   ]
 }

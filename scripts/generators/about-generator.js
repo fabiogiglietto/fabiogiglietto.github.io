@@ -17,9 +17,9 @@ let model = null;
 try {
   if (process.env.GEMINI_API_KEY) {
     genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    // Use Gemini 1.5 Pro for best quality with Google Search grounding
+    // Use Gemini 2.0 Flash for best quality with Google Search grounding
     model = genAI.getGenerativeModel({
-      model: "gemini-1.5-pro",
+      model: "gemini-2.0-flash",
       // Enable Google Search grounding for web search capabilities
       tools: [{ googleSearch: {} }]
     });
@@ -285,7 +285,7 @@ Include any relevant up-to-date information you find in the biography, but maint
 Generate ONLY the HTML content for the "About Me" section. Do not include any explanations, notes, markdown code blocks, or additional text. Your response should be valid HTML that starts with <p> and ends with </p> without any additional formatting or explanation.
 `;
 
-    console.log('Calling Gemini API with gemini-1.5-pro and Google Search grounding...');
+    console.log('Calling Gemini API with gemini-2.0-flash and Google Search grounding...');
 
     try {
       // Call Gemini API with Google Search grounding enabled
@@ -333,16 +333,16 @@ Generate ONLY the HTML content for the "About Me" section. Do not include any ex
         console.log('Google Search grounding was used for this generation');
       }
 
-      console.log('Successfully generated content with Gemini 1.5 Pro');
+      console.log('Successfully generated content with Gemini 2.0 Flash');
       return content;
     } catch (apiError) {
       console.error('Error calling Gemini API:', apiError.message);
 
-      // Try with Gemini 1.5 Flash as fallback (faster, cheaper model)
-      console.log('Trying fallback model gemini-1.5-flash...');
+      // Try with Gemini 1.5 Flash Latest as fallback
+      console.log('Trying fallback model gemini-1.5-flash-latest...');
       try {
         const flashModel = genAI.getGenerativeModel({
-          model: "gemini-1.5-flash",
+          model: "gemini-1.5-flash-latest",
           tools: [{ googleSearch: {} }]
         });
 
