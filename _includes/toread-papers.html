@@ -21,18 +21,19 @@
       <div class="papers-carousel" id="papersCarousel">
         {% assign recent_papers = toread_data.papers | sort: 'dateAdded' | reverse %}
         {% for paper in recent_papers %}
-          <article class="paper-card">
-            <div class="paper-header">
-              <h3 class="paper-title">
-                {% if paper.doi %}
-                  <a href="https://doi.org/{{ paper.doi }}" target="_blank" rel="noopener">{{ paper.title }}</a>
-                {% elsif paper.url %}
-                  <a href="{{ paper.url }}" target="_blank" rel="noopener">{{ paper.title }}</a>
-                {% else %}
-                  {{ paper.title }}
-                {% endif %}
-              </h3>
-            </div>
+          {% if paper.doi %}
+            {% assign paper_link = "https://doi.org/" | append: paper.doi %}
+          {% elsif paper.url %}
+            {% assign paper_link = paper.url %}
+          {% else %}
+            {% assign encoded_title = paper.title | url_encode %}
+            {% assign paper_link = "https://scholar.google.com/scholar?q=" | append: encoded_title %}
+          {% endif %}
+          <a href="{{ paper_link }}" target="_blank" rel="noopener" class="paper-card-link">
+            <article class="paper-card">
+              <div class="paper-header">
+                <h3 class="paper-title">{{ paper.title }}</h3>
+              </div>
             
             <div class="paper-meta">
               <div class="paper-authors">
@@ -61,13 +62,10 @@
               <span class="date-added">Added {{ paper.dateAdded | date: "%b %d, %Y" }}</span>
               {% if paper.doi %}
                 <span class="doi-text">DOI: {{ paper.doi }}</span>
-              {% elsif paper.url %}
-                <a href="{{ paper.url }}" class="url-link" target="_blank" rel="noopener">
-                  View Paper
-                </a>
               {% endif %}
             </div>
-          </article>
+            </article>
+          </a>
         {% endfor %}
       </div>
       
