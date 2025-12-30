@@ -6,10 +6,13 @@ const path = require('path');
 const { promisify } = require('util');
 const writeFileAsync = promisify(fs.writeFile);
 const { GoogleGenerativeAI } = require('@google/generative-ai');
+const OpenAI = require('openai');
 const axios = require('axios');
 
-// Check for API key in environment
-const hasValidApiKey = !!process.env.GEMINI_API_KEY;
+// Check for API keys in environment
+const hasGeminiApiKey = !!process.env.GEMINI_API_KEY;
+const hasOpenAIApiKey = !!process.env.OPENAI_API_KEY;
+const hasValidApiKey = hasGeminiApiKey || hasOpenAIApiKey;
 
 // Check if running in GitHub Actions
 const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
@@ -22,13 +25,13 @@ async function collectWebSearchResults() {
   console.log('Starting web search collection...');
 
   try {
-    // Early check for API key
+    // Early check for API keys
     if (!hasValidApiKey) {
       if (isGitHubActions) {
-        console.error('GEMINI_API_KEY environment variable is missing in GitHub Actions!');
-        console.error('Please add the GEMINI_API_KEY secret to the repository settings.');
+        console.error('No API keys found in GitHub Actions!');
+        console.error('Please add GEMINI_API_KEY and/or OPENAI_API_KEY secrets.');
       } else {
-        console.log('GEMINI_API_KEY environment variable is not set');
+        console.log('No API keys found (GEMINI_API_KEY or OPENAI_API_KEY)');
         console.log('Clearing web mentions data - section will be hidden without valid API key');
       }
 
@@ -36,26 +39,30 @@ async function collectWebSearchResults() {
       return await saveEmptyResults();
     }
 
-    console.log('API key found, configuring Gemini client...');
+    console.log(`API keys found: Gemini=${hasGeminiApiKey}, OpenAI=${hasOpenAIApiKey}`);
 
-    // Configure Gemini API with Google Search grounding
-    const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    const model = genAI.getGenerativeModel({
-      model: 'gemini-2.0-flash',
-      tools: [{ googleSearch: {} }],
-    });
+    let allResults = [];
 
-    // Search queries - focused on NEWS coverage, not academic papers
-    const queries = [
+    // Run Gemini search if API key is available
+    if (hasGeminiApiKey) {
+      console.log('\n=== Starting Gemini Web Search ===');
+
+      // Configure Gemini API with Google Search grounding
+      const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+      const model = genAI.getGenerativeModel({
+        model: 'gemini-2.0-flash',
+        tools: [{ googleSearch: {} }],
+      });
+
+      // Search queries - focused on NEWS coverage, not academic papers
+      const queries = [
       "\"Fabio Giglietto\" news article -site:researchgate.net -site:academia.edu",
       "\"Fabio Giglietto\" interview OR quoted OR commented -site:researchgate.net",
       "\"Fabio Giglietto\" disinformation OR misinformation news coverage",
       "\"Fabio Giglietto\" expert OR researcher mentioned in news"
-    ];
+      ];
 
-    let allResults = [];
-
-    // Run searches for each query using Gemini with Google Search
+      // Run searches for each query using Gemini with Google Search
     for (const query of queries) {
       console.log(`Searching for: ${query}`);
 
@@ -130,7 +137,8 @@ Only include results with REAL, direct URLs to news sources.`;
                     url: resolvedUrl,
                     snippet: item.description || '',
                     date: new Date().toISOString().split('T')[0],
-                    source: item.source || extractDomainFromUrl(resolvedUrl)
+                    source: item.source || extractDomainFromUrl(resolvedUrl),
+                    searchEngine: 'gemini'
                   });
                 }
               }
@@ -170,7 +178,8 @@ Only include results with REAL, direct URLs to news sources.`;
                 url: url,
                 snippet: '',
                 date: new Date().toISOString().split('T')[0],
-                source: extractDomainFromUrl(url)
+                source: extractDomainFromUrl(url),
+                searchEngine: 'gemini'
               });
             }
           }
@@ -178,13 +187,23 @@ Only include results with REAL, direct URLs to news sources.`;
 
         // Add results to collection
         allResults = [...allResults, ...searchResults];
-        console.log(`Total results so far: ${allResults.length}`);
+        console.log(`Total Gemini results so far: ${allResults.length}`);
 
       } catch (queryError) {
         console.error(`Error searching for "${query}":`, queryError.message);
         // Continue with other queries even if one fails
       }
     }
+    } // End of Gemini search block
+
+    // Also search with OpenAI if available
+    const openaiResults = await searchWithOpenAI();
+    if (openaiResults.length > 0) {
+      console.log(`Adding ${openaiResults.length} results from OpenAI search`);
+      allResults = [...allResults, ...openaiResults];
+    }
+
+    console.log(`\nTotal combined results: ${allResults.length} (Gemini + OpenAI)`);
 
     // If we didn't get any REAL results, save empty results (hide section)
     if (allResults.length === 0) {
@@ -197,20 +216,40 @@ Only include results with REAL, direct URLs to news sources.`;
       index === self.findIndex(r => r.url === result.url)
     );
 
-    // Add validation layer - verify each result with Gemini
+    // Add validation layer - verify each result with Gemini (if available)
     console.log(`\n=== Starting validation of ${uniqueResults.length} results ===`);
     const validatedResults = [];
 
-    // Create a model without search for validation
-    const validationModel = genAI.getGenerativeModel({
-      model: 'gemini-2.0-flash',
-    });
+    // Create a model without search for validation (only if Gemini is available)
+    let validationModel = null;
+    if (hasGeminiApiKey) {
+      const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+      validationModel = genAI.getGenerativeModel({
+        model: 'gemini-2.0-flash',
+      });
+    }
 
     for (let i = 0; i < uniqueResults.length; i++) {
       const result = uniqueResults[i];
       console.log(`\nValidating result ${i + 1}/${uniqueResults.length}: ${result.title}`);
 
       try {
+        // Skip validation if no Gemini API key, include result with default score
+        if (!validationModel) {
+          console.log(`  Skipping validation (no Gemini API key), including by default`);
+          validatedResults.push({
+            title: result.title,
+            snippet: result.snippet,
+            url: result.url,
+            date: result.date || new Date().toISOString().split('T')[0],
+            source: result.source || extractDomainFromUrl(result.url),
+            description: result.snippet || result.title,
+            relevanceScore: 0.6,
+            searchEngine: result.searchEngine
+          });
+          continue;
+        }
+
         const validation = await validateWebMention(validationModel, result);
         if (validation.isRelevant) {
           console.log(`✓ Validated: ${result.title}`);
@@ -228,7 +267,8 @@ Only include results with REAL, direct URLs to news sources.`;
             relevanceScore: validation.relevanceScore,
             mentionedByName: validation.mentionedByName,
             personMatch: validation.personMatch,
-            isRecent: validation.isRecent
+            isRecent: validation.isRecent,
+            searchEngine: result.searchEngine
           });
         } else {
           console.log(`✗ Filtered out: ${result.title}`);
@@ -247,7 +287,8 @@ Only include results with REAL, direct URLs to news sources.`;
           date: result.published_date || result.date || new Date().toISOString().split('T')[0],
           source: result.source || extractDomainFromUrl(result.url),
           description: "Description unavailable due to validation error",
-          relevanceScore: 0.5
+          relevanceScore: 0.5,
+          searchEngine: result.searchEngine
         });
       }
     }
@@ -741,6 +782,112 @@ function extractDomainFromUrl(url) {
     return urlObj.hostname.replace('www.', '');
   } catch (error) {
     return 'Web';
+  }
+}
+
+/**
+ * Search using OpenAI Responses API with web search tool
+ */
+async function searchWithOpenAI() {
+  if (!hasOpenAIApiKey) {
+    console.log('OpenAI API key not configured, skipping OpenAI search');
+    return [];
+  }
+
+  console.log('\n=== Starting OpenAI Web Search ===');
+
+  try {
+    const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+
+    const searchPrompt = `Search for recent NEWS ARTICLES and MEDIA COVERAGE that mention "Fabio Giglietto" from the past 6 months.
+
+IMPORTANT CONTEXT:
+- Fabio Giglietto is a Professor of Internet Studies at University of Urbino Carlo Bo, Italy
+- He specializes in: disinformation research, social media analysis, computational social science
+- He is often quoted as an expert on misinformation, fake news, and coordinated online behavior
+
+WHAT TO FIND (prioritize these):
+1. News articles from newspapers, magazines, or news websites that quote or mention him
+2. Media interviews, podcasts, or TV/radio appearances
+3. Press coverage about his research findings
+4. Articles where journalists cite him as an expert source
+5. Conference or event announcements where he is a speaker
+
+WHAT TO EXCLUDE (do NOT include):
+- His own profile pages (ORCID, Google Scholar, ResearchGate, LinkedIn, personal website)
+- Direct links to his academic papers or publications
+- Academic repository pages (IRIS, arXiv, SSRN)
+- ResearchGate "Request PDF" pages
+- Social media profile pages
+
+For each NEWS result found, provide a JSON array with objects containing:
+- title: The exact title of the news article
+- url: The full URL (must be a real, direct URL)
+- description: A brief description of how he is mentioned
+- source: The source domain (e.g., "bbc.com", "wired.it")
+
+Respond with ONLY a valid JSON array, no other text.`;
+
+    const response = await openai.responses.create({
+      model: 'gpt-4o',
+      tools: [{ type: 'web_search' }],
+      input: searchPrompt
+    });
+
+    console.log('OpenAI response received');
+
+    const results = [];
+
+    // Extract text from the response
+    let responseText = '';
+    if (response.output) {
+      for (const item of response.output) {
+        if (item.type === 'message' && item.content) {
+          for (const content of item.content) {
+            if (content.type === 'output_text') {
+              responseText += content.text;
+            }
+          }
+        }
+      }
+    }
+
+    // Try to parse JSON from response
+    try {
+      const jsonMatch = responseText.match(/\[[\s\S]*\]/);
+      if (jsonMatch) {
+        const parsed = JSON.parse(jsonMatch[0]);
+        if (Array.isArray(parsed)) {
+          for (const item of parsed) {
+            if (item.url && item.title) {
+              // Skip unwanted results
+              if (shouldSkipResult(item.url, item.title)) {
+                console.log(`OpenAI: Skipping filtered result: ${item.url}`);
+                continue;
+              }
+
+              results.push({
+                title: item.title,
+                url: item.url,
+                snippet: item.description || '',
+                date: new Date().toISOString().split('T')[0],
+                source: item.source || extractDomainFromUrl(item.url),
+                searchEngine: 'openai'
+              });
+            }
+          }
+        }
+      }
+    } catch (parseError) {
+      console.log(`OpenAI: Failed to parse JSON: ${parseError.message}`);
+    }
+
+    console.log(`OpenAI search found ${results.length} results`);
+    return results;
+
+  } catch (error) {
+    console.error('OpenAI search error:', error.message);
+    return [];
   }
 }
 
