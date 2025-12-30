@@ -67,21 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
     
-    // Load publications data if it exists
-    const publicationsSection = document.querySelector('.recent-publications');
-    if (publicationsSection) {
-      try {
-        const response = await fetch('/public/data/scholar.json');
-        if (response.ok) {
-          const data = await response.json();
-          if (data.publications) {
-            updateRecentPublications(data.publications, publicationsSection);
-          }
-        }
-      } catch (error) {
-        console.error('Error loading publications data:', error);
-      }
-    }
+    // Publications are rendered server-side from _data/publications.yml
+    // which contains aggregated data from multiple sources with proper date sorting
     
     // Initialize teaching page content if we're on the teaching page
     if (document.querySelector('.teaching-page')) {
@@ -122,35 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
   
-  // Update recent publications from Scholar data
-  const updateRecentPublications = (publications, container) => {
-    if (publications && publications.length > 0) {
-      const publicationsList = container.querySelector('.publications-list');
-      if (publicationsList) {
-        publicationsList.innerHTML = '';
-        
-        // Sort by year and take the 5 most recent
-        const recentPublications = publications
-          .sort((a, b) => parseInt(b.year || '0') - parseInt(a.year || '0'))
-          .slice(0, 5);
-          
-        recentPublications.forEach(pub => {
-          const pubEl = document.createElement('div');
-          pubEl.className = 'publication-item';
-          pubEl.innerHTML = `
-            <h3 class="publication-title">${pub.title}</h3>
-            <p class="publication-authors">${pub.authors}</p>
-            <p class="publication-venue">${pub.venue || ''} ${pub.year ? `, ${pub.year}` : ''}</p>
-            <div class="publication-links">
-              ${pub.url ? `<a href="${pub.url}" class="publication-link" target="_blank">View</a>` : ''}
-              ${pub.citations ? `<span class="publication-citation-count"><i class="fas fa-quote-right"></i> ${pub.citations} citations</span>` : ''}
-            </div>
-          `;
-          publicationsList.appendChild(pubEl);
-        });
-      }
-    }
-  };
   
   // Initialize teaching page content
   const initTeachingPage = async () => {
