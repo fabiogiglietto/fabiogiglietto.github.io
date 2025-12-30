@@ -1,33 +1,39 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a presence across Mastodon, LinkedIn, and Bluesky, focusing on research related to computational social science, disinformation, and information operations. His LinkedIn profile boasts the largest follower base, while engagement varies across platforms.",
+  "overallSummary": "Fabio Giglietto maintains an active presence on Mastodon, LinkedIn, and Bluesky, focusing on research related to social media analysis, disinformation, and computational social science. LinkedIn has the largest follower base, but engagement varies across platforms. The content focuses on research updates, job postings, and conference announcements.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 2.83,
+    "averageEngagementRate": 2.47,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
       "theme": "Computational Social Science Research",
-      "description": "Focuses on sharing research findings, publications, and methodological discussions related to computational social science."
+      "description": "Updates on research projects, publications, and methods related to computational social science."
     },
     {
-      "theme": "Disinformation and Information Operations",
-      "description": "Deals with detecting and analyzing disinformation campaigns and coordinated inauthentic behavior on social media."
+      "theme": "Disinformation and Coordinated Behavior",
+      "description": "Discussion and analysis of disinformation campaigns and coordinated inauthentic behavior on social media platforms."
     },
     {
-      "theme": "Job Opportunities and Research Grants",
-      "description": "Announcements related to research grants, job openings for postdoctoral researchers and PhD students."
+      "theme": "Career and Educational Opportunities",
+      "description": "Announcements of job openings, postdoc positions, and PhD research opportunities."
+    },
+    {
+      "theme": "Conference and Event Participation",
+      "description": "Information related to presentations and participation in conferences related to disinformation and social media."
     }
   ],
   "recommendations": [
-    "Diversify content formats to include videos and infographics to increase engagement.",
-    "Increase posting frequency on Mastodon to build a stronger presence.",
-    "Engage more actively with followers by responding to comments and questions on LinkedIn and Bluesky."
+    "Increase posting frequency, especially on Mastodon, to maintain audience engagement.",
+    "Utilize platform-specific content strategies: more professional/formal content on LinkedIn, more community-focused content on Mastodon, and mixed content on Bluesky.",
+    "Incorporate visuals (images, videos) in posts to increase engagement.",
+    "Actively engage with followers by responding to comments and questions.",
+    "Use relevant hashtags to increase the reach of posts."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky sees good repost activity, indicating potential for virality with engaging content. Focus on visually appealing content and trending topics.",
-    "mastodon": "Mastodon has the lowest engagement compared to other platforms. Experiment with different posting times and content formats to improve visibility and interaction.",
-    "linkedin": "LinkedIn shows the highest engagement, likely due to its professional focus. Continue to share research updates and job opportunities, and foster discussion within the comments section."
+    "bluesky": "Bluesky shows a good balance of research updates and opportunities, suggesting a strong academic and research-oriented community.",
+    "mastodon": "Mastodon posts focus on research and discussions, indicating a niche audience interested in the technical aspects of social media analysis. Lower engagement rate compared to other platforms.",
+    "linkedin": "LinkedIn is the professional platform with the largest follower base. Content related to job opportunities and grant announcements perform well."
   },
   "topPerformingContent": [
     {
@@ -38,7 +44,7 @@
     {
       "content": "Now hiring: Two postdoctoral researchers to join our team working on computational methods for social media analysis. Background in data science, computational social science, or related fields preferred.",
       "platform": "linkedin",
-      "engagementRate": 3.62
+      "engagementRate": 3.95
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",

@@ -1,12 +1,12 @@
 {
-  "totalEntries": 39,
-  "lastUpdated": "2025-12-30T12:16:33.969Z",
+  "totalEntries": 43,
+  "lastUpdated": "2025-12-30T13:30:17.951Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2025-12-30T12:16:33.964Z"
+    "latest": "2025-12-30T13:30:17.949Z"
   },
   "byDate": {
-    "2025-12-30": 7,
+    "2025-12-30": 11,
     "2025-12-29": 27,
     "2025-10-27": 1,
     "2025-07-06": 1,
@@ -14,7 +14,7 @@
     "2025-06-10": 1
   },
   "bySource": {
-    "vertexaisearch.cloud.google.com": 27,
+    "vertexaisearch.cloud.google.com": 31,
     "uniurb.it": 2,
     "vera.ai": 1,
     "Sociologica": 1,
@@ -26,42 +26,42 @@
     "ilrestodelcarlino.it": 1
   },
   "byRelevanceScore": {
-    "high": 38,
+    "high": 42,
     "medium": 1,
     "low": 0
   },
   "recentHighQuality": [
     {
+      "title": "Mapping Italian News Research Program - Uniurb",
+      "url": "https://mine.uniurb.it/news",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2025-12-30T13:30:17.949Z"
+    },
+    {
+      "title": "Coordinated Sharing Behavior Detection Conference",
+      "url": "https://disinfo-prompt.eu/agenda",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2025-12-30T13:30:17.949Z"
+    },
+    {
+      "title": "'Big Data' | Snurblog — Axel Bruns",
+      "url": "https://snurb.info/taxonomy/term/142",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2025-12-30T13:30:17.949Z"
+    },
+    {
+      "title": "EU Digital Technologies and Policy Conference (EUDTP 2025) Abstracts and Contributions - Epizeuxis.net",
+      "url": "https://www.epizeuxis.net/index.php/team/faculty-and-permanent-research-staff/juan-antonio-cordero-fuertes/",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2025-12-30T13:30:17.949Z"
+    },
+    {
       "title": "SOCIAL NETWORK ANALYSIS - Lecturer: Fabio Giglietto - A.Y. 2023/2024 - Credits 6",
       "url": "https://www.uniurb.it/syllabi/263942",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2025-12-30T12:16:33.964Z"
-    },
-    {
-      "title": "Advancing Research on Disinformation and Digital Manipulation: The University of Urbino at two Key Conferences in Brazil – vera.ai VERification Assisted by Artificial Intelligence",
-      "url": "https://www.veraai.eu/posts/uni-urbino-at-conferences-in-brazil",
-      "source": "vera.ai",
-      "relevanceScore": 0.9,
-      "collectedAt": "2025-12-30T12:16:33.964Z"
-    },
-    {
-      "title": "How to Detect a Disinformation Campaign - Media Ecosystems Analysis Group",
-      "url": "https://www.mediaecosystems.org/podcast/4-detect-disinformation-campaign",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2025-12-30T12:16:33.964Z"
-    },
-    {
-      "title": "Integrating Large Language Models in Political Discourse Studies on Social Media: Challenges of Validating an LLMs-in-the-loop Pipeline | Sociologica",
-      "url": "https://sociologica.unibo.it/article/view/19524/18664",
-      "source": "Sociologica",
-      "relevanceScore": 0.9,
-      "collectedAt": "2025-12-30T12:16:33.964Z"
-    },
-    {
-      "title": "SICSS-Bologna - Summer Institute in Computational Social Science",
-      "url": "https://sicss.io/2024/bologna/people",
       "source": "vertexaisearch.cloud.google.com",
       "relevanceScore": 0.9,
       "collectedAt": "2025-12-30T12:16:33.964Z"
