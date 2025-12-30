@@ -1,51 +1,55 @@
 {
-  "overallSummary": "Fabio Giglietto has a significant social media presence across Mastodon, LinkedIn, and Bluesky, totaling 3580 followers. His content primarily focuses on research related to social media analysis, disinformation, and computational social science. Engagement varies across platforms, with LinkedIn generally showing higher interaction rates.",
+  "overallSummary": "Fabio Giglietto maintains an active presence on Mastodon, LinkedIn, and Bluesky, with a focus on research and announcements related to computational social science, disinformation, and coordinated inauthentic behavior. While LinkedIn boasts the largest follower count, engagement varies across platforms.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 0.035,
+    "averageEngagementRate": 2.41,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
       "theme": "Computational Social Science Research",
-      "description": "Sharing research findings, publications, and methodological discussions related to computational social science."
+      "description": "Posts related to research projects, publications, and methodological approaches in computational social science."
     },
     {
-      "theme": "Disinformation and Information Operations",
-      "description": "Content focusing on the study and detection of disinformation, coordinated inauthentic behavior, and information operations on social media."
+      "theme": "Disinformation and Coordinated Inauthentic Behavior",
+      "description": "Content focused on detecting, analyzing, and understanding disinformation campaigns and coordinated inauthentic behavior on social media."
     },
     {
-      "theme": "Hiring and Research Opportunities",
-      "description": "Announcements about postdoctoral positions, research grants, and opportunities for students in related fields."
+      "theme": "Job Opportunities and Hiring",
+      "description": "Announcements for postdoctoral positions and research opportunities within Fabio Giglietto's team."
+    },
+    {
+      "theme": "Conference Presentations and Events",
+      "description": "Posts related to upcoming conference presentations and participation in relevant events."
     }
   ],
   "recommendations": [
-    "Cross-promote content across platforms to maximize reach and engagement.",
-    "Use relevant hashtags to increase the visibility of posts.",
-    "Engage in conversations and respond to comments to foster a stronger community.",
-    "Consider visual content (images, videos) to enhance engagement.",
-    "Tailor content to the specific audience and norms of each platform."
+    "Increase posting frequency on Mastodon to enhance visibility and engagement.",
+    "Experiment with visual content (images, videos) on all platforms to capture attention and boost engagement.",
+    "Engage directly with comments and questions to foster a sense of community and encourage interaction.",
+    "Tailor content to the specific audience on each platform to maximize relevance and impact.",
+    "Use relevant hashtags consistently to increase discoverability of content."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky content sees moderate engagement, with reposts being a significant factor. Focus on sharing research updates and engaging with the platform's community.",
-    "mastodon": "Mastodon engagement is relatively lower compared to other platforms. Consider experimenting with different content formats to boost interaction.",
-    "linkedin": "LinkedIn shows the highest engagement, particularly with announcements related to grants and job opportunities. Continue posting professional updates and leveraging the platform's networking features."
+    "bluesky": "Bluesky shows a good balance of likes and reposts, indicating active engagement with the content. Focus on continuing to share research findings and opportunities here.",
+    "mastodon": "Mastodon has the lowest engagement compared to other platforms. Experiment with different content formats and posting times to improve performance.",
+    "linkedin": "LinkedIn demonstrates strong engagement through likes and comments, suggesting a professional audience interested in research grants and job opportunities. Continue to post professional updates here."
   },
   "topPerformingContent": [
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
       "platform": "linkedin",
-      "engagementRate": 0.057
+      "engagementRate": 5.78
     },
     {
       "content": "Now hiring: Two postdoctoral researchers to join our team working on computational methods for social media analysis. Background in data science, computational social science, or related fields preferred.",
       "platform": "linkedin",
-      "engagementRate": 0.039
+      "engagementRate": 3.62
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
       "platform": "bluesky",
-      "engagementRate": 0.074
+      "engagementRate": 7.37
     }
   ]
 }

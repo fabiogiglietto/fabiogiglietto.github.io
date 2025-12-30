@@ -1,11 +1,12 @@
 {
-  "totalEntries": 27,
-  "lastUpdated": "2025-12-29T16:47:55.647Z",
+  "totalEntries": 32,
+  "lastUpdated": "2025-12-30T06:32:48.977Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2025-12-29T16:47:55.645Z"
+    "latest": "2025-12-30T06:32:48.976Z"
   },
   "byDate": {
+    "2025-12-30": 5,
     "2025-12-29": 22,
     "2025-10-27": 1,
     "2025-07-06": 1,
@@ -13,52 +14,53 @@
     "2025-06-10": 1
   },
   "bySource": {
-    "vertexaisearch.cloud.google.com": 22,
+    "vertexaisearch.cloud.google.com": 26,
     "uniurb.it": 2,
+    "researchgate.net": 1,
     "ilrestodelcarlino.it": 1,
     "research.qut.edu.au": 1,
     "arxiv.org": 1
   },
   "byRelevanceScore": {
-    "high": 26,
+    "high": 31,
     "medium": 1,
     "low": 0
   },
   "recentHighQuality": [
     {
-      "title": "Home | Professor of Internet Studies",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFB4gX-HWFwD7dAR52ds6tmqEUpeNkKzcgJXJnNAqm9IN_bIJkxyykGSsQyjVe3QcYxOB_fm-WPk_GqRFXAKqLJaX8VR_Se-Od6LZIY4fGyOjClrjNRyz111ERG0A==",
+      "title": "Meet the speakers! - EUDTP 2025 - EuroTech Universities Alliance",
+      "url": "https://eurotech-universities.eu/news-and-events/news/eudtp-digital-technologies-and-policy-conference-2025-meet-the-speakers/",
       "source": "vertexaisearch.cloud.google.com",
       "relevanceScore": 0.9,
-      "collectedAt": "2025-12-29T16:47:55.645Z"
+      "collectedAt": "2025-12-30T06:32:48.976Z"
     },
     {
-      "title": "Coordinated Hateful Disinformation on Italian Politics and Social Issues, since 2017 | Request PDF - ResearchGate",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH9Hww06Gcz3pO9Cjro7gI0OJdkKiG6YfGaeA8gY5f_5ycLrZB7s8PV3gl_9k7g6hRO6xACGvKwhzjytA0fH06HuzjnmaTOcFNtlVotBR7d3ZfZVZNmorjgZxpAVM2fpcpysrO8cIg3j_3suFMVRJCDzTFPtOGh0bHUAky156SHfG9F5Dt6BEFyg8M8YZgKvyrnp5Eo7uYJ6ULW_YkwRCl3tF6t13rqn4nreQ_If8djYaH9p34o06O9COJK9AEAHMiOlQ==",
+      "title": "Advancing Research on Disinformation and Digital Manipulation: The University of Urbino at two Key Conferences in Brazil – vera.ai VERification Assisted by Artificial Intelligence",
+      "url": "https://www.veraai.eu/posts/uni-urbino-at-conferences-in-brazil",
       "source": "vertexaisearch.cloud.google.com",
       "relevanceScore": 0.9,
-      "collectedAt": "2025-12-29T16:47:55.645Z"
+      "collectedAt": "2025-12-30T06:32:48.976Z"
     },
     {
-      "title": "Detection and Characterization of Coordinated Online Behavior: A Survey - arXiv",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEdVZ26dW1qV3n5iQnSrtDZL1jDebV1ymbK_1jnnWCyui6uE_o5QziQnVIZyeAklqL-1fbQpSZO1wbX5jAbujHhgEeCsqeQt4oArSi6hehtW-ZbvftgthUX2x00yrIA",
+      "title": "Mapping Italian News Research Program - Uniurb",
+      "url": "https://mine.uniurb.it/news",
       "source": "vertexaisearch.cloud.google.com",
       "relevanceScore": 0.9,
-      "collectedAt": "2025-12-29T16:47:55.645Z"
+      "collectedAt": "2025-12-30T06:32:48.976Z"
     },
     {
-      "title": "'Fake news' is the invention of a liar: How false information circulates within the hybrid news system - IRIS",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6L1xaziQpAoAoEY1rV-4-yFJo-ln0AlM5jzOK_extutg23skhcxytRd7O8HfaVmIgs1F859eUGRAGYVsdwrOGXOhVF2tXAxYw43YAlvfnkvAtHyu5tAk62Ohxvu8diORDY79HwQ==",
+      "title": "THE BRAZILIAN DIGITAL BATTLEFIELD: INVESTIGATING THE DYNAMICS OF POLITICAL INFORMATION CAMPAIGNS IN POST-BOLSONARO ERA | AoIR Selected Papers of Internet Research",
+      "url": "https://spir.aoir.org/ojs/index.php/spir/article/view/13999",
       "source": "vertexaisearch.cloud.google.com",
       "relevanceScore": 0.9,
-      "collectedAt": "2025-12-29T16:47:55.645Z"
+      "collectedAt": "2025-12-30T06:32:48.976Z"
     },
     {
-      "title": "Coordinated Link Sharing Behavior as a Signal to Surface Sources of Problematic Information on Facebook | Request PDF - ResearchGate",
-      "url": "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHa4FCbbt7yzjzUFpAFUU83FrYlHClhztCsBSlN6Ikj_D2iUerhuomH18H4aoyc2QMFPJGTvKmd2qnLALDK4mAl1lE5ARVzkkunC6-7acdMvoqlon1WJXUxiR7tNM78SlQf3RCIiU4E3kQkL2FCS6gpTiVvbZLiKRV-hzEtAMnzen1I98a6r9n8-8LR-rKJ8lf80hmpqJoBc_tdS0sd0SbLfBJ7U_2ve4vrdFSeJRXs8eEOO3xHHKBTzb54hiW9vGMiOl_SRl6YiaXaD2Ua3TTHNSesiiKT",
-      "source": "vertexaisearch.cloud.google.com",
+      "title": "Coordinated Hateful Disinformation on Italian Politics and Social Issues, since 2017",
+      "url": "https://www.researchgate.net/publication/349059207_Coordinated_Hateful_Disinformation_on_Italian_Politics_and_Social_Issues_since_2017",
+      "source": "researchgate.net",
       "relevanceScore": 0.9,
-      "collectedAt": "2025-12-29T16:47:55.645Z"
+      "collectedAt": "2025-12-30T06:32:48.976Z"
     }
   ]
 }
