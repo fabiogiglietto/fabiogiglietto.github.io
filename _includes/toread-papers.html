@@ -29,7 +29,7 @@
       
       <div class="papers-carousel" id="papersCarousel">
         {% assign recent_papers = toread_data.papers | sort: 'dateAdded' | reverse %}
-        {% for paper in recent_papers %}
+        {% for paper in recent_papers limit:3 %}
           {% if paper.doi %}
             {% assign paper_link = "https://doi.org/" | append: paper.doi %}
           {% elsif paper.url %}
