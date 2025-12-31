@@ -904,7 +904,8 @@ Respond with ONLY a valid JSON array, no other text.`;
 async function fetchGoogleNewsRSS() {
   console.log('\n=== Fetching Google News RSS Feed ===');
 
-  const feedUrl = 'https://news.google.com/rss/topics/CAAqKAgKIiJDQkFTRXdvTkwyY3ZNVEZtTUhvMmJtc3phaElDYVhRb0FBUAE?ceid=IT:it&oc=3';
+  // Use search-based RSS feed which has more results than topic feed
+  const feedUrl = 'https://news.google.com/rss/search?q=Fabio%20Giglietto&hl=it&gl=IT&ceid=IT:it';
 
   try {
     const response = await axios.get(feedUrl, {
@@ -931,9 +932,20 @@ async function fetchGoogleNewsRSS() {
       const source = extractXmlTag(itemContent, 'source');
 
       if (title && link) {
-        // Skip if it should be filtered
-        if (shouldSkipResult(link, title)) {
-          console.log(`Google News: Skipping filtered result: ${link}`);
+        // Resolve Google News redirect URL to get actual article URL
+        let resolvedUrl = link;
+        if (link.includes('news.google.com/rss/articles/')) {
+          resolvedUrl = await resolveGoogleNewsUrl(link);
+        }
+
+        // Skip if URL resolution failed or should be filtered
+        if (!resolvedUrl) {
+          console.log(`Google News: Could not resolve URL for: ${title}`);
+          continue;
+        }
+
+        if (shouldSkipResult(resolvedUrl, title)) {
+          console.log(`Google News: Skipping filtered result: ${resolvedUrl}`);
           continue;
         }
 
@@ -947,23 +959,83 @@ async function fetchGoogleNewsRSS() {
           }
         }
 
+        // Only include recent results (last 2 years)
+        const pubDateObj = new Date(pubDate);
+        const twoYearsAgo = new Date();
+        twoYearsAgo.setFullYear(twoYearsAgo.getFullYear() - 2);
+        if (pubDateObj < twoYearsAgo) {
+          console.log(`Google News: Skipping old result (${dateStr}): ${title}`);
+          continue;
+        }
+
         results.push({
           title: decodeHtmlEntities(title),
-          url: link,
+          url: resolvedUrl,
           snippet: '',
           date: dateStr,
-          source: source ? decodeHtmlEntities(source) : extractDomainFromUrl(link),
+          source: source ? decodeHtmlEntities(source) : extractDomainFromUrl(resolvedUrl),
           searchEngine: 'google-news-rss'
         });
       }
     }
 
-    console.log(`Google News RSS: Found ${results.length} items`);
+    console.log(`Google News RSS: Found ${results.length} recent items`);
     return results;
 
   } catch (error) {
     console.error('Google News RSS fetch error:', error.message);
     return [];
+  }
+}
+
+/**
+ * Resolve Google News article URL to get actual destination
+ */
+async function resolveGoogleNewsUrl(googleNewsUrl) {
+  try {
+    // Follow the redirect to get the actual article URL
+    const response = await axios.get(googleNewsUrl, {
+      maxRedirects: 5,
+      timeout: 10000,
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+      }
+    });
+
+    // The final URL after redirects is the actual article
+    if (response.request && response.request.res && response.request.res.responseUrl) {
+      return response.request.res.responseUrl;
+    }
+
+    // Fallback: try to extract from response URL
+    if (response.config && response.config.url) {
+      return response.config.url;
+    }
+
+    return googleNewsUrl;
+  } catch (error) {
+    // If redirect fails, try HEAD request
+    try {
+      const headResponse = await axios.head(googleNewsUrl, {
+        maxRedirects: 0,
+        validateStatus: status => status >= 200 && status < 400,
+        timeout: 5000,
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        }
+      });
+
+      if (headResponse.headers.location) {
+        return headResponse.headers.location;
+      }
+    } catch (headError) {
+      if (headError.response && headError.response.headers && headError.response.headers.location) {
+        return headError.response.headers.location;
+      }
+    }
+
+    console.log(`Could not resolve Google News URL: ${error.message}`);
+    return null;
   }
 }
 
