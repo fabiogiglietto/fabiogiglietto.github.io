@@ -1,0 +1,54 @@
+{
+  "overallSummary": "Fabio Giglietto maintains an active presence across Mastodon, LinkedIn, and Bluesky, focusing on research related to social media analysis, disinformation, and computational social science. LinkedIn has the largest follower base, while engagement is distributed across platforms. Recent activity includes announcements of publications, research grants, conference presentations, and job opportunities.",
+  "engagementMetrics": {
+    "totalFollowers": 3580,
+    "averageEngagementRate": 2.94,
+    "mostEngagingPlatform": "linkedin"
+  },
+  "contentThemes": [
+    {
+      "theme": "Social Media Research",
+      "description": "Posts related to social media analysis, disinformation, information operations, and computational social science."
+    },
+    {
+      "theme": "Research Announcements",
+      "description": "Announcements of new publications, research grants, and software releases."
+    },
+    {
+      "theme": "Career Opportunities",
+      "description": "Posts advertising job openings and research opportunities."
+    },
+    {
+      "theme": "Conference Presentations",
+      "description": "Posts about upcoming conference presentations and related events."
+    }
+  ],
+  "recommendations": [
+    "Cross-promote content across platforms to maximize reach.",
+    "Use platform-specific hashtags to increase visibility.",
+    "Engage with comments and replies to foster community interaction.",
+    "Experiment with different content formats (e.g., images, videos) to see what resonates best with each audience."
+  ],
+  "platformInsights": {
+    "bluesky": "Bluesky posts generate good repost rates, suggesting content resonates with the community. Content includes research publications, conference appearances, and research opportunities.",
+    "mastodon": "Mastodon posts are informative and focus on research updates and discussions. Likes are more prevalent than reposts, indicating potential for more engaging content.",
+    "linkedin": "LinkedIn posts, particularly job postings and research grant announcements, garner high likes and comments, showcasing the platform's strength for professional networking and recruitment."
+  },
+  "topPerformingContent": [
+    {
+      "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
+      "platform": "linkedin",
+      "engagementRate": 5.78
+    },
+    {
+      "content": "Now hiring: Two postdoctoral researchers to join our team working on computational methods for social media analysis. Background in data science, computational social science, or related fields preferred.",
+      "platform": "linkedin",
+      "engagementRate": 3.95
+    },
+    {
+      "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
+      "platform": "bluesky",
+      "engagementRate": 7.37
+    }
+  ]
+}

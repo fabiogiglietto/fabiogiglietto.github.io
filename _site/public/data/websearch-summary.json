@@ -1,0 +1,71 @@
+{
+  "totalEntries": 46,
+  "lastUpdated": "2025-12-31T06:32:50.056Z",
+  "dateRange": {
+    "earliest": "2025-06-10T06:45:26.015Z",
+    "latest": "2025-12-31T06:32:50.055Z"
+  },
+  "byDate": {
+    "2025-12-31": 3,
+    "2025-12-30": 11,
+    "2025-12-29": 27,
+    "2025-10-27": 1,
+    "2025-07-06": 1,
+    "2025-07-05": 2,
+    "2025-06-10": 1
+  },
+  "bySource": {
+    "vertexaisearch.cloud.google.com": 32,
+    "euractiv.ro": 2,
+    "uniurb.it": 2,
+    "vera.ai": 1,
+    "Sociologica": 1,
+    "Vera.ai": 1,
+    "Observatory on Information and Democracy": 1,
+    "vera.ai VERification Assisted by Artificial Intelligence": 1,
+    "social.vertexaisearch.cloud.google.com": 1,
+    "studirapido.it": 1
+  },
+  "byRelevanceScore": {
+    "high": 45,
+    "medium": 1,
+    "low": 0
+  },
+  "recentHighQuality": [
+    {
+      "title": "Giornata Internazionale di Studi - Can the Damage of Destructive Polarization Be Repaired?",
+      "url": "https://www.uniurb.it/novita-ed-eventi/5977",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2025-12-31T06:32:50.055Z"
+    },
+    {
+      "title": "„România, cea mai importantă țară din lume” vs. Vestul “cel rău” - narațiunile coordonate persistă - EURACTIV.ro",
+      "url": "https://www.euractiv.ro/section/digital/news/romania-cea-mai-importanta-tara-din-lume-vs-vestul-cel-rau-naratiunile-coordonate-persista/",
+      "source": "euractiv.ro",
+      "relevanceScore": 0.9,
+      "collectedAt": "2025-12-31T06:32:50.055Z"
+    },
+    {
+      "title": "Un an de la alegerile anulate. Șocul continuă - EURACTIV.ro",
+      "url": "https://www.euractiv.ro/section/elections/news/un-an-de-la-alegerile-anulate-socul-continua/",
+      "source": "euractiv.ro",
+      "relevanceScore": 0.9,
+      "collectedAt": "2025-12-31T06:32:50.055Z"
+    },
+    {
+      "title": "Mapping Italian News Research Program - Uniurb",
+      "url": "https://mine.uniurb.it/news",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2025-12-30T13:30:17.949Z"
+    },
+    {
+      "title": "Coordinated Sharing Behavior Detection Conference",
+      "url": "https://disinfo-prompt.eu/agenda",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2025-12-30T13:30:17.949Z"
+    }
+  ]
+}
