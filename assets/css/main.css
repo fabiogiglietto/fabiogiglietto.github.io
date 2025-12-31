@@ -1419,19 +1419,18 @@ th {
 .podcast-badge {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   gap: 4px;
-  padding: 6px 12px;
-  margin-top: 8px;
+  padding: 4px 8px;
   background: linear-gradient(135deg, #1DB954 0%, #1ed760 100%);
   color: white;
-  border-radius: 16px;
-  font-size: 0.8rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
-  text-decoration: none;
+  cursor: pointer;
   transition: all 0.2s ease;
   white-space: nowrap;
-  align-self: flex-start;
+  flex-shrink: 0;
 }
 
 .podcast-badge:hover {
@@ -1443,6 +1442,7 @@ th {
 .podcast-badge svg {
   width: 14px;
   height: 14px;
+  stroke: white;
 }
 
 /* Research Radio link in section header */

@@ -52,6 +52,16 @@
             <article class="paper-card">
               <div class="paper-header">
                 <h3 class="paper-title">{{ paper.title }}</h3>
+                {% if has_podcast %}
+                <button class="podcast-badge" onclick="event.preventDefault(); event.stopPropagation(); window.open('{{ podcast_url }}', '_blank');" title="Listen to podcast ({{ podcast_duration }})">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18V5l12-2v13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                  <span>{{ podcast_duration }}</span>
+                </button>
+                {% endif %}
               </div>
               <div class="paper-meta">
               <div class="paper-authors">
@@ -84,16 +94,6 @@
               </div>
             </article>
           </a>
-          {% if has_podcast %}
-          <a href="{{ podcast_url }}" class="podcast-badge" target="_blank" rel="noopener" title="Listen to AI-generated podcast discussion ({{ podcast_duration }})">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9 18V5l12-2v13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="2"/>
-              <circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="2"/>
-            </svg>
-            <span>{{ podcast_duration }}</span>
-          </a>
-          {% endif %}
         </div>
       {%- endfor -%}
       </div>
