@@ -203,7 +203,14 @@ Only include results with REAL, direct URLs to news sources.`;
       allResults = [...allResults, ...openaiResults];
     }
 
-    console.log(`\nTotal combined results: ${allResults.length} (Gemini + OpenAI)`);
+    // Fetch Google News RSS feed
+    const googleNewsResults = await fetchGoogleNewsRSS();
+    if (googleNewsResults.length > 0) {
+      console.log(`Adding ${googleNewsResults.length} results from Google News RSS`);
+      allResults = [...allResults, ...googleNewsResults];
+    }
+
+    console.log(`\nTotal combined results: ${allResults.length} (Gemini + OpenAI + Google News)`);
 
     // If we didn't get any REAL results, save empty results (hide section)
     if (allResults.length === 0) {
@@ -889,6 +896,105 @@ Respond with ONLY a valid JSON array, no other text.`;
     console.error('OpenAI search error:', error.message);
     return [];
   }
+}
+
+/**
+ * Fetch Google News RSS feed for Fabio Giglietto mentions
+ */
+async function fetchGoogleNewsRSS() {
+  console.log('\n=== Fetching Google News RSS Feed ===');
+
+  const feedUrl = 'https://news.google.com/rss/topics/CAAqKAgKIiJDQkFTRXdvTkwyY3ZNVEZtTUhvMmJtc3phaElDYVhRb0FBUAE?ceid=IT:it&oc=3';
+
+  try {
+    const response = await axios.get(feedUrl, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+      },
+      timeout: 10000
+    });
+
+    const xmlData = response.data;
+    const results = [];
+
+    // Parse RSS items using regex (simple XML parsing)
+    const itemRegex = /<item>([\s\S]*?)<\/item>/g;
+    let match;
+
+    while ((match = itemRegex.exec(xmlData)) !== null) {
+      const itemContent = match[1];
+
+      // Extract fields
+      const title = extractXmlTag(itemContent, 'title');
+      const link = extractXmlTag(itemContent, 'link');
+      const pubDate = extractXmlTag(itemContent, 'pubDate');
+      const source = extractXmlTag(itemContent, 'source');
+
+      if (title && link) {
+        // Skip if it should be filtered
+        if (shouldSkipResult(link, title)) {
+          console.log(`Google News: Skipping filtered result: ${link}`);
+          continue;
+        }
+
+        // Parse publication date
+        let dateStr = new Date().toISOString().split('T')[0];
+        if (pubDate) {
+          try {
+            dateStr = new Date(pubDate).toISOString().split('T')[0];
+          } catch (e) {
+            // Keep default date
+          }
+        }
+
+        results.push({
+          title: decodeHtmlEntities(title),
+          url: link,
+          snippet: '',
+          date: dateStr,
+          source: source ? decodeHtmlEntities(source) : extractDomainFromUrl(link),
+          searchEngine: 'google-news-rss'
+        });
+      }
+    }
+
+    console.log(`Google News RSS: Found ${results.length} items`);
+    return results;
+
+  } catch (error) {
+    console.error('Google News RSS fetch error:', error.message);
+    return [];
+  }
+}
+
+/**
+ * Extract content from XML tag
+ */
+function extractXmlTag(content, tagName) {
+  // Handle CDATA sections
+  const cdataRegex = new RegExp(`<${tagName}[^>]*><!\\[CDATA\\[([\\s\\S]*?)\\]\\]><\\/${tagName}>`, 'i');
+  const cdataMatch = content.match(cdataRegex);
+  if (cdataMatch) {
+    return cdataMatch[1].trim();
+  }
+
+  // Handle regular tags
+  const regex = new RegExp(`<${tagName}[^>]*>([\\s\\S]*?)<\\/${tagName}>`, 'i');
+  const match = content.match(regex);
+  return match ? match[1].trim() : null;
+}
+
+/**
+ * Decode HTML entities
+ */
+function decodeHtmlEntities(text) {
+  return text
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&apos;/g, "'");
 }
 
 module.exports = {
