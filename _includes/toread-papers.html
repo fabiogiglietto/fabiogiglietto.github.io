@@ -20,9 +20,16 @@
   {% assign toread_data = site.data.toread %}
   {% assign radio_data = site.data.research-radio %}
   {% if toread_data and toread_data.papers %}
-    <div class="papers-grid">
+    <div class="papers-carousel-container">
+      <button class="carousel-arrow carousel-arrow-left" onclick="scrollCarousel('left')" aria-label="Previous papers">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <div class="papers-carousel" id="papersCarousel">
       {%- assign recent_papers = toread_data.papers | sort: 'dateAdded' | reverse -%}
-      {%- for paper in recent_papers limit:3 -%}
+      {%- for paper in recent_papers -%}
         {%- if paper.doi -%}
           {%- assign paper_link = "https://doi.org/" | append: paper.doi -%}
         {%- elsif paper.url -%}
@@ -89,6 +96,15 @@
           {% endif %}
         </div>
       {%- endfor -%}
+      </div>
+
+      <button class="carousel-arrow carousel-arrow-right" onclick="scrollCarousel('right')" aria-label="Next papers">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <div class="carousel-indicators" id="carouselIndicators"></div>
     </div>
   {% else %}
     <div class="empty-state">
