@@ -21,43 +21,32 @@
   {% assign radio_data = site.data.research-radio %}
   {% if toread_data and toread_data.papers %}
     <div class="papers-grid">
-        {% assign recent_papers = toread_data.papers | sort: 'dateAdded' | reverse %}
-        {% for paper in recent_papers limit:3 %}
-          {% if paper.doi %}
-            {% assign paper_link = "https://doi.org/" | append: paper.doi %}
-          {% elsif paper.url %}
-            {% assign paper_link = paper.url %}
-          {% else %}
-            {% assign encoded_title = paper.title | url_encode %}
-            {% assign paper_link = "https://scholar.google.com/scholar?q=" | append: encoded_title %}
-          {% endif %}
-          {% comment %} Check if this paper has a podcast episode {% endcomment %}
-          {% assign paper_bibtex_key = paper.id | remove: "bibtex:" %}
-          {% assign has_podcast = false %}
-          {% assign podcast_url = nil %}
-          {% assign podcast_duration = nil %}
-          {% if radio_data and radio_data.episodesByBibtexKey[paper_bibtex_key] %}
-            {% assign has_podcast = true %}
-            {% assign podcast_url = radio_data.episodesByBibtexKey[paper_bibtex_key].audioUrl %}
-            {% assign podcast_duration = radio_data.episodesByBibtexKey[paper_bibtex_key].duration %}
-          {% endif %}
+      {%- assign recent_papers = toread_data.papers | sort: 'dateAdded' | reverse -%}
+      {%- for paper in recent_papers limit:3 -%}
+        {%- if paper.doi -%}
+          {%- assign paper_link = "https://doi.org/" | append: paper.doi -%}
+        {%- elsif paper.url -%}
+          {%- assign paper_link = paper.url -%}
+        {%- else -%}
+          {%- assign encoded_title = paper.title | url_encode -%}
+          {%- assign paper_link = "https://scholar.google.com/scholar?q=" | append: encoded_title -%}
+        {%- endif -%}
+        {%- assign paper_bibtex_key = paper.id | remove: "bibtex:" -%}
+        {%- assign has_podcast = false -%}
+        {%- assign podcast_url = nil -%}
+        {%- assign podcast_duration = nil -%}
+        {%- if radio_data and radio_data.episodesByBibtexKey[paper_bibtex_key] -%}
+          {%- assign has_podcast = true -%}
+          {%- assign podcast_url = radio_data.episodesByBibtexKey[paper_bibtex_key].audioUrl -%}
+          {%- assign podcast_duration = radio_data.episodesByBibtexKey[paper_bibtex_key].duration -%}
+        {%- endif -%}
+        <div class="paper-card-wrapper{% if has_podcast %} has-podcast{% endif %}">
           <a href="{{ paper_link }}" target="_blank" rel="noopener" class="paper-card-link">
-            <article class="paper-card{% if has_podcast %} has-podcast{% endif %}">
+            <article class="paper-card">
               <div class="paper-header">
                 <h3 class="paper-title">{{ paper.title }}</h3>
-                {% if has_podcast %}
-                <a href="{{ podcast_url }}" class="podcast-badge" target="_blank" rel="noopener" title="Listen to AI-generated podcast discussion ({{ podcast_duration }})" onclick="event.stopPropagation();">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 18V5l12-2v13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="2"/>
-                    <circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="2"/>
-                  </svg>
-                  <span>{{ podcast_duration }}</span>
-                </a>
-                {% endif %}
               </div>
-            
-            <div class="paper-meta">
+              <div class="paper-meta">
               <div class="paper-authors">
                 {% for author in paper.authors %}
                   <span class="author">{{ author }}</span>{% unless forloop.last %}, {% endunless %}
@@ -81,14 +70,25 @@
             {% endif %}
             
             <div class="paper-footer">
-              <span class="date-added">Added {{ paper.dateAdded | date: "%b %d, %Y" }}</span>
-              {% if paper.doi %}
-                <span class="doi-text">DOI: {{ paper.doi }}</span>
-              {% endif %}
-            </div>
+                <span class="date-added">Added {{ paper.dateAdded | date: "%b %d, %Y" }}</span>
+                {% if paper.doi %}
+                  <span class="doi-text">DOI: {{ paper.doi }}</span>
+                {% endif %}
+              </div>
             </article>
           </a>
-        {% endfor %}
+          {% if has_podcast %}
+          <a href="{{ podcast_url }}" class="podcast-badge" target="_blank" rel="noopener" title="Listen to AI-generated podcast discussion ({{ podcast_duration }})">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 18V5l12-2v13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="2"/>
+              <circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="2"/>
+            </svg>
+            <span>{{ podcast_duration }}</span>
+          </a>
+          {% endif %}
+        </div>
+      {%- endfor -%}
     </div>
   {% else %}
     <div class="empty-state">

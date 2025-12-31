@@ -1404,21 +1404,34 @@ th {
   text-decoration: underline;
 }
 
+/* Paper card wrapper for grid items */
+.paper-card-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.paper-card-wrapper.has-podcast .paper-card {
+  border-left: 3px solid #1DB954;
+}
+
 /* Podcast badge for papers with audio episodes */
 .podcast-badge {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 4px;
-  padding: 4px 8px;
+  padding: 6px 12px;
+  margin-top: 8px;
   background: linear-gradient(135deg, #1DB954 0%, #1ed760 100%);
   color: white;
-  border-radius: 12px;
-  font-size: 0.75rem;
+  border-radius: 16px;
+  font-size: 0.8rem;
   font-weight: 500;
   text-decoration: none;
   transition: all 0.2s ease;
   white-space: nowrap;
-  flex-shrink: 0;
+  align-self: flex-start;
 }
 
 .podcast-badge:hover {
@@ -1430,10 +1443,6 @@ th {
 .podcast-badge svg {
   width: 14px;
   height: 14px;
-}
-
-.paper-card.has-podcast {
-  border-left: 3px solid #1DB954;
 }
 
 /* Research Radio link in section header */
