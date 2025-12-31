@@ -370,7 +370,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (!carousel) return;
     
-    const cards = carousel.querySelectorAll('.paper-card-link');
+    const cards = carousel.querySelectorAll('.paper-card-wrapper');
     if (cards.length === 0) return;
     
     let currentIndex = 0; // Current page index
