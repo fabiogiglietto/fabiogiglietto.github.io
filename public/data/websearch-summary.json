@@ -1,12 +1,12 @@
 {
-  "totalEntries": 46,
-  "lastUpdated": "2025-12-31T06:32:50.056Z",
+  "totalEntries": 52,
+  "lastUpdated": "2025-12-31T15:49:24.750Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2025-12-31T06:32:50.055Z"
+    "latest": "2025-12-31T15:49:24.748Z"
   },
   "byDate": {
-    "2025-12-31": 3,
+    "2025-12-31": 9,
     "2025-12-30": 11,
     "2025-12-29": 27,
     "2025-10-27": 1,
@@ -15,23 +15,44 @@
     "2025-06-10": 1
   },
   "bySource": {
-    "vertexaisearch.cloud.google.com": 32,
+    "vertexaisearch.cloud.google.com": 34,
     "euractiv.ro": 2,
     "uniurb.it": 2,
+    "Radio Radicale": 1,
+    "lapiazzarimini.it": 1,
+    "il Ducato": 1,
+    "researchgate.net": 1,
     "vera.ai": 1,
     "Sociologica": 1,
-    "Vera.ai": 1,
-    "Observatory on Information and Democracy": 1,
-    "vera.ai VERification Assisted by Artificial Intelligence": 1,
-    "social.vertexaisearch.cloud.google.com": 1,
-    "studirapido.it": 1
+    "Vera.ai": 1
   },
   "byRelevanceScore": {
-    "high": 45,
-    "medium": 1,
+    "high": 48,
+    "medium": 4,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "All Articles – vera.ai VERification Assisted by Artificial Intelligence",
+      "url": "https://www.veraai.eu/all-articles",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2025-12-31T15:49:24.748Z"
+    },
+    {
+      "title": "Fabio Giglietto - Festival Internazionale del Giornalismo",
+      "url": "https://www.festivaldelgiornalismo.com/speaker/fabio-giglietto",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2025-12-31T15:49:24.748Z"
+    },
+    {
+      "title": "Coordinated Hateful Disinformation on Italian Politics and Social Issues, since 2017 | Request PDF",
+      "url": "https://www.researchgate.net/publication/349059207_Coordinated_Hateful_Disinformation_on_Italian_Politics_and_Social_Issues_since_2017",
+      "source": "researchgate.net",
+      "relevanceScore": 0.9,
+      "collectedAt": "2025-12-31T15:46:48.891Z"
+    },
     {
       "title": "Giornata Internazionale di Studi - Can the Damage of Destructive Polarization Be Repaired?",
       "url": "https://www.uniurb.it/novita-ed-eventi/5977",
@@ -45,27 +66,6 @@
       "source": "euractiv.ro",
       "relevanceScore": 0.9,
       "collectedAt": "2025-12-31T06:32:50.055Z"
-    },
-    {
-      "title": "Un an de la alegerile anulate. Șocul continuă - EURACTIV.ro",
-      "url": "https://www.euractiv.ro/section/elections/news/un-an-de-la-alegerile-anulate-socul-continua/",
-      "source": "euractiv.ro",
-      "relevanceScore": 0.9,
-      "collectedAt": "2025-12-31T06:32:50.055Z"
-    },
-    {
-      "title": "Mapping Italian News Research Program - Uniurb",
-      "url": "https://mine.uniurb.it/news",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2025-12-30T13:30:17.949Z"
-    },
-    {
-      "title": "Coordinated Sharing Behavior Detection Conference",
-      "url": "https://disinfo-prompt.eu/agenda",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2025-12-30T13:30:17.949Z"
     }
   ]
 }

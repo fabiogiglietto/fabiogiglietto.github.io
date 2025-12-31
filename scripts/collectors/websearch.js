@@ -241,6 +241,25 @@ Only include results with REAL, direct URLs to news sources.`;
       console.log(`\nValidating result ${i + 1}/${uniqueResults.length}: ${result.title}`);
 
       try {
+        // Trust Google News RSS results - they come from a name-specific search
+        if (result.searchEngine === 'google-news-rss') {
+          console.log(`  Trusting Google News RSS result (name-specific search)`);
+          validatedResults.push({
+            title: result.title,
+            snippet: result.snippet,
+            url: result.url,
+            date: result.date || new Date().toISOString().split('T')[0],
+            source: result.source || extractDomainFromUrl(result.url),
+            description: result.snippet || `News article from ${result.source}`,
+            relevanceScore: 0.75,
+            mentionedByName: true,
+            personMatch: 'confirmed',
+            isRecent: true,
+            searchEngine: result.searchEngine
+          });
+          continue;
+        }
+
         // Skip validation if no Gemini API key, include result with default score
         if (!validationModel) {
           console.log(`  Skipping validation (no Gemini API key), including by default`);
