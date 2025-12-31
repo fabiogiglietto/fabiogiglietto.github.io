@@ -1298,6 +1298,7 @@ th {
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: var(--spacing-md);
+  gap: var(--spacing-sm);
 }
 
 .paper-title {
@@ -1389,6 +1390,59 @@ th {
   text-decoration: underline;
 }
 
+/* Podcast badge for papers with audio episodes */
+.podcast-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  background: linear-gradient(135deg, #1DB954 0%, #1ed760 100%);
+  color: white;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.podcast-badge:hover {
+  background: linear-gradient(135deg, #1ed760 0%, #1DB954 100%);
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(29, 185, 84, 0.4);
+}
+
+.podcast-badge svg {
+  width: 14px;
+  height: 14px;
+}
+
+.paper-card.has-podcast {
+  border-left: 3px solid #1DB954;
+}
+
+/* Research Radio link in section header */
+.research-radio-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1DB954 0%, #1ed760 100%);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.research-radio-link:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 8px rgba(29, 185, 84, 0.4);
+}
+
+.research-radio-link svg {
+  stroke: white;
+}
 
 .empty-state {
   text-align: center;

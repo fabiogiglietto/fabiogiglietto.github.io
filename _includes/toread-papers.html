@@ -1,6 +1,14 @@
 <section class="toread-papers">
   <div class="section-header">
     <h2 class="section-title">📚 FG's #toread</h2>
+    <a href="https://fabiogiglietto.github.io/research-radio/" class="research-radio-link" target="_blank" rel="noopener" title="FG's Research Radio - AI-generated podcast discussions">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M19 10v2a7 7 0 0 1-14 0v-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="12" y1="19" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <line x1="8" y1="23" x2="16" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
     <a href="https://raw.githubusercontent.com/fabiogiglietto/toread/main/output/feed.json" class="json-source-link" target="_blank" rel="noopener" title="View original JSON data">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -8,8 +16,9 @@
       </svg>
     </a>
   </div>
-  
+
   {% assign toread_data = site.data.toread %}
+  {% assign radio_data = site.data.research-radio %}
   {% if toread_data and toread_data.papers %}
     <div class="papers-carousel-container">
       <button class="carousel-arrow carousel-arrow-left" onclick="scrollCarousel('left')" aria-label="Previous papers">
@@ -29,10 +38,30 @@
             {% assign encoded_title = paper.title | url_encode %}
             {% assign paper_link = "https://scholar.google.com/scholar?q=" | append: encoded_title %}
           {% endif %}
+          {% comment %} Check if this paper has a podcast episode {% endcomment %}
+          {% assign paper_bibtex_key = paper.id | remove: "bibtex:" %}
+          {% assign has_podcast = false %}
+          {% assign podcast_url = nil %}
+          {% assign podcast_duration = nil %}
+          {% if radio_data and radio_data.episodesByBibtexKey[paper_bibtex_key] %}
+            {% assign has_podcast = true %}
+            {% assign podcast_url = radio_data.episodesByBibtexKey[paper_bibtex_key].audioUrl %}
+            {% assign podcast_duration = radio_data.episodesByBibtexKey[paper_bibtex_key].duration %}
+          {% endif %}
           <a href="{{ paper_link }}" target="_blank" rel="noopener" class="paper-card-link">
-            <article class="paper-card">
+            <article class="paper-card{% if has_podcast %} has-podcast{% endif %}">
               <div class="paper-header">
                 <h3 class="paper-title">{{ paper.title }}</h3>
+                {% if has_podcast %}
+                <a href="{{ podcast_url }}" class="podcast-badge" target="_blank" rel="noopener" title="Listen to AI-generated podcast discussion ({{ podcast_duration }})" onclick="event.stopPropagation();">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18V5l12-2v13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="6" cy="18" r="3" stroke="currentColor" stroke-width="2"/>
+                    <circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                  <span>{{ podcast_duration }}</span>
+                </a>
+                {% endif %}
               </div>
             
             <div class="paper-meta">
