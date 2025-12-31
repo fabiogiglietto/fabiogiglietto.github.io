@@ -321,11 +321,34 @@ Only include results with REAL, direct URLs to news sources.`;
 
     console.log(`\nValidation complete: ${validatedResults.length}/${uniqueResults.length} results passed validation`);
 
-    // Sort by relevance score (highest first), then by date
-    validatedResults.sort((a, b) => {
-      if (b.relevanceScore !== a.relevanceScore) {
-        return b.relevanceScore - a.relevanceScore;
+    // Use Gemini to extract more precise publication dates
+    if (hasGeminiApiKey) {
+      console.log('\n=== Extracting precise publication dates with Gemini ===');
+      const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+      const dateModel = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
+
+      for (const result of validatedResults) {
+        // Skip if already has a precise date (not today's date)
+        const today = new Date().toISOString().split('T')[0];
+        if (result.date && result.date !== today) {
+          console.log(`  ${result.title.substring(0, 50)}... - keeping existing date: ${result.date}`);
+          continue;
+        }
+
+        try {
+          const extractedDate = await extractPublicationDate(dateModel, result);
+          if (extractedDate) {
+            console.log(`  ${result.title.substring(0, 50)}... - extracted date: ${extractedDate}`);
+            result.date = extractedDate;
+          }
+        } catch (error) {
+          console.log(`  Failed to extract date for: ${result.title.substring(0, 50)}...`);
+        }
       }
+    }
+
+    // Sort by date (newest first)
+    validatedResults.sort((a, b) => {
       return new Date(b.date) - new Date(a.date);
     });
 
@@ -591,6 +614,54 @@ async function createHistoricalSummary(historicalLog) {
 
   } catch (error) {
     console.error('Error creating historical summary:', error.message);
+  }
+}
+
+/**
+ * Extract publication date from a web page using Gemini
+ */
+async function extractPublicationDate(model, result) {
+  try {
+    // Use Gemini with search to find the publication date
+    const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+    const searchModel = genAI.getGenerativeModel({
+      model: 'gemini-2.0-flash',
+      tools: [{ googleSearch: {} }],
+    });
+
+    const prompt = `Find the exact publication date for this article:
+
+Title: "${result.title}"
+URL: ${result.url}
+Source: ${result.source}
+
+Search for this specific article and find when it was published.
+
+IMPORTANT: Return ONLY the date in YYYY-MM-DD format, nothing else.
+If you cannot find the exact date, return "unknown".
+
+Examples of valid responses:
+2024-12-15
+2025-01-03
+unknown`;
+
+    const response = await searchModel.generateContent(prompt);
+    const text = response.response.text().trim();
+
+    // Validate date format
+    const dateMatch = text.match(/^\d{4}-\d{2}-\d{2}$/);
+    if (dateMatch) {
+      // Verify it's a valid date
+      const parsed = new Date(dateMatch[0]);
+      if (!isNaN(parsed.getTime())) {
+        return dateMatch[0];
+      }
+    }
+
+    return null;
+  } catch (error) {
+    console.log(`  Date extraction error: ${error.message}`);
+    return null;
   }
 }
 

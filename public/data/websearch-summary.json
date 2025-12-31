@@ -1,12 +1,12 @@
 {
-  "totalEntries": 52,
-  "lastUpdated": "2025-12-31T15:49:24.750Z",
+  "totalEntries": 54,
+  "lastUpdated": "2025-12-31T15:58:19.483Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2025-12-31T15:49:24.748Z"
+    "latest": "2025-12-31T15:58:19.470Z"
   },
   "byDate": {
-    "2025-12-31": 9,
+    "2025-12-31": 11,
     "2025-12-30": 11,
     "2025-12-29": 27,
     "2025-10-27": 1,
@@ -18,20 +18,34 @@
     "vertexaisearch.cloud.google.com": 34,
     "euractiv.ro": 2,
     "uniurb.it": 2,
+    "independent.co.uk": 1,
+    "engadget.com": 1,
     "Radio Radicale": 1,
     "lapiazzarimini.it": 1,
     "il Ducato": 1,
     "researchgate.net": 1,
-    "vera.ai": 1,
-    "Sociologica": 1,
-    "Vera.ai": 1
+    "vera.ai": 1
   },
   "byRelevanceScore": {
-    "high": 48,
+    "high": 50,
     "medium": 4,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Facebook accidentally gave misinformation about misinformation to researchers",
+      "url": "https://www.independent.co.uk/tech/facebook-misinformation-researchers-mistake-data-b1919042.html",
+      "source": "independent.co.uk",
+      "relevanceScore": 0.9,
+      "collectedAt": "2025-12-31T15:58:19.470Z"
+    },
+    {
+      "title": "Facebook has been giving misinformation researchers incomplete data",
+      "url": "https://www.engadget.com/facebook-misinformation-researchers-incomplete-data-050143486.html",
+      "source": "engadget.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2025-12-31T15:58:19.470Z"
+    },
     {
       "title": "All Articles – vera.ai VERification Assisted by Artificial Intelligence",
       "url": "https://www.veraai.eu/all-articles",
@@ -52,20 +66,6 @@
       "source": "researchgate.net",
       "relevanceScore": 0.9,
       "collectedAt": "2025-12-31T15:46:48.891Z"
-    },
-    {
-      "title": "Giornata Internazionale di Studi - Can the Damage of Destructive Polarization Be Repaired?",
-      "url": "https://www.uniurb.it/novita-ed-eventi/5977",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2025-12-31T06:32:50.055Z"
-    },
-    {
-      "title": "„România, cea mai importantă țară din lume” vs. Vestul “cel rău” - narațiunile coordonate persistă - EURACTIV.ro",
-      "url": "https://www.euractiv.ro/section/digital/news/romania-cea-mai-importanta-tara-din-lume-vs-vestul-cel-rau-naratiunile-coordonate-persista/",
-      "source": "euractiv.ro",
-      "relevanceScore": 0.9,
-      "collectedAt": "2025-12-31T06:32:50.055Z"
     }
   ]
 }
