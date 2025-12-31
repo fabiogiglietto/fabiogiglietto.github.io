@@ -313,7 +313,7 @@
         "scholar": null,
         "wos": 0,
         "scopus": 100,
-        "semanticScholar": 116
+        "semanticScholar": 117
       },
       "source_urls": {
         "orcid": "https://doi.org/10.1080/1369118X.2020.1739732",
@@ -333,7 +333,7 @@
         "ora": null
       },
       "metrics": {
-        "total_citations": 116,
+        "total_citations": 117,
         "citation_sources": 3
       },
       "crossref_type": "journal-article",
@@ -1888,7 +1888,7 @@
         "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:001234645400001&DestLinkType=FullRecord&DestApp=WOS_CPL",
         "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85194859097&origin=inward",
         "semanticScholar": "https://www.semanticscholar.org/paper/4b6d3b6ce53423f92a6fbe8577dc6d940a745761",
-        "ora": "https://ora.uniurb.it/handle/11576/2740792",
+        "ora": null,
         "crossref": "https://doi.org/10.3389/fsoc.2024.1379265"
       },
       "source_ids": {
@@ -1897,14 +1897,12 @@
         "wos": "WOS:001234645400001",
         "scopus": "85194859097",
         "semanticScholar": "4b6d3b6ce53423f92a6fbe8577dc6d940a745761",
-        "ora": "11576/2740792"
+        "ora": null
       },
       "metrics": {
         "total_citations": 4,
         "citation_sources": 3
       },
-      "oraHandle": "11576/2740792",
-      "abstract": "In February 2016, Facebook expanded the original \"Like\" button by introducing five additional \"Reactions\"-Love, Haha, Wow, Sad, and Angry-using modified versions of Unicode emojis. These reactions enable users to express more nuanced emotions towards posts. This literature review investigates scholarly research on user behavior in response to these reactions, with a focus on a broad spectrum of socioeconomic and psychological issues. We conducted a systematic search across databases including Scopus and Google Scholar, using keywords such as \"Facebook\" and \"Reaction,\" combined with various key phrases and Boolean operators. Our review synthesizes sixty-four articles published from 2016 to 2023, exploring diverse topics such as political news, far-right and extremist parties, racism, and hate speech during the COVID-19 pandemic. We organized these articles by theme and publication date. Our meta-analysis reveals that lifestyle and entertainment posts predominantly receive positive reactions, while sociopolitical content tends to elicit a broader spectrum of emotions, including negative sentiments. Furthermore, emotionally charged content consistently attracts higher volumes of reactions, regardless of sentiment. This research highlights the intricate relationship between user reactions and content characteristics, providing deeper insights into the dynamics of online engagement. By understanding these interaction patterns, we gain a better grasp of emotional responses and engagement levels, which ultimately shape online discourse and user interactions.",
       "crossref_type": "journal-article",
       "publisher": "Frontiers Media SA",
       "influentialCitations": 0,
@@ -2669,13 +2667,13 @@
     {
       "title": "\"A Pretty Blunt Approach\": Meta's Political Content Reduction Policy and Italian Parliamentarians' Facebook Visibility",
       "type": "preprint",
-      "venue": "Center for Open Science",
-      "authors": "Giglietto, Fabio",
+      "venue": null,
+      "authors": null,
       "year": 2025,
       "month": 12,
-      "day": 28,
-      "publicationDate": "2025-12-28",
-      "doi": "10.31235/osf.io/8dqag_v1",
+      "day": 30,
+      "publicationDate": "2025-12-30",
+      "doi": "10.31235/osf.io/8dqag_v2",
       "citations": {
         "scholar": null,
         "wos": null,
@@ -2683,16 +2681,15 @@
         "semanticScholar": null
       },
       "source_urls": {
-        "orcid": "https://doi.org/10.31235/osf.io/8dqag_v1",
+        "orcid": "https://doi.org/10.31235/osf.io/8dqag_v2",
         "scholar": null,
         "wos": null,
         "scopus": null,
         "semanticScholar": null,
-        "ora": null,
-        "crossref": "https://doi.org/10.31235/osf.io/8dqag_v1"
+        "ora": null
       },
       "source_ids": {
-        "orcid": 200901239,
+        "orcid": 201061551,
         "scholar": null,
         "wos": null,
         "scopus": null,
@@ -2702,9 +2699,7 @@
       "metrics": {
         "total_citations": 0,
         "citation_sources": 0
-      },
-      "crossref_type": "posted-content",
-      "publisher": "Center for Open Science"
+      }
     },
     {
       "title": "The State of Social Media Research APIs &amp; Tools in the Digital Service Act Era",
@@ -6154,6 +6149,40 @@
       ]
     },
     {
+      "title": "\"A Pretty Blunt Approach\": Meta's Political Content Reduction Policy and Italian Parliamentarians' Facebook Visibility",
+      "authors": "Giglietto, Fabio",
+      "venue": "Center for Open Science",
+      "year": 2025,
+      "doi": "10.31235/osf.io/8dqag_v1",
+      "citations": {
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": null,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "crossref": "https://doi.org/10.31235/osf.io/8dqag_v1",
+        "semanticScholar": null
+      },
+      "source_ids": {
+        "orcid": null,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "crossref_type": "posted-content",
+      "publisher": "Center for Open Science",
+      "metrics": {
+        "total_citations": 0,
+        "citation_sources": 0
+      }
+    },
+    {
       "title": "Social TV and second screen",
       "authors": "Giglietto, Fabio",
       "venue": "Elgar Encyclopedia of Technology and Politics",
@@ -6996,8 +7025,8 @@
     }
   ],
   "metrics": {
-    "total_publications": 179,
-    "total_citations": 3400,
+    "total_publications": 180,
+    "total_citations": 3401,
     "h_index": 27,
     "i10_index": 40,
     "citation_sources": {
@@ -7009,5 +7038,5 @@
       "with_ora": 25
     }
   },
-  "lastUpdated": "2025-12-30T13:31:37.598Z"
+  "lastUpdated": "2025-12-31T06:34:24.047Z"
 }

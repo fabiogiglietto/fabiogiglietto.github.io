@@ -1,39 +1,38 @@
 {
-  "overallSummary": "Fabio Giglietto maintains an active presence on Mastodon, LinkedIn, and Bluesky, focusing on research related to social media analysis, disinformation, and computational social science. LinkedIn has the largest follower base, but engagement varies across platforms. The content focuses on research updates, job postings, and conference announcements.",
+  "overallSummary": "Fabio Giglietto maintains an active presence across Mastodon, LinkedIn, and Bluesky, focusing on research related to social media analysis, disinformation, and computational social science. LinkedIn has the largest follower base, while engagement is distributed across platforms. Recent activity includes announcements of publications, research grants, conference presentations, and job opportunities.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 2.47,
+    "averageEngagementRate": 2.94,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
-      "theme": "Computational Social Science Research",
-      "description": "Updates on research projects, publications, and methods related to computational social science."
+      "theme": "Social Media Research",
+      "description": "Posts related to social media analysis, disinformation, information operations, and computational social science."
     },
     {
-      "theme": "Disinformation and Coordinated Behavior",
-      "description": "Discussion and analysis of disinformation campaigns and coordinated inauthentic behavior on social media platforms."
+      "theme": "Research Announcements",
+      "description": "Announcements of new publications, research grants, and software releases."
     },
     {
-      "theme": "Career and Educational Opportunities",
-      "description": "Announcements of job openings, postdoc positions, and PhD research opportunities."
+      "theme": "Career Opportunities",
+      "description": "Posts advertising job openings and research opportunities."
     },
     {
-      "theme": "Conference and Event Participation",
-      "description": "Information related to presentations and participation in conferences related to disinformation and social media."
+      "theme": "Conference Presentations",
+      "description": "Posts about upcoming conference presentations and related events."
     }
   ],
   "recommendations": [
-    "Increase posting frequency, especially on Mastodon, to maintain audience engagement.",
-    "Utilize platform-specific content strategies: more professional/formal content on LinkedIn, more community-focused content on Mastodon, and mixed content on Bluesky.",
-    "Incorporate visuals (images, videos) in posts to increase engagement.",
-    "Actively engage with followers by responding to comments and questions.",
-    "Use relevant hashtags to increase the reach of posts."
+    "Cross-promote content across platforms to maximize reach.",
+    "Use platform-specific hashtags to increase visibility.",
+    "Engage with comments and replies to foster community interaction.",
+    "Experiment with different content formats (e.g., images, videos) to see what resonates best with each audience."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky shows a good balance of research updates and opportunities, suggesting a strong academic and research-oriented community.",
-    "mastodon": "Mastodon posts focus on research and discussions, indicating a niche audience interested in the technical aspects of social media analysis. Lower engagement rate compared to other platforms.",
-    "linkedin": "LinkedIn is the professional platform with the largest follower base. Content related to job opportunities and grant announcements perform well."
+    "bluesky": "Bluesky posts generate good repost rates, suggesting content resonates with the community. Content includes research publications, conference appearances, and research opportunities.",
+    "mastodon": "Mastodon posts are informative and focus on research updates and discussions. Likes are more prevalent than reposts, indicating potential for more engaging content.",
+    "linkedin": "LinkedIn posts, particularly job postings and research grant announcements, garner high likes and comments, showcasing the platform's strength for professional networking and recruitment."
   },
   "topPerformingContent": [
     {
