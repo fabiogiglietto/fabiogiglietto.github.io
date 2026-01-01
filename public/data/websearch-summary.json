@@ -1,11 +1,12 @@
 {
-  "totalEntries": 54,
-  "lastUpdated": "2025-12-31T15:58:19.483Z",
+  "totalEntries": 60,
+  "lastUpdated": "2026-01-01T06:33:09.872Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2025-12-31T15:58:19.470Z"
+    "latest": "2026-01-01T06:33:09.871Z"
   },
   "byDate": {
+    "2026-01-01": 6,
     "2025-12-31": 11,
     "2025-12-30": 11,
     "2025-12-29": 27,
@@ -15,23 +16,44 @@
     "2025-06-10": 1
   },
   "bySource": {
-    "vertexaisearch.cloud.google.com": 34,
+    "vertexaisearch.cloud.google.com": 36,
+    "uniurb.it": 3,
+    "Radio Radicale": 2,
+    "lapiazzarimini.it": 2,
+    "il Ducato": 2,
     "euractiv.ro": 2,
-    "uniurb.it": 2,
     "independent.co.uk": 1,
     "engadget.com": 1,
-    "Radio Radicale": 1,
-    "lapiazzarimini.it": 1,
-    "il Ducato": 1,
     "researchgate.net": 1,
     "vera.ai": 1
   },
   "byRelevanceScore": {
-    "high": 50,
-    "medium": 4,
+    "high": 53,
+    "medium": 7,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Meta Is Getting Rid of CrowdTangle — and Its Replacement Isn't As Transparent or Accessible - Proof News",
+      "url": "https://www.proofnews.org/meta-is-getting-rid-of-crowdtangle-and-its-replacement-isnt-as-transparent-or-accessible/",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-01T06:33:09.871Z"
+    },
+    {
+      "title": "uniurb.it",
+      "url": "https://www.uniurb.it/persone/fabio-giglietto",
+      "source": "uniurb.it",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-01T06:33:09.871Z"
+    },
+    {
+      "title": "Cracking the code: social data access and the DSA's impact on disinformation research",
+      "url": "https://en.ejo.ch/recent/cracking-the-code-social-data-access-and-the-dsas-impact-on-disinformation-research",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-01T06:33:09.871Z"
+    },
     {
       "title": "Facebook accidentally gave misinformation about misinformation to researchers",
       "url": "https://www.independent.co.uk/tech/facebook-misinformation-researchers-mistake-data-b1919042.html",
@@ -45,27 +67,6 @@
       "source": "engadget.com",
       "relevanceScore": 0.9,
       "collectedAt": "2025-12-31T15:58:19.470Z"
-    },
-    {
-      "title": "All Articles – vera.ai VERification Assisted by Artificial Intelligence",
-      "url": "https://www.veraai.eu/all-articles",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2025-12-31T15:49:24.748Z"
-    },
-    {
-      "title": "Fabio Giglietto - Festival Internazionale del Giornalismo",
-      "url": "https://www.festivaldelgiornalismo.com/speaker/fabio-giglietto",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2025-12-31T15:49:24.748Z"
-    },
-    {
-      "title": "Coordinated Hateful Disinformation on Italian Politics and Social Issues, since 2017 | Request PDF",
-      "url": "https://www.researchgate.net/publication/349059207_Coordinated_Hateful_Disinformation_on_Italian_Politics_and_Social_Issues_since_2017",
-      "source": "researchgate.net",
-      "relevanceScore": 0.9,
-      "collectedAt": "2025-12-31T15:46:48.891Z"
     }
   ]
 }
