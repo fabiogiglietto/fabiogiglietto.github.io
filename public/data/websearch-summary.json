@@ -1,11 +1,12 @@
 {
-  "totalEntries": 60,
-  "lastUpdated": "2026-01-01T06:33:09.872Z",
+  "totalEntries": 64,
+  "lastUpdated": "2026-01-02T06:33:23.206Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-01-01T06:33:09.871Z"
+    "latest": "2026-01-02T06:33:23.205Z"
   },
   "byDate": {
+    "2026-01-02": 4,
     "2026-01-01": 6,
     "2025-12-31": 11,
     "2025-12-30": 11,
@@ -17,56 +18,56 @@
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 36,
-    "uniurb.it": 3,
+    "uniurb.it": 4,
+    "euractiv.ro": 4,
     "Radio Radicale": 2,
     "lapiazzarimini.it": 2,
     "il Ducato": 2,
-    "euractiv.ro": 2,
+    "weizenbaum-institut.de": 1,
     "independent.co.uk": 1,
     "engadget.com": 1,
-    "researchgate.net": 1,
-    "vera.ai": 1
+    "researchgate.net": 1
   },
   "byRelevanceScore": {
-    "high": 53,
+    "high": 57,
     "medium": 7,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Integrating Large Language Models in Political Discourse Studies on Social Media: Challenges of Validating an LLMs-in-the-loop",
+      "url": "https://ora.uniurb.it/retrieve/deeb880a-e7b0-466c-a109-b3e038d97062/19524-marino.pdf",
+      "source": "uniurb.it",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-02T06:33:23.205Z"
+    },
+    {
+      "title": "Empowering People in Online Spaces: Democracy and Well-Being in Digital Societies - Weizenbaum Institut",
+      "url": "https://www.weizenbaum-institut.de/media/Publikationen/Weizenbaum_Proceedings/Proceedings_WIConf25.pdf",
+      "source": "weizenbaum-institut.de",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-02T06:33:23.205Z"
+    },
+    {
+      "title": "Un an de la alegerile anulate. Șocul continuă - EURACTIV.ro",
+      "url": "https://www.euractiv.ro/facts-not-fake-decode/un-an-de-la-aparitia-lui-mesia-de-pe-tik-tok.-socul-continua-76245",
+      "source": "euractiv.ro",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-02T06:33:23.205Z"
+    },
+    {
+      "title": "„România, cea mai importantă țară din lume” vs. Vestul „cel rău” - narațiunile coordonate persistă - EURACTIV.ro",
+      "url": "https://www.euractiv.ro/facts-not-fake-decode/romania-cea-mai-importanta-tara-din-lume-vs.-vestul-cel-rau.-naratiuni-coordonate.-la-un-an-de-la-primele-prezidentiale.-76249",
+      "source": "euractiv.ro",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-02T06:33:23.205Z"
+    },
     {
       "title": "Meta Is Getting Rid of CrowdTangle — and Its Replacement Isn't As Transparent or Accessible - Proof News",
       "url": "https://www.proofnews.org/meta-is-getting-rid-of-crowdtangle-and-its-replacement-isnt-as-transparent-or-accessible/",
       "source": "vertexaisearch.cloud.google.com",
       "relevanceScore": 0.9,
       "collectedAt": "2026-01-01T06:33:09.871Z"
-    },
-    {
-      "title": "uniurb.it",
-      "url": "https://www.uniurb.it/persone/fabio-giglietto",
-      "source": "uniurb.it",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-01T06:33:09.871Z"
-    },
-    {
-      "title": "Cracking the code: social data access and the DSA's impact on disinformation research",
-      "url": "https://en.ejo.ch/recent/cracking-the-code-social-data-access-and-the-dsas-impact-on-disinformation-research",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-01T06:33:09.871Z"
-    },
-    {
-      "title": "Facebook accidentally gave misinformation about misinformation to researchers",
-      "url": "https://www.independent.co.uk/tech/facebook-misinformation-researchers-mistake-data-b1919042.html",
-      "source": "independent.co.uk",
-      "relevanceScore": 0.9,
-      "collectedAt": "2025-12-31T15:58:19.470Z"
-    },
-    {
-      "title": "Facebook has been giving misinformation researchers incomplete data",
-      "url": "https://www.engadget.com/facebook-misinformation-researchers-incomplete-data-050143486.html",
-      "source": "engadget.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2025-12-31T15:58:19.470Z"
     }
   ]
 }

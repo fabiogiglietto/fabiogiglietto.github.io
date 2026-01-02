@@ -1201,26 +1201,6 @@
       "crossref_score": 1
     },
     {
-      "doi": "10.31235/osf.io/8dqag_v1",
-      "title": "\"A Pretty Blunt Approach\": Meta's Political Content Reduction Policy and Italian Parliamentarians' Facebook Visibility",
-      "authors": "Giglietto, Fabio",
-      "venue": "Center for Open Science",
-      "year": 2025,
-      "type": "posted-content",
-      "url": "https://doi.org/10.31235/osf.io/8dqag_v1",
-      "crossref_type": "posted-content",
-      "publisher": "Center for Open Science",
-      "issn": null,
-      "isbn": null,
-      "subject": [],
-      "abstract": "<p>In February 2021, Meta announced it would reduce the distribution of political content in users' News Feeds, implementing the policy globally by July 2022 before reversing course in January 2025. Despite the significance of these changes for democratic communication, no independent research has quantified their effects on elected officials. This study examines Meta's political content reduction policy using a dataset of over 2.5 million Facebook posts from Italian parliamentarians, prominent politicians, and political extremist accounts spanning 2021–2025, collected via the Meta Content Library API. Employing a discovery-validation design with structural breakpoint detection methods, the analysis identifies three cross-validated breakpoints that reveal policy effects emerged in Italy approximately ten months before Meta's announced global implementation. The findings document a 72% reduction in average reach for re-elected Members of Parliament, declining from approximately 53,000 views per post before the policy to 15,000 at the trough. Although Meta's January 2025 reversal produced a significant rebound, post-reversal reach recovered to only 65% of pre-policy levels. A robustness check reveals asymmetric effects: while mainstream politicians experienced substantial visibility losses, extremist accounts' high posting volume more than compensated for modest per-post declines, resulting in increased total weekly reach during the policy period. These findings expose significant transparency deficits in Meta's policy communication while also demonstrating the research value of the transparency infrastructure that made this study possible.</p>",
-      "license": [
-        "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode"
-      ],
-      "funder": [],
-      "crossref_score": 1
-    },
-    {
       "doi": "10.4337/9781800374263.social.tv.second",
       "title": "Social TV and second screen",
       "authors": "Giglietto, Fabio",
@@ -1260,6 +1240,26 @@
       "abstract": "<jats:p>The workshop program of the Association for the Advancement of Artificial Intelligence's International Conference on Web and Social Media (AAAI‐16) was held in Cologne, Germany. There were eight workshops in the program: CityLab, Challenges and Futures for Ethical Social Media Research, Social Media and Demographic Research, Wiki, #Fail: Things That Didn't Work Out in Social Media Research — And What We Can Learn from Them, News and Public Opinion, Social Media in the Newsroom, and Social Web for Environmental and Ecological Monitoring. Workshops were held on the first day of the conference, Tuesday, May 17, 2016. Workshop participants met and discussed issues with a selected focus — providing an informal setting for active exchange among researchers, developers, and users on topics of current interest. Of the eight workshops held at the conference; organizers from only five included papers in the AAAI Technical Reports series, and organizers from six workshops submitted reports.</jats:p>",
       "license": [
         "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+      ],
+      "funder": [],
+      "crossref_score": 1
+    },
+    {
+      "doi": "10.31235/osf.io/8dqag_v1",
+      "title": "\"A Pretty Blunt Approach\": Meta's Political Content Reduction Policy and Italian Parliamentarians' Facebook Visibility",
+      "authors": "Giglietto, Fabio",
+      "venue": "Center for Open Science",
+      "year": 2025,
+      "type": "posted-content",
+      "url": "https://doi.org/10.31235/osf.io/8dqag_v1",
+      "crossref_type": "posted-content",
+      "publisher": "Center for Open Science",
+      "issn": null,
+      "isbn": null,
+      "subject": [],
+      "abstract": "<p>In February 2021, Meta announced it would reduce the distribution of political content in users' News Feeds, implementing the policy globally by July 2022 before reversing course in January 2025. Despite the significance of these changes for democratic communication, no independent research has quantified their effects on elected officials. This study examines Meta's political content reduction policy using a dataset of over 2.5 million Facebook posts from Italian parliamentarians, prominent politicians, and political extremist accounts spanning 2021–2025, collected via the Meta Content Library API. Employing a discovery-validation design with structural breakpoint detection methods, the analysis identifies three cross-validated breakpoints that reveal policy effects emerged in Italy approximately ten months before Meta's announced global implementation. The findings document a 72% reduction in average reach for re-elected Members of Parliament, declining from approximately 53,000 views per post before the policy to 15,000 at the trough. Although Meta's January 2025 reversal produced a significant rebound, post-reversal reach recovered to only 65% of pre-policy levels. A robustness check reveals asymmetric effects: while mainstream politicians experienced substantial visibility losses, extremist accounts' high posting volume more than compensated for modest per-post declines, resulting in increased total weekly reach during the policy period. These findings expose significant transparency deficits in Meta's policy communication while also demonstrating the research value of the transparency infrastructure that made this study possible.</p>",
+      "license": [
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode"
       ],
       "funder": [],
       "crossref_score": 1
@@ -1428,7 +1428,7 @@
       "crossref_score": 1
     }
   ],
-  "lastUpdated": "2026-01-01T06:34:29.065Z",
+  "lastUpdated": "2026-01-02T06:34:49.217Z",
   "metadata": {
     "total_requested": 98,
     "successful_requests": 64,
