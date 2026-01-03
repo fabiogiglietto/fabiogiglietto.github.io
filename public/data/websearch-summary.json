@@ -1,11 +1,12 @@
 {
-  "totalEntries": 64,
-  "lastUpdated": "2026-01-02T06:33:23.206Z",
+  "totalEntries": 65,
+  "lastUpdated": "2026-01-03T06:30:36.047Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-01-02T06:33:23.205Z"
+    "latest": "2026-01-03T06:30:36.046Z"
   },
   "byDate": {
+    "2026-01-03": 1,
     "2026-01-02": 4,
     "2026-01-01": 6,
     "2025-12-31": 11,
@@ -20,20 +21,27 @@
     "vertexaisearch.cloud.google.com": 36,
     "uniurb.it": 4,
     "euractiv.ro": 4,
+    "researchgate.net": 2,
     "Radio Radicale": 2,
     "lapiazzarimini.it": 2,
     "il Ducato": 2,
     "weizenbaum-institut.de": 1,
     "independent.co.uk": 1,
-    "engadget.com": 1,
-    "researchgate.net": 1
+    "engadget.com": 1
   },
   "byRelevanceScore": {
-    "high": 57,
+    "high": 58,
     "medium": 7,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "In the Shadows of Disinformation: Fake News and Violations of Human Rights - ResearchGate",
+      "url": "https://www.researchgate.net/publication/379160366_In_the_Shadows_of_Disinformation_Fake_News_and_Violations_of_Human_Rights/fulltext/65fd855bd3a08551423e88b8/In-the-Shadows-of-Disinformation-Fake-News-and-Violations-of-Human-Rights.pdf",
+      "source": "researchgate.net",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-03T06:30:36.046Z"
+    },
     {
       "title": "Integrating Large Language Models in Political Discourse Studies on Social Media: Challenges of Validating an LLMs-in-the-loop",
       "url": "https://ora.uniurb.it/retrieve/deeb880a-e7b0-466c-a109-b3e038d97062/19524-marino.pdf",
@@ -61,13 +69,6 @@
       "source": "euractiv.ro",
       "relevanceScore": 0.9,
       "collectedAt": "2026-01-02T06:33:23.205Z"
-    },
-    {
-      "title": "Meta Is Getting Rid of CrowdTangle — and Its Replacement Isn't As Transparent or Accessible - Proof News",
-      "url": "https://www.proofnews.org/meta-is-getting-rid-of-crowdtangle-and-its-replacement-isnt-as-transparent-or-accessible/",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-01T06:33:09.871Z"
     }
   ]
 }
