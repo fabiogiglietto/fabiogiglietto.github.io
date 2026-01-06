@@ -12,26 +12,6 @@
   },
   "repositories": [
     {
-      "name": "mcl-political-reach-study",
-      "description": "Reproducible analysis pipeline for Meta's political content reduction policy using Meta Content Library API data",
-      "url": "https://github.com/fabiogiglietto/mcl-political-reach-study",
-      "language": "Jupyter Notebook",
-      "stars": 0,
-      "forks": 0,
-      "created_at": "2025-12-27T13:06:42Z",
-      "updated_at": "2026-01-04T08:28:12Z"
-    },
-    {
-      "name": "fabiogiglietto.github.io",
-      "description": "AI-driven academic portfolio with automated content aggregation and intelligent web mentions discovery - like Yahoo Pipes for academics, but with GPT-4 superpowers! A modern Jekyll site that mashes up publication APIs, social feeds, and scholarly references into one sleek, auto-updating research showcase.",
-      "url": "https://github.com/fabiogiglietto/fabiogiglietto.github.io",
-      "language": "JavaScript",
-      "stars": 7,
-      "forks": 1,
-      "created_at": "2025-04-21T09:41:33Z",
-      "updated_at": "2026-01-04T06:33:36Z"
-    },
-    {
       "name": "research-radio",
       "description": "Convert academic papers into AI podcast episodes with Google Gemini. Powers FG's Research Radio.",
       "url": "https://github.com/fabiogiglietto/research-radio",
@@ -39,7 +19,7 @@
       "stars": 2,
       "forks": 0,
       "created_at": "2025-12-29T17:46:10Z",
-      "updated_at": "2026-01-03T09:24:04Z"
+      "updated_at": "2026-01-05T19:29:33Z"
     },
     {
       "name": "toread",
@@ -49,7 +29,27 @@
       "stars": 1,
       "forks": 0,
       "created_at": "2025-06-07T09:12:59Z",
-      "updated_at": "2026-01-03T09:05:51Z"
+      "updated_at": "2026-01-05T19:13:07Z"
+    },
+    {
+      "name": "fabiogiglietto.github.io",
+      "description": "AI-driven academic portfolio with automated content aggregation and intelligent web mentions discovery - like Yahoo Pipes for academics, but with GPT-4 superpowers! A modern Jekyll site that mashes up publication APIs, social feeds, and scholarly references into one sleek, auto-updating research showcase.",
+      "url": "https://github.com/fabiogiglietto/fabiogiglietto.github.io",
+      "language": "JavaScript",
+      "stars": 7,
+      "forks": 1,
+      "created_at": "2025-04-21T09:41:33Z",
+      "updated_at": "2026-01-05T06:40:26Z"
+    },
+    {
+      "name": "mcl-political-reach-study",
+      "description": "Reproducible analysis pipeline for Meta's political content reduction policy using Meta Content Library API data",
+      "url": "https://github.com/fabiogiglietto/mcl-political-reach-study",
+      "language": "Jupyter Notebook",
+      "stars": 0,
+      "forks": 0,
+      "created_at": "2025-12-27T13:06:42Z",
+      "updated_at": "2026-01-04T08:28:12Z"
     },
     {
       "name": "tiktok_csbn",
@@ -197,7 +197,7 @@
       "url": "https://github.com/fabiogiglietto/CooRnet_ImgTxt",
       "stars": 10,
       "forks": 0,
-      "activity": null
+      "activity": {}
     },
     {
       "name": "fabiogiglietto.github.io",
@@ -224,5 +224,5 @@
       "activity": {}
     }
   ],
-  "lastUpdated": "2026-01-05T06:37:50.539Z"
+  "lastUpdated": "2026-01-06T06:33:24.599Z"
 }

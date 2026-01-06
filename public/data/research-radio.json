@@ -197,6 +197,39 @@
       "duration": "7:04",
       "author": "Francesco Pierri, Theo Araujo, Sanne Kruikemeier, Philipp Lorenz-Spreen, Mariek M. P. Vanden Abeele, Laura Vandenbosch, Joana Gonçalves-Sa, Przemyslaw A. Grabowicz",
       "doi": null
+    },
+    {
+      "id": "bibtex:Emilio2026-ik",
+      "bibtexKey": "Emilio2026-ik",
+      "title": "AI's Synthetic Reality: Can We Still Trust Anything?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nFerrara, E. (2026). The Generative AI Paradox: GenAI and the erosion of trust, the corrosion of information verification, and the demise of truth. http://arxiv.org/abs/2601.00306v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Emilio2026-ik.mp3",
+      "pubDate": "Mon, 05 Jan 2026 08:45:44 +0000",
+      "duration": "5:55",
+      "author": "Emilio Ferrara",
+      "doi": null
+    },
+    {
+      "id": "bibtex:Copland2025-em",
+      "bibtexKey": "Copland2025-em",
+      "title": "Sky News Australia: From Niche Cable to Global Propaganda?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nCopland, S., Bruns, A., & Graham, T. (2025). Sky News Australia as network propaganda: how a niche cable channel became an international right-wing propaganda machine. https://doi.org/10.1177/1329878x251406899",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Copland2025-em.mp3",
+      "pubDate": "Mon, 05 Jan 2026 08:47:52 +0000",
+      "duration": "5:09",
+      "author": "Simon Copland, Axel Bruns, Timothy Graham",
+      "doi": "10.1177/1329878x251406899"
+    },
+    {
+      "id": "bibtex:Knupfer2025-vt",
+      "bibtexKey": "Knupfer2025-vt",
+      "title": "Digital Factions: How Online Networks Radicalize Politics",
+      "description": "AI-generated podcast discussion.\n\nReference:\nKnüpfer, C. B., Yang, Y., & Cowburn, M. (2025). The logic of connective faction: How digitally networked elites and hyper-partisan media radicalize politics. https://doi.org/10.1080/10584609.2025.2604708",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Knupfer2025-vt.mp3",
+      "pubDate": "Mon, 05 Jan 2026 19:29:26 +0000",
+      "duration": "5:03",
+      "author": "Curd B. Knüpfer, Yunkang Yang, Mike Cowburn",
+      "doi": "10.1080/10584609.2025.2604708"
     }
   ],
   "episodesByBibtexKey": {
@@ -397,6 +430,39 @@
       "duration": "7:04",
       "author": "Francesco Pierri, Theo Araujo, Sanne Kruikemeier, Philipp Lorenz-Spreen, Mariek M. P. Vanden Abeele, Laura Vandenbosch, Joana Gonçalves-Sa, Przemyslaw A. Grabowicz",
       "doi": null
+    },
+    "Emilio2026-ik": {
+      "id": "bibtex:Emilio2026-ik",
+      "bibtexKey": "Emilio2026-ik",
+      "title": "AI's Synthetic Reality: Can We Still Trust Anything?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nFerrara, E. (2026). The Generative AI Paradox: GenAI and the erosion of trust, the corrosion of information verification, and the demise of truth. http://arxiv.org/abs/2601.00306v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Emilio2026-ik.mp3",
+      "pubDate": "Mon, 05 Jan 2026 08:45:44 +0000",
+      "duration": "5:55",
+      "author": "Emilio Ferrara",
+      "doi": null
+    },
+    "Copland2025-em": {
+      "id": "bibtex:Copland2025-em",
+      "bibtexKey": "Copland2025-em",
+      "title": "Sky News Australia: From Niche Cable to Global Propaganda?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nCopland, S., Bruns, A., & Graham, T. (2025). Sky News Australia as network propaganda: how a niche cable channel became an international right-wing propaganda machine. https://doi.org/10.1177/1329878x251406899",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Copland2025-em.mp3",
+      "pubDate": "Mon, 05 Jan 2026 08:47:52 +0000",
+      "duration": "5:09",
+      "author": "Simon Copland, Axel Bruns, Timothy Graham",
+      "doi": "10.1177/1329878x251406899"
+    },
+    "Knupfer2025-vt": {
+      "id": "bibtex:Knupfer2025-vt",
+      "bibtexKey": "Knupfer2025-vt",
+      "title": "Digital Factions: How Online Networks Radicalize Politics",
+      "description": "AI-generated podcast discussion.\n\nReference:\nKnüpfer, C. B., Yang, Y., & Cowburn, M. (2025). The logic of connective faction: How digitally networked elites and hyper-partisan media radicalize politics. https://doi.org/10.1080/10584609.2025.2604708",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Knupfer2025-vt.mp3",
+      "pubDate": "Mon, 05 Jan 2026 19:29:26 +0000",
+      "duration": "5:03",
+      "author": "Curd B. Knüpfer, Yunkang Yang, Mike Cowburn",
+      "doi": "10.1080/10584609.2025.2604708"
     }
   },
   "episodesByDoi": {
@@ -531,9 +597,31 @@
       "duration": "5:59",
       "author": "Hause Lin, Gabriela Czarnek, Benjamin Lewis, Joshua P. White, Adam J. Berinsky, Thomas Costello, Gordon Pennycook, David G. Rand",
       "doi": "10.1038/s41586-025-09771-9"
+    },
+    "10.1177/1329878x251406899": {
+      "id": "bibtex:Copland2025-em",
+      "bibtexKey": "Copland2025-em",
+      "title": "Sky News Australia: From Niche Cable to Global Propaganda?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nCopland, S., Bruns, A., & Graham, T. (2025). Sky News Australia as network propaganda: how a niche cable channel became an international right-wing propaganda machine. https://doi.org/10.1177/1329878x251406899",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Copland2025-em.mp3",
+      "pubDate": "Mon, 05 Jan 2026 08:47:52 +0000",
+      "duration": "5:09",
+      "author": "Simon Copland, Axel Bruns, Timothy Graham",
+      "doi": "10.1177/1329878x251406899"
+    },
+    "10.1080/10584609.2025.2604708": {
+      "id": "bibtex:Knupfer2025-vt",
+      "bibtexKey": "Knupfer2025-vt",
+      "title": "Digital Factions: How Online Networks Radicalize Politics",
+      "description": "AI-generated podcast discussion.\n\nReference:\nKnüpfer, C. B., Yang, Y., & Cowburn, M. (2025). The logic of connective faction: How digitally networked elites and hyper-partisan media radicalize politics. https://doi.org/10.1080/10584609.2025.2604708",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Knupfer2025-vt.mp3",
+      "pubDate": "Mon, 05 Jan 2026 19:29:26 +0000",
+      "duration": "5:03",
+      "author": "Curd B. Knüpfer, Yunkang Yang, Mike Cowburn",
+      "doi": "10.1080/10584609.2025.2604708"
     }
   },
-  "totalEpisodes": 18,
-  "lastUpdated": "2026-01-05T06:37:22.629Z",
+  "totalEpisodes": 21,
+  "lastUpdated": "2026-01-06T06:33:23.877Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
