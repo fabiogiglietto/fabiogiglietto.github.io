@@ -8,6 +8,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const yaml = require('js-yaml');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const sanitizeHtml = require('sanitize-html');
 
@@ -55,7 +56,9 @@ async function generateAboutMe() {
       'github.json',
       'news.json',
       'websearch.json',
-      'summary.json'
+      'summary.json',
+      'toread.json',
+      'teaching.json'
     ];
     
     // Track which files were successfully loaded
@@ -78,7 +81,19 @@ async function generateAboutMe() {
     }
     
     console.log(`Successfully loaded ${loadedFiles.length} data files: ${loadedFiles.join(', ')}`);
-    
+
+    // Load news.yml from _data directory (has richer content than news.json)
+    const newsYamlPath = path.join(__dirname, '../../_data/news.yml');
+    if (fs.existsSync(newsYamlPath)) {
+      try {
+        const newsYaml = yaml.load(fs.readFileSync(newsYamlPath, 'utf8'));
+        data.newsYaml = newsYaml;
+        console.log('Successfully loaded news.yml');
+      } catch (err) {
+        console.error('Error reading news.yml:', err.message);
+      }
+    }
+
     // If no data was collected, return early with fallback
     if (Object.keys(data).length === 0) {
       console.error('No data available for generating About Me section');
@@ -236,7 +251,50 @@ function formatDataForPrompt(data) {
       }
     });
   }
-  
+
+  // Format Teaching data (current courses)
+  if (data.teaching && Array.isArray(data.teaching)) {
+    const currentCourses = data.teaching.filter(c => c.current);
+    if (currentCourses.length > 0) {
+      formattedData += `\n--- CURRENT TEACHING ---\n`;
+      formattedData += `Courses for current academic year:\n`;
+      currentCourses.forEach((course, index) => {
+        formattedData += `${index + 1}. ${course.english_title || course.title} (${course.level || 'Master'}, ${course.semester || ''})\n`;
+      });
+    }
+  }
+
+  // Format ToRead data (recent research interests)
+  if (data.toread && Array.isArray(data.toread)) {
+    const recentPapers = data.toread
+      .filter(p => p.dateAdded)
+      .sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded))
+      .slice(0, 5);
+    if (recentPapers.length > 0) {
+      formattedData += `\n--- RECENT READING INTERESTS ---\n`;
+      formattedData += `Latest papers added to reading list (showing research direction):\n`;
+      recentPapers.forEach((paper, index) => {
+        const date = paper.dateAdded ? paper.dateAdded.split('T')[0] : '';
+        formattedData += `${index + 1}. "${paper.title}" (${date})\n`;
+      });
+    }
+  }
+
+  // Format News/Social Media posts from news.yml
+  if (data.newsYaml && Array.isArray(data.newsYaml)) {
+    const recentPosts = data.newsYaml
+      .sort((a, b) => new Date(b.date) - new Date(a.date))
+      .slice(0, 5);
+    if (recentPosts.length > 0) {
+      formattedData += `\n--- RECENT SOCIAL MEDIA ACTIVITY ---\n`;
+      formattedData += `Recent professional posts and discussions:\n`;
+      recentPosts.forEach((post, index) => {
+        const content = post.content.substring(0, 150) + (post.content.length > 150 ? '...' : '');
+        formattedData += `${index + 1}. ${post.date}: ${content}\n`;
+      });
+    }
+  }
+
   return formattedData;
 }
 
@@ -281,6 +339,16 @@ Additionally, use Google Search to find recent information about Fabio Giglietto
 For the social media content, don't create a separate social media section, but instead use this information to understand his current work and interests, then incorporate these insights naturally into the biography. Focus on the professional content from his social profiles that reveals what projects he's currently working on.
 
 Include any relevant up-to-date information you find in the biography, but maintain a professional tone.
+
+Additionally, in the biography, briefly mention where relevant:
+- Current teaching activities (courses this academic year like Generative AI and Media, Digital Social Network Analysis)
+- Recent research interests (based on reading list topics like coordinated behavior detection, multimodal narratives)
+- Active participation in professional social media discussions about platform policies and research methods
+
+Keep these as natural, brief mentions woven into the narrative - not as separate sections or bullet points.
+The focus remains on the overall academic profile and research contributions.
+
+IMPORTANT: Before finalizing, review the text to eliminate any repetition. Avoid repeating the same concepts, phrases, or information across paragraphs. Each paragraph should introduce new information without restating what was already covered.
 
 Generate ONLY the HTML content for the "About Me" section. Do not include any explanations, notes, markdown code blocks, or additional text. Your response should be valid HTML that starts with <p> and ends with </p> without any additional formatting or explanation.
 `;
