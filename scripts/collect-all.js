@@ -33,6 +33,7 @@ const aboutGenerator = require('./generators/about-generator');
 const teachingGenerator = require('./generators/teaching-generator');
 const socialMediaInsightsGenerator = require('./generators/social-media-insights');
 const publicationsGenerator = require('./generators/publications-generator');
+const bibtexGenerator = require('./generators/bibtex-generator');
 
 // Ensure data directory exists
 const dataDir = path.join(__dirname, '../public/data');
@@ -259,6 +260,19 @@ async function collectAll() {
       }
     } catch (genError) {
       console.error('Error generating publications data:', genError);
+      // Continue execution even if the generation fails
+    }
+
+    // Generate BibTeX file
+    try {
+      const bibtexGenerated = await bibtexGenerator.generateBibtex();
+      if (bibtexGenerated) {
+        console.log('BibTeX file generated successfully');
+      } else {
+        console.log('BibTeX generation skipped or failed');
+      }
+    } catch (genError) {
+      console.error('Error generating BibTeX file:', genError);
       // Continue execution even if the generation fails
     }
   } catch (error) {

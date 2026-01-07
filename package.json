@@ -7,6 +7,7 @@
     "generate-about": "node scripts/generate-about-ai.js",
     "generate-teaching": "node scripts/generators/teaching-generator.js",
     "generate-social-insights": "node scripts/generators/social-media-insights.js",
+    "generate-bibtex": "node scripts/generators/bibtex-generator.js",
     "build": "bundle exec jekyll build",
     "serve": "bundle exec jekyll serve",
     "test": "jest",
