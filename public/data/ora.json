@@ -2,7 +2,7 @@
   "source": "ORA UNIURB",
   "repository": "https://ora.uniurb.it",
   "oaiEndpoint": "https://ora.uniurb.it/oai/request",
-  "collectedAt": "2026-01-07T06:32:45.222Z",
+  "collectedAt": "2026-01-08T06:33:21.559Z",
   "author": "Fabio Giglietto",
   "publications": [
     {
@@ -106,28 +106,6 @@
       "oaiIdentifier": "oai:ora.uniurb.it:11576/2726579",
       "datestamp": "2024-03-19T02:16:50Z",
       "url": "https://ora.uniurb.it/handle/11576/2726579"
-    },
-    {
-      "title": "A Workflow to Detect, Monitor, and Update Lists of Coordinated Social Media Accounts Across Time: The Case of the 2022 Italian Election",
-      "authors": "Fabio Giglietto; Giada Marino; Roberto Mincigrucci; Anna Stanziano",
-      "authorsList": [
-        "Fabio Giglietto",
-        "Giada Marino",
-        "Roberto Mincigrucci",
-        "Anna Stanziano"
-      ],
-      "year": 2023,
-      "doi": "10.1177/20563051231196866",
-      "handle": "11576/2721991",
-      "type": "article",
-      "abstract": "Information operations that target public opinion often exploit breaking news, crises, and elections by using coordinated social media actors to disseminate problematic content. These events often reveal the relationships between actors, prompting the creation of lists of malicious actors and news sources. However, relying on outdated lists may underestimate the prevalence and impact of such operations. This article presents a novel workflow to detect, monitor, and update lists of coordinated social media actors during and beyond peak activity periods. Using this approach, known problematic actors are constantly monitored, allowing the detection of new actors and the update of the monitored pool. The workflow was applied to the 2022 Italian snap election, leveraging previous research on coordinated inauthentic behavior during the 2018 and 2019 Italian elections. The initial list of 435 coordinated accounts was monitored, surfacing 1,022 overly shared or commented political posts, 272 coordinated links, and detecting 66 political and 554 generic coordinated accounts not previously listed. Three case studies were identified: one politically motivated, one click-economy driven, and one religiously motivated operation. The article discusses the implications of this approach, its limitations, and potential future work.",
-      "publisher": null,
-      "journal": "SOCIAL MEDIA + SOCIETY",
-      "pages": null,
-      "language": "eng",
-      "oaiIdentifier": "oai:ora.uniurb.it:11576/2721991",
-      "datestamp": "2025-06-13T00:16:40Z",
-      "url": "https://ora.uniurb.it/handle/11576/2721991"
     },
     {
       "title": "Hyperpartisan Networks on Facebook. The Case of the Five Star Movement Network During the 2022 Italian Election",
@@ -285,17 +263,17 @@
     }
   ],
   "stats": {
-    "total": 13,
+    "total": 12,
     "byType": {
       "chapter": 3,
-      "article": 5,
+      "article": 4,
       "other": 4,
       "conference": 1
     },
     "byYear": {
       "2020": 2,
       "2022": 3,
-      "2023": 5,
+      "2023": 4,
       "2024": 1,
       "2025": 2
     }

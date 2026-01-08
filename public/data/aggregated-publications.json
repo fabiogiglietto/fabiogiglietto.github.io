@@ -1626,7 +1626,7 @@
         "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:001070115200001&DestLinkType=FullRecord&DestApp=WOS_CPL",
         "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85170566346&origin=inward",
         "semanticScholar": "https://www.semanticscholar.org/paper/9e31c21df6d8e134626bc15ecf9198a52fe3b83c",
-        "ora": "https://ora.uniurb.it/handle/11576/2721991",
+        "ora": null,
         "crossref": "https://doi.org/10.1177/20563051231196866"
       },
       "source_ids": {
@@ -1635,14 +1635,12 @@
         "wos": "WOS:001070115200001",
         "scopus": "85170566346",
         "semanticScholar": "9e31c21df6d8e134626bc15ecf9198a52fe3b83c",
-        "ora": "11576/2721991"
+        "ora": null
       },
       "metrics": {
         "total_citations": 6,
         "citation_sources": 3
       },
-      "oraHandle": "11576/2721991",
-      "abstract": "Information operations that target public opinion often exploit breaking news, crises, and elections by using coordinated social media actors to disseminate problematic content. These events often reveal the relationships between actors, prompting the creation of lists of malicious actors and news sources. However, relying on outdated lists may underestimate the prevalence and impact of such operations. This article presents a novel workflow to detect, monitor, and update lists of coordinated social media actors during and beyond peak activity periods. Using this approach, known problematic actors are constantly monitored, allowing the detection of new actors and the update of the monitored pool. The workflow was applied to the 2022 Italian snap election, leveraging previous research on coordinated inauthentic behavior during the 2018 and 2019 Italian elections. The initial list of 435 coordinated accounts was monitored, surfacing 1,022 overly shared or commented political posts, 272 coordinated links, and detecting 66 political and 554 generic coordinated accounts not previously listed. Three case studies were identified: one politically motivated, one click-economy driven, and one religiously motivated operation. The article discusses the implications of this approach, its limitations, and potential future work.",
       "crossref_type": "journal-article",
       "publisher": "SAGE Publications",
       "influentialCitations": 0,
@@ -7040,8 +7038,8 @@
       "with_scopus": 25,
       "with_semanticScholar": 74,
       "with_crossref": 62,
-      "with_ora": 26
+      "with_ora": 25
     }
   },
-  "lastUpdated": "2026-01-07T06:35:18.633Z"
+  "lastUpdated": "2026-01-08T06:35:29.590Z"
 }

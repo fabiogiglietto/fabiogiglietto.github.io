@@ -301,10 +301,23 @@
   "works": [
     {
       "last-modified-date": {
-        "value": 1767121704270
+        "value": 1767788058328
       },
       "external-ids": {
         "external-id": [
+          {
+            "external-id-type": "handle",
+            "external-id-value": "11576/2768231",
+            "external-id-normalized": {
+              "value": "11576/2768231",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://ora.uniurb.it/handle/11576/2768231"
+            },
+            "external-id-relationship": "self"
+          },
           {
             "external-id-type": "doi",
             "external-id-value": "10.31235/osf.io/8dqag_v2",
@@ -385,6 +398,83 @@
           "journal-title": null,
           "visibility": "public",
           "path": "/0000-0001-8019-1035/work/201061551",
+          "display-index": "1"
+        },
+        {
+          "put-code": 201670039,
+          "created-date": {
+            "value": 1767788058328
+          },
+          "last-modified-date": {
+            "value": 1767788058328
+          },
+          "source": {
+            "source-orcid": null,
+            "source-client-id": {
+              "uri": "https://orcid.org/client/APP-ERL34HCK6D9LSO6D",
+              "path": "APP-ERL34HCK6D9LSO6D",
+              "host": "orcid.org"
+            },
+            "source-name": {
+              "value": "ORA - Iris UNIURB"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "\"A Pretty Blunt Approach\": Meta's Political Content Reduction Policy and Italian Parliamentarians' Facebook Visibility"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "handle",
+                "external-id-value": "11576/2768231",
+                "external-id-normalized": {
+                  "value": "11576/2768231",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://ora.uniurb.it/handle/11576/2768231"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.31235/osf.io/8dqag_v2",
+                "external-id-normalized": {
+                  "value": "10.31235/osf.io/8dqag_v2",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "url": {
+            "value": "https://ora.uniurb.it/handle/11576/2768231"
+          },
+          "type": "other",
+          "publication-date": {
+            "year": {
+              "value": "2026"
+            },
+            "month": {
+              "value": "01"
+            },
+            "day": {
+              "value": "01"
+            }
+          },
+          "journal-title": null,
+          "visibility": "public",
+          "path": "/0000-0001-8019-1035/work/201670039",
           "display-index": "1"
         }
       ]
@@ -17541,107 +17631,107 @@
       ]
     }
   ],
-  "lastUpdated": "2026-01-07T06:32:47.357Z",
+  "lastUpdated": "2026-01-08T06:33:22.948Z",
   "logs": {
-    "timestamp": "2026-01-07T06:32:45.167Z",
+    "timestamp": "2026-01-08T06:33:21.500Z",
     "steps": [
       {
-        "timestamp": "2026-01-07T06:32:45.167Z",
+        "timestamp": "2026-01-08T06:33:21.500Z",
         "type": "start",
         "message": "Starting ORCID data collection"
       },
       {
-        "timestamp": "2026-01-07T06:32:45.167Z",
+        "timestamp": "2026-01-08T06:33:21.500Z",
         "type": "info",
         "message": "Getting OAuth token for ORCID API access..."
       },
       {
-        "timestamp": "2026-01-07T06:32:45.167Z",
+        "timestamp": "2026-01-08T06:33:21.500Z",
         "type": "info",
         "message": "Attempting to use public API without authentication"
       },
       {
-        "timestamp": "2026-01-07T06:32:45.167Z",
+        "timestamp": "2026-01-08T06:33:21.500Z",
         "type": "info",
         "message": "OAuth token response received: {\n  \"status\": 200,\n  \"data\": {\n    \"access_token\": \"public_endpoint_no_token_needed\"\n  }\n}"
       },
       {
-        "timestamp": "2026-01-07T06:32:45.167Z",
+        "timestamp": "2026-01-08T06:33:21.500Z",
         "type": "info",
         "message": "Obtained access token: public_end..."
       },
       {
-        "timestamp": "2026-01-07T06:32:45.167Z",
+        "timestamp": "2026-01-08T06:33:21.500Z",
         "type": "info",
         "message": "Attempting to fetch ORCID record with JSON format..."
       },
       {
-        "timestamp": "2026-01-07T06:32:46.782Z",
+        "timestamp": "2026-01-08T06:33:22.310Z",
         "type": "info",
         "message": "Successfully retrieved record in JSON format"
       },
       {
-        "timestamp": "2026-01-07T06:32:46.782Z",
+        "timestamp": "2026-01-08T06:33:22.310Z",
         "type": "info",
         "message": "Retrieved ORCID record in JSON format"
       },
       {
-        "timestamp": "2026-01-07T06:32:46.782Z",
+        "timestamp": "2026-01-08T06:33:22.310Z",
         "type": "info",
         "message": "Response content type: application/json;charset=UTF-8"
       },
       {
-        "timestamp": "2026-01-07T06:32:46.783Z",
+        "timestamp": "2026-01-08T06:33:22.310Z",
         "type": "info",
         "message": "Trying to fetch works directly from /works endpoint for comparison..."
       },
       {
-        "timestamp": "2026-01-07T06:32:47.357Z",
+        "timestamp": "2026-01-08T06:33:22.948Z",
         "type": "info",
         "message": "Works endpoint returned 146 works"
       },
       {
-        "timestamp": "2026-01-07T06:32:47.357Z",
+        "timestamp": "2026-01-08T06:33:22.948Z",
         "type": "info",
         "message": "Processing JSON response"
       },
       {
-        "timestamp": "2026-01-07T06:32:47.357Z",
+        "timestamp": "2026-01-08T06:33:22.948Z",
         "type": "info",
         "message": "Found person data with keys: last-modified-date, name, other-names, biography, researcher-urls, emails, addresses, keywords, external-identifiers, path"
       },
       {
-        "timestamp": "2026-01-07T06:32:47.357Z",
+        "timestamp": "2026-01-08T06:33:22.948Z",
         "type": "info",
         "message": "Record endpoint response structure differs from expected format"
       },
       {
-        "timestamp": "2026-01-07T06:32:47.357Z",
+        "timestamp": "2026-01-08T06:33:22.948Z",
         "type": "info",
         "message": "Works endpoint has 146 works, record endpoint has 0 works"
       },
       {
-        "timestamp": "2026-01-07T06:32:47.357Z",
+        "timestamp": "2026-01-08T06:33:22.948Z",
         "type": "warning",
         "message": "DISCREPANCY: Works endpoint has 146 works, but record endpoint has 0 works"
       },
       {
-        "timestamp": "2026-01-07T06:32:47.357Z",
+        "timestamp": "2026-01-08T06:33:22.948Z",
         "type": "info",
         "message": "Using 146 works from /works endpoint instead of /record endpoint"
       },
       {
-        "timestamp": "2026-01-07T06:32:47.357Z",
+        "timestamp": "2026-01-08T06:33:22.948Z",
         "type": "info",
-        "message": "Sample work structure: {\"keys\":[\"last-modified-date\",\"external-ids\",\"work-summary\"],\"hasSummary\":true,\"summaryCount\":1,\"summaryKeys\":[\"put-code\",\"created-date\",\"last-modified-date\",\"source\",\"title\",\"external-ids\",\"url\",\"type\",\"publication-date\",\"journal-title\",\"visibility\",\"path\",\"display-index\"],\"title\":\"\\\"A Pretty Blunt Approach\\\": Meta's Political Content Reduction Policy and Italian Parliamentarians' Facebook Visibility\",\"type\":\"preprint\",\"pubDate\":\"2025-12-30\"}"
+        "message": "Sample work structure: {\"keys\":[\"last-modified-date\",\"external-ids\",\"work-summary\"],\"hasSummary\":true,\"summaryCount\":2,\"summaryKeys\":[\"put-code\",\"created-date\",\"last-modified-date\",\"source\",\"title\",\"external-ids\",\"url\",\"type\",\"publication-date\",\"journal-title\",\"visibility\",\"path\",\"display-index\"],\"title\":\"\\\"A Pretty Blunt Approach\\\": Meta's Political Content Reduction Policy and Italian Parliamentarians' Facebook Visibility\",\"type\":\"preprint\",\"pubDate\":\"2025-12-30\"}"
       },
       {
-        "timestamp": "2026-01-07T06:32:47.357Z",
+        "timestamp": "2026-01-08T06:33:22.948Z",
         "type": "info",
         "message": "Collection completed successfully with 146 works"
       },
       {
-        "timestamp": "2026-01-07T06:32:47.357Z",
+        "timestamp": "2026-01-08T06:33:22.948Z",
         "type": "complete",
         "message": "Collection completed with 146 works retrieved"
       }
@@ -17649,7 +17739,7 @@
     "errors": [],
     "warnings": [
       {
-        "timestamp": "2026-01-07T06:32:47.357Z",
+        "timestamp": "2026-01-08T06:33:22.948Z",
         "message": "Works count discrepancy: /works endpoint: 146, /record endpoint: 0"
       }
     ],
@@ -17667,12 +17757,12 @@
         "contentType": "application/json;charset=UTF-8",
         "status": 200,
         "headers": {
-          "date": "Wed, 07 Jan 2026 06:32:46 GMT",
+          "date": "Thu, 08 Jan 2026 06:33:22 GMT",
           "content-type": "application/json;charset=UTF-8",
           "transfer-encoding": "chunked",
           "connection": "close",
           "server": "cloudflare",
-          "cf-ray": "9ba16b752fbb806e-DFW",
+          "cf-ray": "9ba9a9b61e7a82ba-IAD",
           "cf-cache-status": "DYNAMIC",
           "access-control-allow-origin": "*",
           "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
@@ -17683,10 +17773,10 @@
           "cf-apo-via": "origin,host",
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
-          "x-target": "reg-prod-papi-use2-c1",
-          "x-via": "a1",
+          "x-target": "reg-prod-papi-use2-a1",
+          "x-via": "b1",
           "x-xss-protection": "1; mode=block",
-          "set-cookie": "__cf_bm=U9HJRl3dOF5W0OY3gIS4Xhxa53CpXLX5NaOhw2HUabQ-1767767566-1.0.1.1-rZYxQsU07VB94tLKeX7K_hpnyuoE0Ppw9m78WaIqxs7xic7ddlLtVA5eaLioCqtPBsF7UrJiJJZ8uwv0wm1w9EoSdga5s5SCgMirJw7CGPI; path=/; expires=Wed, 07-Jan-26 07:02:46 GMT; domain=.orcid.org; HttpOnly; Secure; SameSite=None"
+          "set-cookie": "__cf_bm=D8T.8waQbvsCWCVJKpC3CMOeRkYySPOpKO5BAnDq8lU-1767854002-1.0.1.1-RVz80lA.TBjC.N4aXSJmxbyualHJPDyZ4FX9IuvDY5.SHry5Z.4ub2C._N9wjGBMK621C5qFLvuO8D_pYJRx5YSsiyUFwje9hwfpK9e271s; path=/; expires=Thu, 08-Jan-26 07:03:22 GMT; domain=.orcid.org; HttpOnly; Secure; SameSite=None"
         },
         "dataKeys": [
           "orcid-identifier",
@@ -17726,7 +17816,7 @@
           "work-summary"
         ],
         "hasSummary": true,
-        "summaryCount": 1,
+        "summaryCount": 2,
         "summaryKeys": [
           "put-code",
           "created-date",

@@ -1,11 +1,12 @@
 {
-  "totalEntries": 66,
-  "lastUpdated": "2026-01-07T06:33:37.389Z",
+  "totalEntries": 69,
+  "lastUpdated": "2026-01-08T06:33:59.032Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-01-05T06:38:11.841Z"
+    "latest": "2026-01-08T06:33:59.030Z"
   },
   "byDate": {
+    "2026-01-08": 3,
     "2026-01-05": 1,
     "2026-01-03": 1,
     "2026-01-02": 4,
@@ -14,8 +15,7 @@
     "2025-12-30": 11,
     "2025-12-29": 27,
     "2025-10-27": 1,
-    "2025-07-06": 1,
-    "2025-07-05": 2
+    "2025-07-06": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 36,
@@ -25,16 +25,30 @@
     "Radio Radicale": 2,
     "lapiazzarimini.it": 2,
     "il Ducato": 2,
-    "weizenbaum-institut.de": 1,
-    "independent.co.uk": 1,
-    "engadget.com": 1
+    "open.online": 1,
+    "9Colonne": 1,
+    "EURACTIV.ro": 1
   },
   "byRelevanceScore": {
-    "high": 59,
-    "medium": 7,
+    "high": 61,
+    "medium": 8,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme",
+      "url": "https://www.open.online/2026/01/07/studio-universita-urbino-facebook-algoritmo-politica-ufficiale-estremisti-antieuropei/",
+      "source": "open.online",
+      "relevanceScore": 1,
+      "collectedAt": "2026-01-08T06:33:59.030Z"
+    },
+    {
+      "title": "A year since the TikTok Messiah's rise, the shock is far from over - EURACTIV.ro",
+      "url": "https://www.euractiv.ro/espresso/a-year-since-the-tiktok-messiah-s-rise-the-shock-is-far-from-over-76244",
+      "source": "EURACTIV.ro",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-08T06:33:59.030Z"
+    },
     {
       "title": "„România, cea mai importantă țară din lume” vs. Vestul “cel rău” - narațiunile coordonate persistă - EURACTIV.ro",
       "url": "https://www.euractiv.ro/analize/romania-cea-mai-importanta-tara-din-lume-vs-vestul-cel-rau-naratiunile-coordonate-persista-29848",
@@ -53,20 +67,6 @@
       "title": "Integrating Large Language Models in Political Discourse Studies on Social Media: Challenges of Validating an LLMs-in-the-loop",
       "url": "https://ora.uniurb.it/retrieve/deeb880a-e7b0-466c-a109-b3e038d97062/19524-marino.pdf",
       "source": "uniurb.it",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-02T06:33:23.205Z"
-    },
-    {
-      "title": "Empowering People in Online Spaces: Democracy and Well-Being in Digital Societies - Weizenbaum Institut",
-      "url": "https://www.weizenbaum-institut.de/media/Publikationen/Weizenbaum_Proceedings/Proceedings_WIConf25.pdf",
-      "source": "weizenbaum-institut.de",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-02T06:33:23.205Z"
-    },
-    {
-      "title": "Un an de la alegerile anulate. Șocul continuă - EURACTIV.ro",
-      "url": "https://www.euractiv.ro/facts-not-fake-decode/un-an-de-la-aparitia-lui-mesia-de-pe-tik-tok.-socul-continua-76245",
-      "source": "euractiv.ro",
       "relevanceScore": 0.9,
       "collectedAt": "2026-01-02T06:33:23.205Z"
     }
