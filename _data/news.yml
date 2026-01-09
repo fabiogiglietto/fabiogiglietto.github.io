@@ -1,28 +1,31 @@
-- date: '2026-01-07'
-  content: >-
-    New research indicates that Meta's political content reduction policy,
-    implemented a year prior, led to a 72% reach reduction for Italian Members
-    of Parliament on Facebook. The study, analyzing 2.5 million posts, found
-    that the effects were detectable 10 months before the global rollout.
-    Notably, extremist content saw an increase in reach (+14%), while elected
-    officials experienced a decrease. Code and data are available for
-    replication.
-  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mbtjl4d2ov2u
-  platforms:
-    - Mastodon
-    - BlueSky
 - date: '2026-01-02'
   content: >-
-    An AI-driven tool, dubbed FG's Research Radio, has been developed to
-    generate audio deep dives into computational social science papers. The tool
-    pulls directly from a PaperPile reading list. The code is open source and
-    available for others to use.
+    A new tool, FG's Research Radio, has been developed that uses AI to generate
+    audio deep dives into computational social science papers. The tool pulls
+    directly from a PaperPile reading list and the open-source code is available
+    for others to create their own instance using Google Gemini.
   url: https://aoir.social/@fabiogiglietto/115824742743733114
   platforms:
     - Mastodon
     - BlueSky
-- date: '2025-12-12'
-  content: Meta has updated its policy regarding Inauthentic Behavior.
-  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3m7rgamqymk2y
+- date: '2026-01-07'
+  content: >-
+    Recent research on 2.5 million Facebook posts from Italian Members of
+    Parliament reveals that Meta's political content reduction policy led to a
+    72% reach reduction for parliamentarians. The effects were detected 10
+    months before Meta's global rollout. Interestingly, extremist content gained
+    reach (+14%) during this period, while elected officials experienced a loss.
+  url: https://aoir.social/@fabiogiglietto/115854413620962430
+  platforms:
+    - Mastodon
+    - BlueSky
+- date: '2026-01-07'
+  content: >-
+    A newly released preprint indicates that Meta's political content policy
+    resulted in a substantial 72% reduction in the reach of Italian MPs. The
+    study encourages researchers with access to the Meta Content Library to
+    replicate the analysis for other countries such as Germany, France, or
+    Brazil, with code available on GitHub.
+  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mbtjl4d2ov2u
   platforms:
     - BlueSky

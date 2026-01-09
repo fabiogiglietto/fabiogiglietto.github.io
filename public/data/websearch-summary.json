@@ -1,11 +1,12 @@
 {
-  "totalEntries": 69,
-  "lastUpdated": "2026-01-08T06:33:59.032Z",
+  "totalEntries": 73,
+  "lastUpdated": "2026-01-09T06:33:13.459Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-01-08T06:33:59.030Z"
+    "latest": "2026-01-09T06:33:13.458Z"
   },
   "byDate": {
+    "2026-01-09": 4,
     "2026-01-08": 3,
     "2026-01-05": 1,
     "2026-01-03": 1,
@@ -14,8 +15,7 @@
     "2025-12-31": 11,
     "2025-12-30": 11,
     "2025-12-29": 27,
-    "2025-10-27": 1,
-    "2025-07-06": 1
+    "2025-10-27": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 36,
@@ -25,16 +25,30 @@
     "Radio Radicale": 2,
     "lapiazzarimini.it": 2,
     "il Ducato": 2,
-    "open.online": 1,
-    "9Colonne": 1,
-    "EURACTIV.ro": 1
+    "ByoBlu": 1,
+    "MSN": 1,
+    "teleambiente.it": 1
   },
   "byRelevanceScore": {
-    "high": 61,
-    "medium": 8,
+    "high": 63,
+    "medium": 10,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Algoritmi Meta, più spazio agli estremisti e meno alla politica ufficiale",
+      "url": "https://www.teleambiente.it/algoritmi-meta-piu-spazio-agli-estremisti-e-meno-alla-politica-ufficiale/",
+      "source": "teleambiente.it",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-09T06:33:13.458Z"
+    },
+    {
+      "title": "MENO POLITICA SU META, ESTREMISTI IN VANTAGGIO - 9Colonne",
+      "url": "https://www.9colonne.it/475109/meno-politica-su-meta-estremisti-in-vantaggio",
+      "source": "9colonne.it",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-09T06:33:13.458Z"
+    },
     {
       "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme",
       "url": "https://www.open.online/2026/01/07/studio-universita-urbino-facebook-algoritmo-politica-ufficiale-estremisti-antieuropei/",
@@ -55,20 +69,6 @@
       "source": "euractiv.ro",
       "relevanceScore": 0.9,
       "collectedAt": "2026-01-05T06:38:11.841Z"
-    },
-    {
-      "title": "In the Shadows of Disinformation: Fake News and Violations of Human Rights - ResearchGate",
-      "url": "https://www.researchgate.net/publication/379160366_In_the_Shadows_of_Disinformation_Fake_News_and_Violations_of_Human_Rights/fulltext/65fd855bd3a08551423e88b8/In-the-Shadows-of-Disinformation-Fake-News-and-Violations-of-Human-Rights.pdf",
-      "source": "researchgate.net",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-03T06:30:36.046Z"
-    },
-    {
-      "title": "Integrating Large Language Models in Political Discourse Studies on Social Media: Challenges of Validating an LLMs-in-the-loop",
-      "url": "https://ora.uniurb.it/retrieve/deeb880a-e7b0-466c-a109-b3e038d97062/19524-marino.pdf",
-      "source": "uniurb.it",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-02T06:33:23.205Z"
     }
   ]
 }
