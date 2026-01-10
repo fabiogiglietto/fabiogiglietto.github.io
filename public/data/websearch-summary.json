@@ -1,11 +1,12 @@
 {
-  "totalEntries": 73,
-  "lastUpdated": "2026-01-09T06:33:13.459Z",
+  "totalEntries": 75,
+  "lastUpdated": "2026-01-10T06:30:13.693Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-01-09T06:33:13.458Z"
+    "latest": "2026-01-10T06:30:13.691Z"
   },
   "byDate": {
+    "2026-01-10": 2,
     "2026-01-09": 4,
     "2026-01-08": 3,
     "2026-01-05": 1,
@@ -14,27 +15,40 @@
     "2026-01-01": 6,
     "2025-12-31": 11,
     "2025-12-30": 11,
-    "2025-12-29": 27,
-    "2025-10-27": 1
+    "2025-12-29": 27
   },
   "bySource": {
-    "vertexaisearch.cloud.google.com": 36,
+    "vertexaisearch.cloud.google.com": 37,
     "euractiv.ro": 5,
     "uniurb.it": 4,
+    "open.online": 2,
     "researchgate.net": 2,
     "Radio Radicale": 2,
     "lapiazzarimini.it": 2,
     "il Ducato": 2,
     "ByoBlu": 1,
-    "MSN": 1,
-    "teleambiente.it": 1
+    "MSN": 1
   },
   "byRelevanceScore": {
-    "high": 63,
+    "high": 65,
     "medium": 10,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme",
+      "url": "https://www.open.online/2026/01/07/facebook-algoritmo-punisce-politica-ufficiale-premia-antieuropeisti-studio-urbino-giglietto/",
+      "source": "open.online",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-10T06:30:13.691Z"
+    },
+    {
+      "title": "Meta Is Getting Rid of CrowdTangle—and Its Replacement Isn't as Transparent or Accessible",
+      "url": "https://www.cjr.org/tow_center/meta-is-getting-rid-of-crowdtangle.php",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-10T06:30:13.691Z"
+    },
     {
       "title": "Algoritmi Meta, più spazio agli estremisti e meno alla politica ufficiale",
       "url": "https://www.teleambiente.it/algoritmi-meta-piu-spazio-agli-estremisti-e-meno-alla-politica-ufficiale/",
@@ -55,20 +69,6 @@
       "source": "open.online",
       "relevanceScore": 1,
       "collectedAt": "2026-01-08T06:33:59.030Z"
-    },
-    {
-      "title": "A year since the TikTok Messiah's rise, the shock is far from over - EURACTIV.ro",
-      "url": "https://www.euractiv.ro/espresso/a-year-since-the-tiktok-messiah-s-rise-the-shock-is-far-from-over-76244",
-      "source": "EURACTIV.ro",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-08T06:33:59.030Z"
-    },
-    {
-      "title": "„România, cea mai importantă țară din lume” vs. Vestul “cel rău” - narațiunile coordonate persistă - EURACTIV.ro",
-      "url": "https://www.euractiv.ro/analize/romania-cea-mai-importanta-tara-din-lume-vs-vestul-cel-rau-naratiunile-coordonate-persista-29848",
-      "source": "euractiv.ro",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-05T06:38:11.841Z"
     }
   ]
 }
