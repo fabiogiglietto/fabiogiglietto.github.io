@@ -1,11 +1,12 @@
 {
-  "totalEntries": 75,
-  "lastUpdated": "2026-01-10T06:30:13.693Z",
+  "totalEntries": 79,
+  "lastUpdated": "2026-01-11T06:31:17.436Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-01-10T06:30:13.691Z"
+    "latest": "2026-01-11T06:31:17.435Z"
   },
   "byDate": {
+    "2026-01-11": 4,
     "2026-01-10": 2,
     "2026-01-09": 4,
     "2026-01-08": 3,
@@ -14,27 +15,47 @@
     "2026-01-02": 4,
     "2026-01-01": 6,
     "2025-12-31": 11,
-    "2025-12-30": 11,
-    "2025-12-29": 27
+    "2025-12-30": 11
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 37,
     "euractiv.ro": 5,
     "uniurb.it": 4,
-    "open.online": 2,
+    "open.online": 3,
     "researchgate.net": 2,
     "Radio Radicale": 2,
     "lapiazzarimini.it": 2,
     "il Ducato": 2,
-    "ByoBlu": 1,
-    "MSN": 1
+    "byoblu.com": 1,
+    "ilfattoquotidiano.it": 1
   },
   "byRelevanceScore": {
-    "high": 65,
-    "medium": 10,
+    "high": 68,
+    "medium": 11,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme",
+      "url": "https://www.open.online/2026/01/07/facebook-fake-news-giorgia-meloni-governo-meloni-mark-zuckerberg-pd/",
+      "source": "open.online",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-11T06:31:17.435Z"
+    },
+    {
+      "title": "SOS! Ora l'algoritmo punta sui complottisti: \"Intervenire subito!\"",
+      "url": "https://www.byoblu.com/2026/01/08/sos-ora-lalgoritmo-punta-sui-complottisti-intervenire-subito/",
+      "source": "byoblu.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-11T06:31:17.435Z"
+    },
+    {
+      "title": "Più visibilità agli estremisti che ai parlamentari, l'impatto del “filtro” di Meta sulle elezioni",
+      "url": "https://www.ilfattoquotidiano.it/2026/01/07/piu-visibilita-agli-estremisti-che-ai-parlamentari-limpatto-del-filtro-di-meta-sulle-elezioni/7010496/",
+      "source": "ilfattoquotidiano.it",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-11T06:31:17.435Z"
+    },
     {
       "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme",
       "url": "https://www.open.online/2026/01/07/facebook-algoritmo-punisce-politica-ufficiale-premia-antieuropeisti-studio-urbino-giglietto/",
@@ -48,27 +69,6 @@
       "source": "vertexaisearch.cloud.google.com",
       "relevanceScore": 0.9,
       "collectedAt": "2026-01-10T06:30:13.691Z"
-    },
-    {
-      "title": "Algoritmi Meta, più spazio agli estremisti e meno alla politica ufficiale",
-      "url": "https://www.teleambiente.it/algoritmi-meta-piu-spazio-agli-estremisti-e-meno-alla-politica-ufficiale/",
-      "source": "teleambiente.it",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-09T06:33:13.458Z"
-    },
-    {
-      "title": "MENO POLITICA SU META, ESTREMISTI IN VANTAGGIO - 9Colonne",
-      "url": "https://www.9colonne.it/475109/meno-politica-su-meta-estremisti-in-vantaggio",
-      "source": "9colonne.it",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-09T06:33:13.458Z"
-    },
-    {
-      "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme",
-      "url": "https://www.open.online/2026/01/07/studio-universita-urbino-facebook-algoritmo-politica-ufficiale-estremisti-antieuropei/",
-      "source": "open.online",
-      "relevanceScore": 1,
-      "collectedAt": "2026-01-08T06:33:59.030Z"
     }
   ]
 }
