@@ -1,11 +1,12 @@
 {
-  "totalEntries": 79,
-  "lastUpdated": "2026-01-11T06:31:17.436Z",
+  "totalEntries": 82,
+  "lastUpdated": "2026-01-12T06:36:51.271Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-01-11T06:31:17.435Z"
+    "latest": "2026-01-12T06:36:51.270Z"
   },
   "byDate": {
+    "2026-01-12": 3,
     "2026-01-11": 4,
     "2026-01-10": 2,
     "2026-01-09": 4,
@@ -14,27 +15,40 @@
     "2026-01-03": 1,
     "2026-01-02": 4,
     "2026-01-01": 6,
-    "2025-12-31": 11,
-    "2025-12-30": 11
+    "2025-12-31": 11
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 37,
     "euractiv.ro": 5,
     "uniurb.it": 4,
     "open.online": 3,
+    "ByoBlu": 2,
     "researchgate.net": 2,
     "Radio Radicale": 2,
     "lapiazzarimini.it": 2,
     "il Ducato": 2,
-    "byoblu.com": 1,
-    "ilfattoquotidiano.it": 1
+    "Open": 1
   },
   "byRelevanceScore": {
-    "high": 68,
-    "medium": 11,
+    "high": 70,
+    "medium": 12,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme",
+      "url": "https://www.open.online/2026/01/07/algoritmi-politica-meta-facebook-eleioni-europee-ricerca-unviersita-urbino-deficit-trasparenza/",
+      "source": "Open",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-12T06:36:51.270Z"
+    },
+    {
+      "title": "Meet the speakers! - EUDTP 2025 - EuroTech Universities Alliance",
+      "url": "https://eurotech-universities.eu/news-and-events/news/eudtp-digital-technologies-and-policy-conference-2025-meet-the-speakers/",
+      "source": "EuroTech Universities Alliance",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-12T06:36:51.270Z"
+    },
     {
       "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme",
       "url": "https://www.open.online/2026/01/07/facebook-fake-news-giorgia-meloni-governo-meloni-mark-zuckerberg-pd/",
@@ -55,20 +69,6 @@
       "source": "ilfattoquotidiano.it",
       "relevanceScore": 0.9,
       "collectedAt": "2026-01-11T06:31:17.435Z"
-    },
-    {
-      "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme",
-      "url": "https://www.open.online/2026/01/07/facebook-algoritmo-punisce-politica-ufficiale-premia-antieuropeisti-studio-urbino-giglietto/",
-      "source": "open.online",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-10T06:30:13.691Z"
-    },
-    {
-      "title": "Meta Is Getting Rid of CrowdTangle—and Its Replacement Isn't as Transparent or Accessible",
-      "url": "https://www.cjr.org/tow_center/meta-is-getting-rid-of-crowdtangle.php",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-10T06:30:13.691Z"
     }
   ]
 }

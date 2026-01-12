@@ -1,38 +1,35 @@
 {
-  "overallSummary": "Fabio Giglietto maintains an active presence across Mastodon, LinkedIn, and Bluesky, with a focus on research related to social media analysis, disinformation, and computational social science. LinkedIn has the largest following, while engagement varies across platforms. The overall follower count is 3580 and there is an average engagement rate of 3.07%.",
+  "overallSummary": "Fabio Giglietto maintains an active presence on Mastodon, LinkedIn, and Bluesky, focusing on research related to disinformation, computational social science, and coordinated inauthentic behavior. His largest following is on LinkedIn, while Bluesky shows the most frequent posting activity. Overall engagement is driven by announcements related to research grants, publications, and job opportunities.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 3.07,
+    "averageEngagementRate": 3.2,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
-      "theme": "Research Announcements",
-      "description": "Sharing updates on research projects, publications, and tools."
+      "theme": "Computational Social Science Research",
+      "description": "Focus on research projects, methodologies, and publications related to computational social science."
     },
     {
-      "theme": "Job Opportunities",
-      "description": "Posting about available positions for researchers and students."
+      "theme": "Disinformation and Information Operations",
+      "description": "Content related to detecting, analyzing, and understanding disinformation campaigns and information operations."
     },
     {
-      "theme": "Conference Presentations",
-      "description": "Announcing and promoting conference presentations and related events."
-    },
-    {
-      "theme": "Disinformation Studies",
-      "description": "Discussion of topics related to coordinated inauthentic behavior, information operations and disinformation across social media"
+      "theme": "Research Opportunities and Hiring",
+      "description": "Posts about grant awards, job openings, and opportunities for students in the field."
     }
   ],
   "recommendations": [
-    "Cross-promote content across platforms to maximize reach.",
-    "Use more visuals (images, videos) to enhance engagement.",
-    "Encourage interaction by asking questions and soliciting feedback.",
-    "Use relevant hashtags to increase discoverability."
+    "Diversify content formats (e.g., include images and videos) to improve engagement.",
+    "Increase interaction by asking questions and encouraging discussion in posts.",
+    "Tailor content to each platform's specific audience and format preferences.",
+    "Utilize relevant hashtags consistently to improve discoverability.",
+    "Engage with followers in the comments to build a stronger community."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky shows a strong interest in research opportunities and conference presentations, indicated by high repost rates on these types of posts.",
-    "mastodon": "Mastodon content focuses on technical releases and methodological discussions, generating moderate engagement.",
-    "linkedin": "LinkedIn sees high engagement with posts related to research grants and job opportunities, suggesting a professional audience interested in career advancement and research funding."
+    "bluesky": "Bluesky is used for sharing research publications and conference participation, with a strong focus on coordinated inauthentic behavior and computational methods. It shows high repost activity, suggesting a strong community for sharing research insights.",
+    "mastodon": "Mastodon is used to announce updates to software tools and discuss methodological approaches to studying disinformation, indicating a focus on technical and academic discussions.",
+    "linkedin": "LinkedIn is used for professional announcements such as grant awards and job postings. Engagement is higher on LinkedIn, potentially due to its professional focus and larger follower base."
   },
   "topPerformingContent": [
     {
