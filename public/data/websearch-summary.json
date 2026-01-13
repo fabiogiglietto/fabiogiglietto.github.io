@@ -1,11 +1,12 @@
 {
-  "totalEntries": 82,
-  "lastUpdated": "2026-01-12T06:36:51.271Z",
+  "totalEntries": 83,
+  "lastUpdated": "2026-01-13T06:33:22.011Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-01-12T06:36:51.270Z"
+    "latest": "2026-01-13T06:33:22.010Z"
   },
   "byDate": {
+    "2026-01-13": 1,
     "2026-01-12": 3,
     "2026-01-11": 4,
     "2026-01-10": 2,
@@ -14,14 +15,13 @@
     "2026-01-05": 1,
     "2026-01-03": 1,
     "2026-01-02": 4,
-    "2026-01-01": 6,
-    "2025-12-31": 11
+    "2026-01-01": 6
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 37,
     "euractiv.ro": 5,
+    "open.online": 4,
     "uniurb.it": 4,
-    "open.online": 3,
     "ByoBlu": 2,
     "researchgate.net": 2,
     "Radio Radicale": 2,
@@ -30,11 +30,18 @@
     "Open": 1
   },
   "byRelevanceScore": {
-    "high": 70,
+    "high": 71,
     "medium": 12,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme",
+      "url": "https://www.open.online/2026/01/07/studio-universita-urbino-algoritmo-facebook-politica-estremisti/",
+      "source": "open.online",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-13T06:33:22.010Z"
+    },
     {
       "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme",
       "url": "https://www.open.online/2026/01/07/algoritmi-politica-meta-facebook-eleioni-europee-ricerca-unviersita-urbino-deficit-trasparenza/",
@@ -60,13 +67,6 @@
       "title": "SOS! Ora l'algoritmo punta sui complottisti: \"Intervenire subito!\"",
       "url": "https://www.byoblu.com/2026/01/08/sos-ora-lalgoritmo-punta-sui-complottisti-intervenire-subito/",
       "source": "byoblu.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-11T06:31:17.435Z"
-    },
-    {
-      "title": "Più visibilità agli estremisti che ai parlamentari, l'impatto del “filtro” di Meta sulle elezioni",
-      "url": "https://www.ilfattoquotidiano.it/2026/01/07/piu-visibilita-agli-estremisti-che-ai-parlamentari-limpatto-del-filtro-di-meta-sulle-elezioni/7010496/",
-      "source": "ilfattoquotidiano.it",
       "relevanceScore": 0.9,
       "collectedAt": "2026-01-11T06:31:17.435Z"
     }
