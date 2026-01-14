@@ -2,7 +2,7 @@
   "source": "ORA UNIURB",
   "repository": "https://ora.uniurb.it",
   "oaiEndpoint": "https://ora.uniurb.it/oai/request",
-  "collectedAt": "2026-01-13T06:32:49.824Z",
+  "collectedAt": "2026-01-14T06:32:41.836Z",
   "author": "Fabio Giglietto",
   "publications": [
     {
@@ -130,6 +130,48 @@
       "url": "https://ora.uniurb.it/handle/11576/2721991"
     },
     {
+      "title": "A Workflow to Detect, Monitor, and Update Lists of Coordinated Social Media Accounts Across Time: The Case of the 2022 Italian Election",
+      "authors": "Fabio Giglietto; Giada Marino; Roberto Mincigrucci; Anna Stanziano",
+      "authorsList": [
+        "Fabio Giglietto",
+        "Giada Marino",
+        "Roberto Mincigrucci",
+        "Anna Stanziano"
+      ],
+      "year": 2023,
+      "doi": "10.1177/20563051231196866",
+      "handle": "11576/2721991",
+      "type": "article",
+      "abstract": "Information operations that target public opinion often exploit breaking news, crises, and elections by using coordinated social media actors to disseminate problematic content. These events often reveal the relationships between actors, prompting the creation of lists of malicious actors and news sources. However, relying on outdated lists may underestimate the prevalence and impact of such operations. This article presents a novel workflow to detect, monitor, and update lists of coordinated social media actors during and beyond peak activity periods. Using this approach, known problematic actors are constantly monitored, allowing the detection of new actors and the update of the monitored pool. The workflow was applied to the 2022 Italian snap election, leveraging previous research on coordinated inauthentic behavior during the 2018 and 2019 Italian elections. The initial list of 435 coordinated accounts was monitored, surfacing 1,022 overly shared or commented political posts, 272 coordinated links, and detecting 66 political and 554 generic coordinated accounts not previously listed. Three case studies were identified: one politically motivated, one click-economy driven, and one religiously motivated operation. The article discusses the implications of this approach, its limitations, and potential future work.",
+      "publisher": null,
+      "journal": "SOCIAL MEDIA + SOCIETY",
+      "pages": null,
+      "language": "eng",
+      "oaiIdentifier": "oai:ora.uniurb.it:11576/2721991",
+      "datestamp": "2025-06-13T00:16:40Z",
+      "url": "https://ora.uniurb.it/handle/11576/2721991"
+    },
+    {
+      "title": "Hyperpartisan Networks on Facebook. The Case of the Five Star Movement Network During the 2022 Italian Election",
+      "authors": "Anna Stanziano; Fabio Giglietto",
+      "authorsList": [
+        "Anna Stanziano",
+        "Fabio Giglietto"
+      ],
+      "year": 2023,
+      "doi": "10.3270/108997",
+      "handle": "11576/2740791",
+      "type": "article",
+      "abstract": "This paper aims to shed light on networks consisting of subjects that share similar opinions and worldviews. This is not a new phenomenon, but undoubtedly social media, thanks to the possibility of finding affinities with subjects who have shared interests, even if geographically distant, has facilitated the collaboration among networks of like-minded individuals. Several studies have shown that the tendency of people to interact with other people with similar values and points of view is widespread among populist networks, so, following this assumption, this work focuses on a specific network: that of the unofficial Facebook pages and groups close to the Five Star Movement. In this work, we looked at the activities of the unofficial Facebook pages and groups close to the 5SM and explored the main topics discussed and the dynamics of the discussion within the network during the last Italian general election. In particular, we focused on how Facebook pages and groups used Facebook native or external sources of information in generating content. This study, although still partly descriptive, helps to understand the information ecosystem of the 5SM network on Facebook and also offers useful insights into the role played on social media by partisan communities, with particular reference to the populist ones",
+      "publisher": null,
+      "journal": "COMUNICAZIONE POLITICA",
+      "pages": null,
+      "language": "eng",
+      "oaiIdentifier": "oai:ora.uniurb.it:11576/2740791",
+      "datestamp": "2025-04-21T08:27:33Z",
+      "url": "https://ora.uniurb.it/handle/11576/2740791"
+    },
+    {
       "title": "Hyperpartisan Networks on Facebook. The Case of the Five Star Movement Network During the 2022 Italian Election",
       "authors": "Anna Stanziano; Fabio Giglietto",
       "authorsList": [
@@ -240,27 +282,6 @@
       "url": "https://ora.uniurb.it/handle/11576/2733992"
     },
     {
-      "title": "Detecting Coordinated Link Sharing During The Italian Coronavirus Outbreak",
-      "authors": "Fabio Giglietto; Nicola Righetti; Giada Marino",
-      "authorsList": [
-        "Fabio Giglietto",
-        "Nicola Righetti",
-        "Giada Marino"
-      ],
-      "year": 2020,
-      "doi": "10.5210/spir.v2020i0.11219",
-      "handle": "11576/2735343",
-      "type": "conference",
-      "abstract": "Social media, as many scholars have shown, can be used to influence political behavior through coordinated disinformation campaigns in which participants pretend to be ordinary citizens. With a specific reference to Facebook, a recent study has spotlighted patterns of coordinated activity aimed at fueling online circulation of specific news stories before the 2018 and 2019 Italian elections, an activity called by the authors “Coordinated Link Sharing Behavior” (CLSB). More precisely, CLSB refers to the coordinated shares of the same news articles in a very short time by networks of entities composed by Facebook pages, groups and verified public profiles. The uncertainty related to the coronavirus outbreak is a unique chance for malicious actors to leverage the anxiety of online publics to reach their goals, filling the information void with problematic content. Considering the association between coordination, media manipulation, and problematic information, the entities involved in coordinated online activities represent a privileged perspective on these phenomena. Thus, against the backdrop of the literature and the already conducted studies, this proposal will discuss Coordinated Link Sharing Behavior in the context of the coronavirus outbreak informational void, analyzing network mutations over time and the content strategies used to exploit the ambiguity associated with the topic.",
-      "publisher": null,
-      "journal": null,
-      "pages": null,
-      "language": "eng",
-      "oaiIdentifier": "oai:ora.uniurb.it:11576/2735343",
-      "datestamp": "2024-04-22T23:38:36Z",
-      "url": "https://ora.uniurb.it/handle/11576/2735343"
-    },
-    {
       "title": "Adapting to Mitigation Efforts: Evolving Strategies of Coordinated Link Sharing on Facebook",
       "authors": "Giglietto, Fabio; Terenzi, Massimo; Marino, Giada; Righetti, Nicola; Rossi, Luca",
       "authorsList": [
@@ -285,17 +306,16 @@
     }
   ],
   "stats": {
-    "total": 13,
+    "total": 14,
     "byType": {
       "chapter": 3,
-      "article": 5,
-      "other": 4,
-      "conference": 1
+      "article": 7,
+      "other": 4
     },
     "byYear": {
-      "2020": 2,
+      "2020": 1,
       "2022": 3,
-      "2023": 5,
+      "2023": 7,
       "2024": 1,
       "2025": 2
     }

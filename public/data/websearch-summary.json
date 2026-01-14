@@ -1,11 +1,12 @@
 {
-  "totalEntries": 83,
-  "lastUpdated": "2026-01-13T06:33:22.011Z",
+  "totalEntries": 84,
+  "lastUpdated": "2026-01-14T06:33:45.178Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-01-13T06:33:22.010Z"
+    "latest": "2026-01-14T06:33:45.177Z"
   },
   "byDate": {
+    "2026-01-14": 1,
     "2026-01-13": 1,
     "2026-01-12": 3,
     "2026-01-11": 4,
@@ -14,11 +15,10 @@
     "2026-01-08": 3,
     "2026-01-05": 1,
     "2026-01-03": 1,
-    "2026-01-02": 4,
-    "2026-01-01": 6
+    "2026-01-02": 4
   },
   "bySource": {
-    "vertexaisearch.cloud.google.com": 37,
+    "vertexaisearch.cloud.google.com": 38,
     "euractiv.ro": 5,
     "open.online": 4,
     "uniurb.it": 4,
@@ -30,11 +30,18 @@
     "Open": 1
   },
   "byRelevanceScore": {
-    "high": 71,
+    "high": 72,
     "medium": 12,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Mapping Italian News Research Program - TEAM",
+      "url": "https://mine.uniurb.it/team",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-14T06:33:45.177Z"
+    },
     {
       "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme",
       "url": "https://www.open.online/2026/01/07/studio-universita-urbino-algoritmo-facebook-politica-estremisti/",
@@ -60,13 +67,6 @@
       "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme",
       "url": "https://www.open.online/2026/01/07/facebook-fake-news-giorgia-meloni-governo-meloni-mark-zuckerberg-pd/",
       "source": "open.online",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-11T06:31:17.435Z"
-    },
-    {
-      "title": "SOS! Ora l'algoritmo punta sui complottisti: \"Intervenire subito!\"",
-      "url": "https://www.byoblu.com/2026/01/08/sos-ora-lalgoritmo-punta-sui-complottisti-intervenire-subito/",
-      "source": "byoblu.com",
       "relevanceScore": 0.9,
       "collectedAt": "2026-01-11T06:31:17.435Z"
     }

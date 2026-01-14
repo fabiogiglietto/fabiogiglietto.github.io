@@ -1,5 +1,5 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a presence across three social media platforms: Mastodon, LinkedIn, and Bluesky. His content focuses on research related to social media analysis, disinformation, and computational social science. He leverages these platforms to share research findings, announce opportunities (jobs/PhD positions), and engage in discussions within his field. Overall, his LinkedIn profile has the largest follower base, while Bluesky shows high engagement in terms of reposts.",
+  "overallSummary": "Fabio Giglietto maintains a presence on Mastodon, LinkedIn, and Bluesky, with a total following of 3580. His content focuses on research, particularly in the areas of disinformation, information operations, and computational social science. Engagement varies across platforms, with LinkedIn showing the highest engagement based on available metrics.",
   "engagementMetrics": {
     "totalFollowers": 3580,
     "averageEngagementRate": 3.28,
@@ -7,32 +7,32 @@
   },
   "contentThemes": [
     {
-      "theme": "Computational Social Science Research",
-      "description": "Focuses on sharing research papers, methodologies, and discussions related to computational social science."
+      "theme": "Research Announcements",
+      "description": "Sharing updates on research projects, publications, and grants."
+    },
+    {
+      "theme": "Computational Social Science",
+      "description": "Discussing methodological approaches and computational methods for social media analysis."
     },
     {
       "theme": "Disinformation and Information Operations",
-      "description": "Content related to detecting, analyzing, and combating disinformation campaigns on social media."
+      "description": "Addressing coordinated inauthentic behavior, disinformation campaigns, and information operations."
     },
     {
-      "theme": "Research Opportunities",
-      "description": "Announcements of job openings, postdoctoral positions, and PhD opportunities within the research team."
-    },
-    {
-      "theme": "Tool and Software Releases",
-      "description": "Information about the release of new tools or software for social media analysis."
+      "theme": "Career Opportunities",
+      "description": "Announcing job openings and research opportunities within the team."
     }
   ],
   "recommendations": [
-    "Cross-promote content across platforms to maximize reach. For instance, share LinkedIn job postings on Bluesky and Mastodon.",
-    "Encourage audience participation by asking direct questions in posts to increase comments and replies.",
-    "Use relevant hashtags on all platforms to improve content discoverability. Use platform specific hashtags and conventions.",
-    "Share visualizations or summaries of research findings to make the content more accessible to a wider audience."
+    "Cross-promote content across platforms to maximize reach and engagement.",
+    "Engage more actively with comments and replies to foster a sense of community.",
+    "Use platform-specific features to tailor content to each audience (e.g., LinkedIn articles, Mastodon threads, Bluesky short-form posts).",
+    "Experiment with different content formats (e.g., videos, infographics, polls) to see what resonates best with each audience."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky demonstrates strong repost activity, indicating a highly engaged audience within the research community. Further leverage this platform for quick research updates and open discussions.",
-    "mastodon": "Mastodon has a more niche audience within the AOIR community. Use this platform for community specific discussions and sharing content related to open-source tools.",
-    "linkedin": "LinkedIn has the largest follower base and generates the highest like and comment engagement, suggesting this is the primary platform for professional networking and announcing career opportunities and grant wins."
+    "bluesky": "Bluesky shows good engagement through reposts, suggesting the content resonates with the community. Focus on short, impactful updates and questions to drive interaction.",
+    "mastodon": "Mastodon engagement is more modest. Consider increasing the frequency of posts and experimenting with different content types to see what performs best within the AOIR.social instance.",
+    "linkedin": "LinkedIn shows the highest engagement, particularly on posts related to research grants and job opportunities. Continue posting professional updates and career-related content to maintain engagement."
   },
   "topPerformingContent": [
     {
@@ -43,7 +43,7 @@
     {
       "content": "Now hiring: Two postdoctoral researchers to join our team working on computational methods for social media analysis. Background in data science, computational social science, or related fields preferred.",
       "platform": "linkedin",
-      "engagementRate": 4
+      "engagementRate": 3.94
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
