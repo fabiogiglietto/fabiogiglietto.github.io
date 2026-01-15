@@ -1,11 +1,12 @@
 {
-  "totalEntries": 84,
-  "lastUpdated": "2026-01-14T06:33:45.178Z",
+  "totalEntries": 85,
+  "lastUpdated": "2026-01-15T06:33:28.311Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-01-14T06:33:45.177Z"
+    "latest": "2026-01-15T06:33:28.308Z"
   },
   "byDate": {
+    "2026-01-15": 1,
     "2026-01-14": 1,
     "2026-01-13": 1,
     "2026-01-12": 3,
@@ -14,13 +15,12 @@
     "2026-01-09": 4,
     "2026-01-08": 3,
     "2026-01-05": 1,
-    "2026-01-03": 1,
-    "2026-01-02": 4
+    "2026-01-03": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 38,
+    "open.online": 5,
     "euractiv.ro": 5,
-    "open.online": 4,
     "uniurb.it": 4,
     "ByoBlu": 2,
     "researchgate.net": 2,
@@ -30,11 +30,18 @@
     "Open": 1
   },
   "byRelevanceScore": {
-    "high": 72,
+    "high": 73,
     "medium": 12,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme",
+      "url": "https://www.open.online/2026/01/07/facebook-fake-news-giorgia-meloni-algoritmo-universita-urbino-studio-fabio-giglietto/",
+      "source": "open.online",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-15T06:33:28.308Z"
+    },
     {
       "title": "Mapping Italian News Research Program - TEAM",
       "url": "https://mine.uniurb.it/team",
@@ -62,13 +69,6 @@
       "source": "EuroTech Universities Alliance",
       "relevanceScore": 0.9,
       "collectedAt": "2026-01-12T06:36:51.270Z"
-    },
-    {
-      "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme",
-      "url": "https://www.open.online/2026/01/07/facebook-fake-news-giorgia-meloni-governo-meloni-mark-zuckerberg-pd/",
-      "source": "open.online",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-11T06:31:17.435Z"
     }
   ]
 }
