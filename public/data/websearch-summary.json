@@ -1,11 +1,12 @@
 {
-  "totalEntries": 85,
-  "lastUpdated": "2026-01-15T06:33:28.311Z",
+  "totalEntries": 86,
+  "lastUpdated": "2026-01-16T06:34:24.508Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-01-15T06:33:28.308Z"
+    "latest": "2026-01-16T06:34:24.506Z"
   },
   "byDate": {
+    "2026-01-16": 1,
     "2026-01-15": 1,
     "2026-01-14": 1,
     "2026-01-13": 1,
@@ -14,27 +15,33 @@
     "2026-01-10": 2,
     "2026-01-09": 4,
     "2026-01-08": 3,
-    "2026-01-05": 1,
-    "2026-01-03": 1
+    "2026-01-05": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 38,
     "open.online": 5,
     "euractiv.ro": 5,
     "uniurb.it": 4,
+    "ilrestodelcarlino.it": 2,
     "ByoBlu": 2,
     "researchgate.net": 2,
     "Radio Radicale": 2,
     "lapiazzarimini.it": 2,
-    "il Ducato": 2,
-    "Open": 1
+    "il Ducato": 2
   },
   "byRelevanceScore": {
-    "high": 73,
+    "high": 74,
     "medium": 12,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "L'Europa assolda Urbino contro le fake-news - Il Resto del Carlino",
+      "url": "https://www.ilrestodelcarlino.it/pesaro/cronaca/leuropa-assolda-urbino-contro-le-fake-news-91d8600d",
+      "source": "ilrestodelcarlino.it",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-16T06:34:24.506Z"
+    },
     {
       "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme",
       "url": "https://www.open.online/2026/01/07/facebook-fake-news-giorgia-meloni-algoritmo-universita-urbino-studio-fabio-giglietto/",
@@ -60,13 +67,6 @@
       "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme",
       "url": "https://www.open.online/2026/01/07/algoritmi-politica-meta-facebook-eleioni-europee-ricerca-unviersita-urbino-deficit-trasparenza/",
       "source": "Open",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-12T06:36:51.270Z"
-    },
-    {
-      "title": "Meet the speakers! - EUDTP 2025 - EuroTech Universities Alliance",
-      "url": "https://eurotech-universities.eu/news-and-events/news/eudtp-digital-technologies-and-policy-conference-2025-meet-the-speakers/",
-      "source": "EuroTech Universities Alliance",
       "relevanceScore": 0.9,
       "collectedAt": "2026-01-12T06:36:51.270Z"
     }
