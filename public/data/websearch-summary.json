@@ -1,11 +1,12 @@
 {
-  "totalEntries": 86,
-  "lastUpdated": "2026-01-16T06:34:24.508Z",
+  "totalEntries": 87,
+  "lastUpdated": "2026-01-17T06:30:20.407Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-01-16T06:34:24.506Z"
+    "latest": "2026-01-17T06:30:20.405Z"
   },
   "byDate": {
+    "2026-01-17": 1,
     "2026-01-16": 1,
     "2026-01-15": 1,
     "2026-01-14": 1,
@@ -14,8 +15,7 @@
     "2026-01-11": 4,
     "2026-01-10": 2,
     "2026-01-09": 4,
-    "2026-01-08": 3,
-    "2026-01-05": 1
+    "2026-01-08": 3
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 38,
@@ -30,11 +30,18 @@
     "il Ducato": 2
   },
   "byRelevanceScore": {
-    "high": 74,
+    "high": 75,
     "medium": 12,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Facebook, troppa visibilità a estremisti e complottisti: ecco come impatta Meta sulle elezioni",
+      "url": "https://www.ansa.it/amp/pressrelease/sardegna/2026/01/09/facebook-troppa-visibilita-a-estremisti-e-complottisti-ecco-come-impatta-meta-sulle-elezioni_2432ca84-2d59-41c5-bd7a-9556c09c9f1a.html",
+      "source": "ansa.it",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-17T06:30:20.405Z"
+    },
     {
       "title": "L'Europa assolda Urbino contro le fake-news - Il Resto del Carlino",
       "url": "https://www.ilrestodelcarlino.it/pesaro/cronaca/leuropa-assolda-urbino-contro-le-fake-news-91d8600d",
@@ -62,13 +69,6 @@
       "source": "open.online",
       "relevanceScore": 0.9,
       "collectedAt": "2026-01-13T06:33:22.010Z"
-    },
-    {
-      "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme",
-      "url": "https://www.open.online/2026/01/07/algoritmi-politica-meta-facebook-eleioni-europee-ricerca-unviersita-urbino-deficit-trasparenza/",
-      "source": "Open",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-12T06:36:51.270Z"
     }
   ]
 }
