@@ -4,6 +4,7 @@
   "description": "Academic website for Fabio Giglietto",
   "scripts": {
     "collect": "node scripts/collect-all.js",
+    "cleanup-mentions": "node scripts/helpers/cleanup-mentions.js",
     "generate-about": "node scripts/generate-about-ai.js",
     "generate-teaching": "node scripts/generators/teaching-generator.js",
     "generate-social-insights": "node scripts/generators/social-media-insights.js",

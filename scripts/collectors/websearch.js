@@ -18,6 +18,133 @@ const hasValidApiKey = hasGeminiApiKey || hasOpenAIApiKey;
 const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
 
 /**
+ * Normalize a URL for deduplication purposes
+ * Removes tracking parameters, normalizes domain, handles redirects
+ */
+function normalizeUrl(urlString) {
+  try {
+    const url = new URL(urlString);
+
+    // List of tracking/noise parameters to remove
+    const paramsToRemove = [
+      'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term',
+      'ucbcb', 'oc', 'hl', 'gl', 'ceid', // Google News params
+      'ref', 'source', 'fbclid', 'gclid', // Social/ad tracking
+      '_ga', '_gid', 'mc_cid', 'mc_eid' // Analytics
+    ];
+
+    // Remove tracking parameters
+    paramsToRemove.forEach(param => url.searchParams.delete(param));
+
+    // Normalize hostname (remove www.)
+    let hostname = url.hostname.replace(/^www\./, '');
+
+    // Special handling for Google News RSS redirect URLs - extract the base identifier
+    if (hostname === 'news.google.com' && url.pathname.includes('/rss/articles/')) {
+      // For Google News, the article ID in the path is the unique identifier
+      const articleId = url.pathname.split('/').pop();
+      return `news.google.com:${articleId}`;
+    }
+
+    // Special handling for Vertex AI search redirects - they're often duplicates
+    if (hostname === 'vertexaisearch.cloud.google.com') {
+      // These URLs have unique redirect paths, but often point to same content
+      // We'll rely on title matching for these
+      return urlString; // Keep original for now, title matching will handle duplicates
+    }
+
+    // Remove trailing slash
+    let pathname = url.pathname.replace(/\/$/, '');
+
+    // Sort remaining query parameters for consistency
+    const sortedParams = [...url.searchParams.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+    const queryString = sortedParams.length > 0
+      ? '?' + sortedParams.map(([k, v]) => `${k}=${v}`).join('&')
+      : '';
+
+    return `${hostname}${pathname}${queryString}`.toLowerCase();
+  } catch (e) {
+    // If URL parsing fails, return original lowercase
+    return urlString.toLowerCase();
+  }
+}
+
+/**
+ * Normalize a title for deduplication purposes
+ * Removes common suffixes, normalizes whitespace
+ */
+function normalizeTitle(title) {
+  if (!title) return '';
+
+  return title
+    // Remove common site name suffixes
+    .replace(/\s*[-–—|]\s*(EURACTIV\.ro|ResearchGate|il Ducato|lapiazzarimini\.it|Radio Radicale|vera\.ai.*|Sociologica|Mastodon|Uniurb|arXiv)$/i, '')
+    // Remove "| Request PDF" and similar
+    .replace(/\s*\|\s*Request PDF$/i, '')
+    // Normalize quotes and special characters
+    .replace(/[„""'']/g, '"')
+    .replace(/[–—]/g, '-')
+    // Normalize whitespace
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase();
+}
+
+/**
+ * Check if two mentions are duplicates based on normalized URL and title
+ */
+function areDuplicateMentions(mention1, mention2) {
+  // Check normalized URL match
+  const normalizedUrl1 = normalizeUrl(mention1.url);
+  const normalizedUrl2 = normalizeUrl(mention2.url);
+
+  if (normalizedUrl1 === normalizedUrl2) {
+    return true;
+  }
+
+  // Check title match (for cases where URLs differ but content is same)
+  const normalizedTitle1 = normalizeTitle(mention1.title);
+  const normalizedTitle2 = normalizeTitle(mention2.title);
+
+  // Exact title match
+  if (normalizedTitle1 && normalizedTitle2 && normalizedTitle1 === normalizedTitle2) {
+    return true;
+  }
+
+  // Check if one title is a significant subset of another (for truncated titles)
+  if (normalizedTitle1.length > 20 && normalizedTitle2.length > 20) {
+    if (normalizedTitle1.startsWith(normalizedTitle2.substring(0, 30)) ||
+        normalizedTitle2.startsWith(normalizedTitle1.substring(0, 30))) {
+      // Also check if same source domain
+      const source1 = (mention1.source || '').toLowerCase();
+      const source2 = (mention2.source || '').toLowerCase();
+      if (source1 === source2 ||
+          normalizeUrl(mention1.url).split('/')[0] === normalizeUrl(mention2.url).split('/')[0]) {
+        return true;
+      }
+    }
+  }
+
+  return false;
+}
+
+/**
+ * Deduplicate an array of mentions using normalized URL and title matching
+ */
+function deduplicateMentions(mentions) {
+  const uniqueMentions = [];
+
+  for (const mention of mentions) {
+    const isDuplicate = uniqueMentions.some(existing => areDuplicateMentions(existing, mention));
+    if (!isDuplicate) {
+      uniqueMentions.push(mention);
+    }
+  }
+
+  return uniqueMentions;
+}
+
+/**
  * Collector for fetching web search results about Fabio Giglietto
  * using Gemini API with Google Search grounding - ONLY REAL RESULTS
  */
@@ -218,10 +345,9 @@ Only include results with REAL, direct URLs to news sources.`;
       return await saveEmptyResults();
     }
 
-    // Remove duplicates by URL
-    const uniqueResults = allResults.filter((result, index, self) =>
-      index === self.findIndex(r => r.url === result.url)
-    );
+    // Remove duplicates using enhanced URL normalization and title matching
+    const uniqueResults = deduplicateMentions(allResults);
+    console.log(`After deduplication: ${uniqueResults.length} unique results (removed ${allResults.length - uniqueResults.length} duplicates)`);
 
     // Add validation layer - verify each result with Gemini (if available)
     console.log(`\n=== Starting validation of ${uniqueResults.length} results ===`);
@@ -515,9 +641,10 @@ async function updateHistoricalLog(newResults) {
       collectionRun: timestamp.split('T')[0] // Date part for grouping
     }));
 
-    // Check for duplicates by URL and only add new ones
-    const existingUrls = new Set(historicalLog.map(item => item.url));
-    const newEntries = resultsWithMetadata.filter(result => !existingUrls.has(result.url));
+    // Check for duplicates using enhanced matching (URL normalization + title matching)
+    const newEntries = resultsWithMetadata.filter(result =>
+      !historicalLog.some(existing => areDuplicateMentions(existing, result))
+    );
 
     if (newEntries.length > 0) {
       // Add new entries to the historical log
