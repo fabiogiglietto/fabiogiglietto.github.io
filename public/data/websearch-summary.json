@@ -1,11 +1,12 @@
 {
-  "totalEntries": 88,
-  "lastUpdated": "2026-01-18T06:30:34.722Z",
+  "totalEntries": 77,
+  "lastUpdated": "2026-01-19T06:38:02.798Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-01-18T06:30:34.721Z"
+    "latest": "2026-01-19T06:38:02.772Z"
   },
   "byDate": {
+    "2026-01-19": 2,
     "2026-01-18": 1,
     "2026-01-17": 1,
     "2026-01-16": 1,
@@ -14,27 +15,40 @@
     "2026-01-13": 1,
     "2026-01-12": 3,
     "2026-01-11": 4,
-    "2026-01-10": 2,
-    "2026-01-09": 4
+    "2026-01-10": 2
   },
   "bySource": {
-    "vertexaisearch.cloud.google.com": 38,
+    "vertexaisearch.cloud.google.com": 32,
     "uniurb.it": 5,
     "open.online": 5,
-    "euractiv.ro": 5,
+    "vera.ai": 2,
     "ilrestodelcarlino.it": 2,
     "ByoBlu": 2,
+    "euractiv.ro": 2,
     "researchgate.net": 2,
-    "Radio Radicale": 2,
-    "lapiazzarimini.it": 2,
-    "il Ducato": 2
+    "ansa.it": 1,
+    "Open": 1
   },
   "byRelevanceScore": {
-    "high": 76,
-    "medium": 12,
+    "high": 68,
+    "medium": 9,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "White Paper: The State of Social Media Research APIs & Tool in the DSA Era",
+      "url": "https://www.vera.ai/news/white-paper-the-state-of-social-media-research-apis-tool-in-the-dsa-era",
+      "source": "vera.ai",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-19T06:38:02.772Z"
+    },
+    {
+      "title": "Fabio Giglietto's research works",
+      "url": "https://www.researchgate.net/scientific-contributions/Fabio-Giglietto-2335302945",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.8,
+      "collectedAt": "2026-01-19T06:38:02.772Z"
+    },
     {
       "title": "Rassegna Stampa - Università degli Studi di Urbino - UniUrb",
       "url": "https://uniurb.it/comunicati/26475",
@@ -55,20 +69,6 @@
       "source": "ilrestodelcarlino.it",
       "relevanceScore": 0.9,
       "collectedAt": "2026-01-16T06:34:24.506Z"
-    },
-    {
-      "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme",
-      "url": "https://www.open.online/2026/01/07/facebook-fake-news-giorgia-meloni-algoritmo-universita-urbino-studio-fabio-giglietto/",
-      "source": "open.online",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-15T06:33:28.308Z"
-    },
-    {
-      "title": "Mapping Italian News Research Program - TEAM",
-      "url": "https://mine.uniurb.it/team",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-14T06:33:45.177Z"
     }
   ]
 }
