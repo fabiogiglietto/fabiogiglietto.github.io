@@ -1,49 +1,49 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a presence on Mastodon, LinkedIn, and Bluesky, with a total follower count of 3580. Engagement varies across platforms, with LinkedIn generally showing higher engagement per post. The content focuses on research related to social media analysis, disinformation, and computational social science, along with announcements of research opportunities and publications.",
+  "overallSummary": "Fabio Giglietto maintains a presence across Mastodon, LinkedIn, and Bluesky, focusing on research related to computational social science, disinformation, and information operations. LinkedIn has the highest follower count, but engagement is distributed across platforms depending on the content type.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 0.03,
+    "averageEngagementRate": 2.5,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
       "theme": "Computational Social Science Research",
-      "description": "Discussion of research findings, methods, and publications in the field of computational social science."
+      "description": "Updates on research projects, publications, and tools related to computational social science."
     },
     {
       "theme": "Disinformation and Information Operations",
-      "description": "Focus on studying and detecting disinformation, coordinated inauthentic behavior, and information operations on social media."
+      "description": "Content focused on studying and detecting disinformation and coordinated inauthentic behavior on social media platforms."
     },
     {
-      "theme": "Research Opportunities",
-      "description": "Announcements of grants, postdoctoral positions, and PhD opportunities in related research areas."
+      "theme": "Career and Academic Opportunities",
+      "description": "Announcements of job openings, postdoctoral positions, and research opportunities for students."
     }
   ],
   "recommendations": [
-    "Diversify content formats (e.g., videos, infographics) to increase engagement.",
-    "Schedule posts strategically to align with peak audience activity times on each platform.",
-    "Engage more actively with comments and replies to foster a stronger community."
+    "Increase cross-promotion of content across platforms to reach a wider audience.",
+    "Engage more actively in conversations and respond to comments to build a stronger community.",
+    "Experiment with different content formats (e.g., videos, infographics) to see what resonates best with each audience."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky shows a strong interest in research publications and opportunities, suggesting a highly academic audience. Reposts are a prominent form of engagement.",
-    "mastodon": "Mastodon audience is responsive to updates on research tools and methodological discussions, indicating a community focused on academic development.",
-    "linkedin": "LinkedIn engagement is driven by professional announcements such as grant awards and job openings, demonstrating a network of professional colleagues and potential collaborators."
+    "bluesky": "Bluesky is used for sharing research publications and conference presentations, with a focus on coordinated inauthentic behavior. Posts mentioning opportunities are well-received.",
+    "mastodon": "Mastodon is used for announcing new tools and engaging in discussions about methodological approaches to studying disinformation.",
+    "linkedin": "LinkedIn is mainly used for professional announcements like grant awards and job postings, garnering significant likes and comments."
   },
   "topPerformingContent": [
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
       "platform": "linkedin",
-      "engagementRate": 0.06
+      "engagementRate": 5.78
     },
     {
       "content": "Now hiring: Two postdoctoral researchers to join our team working on computational methods for social media analysis. Background in data science, computational social science, or related fields preferred.",
       "platform": "linkedin",
-      "engagementRate": 0.04
+      "engagementRate": 3.95
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
       "platform": "bluesky",
-      "engagementRate": 0.07
+      "engagementRate": 7.37
     }
   ]
 }
