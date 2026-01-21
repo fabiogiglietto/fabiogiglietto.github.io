@@ -1,32 +1,40 @@
-- date: '2026-01-02'
-  content: >-
-    A new tool, FG's Research Radio, has been developed to generate AI-driven
-    audio deep dives into computational social science papers. This open-source
-    project, designed to leverage a PaperPile reading list, allows for catching
-    up on research through AI-generated summaries.
-  url: https://aoir.social/@fabiogiglietto/115824742743733114
-  platforms:
-    - Mastodon
-    - BlueSky
 - date: '2026-01-07'
   content: >-
-    A preprint analyzing the impact of Meta's political content policies reveals
-    a 72% reach reduction for Italian Members of Parliament following the
-    policy's implementation. The study, which also found an increase in reach
-    for extremist content, encourages further research in other countries
-    utilizing the provided code and methodology.
+    New research analyzes Meta's political content reduction policy, finding a
+    72% reach reduction for Italian members of Parliament. The effects were
+    detected 10 months before Meta's global rollout. The study also indicates
+    that extremists gained reach (+14%) while elected officials lost it. Code
+    and data are available for researchers to replicate the study in other
+    countries.
   url: https://aoir.social/@fabiogiglietto/115854413620962430
   platforms:
     - Mastodon
     - BlueSky
-- date: '2026-01-08'
+- date: '2026-01-02'
   content: >-
-    Several recently highlighted papers offer insights into contemporary
-    challenges in digital media and online behavior. These include
-    investigations into the radicalization of politics by networked elites and
-    hyper-partisan media, the impact of generative AI on trust and information
-    verification, and the role of social bots in agenda-building.
-  url: https://aoir.social/@fabiogiglietto/115858067255112165
+    FG's Research Radio, a new tool for AI-driven audio deep dives into
+    computational social science papers, has been launched. The tool uses Google
+    Gemini and pulls papers directly from a PaperPile reading list. The code is
+    open source, allowing others to create their own instances.
+  url: https://aoir.social/@fabiogiglietto/115824742743733114
+  platforms:
+    - Mastodon
+    - BlueSky
+- date: '2026-01-16'
+  content: >-
+    Recent article recommendations include a study on 'My Europe Builds Walls':
+    A cross-platform visual analysis of the Sweden Democrats’ 2024 EU election
+    campaign.
+  url: https://aoir.social/@fabiogiglietto/115903247547082978
+  platforms:
+    - Mastodon
+    - BlueSky
+- date: '2026-01-06'
+  content: >-
+    A paper on 'The Generative AI Paradox: GenAI and the erosion of trust, the
+    corrosion of information verification, and the demise of truth' by Emilio
+    Ferrara has been recommended.
+  url: https://aoir.social/@fabiogiglietto/115847253615297299
   platforms:
     - Mastodon
     - BlueSky
