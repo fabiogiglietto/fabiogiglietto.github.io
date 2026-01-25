@@ -1,11 +1,12 @@
 {
-  "totalEntries": 80,
-  "lastUpdated": "2026-01-24T06:31:25.119Z",
+  "totalEntries": 82,
+  "lastUpdated": "2026-01-25T06:31:46.240Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-01-21T06:36:19.699Z"
+    "latest": "2026-01-25T06:31:46.208Z"
   },
   "byDate": {
+    "2026-01-25": 2,
     "2026-01-21": 1,
     "2026-01-20": 2,
     "2026-01-19": 2,
@@ -14,8 +15,7 @@
     "2026-01-16": 1,
     "2026-01-15": 1,
     "2026-01-14": 1,
-    "2026-01-13": 1,
-    "2026-01-12": 3
+    "2026-01-13": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 33,
@@ -27,14 +27,21 @@
     "ByoBlu": 2,
     "euractiv.ro": 2,
     "researchgate.net": 2,
-    "Terzogiornale": 1
+    "veraai.eu": 1
   },
   "byRelevanceScore": {
-    "high": 69,
-    "medium": 11,
+    "high": 70,
+    "medium": 12,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Meet: Team of University of Urbino Carlo Bo",
+      "url": "https://veraai.eu/who-is-behind-vera-ai-meet-team-of-university-of-urbino-carlo-bo/",
+      "source": "veraai.eu",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-25T06:31:46.208Z"
+    },
     {
       "title": "Curating art exhibitions using machine learning",
       "url": "https://arxiv.org/html/2506.19813v3",
@@ -62,13 +69,6 @@
       "source": "uniurb.it",
       "relevanceScore": 0.9,
       "collectedAt": "2026-01-18T06:30:34.721Z"
-    },
-    {
-      "title": "Facebook, troppa visibilità a estremisti e complottisti: ecco come impatta Meta sulle elezioni",
-      "url": "https://www.ansa.it/amp/pressrelease/sardegna/2026/01/09/facebook-troppa-visibilita-a-estremisti-e-complottisti-ecco-come-impatta-meta-sulle-elezioni_2432ca84-2d59-41c5-bd7a-9556c09c9f1a.html",
-      "source": "ansa.it",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-17T06:30:20.405Z"
     }
   ]
 }
