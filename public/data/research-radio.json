@@ -307,6 +307,17 @@
       "duration": "6:03",
       "author": "Joseph Bak-Coleman, Jevin West, Cailin O'Connor, Carl T. Bergstrom",
       "doi": null
+    },
+    {
+      "id": "bibtex:Di-Domenico2026-zq",
+      "bibtexKey": "Di-Domenico2026-zq",
+      "title": "Influencer Toxicity: When Misinformation Sparks Online Firestorms",
+      "description": "AI-generated podcast discussion.\n\nReference:\nDomenico, G. D., Mangió, F., & Dineva, D. (2026). don&#x27;t you know that you&#x27;re toxic? how influencer‐driven misinformation fuels online toxicity. https://doi.org/10.1002/mar.70106",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Di-Domenico2026-zq.mp3",
+      "pubDate": "Sun, 25 Jan 2026 09:31:57 +0000",
+      "duration": "6:10",
+      "author": "Giandomenico Di Domenico, Federico Mangió, Denitsa Dineva",
+      "doi": "10.1002/mar.70106"
     }
   ],
   "episodesByBibtexKey": {
@@ -617,6 +628,17 @@
       "duration": "6:03",
       "author": "Joseph Bak-Coleman, Jevin West, Cailin O'Connor, Carl T. Bergstrom",
       "doi": null
+    },
+    "Di-Domenico2026-zq": {
+      "id": "bibtex:Di-Domenico2026-zq",
+      "bibtexKey": "Di-Domenico2026-zq",
+      "title": "Influencer Toxicity: When Misinformation Sparks Online Firestorms",
+      "description": "AI-generated podcast discussion.\n\nReference:\nDomenico, G. D., Mangió, F., & Dineva, D. (2026). don&#x27;t you know that you&#x27;re toxic? how influencer‐driven misinformation fuels online toxicity. https://doi.org/10.1002/mar.70106",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Di-Domenico2026-zq.mp3",
+      "pubDate": "Sun, 25 Jan 2026 09:31:57 +0000",
+      "duration": "6:10",
+      "author": "Giandomenico Di Domenico, Federico Mangió, Denitsa Dineva",
+      "doi": "10.1002/mar.70106"
     }
   },
   "episodesByDoi": {
@@ -839,9 +861,20 @@
       "duration": "7:01",
       "author": "Ankolika De, Kelley Cotter",
       "doi": "10.1177/29768624251408212"
+    },
+    "10.1002/mar.70106": {
+      "id": "bibtex:Di-Domenico2026-zq",
+      "bibtexKey": "Di-Domenico2026-zq",
+      "title": "Influencer Toxicity: When Misinformation Sparks Online Firestorms",
+      "description": "AI-generated podcast discussion.\n\nReference:\nDomenico, G. D., Mangió, F., & Dineva, D. (2026). don&#x27;t you know that you&#x27;re toxic? how influencer‐driven misinformation fuels online toxicity. https://doi.org/10.1002/mar.70106",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Di-Domenico2026-zq.mp3",
+      "pubDate": "Sun, 25 Jan 2026 09:31:57 +0000",
+      "duration": "6:10",
+      "author": "Giandomenico Di Domenico, Federico Mangió, Denitsa Dineva",
+      "doi": "10.1002/mar.70106"
     }
   },
-  "totalEpisodes": 28,
-  "lastUpdated": "2026-01-25T06:30:55.542Z",
+  "totalEpisodes": 29,
+  "lastUpdated": "2026-01-26T06:35:54.282Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
