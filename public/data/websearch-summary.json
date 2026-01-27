@@ -1,11 +1,12 @@
 {
-  "totalEntries": 82,
-  "lastUpdated": "2026-01-26T06:36:57.755Z",
+  "totalEntries": 86,
+  "lastUpdated": "2026-01-27T06:35:13.647Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-01-25T06:31:46.208Z"
+    "latest": "2026-01-27T06:35:13.616Z"
   },
   "byDate": {
+    "2026-01-27": 4,
     "2026-01-25": 2,
     "2026-01-21": 1,
     "2026-01-20": 2,
@@ -14,11 +15,10 @@
     "2026-01-17": 1,
     "2026-01-16": 1,
     "2026-01-15": 1,
-    "2026-01-14": 1,
-    "2026-01-13": 1
+    "2026-01-14": 1
   },
   "bySource": {
-    "vertexaisearch.cloud.google.com": 33,
+    "vertexaisearch.cloud.google.com": 37,
     "uniurb.it": 5,
     "open.online": 5,
     "Il Sole 24 ORE": 2,
@@ -30,45 +30,45 @@
     "veraai.eu": 1
   },
   "byRelevanceScore": {
-    "high": 70,
+    "high": 74,
     "medium": 12,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Panel TRANSFORMATIVE TOOLS, EMERGING CHALLENGES: EMPIRICAL AND PRACTICAL EXPERIENCES WITH LARGE LANGUAGE MODELS FOR TEXT CLASSIF - AoIR Selected Papers of Internet Research",
+      "url": "https://spir.aoir.org/ojs/index.php/spir/article/download/14102/11959/89985",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-27T06:35:13.616Z"
+    },
+    {
+      "title": "Insights and Report from the Coordinated Sharing Behavior Detection Conference - Vera.ai",
+      "url": "https://www.veraai.eu/posts/coordinated-sharing-behavior-detection-conference-2024",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-27T06:35:13.616Z"
+    },
+    {
+      "title": "D4.2 - Coordinated sharing behaviour detection and disinformation campaign modelling methods - AWS",
+      "url": "https://veraai-cms-files.s3.eu-central-1.amazonaws.com/D4_2_V1_0_013beb034d.pdf",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-27T06:35:13.616Z"
+    },
+    {
+      "title": "Mis and Disinformation in Global Health Symposium - Media Ecosystems Analysis Group",
+      "url": "https://www.mediaecosystems.org/explorations/mis-and-disinformation-in-global-health-symposium",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-27T06:35:13.616Z"
+    },
     {
       "title": "Meet: Team of University of Urbino Carlo Bo",
       "url": "https://veraai.eu/who-is-behind-vera-ai-meet-team-of-university-of-urbino-carlo-bo/",
       "source": "veraai.eu",
       "relevanceScore": 0.9,
       "collectedAt": "2026-01-25T06:31:46.208Z"
-    },
-    {
-      "title": "Curating art exhibitions using machine learning",
-      "url": "https://arxiv.org/html/2506.19813v3",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-20T06:35:46.442Z"
-    },
-    {
-      "title": "White Paper: The State of Social Media Research APIs & Tool in the DSA Era",
-      "url": "https://www.vera.ai/news/white-paper-the-state-of-social-media-research-apis-tool-in-the-dsa-era",
-      "source": "vera.ai",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-19T06:38:02.772Z"
-    },
-    {
-      "title": "Fabio Giglietto's research works",
-      "url": "https://www.researchgate.net/scientific-contributions/Fabio-Giglietto-2335302945",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.8,
-      "collectedAt": "2026-01-19T06:38:02.772Z"
-    },
-    {
-      "title": "Rassegna Stampa - Università degli Studi di Urbino - UniUrb",
-      "url": "https://uniurb.it/comunicati/26475",
-      "source": "uniurb.it",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-18T06:30:34.721Z"
     }
   ]
 }
