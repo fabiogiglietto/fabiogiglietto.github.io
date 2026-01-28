@@ -1,37 +1,38 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a presence on Mastodon, LinkedIn, and Bluesky, focusing on research related to disinformation, computational social science, and information operations. While he has a moderate following on Mastodon and Bluesky, LinkedIn is his most popular platform with the largest follower count. Engagement is generally focused on research announcements, publications, and job opportunities.",
+  "overallSummary": "Fabio Giglietto maintains an active presence on Mastodon, LinkedIn, and Bluesky, primarily sharing research updates, publications, and job opportunities related to computational social science, disinformation, and information operations. LinkedIn has the highest follower count, while content on all platforms appears to generate moderate engagement. The majority of posts center on academic research and related career opportunities.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 2.95,
+    "averageEngagementRate": 2.71,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
-      "theme": "Research Announcements",
-      "description": "Sharing updates on research projects, grants, and publications."
+      "theme": "Research Updates",
+      "description": "Sharing updates on research projects, publications, and new versions of tools."
     },
     {
-      "theme": "Hiring/Opportunities",
-      "description": "Posts related to job openings, PhD positions, and research opportunities."
+      "theme": "Disinformation & Information Operations",
+      "description": "Discussion and research related to disinformation, coordinated inauthentic behavior, and information operations."
     },
     {
-      "theme": "Conferences/Events",
-      "description": "Announcements about presenting at or attending conferences."
+      "theme": "Career Opportunities",
+      "description": "Announcing job openings, postdoctoral positions, and research opportunities for students."
     },
     {
-      "theme": "Coordinated Behavior",
-      "description": "Posts relating to coordinated link sharing and inauthentic behavior detection."
+      "theme": "Conferences & Presentations",
+      "description": "Announcements about upcoming presentations at conferences."
     }
   ],
   "recommendations": [
-    "Increase posting frequency on Mastodon to foster more engagement.",
-    "Use platform-specific content strategies, emphasizing professional networking on LinkedIn and research discussions on Bluesky and Mastodon.",
-    "Encourage more direct interaction with followers by asking questions and prompting replies."
+    "Diversify content types to include visuals like images or short videos to capture more attention.",
+    "Engage more actively in conversations by asking questions and responding to comments to foster a community.",
+    "Use platform-specific hashtags to increase visibility and reach a wider audience interested in related topics.",
+    "Experiment with different posting times to identify when the audience is most active and receptive to content."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky shows potential for fostering discussions around research and academic events. The engagement metrics are good with decent likes and reposts.",
-    "mastodon": "Mastodon engagement is relatively low. Focus on creating content that resonates more strongly with the AOIR.social community.",
-    "linkedin": "LinkedIn is the strongest platform, driven by professional networking and career-related announcements. It's well-suited for research funding and job postings."
+    "bluesky": "Bluesky shows a strong interest in research publications and opportunities for students. Increase content related to student opportunities.",
+    "mastodon": "Mastodon content has lower engagement compared to other platforms. Consider tailoring content specifically for this audience, or engage more frequently with other posts on the platform.",
+    "linkedin": "LinkedIn generates the highest engagement, particularly regarding job announcements and grant awards. Continue prioritizing professional announcements and career-related content on this platform."
   },
   "topPerformingContent": [
     {
@@ -42,7 +43,7 @@
     {
       "content": "Now hiring: Two postdoctoral researchers to join our team working on computational methods for social media analysis. Background in data science, computational social science, or related fields preferred.",
       "platform": "linkedin",
-      "engagementRate": 4.16
+      "engagementRate": 3.67
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",

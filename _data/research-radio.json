@@ -318,6 +318,17 @@
       "duration": "6:10",
       "author": "Giandomenico Di Domenico, Federico Mangió, Denitsa Dineva",
       "doi": "10.1002/mar.70106"
+    },
+    {
+      "id": "bibtex:Hameleers2026-mc",
+      "bibtexKey": "Hameleers2026-mc",
+      "title": "Visual Lies: When Videos and AI Fuel Disinformation",
+      "description": "AI-generated podcast discussion.\n\nReference:\nHameleers, M. & Meer, T. V. D. (2026). Beyond textual disinformation: Comparing the effects of textual disinformation to AI-generated and video-based visual disinformation across different issues. https://doi.org/10.1177/14614448251409208",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Hameleers2026-mc.mp3",
+      "pubDate": "Tue, 27 Jan 2026 06:50:05 +0000",
+      "duration": "6:09",
+      "author": "Michael Hameleers, Toni van der Meer",
+      "doi": "10.1177/14614448251409208"
     }
   ],
   "episodesByBibtexKey": {
@@ -639,6 +650,17 @@
       "duration": "6:10",
       "author": "Giandomenico Di Domenico, Federico Mangió, Denitsa Dineva",
       "doi": "10.1002/mar.70106"
+    },
+    "Hameleers2026-mc": {
+      "id": "bibtex:Hameleers2026-mc",
+      "bibtexKey": "Hameleers2026-mc",
+      "title": "Visual Lies: When Videos and AI Fuel Disinformation",
+      "description": "AI-generated podcast discussion.\n\nReference:\nHameleers, M. & Meer, T. V. D. (2026). Beyond textual disinformation: Comparing the effects of textual disinformation to AI-generated and video-based visual disinformation across different issues. https://doi.org/10.1177/14614448251409208",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Hameleers2026-mc.mp3",
+      "pubDate": "Tue, 27 Jan 2026 06:50:05 +0000",
+      "duration": "6:09",
+      "author": "Michael Hameleers, Toni van der Meer",
+      "doi": "10.1177/14614448251409208"
     }
   },
   "episodesByDoi": {
@@ -872,9 +894,20 @@
       "duration": "6:10",
       "author": "Giandomenico Di Domenico, Federico Mangió, Denitsa Dineva",
       "doi": "10.1002/mar.70106"
+    },
+    "10.1177/14614448251409208": {
+      "id": "bibtex:Hameleers2026-mc",
+      "bibtexKey": "Hameleers2026-mc",
+      "title": "Visual Lies: When Videos and AI Fuel Disinformation",
+      "description": "AI-generated podcast discussion.\n\nReference:\nHameleers, M. & Meer, T. V. D. (2026). Beyond textual disinformation: Comparing the effects of textual disinformation to AI-generated and video-based visual disinformation across different issues. https://doi.org/10.1177/14614448251409208",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Hameleers2026-mc.mp3",
+      "pubDate": "Tue, 27 Jan 2026 06:50:05 +0000",
+      "duration": "6:09",
+      "author": "Michael Hameleers, Toni van der Meer",
+      "doi": "10.1177/14614448251409208"
     }
   },
-  "totalEpisodes": 29,
-  "lastUpdated": "2026-01-27T06:34:08.435Z",
+  "totalEpisodes": 30,
+  "lastUpdated": "2026-01-28T06:35:03.967Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
