@@ -1,11 +1,12 @@
 {
-  "totalEntries": 86,
-  "lastUpdated": "2026-01-28T06:36:01.242Z",
+  "totalEntries": 88,
+  "lastUpdated": "2026-01-29T06:46:12.657Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-01-27T06:35:13.616Z"
+    "latest": "2026-01-29T06:46:12.626Z"
   },
   "byDate": {
+    "2026-01-29": 2,
     "2026-01-27": 4,
     "2026-01-25": 2,
     "2026-01-21": 1,
@@ -14,11 +15,10 @@
     "2026-01-18": 1,
     "2026-01-17": 1,
     "2026-01-16": 1,
-    "2026-01-15": 1,
-    "2026-01-14": 1
+    "2026-01-15": 1
   },
   "bySource": {
-    "vertexaisearch.cloud.google.com": 37,
+    "vertexaisearch.cloud.google.com": 39,
     "uniurb.it": 5,
     "open.online": 5,
     "Il Sole 24 ORE": 2,
@@ -30,11 +30,25 @@
     "veraai.eu": 1
   },
   "byRelevanceScore": {
-    "high": 74,
+    "high": 76,
     "medium": 12,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Presentation (Video): OpenAI Models for Topic Modelling in Social Media Analysis - Vera.ai",
+      "url": "https://www.veraai.eu/posts/presentation-video-fabio-at-uni-queensland",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-29T06:46:12.626Z"
+    },
+    {
+      "title": "GENERATIVE AI AND THE MEDIA - Lecturer: Fabio Giglietto - A.Y. 2025/2026 - Credits 6 - Uniurb",
+      "url": "https://www.uniurb.it/syllabi/267958",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-29T06:46:12.626Z"
+    },
     {
       "title": "Panel TRANSFORMATIVE TOOLS, EMERGING CHALLENGES: EMPIRICAL AND PRACTICAL EXPERIENCES WITH LARGE LANGUAGE MODELS FOR TEXT CLASSIF - AoIR Selected Papers of Internet Research",
       "url": "https://spir.aoir.org/ojs/index.php/spir/article/download/14102/11959/89985",
@@ -55,20 +69,6 @@
       "source": "vertexaisearch.cloud.google.com",
       "relevanceScore": 0.9,
       "collectedAt": "2026-01-27T06:35:13.616Z"
-    },
-    {
-      "title": "Mis and Disinformation in Global Health Symposium - Media Ecosystems Analysis Group",
-      "url": "https://www.mediaecosystems.org/explorations/mis-and-disinformation-in-global-health-symposium",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-27T06:35:13.616Z"
-    },
-    {
-      "title": "Meet: Team of University of Urbino Carlo Bo",
-      "url": "https://veraai.eu/who-is-behind-vera-ai-meet-team-of-university-of-urbino-carlo-bo/",
-      "source": "veraai.eu",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-25T06:31:46.208Z"
     }
   ]
 }

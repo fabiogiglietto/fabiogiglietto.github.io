@@ -1,26 +1,35 @@
-- date: '2026-01-02'
-  content: >-
-    A new tool, FG's Research Radio, has been developed to generate AI-driven
-    audio deep dives into Computational Social Science papers. Utilizing Google
-    Gemini, the tool pulls directly from a PaperPile reading list and the code
-    is open source.
-  url: https://aoir.social/@fabiogiglietto/115824742743733114
-  platforms:
-    - Mastodon
 - date: '2026-01-07'
   content: >-
-    A recent study indicates that Meta's political content reduction policy led
-    to a 72% reach reduction for Italian Members of Parliament on Facebook. This
-    effect was detected 10 months prior to Meta's global rollout, with extremist
-    content gaining reach (+14%) while elected officials experienced a loss.
+    A new preprint examines how Meta's political content policy, specifically
+    the reversal of its political content reduction strategy one year prior,
+    significantly impacted the reach of Italian Members of Parliament (MPs). The
+    research, analyzing 2.5 million Facebook posts, found a 72% reach reduction
+    for parliamentarians, with effects detected 10 months before the global
+    rollout of the policy. Notably, extremist content saw a 14% increase in
+    reach, while elected officials experienced a decrease. The research includes
+    open-source code for replication and extension to other countries.
   url: https://aoir.social/@fabiogiglietto/115854413620962430
   platforms:
     - Mastodon
     - BlueSky
-- date: '2026-01-27'
+- date: '2026-01-02'
   content: >-
-    A video analysis has been released examining potentially flawed decisions in
-    the shooting of Pretti.
-  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mdf2tuxxnk26
+    A tool, dubbed FG's Research Radio, has been developed that generates
+    AI-driven audio deep dives into computational social science papers. The
+    tool utilizes Google Gemini and pulls directly from a PaperPile reading
+    list. The code is open source.
+  url: https://aoir.social/@fabiogiglietto/115824742743733114
   platforms:
+    - Mastodon
+- date: '2026-01-22'
+  content: >-
+    The researcher highlights a number of recent papers to read, covering a
+    range of topics relevant to computational social science. These include
+    studies on research opportunities and challenges related to the EU's Digital
+    Services Act, the influence of industry on social media research, and the
+    'Generative AI Paradox,' exploring the erosion of trust and information
+    verification due to generative AI.
+  url: https://aoir.social/@fabiogiglietto/115938742848337986
+  platforms:
+    - Mastodon
     - BlueSky
