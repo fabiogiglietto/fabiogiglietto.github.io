@@ -1,11 +1,12 @@
 {
-  "totalEntries": 89,
-  "lastUpdated": "2026-01-30T06:47:05.830Z",
+  "totalEntries": 90,
+  "lastUpdated": "2026-01-31T06:38:06.516Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-01-30T06:47:05.803Z"
+    "latest": "2026-01-31T06:38:06.483Z"
   },
   "byDate": {
+    "2026-01-31": 1,
     "2026-01-30": 1,
     "2026-01-29": 2,
     "2026-01-27": 4,
@@ -14,8 +15,7 @@
     "2026-01-20": 2,
     "2026-01-19": 2,
     "2026-01-18": 1,
-    "2026-01-17": 1,
-    "2026-01-16": 1
+    "2026-01-17": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 39,
@@ -27,14 +27,21 @@
     "ByoBlu": 2,
     "euractiv.ro": 2,
     "researchgate.net": 2,
-    "nrighetti.github.io": 1
+    "opendemocracy.net": 1
   },
   "byRelevanceScore": {
-    "high": 77,
+    "high": 78,
     "medium": 12,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Scientists around the world call to protect research on one of humanity's greatest short-term threats – Disinformation",
+      "url": "https://www.opendemocracy.net/en/scientists-around-the-world-call-to-protect-research-on-one-of-humanitys-greatest-short-term-threats-disinformation/",
+      "source": "opendemocracy.net",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-01-31T06:38:06.483Z"
+    },
     {
       "title": "A project on coordinated behavior at the Digital Methods Summer School and Data Sprint 2024 - Nicola Righetti",
       "url": "https://nrighetti.github.io/dmi-2024/",
@@ -59,13 +66,6 @@
     {
       "title": "Panel TRANSFORMATIVE TOOLS, EMERGING CHALLENGES: EMPIRICAL AND PRACTICAL EXPERIENCES WITH LARGE LANGUAGE MODELS FOR TEXT CLASSIF - AoIR Selected Papers of Internet Research",
       "url": "https://spir.aoir.org/ojs/index.php/spir/article/download/14102/11959/89985",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-27T06:35:13.616Z"
-    },
-    {
-      "title": "Insights and Report from the Coordinated Sharing Behavior Detection Conference - Vera.ai",
-      "url": "https://www.veraai.eu/posts/coordinated-sharing-behavior-detection-conference-2024",
       "source": "vertexaisearch.cloud.google.com",
       "relevanceScore": 0.9,
       "collectedAt": "2026-01-27T06:35:13.616Z"
