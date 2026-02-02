@@ -1,45 +1,46 @@
 {
-  "overallSummary": "Fabio Giglietto maintains an active presence on Mastodon, LinkedIn, and Bluesky, focusing on research, publications, and job opportunities in the field of computational social science and disinformation studies. His largest audience is on LinkedIn, but he leverages all platforms to share his work and engage with colleagues.",
+  "overallSummary": "Fabio Giglietto maintains an active presence on Mastodon, LinkedIn, and Bluesky, primarily focusing on research related to social media, disinformation, and computational social science. LinkedIn has the largest follower base, while Bluesky shows a high level of engagement related to research publications and opportunities.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 3.66,
+    "averageEngagementRate": 3.17,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
-      "theme": "Research Publication/Release",
-      "description": "Announcements of new research papers, publications, and tool releases related to computational social science."
+      "theme": "Computational Social Science Research",
+      "description": "Posts related to research papers, grants, and methodological discussions in computational social science."
     },
     {
-      "theme": "Job/Research Opportunities",
-      "description": "Posts advertising postdoc positions, research grants, and PhD student opportunities within Fabio Giglietto's research team."
+      "theme": "Disinformation and Coordinated Behavior",
+      "description": "Content focused on detecting and analyzing disinformation campaigns and coordinated inauthentic behavior on social media."
     },
     {
-      "theme": "Conference/Event Participation",
-      "description": "Mentions of participation in conferences and events related to disinformation and computational methods."
+      "theme": "Research Opportunities",
+      "description": "Posts advertising research positions, PhD opportunities, and calls for collaboration."
     }
   ],
   "recommendations": [
-    "Increase cross-platform promotion of content to leverage audience overlap.",
-    "Experiment with different content formats (e.g., videos, infographics) to boost engagement.",
-    "Actively participate in conversations and respond to comments to foster community interaction.",
-    "Use more specific hashtags related to computational social science to increase discoverability."
+    "Cross-promote content across platforms to maximize reach and engagement.",
+    "Use platform-specific features (e.g., LinkedIn articles, Mastodon polls) to encourage interaction.",
+    "Engage with comments and replies to foster a sense of community.",
+    "Schedule posts strategically to optimize for peak audience activity times on each platform.",
+    "Incorporate visuals and multimedia to increase content appeal and shareability."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky is used to share publications, conference presentations, and PhD opportunities. Reposts are a key engagement metric on this platform, indicating the content is being shared within the network.",
-    "mastodon": "Mastodon is used to announce tool releases and discuss methodological approaches. Engagement is lower compared to other platforms.",
-    "linkedin": "LinkedIn drives the most engagement, driven by professional announcements like grant awards and job postings. Comments are present, which provides more meaningful interaction."
+    "bluesky": "Bluesky is effectively used to share research publications and opportunities, fostering engagement within the computational social science community. High repost rates suggest content resonates well with the audience.",
+    "mastodon": "Mastodon serves as a platform for sharing project updates and participating in methodological discussions. Moderate engagement levels indicate a need to explore content formats that drive more interaction.",
+    "linkedin": "LinkedIn demonstrates a strong professional network, with posts related to grant announcements and job openings achieving high engagement. Leverage LinkedIn for professional networking and career-related content."
   },
   "topPerformingContent": [
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
       "platform": "linkedin",
-      "engagementRate": 6.86
+      "engagementRate": 5.78
     },
     {
       "content": "Now hiring: Two postdoctoral researchers to join our team working on computational methods for social media analysis. Background in data science, computational social science, or related fields preferred.",
       "platform": "linkedin",
-      "engagementRate": 4.22
+      "engagementRate": 3.95
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",

@@ -1,6 +1,59 @@
 {
   "papers": [
     {
+      "id": "bibtex:Kim2026-wg",
+      "title": "Targeted digital voter suppression efforts likely decrease voter turnout",
+      "authors": [
+        "Young Mie Kim",
+        "Ross Dahlke",
+        "Hyebin Song",
+        "Richard Heinrich"
+      ],
+      "venue": null,
+      "year": 2026,
+      "url": "https://doi.org/10.1073/pnas.2519944123",
+      "doi": "10.1073/pnas.2519944123",
+      "abstract": "In light of continued foreign interference in the US presidential elections, where undisclosed digital voter suppression advertising has been deployed, this study addresses the questions of who is exposed to these ads and whether and how such exposure influences voter turnout. Using a sample that resembles the US voting-age population, the study directly measures each individual’s ad exposure through a user-level real-time ad tracking tool, which is merged with the same individual’s survey respo...",
+      "tags": [
+        "Proceedings of the National Academy of Sciences",
+        "Article",
+        "voter suppression",
+        "advertising",
+        "foreign election interference",
+        "microtargeting",
+        "social media"
+      ],
+      "dateAdded": "2026-02-03T00:00:00Z",
+      "status": "to-read",
+      "citationCount": 0,
+      "referenceCount": 55,
+      "type": "article",
+      "confidenceScore": 0.83
+    },
+    {
+      "id": "bibtex:Cazzamatta2026-lo",
+      "title": "From moderation to chaos: Meta’s fact-checking and the battle over truth and free speech",
+      "authors": [
+        "Regina Cazzamatta"
+      ],
+      "venue": "SAGE Publications",
+      "year": 2026,
+      "url": "https://doi.org/10.1177/14614448251413687",
+      "doi": "10.1177/14614448251413687",
+      "abstract": "Following Zuckerberg’s decision to terminate third-party fact-checking and his association of fact-checkers with censorship, this article examines how platforms respond to falsehoods post-debunking and explores fact-checkers’ views on effective content moderation, particularly regarding content removal or reduced visibility. A comparative content analysis of 2053 debunking articles by 16 Meta partners across 8 European and Latin American countries reveals that most false content was labeled or r...",
+      "tags": [
+        "Article",
+        "New Media &amp; Society"
+      ],
+      "dateAdded": "2026-01-27T00:00:00Z",
+      "status": "to-read",
+      "citationCount": 0,
+      "referenceCount": 47,
+      "publisher": "SAGE Publications",
+      "type": "article",
+      "confidenceScore": 0.8999999999999999
+    },
+    {
       "id": "bibtex:Hameleers2026-mc",
       "title": "Beyond textual disinformation: Comparing the effects of textual disinformation to AI-generated and video-based visual disinformation across different issues",
       "authors": [
@@ -13,8 +66,8 @@
       "doi": "10.1177/14614448251409208",
       "abstract": "Although visual and AI-generated disinformation have been associated with alarming political consequences, we currently lack a clear empirical understanding of the effects of different forms of visual disinformation. Against this background, we rely on a pre-registered experimental study in the United States ( N = 982) in which we exposed participants to various modes of textual and visual disinformation on two different issues: The disappearance of flight MH370 and the Russian invasion of Ukrai...",
       "tags": [
-        "New Media &amp; Society",
-        "Article"
+        "Article",
+        "New Media &amp; Society"
       ],
       "dateAdded": "2026-01-23T00:00:00Z",
       "status": "to-read",
@@ -64,13 +117,13 @@
       "doi": "10.1002/mar.70106",
       "abstract": "ABSTRACT Research on misinformation has focused on message content and cognitive bias, overlooking how source type shapes toxic engagement. This study addresses that gap by showing that influencer‐driven misinformation does not merely increase toxicity: it reconfigures its nature and persistence through relational and social influence mechanisms. Drawing on Source Credibility, Parasocial Interaction, and Social Influence theories, we analyse 101 brand‐related misinformation posts (48,821 comment...",
       "tags": [
-        "audience polarization",
-        "symbolic brand attacks",
-        "Psychology &amp; Marketing",
-        "digital misinformation",
         "social media influencers",
+        "toxic online discourse",
         "Article",
-        "toxic online discourse"
+        "audience polarization",
+        "Psychology &amp; Marketing",
+        "symbolic brand attacks",
+        "digital misinformation"
       ],
       "dateAdded": "2026-01-19T00:00:00Z",
       "status": "to-read",
@@ -94,9 +147,9 @@
       "url": "http://arxiv.org/abs/2601.11507v1",
       "abstract": "To what extent is social media research independent from industry influence? Leveraging openly available data, we show that half of the research published in top journals has disclosable ties to industry in the form of prior funding, collaboration, or employment. However, the majority of these ties go undisclosed in the published research. These trends do not arise from broad scientific engagement with industry, but rather from a select group of scientists who maintain long-lasting relationships...",
       "tags": [
-        "cs.SI",
         "Article",
-        "arXiv [cs.SI]"
+        "arXiv [cs.SI]",
+        "cs.SI"
       ],
       "dateAdded": "2026-01-16T00:00:00Z",
       "status": "to-read",
@@ -166,8 +219,8 @@
       "doi": "10.31219/osf.io/qm9yk_v3",
       "abstract": "Advances in AI portend a new era of sophisticated disinformation operations. While individual AI systems already create convincing—and at times misleading—information, an imminent development is the emergence of malicious AI swarms. These systems can coordinate covertly, infiltrate communities, evade traditional detectors, and run continuous A/B tests, with round-the-clock persistence. The result can include fabricated grassroots consensus, fragmented shared reality, mass harassment, voter micro...",
       "tags": [
-        "Science",
-        "Article"
+        "Article",
+        "Science"
       ],
       "dateAdded": "2026-01-15T00:00:00Z",
       "status": "to-read",
@@ -189,8 +242,8 @@
       "doi": "10.1177/29768624251408212",
       "abstract": "Social media platforms evolve rapidly. While platform studies have often analyzed specific policy or feature changes, there remains a lack of shared language to conceptualize how platforms themselves represent such changes. In this article, we analyze public communications from Meta, YouTube, X, and TikTok to examine how platforms construct and justify change. We explicate platform evolution as a technical but also deeply discursive process. Platforms frame their transformations in interesting w...",
       "tags": [
-        "Platforms &amp; Society",
-        "Article"
+        "Article",
+        "Platforms &amp; Society"
       ],
       "dateAdded": "2026-01-15T00:00:00Z",
       "status": "to-read",
@@ -216,8 +269,8 @@
       "doi": "10.1016/j.chb.2026.108920",
       "abstract": "Published in Comput. Human Behav. | Year: 2026 | Authors: Dubey, Shreya, Ketelaar, Paul E, Dingler, Tilman, Peetz, Hannah K, van Schie, Hein T",
       "tags": [
-        "Computers in Human Behavior",
-        "Article"
+        "Article",
+        "Computers in Human Behavior"
       ],
       "dateAdded": "2026-01-15T00:00:00Z",
       "status": "to-read",
@@ -287,8 +340,8 @@
       "doi": "10.1177/14614448251408336",
       "abstract": "This article examines the visual securitising discourse of Sweden Democrats (SD) through a qualitatively centred analysis of the party’s 2024 European Union (EU) election campaign and its official election slogan ‘My Europe Builds Walls: Against Immigration, Against Criminal Gangs, Against Islamists’. Through a comparative, cross-platform multimodal critical discourse analysis (MCDA) of SD’s posts on Facebook, X and TikTok, this article explores the differences in campaign content across platfor...",
       "tags": [
-        "New Media &amp; Society",
-        "Article"
+        "Article",
+        "New Media &amp; Society"
       ],
       "dateAdded": "2026-01-12T00:00:00Z",
       "status": "to-read",
@@ -312,8 +365,8 @@
       "doi": "10.1177/14614448251409209",
       "abstract": "This article investigates the persistence and transformation of Andrew Tate’s presence on YouTube following the removal of his official channels in August 2022. Combining two empirical approaches—a small-scale analysis of top-ranked videos from YouTube search results in 2022 and 2024, and a large-scale data set of over 112k videos—we examine how Tate-related content continues to circulate and how the platform moderates such material. Our findings show that Tate remains highly visible through a d...",
       "tags": [
-        "New Media &amp; Society",
-        "Article"
+        "Article",
+        "New Media &amp; Society"
       ],
       "dateAdded": "2026-01-12T00:00:00Z",
       "status": "to-read",
@@ -363,8 +416,8 @@
       "doi": "10.1080/09668136.2025.2588334",
       "abstract": "Published in Eur. Asia. Stud. | Year: 2026 | Authors: Poliakoff, Serge, Toepfl, Florian",
       "tags": [
-        "Europe-Asia Studies",
-        "Article"
+        "Article",
+        "Europe-Asia Studies"
       ],
       "dateAdded": "2026-01-08T00:00:00Z",
       "status": "to-read",
@@ -386,13 +439,13 @@
       "doi": "10.5210/fm.v31i1.14448",
       "abstract": "This study investigates the dynamics of online political communication on Facebook, focusing on the Facebook posts made by the Norwegian Progress Party and its recent leaders, Siv Jensen and Sylvi Listhaug, over a decade-long period. Answering the call for longitudinal insights into political communication, we utilize a novel hybrid content analysis approach combining large language models (LLMs) and human classification, to assess the sentiment of Facebook posts — categorized as negative, posit...",
       "tags": [
-        "Facebook",
-        "Content Analysis",
-        "Large Language Models",
-        "Norway",
         "Political Communication",
+        "Facebook",
+        "Article",
+        "Content Analysis",
         "First Monday",
-        "Article"
+        "Large Language Models",
+        "Norway"
       ],
       "dateAdded": "2026-01-08T00:00:00Z",
       "status": "to-read",
@@ -418,8 +471,8 @@
       "doi": "10.1080/1062726x.2025.2606676",
       "abstract": "Published in J. Publ. Relat. Res. | Year: 2026 | Authors: Arceneaux, Phillip, Anderson, Joshua, Lukito, Josephine, Shah, Mansi, Kiousis, Spiro",
       "tags": [
-        "Journal of Public Relations Research",
-        "Article"
+        "Article",
+        "Journal of Public Relations Research"
       ],
       "dateAdded": "2026-01-04T00:00:00Z",
       "status": "to-read",
@@ -440,11 +493,11 @@
       "url": "http://arxiv.org/abs/2601.00306v1",
       "abstract": "Generative AI (GenAI) now produces text, images, audio, and video that can be perceptually convincing at scale and at negligible marginal cost. While public debate often frames the associated harms as \"deepfakes\" or incremental extensions of misinformation and fraud, this view misses a broader socio-technical shift: GenAI enables synthetic realities; coherent, interactive, and potentially personalized information environments in which content, identity, and social interaction are jointly manufac...",
       "tags": [
-        "cs.AI",
         "cs.CY",
-        "arXiv [cs.CY]",
+        "Article",
         "cs.HC",
-        "Article"
+        "cs.AI",
+        "arXiv [cs.CY]"
       ],
       "dateAdded": "2026-01-01T00:00:00Z",
       "status": "to-read",
@@ -467,13 +520,13 @@
       "doi": "10.1111/bjop.70049",
       "abstract": "Abstract Climate misinformation reduces public acceptance of climate change and undermines support for mitigation policies. This study explored the impact of different types of climate misinformation, examining through content‐based and logic‐based frameworks. The content‐based framework was based on a taxonomy of contrarian claims consisting of five categories—it's not real, it's not us, it's not bad, climate solutions won't work and scientists are not reliable. The logic‐based framework examin...",
       "tags": [
+        "Article",
+        "reasoning fallacies",
+        "virality",
         "veracity",
         "misinformation",
         "British Journal of Psychology",
-        "reasoning fallacies",
-        "virality",
-        "social media",
-        "Article"
+        "social media"
       ],
       "dateAdded": "2025-12-29T00:00:00Z",
       "status": "to-read",
@@ -522,8 +575,8 @@
       "doi": "10.1080/10584609.2025.2604708",
       "abstract": "Published in Polit. Commun. | Year: 2025 | Authors: Knüpfer, Curd B, Yang, Yunkang, Cowburn, Mike",
       "tags": [
-        "Political Communication",
-        "Article"
+        "Article",
+        "Political Communication"
       ],
       "dateAdded": "2025-12-23T00:00:00Z",
       "status": "to-read",
@@ -547,10 +600,10 @@
       "url": "http://arxiv.org/abs/2512.19677v1",
       "abstract": "In the era of widespread online content consumption, effective detection of coordinated efforts is crucial for mitigating potential threats arising from information manipulation. Despite advances in isolating inauthentic and automated actors, the actions of individual accounts involved in influence campaigns may not stand out as anomalous if analyzed independently of the coordinated group. Given the collaborative nature of information operations, coordinated campaigns are better characterized by...",
       "tags": [
-        "cs.SI",
         "Article",
+        "cs.CY",
         "arXiv [cs.SI]",
-        "cs.CY"
+        "cs.SI"
       ],
       "dateAdded": "2025-12-22T00:00:00Z",
       "status": "to-read",
@@ -577,8 +630,8 @@
       "url": "http://arxiv.org/abs/2512.14223v1",
       "abstract": "The Digital Services Act (DSA) introduced by the European Union in 2022 offers a landmark framework for platform transparency, with Article 40 enabling vetted researchers to access data from major online platforms. Yet significant legal, technical, and organizational barriers still hinder effective research on systemic online risks. This piece outlines the key challenges emerging from the Article 40 process and proposes practical measures to ensure that the DSA fulfills its transparency and acco...",
       "tags": [
-        "cs.SI",
         "Article",
+        "cs.SI",
         "arXiv [cs.CY]",
         "cs.CY"
       ],
@@ -588,54 +641,6 @@
       "referenceCount": 0,
       "type": "article",
       "confidenceScore": 0.7142857142857142
-    },
-    {
-      "id": "bibtex:Renault2025-kv",
-      "title": "@Grok is this true? LLM-powered fact-checking on social media",
-      "authors": [
-        "Thomas Renault",
-        "Mohsen Mosleh",
-        "David Gertler Rand"
-      ],
-      "venue": null,
-      "year": 2025,
-      "url": "https://doi.org/10.31234/osf.io/85quw_v2",
-      "doi": "10.31234/osf.io/85quw_v2",
-      "abstract": "Large language models (LLMs) are increasingly embedded directly into social media platforms, enabling users to request real-time fact-checks of online content. Using an exhaustive dataset of 1,671,841 English-language fact-checking requests made to Grok and Perplexity on X between February and September 2025, we provide the first large-scale empirical analysis of how LLM-based fact-checking operates in the wild. Fact-checking requests comprise 7.6% of all interactions with the LLM bots, and focu...",
-      "tags": [
-        "Article",
-        "PsyArXiv"
-      ],
-      "dateAdded": "2025-12-15T00:00:00Z",
-      "status": "to-read",
-      "citationCount": 0,
-      "referenceCount": 0,
-      "type": "article",
-      "confidenceScore": 0.8749999999999999
-    },
-    {
-      "id": "bibtex:Efstratiou2025-gs",
-      "title": "Rabble-rousers in the new king&#x27;s court: Algorithmic effects on account visibility in pre-X twitter",
-      "authors": [
-        "Alexandros Efstratiou",
-        "Kayla Duskin",
-        "Kate Starbird",
-        "Emma S. Spiro"
-      ],
-      "venue": null,
-      "year": 2025,
-      "url": "https://arxiv.org/abs/2512.06129",
-      "abstract": "Algorithmic effects on social media platforms have come under recent scrutiny, with several works reporting that right-leaning accounts tend to receive more exposure. In this paper, we expand upon this body of work using data collected from user feeds after Twitter's change of ownership but before its re-branding to X. We replicate findings from prior work regarding the increased exposure of right-leaning accounts to wider audiences in algorithmically curated compared to reverse-chronological fe...",
-      "tags": [
-        "Article",
-        "arXiv [cs.SI]"
-      ],
-      "dateAdded": "2025-12-15T00:00:00Z",
-      "status": "to-read",
-      "citationCount": 0,
-      "referenceCount": 25,
-      "type": "article",
-      "confidenceScore": 0.73
     },
     {
       "id": "bibtex:Gardam2025-er",
@@ -682,16 +687,41 @@
       "doi": "10.1038/s41586-025-09771-9",
       "abstract": "There is great public concern about the potential use of generative artificial intelligence (AI) for political persuasion and the resulting impacts on elections and democracy1–6. We inform these concerns using pre-registered experiments to assess the ability of large language models to influence voter attitudes. In the context of the 2024 US presidential election, the 2025 Canadian federal election and the 2025 Polish presidential election, we assigned participants randomly to have a conversatio...",
       "tags": [
-        "Nature",
-        "Article"
+        "Article",
+        "Nature"
       ],
       "dateAdded": "2025-12-11T00:00:00Z",
       "status": "to-read",
-      "citationCount": 2,
+      "citationCount": 3,
       "referenceCount": 58,
       "publisher": "Springer Science and Business Media LLC",
       "type": "article",
       "confidenceScore": 0.8142857142857142
+    },
+    {
+      "id": "bibtex:Efstratiou2025-gs",
+      "title": "Rabble-rousers in the new king&#x27;s court: Algorithmic effects on account visibility in pre-X twitter",
+      "authors": [
+        "Alexandros Efstratiou",
+        "Kayla Duskin",
+        "Kate Starbird",
+        "Emma Spiro"
+      ],
+      "venue": null,
+      "year": 2025,
+      "url": "http://arxiv.org/abs/2512.06129v1",
+      "abstract": "Algorithmic effects on social media platforms have come under recent scrutiny, with several works reporting that right-leaning accounts tend to receive more exposure. In this paper, we expand upon this body of work using data collected from user feeds after Twitter's change of ownership but before its re-branding to X. We replicate findings from prior work regarding the increased exposure of right-leaning accounts to wider audiences in algorithmically curated compared to reverse-chronological fe...",
+      "tags": [
+        "Article",
+        "arXiv [cs.SI]",
+        "cs.SI"
+      ],
+      "dateAdded": "2025-12-05T00:00:00Z",
+      "status": "to-read",
+      "citationCount": 0,
+      "referenceCount": 0,
+      "type": "article",
+      "confidenceScore": 0.7333333333333333
     },
     {
       "id": "bibtex:Kalsnes2025-zb",
@@ -730,13 +760,13 @@
       "doi": "10.1073/pnas.2421111122",
       "abstract": "As AI systems from decision-making algorithms to generative AI are deployed more widely, computer scientists and social scientists alike are being called on to provide trustworthy quantitative evaluations of AI safety and reliability. These calls have included demands from affected parties to be given a seat at the table of AI evaluation. What, if anything, can public involvement add to the science of AI? In this perspective, we summarize the sociotechnical challenge of evaluating AI systems, wh...",
       "tags": [
-        "Proceedings of the National Academy of Sciences",
-        "AI",
-        "policy",
-        "citizen science",
-        "evaluation",
         "participatory research",
-        "Article"
+        "Proceedings of the National Academy of Sciences",
+        "Article",
+        "evaluation",
+        "citizen science",
+        "AI",
+        "policy"
       ],
       "dateAdded": "2025-12-02T00:00:00Z",
       "status": "to-read",
@@ -787,8 +817,8 @@
       "doi": "10.1126/science.aec7388",
       "abstract": "Changing algorithms with artificial intelligence tools can influence partisan animosity",
       "tags": [
-        "Science",
-        "Article"
+        "Article",
+        "Science"
       ],
       "dateAdded": "2025-11-27T00:00:00Z",
       "status": "to-read",
@@ -797,30 +827,6 @@
       "publisher": "American Association for the Advancement of Science (AAAS)",
       "type": "article",
       "confidenceScore": 0.85
-    },
-    {
-      "id": "bibtex:Rieder2025-ju",
-      "title": "Forgetful by design? A critical audit of YouTube&#x27;s search API for academic research",
-      "authors": [
-        "Bernhard Rieder",
-        "Adrián Padilla",
-        "Òscar Coromina"
-      ],
-      "venue": null,
-      "year": 2025,
-      "url": "https://doi.org/10.1080/1369118x.2025.2591767",
-      "doi": "10.1080/1369118x.2025.2591767",
-      "abstract": "This paper critically audits the search endpoint of YouTube's Data API (v3), a common tool for academic research. Through systematic weekly searches over six months using eleven queries, we identify major limitations regarding completeness, representativeness, consistency, and bias. Our findings reveal substantial differences between ranking parameters like relevance and date in terms of video recall and precision, with relevance often retrieving numerous off-topic videos. We also find severe te...",
-      "tags": [
-        "Article",
-        "Information, Communication &amp; Society"
-      ],
-      "dateAdded": "2025-11-24T00:00:00Z",
-      "status": "to-read",
-      "citationCount": 0,
-      "referenceCount": 39,
-      "type": "article",
-      "confidenceScore": 0.7999999999999999
     },
     {
       "id": "bibtex:Song2025-yh",
@@ -861,9 +867,9 @@
       "url": "http://arxiv.org/abs/2511.09685v1",
       "abstract": "Elon Musk released Grokipedia on 27 October 2025 to provide an alternative to Wikipedia, the crowdsourced online encyclopedia. In this paper, we provide the first comprehensive analysis of Grokipedia and compare it to a dump of Wikipedia, with a focus on article similarity and citation practices. Although Grokipedia articles are much longer than their corresponding English Wikipedia articles, we find that much of Grokipedia's content (including both articles with and without Creative Commons lic...",
       "tags": [
-        "cs.SI",
         "Article",
-        "arXiv [cs.SI]"
+        "arXiv [cs.SI]",
+        "cs.SI"
       ],
       "dateAdded": "2025-11-12T00:00:00Z",
       "status": "to-read",
@@ -886,8 +892,8 @@
       "doi": "10.4324/9781003628088-6",
       "abstract": "Year: 2025 | Authors: FitzGerald, Katherine M, Whelan-Shamy, Daniel, Graham, Timothy",
       "tags": [
-        "Incollection",
-        "Authoritarian Actors and Strategic Digital Information Operations"
+        "Authoritarian Actors and Strategic Digital Information Operations",
+        "Incollection"
       ],
       "dateAdded": "2025-11-05T00:00:00Z",
       "status": "to-read",
@@ -914,9 +920,9 @@
       "url": "http://arxiv.org/abs/2510.25003v1",
       "abstract": "Generative agents are rapidly advancing in sophistication, raising urgent questions about how they might coordinate when deployed in online ecosystems. This is particularly consequential in information operations (IOs), influence campaigns that aim to manipulate public opinion on social media. While traditional IOs have been orchestrated by human operators and relied on manually crafted tactics, agentic AI promises to make campaigns more automated, adaptive, and difficult to detect. This work pr...",
       "tags": [
-        "arXiv [cs.MA]",
+        "Article",
         "cs.MA",
-        "Article"
+        "arXiv [cs.MA]"
       ],
       "dateAdded": "2025-10-28T00:00:00Z",
       "status": "to-read",
@@ -939,10 +945,10 @@
       "url": "http://arxiv.org/abs/2510.19894v2",
       "abstract": "Emerging information technologies like social media, search engines, and AI can have a broad impact on public health, political institutions, social dynamics, and the natural world. It is critical to develop a scientific understanding of these impacts to inform evidence-based technology policy that minimizes harm and maximizes benefits. Unlike most other global-scale scientific challenges, however, the data necessary for scientific progress are generated and controlled by the same industry that ...",
       "tags": [
-        "cs.SI",
         "Article",
+        "cs.HC",
         "arXiv [cs.SI]",
-        "cs.HC"
+        "cs.SI"
       ],
       "dateAdded": "2025-10-22T00:00:00Z",
       "status": "to-read",
@@ -965,12 +971,12 @@
       "doi": "10.1145/3757522",
       "abstract": "Pervasive falsehoods that erode trust in election processes are of increasing concern to democracies around the world. Misleading claims like these are often understood as simply ''getting the facts wrong''. Using a grounded, interpretative, mixed-method approach to study Twitter activity during the 2022 U.S. Midterm Election in Arizona, our work paints a more nuanced picture. We adapt Klein's data-frame theory of collective sensemaking to online rumors, demonstrating how misleading claims about...",
       "tags": [
-        "Proceedings of the ACM on Human-Computer Interaction",
-        "Article"
+        "Article",
+        "Proceedings of the ACM on Human-Computer Interaction"
       ],
       "dateAdded": "2025-10-18T00:00:00Z",
       "status": "to-read",
-      "citationCount": 1,
+      "citationCount": 2,
       "referenceCount": 49,
       "publisher": "Association for Computing Machinery (ACM)",
       "type": "article",
@@ -995,12 +1001,12 @@
       "doi": "10.1145/3757576",
       "abstract": "Misinformation and disinformation about elections remain pressing concerns for researchers, policymakers, and the public. Critics, however, argue that fears surrounding these issues are exaggerated due to a lack of evidence of impact. This debate highlights the challenges inherent in assessing the impacts of misinformation, as the drivers of false and misleading content often exist in the context of a specific claim. To address this issue, we examined false and misleading information surrounding...",
       "tags": [
-        "Proceedings of the ACM on Human-Computer Interaction",
-        "Article"
+        "Article",
+        "Proceedings of the ACM on Human-Computer Interaction"
       ],
       "dateAdded": "2025-10-18T00:00:00Z",
       "status": "to-read",
-      "citationCount": 1,
+      "citationCount": 2,
       "referenceCount": 83,
       "publisher": "Association for Computing Machinery (ACM)",
       "type": "article",
@@ -1022,8 +1028,8 @@
       "doi": "10.31235/osf.io/frcv5_v1",
       "abstract": "The production–consumption gap on social media is a consistent finding across time, platforms, and cultural contexts: A small minority of highly active users produce the majority of online political content, while the majority of users consume content passively and remainlargely silent. Online content thus reveals only the tip of an iceberg, from which citizens and scholars alike are apt to draw incorrect inferences regarding the submerged mass of public opinion. This has substantive as well as ...",
       "tags": [
-        "SocArXiv",
-        "Article"
+        "Article",
+        "SocArXiv"
       ],
       "dateAdded": "2025-10-15T00:00:00Z",
       "status": "to-read",
@@ -1049,8 +1055,8 @@
       "doi": "10.1038/s44260-025-00053-z",
       "abstract": "Abstract Debates about misinformation and countermeasures are often driven by dramatic analogies, such as “infodemic” or “information warfare”. While useful shortcuts to interference, these analogies obscure the complex system through which misinformation propagates, leaving perceptual gaps where solutions lie unseen. We present a new framework of the complex multilevel system through which misinformation propagates and show how popular analogies fail to account for this complexity. We discuss i...",
       "tags": [
-        "npj Complexity",
-        "Article"
+        "Article",
+        "npj Complexity"
       ],
       "dateAdded": "2025-10-01T00:00:00Z",
       "status": "to-read",
@@ -1074,8 +1080,8 @@
       "doi": "10.3233/faia250576",
       "abstract": "The growing popularity of social media platforms such as X, Instagram, TikTok, and, more recently, Bluesky, has led to an increase in fake data and misinformation. Although fact checking is essential, misinformation is often perceived as true when a post goes viral. Viralization is frequently driven by coordinated activity. While organic coordination can exist, the presence of coordinated bot networks poses a significant threat to information integrity. This paper focuses on real time detection ...",
       "tags": [
-        "Incollection",
-        "Frontiers in Artificial Intelligence and Applications"
+        "Frontiers in Artificial Intelligence and Applications",
+        "Incollection"
       ],
       "dateAdded": "2025-09-22T00:00:00Z",
       "status": "to-read",
@@ -1124,8 +1130,8 @@
       "doi": "10.31235/osf.io/bf459",
       "abstract": "Automated image categorization is vital for computational social science, particularly considering the rise of visual content on social media, as it helps the identification of emerging visual narratives in online debates. However, the methods currently used in the field to represent images numerically are unable to fully capture their connotative meaning and do not produce interpretable clusters. In response to these challenges, we evaluate an approach based on the automated generation of inter...",
       "tags": [
-        "Soc. Sci. Comput. Rev.",
-        "Article"
+        "Article",
+        "Soc. Sci. Comput. Rev."
       ],
       "dateAdded": "2025-09-15T00:00:00Z",
       "status": "to-read",
@@ -1151,16 +1157,16 @@
       "doi": "10.17645/mac.10733",
       "abstract": "Technology has reshaped political communication, allowing fake engagement to drive real influence in the democratic process. Hyperactive social media users, who are over-proportionally active in relation to the mean, are the new political activists, spreading partisan content at scale on social media platforms. Using The Authenticity Matrix tool, this study revealed Facebook accounts of hyperactive users exhibiting inauthentic behaviour that were used during the electoral campaign (May 10, 2024,...",
       "tags": [
-        "Meta",
+        "political communication",
+        "election campaign",
+        "manipulation",
+        "inauthentic behavior",
         "Facebook",
         "Article",
-        "social media",
-        "Media and Communication",
-        "election campaign",
         "fake accounts",
-        "manipulation",
-        "political communication",
-        "inauthentic behavior"
+        "Meta",
+        "Media and Communication",
+        "social media"
       ],
       "dateAdded": "2025-09-04T00:00:00Z",
       "status": "to-read",
@@ -1215,7 +1221,7 @@
       ],
       "dateAdded": "2025-08-09T00:00:00Z",
       "status": "to-read",
-      "citationCount": 3,
+      "citationCount": 4,
       "referenceCount": 81,
       "publisher": "Informa UK Limited",
       "type": "article",
@@ -1238,7 +1244,7 @@
       ],
       "dateAdded": "2025-07-29T00:00:00Z",
       "status": "to-read",
-      "citationCount": 0,
+      "citationCount": 1,
       "referenceCount": 47,
       "publisher": "Informa UK Limited",
       "type": "article",
@@ -1260,8 +1266,8 @@
       "doi": "10.1177/14614448251350100",
       "abstract": "Social media are key arenas for public opinion formation, but are susceptible to coordinated social media manipulation (CSMM), that is, the orchestrated activity of multiple accounts to increase content visibility and deceive audiences. Despite advances in detecting and characterizing CSMM, the attribution problem—identifying the principals behind CSMM campaigns—has received little scholarly attention. In this article, we address this gap by synthesizing existing research and developing a theore...",
       "tags": [
-        "New Media &amp; Society",
-        "Article"
+        "Article",
+        "New Media &amp; Society"
       ],
       "dateAdded": "2025-07-29T00:00:00Z",
       "status": "to-read",
@@ -1286,13 +1292,13 @@
       "url": "http://arxiv.org/abs/2507.12108v2",
       "abstract": "Coordinated online behavior, which spans from beneficial collective actions to harmful manipulation such as disinformation campaigns, has become a key focus in digital ecosystem analysis. Traditional methods often rely on monomodal approaches, focusing on single types of interactions like co-retweets or co-hashtags, or consider multiple modalities independently of each other. However, these approaches may overlook the complex dynamics inherent in multimodal coordination. This study compares diff...",
       "tags": [
-        "cs.AI",
-        "arXiv [cs.SI]",
-        "cs.CY",
         "cs.SI",
-        "cs.LG",
+        "Article",
         "cs.HC",
-        "Article"
+        "cs.AI",
+        "cs.LG",
+        "cs.CY",
+        "arXiv [cs.SI]"
       ],
       "dateAdded": "2025-07-16T00:00:00Z",
       "status": "to-read",
@@ -1340,8 +1346,8 @@
       "doi": "10.1177/20531680251356282",
       "abstract": "We present ConflLlama, demonstrating how efficient fine-tuning of large language models can advance automated classification tasks in political science research. While classification of political events has traditionally relied on manual coding or rigid rule-based systems, modern language models offer the potential for more nuanced, context-aware analysis. However, deploying these models requires overcoming significant technical and resource barriers. We demonstrate how to adapt open-source lang...",
       "tags": [
-        "Research &amp; Politics",
-        "Article"
+        "Article",
+        "Research &amp; Politics"
       ],
       "dateAdded": "2025-07-15T00:00:00Z",
       "status": "to-read",
@@ -1366,8 +1372,8 @@
       "doi": "10.1177/20563051251357483",
       "abstract": "This article investigates the intersection of identity, power, and knowledge production on U.S. ConspiracyTok, a genre of TikTok videos promoting conspiracy theories ranging from harmless speculation to harmful disinformation. Drawing on qualitative content analysis of 202 highly viewed videos, we examine how identity markers such as race and gender shape who is empowered or undermined in conspiratorial narratives, and how creators construct and circulate “evidence” to support their claims. We f...",
       "tags": [
-        "Social Media + Society",
-        "Article"
+        "Article",
+        "Social Media + Society"
       ],
       "dateAdded": "2025-07-15T00:00:00Z",
       "status": "to-read",
@@ -1412,8 +1418,8 @@
       "doi": "10.1093/ct/qtaf013",
       "abstract": "Abstract The concept of narrative has been widely employed in the disinformation literature. Nonetheless, its use has been dominated by loose intuitions of what narratives are and do alongside vague accounts of specific stories. Theorized more carefully, thinking in terms of narrative has much to offer disinformation studies by helping to better define what constitutes disinformation and providing sophisticated frameworks for assessing specific content. To enable a nuanced view of narrative trut...",
       "tags": [
-        "Communication Theory",
-        "Article"
+        "Article",
+        "Communication Theory"
       ],
       "dateAdded": "2025-07-09T00:00:00Z",
       "status": "to-read",
@@ -1449,31 +1455,6 @@
       "referenceCount": 0,
       "type": "article",
       "confidenceScore": 0.6064102564102565
-    },
-    {
-      "id": "bibtex:Entrena-Serrano2025-gw",
-      "title": "TikTok&#x27;s Research API: Problems Without Explanations",
-      "authors": [
-        "Carlos Entrena-Serrano",
-        "Martin Degeling",
-        "Salvatore Romano",
-        "Raziye Buse Çetin"
-      ],
-      "venue": null,
-      "year": 2025,
-      "url": "https://doi.org/10.48550/arXiv.2506.09746",
-      "doi": "10.48550/arXiv.2506.09746",
-      "abstract": "Following the Digital Services Act of 2023, which requires Very Large Online Platforms (VLOPs) and Very Large Online Search Engines (VLOSEs) to facilitate data accessibility for independent research, TikTok augmented its Research API access within Europe in July 2023. This action was intended to ensure compliance with the DSA, bolster transparency, and address systemic risks. Nonetheless, research findings reveal that despite this expansion, notable limitations and inconsistencies persist within...",
-      "tags": [
-        "arXiv.org",
-        "Article"
-      ],
-      "dateAdded": "2025-06-15T00:00:00Z",
-      "status": "to-read",
-      "citationCount": 1,
-      "referenceCount": 0,
-      "type": "article",
-      "confidenceScore": 0.76
     },
     {
       "id": "bibtex:Renault2025-uh",
@@ -1520,8 +1501,8 @@
       "doi": "10.1177/00491241251340080",
       "abstract": "How can one understand the spread of ideas across text data? This is a key measurement problem in sociological inquiry, from the study of how interest groups shape media discourse, to the spread of policy across institutions, to the diffusion of organizational structures and institution themselves. To study how ideas and narratives diffuse across text, we must first develop a method to identify whether texts share the same information and narratives, rather than the same broad themes or exact fe...",
       "tags": [
-        "Sociological Methods &amp; Research",
-        "Article"
+        "Article",
+        "Sociological Methods &amp; Research"
       ],
       "dateAdded": "2025-06-15T00:00:00Z",
       "status": "to-read",
@@ -1543,20 +1524,47 @@
       "url": "https://scholar.google.com/scholar?q=True%20costs%20of%20misinformation%7C%20mountains%20of%20evidence%3A%20Processual%20%E2%80%9Credpilling%E2%80%9D%20as%20a%20Socio-technical%20effect%20of%20disinformation",
       "abstract": "How do people come to believe Far-Right, extremist, and conspiratorial ideas they encounter online? This article examines how participants in primarily U.S.-based Far-Right online communities describe their adoption of “redpill” beliefs and the role of disinformation in these accounts. Applying the socio-technical theory of media effects, we conduct a qualitative content analysis of “redpilling narratives” gathered from Reddit, Gab, and Discord. While many users frame redpilling as a moment of c...",
       "tags": [
-        "extremism",
+        "evidence",
+        "Far-Right",
         "Article",
         "Int. J. Commun.",
-        "redpill",
-        "disinformation",
         "online radicalization",
-        "Far-Right",
-        "evidence"
+        "disinformation",
+        "redpill",
+        "extremism"
       ],
       "dateAdded": "2025-06-15T00:00:00Z",
       "status": "to-read",
       "citationCount": 0,
       "referenceCount": 0,
       "type": "article"
+    },
+    {
+      "id": "bibtex:Rieder2025-ju",
+      "title": "Forgetful by design? A critical audit of YouTube&#x27;s search API for academic research",
+      "authors": [
+        "Bernhard Rieder",
+        "Adrian Padilla",
+        "Oscar Coromina"
+      ],
+      "venue": null,
+      "year": 2025,
+      "url": "https://doi.org/10.1080/1369118X.2025.2591767",
+      "doi": "10.1080/1369118X.2025.2591767",
+      "abstract": "This paper critically audits the search endpoint of YouTube's Data API (v3), a common tool for academic research. Through systematic weekly searches over six months using eleven queries, we identify major limitations regarding completeness, representativeness, consistency, and bias. Our findings reveal substantial differences between ranking parameters like relevance and date in terms of video recall and precision, with relevance often retrieving numerous off-topic videos. We also observe severe...",
+      "tags": [
+        "Information, Communication and Society, 1-20",
+        "cs.SI",
+        "Article",
+        "cs.HC",
+        "cs.IR"
+      ],
+      "dateAdded": "2025-06-13T00:00:00Z",
+      "status": "to-read",
+      "citationCount": 0,
+      "referenceCount": 0,
+      "type": "article",
+      "confidenceScore": 0.7428571428571428
     },
     {
       "id": "bibtex:Ventura2025-sw",
@@ -1583,6 +1591,31 @@
       "publisher": "University of Chicago Press",
       "type": "article",
       "confidenceScore": 0.8333333333333333
+    },
+    {
+      "id": "bibtex:Entrena-Serrano2025-gw",
+      "title": "TikTok&#x27;s Research API: Problems Without Explanations",
+      "authors": [
+        "Carlos Entrena-Serrano",
+        "Martin Degeling",
+        "Salvatore Romano",
+        "Raziye Buse Çetin"
+      ],
+      "venue": null,
+      "year": 2025,
+      "url": "http://arxiv.org/abs/2506.09746v2",
+      "abstract": "Following the Digital Services Act of 2023, which requires Very Large Online Platforms (VLOPs) and Very Large Online Search Engines (VLOSEs) to facilitate data accessibility for independent research, TikTok augmented its Research API access within Europe in July 2023. This action was intended to ensure compliance with the DSA, bolster transparency, and address systemic risks. Nonetheless, research findings reveal that despite this expansion, notable limitations and inconsistencies persist within...",
+      "tags": [
+        "Article",
+        "arXiv [cs.CY]",
+        "cs.CY"
+      ],
+      "dateAdded": "2025-06-11T00:00:00Z",
+      "status": "to-read",
+      "citationCount": 0,
+      "referenceCount": 0,
+      "type": "article",
+      "confidenceScore": 0.76
     },
     {
       "id": "bibtex:Goel2025-iq",
@@ -1700,10 +1733,10 @@
       "url": "http://arxiv.org/abs/2505.21729v1",
       "abstract": "Political discourse has grown increasingly fragmented across different social platforms, making it challenging to trace how narratives spread and evolve within such a fragmented information ecosystem. Reconstructing social graphs and information diffusion networks is challenging, and available strategies typically depend on platform-specific features and behavioral signals which are often incompatible across systems and increasingly restricted. To address these challenges, we present a platform-...",
       "tags": [
-        "cs.SI",
         "Article",
+        "cs.CY",
         "arXiv [cs.SI]",
-        "cs.CY"
+        "cs.SI"
       ],
       "dateAdded": "2025-05-22T00:00:00Z",
       "status": "to-read",
@@ -1728,9 +1761,9 @@
       "url": "http://arxiv.org/abs/2505.10867v2",
       "abstract": "Detecting coordinated inauthentic behavior (CIB) is central to the study of online influence operations. However, most methods focus on text-centric platforms, leaving video-first ecosystems like TikTok largely unexplored. To address this gap, we develop and evaluate a computational framework for detecting CIB on TikTok, leveraging a network-based approach adapted to the platform's unique content and interaction structures. Building on existing approaches, we construct user similarity networks b...",
       "tags": [
-        "cs.SI",
         "Article",
-        "arXiv [cs.SI]"
+        "arXiv [cs.SI]",
+        "cs.SI"
       ],
       "dateAdded": "2025-05-16T00:00:00Z",
       "status": "to-read",
@@ -1759,7 +1792,7 @@
       ],
       "dateAdded": "2025-05-15T00:00:00Z",
       "status": "to-read",
-      "citationCount": 6,
+      "citationCount": 8,
       "referenceCount": 188,
       "publisher": "Springer Science and Business Media LLC",
       "type": "article",
@@ -1833,9 +1866,9 @@
       "url": "http://arxiv.org/abs/2505.08359v1",
       "abstract": "News sharing on digital platforms shapes the digital spaces millions of users navigate. Trace data from these platforms also enables researchers to study online news circulation. In this context, research on the types of news shared by users of differential political leaning has received considerable attention. We argue that most existing approaches (i) rely on an overly simplified measurement of political leaning, (ii) consider only the outlet level in their analyses, and/or (iii) study news ci...",
       "tags": [
-        "cs.SI",
         "Article",
-        "arXiv [cs.SI]"
+        "arXiv [cs.SI]",
+        "cs.SI"
       ],
       "dateAdded": "2025-05-13T00:00:00Z",
       "status": "to-read",
@@ -1861,11 +1894,11 @@
       "doi": "10.1038/s41598-025-00233-w",
       "abstract": "Malicious actors regularly attempt to manipulate social media using coordinated posting. Many existing methods for detecting this coordination, though, have relied primarily on post-timing, which is trivially easy to change. In this paper, we make a significant methodological advancement in coordination detection, leveraging highly regular statistical patterns in the speed and frequency of sharing. We apply and validate this approach on Facebook, using 11.2 million link posts from a list of 16,1...",
       "tags": [
-        "Facebook",
         "Scientific Reports",
-        "Coordination",
+        "Facebook",
+        "Article",
         "Social media",
-        "Article"
+        "Coordination"
       ],
       "dateAdded": "2025-05-05T00:00:00Z",
       "status": "to-read",
@@ -1891,8 +1924,8 @@
       "doi": "10.1080/10584609.2024.2439317",
       "abstract": "Published in Polit. Commun. | Year: 2025 | Authors: Votta, Fabio, Dobber, Tom, Guinaudeau, Benjamin, Helberger, Natali, de Vreese, Claes",
       "tags": [
-        "Political Communication",
-        "Article"
+        "Article",
+        "Political Communication"
       ],
       "dateAdded": "2025-05-04T00:00:00Z",
       "status": "to-read",
@@ -1917,12 +1950,12 @@
       "doi": "10.1145/3706598.3713662",
       "abstract": "Year: 2025 | Authors: Moran, Rachel Elizabeth, Schafer, Joseph, Bayar, Mert, Starbird, Kate",
       "tags": [
-        "Inproceedings",
-        "Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems"
+        "Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems",
+        "Inproceedings"
       ],
       "dateAdded": "2025-04-26T00:00:00Z",
       "status": "to-read",
-      "citationCount": 5,
+      "citationCount": 6,
       "referenceCount": 72,
       "publisher": "ACM",
       "type": "inproceedings",
@@ -1942,8 +1975,8 @@
       "doi": "10.1080/13501763.2025.2489088",
       "abstract": "Published in J. Eur. Public Policy | Year: 2025 | Authors: Gattermann, Katjana, van den Hoogen, Elske, de Vreese, Claes",
       "tags": [
-        "Journal of European Public Policy",
-        "Article"
+        "Article",
+        "Journal of European Public Policy"
       ],
       "dateAdded": "2025-04-15T00:00:00Z",
       "status": "to-read",
@@ -1969,8 +2002,8 @@
       "doi": "10.1177/20563051251331748",
       "abstract": "This article introduces the analytical approach of practice mapping , using vector embeddings of network actions and interactions to map commonalities and disjunctures in the practices of social media users, as a framework for methodological advancement beyond the limitations of conventional network analysis and visualization. In particular, the methodological framework we outline here has the potential to incorporate multiple distinct modes of interaction into a single practice map; can be furt...",
       "tags": [
-        "Social Media + Society",
-        "Article"
+        "Article",
+        "Social Media + Society"
       ],
       "dateAdded": "2025-04-15T00:00:00Z",
       "status": "to-read",
@@ -1992,8 +2025,8 @@
       "doi": "10.1177/20563051251332421",
       "abstract": "Conflict and disagreement are integral to healthy democracies, but the extreme polarization observed on many social media platforms poses a serious risk to the core functions of public communication. This theoretical article draws on the concept of connective democracy, further theorizing it to bridge the gap between empirical online deliberation and polarization research. It introduces and refines the concept of destructive polarization and its symptoms—manifested in user-generated content on s...",
       "tags": [
-        "Social Media + Society",
-        "Article"
+        "Article",
+        "Social Media + Society"
       ],
       "dateAdded": "2025-04-15T00:00:00Z",
       "status": "to-read",
@@ -2040,11 +2073,11 @@
       "url": "http://arxiv.org/abs/2503.23243v2",
       "abstract": "Researchers have proposed the use of generative large language models (LLMs) to label data for research and applied settings. This literature emphasizes the improved performance of these models relative to other natural language models, noting that generative LLMs typically outperform other models and even humans across several metrics. Previous literature has examined bias across many applications and contexts, but less work has focused specifically on bias in generative LLMs' responses to subj...",
       "tags": [
+        "Article",
+        "arXiv [cs.CL]",
         "cs.AI",
         "cs.CL",
-        "cs.CY",
-        "Article",
-        "arXiv [cs.CL]"
+        "cs.CY"
       ],
       "dateAdded": "2025-03-29T00:00:00Z",
       "status": "to-read",
@@ -2068,13 +2101,13 @@
       "doi": "10.1093/pnasnexus/pgaf106",
       "abstract": "Abstract As they evolve, social networks tend to form transitive triads more often than random chance and structural constraints would suggest. However, the mechanisms by which triads in these networks become transitive are largely unexplored. We leverage a unique combination of data and methods to demonstrate a causal link between amplification and triad transitivity in a directed social network. Additionally, we develop the concept of the “attention broker,” an extension of the previously theo...",
       "tags": [
-        "tertius iungens",
         "social networks",
-        "PNAS Nexus",
-        "social media",
-        "amplification",
         "triad transitivity",
-        "Article"
+        "tertius iungens",
+        "PNAS Nexus",
+        "Article",
+        "amplification",
+        "social media"
       ],
       "dateAdded": "2025-03-27T00:00:00Z",
       "status": "to-read",
@@ -2099,15 +2132,15 @@
       "url": "http://arxiv.org/abs/2503.20960v3",
       "abstract": "Automated frame analysis of political communication is a popular task in computational social science that is used to study how authors select aspects of a topic to frame its reception. So far, such studies have been narrow, in that they use a fixed set of pre-defined frames and focus only on the text, ignoring the visual contexts in which those texts appear. Especially for framing in the news, this leaves out valuable information about editorial choices, which include not just the written artic...",
       "tags": [
-        "cs.CL",
-        "cs.CY",
-        "cs.LG",
         "Machine Learning (cs.LG)",
-        "Computation and Language (cs.CL)",
-        "Misc",
-        "FOS: Computer and information sciences",
         "Computers and Society (cs.CY)",
-        "arXiv [cs.CL]"
+        "Computation and Language (cs.CL)",
+        "FOS: Computer and information sciences",
+        "Misc",
+        "cs.LG",
+        "arXiv [cs.CL]",
+        "cs.CL",
+        "cs.CY"
       ],
       "dateAdded": "2025-03-26T00:00:00Z",
       "status": "to-read",
@@ -2156,12 +2189,12 @@
       "doi": "10.1017/s1537592724002123",
       "abstract": "Democratic backsliding, the slow erosion of institutions, processes, and norms, has become more pronounced in many nations. Most scholars point to the role of parties, leaders, and institutional changes, along with the pursuit of voters through what Daniel Ziblatt has characterized as alliances with more extremist party surrogate organizations. Although insightful, the institutionalist literature offers little reflection about the growing role of social technologies in organizing and mobilizing ...",
       "tags": [
-        "Perspectives on Politics",
-        "Article"
+        "Article",
+        "Perspectives on Politics"
       ],
       "dateAdded": "2025-03-15T00:00:00Z",
       "status": "to-read",
-      "citationCount": 8,
+      "citationCount": 9,
       "referenceCount": 164,
       "publisher": "Cambridge University Press (CUP)",
       "type": "article",
@@ -2181,15 +2214,15 @@
       "url": "https://scholar.google.com/scholar?q=Influence%20operations%20as%20brokerage%3A%20Political-economic%20infrastructures%20of%20manipulation%20in%20the%202022%20Philippine%20elections",
       "abstract": "This study conceptualizes influence operations (IOs), an enterprise that orchestrates manipulative and inauthentic activities to achieve political advantage, as a contemporary form of brokerage during elections. It investigates the empirical case of IOs engaged in covert political campaigning in the 2022 Philippine General Elections through qualitative field research. Drawing from 22 in-depth interviews with IO leads and staff, we define IOs’ broker attributes, their brokerage processes, and the...",
       "tags": [
-        "brokerage",
-        "Int. J. Commun.",
-        "elections",
-        "Philippines",
-        "trolls",
-        "disinformation",
-        "computational propaganda",
+        "Article",
         "influence operations",
-        "Article"
+        "computational propaganda",
+        "Int. J. Commun.",
+        "trolls",
+        "Philippines",
+        "disinformation",
+        "brokerage",
+        "elections"
       ],
       "dateAdded": "2025-03-15T00:00:00Z",
       "status": "to-read",
@@ -2213,9 +2246,9 @@
       "url": "http://arxiv.org/abs/2502.17344v1",
       "abstract": "Social media platforms have become key tools for coordinated influence operations, enabling state actors to manipulate public opinion through strategic, collective actions. While previous research has suggested collaboration between states, such research failed to leverage state-of-the-art coordination indicators or control datasets. In this study, we investigate inter-state coordination by analyzing multiple online behavioral traces and using sophisticated coordination detection models. By inco...",
       "tags": [
-        "cs.SI",
         "Article",
-        "arXiv [cs.SI]"
+        "arXiv [cs.SI]",
+        "cs.SI"
       ],
       "dateAdded": "2025-02-24T00:00:00Z",
       "status": "to-read",
@@ -2244,7 +2277,7 @@
       ],
       "dateAdded": "2025-02-15T00:00:00Z",
       "status": "to-read",
-      "citationCount": 0,
+      "citationCount": 1,
       "referenceCount": 81,
       "publisher": "SAGE Publications",
       "type": "article",
@@ -2268,7 +2301,7 @@
       ],
       "dateAdded": "2025-01-23T00:00:00Z",
       "status": "to-read",
-      "citationCount": 1,
+      "citationCount": 2,
       "referenceCount": 65,
       "publisher": "SAGE Publications",
       "type": "article",
@@ -2292,7 +2325,7 @@
       ],
       "dateAdded": "2025-01-15T00:00:00Z",
       "status": "to-read",
-      "citationCount": 10,
+      "citationCount": 12,
       "referenceCount": 19,
       "publisher": "Cambridge University Press (CUP)",
       "type": "article",
@@ -2316,8 +2349,8 @@
       "doi": "10.1017/s0003055424000984",
       "abstract": "Information on social media is characterized by networked curation processes in which users select other users from whom to receive information, and those users in turn share information that promotes their identities and interests. We argue this allows for partisan “curation bubbles” of users who share and consume content with consistent appeal drawn from a variety of sources. Yet, research concerning the extent of filter bubbles, echo chambers, or other forms of politically segregated informat...",
       "tags": [
-        "American Political Science Review",
-        "Article"
+        "Article",
+        "American Political Science Review"
       ],
       "dateAdded": "2025-01-15T00:00:00Z",
       "status": "to-read",
@@ -2339,8 +2372,8 @@
       "doi": "10.1080/15295036.2025.2473002",
       "abstract": "Published in Crit. Stud. Media Commun. | Year: 2025 | Authors: Graham, Timothy",
       "tags": [
-        "Critical Studies in Media Communication",
-        "Article"
+        "Article",
+        "Critical Studies in Media Communication"
       ],
       "dateAdded": "2025-01-15T00:00:00Z",
       "status": "to-read",
@@ -2364,8 +2397,8 @@
       "doi": "10.1177/20563051251318172",
       "abstract": "Emotionality is a well-established strategy for boosting audience engagement on social media. While fact-checking is positioned to provide objective information, fact-checking posts on social media often involve heightened emotionality. How much emotionality is present and how emotionality influences audience engagement and public sentiment toward fact-checked targets remain largely understudied. Informed by social psychological frameworks explicating message-level factors influencing public eng...",
       "tags": [
-        "Social Media + Society",
-        "Article"
+        "Article",
+        "Social Media + Society"
       ],
       "dateAdded": "2025-01-15T00:00:00Z",
       "status": "to-read",
@@ -2387,8 +2420,8 @@
       "doi": "10.1177/20563051251323652",
       "abstract": "The Twitter Moderation Research Consortium is a database of network propaganda and influence operations that includes 115,474 unique Twitter accounts, millions of tweets, and over one terabyte of media removed from the platform between 2017 and 2022. We probe this database using Google’s Vision API and Keras with TensorFlow to test whether foreign influence operations can be identified based on the visual presentation of fake user profiles emphasizing gender, race, camera angle, sensuality, and ...",
       "tags": [
-        "Social Media + Society",
-        "Article"
+        "Article",
+        "Social Media + Society"
       ],
       "dateAdded": "2025-01-15T00:00:00Z",
       "status": "to-read",
@@ -2435,8 +2468,8 @@
       "doi": "10.31235/osf.io/39ajg_v2",
       "abstract": "Survey researchers rely heavily on closed-ended questions to measure latent respondent characteristics like knowledge, policy positions, emotions, ideology, and various other traits. While closed-ended questions ease analysis and data collection, they necessarily limit the depth and variability of responses. Open-ended responses allow for greater depth and variability in responses but are labor-intensive to code. Large Language Models (LLMs) can solve some of these problems, but existing approac...",
       "tags": [
-        "SocArXiv",
-        "Article"
+        "Article",
+        "SocArXiv"
       ],
       "dateAdded": "2025-01-15T00:00:00Z",
       "status": "to-read",
@@ -2461,12 +2494,12 @@
       "doi": "10.51685/jqd.2025.003",
       "abstract": "Researchers need reliable and valid tools to identify cases of untrustworthy information when studying the spread of misinformation on digital platforms. A common approach is to assess the trustworthiness of sources rather than individual pieces of content. One of the most widely used and comprehensive databases for source trustworthiness ratings is provided by NewsGuard. Since creating the database in 2019, NewsGuard has continually added new sources and reassessed existing ones. While NewsGuar...",
       "tags": [
-        "Journal of Quantitative Description: Digital Media",
-        "Article"
+        "Article",
+        "Journal of Quantitative Description: Digital Media"
       ],
       "dateAdded": "2025-01-14T00:00:00Z",
       "status": "to-read",
-      "citationCount": 3,
+      "citationCount": 4,
       "referenceCount": 0,
       "publisher": "Journal of Quantitative Description: Digital Media",
       "type": "article",
@@ -2508,8 +2541,8 @@
       "doi": "10.1080/10584609.2024.2446351",
       "abstract": "Published in Polit. Commun. | Year: 2025 | Authors: Munger, Kevin",
       "tags": [
-        "Political Communication",
-        "Article"
+        "Article",
+        "Political Communication"
       ],
       "dateAdded": "2025-01-02T00:00:00Z",
       "status": "to-read",
@@ -2518,30 +2551,6 @@
       "publisher": "Informa UK Limited",
       "type": "article",
       "confidenceScore": 0.8999999999999999
-    },
-    {
-      "id": "bibtex:Cabbuag2024-me",
-      "title": "TikTok ‘dogshows’ and the amplification of online incivility among Gen Z influencers in the Philippines",
-      "authors": [
-        "Samuel Idris Cabbuag",
-        "Crystal Abidin"
-      ],
-      "venue": "SAGE Publications",
-      "year": 2025,
-      "url": "https://doi.org/10.5210/spir.v2024i0.13913",
-      "doi": "10.5210/spir.v2024i0.13913",
-      "abstract": "Studies on digital platforms and online incivility have established that uses of humor can lean towards cyberbullying and hate speech. Focusing on TikTok’s affordances and cultures of online incivility, this paper studies how TikTok influencers and their audiences maneuver legal-but-harmful humour (Matamoros-Fernández et al., 2023). Specifically, we study how online incivility has become an accepted and negotiated practice in the Filipino context through the phenomenon of ‘dogshows’, where users...",
-      "tags": [
-        "Article",
-        "AoIR Selected Papers of Internet Research"
-      ],
-      "dateAdded": "2025-01-02T00:00:00Z",
-      "status": "to-read",
-      "citationCount": 0,
-      "referenceCount": 0,
-      "publisher": "SAGE Publications",
-      "type": "article",
-      "confidenceScore": 0.85
     },
     {
       "id": "bibtex:Unknown2025-qj",
@@ -2581,8 +2590,8 @@
       "url": "https://scholar.google.com/scholar?q=Platform%20polarization.%20Do%20alternative%20platforms%20drive%20discursive%20polarization%3F",
       "abstract": "Published in Comun. Politica | Year: 2025 | Authors: Kristensen, Jakob Bæk, Kristensen, Jakob Bæk",
       "tags": [
-        "Comun. Politica",
-        "Article"
+        "Article",
+        "Comun. Politica"
       ],
       "dateAdded": "2025-01-01T00:00:00Z",
       "status": "to-read",
@@ -2604,11 +2613,11 @@
       "url": "http://arxiv.org/abs/2412.14663v2",
       "abstract": "Social media platforms have become vital spaces for public discourse, serving as modern agoràs where a wide range of voices influence societal narratives. However, their open nature also makes them vulnerable to exploitation by malicious actors, including state-sponsored entities, who can conduct information operations (IOs) to manipulate public opinion. The spread of misinformation, false news, and misleading claims threatens democratic processes and societal cohesion, making it crucial to deve...",
       "tags": [
-        "cs.AI",
-        "arXiv [cs.SI]",
         "cs.SI",
+        "Article",
+        "cs.AI",
         "cs.LG",
-        "Article"
+        "arXiv [cs.SI]"
       ],
       "dateAdded": "2024-12-19T00:00:00Z",
       "status": "to-read",
@@ -2616,6 +2625,30 @@
       "referenceCount": 0,
       "type": "article",
       "confidenceScore": 0.7333333333333333
+    },
+    {
+      "id": "bibtex:Cabbuag2024-me",
+      "title": "TikTok ‘dogshows’ and the amplification of online incivility among Gen Z influencers in the Philippines",
+      "authors": [
+        "Samuel I. Cabbuag",
+        "Crystal Abidin"
+      ],
+      "venue": "SAGE Publications",
+      "year": 2024,
+      "url": "https://doi.org/10.1177/13678779241302826",
+      "doi": "10.1177/13678779241302826",
+      "abstract": "Studies on digital platforms and online incivility have established that uses of humour can lean towards cyberbullying and hate speech. Focusing on TikTok's affordances and cultures of online incivility, this paper studies how TikTok influencers and their audiences manoeuvre legal-but-harmful humour. Specifically, we study how online incivility has become an accepted and negotiated practice in the Filipino context through the phenomenon of ‘dogshows’, where users throw jabs at individuals using ...",
+      "tags": [
+        "Article",
+        "International Journal of Cultural Studies"
+      ],
+      "dateAdded": "2024-12-15T00:00:00Z",
+      "status": "to-read",
+      "citationCount": 1,
+      "referenceCount": 67,
+      "publisher": "SAGE Publications",
+      "type": "article",
+      "confidenceScore": 0.85
     },
     {
       "id": "bibtex:Gonzalez-Bailon2024-rq",
@@ -2660,7 +2693,7 @@
       ],
       "dateAdded": "2024-12-15T00:00:00Z",
       "status": "to-read",
-      "citationCount": 6,
+      "citationCount": 7,
       "referenceCount": 22,
       "publisher": "Society for Sociological Science",
       "type": "article",
@@ -2676,8 +2709,8 @@
       ],
       "venue": null,
       "year": 2024,
-      "url": "https://doi.org/10.31234/osf.io/9csy3_v2",
-      "doi": "10.31234/osf.io/9csy3_v2",
+      "url": "https://doi.org/10.31234/osf.io/9csy3_v4",
+      "doi": "10.31234/osf.io/9csy3_v4",
       "abstract": "In recent years, social media has become increasingly fragmented, as platforms evolve and new alternatives emerge. Yet most research studies a single platform—typically Twitter/X, or occasionally Facebook—leaving little known about the broader social media landscape. Here we shed new light on patterns of cross-platform variation in the high-stakes context of news sharing. We examine the relationship between user engagement and news domains’ political orientation and quality across seven platform...",
       "tags": [
         "Article",
@@ -2685,7 +2718,7 @@
       ],
       "dateAdded": "2024-12-15T00:00:00Z",
       "status": "to-read",
-      "citationCount": 0,
+      "citationCount": 1,
       "referenceCount": 0,
       "type": "article",
       "confidenceScore": 0.86
@@ -2730,12 +2763,12 @@
       "doi": "10.1177/14614448241291137",
       "abstract": "Algorithms profoundly shape user experiences on digital platforms, raising concerns about their negative impacts and highlighting the importance of algorithm literacy. Research on individuals’ understanding of algorithms and their effects is expanding rapidly but lacks a cohesive framework. We conducted a systematic integrative literature review across social sciences and humanities (n = 169), addressing algorithm literacy in terms of its key conceptualizations and the endogenous, exogenous, and...",
       "tags": [
-        "New Media &amp; Society",
-        "Article"
+        "Article",
+        "New Media &amp; Society"
       ],
-      "dateAdded": "2024-11-08T00:00:00Z",
+      "dateAdded": "2024-11-15T00:00:00Z",
       "status": "to-read",
-      "citationCount": 6,
+      "citationCount": 7,
       "referenceCount": 98,
       "publisher": "SAGE Publications",
       "type": "article",
@@ -2757,12 +2790,12 @@
       "doi": "10.1177/00027162251372557",
       "abstract": "Social media data have become a mainstay of social science research since the first application programming interfaces (APIs) debuted in the mid-2000s. Over time, platforms have radically altered their data offerings, substantially determining the kinds of research that can be conducted. This article presents historical and normative analyses of the current state of platform data precarity, defined by Freelon (2018) as the post-API age . We recount a periodized history of social media data acces...",
       "tags": [
-        "The ANNALS of the American Academy of Political and Social Science",
-        "Article"
+        "Article",
+        "The ANNALS of the American Academy of Political and Social Science"
       ],
       "dateAdded": "2024-09-15T00:00:00Z",
       "status": "to-read",
-      "citationCount": 0,
+      "citationCount": 2,
       "referenceCount": 85,
       "publisher": "SAGE Publications",
       "type": "article",
@@ -2781,12 +2814,12 @@
       "doi": "10.1177/14614448241251804",
       "abstract": "TikTok has emerged as a powerful platform for the dissemination of mis- and disinformation about the war in Ukraine. During the initial three months after the Russian invasion in February 2022, videos under the hashtag #Ukraine garnered 36.9 billion views, with individual videos scaling up to 88 million views. Beyond the traditional methods of spreading misleading information through images and text, the medium of sound has emerged as a novel, platform-specific audiovisual technique. Our analysi...",
       "tags": [
-        "New Media &amp; Society",
-        "Article"
+        "Article",
+        "New Media &amp; Society"
       ],
       "dateAdded": "2024-09-15T00:00:00Z",
       "status": "to-read",
-      "citationCount": 18,
+      "citationCount": 22,
       "referenceCount": 99,
       "publisher": "SAGE Publications",
       "type": "article",
@@ -2806,12 +2839,12 @@
       "doi": "10.1126/science.adq1814",
       "abstract": "Conspiracy theory beliefs are notoriously persistent. Influential hypotheses propose that they fulfill important psychological needs, thus resisting counterevidence. Yet previous failures in correcting conspiracy beliefs may be due to counterevidence being insufficiently compelling and tailored. To evaluate this possibility, we leveraged developments in generative artificial intelligence and engaged 2190 conspiracy believers in personalized evidence-based dialogues with GPT-4 Turbo. The interven...",
       "tags": [
-        "Science",
-        "Article"
+        "Article",
+        "Science"
       ],
       "dateAdded": "2024-09-13T00:00:00Z",
       "status": "to-read",
-      "citationCount": 147,
+      "citationCount": 158,
       "referenceCount": 89,
       "publisher": "American Association for the Advancement of Science (AAAS)",
       "type": "article",
@@ -2833,12 +2866,12 @@
       "doi": "10.1038/s41586-024-07417-w",
       "abstract": "The controversy over online misinformation and social media has opened a gap between public discourse and scientific research. Public intellectuals and journalists frequently make sweeping claims about the effects of exposure to false content online that are inconsistent with much of the current empirical evidence. Here we identify three common misperceptions: that average exposure to problematic content is high, that algorithms are largely responsible for this exposure and that social media is ...",
       "tags": [
-        "Nature",
-        "Article"
+        "Article",
+        "Nature"
       ],
       "dateAdded": "2024-06-06T00:00:00Z",
       "status": "to-read",
-      "citationCount": 66,
+      "citationCount": 70,
       "referenceCount": 154,
       "publisher": "Springer Science and Business Media LLC",
       "type": "article",
@@ -2943,16 +2976,16 @@
       "doi": "10.1126/science.aaa1160",
       "abstract": "Not getting all sides of the news? People are increasingly turning away from mass media to social media as a way of learning news and civic information. Bakshyet al.examined the news that millions of Facebook users' peers shared, what information these users were presented with, and what they ultimately consumed (see the Perspective by Lazer). Friends shared substantially less cross-cutting news from sources aligned with an opposing ideology. People encountered roughly 15% less cross-cutting con...",
       "tags": [
-        "news",
-        "newsfeed",
         "facebook",
-        "homophily",
         "Science",
-        "Article"
+        "news",
+        "Article",
+        "homophily",
+        "newsfeed"
       ],
       "dateAdded": "2015-06-05T00:00:00Z",
       "status": "to-read",
-      "citationCount": 1991,
+      "citationCount": 2012,
       "referenceCount": 35,
       "publisher": "American Association for the Advancement of Science (AAAS)",
       "type": "article",
@@ -2964,7 +2997,7 @@
       "authors": [],
       "venue": null,
       "year": null,
-      "url": "https://datasociety.net/library/scam-gpt/",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S2468696425000424",
       "abstract": null,
       "tags": [
         "Misc"
@@ -2981,7 +3014,7 @@
       "authors": [],
       "venue": null,
       "year": null,
-      "url": "https://datasociety.net/library/scam-gpt/",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S2468696425000424",
       "abstract": null,
       "tags": [
         "Misc"
@@ -2998,7 +3031,7 @@
       "authors": [],
       "venue": null,
       "year": null,
-      "url": "https://datasociety.net/library/scam-gpt/",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S2468696425000424",
       "abstract": null,
       "tags": [
         "Misc"
@@ -3015,7 +3048,7 @@
       "authors": [],
       "venue": null,
       "year": null,
-      "url": "https://datasociety.net/library/scam-gpt/",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S2468696425000424",
       "abstract": null,
       "tags": [
         "Misc"
@@ -3045,8 +3078,8 @@
     }
   ],
   "metadata": {
-    "totalPapers": 115,
-    "toRead": 115,
+    "totalPapers": 116,
+    "toRead": 116,
     "inProgress": 0,
     "completed": 0,
     "feedInfo": {
@@ -3054,6 +3087,6 @@
       "description": "Academic papers from Paperpile enriched with metadata"
     }
   },
-  "lastUpdated": "2026-02-01T06:47:37.001Z",
+  "lastUpdated": "2026-02-02T07:01:03.180Z",
   "source": "https://github.com/fabiogiglietto/toread"
 }

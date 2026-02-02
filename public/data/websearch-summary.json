@@ -1,11 +1,12 @@
 {
-  "totalEntries": 91,
-  "lastUpdated": "2026-02-01T06:48:24.536Z",
+  "totalEntries": 92,
+  "lastUpdated": "2026-02-02T07:02:42.055Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-02-01T06:48:24.500Z"
+    "latest": "2026-02-02T07:02:42.010Z"
   },
   "byDate": {
+    "2026-02-02": 1,
     "2026-02-01": 1,
     "2026-01-31": 1,
     "2026-01-30": 1,
@@ -14,11 +15,10 @@
     "2026-01-25": 2,
     "2026-01-21": 1,
     "2026-01-20": 2,
-    "2026-01-19": 2,
-    "2026-01-18": 1
+    "2026-01-19": 2
   },
   "bySource": {
-    "vertexaisearch.cloud.google.com": 39,
+    "vertexaisearch.cloud.google.com": 40,
     "uniurb.it": 5,
     "open.online": 5,
     "Il Sole 24 ORE": 2,
@@ -30,11 +30,18 @@
     "terzogiornale.it": 1
   },
   "byRelevanceScore": {
-    "high": 79,
+    "high": 80,
     "medium": 12,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "There was coordinated inauthentic user behavior in the COVID-19 German X-discourse, but did it really matter? - Frontiers",
+      "url": "https://www.frontiersin.org/journals/communication/articles/10.3389/fcomm.2025.1510144/full",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-02-02T07:02:42.010Z"
+    },
     {
       "title": "L'articolo 21 nella gabbia di Facebook - Terzogiornale",
       "url": "https://www.terzogiornale.it/larticolo-21-nella-gabbia-di-facebook/",
@@ -59,13 +66,6 @@
     {
       "title": "Presentation (Video): OpenAI Models for Topic Modelling in Social Media Analysis - Vera.ai",
       "url": "https://www.veraai.eu/posts/presentation-video-fabio-at-uni-queensland",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-29T06:46:12.626Z"
-    },
-    {
-      "title": "GENERATIVE AI AND THE MEDIA - Lecturer: Fabio Giglietto - A.Y. 2025/2026 - Credits 6 - Uniurb",
-      "url": "https://www.uniurb.it/syllabi/267958",
       "source": "vertexaisearch.cloud.google.com",
       "relevanceScore": 0.9,
       "collectedAt": "2026-01-29T06:46:12.626Z"
