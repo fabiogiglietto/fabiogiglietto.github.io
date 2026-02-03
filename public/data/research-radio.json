@@ -169,7 +169,7 @@
       "id": "bibtex:Pierri2025-hm",
       "bibtexKey": "Pierri2025-hm",
       "title": "Decoding the DSA: Can Research Tame Big Tech?",
-      "description": "AI-generated podcast discussion.\n\nReference:\nPierri, F., Araujo, T., Kruikemeier, S., Lorenz-Spreen, P., Abeele, M. M. P. V., Vandenbosch, L., Gonçalves-Sa, J., & Grabowicz, P. A. (2025). Research opportunities and challenges of the EU&#x27;s Digital Services Act. http://arxiv.org/abs/2512.14223v1",
+      "description": "AI-generated podcast discussion.\n\nReference:\nPierri, F., Araujo, T., Kruikemeier, S., Lorenz-Spreen, P., Abeele, M. M. P. V., Vandenbosch, L., Gon��alves-Sa, J., & Grabowicz, P. A. (2025). Research opportunities and challenges of the EU&#x27;s Digital Services Act. http://arxiv.org/abs/2512.14223v1",
       "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Pierri2025-hm.mp3",
       "pubDate": "Sat, 03 Jan 2026 09:24:00 +0000",
       "duration": "7:04",
@@ -340,6 +340,17 @@
       "duration": "5:51",
       "author": "Paul Balluff, Jakob-Moritz Eberl, Sarina Joy Oberhänsli, Jana Bernhard-Harrer, Hajo G. Boomgaarden, Andreas Fahr, Martin Huber",
       "doi": "10.1177/19401612241285672"
+    },
+    {
+      "id": "bibtex:Kim2026-wg",
+      "bibtexKey": "Kim2026-wg",
+      "title": "Digital Voter Suppression: How Microtargeting Undermines Elections",
+      "description": "AI-generated podcast discussion.\n\nReference:\nKim, Y. M., Dahlke, R., Song, H., & Heinrich, R. (2026). Targeted digital voter suppression efforts likely decrease voter turnout. https://doi.org/10.1073/pnas.2519944123",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Kim2026-wg.mp3",
+      "pubDate": "Mon, 02 Feb 2026 07:14:22 +0000",
+      "duration": "6:26",
+      "author": "Young Mie Kim, Ross Dahlke, Hyebin Song, Richard Heinrich",
+      "doi": "10.1073/pnas.2519944123"
     }
   ],
   "episodesByBibtexKey": {
@@ -512,7 +523,7 @@
       "id": "bibtex:Pierri2025-hm",
       "bibtexKey": "Pierri2025-hm",
       "title": "Decoding the DSA: Can Research Tame Big Tech?",
-      "description": "AI-generated podcast discussion.\n\nReference:\nPierri, F., Araujo, T., Kruikemeier, S., Lorenz-Spreen, P., Abeele, M. M. P. V., Vandenbosch, L., Gonçalves-Sa, J., & Grabowicz, P. A. (2025). Research opportunities and challenges of the EU&#x27;s Digital Services Act. http://arxiv.org/abs/2512.14223v1",
+      "description": "AI-generated podcast discussion.\n\nReference:\nPierri, F., Araujo, T., Kruikemeier, S., Lorenz-Spreen, P., Abeele, M. M. P. V., Vandenbosch, L., Gon��alves-Sa, J., & Grabowicz, P. A. (2025). Research opportunities and challenges of the EU&#x27;s Digital Services Act. http://arxiv.org/abs/2512.14223v1",
       "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Pierri2025-hm.mp3",
       "pubDate": "Sat, 03 Jan 2026 09:24:00 +0000",
       "duration": "7:04",
@@ -683,6 +694,17 @@
       "duration": "5:51",
       "author": "Paul Balluff, Jakob-Moritz Eberl, Sarina Joy Oberhänsli, Jana Bernhard-Harrer, Hajo G. Boomgaarden, Andreas Fahr, Martin Huber",
       "doi": "10.1177/19401612241285672"
+    },
+    "Kim2026-wg": {
+      "id": "bibtex:Kim2026-wg",
+      "bibtexKey": "Kim2026-wg",
+      "title": "Digital Voter Suppression: How Microtargeting Undermines Elections",
+      "description": "AI-generated podcast discussion.\n\nReference:\nKim, Y. M., Dahlke, R., Song, H., & Heinrich, R. (2026). Targeted digital voter suppression efforts likely decrease voter turnout. https://doi.org/10.1073/pnas.2519944123",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Kim2026-wg.mp3",
+      "pubDate": "Mon, 02 Feb 2026 07:14:22 +0000",
+      "duration": "6:26",
+      "author": "Young Mie Kim, Ross Dahlke, Hyebin Song, Richard Heinrich",
+      "doi": "10.1073/pnas.2519944123"
     }
   },
   "episodesByDoi": {
@@ -938,9 +960,20 @@
       "duration": "5:51",
       "author": "Paul Balluff, Jakob-Moritz Eberl, Sarina Joy Oberhänsli, Jana Bernhard-Harrer, Hajo G. Boomgaarden, Andreas Fahr, Martin Huber",
       "doi": "10.1177/19401612241285672"
+    },
+    "10.1073/pnas.2519944123": {
+      "id": "bibtex:Kim2026-wg",
+      "bibtexKey": "Kim2026-wg",
+      "title": "Digital Voter Suppression: How Microtargeting Undermines Elections",
+      "description": "AI-generated podcast discussion.\n\nReference:\nKim, Y. M., Dahlke, R., Song, H., & Heinrich, R. (2026). Targeted digital voter suppression efforts likely decrease voter turnout. https://doi.org/10.1073/pnas.2519944123",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Kim2026-wg.mp3",
+      "pubDate": "Mon, 02 Feb 2026 07:14:22 +0000",
+      "duration": "6:26",
+      "author": "Young Mie Kim, Ross Dahlke, Hyebin Song, Richard Heinrich",
+      "doi": "10.1073/pnas.2519944123"
     }
   },
-  "totalEpisodes": 31,
-  "lastUpdated": "2026-02-02T07:01:03.534Z",
+  "totalEpisodes": 32,
+  "lastUpdated": "2026-02-03T06:50:34.821Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }

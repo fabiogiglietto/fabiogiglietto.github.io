@@ -1,11 +1,12 @@
 {
-  "totalEntries": 92,
-  "lastUpdated": "2026-02-02T07:02:42.055Z",
+  "totalEntries": 93,
+  "lastUpdated": "2026-02-03T06:51:40.947Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-02-02T07:02:42.010Z"
+    "latest": "2026-02-03T06:51:40.912Z"
   },
   "byDate": {
+    "2026-02-03": 1,
     "2026-02-02": 1,
     "2026-02-01": 1,
     "2026-01-31": 1,
@@ -14,12 +15,11 @@
     "2026-01-27": 4,
     "2026-01-25": 2,
     "2026-01-21": 1,
-    "2026-01-20": 2,
-    "2026-01-19": 2
+    "2026-01-20": 2
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 40,
-    "uniurb.it": 5,
+    "uniurb.it": 6,
     "open.online": 5,
     "Il Sole 24 ORE": 2,
     "vera.ai": 2,
@@ -30,11 +30,18 @@
     "terzogiornale.it": 1
   },
   "byRelevanceScore": {
-    "high": 80,
+    "high": 81,
     "medium": 12,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "INTERNET STUDIES - Lecturer: Fabio Giglietto - A.Y. 2024/2025 - Credits 8 - UniUrb",
+      "url": "https://www.uniurb.it/syllabi/266537",
+      "source": "uniurb.it",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-02-03T06:51:40.912Z"
+    },
     {
       "title": "There was coordinated inauthentic user behavior in the COVID-19 German X-discourse, but did it really matter? - Frontiers",
       "url": "https://www.frontiersin.org/journals/communication/articles/10.3389/fcomm.2025.1510144/full",
@@ -62,13 +69,6 @@
       "source": "nrighetti.github.io",
       "relevanceScore": 0.9,
       "collectedAt": "2026-01-30T06:47:05.803Z"
-    },
-    {
-      "title": "Presentation (Video): OpenAI Models for Topic Modelling in Social Media Analysis - Vera.ai",
-      "url": "https://www.veraai.eu/posts/presentation-video-fabio-at-uni-queensland",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-29T06:46:12.626Z"
     }
   ]
 }
