@@ -1,11 +1,12 @@
 {
-  "totalEntries": 93,
-  "lastUpdated": "2026-02-03T06:51:40.947Z",
+  "totalEntries": 94,
+  "lastUpdated": "2026-02-04T06:52:08.656Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-02-03T06:51:40.912Z"
+    "latest": "2026-02-04T06:52:08.625Z"
   },
   "byDate": {
+    "2026-02-04": 1,
     "2026-02-03": 1,
     "2026-02-02": 1,
     "2026-02-01": 1,
@@ -14,27 +15,33 @@
     "2026-01-29": 2,
     "2026-01-27": 4,
     "2026-01-25": 2,
-    "2026-01-21": 1,
-    "2026-01-20": 2
+    "2026-01-21": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 40,
     "uniurb.it": 6,
     "open.online": 5,
+    "veraai.eu": 2,
     "Il Sole 24 ORE": 2,
     "vera.ai": 2,
     "ilrestodelcarlino.it": 2,
     "ByoBlu": 2,
     "euractiv.ro": 2,
-    "researchgate.net": 2,
-    "terzogiornale.it": 1
+    "researchgate.net": 2
   },
   "byRelevanceScore": {
-    "high": 81,
+    "high": 82,
     "medium": 12,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "WHO IS BEHIND VERA.AI? Meet: Team of University of Urbino Carlo Bo",
+      "url": "https://veraai.eu/news/who-is-behind-vera-ai-meet-team-of-university-of-urbino-carlo-bo/",
+      "source": "veraai.eu",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-02-04T06:52:08.625Z"
+    },
     {
       "title": "INTERNET STUDIES - Lecturer: Fabio Giglietto - A.Y. 2024/2025 - Credits 8 - UniUrb",
       "url": "https://www.uniurb.it/syllabi/266537",
@@ -62,13 +69,6 @@
       "source": "opendemocracy.net",
       "relevanceScore": 0.9,
       "collectedAt": "2026-01-31T06:38:06.483Z"
-    },
-    {
-      "title": "A project on coordinated behavior at the Digital Methods Summer School and Data Sprint 2024 - Nicola Righetti",
-      "url": "https://nrighetti.github.io/dmi-2024/",
-      "source": "nrighetti.github.io",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-30T06:47:05.803Z"
     }
   ]
 }
