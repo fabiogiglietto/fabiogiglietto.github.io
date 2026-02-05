@@ -1,34 +1,42 @@
 {
-  "overallSummary": "Fabio Giglietto has a substantial social media presence across Mastodon, LinkedIn, and Bluesky, focusing on topics related to computational social science, disinformation, and research opportunities. While the total follower count is significant, engagement varies across platforms. LinkedIn appears to be the most engaging platform based on the available data.",
+  "overallSummary": "Fabio Giglietto maintains a presence on Mastodon, LinkedIn, and Bluesky, focusing on research and academic interests. LinkedIn shows the highest follower count and engagement. Content revolves around research publications, grants, job opportunities, and conference presentations.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 3.81,
+    "averageEngagementRate": 3.27,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
-      "theme": "Computational Social Science Research",
-      "description": "Posts related to ongoing research, publications, and methodologies in computational social science."
+      "theme": "Research Publications",
+      "description": "Announcements of new research papers and tools."
+    },
+    {
+      "theme": "Job Opportunities",
+      "description": "Posts about postdoctoral and PhD research positions."
+    },
+    {
+      "theme": "Conference Presentations",
+      "description": "Information about upcoming conference presentations and participation."
+    },
+    {
+      "theme": "Grants and Funding",
+      "description": "Announcements about research grants and funding received."
     },
     {
       "theme": "Disinformation and Coordinated Behavior",
-      "description": "Content focusing on the detection, analysis, and mitigation of disinformation campaigns and coordinated inauthentic behavior."
-    },
-    {
-      "theme": "Job and Research Opportunities",
-      "description": "Announcements of postdoctoral positions, PhD student opportunities, and research grants."
+      "description": "Discussion and research related to disinformation and coordinated inauthentic behavior on social media."
     }
   ],
   "recommendations": [
-    "Diversify content formats: Incorporate more visuals (images, videos, infographics) to increase engagement.",
-    "Engage actively with comments and replies to foster a stronger sense of community.",
-    "Tailor content to each platform's audience: Adapt the style and focus of posts to suit the specific characteristics of each platform's user base.",
-    "Use relevant hashtags to expand reach and discoverability."
+    "Increase cross-promotion of content across platforms to maximize reach.",
+    "Use platform-specific content formats to optimize engagement (e.g., short video summaries on LinkedIn).",
+    "Engage in more direct conversations with followers by asking questions and prompting discussion.",
+    "Schedule posts consistently to maintain a regular presence."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky shows a good balance of research announcements, conference promotions, and calls for PhD students. Reposts are a significant engagement metric on this platform, suggesting potential for virality.",
-    "mastodon": "Mastodon has a focus on research releases and methodological discussions. Engagement is relatively lower compared to other platforms, potentially due to the platform's culture or audience.",
-    "linkedin": "LinkedIn generates the highest engagement, especially around announcements of research grants and job opportunities. The professional network responds well to career-related content."
+    "bluesky": "Bluesky is used for sharing research updates and opportunities, with a moderate level of engagement. Reposts are a significant component of engagement.",
+    "mastodon": "Mastodon content focuses on research updates and methodological discussions, with lower engagement compared to LinkedIn and Bluesky.",
+    "linkedin": "LinkedIn is the most engaging platform, with a focus on professional announcements like grant awards and job openings. Comments play a key role in engagement."
   },
   "topPerformingContent": [
     {
