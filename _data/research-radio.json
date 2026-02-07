@@ -373,6 +373,17 @@
       "duration": "6:08",
       "author": "Jan Elfes, Marco Bastos, Luca Maria Aiello",
       "doi": null
+    },
+    {
+      "id": "bibtex:Bollenbacher2026-vz",
+      "bibtexKey": "Bollenbacher2026-vz",
+      "title": "Antivax Tweets: How Misinformation Fueled COVID Deaths",
+      "description": "AI-generated podcast discussion.\n\nReference:\nBollenbacher, J., Menczer, F., & Bryden, J. (2026). Effects of antivaccine tweets on COVID-19 vaccinations, cases, and deaths. https://doi.org/10.1140/epjds/s13688-025-00606-1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Bollenbacher2026-vz.mp3",
+      "pubDate": "Sat, 07 Feb 2026 04:45:07 +0000",
+      "duration": "5:42",
+      "author": "John Bollenbacher, Filippo Menczer, John Bryden",
+      "doi": "10.1140/epjds/s13688-025-00606-1"
     }
   ],
   "episodesByBibtexKey": {
@@ -749,6 +760,17 @@
       "duration": "6:08",
       "author": "Jan Elfes, Marco Bastos, Luca Maria Aiello",
       "doi": null
+    },
+    "Bollenbacher2026-vz": {
+      "id": "bibtex:Bollenbacher2026-vz",
+      "bibtexKey": "Bollenbacher2026-vz",
+      "title": "Antivax Tweets: How Misinformation Fueled COVID Deaths",
+      "description": "AI-generated podcast discussion.\n\nReference:\nBollenbacher, J., Menczer, F., & Bryden, J. (2026). Effects of antivaccine tweets on COVID-19 vaccinations, cases, and deaths. https://doi.org/10.1140/epjds/s13688-025-00606-1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Bollenbacher2026-vz.mp3",
+      "pubDate": "Sat, 07 Feb 2026 04:45:07 +0000",
+      "duration": "5:42",
+      "author": "John Bollenbacher, Filippo Menczer, John Bryden",
+      "doi": "10.1140/epjds/s13688-025-00606-1"
     }
   },
   "episodesByDoi": {
@@ -1026,9 +1048,20 @@
       "duration": "6:37",
       "author": "William Hollingshead, Anatoliy Gruzd, Philip Mai",
       "doi": "10.17645/mac.11409"
+    },
+    "10.1140/epjds/s13688-025-00606-1": {
+      "id": "bibtex:Bollenbacher2026-vz",
+      "bibtexKey": "Bollenbacher2026-vz",
+      "title": "Antivax Tweets: How Misinformation Fueled COVID Deaths",
+      "description": "AI-generated podcast discussion.\n\nReference:\nBollenbacher, J., Menczer, F., & Bryden, J. (2026). Effects of antivaccine tweets on COVID-19 vaccinations, cases, and deaths. https://doi.org/10.1140/epjds/s13688-025-00606-1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Bollenbacher2026-vz.mp3",
+      "pubDate": "Sat, 07 Feb 2026 04:45:07 +0000",
+      "duration": "5:42",
+      "author": "John Bollenbacher, Filippo Menczer, John Bryden",
+      "doi": "10.1140/epjds/s13688-025-00606-1"
     }
   },
-  "totalEpisodes": 34,
-  "lastUpdated": "2026-02-06T06:53:41.341Z",
+  "totalEpisodes": 35,
+  "lastUpdated": "2026-02-07T06:40:27.127Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
