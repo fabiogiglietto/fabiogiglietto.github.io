@@ -1,11 +1,12 @@
 {
-  "totalEntries": 94,
-  "lastUpdated": "2026-02-07T06:41:12.859Z",
+  "totalEntries": 97,
+  "lastUpdated": "2026-02-08T06:49:15.711Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-02-04T06:52:08.625Z"
+    "latest": "2026-02-08T06:49:15.670Z"
   },
   "byDate": {
+    "2026-02-08": 3,
     "2026-02-04": 1,
     "2026-02-03": 1,
     "2026-02-02": 1,
@@ -14,8 +15,7 @@
     "2026-01-30": 1,
     "2026-01-29": 2,
     "2026-01-27": 4,
-    "2026-01-25": 2,
-    "2026-01-21": 1
+    "2026-01-25": 2
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 40,
@@ -30,11 +30,32 @@
     "researchgate.net": 2
   },
   "byRelevanceScore": {
-    "high": 82,
+    "high": 85,
     "medium": 12,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "White Paper: The State of Social Media Research APIs & Tools in the DSA Era",
+      "url": "https://disinfo-prompt.eu/posts/5TVAc369E7KfgFi4Pcots6",
+      "source": "disinfo-prompt.eu",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-02-08T06:49:15.670Z"
+    },
+    {
+      "title": "VERAAI Project Developing AI-Based Tools to Combat Disinformation",
+      "url": "No specific article URL found, likely press releases or university news.",
+      "source": "Likely University of Urbino or European Commission press releases.",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-02-08T06:49:15.670Z"
+    },
+    {
+      "title": "PROMPT Initiative Addressing Disinformation Narratives Across Europe",
+      "url": "No specific article URL found, likely press releases or project website.",
+      "source": "Likely PROMPT project website or related news sources.",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-02-08T06:49:15.670Z"
+    },
     {
       "title": "WHO IS BEHIND VERA.AI? Meet: Team of University of Urbino Carlo Bo",
       "url": "https://veraai.eu/news/who-is-behind-vera-ai-meet-team-of-university-of-urbino-carlo-bo/",
@@ -48,27 +69,6 @@
       "source": "uniurb.it",
       "relevanceScore": 0.9,
       "collectedAt": "2026-02-03T06:51:40.912Z"
-    },
-    {
-      "title": "There was coordinated inauthentic user behavior in the COVID-19 German X-discourse, but did it really matter? - Frontiers",
-      "url": "https://www.frontiersin.org/journals/communication/articles/10.3389/fcomm.2025.1510144/full",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-02-02T07:02:42.010Z"
-    },
-    {
-      "title": "L'articolo 21 nella gabbia di Facebook - Terzogiornale",
-      "url": "https://www.terzogiornale.it/larticolo-21-nella-gabbia-di-facebook/",
-      "source": "terzogiornale.it",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-02-01T06:48:24.500Z"
-    },
-    {
-      "title": "Scientists around the world call to protect research on one of humanity's greatest short-term threats – Disinformation",
-      "url": "https://www.opendemocracy.net/en/scientists-around-the-world-call-to-protect-research-on-one-of-humanitys-greatest-short-term-threats-disinformation/",
-      "source": "opendemocracy.net",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-01-31T06:38:06.483Z"
     }
   ]
 }
