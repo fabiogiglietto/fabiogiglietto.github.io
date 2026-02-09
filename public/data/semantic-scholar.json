@@ -84,7 +84,7 @@
       "year": 2018,
       "doi": "10.1177/0011392119837536",
       "arxivId": null,
-      "citations": 89,
+      "citations": 90,
       "influentialCitations": 1,
       "references": 62,
       "semanticScholarId": "c84a169e6df175c4662012d3ba7dbf8fa1b5abc9",
@@ -669,6 +669,22 @@
       ]
     },
     {
+      "title": "Cracking Open the European Newsfeed",
+      "authors": "Luca Rossi, Fabio Giglietto, Giada Marino",
+      "venue": "Journal of Quantitative Description Digital Media",
+      "year": 2023,
+      "doi": "10.51685/jqd.2023.020",
+      "arxivId": null,
+      "citations": 1,
+      "influentialCitations": 0,
+      "references": 39,
+      "semanticScholarId": "0a64ae7234d61d9a7c072c85c707d6cbb0ef1355",
+      "isOpenAccess": true,
+      "openAccessPdf": "https://journalqd.org/article/download/4377/3604",
+      "abstract": "This paper contributes to the ongoing effort to describe and quantify the quality of information that is shared on large social media platforms. We do this by complementing existing research that provided a first quantitative assessment of the quality of the information circulating on Facebook among US users. Leveraging an updated version of the same data source — Meta's URL Shares Dataset — and replicating much of the methodology, we quantify the trustworthy and untrustworthy links to external websites that have been shared on Facebook in the period between 2019 and 2022 in three major European countries (Germany, France, and Italy). We observe a clear decline in the number of URLs present in the dataset and an increase in the URLs from untrustworthy domains as a percentage of the total URLs shared in a year. This increase seems to be higher in electoral years (in Germany and in Italy) but it does not translate into an increase of Views received from untrustworthy sources.",
+      "fieldsOfStudy": []
+    },
+    {
       "title": "Widespread Low-Quality News Sources, Ethnic and Religious Divisions: An Analysis of the Drivers Propelling Coordinated Circulation of Problematic Health Information in Nigeria",
       "authors": "Fabio Giglietto, Samuel Olaniran, Roberto Mincigrucci",
       "venue": "Social Science Research Network",
@@ -816,22 +832,6 @@
       "isOpenAccess": false,
       "openAccessPdf": null,
       "abstract": "The 2022 Brazilian presidential elections and subsequent events highlight a significant period of political polarization and misinformation, particularly on social media platforms like Facebook. This study investigates the dynamics of misinformation campaigns on Facebook in the context of Brazil's political shifts, focusing on the period from the 2022 elections to the aftermath of the attempted coup on January 8, 2023. Utilizing a mixed methods approach and an innovative news alert system, we analyzed three months of links shared in a coordinated fashion leading up to the first anniversary of the attempted coup.\n\nOur findings reveal a bipartisan battlefield of political discourse, with a scenario characterized by divergence in accounts’ political alignment. We, in fact, identified two primary networks of political Facebook accounts: one supporting former President Jair Bolsonaro and another backing President Lula. Interestingly, we observed Lula supporters repeatedly share content criticizing or mocking Bolsonaro, his family members, and his supporters within pro-Bolsonaro groups. Moreover, these posts often receive a substantial number of comments and minor reactions and shares.\n\nFuture research will expand on these findings by examining a year's worth of Facebook posts from these networks to explore changes in topics and strategies over time.\n\nThe presentation will thus discuss the study's advancement outcomes in-depth, contributing to understanding how Brazilian political factions’ supporters utilize social media to influence public opinion and the implications for democracy in the digital age.",
-      "fieldsOfStudy": []
-    },
-    {
-      "title": "Cracking Open the European Newsfeed",
-      "authors": "Luca Rossi, Fabio Giglietto, Giada Marino",
-      "venue": "Journal of Quantitative Description Digital Media",
-      "year": 2023,
-      "doi": "10.51685/jqd.2023.020",
-      "arxivId": null,
-      "citations": 0,
-      "influentialCitations": 0,
-      "references": 39,
-      "semanticScholarId": "0a64ae7234d61d9a7c072c85c707d6cbb0ef1355",
-      "isOpenAccess": true,
-      "openAccessPdf": "https://journalqd.org/article/download/4377/3604",
-      "abstract": "This paper contributes to the ongoing effort to describe and quantify the quality of information that is shared on large social media platforms. We do this by complementing existing research that provided a first quantitative assessment of the quality of the information circulating on Facebook among US users. Leveraging an updated version of the same data source — Meta's URL Shares Dataset — and replicating much of the methodology, we quantify the trustworthy and untrustworthy links to external websites that have been shared on Facebook in the period between 2019 and 2022 in three major European countries (Germany, France, and Italy). We observe a clear decline in the number of URLs present in the dataset and an increase in the URLs from untrustworthy domains as a percentage of the total URLs shared in a year. This increase seems to be higher in electoral years (in Germany and in Italy) but it does not translate into an increase of Views received from untrustworthy sources.",
       "fieldsOfStudy": []
     },
     {
@@ -1342,5 +1342,5 @@
     "citationCount": 1177,
     "influentialCitationCount": 59
   },
-  "lastUpdated": "2026-02-08T06:48:37.022Z"
+  "lastUpdated": "2026-02-09T07:03:11.197Z"
 }

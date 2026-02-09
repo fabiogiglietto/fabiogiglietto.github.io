@@ -384,6 +384,17 @@
       "duration": "5:42",
       "author": "John Bollenbacher, Filippo Menczer, John Bryden",
       "doi": "10.1140/epjds/s13688-025-00606-1"
+    },
+    {
+      "id": "bibtex:Szabo2026-rd",
+      "bibtexKey": "Szabo2026-rd",
+      "title": "Chatbots vs. Fake News: Inoculating Minds, One Conversation at a Time",
+      "description": "AI-generated podcast discussion.\n\nReference:\nSzabó, D., Yang, C., Visuri, A., Oppenlaender, J., Sekar, B., Yatani, K., & Hosio, S. (2026). Conversational Inoculation to enhance resistance to misinformation. https://doi.org/10.1145/3772318.379095",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Szabo2026-rd.mp3",
+      "pubDate": "Sun, 08 Feb 2026 19:33:41 +0000",
+      "duration": "5:51",
+      "author": "Dániel Szabó, Chi-Lan Yang, Aku Visuri, Jonas Oppenlaender, Bharathi Sekar, Koji Yatani, Simo Hosio",
+      "doi": "10.1145/3772318.379095"
     }
   ],
   "episodesByBibtexKey": {
@@ -771,6 +782,17 @@
       "duration": "5:42",
       "author": "John Bollenbacher, Filippo Menczer, John Bryden",
       "doi": "10.1140/epjds/s13688-025-00606-1"
+    },
+    "Szabo2026-rd": {
+      "id": "bibtex:Szabo2026-rd",
+      "bibtexKey": "Szabo2026-rd",
+      "title": "Chatbots vs. Fake News: Inoculating Minds, One Conversation at a Time",
+      "description": "AI-generated podcast discussion.\n\nReference:\nSzabó, D., Yang, C., Visuri, A., Oppenlaender, J., Sekar, B., Yatani, K., & Hosio, S. (2026). Conversational Inoculation to enhance resistance to misinformation. https://doi.org/10.1145/3772318.379095",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Szabo2026-rd.mp3",
+      "pubDate": "Sun, 08 Feb 2026 19:33:41 +0000",
+      "duration": "5:51",
+      "author": "Dániel Szabó, Chi-Lan Yang, Aku Visuri, Jonas Oppenlaender, Bharathi Sekar, Koji Yatani, Simo Hosio",
+      "doi": "10.1145/3772318.379095"
     }
   },
   "episodesByDoi": {
@@ -1059,9 +1081,20 @@
       "duration": "5:42",
       "author": "John Bollenbacher, Filippo Menczer, John Bryden",
       "doi": "10.1140/epjds/s13688-025-00606-1"
+    },
+    "10.1145/3772318.379095": {
+      "id": "bibtex:Szabo2026-rd",
+      "bibtexKey": "Szabo2026-rd",
+      "title": "Chatbots vs. Fake News: Inoculating Minds, One Conversation at a Time",
+      "description": "AI-generated podcast discussion.\n\nReference:\nSzabó, D., Yang, C., Visuri, A., Oppenlaender, J., Sekar, B., Yatani, K., & Hosio, S. (2026). Conversational Inoculation to enhance resistance to misinformation. https://doi.org/10.1145/3772318.379095",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Szabo2026-rd.mp3",
+      "pubDate": "Sun, 08 Feb 2026 19:33:41 +0000",
+      "duration": "5:51",
+      "author": "Dániel Szabó, Chi-Lan Yang, Aku Visuri, Jonas Oppenlaender, Bharathi Sekar, Koji Yatani, Simo Hosio",
+      "doi": "10.1145/3772318.379095"
     }
   },
-  "totalEpisodes": 35,
-  "lastUpdated": "2026-02-08T06:48:36.585Z",
+  "totalEpisodes": 36,
+  "lastUpdated": "2026-02-09T07:03:10.789Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }

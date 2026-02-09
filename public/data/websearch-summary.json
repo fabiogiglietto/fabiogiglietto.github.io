@@ -1,11 +1,12 @@
 {
-  "totalEntries": 97,
-  "lastUpdated": "2026-02-08T06:49:15.711Z",
+  "totalEntries": 98,
+  "lastUpdated": "2026-02-09T07:04:09.401Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-02-08T06:49:15.670Z"
+    "latest": "2026-02-09T07:04:09.377Z"
   },
   "byDate": {
+    "2026-02-09": 1,
     "2026-02-08": 3,
     "2026-02-04": 1,
     "2026-02-03": 1,
@@ -14,8 +15,7 @@
     "2026-01-31": 1,
     "2026-01-30": 1,
     "2026-01-29": 2,
-    "2026-01-27": 4,
-    "2026-01-25": 2
+    "2026-01-27": 4
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 40,
@@ -30,11 +30,18 @@
     "researchgate.net": 2
   },
   "byRelevanceScore": {
-    "high": 85,
+    "high": 86,
     "medium": 12,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "figshare.com",
+      "url": "https://tandf.figshare.com/articles/journal_contribution/It_takes_a_village_to_manipulate_the_media_coordinated_link_sharing_behavior_during_2018_and_2019_Italian_elections/11993145",
+      "source": "tandf.figshare.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-02-09T07:04:09.377Z"
+    },
     {
       "title": "White Paper: The State of Social Media Research APIs & Tools in the DSA Era",
       "url": "https://disinfo-prompt.eu/posts/5TVAc369E7KfgFi4Pcots6",
@@ -62,13 +69,6 @@
       "source": "veraai.eu",
       "relevanceScore": 0.9,
       "collectedAt": "2026-02-04T06:52:08.625Z"
-    },
-    {
-      "title": "INTERNET STUDIES - Lecturer: Fabio Giglietto - A.Y. 2024/2025 - Credits 8 - UniUrb",
-      "url": "https://www.uniurb.it/syllabi/266537",
-      "source": "uniurb.it",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-02-03T06:51:40.912Z"
     }
   ]
 }

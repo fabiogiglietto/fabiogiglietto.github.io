@@ -1,33 +1,39 @@
 {
-  "overallSummary": "Fabio Giglietto maintains an active presence on Mastodon, LinkedIn, and Bluesky, focusing on research related to disinformation, information operations, and computational social science. While LinkedIn has the largest follower base, engagement varies across platforms. Recent activity highlights research publications, conference presentations, hiring announcements, and grant awards.",
+  "overallSummary": "Fabio Giglietto maintains an active presence across Mastodon, LinkedIn, and Bluesky, focusing on research related to social media analysis, disinformation, and computational social science. While LinkedIn has the largest follower base, engagement is distributed across platforms. The content is largely geared towards academic and research communities.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 3.13,
+    "averageEngagementRate": 3.33,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
-      "theme": "Coordinated Inauthentic Behavior/Information Operations",
-      "description": "Focuses on research, detection methods, and discussions related to coordinated inauthentic behavior and information operations on social media platforms."
+      "theme": "Computational Social Science Research",
+      "description": "Posts related to research projects, methodologies, and findings in computational social science."
     },
     {
-      "theme": "Computational Social Science Research & Methods",
-      "description": "Highlights research projects, methodologies, and tool development within the field of computational social science."
+      "theme": "Disinformation and Information Operations",
+      "description": "Content focused on the study and detection of disinformation campaigns and coordinated inauthentic behavior."
     },
     {
-      "theme": "Career Opportunities & Collaboration",
-      "description": "Includes announcements for job openings, research opportunities, and collaborations within Fabio's research team and network."
+      "theme": "Hiring and Research Opportunities",
+      "description": "Posts advertising job openings, research grants, and opportunities for students and researchers."
+    },
+    {
+      "theme": "Software and Tool Releases",
+      "description": "Announcements of new software releases and updates for social media analysis."
     }
   ],
   "recommendations": [
-    "Tailor content to each platform's audience. LinkedIn benefits from professional announcements and job postings, while Bluesky and Mastodon might be better for research discussions and paper releases.",
-    "Increase interaction by asking direct questions to followers and encouraging discussion in the comments or replies.",
-    "Use platform-specific hashtags to increase visibility and reach a wider audience interested in similar topics."
+    "Increase cross-promotion between platforms to leverage the follower base on each.",
+    "Use more visuals (images, videos) to increase engagement.",
+    "Run polls or Q&A sessions to drive interaction.",
+    "Tailor content more specifically to each platform's audience.",
+    "Use relevant hashtags more consistently to increase visibility."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky shows good engagement rates on research publications and PhD opportunities, indicating a strong academic and research-oriented audience.",
-    "mastodon": "Mastodon engagement is comparatively lower, suggesting a need to tailor content to the platform's specific interests or community norms.",
-    "linkedin": "LinkedIn sees the highest engagement, particularly on announcements about grants and job opportunities, reflecting the platform's professional focus."
+    "bluesky": "Bluesky posts focus on research announcements and conference presentations, generating decent repost activity, which suggests good information dissemination.",
+    "mastodon": "Mastodon posts focus on research releases and methodological discussions. Engagement is the lowest among the three platforms.",
+    "linkedin": "LinkedIn posts revolve around professional opportunities and research grants, resulting in high likes and comments, indicating a strong professional network."
   },
   "topPerformingContent": [
     {
@@ -38,12 +44,12 @@
     {
       "content": "Now hiring: Two postdoctoral researchers to join our team working on computational methods for social media analysis. Background in data science, computational social science, or related fields preferred.",
       "platform": "linkedin",
-      "engagementRate": 3.95
+      "engagementRate": 4.05
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
       "platform": "bluesky",
-      "engagementRate": 5.47
+      "engagementRate": 7.37
     }
   ]
 }
