@@ -698,6 +698,28 @@
       "crossref_score": 1
     },
     {
+      "doi": "10.51685/jqd.2023.020",
+      "title": "Cracking Open the European Newsfeed",
+      "authors": "Rossi, Luca; Giglietto, Fabio; Marino, Giada",
+      "venue": "Journal of Quantitative Description: Digital Media",
+      "year": 2023,
+      "type": "journal-article",
+      "url": "https://doi.org/10.51685/jqd.2023.020",
+      "crossref_type": "journal-article",
+      "publisher": "Journal of Quantitative Description: Digital Media",
+      "container_title": "Journal of Quantitative Description: Digital Media",
+      "volume": "3",
+      "issn": "2673-8813",
+      "isbn": null,
+      "subject": [],
+      "abstract": "<jats:p>This paper contributes to the ongoing effort to describe and quantify the quality of information that is shared on large social media platforms. We do this by complementing existing research that provided a first quantitative assessment of the quality of the information circulating on Facebook among US users. Leveraging an updated version of the same data source — Meta's URL Shares Dataset — and replicating much of the methodology, we quantify the trustworthy and untrustworthy links to external websites that have been shared on Facebook in the period between 2019 and 2022 in three major European countries (Germany, France, and Italy). We observe a clear decline in the number of URLs present in the dataset and an increase in the URLs from untrustworthy domains as a percentage of the total URLs shared in a year. This increase seems to be higher in electoral years (in Germany and in Italy) but it does not translate into an increase of Views received from untrustworthy sources.</jats:p>",
+      "license": [
+        "https://creativecommons.org/licenses/by-nc-nd/4.0"
+      ],
+      "funder": [],
+      "crossref_score": 1
+    },
+    {
       "doi": "10.2139/ssrn.4162030",
       "title": "Blowing on the Fire: An Analysis of Low Quality and Hyper Partisan News Sources Circulated by Coordinated Link Sharing Networks in Nigeria",
       "authors": "Giglietto, Fabio; Olaniran, Samuel; Mincigrucci, Roberto; Marino, Giada; Mottola, Serena; Terenzi, Massimo",
@@ -886,28 +908,6 @@
       "abstract": "<p>Background. Measures against the COVID-19 pandemics have been subject of political polarization also in the United Kingdom. While this has been studied in the broader context of misinformation, the debate around non-pharmacological interventions (NPI) , the and the political implications of different views of their risks and benefits, has not been taken into account with sufficient depth Research question. Our research question was: Are politically-oriented UK newspapers more likely to promote a more, or less, precautionary views toward the use of NPIs?Methods. We used the Mediacloud database to search the names of scientists with different precautionary views (i.e.: signatories of the Great Barrington Declaration and of the John Snow Memorandum) and analyze the frequency with which they are mentioned in newspapers with different political orientation.Results. Scientists with more precautionary positions are more likely to be mentioned in left-leaning newspapers, whereas those with less precautionary views on right-leaning ones. The two groups segregated also in terms of co-authorship of academic papers.Conclusions. Scientists with different opinions in relation to  NPIs are mentioned by UK newspapers in a way that is dependent on the political orientation of the newspaper.</p>",
       "license": [
         "https://creativecommons.org/licenses/by/4.0/legalcode"
-      ],
-      "funder": [],
-      "crossref_score": 1
-    },
-    {
-      "doi": "10.51685/jqd.2023.020",
-      "title": "Cracking Open the European Newsfeed",
-      "authors": "Rossi, Luca; Giglietto, Fabio; Marino, Giada",
-      "venue": "Journal of Quantitative Description: Digital Media",
-      "year": 2023,
-      "type": "journal-article",
-      "url": "https://doi.org/10.51685/jqd.2023.020",
-      "crossref_type": "journal-article",
-      "publisher": "Journal of Quantitative Description: Digital Media",
-      "container_title": "Journal of Quantitative Description: Digital Media",
-      "volume": "3",
-      "issn": "2673-8813",
-      "isbn": null,
-      "subject": [],
-      "abstract": "<jats:p>This paper contributes to the ongoing effort to describe and quantify the quality of information that is shared on large social media platforms. We do this by complementing existing research that provided a first quantitative assessment of the quality of the information circulating on Facebook among US users. Leveraging an updated version of the same data source — Meta's URL Shares Dataset — and replicating much of the methodology, we quantify the trustworthy and untrustworthy links to external websites that have been shared on Facebook in the period between 2019 and 2022 in three major European countries (Germany, France, and Italy). We observe a clear decline in the number of URLs present in the dataset and an increase in the URLs from untrustworthy domains as a percentage of the total URLs shared in a year. This increase seems to be higher in electoral years (in Germany and in Italy) but it does not translate into an increase of Views received from untrustworthy sources.</jats:p>",
-      "license": [
-        "https://creativecommons.org/licenses/by-nc-nd/4.0"
       ],
       "funder": [],
       "crossref_score": 1
@@ -1428,7 +1428,7 @@
       "crossref_score": 1
     }
   ],
-  "lastUpdated": "2026-02-09T07:04:35.340Z",
+  "lastUpdated": "2026-02-10T07:03:43.112Z",
   "metadata": {
     "total_requested": 98,
     "successful_requests": 64,
