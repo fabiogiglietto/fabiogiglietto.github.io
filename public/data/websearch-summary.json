@@ -1,11 +1,12 @@
 {
-  "totalEntries": 98,
-  "lastUpdated": "2026-02-10T07:03:14.398Z",
+  "totalEntries": 100,
+  "lastUpdated": "2026-02-11T07:00:41.218Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-02-09T07:04:09.377Z"
+    "latest": "2026-02-11T07:00:41.186Z"
   },
   "byDate": {
+    "2026-02-11": 2,
     "2026-02-09": 1,
     "2026-02-08": 3,
     "2026-02-04": 1,
@@ -14,8 +15,7 @@
     "2026-02-01": 1,
     "2026-01-31": 1,
     "2026-01-30": 1,
-    "2026-01-29": 2,
-    "2026-01-27": 4
+    "2026-01-29": 2
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 40,
@@ -30,11 +30,25 @@
     "researchgate.net": 2
   },
   "byRelevanceScore": {
-    "high": 86,
+    "high": 88,
     "medium": 12,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Echo Chambers and Filter Bubbles | Snurblog - Axel Bruns",
+      "url": "https://snurb.info/taxonomy/term/171",
+      "source": "snurb.info",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-02-11T07:00:41.186Z"
+    },
+    {
+      "title": "Conference Agenda - | Association of Internet Researchers",
+      "url": "https://aoir.org/wp-content/uploads/2025/11/AoIR2025_Conference_Schedule.pdf",
+      "source": "aoir.org",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-02-11T07:00:41.186Z"
+    },
     {
       "title": "figshare.com",
       "url": "https://tandf.figshare.com/articles/journal_contribution/It_takes_a_village_to_manipulate_the_media_coordinated_link_sharing_behavior_during_2018_and_2019_Italian_elections/11993145",
@@ -55,20 +69,6 @@
       "source": "Likely University of Urbino or European Commission press releases.",
       "relevanceScore": 0.9,
       "collectedAt": "2026-02-08T06:49:15.670Z"
-    },
-    {
-      "title": "PROMPT Initiative Addressing Disinformation Narratives Across Europe",
-      "url": "No specific article URL found, likely press releases or project website.",
-      "source": "Likely PROMPT project website or related news sources.",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-02-08T06:49:15.670Z"
-    },
-    {
-      "title": "WHO IS BEHIND VERA.AI? Meet: Team of University of Urbino Carlo Bo",
-      "url": "https://veraai.eu/news/who-is-behind-vera-ai-meet-team-of-university-of-urbino-carlo-bo/",
-      "source": "veraai.eu",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-02-04T06:52:08.625Z"
     }
   ]
 }
