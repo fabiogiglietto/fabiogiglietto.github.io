@@ -439,6 +439,17 @@
       "duration": "6:06",
       "author": "Regina Cazzamatta",
       "doi": "10.1177/14614448251413687"
+    },
+    {
+      "id": "bibtex:Gillespie2026-aa",
+      "bibtexKey": "Gillespie2026-aa",
+      "title": "AI Red-Teaming: Whose Values, Whose Labor, Whose Harm?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGillespie, T., Shaw, R., Gray, M. L., & Suh, J. (2026). AI red-teaming is a sociotechnical problem. https://doi.org/10.1145/3731657",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Gillespie2026-aa.mp3",
+      "pubDate": "Fri, 13 Feb 2026 23:40:07 +0000",
+      "duration": "6:51",
+      "author": "Tarleton Gillespie, Ryland Shaw, Mary L. Gray, Jina Suh",
+      "doi": "10.1145/3731657"
     }
   ],
   "episodesByBibtexKey": {
@@ -881,6 +892,17 @@
       "duration": "6:06",
       "author": "Regina Cazzamatta",
       "doi": "10.1177/14614448251413687"
+    },
+    "Gillespie2026-aa": {
+      "id": "bibtex:Gillespie2026-aa",
+      "bibtexKey": "Gillespie2026-aa",
+      "title": "AI Red-Teaming: Whose Values, Whose Labor, Whose Harm?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGillespie, T., Shaw, R., Gray, M. L., & Suh, J. (2026). AI red-teaming is a sociotechnical problem. https://doi.org/10.1145/3731657",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Gillespie2026-aa.mp3",
+      "pubDate": "Fri, 13 Feb 2026 23:40:07 +0000",
+      "duration": "6:51",
+      "author": "Tarleton Gillespie, Ryland Shaw, Mary L. Gray, Jina Suh",
+      "doi": "10.1145/3731657"
     }
   },
   "episodesByDoi": {
@@ -1224,9 +1246,20 @@
       "duration": "6:06",
       "author": "Regina Cazzamatta",
       "doi": "10.1177/14614448251413687"
+    },
+    "10.1145/3731657": {
+      "id": "bibtex:Gillespie2026-aa",
+      "bibtexKey": "Gillespie2026-aa",
+      "title": "AI Red-Teaming: Whose Values, Whose Labor, Whose Harm?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGillespie, T., Shaw, R., Gray, M. L., & Suh, J. (2026). AI red-teaming is a sociotechnical problem. https://doi.org/10.1145/3731657",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Gillespie2026-aa.mp3",
+      "pubDate": "Fri, 13 Feb 2026 23:40:07 +0000",
+      "duration": "6:51",
+      "author": "Tarleton Gillespie, Ryland Shaw, Mary L. Gray, Jina Suh",
+      "doi": "10.1145/3731657"
     }
   },
-  "totalEpisodes": 40,
-  "lastUpdated": "2026-02-13T06:57:51.900Z",
+  "totalEpisodes": 41,
+  "lastUpdated": "2026-02-14T06:42:47.570Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }

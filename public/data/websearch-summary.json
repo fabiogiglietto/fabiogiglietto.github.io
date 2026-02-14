@@ -1,11 +1,12 @@
 {
-  "totalEntries": 100,
-  "lastUpdated": "2026-02-13T06:58:41.816Z",
+  "totalEntries": 101,
+  "lastUpdated": "2026-02-14T06:43:36.695Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-02-11T07:00:41.186Z"
+    "latest": "2026-02-14T06:43:36.652Z"
   },
   "byDate": {
+    "2026-02-14": 1,
     "2026-02-11": 2,
     "2026-02-09": 1,
     "2026-02-08": 3,
@@ -14,8 +15,7 @@
     "2026-02-02": 1,
     "2026-02-01": 1,
     "2026-01-31": 1,
-    "2026-01-30": 1,
-    "2026-01-29": 2
+    "2026-01-30": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 40,
@@ -30,11 +30,18 @@
     "researchgate.net": 2
   },
   "byRelevanceScore": {
-    "high": 88,
+    "high": 89,
     "medium": 12,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Research Radio - Apple Podcasts",
+      "url": "https://podcasts.apple.com/de/podcast/fgs-research-radio/id1866587707",
+      "source": "podcasts.apple.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-02-14T06:43:36.652Z"
+    },
     {
       "title": "Echo Chambers and Filter Bubbles | Snurblog - Axel Bruns",
       "url": "https://snurb.info/taxonomy/term/171",
@@ -60,13 +67,6 @@
       "title": "White Paper: The State of Social Media Research APIs & Tools in the DSA Era",
       "url": "https://disinfo-prompt.eu/posts/5TVAc369E7KfgFi4Pcots6",
       "source": "disinfo-prompt.eu",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-02-08T06:49:15.670Z"
-    },
-    {
-      "title": "VERAAI Project Developing AI-Based Tools to Combat Disinformation",
-      "url": "No specific article URL found, likely press releases or university news.",
-      "source": "Likely University of Urbino or European Commission press releases.",
       "relevanceScore": 0.9,
       "collectedAt": "2026-02-08T06:49:15.670Z"
     }
