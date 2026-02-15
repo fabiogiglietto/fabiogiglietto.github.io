@@ -1,11 +1,12 @@
 {
-  "totalEntries": 101,
-  "lastUpdated": "2026-02-14T06:43:36.695Z",
+  "totalEntries": 103,
+  "lastUpdated": "2026-02-15T06:51:43.243Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-02-14T06:43:36.652Z"
+    "latest": "2026-02-15T06:51:43.205Z"
   },
   "byDate": {
+    "2026-02-15": 2,
     "2026-02-14": 1,
     "2026-02-11": 2,
     "2026-02-09": 1,
@@ -14,12 +15,11 @@
     "2026-02-03": 1,
     "2026-02-02": 1,
     "2026-02-01": 1,
-    "2026-01-31": 1,
-    "2026-01-30": 1
+    "2026-01-31": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 40,
-    "uniurb.it": 6,
+    "uniurb.it": 7,
     "open.online": 5,
     "veraai.eu": 2,
     "Il Sole 24 ORE": 2,
@@ -30,11 +30,25 @@
     "researchgate.net": 2
   },
   "byRelevanceScore": {
-    "high": 89,
+    "high": 91,
     "medium": 12,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "\"META HAS PROMOTED HOMOPHOBIC, RACIST, AND FAKE NEWS POSTS\"",
+      "url": "https://www.youtube.com/watch?v=buhQOhyBVLk",
+      "source": "youtube.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-02-15T06:51:43.205Z"
+    },
+    {
+      "title": "Da Horizon Europe 400 mila Euro all'Università di Urbino per combattere la disinformazione - UniUrb",
+      "url": "https://www.uniurb.it/comunicati/39813",
+      "source": "uniurb.it",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-02-15T06:51:43.205Z"
+    },
     {
       "title": "Research Radio - Apple Podcasts",
       "url": "https://podcasts.apple.com/de/podcast/fgs-research-radio/id1866587707",
@@ -55,20 +69,6 @@
       "source": "aoir.org",
       "relevanceScore": 0.9,
       "collectedAt": "2026-02-11T07:00:41.186Z"
-    },
-    {
-      "title": "figshare.com",
-      "url": "https://tandf.figshare.com/articles/journal_contribution/It_takes_a_village_to_manipulate_the_media_coordinated_link_sharing_behavior_during_2018_and_2019_Italian_elections/11993145",
-      "source": "tandf.figshare.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-02-09T07:04:09.377Z"
-    },
-    {
-      "title": "White Paper: The State of Social Media Research APIs & Tools in the DSA Era",
-      "url": "https://disinfo-prompt.eu/posts/5TVAc369E7KfgFi4Pcots6",
-      "source": "disinfo-prompt.eu",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-02-08T06:49:15.670Z"
     }
   ]
 }
