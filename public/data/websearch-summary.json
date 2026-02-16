@@ -1,11 +1,12 @@
 {
-  "totalEntries": 103,
-  "lastUpdated": "2026-02-15T06:51:43.243Z",
+  "totalEntries": 105,
+  "lastUpdated": "2026-02-16T07:02:45.243Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-02-15T06:51:43.205Z"
+    "latest": "2026-02-16T07:02:45.202Z"
   },
   "byDate": {
+    "2026-02-16": 2,
     "2026-02-15": 2,
     "2026-02-14": 1,
     "2026-02-11": 2,
@@ -14,11 +15,10 @@
     "2026-02-04": 1,
     "2026-02-03": 1,
     "2026-02-02": 1,
-    "2026-02-01": 1,
-    "2026-01-31": 1
+    "2026-02-01": 1
   },
   "bySource": {
-    "vertexaisearch.cloud.google.com": 40,
+    "vertexaisearch.cloud.google.com": 41,
     "uniurb.it": 7,
     "open.online": 5,
     "veraai.eu": 2,
@@ -30,11 +30,25 @@
     "researchgate.net": 2
   },
   "byRelevanceScore": {
-    "high": 91,
+    "high": 93,
     "medium": 12,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "L'Università di Urbino in prima linea per la lotta alle fake news - Studia Rapido",
+      "url": "https://www.studiarapido.it/luniversita-di-urbino-in-prima-linea-per-la-lotta-alle-fake-news/",
+      "source": "studiarapido.it",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-02-16T07:02:45.202Z"
+    },
+    {
+      "title": "Health Discourse Research Initiative",
+      "url": "https://www.mediaecosystems.org/initiatives/health-discourse-research-initiative",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-02-16T07:02:45.202Z"
+    },
     {
       "title": "\"META HAS PROMOTED HOMOPHOBIC, RACIST, AND FAKE NEWS POSTS\"",
       "url": "https://www.youtube.com/watch?v=buhQOhyBVLk",
@@ -55,20 +69,6 @@
       "source": "podcasts.apple.com",
       "relevanceScore": 0.9,
       "collectedAt": "2026-02-14T06:43:36.652Z"
-    },
-    {
-      "title": "Echo Chambers and Filter Bubbles | Snurblog - Axel Bruns",
-      "url": "https://snurb.info/taxonomy/term/171",
-      "source": "snurb.info",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-02-11T07:00:41.186Z"
-    },
-    {
-      "title": "Conference Agenda - | Association of Internet Researchers",
-      "url": "https://aoir.org/wp-content/uploads/2025/11/AoIR2025_Conference_Schedule.pdf",
-      "source": "aoir.org",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-02-11T07:00:41.186Z"
     }
   ]
 }
