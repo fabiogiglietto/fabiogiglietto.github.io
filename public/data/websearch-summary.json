@@ -1,11 +1,12 @@
 {
-  "totalEntries": 105,
-  "lastUpdated": "2026-02-17T06:58:27.764Z",
+  "totalEntries": 107,
+  "lastUpdated": "2026-02-18T07:00:45.385Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-02-16T07:02:45.202Z"
+    "latest": "2026-02-18T07:00:45.338Z"
   },
   "byDate": {
+    "2026-02-18": 2,
     "2026-02-16": 2,
     "2026-02-15": 2,
     "2026-02-14": 1,
@@ -14,11 +15,10 @@
     "2026-02-08": 3,
     "2026-02-04": 1,
     "2026-02-03": 1,
-    "2026-02-02": 1,
-    "2026-02-01": 1
+    "2026-02-02": 1
   },
   "bySource": {
-    "vertexaisearch.cloud.google.com": 41,
+    "vertexaisearch.cloud.google.com": 42,
     "uniurb.it": 7,
     "open.online": 5,
     "veraai.eu": 2,
@@ -30,11 +30,18 @@
     "researchgate.net": 2
   },
   "byRelevanceScore": {
-    "high": 93,
-    "medium": 12,
+    "high": 94,
+    "medium": 13,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Cracking Open the European Newsfeed | Journal of Quantitative Description: Digital Media",
+      "url": "https://journalqd.org/article/view/4377",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-02-18T07:00:45.338Z"
+    },
     {
       "title": "L'Università di Urbino in prima linea per la lotta alle fake news - Studia Rapido",
       "url": "https://www.studiarapido.it/luniversita-di-urbino-in-prima-linea-per-la-lotta-alle-fake-news/",
@@ -62,13 +69,6 @@
       "source": "uniurb.it",
       "relevanceScore": 0.9,
       "collectedAt": "2026-02-15T06:51:43.205Z"
-    },
-    {
-      "title": "Research Radio - Apple Podcasts",
-      "url": "https://podcasts.apple.com/de/podcast/fgs-research-radio/id1866587707",
-      "source": "podcasts.apple.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-02-14T06:43:36.652Z"
     }
   ]
 }
