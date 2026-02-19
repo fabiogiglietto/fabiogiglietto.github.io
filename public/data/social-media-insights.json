@@ -1,54 +1,54 @@
 {
-  "overallSummary": "Fabio Giglietto maintains an active presence across Mastodon, LinkedIn, and Bluesky, primarily sharing research-related updates, publications, and opportunities within the field of computational social science, particularly focusing on disinformation and information operations. While LinkedIn boasts the largest follower count, engagement varies across platforms.",
+  "overallSummary": "Fabio Giglietto has a significant social media presence across Mastodon, LinkedIn, and Bluesky, focusing on research related to disinformation, computational social science, and information operations. Engagement varies across platforms, with LinkedIn showing the highest average engagement per post due to its professional audience. The content is heavily focused on announcing research findings, job opportunities, and conference participation.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 3.5,
+    "averageEngagementRate": 0.036,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
-      "theme": "Research Dissemination",
-      "description": "Sharing published papers, research findings, and new tools related to computational social science and disinformation studies."
+      "theme": "Research Announcements",
+      "description": "Sharing updates on research publications, grants, and findings related to social media analysis and information operations."
     },
     {
-      "theme": "Job/Research Opportunities",
-      "description": "Announcing openings for postdoctoral researchers and PhD students within the research team."
+      "theme": "Job Opportunities",
+      "description": "Advertising postdoctoral and PhD positions in computational social science and related fields."
     },
     {
-      "theme": "Conference/Presentation Announcements",
-      "description": "Sharing information about upcoming conference presentations and participation in academic discussions."
+      "theme": "Conference Participation",
+      "description": "Promoting presentations and involvement in conferences focused on disinformation and related topics."
     },
     {
-      "theme": "Grants and Funding",
-      "description": "Announcing new grants awarded for research projects."
+      "theme": "Software Release",
+      "description": "Announcing the release of software tools for detecting coordinated behavior."
     }
   ],
   "recommendations": [
-    "Diversify content types to include visuals (images/videos) to enhance engagement.",
-    "Increase posting frequency on platforms with lower engagement rates.",
-    "Use platform-specific hashtags to broaden reach and increase discoverability.",
-    "Actively participate in conversations and respond to comments to foster a stronger community."
+    "Diversify content formats (e.g., include visuals like images and videos) to increase engagement.",
+    "Engage more actively with followers by asking questions and responding to comments.",
+    "Tailor content to each platform's audience and optimal posting times.",
+    "Use relevant hashtags to expand reach beyond the existing follower base."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky shows decent engagement with a focus on research publications and research opportunities. Reposts are a significant driver of engagement on this platform.",
-    "mastodon": "Mastodon has the lowest follower count and engagement. Content should be tailored to the platform's community, potentially focusing on open-source tools and research discussions.",
-    "linkedin": "LinkedIn has the largest follower base and highest engagement, likely due to the professional networking context. Content related to grants, hiring, and team achievements performs well."
+    "bluesky": "Bluesky shows good engagement with research publications and research opportunities for PhD students. Leveraging this platform for discussions and Q&A sessions could enhance interaction.",
+    "mastodon": "Mastodon content is more focused on methodological discussions and tool releases. Consider posting more frequently with focused content to engage the academic community.",
+    "linkedin": "LinkedIn is highly effective for announcing grants and job opportunities. Continue to focus on professional announcements and networking within this platform."
   },
   "topPerformingContent": [
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
       "platform": "linkedin",
-      "engagementRate": 5.78
+      "engagementRate": 0.051
     },
     {
       "content": "Now hiring: Two postdoctoral researchers to join our team working on computational methods for social media analysis. Background in data science, computational social science, or related fields preferred.",
       "platform": "linkedin",
-      "engagementRate": 3.95
+      "engagementRate": 0.037
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
       "platform": "bluesky",
-      "engagementRate": 7.37
+      "engagementRate": 0.074
     }
   ]
 }
