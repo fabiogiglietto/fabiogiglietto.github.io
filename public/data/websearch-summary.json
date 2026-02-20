@@ -1,11 +1,12 @@
 {
-  "totalEntries": 107,
-  "lastUpdated": "2026-02-19T06:59:14.241Z",
+  "totalEntries": 110,
+  "lastUpdated": "2026-02-20T06:56:04.535Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-02-18T07:00:45.338Z"
+    "latest": "2026-02-20T06:56:04.498Z"
   },
   "byDate": {
+    "2026-02-20": 3,
     "2026-02-18": 2,
     "2026-02-16": 2,
     "2026-02-15": 2,
@@ -14,27 +15,47 @@
     "2026-02-09": 1,
     "2026-02-08": 3,
     "2026-02-04": 1,
-    "2026-02-03": 1,
-    "2026-02-02": 1
+    "2026-02-03": 1
   },
   "bySource": {
-    "vertexaisearch.cloud.google.com": 42,
+    "vertexaisearch.cloud.google.com": 44,
     "uniurb.it": 7,
     "open.online": 5,
+    "youtube.com": 2,
     "veraai.eu": 2,
     "Il Sole 24 ORE": 2,
     "vera.ai": 2,
     "ilrestodelcarlino.it": 2,
     "ByoBlu": 2,
-    "euractiv.ro": 2,
-    "researchgate.net": 2
+    "euractiv.ro": 2
   },
   "byRelevanceScore": {
-    "high": 94,
+    "high": 97,
     "medium": 13,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Massimo Terenzi and Fabio Giglietto , Author at European Journalism Observatory - EJO",
+      "url": "https://en.ejo.ch/author/massimo-and-fabio",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-02-20T06:56:04.498Z"
+    },
+    {
+      "title": "“META HAS PROMOTED HOMOPHOBIC, RACIST, AND FAKE NEWS POSTS” - YouTube",
+      "url": "https://www.youtube.com/watch?v=0-dtP01Qv6c",
+      "source": "youtube.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-02-20T06:56:04.498Z"
+    },
+    {
+      "title": "Researchers meet to discuss DSA access to publicly available platform data",
+      "url": "https://algorithmic-transparency.ec.europa.eu/news/researchers-meet-discuss-dsa-access-publicly-available-platform-data-2025-12-12_en",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-02-20T06:56:04.498Z"
+    },
     {
       "title": "Cracking Open the European Newsfeed | Journal of Quantitative Description: Digital Media",
       "url": "https://journalqd.org/article/view/4377",
@@ -48,27 +69,6 @@
       "source": "studiarapido.it",
       "relevanceScore": 0.9,
       "collectedAt": "2026-02-16T07:02:45.202Z"
-    },
-    {
-      "title": "Health Discourse Research Initiative",
-      "url": "https://www.mediaecosystems.org/initiatives/health-discourse-research-initiative",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-02-16T07:02:45.202Z"
-    },
-    {
-      "title": "\"META HAS PROMOTED HOMOPHOBIC, RACIST, AND FAKE NEWS POSTS\"",
-      "url": "https://www.youtube.com/watch?v=buhQOhyBVLk",
-      "source": "youtube.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-02-15T06:51:43.205Z"
-    },
-    {
-      "title": "Da Horizon Europe 400 mila Euro all'Università di Urbino per combattere la disinformazione - UniUrb",
-      "url": "https://www.uniurb.it/comunicati/39813",
-      "source": "uniurb.it",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-02-15T06:51:43.205Z"
     }
   ]
 }

@@ -494,6 +494,17 @@
       "duration": "5:59",
       "author": "Renee Lieu, Oliver R. Hayes, John Cook",
       "doi": "10.1111/bjop.70049"
+    },
+    {
+      "id": "bibtex:Gauthier2026-iq",
+      "bibtexKey": "Gauthier2026-iq",
+      "title": "X Algorithm: How Feeds Shift Political Views",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGauthier, G., Hodler, R., Widmer, P., & Zhuravskaya, E. (2026). The political effects of X’s feed algorithm. https://doi.org/10.1038/s41586-026-10098-2",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Gauthier2026-iq.mp3",
+      "pubDate": "Thu, 19 Feb 2026 07:58:00 +0000",
+      "duration": "5:52",
+      "author": "Germain Gauthier, Roland Hodler, Philine Widmer, Ekaterina Zhuravskaya",
+      "doi": "10.1038/s41586-026-10098-2"
     }
   ],
   "episodesByBibtexKey": {
@@ -991,6 +1002,17 @@
       "duration": "5:59",
       "author": "Renee Lieu, Oliver R. Hayes, John Cook",
       "doi": "10.1111/bjop.70049"
+    },
+    "Gauthier2026-iq": {
+      "id": "bibtex:Gauthier2026-iq",
+      "bibtexKey": "Gauthier2026-iq",
+      "title": "X Algorithm: How Feeds Shift Political Views",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGauthier, G., Hodler, R., Widmer, P., & Zhuravskaya, E. (2026). The political effects of X’s feed algorithm. https://doi.org/10.1038/s41586-026-10098-2",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Gauthier2026-iq.mp3",
+      "pubDate": "Thu, 19 Feb 2026 07:58:00 +0000",
+      "duration": "5:52",
+      "author": "Germain Gauthier, Roland Hodler, Philine Widmer, Ekaterina Zhuravskaya",
+      "doi": "10.1038/s41586-026-10098-2"
     }
   },
   "episodesByDoi": {
@@ -1389,9 +1411,20 @@
       "duration": "5:59",
       "author": "Renee Lieu, Oliver R. Hayes, John Cook",
       "doi": "10.1111/bjop.70049"
+    },
+    "10.1038/s41586-026-10098-2": {
+      "id": "bibtex:Gauthier2026-iq",
+      "bibtexKey": "Gauthier2026-iq",
+      "title": "X Algorithm: How Feeds Shift Political Views",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGauthier, G., Hodler, R., Widmer, P., & Zhuravskaya, E. (2026). The political effects of X’s feed algorithm. https://doi.org/10.1038/s41586-026-10098-2",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Gauthier2026-iq.mp3",
+      "pubDate": "Thu, 19 Feb 2026 07:58:00 +0000",
+      "duration": "5:52",
+      "author": "Germain Gauthier, Roland Hodler, Philine Widmer, Ekaterina Zhuravskaya",
+      "doi": "10.1038/s41586-026-10098-2"
     }
   },
-  "totalEpisodes": 45,
-  "lastUpdated": "2026-02-19T06:58:40.963Z",
+  "totalEpisodes": 46,
+  "lastUpdated": "2026-02-20T06:55:07.562Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
