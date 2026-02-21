@@ -1,50 +1,54 @@
 {
-  "overallSummary": "Fabio Giglietto maintains an active presence on Mastodon, LinkedIn, and Bluesky, focusing on research related to social media analysis, information operations, and computational social science. LinkedIn has the largest follower base, while Bluesky demonstrates higher post frequency. Engagement levels vary across platforms, with LinkedIn posts generating more comments and likes, indicating a professional network focus.",
+  "overallSummary": "Fabio Giglietto maintains a presence on Mastodon, LinkedIn, and Bluesky, focusing on research in computational social science, disinformation, and coordinated inauthentic behavior. LinkedIn has the highest follower count, while Bluesky shows recent active posting. Overall engagement appears reasonable but varies significantly across platforms.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 2.82,
+    "averageEngagementRate": 2.5,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
       "theme": "Research Announcements",
-      "description": "Sharing updates on research projects, publications, and grant awards."
+      "description": "Sharing news about research findings, publications, and grant awards."
     },
     {
       "theme": "Computational Social Science",
-      "description": "Discussions and information related to computational methods for social media analysis."
+      "description": "Discussion of methods, tools, and theories related to computational social science."
+    },
+    {
+      "theme": "Disinformation and Information Operations",
+      "description": "Content related to studying and detecting disinformation and coordinated inauthentic behavior."
     },
     {
       "theme": "Job Opportunities",
-      "description": "Posts advertising postdoctoral and PhD positions."
+      "description": "Posts about hiring for research positions."
     },
     {
-      "theme": "Disinformation & Coordinated Behavior",
-      "description": "Content focused on detecting and understanding disinformation and coordinated inauthentic behavior."
+      "theme": "Conference Presentations",
+      "description": "Announcements and discussions related to upcoming conference presentations."
     }
   ],
   "recommendations": [
-    "Tailor content to each platform's audience. Focus on professional updates and job opportunities on LinkedIn, research discussions on Mastodon, and shorter, more immediate updates on Bluesky.",
-    "Use more visuals (images, videos) to increase engagement, especially on platforms like Bluesky and LinkedIn.",
-    "Engage directly with comments and replies to foster a community around research and job opportunities.",
-    "Utilize relevant hashtags to increase discoverability, particularly on Bluesky and Mastodon. Consider using specific conference hashtags to boost visibility.",
+    "Tailor content to each platform's audience and style (e.g., more formal on LinkedIn, more informal on Bluesky/Mastodon).",
+    "Increase posting frequency on platforms with lower engagement.",
+    "Use relevant hashtags to increase content discoverability.",
+    "Encourage interaction by asking questions and prompting discussions.",
     "Cross-promote content across platforms to reach a wider audience."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky shows a high frequency of posts, indicating a preference for timely updates. Engagement is good, suggesting a responsive audience. Focus on sharing quick research highlights and conference updates.",
-    "mastodon": "Mastodon content is focused on research releases and discussions. While the follower count is moderate, reposts indicate a strong sense of community. Continue fostering in-depth discussions here.",
-    "linkedin": "LinkedIn is the platform with the largest professional network and the highest engagement in terms of likes and comments. Focus on sharing research findings, grant announcements, and job opportunities. Leverage the platform for professional networking."
+    "bluesky": "Bluesky shows frequent posting activity and moderate engagement. The content focuses on research publications, conference presentations, and research opportunities.",
+    "mastodon": "Mastodon has a smaller audience but still generates engagement. Content is similar to Bluesky, with a focus on research tools and discussions.",
+    "linkedin": "LinkedIn has the largest audience and highest individual post engagement, likely due to its professional focus. Content is primarily about research grants and job opportunities."
   },
   "topPerformingContent": [
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
       "platform": "linkedin",
-      "engagementRate": 5.78
+      "engagementRate": 6.05
     },
     {
       "content": "Now hiring: Two postdoctoral researchers to join our team working on computational methods for social media analysis. Background in data science, computational social science, or related fields preferred.",
       "platform": "linkedin",
-      "engagementRate": 3.95
+      "engagementRate": 3.62
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
