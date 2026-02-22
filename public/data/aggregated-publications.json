@@ -514,7 +514,7 @@
         "scholar": 61,
         "wos": null,
         "scopus": 13,
-        "semanticScholar": 33
+        "semanticScholar": 31
       },
       "source_urls": {
         "orcid": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84938536467&partnerID=MN8TOARS",
@@ -968,7 +968,7 @@
       "citations": {
         "scholar": null,
         "wos": 0,
-        "scopus": 28,
+        "scopus": 29,
         "semanticScholar": 26
       },
       "source_urls": {
@@ -989,7 +989,7 @@
         "ora": null
       },
       "metrics": {
-        "total_citations": 28,
+        "total_citations": 29,
         "citation_sources": 3
       },
       "crossref_type": "journal-article",
@@ -1559,6 +1559,50 @@
       ]
     },
     {
+      "title": "A Workflow to Detect, Monitor, and Update Lists of Coordinated Social Media Accounts Across Time: The Case of the 2022 Italian Election",
+      "type": "journal-article",
+      "venue": "Social Media + Society",
+      "authors": "Giglietto, Fabio; Marino, Giada; Mincigrucci, Roberto; Stanziano, Anna",
+      "year": 2023,
+      "month": 7,
+      "day": null,
+      "publicationDate": "2023-07-01",
+      "doi": "10.1177/20563051231196866",
+      "citations": {
+        "scholar": null,
+        "wos": 0,
+        "scopus": 5,
+        "semanticScholar": 7
+      },
+      "source_urls": {
+        "orcid": "https://doi.org/10.1177/20563051231196866",
+        "scholar": null,
+        "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:001070115200001&DestLinkType=FullRecord&DestApp=WOS_CPL",
+        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85170566346&origin=inward",
+        "semanticScholar": "https://www.semanticscholar.org/paper/9e31c21df6d8e134626bc15ecf9198a52fe3b83c",
+        "ora": null,
+        "crossref": "https://doi.org/10.1177/20563051231196866"
+      },
+      "source_ids": {
+        "orcid": 142028666,
+        "scholar": null,
+        "wos": "WOS:001070115200001",
+        "scopus": "85170566346",
+        "semanticScholar": "9e31c21df6d8e134626bc15ecf9198a52fe3b83c",
+        "ora": null
+      },
+      "metrics": {
+        "total_citations": 7,
+        "citation_sources": 3
+      },
+      "crossref_type": "journal-article",
+      "publisher": "SAGE Publications",
+      "influentialCitations": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": "https://journals.sagepub.com/doi/pdf/10.1177/20563051231196866",
+      "fieldsOfStudy": []
+    },
+    {
       "title": "Exploring Correlations Between TV Viewership and Twitter Conversations in Italian Political Talk Shows",
       "type": "journal-article",
       "venue": "SSRN Electronic Journal",
@@ -1603,50 +1647,6 @@
       "fieldsOfStudy": [
         "Geography"
       ]
-    },
-    {
-      "title": "A Workflow to Detect, Monitor, and Update Lists of Coordinated Social Media Accounts Across Time: The Case of the 2022 Italian Election",
-      "type": "journal-article",
-      "venue": "Social Media + Society",
-      "authors": "Giglietto, Fabio; Marino, Giada; Mincigrucci, Roberto; Stanziano, Anna",
-      "year": 2023,
-      "month": 7,
-      "day": null,
-      "publicationDate": "2023-07-01",
-      "doi": "10.1177/20563051231196866",
-      "citations": {
-        "scholar": null,
-        "wos": 0,
-        "scopus": 5,
-        "semanticScholar": 6
-      },
-      "source_urls": {
-        "orcid": "https://doi.org/10.1177/20563051231196866",
-        "scholar": null,
-        "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:001070115200001&DestLinkType=FullRecord&DestApp=WOS_CPL",
-        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85170566346&origin=inward",
-        "semanticScholar": "https://www.semanticscholar.org/paper/9e31c21df6d8e134626bc15ecf9198a52fe3b83c",
-        "ora": null,
-        "crossref": "https://doi.org/10.1177/20563051231196866"
-      },
-      "source_ids": {
-        "orcid": 142028666,
-        "scholar": null,
-        "wos": "WOS:001070115200001",
-        "scopus": "85170566346",
-        "semanticScholar": "9e31c21df6d8e134626bc15ecf9198a52fe3b83c",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 6,
-        "citation_sources": 3
-      },
-      "crossref_type": "journal-article",
-      "publisher": "SAGE Publications",
-      "influentialCitations": 0,
-      "isOpenAccess": true,
-      "openAccessPdf": "https://journals.sagepub.com/doi/pdf/10.1177/20563051231196866",
-      "fieldsOfStudy": []
     },
     {
       "title": "Understanding engagement and willingness to speak up in social television: A full-season, cross-genre analysis of TV audience participation on Twitter",
@@ -7009,7 +7009,7 @@
   ],
   "metrics": {
     "total_publications": 180,
-    "total_citations": 3409,
+    "total_citations": 3411,
     "h_index": 27,
     "i10_index": 40,
     "citation_sources": {
@@ -7021,5 +7021,5 @@
       "with_ora": 13
     }
   },
-  "lastUpdated": "2026-02-21T06:41:42.003Z"
+  "lastUpdated": "2026-02-22T06:47:31.079Z"
 }

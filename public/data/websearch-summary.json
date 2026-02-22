@@ -1,11 +1,12 @@
 {
-  "totalEntries": 111,
-  "lastUpdated": "2026-02-21T06:40:53.336Z",
+  "totalEntries": 112,
+  "lastUpdated": "2026-02-22T06:46:44.428Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-02-21T06:40:53.296Z"
+    "latest": "2026-02-22T06:46:44.392Z"
   },
   "byDate": {
+    "2026-02-22": 1,
     "2026-02-21": 1,
     "2026-02-20": 3,
     "2026-02-18": 2,
@@ -14,11 +15,10 @@
     "2026-02-14": 1,
     "2026-02-11": 2,
     "2026-02-09": 1,
-    "2026-02-08": 3,
-    "2026-02-04": 1
+    "2026-02-08": 3
   },
   "bySource": {
-    "vertexaisearch.cloud.google.com": 44,
+    "vertexaisearch.cloud.google.com": 45,
     "uniurb.it": 7,
     "open.online": 5,
     "youtube.com": 2,
@@ -30,11 +30,18 @@
     "euractiv.ro": 2
   },
   "byRelevanceScore": {
-    "high": 98,
+    "high": 99,
     "medium": 13,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Meta shuts down CrowdTangle tool used by some groups to track online misinformation",
+      "url": "https://www.straitstimes.com/world/united-states/meta-shuts-down-crowdtangle-tool-used-for-tracking-online-misinformation",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-02-22T06:46:44.392Z"
+    },
     {
       "title": "Scientists Around the World Call to Protect Research on One of Humanity's Greatest Short-term Threats: Disinformation",
       "url": "https://www.techpolicy.press/scientists-around-the-world-call-to-protect-research-on-one-of-humanitys-greatest-short-term-threats-disinformation/",
@@ -62,13 +69,6 @@
       "source": "vertexaisearch.cloud.google.com",
       "relevanceScore": 0.9,
       "collectedAt": "2026-02-20T06:56:04.498Z"
-    },
-    {
-      "title": "Cracking Open the European Newsfeed | Journal of Quantitative Description: Digital Media",
-      "url": "https://journalqd.org/article/view/4377",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-02-18T07:00:45.338Z"
     }
   ]
 }
