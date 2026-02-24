@@ -46,14 +46,14 @@
         "scholar": null,
         "wos": 410,
         "scopus": 184,
-        "semanticScholar": 215
+        "semanticScholar": 145
       },
       "source_urls": {
         "orcid": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84898915306&partnerID=MN8TOARS",
         "scholar": null,
         "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000334367600006&DestLinkType=FullRecord&DestApp=WOS_CPL",
         "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=84898915306&origin=inward",
-        "semanticScholar": "https://www.semanticscholar.org/paper/7d468c2577c420949c2b32583684c03b519190bf",
+        "semanticScholar": "https://www.semanticscholar.org/paper/mock-s2-id-1",
         "ora": null,
         "crossref": "https://doi.org/10.1111/jcom.12085"
       },
@@ -62,7 +62,7 @@
         "scholar": null,
         "wos": "WOS:000334367600006",
         "scopus": "84898915306",
-        "semanticScholar": "7d468c2577c420949c2b32583684c03b519190bf",
+        "semanticScholar": "mock-s2-id-1",
         "ora": null
       },
       "metrics": {
@@ -71,10 +71,11 @@
       },
       "crossref_type": "journal-article",
       "publisher": "Oxford University Press (OUP)",
-      "influentialCitations": 16,
+      "influentialCitations": 12,
       "isOpenAccess": false,
       "openAccessPdf": null,
       "fieldsOfStudy": [
+        "Computer Science",
         "Sociology"
       ]
     },
@@ -124,14 +125,14 @@
         "scholar": null,
         "wos": 289,
         "scopus": null,
-        "semanticScholar": 146
+        "semanticScholar": 178
       },
       "source_urls": {
         "orcid": null,
         "scholar": null,
         "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000212197600002&DestLinkType=FullRecord&DestApp=WOS_CPL",
         "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/7b88268bdcfa24f2682aef645ef5c3aa11ea7c01",
+        "semanticScholar": "https://www.semanticscholar.org/paper/mock-s2-id-3",
         "ora": null,
         "crossref": "https://doi.org/10.1080/15228835.2012.743797"
       },
@@ -140,7 +141,7 @@
         "scholar": null,
         "wos": "WOS:000212197600002",
         "scopus": null,
-        "semanticScholar": "7b88268bdcfa24f2682aef645ef5c3aa11ea7c01",
+        "semanticScholar": "mock-s2-id-3",
         "ora": null
       },
       "metrics": {
@@ -149,11 +150,12 @@
       },
       "crossref_type": "journal-article",
       "publisher": "Informa UK Limited",
-      "influentialCitations": 4,
+      "influentialCitations": 15,
       "isOpenAccess": false,
       "openAccessPdf": null,
       "fieldsOfStudy": [
-        "Computer Science"
+        "Computer Science",
+        "Sociology"
       ]
     },
     {
@@ -234,14 +236,14 @@
         "scholar": null,
         "wos": 170,
         "scopus": 96,
-        "semanticScholar": 90
+        "semanticScholar": 89
       },
       "source_urls": {
         "orcid": "https://doi.org/10.1177/0011392119837536",
         "scholar": null,
         "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000471719800011&DestLinkType=FullRecord&DestApp=WOS_CPL",
         "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85064223856&origin=inward",
-        "semanticScholar": "https://www.semanticscholar.org/paper/c84a169e6df175c4662012d3ba7dbf8fa1b5abc9",
+        "semanticScholar": "https://www.semanticscholar.org/paper/mock-s2-id-2",
         "ora": null,
         "crossref": "https://doi.org/10.1177/0011392119837536"
       },
@@ -250,7 +252,7 @@
         "scholar": null,
         "wos": "WOS:000471719800011",
         "scopus": "85064223856",
-        "semanticScholar": "c84a169e6df175c4662012d3ba7dbf8fa1b5abc9",
+        "semanticScholar": "mock-s2-id-2",
         "ora": null
       },
       "metrics": {
@@ -259,12 +261,12 @@
       },
       "crossref_type": "journal-article",
       "publisher": "SAGE Publications",
-      "influentialCitations": 1,
+      "influentialCitations": 8,
       "isOpenAccess": true,
-      "openAccessPdf": "https://pure.itu.dk/portal/files/83995855/CSI837536_fg_av_lr.pdf",
+      "openAccessPdf": "https://example.com/paper.pdf",
       "fieldsOfStudy": [
-        "Art",
-        "Sociology"
+        "Sociology",
+        "Political Science"
       ]
     },
     {
@@ -313,14 +315,14 @@
         "scholar": null,
         "wos": 0,
         "scopus": 104,
-        "semanticScholar": 117
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": "https://doi.org/10.1080/1369118X.2020.1739732",
         "scholar": null,
         "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000527692500001&DestLinkType=FullRecord&DestApp=WOS_CPL",
         "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85081723807&origin=inward",
-        "semanticScholar": "https://www.semanticscholar.org/paper/a8b5ebbca42d8760de06f3271caa5a9d09db0c85",
+        "semanticScholar": null,
         "ora": null,
         "crossref": "https://doi.org/10.1080/1369118x.2020.1739732"
       },
@@ -329,60 +331,15 @@
         "scholar": null,
         "wos": "WOS:000527692500001",
         "scopus": "85081723807",
-        "semanticScholar": "a8b5ebbca42d8760de06f3271caa5a9d09db0c85",
+        "semanticScholar": null,
         "ora": null
       },
       "metrics": {
-        "total_citations": 117,
-        "citation_sources": 3
+        "total_citations": 104,
+        "citation_sources": 2
       },
       "crossref_type": "journal-article",
-      "publisher": "Informa UK Limited",
-      "influentialCitations": 14,
-      "isOpenAccess": true,
-      "openAccessPdf": "https://pure.itu.dk/portal/files/85402374/It_takes_a_village_to_manipulate_the_media.pdf",
-      "fieldsOfStudy": [
-        "Political Science"
-      ]
-    },
-    {
-      "title": "Nathaniel Persily e Joshua A. Tucker (a cura di). Social Media and Democracy. The State of the Field, Prospects for Reform",
-      "authors": "Fabio Giglietto",
-      "venue": "",
-      "year": 2021,
-      "doi": "10.3270/100321",
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 99
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/805412ad610c0d74282e6a345f2acbf569c7078b",
-        "ora": null
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "805412ad610c0d74282e6a345f2acbf569c7078b",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 99,
-        "citation_sources": 1
-      },
-      "influentialCitations": 4,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Political Science"
-      ]
+      "publisher": "Informa UK Limited"
     },
     {
       "title": "Facebook digital traces for survey research: Assessing the efficiency and effectiveness of a Facebook Ad–based procedure for recruiting online survey respondents in niche and …",
@@ -426,79 +383,27 @@
         "scholar": 69,
         "wos": null,
         "scopus": null,
-        "semanticScholar": 34
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": null,
         "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
         "wos": null,
         "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/0aff44580981341b60167096de932173cb3190ec",
+        "semanticScholar": null,
         "ora": null
       },
       "source_ids": {
         "orcid": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "0aff44580981341b60167096de932173cb3190ec",
+        "semanticScholar": null,
         "ora": null
       },
       "metrics": {
         "total_citations": 69,
-        "citation_sources": 2
-      },
-      "influentialCitations": 1,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Political Science"
-      ]
-    },
-    {
-      "title": "A Hashtag Worth a Thousand Words: Discursive Strategies Around #JeNeSuisPasCharlie After the 2015 Charlie Hebdo Shooting",
-      "type": "journal-article",
-      "venue": "Social Media + Society",
-      "authors": "Giglietto, Fabio; Lee, Yenn",
-      "year": 2017,
-      "month": 1,
-      "day": null,
-      "publicationDate": "2017-01-01",
-      "doi": "10.1177/2056305116686992",
-      "citations": {
-        "scholar": null,
-        "wos": 0,
-        "scopus": 56,
-        "semanticScholar": 64
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000443457700002&DestLinkType=FullRecord&DestApp=WOS_CPL",
-        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85043760110&origin=inward",
-        "semanticScholar": "https://www.semanticscholar.org/paper/1a415874dbd4a3571d10ce4073a7ed505f0c66fc",
-        "ora": null,
-        "crossref": "https://doi.org/10.1177/2056305116686992"
-      },
-      "source_ids": {
-        "orcid": 34344554,
-        "scholar": null,
-        "wos": "WOS:000443457700002",
-        "scopus": "85043760110",
-        "semanticScholar": "1a415874dbd4a3571d10ce4073a7ed505f0c66fc",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 64,
-        "citation_sources": 3
-      },
-      "crossref_type": "journal-article",
-      "publisher": "SAGE Publications",
-      "influentialCitations": 4,
-      "isOpenAccess": true,
-      "openAccessPdf": "https://journals.sagepub.com/doi/pdf/10.1177/2056305116686992",
-      "fieldsOfStudy": [
-        "Sociology"
-      ]
+        "citation_sources": 1
+      }
     },
     {
       "title": "To be or not to be charlie: Twitter hashtags as a discourse and counter-discourse in the aftermath of the 2015 charlie hebdo shooting in France",
@@ -514,35 +419,67 @@
         "scholar": 61,
         "wos": null,
         "scopus": 13,
-        "semanticScholar": 31
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84938536467&partnerID=MN8TOARS",
         "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
         "wos": null,
         "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=84938536467&origin=inward",
-        "semanticScholar": "https://www.semanticscholar.org/paper/4f907f3b4b2bacb91b2245601b59a9494fed8c32",
+        "semanticScholar": null,
         "ora": null
       },
       "source_ids": {
         "orcid": 18425538,
         "wos": null,
         "scopus": "84938536467",
-        "semanticScholar": "4f907f3b4b2bacb91b2245601b59a9494fed8c32",
+        "semanticScholar": null,
         "ora": null
       },
       "metrics": {
         "total_citations": 61,
-        "citation_sources": 3
+        "citation_sources": 2
+      }
+    },
+    {
+      "title": "A Hashtag Worth a Thousand Words: Discursive Strategies Around #JeNeSuisPasCharlie After the 2015 Charlie Hebdo Shooting",
+      "type": "journal-article",
+      "venue": "Social Media + Society",
+      "authors": "Giglietto, Fabio; Lee, Yenn",
+      "year": 2017,
+      "month": 1,
+      "day": null,
+      "publicationDate": "2017-01-01",
+      "doi": "10.1177/2056305116686992",
+      "citations": {
+        "scholar": null,
+        "wos": 0,
+        "scopus": 56,
+        "semanticScholar": null
       },
-      "influentialCitations": 2,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Computer Science",
-        "Art",
-        "Geography"
-      ]
+      "source_urls": {
+        "orcid": null,
+        "scholar": null,
+        "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000443457700002&DestLinkType=FullRecord&DestApp=WOS_CPL",
+        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85043760110&origin=inward",
+        "semanticScholar": null,
+        "ora": null,
+        "crossref": "https://doi.org/10.1177/2056305116686992"
+      },
+      "source_ids": {
+        "orcid": 34344554,
+        "scholar": null,
+        "wos": "WOS:000443457700002",
+        "scopus": "85043760110",
+        "semanticScholar": null,
+        "ora": null
+      },
+      "metrics": {
+        "total_citations": 56,
+        "citation_sources": 2
+      },
+      "crossref_type": "journal-article",
+      "publisher": "SAGE Publications"
     },
     {
       "title": "Coordinated link sharing behavior as a signal to surface sources of problematic information on Facebook",
@@ -718,14 +655,14 @@
         "scholar": null,
         "wos": 0,
         "scopus": 38,
-        "semanticScholar": 0
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85059463786&partnerID=MN8TOARS",
         "scholar": null,
         "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000548660600007&DestLinkType=FullRecord&DestApp=WOS_CPL",
         "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85059463786&origin=inward",
-        "semanticScholar": "https://www.semanticscholar.org/paper/582bc6d59217f2a3e52a747b3bed0549be12dd5b",
+        "semanticScholar": null,
         "ora": null,
         "crossref": "https://doi.org/10.1177/0894439318816638"
       },
@@ -734,19 +671,15 @@
         "scholar": null,
         "wos": "WOS:000548660600007",
         "scopus": "85059463786",
-        "semanticScholar": "582bc6d59217f2a3e52a747b3bed0549be12dd5b",
+        "semanticScholar": null,
         "ora": null
       },
       "metrics": {
         "total_citations": 38,
-        "citation_sources": 3
+        "citation_sources": 2
       },
       "crossref_type": "journal-article",
-      "publisher": "SAGE Publications",
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": []
+      "publisher": "SAGE Publications"
     },
     {
       "title": "Mapping italian news media political coverage in the lead-up to 2018 general election",
@@ -779,53 +712,6 @@
         "total_citations": 36,
         "citation_sources": 1
       }
-    },
-    {
-      "title": "Coordinated Link Sharing Behavior as a Signal to Surface Sources of Problematic Information on Facebook",
-      "type": "conference-paper",
-      "venue": "International Conference on Social Media and Society",
-      "authors": "Giglietto, Fabio; Righetti, Nicola; Rossi, Luca; Marino, Giada",
-      "year": 2020,
-      "month": 1,
-      "day": 1,
-      "publicationDate": "2020-01-01",
-      "doi": "10.1145/3400806.3400817",
-      "citations": {
-        "scholar": null,
-        "wos": 0,
-        "scopus": 25,
-        "semanticScholar": 35
-      },
-      "source_urls": {
-        "orcid": "https://ora.uniurb.it/handle/11576/2677666",
-        "scholar": null,
-        "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000779244300011&DestLinkType=FullRecord&DestApp=WOS_CPL",
-        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85088113452&origin=inward",
-        "semanticScholar": "https://www.semanticscholar.org/paper/203da29a37a983c487ce75a894b0d70698077bf5",
-        "ora": null,
-        "crossref": "https://doi.org/10.1145/3400806.3400817"
-      },
-      "source_ids": {
-        "orcid": 133838365,
-        "scholar": null,
-        "wos": "WOS:000779244300011",
-        "scopus": "85088113452",
-        "semanticScholar": "203da29a37a983c487ce75a894b0d70698077bf5",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 35,
-        "citation_sources": 3
-      },
-      "crossref_type": "proceedings-article",
-      "publisher": "ACM",
-      "influentialCitations": 4,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Political Science",
-        "Computer Science"
-      ]
     },
     {
       "title": "Twitter use during TV: A full-season analysis of# serviziopubblico hashtag",
@@ -969,14 +855,14 @@
         "scholar": null,
         "wos": 0,
         "scopus": 29,
-        "semanticScholar": 26
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84976566310&partnerID=MN8TOARS",
         "scholar": null,
         "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000396827700010&DestLinkType=FullRecord&DestApp=WOS_CPL",
         "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=84976566310&origin=inward",
-        "semanticScholar": "https://www.semanticscholar.org/paper/c19a8bd4a13366e0739cf0eea322c86340826cf8",
+        "semanticScholar": null,
         "ora": null,
         "crossref": "https://doi.org/10.1080/1369118x.2016.1203970"
       },
@@ -985,68 +871,55 @@
         "scholar": null,
         "wos": "WOS:000396827700010",
         "scopus": "84976566310",
-        "semanticScholar": "c19a8bd4a13366e0739cf0eea322c86340826cf8",
+        "semanticScholar": null,
         "ora": null
       },
       "metrics": {
         "total_citations": 29,
-        "citation_sources": 3
+        "citation_sources": 2
       },
       "crossref_type": "journal-article",
-      "publisher": "Informa UK Limited",
-      "influentialCitations": 1,
-      "isOpenAccess": true,
-      "openAccessPdf": "https://ora.uniurb.it/bitstream/11576/2636430/1/Networked%20intimacy%20Intimacy%20and%20friendship%20among%20Italian%20Facebook%20users.pdf",
-      "fieldsOfStudy": [
-        "Psychology"
-      ]
+      "publisher": "Informa UK Limited"
     },
     {
-      "title": "If Likes Were Votes: An Empirical Study on the 2011 Italian Administrative Elections",
-      "type": "journal-article",
-      "venue": "SSRN Electronic Journal",
-      "authors": "Giglietto, Fabio",
-      "year": 2012,
-      "month": null,
-      "day": null,
-      "publicationDate": null,
-      "doi": "10.2139/ssrn.1982736",
+      "title": "Coordinated Link Sharing Behavior as a Signal to Surface Sources of Problematic Information on Facebook",
+      "type": "conference-paper",
+      "venue": "International Conference on Social Media and Society",
+      "authors": "Giglietto, Fabio; Righetti, Nicola; Rossi, Luca; Marino, Giada",
+      "year": 2020,
+      "month": 1,
+      "day": 1,
+      "publicationDate": "2020-01-01",
+      "doi": "10.1145/3400806.3400817",
       "citations": {
         "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 25
+        "wos": 0,
+        "scopus": 25,
+        "semanticScholar": null
       },
       "source_urls": {
-        "orcid": null,
+        "orcid": "https://ora.uniurb.it/handle/11576/2677666",
         "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/dbc3773ad563818b1bd074874d52bc70405f8020",
+        "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000779244300011&DestLinkType=FullRecord&DestApp=WOS_CPL",
+        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85088113452&origin=inward",
+        "semanticScholar": null,
         "ora": null,
-        "crossref": "https://doi.org/10.2139/ssrn.1982736"
+        "crossref": "https://doi.org/10.1145/3400806.3400817"
       },
       "source_ids": {
-        "orcid": 18425453,
+        "orcid": 133838365,
         "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "dbc3773ad563818b1bd074874d52bc70405f8020",
+        "wos": "WOS:000779244300011",
+        "scopus": "85088113452",
+        "semanticScholar": null,
         "ora": null
       },
       "metrics": {
         "total_citations": 25,
-        "citation_sources": 1
+        "citation_sources": 2
       },
-      "crossref_type": "journal-article",
-      "publisher": "Elsevier BV",
-      "influentialCitations": 1,
-      "isOpenAccess": true,
-      "openAccessPdf": "https://cdn.aaai.org/ojs/14286/14286-28-17804-1-2-20201228.pdf",
-      "fieldsOfStudy": [
-        "Computer Science",
-        "Sociology"
-      ]
+      "crossref_type": "proceedings-article",
+      "publisher": "ACM"
     },
     {
       "title": "Eyes on You: Analyzing User Generated Content for Social Science",
@@ -1058,79 +931,27 @@
         "scholar": 25,
         "wos": null,
         "scopus": null,
-        "semanticScholar": 10
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": null,
         "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
         "wos": null,
         "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/194d6eb93a77b8a89b3645e9f4d8f76a9e440e2a",
+        "semanticScholar": null,
         "ora": null
       },
       "source_ids": {
         "orcid": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "194d6eb93a77b8a89b3645e9f4d8f76a9e440e2a",
+        "semanticScholar": null,
         "ora": null
       },
       "metrics": {
         "total_citations": 25,
-        "citation_sources": 2
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Computer Science"
-      ]
-    },
-    {
-      "title": "Twitter Use During TV: A Full-Season Analysis of #serviziopubblico Hashtag",
-      "type": "journal-article",
-      "venue": "Journal of Broadcasting &amp; Electronic Media",
-      "authors": "Rossi, Luca; Giglietto, Fabio",
-      "year": 2016,
-      "month": null,
-      "day": null,
-      "publicationDate": "2016-01-01",
-      "doi": "10.1080/08838151.2016.1164162",
-      "citations": {
-        "scholar": null,
-        "wos": 0,
-        "scopus": 21,
-        "semanticScholar": 24
-      },
-      "source_urls": {
-        "orcid": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84974603482&partnerID=MN8TOARS",
-        "scholar": null,
-        "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000383728400008&DestLinkType=FullRecord&DestApp=WOS_CPL",
-        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=84974603482&origin=inward",
-        "semanticScholar": "https://www.semanticscholar.org/paper/f63228013e6491da1026e256acc5033430f41b9a",
-        "ora": null,
-        "crossref": "https://doi.org/10.1080/08838151.2016.1164162"
-      },
-      "source_ids": {
-        "orcid": 34344538,
-        "scholar": null,
-        "wos": "WOS:000383728400008",
-        "scopus": "84974603482",
-        "semanticScholar": "f63228013e6491da1026e256acc5033430f41b9a",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 24,
-        "citation_sources": 3
-      },
-      "crossref_type": "journal-article",
-      "publisher": "Informa UK Limited",
-      "influentialCitations": 1,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Psychology"
-      ]
+        "citation_sources": 1
+      }
     },
     {
       "title": "Multi-party media partisanship attention score. Estimating partisan attention of news media sources using Twitter data in the lead-up to 2018 Italian election",
@@ -1178,14 +999,14 @@
         "scholar": null,
         "wos": 0,
         "scopus": 22,
-        "semanticScholar": 1
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": null,
         "scholar": null,
         "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000357088700002&DestLinkType=FullRecord&DestApp=WOS_CPL",
         "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=84934436383&origin=inward",
-        "semanticScholar": "https://www.semanticscholar.org/paper/9e1a8a340c56d7f591d1ea88f717a8c5077fc608",
+        "semanticScholar": null,
         "ora": null,
         "crossref": "https://doi.org/10.1080/1369118x.2015.1006658"
       },
@@ -1194,105 +1015,15 @@
         "scholar": null,
         "wos": "WOS:000357088700002",
         "scopus": "84934436383",
-        "semanticScholar": "9e1a8a340c56d7f591d1ea88f717a8c5077fc608",
+        "semanticScholar": null,
         "ora": null
       },
       "metrics": {
         "total_citations": 22,
-        "citation_sources": 3
+        "citation_sources": 2
       },
       "crossref_type": "journal-article",
-      "publisher": "Informa UK Limited",
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": []
-    },
-    {
-      "title": "Ethics and Interdisciplinarity in Computational Social Science",
-      "type": "journal-article",
-      "venue": "Methodological Innovations Online",
-      "authors": "Giglietto, Fabio; Rossi, Luca",
-      "year": 2012,
-      "month": 4,
-      "day": null,
-      "publicationDate": "2012-04-01",
-      "doi": "10.4256/mio.2012.003",
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 22
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/b91a9c0cc4369a8dccd94a2a210efff3e6fe47b8",
-        "ora": null,
-        "crossref": "https://doi.org/10.4256/mio.2012.003"
-      },
-      "source_ids": {
-        "orcid": 34344550,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "b91a9c0cc4369a8dccd94a2a210efff3e6fe47b8",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 22,
-        "citation_sources": 1
-      },
-      "crossref_type": "journal-article",
-      "publisher": "SAGE Publications",
-      "influentialCitations": 0,
-      "isOpenAccess": true,
-      "openAccessPdf": "https://journals.sagepub.com/doi/pdf/10.4256/mio.2012.003",
-      "fieldsOfStudy": [
-        "Sociology"
-      ]
-    },
-    {
-      "title": "Mapping Italian News Media Political Coverage in the Lead-Up of 2018 General Election",
-      "authors": "Giglietto, Fabio; Iannelli, Laura; Rossi, Luca; Valeriani, Augusto; Righetti, Nicola; Carabini, Francesca; Marino, Giada; Usai, Stefano; Zurovac, Elisabetta",
-      "venue": "SSRN Electronic Journal",
-      "year": 2018,
-      "doi": "10.2139/ssrn.3179930",
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 22
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "crossref": "https://doi.org/10.2139/ssrn.3179930",
-        "semanticScholar": "https://www.semanticscholar.org/paper/974eaf424049146afb7b62c740be5f66e8b2668c"
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "974eaf424049146afb7b62c740be5f66e8b2668c"
-      },
-      "crossref_type": "journal-article",
-      "publisher": "Elsevier BV",
-      "metrics": {
-        "total_citations": 22,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Political Science"
-      ]
+      "publisher": "Informa UK Limited"
     },
     {
       "title": "Diverging patterns of interaction around news on social media: insularity and partisanship during the 2018 Italian election campaign",
@@ -1308,14 +1039,14 @@
         "scholar": null,
         "wos": 0,
         "scopus": 21,
-        "semanticScholar": 20
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": "https://doi.org/10.1080/1369118X.2019.1629692",
         "scholar": null,
         "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000484480900007&DestLinkType=FullRecord&DestApp=WOS_CPL",
         "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85067685716&origin=inward",
-        "semanticScholar": "https://www.semanticscholar.org/paper/d821bbc7ab0d67ab46796ea43b7158708227b43b",
+        "semanticScholar": null,
         "ora": null,
         "crossref": "https://doi.org/10.1080/1369118x.2019.1629692"
       },
@@ -1324,111 +1055,55 @@
         "scholar": null,
         "wos": "WOS:000484480900007",
         "scopus": "85067685716",
-        "semanticScholar": "d821bbc7ab0d67ab46796ea43b7158708227b43b",
+        "semanticScholar": null,
         "ora": null
       },
       "metrics": {
         "total_citations": 21,
-        "citation_sources": 3
+        "citation_sources": 2
       },
       "crossref_type": "journal-article",
-      "publisher": "Informa UK Limited",
-      "influentialCitations": 1,
-      "isOpenAccess": true,
-      "openAccessPdf": "https://ora.uniurb.it/bitstream/11576/2668426/2/post-print%20for%20ora.uniurb.it%20.pdf",
-      "fieldsOfStudy": [
-        "Political Science"
-      ]
+      "publisher": "Informa UK Limited"
     },
     {
-      "title": "Social Media and Italian Universities: An Empirical Study on the Adoption and Use of Facebook, Twitter and Youtube",
+      "title": "Twitter Use During TV: A Full-Season Analysis of #serviziopubblico Hashtag",
       "type": "journal-article",
-      "venue": "SSRN Electronic Journal",
-      "authors": "Lovari, Alessandro; Giglietto, Fabio",
-      "year": 2012,
+      "venue": "Journal of Broadcasting &amp; Electronic Media",
+      "authors": "Rossi, Luca; Giglietto, Fabio",
+      "year": 2016,
       "month": null,
       "day": null,
-      "publicationDate": null,
-      "doi": "10.2139/ssrn.1978393",
+      "publicationDate": "2016-01-01",
+      "doi": "10.1080/08838151.2016.1164162",
       "citations": {
         "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 20
+        "wos": 0,
+        "scopus": 21,
+        "semanticScholar": null
       },
       "source_urls": {
-        "orcid": null,
+        "orcid": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84974603482&partnerID=MN8TOARS",
         "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/e61d7d8121330d7328ce23852a8e6b262288c054",
+        "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000383728400008&DestLinkType=FullRecord&DestApp=WOS_CPL",
+        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=84974603482&origin=inward",
+        "semanticScholar": null,
         "ora": null,
-        "crossref": "https://doi.org/10.2139/ssrn.1978393"
+        "crossref": "https://doi.org/10.1080/08838151.2016.1164162"
       },
       "source_ids": {
-        "orcid": 18425457,
+        "orcid": 34344538,
         "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "e61d7d8121330d7328ce23852a8e6b262288c054",
+        "wos": "WOS:000383728400008",
+        "scopus": "84974603482",
+        "semanticScholar": null,
         "ora": null
       },
       "metrics": {
-        "total_citations": 20,
-        "citation_sources": 1
+        "total_citations": 21,
+        "citation_sources": 2
       },
       "crossref_type": "journal-article",
-      "publisher": "Elsevier BV",
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Political Science"
-      ]
-    },
-    {
-      "title": "Understanding Coordinated and Inauthentic Link Sharing Behavior on Facebook in the Run-up to 2018 General Election and 2019 European Election in Italy",
-      "type": "preprint",
-      "venue": "Center for Open Science",
-      "authors": "Giglietto, Fabio; Righetti, Nicola; Marino, Giada",
-      "year": 2019,
-      "month": 9,
-      "day": 20,
-      "publicationDate": "2019-09-20",
-      "doi": "10.31235/osf.io/3jteh",
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 17
-      },
-      "source_urls": {
-        "orcid": "https://doi.org/10.31235/osf.io/3jteh",
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/b90411f85dcef4a57ffcb6e33586b181e77622a6",
-        "ora": null,
-        "crossref": "https://doi.org/10.31235/osf.io/3jteh"
-      },
-      "source_ids": {
-        "orcid": 61895054,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "b90411f85dcef4a57ffcb6e33586b181e77622a6",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 17,
-        "citation_sources": 1
-      },
-      "crossref_type": "posted-content",
-      "publisher": "Center for Open Science",
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": []
+      "publisher": "Informa UK Limited"
     },
     {
       "title": "Multi-Party Media Partisanship Attention Score. Estimating Partisan Attention of News Media Sources Using Twitter Data in the Lead-up to 2018 Italian Election",
@@ -1444,14 +1119,14 @@
         "scholar": null,
         "wos": null,
         "scopus": 12,
-        "semanticScholar": 13
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": "https://ora.uniurb.it/handle/11576/2665758",
         "scholar": null,
         "wos": null,
         "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85067663157&origin=inward",
-        "semanticScholar": "https://www.semanticscholar.org/paper/45f43ead45f5c8fced42014f53411bc482dd0f0e",
+        "semanticScholar": null,
         "ora": null
       },
       "source_ids": {
@@ -1459,104 +1134,13 @@
         "scholar": null,
         "wos": null,
         "scopus": "85067663157",
-        "semanticScholar": "45f43ead45f5c8fced42014f53411bc482dd0f0e",
+        "semanticScholar": null,
         "ora": null
       },
       "metrics": {
-        "total_citations": 13,
-        "citation_sources": 2
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Political Science"
-      ]
-    },
-    {
-      "title": "Moving towards a socially-driven internet architectural design",
-      "type": "journal-article",
-      "venue": "ACM SIGCOMM Computer Communication Review",
-      "authors": "Sofia, Rute; Mendes, Paulo; Damásio, Manuel José; Henriques, Sara; Giglietto, Fabio; Giambitto, Erica; Bogliolo, Alessandro",
-      "year": 2012,
-      "month": null,
-      "day": null,
-      "publicationDate": "2012-01-01",
-      "doi": "10.1145/2317307.2317316",
-      "citations": {
-        "scholar": null,
-        "wos": 0,
-        "scopus": null,
-        "semanticScholar": 10
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000305897600007&DestLinkType=FullRecord&DestApp=WOS_CPL",
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/9c3d8469098969eb207ef8ab0a0e274349cce661",
-        "ora": null,
-        "crossref": "https://doi.org/10.1145/2317307.2317316"
-      },
-      "source_ids": {
-        "orcid": 9611960,
-        "scholar": null,
-        "wos": "WOS:000305897600007",
-        "scopus": null,
-        "semanticScholar": "9c3d8469098969eb207ef8ab0a0e274349cce661",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 10,
-        "citation_sources": 2
-      },
-      "crossref_type": "journal-article",
-      "publisher": "Association for Computing Machinery (ACM)",
-      "influentialCitations": 0,
-      "isOpenAccess": true,
-      "openAccessPdf": "http://arxiv.org/pdf/1508.01087",
-      "fieldsOfStudy": [
-        "Computer Science"
-      ]
-    },
-    {
-      "title": "You Are Fake News",
-      "authors": "Fabio Giglietto",
-      "venue": "",
-      "year": 2018,
-      "doi": null,
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 10
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/5179d33e4b73201bb2969d53322a99667d78d3e1",
-        "ora": null
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "5179d33e4b73201bb2969d53322a99667d78d3e1",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 10,
+        "total_citations": 12,
         "citation_sources": 1
-      },
-      "influentialCitations": 1,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Art"
-      ]
+      }
     },
     {
       "title": "A Workflow to Detect, Monitor, and Update Lists of Coordinated Social Media Accounts Across Time: The Case of the 2022 Italian Election",
@@ -1572,14 +1156,14 @@
         "scholar": null,
         "wos": 0,
         "scopus": 6,
-        "semanticScholar": 7
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": "https://doi.org/10.1177/20563051231196866",
         "scholar": null,
         "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:001070115200001&DestLinkType=FullRecord&DestApp=WOS_CPL",
         "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85170566346&origin=inward",
-        "semanticScholar": "https://www.semanticscholar.org/paper/9e31c21df6d8e134626bc15ecf9198a52fe3b83c",
+        "semanticScholar": null,
         "ora": null,
         "crossref": "https://doi.org/10.1177/20563051231196866"
       },
@@ -1588,65 +1172,15 @@
         "scholar": null,
         "wos": "WOS:001070115200001",
         "scopus": "85170566346",
-        "semanticScholar": "9e31c21df6d8e134626bc15ecf9198a52fe3b83c",
+        "semanticScholar": null,
         "ora": null
       },
       "metrics": {
-        "total_citations": 7,
-        "citation_sources": 3
+        "total_citations": 6,
+        "citation_sources": 2
       },
       "crossref_type": "journal-article",
-      "publisher": "SAGE Publications",
-      "influentialCitations": 0,
-      "isOpenAccess": true,
-      "openAccessPdf": "https://journals.sagepub.com/doi/pdf/10.1177/20563051231196866",
-      "fieldsOfStudy": []
-    },
-    {
-      "title": "Exploring Correlations Between TV Viewership and Twitter Conversations in Italian Political Talk Shows",
-      "type": "journal-article",
-      "venue": "SSRN Electronic Journal",
-      "authors": "Giglietto, Fabio",
-      "year": 2013,
-      "month": null,
-      "day": null,
-      "publicationDate": null,
-      "doi": "10.2139/ssrn.2306512",
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 7
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/193bbe7c673347f7316923445ee0bffeaabc8387",
-        "ora": null,
-        "crossref": "https://doi.org/10.2139/ssrn.2306512"
-      },
-      "source_ids": {
-        "orcid": 18425452,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "193bbe7c673347f7316923445ee0bffeaabc8387",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 7,
-        "citation_sources": 1
-      },
-      "crossref_type": "journal-article",
-      "publisher": "Elsevier BV",
-      "influentialCitations": 2,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Geography"
-      ]
+      "publisher": "SAGE Publications"
     },
     {
       "title": "Understanding engagement and willingness to speak up in social television: A full-season, cross-genre analysis of TV audience participation on Twitter",
@@ -1686,183 +1220,6 @@
       }
     },
     {
-      "title": "Understanding Engagement and Willingness to Speak Up in Social-Television: A Full-Season, Cross-Genre Analysis of TV Audience Participation on Twitter",
-      "type": "journal-article",
-      "venue": "SSRN Electronic Journal",
-      "authors": "Giglietto, Fabio; Boccia Artieri, Giovanni; Gemini, Laura; Orefice, Mario",
-      "year": 2015,
-      "month": null,
-      "day": null,
-      "publicationDate": null,
-      "doi": "10.2139/ssrn.2611083",
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 6
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/b6ee5bb0f075346d698004cdd695316ea61f02ae",
-        "ora": null,
-        "crossref": "https://doi.org/10.2139/ssrn.2611083"
-      },
-      "source_ids": {
-        "orcid": 18425462,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "b6ee5bb0f075346d698004cdd695316ea61f02ae",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 6,
-        "citation_sources": 1
-      },
-      "crossref_type": "journal-article",
-      "publisher": "Elsevier BV",
-      "influentialCitations": 1,
-      "isOpenAccess": true,
-      "openAccessPdf": "http://pdfs.semanticscholar.org/b6ee/5bb0f075346d698004cdd695316ea61f02ae.pdf",
-      "fieldsOfStudy": [
-        "Sociology"
-      ]
-    },
-    {
-      "title": "COORNET: AN INTEGRATED APPROACH TO SURFACE PROBLEMATIC CONTENT, MALICIOUS ACTORS, AND COORDINATED NETWORKS",
-      "type": "conference-paper",
-      "venue": "AoIR Selected Papers of Internet Research",
-      "authors": "Giglietto, Fabio; Righetti, Nicola; Rossi, Luca; Marino, Giada",
-      "year": 2021,
-      "month": 1,
-      "day": 1,
-      "publicationDate": "2021-01-01",
-      "doi": "10.5210/spir.v2021i0.12170",
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 5
-      },
-      "source_urls": {
-        "orcid": "https://ora.uniurb.it/handle/11576/2735342",
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/8934fa18f260a702d351f96823c7b69361c74f0d",
-        "ora": null,
-        "crossref": "https://doi.org/10.5210/spir.v2021i0.12170"
-      },
-      "source_ids": {
-        "orcid": 158224027,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "8934fa18f260a702d351f96823c7b69361c74f0d",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 5,
-        "citation_sources": 1
-      },
-      "crossref_type": "journal-article",
-      "publisher": "University of Illinois Libraries",
-      "influentialCitations": 0,
-      "isOpenAccess": true,
-      "openAccessPdf": "https://journals.uic.edu/ojs/index.php/spir/article/download/12170/10455",
-      "fieldsOfStudy": [
-        "Computer Science"
-      ]
-    },
-    {
-      "title": "Detecting Coordinated Link Sharing During The Italian Coronavirus Outbreak",
-      "type": "conference-paper",
-      "venue": "AoIR Selected Papers of Internet Research",
-      "authors": "Giglietto, Fabio; Righetti, Nicola; Marino, Giada",
-      "year": 2020,
-      "month": 1,
-      "day": 1,
-      "publicationDate": "2020-01-01",
-      "doi": "10.5210/spir.v2020i0.11219",
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 5
-      },
-      "source_urls": {
-        "orcid": "https://ora.uniurb.it/handle/11576/2735343",
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/ea630a826d552705d0165e5eea396080b2f4c803",
-        "ora": null,
-        "crossref": "https://doi.org/10.5210/spir.v2020i0.11219"
-      },
-      "source_ids": {
-        "orcid": 158224030,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "ea630a826d552705d0165e5eea396080b2f4c803",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 5,
-        "citation_sources": 1
-      },
-      "crossref_type": "journal-article",
-      "publisher": "University of Illinois Libraries",
-      "influentialCitations": 0,
-      "isOpenAccess": true,
-      "openAccessPdf": "https://spir.aoir.org/ojs/index.php/spir/article/download/11219/9807",
-      "fieldsOfStudy": [
-        "Geography"
-      ]
-    },
-    {
-      "title": "Social Media and Elections: The Use of Twitter in the 2013 Campaigns in Italy, Australia, Germany, and Norway",
-      "authors": "G. Enli, A. Larsson, B. Kalsnes, E. Skogerbø, Hallvard Moe, A. Bruns, Tim Highfield, T. Sauter, Christian Nuernbergk, J. Neubarth, L. Rossi, Fabio Giglietto, Mario Orefice, G. B. Artieri",
-      "venue": "",
-      "year": 2013,
-      "doi": null,
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 5
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/fc6834f48ac1c34cb92eab51518f22eb6be60bce",
-        "ora": null
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "fc6834f48ac1c34cb92eab51518f22eb6be60bce",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 5,
-        "citation_sources": 1
-      },
-      "influentialCitations": 2,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Political Science"
-      ]
-    },
-    {
       "title": "Facebook reactions in the context of politics and social issues: a systematic literature review",
       "type": "journal-article",
       "venue": "Frontiers in Sociology",
@@ -1876,14 +1233,14 @@
         "scholar": null,
         "wos": 0,
         "scopus": 4,
-        "semanticScholar": 4
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": "https://ora.uniurb.it/handle/11576/2740792",
         "scholar": null,
         "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:001234645400001&DestLinkType=FullRecord&DestApp=WOS_CPL",
         "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85194859097&origin=inward",
-        "semanticScholar": "https://www.semanticscholar.org/paper/4b6d3b6ce53423f92a6fbe8577dc6d940a745761",
+        "semanticScholar": null,
         "ora": null,
         "crossref": "https://doi.org/10.3389/fsoc.2024.1379265"
       },
@@ -1892,234 +1249,15 @@
         "scholar": null,
         "wos": "WOS:001234645400001",
         "scopus": "85194859097",
-        "semanticScholar": "4b6d3b6ce53423f92a6fbe8577dc6d940a745761",
+        "semanticScholar": null,
         "ora": null
       },
       "metrics": {
         "total_citations": 4,
-        "citation_sources": 3
+        "citation_sources": 2
       },
       "crossref_type": "journal-article",
-      "publisher": "Frontiers Media SA",
-      "influentialCitations": 0,
-      "isOpenAccess": true,
-      "openAccessPdf": "https://www.frontiersin.org/articles/10.3389/fsoc.2024.1379265/pdf?isPublishedV2=False",
-      "fieldsOfStudy": [
-        "Medicine"
-      ]
-    },
-    {
-      "title": "Steering the world from where we are: An introduction to the sociocybernetics perspective",
-      "type": "journal-article",
-      "venue": "Current Sociology",
-      "authors": "Almaguer-Kalixto, Patricia Eugenia; Giglietto, Fabio",
-      "year": 2019,
-      "month": 7,
-      "day": 15,
-      "publicationDate": "2019-07-15",
-      "doi": "10.1177/0011392119837573",
-      "citations": {
-        "scholar": null,
-        "wos": 0,
-        "scopus": 3,
-        "semanticScholar": 4
-      },
-      "source_urls": {
-        "orcid": "https://doi.org/10.1177/0011392119837573",
-        "scholar": null,
-        "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000471719800002&DestLinkType=FullRecord&DestApp=WOS_CPL",
-        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85064685029&origin=inward",
-        "semanticScholar": "https://www.semanticscholar.org/paper/5b52994ddf5562572202583ae821f89c68dc7a8d",
-        "ora": null,
-        "crossref": "https://doi.org/10.1177/0011392119837573"
-      },
-      "source_ids": {
-        "orcid": 56446314,
-        "scholar": null,
-        "wos": "WOS:000471719800002",
-        "scopus": "85064685029",
-        "semanticScholar": "5b52994ddf5562572202583ae821f89c68dc7a8d",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 4,
-        "citation_sources": 3
-      },
-      "crossref_type": "journal-article",
-      "publisher": "SAGE Publications",
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Sociology"
-      ]
-    },
-    {
-      "title": "Social semantics in a networked space. New perspectives for social sciences",
-      "type": "book-chapter",
-      "venue": null,
-      "authors": "Fabio Giglietto",
-      "year": 2009,
-      "month": 1,
-      "day": 1,
-      "publicationDate": "2009-01-01",
-      "doi": null,
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 4
-      },
-      "source_urls": {
-        "orcid": "https://ora.uniurb.it/handle/11576/2504755",
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/1bb517635c582e8eec098b6294393347aa20aff4",
-        "ora": null
-      },
-      "source_ids": {
-        "orcid": 133838418,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "1bb517635c582e8eec098b6294393347aa20aff4",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 4,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Sociology"
-      ]
-    },
-    {
-      "title": "Data and Society",
-      "authors": "Fabio Giglietto",
-      "venue": "",
-      "year": 2016,
-      "doi": null,
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 4
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/2ddab5653261aab6c871e4b0a7addacd3f12e629",
-        "ora": null
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "2ddab5653261aab6c871e4b0a7addacd3f12e629",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 4,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Sociology"
-      ]
-    },
-    {
-      "title": "Mapping Nefarious Social Media Actors to Speed-up Covid-19 Fact-checking",
-      "type": "preprint",
-      "venue": "Center for Open Science",
-      "authors": "Giglietto, Fabio; Farci, Manolo; Marino, Giada; Mottola, Serena; Radicioni, Tommaso; Terenzi, Massimo",
-      "year": 2022,
-      "month": 1,
-      "day": 7,
-      "publicationDate": "2022-01-07",
-      "doi": "10.31235/osf.io/6umqs",
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 3
-      },
-      "source_urls": {
-        "orcid": "https://doi.org/10.31235/osf.io/6umqs",
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/9342592f75980852aadc974438250e1809dda706",
-        "ora": null,
-        "crossref": "https://doi.org/10.31235/osf.io/6umqs"
-      },
-      "source_ids": {
-        "orcid": 105906335,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "9342592f75980852aadc974438250e1809dda706",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 3,
-        "citation_sources": 1
-      },
-      "crossref_type": "posted-content",
-      "publisher": "Center for Open Science",
-      "influentialCitations": 0,
-      "isOpenAccess": true,
-      "openAccessPdf": "https://osf.io/6umqs/download",
-      "fieldsOfStudy": []
-    },
-    {
-      "title": "POLITICAL ADVERTISEMENT AND COORDINATED BEHAVIOR ON SOCIAL MEDIA IN THE LEAD-UP TO THE 2021 GERMAN FEDERAL ELECTIONS",
-      "type": "other",
-      "venue": null,
-      "authors": "Nicola Righetti, Fabio Giglietto, Azade E. Kakavand, Aytalina Kulichkina, Giada Marino, Massimo Terenzi",
-      "year": 2022,
-      "month": 1,
-      "day": 1,
-      "publicationDate": "2022-01-01",
-      "doi": null,
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 3
-      },
-      "source_urls": {
-        "orcid": "https://ora.uniurb.it/handle/11576/2733992",
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/4a044175aa5dc64f60379f7028fc7baa8024d473",
-        "ora": null
-      },
-      "source_ids": {
-        "orcid": 156334502,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "4a044175aa5dc64f60379f7028fc7baa8024d473",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 3,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": []
+      "publisher": "Frontiers Media SA"
     },
     {
       "title": "Ciarlatani. Post-verità, contropubblici online e nuove articolazioni della fiducia nel sistema della medicina",
@@ -2162,50 +1300,44 @@
       "publisher": "Franco Angeli"
     },
     {
-      "title": "Coordinated Hateful Disinformation on Italian Politics and Social Issues, since 2017",
-      "type": "other",
-      "venue": "SSRN Electronic Journal",
-      "authors": "Giglietto, Fabio; Marino, Giada; Terenzi, Massimo; Righetti, Nicola; Rossi, Luca",
-      "year": 2021,
-      "month": 1,
-      "day": 1,
-      "publicationDate": "2021-01-01",
-      "doi": "10.2139/ssrn.3777263",
+      "title": "Steering the world from where we are: An introduction to the sociocybernetics perspective",
+      "type": "journal-article",
+      "venue": "Current Sociology",
+      "authors": "Almaguer-Kalixto, Patricia Eugenia; Giglietto, Fabio",
+      "year": 2019,
+      "month": 7,
+      "day": 15,
+      "publicationDate": "2019-07-15",
+      "doi": "10.1177/0011392119837573",
       "citations": {
         "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 3
+        "wos": 0,
+        "scopus": 3,
+        "semanticScholar": null
       },
       "source_urls": {
-        "orcid": "https://ora.uniurb.it/handle/11576/2703872",
+        "orcid": "https://doi.org/10.1177/0011392119837573",
         "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/1c83c5e7c490b24a61cbd4221807e33116c0be64",
+        "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000471719800002&DestLinkType=FullRecord&DestApp=WOS_CPL",
+        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85064685029&origin=inward",
+        "semanticScholar": null,
         "ora": null,
-        "crossref": "https://doi.org/10.2139/ssrn.3777263"
+        "crossref": "https://doi.org/10.1177/0011392119837573"
       },
       "source_ids": {
-        "orcid": 133838391,
+        "orcid": 56446314,
         "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "1c83c5e7c490b24a61cbd4221807e33116c0be64",
+        "wos": "WOS:000471719800002",
+        "scopus": "85064685029",
+        "semanticScholar": null,
         "ora": null
       },
       "metrics": {
         "total_citations": 3,
-        "citation_sources": 1
+        "citation_sources": 2
       },
       "crossref_type": "journal-article",
-      "publisher": "Elsevier BV",
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Political Science"
-      ]
+      "publisher": "SAGE Publications"
     },
     {
       "title": "Integrating Large Language Models in Political Discourse Studies on Social Media: Challenges of Validating an LLMs-in-the-loop Pipeline",
@@ -2322,133 +1454,6 @@
       }
     },
     {
-      "title": "FROM MOON TO COMET LANDING: RE-IMAGINING (SCIENTIFIC) MEDIA EVENTS IN THE AGE OF TWITTER",
-      "authors": "Fabio Giglietto, L. Rossi, Jiyoung Kim",
-      "venue": "",
-      "year": 2015,
-      "doi": null,
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 2
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/c03aaea6f1198a79fa14f82ff5c08d4a788242d1",
-        "ora": null
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "c03aaea6f1198a79fa14f82ff5c08d4a788242d1",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 2,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Geography"
-      ]
-    },
-    {
-      "title": "Cracking Open the European Newsfeed",
-      "type": "journal-article",
-      "venue": "Journal of Quantitative Description: Digital Media",
-      "authors": "Rossi, Luca; Giglietto, Fabio; Marino, Giada",
-      "year": 2023,
-      "month": 1,
-      "day": 1,
-      "publicationDate": "2023-01-01",
-      "doi": "10.51685/jqd.2023.020",
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 1
-      },
-      "source_urls": {
-        "orcid": "https://ora.uniurb.it/handle/11576/2726579",
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/0a64ae7234d61d9a7c072c85c707d6cbb0ef1355",
-        "ora": null,
-        "crossref": "https://doi.org/10.51685/jqd.2023.020"
-      },
-      "source_ids": {
-        "orcid": 148677069,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "0a64ae7234d61d9a7c072c85c707d6cbb0ef1355",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 1,
-        "citation_sources": 1
-      },
-      "crossref_type": "journal-article",
-      "publisher": "Journal of Quantitative Description: Digital Media",
-      "influentialCitations": 0,
-      "isOpenAccess": true,
-      "openAccessPdf": "https://journalqd.org/article/download/4377/3604",
-      "fieldsOfStudy": []
-    },
-    {
-      "title": "Blowing on the Fire: An Analysis of Low Quality and Hyper Partisan News Sources Circulated by Coordinated Link Sharing Networks in Nigeria",
-      "type": "other",
-      "venue": "SSRN Electronic Journal",
-      "authors": "Giglietto, Fabio; Olaniran, Samuel; Mincigrucci, Roberto; Marino, Giada; Mottola, Serena; Terenzi, Massimo",
-      "year": 2022,
-      "month": 1,
-      "day": 1,
-      "publicationDate": "2022-01-01",
-      "doi": "10.2139/ssrn.4162030",
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 1
-      },
-      "source_urls": {
-        "orcid": "https://ora.uniurb.it/handle/11576/2703875",
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/90f0d4c933ae4b0b1ccd006fbfc0e1206255e59b",
-        "ora": null,
-        "crossref": "https://doi.org/10.2139/ssrn.4162030"
-      },
-      "source_ids": {
-        "orcid": 133838387,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "90f0d4c933ae4b0b1ccd006fbfc0e1206255e59b",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 1,
-        "citation_sources": 1
-      },
-      "crossref_type": "journal-article",
-      "publisher": "Elsevier BV",
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": []
-    },
-    {
       "title": "Coordinated inauthentic behavior",
       "type": "encyclopedia-entry",
       "venue": "Elgar Encyclopedia of Technology and Politics",
@@ -2487,257 +1492,6 @@
       },
       "crossref_type": "book-chapter",
       "publisher": "Edward Elgar Publishing"
-    },
-    {
-      "title": "Using Facebook’s Advertising Platform for Recruiting Online Survey Respondents",
-      "type": "book-chapter",
-      "venue": "SAGE Publications, Ltd.",
-      "authors": "Marino, Giada; Giglietto, Fabio; Iannelli, Laura",
-      "year": 2022,
-      "month": 1,
-      "day": 1,
-      "publicationDate": "2022-01-01",
-      "doi": "10.4135/9781529601886",
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 1
-      },
-      "source_urls": {
-        "orcid": "https://ora.uniurb.it/handle/11576/2705550",
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/72382eac0956d36291e3bf5d33e4f691aed75556",
-        "ora": null,
-        "crossref": "https://doi.org/10.4135/9781529601886"
-      },
-      "source_ids": {
-        "orcid": 133838372,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "72382eac0956d36291e3bf5d33e4f691aed75556",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 1,
-        "citation_sources": 1
-      },
-      "crossref_type": "book",
-      "publisher": "SAGE Publications, Ltd.",
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": []
-    },
-    {
-      "title": "Adapting to Mitigation Efforts: Evolving Strategies of Coordinated Link Sharing on Facebook",
-      "type": "other",
-      "venue": "SSRN Electronic Journal",
-      "authors": "Giglietto, Fabio; Terenzi, Massimo; Marino, Giada; Righetti, Nicola; Rossi, Luca",
-      "year": 2020,
-      "month": 1,
-      "day": 1,
-      "publicationDate": "2020-01-01",
-      "doi": "10.2139/ssrn.3775469",
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 1
-      },
-      "source_urls": {
-        "orcid": "https://ora.uniurb.it/handle/11576/2703873",
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/37ed9970a8e0c0c004f2d885f62c6450cb5c070a",
-        "ora": null,
-        "crossref": "https://doi.org/10.2139/ssrn.3775469"
-      },
-      "source_ids": {
-        "orcid": 133838370,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "37ed9970a8e0c0c004f2d885f62c6450cb5c070a",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 1,
-        "citation_sources": 1
-      },
-      "crossref_type": "journal-article",
-      "publisher": "Elsevier BV",
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Computer Science"
-      ]
-    },
-    {
-      "title": "An Italian Network of Memes, News, Spam Pages, and Dietary Supplements",
-      "type": "other",
-      "venue": "SSRN Electronic Journal",
-      "authors": "Giglietto, Fabio; Terenzi, Massimo; Marino, Giada; Righetti, Nicola; Rossi, Luca",
-      "year": 2020,
-      "month": 1,
-      "day": 1,
-      "publicationDate": "2020-01-01",
-      "doi": "10.2139/ssrn.3743531",
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 1
-      },
-      "source_urls": {
-        "orcid": "https://ora.uniurb.it/handle/11576/2703874",
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/6f0fa3a797172bd417fd2e48fcad6137a3304ae4",
-        "ora": null,
-        "crossref": "https://doi.org/10.2139/ssrn.3743531"
-      },
-      "source_ids": {
-        "orcid": 133838359,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "6f0fa3a797172bd417fd2e48fcad6137a3304ae4",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 1,
-        "citation_sources": 1
-      },
-      "crossref_type": "journal-article",
-      "publisher": "Elsevier BV",
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Business"
-      ]
-    },
-    {
-      "title": "Widespread Low-Quality News Sources, Ethnic and Religious Divisions: An Analysis of the Drivers Propelling Coordinated Circulation of Problematic Health Information in Nigeria",
-      "authors": "Giglietto, Fabio; Olaniran, Samuel; Mincigrucci, Roberto",
-      "venue": "SSRN Electronic Journal",
-      "year": 2022,
-      "doi": "10.2139/ssrn.4161992",
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 1
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "crossref": "https://doi.org/10.2139/ssrn.4161992",
-        "semanticScholar": "https://www.semanticscholar.org/paper/734ccd305bb6b80b2b3be047027426812c03f5e7"
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "734ccd305bb6b80b2b3be047027426812c03f5e7"
-      },
-      "crossref_type": "journal-article",
-      "publisher": "Elsevier BV",
-      "metrics": {
-        "total_citations": 1,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": []
-    },
-    {
-      "title": "REVISITING KEY CONCEPTS IN DIGITAL MEDIA RESEARCH: INFLUENCE, POPULISM, PARTISANSHIP, POLARISATION",
-      "authors": "Bruns, Axel; Bechmann, Anja; Charquero-Ballester, Marina; Walter, Jessica G.; Stromer-Galley, Jennifer; McKernan, Brian; Giglietto, Fabio; Righetti, Nicola; Stanziano, Anna; Choucair, Tariq; Esau, Katharina; Svegaard, Sebastian; Vilkins, Samantha",
-      "venue": "AoIR Selected Papers of Internet Research",
-      "year": 2023,
-      "doi": "10.5210/spir.v2023i0.13527",
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 1
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "crossref": "https://doi.org/10.5210/spir.v2023i0.13527",
-        "semanticScholar": "https://www.semanticscholar.org/paper/4086d536bf4c49d234355ea7ace1820460e5a532"
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "4086d536bf4c49d234355ea7ace1820460e5a532"
-      },
-      "crossref_type": "journal-article",
-      "publisher": "University of Illinois Libraries",
-      "metrics": {
-        "total_citations": 1,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": true,
-      "openAccessPdf": "https://spir.aoir.org/ojs/index.php/spir/article/download/13527/11477",
-      "fieldsOfStudy": []
-    },
-    {
-      "title": "Second screen and Political Talk-Shows: Measuring and Understanding the Italian Participatory Couch Potato",
-      "authors": "Fabio Giglietto",
-      "venue": "",
-      "year": 2013,
-      "doi": null,
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 1
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/b8eea1829bbc2bd5678ec79d1400541eda47ed59",
-        "ora": null
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "b8eea1829bbc2bd5678ec79d1400541eda47ed59",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 1,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Geography"
-      ]
     },
     {
       "title": "\"A Pretty Blunt Approach\": Meta's Political Content Reduction Policy and Italian Parliamentarians' Facebook Visibility",
@@ -2981,14 +1735,14 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": 0
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": "https://ora.uniurb.it/handle/11576/2752372",
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/65477e54b34b2517af06140cf2cc0593ec9f1a4b",
+        "semanticScholar": null,
         "ora": null,
         "crossref": "https://doi.org/10.5210/spir.v2024i0.13999"
       },
@@ -2997,19 +1751,15 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "65477e54b34b2517af06140cf2cc0593ec9f1a4b",
+        "semanticScholar": null,
         "ora": null
       },
       "metrics": {
         "total_citations": 0,
-        "citation_sources": 1
+        "citation_sources": 0
       },
       "crossref_type": "journal-article",
-      "publisher": "University of Illinois Libraries",
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": []
+      "publisher": "University of Illinois Libraries"
     },
     {
       "title": "Political polarization in the frequency British newspapers mention scientists with different views on COVID-19",
@@ -3050,6 +1800,46 @@
       },
       "crossref_type": "posted-content",
       "publisher": "Center for Open Science"
+    },
+    {
+      "title": "Cracking Open the European Newsfeed",
+      "type": "journal-article",
+      "venue": "Journal of Quantitative Description: Digital Media",
+      "authors": "Rossi, Luca; Giglietto, Fabio; Marino, Giada",
+      "year": 2023,
+      "month": 1,
+      "day": 1,
+      "publicationDate": "2023-01-01",
+      "doi": "10.51685/jqd.2023.020",
+      "citations": {
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": "https://ora.uniurb.it/handle/11576/2726579",
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null,
+        "crossref": "https://doi.org/10.51685/jqd.2023.020"
+      },
+      "source_ids": {
+        "orcid": 148677069,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null
+      },
+      "metrics": {
+        "total_citations": 0,
+        "citation_sources": 0
+      },
+      "crossref_type": "journal-article",
+      "publisher": "Journal of Quantitative Description: Digital Media"
     },
     {
       "title": "Hyperpartisan Networks on Facebook. The Case of the Five Star Movement Network During the 2022 Italian Election",
@@ -3277,6 +2067,86 @@
       "publisher": "Center for Open Science"
     },
     {
+      "title": "Mapping Nefarious Social Media Actors to Speed-up Covid-19 Fact-checking",
+      "type": "preprint",
+      "venue": "Center for Open Science",
+      "authors": "Giglietto, Fabio; Farci, Manolo; Marino, Giada; Mottola, Serena; Radicioni, Tommaso; Terenzi, Massimo",
+      "year": 2022,
+      "month": 1,
+      "day": 7,
+      "publicationDate": "2022-01-07",
+      "doi": "10.31235/osf.io/6umqs",
+      "citations": {
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": "https://doi.org/10.31235/osf.io/6umqs",
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null,
+        "crossref": "https://doi.org/10.31235/osf.io/6umqs"
+      },
+      "source_ids": {
+        "orcid": 105906335,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null
+      },
+      "metrics": {
+        "total_citations": 0,
+        "citation_sources": 0
+      },
+      "crossref_type": "posted-content",
+      "publisher": "Center for Open Science"
+    },
+    {
+      "title": "Blowing on the Fire: An Analysis of Low Quality and Hyper Partisan News Sources Circulated by Coordinated Link Sharing Networks in Nigeria",
+      "type": "other",
+      "venue": "SSRN Electronic Journal",
+      "authors": "Giglietto, Fabio; Olaniran, Samuel; Mincigrucci, Roberto; Marino, Giada; Mottola, Serena; Terenzi, Massimo",
+      "year": 2022,
+      "month": 1,
+      "day": 1,
+      "publicationDate": "2022-01-01",
+      "doi": "10.2139/ssrn.4162030",
+      "citations": {
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": "https://ora.uniurb.it/handle/11576/2703875",
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null,
+        "crossref": "https://doi.org/10.2139/ssrn.4162030"
+      },
+      "source_ids": {
+        "orcid": 133838387,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null
+      },
+      "metrics": {
+        "total_citations": 0,
+        "citation_sources": 0
+      },
+      "crossref_type": "journal-article",
+      "publisher": "Elsevier BV"
+    },
+    {
       "title": "MAPPING NEFARIOUS SOCIAL MEDIA ACTORS TO SPEED-UP COVID-19 FACT-CHECKING - SINTESI IN ITALIANO",
       "type": "other",
       "venue": null,
@@ -3339,6 +2209,43 @@
       },
       "source_ids": {
         "orcid": 133838433,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null
+      },
+      "metrics": {
+        "total_citations": 0,
+        "citation_sources": 0
+      }
+    },
+    {
+      "title": "POLITICAL ADVERTISEMENT AND COORDINATED BEHAVIOR ON SOCIAL MEDIA IN THE LEAD-UP TO THE 2021 GERMAN FEDERAL ELECTIONS",
+      "type": "other",
+      "venue": null,
+      "authors": null,
+      "year": 2022,
+      "month": 1,
+      "day": 1,
+      "publicationDate": "2022-01-01",
+      "doi": null,
+      "citations": {
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": "https://ora.uniurb.it/handle/11576/2733992",
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null
+      },
+      "source_ids": {
+        "orcid": 156334502,
         "scholar": null,
         "wos": null,
         "scopus": null,
@@ -3462,6 +2369,126 @@
       }
     },
     {
+      "title": "Using Facebook’s Advertising Platform for Recruiting Online Survey Respondents",
+      "type": "book-chapter",
+      "venue": "SAGE Publications, Ltd.",
+      "authors": "Marino, Giada; Giglietto, Fabio; Iannelli, Laura",
+      "year": 2022,
+      "month": 1,
+      "day": 1,
+      "publicationDate": "2022-01-01",
+      "doi": "10.4135/9781529601886",
+      "citations": {
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": "https://ora.uniurb.it/handle/11576/2705550",
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null,
+        "crossref": "https://doi.org/10.4135/9781529601886"
+      },
+      "source_ids": {
+        "orcid": 133838372,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null
+      },
+      "metrics": {
+        "total_citations": 0,
+        "citation_sources": 0
+      },
+      "crossref_type": "book",
+      "publisher": "SAGE Publications, Ltd."
+    },
+    {
+      "title": "COORNET: AN INTEGRATED APPROACH TO SURFACE PROBLEMATIC CONTENT, MALICIOUS ACTORS, AND COORDINATED NETWORKS",
+      "type": "conference-paper",
+      "venue": "AoIR Selected Papers of Internet Research",
+      "authors": "Giglietto, Fabio; Righetti, Nicola; Rossi, Luca; Marino, Giada",
+      "year": 2021,
+      "month": 1,
+      "day": 1,
+      "publicationDate": "2021-01-01",
+      "doi": "10.5210/spir.v2021i0.12170",
+      "citations": {
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": "https://ora.uniurb.it/handle/11576/2735342",
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null,
+        "crossref": "https://doi.org/10.5210/spir.v2021i0.12170"
+      },
+      "source_ids": {
+        "orcid": 158224027,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null
+      },
+      "metrics": {
+        "total_citations": 0,
+        "citation_sources": 0
+      },
+      "crossref_type": "journal-article",
+      "publisher": "University of Illinois Libraries"
+    },
+    {
+      "title": "Coordinated Hateful Disinformation on Italian Politics and Social Issues, since 2017",
+      "type": "other",
+      "venue": "SSRN Electronic Journal",
+      "authors": "Giglietto, Fabio; Marino, Giada; Terenzi, Massimo; Righetti, Nicola; Rossi, Luca",
+      "year": 2021,
+      "month": 1,
+      "day": 1,
+      "publicationDate": "2021-01-01",
+      "doi": "10.2139/ssrn.3777263",
+      "citations": {
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": "https://ora.uniurb.it/handle/11576/2703872",
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null,
+        "crossref": "https://doi.org/10.2139/ssrn.3777263"
+      },
+      "source_ids": {
+        "orcid": 133838391,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null
+      },
+      "metrics": {
+        "total_citations": 0,
+        "citation_sources": 0
+      },
+      "crossref_type": "journal-article",
+      "publisher": "Elsevier BV"
+    },
+    {
       "title": "Economia, immigrazione, corruzione ed Europa: performance e circolazione su Facebook delle notizie sulle elezioni europee 2019",
       "type": "book-chapter",
       "venue": null,
@@ -3502,7 +2529,7 @@
       "title": "Informazione e salute negli ambienti digitali, tra agenda setting e online gatekeeping.Una ricerca su Google News Italia e utenti di Facebook",
       "type": "journal-article",
       "venue": null,
-      "authors": "Gea Ducci, G. B. Artieri, Mario Corsi, Fabio Giglietto, Fabrizio Manattini",
+      "authors": null,
       "year": 2021,
       "month": 1,
       "day": 1,
@@ -3512,14 +2539,14 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": 0
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": "https://ora.uniurb.it/handle/11576/2690576",
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/fc759dcab82776357e232cd977ad8eeedb6961e1",
+        "semanticScholar": null,
         "ora": null
       },
       "source_ids": {
@@ -3527,19 +2554,93 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "fc759dcab82776357e232cd977ad8eeedb6961e1",
+        "semanticScholar": null,
         "ora": null
       },
       "metrics": {
         "total_citations": 0,
-        "citation_sources": 1
+        "citation_sources": 0
+      }
+    },
+    {
+      "title": "Adapting to Mitigation Efforts: Evolving Strategies of Coordinated Link Sharing on Facebook",
+      "type": "other",
+      "venue": "SSRN Electronic Journal",
+      "authors": "Giglietto, Fabio; Terenzi, Massimo; Marino, Giada; Righetti, Nicola; Rossi, Luca",
+      "year": 2020,
+      "month": 1,
+      "day": 1,
+      "publicationDate": "2020-01-01",
+      "doi": "10.2139/ssrn.3775469",
+      "citations": {
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
       },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Sociology"
-      ]
+      "source_urls": {
+        "orcid": "https://ora.uniurb.it/handle/11576/2703873",
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null,
+        "crossref": "https://doi.org/10.2139/ssrn.3775469"
+      },
+      "source_ids": {
+        "orcid": 133838370,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null
+      },
+      "metrics": {
+        "total_citations": 0,
+        "citation_sources": 0
+      },
+      "crossref_type": "journal-article",
+      "publisher": "Elsevier BV"
+    },
+    {
+      "title": "An Italian Network of Memes, News, Spam Pages, and Dietary Supplements",
+      "type": "other",
+      "venue": "SSRN Electronic Journal",
+      "authors": "Giglietto, Fabio; Terenzi, Massimo; Marino, Giada; Righetti, Nicola; Rossi, Luca",
+      "year": 2020,
+      "month": 1,
+      "day": 1,
+      "publicationDate": "2020-01-01",
+      "doi": "10.2139/ssrn.3743531",
+      "citations": {
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": "https://ora.uniurb.it/handle/11576/2703874",
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null,
+        "crossref": "https://doi.org/10.2139/ssrn.3743531"
+      },
+      "source_ids": {
+        "orcid": 133838359,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null
+      },
+      "metrics": {
+        "total_citations": 0,
+        "citation_sources": 0
+      },
+      "crossref_type": "journal-article",
+      "publisher": "Elsevier BV"
     },
     {
       "title": "CooRnet. Detect coordinated link sharing behavior on social media",
@@ -3577,6 +2678,46 @@
         "total_citations": 0,
         "citation_sources": 0
       }
+    },
+    {
+      "title": "Detecting Coordinated Link Sharing During The Italian Coronavirus Outbreak",
+      "type": "conference-paper",
+      "venue": "AoIR Selected Papers of Internet Research",
+      "authors": "Giglietto, Fabio; Righetti, Nicola; Marino, Giada",
+      "year": 2020,
+      "month": 1,
+      "day": 1,
+      "publicationDate": "2020-01-01",
+      "doi": "10.5210/spir.v2020i0.11219",
+      "citations": {
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": "https://ora.uniurb.it/handle/11576/2735343",
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null,
+        "crossref": "https://doi.org/10.5210/spir.v2020i0.11219"
+      },
+      "source_ids": {
+        "orcid": 158224030,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null
+      },
+      "metrics": {
+        "total_citations": 0,
+        "citation_sources": 0
+      },
+      "crossref_type": "journal-article",
+      "publisher": "University of Illinois Libraries"
     },
     {
       "title": "La obsolescencia programada como asunto controvertido. Un análisis del debate público online en torno a la salida de los dispositivos Apple",
@@ -3629,14 +2770,14 @@
         "scholar": null,
         "wos": null,
         "scopus": 0,
-        "semanticScholar": 0
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": "https://ora.uniurb.it/handle/11576/2676145",
         "scholar": null,
         "wos": null,
         "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85090963134&origin=inward",
-        "semanticScholar": "https://www.semanticscholar.org/paper/a58517a303ef58f1aacb66c262cf6af281fa83a3",
+        "semanticScholar": null,
         "ora": null
       },
       "source_ids": {
@@ -3644,19 +2785,53 @@
         "scholar": null,
         "wos": null,
         "scopus": "85090963134",
-        "semanticScholar": "a58517a303ef58f1aacb66c262cf6af281fa83a3",
+        "semanticScholar": null,
         "ora": null
       },
       "metrics": {
         "total_citations": 0,
-        "citation_sources": 2
+        "citation_sources": 1
+      }
+    },
+    {
+      "title": "Understanding Coordinated and Inauthentic Link Sharing Behavior on Facebook in the Run-up to 2018 General Election and 2019 European Election in Italy",
+      "type": "preprint",
+      "venue": "Center for Open Science",
+      "authors": "Giglietto, Fabio; Righetti, Nicola; Marino, Giada",
+      "year": 2019,
+      "month": 9,
+      "day": 20,
+      "publicationDate": "2019-09-20",
+      "doi": "10.31235/osf.io/3jteh",
+      "citations": {
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
       },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Political Science"
-      ]
+      "source_urls": {
+        "orcid": "https://doi.org/10.31235/osf.io/3jteh",
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null,
+        "crossref": "https://doi.org/10.31235/osf.io/3jteh"
+      },
+      "source_ids": {
+        "orcid": 61895054,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null
+      },
+      "metrics": {
+        "total_citations": 0,
+        "citation_sources": 0
+      },
+      "crossref_type": "posted-content",
+      "publisher": "Center for Open Science"
     },
     {
       "title": "Il patchwork mediale",
@@ -4479,7 +3654,7 @@
       "title": "Twitter and Political Talk Shows in Italy (2012/2013)",
       "type": "other",
       "venue": "Figshare",
-      "authors": "Fabio Giglietto",
+      "authors": null,
       "year": 2016,
       "month": null,
       "day": null,
@@ -4489,14 +3664,14 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": 0
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": null,
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/eecec2d871f6e2aae0c340cc732f1f9094ce3daf",
+        "semanticScholar": null,
         "ora": null
       },
       "source_ids": {
@@ -4504,19 +3679,13 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "eecec2d871f6e2aae0c340cc732f1f9094ce3daf",
+        "semanticScholar": null,
         "ora": null
       },
       "metrics": {
         "total_citations": 0,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Political Science"
-      ]
+        "citation_sources": 0
+      }
     },
     {
       "title": "X-Factor 6th Italian Edition 2012 - Twitter #XF6 Ids dataset",
@@ -4901,7 +4070,7 @@
       "title": "Social Systems: from Simulation to Observation",
       "type": "book-chapter",
       "venue": null,
-      "authors": "Fabio Giglietto",
+      "authors": null,
       "year": 2013,
       "month": 1,
       "day": 1,
@@ -4911,14 +4080,14 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": 0
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": "https://ora.uniurb.it/handle/11576/2531374",
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/cc9ebc6c30d76437cf490dd88eadae1d8fd98a0d",
+        "semanticScholar": null,
         "ora": null
       },
       "source_ids": {
@@ -4926,19 +4095,13 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "cc9ebc6c30d76437cf490dd88eadae1d8fd98a0d",
+        "semanticScholar": null,
         "ora": null
       },
       "metrics": {
         "total_citations": 0,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Computer Science"
-      ]
+        "citation_sources": 0
+      }
     },
     {
       "title": "Descriptive statistics for Political Talk Shows",
@@ -5163,6 +4326,46 @@
       }
     },
     {
+      "title": "Ethics and Interdisciplinarity in Computational Social Science",
+      "type": "journal-article",
+      "venue": "Methodological Innovations Online",
+      "authors": "Giglietto, Fabio; Rossi, Luca",
+      "year": 2012,
+      "month": 4,
+      "day": null,
+      "publicationDate": "2012-04-01",
+      "doi": "10.4256/mio.2012.003",
+      "citations": {
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": null,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null,
+        "crossref": "https://doi.org/10.4256/mio.2012.003"
+      },
+      "source_ids": {
+        "orcid": 34344550,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null
+      },
+      "metrics": {
+        "total_citations": 0,
+        "citation_sources": 0
+      },
+      "crossref_type": "journal-article",
+      "publisher": "SAGE Publications"
+    },
+    {
       "title": "Facebook, Twitter & co. Una mutazione possibile per la ricerca sociale",
       "type": "book-chapter",
       "venue": null,
@@ -5235,6 +4438,86 @@
         "total_citations": 0,
         "citation_sources": 0
       }
+    },
+    {
+      "title": "If Likes Were Votes: An Empirical Study on the 2011 Italian Administrative Elections",
+      "type": "journal-article",
+      "venue": "SSRN Electronic Journal",
+      "authors": "Giglietto, Fabio",
+      "year": 2012,
+      "month": null,
+      "day": null,
+      "publicationDate": null,
+      "doi": "10.2139/ssrn.1982736",
+      "citations": {
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": null,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null,
+        "crossref": "https://doi.org/10.2139/ssrn.1982736"
+      },
+      "source_ids": {
+        "orcid": 18425453,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null
+      },
+      "metrics": {
+        "total_citations": 0,
+        "citation_sources": 0
+      },
+      "crossref_type": "journal-article",
+      "publisher": "Elsevier BV"
+    },
+    {
+      "title": "Moving towards a socially-driven internet architectural design",
+      "type": "journal-article",
+      "venue": "ACM SIGCOMM Computer Communication Review",
+      "authors": "Sofia, Rute; Mendes, Paulo; Damásio, Manuel José; Henriques, Sara; Giglietto, Fabio; Giambitto, Erica; Bogliolo, Alessandro",
+      "year": 2012,
+      "month": null,
+      "day": null,
+      "publicationDate": "2012-01-01",
+      "doi": "10.1145/2317307.2317316",
+      "citations": {
+        "scholar": null,
+        "wos": 0,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": null,
+        "scholar": null,
+        "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000305897600007&DestLinkType=FullRecord&DestApp=WOS_CPL",
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null,
+        "crossref": "https://doi.org/10.1145/2317307.2317316"
+      },
+      "source_ids": {
+        "orcid": 9611960,
+        "scholar": null,
+        "wos": "WOS:000305897600007",
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null
+      },
+      "metrics": {
+        "total_citations": 0,
+        "citation_sources": 1
+      },
+      "crossref_type": "journal-article",
+      "publisher": "Association for Computing Machinery (ACM)"
     },
     {
       "title": "Hanging Out, Messing Around, and Geeking Out: Kids Living and Learning with New Media (John D. and Catherine T. MacArthur Foundation Series on Digital Media and Learning)",
@@ -5545,7 +4828,7 @@
       "title": "Social System Theory Between Individuals and Society. The Social Construction of Life",
       "type": "book-chapter",
       "venue": null,
-      "authors": "G. Caramaschi, Fabio Giglietto",
+      "authors": null,
       "year": 2009,
       "month": 1,
       "day": 1,
@@ -5555,14 +4838,14 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": 0
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": "https://ora.uniurb.it/handle/11576/2504756",
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/2c3bf7c57c15eed0f3af97f3fa09f5b53c373153",
+        "semanticScholar": null,
         "ora": null
       },
       "source_ids": {
@@ -5570,19 +4853,50 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "2c3bf7c57c15eed0f3af97f3fa09f5b53c373153",
+        "semanticScholar": null,
         "ora": null
       },
       "metrics": {
         "total_citations": 0,
-        "citation_sources": 1
+        "citation_sources": 0
+      }
+    },
+    {
+      "title": "Social semantics in a networked space. New perspectives for social sciences",
+      "type": "book-chapter",
+      "venue": null,
+      "authors": null,
+      "year": 2009,
+      "month": 1,
+      "day": 1,
+      "publicationDate": "2009-01-01",
+      "doi": null,
+      "citations": {
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
       },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Sociology"
-      ]
+      "source_urls": {
+        "orcid": "https://ora.uniurb.it/handle/11576/2504755",
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null
+      },
+      "source_ids": {
+        "orcid": 133838418,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null
+      },
+      "metrics": {
+        "total_citations": 0,
+        "citation_sources": 0
+      }
     },
     {
       "title": "Toward a bridge between sociocybernetics and internet studies",
@@ -5884,7 +5198,7 @@
       "title": "No Paper Project. Experiencing the future of learning in Higher Education",
       "type": "conference-paper",
       "venue": null,
-      "authors": "Fabio Giglietto, Luca Rossi",
+      "authors": null,
       "year": 2004,
       "month": 1,
       "day": 1,
@@ -5894,14 +5208,14 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": 0
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": "https://ora.uniurb.it/handle/11576/2504857",
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/cafa0c55e0d3adfca9131b29296530ec4b000ace",
+        "semanticScholar": null,
         "ora": null
       },
       "source_ids": {
@@ -5909,19 +5223,13 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "cafa0c55e0d3adfca9131b29296530ec4b000ace",
+        "semanticScholar": null,
         "ora": null
       },
       "metrics": {
         "total_citations": 0,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Computer Science"
-      ]
+        "citation_sources": 0
+      }
     },
     {
       "title": "La proprietà fuzzy della comunicazione. Internet, Sistemi sociali e Teorie della comunicazione",
@@ -5959,6 +5267,46 @@
         "total_citations": 0,
         "citation_sources": 0
       }
+    },
+    {
+      "title": "Exploring Correlations Between TV Viewership and Twitter Conversations in Italian Political Talk Shows",
+      "type": "journal-article",
+      "venue": "SSRN Electronic Journal",
+      "authors": "Giglietto, Fabio",
+      "year": 2013,
+      "month": null,
+      "day": null,
+      "publicationDate": null,
+      "doi": "10.2139/ssrn.2306512",
+      "citations": {
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": null,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null,
+        "crossref": "https://doi.org/10.2139/ssrn.2306512"
+      },
+      "source_ids": {
+        "orcid": 18425452,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null
+      },
+      "metrics": {
+        "total_citations": 0,
+        "citation_sources": 0
+      },
+      "crossref_type": "journal-article",
+      "publisher": "Elsevier BV"
     },
     {
       "title": "La via italiana ai siti di social network",
@@ -6038,6 +5386,46 @@
       "publisher": "Elsevier BV"
     },
     {
+      "title": "Social Media and Italian Universities: An Empirical Study on the Adoption and Use of Facebook, Twitter and Youtube",
+      "type": "journal-article",
+      "venue": "SSRN Electronic Journal",
+      "authors": "Lovari, Alessandro; Giglietto, Fabio",
+      "year": 2012,
+      "month": null,
+      "day": null,
+      "publicationDate": null,
+      "doi": "10.2139/ssrn.1978393",
+      "citations": {
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": null,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null,
+        "crossref": "https://doi.org/10.2139/ssrn.1978393"
+      },
+      "source_ids": {
+        "orcid": 18425457,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null
+      },
+      "metrics": {
+        "total_citations": 0,
+        "citation_sources": 0
+      },
+      "crossref_type": "journal-article",
+      "publisher": "Elsevier BV"
+    },
+    {
       "title": "Social TV: Audience Engagement E Autorappresentazione Dell’identita’ in Rete (Social TV: Networked Publics Between Engagement and Identity Construction)",
       "type": "journal-article",
       "venue": "SSRN Electronic Journal",
@@ -6051,14 +5439,14 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": 0
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": null,
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/ea643867520078c9f224ec85debb8cec4fe906e0",
+        "semanticScholar": null,
         "ora": null,
         "crossref": "https://doi.org/10.2139/ssrn.2256368"
       },
@@ -6067,21 +5455,15 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "ea643867520078c9f224ec85debb8cec4fe906e0",
+        "semanticScholar": null,
         "ora": null
       },
       "metrics": {
         "total_citations": 0,
-        "citation_sources": 1
+        "citation_sources": 0
       },
       "crossref_type": "journal-article",
-      "publisher": "Elsevier BV",
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Sociology"
-      ]
+      "publisher": "Elsevier BV"
     },
     {
       "title": "Testi, Consumi Mediali E Pubblici Produttivi in Italia. Analisi Delle Pratiche Di Social TV Da #XF6 a #Serviziopubblico (From #XF6 to #ServizioPubblico Cross-Genre Analysis of TV Audience Participatory Practices in Italy)",
@@ -6124,6 +5506,46 @@
       "publisher": "Elsevier BV"
     },
     {
+      "title": "Understanding Engagement and Willingness to Speak Up in Social-Television: A Full-Season, Cross-Genre Analysis of TV Audience Participation on Twitter",
+      "type": "journal-article",
+      "venue": "SSRN Electronic Journal",
+      "authors": "Giglietto, Fabio; Boccia Artieri, Giovanni; Gemini, Laura; Orefice, Mario",
+      "year": 2015,
+      "month": null,
+      "day": null,
+      "publicationDate": null,
+      "doi": "10.2139/ssrn.2611083",
+      "citations": {
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": null,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null,
+        "crossref": "https://doi.org/10.2139/ssrn.2611083"
+      },
+      "source_ids": {
+        "orcid": 18425462,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null
+      },
+      "metrics": {
+        "total_citations": 0,
+        "citation_sources": 0
+      },
+      "crossref_type": "journal-article",
+      "publisher": "Elsevier BV"
+    },
+    {
       "title": "Understanding the Online News Consumer: A Comparative Study Between Italy and United States (L’Informazione da Rito a Puzzle - Le News e Gli Italiani: Dalla Carta Stampata, Alla Rete al Mobile)",
       "type": "journal-article",
       "venue": "SSRN Electronic Journal",
@@ -6137,14 +5559,14 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": 0
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": null,
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/61b77708f60dc80a7d75fe7805f3d3b837488606",
+        "semanticScholar": null,
         "ora": null,
         "crossref": "https://doi.org/10.2139/ssrn.1963743"
       },
@@ -6153,21 +5575,117 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "61b77708f60dc80a7d75fe7805f3d3b837488606",
+        "semanticScholar": null,
         "ora": null
       },
       "metrics": {
         "total_citations": 0,
-        "citation_sources": 1
+        "citation_sources": 0
+      },
+      "crossref_type": "journal-article",
+      "publisher": "Elsevier BV"
+    },
+    {
+      "title": "Mapping Italian News Media Political Coverage in the Lead-Up of 2018 General Election",
+      "authors": "Giglietto, Fabio; Iannelli, Laura; Rossi, Luca; Valeriani, Augusto; Righetti, Nicola; Carabini, Francesca; Marino, Giada; Usai, Stefano; Zurovac, Elisabetta",
+      "venue": "SSRN Electronic Journal",
+      "year": 2018,
+      "doi": "10.2139/ssrn.3179930",
+      "citations": {
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": null,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "crossref": "https://doi.org/10.2139/ssrn.3179930",
+        "semanticScholar": null
+      },
+      "source_ids": {
+        "orcid": null,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
       },
       "crossref_type": "journal-article",
       "publisher": "Elsevier BV",
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Geography"
-      ]
+      "metrics": {
+        "total_citations": 0,
+        "citation_sources": 0
+      }
+    },
+    {
+      "title": "Widespread Low-Quality News Sources, Ethnic and Religious Divisions: An Analysis of the Drivers Propelling Coordinated Circulation of Problematic Health Information in Nigeria",
+      "authors": "Giglietto, Fabio; Olaniran, Samuel; Mincigrucci, Roberto",
+      "venue": "SSRN Electronic Journal",
+      "year": 2022,
+      "doi": "10.2139/ssrn.4161992",
+      "citations": {
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": null,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "crossref": "https://doi.org/10.2139/ssrn.4161992",
+        "semanticScholar": null
+      },
+      "source_ids": {
+        "orcid": null,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "crossref_type": "journal-article",
+      "publisher": "Elsevier BV",
+      "metrics": {
+        "total_citations": 0,
+        "citation_sources": 0
+      }
+    },
+    {
+      "title": "REVISITING KEY CONCEPTS IN DIGITAL MEDIA RESEARCH: INFLUENCE, POPULISM, PARTISANSHIP, POLARISATION",
+      "authors": "Bruns, Axel; Bechmann, Anja; Charquero-Ballester, Marina; Walter, Jessica G.; Stromer-Galley, Jennifer; McKernan, Brian; Giglietto, Fabio; Righetti, Nicola; Stanziano, Anna; Choucair, Tariq; Esau, Katharina; Svegaard, Sebastian; Vilkins, Samantha",
+      "venue": "AoIR Selected Papers of Internet Research",
+      "year": 2023,
+      "doi": "10.5210/spir.v2023i0.13527",
+      "citations": {
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": null,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "crossref": "https://doi.org/10.5210/spir.v2023i0.13527",
+        "semanticScholar": null
+      },
+      "source_ids": {
+        "orcid": null,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "crossref_type": "journal-article",
+      "publisher": "University of Illinois Libraries",
+      "metrics": {
+        "total_citations": 0,
+        "citation_sources": 0
+      }
     },
     {
       "title": "Social TV and second screen",
@@ -6213,7 +5731,7 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": 0
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": null,
@@ -6221,27 +5739,21 @@
         "wos": null,
         "scopus": null,
         "crossref": "https://doi.org/10.1609/aimag.v37i4.2692",
-        "semanticScholar": "https://www.semanticscholar.org/paper/53fe95b96c2a33ce461b9543015aaa71794a4d8b"
+        "semanticScholar": null
       },
       "source_ids": {
         "orcid": null,
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "53fe95b96c2a33ce461b9543015aaa71794a4d8b"
+        "semanticScholar": null
       },
       "crossref_type": "journal-article",
       "publisher": "Wiley",
       "metrics": {
         "total_citations": 0,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": true,
-      "openAccessPdf": "https://aaai.org/ojs/index.php/aimagazine/article/download/2692/2605",
-      "fieldsOfStudy": [
-        "Computer Science"
-      ]
+        "citation_sources": 0
+      }
     },
     {
       "title": "\"A Pretty Blunt Approach\": Meta's Political Content Reduction Policy and Italian Parliamentarians' Facebook Visibility",
@@ -6287,7 +5799,7 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": 0
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": null,
@@ -6295,25 +5807,21 @@
         "wos": null,
         "scopus": null,
         "crossref": "https://doi.org/10.5210/spir.v2024i0.14102",
-        "semanticScholar": "https://www.semanticscholar.org/paper/4b25422b35281f88efe4d2bb590380fd673aa3dc"
+        "semanticScholar": null
       },
       "source_ids": {
         "orcid": null,
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "4b25422b35281f88efe4d2bb590380fd673aa3dc"
+        "semanticScholar": null
       },
       "crossref_type": "journal-article",
       "publisher": "University of Illinois Libraries",
       "metrics": {
         "total_citations": 0,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": []
+        "citation_sources": 0
+      }
     },
     {
       "title": "PANDEMIC POLITICS: THE 2021 AND 2022 GERMAN AND AUSTRALIAN FEDERAL ELECTION CAMPAIGNS ON SOCIAL MEDIA",
@@ -6325,7 +5833,7 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": 0
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": null,
@@ -6333,25 +5841,21 @@
         "wos": null,
         "scopus": null,
         "crossref": "https://doi.org/10.5210/spir.v2022i0.12953",
-        "semanticScholar": "https://www.semanticscholar.org/paper/fdd13323e035db317b698546e2cb87ca3101dac2"
+        "semanticScholar": null
       },
       "source_ids": {
         "orcid": null,
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "fdd13323e035db317b698546e2cb87ca3101dac2"
+        "semanticScholar": null
       },
       "crossref_type": "journal-article",
       "publisher": "University of Illinois Libraries",
       "metrics": {
         "total_citations": 0,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": true,
-      "openAccessPdf": "https://spir.aoir.org/ojs/index.php/spir/article/download/12953/10847",
-      "fieldsOfStudy": []
+        "citation_sources": 0
+      }
     },
     {
       "title": "Between Localism and Politics: Mapping Coordinated Networks that Circulate Problematic Health Content in India",
@@ -6363,7 +5867,7 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": 0
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": null,
@@ -6371,25 +5875,21 @@
         "wos": null,
         "scopus": null,
         "crossref": "https://doi.org/10.2139/ssrn.4164140",
-        "semanticScholar": "https://www.semanticscholar.org/paper/dbcb3ba352255b9ecae58ed808da66d8c563eef8"
+        "semanticScholar": null
       },
       "source_ids": {
         "orcid": null,
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "dbcb3ba352255b9ecae58ed808da66d8c563eef8"
+        "semanticScholar": null
       },
       "crossref_type": "journal-article",
       "publisher": "Elsevier BV",
       "metrics": {
         "total_citations": 0,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": []
+        "citation_sources": 0
+      }
     },
     {
       "title": "Research Note: Top 10 Most Viewed Links on Facebook during 2020",
@@ -6401,7 +5901,7 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": 0
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": null,
@@ -6409,29 +5909,25 @@
         "wos": null,
         "scopus": null,
         "crossref": "https://doi.org/10.2139/ssrn.3908944",
-        "semanticScholar": "https://www.semanticscholar.org/paper/8d59959abb84c994ff6589005c78de576ba927a2"
+        "semanticScholar": null
       },
       "source_ids": {
         "orcid": null,
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "8d59959abb84c994ff6589005c78de576ba927a2"
+        "semanticScholar": null
       },
       "crossref_type": "journal-article",
       "publisher": "Elsevier BV",
       "metrics": {
         "total_citations": 0,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": []
+        "citation_sources": 0
+      }
     },
     {
       "title": "Correction",
-      "authors": "Fabio Giglietto, Nicola Righetti, L. Rossi, Giada Marino",
+      "authors": null,
       "venue": "Information, Communication &amp; Society",
       "year": 2020,
       "doi": "10.1080/1369118x.2020.1755558",
@@ -6439,7 +5935,7 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": 0
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": null,
@@ -6447,29 +5943,25 @@
         "wos": null,
         "scopus": null,
         "crossref": "https://doi.org/10.1080/1369118x.2020.1755558",
-        "semanticScholar": "https://www.semanticscholar.org/paper/4b1c93a0942483a06105876623a4e096fcda110c"
+        "semanticScholar": null
       },
       "source_ids": {
         "orcid": null,
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "4b1c93a0942483a06105876623a4e096fcda110c"
+        "semanticScholar": null
       },
       "crossref_type": "journal-article",
       "publisher": "Informa UK Limited",
       "metrics": {
         "total_citations": 0,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": []
+        "citation_sources": 0
+      }
     },
     {
       "title": "Index to Volume 60, 2016",
-      "authors": "B. Zaman, M. Nouwen, Jeroen Vanattenhoven, Evelien de Ferrerre, J. Looy, T. Kim, David J. Atkin, W. Xu, Ji Young Park, J. Kim, Dong-Hee Shin, Patricia F. Phalen, Thomas Ksiazek, Jacob B. Garber, R. A. Hayes, C. Carr, D. Y. Wohn, Natalya N. Bazarova, Brian E. Weeks, Fabio Giglietto",
+      "authors": null,
       "venue": "Journal of Broadcasting &amp; Electronic Media",
       "year": 2016,
       "doi": "10.1080/08838151.2016.1238236",
@@ -6477,7 +5969,7 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": 0
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": null,
@@ -6485,29 +5977,25 @@
         "wos": null,
         "scopus": null,
         "crossref": "https://doi.org/10.1080/08838151.2016.1238236",
-        "semanticScholar": "https://www.semanticscholar.org/paper/2cba70cea15d97ed1888cfc4e6a53dd2206418fb"
+        "semanticScholar": null
       },
       "source_ids": {
         "orcid": null,
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "2cba70cea15d97ed1888cfc4e6a53dd2206418fb"
+        "semanticScholar": null
       },
       "crossref_type": "journal-article",
       "publisher": "Informa UK Limited",
       "metrics": {
         "total_citations": 0,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": []
+        "citation_sources": 0
+      }
     },
     {
       "title": "<i>Klaus Bredl, Julia Hünniger and Jakob Linaa Jensen</i> (eds), Methods for Analyzing Social Media",
-      "authors": "Fabio Giglietto, L. Rossi, Davide Bennato, Stefan Stieglitz, Tim Highfield, A. Siibak, M. Forsman",
+      "authors": null,
       "venue": "European Journal of Communication",
       "year": 2014,
       "doi": "10.1177/0267323114531873h",
@@ -6515,7 +6003,7 @@
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": 0
+        "semanticScholar": null
       },
       "source_urls": {
         "orcid": null,
@@ -6523,503 +6011,36 @@
         "wos": null,
         "scopus": null,
         "crossref": "https://doi.org/10.1177/0267323114531873h",
-        "semanticScholar": "https://www.semanticscholar.org/paper/a5e7ff6f40977729af0179891af233eb5cebb082"
+        "semanticScholar": null
       },
       "source_ids": {
         "orcid": null,
         "scholar": null,
         "wos": null,
         "scopus": null,
-        "semanticScholar": "a5e7ff6f40977729af0179891af233eb5cebb082"
+        "semanticScholar": null
       },
       "crossref_type": "journal-article",
       "publisher": "SAGE Publications",
       "metrics": {
         "total_citations": 0,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": []
-    },
-    {
-      "title": "Patterns of Facebook Interactions around Insular and Cross-Partisan Media Sources in the Run-up of the 2018 Italian Election",
-      "authors": "Fabio Giglietto, L. Iannelli, Giada Marino, Nicola Righetti, L. Rossi, A. Valeriani",
-      "venue": "",
-      "year": 2019,
-      "doi": null,
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 0
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/453fa76f151894dcc7d739bb97267aee6547b912",
-        "ora": null
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "453fa76f151894dcc7d739bb97267aee6547b912",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 0,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Political Science"
-      ]
-    },
-    {
-      "title": "Page Proof Instructions and Queries",
-      "authors": "Fabio Giglietto, L. Iannelli, A. Valeriani, Luca Rossi",
-      "venue": "",
-      "year": 2019,
-      "doi": null,
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 0
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/51e65fb21d843adbb77e9c6988231370244f1da1",
-        "ora": null
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "51e65fb21d843adbb77e9c6988231370244f1da1",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 0,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": []
-    },
-    {
-      "title": "Europe as home, Europe as cage. Tone, frames and engagment on European Union before 2018 Italian election",
-      "authors": "Nicola Righetti, Fabio Giglietto, Giada Marino",
-      "venue": "",
-      "year": 2019,
-      "doi": "10.1445/92856",
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 0
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/90fbbf6ced5b06491bd5574865f109492c7cf49f",
-        "ora": null
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "90fbbf6ced5b06491bd5574865f109492c7cf49f",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 0,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Political Science"
-      ]
-    },
-    {
-      "title": "Binge watching the algorithmic catalog: an analysis of Twitter’s reaction to the launch of Netflix Italia",
-      "authors": "Fabio Giglietto, C. Checcaglini, L. Mazzoli",
-      "venue": "",
-      "year": 2017,
-      "doi": null,
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 0
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/d52bd516eee5d0c328e52a672f162e5a70d11287",
-        "ora": null
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "d52bd516eee5d0c328e52a672f162e5a70d11287",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 0,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Engineering"
-      ]
-    },
-    {
-      "title": "CITIZENFOUR: INTERNET PUBLICS AND THE IMAGINARY OF PRIVACY A CONTENT ANALYSIS OF TWITTER COMMENTARIES AROUND THE 2015 OSCAR WINNING DOCUMENTARY",
-      "authors": "G. B. Artieri, Fabio Giglietto, L. Gemini",
-      "venue": "",
-      "year": 2016,
-      "doi": null,
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 0
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/23a939828574246e874e6d193a8a1135ec4d43f5",
-        "ora": null
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "23a939828574246e874e6d193a8a1135ec4d43f5",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 0,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Geography",
-        "Sociology"
-      ]
-    },
-    {
-      "title": "RESEARCHING MISLEADING INFORMATION WITHIN HYBRID MEDIA ECOLOGIES. WHERE WE ARE AND WHERE WE ARE GOING",
-      "authors": "Fabio Giglietto, A. Valeriani, L. Iannelli, L. Rossi, S. D. Gvirsman, Jing Zeng, Chung-hong Chan, King-wa Fu, J. Farkas, Jannick Schou",
-      "venue": "",
-      "year": 2016,
-      "doi": null,
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 0
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/515fecbee0ce3aaeed4e672c10c869c246549c4a",
-        "ora": null
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "515fecbee0ce3aaeed4e672c10c869c246549c4a",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 0,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Engineering"
-      ]
-    },
-    {
-      "title": "ADOPTION AND ADAPTATION: DIACHRONIC PERSPECTIVES ON THE GROWING SOPHISTICATION OF SOCIAL MEDIA USES IN ELECTIONS CAMPAIGNS",
-      "authors": "Anders Olof Larsson, Axel Bruns, Tim Highfield, Jennifer Stromer-Galley, K. Kenski, Jeff J Hemsley, Lauren Bryant, Huichuan Xiu, Bryan Semaan, Luca Rossi, Fabio Giglietto",
-      "venue": "",
-      "year": 2016,
-      "doi": null,
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 0
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/c7b818ababc5b8a1be2a10edfb2408cfffb4fc6f",
-        "ora": null
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "c7b818ababc5b8a1be2a10edfb2408cfffb4fc6f",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 0,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Political Science"
-      ]
-    },
-    {
-      "title": "Connected Audiences of Politics: Analyzing Twitter Conversation on Beppe Grillo and Five Star Movement Generated during Political TV Talk-Shows",
-      "authors": "Fabio Giglietto",
-      "venue": "",
-      "year": 2014,
-      "doi": null,
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 0
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/70ed6191f026a53239628e60c1130ea18a7a4233",
-        "ora": null
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "70ed6191f026a53239628e60c1130ea18a7a4233",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 0,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Political Science"
-      ]
-    },
-    {
-      "title": "Observing Social Systems in the Era of Big Data. Part II",
-      "authors": "Fabio Giglietto",
-      "venue": "",
-      "year": 2014,
-      "doi": null,
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 0
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/ca6b51087ad0e2010bf6f2e1697bf610d33fddae",
-        "ora": null
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "ca6b51087ad0e2010bf6f2e1697bf610d33fddae",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 0,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Political Science"
-      ]
-    },
-    {
-      "title": "SOCIOCYBERNETICS AND THE INCREASING COMPLEXITY OF SOCIAL LIFE 2 . Violence as an adaptive system : An example in Mexico",
-      "authors": "B. Hornung, E. Buchinger, M. Paetau, F. Lara-Rosano, B. Scott, B. Hornung, Fabio Giglietto",
-      "venue": "",
-      "year": 2011,
-      "doi": null,
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 0
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/9029dd1012bea6d4aefb47c369e73c48351ddb1c",
-        "ora": null
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "9029dd1012bea6d4aefb47c369e73c48351ddb1c",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 0,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": []
-    },
-    {
-      "title": "SIGSNA: Special Interest Group on Social Network Analysis",
-      "authors": "L. Rossi, Fabio Giglietto",
-      "venue": "",
-      "year": 2010,
-      "doi": null,
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 0
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/824ce630075ea86d929552d081bd1c5b422fe47a",
-        "ora": null
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "824ce630075ea86d929552d081bd1c5b422fe47a",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 0,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": [
-        "Computer Science"
-      ]
-    },
-    {
-      "title": "Diverging Patterns of Social Media Interactions around Online News: Information Sources and Partisan Communities in the Lead-up to 2018 Italian General Election",
-      "authors": "Fabio Giglietto, Carlo Bo, A. Valeriani, Nicola Righetti, Giada Marino",
-      "venue": "",
-      "year": null,
-      "doi": null,
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": 0
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "https://www.semanticscholar.org/paper/a568c40e49cdf3eeaa37d6a39b84fd43fcd74dbb",
-        "ora": null
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": "a568c40e49cdf3eeaa37d6a39b84fd43fcd74dbb",
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 0,
-        "citation_sources": 1
-      },
-      "influentialCitations": 0,
-      "isOpenAccess": false,
-      "openAccessPdf": null,
-      "fieldsOfStudy": []
+        "citation_sources": 0
+      }
     }
   ],
   "metrics": {
-    "total_publications": 180,
-    "total_citations": 3411,
-    "h_index": 27,
-    "i10_index": 40,
+    "total_publications": 162,
+    "total_citations": 3094,
+    "h_index": 25,
+    "i10_index": 32,
     "citation_sources": {
       "with_scholar": 20,
       "with_wos": 19,
       "with_scopus": 25,
-      "with_semanticScholar": 74,
+      "with_semanticScholar": 3,
       "with_crossref": 62,
       "with_ora": 13
     }
   },
-  "lastUpdated": "2026-02-23T07:04:34.366Z"
+  "lastUpdated": "2026-02-24T07:01:53.052Z"
 }
