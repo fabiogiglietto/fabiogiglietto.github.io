@@ -1,54 +1,53 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a presence on Mastodon, LinkedIn, and Bluesky, with a total following of 3580. His content focuses on research related to information operations, coordinated inauthentic behavior, computational social science, and methodological approaches to studying disinformation. Engagement varies across platforms, with LinkedIn showing higher interaction rates per follower.",
+  "overallSummary": "Fabio Giglietto maintains an active presence across Mastodon, LinkedIn, and Bluesky, focusing on research, announcements, and opportunities in the field of computational social science and disinformation studies. LinkedIn boasts the largest following and generally higher engagement per post, while Bluesky and Mastodon serve as platforms for disseminating research findings and participating in academic discussions. Overall engagement is respectable given the focused niche audience.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 0.027,
+    "averageEngagementRate": 3,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
-      "theme": "Coordinated Inauthentic Behavior",
-      "description": "Research and analysis of coordinated inauthentic behavior on social media platforms."
-    },
-    {
-      "theme": "Information Operations",
-      "description": "Study of information operations and their impact on social media."
+      "theme": "Research Announcements",
+      "description": "Sharing new publications, research findings, and grant awards."
     },
     {
       "theme": "Computational Social Science",
-      "description": "Application of computational methods for social media analysis."
+      "description": "Discussions and resources related to computational methods in social science research."
     },
     {
-      "theme": "Research Opportunities",
-      "description": "Announcements of research grants, postdoctoral positions, and PhD opportunities."
+      "theme": "Disinformation Studies",
+      "description": "Content focused on detecting and analyzing disinformation campaigns."
+    },
+    {
+      "theme": "Career Opportunities",
+      "description": "Advertising postdoctoral positions and research opportunities."
     }
   ],
   "recommendations": [
-    "Tailor content to each platform's audience and best practices.",
-    "Increase posting frequency on platforms with lower engagement rates.",
-    "Use relevant hashtags to increase visibility of posts.",
-    "Encourage interaction by asking questions and prompting responses."
+    "Tailor content to each platform's audience: Share professional updates and job postings on LinkedIn, and research findings/discussions on Bluesky and Mastodon.",
+    "Increase interactive content: Pose questions, run polls, or create threads to encourage more engagement.",
+    "Use relevant hashtags consistently to increase discoverability, particularly on Bluesky and Mastodon."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky demonstrates consistent engagement through likes and reposts, suggesting the audience is receptive to research publications and conference announcements. PhD oppurtunities got high reposting",
-    "mastodon": "Mastodon shows lower overall engagement compared to other platforms. Consider focusing on more engaging content types, such as discussions or questions.",
-    "linkedin": "LinkedIn has the highest engagement, particularly in terms of likes and comments. Focus on sharing professional news and job opportunities within the field."
+    "bluesky": "Bluesky is effective for sharing research publications and engaging in discussions related to coordinated inauthentic behavior.",
+    "mastodon": "Mastodon serves as a platform for disseminating research tools and participating in discussions about methodological approaches.",
+    "linkedin": "LinkedIn is the strongest platform for professional networking, announcing grants, and recruiting postdoctoral researchers."
   },
   "topPerformingContent": [
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
       "platform": "linkedin",
-      "engagementRate": 0.058
-    },
-    {
-      "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
-      "platform": "bluesky",
-      "engagementRate": 0.074
+      "engagementRate": 5.7
     },
     {
       "content": "Now hiring: Two postdoctoral researchers to join our team working on computational methods for social media analysis. Background in data science, computational social science, or related fields preferred.",
       "platform": "linkedin",
-      "engagementRate": 0.039
+      "engagementRate": 3.9
+    },
+    {
+      "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
+      "platform": "bluesky",
+      "engagementRate": 7.4
     }
   ]
 }

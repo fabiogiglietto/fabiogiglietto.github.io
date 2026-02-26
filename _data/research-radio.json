@@ -538,6 +538,17 @@
       "duration": "6:23",
       "author": "Irene Scalco, Francesco Gesualdo, Roy Cerqueti, Matteo Cinelli",
       "doi": null
+    },
+    {
+      "id": "bibtex:DeVerna2025-dl",
+      "bibtexKey": "DeVerna2025-dl",
+      "title": "AI Fact-Check Fail: The Bias & Context Crisis",
+      "description": "AI-generated podcast discussion.\n\nReference:\nDeVerna, M. R., Yang, K., Yan, H. Y., & Menczer, F. (2025). Large language models require curated context for reliable political fact-checking -- even with reasoning and web search. http://arxiv.org/abs/2511.18749v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/DeVerna2025-dl.mp3",
+      "pubDate": "Thu, 26 Feb 2026 06:06:04 +0000",
+      "duration": "4:30",
+      "author": "Matthew R. DeVerna, Kai-Cheng Yang, Harry Yaojun Yan, Filippo Menczer",
+      "doi": null
     }
   ],
   "episodesByBibtexKey": {
@@ -1079,6 +1090,17 @@
       "duration": "6:23",
       "author": "Irene Scalco, Francesco Gesualdo, Roy Cerqueti, Matteo Cinelli",
       "doi": null
+    },
+    "DeVerna2025-dl": {
+      "id": "bibtex:DeVerna2025-dl",
+      "bibtexKey": "DeVerna2025-dl",
+      "title": "AI Fact-Check Fail: The Bias & Context Crisis",
+      "description": "AI-generated podcast discussion.\n\nReference:\nDeVerna, M. R., Yang, K., Yan, H. Y., & Menczer, F. (2025). Large language models require curated context for reliable political fact-checking -- even with reasoning and web search. http://arxiv.org/abs/2511.18749v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/DeVerna2025-dl.mp3",
+      "pubDate": "Thu, 26 Feb 2026 06:06:04 +0000",
+      "duration": "4:30",
+      "author": "Matthew R. DeVerna, Kai-Cheng Yang, Harry Yaojun Yan, Filippo Menczer",
+      "doi": null
     }
   },
   "episodesByDoi": {
@@ -1512,7 +1534,7 @@
       "doi": "10.1080/10584609.2026.2618486"
     }
   },
-  "totalEpisodes": 49,
-  "lastUpdated": "2026-02-25T07:00:56.807Z",
+  "totalEpisodes": 50,
+  "lastUpdated": "2026-02-26T06:58:52.055Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
