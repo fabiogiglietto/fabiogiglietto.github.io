@@ -12,16 +12,6 @@
   },
   "repositories": [
     {
-      "name": "research-radio",
-      "description": "Convert academic papers into AI podcast episodes with Google Gemini. Powers FG's Research Radio.",
-      "url": "https://github.com/fabiogiglietto/research-radio",
-      "language": "Python",
-      "stars": 2,
-      "forks": 0,
-      "created_at": "2025-12-29T17:46:10Z",
-      "updated_at": "2026-02-26T06:06:10Z"
-    },
-    {
       "name": "toread",
       "description": "Consume a feed BibTeX export from a Paperpile folder, complete the publication metadata with Crossref and Semantic Scholar and create an RSS feed",
       "url": "https://github.com/fabiogiglietto/toread",
@@ -29,7 +19,7 @@
       "stars": 1,
       "forks": 0,
       "created_at": "2025-06-07T09:12:59Z",
-      "updated_at": "2026-02-26T05:15:19Z"
+      "updated_at": "2026-02-27T06:09:17Z"
     },
     {
       "name": "fabiogiglietto.github.io",
@@ -39,7 +29,17 @@
       "stars": 7,
       "forks": 1,
       "created_at": "2025-04-21T09:41:33Z",
-      "updated_at": "2026-02-25T07:02:37Z"
+      "updated_at": "2026-02-26T07:00:27Z"
+    },
+    {
+      "name": "research-radio",
+      "description": "Convert academic papers into AI podcast episodes with Google Gemini. Powers FG's Research Radio.",
+      "url": "https://github.com/fabiogiglietto/research-radio",
+      "language": "Python",
+      "stars": 2,
+      "forks": 0,
+      "created_at": "2025-12-29T17:46:10Z",
+      "updated_at": "2026-02-26T06:06:10Z"
     },
     {
       "name": "genai-media-course",
@@ -254,5 +254,5 @@
       "activity": {}
     }
   ],
-  "lastUpdated": "2026-02-26T06:58:52.986Z"
+  "lastUpdated": "2026-02-27T06:52:53.452Z"
 }

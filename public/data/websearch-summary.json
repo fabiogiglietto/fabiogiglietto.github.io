@@ -1,11 +1,12 @@
 {
-  "totalEntries": 112,
-  "lastUpdated": "2026-02-26T06:59:42.313Z",
+  "totalEntries": 113,
+  "lastUpdated": "2026-02-27T06:53:57.874Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-02-22T06:46:44.392Z"
+    "latest": "2026-02-27T06:53:57.832Z"
   },
   "byDate": {
+    "2026-02-27": 1,
     "2026-02-22": 1,
     "2026-02-21": 1,
     "2026-02-20": 3,
@@ -14,8 +15,7 @@
     "2026-02-15": 2,
     "2026-02-14": 1,
     "2026-02-11": 2,
-    "2026-02-09": 1,
-    "2026-02-08": 3
+    "2026-02-09": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 45,
@@ -30,11 +30,18 @@
     "euractiv.ro": 2
   },
   "byRelevanceScore": {
-    "high": 99,
+    "high": 100,
     "medium": 13,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "\"A Pretty Blunt Approach\": Meta's Political Content Reduction Policy and Italian Parliamentarians' Facebook Visibility | Sciety",
+      "url": "https://sciety.org/articles/activity/10.31235/osf.io/8dqag_v2",
+      "source": "Sciety",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-02-27T06:53:57.832Z"
+    },
     {
       "title": "Meta shuts down CrowdTangle tool used by some groups to track online misinformation",
       "url": "https://www.straitstimes.com/world/united-states/meta-shuts-down-crowdtangle-tool-used-for-tracking-online-misinformation",
@@ -60,13 +67,6 @@
       "title": "“META HAS PROMOTED HOMOPHOBIC, RACIST, AND FAKE NEWS POSTS” - YouTube",
       "url": "https://www.youtube.com/watch?v=0-dtP01Qv6c",
       "source": "youtube.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-02-20T06:56:04.498Z"
-    },
-    {
-      "title": "Researchers meet to discuss DSA access to publicly available platform data",
-      "url": "https://algorithmic-transparency.ec.europa.eu/news/researchers-meet-discuss-dsa-access-publicly-available-platform-data-2025-12-12_en",
-      "source": "vertexaisearch.cloud.google.com",
       "relevanceScore": 0.9,
       "collectedAt": "2026-02-20T06:56:04.498Z"
     }
