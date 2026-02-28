@@ -1,54 +1,48 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a presence on Mastodon, LinkedIn, and Bluesky, with a focus on research related to social media analysis, disinformation, and computational social science. His largest audience is on LinkedIn, followed by Bluesky, and then Mastodon. His posts cover research findings, job opportunities, and conference presentations.",
+  "overallSummary": "Fabio Giglietto maintains a presence on Mastodon, LinkedIn, and Bluesky, totaling 3580 followers. His content focuses on research related to social media analysis, disinformation, and computational social science. Engagement varies by platform, with LinkedIn showing a higher level of interaction in terms of likes and comments.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 3.03,
+    "averageEngagementRate": 2.47,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
-      "theme": "Coordinated Inauthentic Behavior",
-      "description": "Research and detection of coordinated inauthentic behavior on social media platforms."
+      "theme": "Computational Social Science Research",
+      "description": "Posts related to research findings, publications, and methodologies in computational social science."
     },
     {
-      "theme": "Disinformation",
-      "description": "Methodological approaches and studies related to disinformation across various platforms."
+      "theme": "Disinformation and Information Operations",
+      "description": "Content focusing on the study and detection of disinformation campaigns and coordinated inauthentic behavior."
     },
     {
-      "theme": "Computational Social Science",
-      "description": "Application of computational methods for social media analysis."
+      "theme": "Job Opportunities and Hiring",
+      "description": "Posts announcing research positions, PhD opportunities, and calls for collaborators."
     },
     {
-      "theme": "Research Grants and Funding",
-      "description": "Announcements regarding research grants and funding received."
-    },
-    {
-      "theme": "Job Opportunities",
-      "description": "Announcements for postdoctoral and PhD research opportunities."
+      "theme": "Conference Presentations and Events",
+      "description": "Announcements of upcoming conference presentations and participation in relevant events."
     }
   ],
   "recommendations": [
-    "Diversify content types to include more visuals (images, videos) to increase engagement.",
-    "Use platform-specific hashtags to improve discoverability and reach a wider audience.",
-    "Engage more actively with followers by responding to comments and questions.",
-    "Run polls or Q&A sessions to foster audience interaction.",
-    "Cross-promote content across different platforms to reach a wider audience."
+    "Increase cross-platform promotion to drive followers to different platforms.",
+    "Experiment with different content formats (e.g., video, infographics) to boost engagement.",
+    "Actively participate in relevant conversations and engage with followers' comments and questions."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky posts about published papers and conference presentations tend to perform well, especially those offering research opportunities. Content is relatively consistent.",
-    "mastodon": "Mastodon engagement is lower compared to other platforms. Sharing updates on research tools and interesting discussions seems to be the focus.",
-    "linkedin": "LinkedIn posts related to research grants and job opportunities generate the highest engagement, suggesting a professional audience interested in career and funding news."
+    "bluesky": "Bluesky content focusing on research publications and conference participation sees good engagement, especially in reposts, indicating a strong interest in research updates and community events.",
+    "mastodon": "Mastodon posts are more focused on technical updates and discussions, but receive moderate engagement. Consider sharing more visually appealing content or engaging in more direct Q&A to increase interaction.",
+    "linkedin": "LinkedIn is the most engaging platform, likely due to its professional audience. Leverage this by continuing to share research updates, job opportunities, and insights relevant to the industry."
   },
   "topPerformingContent": [
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
       "platform": "linkedin",
-      "engagementRate": 6.86
+      "engagementRate": 5.78
     },
     {
       "content": "Now hiring: Two postdoctoral researchers to join our team working on computational methods for social media analysis. Background in data science, computational social science, or related fields preferred.",
       "platform": "linkedin",
-      "engagementRate": 3.95
+      "engagementRate": 3.62
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",

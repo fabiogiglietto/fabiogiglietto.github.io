@@ -549,6 +549,17 @@
       "duration": "4:30",
       "author": "Matthew R. DeVerna, Kai-Cheng Yang, Harry Yaojun Yan, Filippo Menczer",
       "doi": null
+    },
+    {
+      "id": "bibtex:Ober2026-vd",
+      "bibtexKey": "Ober2026-vd",
+      "title": "AI & Human Insight: Analyzing Interviews the Smart Way",
+      "description": "AI-generated podcast discussion.\n\nReference:\nOber, T., Courey, K. A., & Flor, M. (2026). Integrating topic modeling and LLM prompt engineering into a human-driven approach to analyze interview transcripts. https://doi.org/10.5281/zenodo.18733521",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Ober2026-vd.mp3",
+      "pubDate": "Fri, 27 Feb 2026 07:08:30 +0000",
+      "duration": "6:00",
+      "author": "Teresa Ober, Karyssa A. Courey, Michael Flor",
+      "doi": "10.5281/zenodo.18733521"
     }
   ],
   "episodesByBibtexKey": {
@@ -1101,6 +1112,17 @@
       "duration": "4:30",
       "author": "Matthew R. DeVerna, Kai-Cheng Yang, Harry Yaojun Yan, Filippo Menczer",
       "doi": null
+    },
+    "Ober2026-vd": {
+      "id": "bibtex:Ober2026-vd",
+      "bibtexKey": "Ober2026-vd",
+      "title": "AI & Human Insight: Analyzing Interviews the Smart Way",
+      "description": "AI-generated podcast discussion.\n\nReference:\nOber, T., Courey, K. A., & Flor, M. (2026). Integrating topic modeling and LLM prompt engineering into a human-driven approach to analyze interview transcripts. https://doi.org/10.5281/zenodo.18733521",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Ober2026-vd.mp3",
+      "pubDate": "Fri, 27 Feb 2026 07:08:30 +0000",
+      "duration": "6:00",
+      "author": "Teresa Ober, Karyssa A. Courey, Michael Flor",
+      "doi": "10.5281/zenodo.18733521"
     }
   },
   "episodesByDoi": {
@@ -1532,9 +1554,20 @@
       "duration": "6:39",
       "author": "Paul Balluff, Justin Chun-ting Ho, Johannes B. Gruber, Sean Palicki, Alexis Palmer, Luca Rossi, Irina Shklovski, Chung-hong Chan",
       "doi": "10.1080/10584609.2026.2618486"
+    },
+    "10.5281/zenodo.18733521": {
+      "id": "bibtex:Ober2026-vd",
+      "bibtexKey": "Ober2026-vd",
+      "title": "AI & Human Insight: Analyzing Interviews the Smart Way",
+      "description": "AI-generated podcast discussion.\n\nReference:\nOber, T., Courey, K. A., & Flor, M. (2026). Integrating topic modeling and LLM prompt engineering into a human-driven approach to analyze interview transcripts. https://doi.org/10.5281/zenodo.18733521",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Ober2026-vd.mp3",
+      "pubDate": "Fri, 27 Feb 2026 07:08:30 +0000",
+      "duration": "6:00",
+      "author": "Teresa Ober, Karyssa A. Courey, Michael Flor",
+      "doi": "10.5281/zenodo.18733521"
     }
   },
-  "totalEpisodes": 50,
-  "lastUpdated": "2026-02-27T06:52:52.772Z",
+  "totalEpisodes": 51,
+  "lastUpdated": "2026-02-28T06:37:09.487Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
