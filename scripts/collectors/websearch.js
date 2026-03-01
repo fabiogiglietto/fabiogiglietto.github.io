@@ -1290,7 +1290,8 @@ async function fetchCrossrefEventData() {
 
   let publications;
   try {
-    publications = JSON.parse(fs.readFileSync(pubsPath, 'utf8'));
+    const parsed = JSON.parse(fs.readFileSync(pubsPath, 'utf8'));
+    publications = Array.isArray(parsed) ? parsed : parsed.publications || [];
   } catch (e) {
     console.log(`Failed to read aggregated publications: ${e.message}`);
     return [];
