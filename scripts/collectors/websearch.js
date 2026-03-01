@@ -1015,6 +1015,8 @@ async function extractPublicationDate(model, result) {
       tools: [{ googleSearch: {} }],
     });
 
+    const todayStr = new Date().toISOString().split('T')[0];
+
     const prompt = `Find the exact publication date for this article:
 
 Title: "${result.title}"
@@ -1023,8 +1025,12 @@ Source: ${result.source}
 
 Search for this specific article and find when it was published.
 
-IMPORTANT: Return ONLY the date in YYYY-MM-DD format, nothing else.
-If you cannot find the exact date, return "unknown".
+IMPORTANT RULES:
+- Return ONLY the date in YYYY-MM-DD format, nothing else.
+- If you cannot find the exact publication date, return "unknown".
+- Do NOT guess or infer a date. Only return a date you found explicitly stated.
+- Do NOT return today's date (${todayStr}) unless you are absolutely certain the article was published today.
+- The date should come from the article's metadata, byline, or publication timestamp.
 
 Examples of valid responses:
 2024-12-15
@@ -1039,9 +1045,23 @@ unknown`;
     if (dateMatch) {
       // Verify it's a valid date
       const parsed = new Date(dateMatch[0]);
-      if (!isNaN(parsed.getTime())) {
-        return dateMatch[0];
+      if (isNaN(parsed.getTime())) {
+        return null;
       }
+
+      // Reject dates that are today or within the last 2 days — Gemini often
+      // hallucinates the current date when it cannot find the real one.
+      // Legitimate same-day articles will already have dates from HTTP metadata.
+      const candidateDate = new Date(dateMatch[0]);
+      const now = new Date();
+      const twoDaysAgo = new Date(now);
+      twoDaysAgo.setDate(twoDaysAgo.getDate() - 2);
+      if (candidateDate >= twoDaysAgo) {
+        console.log(`  Gemini returned near-today date ${dateMatch[0]}, likely hallucinated — rejecting`);
+        return null;
+      }
+
+      return dateMatch[0];
     }
 
     return null;
