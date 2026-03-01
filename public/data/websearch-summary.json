@@ -1,11 +1,12 @@
 {
-  "totalEntries": 113,
-  "lastUpdated": "2026-03-01T06:44:48.695Z",
+  "totalEntries": 115,
+  "lastUpdated": "2026-03-01T13:40:57.528Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-02-27T06:53:57.832Z"
+    "latest": "2026-03-01T13:40:57.423Z"
   },
   "byDate": {
+    "2026-03-01": 2,
     "2026-02-27": 1,
     "2026-02-22": 1,
     "2026-02-21": 1,
@@ -14,11 +15,10 @@
     "2026-02-16": 2,
     "2026-02-15": 2,
     "2026-02-14": 1,
-    "2026-02-11": 2,
-    "2026-02-09": 1
+    "2026-02-11": 2
   },
   "bySource": {
-    "vertexaisearch.cloud.google.com": 45,
+    "vertexaisearch.cloud.google.com": 46,
     "uniurb.it": 7,
     "open.online": 5,
     "youtube.com": 2,
@@ -30,11 +30,18 @@
     "euractiv.ro": 2
   },
   "byRelevanceScore": {
-    "high": 100,
-    "medium": 13,
+    "high": 101,
+    "medium": 14,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Seminario - Etica e integrità della ricerca - UniUrb",
+      "url": "https://www.uniurb.it/novita-ed-eventi/6382",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-03-01T13:40:57.423Z"
+    },
     {
       "title": "\"A Pretty Blunt Approach\": Meta's Political Content Reduction Policy and Italian Parliamentarians' Facebook Visibility | Sciety",
       "url": "https://sciety.org/articles/activity/10.31235/osf.io/8dqag_v2",
@@ -60,13 +67,6 @@
       "title": "Massimo Terenzi and Fabio Giglietto , Author at European Journalism Observatory - EJO",
       "url": "https://en.ejo.ch/author/massimo-and-fabio",
       "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-02-20T06:56:04.498Z"
-    },
-    {
-      "title": "“META HAS PROMOTED HOMOPHOBIC, RACIST, AND FAKE NEWS POSTS” - YouTube",
-      "url": "https://www.youtube.com/watch?v=0-dtP01Qv6c",
-      "source": "youtube.com",
       "relevanceScore": 0.9,
       "collectedAt": "2026-02-20T06:56:04.498Z"
     }
