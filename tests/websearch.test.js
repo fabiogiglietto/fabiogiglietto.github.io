@@ -12,6 +12,7 @@ const {
   shouldSkipResult,
   isDatePlausible,
   extractDateFromHTTP,
+  extractDateFromUrl,
   extractJsonLdDate,
   parseToYMD
 } = _testing;
@@ -401,5 +402,38 @@ describe('parseToYMD', () => {
     expect(parseToYMD(null)).toBeNull();
     expect(parseToYMD('')).toBeNull();
     expect(parseToYMD('not-a-date')).toBeNull();
+  });
+});
+
+describe('extractDateFromUrl', () => {
+  test('extracts /YYYY/MM/DD/ pattern', () => {
+    expect(extractDateFromUrl('https://example.com/blog/2025/03/10/article-title')).toBe('2025-03-10');
+  });
+
+  test('extracts YYYY-MM-DD in path', () => {
+    expect(extractDateFromUrl('https://example.eu/news/researchers-discuss-2025-12-12_en')).toBe('2025-12-12');
+  });
+
+  test('extracts YYYY-MM-DD in query string', () => {
+    expect(extractDateFromUrl('https://example.com/article?published=2025-06-01&id=123')).toBe('2025-06-01');
+  });
+
+  test('extracts compact YYYYMMDD format', () => {
+    expect(extractDateFromUrl('https://example.com/news/20250115-headline-here')).toBe('2025-01-15');
+  });
+
+  test('returns null for URLs with no date', () => {
+    expect(extractDateFromUrl('https://www.uniurb.it/novita-ed-eventi/5977')).toBeNull();
+    expect(extractDateFromUrl('https://example.com/about')).toBeNull();
+  });
+
+  test('returns null for invalid URLs', () => {
+    expect(extractDateFromUrl('not-a-url')).toBeNull();
+  });
+
+  test('handles real-world EU URL with date suffix', () => {
+    expect(extractDateFromUrl(
+      'https://algorithmic-transparency.ec.europa.eu/news/researchers-meet-discuss-dsa-access-publicly-available-platform-data-2025-12-12_en'
+    )).toBe('2025-12-12');
   });
 });

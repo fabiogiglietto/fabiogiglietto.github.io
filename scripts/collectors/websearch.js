@@ -519,6 +519,16 @@ Only include results with REAL, direct URLs to news sources.`;
         continue;
       }
 
+      // Signal 0: Try extracting date from the URL path (instant, no network)
+      const urlDate = extractDateFromUrl(result.url);
+      if (urlDate && isDatePlausible(urlDate)) {
+        result.date = urlDate;
+        result.dateConfidence = 'medium';
+        result.dateSource = 'url-path';
+        console.log(`  ${label}... - URL path date: ${urlDate}`);
+        continue;
+      }
+
       // Signal 1: Try HTTP metadata extraction (fast, deterministic, no API cost)
       try {
         const httpDate = await extractDateFromHTTP(result.url);
@@ -888,6 +898,49 @@ function isDatePlausible(dateStr) {
   maxPast.setFullYear(maxPast.getFullYear() - 2);
 
   return date <= maxFuture && date >= maxPast;
+}
+
+/**
+ * Extract a publication date from a URL path.
+ * Many news/blog URLs encode dates like /2025/03/10/headline or /2025-12-12_en
+ * Returns 'YYYY-MM-DD' or null.
+ */
+function extractDateFromUrl(urlString) {
+  try {
+    const urlPath = new URL(urlString).pathname;
+
+    // Pattern 1: /YYYY/MM/DD/ in path (most common blog/news pattern)
+    const slashDate = urlPath.match(/\/(\d{4})\/(\d{2})\/(\d{2})\//);
+    if (slashDate) {
+      const [, y, m, d] = slashDate;
+      const candidate = `${y}-${m}-${d}`;
+      if (!isNaN(new Date(candidate).getTime())) return candidate;
+    }
+
+    // Pattern 2: YYYY-MM-DD anywhere in path or query (e.g. /news/title-2025-12-12_en)
+    const dashDate = urlString.match(/(\d{4})-(\d{2})-(\d{2})/);
+    if (dashDate) {
+      const [, y, m, d] = dashDate;
+      const candidate = `${y}-${m}-${d}`;
+      if (!isNaN(new Date(candidate).getTime())) return candidate;
+    }
+
+    // Pattern 3: /YYYYMMDD in path (compact format, e.g. /20250115-headline)
+    const compactDate = urlPath.match(/\/(\d{4})(\d{2})(\d{2})[^\/\d]/);
+    if (compactDate) {
+      const [, y, m, d] = compactDate;
+      const month = parseInt(m, 10);
+      const day = parseInt(d, 10);
+      if (month >= 1 && month <= 12 && day >= 1 && day <= 31) {
+        const candidate = `${y}-${m}-${d}`;
+        if (!isNaN(new Date(candidate).getTime())) return candidate;
+      }
+    }
+
+    return null;
+  } catch (e) {
+    return null;
+  }
 }
 
 /**
@@ -1668,6 +1721,7 @@ module.exports = {
     shouldSkipResult,
     isDatePlausible,
     extractDateFromHTTP,
+    extractDateFromUrl,
     extractJsonLdDate,
     parseToYMD
   }
