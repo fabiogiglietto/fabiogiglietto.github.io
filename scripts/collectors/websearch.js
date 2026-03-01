@@ -492,6 +492,10 @@ Only include results with REAL, direct URLs to news sources.`;
       dateGeminiModel = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
     }
 
+    // Load persistent date cache to avoid re-requesting dates for known URLs
+    const dateCache = loadDateCache();
+    let dateCacheUpdated = false;
+
     for (const result of validatedResults) {
       const label = result.title.substring(0, 50);
 
@@ -519,12 +523,24 @@ Only include results with REAL, direct URLs to news sources.`;
         continue;
       }
 
+      // Check persistent date cache before any extraction
+      const cached = dateCache[result.url];
+      if (cached && isDatePlausible(cached.date)) {
+        result.date = cached.date;
+        result.dateConfidence = cached.confidence || 'medium';
+        result.dateSource = 'cache (' + (cached.source || 'unknown') + ')';
+        console.log(`  ${label}... - cached date: ${cached.date}`);
+        continue;
+      }
+
       // Signal 0: Try extracting date from the URL path (instant, no network)
       const urlDate = extractDateFromUrl(result.url);
       if (urlDate && isDatePlausible(urlDate)) {
         result.date = urlDate;
         result.dateConfidence = 'medium';
         result.dateSource = 'url-path';
+        dateCache[result.url] = { date: urlDate, confidence: 'medium', source: 'url-path' };
+        dateCacheUpdated = true;
         console.log(`  ${label}... - URL path date: ${urlDate}`);
         continue;
       }
@@ -533,18 +549,13 @@ Only include results with REAL, direct URLs to news sources.`;
       try {
         const httpDate = await extractDateFromHTTP(result.url);
         if (httpDate && isDatePlausible(httpDate.date)) {
-          if (httpDate.confidence === 'high') {
+          if (httpDate.confidence === 'high' || httpDate.confidence === 'medium') {
             result.date = httpDate.date;
-            result.dateConfidence = 'high';
+            result.dateConfidence = httpDate.confidence;
             result.dateSource = httpDate.source;
-            console.log(`  ${label}... - HTTP high-confidence date: ${httpDate.date} (${httpDate.source})`);
-            continue;
-          }
-          if (httpDate.confidence === 'medium') {
-            result.date = httpDate.date;
-            result.dateConfidence = 'medium';
-            result.dateSource = httpDate.source;
-            console.log(`  ${label}... - HTTP medium-confidence date: ${httpDate.date} (${httpDate.source})`);
+            dateCache[result.url] = { date: httpDate.date, confidence: httpDate.confidence, source: httpDate.source };
+            dateCacheUpdated = true;
+            console.log(`  ${label}... - HTTP ${httpDate.confidence}-confidence date: ${httpDate.date} (${httpDate.source})`);
             continue;
           }
           // Low confidence — store but try Gemini too
@@ -556,15 +567,17 @@ Only include results with REAL, direct URLs to news sources.`;
         // HTTP extraction failed, continue to next signal
       }
 
-      // Signal 2: Fall back to Gemini date extraction (if no date yet or low confidence)
+      // Signal 2: Fall back to Gemini page-reading estimation (if no date yet or low confidence)
       if (dateGeminiModel && (!result.date || result.dateConfidence === 'low')) {
         try {
           const geminiDate = await extractPublicationDate(dateGeminiModel, result);
           if (geminiDate && isDatePlausible(geminiDate)) {
             result.date = geminiDate;
             result.dateConfidence = 'medium';
-            result.dateSource = 'gemini-extraction';
-            console.log(`  ${label}... - Gemini date: ${geminiDate}`);
+            result.dateSource = 'gemini-page-estimate';
+            dateCache[result.url] = { date: geminiDate, confidence: 'medium', source: 'gemini-page-estimate' };
+            dateCacheUpdated = true;
+            console.log(`  ${label}... - Gemini page estimate: ${geminiDate}`);
           }
         } catch (error) {
           console.log(`  Failed Gemini date extraction for: ${label}...`);
@@ -582,6 +595,11 @@ Only include results with REAL, direct URLs to news sources.`;
       if (!result.date) {
         console.log(`  ${label}... - no date found`);
       }
+    }
+
+    // Save date cache if updated
+    if (dateCacheUpdated) {
+      saveDateCache(dateCache);
     }
 
     // Filter out results with no plausible date
@@ -1057,46 +1075,72 @@ function parseToYMD(dateStr) {
 }
 
 /**
- * Extract publication date from a web page using Gemini
+ * Load persistent date cache from disk.
+ * Maps URL → { date, confidence, source }
+ */
+function loadDateCache() {
+  const cachePath = path.join(__dirname, '../../public/data/websearch-date-cache.json');
+  try {
+    if (fs.existsSync(cachePath)) {
+      return JSON.parse(fs.readFileSync(cachePath, 'utf8'));
+    }
+  } catch (e) {
+    console.log('Could not load date cache, starting fresh');
+  }
+  return {};
+}
+
+/**
+ * Save persistent date cache to disk.
+ */
+function saveDateCache(cache) {
+  const cachePath = path.join(__dirname, '../../public/data/websearch-date-cache.json');
+  try {
+    fs.writeFileSync(cachePath, JSON.stringify(cache, null, 2));
+    console.log(`Date cache saved (${Object.keys(cache).length} entries)`);
+  } catch (e) {
+    console.log(`Failed to save date cache: ${e.message}`);
+  }
+}
+
+/**
+ * Estimate publication date by asking Gemini to read the actual page content.
+ * This is the last-resort signal — used only when URL, HTTP metadata, and
+ * existing dates all failed.
  */
 async function extractPublicationDate(model, result) {
   try {
-    // Use Gemini with search to find the publication date
-    const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    const searchModel = genAI.getGenerativeModel({
-      model: 'gemini-2.0-flash',
-      tools: [{ googleSearch: {} }],
-    });
-
     const todayStr = new Date().toISOString().split('T')[0];
 
-    const prompt = `Find the exact publication date for this article:
+    const prompt = `Visit and read this page, then estimate when it was published:
 
-Title: "${result.title}"
 URL: ${result.url}
-Source: ${result.source}
+Title: "${result.title}"
 
-Search for this specific article and find when it was published.
+Look at the page content for any clues about the publication date:
+- A visible date near the title or byline
+- Event dates mentioned in the content
+- Copyright years or "last updated" notices
+- Contextual clues (e.g., "this week", "in January 2025", conference dates)
 
-IMPORTANT RULES:
-- Return ONLY the date in YYYY-MM-DD format, nothing else.
-- If you cannot find the exact publication date, return "unknown".
-- Do NOT guess or infer a date. Only return a date you found explicitly stated.
-- Do NOT return today's date (${todayStr}) unless you are absolutely certain the article was published today.
-- The date should come from the article's metadata, byline, or publication timestamp.
+RULES:
+- Return ONLY the estimated date in YYYY-MM-DD format, nothing else.
+- If the page mentions a specific date, use that.
+- If only a month and year are mentioned, use the 1st of that month.
+- If you truly cannot estimate any date, return "unknown".
+- Do NOT return today's date (${todayStr}) as a default. Only return it if the page explicitly says it was published today.
 
 Examples of valid responses:
-2024-12-15
-2025-01-03
+2025-06-15
+2024-11-01
 unknown`;
 
-    const response = await searchModel.generateContent(prompt);
+    const response = await model.generateContent(prompt);
     const text = response.response.text().trim();
 
     // Validate date format
     const dateMatch = text.match(/^\d{4}-\d{2}-\d{2}$/);
     if (dateMatch) {
-      // Verify it's a valid date
       const parsed = new Date(dateMatch[0]);
       if (isNaN(parsed.getTime())) {
         return null;
