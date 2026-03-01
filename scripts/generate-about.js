@@ -7,17 +7,14 @@
 
 const fs = require('fs');
 const path = require('path');
+const config = require('./config');
 
 async function generateAboutMe() {
   console.log('Generating fallback About Me content...');
-  
+
   try {
-    // Create fallback content
-    const aboutMeContent = `<p>Fabio Giglietto is a Full Professor of Sociology of Cultural and Communication Processes at the University of Urbino Carlo Bo, Italy. His research focuses on the intersection of Internet Studies, computational social science, and digital media analysis, with particular emphasis on political communication and disinformation.</p>
-
-<p>He has made significant contributions to the field through his pioneering work on Coordinated Link Sharing Behavior (CLSB) and the development of CooRnet, an open-source tool for detecting coordinated activity on social platforms. He leads several major research initiatives, including the MINE project, the EU-funded vera.ai project, and is a key partner in PROMPT, which focuses on detecting and analyzing disinformation narratives across Europe.</p>
-
-<p>His publications appear in leading journals such as Journal of Communication, Information, Communication & Society, and Social Media + Society. Since 2014, he has served as editor of the Journal of Sociocybernetics and is active in professional organizations including the International Communication Association and the Association of Internet Researchers.</p>`;
+    // Create fallback content from config
+    const aboutMeContent = `<p>${config.name} is a ${config.title} at ${config.institution}, ${config.department}. Research focuses on ${config.researchInterests.join(', ')}.</p>`;
     
     // Save the generated content
     const includePath = path.join(__dirname, '../_includes/generated-about.html');

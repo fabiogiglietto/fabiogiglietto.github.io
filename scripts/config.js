@@ -15,6 +15,28 @@ const config = {
   institution: 'University of Urbino Carlo Bo',
   department: 'Department of Communication Sciences, Humanities and International Studies',
   email: 'fabio.giglietto@uniurb.it',
+  phone: '+39 0722 305726',
+  office: 'Room 3.12, Via Saffi 15',
+  officeHours: 'Monday and Wednesday, 11:00-13:00 or by appointment',
+
+  // University Profile
+  universityProfileUrl: 'https://www.uniurb.it/persone/fabio-giglietto',
+
+  // Research
+  researchInterests: [
+    'Social Media Analysis',
+    'Computational Social Science',
+    'Digital Methods',
+    'Information Disorder'
+  ],
+  expertise: [
+    'disinformation research',
+    'social media analysis',
+    'computational social science',
+    'internet studies',
+    'coordinated online behavior',
+    'misinformation detection'
+  ],
 
   // Academic Profile IDs
   orcidId: process.env.ORCID_ID || '0000-0001-8019-1035',

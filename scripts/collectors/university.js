@@ -9,12 +9,13 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
+const config = require('../config');
 
 async function collect() {
   console.log('Collecting University profile data...');
-  
-  // University of Urbino profile URL
-  const profileUrl = 'https://www.uniurb.it/persone/fabio-giglietto';
+
+  // University profile URL from config
+  const profileUrl = config.universityProfileUrl;
   
   try {
     const response = await axios.get(profileUrl);
@@ -53,20 +54,20 @@ function extractProfileInfo($) {
   // Try to find the name in various potential elements
   let name = $('.page-title').text().trim();
   if (!name) name = $('h1').first().text().trim();
-  if (!name) name = "Fabio Giglietto"; // Fallback
-  
-  // Extract other profile data with conservative fallbacks
+  if (!name) name = config.name; // Fallback
+
+  // Extract other profile data with conservative fallbacks from config
   const profile = {
     name: name,
-    title: $('.profile-title').text().trim() || "Associate Professor",
-    department: $('.profile-department').text().trim() || "Department of Communication Sciences, Humanities and International Studies",
-    email: $('.profile-email').text().trim() || "fabio.giglietto@uniurb.it",
-    phone: $('.profile-phone').text().trim() || "+39 0722 305726",
-    office: $('.profile-office').text().trim() || "Room 3.12, Via Saffi 15",
+    title: $('.profile-title').text().trim() || config.title,
+    department: $('.profile-department').text().trim() || config.department,
+    email: $('.profile-email').text().trim() || config.email,
+    phone: $('.profile-phone').text().trim() || config.phone,
+    office: $('.profile-office').text().trim() || config.office,
     bio: $('.profile-bio').text().trim() || "",
-    research_interests: $('.profile-interests li').map((i, el) => $(el).text().trim()).get() || 
-      ["Social Media Analysis", "Computational Social Science", "Digital Methods", "Information Disorder"],
-    office_hours: $('.profile-hours').text().trim() || "Monday and Wednesday, 11:00-13:00 or by appointment"
+    research_interests: $('.profile-interests li').map((i, el) => $(el).text().trim()).get() ||
+      config.researchInterests,
+    office_hours: $('.profile-hours').text().trim() || config.officeHours
   };
   
   return profile;
@@ -171,8 +172,8 @@ function extractTeachingFromProfilePage($) {
   }
   
   // Extract office hours if available, otherwise use default
-  const officeHours = extractOfficeHours($) || 
-    "Monday 14:00-16:00, Room 3.12\nWednesday 10:00-12:00, Room 3.12\nOr by appointment (email: fabio.giglietto@uniurb.it)";
+  const officeHours = extractOfficeHours($) ||
+    `${config.officeHours}\nOr by appointment (email: ${config.email})`;
   
   return {
     courses: courseData,
@@ -389,12 +390,12 @@ function getDefaultTutorials() {
     {
       title: "Introduction to R for Communication Research",
       description: "A beginner's guide to R programming for communication and media research",
-      url: "https://github.com/fabiogiglietto/R-for-communication-research"
+      url: config.urls.rForCommResearch
     },
     {
       title: "Social Media Data Analysis with Python",
       description: "Tutorial series on collecting and analyzing social media data with Python",
-      url: "https://github.com/fabiogiglietto/social-media-python"
+      url: config.urls.socialMediaPython
     }
   ];
 }
@@ -418,20 +419,15 @@ function getDefaultSupervision() {
 function getMockData() {
   return {
     profile: {
-      name: "Fabio Giglietto",
-      title: "Associate Professor",
-      department: "Department of Communication Sciences, Humanities and International Studies",
-      email: "fabio.giglietto@uniurb.it",
-      phone: "+39 0722 305726",
-      office: "Room 3.12, Via Saffi 15",
+      name: config.name,
+      title: config.title,
+      department: config.department,
+      email: config.email,
+      phone: config.phone,
+      office: config.office,
       bio: "",
-      research_interests: [
-        "Social Media Analysis", 
-        "Computational Social Science", 
-        "Digital Methods", 
-        "Information Disorder"
-      ],
-      office_hours: "Monday and Wednesday, 11:00-13:00 or by appointment"
+      research_interests: config.researchInterests,
+      office_hours: config.officeHours
     },
     teaching: getMockTeachingData(),
     lastUpdated: new Date().toISOString()
@@ -490,7 +486,7 @@ function getMockTeachingData() {
         description: "Advanced techniques for large-scale data analysis in social science research"
       }
     ],
-    office_hours: "Monday 14:00-16:00, Room 3.12\nWednesday 10:00-12:00, Room 3.12\nOr by appointment (email: fabio.giglietto@uniurb.it)",
+    office_hours: `${config.officeHours}\nOr by appointment (email: ${config.email})`,
     tutorials: getDefaultTutorials(),
     supervision: getDefaultSupervision()
   };

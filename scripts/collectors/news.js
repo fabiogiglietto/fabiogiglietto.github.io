@@ -6,40 +6,41 @@
 
 const axios = require('axios');
 const cheerio = require('cheerio');
+const config = require('../config');
 
 async function collect() {
   console.log('Collecting News data...');
-  
+
   // News sources to search for mentions
   const sources = [
     {
       name: 'University News',
       url: 'https://www.uniurb.it/novita-ed-eventi/notizie',
-      searchTerm: 'Fabio Giglietto'
+      searchTerm: config.name
     },
     {
       name: 'Research Blog',
       url: 'https://news.google.com/topics/CAAqKAgKIiJDQkFTRXdvTkwyY3ZNVEZtTUhvMmJtc3phaElDYVhRb0FBUAE?ceid=IT:it&oc=3',
-      searchTerm: 'Fabio Giglietto'
+      searchTerm: config.name
     },
     {
       name: 'Threads',
-      url: 'https://www.threads.net/@fabiogiglietto',
+      url: config.social.threads.url,
       searchTerm: ''
     },
     {
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/fabiogiglietto/',
+      url: config.social.linkedin.url,
       searchTerm: ''
     },
     {
       name: 'Mastodon',
-      url: 'https://aoir.social/@fabiogiglietto',
+      url: config.social.mastodon.url,
       searchTerm: ''
     },
     {
       name: 'BlueSky',
-      url: 'https://bsky.app/profile/fabiogiglietto.bsky.social',
+      url: config.social.bluesky.url,
       searchTerm: ''
     }
   ];

@@ -8,6 +8,8 @@ const writeFileAsync = promisify(fs.writeFile);
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const OpenAI = require('openai');
 const axios = require('axios');
+const cheerio = require('cheerio');
+const config = require('../config');
 
 // Check for API keys in environment
 const hasGeminiApiKey = !!process.env.GEMINI_API_KEY;
@@ -145,7 +147,7 @@ function deduplicateMentions(mentions) {
 }
 
 /**
- * Collector for fetching web search results about Fabio Giglietto
+ * Collector for fetching web search results about the configured person
  * using Gemini API with Google Search grounding - ONLY REAL RESULTS
  */
 async function collectWebSearchResults() {
@@ -183,10 +185,10 @@ async function collectWebSearchResults() {
 
       // Search queries - focused on NEWS coverage, not academic papers
       const queries = [
-      "\"Fabio Giglietto\" news article -site:researchgate.net -site:academia.edu",
-      "\"Fabio Giglietto\" interview OR quoted OR commented -site:researchgate.net",
-      "\"Fabio Giglietto\" disinformation OR misinformation news coverage",
-      "\"Fabio Giglietto\" expert OR researcher mentioned in news"
+      `"${config.name}" news article -site:researchgate.net -site:academia.edu`,
+      `"${config.name}" interview OR quoted OR commented -site:researchgate.net`,
+      `"${config.name}" ${config.expertise.slice(0, 2).join(' OR ')} news coverage`,
+      `"${config.name}" expert OR researcher mentioned in news`
       ];
 
       // Run searches for each query using Gemini with Google Search
@@ -197,31 +199,30 @@ async function collectWebSearchResults() {
         let searchResults = [];
 
         // Create search prompt - all focused on NEWS coverage
-        const searchPrompt = `Search for recent NEWS ARTICLES and MEDIA COVERAGE that mention "Fabio Giglietto" from the past 6 months.
+        const searchPrompt = `Search for recent NEWS ARTICLES and MEDIA COVERAGE that mention "${config.name}" from the past 6 months.
 
 IMPORTANT CONTEXT:
-- Fabio Giglietto is a Professor of Internet Studies at University of Urbino Carlo Bo, Italy
-- He specializes in: disinformation research, social media analysis, computational social science
-- He is often quoted as an expert on misinformation, fake news, and coordinated online behavior
+- ${config.name} is a ${config.title} at ${config.institution}
+- Specializes in: ${config.expertise.join(', ')}
 
 WHAT TO FIND (prioritize these):
-1. News articles from newspapers, magazines, or news websites that quote or mention him
+1. News articles from newspapers, magazines, or news websites that quote or mention this person
 2. Media interviews, podcasts, or TV/radio appearances
-3. Press coverage about his research findings
-4. Articles where journalists cite him as an expert source
-5. Conference or event announcements where he is a speaker
+3. Press coverage about research findings
+4. Articles where journalists cite this person as an expert source
+5. Conference or event announcements where this person is a speaker
 
 WHAT TO EXCLUDE (do NOT include):
-- His own profile pages (ORCID, Google Scholar, ResearchGate profile, LinkedIn, personal website)
-- Direct links to his academic papers or publications
+- Profile pages (ORCID, Google Scholar, ResearchGate profile, LinkedIn, personal website)
+- Direct links to academic papers or publications
 - Academic repository pages (IRIS, arXiv, SSRN)
-- Pages that just list his publications without news context
+- Pages that just list publications without news context
 - ResearchGate "Request PDF" pages
 
 For each NEWS result found, provide:
 1. The exact title of the news article/page
 2. The full URL (must be a real URL, not a Google redirect)
-3. A brief description of how he is mentioned in the news
+3. A brief description of how the person is mentioned in the news
 4. The source domain (e.g., "bbc.com", "wired.it", "ansa.it")
 
 Format your response as a JSON array of objects with keys: title, url, description, source
@@ -263,7 +264,7 @@ Only include results with REAL, direct URLs to news sources.`;
                     title: item.title,
                     url: resolvedUrl,
                     snippet: item.description || '',
-                    date: new Date().toISOString().split('T')[0],
+                    date: null,
                     source: item.source || extractDomainFromUrl(resolvedUrl),
                     searchEngine: 'gemini'
                   });
@@ -304,7 +305,7 @@ Only include results with REAL, direct URLs to news sources.`;
                 title: title,
                 url: url,
                 snippet: '',
-                date: new Date().toISOString().split('T')[0],
+                date: null,
                 source: extractDomainFromUrl(url),
                 searchEngine: 'gemini'
               });
@@ -337,7 +338,14 @@ Only include results with REAL, direct URLs to news sources.`;
       allResults = [...allResults, ...googleNewsResults];
     }
 
-    console.log(`\nTotal combined results: ${allResults.length} (Gemini + OpenAI + Google News)`);
+    // Fetch Crossref Event Data (DOI-based mention tracking)
+    const crossrefResults = await fetchCrossrefEventData();
+    if (crossrefResults.length > 0) {
+      console.log(`Adding ${crossrefResults.length} results from Crossref Event Data`);
+      allResults = [...allResults, ...crossrefResults];
+    }
+
+    console.log(`\nTotal combined results: ${allResults.length} (Gemini + OpenAI + Google News + Crossref)`);
 
     // If we didn't get any REAL results, save empty results (hide section)
     if (allResults.length === 0) {
@@ -374,14 +382,37 @@ Only include results with REAL, direct URLs to news sources.`;
             title: result.title,
             snippet: result.snippet,
             url: result.url,
-            date: result.date || new Date().toISOString().split('T')[0],
+            date: result.date || null,
             source: result.source || extractDomainFromUrl(result.url),
             description: result.snippet || `News article from ${result.source}`,
             relevanceScore: 0.75,
             mentionedByName: true,
             personMatch: 'confirmed',
             isRecent: true,
-            searchEngine: result.searchEngine
+            searchEngine: result.searchEngine,
+            dateConfidence: result.dateConfidence || null,
+            dateSource: result.dateSource || null
+          });
+          continue;
+        }
+
+        // Trust Crossref event data results
+        if (result.searchEngine === 'crossref-events') {
+          console.log(`  Trusting Crossref event data result`);
+          validatedResults.push({
+            title: result.title,
+            snippet: result.snippet,
+            url: result.url,
+            date: result.date || null,
+            source: result.source || extractDomainFromUrl(result.url),
+            description: result.snippet || `Crossref event from ${result.source}`,
+            relevanceScore: 0.7,
+            mentionedByName: true,
+            personMatch: 'confirmed',
+            isRecent: true,
+            searchEngine: result.searchEngine,
+            dateConfidence: result.dateConfidence || null,
+            dateSource: result.dateSource || null
           });
           continue;
         }
@@ -393,11 +424,13 @@ Only include results with REAL, direct URLs to news sources.`;
             title: result.title,
             snippet: result.snippet,
             url: result.url,
-            date: result.date || new Date().toISOString().split('T')[0],
+            date: result.date || null,
             source: result.source || extractDomainFromUrl(result.url),
             description: result.snippet || result.title,
             relevanceScore: 0.6,
-            searchEngine: result.searchEngine
+            searchEngine: result.searchEngine,
+            dateConfidence: result.dateConfidence || null,
+            dateSource: result.dateSource || null
           });
           continue;
         }
@@ -413,14 +446,16 @@ Only include results with REAL, direct URLs to news sources.`;
             title: result.title,
             snippet: result.snippet,
             url: result.url,
-            date: result.published_date || result.date || new Date().toISOString().split('T')[0],
+            date: result.published_date || result.date || null,
             source: result.source || extractDomainFromUrl(result.url),
             description: validation.description,
             relevanceScore: validation.relevanceScore,
             mentionedByName: validation.mentionedByName,
             personMatch: validation.personMatch,
             isRecent: validation.isRecent,
-            searchEngine: result.searchEngine
+            searchEngine: result.searchEngine,
+            dateConfidence: result.dateConfidence || null,
+            dateSource: result.dateSource || null
           });
         } else {
           console.log(`✗ Filtered out: ${result.title}`);
@@ -436,50 +471,127 @@ Only include results with REAL, direct URLs to news sources.`;
           title: result.title,
           snippet: result.snippet,
           url: result.url,
-          date: result.published_date || result.date || new Date().toISOString().split('T')[0],
+          date: result.published_date || result.date || null,
           source: result.source || extractDomainFromUrl(result.url),
           description: "Description unavailable due to validation error",
           relevanceScore: 0.5,
-          searchEngine: result.searchEngine
+          searchEngine: result.searchEngine,
+          dateConfidence: result.dateConfidence || null,
+          dateSource: result.dateSource || null
         });
       }
     }
 
     console.log(`\nValidation complete: ${validatedResults.length}/${uniqueResults.length} results passed validation`);
 
-    // Use Gemini to extract more precise publication dates
+    // Multi-signal date extraction pipeline
+    console.log('\n=== Extracting publication dates (multi-signal pipeline) ===');
+    let dateGeminiModel = null;
     if (hasGeminiApiKey) {
-      console.log('\n=== Extracting precise publication dates with Gemini ===');
       const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-      const dateModel = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
+      dateGeminiModel = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
+    }
 
-      for (const result of validatedResults) {
-        // Skip if already has a precise date (not today's date)
-        const today = new Date().toISOString().split('T')[0];
-        if (result.date && result.date !== today) {
-          console.log(`  ${result.title.substring(0, 50)}... - keeping existing date: ${result.date}`);
-          continue;
+    for (const result of validatedResults) {
+      const label = result.title.substring(0, 50);
+
+      // Google News RSS results already have reliable dates from pubDate
+      if (result.searchEngine === 'google-news-rss' && result.date) {
+        result.dateConfidence = 'high';
+        result.dateSource = 'rss-pubdate';
+        console.log(`  ${label}... - RSS date: ${result.date}`);
+        continue;
+      }
+
+      // Crossref event data results already have reliable dates
+      if (result.searchEngine === 'crossref-events' && result.date) {
+        result.dateConfidence = result.dateConfidence || 'high';
+        result.dateSource = result.dateSource || 'crossref-api';
+        console.log(`  ${label}... - Crossref date: ${result.date}`);
+        continue;
+      }
+
+      // Skip if already has a plausible date (e.g. from source-specific extraction)
+      if (result.date && isDatePlausible(result.date)) {
+        result.dateConfidence = result.dateConfidence || 'medium';
+        result.dateSource = result.dateSource || 'existing';
+        console.log(`  ${label}... - keeping existing date: ${result.date}`);
+        continue;
+      }
+
+      // Signal 1: Try HTTP metadata extraction (fast, deterministic, no API cost)
+      try {
+        const httpDate = await extractDateFromHTTP(result.url);
+        if (httpDate && isDatePlausible(httpDate.date)) {
+          if (httpDate.confidence === 'high') {
+            result.date = httpDate.date;
+            result.dateConfidence = 'high';
+            result.dateSource = httpDate.source;
+            console.log(`  ${label}... - HTTP high-confidence date: ${httpDate.date} (${httpDate.source})`);
+            continue;
+          }
+          if (httpDate.confidence === 'medium') {
+            result.date = httpDate.date;
+            result.dateConfidence = 'medium';
+            result.dateSource = httpDate.source;
+            console.log(`  ${label}... - HTTP medium-confidence date: ${httpDate.date} (${httpDate.source})`);
+            continue;
+          }
+          // Low confidence — store but try Gemini too
+          result.date = httpDate.date;
+          result.dateConfidence = 'low';
+          result.dateSource = httpDate.source;
         }
+      } catch (e) {
+        // HTTP extraction failed, continue to next signal
+      }
 
+      // Signal 2: Fall back to Gemini date extraction (if no date yet or low confidence)
+      if (dateGeminiModel && (!result.date || result.dateConfidence === 'low')) {
         try {
-          const extractedDate = await extractPublicationDate(dateModel, result);
-          if (extractedDate) {
-            console.log(`  ${result.title.substring(0, 50)}... - extracted date: ${extractedDate}`);
-            result.date = extractedDate;
+          const geminiDate = await extractPublicationDate(dateGeminiModel, result);
+          if (geminiDate && isDatePlausible(geminiDate)) {
+            result.date = geminiDate;
+            result.dateConfidence = 'medium';
+            result.dateSource = 'gemini-extraction';
+            console.log(`  ${label}... - Gemini date: ${geminiDate}`);
           }
         } catch (error) {
-          console.log(`  Failed to extract date for: ${result.title.substring(0, 50)}...`);
+          console.log(`  Failed Gemini date extraction for: ${label}...`);
         }
+      }
+
+      // Final plausibility check
+      if (result.date && !isDatePlausible(result.date)) {
+        console.log(`  ${label}... - date ${result.date} failed plausibility check, clearing`);
+        result.date = null;
+        result.dateConfidence = null;
+        result.dateSource = null;
+      }
+
+      if (!result.date) {
+        console.log(`  ${label}... - no date found`);
       }
     }
 
+    // Filter out results with no plausible date
+    const datedResults = validatedResults.filter(r => {
+      if (!r.date || !isDatePlausible(r.date)) {
+        console.log(`Excluding result with no plausible date: ${r.title}`);
+        return false;
+      }
+      return true;
+    });
+
+    console.log(`After date filtering: ${datedResults.length}/${validatedResults.length} results have plausible dates`);
+
     // Sort by date (newest first)
-    validatedResults.sort((a, b) => {
+    datedResults.sort((a, b) => {
       return new Date(b.date) - new Date(a.date);
     });
 
     // Limit to most recent/relevant 10 results
-    const recentResults = validatedResults.slice(0, 10);
+    const recentResults = datedResults.slice(0, 10);
 
     // Write current results to JSON file
     const outputPath = path.join(__dirname, '../../public/data/websearch.json');
@@ -547,22 +659,31 @@ function shouldSkipResult(url, title) {
     return true;
   }
 
+  // Build skip patterns from config
+  const githubUsername = config.social.github.username;
+  const linkedinUsername = config.social.linkedin.username;
+  const mastodonUsername = config.social.mastodon.username;
+  const mastodonInstance = config.social.mastodon.instance;
+  const orcidId = config.orcidId;
+  const scholarId = config.scholarId;
+  const oraProfileId = config.ora.researcherProfileId;
+
   // Skip self-authored Medium articles
-  if (urlLower.includes('medium.com/@fabiogiglietto') || urlLower.includes('medium.com/%40fabiogiglietto')) {
+  if (urlLower.includes(`medium.com/@${githubUsername}`) || urlLower.includes(`medium.com/%40${githubUsername}`)) {
     return true;
   }
 
   // Skip own profile pages and bio pages
-  if (urlLower.includes('fabiogiglietto.github.io') ||
-      urlLower.includes('orcid.org/0000-0001-8019-1035') ||
-      urlLower.includes('scholar.google.com/citations?user=FmenbcUAAAAJ') ||
-      urlLower.includes('ora.uniurb.it/cris/rp/rp03290')) {
+  if (urlLower.includes(`${githubUsername}.github.io`) ||
+      urlLower.includes(`orcid.org/${orcidId}`) ||
+      urlLower.includes(`scholar.google.com/citations?user=${scholarId}`) ||
+      urlLower.includes(`ora.uniurb.it/cris/rp/${oraProfileId}`)) {
     return true;
   }
 
-  // Skip ResearchGate profile and own paper pages
-  if (urlLower.includes('researchgate.net/profile/fabio-giglietto') ||
-      urlLower.includes('researchgate.net/publication') && titleLower.includes('fabio giglietto')) {
+  // Skip ResearchGate profile and all publication pages (they are paper pages, not news mentions)
+  if (urlLower.includes(`researchgate.net/profile/${config.name.replace(' ', '-').toLowerCase()}`) ||
+      urlLower.includes('researchgate.net/publication')) {
     return true;
   }
 
@@ -572,18 +693,18 @@ function shouldSkipResult(url, title) {
   }
 
   // Skip LinkedIn profile
-  if (urlLower.includes('linkedin.com/in/fabiogiglietto')) {
+  if (urlLower.includes(`linkedin.com/in/${linkedinUsername}`)) {
     return true;
   }
 
   // Skip social media profiles (Mastodon, Twitter/X, BlueSky, etc.)
-  if (urlLower.includes('/@fabiogiglietto') ||
-      urlLower.includes('/fabiogiglietto') && (
+  if (urlLower.includes(`/@${mastodonUsername}`) ||
+      urlLower.includes(`/${githubUsername}`) && (
         urlLower.includes('twitter.com') ||
         urlLower.includes('x.com') ||
         urlLower.includes('bsky.social') ||
         urlLower.includes('mastodon') ||
-        urlLower.includes('aoir.social') ||
+        urlLower.includes(mastodonInstance) ||
         urlLower.includes('threads.net')
       )) {
     return true;
@@ -598,6 +719,12 @@ function shouldSkipResult(url, title) {
   if (titleLower === 'fabio giglietto' ||
       titleLower.includes('professor of internet studies') ||
       titleLower.startsWith('home |')) {
+    return true;
+  }
+
+  // Skip institutional team/staff/people pages (not news mentions)
+  const staffPagePattern = /\/(team|staff|people|faculty|docenti|personale)(\/|$|\?|#)/i;
+  if (staffPagePattern.test(urlLower)) {
     return true;
   }
 
@@ -745,6 +872,138 @@ async function createHistoricalSummary(historicalLog) {
 }
 
 /**
+ * Check if a date is plausible for a web mention (not too far in the future or past)
+ */
+function isDatePlausible(dateStr) {
+  if (!dateStr) return false;
+  const date = new Date(dateStr);
+  if (isNaN(date.getTime())) return false;
+
+  const now = new Date();
+  // Allow 1 day in the future (timezone tolerance)
+  const maxFuture = new Date(now);
+  maxFuture.setDate(maxFuture.getDate() + 1);
+  // Reject dates more than 2 years in the past
+  const maxPast = new Date(now);
+  maxPast.setFullYear(maxPast.getFullYear() - 2);
+
+  return date <= maxFuture && date >= maxPast;
+}
+
+/**
+ * Extract publication date from a web page's HTML metadata
+ * Returns { date: 'YYYY-MM-DD', confidence: 'high'|'medium'|'low', source: string } or null
+ */
+async function extractDateFromHTTP(url) {
+  try {
+    const response = await axios.get(url, {
+      timeout: 8000,
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+      },
+      maxRedirects: 5,
+      // Limit response size to avoid downloading huge pages
+      maxContentLength: 1024 * 1024
+    });
+
+    const $ = cheerio.load(response.data);
+
+    // 1. Open Graph article:published_time (most reliable)
+    const ogDate = $('meta[property="article:published_time"]').attr('content');
+    if (ogDate) {
+      const parsed = parseToYMD(ogDate);
+      if (parsed) return { date: parsed, confidence: 'high', source: 'og-meta' };
+    }
+
+    // 2. JSON-LD datePublished
+    const jsonLdScripts = $('script[type="application/ld+json"]');
+    for (let i = 0; i < jsonLdScripts.length; i++) {
+      try {
+        const jsonLd = JSON.parse($(jsonLdScripts[i]).html());
+        const datePublished = extractJsonLdDate(jsonLd);
+        if (datePublished) {
+          const parsed = parseToYMD(datePublished);
+          if (parsed) return { date: parsed, confidence: 'high', source: 'jsonld' };
+        }
+      } catch (e) {
+        // Skip malformed JSON-LD
+      }
+    }
+
+    // 3. Dublin Core and other meta tags
+    const dcDate = $('meta[name="DC.date.issued"]').attr('content') ||
+                   $('meta[name="dc.date.issued"]').attr('content') ||
+                   $('meta[name="date"]').attr('content') ||
+                   $('meta[name="pubdate"]').attr('content') ||
+                   $('meta[name="publish-date"]').attr('content') ||
+                   $('meta[property="article:modified_time"]').attr('content');
+    if (dcDate) {
+      const parsed = parseToYMD(dcDate);
+      if (parsed) return { date: parsed, confidence: 'medium', source: 'meta-tag' };
+    }
+
+    // 4. <time datetime="..."> element
+    const timeEl = $('time[datetime]').first().attr('datetime');
+    if (timeEl) {
+      const parsed = parseToYMD(timeEl);
+      if (parsed) return { date: parsed, confidence: 'medium', source: 'time-element' };
+    }
+
+    // 5. HTTP Last-Modified header (least reliable)
+    const lastModified = response.headers['last-modified'];
+    if (lastModified) {
+      const parsed = parseToYMD(lastModified);
+      if (parsed) return { date: parsed, confidence: 'low', source: 'http-header' };
+    }
+
+    return null;
+  } catch (error) {
+    console.log(`  HTTP date extraction failed for ${url}: ${error.message}`);
+    return null;
+  }
+}
+
+/**
+ * Extract datePublished from a JSON-LD object (handles nested and array structures)
+ */
+function extractJsonLdDate(jsonLd) {
+  if (!jsonLd) return null;
+  if (Array.isArray(jsonLd)) {
+    for (const item of jsonLd) {
+      const date = extractJsonLdDate(item);
+      if (date) return date;
+    }
+    return null;
+  }
+  if (jsonLd.datePublished) return jsonLd.datePublished;
+  if (jsonLd['@graph']) return extractJsonLdDate(jsonLd['@graph']);
+  return null;
+}
+
+/**
+ * Parse various date formats to YYYY-MM-DD
+ */
+function parseToYMD(dateStr) {
+  if (!dateStr) return null;
+  try {
+    // Handle YYYY-MM-DD directly
+    const ymdMatch = dateStr.match(/^(\d{4}-\d{2}-\d{2})/);
+    if (ymdMatch) {
+      const d = new Date(ymdMatch[1]);
+      if (!isNaN(d.getTime())) return ymdMatch[1];
+    }
+    // Try general parsing
+    const d = new Date(dateStr);
+    if (!isNaN(d.getTime())) {
+      return d.toISOString().split('T')[0];
+    }
+    return null;
+  } catch (e) {
+    return null;
+  }
+}
+
+/**
  * Extract publication date from a web page using Gemini
  */
 async function extractPublicationDate(model, result) {
@@ -799,10 +1058,9 @@ async function validateWebMention(model, result) {
   try {
     const prompt = `You are analyzing a web mention to determine if it's about the correct person, if it actually mentions them, and if the content is recent.
 
-TARGET PERSON: Fabio Giglietto
-- Professor of Internet Studies at University of Urbino Carlo Bo, Italy
-- Specializes in: social media research, disinformation studies, computational social science, media communication
-- Expert in: internet studies, social media analysis, digital communication, misinformation detection
+TARGET PERSON: ${config.name}
+- ${config.title} at ${config.institution}
+- Specializes in: ${config.expertise.join(', ')}
 
 WEB MENTION TO ANALYZE:
 Title: "${result.title}"
@@ -811,10 +1069,10 @@ Source: ${result.source}
 Context: ${result.snippet || 'No snippet available'}
 
 CRITICAL VALIDATION STEPS:
-1. MENTION VERIFICATION: Does this content actually mention "Fabio Giglietto" by name? Look carefully in the title, URL, and any available context.
-2. PERSON IDENTIFICATION: If Fabio Giglietto is mentioned, is it the Professor of Internet Studies at University of Urbino Carlo Bo (not a medical researcher or someone else)?
+1. MENTION VERIFICATION: Does this content actually mention "${config.name}" by name? Look carefully in the title, URL, and any available context.
+2. PERSON IDENTIFICATION: If ${config.name} is mentioned, is it the ${config.title} at ${config.institution} (not a medical researcher or someone else)?
 3. RECENCY CHECK: Is this content recent (within the last 6 months) or does it discuss recent work/events?
-4. RELEVANCE ASSESSMENT: Does it relate to his academic work in social media, disinformation, or communication research?
+4. RELEVANCE ASSESSMENT: Does it relate to academic work in ${config.researchInterests.join(', ')}?
 
 RESPONSE FORMAT (JSON only, no other text):
 {
@@ -829,17 +1087,17 @@ RESPONSE FORMAT (JSON only, no other text):
 
 STRICT EVALUATION CRITERIA:
 - isRelevant = true ONLY if ALL of these are true:
-  * mentionedByName = true (Fabio Giglietto is explicitly mentioned)
+  * mentionedByName = true (${config.name} is explicitly mentioned)
   * personMatch = "confirmed" (it's the correct academic researcher)
   * isRecent = true (content is from the last 6 months or discusses recent work)
-  * Content relates to his research areas (social media, disinformation, communication)
-  * Not a direct link to his own authored papers (we want third-party mentions)
+  * Content relates to research areas (${config.researchInterests.join(', ')})
+  * Not a direct link to authored papers (we want third-party mentions)
 
-- mentionedByName = true only if "Fabio Giglietto" appears in the title, URL, or context
-- isRecent = true only if the content appears to be from 2024-2025 or discusses recent events/research
-- relevanceScore should be high (0.8-1.0) only for high-quality third-party mentions that clearly discuss his work
+- mentionedByName = true only if "${config.name}" appears in the title, URL, or context
+- isRecent = true only if the content appears to be from the last 6 months or discusses recent events/research
+- relevanceScore should be high (0.8-1.0) only for high-quality third-party mentions that clearly discuss the work
 
-Be very strict - if you cannot confirm Fabio Giglietto is mentioned by name, set isRelevant to false.
+Be very strict - if you cannot confirm ${config.name} is mentioned by name, set isRelevant to false.
 
 Respond with valid JSON only.`;
 
@@ -902,8 +1160,90 @@ async function saveEmptyResults() {
 }
 
 /**
- * Check if this is a medical/hematology result about Fabio Giglio (wrong person)
- * vs. communication/internet studies about Fabio Giglietto
+ * Fetch Crossref Event Data to find DOI-based mentions of publications
+ */
+async function fetchCrossrefEventData() {
+  console.log('\n=== Fetching Crossref Event Data ===');
+
+  const pubsPath = path.join(__dirname, '../../public/data/aggregated-publications.json');
+  if (!fs.existsSync(pubsPath)) {
+    console.log('No aggregated-publications.json found, skipping Crossref Event Data');
+    return [];
+  }
+
+  let publications;
+  try {
+    publications = JSON.parse(fs.readFileSync(pubsPath, 'utf8'));
+  } catch (e) {
+    console.log(`Failed to read aggregated publications: ${e.message}`);
+    return [];
+  }
+
+  // Extract DOIs from top 20 publications (by citation count or recency)
+  const dois = publications
+    .filter(p => p.doi)
+    .sort((a, b) => (b.citationCount || 0) - (a.citationCount || 0))
+    .slice(0, 20)
+    .map(p => p.doi);
+
+  if (dois.length === 0) {
+    console.log('No DOIs found in publications, skipping Crossref Event Data');
+    return [];
+  }
+
+  console.log(`Querying Crossref Event Data for ${dois.length} DOIs`);
+
+  const sixMonthsAgo = new Date();
+  sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+  const fromDate = sixMonthsAgo.toISOString().split('T')[0];
+  const results = [];
+
+  for (const doi of dois) {
+    try {
+      const apiUrl = `https://api.eventdata.crossref.org/v1/events?obj-id=${encodeURIComponent(doi)}&from-occurred-date=${fromDate}&rows=10&mailto=${config.email}`;
+
+      const response = await axios.get(apiUrl, { timeout: 10000 });
+      const events = response.data?.message?.events || [];
+
+      for (const event of events) {
+        // Only include web, newsfeed, and wikipedia sources
+        const source = event['source_id'] || '';
+        if (!['newsfeed', 'wikipedia', 'web'].includes(source)) continue;
+
+        const subjectUrl = event['subj_id'] || '';
+        const title = event['subj']?.['title'] || `Mention of DOI ${doi}`;
+
+        if (!subjectUrl || shouldSkipResult(subjectUrl, title)) continue;
+
+        const eventDate = event['occurred_at'] || event['timestamp'];
+        const dateStr = eventDate ? parseToYMD(eventDate) : null;
+
+        results.push({
+          title: title,
+          url: subjectUrl,
+          snippet: `Mentions research paper (DOI: ${doi})`,
+          date: dateStr,
+          source: extractDomainFromUrl(subjectUrl),
+          searchEngine: 'crossref-events',
+          dateConfidence: 'high',
+          dateSource: 'crossref-api'
+        });
+      }
+
+      // Rate limiting: 500ms delay between requests
+      await new Promise(resolve => setTimeout(resolve, 500));
+    } catch (error) {
+      console.log(`Crossref Event Data error for DOI ${doi}: ${error.message}`);
+    }
+  }
+
+  console.log(`Crossref Event Data: Found ${results.length} events`);
+  return results;
+}
+
+/**
+ * Check if this is a medical/hematology result about a different person
+ * vs. communication/internet studies about the configured person
  */
 function isMedicalResult(title, url) {
   // Medical terms that indicate this is about Fabio Giglio the medical researcher
@@ -951,18 +1291,19 @@ function isMedicalResult(title, url) {
 }
 
 /**
- * Check if this is a direct link to a Fabio Giglietto authored paper
- * vs. a discussion/mention of his work
+ * Check if this is a direct link to an authored paper
+ * vs. a discussion/mention of the work
  */
 function isDirectPaperLink(title, url) {
-  // Check for direct paper patterns - titles that are just paper titles with Fabio as author
+  const namePattern = config.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  // Check for direct paper patterns - titles that are just paper titles with the author
   const directPaperPatterns = [
     // Journal paper patterns
-    /^[^:]+:\s*.*Fabio Giglietto.*,.*\d{4}$/,  // "Journal: Title - Fabio Giglietto, Author2, 2023"
-    /^.*\s-\s.*Fabio Giglietto.*,.*\d{4}$/,    // "Title - Fabio Giglietto, Author2, 2023"
+    new RegExp(`^[^:]+:\\s*.*${namePattern}.*,.*\\d{4}$`),  // "Journal: Title - Name, Author2, 2023"
+    new RegExp(`^.*\\s-\\s.*${namePattern}.*,.*\\d{4}$`),    // "Title - Name, Author2, 2023"
 
-    // Repository/database patterns for papers authored by Fabio
-    /Rivisteweb:.*Fabio Giglietto.*\d{4}$/,    // Rivisteweb direct paper links
+    // Repository/database patterns
+    new RegExp(`Rivisteweb:.*${namePattern}.*\\d{4}$`),    // Rivisteweb direct paper links
   ];
 
   // URLs that are typically direct paper links (not discussions)
@@ -989,7 +1330,7 @@ function isDirectPaperLink(title, url) {
 
   // Special case: Rivisteweb entries that are just paper titles
   if (url.includes('rivisteweb.it/doi/') && title.includes('Rivisteweb:') &&
-      title.includes('Fabio Giglietto') && !title.includes('discusses') &&
+      title.includes(config.name) && !title.includes('discusses') &&
       !title.includes('references') && !title.includes('cites')) {
     return true;
   }
@@ -1023,23 +1364,22 @@ async function searchWithOpenAI() {
   try {
     const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-    const searchPrompt = `Search for recent NEWS ARTICLES and MEDIA COVERAGE that mention "Fabio Giglietto" from the past 6 months.
+    const searchPrompt = `Search for recent NEWS ARTICLES and MEDIA COVERAGE that mention "${config.name}" from the past 6 months.
 
 IMPORTANT CONTEXT:
-- Fabio Giglietto is a Professor of Internet Studies at University of Urbino Carlo Bo, Italy
-- He specializes in: disinformation research, social media analysis, computational social science
-- He is often quoted as an expert on misinformation, fake news, and coordinated online behavior
+- ${config.name} is a ${config.title} at ${config.institution}
+- Specializes in: ${config.expertise.join(', ')}
 
 WHAT TO FIND (prioritize these):
-1. News articles from newspapers, magazines, or news websites that quote or mention him
+1. News articles from newspapers, magazines, or news websites that quote or mention this person
 2. Media interviews, podcasts, or TV/radio appearances
-3. Press coverage about his research findings
-4. Articles where journalists cite him as an expert source
-5. Conference or event announcements where he is a speaker
+3. Press coverage about research findings
+4. Articles where journalists cite this person as an expert source
+5. Conference or event announcements where this person is a speaker
 
 WHAT TO EXCLUDE (do NOT include):
-- His own profile pages (ORCID, Google Scholar, ResearchGate, LinkedIn, personal website)
-- Direct links to his academic papers or publications
+- Profile pages (ORCID, Google Scholar, ResearchGate, LinkedIn, personal website)
+- Direct links to academic papers or publications
 - Academic repository pages (IRIS, arXiv, SSRN)
 - ResearchGate "Request PDF" pages
 - Social media profile pages
@@ -1047,7 +1387,7 @@ WHAT TO EXCLUDE (do NOT include):
 For each NEWS result found, provide a JSON array with objects containing:
 - title: The exact title of the news article
 - url: The full URL (must be a real, direct URL)
-- description: A brief description of how he is mentioned
+- description: A brief description of the mention
 - source: The source domain (e.g., "bbc.com", "wired.it")
 
 Respond with ONLY a valid JSON array, no other text.`;
@@ -1094,7 +1434,7 @@ Respond with ONLY a valid JSON array, no other text.`;
                 title: item.title,
                 url: item.url,
                 snippet: item.description || '',
-                date: new Date().toISOString().split('T')[0],
+                date: null,
                 source: item.source || extractDomainFromUrl(item.url),
                 searchEngine: 'openai'
               });
@@ -1116,93 +1456,106 @@ Respond with ONLY a valid JSON array, no other text.`;
 }
 
 /**
- * Fetch Google News RSS feed for Fabio Giglietto mentions
+ * Fetch Google News RSS feed for mentions
+ * Uses exact-match query and fetches both Italian and English locale feeds
  */
 async function fetchGoogleNewsRSS() {
   console.log('\n=== Fetching Google News RSS Feed ===');
 
-  // Use search-based RSS feed which has more results than topic feed
-  const feedUrl = 'https://news.google.com/rss/search?q=Fabio%20Giglietto&hl=it&gl=IT&ceid=IT:it';
+  // Use exact-match quotes for more precise results
+  const encodedName = encodeURIComponent(`"${config.name}"`).replace(/%20/g, '+');
+  const feeds = [
+    { url: `https://news.google.com/rss/search?q=${encodedName}&hl=it&gl=IT&ceid=IT:it`, locale: 'IT' },
+    { url: `https://news.google.com/rss/search?q=${encodedName}&hl=en&gl=US&ceid=US:en`, locale: 'EN' }
+  ];
 
-  try {
-    const response = await axios.get(feedUrl, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
-      },
-      timeout: 10000
-    });
+  const allResults = [];
 
-    const xmlData = response.data;
-    const results = [];
+  for (const feed of feeds) {
+    try {
+      console.log(`Fetching Google News RSS (${feed.locale})...`);
+      const response = await axios.get(feed.url, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        },
+        timeout: 10000
+      });
 
-    // Parse RSS items using regex (simple XML parsing)
-    const itemRegex = /<item>([\s\S]*?)<\/item>/g;
-    let match;
+      const xmlData = response.data;
 
-    while ((match = itemRegex.exec(xmlData)) !== null) {
-      const itemContent = match[1];
+      // Parse RSS items using regex (simple XML parsing)
+      const itemRegex = /<item>([\s\S]*?)<\/item>/g;
+      let match;
 
-      // Extract fields
-      const title = extractXmlTag(itemContent, 'title');
-      const link = extractXmlTag(itemContent, 'link');
-      const pubDate = extractXmlTag(itemContent, 'pubDate');
-      const source = extractXmlTag(itemContent, 'source');
+      while ((match = itemRegex.exec(xmlData)) !== null) {
+        const itemContent = match[1];
 
-      if (title && link) {
-        // Resolve Google News redirect URL to get actual article URL
-        let resolvedUrl = link;
-        if (link.includes('news.google.com/rss/articles/')) {
-          resolvedUrl = await resolveGoogleNewsUrl(link);
-        }
+        // Extract fields
+        const title = extractXmlTag(itemContent, 'title');
+        const link = extractXmlTag(itemContent, 'link');
+        const pubDate = extractXmlTag(itemContent, 'pubDate');
+        const source = extractXmlTag(itemContent, 'source');
 
-        // Skip if URL resolution failed or should be filtered
-        if (!resolvedUrl) {
-          console.log(`Google News: Could not resolve URL for: ${title}`);
-          continue;
-        }
-
-        if (shouldSkipResult(resolvedUrl, title)) {
-          console.log(`Google News: Skipping filtered result: ${resolvedUrl}`);
-          continue;
-        }
-
-        // Parse publication date
-        let dateStr = new Date().toISOString().split('T')[0];
-        if (pubDate) {
-          try {
-            dateStr = new Date(pubDate).toISOString().split('T')[0];
-          } catch (e) {
-            // Keep default date
+        if (title && link) {
+          // Resolve Google News redirect URL to get actual article URL
+          let resolvedUrl = link;
+          if (link.includes('news.google.com/rss/articles/')) {
+            resolvedUrl = await resolveGoogleNewsUrl(link);
           }
-        }
 
-        // Only include recent results (last 2 years)
-        const pubDateObj = new Date(pubDate);
-        const twoYearsAgo = new Date();
-        twoYearsAgo.setFullYear(twoYearsAgo.getFullYear() - 2);
-        if (pubDateObj < twoYearsAgo) {
-          console.log(`Google News: Skipping old result (${dateStr}): ${title}`);
-          continue;
-        }
+          // Skip if URL resolution failed or should be filtered
+          if (!resolvedUrl) {
+            console.log(`Google News: Could not resolve URL for: ${title}`);
+            continue;
+          }
 
-        results.push({
-          title: decodeHtmlEntities(title),
-          url: resolvedUrl,
-          snippet: '',
-          date: dateStr,
-          source: source ? decodeHtmlEntities(source) : extractDomainFromUrl(resolvedUrl),
-          searchEngine: 'google-news-rss'
-        });
+          if (shouldSkipResult(resolvedUrl, title)) {
+            console.log(`Google News: Skipping filtered result: ${resolvedUrl}`);
+            continue;
+          }
+
+          // Parse publication date
+          let dateStr = null;
+          if (pubDate) {
+            try {
+              dateStr = new Date(pubDate).toISOString().split('T')[0];
+            } catch (e) {
+              // No date available
+            }
+          }
+
+          // Only include recent results (last 2 years)
+          if (dateStr && !isDatePlausible(dateStr)) {
+            console.log(`Google News: Skipping old result (${dateStr}): ${title}`);
+            continue;
+          }
+
+          allResults.push({
+            title: decodeHtmlEntities(title),
+            url: resolvedUrl,
+            snippet: '',
+            date: dateStr,
+            source: source ? decodeHtmlEntities(source) : extractDomainFromUrl(resolvedUrl),
+            searchEngine: 'google-news-rss'
+          });
+        }
       }
+    } catch (error) {
+      console.error(`Google News RSS fetch error (${feed.locale}):`, error.message);
     }
-
-    console.log(`Google News RSS: Found ${results.length} recent items`);
-    return results;
-
-  } catch (error) {
-    console.error('Google News RSS fetch error:', error.message);
-    return [];
   }
+
+  // Deduplicate across both feeds using normalized URL
+  const seen = new Set();
+  const uniqueResults = allResults.filter(r => {
+    const key = normalizeUrl(r.url);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+
+  console.log(`Google News RSS: Found ${uniqueResults.length} unique recent items (from ${allResults.length} total)`);
+  return uniqueResults;
 }
 
 /**
@@ -1288,5 +1641,14 @@ function decodeHtmlEntities(text) {
 
 module.exports = {
   collect: collectWebSearchResults,
-  name: 'websearch'
+  name: 'websearch',
+  _testing: {
+    normalizeUrl,
+    normalizeTitle,
+    shouldSkipResult,
+    isDatePlausible,
+    extractDateFromHTTP,
+    extractJsonLdDate,
+    parseToYMD
+  }
 };

@@ -9,6 +9,7 @@
 const fs = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
+const config = require('../config');
 
 async function generatePublicationsData() {
   console.log('Generating publications data...');
@@ -94,7 +95,7 @@ async function generatePublicationsData() {
             type: determinePublicationType(pub.venue || ''),
             urls: {
               doi: doi ? `https://doi.org/${doi}` : null,
-              scholar: `https://scholar.google.com/citations?user=FmenbcUAAAAJ&view_op=list_works&sortby=pubdate`
+              scholar: config.buildScholarProfileUrl()
             }
           };
         })

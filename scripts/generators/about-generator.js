@@ -11,6 +11,7 @@ const path = require('path');
 const yaml = require('js-yaml');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 const sanitizeHtml = require('sanitize-html');
+const config = require('../config');
 
 // Initialize Gemini client with better error handling
 let genAI = null;
@@ -139,12 +140,8 @@ async function generateFallbackContent() {
   try {
     console.log('Generating fallback About Me content...');
     
-    // Create fallback content
-    const aboutMeContent = `<p>Fabio Giglietto is a Full Professor of Internet Studies at the University of Urbino Carlo Bo, Italy. His research focuses on the intersection of Internet Studies, computational social science, and digital media analysis, with particular emphasis on political communication and disinformation.</p>
-
-<p>He has made significant contributions to the field through his pioneering work on Coordinated Link Sharing Behavior (CLSB) and the development of CooRnet, an open-source tool for detecting coordinated activity on social platforms. He leads several major research initiatives, including the MINE project, the EU-funded vera.ai project, and is a key partner in PROMPT, which focuses on detecting and analyzing disinformation narratives across Europe.</p>
-
-<p>His publications appear in leading journals such as Journal of Communication, Information, Communication & Society, and Social Media + Society. Since 2014, he has served as editor of the Journal of Sociocybernetics and is active in professional organizations including the International Communication Association and the Association of Internet Researchers.</p>`;
+    // Create fallback content from config
+    const aboutMeContent = `<p>${config.name} is a ${config.title} at ${config.institution}, ${config.department}. Research focuses on ${config.researchInterests.join(', ')}.</p>`;
     
     // Save the generated content
     const includePath = path.join(__dirname, '../../_includes/generated-about.html');
@@ -215,12 +212,12 @@ function formatDataForPrompt(data) {
     
     formattedData += `Research interests: ${interests}\n`;
   } else {
-    // Add default university info if not available
+    // Add default university info from config if not available
     formattedData += `\n--- UNIVERSITY PROFILE ---\n`;
-    formattedData += `Position: Professor\n`;
-    formattedData += `Department: Department of Communication Sciences, Humanities and International Studies\n`;
-    formattedData += `Institution: University of Urbino Carlo Bo\n`;
-    formattedData += `Research interests: Digital Media Analysis, Social Media Research, Computational Social Science\n`;
+    formattedData += `Position: ${config.title}\n`;
+    formattedData += `Department: ${config.department}\n`;
+    formattedData += `Institution: ${config.institution}\n`;
+    formattedData += `Research interests: ${config.researchInterests.join(', ')}\n`;
   }
   
   // Format GitHub data
@@ -318,10 +315,18 @@ async function generateContentWithGemini(formattedData) {
     }
 
     // Create the prompt
+    // Build social media handles string for the prompt
+    const socialHandles = [
+      config.social.bluesky ? `BlueSky (@${config.social.bluesky.handle})` : null,
+      config.social.mastodon ? `Mastodon (@${config.social.mastodon.username}@${config.social.mastodon.instance})` : null,
+      config.social.threads ? `Threads (@${config.social.threads.username})` : null,
+      config.social.linkedin ? `LinkedIn` : null,
+    ].filter(Boolean).join(', ');
+
     const prompt = `
 You are an academic website content generator. Your task is to create a professional "About Me" section for an academic's personal website.
 Use the provided information to create a well-written, engaging, and professional biography that highlights the academic's expertise, research interests, achievements, and current position.
-Ensure the biography accurately reflects the academic's current title as 'Full Professor of Internet Studies' or 'Professor of Internet Studies'. Avoid using 'Associate Professor' or other outdated titles.
+Ensure the biography accurately reflects the academic's current title as '${config.title}'. Avoid using outdated titles.
 
 Format the content as clean HTML that can be included directly in the website. Use appropriate paragraph tags (<p>) for text and include appropriate semantic HTML elements.
 Keep the tone professional but approachable. The content should be 3-4 paragraphs long.
@@ -329,21 +334,21 @@ Keep the tone professional but approachable. The content should be 3-4 paragraph
 Here is the academic's information:
 ${formattedData}
 
-Additionally, use Google Search to find recent information about Fabio Giglietto, particularly focusing on:
+Additionally, use Google Search to find recent information about ${config.name}, particularly focusing on:
 1. Recent publications or research projects
-2. University of Urbino Carlo Bo affiliations
-3. Current research on social media analysis, disinformation, or computational social science
+2. ${config.institution} affiliations
+3. Current research on ${config.researchInterests.join(', ')}
 4. Any recent grants, awards, or important professional activities
-5. Latest posts and activity on BlueSky (@fabiogiglietto.bsky.social), Mastodon, Threads, and LinkedIn
+5. Latest posts and activity on ${socialHandles}
 
-For the social media content, don't create a separate social media section, but instead use this information to understand his current work and interests, then incorporate these insights naturally into the biography. Focus on the professional content from his social profiles that reveals what projects he's currently working on.
+For the social media content, don't create a separate social media section, but instead use this information to understand current work and interests, then incorporate these insights naturally into the biography.
 
 Include any relevant up-to-date information you find in the biography, but maintain a professional tone.
 
 Additionally, in the biography, briefly mention where relevant:
-- Current teaching activities (courses this academic year like Generative AI and Media, Digital Social Network Analysis)
-- Recent research interests (based on reading list topics like coordinated behavior detection, multimodal narratives)
-- Active participation in professional social media discussions about platform policies and research methods
+- Current teaching activities
+- Recent research interests (based on reading list topics)
+- Active participation in professional social media discussions
 
 Keep these as natural, brief mentions woven into the narrative - not as separate sections or bullet points.
 The focus remains on the overall academic profile and research contributions.
