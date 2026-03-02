@@ -1,33 +1,38 @@
 {
-  "overallSummary": "Fabio Giglietto maintains an active presence across Mastodon, LinkedIn, and Bluesky, focusing on research related to social media analysis, disinformation, and computational social science. His content aims to share research findings, announce opportunities (jobs, grants, conference presentations), and engage in discussions about methodological approaches in the field. Total follower count across all platforms is 3580.",
+  "overallSummary": "Fabio Giglietto maintains a presence on Mastodon, LinkedIn, and Bluesky, focusing on topics related to computational social science, disinformation, and research opportunities. He has a substantial following across all platforms, with LinkedIn having the largest number of followers. Engagement varies by platform, with LinkedIn posts receiving more comments than other platforms.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 3.5,
+    "averageEngagementRate": 2.25,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
-      "theme": "Computational Social Science Research",
-      "description": "Sharing research findings, papers, and methodologies related to computational social science."
+      "theme": "Research Announcements",
+      "description": "Posts announcing new research findings, publications, or grant awards."
     },
     {
-      "theme": "Disinformation and Information Operations",
-      "description": "Content focused on detecting and analyzing disinformation campaigns and coordinated inauthentic behavior."
+      "theme": "Computational Social Science",
+      "description": "Content related to the field of computational social science, including methods and applications."
     },
     {
-      "theme": "Career and Research Opportunities",
-      "description": "Announcements of job openings, research grants, and PhD positions in related fields."
+      "theme": "Disinformation",
+      "description": "Posts discussing disinformation, coordinated inauthentic behavior, and related topics."
+    },
+    {
+      "theme": "Job/Research Opportunities",
+      "description": "Posts advertising job openings, postdoctoral positions, or research opportunities for students."
     }
   ],
   "recommendations": [
-    "Increase cross-promotion of content across platforms to leverage audience overlap.",
-    "Experiment with different content formats (e.g., videos, infographics) to boost engagement.",
-    "Actively participate in relevant conversations and communities to expand reach and influence."
+    "Cross-promote content across platforms to reach a wider audience.",
+    "Use platform-specific hashtags to increase visibility.",
+    "Engage with comments and replies to foster a sense of community.",
+    "Experiment with different content formats (e.g., images, videos) to see what resonates best with each audience."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky is used for sharing research publications and conference presentations, along with PhD opportunity announcements. Reposts are a prominent engagement metric.",
-    "mastodon": "Mastodon focuses on sharing updates on research tools and participating in broader discussions within the academic community. Engagement is lower compared to other platforms.",
-    "linkedin": "LinkedIn is primarily used for announcing research grants and job opportunities, resulting in higher engagement through likes and comments. The professional audience likely contributes to this increased engagement."
+    "bluesky": "Bluesky shows strong engagement through reposts, suggesting an active community willing to share content. Focusing on timely research publications and posing questions could further improve engagement.",
+    "mastodon": "Mastodon engagement is primarily driven by likes and reposts. Focus on sharing thought-provoking discussions and updates on tools/algorithms related to detecting coordinated behavior.",
+    "linkedin": "LinkedIn engagement is high with likes and comments, indicating a professional audience. Sharing career opportunities and research grant announcements performs well."
   },
   "topPerformingContent": [
     {

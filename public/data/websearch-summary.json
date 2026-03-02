@@ -1,11 +1,12 @@
 {
-  "totalEntries": 115,
-  "lastUpdated": "2026-03-01T13:40:57.528Z",
+  "totalEntries": 120,
+  "lastUpdated": "2026-03-02T06:57:56.224Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-03-01T13:40:57.423Z"
+    "latest": "2026-03-02T06:57:56.165Z"
   },
   "byDate": {
+    "2026-03-02": 5,
     "2026-03-01": 2,
     "2026-02-27": 1,
     "2026-02-22": 1,
@@ -14,16 +15,15 @@
     "2026-02-18": 2,
     "2026-02-16": 2,
     "2026-02-15": 2,
-    "2026-02-14": 1,
-    "2026-02-11": 2
+    "2026-02-14": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 46,
     "uniurb.it": 7,
     "open.online": 5,
+    "Il Sole 24 ORE": 4,
     "youtube.com": 2,
     "veraai.eu": 2,
-    "Il Sole 24 ORE": 2,
     "vera.ai": 2,
     "ilrestodelcarlino.it": 2,
     "ByoBlu": 2,
@@ -31,7 +31,7 @@
   },
   "byRelevanceScore": {
     "high": 101,
-    "medium": 14,
+    "medium": 19,
     "low": 0
   },
   "recentHighQuality": [
