@@ -2,7 +2,7 @@
   "source": "ORA UNIURB",
   "repository": "https://ora.uniurb.it",
   "oaiEndpoint": "https://ora.uniurb.it/oai/request",
-  "collectedAt": "2026-03-03T06:50:49.711Z",
+  "collectedAt": "2026-03-04T06:45:01.234Z",
   "author": "Fabio Giglietto",
   "publications": [],
   "stats": {
@@ -10,5 +10,5 @@
     "byType": {},
     "byYear": {}
   },
-  "error": "Request failed with status code 403"
+  "error": "timeout of 30000ms exceeded"
 }

@@ -560,6 +560,17 @@
       "duration": "6:00",
       "author": "Teresa Ober, Karyssa A. Courey, Michael Flor",
       "doi": "10.5281/zenodo.18733521"
+    },
+    {
+      "id": "bibtex:Ferrara2026-io",
+      "bibtexKey": "Ferrara2026-io",
+      "title": "ECHO: Breaking Down Walls to Find Communities",
+      "description": "AI-generated podcast discussion.\n\nReference:\nFerrara, E. (2026). ECHO: Encoding Communities via High-order Operators. http://arxiv.org/abs/2602.22446v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Ferrara2026-io.mp3",
+      "pubDate": "Tue, 03 Mar 2026 08:54:33 +0000",
+      "duration": "6:24",
+      "author": "Emilio Ferrara",
+      "doi": null
     }
   ],
   "episodesByBibtexKey": {
@@ -1123,6 +1134,17 @@
       "duration": "6:00",
       "author": "Teresa Ober, Karyssa A. Courey, Michael Flor",
       "doi": "10.5281/zenodo.18733521"
+    },
+    "Ferrara2026-io": {
+      "id": "bibtex:Ferrara2026-io",
+      "bibtexKey": "Ferrara2026-io",
+      "title": "ECHO: Breaking Down Walls to Find Communities",
+      "description": "AI-generated podcast discussion.\n\nReference:\nFerrara, E. (2026). ECHO: Encoding Communities via High-order Operators. http://arxiv.org/abs/2602.22446v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Ferrara2026-io.mp3",
+      "pubDate": "Tue, 03 Mar 2026 08:54:33 +0000",
+      "duration": "6:24",
+      "author": "Emilio Ferrara",
+      "doi": null
     }
   },
   "episodesByDoi": {
@@ -1567,7 +1589,7 @@
       "doi": "10.5281/zenodo.18733521"
     }
   },
-  "totalEpisodes": 51,
-  "lastUpdated": "2026-03-03T06:50:50.414Z",
+  "totalEpisodes": 52,
+  "lastUpdated": "2026-03-04T06:45:02.056Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
