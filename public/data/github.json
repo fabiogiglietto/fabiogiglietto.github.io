@@ -12,6 +12,26 @@
   },
   "repositories": [
     {
+      "name": "toread",
+      "description": "Consume a feed BibTeX export from a Paperpile folder, complete the publication metadata with Crossref and Semantic Scholar and create an RSS feed",
+      "url": "https://github.com/fabiogiglietto/toread",
+      "language": "TeX",
+      "stars": 1,
+      "forks": 0,
+      "created_at": "2025-06-07T09:12:59Z",
+      "updated_at": "2026-03-05T05:12:23Z"
+    },
+    {
+      "name": "fabiogiglietto.github.io",
+      "description": "Your research presence, always current, zero maintenance.                                                                                                                                  ",
+      "url": "https://github.com/fabiogiglietto/fabiogiglietto.github.io",
+      "language": "JavaScript",
+      "stars": 7,
+      "forks": 1,
+      "created_at": "2025-04-21T09:41:33Z",
+      "updated_at": "2026-03-04T06:47:17Z"
+    },
+    {
       "name": "genai-media-course",
       "description": "Slides del corso IA Generativa e Media — A.A. 2025/2026, Università di Urbino",
       "url": "https://github.com/fabiogiglietto/genai-media-course",
@@ -30,26 +50,6 @@
       "forks": 0,
       "created_at": "2025-12-29T17:46:10Z",
       "updated_at": "2026-03-03T08:54:38Z"
-    },
-    {
-      "name": "toread",
-      "description": "Consume a feed BibTeX export from a Paperpile folder, complete the publication metadata with Crossref and Semantic Scholar and create an RSS feed",
-      "url": "https://github.com/fabiogiglietto/toread",
-      "language": "TeX",
-      "stars": 1,
-      "forks": 0,
-      "created_at": "2025-06-07T09:12:59Z",
-      "updated_at": "2026-03-03T07:13:21Z"
-    },
-    {
-      "name": "fabiogiglietto.github.io",
-      "description": "Your research presence, always current, zero maintenance.                                                                                                                                  ",
-      "url": "https://github.com/fabiogiglietto/fabiogiglietto.github.io",
-      "language": "JavaScript",
-      "stars": 7,
-      "forks": 1,
-      "created_at": "2025-04-21T09:41:33Z",
-      "updated_at": "2026-03-03T06:52:54Z"
     },
     {
       "name": "r-data-analysis-uniurb-2026",
@@ -254,5 +254,5 @@
       "activity": {}
     }
   ],
-  "lastUpdated": "2026-03-04T06:45:02.757Z"
+  "lastUpdated": "2026-03-05T06:51:19.686Z"
 }
