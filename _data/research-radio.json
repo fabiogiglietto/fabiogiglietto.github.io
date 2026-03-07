@@ -571,6 +571,28 @@
       "duration": "6:24",
       "author": "Emilio Ferrara",
       "doi": null
+    },
+    {
+      "id": "bibtex:DiGiuseppe2026-pu",
+      "bibtexKey": "DiGiuseppe2026-pu",
+      "title": "LLMs: Can Political Bias Kill Persuasion?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nDiGiuseppe, M. & Robison, J. (2026). Perceived political bias in LLMs reduces persuasive abilities. http://arxiv.org/abs/2602.18092v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/DiGiuseppe2026-pu.mp3",
+      "pubDate": "Thu, 05 Mar 2026 22:42:07 +0000",
+      "duration": "5:22",
+      "author": "Matthew DiGiuseppe, Joshua Robison",
+      "doi": null
+    },
+    {
+      "id": "bibtex:Baym2026-tr",
+      "bibtexKey": "Baym2026-tr",
+      "title": "Social Media: It's Bad, Now What?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nNancy, B. (2026). It’s Bad: What Now?. https://scholar.google.com/scholar?q=It%E2%80%99s%20Bad%3A%20What%20Now%3F",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Baym2026-tr.mp3",
+      "pubDate": "Fri, 06 Mar 2026 23:36:13 +0000",
+      "duration": "6:18",
+      "author": "Baym, Nancy",
+      "doi": null
     }
   ],
   "episodesByBibtexKey": {
@@ -1145,6 +1167,28 @@
       "duration": "6:24",
       "author": "Emilio Ferrara",
       "doi": null
+    },
+    "DiGiuseppe2026-pu": {
+      "id": "bibtex:DiGiuseppe2026-pu",
+      "bibtexKey": "DiGiuseppe2026-pu",
+      "title": "LLMs: Can Political Bias Kill Persuasion?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nDiGiuseppe, M. & Robison, J. (2026). Perceived political bias in LLMs reduces persuasive abilities. http://arxiv.org/abs/2602.18092v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/DiGiuseppe2026-pu.mp3",
+      "pubDate": "Thu, 05 Mar 2026 22:42:07 +0000",
+      "duration": "5:22",
+      "author": "Matthew DiGiuseppe, Joshua Robison",
+      "doi": null
+    },
+    "Baym2026-tr": {
+      "id": "bibtex:Baym2026-tr",
+      "bibtexKey": "Baym2026-tr",
+      "title": "Social Media: It's Bad, Now What?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nNancy, B. (2026). It’s Bad: What Now?. https://scholar.google.com/scholar?q=It%E2%80%99s%20Bad%3A%20What%20Now%3F",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Baym2026-tr.mp3",
+      "pubDate": "Fri, 06 Mar 2026 23:36:13 +0000",
+      "duration": "6:18",
+      "author": "Baym, Nancy",
+      "doi": null
     }
   },
   "episodesByDoi": {
@@ -1589,7 +1633,7 @@
       "doi": "10.5281/zenodo.18733521"
     }
   },
-  "totalEpisodes": 52,
-  "lastUpdated": "2026-03-06T06:46:10.359Z",
+  "totalEpisodes": 54,
+  "lastUpdated": "2026-03-07T06:39:07.929Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
