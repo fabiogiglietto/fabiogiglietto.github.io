@@ -593,6 +593,17 @@
       "duration": "6:18",
       "author": "Baym, Nancy",
       "doi": null
+    },
+    {
+      "id": "bibtex:Hourigan2026-oc",
+      "bibtexKey": "Hourigan2026-oc",
+      "title": "Misinformation in the Wild: Beyond Politics and Headlines",
+      "description": "AI-generated podcast discussion.\n\nReference:\nHourigan, A., Thomson, T., Notley, T., Park, S., & Dezuanni, M. (2026). Everyday encounters with misinformation online: examining sources, topics and modes. https://doi.org/10.1080/1369118x.2026.2636132",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Hourigan2026-oc.mp3",
+      "pubDate": "Sun, 08 Mar 2026 02:45:58 +0000",
+      "duration": "6:01",
+      "author": "Aimee Hourigan, T.J. Thomson, Tanya Notley, Sora Park, Michael Dezuanni",
+      "doi": "10.1080/1369118x.2026.2636132"
     }
   ],
   "episodesByBibtexKey": {
@@ -1189,6 +1200,17 @@
       "duration": "6:18",
       "author": "Baym, Nancy",
       "doi": null
+    },
+    "Hourigan2026-oc": {
+      "id": "bibtex:Hourigan2026-oc",
+      "bibtexKey": "Hourigan2026-oc",
+      "title": "Misinformation in the Wild: Beyond Politics and Headlines",
+      "description": "AI-generated podcast discussion.\n\nReference:\nHourigan, A., Thomson, T., Notley, T., Park, S., & Dezuanni, M. (2026). Everyday encounters with misinformation online: examining sources, topics and modes. https://doi.org/10.1080/1369118x.2026.2636132",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Hourigan2026-oc.mp3",
+      "pubDate": "Sun, 08 Mar 2026 02:45:58 +0000",
+      "duration": "6:01",
+      "author": "Aimee Hourigan, T.J. Thomson, Tanya Notley, Sora Park, Michael Dezuanni",
+      "doi": "10.1080/1369118x.2026.2636132"
     }
   },
   "episodesByDoi": {
@@ -1631,9 +1653,20 @@
       "duration": "6:00",
       "author": "Teresa Ober, Karyssa A. Courey, Michael Flor",
       "doi": "10.5281/zenodo.18733521"
+    },
+    "10.1080/1369118x.2026.2636132": {
+      "id": "bibtex:Hourigan2026-oc",
+      "bibtexKey": "Hourigan2026-oc",
+      "title": "Misinformation in the Wild: Beyond Politics and Headlines",
+      "description": "AI-generated podcast discussion.\n\nReference:\nHourigan, A., Thomson, T., Notley, T., Park, S., & Dezuanni, M. (2026). Everyday encounters with misinformation online: examining sources, topics and modes. https://doi.org/10.1080/1369118x.2026.2636132",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Hourigan2026-oc.mp3",
+      "pubDate": "Sun, 08 Mar 2026 02:45:58 +0000",
+      "duration": "6:01",
+      "author": "Aimee Hourigan, T.J. Thomson, Tanya Notley, Sora Park, Michael Dezuanni",
+      "doi": "10.1080/1369118x.2026.2636132"
     }
   },
-  "totalEpisodes": 54,
-  "lastUpdated": "2026-03-07T06:39:07.929Z",
+  "totalEpisodes": 55,
+  "lastUpdated": "2026-03-08T06:40:57.663Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }

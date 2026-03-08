@@ -1,38 +1,35 @@
 {
-  "overallSummary": "Fabio Giglietto maintains an active presence across Mastodon, LinkedIn, and Bluesky, focusing on research related to computational social science, disinformation, and coordinated inauthentic behavior. LinkedIn has the largest following, while Bluesky sees a higher rate of engagement compared to Mastodon. The content is generally well-received, with grant announcements and research publications driving the most engagement.",
+  "overallSummary": "Fabio Giglietto maintains a presence on Mastodon, LinkedIn, and Bluesky, with a total follower count of 3580. Content focuses on research, disinformation, computational social science, and career opportunities in these fields. LinkedIn shows the highest engagement based on likes and comments, while Bluesky has the most recent activity.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 0.035,
+    "averageEngagementRate": 0.03,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
-      "theme": "Research Announcements",
-      "description": "Sharing updates about research findings, publications, and projects."
+      "theme": "Research & Publications",
+      "description": "Sharing research findings, publications, and methodologies related to social media analysis, disinformation, and coordinated behavior."
     },
     {
-      "theme": "Hiring/Opportunities",
-      "description": "Announcing job openings and research opportunities for students and researchers."
+      "theme": "Job Opportunities & Recruitment",
+      "description": "Announcing job openings, research opportunities for PhD students and postdoctoral researchers."
     },
     {
-      "theme": "Disinformation and Coordinated Behavior",
-      "description": "Discussing methodological approaches and tools for detecting disinformation campaigns."
-    },
-    {
-      "theme": "Conference Presentations",
-      "description": "Announcing participation and topics of presentations at relevant conferences."
+      "theme": "Conferences & Events",
+      "description": "Promoting conference participation and presentations related to disinformation and computational methods."
     }
   ],
   "recommendations": [
-    "Increase posting frequency on Mastodon to boost visibility and engagement.",
-    "Utilize more visuals (images, videos) in posts across all platforms to capture attention.",
-    "Engage in more conversations within the comments sections to build community and foster discussion.",
-    "Run polls or ask direct questions to the audience to encourage interaction."
+    "Increase content frequency on Mastodon to match the activity levels seen on Bluesky and LinkedIn.",
+    "Cross-promote content across platforms to maximize reach and engagement (e.g., share LinkedIn job postings on Bluesky).",
+    "Experiment with different content formats (e.g., videos, infographics) to see what resonates best with each platform's audience.",
+    "Actively engage with comments and replies on posts to foster a sense of community and encourage further interaction.",
+    "Use relevant hashtags more consistently to increase the visibility of posts to a wider audience (e.g., #DisinfoConf2025)"
   ],
   "platformInsights": {
-    "bluesky": "Bluesky shows a decent engagement rate driven by research announcements and opportunities. Experiment with different content formats and timings to optimize reach.",
-    "mastodon": "Mastodon has the lowest engagement rate. Consider re-sharing key posts from other platforms, focusing on community-building and joining relevant discussions to increase visibility.",
-    "linkedin": "LinkedIn has the largest audience and receives significant engagement, particularly for grant announcements and job postings. Continue to leverage this platform for professional networking and sharing significant achievements."
+    "bluesky": "Bluesky shows consistent activity and engagement, particularly with research publications and opportunities. Reposts are a significant engagement factor on this platform.",
+    "mastodon": "Mastodon has a smaller following and lower engagement compared to other platforms. Content focuses on technical updates and methodological discussions.",
+    "linkedin": "LinkedIn has the largest follower base and highest engagement (likes and comments), particularly regarding grant announcements and job postings. Professional networking is a key strength on this platform."
   },
   "topPerformingContent": [
     {
