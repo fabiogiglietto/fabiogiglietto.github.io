@@ -341,6 +341,7 @@ IMPORTANT: Only describe research that is directly authored by this person. Pape
 IMPORTANT: Before finalizing, review the text to eliminate any repetition. Avoid repeating the same concepts, phrases, or information across paragraphs. Each paragraph should introduce new information without restating what was already covered.
 
 Generate ONLY the HTML content for the "About Me" section. Do not include any explanations, notes, markdown code blocks, or additional text. Your response should be valid HTML that starts with <p> and ends with </p> without any additional formatting or explanation.
+Do NOT use Markdown syntax (such as *asterisks* for italics). Use proper HTML tags like <em> for emphasis instead.
 `;
 
     console.log('Calling Gemini API with gemini-2.0-flash and Google Search grounding...');
