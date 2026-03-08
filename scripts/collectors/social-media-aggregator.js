@@ -79,7 +79,8 @@ async function collectSocialMediaPosts() {
       date: String(item.date || ''),
       content: String(item.content || ''),
       url: String(item.url || ''),
-      platforms: Array.isArray(item.platforms) ? item.platforms : []
+      platforms: Array.isArray(item.platforms) ? item.platforms : [],
+      ...(item.toread ? { toread: true } : {})
     })));
 
     await writeFileAsync(outputPath, yamlContent);
@@ -356,13 +357,20 @@ async function deduplicateAndSummarize(posts) {
     console.log('Using Gemini AI to deduplicate and summarize posts...');
 
     // Prepare posts for AI analysis
-    const postsForAnalysis = posts.map((post, index) => ({
-      index,
-      content: post.content.substring(0, 500), // Limit content length
-      date: post.date,
-      platform: post.platform,
-      url: post.url
-    }));
+    // Detect #toread hashtag to distinguish shared papers from own contributions
+    const postsForAnalysis = posts.map((post, index) => {
+      const contentLower = (post.content || '').toLowerCase();
+      const hasToread = contentLower.includes('#toread') ||
+        (post.originalData?.tags || []).some(t => t.name?.toLowerCase() === 'toread');
+      return {
+        index,
+        content: post.content.substring(0, 500), // Limit content length
+        date: post.date,
+        platform: post.platform,
+        url: post.url,
+        toread: hasToread
+      };
+    });
 
     const prompt = `You are helping to curate news updates for an academic researcher's website.
 
@@ -400,6 +408,8 @@ Analyze these social media posts from Prof. Fabio Giglietto and:
 Posts to analyze:
 ${JSON.stringify(postsForAnalysis, null, 2)}
 
+Note: Posts marked with "toread": true are papers/articles by other researchers that the professor is sharing (tagged with #toread). Preserve this flag in the output.
+
 Return ONLY a JSON object (no markdown, no explanation) with a "news" property containing an array of professional news items in this format:
 {
   "news": [
@@ -407,10 +417,13 @@ Return ONLY a JSON object (no markdown, no explanation) with a "news" property c
       "content": "[Engaging summary focusing on the event/news itself, avoiding repetitive name mentions]",
       "date": "YYYY-MM-DD",
       "platforms": ["Platform1"],
-      "url": "most_relevant_url"
+      "url": "most_relevant_url",
+      "toread": false
     }
   ]
 }
+
+Set "toread" to true if any of the source posts for that news item had "toread": true.
 
 Example varied openings:
 - "A third PhD scholarship has been announced..."
@@ -518,11 +531,14 @@ function basicDeduplication(posts) {
         cleanContent = cleanContent.substring(0, 150) + '...';
       }
       
+      const hasToread = contentLower.includes('#toread') ||
+        (post.originalData?.tags || []).some(t => t.name?.toLowerCase() === 'toread');
       uniquePosts.push({
         content: cleanContent,
         date: post.date.split('T')[0],
         platforms: [post.platform],
-        url: post.url
+        url: post.url,
+        ...(hasToread ? { toread: true } : {})
       });
     }
   }

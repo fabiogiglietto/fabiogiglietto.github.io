@@ -1,12 +1,12 @@
 {
   "totalEntries": 120,
-  "lastUpdated": "2026-03-08T06:42:37.465Z",
+  "lastUpdated": "2026-03-08T09:10:20.918Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-03-02T06:57:56.165Z"
+    "latest": "2026-03-08T09:10:20.113Z"
   },
   "byDate": {
-    "2026-03-02": 5,
+    "2026-03-08": 5,
     "2026-03-01": 2,
     "2026-02-27": 1,
     "2026-02-22": 1,
@@ -30,11 +30,25 @@
     "euractiv.ro": 2
   },
   "byRelevanceScore": {
-    "high": 101,
-    "medium": 19,
+    "high": 103,
+    "medium": 17,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Le fake news circolano senza Meta",
+      "url": "https://lespresso.it/c/innovazione/2026/1/14/fact-checking-meta-rinuncia-fake-news/59128",
+      "source": "lespresso.it",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-03-08T09:10:20.113Z"
+    },
+    {
+      "title": "Ricerca su algoritmi Meta: scompare la politica istituzionale e volano gli estremismi",
+      "url": "https://www.virgoletteblog.it/2026/01/07/ricerca-su-algoritmi-meta-scompare-la-politica-istituzionale-e-volano-gli-estremismi/",
+      "source": "virgoletteblog.it",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-03-08T09:10:20.113Z"
+    },
     {
       "title": "Seminario - Etica e integrità della ricerca - UniUrb",
       "url": "https://www.uniurb.it/novita-ed-eventi/6382",
@@ -55,20 +69,6 @@
       "source": "vertexaisearch.cloud.google.com",
       "relevanceScore": 0.9,
       "collectedAt": "2026-02-22T06:46:44.392Z"
-    },
-    {
-      "title": "Scientists Around the World Call to Protect Research on One of Humanity's Greatest Short-term Threats: Disinformation",
-      "url": "https://www.techpolicy.press/scientists-around-the-world-call-to-protect-research-on-one-of-humanitys-greatest-short-term-threats-disinformation/",
-      "source": "techpolicyPress",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-02-21T06:40:53.296Z"
-    },
-    {
-      "title": "Massimo Terenzi and Fabio Giglietto , Author at European Journalism Observatory - EJO",
-      "url": "https://en.ejo.ch/author/massimo-and-fabio",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-02-20T06:56:04.498Z"
     }
   ]
 }

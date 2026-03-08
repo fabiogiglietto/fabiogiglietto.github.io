@@ -1,51 +1,55 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a presence on Mastodon, LinkedIn, and Bluesky, with a total follower count of 3580. Content focuses on research, disinformation, computational social science, and career opportunities in these fields. LinkedIn shows the highest engagement based on likes and comments, while Bluesky has the most recent activity.",
+  "overallSummary": "Fabio Giglietto maintains a presence on Mastodon, LinkedIn, and Bluesky, with a total following of 3580. Engagement varies across platforms, with LinkedIn showing the highest individual post engagement based on likes and comments. The content focuses on research in social media analysis, information operations, and related academic opportunities. Recent activity indicates consistent posting across platforms.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 0.03,
+    "averageEngagementRate": 2.5,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
-      "theme": "Research & Publications",
-      "description": "Sharing research findings, publications, and methodologies related to social media analysis, disinformation, and coordinated behavior."
+      "theme": "Research Announcements",
+      "description": "Sharing updates on research projects, publications, and presentations."
     },
     {
-      "theme": "Job Opportunities & Recruitment",
-      "description": "Announcing job openings, research opportunities for PhD students and postdoctoral researchers."
+      "theme": "Job Opportunities",
+      "description": "Posting about postdoctoral positions and PhD opportunities in the field."
     },
     {
-      "theme": "Conferences & Events",
-      "description": "Promoting conference participation and presentations related to disinformation and computational methods."
+      "theme": "Coordinated Inauthentic Behavior",
+      "description": "Discussing research related to detecting and analyzing coordinated inauthentic behavior on social media."
+    },
+    {
+      "theme": "Disinformation",
+      "description": "Sharing insights on methodological approaches to studying disinformation."
     }
   ],
   "recommendations": [
-    "Increase content frequency on Mastodon to match the activity levels seen on Bluesky and LinkedIn.",
-    "Cross-promote content across platforms to maximize reach and engagement (e.g., share LinkedIn job postings on Bluesky).",
-    "Experiment with different content formats (e.g., videos, infographics) to see what resonates best with each platform's audience.",
-    "Actively engage with comments and replies on posts to foster a sense of community and encourage further interaction.",
-    "Use relevant hashtags more consistently to increase the visibility of posts to a wider audience (e.g., #DisinfoConf2025)"
+    "Cross-promote content across platforms to increase visibility and engagement.",
+    "Use platform-specific features (e.g., LinkedIn articles, Mastodon polls, Bluesky advanced features) to enhance content.",
+    "Engage more actively with followers by responding to comments and questions.",
+    "Use relevant hashtags consistently to improve content discoverability.",
+    "Experiment with different content formats (e.g., videos, infographics) to cater to diverse audience preferences."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky shows consistent activity and engagement, particularly with research publications and opportunities. Reposts are a significant engagement factor on this platform.",
-    "mastodon": "Mastodon has a smaller following and lower engagement compared to other platforms. Content focuses on technical updates and methodological discussions.",
-    "linkedin": "LinkedIn has the largest follower base and highest engagement (likes and comments), particularly regarding grant announcements and job postings. Professional networking is a key strength on this platform."
+    "bluesky": "Bluesky shows good engagement with research announcements and opportunities for students. Reposts are a significant driver of visibility on this platform.",
+    "mastodon": "Mastodon engagement is lower compared to other platforms. Focus on sharing more engaging content and participating in relevant conversations.",
+    "linkedin": "LinkedIn has the highest engagement, particularly with job postings and grant announcements. Continue sharing professional updates and opportunities on this platform."
   },
   "topPerformingContent": [
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
       "platform": "linkedin",
-      "engagementRate": 0.057
+      "engagementRate": 5.78
     },
     {
       "content": "Now hiring: Two postdoctoral researchers to join our team working on computational methods for social media analysis. Background in data science, computational social science, or related fields preferred.",
       "platform": "linkedin",
-      "engagementRate": 0.039
+      "engagementRate": 3.62
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
       "platform": "bluesky",
-      "engagementRate": 0.074
+      "engagementRate": 7.37
     }
   ]
 }

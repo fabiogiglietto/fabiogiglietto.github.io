@@ -55,10 +55,8 @@ async function generateAboutMe() {
       'scholar.json',
       'university.json',
       'github.json',
-      'news.json',
       'websearch.json',
       'summary.json',
-      'toread.json',
       'teaching.json'
     ];
     
@@ -83,7 +81,7 @@ async function generateAboutMe() {
     
     console.log(`Successfully loaded ${loadedFiles.length} data files: ${loadedFiles.join(', ')}`);
 
-    // Load news.yml from _data directory (has richer content than news.json)
+    // Load news.yml from _data directory (has social media posts with toread flags)
     const newsYamlPath = path.join(__dirname, '../../_data/news.yml');
     if (fs.existsSync(newsYamlPath)) {
       try {
@@ -261,31 +259,27 @@ function formatDataForPrompt(data) {
     }
   }
 
-  // Format ToRead data (recent research interests)
-  if (data.toread && Array.isArray(data.toread)) {
-    const recentPapers = data.toread
-      .filter(p => p.dateAdded)
-      .sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded))
-      .slice(0, 5);
-    if (recentPapers.length > 0) {
-      formattedData += `\n--- RECENT READING INTERESTS ---\n`;
-      formattedData += `Latest papers added to reading list (showing research direction):\n`;
-      recentPapers.forEach((paper, index) => {
-        const date = paper.dateAdded ? paper.dateAdded.split('T')[0] : '';
-        formattedData += `${index + 1}. "${paper.title}" (${date})\n`;
+  // Format News/Social Media posts from news.yml, split by toread flag
+  if (data.newsYaml && Array.isArray(data.newsYaml)) {
+    const sorted = data.newsYaml.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    // Posts about own work/ideas (no #toread tag)
+    const ownPosts = sorted.filter(p => !p.toread).slice(0, 5);
+    if (ownPosts.length > 0) {
+      formattedData += `\n--- RECENT OWN CONTRIBUTIONS AND IDEAS ---\n`;
+      formattedData += `Recent posts about the person's own research, projects, and professional opinions:\n`;
+      ownPosts.forEach((post, index) => {
+        const content = post.content.substring(0, 150) + (post.content.length > 150 ? '...' : '');
+        formattedData += `${index + 1}. ${post.date}: ${content}\n`;
       });
     }
-  }
 
-  // Format News/Social Media posts from news.yml
-  if (data.newsYaml && Array.isArray(data.newsYaml)) {
-    const recentPosts = data.newsYaml
-      .sort((a, b) => new Date(b.date) - new Date(a.date))
-      .slice(0, 5);
-    if (recentPosts.length > 0) {
-      formattedData += `\n--- RECENT SOCIAL MEDIA ACTIVITY ---\n`;
-      formattedData += `Recent professional posts and discussions:\n`;
-      recentPosts.forEach((post, index) => {
+    // Posts sharing others' work (#toread tag)
+    const sharedPosts = sorted.filter(p => p.toread).slice(0, 5);
+    if (sharedPosts.length > 0) {
+      formattedData += `\n--- CURRENT RESEARCH INTERESTS (shared papers by others) ---\n`;
+      formattedData += `Papers by other researchers that the person recently shared (DO NOT attribute these as their own work):\n`;
+      sharedPosts.forEach((post, index) => {
         const content = post.content.substring(0, 150) + (post.content.length > 150 ? '...' : '');
         formattedData += `${index + 1}. ${post.date}: ${content}\n`;
       });
@@ -315,14 +309,6 @@ async function generateContentWithGemini(formattedData) {
     }
 
     // Create the prompt
-    // Build social media handles string for the prompt
-    const socialHandles = [
-      config.social.bluesky ? `BlueSky (@${config.social.bluesky.handle})` : null,
-      config.social.mastodon ? `Mastodon (@${config.social.mastodon.username}@${config.social.mastodon.instance})` : null,
-      config.social.threads ? `Threads (@${config.social.threads.username})` : null,
-      config.social.linkedin ? `LinkedIn` : null,
-    ].filter(Boolean).join(', ');
-
     const prompt = `
 You are an academic website content generator. Your task is to create a professional "About Me" section for an academic's personal website.
 Use the provided information to create a well-written, engaging, and professional biography that highlights the academic's expertise, research interests, achievements, and current position.
@@ -334,24 +320,23 @@ Keep the tone professional but approachable. The content should be 3-4 paragraph
 Here is the academic's information:
 ${formattedData}
 
-Additionally, use Google Search to find recent information about ${config.name}, particularly focusing on:
-1. Recent publications or research projects
+Additionally, use Google Search to verify information about ${config.name}, particularly focusing on:
+1. Recent publications or research projects directly authored by this person
 2. ${config.institution} affiliations
 3. Current research on ${config.researchInterests.join(', ')}
 4. Any recent grants, awards, or important professional activities
-5. Latest posts and activity on ${socialHandles}
 
-For the social media content, don't create a separate social media section, but instead use this information to understand current work and interests, then incorporate these insights naturally into the biography.
+Only include information you can verify as the person's own publications, projects, or achievements.
 
-Include any relevant up-to-date information you find in the biography, but maintain a professional tone.
+The data includes two types of social media posts:
+- "RECENT OWN CONTRIBUTIONS AND IDEAS": These are about the person's own research and can be described as their work.
+- "CURRENT RESEARCH INTERESTS (shared papers by others)": These are papers by OTHER researchers that the person shared. Use these ONLY to characterize broader research interests and engagement with the field — NEVER attribute these papers as the person's own work.
 
-Additionally, in the biography, briefly mention where relevant:
-- Current teaching activities
-- Recent research interests (based on reading list topics)
-- Active participation in professional social media discussions
-
+Additionally, in the biography, briefly mention current teaching activities where relevant.
 Keep these as natural, brief mentions woven into the narrative - not as separate sections or bullet points.
 The focus remains on the overall academic profile and research contributions.
+
+IMPORTANT: Only describe research that is directly authored by this person. Papers from the "shared papers by others" section must NOT be presented as the person's own work — only use them to show what topics the person is currently interested in.
 
 IMPORTANT: Before finalizing, review the text to eliminate any repetition. Avoid repeating the same concepts, phrases, or information across paragraphs. Each paragraph should introduce new information without restating what was already covered.
 
