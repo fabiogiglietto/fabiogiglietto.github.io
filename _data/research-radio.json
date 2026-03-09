@@ -604,6 +604,17 @@
       "duration": "6:01",
       "author": "Aimee Hourigan, T.J. Thomson, Tanya Notley, Sora Park, Michael Dezuanni",
       "doi": "10.1080/1369118x.2026.2636132"
+    },
+    {
+      "id": "bibtex:Farkas2026-lr",
+      "bibtexKey": "Farkas2026-lr",
+      "title": "Fact-Checkers vs. Platforms: A Necessary Evil?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nFarkas, J. & Bengtsson, M. (2026). Defending fact-checking partnerships with platform companies: ‘We can&#x27;t fight alone against disinformation’. https://doi.org/10.1177/02673231261422085",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Farkas2026-lr.mp3",
+      "pubDate": "Mon, 09 Mar 2026 04:59:54 +0000",
+      "duration": "4:51",
+      "author": "Johan Farkas, Mette Bengtsson",
+      "doi": "10.1177/02673231261422085"
     }
   ],
   "episodesByBibtexKey": {
@@ -1211,6 +1222,17 @@
       "duration": "6:01",
       "author": "Aimee Hourigan, T.J. Thomson, Tanya Notley, Sora Park, Michael Dezuanni",
       "doi": "10.1080/1369118x.2026.2636132"
+    },
+    "Farkas2026-lr": {
+      "id": "bibtex:Farkas2026-lr",
+      "bibtexKey": "Farkas2026-lr",
+      "title": "Fact-Checkers vs. Platforms: A Necessary Evil?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nFarkas, J. & Bengtsson, M. (2026). Defending fact-checking partnerships with platform companies: ‘We can&#x27;t fight alone against disinformation’. https://doi.org/10.1177/02673231261422085",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Farkas2026-lr.mp3",
+      "pubDate": "Mon, 09 Mar 2026 04:59:54 +0000",
+      "duration": "4:51",
+      "author": "Johan Farkas, Mette Bengtsson",
+      "doi": "10.1177/02673231261422085"
     }
   },
   "episodesByDoi": {
@@ -1664,9 +1686,20 @@
       "duration": "6:01",
       "author": "Aimee Hourigan, T.J. Thomson, Tanya Notley, Sora Park, Michael Dezuanni",
       "doi": "10.1080/1369118x.2026.2636132"
+    },
+    "10.1177/02673231261422085": {
+      "id": "bibtex:Farkas2026-lr",
+      "bibtexKey": "Farkas2026-lr",
+      "title": "Fact-Checkers vs. Platforms: A Necessary Evil?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nFarkas, J. & Bengtsson, M. (2026). Defending fact-checking partnerships with platform companies: ‘We can&#x27;t fight alone against disinformation’. https://doi.org/10.1177/02673231261422085",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Farkas2026-lr.mp3",
+      "pubDate": "Mon, 09 Mar 2026 04:59:54 +0000",
+      "duration": "4:51",
+      "author": "Johan Farkas, Mette Bengtsson",
+      "doi": "10.1177/02673231261422085"
     }
   },
-  "totalEpisodes": 55,
-  "lastUpdated": "2026-03-08T09:08:11.377Z",
+  "totalEpisodes": 56,
+  "lastUpdated": "2026-03-09T07:00:36.097Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
