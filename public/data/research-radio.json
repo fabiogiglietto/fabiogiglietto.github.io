@@ -615,6 +615,17 @@
       "duration": "4:51",
       "author": "Johan Farkas, Mette Bengtsson",
       "doi": "10.1177/02673231261422085"
+    },
+    {
+      "id": "bibtex:Dierickx2026-tw",
+      "bibtexKey": "Dierickx2026-tw",
+      "title": "AI-Generated Facts: Truth or Illusion?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nDierickx, L., Opdahl, A. L., Bjerknes, F., & Lindén, C. (2026). What is a fact in the age of generative AI? Fact-checking as an epistemological lens. https://doi.org/10.1080/1369118x.2026.2630697",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Dierickx2026-tw.mp3",
+      "pubDate": "Tue, 10 Mar 2026 05:55:01 +0000",
+      "duration": "5:42",
+      "author": "Laurence Dierickx, Andreas L. Opdahl, Fredrik Bjerknes, Carl-Gustav Lindén",
+      "doi": "10.1080/1369118x.2026.2630697"
     }
   ],
   "episodesByBibtexKey": {
@@ -1233,6 +1244,17 @@
       "duration": "4:51",
       "author": "Johan Farkas, Mette Bengtsson",
       "doi": "10.1177/02673231261422085"
+    },
+    "Dierickx2026-tw": {
+      "id": "bibtex:Dierickx2026-tw",
+      "bibtexKey": "Dierickx2026-tw",
+      "title": "AI-Generated Facts: Truth or Illusion?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nDierickx, L., Opdahl, A. L., Bjerknes, F., & Lindén, C. (2026). What is a fact in the age of generative AI? Fact-checking as an epistemological lens. https://doi.org/10.1080/1369118x.2026.2630697",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Dierickx2026-tw.mp3",
+      "pubDate": "Tue, 10 Mar 2026 05:55:01 +0000",
+      "duration": "5:42",
+      "author": "Laurence Dierickx, Andreas L. Opdahl, Fredrik Bjerknes, Carl-Gustav Lindén",
+      "doi": "10.1080/1369118x.2026.2630697"
     }
   },
   "episodesByDoi": {
@@ -1697,9 +1719,20 @@
       "duration": "4:51",
       "author": "Johan Farkas, Mette Bengtsson",
       "doi": "10.1177/02673231261422085"
+    },
+    "10.1080/1369118x.2026.2630697": {
+      "id": "bibtex:Dierickx2026-tw",
+      "bibtexKey": "Dierickx2026-tw",
+      "title": "AI-Generated Facts: Truth or Illusion?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nDierickx, L., Opdahl, A. L., Bjerknes, F., & Lindén, C. (2026). What is a fact in the age of generative AI? Fact-checking as an epistemological lens. https://doi.org/10.1080/1369118x.2026.2630697",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Dierickx2026-tw.mp3",
+      "pubDate": "Tue, 10 Mar 2026 05:55:01 +0000",
+      "duration": "5:42",
+      "author": "Laurence Dierickx, Andreas L. Opdahl, Fredrik Bjerknes, Carl-Gustav Lindén",
+      "doi": "10.1080/1369118x.2026.2630697"
     }
   },
-  "totalEpisodes": 56,
-  "lastUpdated": "2026-03-09T07:00:36.097Z",
+  "totalEpisodes": 57,
+  "lastUpdated": "2026-03-10T06:48:11.701Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
