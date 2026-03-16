@@ -670,6 +670,17 @@
       "duration": "6:54",
       "author": "Rossini, Patrícia, Kalogeropoulos, Antonis, Mont'Alverne, Camila",
       "doi": null
+    },
+    {
+      "id": "bibtex:Lee2026-je",
+      "bibtexKey": "Lee2026-je",
+      "title": "AI Knows Your Politics: Are Online Posts Revealing Too Much?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nLee, B., Kim, S., Menczer, F., Ahn, Y., Kwak, H., & An, J. (2026). LLMs can infer political alignment from online conversations. http://arxiv.org/abs/2603.11253v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Lee2026-je.mp3",
+      "pubDate": "Sun, 15 Mar 2026 10:41:52 +0000",
+      "duration": "5:45",
+      "author": "Byunghwee Lee, Sangyeon Kim, Filippo Menczer, Yong-Yeol Ahn, Haewoon Kwak, Jisun An",
+      "doi": null
     }
   ],
   "episodesByBibtexKey": {
@@ -1343,6 +1354,17 @@
       "duration": "6:54",
       "author": "Rossini, Patrícia, Kalogeropoulos, Antonis, Mont'Alverne, Camila",
       "doi": null
+    },
+    "Lee2026-je": {
+      "id": "bibtex:Lee2026-je",
+      "bibtexKey": "Lee2026-je",
+      "title": "AI Knows Your Politics: Are Online Posts Revealing Too Much?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nLee, B., Kim, S., Menczer, F., Ahn, Y., Kwak, H., & An, J. (2026). LLMs can infer political alignment from online conversations. http://arxiv.org/abs/2603.11253v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Lee2026-je.mp3",
+      "pubDate": "Sun, 15 Mar 2026 10:41:52 +0000",
+      "duration": "5:45",
+      "author": "Byunghwee Lee, Sangyeon Kim, Filippo Menczer, Yong-Yeol Ahn, Haewoon Kwak, Jisun An",
+      "doi": null
     }
   },
   "episodesByDoi": {
@@ -1842,7 +1864,7 @@
       "doi": "10.1126/science.aea3884"
     }
   },
-  "totalEpisodes": 61,
-  "lastUpdated": "2026-03-15T06:55:40.686Z",
+  "totalEpisodes": 62,
+  "lastUpdated": "2026-03-16T07:15:24.797Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
