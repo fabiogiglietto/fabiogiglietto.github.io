@@ -681,6 +681,17 @@
       "duration": "5:45",
       "author": "Byunghwee Lee, Sangyeon Kim, Filippo Menczer, Yong-Yeol Ahn, Haewoon Kwak, Jisun An",
       "doi": null
+    },
+    {
+      "id": "bibtex:Dehghan2026-sy",
+      "bibtexKey": "Dehghan2026-sy",
+      "title": "Reddit's Echo Chambers: Platform Design and Political Silos",
+      "description": "AI-generated podcast discussion.\n\nReference:\nDehghan, E., Carlon, D., Kasianenko, K., Nagappa, A., & Suresh, V. P. (2026). The entangled dynamics leading to the sedimentation of polarisation on political Reddit. https://doi.org/10.1080/1369118x.2026.2623523",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Dehghan2026-sy.mp3",
+      "pubDate": "Mon, 16 Mar 2026 11:03:35 +0000",
+      "duration": "7:09",
+      "author": "Ehsan Dehghan, Dominique Carlon, Kateryna Kasianenko, Ashwin Nagappa, Vish Padinjaredath Suresh",
+      "doi": "10.1080/1369118x.2026.2623523"
     }
   ],
   "episodesByBibtexKey": {
@@ -1365,6 +1376,17 @@
       "duration": "5:45",
       "author": "Byunghwee Lee, Sangyeon Kim, Filippo Menczer, Yong-Yeol Ahn, Haewoon Kwak, Jisun An",
       "doi": null
+    },
+    "Dehghan2026-sy": {
+      "id": "bibtex:Dehghan2026-sy",
+      "bibtexKey": "Dehghan2026-sy",
+      "title": "Reddit's Echo Chambers: Platform Design and Political Silos",
+      "description": "AI-generated podcast discussion.\n\nReference:\nDehghan, E., Carlon, D., Kasianenko, K., Nagappa, A., & Suresh, V. P. (2026). The entangled dynamics leading to the sedimentation of polarisation on political Reddit. https://doi.org/10.1080/1369118x.2026.2623523",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Dehghan2026-sy.mp3",
+      "pubDate": "Mon, 16 Mar 2026 11:03:35 +0000",
+      "duration": "7:09",
+      "author": "Ehsan Dehghan, Dominique Carlon, Kateryna Kasianenko, Ashwin Nagappa, Vish Padinjaredath Suresh",
+      "doi": "10.1080/1369118x.2026.2623523"
     }
   },
   "episodesByDoi": {
@@ -1862,9 +1884,20 @@
       "duration": "5:43",
       "author": "Kobi Hackenburg, Ben M. Tappin, Luke Hewitt, Ed Saunders, Sid Black, Hause Lin, Catherine Fist, Helen Margetts, David G. Rand, Christopher Summerfield",
       "doi": "10.1126/science.aea3884"
+    },
+    "10.1080/1369118x.2026.2623523": {
+      "id": "bibtex:Dehghan2026-sy",
+      "bibtexKey": "Dehghan2026-sy",
+      "title": "Reddit's Echo Chambers: Platform Design and Political Silos",
+      "description": "AI-generated podcast discussion.\n\nReference:\nDehghan, E., Carlon, D., Kasianenko, K., Nagappa, A., & Suresh, V. P. (2026). The entangled dynamics leading to the sedimentation of polarisation on political Reddit. https://doi.org/10.1080/1369118x.2026.2623523",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Dehghan2026-sy.mp3",
+      "pubDate": "Mon, 16 Mar 2026 11:03:35 +0000",
+      "duration": "7:09",
+      "author": "Ehsan Dehghan, Dominique Carlon, Kateryna Kasianenko, Ashwin Nagappa, Vish Padinjaredath Suresh",
+      "doi": "10.1080/1369118x.2026.2623523"
     }
   },
-  "totalEpisodes": 62,
-  "lastUpdated": "2026-03-16T07:15:24.797Z",
+  "totalEpisodes": 63,
+  "lastUpdated": "2026-03-17T07:03:11.098Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }

@@ -1,38 +1,39 @@
 {
-  "overallSummary": "Fabio Giglietto maintains an active presence across Mastodon, LinkedIn, and Bluesky, focusing on research related to social media analysis, disinformation, and computational social science. LinkedIn demonstrates the strongest individual following, while Bluesky exhibits high engagement in terms of shares.",
+  "overallSummary": "Fabio Giglietto maintains an active presence across Mastodon, LinkedIn, and Bluesky, focusing on research related to social media analysis, disinformation, and computational social science. While LinkedIn attracts the largest audience, engagement varies across platforms. The recent activity indicates a focus on announcing research findings, job opportunities, and conference participation.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 2.93,
+    "averageEngagementRate": 2.5,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
-      "theme": "Research Announcements",
-      "description": "Sharing updates on research projects, publications, and grant awards."
+      "theme": "Computational Social Science Research",
+      "description": "Announcements related to research findings, publications, and methodological discussions in computational social science."
     },
     {
-      "theme": "Hiring Opportunities",
-      "description": "Posting about open positions within the research team."
+      "theme": "Disinformation and Information Operations",
+      "description": "Focus on research related to detecting and analyzing disinformation campaigns and coordinated inauthentic behavior."
     },
     {
-      "theme": "Conference Presentations",
-      "description": "Announcing upcoming conference presentations and participation."
+      "theme": "Career and Research Opportunities",
+      "description": "Posts advertising job openings, PhD positions, and grant opportunities within the research team."
     },
     {
-      "theme": "Tool Releases",
-      "description": "Sharing updates on software tools for social media analysis."
+      "theme": "Conference and Event Participation",
+      "description": "Updates regarding presentations and participation in academic conferences and events."
     }
   ],
   "recommendations": [
-    "Increase posting frequency on Mastodon to improve engagement.",
-    "Cross-promote content across platforms to reach a wider audience.",
-    "Use relevant hashtags on all platforms to increase discoverability.",
-    "Engage with followers in the comments and replies to foster a stronger community."
+    "Tailor content to each platform's audience. For example, share more professional updates on LinkedIn and research-specific discussions on Mastodon and Bluesky.",
+    "Increase engagement by asking more questions and prompting responses from followers.",
+    "Use relevant hashtags to increase the visibility of posts and reach a wider audience.",
+    "Consider using visuals (images or videos) to enhance the appeal of posts.",
+    "Analyze the performance of different types of content to identify what resonates most with the audience on each platform."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky shows good engagement through reposts, indicating a receptive audience for sharing research findings. Leveraging this platform for disseminating paper publications can be highly effective.",
-    "mastodon": "Mastodon engagement is relatively lower compared to other platforms. Content should be tailored to the Mastodon community and involve more community-focused discussions.",
-    "linkedin": "LinkedIn is the strongest platform with a large follower base and high engagement with research grant announcements and hiring posts. Maintain a professional tone and focus on career-related content."
+    "bluesky": "Bluesky shows a good balance of research announcements and opportunities for engagement (PhD positions). Reposts seem to be a more prominent form of interaction on Bluesky compared to other platforms.",
+    "mastodon": "Mastodon is used for sharing research updates and participating in methodological discussions. Engagement (likes and reposts) is relatively lower compared to other platforms.",
+    "linkedin": "LinkedIn is primarily used for professional announcements (grants, job openings) and generates the highest engagement through likes and comments."
   },
   "topPerformingContent": [
     {
@@ -43,7 +44,7 @@
     {
       "content": "Now hiring: Two postdoctoral researchers to join our team working on computational methods for social media analysis. Background in data science, computational social science, or related fields preferred.",
       "platform": "linkedin",
-      "engagementRate": 3.95
+      "engagementRate": 4.05
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
