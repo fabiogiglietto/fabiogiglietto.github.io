@@ -703,6 +703,17 @@
       "duration": "6:20",
       "author": "Joseph J. Yoo, Hannah Lee, Soontae An",
       "doi": "10.1177/10776990251410599"
+    },
+    {
+      "id": "bibtex:Bouchaud2026-lr",
+      "bibtexKey": "Bouchaud2026-lr",
+      "title": "X's Political Algorithm: Profiling Users Without Consent?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nBouchaud, P. & Ramaciotti, P. (2026). Recommender system in X inadvertently profiles ideological positions of users. http://arxiv.org/abs/2602.02624v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Bouchaud2026-lr.mp3",
+      "pubDate": "Wed, 18 Mar 2026 15:26:41 +0000",
+      "duration": "6:08",
+      "author": "Paul Bouchaud, Pedro Ramaciotti",
+      "doi": null
     }
   ],
   "episodesByBibtexKey": {
@@ -1409,6 +1420,17 @@
       "duration": "6:20",
       "author": "Joseph J. Yoo, Hannah Lee, Soontae An",
       "doi": "10.1177/10776990251410599"
+    },
+    "Bouchaud2026-lr": {
+      "id": "bibtex:Bouchaud2026-lr",
+      "bibtexKey": "Bouchaud2026-lr",
+      "title": "X's Political Algorithm: Profiling Users Without Consent?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nBouchaud, P. & Ramaciotti, P. (2026). Recommender system in X inadvertently profiles ideological positions of users. http://arxiv.org/abs/2602.02624v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Bouchaud2026-lr.mp3",
+      "pubDate": "Wed, 18 Mar 2026 15:26:41 +0000",
+      "duration": "6:08",
+      "author": "Paul Bouchaud, Pedro Ramaciotti",
+      "doi": null
     }
   },
   "episodesByDoi": {
@@ -1930,7 +1952,7 @@
       "doi": "10.1177/10776990251410599"
     }
   },
-  "totalEpisodes": 64,
-  "lastUpdated": "2026-03-18T07:00:51.610Z",
+  "totalEpisodes": 65,
+  "lastUpdated": "2026-03-19T06:57:02.579Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
