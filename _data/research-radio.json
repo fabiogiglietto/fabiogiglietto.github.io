@@ -714,6 +714,17 @@
       "duration": "6:08",
       "author": "Paul Bouchaud, Pedro Ramaciotti",
       "doi": null
+    },
+    {
+      "id": "bibtex:Stagnaro2025-pz",
+      "bibtexKey": "Stagnaro2025-pz",
+      "title": "Online Samples: Are Your Participants Paying Attention?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nStagnaro, M. N., Druckman, J., Berinsky, A. J., Arechar, A. A., Willer, R., & Rand, D. G. (2025). Representativeness and response validity across nine opt-in online samples. https://doi.org/10.31234/osf.io/h9j2d",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Stagnaro2025-pz.mp3",
+      "pubDate": "Thu, 19 Mar 2026 19:10:32 +0000",
+      "duration": "6:17",
+      "author": "Michael Nicholas Stagnaro, James Druckman, Adam J. Berinsky, Antonio Alonso Arechar, Robb Willer, David Gertler Rand",
+      "doi": "10.31234/osf.io/h9j2d"
     }
   ],
   "episodesByBibtexKey": {
@@ -1431,6 +1442,17 @@
       "duration": "6:08",
       "author": "Paul Bouchaud, Pedro Ramaciotti",
       "doi": null
+    },
+    "Stagnaro2025-pz": {
+      "id": "bibtex:Stagnaro2025-pz",
+      "bibtexKey": "Stagnaro2025-pz",
+      "title": "Online Samples: Are Your Participants Paying Attention?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nStagnaro, M. N., Druckman, J., Berinsky, A. J., Arechar, A. A., Willer, R., & Rand, D. G. (2025). Representativeness and response validity across nine opt-in online samples. https://doi.org/10.31234/osf.io/h9j2d",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Stagnaro2025-pz.mp3",
+      "pubDate": "Thu, 19 Mar 2026 19:10:32 +0000",
+      "duration": "6:17",
+      "author": "Michael Nicholas Stagnaro, James Druckman, Adam J. Berinsky, Antonio Alonso Arechar, Robb Willer, David Gertler Rand",
+      "doi": "10.31234/osf.io/h9j2d"
     }
   },
   "episodesByDoi": {
@@ -1950,9 +1972,20 @@
       "duration": "6:20",
       "author": "Joseph J. Yoo, Hannah Lee, Soontae An",
       "doi": "10.1177/10776990251410599"
+    },
+    "10.31234/osf.io/h9j2d": {
+      "id": "bibtex:Stagnaro2025-pz",
+      "bibtexKey": "Stagnaro2025-pz",
+      "title": "Online Samples: Are Your Participants Paying Attention?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nStagnaro, M. N., Druckman, J., Berinsky, A. J., Arechar, A. A., Willer, R., & Rand, D. G. (2025). Representativeness and response validity across nine opt-in online samples. https://doi.org/10.31234/osf.io/h9j2d",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Stagnaro2025-pz.mp3",
+      "pubDate": "Thu, 19 Mar 2026 19:10:32 +0000",
+      "duration": "6:17",
+      "author": "Michael Nicholas Stagnaro, James Druckman, Adam J. Berinsky, Antonio Alonso Arechar, Robb Willer, David Gertler Rand",
+      "doi": "10.31234/osf.io/h9j2d"
     }
   },
-  "totalEpisodes": 65,
-  "lastUpdated": "2026-03-19T06:57:02.579Z",
+  "totalEpisodes": 66,
+  "lastUpdated": "2026-03-20T06:54:15.050Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }

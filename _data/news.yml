@@ -1,51 +1,38 @@
-- date: '2026-03-18'
+- date: '2026-02-26'
   content: >-
-    Recent research highlights the potential for recommender systems to
-    inadvertently profile users' ideological positions. The paper by Bouchaud
-    and Ramaciotti explores this phenomenon in the context of platform X.
-  url: https://aoir.social/@fabiogiglietto/116248825562228772
-  platforms:
-    - Mastodon
-    - BlueSky
-  toread: true
-- date: '2026-03-16'
-  content: >-
-    A new study by Tomás Dodds et al. examines the narratives surrounding AI
-    hype within journalism. The research delves into the visibility, power
-    dynamics, and political implications of AI's growing presence in media.
-  url: https://aoir.social/@fabiogiglietto/116240626949041455
-  platforms:
-    - Mastodon
-    - BlueSky
-  toread: true
-- date: '2026-03-14'
-  content: >-
-    New findings suggest that Large Language Models (LLMs) can infer political
-    alignment from online conversations. The research, authored by Byunghwee Lee
-    et al., explores the capabilities of LLMs in discerning political leanings.
-  url: https://aoir.social/@fabiogiglietto/116227768687232065
-  platforms:
-    - Mastodon
-    - BlueSky
-  toread: true
-- date: '2026-03-14'
-  content: >-
-    A computational analysis of multilingual coordinated activity on Twitter
-    during China’s COVID-19 protests reveals insights into connective action and
-    digital repression. The research, by Aytalina Kulichkina et al., examines
-    the dynamics of online mobilization and control.
-  url: https://aoir.social/@fabiogiglietto/116226824918036732
+    Recent publications highlight concerns and considerations surrounding the
+    use of Large Language Models (LLMs) in various contexts. One study
+    emphasizes the necessity of curated context for reliable political
+    fact-checking, even when LLMs are equipped with reasoning and web search
+    capabilities. Another paper critiques the unreflective adoption of LLMs in
+    communication research, urging a more cautious and nuanced approach.
+  url: http://arxiv.org/abs/2511.18749v1
   platforms:
     - Mastodon
     - BlueSky
   toread: true
 - date: '2026-03-05'
   content: >-
-    Research indicates that perceived political bias in Large Language Models
-    (LLMs) reduces their persuasive abilities. The study by Matthew DiGiuseppe
-    and Joshua Robison explores the impact of bias on the effectiveness of LLMs
-    in persuasive communication.
-  url: https://aoir.social/@fabiogiglietto/116178577531184258
+    Several research papers explore the dynamics of online misinformation and
+    coordinated inauthentic behavior. One study analyzes how Serbia's SNS party
+    utilizes coordinated inauthentic behavior to mimic genuine support. Another
+    examines how elected officials share misinformation online, considering
+    institutional and ideological factors. Additionally, research investigates
+    the amplification of division and political intolerance through electoral
+    misinformation in Brazil.
+  url: https://doi.org/10.1177/02673231261422076
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
+- date: '2026-03-14'
+  content: >-
+    Studies are exploring the potential for AI, and specifically LLMs, to infer
+    political alignments and influence users. Research indicates that LLMs can
+    infer political alignment from online conversations. Furthermore, another
+    study suggests that perceived political bias in LLMs reduces their
+    persuasive abilities.
+  url: http://arxiv.org/abs/2603.11253v1
   platforms:
     - Mastodon
     - BlueSky

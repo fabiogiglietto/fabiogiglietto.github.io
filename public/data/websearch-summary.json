@@ -1,11 +1,12 @@
 {
-  "totalEntries": 122,
-  "lastUpdated": "2026-03-19T06:58:31.425Z",
+  "totalEntries": 123,
+  "lastUpdated": "2026-03-20T06:55:21.490Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-03-11T06:53:56.030Z"
+    "latest": "2026-03-20T06:55:21.457Z"
   },
   "byDate": {
+    "2026-03-20": 1,
     "2026-03-11": 1,
     "2026-03-09": 1,
     "2026-03-08": 5,
@@ -14,11 +15,10 @@
     "2026-02-22": 1,
     "2026-02-21": 1,
     "2026-02-20": 3,
-    "2026-02-18": 2,
-    "2026-02-16": 2
+    "2026-02-18": 2
   },
   "bySource": {
-    "vertexaisearch.cloud.google.com": 46,
+    "vertexaisearch.cloud.google.com": 47,
     "uniurb.it": 7,
     "open.online": 5,
     "Il Sole 24 ORE": 4,
@@ -30,11 +30,18 @@
     "euractiv.ro": 2
   },
   "byRelevanceScore": {
-    "high": 103,
+    "high": 104,
     "medium": 19,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Scientists around the world call to protect research on one of humanity's greatest short-term threats - Disinformation - Forum on Information & Democracy",
+      "url": "https://informationdemocracy.org/2024/09/27/scientists-around-the-world-call-to-protect-research-on-one-of-humanitys-greatest-short-term-threats-disinformation/",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-03-20T06:55:21.457Z"
+    },
     {
       "title": "Le fake news circolano senza Meta",
       "url": "https://lespresso.it/c/innovazione/2026/1/14/fact-checking-meta-rinuncia-fake-news/59128",
@@ -62,13 +69,6 @@
       "source": "Sciety",
       "relevanceScore": 0.9,
       "collectedAt": "2026-02-27T06:53:57.832Z"
-    },
-    {
-      "title": "Meta shuts down CrowdTangle tool used by some groups to track online misinformation",
-      "url": "https://www.straitstimes.com/world/united-states/meta-shuts-down-crowdtangle-tool-used-for-tracking-online-misinformation",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-02-22T06:46:44.392Z"
     }
   ]
 }
