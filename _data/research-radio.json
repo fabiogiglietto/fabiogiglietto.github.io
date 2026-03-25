@@ -747,6 +747,17 @@
       "duration": "5:52",
       "author": "Alexandros Efstratiou, Giuseppe Russo, Luca Luceri",
       "doi": null
+    },
+    {
+      "id": "bibtex:Ahuja2025-ku",
+      "bibtexKey": "Ahuja2025-ku",
+      "title": "Dark Patterns: How Tech Tricks Violate Your Autonomy",
+      "description": "AI-generated podcast discussion.\n\nReference:\nAhuja, S., Gunawan, J., Bielova, N., & Santos, C. (2025). Dark patterns and the EU digital services act: Mapping autonomy violations and design factors. https://doi.org/10.2139/ssrn.5555765",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Ahuja2025-ku.mp3",
+      "pubDate": "Tue, 24 Mar 2026 11:00:27 +0000",
+      "duration": "5:50",
+      "author": "Sanju Ahuja, Johanna Gunawan, Nataliia Bielova, Cristiana Santos",
+      "doi": "10.2139/ssrn.5555765"
     }
   ],
   "episodesByBibtexKey": {
@@ -1497,6 +1508,17 @@
       "duration": "5:52",
       "author": "Alexandros Efstratiou, Giuseppe Russo, Luca Luceri",
       "doi": null
+    },
+    "Ahuja2025-ku": {
+      "id": "bibtex:Ahuja2025-ku",
+      "bibtexKey": "Ahuja2025-ku",
+      "title": "Dark Patterns: How Tech Tricks Violate Your Autonomy",
+      "description": "AI-generated podcast discussion.\n\nReference:\nAhuja, S., Gunawan, J., Bielova, N., & Santos, C. (2025). Dark patterns and the EU digital services act: Mapping autonomy violations and design factors. https://doi.org/10.2139/ssrn.5555765",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Ahuja2025-ku.mp3",
+      "pubDate": "Tue, 24 Mar 2026 11:00:27 +0000",
+      "duration": "5:50",
+      "author": "Sanju Ahuja, Johanna Gunawan, Nataliia Bielova, Cristiana Santos",
+      "doi": "10.2139/ssrn.5555765"
     }
   },
   "episodesByDoi": {
@@ -2027,9 +2049,20 @@
       "duration": "6:17",
       "author": "Michael Nicholas Stagnaro, James Druckman, Adam J. Berinsky, Antonio Alonso Arechar, Robb Willer, David Gertler Rand",
       "doi": "10.31234/osf.io/h9j2d"
+    },
+    "10.2139/ssrn.5555765": {
+      "id": "bibtex:Ahuja2025-ku",
+      "bibtexKey": "Ahuja2025-ku",
+      "title": "Dark Patterns: How Tech Tricks Violate Your Autonomy",
+      "description": "AI-generated podcast discussion.\n\nReference:\nAhuja, S., Gunawan, J., Bielova, N., & Santos, C. (2025). Dark patterns and the EU digital services act: Mapping autonomy violations and design factors. https://doi.org/10.2139/ssrn.5555765",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Ahuja2025-ku.mp3",
+      "pubDate": "Tue, 24 Mar 2026 11:00:27 +0000",
+      "duration": "5:50",
+      "author": "Sanju Ahuja, Johanna Gunawan, Nataliia Bielova, Cristiana Santos",
+      "doi": "10.2139/ssrn.5555765"
     }
   },
-  "totalEpisodes": 68,
-  "lastUpdated": "2026-03-24T07:02:52.536Z",
+  "totalEpisodes": 69,
+  "lastUpdated": "2026-03-25T07:01:17.158Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
