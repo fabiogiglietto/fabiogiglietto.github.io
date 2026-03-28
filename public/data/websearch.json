@@ -15,12 +15,12 @@
     "dateSource": "rss-pubdate"
   },
   {
-    "title": "SOS! ORA L’ALGORITMO PUNTA SUI ‘COMPLOTTISTI’: “INTERVENIRE SUBITO!” - ByoBlu",
+    "title": "SOS! ORA L’ALGORITMO PUNTA SUI ‘COMPLOTTISTI’: “INTERVENIRE SUBITO!” - byoblu.com",
     "snippet": "",
     "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOVm9GZjY3RzJ2VWx4SVN3ZUdMaUhodDlJbWNuMld3c3lOYzJqWjVhMVNLRWhRRUJ2Z1BQZVJlS0lxaXJYTU9xYUROWVZpU3JWRVRuaFFVMzJQSWJNSlFrZzR4c1huU0V0eWpJVExyMC00c0VnNEtMSkdTWTdHYzdHVTlLUzRDSVdjb1lCSGdEYmtUOGhNdmplTlZ6NA?oc=5&hl=en-US&gl=US&ceid=US:en",
     "date": "2026-01-09",
-    "source": "ByoBlu",
-    "description": "News article from ByoBlu",
+    "source": "byoblu.com",
+    "description": "News article from byoblu.com",
     "relevanceScore": 0.75,
     "mentionedByName": true,
     "personMatch": "confirmed",
@@ -60,34 +60,19 @@
     "dateSource": "rss-pubdate"
   },
   {
-    "title": "open.online",
-    "snippet": "",
+    "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme - Open",
+    "snippet": "This article discusses a study by Fabio Giglietto from the University of Urbino analyzing the effects of Meta's algorithmic choices on the distribution of political content on Facebook, finding that the algorithm is less effective against extremists and that visibility of institutional politics has declined.",
     "url": "https://www.open.online/2026/01/07/algoritmi-politica-meta-facebook-eleioni-europee-ricerca-unviersita-urbino-deficit-trasparenza/",
     "date": "2026-01-07",
     "source": "open.online",
-    "description": "The article from open.online discusses the lack of transparency in algorithms used by Meta/Facebook in relation to European elections, referencing research from the University of Urbino.",
-    "relevanceScore": 0.9,
-    "mentionedByName": false,
-    "personMatch": "confirmed",
-    "isRecent": true,
-    "searchEngine": "gemini",
-    "dateConfidence": "medium",
-    "dateSource": "url-path"
-  },
-  {
-    "title": "\"A Pretty Blunt Approach\": Meta's Political Content Reduction Policy and Italian Parliamentarians' Facebook Visibility",
-    "snippet": "This article discusses Fabio Giglietto's research on Meta's policy to reduce political content distribution on Facebook. The study, using data from Italian parliamentarians, found a significant reduction in the reach of their posts.",
-    "url": "https://sciety.org/articles/activity/10.31235/osf.io/8dqag_v2",
-    "date": "2025-12-30",
-    "source": "vertexaisearch.cloud.google.com",
-    "description": "The article discusses Fabio Giglietto's research on the impact of Meta's policy to reduce political content distribution on the Facebook visibility of Italian parliamentarians.",
+    "description": "The article discusses a study by Fabio Giglietto from the University of Urbino analyzing the effects of Meta's algorithmic choices on the distribution of political content on Facebook.",
     "relevanceScore": 0.9,
     "mentionedByName": true,
     "personMatch": "confirmed",
-    "isRecent": true,
+    "isRecent": false,
     "searchEngine": "gemini",
     "dateConfidence": "medium",
-    "dateSource": "cache (time-element)"
+    "dateSource": "cache (url-path)"
   },
   {
     "title": "Katharina Esau Was Awarded an ARC Discovery Early Career Researcher Award 2026 - Oncodaily",
@@ -121,11 +106,11 @@
   },
   {
     "title": "Meet the speakers! - EUDTP 2025 - EuroTech Universities Alliance",
-    "snippet": "Fabio Giglietto is listed as a speaker at the EUDTP 2025. His research focuses on disinformation dynamics and computational methods for detecting coordinated manipulation campaigns.",
+    "snippet": "Announces Fabio Giglietto as a speaker at the EU Digital Technologies and Policies conference. States that Fabio Giglietto researches disinformation dynamics, examining how false narratives spread across digital platforms and their societal impact and that his studies analyze computational methods for detecting coordinated manipulation campaigns.",
     "url": "https://eurotech-universities.eu/news-and-events/news/eudtp-digital-technologies-and-policy-conference-2025-meet-the-speakers/",
     "date": "2025-05-08",
-    "source": "eurotech-universities.eu",
-    "description": "Fabio Giglietto is listed as a speaker at the EUDTP 2025 conference, indicating his involvement in discussions related to digital technologies and policy, specifically his expertise in disinformation and manipulation campaigns.",
+    "source": "EuroTech Universities Alliance",
+    "description": "This EuroTech Universities Alliance announcement confirms Fabio Giglietto as a speaker at the EUDTP 2025 conference, highlighting his research on disinformation dynamics and computational methods for detecting manipulation campaigns.",
     "relevanceScore": 0.9,
     "mentionedByName": true,
     "personMatch": "confirmed",
@@ -148,5 +133,20 @@
     "searchEngine": "google-news-rss",
     "dateConfidence": "high",
     "dateSource": "rss-pubdate"
+  },
+  {
+    "title": "Agenda TSRC 2024 - AWS",
+    "snippet": "Lists Fabio Giglietto as a speaker at the Trust and Safety Research Conference 2024, presenting on \"Authentic or Artificial? AI's Impact on Verification\".",
+    "url": "https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2025-03/agenda-tsrc-2024_f.pdf",
+    "date": "2025-03-13",
+    "source": "AWS",
+    "description": "The agenda for the Trust and Safety Research Conference 2024 (TSRC) lists Fabio Giglietto as a speaker. He is presenting on the impact of AI on verification, which falls within his area of expertise.",
+    "relevanceScore": 0.9,
+    "mentionedByName": true,
+    "personMatch": "confirmed",
+    "isRecent": true,
+    "searchEngine": "gemini",
+    "dateConfidence": "low",
+    "dateSource": "http-header"
   }
 ]

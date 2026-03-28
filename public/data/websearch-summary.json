@@ -1,11 +1,12 @@
 {
-  "totalEntries": 123,
-  "lastUpdated": "2026-03-27T07:07:41.425Z",
+  "totalEntries": 124,
+  "lastUpdated": "2026-03-28T06:59:27.724Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-03-20T06:55:21.457Z"
+    "latest": "2026-03-28T06:59:27.684Z"
   },
   "byDate": {
+    "2026-03-28": 1,
     "2026-03-20": 1,
     "2026-03-11": 1,
     "2026-03-09": 1,
@@ -14,8 +15,7 @@
     "2026-02-27": 1,
     "2026-02-22": 1,
     "2026-02-21": 1,
-    "2026-02-20": 3,
-    "2026-02-18": 2
+    "2026-02-20": 3
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 47,
@@ -30,11 +30,18 @@
     "euractiv.ro": 2
   },
   "byRelevanceScore": {
-    "high": 104,
+    "high": 105,
     "medium": 19,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Agenda TSRC 2024 - AWS",
+      "url": "https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2025-03/agenda-tsrc-2024_f.pdf",
+      "source": "AWS",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-03-28T06:59:27.684Z"
+    },
     {
       "title": "Scientists around the world call to protect research on one of humanity's greatest short-term threats - Disinformation - Forum on Information & Democracy",
       "url": "https://informationdemocracy.org/2024/09/27/scientists-around-the-world-call-to-protect-research-on-one-of-humanitys-greatest-short-term-threats-disinformation/",
@@ -62,13 +69,6 @@
       "source": "vertexaisearch.cloud.google.com",
       "relevanceScore": 0.9,
       "collectedAt": "2026-03-01T13:40:57.423Z"
-    },
-    {
-      "title": "\"A Pretty Blunt Approach\": Meta's Political Content Reduction Policy and Italian Parliamentarians' Facebook Visibility | Sciety",
-      "url": "https://sciety.org/articles/activity/10.31235/osf.io/8dqag_v2",
-      "source": "Sciety",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-02-27T06:53:57.832Z"
     }
   ]
 }
