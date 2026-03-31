@@ -12,6 +12,26 @@
   },
   "repositories": [
     {
+      "name": "research-radio",
+      "description": "Convert academic papers into AI podcast episodes with Google Gemini. Powers FG's Research Radio.",
+      "url": "https://github.com/fabiogiglietto/research-radio",
+      "language": "Python",
+      "stars": 2,
+      "forks": 0,
+      "created_at": "2025-12-29T17:46:10Z",
+      "updated_at": "2026-03-30T08:29:56Z"
+    },
+    {
+      "name": "fabiogiglietto.github.io",
+      "description": "Your research presence, always current, zero maintenance.                                                                                                                                  ",
+      "url": "https://github.com/fabiogiglietto/fabiogiglietto.github.io",
+      "language": "JavaScript",
+      "stars": 7,
+      "forks": 1,
+      "created_at": "2025-04-21T09:41:33Z",
+      "updated_at": "2026-03-30T07:27:40Z"
+    },
+    {
       "name": "toread",
       "description": "Consume a feed BibTeX export from a Paperpile folder, complete the publication metadata with Crossref and Semantic Scholar and create an RSS feed",
       "url": "https://github.com/fabiogiglietto/toread",
@@ -30,26 +50,6 @@
       "forks": 0,
       "created_at": "2026-03-29T11:59:46Z",
       "updated_at": "2026-03-30T05:45:35Z"
-    },
-    {
-      "name": "fabiogiglietto.github.io",
-      "description": "Your research presence, always current, zero maintenance.                                                                                                                                  ",
-      "url": "https://github.com/fabiogiglietto/fabiogiglietto.github.io",
-      "language": "JavaScript",
-      "stars": 7,
-      "forks": 1,
-      "created_at": "2025-04-21T09:41:33Z",
-      "updated_at": "2026-03-29T07:03:56Z"
-    },
-    {
-      "name": "research-radio",
-      "description": "Convert academic papers into AI podcast episodes with Google Gemini. Powers FG's Research Radio.",
-      "url": "https://github.com/fabiogiglietto/research-radio",
-      "language": "Python",
-      "stars": 2,
-      "forks": 0,
-      "created_at": "2025-12-29T17:46:10Z",
-      "updated_at": "2026-03-28T18:55:13Z"
     },
     {
       "name": "genai-media-course",
@@ -264,5 +264,5 @@
       "activity": {}
     }
   ],
-  "lastUpdated": "2026-03-30T07:25:44.422Z"
+  "lastUpdated": "2026-03-31T07:12:31.665Z"
 }
