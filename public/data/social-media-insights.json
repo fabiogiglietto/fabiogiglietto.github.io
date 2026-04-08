@@ -1,50 +1,44 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a presence on Mastodon, LinkedIn, and Bluesky, focusing on topics related to social media analysis, disinformation, and computational social science. LinkedIn has the highest follower count, but engagement varies across platforms. Overall, the content centers around research, publications, and job opportunities.",
+  "overallSummary": "Fabio Giglietto maintains an active presence across Mastodon, LinkedIn, and Bluesky, focusing on research related to computational social science, disinformation, and information operations. While LinkedIn has the largest follower base, engagement is distributed across platforms, suggesting a diversified audience.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 3.81,
+    "averageEngagementRate": 2.35,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
-      "theme": "Research and Publications",
-      "description": "Sharing research findings, publications, and related academic work."
-    },
-    {
-      "theme": "Computational Social Science",
-      "description": "Discussions and opportunities related to computational methods in social science."
+      "theme": "Computational Social Science Research",
+      "description": "Posts related to research findings, publications, and methodological approaches in computational social science."
     },
     {
       "theme": "Disinformation and Information Operations",
-      "description": "Content about detecting and analyzing disinformation campaigns."
+      "description": "Content focusing on the study of disinformation, coordinated inauthentic behavior, and information operations on social media."
     },
     {
-      "theme": "Job Opportunities and Hiring",
-      "description": "Announcements for research positions and calls for applications."
+      "theme": "Job and Research Opportunities",
+      "description": "Posts advertising research positions, PhD opportunities, and grant announcements."
     }
   ],
   "recommendations": [
-    "Increase posting frequency on all platforms to maintain engagement.",
-    "Tailor content to each platform's audience; for example, more professional content on LinkedIn and more community-focused content on Mastodon.",
-    "Engage more directly with followers by asking questions and responding to comments.",
-    "Use relevant hashtags to increase the visibility of posts.",
-    "Cross-promote content between platforms to reach a wider audience."
+    "Leverage LinkedIn's professional network by sharing more content related to career development and industry insights.",
+    "Increase engagement on Mastodon by participating in relevant discussions and engaging with other researchers in the fediverse.",
+    "Experiment with different content formats on Bluesky, such as short-form video or interactive polls, to boost engagement."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky shows a good balance of research updates and opportunities, with a decent level of engagement (likes and reposts). Focus on continuing to build community through discussions and sharing relevant content.",
-    "mastodon": "Mastodon engagement is lower compared to other platforms. Experiment with different content formats and posting times to see what resonates best with the audience. Focus on building community and engaging in discussions.",
-    "linkedin": "LinkedIn has the largest follower base and highest engagement, suggesting it is the most effective platform for reaching a professional audience. Continue sharing research updates, job opportunities, and industry insights."
+    "bluesky": "Bluesky shows strong engagement through reposts, indicating a connected and active audience. Focusing on topics trending within the Bluesky community could further boost visibility.",
+    "mastodon": "Mastodon posts are generally well-received, but have lower engagement compared to other platforms. Experimenting with more visual content might help increase interaction.",
+    "linkedin": "LinkedIn has a substantial follower base, but engagement is primarily focused on professional announcements and job postings. Diversifying content with thought leadership pieces could attract a wider audience."
   },
   "topPerformingContent": [
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
       "platform": "linkedin",
-      "engagementRate": 5.78
+      "engagementRate": 6.65
     },
     {
       "content": "Now hiring: Two postdoctoral researchers to join our team working on computational methods for social media analysis. Background in data science, computational social science, or related fields preferred.",
       "platform": "linkedin",
-      "engagementRate": 3.95
+      "engagementRate": 3.62
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
