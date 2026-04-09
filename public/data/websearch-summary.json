@@ -1,11 +1,12 @@
 {
-  "totalEntries": 124,
-  "lastUpdated": "2026-04-08T07:19:40.899Z",
+  "totalEntries": 125,
+  "lastUpdated": "2026-04-09T07:22:07.220Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-03-28T06:59:27.684Z"
+    "latest": "2026-04-09T07:22:07.192Z"
   },
   "byDate": {
+    "2026-04-09": 1,
     "2026-03-28": 1,
     "2026-03-20": 1,
     "2026-03-11": 1,
@@ -14,11 +15,10 @@
     "2026-03-01": 2,
     "2026-02-27": 1,
     "2026-02-22": 1,
-    "2026-02-21": 1,
-    "2026-02-20": 3
+    "2026-02-21": 1
   },
   "bySource": {
-    "vertexaisearch.cloud.google.com": 47,
+    "vertexaisearch.cloud.google.com": 48,
     "uniurb.it": 7,
     "open.online": 5,
     "Il Sole 24 ORE": 4,
@@ -30,11 +30,18 @@
     "euractiv.ro": 2
   },
   "byRelevanceScore": {
-    "high": 105,
+    "high": 106,
     "medium": 19,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Investigating Coordinated Inauthentic Behavior on Alternative Platforms During the 2024 U.S. Election - Proceedings of the ICWSM Workshops",
+      "url": "https://workshop-proceedings.icwsm.org/pdf/2025_19.pdf",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-04-09T07:22:07.192Z"
+    },
     {
       "title": "Agenda TSRC 2024 - AWS",
       "url": "https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2025-03/agenda-tsrc-2024_f.pdf",
@@ -62,13 +69,6 @@
       "source": "virgoletteblog.it",
       "relevanceScore": 0.9,
       "collectedAt": "2026-03-08T09:10:20.113Z"
-    },
-    {
-      "title": "Seminario - Etica e integrità della ricerca - UniUrb",
-      "url": "https://www.uniurb.it/novita-ed-eventi/6382",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-03-01T13:40:57.423Z"
     }
   ]
 }
