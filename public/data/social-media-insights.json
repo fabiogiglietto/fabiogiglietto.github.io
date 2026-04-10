@@ -1,49 +1,55 @@
 {
-  "overallSummary": "Fabio Giglietto maintains an active presence across Mastodon, LinkedIn, and Bluesky, focusing on research, publications, and job opportunities related to social media analysis, disinformation, and computational social science. While his follower count is highest on LinkedIn, engagement varies across platforms.",
+  "overallSummary": "Fabio Giglietto maintains an active presence across Mastodon, LinkedIn, and Bluesky, focusing on research related to computational social science, disinformation, and coordinated online behavior. His LinkedIn profile has the largest follower base, while Bluesky shows higher engagement in terms of reposts. Overall, his content revolves around research findings, conference presentations, and job/research opportunities.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 3.16,
+    "averageEngagementRate": 0.03,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
-      "theme": "Research Publications",
-      "description": "Sharing new research papers and findings related to social media analysis and disinformation."
+      "theme": "Computational Social Science Research",
+      "description": "Sharing research findings, publications, and methodologies related to computational social science."
     },
     {
-      "theme": "Job Opportunities",
-      "description": "Announcing research positions and funding opportunities for postdoctoral researchers and PhD students."
+      "theme": "Disinformation and Coordinated Behavior",
+      "description": "Focus on detecting, analyzing, and mitigating disinformation and coordinated inauthentic behavior online."
+    },
+    {
+      "theme": "Job and Research Opportunities",
+      "description": "Announcing postdoctoral positions, PhD opportunities, and grant awards related to social media research."
     },
     {
       "theme": "Conference Presentations",
-      "description": "Promoting upcoming conference presentations and related methodological discussions."
+      "description": "Promoting conference participation and presenting research at academic events."
     }
   ],
   "recommendations": [
-    "Diversify content format (e.g., include videos, infographics) to increase engagement.",
-    "Engage more actively with comments and replies to foster a stronger community.",
-    "Tailor content to each platform's specific audience and culture."
+    "Increase cross-platform promotion of content to maximize reach and engagement.",
+    "Tailor content to each platform's audience to optimize relevance and engagement.",
+    "Encourage more interaction by posing questions and soliciting opinions in posts.",
+    "Use relevant hashtags consistently to improve content discoverability.",
+    "Engage with followers in the comments and replies to foster a stronger community."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky shows a good balance of research announcements, conference promotions, and research opportunities, resulting in decent repost rates.",
-    "mastodon": "Mastodon content focuses on research updates and methodological discussions, with moderate engagement.",
-    "linkedin": "LinkedIn is primarily used for professional announcements, research grants, and hiring, leading to strong like and comment engagement."
+    "bluesky": "Bluesky shows relatively high engagement in terms of reposts compared to likes. Content related to publications and research opportunities performs well. Experiment with interactive content to further boost engagement.",
+    "mastodon": "Mastodon has a smaller following compared to other platforms. Content sharing research tools and discussing methodological approaches receive moderate engagement. Focus on creating more engaging content tailored to the AOIR community.",
+    "linkedin": "LinkedIn has the largest follower base, and content related to research grants and job postings generates the most engagement. Continue sharing announcements and professional opportunities to leverage this network."
   },
   "topPerformingContent": [
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
       "platform": "linkedin",
-      "engagementRate": 5.78
+      "engagementRate": 0.0578
     },
     {
       "content": "Now hiring: Two postdoctoral researchers to join our team working on computational methods for social media analysis. Background in data science, computational social science, or related fields preferred.",
       "platform": "linkedin",
-      "engagementRate": 3.95
+      "engagementRate": 0.0395
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
       "platform": "bluesky",
-      "engagementRate": 7.37
+      "engagementRate": 0.0737
     }
   ]
 }

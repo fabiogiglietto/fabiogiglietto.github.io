@@ -45,7 +45,7 @@
       "citations": {
         "scholar": null,
         "wos": 410,
-        "scopus": 184,
+        "scopus": 185,
         "semanticScholar": 145
       },
       "source_urls": {
@@ -654,7 +654,7 @@
       "citations": {
         "scholar": null,
         "wos": 0,
-        "scopus": 38,
+        "scopus": 39,
         "semanticScholar": null
       },
       "source_urls": {
@@ -675,7 +675,7 @@
         "ora": null
       },
       "metrics": {
-        "total_citations": 38,
+        "total_citations": 39,
         "citation_sources": 2
       },
       "crossref_type": "journal-article",
@@ -810,6 +810,46 @@
       }
     },
     {
+      "title": "Networked intimacy. Intimacy and friendship among Italian Facebook users",
+      "type": "journal-article",
+      "venue": "Information, Communication &amp; Society",
+      "authors": "Farci, Manolo; Rossi, Luca; Boccia Artieri, Giovanni; Giglietto, Fabio",
+      "year": 2017,
+      "month": null,
+      "day": null,
+      "publicationDate": "2017-01-01",
+      "doi": "10.1080/1369118X.2016.1203970",
+      "citations": {
+        "scholar": null,
+        "wos": 0,
+        "scopus": 30,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84976566310&partnerID=MN8TOARS",
+        "scholar": null,
+        "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000396827700010&DestLinkType=FullRecord&DestApp=WOS_CPL",
+        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=84976566310&origin=inward",
+        "semanticScholar": null,
+        "ora": null,
+        "crossref": "https://doi.org/10.1080/1369118x.2016.1203970"
+      },
+      "source_ids": {
+        "orcid": 34344537,
+        "scholar": null,
+        "wos": "WOS:000396827700010",
+        "scopus": "84976566310",
+        "semanticScholar": null,
+        "ora": null
+      },
+      "metrics": {
+        "total_citations": 30,
+        "citation_sources": 2
+      },
+      "crossref_type": "journal-article",
+      "publisher": "Informa UK Limited"
+    },
+    {
       "title": "Understanding coordinated and inauthentic link sharing behavior on Facebook in the run-up to 2018 general election and 2019 European election in Italy",
       "authors": "F Giglietto, N Righetti, G Marino",
       "venue": "OSF, 2019",
@@ -840,46 +880,6 @@
         "total_citations": 30,
         "citation_sources": 1
       }
-    },
-    {
-      "title": "Networked intimacy. Intimacy and friendship among Italian Facebook users",
-      "type": "journal-article",
-      "venue": "Information, Communication &amp; Society",
-      "authors": "Farci, Manolo; Rossi, Luca; Boccia Artieri, Giovanni; Giglietto, Fabio",
-      "year": 2017,
-      "month": null,
-      "day": null,
-      "publicationDate": "2017-01-01",
-      "doi": "10.1080/1369118X.2016.1203970",
-      "citations": {
-        "scholar": null,
-        "wos": 0,
-        "scopus": 29,
-        "semanticScholar": null
-      },
-      "source_urls": {
-        "orcid": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84976566310&partnerID=MN8TOARS",
-        "scholar": null,
-        "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000396827700010&DestLinkType=FullRecord&DestApp=WOS_CPL",
-        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=84976566310&origin=inward",
-        "semanticScholar": null,
-        "ora": null,
-        "crossref": "https://doi.org/10.1080/1369118x.2016.1203970"
-      },
-      "source_ids": {
-        "orcid": 34344537,
-        "scholar": null,
-        "wos": "WOS:000396827700010",
-        "scopus": "84976566310",
-        "semanticScholar": null,
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 29,
-        "citation_sources": 2
-      },
-      "crossref_type": "journal-article",
-      "publisher": "Informa UK Limited"
     },
     {
       "title": "Coordinated Link Sharing Behavior as a Signal to Surface Sources of Problematic Information on Facebook",
@@ -6030,7 +6030,7 @@
   ],
   "metrics": {
     "total_publications": 162,
-    "total_citations": 3132,
+    "total_citations": 3134,
     "h_index": 26,
     "i10_index": 32,
     "citation_sources": {
@@ -6042,5 +6042,5 @@
       "with_ora": 13
     }
   },
-  "lastUpdated": "2026-04-09T07:22:34.381Z"
+  "lastUpdated": "2026-04-10T07:28:55.623Z"
 }
