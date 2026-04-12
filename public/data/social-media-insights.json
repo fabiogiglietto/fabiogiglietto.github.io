@@ -1,37 +1,39 @@
 {
-  "overallSummary": "Fabio Giglietto maintains an active presence across Mastodon, LinkedIn, and Bluesky, focusing on research related to disinformation, computational social science, and information operations. Total followers across all platforms amount to 3580, indicating a substantial reach within the academic and professional community. Recent activity reflects a focus on disseminating research findings, announcing job opportunities, and promoting conference presentations.",
+  "overallSummary": "Fabio Giglietto has a significant social media presence across Mastodon, LinkedIn, and Bluesky, totaling 3580 followers. Engagement varies by platform, with LinkedIn demonstrating strong interaction through likes and comments, while Bluesky sees notable reposts. Content primarily focuses on research, job opportunities, and conference presentations related to computational social science and disinformation.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 2.72,
+    "averageEngagementRate": 2.4,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
-      "theme": "Research Dissemination",
-      "description": "Sharing research papers, findings, and project updates."
+      "theme": "Computational Social Science Research",
+      "description": "Posts about research projects, publications, and methodologies in computational social science."
+    },
+    {
+      "theme": "Disinformation Studies",
+      "description": "Content related to disinformation, coordinated inauthentic behavior, and information operations on social media platforms."
     },
     {
       "theme": "Job Opportunities",
-      "description": "Announcing postdoctoral and PhD positions within the research team."
+      "description": "Announcements for postdoctoral researchers and PhD students in related fields."
     },
     {
       "theme": "Conference Presentations",
-      "description": "Promoting upcoming presentations and participation in academic conferences."
-    },
-    {
-      "theme": "Tool Releases",
-      "description": "Announcing new versions of tools for social media analysis."
+      "description": "Promotion of upcoming presentations and participation in relevant conferences."
     }
   ],
   "recommendations": [
-    "Diversify content formats to include videos and infographics to increase engagement.",
-    "Use platform-specific hashtags to improve content discoverability.",
-    "Engage with followers by asking questions and responding to comments to foster community."
+    "Cross-promote content across platforms to maximize reach and engagement.",
+    "Use platform-specific hashtags to increase visibility.",
+    "Engage with comments and replies to foster a stronger community.",
+    "Experiment with different content formats (e.g., videos, images) to diversify engagement.",
+    "Post consistently to maintain audience interest."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky is used to share research papers and promote conference presentations, achieving moderate engagement through likes and reposts.",
-    "mastodon": "Mastodon is used for sharing updates on tool releases and discussing methodological approaches, with a relatively lower level of engagement compared to other platforms.",
-    "linkedin": "LinkedIn shows the highest engagement, particularly regarding announcements of research grants and job openings, suggesting a strong professional network."
+    "bluesky": "Bluesky shows a strong interest in research publications and opportunities. Reposts are more frequent than on other platforms, indicating content is shared widely within the community.",
+    "mastodon": "Mastodon engagement is lower compared to other platforms. Content related to team releases and discussions receives moderate interaction.",
+    "linkedin": "LinkedIn posts receive the highest engagement through likes and comments, particularly related to grant announcements and job postings. Professional networking appears to be a key driver."
   },
   "topPerformingContent": [
     {
