@@ -1,39 +1,33 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a presence on Mastodon, LinkedIn, and Bluesky, focusing on research and opportunities in computational social science, disinformation studies, and related areas. His LinkedIn profile has the largest following, while Bluesky shows good repost engagement. Overall engagement is moderate and reflects a professional audience interested in academic research and job opportunities.",
+  "overallSummary": "Fabio Giglietto has a strong social media presence with a total follower count of 3580 across Mastodon, LinkedIn, and Bluesky. His content focuses primarily on research related to computational social science, disinformation, and coordinated inauthentic behavior. Engagement varies across platforms, with LinkedIn showing higher like and comment counts.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 2.43,
+    "averageEngagementRate": 2.5,
     "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
       "theme": "Computational Social Science Research",
-      "description": "Focuses on Fabio Giglietto's research related to computational social science, including detecting coordinated link sharing and information operations."
+      "description": "Posts about research projects, findings, and methodologies related to computational social science."
     },
     {
-      "theme": "Disinformation Studies",
-      "description": "Content related to disinformation across multiple platforms and methodological approaches to studying it."
+      "theme": "Disinformation and Coordinated Inauthentic Behavior",
+      "description": "Content focused on the detection, analysis, and mitigation of disinformation campaigns and coordinated inauthentic behavior online."
     },
     {
-      "theme": "Research Opportunities & Hiring",
-      "description": "Posts announcing research grants, job openings (postdoctoral researchers), and PhD student opportunities in computational social science."
-    },
-    {
-      "theme": "Conference Presentations and Publications",
-      "description": "Announcements about new papers and upcoming presentations at conferences."
+      "theme": "Job Opportunities and Team Announcements",
+      "description": "Posts related to hiring, grant awards, and team achievements."
     }
   ],
   "recommendations": [
-    "Increase posting frequency, especially on Mastodon, to improve visibility.",
-    "Tailor content to each platform's audience. LinkedIn for professional announcements, Bluesky for research updates and community engagement, and Mastodon for broader discussions.",
-    "Use relevant hashtags to improve discoverability and reach a wider audience.",
-    "Engage with comments and replies to foster a stronger community around the topics.",
-    "Incorporate visual elements, such as images or videos, to increase engagement."
+    "Tailor content to each platform's audience. For example, share professional updates and job opportunities on LinkedIn, and research snippets on Bluesky and Mastodon.",
+    "Increase engagement by asking direct questions and encouraging discussion within posts.",
+    "Use relevant hashtags to broaden the reach of posts, particularly on Bluesky and Mastodon."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky exhibits good engagement, particularly with reposts. Focus on sharing research publications and engaging in discussions related to disinformation.",
-    "mastodon": "Mastodon has relatively lower engagement. Consider posting more frequently and engaging with the Mastodon community. Focus on open-source projects and algorithm development.",
-    "linkedin": "LinkedIn has the highest follower count and good engagement in terms of likes and comments. Continue to use this platform for professional announcements, hiring opportunities, and research grants."
+    "bluesky": "Bluesky exhibits moderate engagement with good repost numbers. Fabio can potentially increase likes and replies by initiating more conversations.",
+    "mastodon": "Mastodon posts have decent likes and reposts, but are lower than other platforms. Consider using Mastodon to share more in-depth insights or engage in topical discussions with the AOIR community.",
+    "linkedin": "LinkedIn posts receive the highest engagement in terms of likes and comments, likely due to the professional nature of the platform. Continue sharing professional achievements, job opportunities, and industry-related news."
   },
   "topPerformingContent": [
     {
@@ -44,7 +38,7 @@
     {
       "content": "Now hiring: Two postdoctoral researchers to join our team working on computational methods for social media analysis. Background in data science, computational social science, or related fields preferred.",
       "platform": "linkedin",
-      "engagementRate": 3.95
+      "engagementRate": 4.16
     },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
