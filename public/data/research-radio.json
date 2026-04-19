@@ -824,6 +824,17 @@
       "duration": "5:17",
       "author": "Alice E. Marwick",
       "doi": "10.1177/20563051261434796"
+    },
+    {
+      "id": "bibtex:Boyd2026-op",
+      "bibtexKey": "Boyd2026-op",
+      "title": "Social Media",
+      "description": "AI-generated podcast discussion.\n\nReference:\nboyd, D. (2026). Social media is now parasocial media. https://doi.org/10.1177/20563051261437487",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Boyd2026-op.mp3",
+      "pubDate": "Sat, 18 Apr 2026 19:03:57 +0000",
+      "duration": "7:57",
+      "author": "danah boyd",
+      "doi": "10.1177/20563051261437487"
     }
   ],
   "episodesByBibtexKey": {
@@ -1651,6 +1662,17 @@
       "duration": "5:17",
       "author": "Alice E. Marwick",
       "doi": "10.1177/20563051261434796"
+    },
+    "Boyd2026-op": {
+      "id": "bibtex:Boyd2026-op",
+      "bibtexKey": "Boyd2026-op",
+      "title": "Social Media",
+      "description": "AI-generated podcast discussion.\n\nReference:\nboyd, D. (2026). Social media is now parasocial media. https://doi.org/10.1177/20563051261437487",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Boyd2026-op.mp3",
+      "pubDate": "Sat, 18 Apr 2026 19:03:57 +0000",
+      "duration": "7:57",
+      "author": "danah boyd",
+      "doi": "10.1177/20563051261437487"
     }
   },
   "episodesByDoi": {
@@ -2258,9 +2280,20 @@
       "duration": "5:17",
       "author": "Alice E. Marwick",
       "doi": "10.1177/20563051261434796"
+    },
+    "10.1177/20563051261437487": {
+      "id": "bibtex:Boyd2026-op",
+      "bibtexKey": "Boyd2026-op",
+      "title": "Social Media",
+      "description": "AI-generated podcast discussion.\n\nReference:\nboyd, D. (2026). Social media is now parasocial media. https://doi.org/10.1177/20563051261437487",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Boyd2026-op.mp3",
+      "pubDate": "Sat, 18 Apr 2026 19:03:57 +0000",
+      "duration": "7:57",
+      "author": "danah boyd",
+      "doi": "10.1177/20563051261437487"
     }
   },
-  "totalEpisodes": 75,
-  "lastUpdated": "2026-04-18T07:06:02.570Z",
+  "totalEpisodes": 76,
+  "lastUpdated": "2026-04-19T07:17:39.637Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
