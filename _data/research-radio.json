@@ -835,6 +835,17 @@
       "duration": "7:57",
       "author": "danah boyd",
       "doi": "10.1177/20563051261437487"
+    },
+    {
+      "id": "bibtex:Swartz2026-zb",
+      "bibtexKey": "Swartz2026-zb",
+      "title": "The Scam Age:",
+      "description": "AI-generated podcast discussion.\n\nReference:\nSwartz, L. (2026). Social media in the scam age. https://doi.org/10.1177/20563051261437922",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Swartz2026-zb.mp3",
+      "pubDate": "Sun, 19 Apr 2026 20:50:04 +0000",
+      "duration": "9:20",
+      "author": "Lana Swartz",
+      "doi": "10.1177/20563051261437922"
     }
   ],
   "episodesByBibtexKey": {
@@ -1673,6 +1684,17 @@
       "duration": "7:57",
       "author": "danah boyd",
       "doi": "10.1177/20563051261437487"
+    },
+    "Swartz2026-zb": {
+      "id": "bibtex:Swartz2026-zb",
+      "bibtexKey": "Swartz2026-zb",
+      "title": "The Scam Age:",
+      "description": "AI-generated podcast discussion.\n\nReference:\nSwartz, L. (2026). Social media in the scam age. https://doi.org/10.1177/20563051261437922",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Swartz2026-zb.mp3",
+      "pubDate": "Sun, 19 Apr 2026 20:50:04 +0000",
+      "duration": "9:20",
+      "author": "Lana Swartz",
+      "doi": "10.1177/20563051261437922"
     }
   },
   "episodesByDoi": {
@@ -2291,9 +2313,20 @@
       "duration": "7:57",
       "author": "danah boyd",
       "doi": "10.1177/20563051261437487"
+    },
+    "10.1177/20563051261437922": {
+      "id": "bibtex:Swartz2026-zb",
+      "bibtexKey": "Swartz2026-zb",
+      "title": "The Scam Age:",
+      "description": "AI-generated podcast discussion.\n\nReference:\nSwartz, L. (2026). Social media in the scam age. https://doi.org/10.1177/20563051261437922",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Swartz2026-zb.mp3",
+      "pubDate": "Sun, 19 Apr 2026 20:50:04 +0000",
+      "duration": "9:20",
+      "author": "Lana Swartz",
+      "doi": "10.1177/20563051261437922"
     }
   },
-  "totalEpisodes": 76,
-  "lastUpdated": "2026-04-19T07:17:39.637Z",
+  "totalEpisodes": 77,
+  "lastUpdated": "2026-04-20T08:05:18.111Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
