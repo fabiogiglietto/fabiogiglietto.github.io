@@ -846,6 +846,17 @@
       "duration": "9:20",
       "author": "Lana Swartz",
       "doi": "10.1177/20563051261437922"
+    },
+    {
+      "id": "bibtex:Marwick2026-qd",
+      "bibtexKey": "Marwick2026-qd",
+      "title": "What We Lost:",
+      "description": "AI-generated podcast discussion.\n\nReference:\nMarwick, A. E., Schnabel, E., McGregor, S., & Schmitt, C. (2026). Disinformation as cultural narrative: Conceptualizing disinformation as cross-platform, identity-affirming, cathartic stories. https://doi.org/10.1080/10584609.2026.2644198",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Marwick2026-qd.mp3",
+      "pubDate": "Mon, 20 Apr 2026 20:59:36 +0000",
+      "duration": "8:05",
+      "author": "Alice E. Marwick, Elaine Schnabel, Shannon McGregor, Carolyn Schmitt",
+      "doi": "10.1080/10584609.2026.2644198"
     }
   ],
   "episodesByBibtexKey": {
@@ -1695,6 +1706,17 @@
       "duration": "9:20",
       "author": "Lana Swartz",
       "doi": "10.1177/20563051261437922"
+    },
+    "Marwick2026-qd": {
+      "id": "bibtex:Marwick2026-qd",
+      "bibtexKey": "Marwick2026-qd",
+      "title": "What We Lost:",
+      "description": "AI-generated podcast discussion.\n\nReference:\nMarwick, A. E., Schnabel, E., McGregor, S., & Schmitt, C. (2026). Disinformation as cultural narrative: Conceptualizing disinformation as cross-platform, identity-affirming, cathartic stories. https://doi.org/10.1080/10584609.2026.2644198",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Marwick2026-qd.mp3",
+      "pubDate": "Mon, 20 Apr 2026 20:59:36 +0000",
+      "duration": "8:05",
+      "author": "Alice E. Marwick, Elaine Schnabel, Shannon McGregor, Carolyn Schmitt",
+      "doi": "10.1080/10584609.2026.2644198"
     }
   },
   "episodesByDoi": {
@@ -2324,9 +2346,20 @@
       "duration": "9:20",
       "author": "Lana Swartz",
       "doi": "10.1177/20563051261437922"
+    },
+    "10.1080/10584609.2026.2644198": {
+      "id": "bibtex:Marwick2026-qd",
+      "bibtexKey": "Marwick2026-qd",
+      "title": "What We Lost:",
+      "description": "AI-generated podcast discussion.\n\nReference:\nMarwick, A. E., Schnabel, E., McGregor, S., & Schmitt, C. (2026). Disinformation as cultural narrative: Conceptualizing disinformation as cross-platform, identity-affirming, cathartic stories. https://doi.org/10.1080/10584609.2026.2644198",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Marwick2026-qd.mp3",
+      "pubDate": "Mon, 20 Apr 2026 20:59:36 +0000",
+      "duration": "8:05",
+      "author": "Alice E. Marwick, Elaine Schnabel, Shannon McGregor, Carolyn Schmitt",
+      "doi": "10.1080/10584609.2026.2644198"
     }
   },
-  "totalEpisodes": 77,
-  "lastUpdated": "2026-04-20T08:05:18.111Z",
+  "totalEpisodes": 78,
+  "lastUpdated": "2026-04-21T07:48:16.512Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
