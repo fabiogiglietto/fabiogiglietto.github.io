@@ -5,11 +5,11 @@ const fs = require('fs');
 const path = require('path');
 const { promisify } = require('util');
 const writeFileAsync = promisify(fs.writeFile);
-const { GoogleGenerativeAI } = require('@google/generative-ai');
 const OpenAI = require('openai');
 const axios = require('axios');
 const cheerio = require('cheerio');
 const config = require('../config');
+const { getGeminiClient, MODELS } = require('../helpers/gemini-client');
 
 // Check for API keys in environment
 const hasGeminiApiKey = !!process.env.GEMINI_API_KEY;
@@ -173,15 +173,9 @@ async function collectWebSearchResults() {
     let allResults = [];
 
     // Run Gemini search if API key is available
-    if (hasGeminiApiKey) {
+    const geminiAi = getGeminiClient();
+    if (geminiAi) {
       console.log('\n=== Starting Gemini Web Search ===');
-
-      // Configure Gemini API with Google Search grounding
-      const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-      const model = genAI.getGenerativeModel({
-        model: 'gemini-2.0-flash',
-        tools: [{ googleSearch: {} }],
-      });
 
       // Search queries - focused on NEWS coverage, not academic papers
       const queries = [
@@ -231,9 +225,12 @@ Only include results with REAL, direct URLs to news sources.`;
 
         console.log(`Attempting web search with Gemini...`);
 
-        const result = await model.generateContent(searchPrompt);
-        const response = result.response;
-        const text = response.text();
+        const response = await geminiAi.models.generateContent({
+          model: MODELS.FLASH,
+          contents: searchPrompt,
+          config: { tools: [{ googleSearch: {} }] },
+        });
+        const text = response.text || '';
 
         console.log(`API response received for query "${query}"`);
 
@@ -361,14 +358,8 @@ Only include results with REAL, direct URLs to news sources.`;
     console.log(`\n=== Starting validation of ${uniqueResults.length} results ===`);
     const validatedResults = [];
 
-    // Create a model without search for validation (only if Gemini is available)
-    let validationModel = null;
-    if (hasGeminiApiKey) {
-      const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-      validationModel = genAI.getGenerativeModel({
-        model: 'gemini-2.0-flash',
-      });
-    }
+    // Reuse the Gemini client (no grounding for validation — just text reasoning)
+    const validationAi = geminiAi;
 
     for (let i = 0; i < uniqueResults.length; i++) {
       const result = uniqueResults[i];
@@ -418,7 +409,7 @@ Only include results with REAL, direct URLs to news sources.`;
         }
 
         // Skip validation if no Gemini API key, include result with default score
-        if (!validationModel) {
+        if (!validationAi) {
           console.log(`  Skipping validation (no Gemini API key), including by default`);
           validatedResults.push({
             title: result.title,
@@ -435,7 +426,7 @@ Only include results with REAL, direct URLs to news sources.`;
           continue;
         }
 
-        const validation = await validateWebMention(validationModel, result);
+        const validation = await validateWebMention(validationAi, result);
         if (validation.isRelevant) {
           console.log(`✓ Validated: ${result.title}`);
           console.log(`  - Mentioned by name: ${validation.mentionedByName}`);
@@ -486,11 +477,7 @@ Only include results with REAL, direct URLs to news sources.`;
 
     // Multi-signal date extraction pipeline
     console.log('\n=== Extracting publication dates (multi-signal pipeline) ===');
-    let dateGeminiModel = null;
-    if (hasGeminiApiKey) {
-      const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-      dateGeminiModel = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
-    }
+    const dateGeminiAi = geminiAi;
 
     // Load persistent date cache to avoid re-requesting dates for known URLs
     const dateCache = loadDateCache();
@@ -568,9 +555,9 @@ Only include results with REAL, direct URLs to news sources.`;
       }
 
       // Signal 2: Fall back to Gemini page-reading estimation (if no date yet or low confidence)
-      if (dateGeminiModel && (!result.date || result.dateConfidence === 'low')) {
+      if (dateGeminiAi && (!result.date || result.dateConfidence === 'low')) {
         try {
-          const geminiDate = await extractPublicationDate(dateGeminiModel, result);
+          const geminiDate = await extractPublicationDate(dateGeminiAi, result);
           if (geminiDate && isDatePlausible(geminiDate)) {
             result.date = geminiDate;
             result.dateConfidence = 'medium';
@@ -1108,7 +1095,7 @@ function saveDateCache(cache) {
  * This is the last-resort signal — used only when URL, HTTP metadata, and
  * existing dates all failed.
  */
-async function extractPublicationDate(model, result) {
+async function extractPublicationDate(ai, result) {
   try {
     const todayStr = new Date().toISOString().split('T')[0];
 
@@ -1135,8 +1122,11 @@ Examples of valid responses:
 2024-11-01
 unknown`;
 
-    const response = await model.generateContent(prompt);
-    const text = response.response.text().trim();
+    const response = await ai.models.generateContent({
+      model: MODELS.FLASH,
+      contents: prompt,
+    });
+    const text = (response.text || '').trim();
 
     // Validate date format
     const dateMatch = text.match(/^\d{4}-\d{2}-\d{2}$/);
@@ -1171,7 +1161,7 @@ unknown`;
 /**
  * Validate a web mention using Gemini to verify relevance and generate description
  */
-async function validateWebMention(model, result) {
+async function validateWebMention(ai, result) {
   try {
     const prompt = `You are analyzing a web mention to determine if it's about the correct person, if it actually mentions them, and if the content is recent.
 
@@ -1218,8 +1208,11 @@ Be very strict - if you cannot confirm ${config.name} is mentioned by name, set 
 
 Respond with valid JSON only.`;
 
-    const response = await model.generateContent(prompt);
-    const content = response.response.text().trim();
+    const response = await ai.models.generateContent({
+      model: MODELS.FLASH,
+      contents: prompt,
+    });
+    const content = (response.text || '').trim();
 
     // Try to parse JSON response
     let validation;
@@ -1511,7 +1504,7 @@ For each NEWS result found, provide a JSON array with objects containing:
 Respond with ONLY a valid JSON array, no other text.`;
 
     const response = await openai.responses.create({
-      model: 'gpt-4o',
+      model: 'gpt-5.4',
       tools: [{ type: 'web_search' }],
       input: searchPrompt
     });

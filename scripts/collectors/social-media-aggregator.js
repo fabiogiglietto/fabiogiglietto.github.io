@@ -6,11 +6,10 @@ const path = require('path');
 const { promisify } = require('util');
 const writeFileAsync = promisify(fs.writeFile);
 const axios = require('axios');
-const { GoogleGenerativeAI } = require('@google/generative-ai');
 const yaml = require('js-yaml');
+const { getGeminiClient, MODELS } = require('../helpers/gemini-client');
 
 // Check for API keys
-const hasGeminiKey = !!process.env.GEMINI_API_KEY;
 const hasLinkedInKey = process.env.LINKEDIN_ACCESS_TOKEN;
 const hasMastodonKey = process.env.MASTODON_ACCESS_TOKEN;
 
@@ -344,15 +343,11 @@ async function collectMastodonPosts() {
  */
 async function deduplicateAndSummarize(posts) {
   try {
-    if (!hasGeminiKey) {
+    const ai = getGeminiClient();
+    if (!ai) {
       console.log('Gemini API key not available, using basic deduplication');
       return basicDeduplication(posts);
     }
-
-    const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    const model = genAI.getGenerativeModel({
-      model: 'gemini-2.0-flash',
-    });
 
     console.log('Using Gemini AI to deduplicate and summarize posts...');
 
@@ -435,8 +430,11 @@ Example varied openings:
 Focus on quality over quantity. Return only 3-5 most significant academic/professional updates.
 Respond with valid JSON only, no other text.`;
 
-    const result = await model.generateContent(prompt);
-    const aiResponse = result.response.text();
+    const result = await ai.models.generateContent({
+      model: MODELS.FLASH,
+      contents: prompt,
+    });
+    const aiResponse = result.text || '';
     console.log('AI response received, length:', aiResponse?.length);
 
     try {

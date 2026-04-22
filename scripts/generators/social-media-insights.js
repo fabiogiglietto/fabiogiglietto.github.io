@@ -10,10 +10,7 @@ require('dotenv').config();
 
 const fs = require('fs');
 const path = require('path');
-const { GoogleGenerativeAI } = require('@google/generative-ai');
-
-// Check for Gemini API key
-const hasGeminiKey = !!process.env.GEMINI_API_KEY;
+const { getGeminiClient, MODELS } = require('../helpers/gemini-client');
 
 /**
  * Analyzes social media data and generates insights
@@ -88,17 +85,12 @@ function formatDataForPrompt(data) {
  */
 async function generateInsightsWithGemini(formattedData) {
   try {
-    // Check if API key is available
-    if (!hasGeminiKey) {
+    const ai = getGeminiClient();
+    if (!ai) {
       console.error('Gemini API key is not available');
       console.log('Using fallback insights');
       return getFallbackInsights();
     }
-
-    const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    const model = genAI.getGenerativeModel({
-      model: 'gemini-2.0-flash',
-    });
 
     // Create the prompt
     const prompt = `You are a social media analytics expert. Your task is to analyze social media data and generate insights.
@@ -145,13 +137,16 @@ Format your response as a JSON object with the following structure:
 Respond with ONLY the JSON object, no markdown code blocks, no explanation.`;
 
     try {
-      const result = await model.generateContent(prompt);
-      let response = result.response.text().trim();
+      const result = await ai.models.generateContent({
+        model: MODELS.FLASH,
+        contents: prompt,
+      });
+      let text = (result.text || '').trim();
 
       // Remove markdown code blocks if present
-      response = response.replace(/^```json\s*/i, '').replace(/\s*```$/i, '').trim();
+      text = text.replace(/^```json\s*/i, '').replace(/\s*```$/i, '').trim();
 
-      return response;
+      return text;
     } catch (apiError) {
       console.error('Error calling Gemini API:', apiError);
       return getFallbackInsights();

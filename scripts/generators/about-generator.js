@@ -9,27 +9,9 @@
 const fs = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
-const { GoogleGenerativeAI } = require('@google/generative-ai');
 const sanitizeHtml = require('sanitize-html');
 const config = require('../config');
-
-// Initialize Gemini client with better error handling
-let genAI = null;
-let model = null;
-try {
-  if (process.env.GEMINI_API_KEY) {
-    genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    // Use Gemini 2.0 Flash for best quality with Google Search grounding
-    model = genAI.getGenerativeModel({
-      model: "gemini-2.0-flash",
-      // Enable Google Search grounding for web search capabilities
-      tools: [{ googleSearch: {} }]
-    });
-  }
-} catch (error) {
-  console.warn('Failed to initialize Gemini client:', error.message);
-  // Continue execution - we'll check model before using it
-}
+const { getGeminiClient, MODELS } = require('../helpers/gemini-client');
 
 /**
  * Reads all collected data and generates an "About Me" section
@@ -38,8 +20,8 @@ async function generateAboutMe() {
   try {
     console.log('Generating About Me section...');
 
-    // Check if Gemini API key is available early
-    if (!process.env.GEMINI_API_KEY || !model) {
+    // Check if Gemini client is available early
+    if (!getGeminiClient()) {
       console.warn('GEMINI_API_KEY environment variable is not set or Gemini client failed to initialize');
       console.log('Generating fallback content instead of using Gemini API');
       return generateFallbackContent();
@@ -296,15 +278,9 @@ function formatDataForPrompt(data) {
  */
 async function generateContentWithGemini(formattedData) {
   try {
-    // Check if Gemini model is properly initialized
-    if (!model) {
-      console.error('Gemini model not initialized');
-      return null;
-    }
-
-    // Double-check that the API key is still set (could have been unset between checks)
-    if (!process.env.GEMINI_API_KEY) {
-      console.error('GEMINI_API_KEY no longer available');
+    const ai = getGeminiClient();
+    if (!ai) {
+      console.error('Gemini client not initialized');
       return null;
     }
 
@@ -344,20 +320,20 @@ Generate ONLY the HTML content for the "About Me" section. Do not include any ex
 Do NOT use Markdown syntax (such as *asterisks* for italics). Use proper HTML tags like <em> for emphasis instead.
 `;
 
-    console.log('Calling Gemini API with gemini-2.0-flash and Google Search grounding...');
+    console.log(`Calling Gemini API with ${MODELS.FLASH} and Google Search grounding...`);
 
     try {
-      // Call Gemini API with Google Search grounding enabled
-      const result = await model.generateContent({
-        contents: [{ role: 'user', parts: [{ text: prompt }] }],
-        generationConfig: {
+      const response = await ai.models.generateContent({
+        model: MODELS.FLASH,
+        contents: prompt,
+        config: {
+          tools: [{ googleSearch: {} }],
           temperature: 0.7,
           maxOutputTokens: 2000,
         },
       });
 
-      const response = await result.response;
-      let content = response.text().trim();
+      let content = (response.text || '').trim();
 
       // Remove markdown code blocks if present
       if (content.startsWith('```html')) {
@@ -392,29 +368,24 @@ Do NOT use Markdown syntax (such as *asterisks* for italics). Use proper HTML ta
         console.log('Google Search grounding was used for this generation');
       }
 
-      console.log('Successfully generated content with Gemini 2.0 Flash');
+      console.log(`Successfully generated content with ${MODELS.FLASH}`);
       return content;
     } catch (apiError) {
       console.error('Error calling Gemini API:', apiError.message);
 
-      // Try with Gemini 1.5 Flash Latest as fallback
-      console.log('Trying fallback model gemini-1.5-flash-latest...');
+      console.log(`Trying fallback model ${MODELS.FLASH_LATEST}...`);
       try {
-        const flashModel = genAI.getGenerativeModel({
-          model: "gemini-1.5-flash-latest",
-          tools: [{ googleSearch: {} }]
-        });
-
-        const result = await flashModel.generateContent({
-          contents: [{ role: 'user', parts: [{ text: prompt }] }],
-          generationConfig: {
+        const response = await ai.models.generateContent({
+          model: MODELS.FLASH_LATEST,
+          contents: prompt,
+          config: {
+            tools: [{ googleSearch: {} }],
             temperature: 0.7,
             maxOutputTokens: 2000,
           },
         });
 
-        const response = await result.response;
-        let content = response.text().trim();
+        let content = (response.text || '').trim();
 
         // Remove markdown code blocks if present
         if (content.startsWith('```html')) {
@@ -442,10 +413,10 @@ Do NOT use Markdown syntax (such as *asterisks* for italics). Use proper HTML ta
           }
         }
 
-        console.log('Successfully generated content with Gemini 1.5 Flash');
+        console.log(`Successfully generated content with ${MODELS.FLASH_LATEST}`);
         return content;
       } catch (fallbackError) {
-        console.error('Gemini 1.5 Flash fallback also failed:', fallbackError.message);
+        console.error(`${MODELS.FLASH_LATEST} fallback also failed:`, fallbackError.message);
         return null;
       }
     }

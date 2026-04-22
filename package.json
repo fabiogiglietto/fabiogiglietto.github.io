@@ -20,7 +20,7 @@
     "format:check": "prettier --check scripts/ tests/"
   },
   "dependencies": {
-    "@google/generative-ai": "^0.21.0",
+    "@google/genai": "^1.50.1",
     "@octokit/rest": "^21.1.1",
     "axios": "^1.8.4",
     "cheerio": "^1.0.0",
