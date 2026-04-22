@@ -1,11 +1,12 @@
 {
-  "totalEntries": 126,
-  "lastUpdated": "2026-04-21T07:48:46.338Z",
+  "totalEntries": 127,
+  "lastUpdated": "2026-04-22T07:47:37.845Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-04-20T08:06:01.141Z"
+    "latest": "2026-04-22T07:47:37.825Z"
   },
   "byDate": {
+    "2026-04-22": 1,
     "2026-04-20": 1,
     "2026-04-09": 1,
     "2026-03-28": 1,
@@ -14,8 +15,7 @@
     "2026-03-09": 1,
     "2026-03-08": 5,
     "2026-03-01": 2,
-    "2026-02-27": 1,
-    "2026-02-22": 1
+    "2026-02-27": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 49,
@@ -30,11 +30,18 @@
     "euractiv.ro": 2
   },
   "byRelevanceScore": {
-    "high": 106,
+    "high": 107,
     "medium": 20,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "lumsanews.it",
+      "url": "https://www.lumsanews.it/facebook-troppa-visibilita-a-estremisti-e-complottisti-ecco-come-impatta-meta-sulle-elezioni/",
+      "source": "lumsanews.it",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-04-22T07:47:37.825Z"
+    },
     {
       "title": "Investigating Coordinated Inauthentic Behavior on Alternative Platforms During the 2024 U.S. Election - Proceedings of the ICWSM Workshops",
       "url": "https://workshop-proceedings.icwsm.org/pdf/2025_19.pdf",
@@ -60,13 +67,6 @@
       "title": "Le fake news circolano senza Meta",
       "url": "https://lespresso.it/c/innovazione/2026/1/14/fact-checking-meta-rinuncia-fake-news/59128",
       "source": "lespresso.it",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-03-08T09:10:20.113Z"
-    },
-    {
-      "title": "Ricerca su algoritmi Meta: scompare la politica istituzionale e volano gli estremismi",
-      "url": "https://www.virgoletteblog.it/2026/01/07/ricerca-su-algoritmi-meta-scompare-la-politica-istituzionale-e-volano-gli-estremismi/",
-      "source": "virgoletteblog.it",
       "relevanceScore": 0.9,
       "collectedAt": "2026-03-08T09:10:20.113Z"
     }
