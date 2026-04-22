@@ -32,8 +32,15 @@ layout: page
       <div class="project-card__content">
         <div class="project-meta-info">
           <span class="project-status project-status--{{ project.status | downcase }}">{{ project.status }}</span>
+          {% comment %} Format end date: "2026-02" → "Feb 2026", "2025" → "2025" {% endcomment %}
+          {% assign end_str = project.end | default: '' | append: '' %}
+          {% if end_str contains '-' %}
+            {% assign end_display = end_str | append: '-01' | date: '%b %Y' %}
+          {% else %}
+            {% assign end_display = end_str %}
+          {% endif %}
           {% if project.start and project.end %}
-          <span class="project-year">{{ project.start }}–{{ project.end }}</span>
+          <span class="project-year">{{ project.start }}–{{ end_display }}</span>
           {% elsif project.start %}
           <span class="project-year">{{ project.start }}–present</span>
           {% elsif project.year %}
