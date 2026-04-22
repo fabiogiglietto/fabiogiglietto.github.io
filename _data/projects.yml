@@ -1,5 +1,5 @@
 - title: "MINE — Mapping Italian News Research Program"
-  description: "Research programme active at the University of Urbino since 2017, investigating Italian media coverage and the impact of social media on electoral processes, public opinion and health information. MINE has hosted a succession of externally funded sub-projects (Elezioni 2018, MINE-SMD, MINE-FACTS, Mapping Coordinated Networks in India and Nigeria, Coordinated Behaviour in the 2021 German Federal Election, vera.ai, PROMPT). All of these sub-grants are now concluded; the programme remains active as the institutional and intellectual umbrella for the PI's ongoing research line, with no active external grant at present."
+  description: "Research programme active at the University of Urbino since 2017, investigating Italian media coverage and the impact of social media on electoral processes, public opinion and health information. MINE has hosted a succession of externally funded sub-projects (listed separately below). All sub-grants are now concluded; the programme remains active as the institutional and intellectual umbrella for the PI's ongoing research line, with no active external grant at present."
   image: "/assets/images/projects/mine-project.jpg"
   url: "https://mine.uniurb.it"
   status: "Active"
@@ -7,6 +7,7 @@
   funder: "Various (see sub-projects)"
   start: 2017
   year: 2017
+  featured: true
 
 - title: "PROMPT — Predictive Research On Misinformation and Narratives Propagation Trajectories"
   description: "European Commission project (DG CNECT) dedicated to monitoring disinformation narratives in Europe, addressing sensitive issues including the war in Ukraine, LGBTQI+ rights, and European elections through the development of language models, monitoring dashboards, and educational resources for fact-checkers and journalists. MINE sub-project."
@@ -31,3 +32,56 @@
   start: 2022
   end: "2025-10"
   year: 2022
+
+- title: "Mapping Coordinated Networks That Circulate Problematic Health Content in India and Nigeria"
+  description: "Study of coordinated networks circulating problematic health content on social media in India and Nigeria, conducted through the Media Ecosystems Analysis Group. MINE sub-project."
+  image: "/assets/images/projects/default-project.jpg"
+  status: "Ended"
+  role: "PI"
+  funder: "Gates Foundation (via Media Ecosystems Analysis Group)"
+  grant_id: "INV-004543-02"
+  start: 2021
+  end: 2022
+  year: 2021
+
+- title: "Coordinated Behaviour in the Lead-up to the 2021 German Federal Election"
+  description: "Analysis of coordinated link sharing and inauthentic network behaviour in the run-up to the 2021 German Federal Election. MINE sub-project."
+  image: "/assets/images/projects/default-project.jpg"
+  status: "Ended"
+  role: "PI"
+  funder: "Media Authority of North Rhine-Westphalia (Landesanstalt für Medien NRW)"
+  start: 2021
+  end: 2022
+  year: 2021
+
+- title: "MINE-FACTS — Mapping Nefarious Social Media Actors to Speed Up COVID-19 Fact-Checking"
+  description: "Research on tools and methods to accelerate COVID-19 fact-checking by mapping nefarious actors on social media. MINE sub-project."
+  image: "/assets/images/projects/default-project.jpg"
+  status: "Ended"
+  role: "PI"
+  funder: "Italian MUR — FISR 2020"
+  grant_id: "FISR2020IP_00327e"
+  start: 2020
+  end: 2022
+  year: 2020
+
+- title: "MINE-SMD — Patterns of Facebook Interactions around Insular and Cross-Partisan Media Sources in the Run-up to the 2018 Italian Election"
+  description: "Follow-up to the Elezioni 2018 seed project, studying Facebook interaction patterns around insular and cross-partisan Italian media sources. Conducted with access to Facebook data via Social Science One. MINE sub-project."
+  image: "/assets/images/projects/default-project.jpg"
+  status: "Ended"
+  role: "PI"
+  funder: "Social Science Research Council — Social Media and Democracy Research Grant"
+  start: 2019
+  end: 2021
+  year: 2019
+
+- title: "Mapping Italian News — Elezioni 2018"
+  description: "Seed project of the MINE programme: mapping Italian news media political coverage in the lead-up to the 2018 Italian General Election."
+  image: "/assets/images/projects/default-project.jpg"
+  url: "https://elezioni2018.news/"
+  status: "Ended"
+  role: "PI"
+  funder: "Foundation Open Society Institute / Open Society Foundations — Information Program"
+  start: 2017
+  end: 2018
+  year: 2017

@@ -21,7 +21,10 @@ layout: page
   </div>
   
   <div class="projects-grid">
-    {% assign sorted_projects = site.data.projects | sort: "year" | reverse %}
+    {% comment %} Featured projects first, then remaining sorted by year descending {% endcomment %}
+    {% assign featured_projects = site.data.projects | where: "featured", true %}
+    {% assign other_projects = site.data.projects | where_exp: "p", "p.featured != true" | sort: "year" | reverse %}
+    {% assign sorted_projects = featured_projects | concat: other_projects %}
     {% for project in sorted_projects %}
     <div class="project-card" data-status="{{ project.status | downcase }}">
       {% if project.image %}
