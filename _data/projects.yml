@@ -1,32 +1,33 @@
-- title: "vera.ai - VERification Assisted by Artificial Intelligence"
-  description: "An EU-funded Horizon Europe project that developed advanced AI-based tools to assist journalists and fact-checkers in verifying multimedia content and combating disinformation. As Work Package 4 leader, I focused on the detection of coordinated behavior and inauthentic networks spreading misleading content."
-  image: "/assets/images/projects/veraai-project.jpg"
-  url: "https://www.veraai.eu/home"
-  status: "Ended"
-  year: 2023
-  news:
-    - date: "2024-03-15"
-      content: "vera.ai team presented findings on coordinated networks at the International Fact-Checking Conference"
-      url: "https://www.veraai.eu/news"
-
-- title: "PROMPT - Predictive Research On Misinformation and Narratives Propagation Trajectories"
-  description: "An EU-funded initiative focused on detecting and analyzing disinformation narratives across Europe, addressing sensitive issues including the war in Ukraine, LGBTQI+ rights, and European elections through the development of language models, monitoring dashboards, and educational resources for fact-checkers and journalists."
-  image: "/assets/images/projects/prompt-project.jpg"
-  url: "https://disinfo-prompt.eu/"
-  status: "Active"
-  year: 2022
-  news:
-    - date: "2024-02-20"
-      content: "PROMPT launches new monitoring dashboard for tracking disinformation about the 2024 European elections"
-      url: "https://disinfo-prompt.eu/news"
-
-- title: "MINE - Mapping Italian News Research Program"
-  description: "A research program investigating Italian news media coverage and the impact of social media on Italian elections, leveraging data from Social Science One and grant funding from the Social Science Research Council (SSRC)."
+- title: "MINE — Mapping Italian News Research Program"
+  description: "Research programme active at the University of Urbino since 2017, investigating Italian media coverage and the impact of social media on electoral processes, public opinion and health information. MINE has hosted a succession of externally funded sub-projects (Elezioni 2018, MINE-SMD, MINE-FACTS, Mapping Coordinated Networks in India and Nigeria, Coordinated Behaviour in the 2021 German Federal Election, vera.ai, PROMPT). All of these sub-grants are now concluded; the programme remains active as the institutional and intellectual umbrella for the PI's ongoing research line, with no active external grant at present."
   image: "/assets/images/projects/mine-project.jpg"
   url: "https://mine.uniurb.it"
   status: "Active"
-  year: 2021
-  news:
-    - date: "2023-11-10"
-      content: "MINE project releases new findings on influence networks during the 2022 Italian elections"
-      url: "https://mine.uniurb.it/news"
+  role: "Founder, PI and Coordinator"
+  funder: "Various (see sub-projects)"
+  start: 2017
+  year: 2017
+
+- title: "PROMPT — Predictive Research On Misinformation and Narratives Propagation Trajectories"
+  description: "European Commission project (DG CNECT) dedicated to monitoring disinformation narratives in Europe, addressing sensitive issues including the war in Ukraine, LGBTQI+ rights, and European elections through the development of language models, monitoring dashboards, and educational resources for fact-checkers and journalists. MINE sub-project."
+  image: "/assets/images/projects/prompt-project.jpg"
+  url: "https://disinfo-prompt.eu/"
+  status: "Ended"
+  role: "Partner"
+  funder: "European Commission (DG CNECT)"
+  grant_id: "CNECT/LC-02629302"
+  start: 2023
+  end: "2026-02"
+  year: 2023
+
+- title: "vera.ai — VERification Assisted by Artificial Intelligence"
+  description: "Horizon Europe project developing AI-based tools to assist journalists and fact-checkers in verifying multimedia content and countering disinformation. As WP4 Leader, Fabio Giglietto led the work package focused on detection of coordinated behaviour and inauthentic networks spreading misleading content. MINE sub-project."
+  image: "/assets/images/projects/veraai-project.jpg"
+  url: "https://www.veraai.eu/home"
+  status: "Ended"
+  role: "WP4 Leader"
+  funder: "European Commission (Horizon Europe)"
+  grant_id: "101070093"
+  start: 2022
+  end: "2025-10"
+  year: 2022

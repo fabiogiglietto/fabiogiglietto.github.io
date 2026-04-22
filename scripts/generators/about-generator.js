@@ -12,6 +12,7 @@ const yaml = require('js-yaml');
 const sanitizeHtml = require('sanitize-html');
 const config = require('../config');
 const { getGeminiClient, MODELS } = require('../helpers/gemini-client');
+const { readBioSeed } = require('../helpers/bio-seed');
 
 /**
  * Reads all collected data and generates an "About Me" section
@@ -62,6 +63,15 @@ async function generateAboutMe() {
     }
     
     console.log(`Successfully loaded ${loadedFiles.length} data files: ${loadedFiles.join(', ')}`);
+
+    // Load the authoritative bio seed — hand-curated ground truth
+    const bioSeed = readBioSeed();
+    if (bioSeed) {
+      data.bioSeed = bioSeed;
+      console.log('Successfully loaded authoritative bio seed');
+    } else {
+      console.warn('Bio seed not found at scripts/data/bio-seed.md — generator will run without ground truth');
+    }
 
     // Load news.yml from _data directory (has social media posts with toread flags)
     const newsYamlPath = path.join(__dirname, '../../_data/news.yml');
@@ -119,14 +129,84 @@ async function generateAboutMe() {
 async function generateFallbackContent() {
   try {
     console.log('Generating fallback About Me content...');
-    
-    // Create fallback content from config
-    const aboutMeContent = `<p>${config.name} is a ${config.title} at ${config.institution}, ${config.department}. Research focuses on ${config.researchInterests.join(', ')}.</p>`;
-    
-    // Save the generated content
+
     const includePath = path.join(__dirname, '../../_includes/generated-about.html');
+
+    // Prefer the authoritative bio seed's opening paragraphs as fallback
+    const bioSeed = readBioSeed();
+    if (bioSeed) {
+      const paragraphs = bioSeed
+        .split(/\n{2,}/)
+        .map(p => p.trim())
+        .filter(p => p && !p.startsWith('#') && !p.startsWith('|') && !p.startsWith('-') && !p.startsWith('*'))
+        .slice(0, 4);
+
+      if (paragraphs.length > 0) {
+        const LINK_TOKEN = '\uE001';
+        const BOLD_OPEN = '\uE002';
+        const BOLD_CLOSE = '\uE003';
+        const EM_OPEN = '\uE004';
+        const EM_CLOSE = '\uE005';
+
+        const html = paragraphs
+          .map(p => {
+            // Capture markdown autolinks <http(s)://...> and mdlinks [text](url)
+            const links = [];
+            let work = p.replace(/<((https?:\/\/|mailto:)[^>\s]+)>/g, (_, url) => {
+              links.push({ url, text: url });
+              return LINK_TOKEN;
+            });
+            work = work.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, (_, text, url) => {
+              links.push({ url, text });
+              return LINK_TOKEN;
+            });
+
+            // Tokenize emphasis before escaping HTML
+            work = work
+              .replace(/\*\*([^*]+)\*\*/g, `${BOLD_OPEN}$1${BOLD_CLOSE}`)
+              .replace(/(^|[^*])\*([^*]+)\*(?!\*)/g, `$1${EM_OPEN}$2${EM_CLOSE}`);
+
+            // Escape HTML
+            let escaped = work
+              .replace(/&/g, '&amp;')
+              .replace(/</g, '&lt;')
+              .replace(/>/g, '&gt;');
+
+            // Restore tokens as real tags
+            escaped = escaped
+              .replace(new RegExp(BOLD_OPEN, 'g'), '<strong>')
+              .replace(new RegExp(BOLD_CLOSE, 'g'), '</strong>')
+              .replace(new RegExp(EM_OPEN, 'g'), '<em>')
+              .replace(new RegExp(EM_CLOSE, 'g'), '</em>');
+
+            // Restore links as anchor tags, in order
+            let linkIdx = 0;
+            escaped = escaped.replace(new RegExp(LINK_TOKEN, 'g'), () => {
+              const { url, text } = links[linkIdx++] || { url: '', text: '' };
+              const safeUrl = url.replace(/"/g, '&quot;');
+              return `<a href="${safeUrl}" target="_blank" rel="noopener">${text}</a>`;
+            });
+
+            return `<p>${escaped}</p>`;
+          })
+          .join('\n');
+
+        const sanitized = sanitizeHtml(html, {
+          allowedTags: ['p', 'strong', 'em', 'a', 'br'],
+          allowedAttributes: { 'a': ['href', 'target', 'rel'] },
+          allowedSchemes: ['http', 'https', 'mailto']
+        });
+
+        fs.writeFileSync(includePath, sanitized);
+        console.log('Fallback About Me content (from bio seed) saved successfully');
+        return true;
+      }
+    }
+
+    // Last-resort fallback from config when no bio seed is available
+    const aboutMeContent = `<p>${config.name} is ${config.title} at ${config.institution}, ${config.department}. Research focuses on ${config.researchInterests.join(', ')}.</p>`;
     fs.writeFileSync(includePath, aboutMeContent);
-    
+
     console.log('Fallback About Me content saved successfully');
     return true;
   } catch (error) {
@@ -142,7 +222,14 @@ async function generateFallbackContent() {
  */
 function formatDataForPrompt(data) {
   let formattedData = '';
-  
+
+  // Authoritative biography — always first, always primary ground truth
+  if (data.bioSeed) {
+    formattedData += `\n--- AUTHORITATIVE BIOGRAPHY (PRIMARY GROUND TRUTH) ---\n`;
+    formattedData += `The text below is hand-curated by the subject and is the authoritative source for all facts: academic title, institutional affiliation, the MINE research programme and its sub-projects, project roles (e.g. WP4 Leader on vera.ai, Partner on PROMPT), grant IDs and funders, software tools (CooRnet status and the CrowdTangle context; CooRTweet as the downstream tool maintained by others), professional memberships, timeline and dates. Prefer this over any other source when facts conflict.\n\n`;
+    formattedData += `${data.bioSeed}\n`;
+  }
+
   // Format ORCID data
   if (data.orcid) {
     formattedData += `\n--- PERSONAL INFO ---\n`;
@@ -286,38 +373,38 @@ async function generateContentWithGemini(formattedData) {
 
     // Create the prompt
     const prompt = `
-You are an academic website content generator. Your task is to create a professional "About Me" section for an academic's personal website.
-Use the provided information to create a well-written, engaging, and professional biography that highlights the academic's expertise, research interests, achievements, and current position.
-Ensure the biography accurately reflects the academic's current title as '${config.title}'. Avoid using outdated titles.
+You are an academic website content generator. Your task is to produce the "About Me" section for ${config.name}'s personal website.
 
-Format the content as clean HTML that can be included directly in the website. Use appropriate paragraph tags (<p>) for text and include appropriate semantic HTML elements.
-Keep the tone professional but approachable. The content should be 3-4 paragraphs long.
+GROUND TRUTH
+The data block starting with "--- AUTHORITATIVE BIOGRAPHY (PRIMARY GROUND TRUTH) ---" is the hand-curated, authoritative source. Treat it as the primary source for every fact you state: academic title, institutional affiliation, the MINE research programme and its sub-projects, project roles (WP4 Leader on vera.ai, Partner on PROMPT, PI roles), grant IDs and funders, dates and statuses, software tools (CooRnet discontinued after CrowdTangle's shutdown on 14 Aug 2024; CooRTweet as the downstream tool maintained by Righetti & Balluff — Fabio is NOT a CooRTweet co-developer), and professional memberships (ICA, AoIR, ISA RC51, Italian Association for Political Communication). When the authoritative biography conflicts with any other block, follow the authoritative biography.
 
-Here is the academic's information:
+USE OF SUPPLEMENTARY DATA
+The other blocks (ORCID, Scholar, GitHub, web mentions, teaching, social posts) are supplementary. Use them only for freshness signals: very recent activity, current teaching semester, updated citation counts, recent talks. Do not let them override facts in the authoritative biography, and do not fabricate details that the authoritative biography does not support.
+
+CONTENT TO SURFACE
+Weave the following into the narrative — naturally, not as bullet lists — because the authoritative biography covers them:
+- The MINE research programme by name, its role as an umbrella, and that no external grant is currently active under it.
+- CooRnet (what it introduced — the Coordinated Link Sharing Behavior method) and its discontinuation after CrowdTangle's shutdown; CooRTweet as the downstream independent package maintained by others.
+- Role as WP4 Leader on the Horizon Europe vera.ai project (concluded October 2025) and as Partner on the PROMPT project funded by the European Commission under DG CNECT (grant CNECT/LC-02629302, concluded February 2026).
+- Memberships in ICA, AoIR and ISA RC51 (where he has served on the board).
+- Current teaching: Generative AI and Media; Digital Social Network Analysis.
+
+SHARED PAPERS GUARDRAIL
+If a "CURRENT RESEARCH INTERESTS (shared papers by others)" block is present, those papers are shared by Fabio but authored by others. They must NEVER be attributed as his own work — use them only to indicate topics he is currently following.
+
+GOOGLE SEARCH GROUNDING
+You may use Google Search to verify very recent activity, but treat the authoritative biography as the dominant source. Do not use search results to override the authoritative biography's statements about status, dates, roles, or tool authorship.
+
+FORMAT
+- Output 4–6 paragraphs of clean HTML, each wrapped in <p>…</p>.
+- Do not include headings, lists, code blocks, markdown syntax, or any explanatory prose around the HTML.
+- Use <em> for emphasis; never asterisks.
+- Keep the tone professional but approachable.
+- Eliminate repetition — each paragraph should introduce new material.
+- Start with <p> and end with </p>. No preamble, no trailing notes.
+
+DATA
 ${formattedData}
-
-Additionally, use Google Search to verify information about ${config.name}, particularly focusing on:
-1. Recent publications or research projects directly authored by this person
-2. ${config.institution} affiliations
-3. Current research on ${config.researchInterests.join(', ')}
-4. Any recent grants, awards, or important professional activities
-
-Only include information you can verify as the person's own publications, projects, or achievements.
-
-The data includes two types of social media posts:
-- "RECENT OWN CONTRIBUTIONS AND IDEAS": These are about the person's own research and can be described as their work.
-- "CURRENT RESEARCH INTERESTS (shared papers by others)": These are papers by OTHER researchers that the person shared. Use these ONLY to characterize broader research interests and engagement with the field — NEVER attribute these papers as the person's own work.
-
-Additionally, in the biography, briefly mention current teaching activities where relevant.
-Keep these as natural, brief mentions woven into the narrative - not as separate sections or bullet points.
-The focus remains on the overall academic profile and research contributions.
-
-IMPORTANT: Only describe research that is directly authored by this person. Papers from the "shared papers by others" section must NOT be presented as the person's own work — only use them to show what topics the person is currently interested in.
-
-IMPORTANT: Before finalizing, review the text to eliminate any repetition. Avoid repeating the same concepts, phrases, or information across paragraphs. Each paragraph should introduce new information without restating what was already covered.
-
-Generate ONLY the HTML content for the "About Me" section. Do not include any explanations, notes, markdown code blocks, or additional text. Your response should be valid HTML that starts with <p> and ends with </p> without any additional formatting or explanation.
-Do NOT use Markdown syntax (such as *asterisks* for italics). Use proper HTML tags like <em> for emphasis instead.
 `;
 
     console.log(`Calling Gemini API with ${MODELS.FLASH} and Google Search grounding...`);

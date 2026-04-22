@@ -11,7 +11,7 @@ require('dotenv').config();
 const config = {
   // Personal Identifiers
   name: 'Fabio Giglietto',
-  title: 'Professor of Internet Studies',
+  title: 'Full Professor of Internet Studies',
   institution: 'University of Urbino Carlo Bo',
   department: 'Department of Communication Sciences, Humanities and International Studies',
   email: 'fabio.giglietto@uniurb.it',

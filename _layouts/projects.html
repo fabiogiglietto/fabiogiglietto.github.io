@@ -32,12 +32,21 @@ layout: page
       <div class="project-card__content">
         <div class="project-meta-info">
           <span class="project-status project-status--{{ project.status | downcase }}">{{ project.status }}</span>
-          {% if project.year %}
+          {% if project.start and project.end %}
+          <span class="project-year">{{ project.start }}–{{ project.end }}</span>
+          {% elsif project.start %}
+          <span class="project-year">{{ project.start }}–present</span>
+          {% elsif project.year %}
           <span class="project-year">{{ project.year }}</span>
           {% endif %}
         </div>
         <h3 class="project-card__title">{{ project.title }}</h3>
         <p class="project-card__description">{{ project.description }}</p>
+        <ul class="project-card__facts">
+          {% if project.role %}<li><strong>Role:</strong> {{ project.role }}</li>{% endif %}
+          {% if project.funder %}<li><strong>Funder:</strong> {{ project.funder }}</li>{% endif %}
+          {% if project.grant_id %}<li><strong>Grant ID:</strong> {{ project.grant_id }}</li>{% endif %}
+        </ul>
         {% if project.url %}
         <a href="{{ project.url }}" class="btn btn-small">Learn more</a>
         {% endif %}
