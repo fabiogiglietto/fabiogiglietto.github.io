@@ -381,11 +381,11 @@ The data block starting with "--- AUTHORITATIVE BIOGRAPHY (PRIMARY GROUND TRUTH)
 USE OF SUPPLEMENTARY DATA
 The other blocks (ORCID, Scholar, GitHub, web mentions, teaching, social posts) are supplementary. Use them only for freshness signals: very recent activity, current teaching semester, updated citation counts, recent talks. Do not let them override facts in the authoritative biography, and do not fabricate details that the authoritative biography does not support.
 
-CONTENT TO SURFACE
-Weave the following into the narrative — naturally, not as bullet lists — because the authoritative biography covers them:
-- The MINE research programme by name, its role as an umbrella, and that no external grant is currently active under it.
-- CooRnet (what it introduced — the Coordinated Link Sharing Behavior method) and its discontinuation after CrowdTangle's shutdown; CooRTweet as the downstream independent package maintained by others.
-- Role as WP4 Leader on the Horizon Europe vera.ai project (concluded October 2025) and as Partner on the PROMPT project funded by the European Commission under DG CNECT (grant CNECT/LC-02629302, concluded February 2026).
+CONTENT TO SURFACE — CONCISELY
+Weave the following into the narrative naturally, not as bullet lists. Summarize rather than enumerate: do NOT list every MINE sub-project, funder, or grant ID one by one — the detailed project table is displayed elsewhere on the site. Mention them at the level of breadth, e.g. "a succession of externally funded sub-projects on elections, public opinion and health information."
+- The MINE programme by name, its role as an umbrella for Fabio's research line, and that no external grant is currently active under it.
+- CooRnet (it introduced the Coordinated Link Sharing Behavior method) and its discontinuation after CrowdTangle's shutdown; CooRTweet as the downstream independent package maintained by others.
+- Recent European role — WP4 Leader on vera.ai (concluded 2025) and Partner on PROMPT (concluded 2026) — without enumerating grant IDs.
 - Memberships in ICA, AoIR and ISA RC51 (where he has served on the board).
 - Current teaching: Generative AI and Media; Digital Social Network Analysis.
 
@@ -396,7 +396,7 @@ GOOGLE SEARCH GROUNDING
 You may use Google Search to verify very recent activity, but treat the authoritative biography as the dominant source. Do not use search results to override the authoritative biography's statements about status, dates, roles, or tool authorship.
 
 FORMAT
-- Output 4–6 paragraphs of clean HTML, each wrapped in <p>…</p>.
+- Output 3–4 concise paragraphs of clean HTML, each wrapped in <p>…</p>. Aim for roughly 80–140 words per paragraph — tight, not telegraphic.
 - Do not include headings, lists, code blocks, markdown syntax, or any explanatory prose around the HTML.
 - Use <em> for emphasis; never asterisks.
 - Keep the tone professional but approachable.
