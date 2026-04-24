@@ -1,11 +1,12 @@
 {
-  "totalEntries": 128,
-  "lastUpdated": "2026-04-23T07:53:58.457Z",
+  "totalEntries": 130,
+  "lastUpdated": "2026-04-24T08:05:27.977Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-04-23T07:53:58.435Z"
+    "latest": "2026-04-24T08:05:27.949Z"
   },
   "byDate": {
+    "2026-04-24": 2,
     "2026-04-23": 1,
     "2026-04-22": 1,
     "2026-04-20": 1,
@@ -14,27 +15,33 @@
     "2026-03-20": 1,
     "2026-03-11": 1,
     "2026-03-09": 1,
-    "2026-03-08": 5,
-    "2026-03-01": 2
+    "2026-03-08": 5
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 49,
     "uniurb.it": 7,
     "open.online": 5,
     "Il Sole 24 ORE": 4,
+    "snurb.info": 2,
     "youtube.com": 2,
     "veraai.eu": 2,
     "vera.ai": 2,
     "ilrestodelcarlino.it": 2,
-    "ByoBlu": 2,
-    "euractiv.ro": 2
+    "ByoBlu": 2
   },
   "byRelevanceScore": {
-    "high": 108,
-    "medium": 20,
+    "high": 109,
+    "medium": 21,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "LLMs in Content Coding: The 'Expertise Paradox' and Other Challenges",
+      "url": "https://snurb.info/node/3043",
+      "source": "snurb.info",
+      "relevanceScore": 1,
+      "collectedAt": "2026-04-24T08:05:27.949Z"
+    },
     {
       "title": "Algoritmi e democrazia, il caso Meta secondo lo studio di UniUrb",
       "url": "https://www.vivereurbino.it/2026/04/16/algoritmi-e-democrazia-il-caso-meta-secondo-lo-studio-di-uniurb/1660124/",
@@ -62,13 +69,6 @@
       "source": "AWS",
       "relevanceScore": 0.9,
       "collectedAt": "2026-03-28T06:59:27.684Z"
-    },
-    {
-      "title": "Scientists around the world call to protect research on one of humanity's greatest short-term threats - Disinformation - Forum on Information & Democracy",
-      "url": "https://informationdemocracy.org/2024/09/27/scientists-around-the-world-call-to-protect-research-on-one-of-humanitys-greatest-short-term-threats-disinformation/",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-03-20T06:55:21.457Z"
     }
   ]
 }
