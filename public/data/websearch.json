@@ -1,20 +1,5 @@
 [
   {
-    "title": "LLMs in Content Coding: The 'Expertise Paradox' and Other Challenges",
-    "snippet": "The article reports on Fabio Giglietto's presentation at the AoIR 2024 conference, where he discussed his research on coding Italian news data using Large Language Models, focusing on an analysis of 85,000 news articles shared on Facebook during the 2018 and 2022 Italian elections.",
-    "url": "https://snurb.info/node/3043",
-    "date": "2026-04-24",
-    "source": "snurb.info",
-    "description": "This article reports on Fabio Giglietto's presentation at the AoIR 2024 conference, where he discussed his research using LLMs to analyze Italian news data shared on Facebook during the 2018 and 2022 elections.",
-    "relevanceScore": 1,
-    "mentionedByName": true,
-    "personMatch": "confirmed",
-    "isRecent": true,
-    "searchEngine": "gemini",
-    "dateConfidence": "low",
-    "dateSource": "http-header"
-  },
-  {
     "title": "Indagine urbinate: \"Così l’algoritmo influenza il voto\" - Il Resto del Carlino",
     "snippet": "",
     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcW9YMU0yTVdFVzJQOXNJOVJNRm5wS3dnUDgweEFBeDFFc3ZDdkJJVTFnWWg3S1ZnTk0tc2lTUFJGS3JJYVFST3ZGeXBCYldMRnZuSXoxR0hFU2NrTnUxQVc1UWhySkhBZk9DeTZGOFdDeVFXaTlKRElYNTQtWDBtdlUzaklUUjRka3Jwcm1pUG9wSUttQ2ZkTDl5SHRlRUNXR0E?oc=5&hl=en-US&gl=US&ceid=US:en",
@@ -141,6 +126,21 @@
     "date": "2024-12-17",
     "source": "il Ducato",
     "description": "News article from il Ducato",
+    "relevanceScore": 0.75,
+    "mentionedByName": true,
+    "personMatch": "confirmed",
+    "isRecent": true,
+    "searchEngine": "google-news-rss",
+    "dateConfidence": "high",
+    "dateSource": "rss-pubdate"
+  },
+  {
+    "title": "Meta shuts down CrowdTangle tool used by some groups to track online misinformation - The Straits Times",
+    "snippet": "",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQkc4Vkdic3M1aDZDTGJwbEJ1VkZ3cVJvTTg0ZC1zNUJFTVhieGRaeWVNSFpGdWVBNVJSWlNvT0p3bkFXWFk0enlMbFltVlVVaEYtSWxGVzlOWTFLVjdTazczQ3FyQTNMMW96NU5STnoteEt1RWI3UnhtVVdiNWJ0dUZYT1NWd3dBdEFfNElnZnBWUXpPalFNc1IwVm9lWmlSckduenF0QkdkM0YyZjYzTlQ2ZlR3dXp3SVdTR2VR?oc=5&hl=en-US&gl=US&ceid=US:en",
+    "date": "2024-08-15",
+    "source": "The Straits Times",
+    "description": "News article from The Straits Times",
     "relevanceScore": 0.75,
     "mentionedByName": true,
     "personMatch": "confirmed",
