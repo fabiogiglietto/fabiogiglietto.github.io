@@ -1,11 +1,12 @@
 {
-  "totalEntries": 130,
-  "lastUpdated": "2026-04-25T07:19:07.058Z",
+  "totalEntries": 132,
+  "lastUpdated": "2026-04-26T07:31:18.829Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-04-24T08:05:27.949Z"
+    "latest": "2026-04-26T07:31:18.806Z"
   },
   "byDate": {
+    "2026-04-26": 2,
     "2026-04-24": 2,
     "2026-04-23": 1,
     "2026-04-22": 1,
@@ -14,27 +15,40 @@
     "2026-03-28": 1,
     "2026-03-20": 1,
     "2026-03-11": 1,
-    "2026-03-09": 1,
-    "2026-03-08": 5
+    "2026-03-09": 1
   },
   "bySource": {
-    "vertexaisearch.cloud.google.com": 49,
+    "vertexaisearch.cloud.google.com": 50,
     "uniurb.it": 7,
     "open.online": 5,
     "Il Sole 24 ORE": 4,
+    "ilrestodelcarlino.it": 3,
     "snurb.info": 2,
     "youtube.com": 2,
     "veraai.eu": 2,
     "vera.ai": 2,
-    "ilrestodelcarlino.it": 2,
     "ByoBlu": 2
   },
   "byRelevanceScore": {
-    "high": 109,
+    "high": 111,
     "medium": 21,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "ilrestodelcarlino.it",
+      "url": "https://www.ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-820f2732",
+      "source": "ilrestodelcarlino.it",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-04-26T07:31:18.806Z"
+    },
+    {
+      "title": "CS2Italy",
+      "url": "https://cs2italy.org/",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-04-26T07:31:18.806Z"
+    },
     {
       "title": "LLMs in Content Coding: The 'Expertise Paradox' and Other Challenges",
       "url": "https://snurb.info/node/3043",
@@ -55,20 +69,6 @@
       "source": "lumsanews.it",
       "relevanceScore": 0.9,
       "collectedAt": "2026-04-22T07:47:37.825Z"
-    },
-    {
-      "title": "Investigating Coordinated Inauthentic Behavior on Alternative Platforms During the 2024 U.S. Election - Proceedings of the ICWSM Workshops",
-      "url": "https://workshop-proceedings.icwsm.org/pdf/2025_19.pdf",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-04-09T07:22:07.192Z"
-    },
-    {
-      "title": "Agenda TSRC 2024 - AWS",
-      "url": "https://fsi9-prod.s3.us-west-1.amazonaws.com/s3fs-public/2025-03/agenda-tsrc-2024_f.pdf",
-      "source": "AWS",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-03-28T06:59:27.684Z"
     }
   ]
 }
