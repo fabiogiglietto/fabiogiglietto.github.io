@@ -416,7 +416,7 @@ ${formattedData}
         config: {
           tools: [{ googleSearch: {} }],
           temperature: 0.7,
-          maxOutputTokens: 2000,
+          maxOutputTokens: 3500,
         },
       });
 
@@ -430,6 +430,19 @@ ${formattedData}
       }
 
       content = content.trim();
+
+      // Reject truncated or blocked responses (MAX_TOKENS, SAFETY, RECITATION, OTHER).
+      // Falling through to the fallback model — and ultimately to bio-seed fallback —
+      // is preferable to publishing a half-sentence bio.
+      const finishReason = response.candidates?.[0]?.finishReason;
+      if (finishReason && finishReason !== 'STOP') {
+        console.error(`Gemini stopped with finishReason=${finishReason}; rejecting incomplete response`);
+        return null;
+      }
+      if (!content.endsWith('</p>')) {
+        console.error('Generated content does not end with </p>; rejecting truncated response');
+        return null;
+      }
 
       // Validate that the response is HTML content (starts with <p> or similar)
       if (!content.startsWith('<p') && !content.startsWith('<div') && !content.startsWith('<section')) {
@@ -468,7 +481,7 @@ ${formattedData}
           config: {
             tools: [{ googleSearch: {} }],
             temperature: 0.7,
-            maxOutputTokens: 2000,
+            maxOutputTokens: 3500,
           },
         });
 
@@ -482,6 +495,17 @@ ${formattedData}
         }
 
         content = content.trim();
+
+        // Reject truncated or blocked responses; bio-seed fallback will be used downstream.
+        const finishReason = response.candidates?.[0]?.finishReason;
+        if (finishReason && finishReason !== 'STOP') {
+          console.error(`Gemini fallback stopped with finishReason=${finishReason}; rejecting incomplete response`);
+          return null;
+        }
+        if (!content.endsWith('</p>')) {
+          console.error('Generated fallback content does not end with </p>; rejecting truncated response');
+          return null;
+        }
 
         // Validate HTML format
         if (!content.startsWith('<p') && !content.startsWith('<div') && !content.startsWith('<section')) {
