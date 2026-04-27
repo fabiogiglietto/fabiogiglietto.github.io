@@ -12,6 +12,26 @@
   },
   "repositories": [
     {
+      "name": "internet-studies-course",
+      "description": "Slides del corso Internet Studies — A.A. 2025/2026, Università di Urbino",
+      "url": "https://github.com/fabiogiglietto/internet-studies-course",
+      "language": "JavaScript",
+      "stars": 0,
+      "forks": 0,
+      "created_at": "2026-03-29T11:59:46Z",
+      "updated_at": "2026-04-26T13:15:18Z"
+    },
+    {
+      "name": "fabiogiglietto.github.io",
+      "description": "Your research presence, always current, zero maintenance.                                                                                                                                  ",
+      "url": "https://github.com/fabiogiglietto/fabiogiglietto.github.io",
+      "language": "JavaScript",
+      "stars": 7,
+      "forks": 1,
+      "created_at": "2025-04-21T09:41:33Z",
+      "updated_at": "2026-04-26T07:32:19Z"
+    },
+    {
       "name": "toread",
       "description": "Consume a feed BibTeX export from a Paperpile folder, complete the publication metadata with Crossref and Semantic Scholar and create an RSS feed",
       "url": "https://github.com/fabiogiglietto/toread",
@@ -22,16 +42,6 @@
       "updated_at": "2026-04-25T08:39:44Z"
     },
     {
-      "name": "fabiogiglietto.github.io",
-      "description": "Your research presence, always current, zero maintenance.                                                                                                                                  ",
-      "url": "https://github.com/fabiogiglietto/fabiogiglietto.github.io",
-      "language": "JavaScript",
-      "stars": 7,
-      "forks": 1,
-      "created_at": "2025-04-21T09:41:33Z",
-      "updated_at": "2026-04-25T07:20:27Z"
-    },
-    {
       "name": "research-radio",
       "description": "Convert academic papers into AI podcast episodes with Google Gemini. Powers FG's Research Radio.",
       "url": "https://github.com/fabiogiglietto/research-radio",
@@ -40,16 +50,6 @@
       "forks": 0,
       "created_at": "2025-12-29T17:46:10Z",
       "updated_at": "2026-04-23T15:22:54Z"
-    },
-    {
-      "name": "internet-studies-course",
-      "description": "Slides del corso Internet Studies — A.A. 2025/2026, Università di Urbino",
-      "url": "https://github.com/fabiogiglietto/internet-studies-course",
-      "language": "JavaScript",
-      "stars": 0,
-      "forks": 0,
-      "created_at": "2026-03-29T11:59:46Z",
-      "updated_at": "2026-04-20T12:07:46Z"
     },
     {
       "name": "genai-media-course",
@@ -264,5 +264,5 @@
       "activity": {}
     }
   ],
-  "lastUpdated": "2026-04-26T07:27:16.671Z"
+  "lastUpdated": "2026-04-27T08:23:02.416Z"
 }
