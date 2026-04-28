@@ -1,11 +1,12 @@
 {
-  "totalEntries": 132,
-  "lastUpdated": "2026-04-27T08:28:05.081Z",
+  "totalEntries": 133,
+  "lastUpdated": "2026-04-28T08:28:58.153Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-04-26T07:31:18.806Z"
+    "latest": "2026-04-28T08:28:58.127Z"
   },
   "byDate": {
+    "2026-04-28": 1,
     "2026-04-26": 2,
     "2026-04-24": 2,
     "2026-04-23": 1,
@@ -14,8 +15,7 @@
     "2026-04-09": 1,
     "2026-03-28": 1,
     "2026-03-20": 1,
-    "2026-03-11": 1,
-    "2026-03-09": 1
+    "2026-03-11": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 50,
@@ -30,11 +30,18 @@
     "ByoBlu": 2
   },
   "byRelevanceScore": {
-    "high": 111,
+    "high": 112,
     "medium": 21,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "There's Research on That - The Society Pages",
+      "url": "https://thesocietypages.org/trot/2026/02/25/there-is-research-on-that/",
+      "source": "thesocietypages.org",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-04-28T08:28:58.127Z"
+    },
     {
       "title": "ilrestodelcarlino.it",
       "url": "https://www.ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-820f2732",
@@ -62,13 +69,6 @@
       "source": "vivereurbino.it",
       "relevanceScore": 0.95,
       "collectedAt": "2026-04-23T07:53:58.435Z"
-    },
-    {
-      "title": "lumsanews.it",
-      "url": "https://www.lumsanews.it/facebook-troppa-visibilita-a-estremisti-e-complottisti-ecco-come-impatta-meta-sulle-elezioni/",
-      "source": "lumsanews.it",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-04-22T07:47:37.825Z"
     }
   ]
 }
