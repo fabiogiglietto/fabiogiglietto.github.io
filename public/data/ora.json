@@ -2,9 +2,51 @@
   "source": "ORA UNIURB",
   "repository": "https://ora.uniurb.it",
   "oaiEndpoint": "https://ora.uniurb.it/oai/request",
-  "collectedAt": "2026-05-02T07:42:09.055Z",
+  "collectedAt": "2026-05-03T07:59:46.793Z",
   "author": "Fabio Giglietto",
   "publications": [
+    {
+      "title": "From the Wild West to the Walled Garden",
+      "authors": "Giglietto, Fabio; Puschmann, Cornelius",
+      "authorsList": [
+        "Giglietto, Fabio",
+        "Puschmann, Cornelius"
+      ],
+      "year": 2026,
+      "doi": "10.5204/mcj.3257",
+      "handle": "11576/2774531",
+      "type": "article",
+      "abstract": "This article traces the evolution of researcher access to social media data, using Twitter/X as a case study to illustrate broader structural patterns across the platform economy. Giglietto and Puschmann identify three distinct phases in Twitter's trajectory: an early \"Wild West\" period (2006–2020) of largely unregulated open APIs that enabled experimental, descriptive scholarship; a brief \"Golden Age\" (2020–2023) marked by the Academic Research API, which offered vetted scholars free, high-volume access to real-time and historical data; and the post-2023 era following Elon Musk's acquisition, in which academic access was abruptly dismantled and consolidated behind a costly commercial paywall. Situating this trajectory within a wider context, the authors note that parallel retrenchments—Meta's closure of CrowdTangle, Reddit's API pricing changes, and TikTok's persistently restrictive access—reveal a systemic pattern rather than an isolated case.\r\nThe article then examines the regulatory turn embodied in the European Union's Digital Services Act, particularly Article 40, which reframes data access as a legal right tied to the study of \"systemic risks\" rather than a discretionary platform favor. While the DSA represents a significant paradigm shift, the authors document substantial implementation challenges: uneven platform compliance, structural asymmetries of knowledge between platforms and researchers, geographic limitations that disadvantage scholars outside the EU, and the risk of a \"data abyss\" that disproportionately excludes early-career researchers, civil society actors, and those in the Global South. The authors argue that progress toward data transparency is neither linear nor guaranteed, and they call for academic consortia, public investment in independent research infrastructure, multi-method approaches combining APIs with data donations and browser-based tools, and the international extension of regulatory frameworks. Independent research into platform effects, they conclude, must be recognized as a public good warranting sustained institutional support rather than reliance on platforms' shifting generosity.",
+      "publisher": null,
+      "journal": "M/C",
+      "pages": null,
+      "language": "eng",
+      "oaiIdentifier": "oai:ora.uniurb.it:11576/2774531",
+      "datestamp": "2026-04-30T23:40:51Z",
+      "url": "https://ora.uniurb.it/handle/11576/2774531"
+    },
+    {
+      "title": "Synthetic seduction: Evolving visual persuasion in coordinated online gambling promotion with generative {AI}",
+      "authors": "Giglietto F.; Terenzi M.; Chakraborty A.; Marino G.",
+      "authorsList": [
+        "Giglietto F.",
+        "Terenzi M.",
+        "Chakraborty A.",
+        "Marino G."
+      ],
+      "year": 2026,
+      "doi": "10.1007/978-3-032-11782-3_4",
+      "handle": "11576/2774611",
+      "type": "chapter",
+      "abstract": "This study examines visual persuasion strategies in online gambling promotion through coordinated Facebook networks. Analysing 2300+ images from 223 gambling-focused groups, we employ language models, embeddings, and clustering techniques to identify recurring patterns. Our findings reveal a sophisticated system of persuasive drivers—aspirational wealth imagery, manufactured trust signals, urgency conditioning, cultural localisation, gamification techniques, celebrity endorsements, and social relation exploitation—strategically deployed to normalise gambling behaviours. We further investigate how generative AI has transformed this ecosystem. Statistical analysis shows an exponential increase in posting volume following ChatGPT’s introduction (November 2022), with monthly posts rising from 2121 to 280,952. While this correlation doesn’t establish direct causality, qualitative evidence suggests generative AI significantly enables this expansion by intensifying established persuasion drivers through enhanced visual immersion and narrative complexity. Our findings contribute to ongoing debates around the intersection of synthetic media and manipulative content in digital spaces. Methodologically, the study demonstrates how generative AI tools can support interpretive analysis at scale. Substantively, it raises urgent questions about user vulnerability and the adequacy of current platform governance and regulatory frameworks in managing the risks posed by algorithmically amplified, AI-generated promotional content.",
+      "publisher": "Springer Nature",
+      "journal": null,
+      "pages": null,
+      "language": "eng",
+      "oaiIdentifier": "oai:ora.uniurb.it:11576/2774611",
+      "datestamp": "2026-05-02T10:49:35Z",
+      "url": "https://ora.uniurb.it/handle/11576/2774611"
+    },
     {
       "title": "Manipolazione dei media ed influenza digitale. Sfide, tecnologie e risposte",
       "authors": "Fabio Giglietto; Nicola Righetti; Timothy Graham",
@@ -262,10 +304,10 @@
     }
   ],
   "stats": {
-    "total": 12,
+    "total": 14,
     "byType": {
-      "chapter": 3,
-      "article": 5,
+      "article": 6,
+      "chapter": 4,
       "other": 3,
       "conference": 1
     },
@@ -274,7 +316,8 @@
       "2022": 3,
       "2023": 5,
       "2024": 1,
-      "2025": 2
+      "2025": 2,
+      "2026": 2
     }
   }
 }
