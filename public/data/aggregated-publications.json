@@ -165,7 +165,7 @@
       "year": 2020,
       "doi": null,
       "citations": {
-        "scholar": 216,
+        "scholar": 217,
         "wos": null,
         "scopus": null,
         "semanticScholar": null
@@ -186,7 +186,7 @@
         "ora": null
       },
       "metrics": {
-        "total_citations": 216,
+        "total_citations": 217,
         "citation_sources": 1
       }
     },
@@ -448,7 +448,7 @@
       "year": 2020,
       "doi": null,
       "citations": {
-        "scholar": 58,
+        "scholar": 59,
         "wos": null,
         "scopus": null,
         "semanticScholar": null
@@ -469,7 +469,7 @@
         "ora": null
       },
       "metrics": {
-        "total_citations": 58,
+        "total_citations": 59,
         "citation_sources": 1
       }
     },
@@ -714,6 +714,38 @@
       }
     },
     {
+      "title": "If likes were votes: An empirical study on the 2011 Italian administrative elections",
+      "authors": "F Giglietto",
+      "venue": "Proceedings of the International AAAI Conference on Web and Social Media 6 …, 2012",
+      "year": 2012,
+      "doi": null,
+      "citations": {
+        "scholar": 35,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": null,
+        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null
+      },
+      "source_ids": {
+        "orcid": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": null
+      },
+      "metrics": {
+        "total_citations": 35,
+        "citation_sources": 1
+      }
+    },
+    {
       "title": "Twitter use during TV: A full-season analysis of# serviziopubblico hashtag",
       "authors": "L Rossi, F Giglietto",
       "venue": "Journal of Broadcasting & Electronic Media 60 (2), 331-346, 2016",
@@ -749,38 +781,6 @@
       "title": "Ethics and interdisciplinarity in computational social science",
       "authors": "F Giglietto, L Rossi",
       "venue": "Methodological Innovations Online 7 (1), 25-36, 2012",
-      "year": 2012,
-      "doi": null,
-      "citations": {
-        "scholar": 34,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null,
-        "ora": null
-      },
-      "source_ids": {
-        "orcid": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null,
-        "ora": null
-      },
-      "metrics": {
-        "total_citations": 34,
-        "citation_sources": 1
-      }
-    },
-    {
-      "title": "If likes were votes: An empirical study on the 2011 Italian administrative elections",
-      "authors": "F Giglietto",
-      "venue": "Proceedings of the International AAAI Conference on Web and Social Media 6 …, 2012",
       "year": 2012,
       "doi": null,
       "citations": {
@@ -1559,7 +1559,7 @@
         "wos": null,
         "scopus": null,
         "semanticScholar": null,
-        "ora": null,
+        "ora": "https://ora.uniurb.it/handle/11576/2774611",
         "crossref": "https://doi.org/10.1007/978-3-032-11782-3_4"
       },
       "source_ids": {
@@ -1568,12 +1568,14 @@
         "wos": null,
         "scopus": null,
         "semanticScholar": null,
-        "ora": null
+        "ora": "11576/2774611"
       },
       "metrics": {
         "total_citations": 0,
         "citation_sources": 0
       },
+      "oraHandle": "11576/2774611",
+      "abstract": "This study examines visual persuasion strategies in online gambling promotion through coordinated Facebook networks. Analysing 2300+ images from 223 gambling-focused groups, we employ language models, embeddings, and clustering techniques to identify recurring patterns. Our findings reveal a sophisticated system of persuasive drivers—aspirational wealth imagery, manufactured trust signals, urgency conditioning, cultural localisation, gamification techniques, celebrity endorsements, and social relation exploitation—strategically deployed to normalise gambling behaviours. We further investigate how generative AI has transformed this ecosystem. Statistical analysis shows an exponential increase in posting volume following ChatGPT’s introduction (November 2022), with monthly posts rising from 2121 to 280,952. While this correlation doesn’t establish direct causality, qualitative evidence suggests generative AI significantly enables this expansion by intensifying established persuasion drivers through enhanced visual immersion and narrative complexity. Our findings contribute to ongoing debates around the intersection of synthetic media and manipulative content in digital spaces. Methodologically, the study demonstrates how generative AI tools can support interpretive analysis at scale. Substantively, it raises urgent questions about user vulnerability and the adequacy of current platform governance and regulatory frameworks in managing the risks posed by algorithmically amplified, AI-generated promotional content.",
       "crossref_type": "book-chapter",
       "publisher": "Springer Nature Switzerland"
     },
@@ -6131,7 +6133,7 @@
   ],
   "metrics": {
     "total_publications": 164,
-    "total_citations": 3151,
+    "total_citations": 3154,
     "h_index": 26,
     "i10_index": 32,
     "citation_sources": {
@@ -6140,8 +6142,8 @@
       "with_scopus": 25,
       "with_semanticScholar": 3,
       "with_crossref": 64,
-      "with_ora": 25
+      "with_ora": 26
     }
   },
-  "lastUpdated": "2026-05-04T08:31:57.992Z"
+  "lastUpdated": "2026-05-05T08:13:37.863Z"
 }
