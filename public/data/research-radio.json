@@ -879,6 +879,17 @@
       "duration": "9:25",
       "author": "Michael Achmann-Denkler, Mario Haim, Christian Wolff",
       "doi": null
+    },
+    {
+      "id": "bibtex:Rothut2026-or",
+      "bibtexKey": "Rothut2026-or",
+      "title": "Protests:",
+      "description": "AI-generated podcast discussion.\n\nReference:\nRothut, S., Schulze, H., Rieger, D., Lechner, M., & Naderer, B. (2026). Protest movements and the mainstreaming of radical and extremist ideologies: the case of COVID-19 protests. https://doi.org/10.1080/1369118x.2026.2654668",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Rothut2026-or.mp3",
+      "pubDate": "Tue, 05 May 2026 18:19:27 +0000",
+      "duration": "10:44",
+      "author": "Sophia Rothut, Heidi Schulze, Diana Rieger, Maximilian Lechner, Brigitte Naderer",
+      "doi": "10.1080/1369118x.2026.2654668"
     }
   ],
   "episodesByBibtexKey": {
@@ -1761,6 +1772,17 @@
       "duration": "9:25",
       "author": "Michael Achmann-Denkler, Mario Haim, Christian Wolff",
       "doi": null
+    },
+    "Rothut2026-or": {
+      "id": "bibtex:Rothut2026-or",
+      "bibtexKey": "Rothut2026-or",
+      "title": "Protests:",
+      "description": "AI-generated podcast discussion.\n\nReference:\nRothut, S., Schulze, H., Rieger, D., Lechner, M., & Naderer, B. (2026). Protest movements and the mainstreaming of radical and extremist ideologies: the case of COVID-19 protests. https://doi.org/10.1080/1369118x.2026.2654668",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Rothut2026-or.mp3",
+      "pubDate": "Tue, 05 May 2026 18:19:27 +0000",
+      "duration": "10:44",
+      "author": "Sophia Rothut, Heidi Schulze, Diana Rieger, Maximilian Lechner, Brigitte Naderer",
+      "doi": "10.1080/1369118x.2026.2654668"
     }
   },
   "episodesByDoi": {
@@ -2412,9 +2434,20 @@
       "duration": "10:55",
       "author": "Sophia Rothut, Heidi Schulze, Julian Hohner, Simon Greipl, Diana Rieger",
       "doi": "10.1080/10714421.2026.2658935"
+    },
+    "10.1080/1369118x.2026.2654668": {
+      "id": "bibtex:Rothut2026-or",
+      "bibtexKey": "Rothut2026-or",
+      "title": "Protests:",
+      "description": "AI-generated podcast discussion.\n\nReference:\nRothut, S., Schulze, H., Rieger, D., Lechner, M., & Naderer, B. (2026). Protest movements and the mainstreaming of radical and extremist ideologies: the case of COVID-19 protests. https://doi.org/10.1080/1369118x.2026.2654668",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Rothut2026-or.mp3",
+      "pubDate": "Tue, 05 May 2026 18:19:27 +0000",
+      "duration": "10:44",
+      "author": "Sophia Rothut, Heidi Schulze, Diana Rieger, Maximilian Lechner, Brigitte Naderer",
+      "doi": "10.1080/1369118x.2026.2654668"
     }
   },
-  "totalEpisodes": 80,
-  "lastUpdated": "2026-05-05T08:07:21.001Z",
+  "totalEpisodes": 81,
+  "lastUpdated": "2026-05-06T08:24:59.565Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }

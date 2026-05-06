@@ -2,9 +2,29 @@
   "source": "ORA UNIURB",
   "repository": "https://ora.uniurb.it",
   "oaiEndpoint": "https://ora.uniurb.it/oai/request",
-  "collectedAt": "2026-05-05T08:07:20.446Z",
+  "collectedAt": "2026-05-06T08:24:58.571Z",
   "author": "Fabio Giglietto",
   "publications": [
+    {
+      "title": "From the Wild West to the Walled Garden",
+      "authors": "Giglietto, Fabio; Puschmann, Cornelius",
+      "authorsList": [
+        "Giglietto, Fabio",
+        "Puschmann, Cornelius"
+      ],
+      "year": 2026,
+      "doi": "10.5204/mcj.3257",
+      "handle": "11576/2774531",
+      "type": "article",
+      "abstract": "This article traces the evolution of researcher access to social media data, using Twitter/X as a case study to illustrate broader structural patterns across the platform economy. Giglietto and Puschmann identify three distinct phases in Twitter's trajectory: an early \"Wild West\" period (2006–2020) of largely unregulated open APIs that enabled experimental, descriptive scholarship; a brief \"Golden Age\" (2020–2023) marked by the Academic Research API, which offered vetted scholars free, high-volume access to real-time and historical data; and the post-2023 era following Elon Musk's acquisition, in which academic access was abruptly dismantled and consolidated behind a costly commercial paywall. Situating this trajectory within a wider context, the authors note that parallel retrenchments—Meta's closure of CrowdTangle, Reddit's API pricing changes, and TikTok's persistently restrictive access—reveal a systemic pattern rather than an isolated case.\r\nThe article then examines the regulatory turn embodied in the European Union's Digital Services Act, particularly Article 40, which reframes data access as a legal right tied to the study of \"systemic risks\" rather than a discretionary platform favor. While the DSA represents a significant paradigm shift, the authors document substantial implementation challenges: uneven platform compliance, structural asymmetries of knowledge between platforms and researchers, geographic limitations that disadvantage scholars outside the EU, and the risk of a \"data abyss\" that disproportionately excludes early-career researchers, civil society actors, and those in the Global South. The authors argue that progress toward data transparency is neither linear nor guaranteed, and they call for academic consortia, public investment in independent research infrastructure, multi-method approaches combining APIs with data donations and browser-based tools, and the international extension of regulatory frameworks. Independent research into platform effects, they conclude, must be recognized as a public good warranting sustained institutional support rather than reliance on platforms' shifting generosity.",
+      "publisher": null,
+      "journal": "M/C",
+      "pages": null,
+      "language": "eng",
+      "oaiIdentifier": "oai:ora.uniurb.it:11576/2774531",
+      "datestamp": "2026-04-30T23:40:51Z",
+      "url": "https://ora.uniurb.it/handle/11576/2774531"
+    },
     {
       "title": "Synthetic seduction: Evolving visual persuasion in coordinated online gambling promotion with generative {AI}",
       "authors": "Giglietto F.; Terenzi M.; Chakraborty A.; Marino G.",
@@ -107,48 +127,6 @@
       "oaiIdentifier": "oai:ora.uniurb.it:11576/2714451",
       "datestamp": "2024-10-31T00:02:06Z",
       "url": "https://ora.uniurb.it/handle/11576/2714451"
-    },
-    {
-      "title": "Cracking Open the European Newsfeed",
-      "authors": "Rossi, Luca; Giglietto, Fabio; Marino, Giada",
-      "authorsList": [
-        "Rossi, Luca",
-        "Giglietto, Fabio",
-        "Marino, Giada"
-      ],
-      "year": 2023,
-      "doi": "10.51685/jqd.2023.020",
-      "handle": "11576/2726579",
-      "type": "article",
-      "abstract": "This  paper  contributes  to  the  ongoing  effort  to  describe  and  quantify  the quality of information that is shared on large social media platforms. We  do  this  by  complementing  existing  research  that  provided  the  first quantitative  assessment  of  the  quality  of  the  information  circulating  on Facebook among US users. Leveraging an updated version of the same data source —Meta’s URL Shares Dataset —and  replicating  much  of  the methodology,  we  quantify  the  trustworthy  and  untrustworthy  links  to external websites that have been shared on Facebook in the period between 2019 and 2022 in three  major European countries (Germany,  France,  and Italy).  We  observe  a  clear  decline  in  the  number  of  URLs  present  in  the dataset  and  an  increase  in  the  URLs  from  untrustworthy  domains  as  a percentage  of  the  total  URLs  shared  in  a  year.  This  increase  seems  to  be higher in electoral years (in Germany and in Italy) but itdoes not translate into an increase of Views received from untrustworthy sources.",
-      "publisher": null,
-      "journal": "JOURNAL OF QUANTITATIVE DESCRIPTION: DIGITAL MEDIA",
-      "pages": null,
-      "language": "eng",
-      "oaiIdentifier": "oai:ora.uniurb.it:11576/2726579",
-      "datestamp": "2024-03-19T02:16:50Z",
-      "url": "https://ora.uniurb.it/handle/11576/2726579"
-    },
-    {
-      "title": "Cracking Open the European Newsfeed",
-      "authors": "Rossi, Luca; Giglietto, Fabio; Marino, Giada",
-      "authorsList": [
-        "Rossi, Luca",
-        "Giglietto, Fabio",
-        "Marino, Giada"
-      ],
-      "year": 2023,
-      "doi": "10.51685/jqd.2023.020",
-      "handle": "11576/2726579",
-      "type": "article",
-      "abstract": "This  paper  contributes  to  the  ongoing  effort  to  describe  and  quantify  the quality of information that is shared on large social media platforms. We  do  this  by  complementing  existing  research  that  provided  the  first quantitative  assessment  of  the  quality  of  the  information  circulating  on Facebook among US users. Leveraging an updated version of the same data source —Meta’s URL Shares Dataset —and  replicating  much  of  the methodology,  we  quantify  the  trustworthy  and  untrustworthy  links  to external websites that have been shared on Facebook in the period between 2019 and 2022 in three  major European countries (Germany,  France,  and Italy).  We  observe  a  clear  decline  in  the  number  of  URLs  present  in  the dataset  and  an  increase  in  the  URLs  from  untrustworthy  domains  as  a percentage  of  the  total  URLs  shared  in  a  year.  This  increase  seems  to  be higher in electoral years (in Germany and in Italy) but itdoes not translate into an increase of Views received from untrustworthy sources.",
-      "publisher": null,
-      "journal": "JOURNAL OF QUANTITATIVE DESCRIPTION: DIGITAL MEDIA",
-      "pages": null,
-      "language": "eng",
-      "oaiIdentifier": "oai:ora.uniurb.it:11576/2726579",
-      "datestamp": "2024-03-19T02:16:50Z",
-      "url": "https://ora.uniurb.it/handle/11576/2726579"
     },
     {
       "title": "A Workflow to Detect, Monitor, and Update Lists of Coordinated Social Media Accounts Across Time: The Case of the 2022 Italian Election",
@@ -305,20 +283,20 @@
     }
   ],
   "stats": {
-    "total": 14,
+    "total": 13,
     "byType": {
+      "article": 5,
       "chapter": 4,
-      "article": 6,
       "other": 3,
       "conference": 1
     },
     "byYear": {
       "2020": 1,
       "2022": 3,
-      "2023": 6,
+      "2023": 4,
       "2024": 1,
       "2025": 2,
-      "2026": 1
+      "2026": 2
     }
   }
 }
