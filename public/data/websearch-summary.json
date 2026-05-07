@@ -1,11 +1,12 @@
 {
-  "totalEntries": 137,
-  "lastUpdated": "2026-05-06T08:29:18.870Z",
+  "totalEntries": 138,
+  "lastUpdated": "2026-05-07T08:36:48.988Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-05-05T08:13:14.062Z"
+    "latest": "2026-05-07T08:36:48.966Z"
   },
   "byDate": {
+    "2026-05-07": 1,
     "2026-05-05": 1,
     "2026-05-03": 1,
     "2026-05-02": 2,
@@ -14,8 +15,7 @@
     "2026-04-24": 2,
     "2026-04-23": 1,
     "2026-04-22": 1,
-    "2026-04-20": 1,
-    "2026-04-09": 1
+    "2026-04-20": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 50,
@@ -30,11 +30,18 @@
     "vera.ai": 2
   },
   "byRelevanceScore": {
-    "high": 115,
+    "high": 116,
     "medium": 22,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Il Premio Rimini Mundi 2025 a sette ambasciatori dell'offerta congressuale",
+      "url": "https://www.newsrimini.it/ultima-ora/il-premio-rimini-mundi-2025-a-sette-ambasciatori-dellofferta-congressuale",
+      "source": "newsrimini.it",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-05-07T08:36:48.966Z"
+    },
     {
       "title": "AoIR 2025 Conference Agenda - Session Chair",
       "url": "https://aoir.org/aoir2025/program/",
@@ -62,13 +69,6 @@
       "source": "thesocietypages.org",
       "relevanceScore": 0.9,
       "collectedAt": "2026-04-28T08:28:58.127Z"
-    },
-    {
-      "title": "ilrestodelcarlino.it",
-      "url": "https://www.ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-820f2732",
-      "source": "ilrestodelcarlino.it",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-04-26T07:31:18.806Z"
     }
   ]
 }
