@@ -1,11 +1,12 @@
 {
-  "totalEntries": 138,
-  "lastUpdated": "2026-05-09T07:59:53.626Z",
+  "totalEntries": 139,
+  "lastUpdated": "2026-05-10T08:13:06.200Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-05-07T08:36:48.966Z"
+    "latest": "2026-05-10T08:13:06.177Z"
   },
   "byDate": {
+    "2026-05-10": 1,
     "2026-05-07": 1,
     "2026-05-05": 1,
     "2026-05-03": 1,
@@ -14,8 +15,7 @@
     "2026-04-26": 2,
     "2026-04-24": 2,
     "2026-04-23": 1,
-    "2026-04-22": 1,
-    "2026-04-20": 1
+    "2026-04-22": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 50,
@@ -30,11 +30,18 @@
     "vera.ai": 2
   },
   "byRelevanceScore": {
-    "high": 116,
+    "high": 117,
     "medium": 22,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "\"A Pretty Blunt Approach\": Meta's Political Content Reduction Policy and Italian Parliamentarians' Facebook Visibility",
+      "url": "https://osf.io/r298q/",
+      "source": "osf.io",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-05-10T08:13:06.177Z"
+    },
     {
       "title": "Il Premio Rimini Mundi 2025 a sette ambasciatori dell'offerta congressuale",
       "url": "https://www.newsrimini.it/ultima-ora/il-premio-rimini-mundi-2025-a-sette-ambasciatori-dellofferta-congressuale",
@@ -62,13 +69,6 @@
       "source": "snurb.info",
       "relevanceScore": 0.9,
       "collectedAt": "2026-05-02T07:48:05.842Z"
-    },
-    {
-      "title": "There's Research on That - The Society Pages",
-      "url": "https://thesocietypages.org/trot/2026/02/25/there-is-research-on-that/",
-      "source": "thesocietypages.org",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-04-28T08:28:58.127Z"
     }
   ]
 }
