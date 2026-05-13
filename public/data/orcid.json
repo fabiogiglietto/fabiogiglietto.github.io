@@ -17925,107 +17925,107 @@
       ]
     }
   ],
-  "lastUpdated": "2026-05-12T08:37:44.820Z",
+  "lastUpdated": "2026-05-13T08:42:35.254Z",
   "logs": {
-    "timestamp": "2026-05-12T08:37:43.754Z",
+    "timestamp": "2026-05-13T08:42:34.099Z",
     "steps": [
       {
-        "timestamp": "2026-05-12T08:37:43.754Z",
+        "timestamp": "2026-05-13T08:42:34.099Z",
         "type": "start",
         "message": "Starting ORCID data collection"
       },
       {
-        "timestamp": "2026-05-12T08:37:43.754Z",
+        "timestamp": "2026-05-13T08:42:34.099Z",
         "type": "info",
         "message": "Getting OAuth token for ORCID API access..."
       },
       {
-        "timestamp": "2026-05-12T08:37:43.754Z",
+        "timestamp": "2026-05-13T08:42:34.099Z",
         "type": "info",
         "message": "Attempting to use public API without authentication"
       },
       {
-        "timestamp": "2026-05-12T08:37:43.754Z",
+        "timestamp": "2026-05-13T08:42:34.100Z",
         "type": "info",
         "message": "OAuth token response received: {\n  \"status\": 200,\n  \"data\": {\n    \"access_token\": \"public_endpoint_no_token_needed\"\n  }\n}"
       },
       {
-        "timestamp": "2026-05-12T08:37:43.754Z",
+        "timestamp": "2026-05-13T08:42:34.100Z",
         "type": "info",
         "message": "Obtained access token: public_end..."
       },
       {
-        "timestamp": "2026-05-12T08:37:43.754Z",
+        "timestamp": "2026-05-13T08:42:34.100Z",
         "type": "info",
         "message": "Attempting to fetch ORCID record with JSON format..."
       },
       {
-        "timestamp": "2026-05-12T08:37:44.535Z",
+        "timestamp": "2026-05-13T08:42:34.948Z",
         "type": "info",
         "message": "Successfully retrieved record in JSON format"
       },
       {
-        "timestamp": "2026-05-12T08:37:44.535Z",
+        "timestamp": "2026-05-13T08:42:34.948Z",
         "type": "info",
         "message": "Retrieved ORCID record in JSON format"
       },
       {
-        "timestamp": "2026-05-12T08:37:44.535Z",
+        "timestamp": "2026-05-13T08:42:34.948Z",
         "type": "info",
         "message": "Response content type: application/json;charset=UTF-8"
       },
       {
-        "timestamp": "2026-05-12T08:37:44.535Z",
+        "timestamp": "2026-05-13T08:42:34.948Z",
         "type": "info",
         "message": "Trying to fetch works directly from /works endpoint for comparison..."
       },
       {
-        "timestamp": "2026-05-12T08:37:44.819Z",
+        "timestamp": "2026-05-13T08:42:35.254Z",
         "type": "info",
         "message": "Works endpoint returned 148 works"
       },
       {
-        "timestamp": "2026-05-12T08:37:44.819Z",
+        "timestamp": "2026-05-13T08:42:35.254Z",
         "type": "info",
         "message": "Processing JSON response"
       },
       {
-        "timestamp": "2026-05-12T08:37:44.819Z",
+        "timestamp": "2026-05-13T08:42:35.254Z",
         "type": "info",
         "message": "Found person data with keys: last-modified-date, name, other-names, biography, researcher-urls, emails, addresses, keywords, external-identifiers, path"
       },
       {
-        "timestamp": "2026-05-12T08:37:44.819Z",
+        "timestamp": "2026-05-13T08:42:35.254Z",
         "type": "info",
         "message": "Record endpoint response structure differs from expected format"
       },
       {
-        "timestamp": "2026-05-12T08:37:44.819Z",
+        "timestamp": "2026-05-13T08:42:35.254Z",
         "type": "info",
         "message": "Works endpoint has 148 works, record endpoint has 0 works"
       },
       {
-        "timestamp": "2026-05-12T08:37:44.819Z",
+        "timestamp": "2026-05-13T08:42:35.254Z",
         "type": "warning",
         "message": "DISCREPANCY: Works endpoint has 148 works, but record endpoint has 0 works"
       },
       {
-        "timestamp": "2026-05-12T08:37:44.819Z",
+        "timestamp": "2026-05-13T08:42:35.254Z",
         "type": "info",
         "message": "Using 148 works from /works endpoint instead of /record endpoint"
       },
       {
-        "timestamp": "2026-05-12T08:37:44.819Z",
+        "timestamp": "2026-05-13T08:42:35.254Z",
         "type": "info",
         "message": "Sample work structure: {\"keys\":[\"last-modified-date\",\"external-ids\",\"work-summary\"],\"hasSummary\":true,\"summaryCount\":2,\"summaryKeys\":[\"put-code\",\"created-date\",\"last-modified-date\",\"source\",\"title\",\"external-ids\",\"url\",\"type\",\"publication-date\",\"journal-title\",\"visibility\",\"path\",\"display-index\"],\"title\":\"From the Wild West to the Walled Garden\",\"type\":\"journal-article\",\"pubDate\":\"2026-04-22\"}"
       },
       {
-        "timestamp": "2026-05-12T08:37:44.819Z",
+        "timestamp": "2026-05-13T08:42:35.254Z",
         "type": "info",
         "message": "Collection completed successfully with 148 works"
       },
       {
-        "timestamp": "2026-05-12T08:37:44.820Z",
+        "timestamp": "2026-05-13T08:42:35.254Z",
         "type": "complete",
         "message": "Collection completed with 148 works retrieved"
       }
@@ -18033,7 +18033,7 @@
     "errors": [],
     "warnings": [
       {
-        "timestamp": "2026-05-12T08:37:44.819Z",
+        "timestamp": "2026-05-13T08:42:35.254Z",
         "message": "Works count discrepancy: /works endpoint: 148, /record endpoint: 0"
       }
     ],
@@ -18051,11 +18051,11 @@
         "contentType": "application/json;charset=UTF-8",
         "status": 200,
         "headers": {
-          "date": "Tue, 12 May 2026 08:37:44 GMT",
+          "date": "Wed, 13 May 2026 08:42:34 GMT",
           "content-type": "application/json;charset=UTF-8",
           "transfer-encoding": "chunked",
           "connection": "keep-alive",
-          "cf-ray": "9fa81a651921ee17-SJC",
+          "cf-ray": "9fb05edbddb669f9-DFW",
           "cf-cache-status": "DYNAMIC",
           "access-control-allow-origin": "*",
           "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
@@ -18067,10 +18067,10 @@
           "cf-apo-via": "origin,host",
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
-          "x-target": "reg-prod-papi-use2-c1",
-          "x-via": "a1-newvpc",
+          "x-target": "reg-prod-papi-use2-b1",
+          "x-via": "b1-newvpc",
           "x-xss-protection": "1; mode=block",
-          "set-cookie": "__cf_bm=P0FKWSi3Ry0nNkqkzQb3gg26gB5KdNDjvGqbDe3Gpbs-1778575063.8509116-1.0.1.1-mTW9gWt3oBDbpK53eon74aMTZnNlNfWELb6NoAojneTFLfaaYTTLSej2l_FZCJF2f4dxNmekfGjV3.Y_qHN.7DsSloPawfOSxJjQk6QXOJ8XBLCeftqGVT38r.zdDSqm; HttpOnly; SameSite=None; Secure; Path=/; Domain=orcid.org; Expires=Tue, 12 May 2026 09:07:44 GMT"
+          "set-cookie": "__cf_bm=5fL3D2HZGO9_DaYutt5LVt3tA5f7_ZVr3yhy_jrXM0U-1778661754.2188694-1.0.1.1-jhVxmRv_Nsxh4uplA_DXsHJ7BKWePcz_nm4LYSaDP8olPnFrWLmukO8cVxOSGs4KofQ3iOtH.SBjjqbeG_39XnkN1FfUwsJn6w_O2FXiVZ6_Jf0EBNuvfXBySq_23c5R; HttpOnly; SameSite=None; Secure; Path=/; Domain=orcid.org; Expires=Wed, 13 May 2026 09:12:34 GMT"
         },
         "dataKeys": [
           "orcid-identifier",
