@@ -901,6 +901,17 @@
       "duration": "10:20",
       "author": "Volpe, Camilla",
       "doi": null
+    },
+    {
+      "id": "bibtex:Waight2026-ts",
+      "bibtexKey": "Waight2026-ts",
+      "title": "AI's",
+      "description": "AI-generated podcast discussion.\n\nReference:\nWaight, H., Yang, E., Yuan, Y., Messing, S., Roberts, M. E., Stewart, B. M., & Tucker, J. A. (2026). State media control influences large language models. https://doi.org/10.1038/s41586-026-10506-7",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Waight2026-ts.mp3",
+      "pubDate": "Thu, 14 May 2026 07:53:25 +0000",
+      "duration": "10:12",
+      "author": "Hannah Waight, Eddie Yang, Yin Yuan, Solomon Messing, Margaret E. Roberts, Brandon M. Stewart, Joshua A. Tucker",
+      "doi": "10.1038/s41586-026-10506-7"
     }
   ],
   "episodesByBibtexKey": {
@@ -1805,6 +1816,17 @@
       "duration": "10:20",
       "author": "Volpe, Camilla",
       "doi": null
+    },
+    "Waight2026-ts": {
+      "id": "bibtex:Waight2026-ts",
+      "bibtexKey": "Waight2026-ts",
+      "title": "AI's",
+      "description": "AI-generated podcast discussion.\n\nReference:\nWaight, H., Yang, E., Yuan, Y., Messing, S., Roberts, M. E., Stewart, B. M., & Tucker, J. A. (2026). State media control influences large language models. https://doi.org/10.1038/s41586-026-10506-7",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Waight2026-ts.mp3",
+      "pubDate": "Thu, 14 May 2026 07:53:25 +0000",
+      "duration": "10:12",
+      "author": "Hannah Waight, Eddie Yang, Yin Yuan, Solomon Messing, Margaret E. Roberts, Brandon M. Stewart, Joshua A. Tucker",
+      "doi": "10.1038/s41586-026-10506-7"
     }
   },
   "episodesByDoi": {
@@ -2467,9 +2489,20 @@
       "duration": "10:44",
       "author": "Sophia Rothut, Heidi Schulze, Diana Rieger, Maximilian Lechner, Brigitte Naderer",
       "doi": "10.1080/1369118x.2026.2654668"
+    },
+    "10.1038/s41586-026-10506-7": {
+      "id": "bibtex:Waight2026-ts",
+      "bibtexKey": "Waight2026-ts",
+      "title": "AI's",
+      "description": "AI-generated podcast discussion.\n\nReference:\nWaight, H., Yang, E., Yuan, Y., Messing, S., Roberts, M. E., Stewart, B. M., & Tucker, J. A. (2026). State media control influences large language models. https://doi.org/10.1038/s41586-026-10506-7",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Waight2026-ts.mp3",
+      "pubDate": "Thu, 14 May 2026 07:53:25 +0000",
+      "duration": "10:12",
+      "author": "Hannah Waight, Eddie Yang, Yin Yuan, Solomon Messing, Margaret E. Roberts, Brandon M. Stewart, Joshua A. Tucker",
+      "doi": "10.1038/s41586-026-10506-7"
     }
   },
-  "totalEpisodes": 82,
-  "lastUpdated": "2026-05-13T08:42:34.809Z",
+  "totalEpisodes": 83,
+  "lastUpdated": "2026-05-14T08:35:25.702Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }

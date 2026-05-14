@@ -2,7 +2,7 @@
   "source": "ORA UNIURB",
   "repository": "https://ora.uniurb.it",
   "oaiEndpoint": "https://ora.uniurb.it/oai/request",
-  "collectedAt": "2026-05-13T08:42:34.157Z",
+  "collectedAt": "2026-05-14T08:35:24.544Z",
   "author": "Fabio Giglietto",
   "publications": [
     {
@@ -67,6 +67,26 @@
       "oaiIdentifier": "oai:ora.uniurb.it:11576/2766471",
       "datestamp": "2025-11-22T00:51:48Z",
       "url": "https://ora.uniurb.it/handle/11576/2766471"
+    },
+    {
+      "title": "Viralità",
+      "authors": "Fabio Giglietto; Augusto Valeriani",
+      "authorsList": [
+        "Fabio Giglietto",
+        "Augusto Valeriani"
+      ],
+      "year": 2025,
+      "doi": null,
+      "handle": "11576/2765591",
+      "type": "chapter",
+      "abstract": null,
+      "publisher": "Carocci",
+      "journal": null,
+      "pages": null,
+      "language": "ita",
+      "oaiIdentifier": "oai:ora.uniurb.it:11576/2765591",
+      "datestamp": "2025-11-30T00:29:06Z",
+      "url": "https://ora.uniurb.it/handle/11576/2765591"
     },
     {
       "title": "Viralità",
@@ -304,10 +324,10 @@
     }
   ],
   "stats": {
-    "total": 14,
+    "total": 15,
     "byType": {
       "article": 6,
-      "chapter": 4,
+      "chapter": 5,
       "other": 3,
       "conference": 1
     },
@@ -316,7 +336,7 @@
       "2022": 3,
       "2023": 5,
       "2024": 1,
-      "2025": 2,
+      "2025": 3,
       "2026": 2
     }
   }
