@@ -1,20 +1,5 @@
 [
   {
-    "title": "CS2Italy",
-    "snippet": "Fabio Giglietto is listed as a member of the Program Committee for the CS2Italy conference, which has registration dates up to April 15, 2026.",
-    "url": "https://cs2italy.org/",
-    "date": "2026-05-12",
-    "source": "cs2italy.org",
-    "description": "Fabio Giglietto is listed as a member of the Program Committee for the CS2Italy conference, indicating his involvement in a Computational Social Science event with registration ongoing until April 2026.",
-    "relevanceScore": 0.9,
-    "mentionedByName": true,
-    "personMatch": "confirmed",
-    "isRecent": true,
-    "searchEngine": "gemini",
-    "dateConfidence": "low",
-    "dateSource": "http-header"
-  },
-  {
     "title": "Indagine urbinate: \"Così l’algoritmo influenza il voto\" - Il Resto del Carlino",
     "snippet": "",
     "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcW9YMU0yTVdFVzJQOXNJOVJNRm5wS3dnUDgweEFBeDFFc3ZDdkJJVTFnWWg3S1ZnTk0tc2lTUFJGS3JJYVFST3ZGeXBCYldMRnZuSXoxR0hFU2NrTnUxQVc1UWhySkhBZk9DeTZGOFdDeVFXaTlKRElYNTQtWDBtdlUzaklUUjRka3Jwcm1pUG9wSUttQ2ZkTDl5SHRlRUNXR0E?oc=5&hl=en-US&gl=US&ceid=US:en",
@@ -43,6 +28,21 @@
     "searchEngine": "google-news-rss",
     "dateConfidence": "high",
     "dateSource": "rss-pubdate"
+  },
+  {
+    "title": "lumsanews.it",
+    "snippet": "",
+    "url": "https://www.lumsanews.it/facebook-troppa-visibilita-a-estremisti-e-complottisti-ecco-come-impatta-meta-sulle-elezioni/",
+    "date": "2026-01-09",
+    "source": "lumsanews.it",
+    "description": "An article from January 2024 discussing Facebook's impact on elections and the visibility of extremist content, which quotes Fabio Giglietto, Professor of Internet Studies at the University of Urbino Carlo Bo, as an expert on the dangers of social media in politics.",
+    "relevanceScore": 0.9,
+    "mentionedByName": true,
+    "personMatch": "confirmed",
+    "isRecent": true,
+    "searchEngine": "gemini",
+    "dateConfidence": "high",
+    "dateSource": "cache (og-meta)"
   },
   {
     "title": "Facebook premia gli estremisti: la ricerca dell'Università di Urbino - Lumsanews",
@@ -105,34 +105,34 @@
     "dateSource": "rss-pubdate"
   },
   {
-    "title": "Più visibilità agli estremisti che ai parlamentari, l'impatto del “filtro” di Meta sulle elezioni",
-    "snippet": "This article, published on January 7, 2026, reports on a study authored by Fabio Giglietto, a full professor at the University of Urbino, which investigates the impact of Meta's algorithmic filtering on political content, concluding that it has led to more visibility for extremist content compared to that of parliamentarians.",
-    "url": "https://www.editorialedomani.it/economia/facebook-instagram-meta-filtro-estremisti-visibilita-parlamentari-influenza-elezioni-politiche-2022-xldogv8g",
+    "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme",
+    "snippet": "This article reports on a study by Professor Fabio Giglietto of the University of Urbino, published on January 7, 2026. The research indicates that Facebook's algorithms have decreased the visibility of official political content while promoting anti-European extremist, pro-Russian, and conspiracy-theory content. The study analyzed over 2.5 million Facebook posts from 2021 to 2025.",
+    "url": "https://www.open.online/2026/01/07/facebook-algoritmo-politica-estremisti-studio-universita-urbino/",
     "date": "2026-01-07",
-    "source": "TPI",
-    "description": "This article, published on January 7, 2026, reports on a study authored by Fabio Giglietto, a full professor at the University of Urbino, investigating Meta's algorithmic filtering and its impact on extremist content visibility.",
-    "relevanceScore": 0.9,
-    "mentionedByName": true,
-    "personMatch": "confirmed",
-    "isRecent": true,
-    "searchEngine": "gemini",
-    "dateConfidence": "high",
-    "dateSource": "jsonld"
-  },
-  {
-    "title": "Happy 2026! I finally built the thing I'd had in mind for a while: FG's Research Radio, AI-generated audio deep dives into computational social science papers.",
-    "snippet": "A social media post by Bruno Arpino announces Fabio Giglietto's new project, \"FG's Research Radio,\" which offers AI-generated audio deep dives into computational social science papers. The post was made in approximately March 2026.",
-    "url": "https://bsky.app/profile/brunoarpino.bsky.social/post/3ko3bdsy3332v",
-    "date": "2026-01-01",
-    "source": "bsky.app",
-    "description": "A social media post announces Fabio Giglietto's new project, 'FG's Research Radio,' which utilizes AI to create audio deep dives into computational social science papers.",
-    "relevanceScore": 0.9,
+    "source": "open.online",
+    "description": "This article reports on a study by Professor Fabio Giglietto of the University of Urbino, published on January 7, 2026, detailing how Facebook's algorithms allegedly reduce official political content visibility while promoting extremist and conspiracy-theory content.",
+    "relevanceScore": 1,
     "mentionedByName": true,
     "personMatch": "confirmed",
     "isRecent": true,
     "searchEngine": "gemini",
     "dateConfidence": "medium",
-    "dateSource": "gemini-page-estimate"
+    "dateSource": "url-path"
+  },
+  {
+    "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme - Open",
+    "snippet": "",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQNUpwb2VURm9yX1p6TFRaVWNScC1HVW1oTGxnaHJKZ2s5N0ZQMlp4SDZPQ0FQa3FBN0VZUTcyYlROTHd4UHBvU1FQVG5sNmNOb09OdUFCUGhPYlRSb2MzNzlMbXFJOVh4OGZya1pvdlhhSlB4eUI4bWMyZ0ZGR2hnN2JDSUQ0TkNxaEJGX21JbDhtTWY5Q3lZOWtKUE00U1BzaDVrZWRBQVN5TTdBMlFKbUs0V0ttY0xkMzZNTnl0MjE0WHA5WmhMUWxR?oc=5&hl=en-US&gl=US&ceid=US:en",
+    "date": "2026-01-07",
+    "source": "Open",
+    "description": "News article from Open",
+    "relevanceScore": 0.75,
+    "mentionedByName": true,
+    "personMatch": "confirmed",
+    "isRecent": true,
+    "searchEngine": "google-news-rss",
+    "dateConfidence": "high",
+    "dateSource": "rss-pubdate"
   },
   {
     "title": "Katharina Esau Was Awarded an ARC Discovery Early Career Researcher Award 2026 - Oncodaily",
