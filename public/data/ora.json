@@ -2,7 +2,7 @@
   "source": "ORA UNIURB",
   "repository": "https://ora.uniurb.it",
   "oaiEndpoint": "https://ora.uniurb.it/oai/request",
-  "collectedAt": "2026-05-15T08:46:49.450Z",
+  "collectedAt": "2026-05-16T08:02:34.168Z",
   "author": "Fabio Giglietto",
   "publications": [
     {
@@ -46,6 +46,27 @@
       "oaiIdentifier": "oai:ora.uniurb.it:11576/2774611",
       "datestamp": "2026-05-04T15:31:17Z",
       "url": "https://ora.uniurb.it/handle/11576/2774611"
+    },
+    {
+      "title": "Manipolazione dei media ed influenza digitale. Sfide, tecnologie e risposte",
+      "authors": "Fabio Giglietto; Nicola Righetti; Timothy Graham",
+      "authorsList": [
+        "Fabio Giglietto",
+        "Nicola Righetti",
+        "Timothy Graham"
+      ],
+      "year": 2025,
+      "doi": null,
+      "handle": "11576/2766471",
+      "type": "chapter",
+      "abstract": null,
+      "publisher": "Feltrinelli Editore",
+      "journal": null,
+      "pages": null,
+      "language": "ita",
+      "oaiIdentifier": "oai:ora.uniurb.it:11576/2766471",
+      "datestamp": "2025-11-22T00:51:48Z",
+      "url": "https://ora.uniurb.it/handle/11576/2766471"
     },
     {
       "title": "Manipolazione dei media ed influenza digitale. Sfide, tecnologie e risposte",
@@ -213,27 +234,6 @@
       "url": "https://ora.uniurb.it/handle/11576/2718711"
     },
     {
-      "title": "THE ‘SEASIDE CAMPAIGN’ AS SEEN FROM THE POINT OF VIEW OF FACEBOOK AND INSTAGRAM",
-      "authors": "G. Boccia Artieri; F. Giglietto; A. Stanziano",
-      "authorsList": [
-        "G. Boccia Artieri",
-        "F. Giglietto",
-        "A. Stanziano"
-      ],
-      "year": 2023,
-      "doi": null,
-      "handle": "11576/2718711",
-      "type": "chapter",
-      "abstract": "This chapter outlines the most relevant topics discussed during the campaign on two Italian mainstream social media. The study analyzes posts collected through CrowdTangle mentioning a set of political keywords published on Facebook Pages/groups and Instagram accounts between 21 July, when Draghi resigned as Prime Minister, and 25 September 2022, the day of the election. A breakout algorithm detector is used to identify peaks in daily engagement, and for each peak, the main topics were identified using LDA (Latent Dirichlet Allocation). The chapter provides insight into the trends and topics that were most likely to drive engagement on these platforms during the campaign period. The results of the study may be useful for understanding the role of social media in political communication and for identifying the most effective strategies for reaching and engaging with voters through these channels.",
-      "publisher": "Palgramve Macmillan",
-      "journal": null,
-      "pages": null,
-      "language": "eng",
-      "oaiIdentifier": "oai:ora.uniurb.it:11576/2718711",
-      "datestamp": "2023-07-04T10:37:06Z",
-      "url": "https://ora.uniurb.it/handle/11576/2718711"
-    },
-    {
       "title": "Unexpected consequences of a simple threshold: the effect of the 100 public shares on Meta’s URL Shares Dataset",
       "authors": "Fabio Giglietto; Luca Rossi; Nicola Righetti",
       "authorsList": [
@@ -335,9 +335,9 @@
     "byYear": {
       "2020": 1,
       "2022": 3,
-      "2023": 6,
+      "2023": 5,
       "2024": 1,
-      "2025": 2,
+      "2025": 3,
       "2026": 2
     }
   }

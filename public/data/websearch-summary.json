@@ -1,11 +1,12 @@
 {
-  "totalEntries": 142,
-  "lastUpdated": "2026-05-15T08:50:23.502Z",
+  "totalEntries": 143,
+  "lastUpdated": "2026-05-16T08:11:32.749Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-05-14T08:39:42.384Z"
+    "latest": "2026-05-16T08:11:32.728Z"
   },
   "byDate": {
+    "2026-05-16": 1,
     "2026-05-14": 1,
     "2026-05-13": 1,
     "2026-05-11": 1,
@@ -14,8 +15,7 @@
     "2026-05-05": 1,
     "2026-05-03": 1,
     "2026-05-02": 2,
-    "2026-04-28": 1,
-    "2026-04-26": 2
+    "2026-04-28": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 50,
@@ -30,11 +30,18 @@
     "vera.ai": 2
   },
   "byRelevanceScore": {
-    "high": 120,
+    "high": 121,
     "medium": 22,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "M/C Journal 'twitter' Issue Now Out! | Snurblog - Axel Bruns",
+      "url": "https://snurb.info/index.php/node/3562",
+      "source": "snurblog.org",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-05-16T08:11:32.728Z"
+    },
     {
       "title": "Happy 2026! I finally built the thing I'd had in mind for a while: FG's Research Radio, AI-generated audio deep dives into computational social science papers.",
       "url": "https://bsky.app/profile/brunoarpino.bsky.social/post/3ko3bdsy3332v",
@@ -62,13 +69,6 @@
       "source": "osf.io",
       "relevanceScore": 0.9,
       "collectedAt": "2026-05-10T08:13:06.177Z"
-    },
-    {
-      "title": "Il Premio Rimini Mundi 2025 a sette ambasciatori dell'offerta congressuale",
-      "url": "https://www.newsrimini.it/ultima-ora/il-premio-rimini-mundi-2025-a-sette-ambasciatori-dellofferta-congressuale",
-      "source": "newsrimini.it",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-05-07T08:36:48.966Z"
     }
   ]
 }
