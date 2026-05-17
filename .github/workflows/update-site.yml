@@ -1,10 +1,18 @@
 name: Update Website Data
 
 on:
+  # Triggered by research-radio in the pipeline chain (see PIPELINE.md)
+  repository_dispatch:
+    types: [pipeline-tick]
   schedule:
-    # Run at 6:00 AM UTC (8:00 AM CEST) for better reliability
-    - cron: '0 6 * * *'  # Daily data collection
+    # Daily fallback at 06:00 UTC in case a dispatch is missed
+    - cron: '0 6 * * *'
   workflow_dispatch:  # Allow manual triggering
+
+# Avoid overlapping runs (daily cron + dispatch both committing/pushing)
+concurrency:
+  group: update-site
+  cancel-in-progress: false
 
 jobs:
   update-data:
@@ -107,3 +115,10 @@ jobs:
           
           echo "📤 Pushing updates to repository..."
           git push
+
+      - name: Trigger downstream pipeline (fg-zettelkasten)
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.PIPELINE_DISPATCH_TOKEN }}
+          repository: fabiogiglietto/fg-zettelkasten
+          event-type: pipeline-tick
