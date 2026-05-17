@@ -912,6 +912,28 @@
       "duration": "10:12",
       "author": "Hannah Waight, Eddie Yang, Yin Yuan, Solomon Messing, Margaret E. Roberts, Brandon M. Stewart, Joshua A. Tucker",
       "doi": "10.1038/s41586-026-10506-7"
+    },
+    {
+      "id": "bibtex:Spampatti2026-kx",
+      "bibtexKey": "Spampatti2026-kx",
+      "title": "Climate Psychology's",
+      "description": "AI-generated podcast discussion.\n\nReference:\nSpampatti, T., Većkalov, B., Geiger, S. J., Linden, S. V. D., Lewandowsky, S., & Hornsey, M. (2026). Six insights from climate psychology for the study of misinformation. https://doi.org/10.31234/osf.io/swdrq_v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Spampatti2026-kx.mp3",
+      "pubDate": "Fri, 15 May 2026 08:01:46 +0000",
+      "duration": "9:31",
+      "author": "Tobia Spampatti, Bojana Većkalov, Sandra Jeanette Geiger, Sander van der Linden, Stephan Lewandowsky, Matthew Hornsey",
+      "doi": "10.31234/osf.io/swdrq_v1"
+    },
+    {
+      "id": "bibtex:Mahl2026-hc",
+      "bibtexKey": "Mahl2026-hc",
+      "title": "No Silver",
+      "description": "AI-generated podcast discussion.\n\nReference:\nMahl, D., Kessler, S. H., Schäfer, M. S., Jobin, A., Zeng, J., & Georgi, F. (2026). Conspiracy theories and misinformation in digital media: An international expert assessment of challenges, trends, and interventions. https://doi.org/10.1515/commun-2024-0123",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Mahl2026-hc.mp3",
+      "pubDate": "Sat, 16 May 2026 08:57:04 +0000",
+      "duration": "9:07",
+      "author": "Daniela Mahl, Sabrina H. Kessler, Mike S. Schäfer, Anna Jobin, Jing Zeng, Fanny Georgi",
+      "doi": "10.1515/commun-2024-0123"
     }
   ],
   "episodesByBibtexKey": {
@@ -1827,6 +1849,28 @@
       "duration": "10:12",
       "author": "Hannah Waight, Eddie Yang, Yin Yuan, Solomon Messing, Margaret E. Roberts, Brandon M. Stewart, Joshua A. Tucker",
       "doi": "10.1038/s41586-026-10506-7"
+    },
+    "Spampatti2026-kx": {
+      "id": "bibtex:Spampatti2026-kx",
+      "bibtexKey": "Spampatti2026-kx",
+      "title": "Climate Psychology's",
+      "description": "AI-generated podcast discussion.\n\nReference:\nSpampatti, T., Većkalov, B., Geiger, S. J., Linden, S. V. D., Lewandowsky, S., & Hornsey, M. (2026). Six insights from climate psychology for the study of misinformation. https://doi.org/10.31234/osf.io/swdrq_v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Spampatti2026-kx.mp3",
+      "pubDate": "Fri, 15 May 2026 08:01:46 +0000",
+      "duration": "9:31",
+      "author": "Tobia Spampatti, Bojana Većkalov, Sandra Jeanette Geiger, Sander van der Linden, Stephan Lewandowsky, Matthew Hornsey",
+      "doi": "10.31234/osf.io/swdrq_v1"
+    },
+    "Mahl2026-hc": {
+      "id": "bibtex:Mahl2026-hc",
+      "bibtexKey": "Mahl2026-hc",
+      "title": "No Silver",
+      "description": "AI-generated podcast discussion.\n\nReference:\nMahl, D., Kessler, S. H., Schäfer, M. S., Jobin, A., Zeng, J., & Georgi, F. (2026). Conspiracy theories and misinformation in digital media: An international expert assessment of challenges, trends, and interventions. https://doi.org/10.1515/commun-2024-0123",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Mahl2026-hc.mp3",
+      "pubDate": "Sat, 16 May 2026 08:57:04 +0000",
+      "duration": "9:07",
+      "author": "Daniela Mahl, Sabrina H. Kessler, Mike S. Schäfer, Anna Jobin, Jing Zeng, Fanny Georgi",
+      "doi": "10.1515/commun-2024-0123"
     }
   },
   "episodesByDoi": {
@@ -2500,9 +2544,31 @@
       "duration": "10:12",
       "author": "Hannah Waight, Eddie Yang, Yin Yuan, Solomon Messing, Margaret E. Roberts, Brandon M. Stewart, Joshua A. Tucker",
       "doi": "10.1038/s41586-026-10506-7"
+    },
+    "10.31234/osf.io/swdrq_v1": {
+      "id": "bibtex:Spampatti2026-kx",
+      "bibtexKey": "Spampatti2026-kx",
+      "title": "Climate Psychology's",
+      "description": "AI-generated podcast discussion.\n\nReference:\nSpampatti, T., Većkalov, B., Geiger, S. J., Linden, S. V. D., Lewandowsky, S., & Hornsey, M. (2026). Six insights from climate psychology for the study of misinformation. https://doi.org/10.31234/osf.io/swdrq_v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Spampatti2026-kx.mp3",
+      "pubDate": "Fri, 15 May 2026 08:01:46 +0000",
+      "duration": "9:31",
+      "author": "Tobia Spampatti, Bojana Većkalov, Sandra Jeanette Geiger, Sander van der Linden, Stephan Lewandowsky, Matthew Hornsey",
+      "doi": "10.31234/osf.io/swdrq_v1"
+    },
+    "10.1515/commun-2024-0123": {
+      "id": "bibtex:Mahl2026-hc",
+      "bibtexKey": "Mahl2026-hc",
+      "title": "No Silver",
+      "description": "AI-generated podcast discussion.\n\nReference:\nMahl, D., Kessler, S. H., Schäfer, M. S., Jobin, A., Zeng, J., & Georgi, F. (2026). Conspiracy theories and misinformation in digital media: An international expert assessment of challenges, trends, and interventions. https://doi.org/10.1515/commun-2024-0123",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Mahl2026-hc.mp3",
+      "pubDate": "Sat, 16 May 2026 08:57:04 +0000",
+      "duration": "9:07",
+      "author": "Daniela Mahl, Sabrina H. Kessler, Mike S. Schäfer, Anna Jobin, Jing Zeng, Fanny Georgi",
+      "doi": "10.1515/commun-2024-0123"
     }
   },
-  "totalEpisodes": 83,
-  "lastUpdated": "2026-05-16T08:02:34.897Z",
+  "totalEpisodes": 85,
+  "lastUpdated": "2026-05-17T08:20:00.226Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
