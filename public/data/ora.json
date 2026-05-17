@@ -2,7 +2,7 @@
   "source": "ORA UNIURB",
   "repository": "https://ora.uniurb.it",
   "oaiEndpoint": "https://ora.uniurb.it/oai/request",
-  "collectedAt": "2026-05-17T08:19:58.856Z",
+  "collectedAt": "2026-05-17T19:12:57.504Z",
   "author": "Fabio Giglietto",
   "publications": [
     {
@@ -46,27 +46,6 @@
       "oaiIdentifier": "oai:ora.uniurb.it:11576/2774611",
       "datestamp": "2026-05-04T15:31:17Z",
       "url": "https://ora.uniurb.it/handle/11576/2774611"
-    },
-    {
-      "title": "Manipolazione dei media ed influenza digitale. Sfide, tecnologie e risposte",
-      "authors": "Fabio Giglietto; Nicola Righetti; Timothy Graham",
-      "authorsList": [
-        "Fabio Giglietto",
-        "Nicola Righetti",
-        "Timothy Graham"
-      ],
-      "year": 2025,
-      "doi": null,
-      "handle": "11576/2766471",
-      "type": "chapter",
-      "abstract": null,
-      "publisher": "Feltrinelli Editore",
-      "journal": null,
-      "pages": null,
-      "language": "ita",
-      "oaiIdentifier": "oai:ora.uniurb.it:11576/2766471",
-      "datestamp": "2025-11-22T00:51:48Z",
-      "url": "https://ora.uniurb.it/handle/11576/2766471"
     },
     {
       "title": "Manipolazione dei media ed influenza digitale. Sfide, tecnologie e risposte",
@@ -325,10 +304,10 @@
     }
   ],
   "stats": {
-    "total": 15,
+    "total": 14,
     "byType": {
       "article": 6,
-      "chapter": 5,
+      "chapter": 4,
       "other": 3,
       "conference": 1
     },
@@ -337,7 +316,7 @@
       "2022": 3,
       "2023": 5,
       "2024": 1,
-      "2025": 3,
+      "2025": 2,
       "2026": 2
     }
   }
