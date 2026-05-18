@@ -12,26 +12,6 @@
   },
   "repositories": [
     {
-      "name": "fg-zettelkasten",
-      "description": null,
-      "url": "https://github.com/fabiogiglietto/fg-zettelkasten",
-      "language": "Python",
-      "stars": 0,
-      "forks": 0,
-      "created_at": "2026-05-17T08:10:27Z",
-      "updated_at": "2026-05-18T06:48:25Z"
-    },
-    {
-      "name": "fabiogiglietto.github.io",
-      "description": "Your research presence, always current, zero maintenance.                                                                                                                                  ",
-      "url": "https://github.com/fabiogiglietto/fabiogiglietto.github.io",
-      "language": "JavaScript",
-      "stars": 7,
-      "forks": 1,
-      "created_at": "2025-04-21T09:41:33Z",
-      "updated_at": "2026-05-18T06:43:14Z"
-    },
-    {
       "name": "research-radio",
       "description": "Convert academic papers into AI podcast episodes with Anthropic Claude and Google Gemini. Powers FG's Research Radio.",
       "url": "https://github.com/fabiogiglietto/research-radio",
@@ -39,7 +19,17 @@
       "stars": 3,
       "forks": 1,
       "created_at": "2025-12-29T17:46:10Z",
-      "updated_at": "2026-05-18T06:41:03Z"
+      "updated_at": "2026-05-18T08:03:42Z"
+    },
+    {
+      "name": "fg-zettelkasten",
+      "description": null,
+      "url": "https://github.com/fabiogiglietto/fg-zettelkasten",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "created_at": "2026-05-17T08:10:27Z",
+      "updated_at": "2026-05-18T07:39:16Z"
     },
     {
       "name": "toread",
@@ -49,7 +39,17 @@
       "stars": 1,
       "forks": 0,
       "created_at": "2025-06-07T09:12:59Z",
-      "updated_at": "2026-05-18T06:40:49Z"
+      "updated_at": "2026-05-18T07:38:17Z"
+    },
+    {
+      "name": "fabiogiglietto.github.io",
+      "description": "Your research presence, always current, zero maintenance.                                                                                                                                  ",
+      "url": "https://github.com/fabiogiglietto/fabiogiglietto.github.io",
+      "language": "JavaScript",
+      "stars": 7,
+      "forks": 1,
+      "created_at": "2025-04-21T09:41:33Z",
+      "updated_at": "2026-05-18T07:01:44Z"
     },
     {
       "name": "internet-studies-course",
@@ -274,5 +274,5 @@
       "activity": {}
     }
   ],
-  "lastUpdated": "2026-05-18T06:54:03.582Z"
+  "lastUpdated": "2026-05-18T08:04:05.784Z"
 }

@@ -1,5 +1,5 @@
 {
-  "overallSummary": "Fabio Giglietto maintains an active and professionally focused presence across Mastodon, LinkedIn, and Bluesky, accumulating a total of 3,580 followers. The content primarily revolves around academic research, publications, grant announcements, and career opportunities within computational social science. While LinkedIn boasts the largest audience, Bluesky consistently demonstrates the highest engagement rate, indicating a highly receptive and interactive community for academic updates. Overall, the social media strategy is effective in disseminating research and academic news.",
+  "overallSummary": "Fabio Giglietto maintains an active and diverse academic social media presence across Mastodon, LinkedIn, and Bluesky, accumulating a total of 3580 followers. His content consistently focuses on cutting-edge research in computational social science, particularly around disinformation and information operations. He effectively utilizes these platforms for announcing publications, grant awards, new research tools, and academic/hiring opportunities, demonstrating a strategic approach to disseminating his professional work and engaging with the academic community.",
   "engagementMetrics": {
     "totalFollowers": 3580,
     "averageEngagementRate": 5.32,
@@ -8,27 +8,31 @@
   "contentThemes": [
     {
       "theme": "Research & Publications",
-      "description": "Announcements of new papers, research findings, software releases (e.g., CooRnet), and discussions on methodological approaches to studying disinformation and coordinated behavior."
+      "description": "Announcements of new papers, research tool releases (e.g., CooRnet), and summaries of academic discussions."
     },
     {
-      "theme": "Career & Academic Opportunities",
-      "description": "Posts related to hiring postdoctoral researchers, PhD student opportunities, and grant awards for research teams."
+      "theme": "Disinformation & Information Operations",
+      "description": "Content focused on studying coordinated inauthentic behavior, disinformation campaigns, and information operations across platforms."
     },
     {
-      "theme": "Academic Engagements & Conferences",
-      "description": "Mentions of upcoming presentations at conferences and discussions about academic topics."
+      "theme": "Academic & Hiring Opportunities",
+      "description": "Posts related to securing research grants, hiring postdoctoral researchers, and opportunities for PhD students."
+    },
+    {
+      "theme": "Conferences & Presentations",
+      "description": "Updates and anticipation for upcoming presentations at academic conferences."
     }
   ],
   "recommendations": [
-    "Leverage LinkedIn's large professional network for major announcements like grants and hiring, as these tend to receive high absolute interactions despite a slightly lower relative engagement rate.",
-    "Continue to utilize Bluesky for timely updates on new publications and research opportunities, given its highest average engagement rate and highly interactive audience.",
-    "Explore cross-promotion strategies for key content (e.g., linking LinkedIn job posts on Mastodon/Bluesky, or sharing paper announcements across all platforms with tailored messaging) to maximize reach and engagement.",
-    "Encourage more direct interaction on Mastodon posts, perhaps by posing questions or inviting comments on discussion-oriented content, to build on its community-focused nature."
+    "Leverage Bluesky's high engagement for primary announcements: Given its leading engagement rate, prioritize major announcements (e.g., new papers, significant research findings, calls for collaboration) on Bluesky, then cross-promote selectively to other platforms.",
+    "Optimize LinkedIn for professional recruitment and high-impact news: Continue to utilize LinkedIn for grant announcements and hiring opportunities, as it consistently attracts significant professional engagement due to its large follower base.",
+    "Explore interactive content on Mastodon: To boost engagement on Mastodon, consider incorporating more direct questions, polls, or calls for discussion on methodological topics or recent academic debates, which aligns with its existing content themes.",
+    "Strategic cross-promotion for key updates: For all major research outputs or hiring initiatives, tailor and cross-post content across all platforms, ensuring relevant links and platform-specific calls to action are included to maximize reach and engagement."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky shows the highest average engagement rate (6.14%) and is particularly effective for announcing new publications and academic opportunities. Its audience appears highly responsive to cutting-edge research and career-related posts.",
-    "mastodon": "Mastodon, with the smallest follower base, still maintains a respectable average engagement rate (4.55%). It serves as a good platform for specific technical updates (like CooRnet v2.0) and engaging in academic discussions within its focused community.",
-    "linkedin": "LinkedIn has the largest follower count (1850) and excels in disseminating formal announcements, such as grant awards and hiring calls. Posts on this platform generate the highest absolute number of likes and comments, reinforcing its role as a key professional networking tool."
+    "bluesky": "Exhibits the highest average engagement rate (6.14%), proving highly effective for timely announcements like new publications and research opportunities. Its audience appears very receptive to direct academic news and collaboration prospects.",
+    "mastodon": "Shows the lowest average engagement rate (4.55%) among the platforms. Its content often features specific tool releases (e.g., CooRnet) and discussions on methodological approaches to disinformation, appealing to a focused academic niche.",
+    "linkedin": "Boasts the largest follower base (1850) and demonstrates strong performance for professional-oriented content, particularly for announcing grant awards and hiring postdoctoral researchers. It serves as a vital channel for broader professional networking and career opportunities."
   },
   "topPerformingContent": [
     {
