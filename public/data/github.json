@@ -12,14 +12,14 @@
   },
   "repositories": [
     {
-      "name": "research-radio",
-      "description": "Convert academic papers into AI podcast episodes with Anthropic Claude and Google Gemini. Powers FG's Research Radio.",
-      "url": "https://github.com/fabiogiglietto/research-radio",
-      "language": "Python",
-      "stars": 3,
-      "forks": 1,
-      "created_at": "2025-12-29T17:46:10Z",
-      "updated_at": "2026-05-17T19:34:51Z"
+      "name": "toread",
+      "description": "Consume a feed BibTeX export from a Paperpile folder, complete the publication metadata with Crossref and Semantic Scholar and create an RSS feed",
+      "url": "https://github.com/fabiogiglietto/toread",
+      "language": "TeX",
+      "stars": 1,
+      "forks": 0,
+      "created_at": "2025-06-07T09:12:59Z",
+      "updated_at": "2026-05-18T05:17:35Z"
     },
     {
       "name": "fabiogiglietto.github.io",
@@ -29,17 +29,17 @@
       "stars": 7,
       "forks": 1,
       "created_at": "2025-04-21T09:41:33Z",
-      "updated_at": "2026-05-17T19:34:14Z"
+      "updated_at": "2026-05-17T19:41:28Z"
     },
     {
-      "name": "toread",
-      "description": "Consume a feed BibTeX export from a Paperpile folder, complete the publication metadata with Crossref and Semantic Scholar and create an RSS feed",
-      "url": "https://github.com/fabiogiglietto/toread",
-      "language": "TeX",
-      "stars": 1,
-      "forks": 0,
-      "created_at": "2025-06-07T09:12:59Z",
-      "updated_at": "2026-05-17T19:33:59Z"
+      "name": "research-radio",
+      "description": "Convert academic papers into AI podcast episodes with Anthropic Claude and Google Gemini. Powers FG's Research Radio.",
+      "url": "https://github.com/fabiogiglietto/research-radio",
+      "language": "Python",
+      "stars": 3,
+      "forks": 1,
+      "created_at": "2025-12-29T17:46:10Z",
+      "updated_at": "2026-05-17T19:34:51Z"
     },
     {
       "name": "fg-zettelkasten",
@@ -274,5 +274,5 @@
       "activity": {}
     }
   ],
-  "lastUpdated": "2026-05-17T19:35:49.656Z"
+  "lastUpdated": "2026-05-18T05:23:25.425Z"
 }
