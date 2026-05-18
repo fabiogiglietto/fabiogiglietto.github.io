@@ -1,12 +1,12 @@
 {
-  "totalEntries": 144,
-  "lastUpdated": "2026-05-18T08:13:20.054Z",
+  "totalEntries": 145,
+  "lastUpdated": "2026-05-18T09:10:54.882Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-05-18T05:41:21.583Z"
+    "latest": "2026-05-18T09:10:54.848Z"
   },
   "byDate": {
-    "2026-05-18": 1,
+    "2026-05-18": 2,
     "2026-05-16": 1,
     "2026-05-14": 1,
     "2026-05-13": 1,
@@ -25,16 +25,23 @@
     "aoir.org": 3,
     "snurb.info": 3,
     "ilrestodelcarlino.it": 3,
+    "conftool.org": 2,
     "youtube.com": 2,
-    "veraai.eu": 2,
-    "vera.ai": 2
+    "veraai.eu": 2
   },
   "byRelevanceScore": {
-    "high": 122,
+    "high": 123,
     "medium": 22,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "AoIR2025 Ruptures: Schedule",
+      "url": "https://www.conftool.org/aoir2025/index.php?page=browseSessions&print=",
+      "source": "conftool.org",
+      "relevanceScore": 0.95,
+      "collectedAt": "2026-05-18T09:10:54.848Z"
+    },
     {
       "title": "Referendum. Bonelli e Fratoianni (Avs) scrivono al Presidente Agcom, preoccupati per le fake news veicolate sui social. Chiesto incontro. Piccolotti: inquietante che tecnologie opache abbiano cosi tanto spazio sui social del nostro Paese, con operazioni di propaganda finalizzate a condizionare l'opinione pubblica e fondate sul falso - Alleanza Verdi e Sinistra - Reti",
       "url": "https://retinews.it/referendum-bonelli-e-fratoianni-avs-scrivono-al-presidente-agcom-preoccupati-per-le-fake-news-veicolate-sui-social-chiesto-incontro-piccolotti-inquietante-che-tecnologie-opache-abbiano-cosi-tanto-spazio-sui-social-del-n/",
@@ -62,13 +69,6 @@
       "source": "ec.europa.eu",
       "relevanceScore": 0.9,
       "collectedAt": "2026-05-13T08:48:38.863Z"
-    },
-    {
-      "title": "AoIR2025 Conference Program",
-      "url": "https://www.conftool.org/aoir2025/sessions.php",
-      "source": "conftool.org",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-05-11T09:46:21.223Z"
     }
   ]
 }
