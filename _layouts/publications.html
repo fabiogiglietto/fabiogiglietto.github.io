@@ -50,6 +50,7 @@ layout: page
         </p>
         
         <div class="publication-links">
+          {% include podcast-badge.html publication=publication %}
           {% if publication.doi %}
           <a href="https://doi.org/{{ publication.doi }}" class="publication-link" target="_blank">DOI</a>
           {% endif %}

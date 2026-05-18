@@ -10,6 +10,7 @@ const fs = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
 const config = require('../config');
+const { generateBibtexKey } = require('../lib/bibtex-key');
 
 async function generatePublicationsData() {
   console.log('Generating publications data...');
@@ -41,6 +42,8 @@ async function generatePublicationsData() {
             year: pub.year, // Only use the explicitly provided year
             date: pub.publicationDate || null, // Full date for sorting (YYYY-MM-DD)
             doi: pub.doi,
+            bibtex_key: generateBibtexKey(pub), // Stable cross-pipeline join key
+
             citations: pub.metrics.total_citations || 0,
             citation_sources: {
               scholar: pub.citations.scholar,
@@ -80,12 +83,15 @@ async function generatePublicationsData() {
           // Format authors
           const authors = formatAuthorList(pub.authors || '');
           
+          const year = parseInt(pub.year);
           return {
             title: pub.title,
             authors: authors,
             venue: pub.venue?.replace(/,\s*\d{4}$/, '') || '', // Remove year from venue if present
-            year: parseInt(pub.year), // Only use the explicitly provided year
+            year: year, // Only use the explicitly provided year
             doi: doi,
+            bibtex_key: generateBibtexKey({ authors, year, doi, title: pub.title }), // Stable cross-pipeline join key
+
             citations: parseInt(pub.citations) || 0,
             citation_sources: {
               scholar: parseInt(pub.citations) || 0,

@@ -1396,6 +1396,13 @@ th {
   transition: all 0.2s ease;
   white-space: nowrap;
   flex-shrink: 0;
+  text-decoration: none;
+}
+
+.podcast-badge:hover,
+.podcast-badge:visited,
+.podcast-badge:focus {
+  color: white;
 }
 
 .podcast-badge:hover {

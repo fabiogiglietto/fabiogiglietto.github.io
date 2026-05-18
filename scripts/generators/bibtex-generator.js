@@ -7,6 +7,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { generateBibtexKey } = require('../lib/bibtex-key');
 
 /**
  * Escape special LaTeX characters in a string
@@ -143,28 +144,21 @@ function getBibtexType(pubType) {
 }
 
 /**
- * Generate a unique citation key
+ * Generate a unique citation key.
+ *
+ * Uses the shared deterministic helper so the key matches the one published in
+ * `_data/publications.yml` and the `own-publications.json` feed. The numeric
+ * suffix guard only triggers for true metadata duplicates (identical DOI or
+ * title), keeping the .bib file valid.
  */
 function generateCitationKey(pub, usedKeys) {
-  // Extract first author's last name
-  let lastName = 'Unknown';
-  if (pub.authors) {
-    const firstAuthor = pub.authors.split(/[,;&]|(\sand\s)/)[0].trim();
-    const parts = firstAuthor.split(/\s+/);
-    lastName = parts[parts.length - 1].replace(/[^a-zA-Z]/g, '');
-  }
-
-  const year = pub.year || 'XXXX';
-  let baseKey = `${lastName}${year}`;
-
-  // Make key unique by adding letter suffix
-  let key = baseKey;
-  let suffix = 'a';
+  const base = generateBibtexKey(pub);
+  let key = base;
+  let n = 2;
   while (usedKeys.has(key)) {
-    key = `${baseKey}${suffix}`;
-    suffix = String.fromCharCode(suffix.charCodeAt(0) + 1);
+    key = `${base}-${n}`;
+    n += 1;
   }
-
   usedKeys.add(key);
   return key;
 }

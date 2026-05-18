@@ -34,6 +34,7 @@ const teachingGenerator = require('./generators/teaching-generator');
 const socialMediaInsightsGenerator = require('./generators/social-media-insights');
 const publicationsGenerator = require('./generators/publications-generator');
 const bibtexGenerator = require('./generators/bibtex-generator');
+const ownPublicationsFeedGenerator = require('./generators/own-publications-feed');
 
 // Ensure data directory exists
 const dataDir = path.join(__dirname, '../public/data');
@@ -273,6 +274,19 @@ async function collectAll() {
       }
     } catch (genError) {
       console.error('Error generating BibTeX file:', genError);
+      // Continue execution even if the generation fails
+    }
+
+    // Generate own-publications feed (consumed by research-radio + fg-zettelkasten)
+    try {
+      const ownPubsGenerated = await ownPublicationsFeedGenerator.generateOwnPublicationsFeed();
+      if (ownPubsGenerated) {
+        console.log('Own-publications feed generated successfully');
+      } else {
+        console.log('Own-publications feed generation skipped or failed');
+      }
+    } catch (genError) {
+      console.error('Error generating own-publications feed:', genError);
       // Continue execution even if the generation fails
     }
   } catch (error) {
