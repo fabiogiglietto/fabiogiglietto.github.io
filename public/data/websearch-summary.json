@@ -1,11 +1,12 @@
 {
-  "totalEntries": 143,
-  "lastUpdated": "2026-05-18T05:29:33.161Z",
+  "totalEntries": 144,
+  "lastUpdated": "2026-05-18T05:41:21.607Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-05-16T08:11:32.728Z"
+    "latest": "2026-05-18T05:41:21.583Z"
   },
   "byDate": {
+    "2026-05-18": 1,
     "2026-05-16": 1,
     "2026-05-14": 1,
     "2026-05-13": 1,
@@ -14,8 +15,7 @@
     "2026-05-07": 1,
     "2026-05-05": 1,
     "2026-05-03": 1,
-    "2026-05-02": 2,
-    "2026-04-28": 1
+    "2026-05-02": 2
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 50,
@@ -30,11 +30,18 @@
     "vera.ai": 2
   },
   "byRelevanceScore": {
-    "high": 121,
+    "high": 122,
     "medium": 22,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Referendum. Bonelli e Fratoianni (Avs) scrivono al Presidente Agcom, preoccupati per le fake news veicolate sui social. Chiesto incontro. Piccolotti: inquietante che tecnologie opache abbiano cosi tanto spazio sui social del nostro Paese, con operazioni di propaganda finalizzate a condizionare l'opinione pubblica e fondate sul falso - Alleanza Verdi e Sinistra - Reti",
+      "url": "https://retinews.it/referendum-bonelli-e-fratoianni-avs-scrivono-al-presidente-agcom-preoccupati-per-le-fake-news-veicolate-sui-social-chiesto-incontro-piccolotti-inquietante-che-tecnologie-opache-abbiano-cosi-tanto-spazio-sui-social-del-n/",
+      "source": "retinews.it",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-05-18T05:41:21.583Z"
+    },
     {
       "title": "M/C Journal 'twitter' Issue Now Out! | Snurblog - Axel Bruns",
       "url": "https://snurb.info/index.php/node/3562",
@@ -62,13 +69,6 @@
       "source": "conftool.org",
       "relevanceScore": 0.9,
       "collectedAt": "2026-05-11T09:46:21.223Z"
-    },
-    {
-      "title": "\"A Pretty Blunt Approach\": Meta's Political Content Reduction Policy and Italian Parliamentarians' Facebook Visibility",
-      "url": "https://osf.io/r298q/",
-      "source": "osf.io",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-05-10T08:13:06.177Z"
     }
   ]
 }
