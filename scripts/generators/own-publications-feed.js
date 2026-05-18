@@ -58,7 +58,10 @@ async function generateOwnPublicationsFeed() {
 
     const items = publications.map((pub) => {
       const key = generateBibtexKey(pub);
-      const oraUrl = pub.source_urls && pub.source_urls.ora ? pub.source_urls.ora : null;
+      // Direct open-access PDF URL resolved from the ORA landing page by the
+      // ORA collector. Downstream (research-radio podcasts, fg-zettelkasten
+      // notes) requires this full text — a paper without it is skipped.
+      const oaPdfUrl = pub.oaPdfUrl || null;
       const fallbackUrl =
         (pub.source_urls && (pub.source_urls.orcid || pub.source_urls.scholar)) || null;
 
@@ -77,11 +80,10 @@ async function generateOwnPublicationsFeed() {
           year: pub.year,
           publisher: pub.publisher || null,
           citation_count: (pub.metrics && pub.metrics.total_citations) || 0,
-          // Best-effort open-access signal: an ORA handle means the
-          // institutional repository hosts a public copy. research-radio uses
-          // this to decide whether it can fetch full text for podcast TTS.
-          open_access: Boolean(pub.oraHandle),
-          open_access_pdf_url: oraUrl,
+          // open_access is true only when a directly-downloadable green-OA PDF
+          // was resolved (from ORA) — not merely when an ORA handle exists.
+          open_access: Boolean(oaPdfUrl),
+          open_access_pdf_url: oaPdfUrl,
         },
       };
     });

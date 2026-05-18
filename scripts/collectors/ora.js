@@ -159,6 +159,35 @@ function extractDublinCore(record) {
 }
 
 /**
+ * Resolve the direct open-access PDF URL for an ORA record.
+ *
+ * OAI-PMH `oai_dc` does not expose file URLs, so the handle landing page is
+ * fetched once per record: ORA (IRIS) pages carry a Google-Scholar
+ * `citation_pdf_url` meta tag pointing at the public full-text bitstream.
+ * Returns null when the record has no public file (or the page is unreachable).
+ */
+async function fetchOaPdfUrl(handleUrl) {
+  if (!handleUrl) return null;
+  try {
+    const response = await axios.get(handleUrl, {
+      headers: { 'User-Agent': 'Mozilla/5.0', 'Accept': 'text/html' },
+      timeout: 30000
+    });
+    const metaTags = String(response.data).match(/<meta\b[^>]*>/gi) || [];
+    for (const tag of metaTags) {
+      if (/name=["']citation_pdf_url["']/i.test(tag)) {
+        const content = tag.match(/content=["']([^"']+)["']/i);
+        if (content) return content[1];
+      }
+    }
+    return null;
+  } catch (error) {
+    console.warn(`  ORA: could not resolve PDF URL for ${handleUrl}: ${error.message}`);
+    return null;
+  }
+}
+
+/**
  * Check if a record belongs to the target author
  */
 function isAuthorRecord(record) {
@@ -301,6 +330,17 @@ async function collect() {
     });
 
     console.log(`Found ${records.length} publications by ${config.name}`);
+
+    // Resolve each record's open-access PDF URL from its landing page. This is
+    // the green-OA full text consumed downstream for podcasts and vault notes.
+    console.log('Resolving open-access PDF URLs from ORA landing pages...');
+    let oaPdfCount = 0;
+    for (const record of records) {
+      record.oaPdfUrl = await fetchOaPdfUrl(record.url);
+      if (record.oaPdfUrl) oaPdfCount++;
+      await new Promise(resolve => setTimeout(resolve, 500));
+    }
+    console.log(`Resolved ${oaPdfCount}/${records.length} open-access PDF URLs`);
 
     // Sort by year (descending)
     records.sort((a, b) => (b.year || 0) - (a.year || 0));

@@ -195,6 +195,7 @@ const SOURCE_MAPPINGS = {
     extraFields: (publication, sourcePub) => {
       publication.oraHandle = sourcePub.handle;
       publication.oraType = sourcePub.type;
+      publication.oaPdfUrl = sourcePub.oaPdfUrl || null;
       if (sourcePub.abstract) {
         publication.abstract = sourcePub.abstract;
       }
@@ -449,6 +450,7 @@ async function collect() {
             publication.source_urls.ora = pub.url;
             publication.source_ids.ora = pub.handle;
             publication.oraHandle = pub.handle;
+            publication.oaPdfUrl = pub.oaPdfUrl || null;
             if (pub.abstract && !publication.abstract) {
               publication.abstract = pub.abstract;
             }
@@ -468,6 +470,7 @@ async function collect() {
               publication.source_urls.ora = pub.url;
               publication.source_ids.ora = pub.handle;
               publication.oraHandle = pub.handle;
+              publication.oaPdfUrl = pub.oaPdfUrl || null;
               if (pub.abstract && !publication.abstract) {
                 publication.abstract = pub.abstract;
               }
@@ -518,6 +521,7 @@ async function collect() {
             },
             oraHandle: pub.handle,
             oraType: pub.type,
+            oaPdfUrl: pub.oaPdfUrl || null,
             abstract: pub.abstract,
             metrics: {}
           });
