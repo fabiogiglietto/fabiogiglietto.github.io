@@ -6,7 +6,7 @@
  *
  * This file is the cross-repo contract consumed downstream by:
  *  - research-radio   — generates a podcast episode for 2026+ papers
- *  - fg-zettelkasten  — generates a zettelkasten note for every paper
+ *  - fg-zettelkasten  — generates a zettelkasten note for eligible papers
  *
  * The shape mirrors the toread JSON Feed (item `id` = `bibtex:<key>`, an
  * `_academic` object) so downstream parsers can be reused unchanged.
@@ -15,6 +15,8 @@
 const fs = require('fs');
 const path = require('path');
 const { generateBibtexKey } = require('../lib/bibtex-key');
+const { resolveOaPdf } = require('../lib/unpaywall');
+const config = require('../config');
 
 /** "Last, First; Last, First" -> [{ name: "First Last" }, ...] */
 function parseAuthors(authorStr) {
@@ -59,8 +61,9 @@ async function generateOwnPublicationsFeed() {
     const items = publications.map((pub) => {
       const key = generateBibtexKey(pub);
       // Direct open-access PDF URL resolved from the ORA landing page by the
-      // ORA collector. Downstream (research-radio podcasts, fg-zettelkasten
-      // notes) requires this full text — a paper without it is skipped.
+      // ORA collector. When ORA has nothing, an Unpaywall fallback runs below.
+      // Downstream (research-radio podcasts, fg-zettelkasten notes) requires
+      // this full text — a paper without it is skipped.
       const oaPdfUrl = pub.oaPdfUrl || null;
       const fallbackUrl =
         (pub.source_urls && (pub.source_urls.orcid || pub.source_urls.scholar)) || null;
@@ -101,6 +104,25 @@ async function generateOwnPublicationsFeed() {
     const dedupedItems = [...byId.values()];
     if (dedupedItems.length < items.length) {
       console.log(`Dropped ${items.length - dedupedItems.length} duplicate publication(s)`);
+    }
+
+    // Unpaywall fallback: ORA is the canonical full-text source, but for an
+    // item ORA could not resolve, ask Unpaywall for a direct OA PDF (catches
+    // arXiv preprints and PDF-first OA journals with no ORA deposit).
+    let unpaywallHits = 0;
+    for (const item of dedupedItems) {
+      const academic = item._academic;
+      if (academic.open_access_pdf_url || !academic.doi) continue;
+      const pdfUrl = await resolveOaPdf(academic.doi, config.email);
+      if (pdfUrl) {
+        academic.open_access_pdf_url = pdfUrl;
+        academic.open_access = true;
+        unpaywallHits += 1;
+      }
+      await new Promise((resolve) => setTimeout(resolve, 100));
+    }
+    if (unpaywallHits) {
+      console.log(`Unpaywall resolved ${unpaywallHits} additional OA PDF(s)`);
     }
 
     // Newest first.
