@@ -1,13 +1,21 @@
 /**
  * Research Radio Collector
- * Fetches podcast episodes from the research-radio RSS feed
+ *
+ * Fetches podcast episodes from research-radio's `episodes.json`.
+ *
+ * episodes.json is used deliberately rather than the RSS `feed.xml`:
+ * own-publication episodes are excluded from the public RSS feed (so they
+ * never appear on Spotify/Apple), but they ARE recorded in episodes.json —
+ * and they must still surface as podcast links in this site's publications
+ * section. episodes.json also lists episodes whose audio exists but whose RSS
+ * slot has not yet arrived, so a badge appears as soon as the audio is live.
  */
 
 const https = require('https');
 
 class ResearchRadioCollector {
   constructor() {
-    this.feedUrl = 'https://fabiogiglietto.github.io/research-radio/feed.xml';
+    this.episodesUrl = 'https://fabiogiglietto.github.io/research-radio/episodes.json';
   }
 
   async fetchFromUrl(url) {
@@ -28,94 +36,68 @@ class ResearchRadioCollector {
     });
   }
 
-  parseRSS(xmlData) {
-    const episodes = [];
-
-    // Simple XML parsing for RSS items
-    const itemRegex = /<item>([\s\S]*?)<\/item>/g;
-    let match;
-
-    while ((match = itemRegex.exec(xmlData)) !== null) {
-      const itemContent = match[1];
-
-      // Extract fields
-      const title = this.extractTag(itemContent, 'title');
-      const description = this.extractTag(itemContent, 'description');
-      const guid = this.extractTag(itemContent, 'guid');
-      const pubDate = this.extractTag(itemContent, 'pubDate');
-      const duration = this.extractTag(itemContent, 'itunes:duration');
-      const author = this.extractTag(itemContent, 'itunes:author');
-
-      // Extract enclosure URL
-      const enclosureMatch = itemContent.match(/<enclosure[^>]*url="([^"]+)"/);
-      const audioUrl = enclosureMatch ? enclosureMatch[1] : null;
-
-      // Extract DOI from description
-      const doiMatch = description ? description.match(/https?:\/\/doi\.org\/([^\s<]+)/) : null;
-      const doi = doiMatch ? doiMatch[1] : null;
-
-      // Extract bibtex key from guid (format: bibtex:Key2024-xx)
-      const bibtexKey = guid ? guid.replace('bibtex:', '') : null;
-
-      episodes.push({
-        id: guid,
-        bibtexKey: bibtexKey,
-        title: title ? title.replace("FG's Research Radio: ", '') : null,
-        description: description,
-        audioUrl: audioUrl,
-        pubDate: pubDate,
-        duration: duration,
-        author: author,
-        doi: doi
-      });
+  /**
+   * Format a duration given in seconds as "M:SS" (or "H:MM:SS").
+   */
+  formatDuration(seconds) {
+    if (typeof seconds !== 'number' || Number.isNaN(seconds)) {
+      return null;
     }
-
-    return episodes;
+    const pad = (n) => String(n).padStart(2, '0');
+    const hours = Math.floor(seconds / 3600);
+    const minutes = Math.floor((seconds % 3600) / 60);
+    const secs = seconds % 60;
+    return hours > 0
+      ? `${hours}:${pad(minutes)}:${pad(secs)}`
+      : `${minutes}:${pad(secs)}`;
   }
 
-  extractTag(content, tagName) {
-    // Handle CDATA sections
-    const cdataRegex = new RegExp(`<${tagName}[^>]*><!\\[CDATA\\[([\\s\\S]*?)\\]\\]><\\/${tagName}>`, 'i');
-    const cdataMatch = content.match(cdataRegex);
-    if (cdataMatch) {
-      return cdataMatch[1].trim();
-    }
+  /**
+   * Normalize one episodes.json record into the collector's episode shape.
+   */
+  parseEpisode(ep) {
+    const id = ep.id || null;
+    const bibtexKey = id ? id.replace('bibtex:', '') : null;
 
-    // Handle regular tags
-    const regex = new RegExp(`<${tagName}[^>]*>([\\s\\S]*?)<\\/${tagName}>`, 'i');
-    const match = content.match(regex);
-    return match ? this.decodeHtmlEntities(match[1].trim()) : null;
-  }
+    // The DOI is carried in the episode description's reference line.
+    const description = ep.description || '';
+    const doiMatch = description.match(/https?:\/\/doi\.org\/([^\s<]+)/i);
+    const doi = doiMatch ? doiMatch[1] : null;
 
-  decodeHtmlEntities(text) {
-    return text
-      .replace(/&amp;/g, '&')
-      .replace(/&lt;/g, '<')
-      .replace(/&gt;/g, '>')
-      .replace(/&quot;/g, '"')
-      .replace(/&#39;/g, "'");
+    const authors = Array.isArray(ep.authors) ? ep.authors : [];
+
+    return {
+      id,
+      bibtexKey,
+      title: ep.title ? ep.title.replace("FG's Research Radio: ", '') : null,
+      description,
+      audioUrl: ep.audio_url || null,
+      pubDate: ep.pub_date || null,
+      duration: this.formatDuration(ep.duration),
+      author: authors.join(', ') || null,
+      doi,
+      own: Boolean(ep.own)
+    };
   }
 
   async collect() {
     try {
-      console.log('Fetching Research Radio podcast feed...');
+      console.log('Fetching Research Radio episodes...');
 
-      const xmlData = await this.fetchFromUrl(this.feedUrl);
-      const episodes = this.parseRSS(xmlData);
+      const raw = await this.fetchFromUrl(this.episodesUrl);
+      const data = JSON.parse(raw);
+      const episodes = (data.episodes || []).map((ep) => this.parseEpisode(ep));
 
       console.log(`Found ${episodes.length} podcast episodes`);
 
-      // Create a lookup map by bibtex key for easy matching with toread papers
+      // Lookup maps for matching: by bibtex key (toread papers) and by DOI
+      // (publications). Both include own-publication episodes.
       const episodesByBibtexKey = {};
-      episodes.forEach(episode => {
+      const episodesByDoi = {};
+      episodes.forEach((episode) => {
         if (episode.bibtexKey) {
           episodesByBibtexKey[episode.bibtexKey] = episode;
         }
-      });
-
-      // Also create a lookup by DOI
-      const episodesByDoi = {};
-      episodes.forEach(episode => {
         if (episode.doi) {
           episodesByDoi[episode.doi.toLowerCase()] = episode;
         }
