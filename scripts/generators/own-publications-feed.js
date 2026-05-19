@@ -18,6 +18,18 @@ const { generateBibtexKey } = require('../lib/bibtex-key');
 const { resolveOaPdf } = require('../lib/unpaywall');
 const config = require('../config');
 
+// Venues excluded from the feed: short conference proceedings that are not
+// substantial enough to warrant a zettelkasten note or a podcast episode.
+// Matched as a case-insensitive substring of the publication venue.
+const EXCLUDED_VENUE_PATTERNS = ['selected papers of internet research'];
+
+/** True when a publication's venue is an excluded short-proceedings venue. */
+function isExcludedVenue(venue) {
+  if (!venue) return false;
+  const v = venue.toLowerCase();
+  return EXCLUDED_VENUE_PATTERNS.some((pattern) => v.includes(pattern));
+}
+
 /** "Last, First; Last, First" -> [{ name: "First Last" }, ...] */
 function parseAuthors(authorStr) {
   if (!authorStr) return [];
@@ -49,9 +61,14 @@ async function generateOwnPublicationsFeed() {
     }
 
     const aggregated = JSON.parse(fs.readFileSync(aggregatedDataPath, 'utf8'));
-    const publications = (aggregated.publications || []).filter(
+    const allPublications = (aggregated.publications || []).filter(
       (p) => p.title && p.year
     );
+    const publications = allPublications.filter((p) => !isExcludedVenue(p.venue));
+    const excludedCount = allPublications.length - publications.length;
+    if (excludedCount > 0) {
+      console.log(`Excluded ${excludedCount} short-proceedings publication(s) by venue`);
+    }
 
     if (publications.length === 0) {
       console.log('No publications found. Skipping own-publications feed.');
