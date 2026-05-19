@@ -1211,6 +1211,18 @@
       "author": "Fabio Giglietto, Massimo Terenzi, Anwesha Chakraborty, Giada Marino",
       "doi": "10.1007/978-3-032-11782-3_4",
       "own": true
+    },
+    {
+      "id": "bibtex:Weinbrand2026-sf",
+      "bibtexKey": "Weinbrand2026-sf",
+      "title": "Who Decides What Google Knows? The AI Overview Wars",
+      "description": "AI-generated podcast discussion.\n\nReference:\nWeinbrand, S., Nagappa, A., & Angus, D. (2026). Framing the future of search: A discourse analysis of Google’s AI Overviews. https://doi.org/10.1177/17504813261447684",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Weinbrand2026-sf.mp3",
+      "pubDate": "2026-06-02T09:57:17.855433+00:00",
+      "duration": "8:33",
+      "author": "Shir Weinbrand, Ashwin Nagappa, Daniel Angus",
+      "doi": "10.1177/17504813261447684",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -2425,6 +2437,18 @@
       "author": "Fabio Giglietto, Massimo Terenzi, Anwesha Chakraborty, Giada Marino",
       "doi": "10.1007/978-3-032-11782-3_4",
       "own": true
+    },
+    "Weinbrand2026-sf": {
+      "id": "bibtex:Weinbrand2026-sf",
+      "bibtexKey": "Weinbrand2026-sf",
+      "title": "Who Decides What Google Knows? The AI Overview Wars",
+      "description": "AI-generated podcast discussion.\n\nReference:\nWeinbrand, S., Nagappa, A., & Angus, D. (2026). Framing the future of search: A discourse analysis of Google’s AI Overviews. https://doi.org/10.1177/17504813261447684",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Weinbrand2026-sf.mp3",
+      "pubDate": "2026-06-02T09:57:17.855433+00:00",
+      "duration": "8:33",
+      "author": "Shir Weinbrand, Ashwin Nagappa, Daniel Angus",
+      "doi": "10.1177/17504813261447684",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -3363,9 +3387,21 @@
       "author": "Fabio Giglietto, Massimo Terenzi, Anwesha Chakraborty, Giada Marino",
       "doi": "10.1007/978-3-032-11782-3_4",
       "own": true
+    },
+    "10.1177/17504813261447684": {
+      "id": "bibtex:Weinbrand2026-sf",
+      "bibtexKey": "Weinbrand2026-sf",
+      "title": "Who Decides What Google Knows? The AI Overview Wars",
+      "description": "AI-generated podcast discussion.\n\nReference:\nWeinbrand, S., Nagappa, A., & Angus, D. (2026). Framing the future of search: A discourse analysis of Google’s AI Overviews. https://doi.org/10.1177/17504813261447684",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Weinbrand2026-sf.mp3",
+      "pubDate": "2026-06-02T09:57:17.855433+00:00",
+      "duration": "8:33",
+      "author": "Shir Weinbrand, Ashwin Nagappa, Daniel Angus",
+      "doi": "10.1177/17504813261447684",
+      "own": false
     }
   },
-  "totalEpisodes": 101,
-  "lastUpdated": "2026-05-19T06:37:12.232Z",
+  "totalEpisodes": 102,
+  "lastUpdated": "2026-05-19T09:39:47.993Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
