@@ -1417,6 +1417,41 @@ th {
   stroke: white;
 }
 
+/* Notes badge linking a paper to its fg-zettelkasten note.
+   Quiet outline style — nearly every #toread card carries one. */
+.notes-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  background: transparent;
+  color: #6366f1;
+  border: 1px solid #c7c9f5;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.notes-badge:hover,
+.notes-badge:focus {
+  background: #6366f1;
+  color: white;
+  border-color: #6366f1;
+  transform: scale(1.05);
+}
+
+.notes-badge svg {
+  width: 14px;
+  height: 14px;
+  stroke: currentColor;
+}
+
 /* Research Radio link in section header */
 .research-radio-link {
   display: inline-flex;

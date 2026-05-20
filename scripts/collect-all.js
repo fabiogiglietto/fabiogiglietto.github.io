@@ -27,6 +27,7 @@ const publicationsAggregator = require('./collectors/publications-aggregator');
 const toreadCollector = require('./collectors/toread');
 const oraCollector = require('./collectors/ora');
 const researchRadioCollector = require('./collectors/research-radio');
+const zettelkastenCollector = require('./collectors/zettelkasten');
 
 // Import generators
 const aboutGenerator = require('./generators/about-generator');
@@ -63,7 +64,7 @@ async function collectAll() {
     
     // Phase 1: Collect basic data sources in parallel
     console.log('Phase 1: Collecting basic data sources...');
-    const [orcidData, scholarData, universityData, githubData, newsData, webSearchData, socialMediaData, wosData, scopusData, semanticScholarData, toreadData, oraData, researchRadioData] = await Promise.all([
+    const [orcidData, scholarData, universityData, githubData, newsData, webSearchData, socialMediaData, wosData, scopusData, semanticScholarData, toreadData, oraData, researchRadioData, zettelkastenData] = await Promise.all([
       orcidCollector.collect().catch(err => {
         console.error('ORCID collection error:', err.message);
         return null;
@@ -129,6 +130,10 @@ async function collectAll() {
       researchRadioCollector.collect().catch(err => {
         console.error('Research Radio collection error:', err.message);
         return null;
+      }),
+      zettelkastenCollector.collect().catch(err => {
+        console.error('Zettelkasten collection error:', err.message);
+        return null;
       })
     ]);
     
@@ -157,6 +162,11 @@ async function collectAll() {
       fs.writeFileSync(path.join(dataDir, 'research-radio.json'), JSON.stringify(researchRadioData, null, 2));
       // Also copy to Jekyll _data directory for site.data.researchRadio access
       fs.writeFileSync(path.join(__dirname, '../_data/research-radio.json'), JSON.stringify(researchRadioData, null, 2));
+    }
+    if (zettelkastenData) {
+      fs.writeFileSync(path.join(dataDir, 'zettelkasten.json'), JSON.stringify(zettelkastenData, null, 2));
+      // Also copy to Jekyll _data directory for site.data.zettelkasten access
+      fs.writeFileSync(path.join(__dirname, '../_data/zettelkasten.json'), JSON.stringify(zettelkastenData, null, 2));
     }
 
     // Phase 2: Aggregate publications (using saved data from Phase 1)

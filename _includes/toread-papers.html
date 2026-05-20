@@ -19,6 +19,7 @@
 
   {% assign toread_data = site.data.toread %}
   {% assign radio_data = site.data.research-radio %}
+  {% assign zettel_data = site.data.zettelkasten %}
   {% if toread_data and toread_data.papers %}
     <div class="papers-carousel-container">
       <button class="carousel-arrow carousel-arrow-left" onclick="scrollCarousel('left')" aria-label="Previous papers">
@@ -47,6 +48,10 @@
           {%- assign podcast_url = radio_data.episodesByBibtexKey[paper_bibtex_key].audioUrl -%}
           {%- assign podcast_duration = radio_data.episodesByBibtexKey[paper_bibtex_key].duration -%}
         {%- endif -%}
+        {%- assign zettel_url = nil -%}
+        {%- if zettel_data and zettel_data.notesByBibtexKey[paper_bibtex_key] -%}
+          {%- assign zettel_url = zettel_data.notesByBibtexKey[paper_bibtex_key].url -%}
+        {%- endif -%}
         <div class="paper-card-wrapper{% if has_podcast %} has-podcast{% endif %}">
           <a href="{{ paper_link }}" target="_blank" rel="noopener" class="paper-card-link">
             <article class="paper-card">
@@ -60,6 +65,15 @@
                     <circle cx="18" cy="16" r="3" stroke="currentColor" stroke-width="2"/>
                   </svg>
                   <span>{{ podcast_duration }}</span>
+                </button>
+                {% endif %}
+                {% if zettel_url %}
+                <button class="notes-badge" onclick="event.preventDefault(); event.stopPropagation(); window.open('{{ zettel_url }}', '_blank');" title="Read my Zettelkasten note on this paper">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 20h9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span>Notes</span>
                 </button>
                 {% endif %}
               </div>
