@@ -1,11 +1,12 @@
 {
-  "totalEntries": 147,
-  "lastUpdated": "2026-05-20T18:48:52.376Z",
+  "totalEntries": 148,
+  "lastUpdated": "2026-05-21T06:43:20.066Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-05-20T18:48:52.347Z"
+    "latest": "2026-05-21T06:43:20.030Z"
   },
   "byDate": {
+    "2026-05-21": 1,
     "2026-05-20": 2,
     "2026-05-18": 2,
     "2026-05-16": 1,
@@ -14,8 +15,7 @@
     "2026-05-11": 1,
     "2026-05-10": 1,
     "2026-05-07": 1,
-    "2026-05-05": 1,
-    "2026-05-03": 1
+    "2026-05-05": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 50,
@@ -30,11 +30,18 @@
     "veraai.eu": 2
   },
   "byRelevanceScore": {
-    "high": 125,
+    "high": 126,
     "medium": 22,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Katharina Esau Was Awarded an ARC Discovery Early Career Researcher Award 2026",
+      "url": "https://oncodaily.com/katharina-esau-was-awarded-an-arc-discovery-early-career-researcher-award-2026/",
+      "source": "oncodaily.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-05-21T06:43:20.030Z"
+    },
     {
       "title": "snurb.info",
       "url": "https://snurb.info/taxonomy/term/125",
@@ -62,13 +69,6 @@
       "source": "retinews.it",
       "relevanceScore": 0.9,
       "collectedAt": "2026-05-18T05:41:21.583Z"
-    },
-    {
-      "title": "M/C Journal 'twitter' Issue Now Out! | Snurblog - Axel Bruns",
-      "url": "https://snurb.info/index.php/node/3562",
-      "source": "snurblog.org",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-05-16T08:11:32.728Z"
     }
   ]
 }
