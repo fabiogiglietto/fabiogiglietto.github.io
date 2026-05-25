@@ -1,11 +1,12 @@
 {
-  "totalEntries": 148,
-  "lastUpdated": "2026-05-24T09:19:27.918Z",
+  "totalEntries": 149,
+  "lastUpdated": "2026-05-25T10:06:59.640Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-05-21T06:43:20.030Z"
+    "latest": "2026-05-25T10:06:59.596Z"
   },
   "byDate": {
+    "2026-05-25": 1,
     "2026-05-21": 1,
     "2026-05-20": 2,
     "2026-05-18": 2,
@@ -14,8 +15,7 @@
     "2026-05-13": 1,
     "2026-05-11": 1,
     "2026-05-10": 1,
-    "2026-05-07": 1,
-    "2026-05-05": 1
+    "2026-05-07": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 50,
@@ -30,11 +30,18 @@
     "veraai.eu": 2
   },
   "byRelevanceScore": {
-    "high": 126,
+    "high": 127,
     "medium": 22,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Speakers - CS2Italy",
+      "url": "https://cs2italy.eu/speakers",
+      "source": "cs2italy.eu",
+      "relevanceScore": 1,
+      "collectedAt": "2026-05-25T10:06:59.596Z"
+    },
     {
       "title": "Katharina Esau Was Awarded an ARC Discovery Early Career Researcher Award 2026",
       "url": "https://oncodaily.com/katharina-esau-was-awarded-an-arc-discovery-early-career-researcher-award-2026/",
@@ -62,13 +69,6 @@
       "source": "conftool.org",
       "relevanceScore": 0.95,
       "collectedAt": "2026-05-18T09:10:54.848Z"
-    },
-    {
-      "title": "Referendum. Bonelli e Fratoianni (Avs) scrivono al Presidente Agcom, preoccupati per le fake news veicolate sui social. Chiesto incontro. Piccolotti: inquietante che tecnologie opache abbiano cosi tanto spazio sui social del nostro Paese, con operazioni di propaganda finalizzate a condizionare l'opinione pubblica e fondate sul falso - Alleanza Verdi e Sinistra - Reti",
-      "url": "https://retinews.it/referendum-bonelli-e-fratoianni-avs-scrivono-al-presidente-agcom-preoccupati-per-le-fake-news-veicolate-sui-social-chiesto-incontro-piccolotti-inquietante-che-tecnologie-opache-abbiano-cosi-tanto-spazio-sui-social-del-n/",
-      "source": "retinews.it",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-05-18T05:41:21.583Z"
     }
   ]
 }
