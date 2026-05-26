@@ -1,38 +1,38 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a robust academic and research-focused presence across three social media platforms: LinkedIn, Bluesky, and Mastodon. With a combined follower count of 3,580 and 7 recent posts, the overall engagement rate stands at approximately 11.9%. The content primarily revolves around research publications, grants, academic opportunities (hiring, PhD), and discussions on disinformation and computational methods. While LinkedIn boasts the largest follower base and highest raw interaction volume, Bluesky demonstrates the strongest engagement relative to its follower count.",
+  "overallSummary": "Fabio Giglietto maintains an active and focused social media presence across LinkedIn, Bluesky, and Mastodon, reaching a combined audience of 3,580 followers. His content strategy primarily revolves around academic research, publications, grants, and career opportunities in computational social science and disinformation studies. While LinkedIn commands the largest follower base, Bluesky stands out for its exceptionally high engagement rates on individual posts.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 11.9,
+    "averageEngagementRate": 5.32,
     "mostEngagingPlatform": "bluesky"
   },
   "contentThemes": [
     {
-      "theme": "Research & Publications",
-      "description": "Announcements of new papers, research findings, tool releases (e.g., CooRnet v2.0), and general research updates."
+      "theme": "Research Updates & Publications",
+      "description": "Sharing new research papers, tool releases, and significant findings."
     },
     {
-      "theme": "Academic & Career Opportunities",
-      "description": "Posts related to grant awards, hiring postdoctoral researchers, and opportunities for PhD students."
+      "theme": "Hiring & Opportunities",
+      "description": "Announcing postdoctoral researcher positions or PhD student opportunities."
     },
     {
-      "theme": "Disinformation & Computational Methods",
-      "description": "Discussions on methodological approaches, detecting coordinated link sharing, information operations, coordinated inauthentic behavior, and computational social science."
+      "theme": "Conferences & Events",
+      "description": "Highlighting upcoming presentations or participation in academic conferences."
     },
     {
-      "theme": "Conference & Event Participation",
-      "description": "Announcements of upcoming presentations at conferences related to disinformation and computational methods."
+      "theme": "Methodology & Disinformation Studies",
+      "description": "Engaging in discussions about research approaches and topics related to disinformation."
     }
   ],
   "recommendations": [
-    "Leverage Bluesky's high engagement rate by cross-posting key research announcements and fostering more interactive discussions there. Consider running Q&A sessions or polls related to recent publications.",
-    "Continue to utilize LinkedIn for formal announcements such as grant awards and hiring opportunities, as it consistently generates high raw interaction volume and reaches a broad professional audience. Explore LinkedIn Live for research presentations or Q&A.",
-    "Maintain consistent content across platforms, tailoring the tone and depth to each audience. For example, Mastodon could be used for more in-depth methodological discussions, while Bluesky and LinkedIn offer broader reach for major announcements.",
-    "Actively engage with comments and replies on posts, especially those announcing opportunities, to build community and encourage further interaction."
+    "Leverage Bluesky's high engagement for initial announcements of new research and opportunities, then adapt and cross-post these to LinkedIn to maximize reach within the larger professional network.",
+    "For Mastodon, incorporate more direct calls to action or open-ended questions in posts to foster discussion and potentially boost interaction rates.",
+    "Continue to prioritize significant professional milestones, such as grant awards and hiring announcements, on LinkedIn, as these content types consistently achieve high engagement on the platform.",
+    "Consider creating short, shareable summaries or visual assets for key research updates to enhance shareability and engagement across all platforms, particularly on platforms like Bluesky and Mastodon."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky exhibits the highest engagement rate per follower (18.4%), indicating a highly active and responsive audience. It's effective for timely announcements of new papers and academic opportunities, suggesting it's a valuable platform for direct academic community interaction.",
-    "mastodon": "Mastodon serves as a platform for sharing more technical updates, like software releases (CooRnet v2.0) and methodological discussions. While its follower count is the lowest, it maintains a respectable engagement rate (9.1%), likely catering to a niche academic audience interested in specific research details.",
-    "linkedin": "LinkedIn has the largest follower base (1,850) and generates the highest total interactions. It is exceptionally effective for formal, high-impact announcements such as grant awards and hiring calls, reinforcing its role as a professional networking and career platform. Its engagement rate (9.7%) is solid given the larger audience size."
+    "bluesky": "Exhibits the highest per-post engagement rate (6.14%), making it an excellent platform for immediate announcements of new publications and conference participation, appealing to a highly active academic niche.",
+    "mastodon": "Provides a consistent channel for academic updates and discussions within its specialized instance, maintaining a moderate, stable engagement rate (4.55%) with its dedicated follower base.",
+    "linkedin": "Possesses the largest follower count and proves highly effective for professional announcements, such as grant awards and hiring initiatives, demonstrating strong engagement within its professional network (4.87%)."
   },
   "topPerformingContent": [
     {
