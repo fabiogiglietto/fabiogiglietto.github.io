@@ -1,11 +1,12 @@
 {
-  "totalEntries": 149,
-  "lastUpdated": "2026-05-26T17:29:46.372Z",
+  "totalEntries": 150,
+  "lastUpdated": "2026-05-26T19:40:51.333Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-05-25T10:06:59.596Z"
+    "latest": "2026-05-26T19:40:51.293Z"
   },
   "byDate": {
+    "2026-05-26": 1,
     "2026-05-25": 1,
     "2026-05-21": 1,
     "2026-05-20": 2,
@@ -14,8 +15,7 @@
     "2026-05-14": 1,
     "2026-05-13": 1,
     "2026-05-11": 1,
-    "2026-05-10": 1,
-    "2026-05-07": 1
+    "2026-05-10": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 50,
@@ -30,11 +30,18 @@
     "veraai.eu": 2
   },
   "byRelevanceScore": {
-    "high": 127,
+    "high": 128,
     "medium": 22,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Referendum. Bonelli e Fratoianni (Avs) scrivono al Presidente Agcom, preoccupati per le fake news veicolate sui social. Chiesto incontro. Piccolotti: inquietante che tecnologie opache abbiano cosi tanto spazio sui social del nostro Paese, con operazioni di propaganda finalizzate a condizionare l'opinione pubblica e fondate sul falso",
+      "url": "https://reti.green/2026/03/03/referendum-bonelli-e-fratoianni-avs-scrivono-al-presidente-agcom-preoccupati-per-le-fake-news-veicolate-sui-social-chiesto-incontro-piccolotti-inquietante-che-tecnologie-opache-abbiano-co/",
+      "source": "reti.green",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-05-26T19:40:51.293Z"
+    },
     {
       "title": "Speakers - CS2Italy",
       "url": "https://cs2italy.eu/speakers",
@@ -62,13 +69,6 @@
       "source": "camera.it",
       "relevanceScore": 0.9,
       "collectedAt": "2026-05-20T18:48:52.347Z"
-    },
-    {
-      "title": "AoIR2025 Ruptures: Schedule",
-      "url": "https://www.conftool.org/aoir2025/index.php?page=browseSessions&print=",
-      "source": "conftool.org",
-      "relevanceScore": 0.95,
-      "collectedAt": "2026-05-18T09:10:54.848Z"
     }
   ]
 }

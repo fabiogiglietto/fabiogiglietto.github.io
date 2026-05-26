@@ -1259,6 +1259,18 @@
       "author": "Kamile Grusauskaite, Matthias De Bondt, Lars de Wildt, Stef Aupers",
       "doi": "10.1177/14614448261446590",
       "own": false
+    },
+    {
+      "id": "bibtex:Schulte2026-df",
+      "bibtexKey": "Schulte2026-df",
+      "title": "Why One Platform Isn't Enough to Understand Elections",
+      "description": "AI-generated podcast discussion.\n\nReference:\nSchulte, L., Pasic, D., Goanta, C., & Iamnitchi, A. (2026). Multi-platform analysis of electoral discourse on social media as a research infrastructure problem. https://doi.org/10.1145/3795513.3807440",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Schulte2026-df.mp3",
+      "pubDate": "2026-06-06T09:57:17.855433+00:00",
+      "duration": "8:56",
+      "author": "Ludwig Schulte, Dino Pasic, Catalina Goanta, Adriana Iamnitchi",
+      "doi": "10.1145/3795513.3807440",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -2521,6 +2533,18 @@
       "author": "Kamile Grusauskaite, Matthias De Bondt, Lars de Wildt, Stef Aupers",
       "doi": "10.1177/14614448261446590",
       "own": false
+    },
+    "Schulte2026-df": {
+      "id": "bibtex:Schulte2026-df",
+      "bibtexKey": "Schulte2026-df",
+      "title": "Why One Platform Isn't Enough to Understand Elections",
+      "description": "AI-generated podcast discussion.\n\nReference:\nSchulte, L., Pasic, D., Goanta, C., & Iamnitchi, A. (2026). Multi-platform analysis of electoral discourse on social media as a research infrastructure problem. https://doi.org/10.1145/3795513.3807440",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Schulte2026-df.mp3",
+      "pubDate": "2026-06-06T09:57:17.855433+00:00",
+      "duration": "8:56",
+      "author": "Ludwig Schulte, Dino Pasic, Catalina Goanta, Adriana Iamnitchi",
+      "doi": "10.1145/3795513.3807440",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -3495,9 +3519,21 @@
       "author": "Kamile Grusauskaite, Matthias De Bondt, Lars de Wildt, Stef Aupers",
       "doi": "10.1177/14614448261446590",
       "own": false
+    },
+    "10.1145/3795513.3807440": {
+      "id": "bibtex:Schulte2026-df",
+      "bibtexKey": "Schulte2026-df",
+      "title": "Why One Platform Isn't Enough to Understand Elections",
+      "description": "AI-generated podcast discussion.\n\nReference:\nSchulte, L., Pasic, D., Goanta, C., & Iamnitchi, A. (2026). Multi-platform analysis of electoral discourse on social media as a research infrastructure problem. https://doi.org/10.1145/3795513.3807440",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Schulte2026-df.mp3",
+      "pubDate": "2026-06-06T09:57:17.855433+00:00",
+      "duration": "8:56",
+      "author": "Ludwig Schulte, Dino Pasic, Catalina Goanta, Adriana Iamnitchi",
+      "doi": "10.1145/3795513.3807440",
+      "own": false
     }
   },
-  "totalEpisodes": 105,
-  "lastUpdated": "2026-05-26T17:25:28.203Z",
+  "totalEpisodes": 106,
+  "lastUpdated": "2026-05-26T19:37:15.466Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }

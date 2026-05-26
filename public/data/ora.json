@@ -2,7 +2,7 @@
   "source": "ORA UNIURB",
   "repository": "https://ora.uniurb.it",
   "oaiEndpoint": "https://ora.uniurb.it/oai/request",
-  "collectedAt": "2026-05-26T17:25:27.517Z",
+  "collectedAt": "2026-05-26T19:37:14.715Z",
   "author": "Fabio Giglietto",
   "publications": [
     {
@@ -112,27 +112,6 @@
       "datestamp": "2025-06-13T00:19:09Z",
       "url": "https://ora.uniurb.it/handle/11576/2740792",
       "oaPdfUrl": null
-    },
-    {
-      "title": "The power of Alternative Influence Networks (AIN) for spreading Covid-19 problematic information on Facebook during a year of pandemic",
-      "authors": "Giada Marino; Fabio Giglietto",
-      "authorsList": [
-        "Giada Marino",
-        "Fabio Giglietto"
-      ],
-      "year": 2023,
-      "doi": "10.1445/106772",
-      "handle": "11576/2714451",
-      "type": "article",
-      "abstract": "Public figures and influencers seem to play an increasingly important role in the contemporary media ecosystem. Their statements circulate quickly, seemingly moving from broadcast to digital media and from the titles of news stories to memes. This paper studies the role played by these dynamics among the Alternative Influence Network (AIN) during the Covid-19 pandemic crisis in Italy by leveraging a dataset of 175,228 Facebook posts created over one year by a list of covid-skeptic accounts. Findings contribute to shed some light on the role played by the AIN on news circulation in the contemporary hybrid media ecosystem and inter-media agenda setting. What is more, findings suggest that hybridity also takes place through remediation, where media production includes how these claims are consumed and circulated.",
-      "publisher": null,
-      "journal": "PROBLEMI DELL'INFORMAZIONE",
-      "pages": null,
-      "language": "eng",
-      "oaiIdentifier": "oai:ora.uniurb.it:11576/2714451",
-      "datestamp": "2024-10-31T00:02:06Z",
-      "url": "https://ora.uniurb.it/handle/11576/2714451",
-      "oaPdfUrl": "https://ora.uniurb.it/bitstream/11576/2714451/5/PI_fulltext.pdf"
     },
     {
       "title": "Cracking Open the European Newsfeed",
@@ -318,9 +297,9 @@
     }
   ],
   "stats": {
-    "total": 14,
+    "total": 13,
     "byType": {
-      "article": 6,
+      "article": 5,
       "chapter": 4,
       "other": 3,
       "conference": 1
@@ -328,7 +307,7 @@
     "byYear": {
       "2020": 1,
       "2022": 3,
-      "2023": 5,
+      "2023": 4,
       "2024": 1,
       "2025": 2,
       "2026": 2
