@@ -3,7 +3,7 @@
   "title": "Fabio Giglietto — own publications",
   "home_page_url": "https://fabiogiglietto.github.io/publications",
   "description": "Auto-generated feed of Fabio Giglietto's own publications, consumed downstream by research-radio and fg-zettelkasten.",
-  "_updated": "2026-05-26T19:42:06.829Z",
+  "_updated": "2026-05-27T09:48:09.674Z",
   "items": [
     {
       "id": "bibtex:Giglietto2026-632ef967",
@@ -18,7 +18,7 @@
         }
       ],
       "url": "https://doi.org/10.1177/29768624261452529",
-      "content_text": "",
+      "content_text": "Social media platforms serve as critical gatekeepers in democratic information ecosystems, yet the mechanisms governing political content amplification remain poorly understood. This study examines how Facebook amplifies news by analysing 130,448 highly circulated URLs shared between 2017 and 2022, using Meta's Privacy-Protected Full URLs Dataset. We investigate how user-driven sharing translates into viewership and how audience partisan alignment, source credibility and algorithmic evolution moderate this relationship. Our analysis yields three key findings. First, although sharing reliably predicts viewing, this relationship weakens significantly for content with intensely partisan audiences, even after controlling for engagement levels. Second, adherence to professional journalistic standards independently increases reach – sources with higher credibility scores receive substantially more views than those with lower scores, holding shares constant. Third, and most critically, temporal analysis reveals that these effects are algorithmically modulated rather than structurally fixed. During Facebook’s 2020 election ‘break the glass’ interventions, the partisan penalty doubled while rewards for quality journalism surged simultaneously. These volatile coefficients provide compelling evidence that reduced reach for partisan content stems from active platform intervention, not organic network limitations. Our findings demonstrate that Facebook operates as an active curator, not a neutral conduit. Its algorithmic choices create measurable disparities in content visibility that profoundly shape democratic discourse. As algorithmic curation increasingly determines citizens’ information exposure, the temporal instability of these effects underscores the urgent need for platform transparency and accountability in democratic governance.",
       "_academic": {
         "doi": "10.1177/29768624261452529",
         "bibtex_key": "Giglietto2026-632ef967",
@@ -491,7 +491,7 @@
       "date_published": "2023-01-01",
       "authors": [],
       "url": "https://doi.org/10.1445/106772",
-      "content_text": "",
+      "content_text": "Public figures and influencers seem to play an increasingly important role in the contemporary media ecosystem. Their statements circulate quickly, seemingly moving from broadcast to digital media and from the titles of news stories to memes. This paper studies the role played by these dynamics among the Alternative Influence Network (AIN) during the Covid-19 pandemic crisis in Italy by leveraging a dataset of 175,228 Facebook posts created over one year by a list of covid-skeptic accounts. Findings contribute to shed some light on the role played by the AIN on news circulation in the contemporary hybrid media ecosystem and inter-media agenda setting. What is more, findings suggest that hybridity also takes place through remediation, where media production includes how these claims are consumed and circulated.",
       "_academic": {
         "doi": "10.1445/106772",
         "bibtex_key": "Unknown2023-9137f448",
@@ -500,8 +500,8 @@
         "year": 2023,
         "publisher": null,
         "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
+        "open_access": true,
+        "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2714451/5/PI_fulltext.pdf"
       }
     },
     {

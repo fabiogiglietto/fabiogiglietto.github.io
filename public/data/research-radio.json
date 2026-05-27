@@ -1271,6 +1271,18 @@
       "author": "Ludwig Schulte, Dino Pasic, Catalina Goanta, Adriana Iamnitchi",
       "doi": "10.1145/3795513.3807440",
       "own": false
+    },
+    {
+      "id": "bibtex:Hepp2026-oi",
+      "bibtexKey": "Hepp2026-oi",
+      "title": "The APIcalypse: Why Election Research Is Broken",
+      "description": "AI-generated podcast discussion.\n\nReference:\nHepp, A. (2026). The imaginative landscape of AI: Locating Silicon Valley’s “quiet futuring”. https://doi.org/10.1177/01634437261454515",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Hepp2026-oi.mp3",
+      "pubDate": "2026-06-07T09:57:17.855433+00:00",
+      "duration": "7:44",
+      "author": "Andreas Hepp",
+      "doi": "10.1177/01634437261454515",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -2545,6 +2557,18 @@
       "author": "Ludwig Schulte, Dino Pasic, Catalina Goanta, Adriana Iamnitchi",
       "doi": "10.1145/3795513.3807440",
       "own": false
+    },
+    "Hepp2026-oi": {
+      "id": "bibtex:Hepp2026-oi",
+      "bibtexKey": "Hepp2026-oi",
+      "title": "The APIcalypse: Why Election Research Is Broken",
+      "description": "AI-generated podcast discussion.\n\nReference:\nHepp, A. (2026). The imaginative landscape of AI: Locating Silicon Valley’s “quiet futuring”. https://doi.org/10.1177/01634437261454515",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Hepp2026-oi.mp3",
+      "pubDate": "2026-06-07T09:57:17.855433+00:00",
+      "duration": "7:44",
+      "author": "Andreas Hepp",
+      "doi": "10.1177/01634437261454515",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -3531,9 +3555,21 @@
       "author": "Ludwig Schulte, Dino Pasic, Catalina Goanta, Adriana Iamnitchi",
       "doi": "10.1145/3795513.3807440",
       "own": false
+    },
+    "10.1177/01634437261454515": {
+      "id": "bibtex:Hepp2026-oi",
+      "bibtexKey": "Hepp2026-oi",
+      "title": "The APIcalypse: Why Election Research Is Broken",
+      "description": "AI-generated podcast discussion.\n\nReference:\nHepp, A. (2026). The imaginative landscape of AI: Locating Silicon Valley’s “quiet futuring”. https://doi.org/10.1177/01634437261454515",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Hepp2026-oi.mp3",
+      "pubDate": "2026-06-07T09:57:17.855433+00:00",
+      "duration": "7:44",
+      "author": "Andreas Hepp",
+      "doi": "10.1177/01634437261454515",
+      "own": false
     }
   },
-  "totalEpisodes": 106,
-  "lastUpdated": "2026-05-26T19:37:15.466Z",
+  "totalEpisodes": 107,
+  "lastUpdated": "2026-05-27T09:42:17.139Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
