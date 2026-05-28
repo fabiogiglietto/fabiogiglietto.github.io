@@ -12,6 +12,26 @@
   },
   "repositories": [
     {
+      "name": "fg-zettelkasten",
+      "description": null,
+      "url": "https://github.com/fabiogiglietto/fg-zettelkasten",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "created_at": "2026-05-17T08:10:27Z",
+      "updated_at": "2026-05-28T08:43:11Z"
+    },
+    {
+      "name": "fabiogiglietto.github.io",
+      "description": "Your research presence, always current, zero maintenance.                                                                                                                                  ",
+      "url": "https://github.com/fabiogiglietto/fabiogiglietto.github.io",
+      "language": "JavaScript",
+      "stars": 7,
+      "forks": 1,
+      "created_at": "2025-04-21T09:41:33Z",
+      "updated_at": "2026-05-28T06:18:49Z"
+    },
+    {
       "name": "research-radio",
       "description": "Convert academic papers into AI podcast episodes with Anthropic Claude and Google Gemini. Powers FG's Research Radio.",
       "url": "https://github.com/fabiogiglietto/research-radio",
@@ -22,16 +42,6 @@
       "updated_at": "2026-05-28T06:12:07Z"
     },
     {
-      "name": "fabiogiglietto.github.io",
-      "description": "Your research presence, always current, zero maintenance.                                                                                                                                  ",
-      "url": "https://github.com/fabiogiglietto/fabiogiglietto.github.io",
-      "language": "JavaScript",
-      "stars": 7,
-      "forks": 1,
-      "created_at": "2025-04-21T09:41:33Z",
-      "updated_at": "2026-05-28T06:08:16Z"
-    },
-    {
       "name": "toread",
       "description": "Consume a feed BibTeX export from a Paperpile folder, complete the publication metadata with Crossref and Semantic Scholar and create an RSS feed",
       "url": "https://github.com/fabiogiglietto/toread",
@@ -40,16 +50,6 @@
       "forks": 0,
       "created_at": "2025-06-07T09:12:59Z",
       "updated_at": "2026-05-27T21:46:38Z"
-    },
-    {
-      "name": "fg-zettelkasten",
-      "description": null,
-      "url": "https://github.com/fabiogiglietto/fg-zettelkasten",
-      "language": "TypeScript",
-      "stars": 0,
-      "forks": 0,
-      "created_at": "2026-05-17T08:10:27Z",
-      "updated_at": "2026-05-27T20:15:57Z"
     },
     {
       "name": "internet-studies-course",
@@ -274,5 +274,5 @@
       "activity": {}
     }
   ],
-  "lastUpdated": "2026-05-28T06:12:29.629Z"
+  "lastUpdated": "2026-05-28T09:58:50.097Z"
 }
