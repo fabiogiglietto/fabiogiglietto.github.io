@@ -12,6 +12,16 @@
   },
   "repositories": [
     {
+      "name": "research-radio",
+      "description": "Convert academic papers into AI podcast episodes with Anthropic Claude and Google Gemini. Powers FG's Research Radio.",
+      "url": "https://github.com/fabiogiglietto/research-radio",
+      "language": "Python",
+      "stars": 3,
+      "forks": 1,
+      "created_at": "2025-12-29T17:46:10Z",
+      "updated_at": "2026-05-28T10:48:11Z"
+    },
+    {
       "name": "fg-zettelkasten",
       "description": null,
       "url": "https://github.com/fabiogiglietto/fg-zettelkasten",
@@ -19,7 +29,7 @@
       "stars": 0,
       "forks": 0,
       "created_at": "2026-05-17T08:10:27Z",
-      "updated_at": "2026-05-28T08:43:11Z"
+      "updated_at": "2026-05-28T10:12:43Z"
     },
     {
       "name": "fabiogiglietto.github.io",
@@ -29,17 +39,7 @@
       "stars": 7,
       "forks": 1,
       "created_at": "2025-04-21T09:41:33Z",
-      "updated_at": "2026-05-28T06:18:49Z"
-    },
-    {
-      "name": "research-radio",
-      "description": "Convert academic papers into AI podcast episodes with Anthropic Claude and Google Gemini. Powers FG's Research Radio.",
-      "url": "https://github.com/fabiogiglietto/research-radio",
-      "language": "Python",
-      "stars": 3,
-      "forks": 1,
-      "created_at": "2025-12-29T17:46:10Z",
-      "updated_at": "2026-05-28T06:12:07Z"
+      "updated_at": "2026-05-28T10:06:40Z"
     },
     {
       "name": "toread",
@@ -274,5 +274,5 @@
       "activity": {}
     }
   ],
-  "lastUpdated": "2026-05-28T09:58:50.097Z"
+  "lastUpdated": "2026-05-28T10:48:34.456Z"
 }
