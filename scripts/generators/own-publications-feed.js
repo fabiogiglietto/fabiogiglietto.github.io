@@ -16,6 +16,7 @@ const fs = require('fs');
 const path = require('path');
 const { generateBibtexKey } = require('../lib/bibtex-key');
 const { resolveOaPdf } = require('../lib/unpaywall');
+const { findOraPdfByDoi } = require('../lib/ora-search');
 const config = require('../config');
 
 // Venues excluded from the feed: short conference proceedings that are not
@@ -123,9 +124,30 @@ async function generateOwnPublicationsFeed() {
       console.log(`Dropped ${items.length - dedupedItems.length} duplicate publication(s)`);
     }
 
-    // Unpaywall fallback: ORA is the canonical full-text source, but for an
-    // item ORA could not resolve, ask Unpaywall for a direct OA PDF (catches
-    // arXiv preprints and PDF-first OA journals with no ORA deposit).
+    // ORA-search fallback: ORCID surfaces new papers on publication day, but
+    // ORA's OAI-PMH endpoint can lag days/weeks behind the actual deposit.
+    // Search ORA by DOI directly for items the OAI pass missed, so a freshly
+    // deposited PDF is picked up on the next pipeline run rather than waiting
+    // for OAI to catch up.
+    let oraSearchHits = 0;
+    for (const item of dedupedItems) {
+      const academic = item._academic;
+      if (academic.open_access_pdf_url || !academic.doi) continue;
+      const pdfUrl = await findOraPdfByDoi(academic.doi);
+      if (pdfUrl) {
+        academic.open_access_pdf_url = pdfUrl;
+        academic.open_access = true;
+        oraSearchHits += 1;
+      }
+      await new Promise((resolve) => setTimeout(resolve, 200));
+    }
+    if (oraSearchHits) {
+      console.log(`ORA search resolved ${oraSearchHits} additional OA PDF(s)`);
+    }
+
+    // Unpaywall fallback: for items neither ORA-OAI nor ORA-search resolved,
+    // ask Unpaywall (catches arXiv preprints and PDF-first OA journals with no
+    // ORA deposit).
     let unpaywallHits = 0;
     for (const item of dedupedItems) {
       const academic = item._academic;
