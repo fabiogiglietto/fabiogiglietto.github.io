@@ -1,11 +1,12 @@
 {
-  "totalEntries": 150,
-  "lastUpdated": "2026-05-27T20:13:30.973Z",
+  "totalEntries": 151,
+  "lastUpdated": "2026-05-28T06:16:48.012Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-05-26T19:40:51.293Z"
+    "latest": "2026-05-28T06:16:47.979Z"
   },
   "byDate": {
+    "2026-05-28": 1,
     "2026-05-26": 1,
     "2026-05-25": 1,
     "2026-05-21": 1,
@@ -14,8 +15,7 @@
     "2026-05-16": 1,
     "2026-05-14": 1,
     "2026-05-13": 1,
-    "2026-05-11": 1,
-    "2026-05-10": 1
+    "2026-05-11": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 50,
@@ -30,11 +30,18 @@
     "veraai.eu": 2
   },
   "byRelevanceScore": {
-    "high": 128,
+    "high": 129,
     "medium": 22,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "complexitycat.org",
+      "url": "https://www.complexitycat.org/posts/CS2Italy-2026/",
+      "source": "complexitycat.org",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-05-28T06:16:47.979Z"
+    },
     {
       "title": "Referendum. Bonelli e Fratoianni (Avs) scrivono al Presidente Agcom, preoccupati per le fake news veicolate sui social. Chiesto incontro. Piccolotti: inquietante che tecnologie opache abbiano cosi tanto spazio sui social del nostro Paese, con operazioni di propaganda finalizzate a condizionare l'opinione pubblica e fondate sul falso",
       "url": "https://reti.green/2026/03/03/referendum-bonelli-e-fratoianni-avs-scrivono-al-presidente-agcom-preoccupati-per-le-fake-news-veicolate-sui-social-chiesto-incontro-piccolotti-inquietante-che-tecnologie-opache-abbiano-co/",
@@ -60,13 +67,6 @@
       "title": "snurb.info",
       "url": "https://snurb.info/taxonomy/term/125",
       "source": "snurb.info",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-05-20T18:48:52.347Z"
-    },
-    {
-      "title": "XIX Legislatura - Lavori - Progetti di legge - Camera.it (referring to 'Resoconti Assemblea')",
-      "url": "https://www.camera.it/leg19/468?idLeg=19&tipoAtto=AudizInformale&nuAudizione=64&data=20260227",
-      "source": "camera.it",
       "relevanceScore": 0.9,
       "collectedAt": "2026-05-20T18:48:52.347Z"
     }

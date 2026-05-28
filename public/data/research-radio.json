@@ -1283,6 +1283,30 @@
       "author": "Andreas Hepp",
       "doi": "10.1177/01634437261454515",
       "own": false
+    },
+    {
+      "id": "bibtex:Vertesi2026-lv",
+      "bibtexKey": "Vertesi2026-lv",
+      "title": "The Five Decoys Hiding AI's Real Power Grab",
+      "description": "AI-generated podcast discussion.\n\nReference:\nVertesi, J., boyd, D., Taylor, A., & Shestakofsky, B. (2026). Reckoning with the political economy of AI: Avoiding decoys in pursuit of accountability. http://arxiv.org/abs/2604.16106v2",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Vertesi2026-lv.mp3",
+      "pubDate": "2026-06-08T09:57:17.855433+00:00",
+      "duration": "8:49",
+      "author": "Janet Vertesi, danah boyd, Alex Taylor, Benjamin Shestakofsky",
+      "doi": null,
+      "own": false
+    },
+    {
+      "id": "bibtex:Giglietto2026-632ef967",
+      "bibtexKey": "Giglietto2026-632ef967",
+      "title": "Break the Glass: How Facebook Quietly Rewrites What You See",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGiglietto, F. & Marino, G. (2026). Beyond the share button: How partisan alignment, journalistic quality, and algorithmic governance shape what millions see on Facebook. https://doi.org/10.1177/29768624261452529",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Giglietto2026-632ef967.mp3",
+      "pubDate": "2026-06-09T09:57:17.855433+00:00",
+      "duration": "9:36",
+      "author": "Fabio Giglietto, Giada Marino",
+      "doi": "10.1177/29768624261452529",
+      "own": true
     }
   ],
   "episodesByBibtexKey": {
@@ -2569,6 +2593,30 @@
       "author": "Andreas Hepp",
       "doi": "10.1177/01634437261454515",
       "own": false
+    },
+    "Vertesi2026-lv": {
+      "id": "bibtex:Vertesi2026-lv",
+      "bibtexKey": "Vertesi2026-lv",
+      "title": "The Five Decoys Hiding AI's Real Power Grab",
+      "description": "AI-generated podcast discussion.\n\nReference:\nVertesi, J., boyd, D., Taylor, A., & Shestakofsky, B. (2026). Reckoning with the political economy of AI: Avoiding decoys in pursuit of accountability. http://arxiv.org/abs/2604.16106v2",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Vertesi2026-lv.mp3",
+      "pubDate": "2026-06-08T09:57:17.855433+00:00",
+      "duration": "8:49",
+      "author": "Janet Vertesi, danah boyd, Alex Taylor, Benjamin Shestakofsky",
+      "doi": null,
+      "own": false
+    },
+    "Giglietto2026-632ef967": {
+      "id": "bibtex:Giglietto2026-632ef967",
+      "bibtexKey": "Giglietto2026-632ef967",
+      "title": "Break the Glass: How Facebook Quietly Rewrites What You See",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGiglietto, F. & Marino, G. (2026). Beyond the share button: How partisan alignment, journalistic quality, and algorithmic governance shape what millions see on Facebook. https://doi.org/10.1177/29768624261452529",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Giglietto2026-632ef967.mp3",
+      "pubDate": "2026-06-09T09:57:17.855433+00:00",
+      "duration": "9:36",
+      "author": "Fabio Giglietto, Giada Marino",
+      "doi": "10.1177/29768624261452529",
+      "own": true
     }
   },
   "episodesByDoi": {
@@ -3567,9 +3615,21 @@
       "author": "Andreas Hepp",
       "doi": "10.1177/01634437261454515",
       "own": false
+    },
+    "10.1177/29768624261452529": {
+      "id": "bibtex:Giglietto2026-632ef967",
+      "bibtexKey": "Giglietto2026-632ef967",
+      "title": "Break the Glass: How Facebook Quietly Rewrites What You See",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGiglietto, F. & Marino, G. (2026). Beyond the share button: How partisan alignment, journalistic quality, and algorithmic governance shape what millions see on Facebook. https://doi.org/10.1177/29768624261452529",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Giglietto2026-632ef967.mp3",
+      "pubDate": "2026-06-09T09:57:17.855433+00:00",
+      "duration": "9:36",
+      "author": "Fabio Giglietto, Giada Marino",
+      "doi": "10.1177/29768624261452529",
+      "own": true
     }
   },
-  "totalEpisodes": 107,
-  "lastUpdated": "2026-05-27T20:09:26.602Z",
+  "totalEpisodes": 109,
+  "lastUpdated": "2026-05-28T06:12:28.788Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }

@@ -2,9 +2,30 @@
   "source": "ORA UNIURB",
   "repository": "https://ora.uniurb.it",
   "oaiEndpoint": "https://ora.uniurb.it/oai/request",
-  "collectedAt": "2026-05-27T20:09:26.127Z",
+  "collectedAt": "2026-05-28T06:12:28.042Z",
   "author": "Fabio Giglietto",
   "publications": [
+    {
+      "title": "Beyond the share button: How partisan alignment, journalistic quality, and algorithmic governance shape what millions see on Facebook",
+      "authors": "Fabio Giglietto; Giada Marino",
+      "authorsList": [
+        "Fabio Giglietto",
+        "Giada Marino"
+      ],
+      "year": 2026,
+      "doi": "10.1177/29768624261452529",
+      "handle": "11576/2776651",
+      "type": "article",
+      "abstract": "Social media platforms serve as critical gatekeepers in democratic information ecosystems, yet the mechanisms governing political content amplification remain poorly understood. This study examines how Facebook amplifies news by analysing 130,448 highly circulated URLs shared between 2017 and 2022, using Meta's Privacy-Protected Full URLs Dataset. We investigate how user-driven sharing translates into viewership and how audience partisan alignment, source credibility and algorithmic evolution moderate this relationship. Our analysis yields three key findings. First, although sharing reliably predicts viewing, this relationship weakens significantly for content with intensely partisan audiences, even after controlling for engagement levels. Second, adherence to professional journalistic standards independently increases reach – sources with higher credibility scores receive substantially more views than those with lower scores, holding shares constant. Third, and most critically, temporal analysis reveals that these effects are algorithmically modulated rather than structurally fixed. During Facebook’s 2020 election ‘break the glass’ interventions, the partisan penalty doubled while rewards for quality journalism surged simultaneously. These volatile coefficients provide compelling evidence that reduced reach for partisan content stems from active platform intervention, not organic network limitations. Our findings demonstrate that Facebook operates as an active curator, not a neutral conduit. Its algorithmic choices create measurable disparities in content visibility that profoundly shape democratic discourse. As algorithmic curation increasingly determines citizens’ information exposure, the temporal instability of these effects underscores the urgent need for platform transparency and accountability in democratic governance.",
+      "publisher": null,
+      "journal": "PLATFORMS & SOCIETY",
+      "pages": null,
+      "language": "eng",
+      "oaiIdentifier": "oai:ora.uniurb.it:11576/2776651",
+      "datestamp": "2026-05-27T10:35:29Z",
+      "url": "https://ora.uniurb.it/handle/11576/2776651",
+      "oaPdfUrl": "https://ora.uniurb.it/bitstream/11576/2776651/1/giglietto-marino-2026-beyond-the-share-button-how-partisan-alignment-journalistic-quality-and-algorithmic-governance.pdf"
+    },
     {
       "title": "From the Wild West to the Walled Garden",
       "authors": "Giglietto, Fabio; Puschmann, Cornelius",
@@ -133,6 +154,28 @@
       "datestamp": "2024-10-31T00:02:06Z",
       "url": "https://ora.uniurb.it/handle/11576/2714451",
       "oaPdfUrl": "https://ora.uniurb.it/bitstream/11576/2714451/5/PI_fulltext.pdf"
+    },
+    {
+      "title": "Cracking Open the European Newsfeed",
+      "authors": "Rossi, Luca; Giglietto, Fabio; Marino, Giada",
+      "authorsList": [
+        "Rossi, Luca",
+        "Giglietto, Fabio",
+        "Marino, Giada"
+      ],
+      "year": 2023,
+      "doi": "10.51685/jqd.2023.020",
+      "handle": "11576/2726579",
+      "type": "article",
+      "abstract": "This  paper  contributes  to  the  ongoing  effort  to  describe  and  quantify  the quality of information that is shared on large social media platforms. We  do  this  by  complementing  existing  research  that  provided  the  first quantitative  assessment  of  the  quality  of  the  information  circulating  on Facebook among US users. Leveraging an updated version of the same data source —Meta’s URL Shares Dataset —and  replicating  much  of  the methodology,  we  quantify  the  trustworthy  and  untrustworthy  links  to external websites that have been shared on Facebook in the period between 2019 and 2022 in three  major European countries (Germany,  France,  and Italy).  We  observe  a  clear  decline  in  the  number  of  URLs  present  in  the dataset  and  an  increase  in  the  URLs  from  untrustworthy  domains  as  a percentage  of  the  total  URLs  shared  in  a  year.  This  increase  seems  to  be higher in electoral years (in Germany and in Italy) but itdoes not translate into an increase of Views received from untrustworthy sources.",
+      "publisher": null,
+      "journal": "JOURNAL OF QUANTITATIVE DESCRIPTION: DIGITAL MEDIA",
+      "pages": null,
+      "language": "eng",
+      "oaiIdentifier": "oai:ora.uniurb.it:11576/2726579",
+      "datestamp": "2024-03-19T02:16:50Z",
+      "url": "https://ora.uniurb.it/handle/11576/2726579",
+      "oaPdfUrl": "https://ora.uniurb.it/bitstream/11576/2726579/2/Manuscript%20%281%29.pdf"
     },
     {
       "title": "Cracking Open the European Newsfeed",
@@ -318,9 +361,9 @@
     }
   ],
   "stats": {
-    "total": 14,
+    "total": 16,
     "byType": {
-      "article": 6,
+      "article": 8,
       "chapter": 4,
       "other": 3,
       "conference": 1
@@ -328,10 +371,10 @@
     "byYear": {
       "2020": 1,
       "2022": 3,
-      "2023": 5,
+      "2023": 6,
       "2024": 1,
       "2025": 2,
-      "2026": 2
+      "2026": 3
     }
   }
 }
