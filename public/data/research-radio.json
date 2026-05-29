@@ -1307,6 +1307,18 @@
       "author": "Fabio Giglietto, Giada Marino",
       "doi": "10.1177/29768624261452529",
       "own": true
+    },
+    {
+      "id": "bibtex:Brady2026-ln",
+      "bibtexKey": "Brady2026-ln",
+      "title": "Rewiring the Feed: Can Algorithms Heal Political Divides?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nBrady, W. J., Doyle, M., Elnakouri, A., Finkel, E. J., Jackson, J. C., Kteily, N., Parker, V., Puryear, C., Spelman, T., Teeny, J., & Torres, M. (2026). Redesigning algorithms to intervene on social norm misperceptions during a national election. https://doi.org/10.1038/s41586-026-10536-1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Brady2026-ln.mp3",
+      "pubDate": "2026-06-10T09:57:17.855433+00:00",
+      "duration": "8:29",
+      "author": "William J. Brady, Meriel Doyle, Abdo Elnakouri, Eli J. Finkel, Joshua Conrad Jackson, Nour Kteily, Victoria Parker, Curtis Puryear, Trevor Spelman, Jacob Teeny, Mark Torres",
+      "doi": "10.1038/s41586-026-10536-1",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -2617,6 +2629,18 @@
       "author": "Fabio Giglietto, Giada Marino",
       "doi": "10.1177/29768624261452529",
       "own": true
+    },
+    "Brady2026-ln": {
+      "id": "bibtex:Brady2026-ln",
+      "bibtexKey": "Brady2026-ln",
+      "title": "Rewiring the Feed: Can Algorithms Heal Political Divides?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nBrady, W. J., Doyle, M., Elnakouri, A., Finkel, E. J., Jackson, J. C., Kteily, N., Parker, V., Puryear, C., Spelman, T., Teeny, J., & Torres, M. (2026). Redesigning algorithms to intervene on social norm misperceptions during a national election. https://doi.org/10.1038/s41586-026-10536-1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Brady2026-ln.mp3",
+      "pubDate": "2026-06-10T09:57:17.855433+00:00",
+      "duration": "8:29",
+      "author": "William J. Brady, Meriel Doyle, Abdo Elnakouri, Eli J. Finkel, Joshua Conrad Jackson, Nour Kteily, Victoria Parker, Curtis Puryear, Trevor Spelman, Jacob Teeny, Mark Torres",
+      "doi": "10.1038/s41586-026-10536-1",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -3627,9 +3651,21 @@
       "author": "Fabio Giglietto, Giada Marino",
       "doi": "10.1177/29768624261452529",
       "own": true
+    },
+    "10.1038/s41586-026-10536-1": {
+      "id": "bibtex:Brady2026-ln",
+      "bibtexKey": "Brady2026-ln",
+      "title": "Rewiring the Feed: Can Algorithms Heal Political Divides?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nBrady, W. J., Doyle, M., Elnakouri, A., Finkel, E. J., Jackson, J. C., Kteily, N., Parker, V., Puryear, C., Spelman, T., Teeny, J., & Torres, M. (2026). Redesigning algorithms to intervene on social norm misperceptions during a national election. https://doi.org/10.1038/s41586-026-10536-1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Brady2026-ln.mp3",
+      "pubDate": "2026-06-10T09:57:17.855433+00:00",
+      "duration": "8:29",
+      "author": "William J. Brady, Meriel Doyle, Abdo Elnakouri, Eli J. Finkel, Joshua Conrad Jackson, Nour Kteily, Victoria Parker, Curtis Puryear, Trevor Spelman, Jacob Teeny, Mark Torres",
+      "doi": "10.1038/s41586-026-10536-1",
+      "own": false
     }
   },
-  "totalEpisodes": 109,
-  "lastUpdated": "2026-05-29T05:59:16.150Z",
+  "totalEpisodes": 110,
+  "lastUpdated": "2026-05-29T09:52:08.105Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }

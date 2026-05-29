@@ -1,5 +1,5 @@
 {
-  "overallSummary": "Fabio Giglietto maintains an active and diverse social media presence across Mastodon, LinkedIn, and Bluesky, accumulating a total of 3,580 followers with 7 recent posts. The profile exhibits a healthy average engagement rate of 5.32% per post, primarily driven by strong performance on Bluesky. Content focuses heavily on academic research, publications, and professional opportunities within computational social science and disinformation studies.",
+  "overallSummary": "Fabio Giglietto maintains an active multi-platform social media presence, primarily focused on academic research, publications, grants, and professional opportunities within computational social science and disinformation studies. With a combined total of 3,580 followers, the profile consistently shares significant updates. Bluesky currently demonstrates the highest average engagement per post, indicating a highly receptive audience there for new research and opportunities, while LinkedIn offers the broadest reach for professional announcements.",
   "engagementMetrics": {
     "totalFollowers": 3580,
     "averageEngagementRate": 5.32,
@@ -8,28 +8,32 @@
   "contentThemes": [
     {
       "theme": "Research & Publications",
-      "description": "Announcements of new research papers, tool releases (CooRnet v2.0), and discussions on methodological approaches in social media analysis and disinformation."
+      "description": "Announcements of new papers, algorithm releases (CooRnet), and discussions on methodological approaches to disinformation."
     },
     {
-      "theme": "Career & Academic Opportunities",
-      "description": "Posts about securing new research grants, hiring postdoctoral researchers, and opportunities for PhD students in computational social science."
+      "theme": "Grants & Funding",
+      "description": "Updates on securing new research grants for significant projects."
     },
     {
-      "theme": "Conferences & Dissemination",
-      "description": "Mentions of upcoming presentations at academic conferences related to disinformation and coordinated campaigns."
+      "theme": "Hiring & Opportunities",
+      "description": "Recruitment for postdoctoral researchers and PhD students in computational social science and related fields."
+    },
+    {
+      "theme": "Conferences & Presentations",
+      "description": "Information about upcoming presentations at academic conferences."
     }
   ],
   "recommendations": [
-    "**Leverage Bluesky for High-Impact Announcements**: Given its highest average engagement rate (6.14%) and the strong performance of paper announcements and research opportunities, prioritize major news and calls to action on Bluesky to maximize reach and interaction.",
-    "**Optimize LinkedIn for Professional & Funding News**: Continue using LinkedIn for grant announcements and hiring posts, as it has the largest follower base (1,850) and demonstrates solid engagement for professional development content. Consider adding more direct calls-to-action to further boost comments and shares.",
-    "**Increase Mastodon Activity and Community Engagement**: Mastodon shows the lowest engagement (average 4.55%) and fewer posts. Increase posting frequency with insights into ongoing research, academic discussions, or links to longer-form content to foster a more active and engaged community.",
-    "**Cross-Promote Key Content Strategically**: For significant announcements (e.g., new papers, major hiring calls), ensure coordinated posts across all platforms, tailoring the message slightly to each platform's audience and linking to the most relevant platform for detailed engagement or discussion.",
-    "**Replicate Successful CTA Strategies**: The 'Reply for details!' call to action on Bluesky (b3) proved highly effective. Explore incorporating similar direct calls to action in posts on other platforms, especially LinkedIn, to encourage more replies and shares."
+    "**Leverage Bluesky's High Engagement:** Given Bluesky's strong average engagement rate, prioritize this platform for initial announcements of new papers, significant research findings, and urgent hiring calls, then cross-promote to other platforms.",
+    "**Expand Professional Networking on LinkedIn:** With the largest follower count, LinkedIn is ideal for cultivating professional connections. Continue posting grant announcements and hiring opportunities, and consider sharing more industry-specific insights or thought leadership to further engage this audience.",
+    "**Enhance Calls to Action:** Posts with clear calls to action, such as 'Reply for details!' (Bluesky's 'b3'), perform well. Integrate more explicit CTAs where appropriate, especially for opportunities or feedback.",
+    "**Strategic Hashtag Use:** Continue utilizing relevant hashtags (e.g., #DisinfoConf2025, #hiring, #research) to increase visibility and reach, particularly on Mastodon and Bluesky where community discovery is common.",
+    "**Consistency in Content Categories:** Maintain the current mix of content (research, opportunities, grants, conferences) as these topics resonate well with the audience across platforms."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky is the most engaging platform, boasting the highest average engagement rate per post (6.14%) and excellent performance for research publications and academic opportunities. It effectively drives interaction for direct calls-to-action.",
-    "mastodon": "Mastodon currently has the lowest engagement rate per post (4.55%) and the fewest posts. While it serves a dedicated academic audience, there's an opportunity to increase activity and interaction by sharing more diverse content or engaging in discussions.",
-    "linkedin": "LinkedIn has the largest follower base (1,850) and performs well for professional announcements such as grant awards and hiring. Its engagement for these types of posts is solid, making it a key platform for professional networking and career-related updates."
+    "bluesky": "Bluesky exhibits the highest average engagement rate among all platforms. It's particularly effective for announcing new publications and research opportunities, indicating a highly engaged academic and scientific community receptive to direct updates and calls for collaboration. This platform appears to be a key channel for generating immediate interest and interaction.",
+    "mastodon": "Mastodon serves as a focused hub for academic discussion within the 'aoir.social' instance. While its follower count and engagement per post are lower than other platforms, it is valuable for sharing niche research updates and fostering discussions among a specific, engaged academic community.",
+    "linkedin": "LinkedIn boasts the largest follower base, making it a critical platform for broad professional reach and networking. It performs strongly for formal announcements such as new grants and significant hiring opportunities. The high number of total interactions, despite a slightly lower average engagement rate per post compared to Bluesky, underscores its importance for professional visibility."
   },
   "topPerformingContent": [
     {
