@@ -1,12 +1,12 @@
 {
-  "totalEntries": 152,
-  "lastUpdated": "2026-05-29T09:55:53.606Z",
+  "totalEntries": 153,
+  "lastUpdated": "2026-05-29T10:44:55.890Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-05-29T09:55:53.573Z"
+    "latest": "2026-05-29T10:44:55.862Z"
   },
   "byDate": {
-    "2026-05-29": 1,
+    "2026-05-29": 2,
     "2026-05-28": 1,
     "2026-05-26": 1,
     "2026-05-25": 1,
@@ -30,11 +30,18 @@
     "veraai.eu": 2
   },
   "byRelevanceScore": {
-    "high": 130,
+    "high": 131,
     "medium": 22,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "teleambiente.tv",
+      "url": "https://teleambiente.tv/meta-algoritmi-estremisti-politica/",
+      "source": "teleambiente.tv",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-05-29T10:44:55.862Z"
+    },
     {
       "title": "Twitter at Twenty: Commemoration and Commiseration | Snurblog",
       "url": "https://snurb.net/blog/2026/04/25/twitter-at-twenty-commemoration-and-commiseration",
@@ -62,13 +69,6 @@
       "source": "cs2italy.eu",
       "relevanceScore": 1,
       "collectedAt": "2026-05-25T10:06:59.596Z"
-    },
-    {
-      "title": "Katharina Esau Was Awarded an ARC Discovery Early Career Researcher Award 2026",
-      "url": "https://oncodaily.com/katharina-esau-was-awarded-an-arc-discovery-early-career-researcher-award-2026/",
-      "source": "oncodaily.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-05-21T06:43:20.030Z"
     }
   ]
 }
