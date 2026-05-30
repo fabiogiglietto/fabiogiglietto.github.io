@@ -2,30 +2,9 @@
   "source": "ORA UNIURB",
   "repository": "https://ora.uniurb.it",
   "oaiEndpoint": "https://ora.uniurb.it/oai/request",
-  "collectedAt": "2026-05-30T08:26:17.116Z",
+  "collectedAt": "2026-05-30T09:11:41.712Z",
   "author": "Fabio Giglietto",
   "publications": [
-    {
-      "title": "Beyond the share button: How partisan alignment, journalistic quality, and algorithmic governance shape what millions see on Facebook",
-      "authors": "Fabio Giglietto; Giada Marino",
-      "authorsList": [
-        "Fabio Giglietto",
-        "Giada Marino"
-      ],
-      "year": 2026,
-      "doi": "10.1177/29768624261452529",
-      "handle": "11576/2776651",
-      "type": "article",
-      "abstract": "Social media platforms serve as critical gatekeepers in democratic information ecosystems, yet the mechanisms governing political content amplification remain poorly understood. This study examines how Facebook amplifies news by analysing 130,448 highly circulated URLs shared between 2017 and 2022, using Meta's Privacy-Protected Full URLs Dataset. We investigate how user-driven sharing translates into viewership and how audience partisan alignment, source credibility and algorithmic evolution moderate this relationship. Our analysis yields three key findings. First, although sharing reliably predicts viewing, this relationship weakens significantly for content with intensely partisan audiences, even after controlling for engagement levels. Second, adherence to professional journalistic standards independently increases reach – sources with higher credibility scores receive substantially more views than those with lower scores, holding shares constant. Third, and most critically, temporal analysis reveals that these effects are algorithmically modulated rather than structurally fixed. During Facebook’s 2020 election ‘break the glass’ interventions, the partisan penalty doubled while rewards for quality journalism surged simultaneously. These volatile coefficients provide compelling evidence that reduced reach for partisan content stems from active platform intervention, not organic network limitations. Our findings demonstrate that Facebook operates as an active curator, not a neutral conduit. Its algorithmic choices create measurable disparities in content visibility that profoundly shape democratic discourse. As algorithmic curation increasingly determines citizens’ information exposure, the temporal instability of these effects underscores the urgent need for platform transparency and accountability in democratic governance.",
-      "publisher": null,
-      "journal": "PLATFORMS & SOCIETY",
-      "pages": null,
-      "language": "eng",
-      "oaiIdentifier": "oai:ora.uniurb.it:11576/2776651",
-      "datestamp": "2026-05-27T10:35:29Z",
-      "url": "https://ora.uniurb.it/handle/11576/2776651",
-      "oaPdfUrl": "https://ora.uniurb.it/bitstream/11576/2776651/1/giglietto-marino-2026-beyond-the-share-button-how-partisan-alignment-journalistic-quality-and-algorithmic-governance.pdf"
-    },
     {
       "title": "From the Wild West to the Walled Garden",
       "authors": "Giglietto, Fabio; Puschmann, Cornelius",
@@ -361,9 +340,9 @@
     }
   ],
   "stats": {
-    "total": 16,
+    "total": 15,
     "byType": {
-      "article": 8,
+      "article": 7,
       "chapter": 4,
       "other": 3,
       "conference": 1
@@ -374,7 +353,7 @@
       "2023": 6,
       "2024": 1,
       "2025": 2,
-      "2026": 3
+      "2026": 2
     }
   }
 }
