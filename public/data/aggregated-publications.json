@@ -1521,7 +1521,7 @@
         "wos": null,
         "scopus": null,
         "semanticScholar": null,
-        "ora": null,
+        "ora": "https://ora.uniurb.it/handle/11576/2776651",
         "crossref": "https://doi.org/10.1177/29768624261452529"
       },
       "source_ids": {
@@ -1530,12 +1530,15 @@
         "wos": null,
         "scopus": null,
         "semanticScholar": null,
-        "ora": null
+        "ora": "11576/2776651"
       },
       "metrics": {
         "total_citations": 0,
         "citation_sources": 0
       },
+      "oraHandle": "11576/2776651",
+      "oaPdfUrl": "https://ora.uniurb.it/bitstream/11576/2776651/1/giglietto-marino-2026-beyond-the-share-button-how-partisan-alignment-journalistic-quality-and-algorithmic-governance.pdf",
+      "abstract": "Social media platforms serve as critical gatekeepers in democratic information ecosystems, yet the mechanisms governing political content amplification remain poorly understood. This study examines how Facebook amplifies news by analysing 130,448 highly circulated URLs shared between 2017 and 2022, using Meta's Privacy-Protected Full URLs Dataset. We investigate how user-driven sharing translates into viewership and how audience partisan alignment, source credibility and algorithmic evolution moderate this relationship. Our analysis yields three key findings. First, although sharing reliably predicts viewing, this relationship weakens significantly for content with intensely partisan audiences, even after controlling for engagement levels. Second, adherence to professional journalistic standards independently increases reach – sources with higher credibility scores receive substantially more views than those with lower scores, holding shares constant. Third, and most critically, temporal analysis reveals that these effects are algorithmically modulated rather than structurally fixed. During Facebook’s 2020 election ‘break the glass’ interventions, the partisan penalty doubled while rewards for quality journalism surged simultaneously. These volatile coefficients provide compelling evidence that reduced reach for partisan content stems from active platform intervention, not organic network limitations. Our findings demonstrate that Facebook operates as an active curator, not a neutral conduit. Its algorithmic choices create measurable disparities in content visibility that profoundly shape democratic discourse. As algorithmic curation increasingly determines citizens’ information exposure, the temporal instability of these effects underscores the urgent need for platform transparency and accountability in democratic governance.",
       "crossref_type": "journal-article",
       "publisher": "SAGE Publications"
     },
@@ -6198,8 +6201,8 @@
       "with_scopus": 25,
       "with_semanticScholar": 3,
       "with_crossref": 65,
-      "with_ora": 27
+      "with_ora": 28
     }
   },
-  "lastUpdated": "2026-05-30T09:15:28.783Z"
+  "lastUpdated": "2026-05-31T08:50:07.357Z"
 }
