@@ -2447,6 +2447,180 @@
     },
     {
       "last-modified-date": {
+        "value": 1780312702049
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "handle",
+            "external-id-value": "11576/2777014",
+            "external-id-normalized": {
+              "value": "11576/2777014",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://ora.uniurb.it/handle/11576/2777014"
+            },
+            "external-id-relationship": "self"
+          },
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.1007/978-3-031-29298-9_4",
+            "external-id-normalized": {
+              "value": "10.1007/978-3-031-29298-9_4",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": null,
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 216363049,
+          "created-date": {
+            "value": 1780312702049
+          },
+          "last-modified-date": {
+            "value": 1780312702049
+          },
+          "source": {
+            "source-orcid": null,
+            "source-client-id": {
+              "uri": "https://orcid.org/client/APP-ERL34HCK6D9LSO6D",
+              "path": "APP-ERL34HCK6D9LSO6D",
+              "host": "orcid.org"
+            },
+            "source-name": {
+              "value": "ORA - Iris UNIURB"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Citizens’ Engagement with the ‘Seaside Campaign’ on Instagram and Facebook"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "handle",
+                "external-id-value": "11576/2777014",
+                "external-id-normalized": {
+                  "value": "11576/2777014",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://ora.uniurb.it/handle/11576/2777014"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1007/978-3-031-29298-9_4",
+                "external-id-normalized": {
+                  "value": "10.1007/978-3-031-29298-9_4",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "url": {
+            "value": "https://ora.uniurb.it/handle/11576/2777014"
+          },
+          "type": "book-chapter",
+          "publication-date": {
+            "year": {
+              "value": "2023"
+            },
+            "month": {
+              "value": "01"
+            },
+            "day": {
+              "value": "01"
+            }
+          },
+          "journal-title": null,
+          "visibility": "public",
+          "path": "/0000-0001-8019-1035/work/216363049",
+          "display-index": "1"
+        },
+        {
+          "put-code": 137056490,
+          "created-date": {
+            "value": 1686993334073
+          },
+          "last-modified-date": {
+            "value": 1686993334073
+          },
+          "source": {
+            "source-orcid": null,
+            "source-client-id": {
+              "uri": "https://orcid.org/client/0000-0001-9884-1913",
+              "path": "0000-0001-9884-1913",
+              "host": "orcid.org"
+            },
+            "source-name": {
+              "value": "Crossref"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Citizens’ Engagement with the ‘Seaside Campaign’ on Instagram and Facebook"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.1007/978-3-031-29298-9_4",
+                "external-id-normalized": {
+                  "value": "10.1007/978-3-031-29298-9_4",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.1007/978-3-031-29298-9_4"
+                },
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "url": {
+            "value": "https://doi.org/10.1007/978-3-031-29298-9_4"
+          },
+          "type": "book-chapter",
+          "publication-date": {
+            "year": {
+              "value": "2023"
+            },
+            "month": null,
+            "day": null
+          },
+          "journal-title": null,
+          "visibility": "public",
+          "path": "/0000-0001-8019-1035/work/137056490",
+          "display-index": "0"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
         "value": 1703202902387
       },
       "external-ids": {
@@ -3071,92 +3245,6 @@
           "journal-title": null,
           "visibility": "public",
           "path": "/0000-0001-8019-1035/work/133838443",
-          "display-index": "0"
-        }
-      ]
-    },
-    {
-      "last-modified-date": {
-        "value": 1686993334073
-      },
-      "external-ids": {
-        "external-id": [
-          {
-            "external-id-type": "doi",
-            "external-id-value": "10.1007/978-3-031-29298-9_4",
-            "external-id-normalized": {
-              "value": "10.1007/978-3-031-29298-9_4",
-              "transient": true
-            },
-            "external-id-normalized-error": null,
-            "external-id-url": {
-              "value": "https://doi.org/10.1007/978-3-031-29298-9_4"
-            },
-            "external-id-relationship": "self"
-          }
-        ]
-      },
-      "work-summary": [
-        {
-          "put-code": 137056490,
-          "created-date": {
-            "value": 1686993334073
-          },
-          "last-modified-date": {
-            "value": 1686993334073
-          },
-          "source": {
-            "source-orcid": null,
-            "source-client-id": {
-              "uri": "https://orcid.org/client/0000-0001-9884-1913",
-              "path": "0000-0001-9884-1913",
-              "host": "orcid.org"
-            },
-            "source-name": {
-              "value": "Crossref"
-            },
-            "assertion-origin-orcid": null,
-            "assertion-origin-client-id": null,
-            "assertion-origin-name": null
-          },
-          "title": {
-            "title": {
-              "value": "Citizens’ Engagement with the ‘Seaside Campaign’ on Instagram and Facebook"
-            },
-            "subtitle": null,
-            "translated-title": null
-          },
-          "external-ids": {
-            "external-id": [
-              {
-                "external-id-type": "doi",
-                "external-id-value": "10.1007/978-3-031-29298-9_4",
-                "external-id-normalized": {
-                  "value": "10.1007/978-3-031-29298-9_4",
-                  "transient": true
-                },
-                "external-id-normalized-error": null,
-                "external-id-url": {
-                  "value": "https://doi.org/10.1007/978-3-031-29298-9_4"
-                },
-                "external-id-relationship": "self"
-              }
-            ]
-          },
-          "url": {
-            "value": "https://doi.org/10.1007/978-3-031-29298-9_4"
-          },
-          "type": "book-chapter",
-          "publication-date": {
-            "year": {
-              "value": "2023"
-            },
-            "month": null,
-            "day": null
-          },
-          "journal-title": null,
-          "visibility": "public",
-          "path": "/0000-0001-8019-1035/work/137056490",
           "display-index": "0"
         }
       ]
@@ -18105,107 +18193,107 @@
       ]
     }
   ],
-  "lastUpdated": "2026-05-31T09:45:32.346Z",
+  "lastUpdated": "2026-06-01T11:30:27.558Z",
   "logs": {
-    "timestamp": "2026-05-31T09:45:31.184Z",
+    "timestamp": "2026-06-01T11:30:26.621Z",
     "steps": [
       {
-        "timestamp": "2026-05-31T09:45:31.184Z",
+        "timestamp": "2026-06-01T11:30:26.621Z",
         "type": "start",
         "message": "Starting ORCID data collection"
       },
       {
-        "timestamp": "2026-05-31T09:45:31.184Z",
+        "timestamp": "2026-06-01T11:30:26.621Z",
         "type": "info",
         "message": "Getting OAuth token for ORCID API access..."
       },
       {
-        "timestamp": "2026-05-31T09:45:31.184Z",
+        "timestamp": "2026-06-01T11:30:26.621Z",
         "type": "info",
         "message": "Attempting to use public API without authentication"
       },
       {
-        "timestamp": "2026-05-31T09:45:31.184Z",
+        "timestamp": "2026-06-01T11:30:26.621Z",
         "type": "info",
         "message": "OAuth token response received: {\n  \"status\": 200,\n  \"data\": {\n    \"access_token\": \"public_endpoint_no_token_needed\"\n  }\n}"
       },
       {
-        "timestamp": "2026-05-31T09:45:31.184Z",
+        "timestamp": "2026-06-01T11:30:26.621Z",
         "type": "info",
         "message": "Obtained access token: public_end..."
       },
       {
-        "timestamp": "2026-05-31T09:45:31.184Z",
+        "timestamp": "2026-06-01T11:30:26.621Z",
         "type": "info",
         "message": "Attempting to fetch ORCID record with JSON format..."
       },
       {
-        "timestamp": "2026-05-31T09:45:32.067Z",
+        "timestamp": "2026-06-01T11:30:27.436Z",
         "type": "info",
         "message": "Successfully retrieved record in JSON format"
       },
       {
-        "timestamp": "2026-05-31T09:45:32.067Z",
+        "timestamp": "2026-06-01T11:30:27.436Z",
         "type": "info",
         "message": "Retrieved ORCID record in JSON format"
       },
       {
-        "timestamp": "2026-05-31T09:45:32.067Z",
+        "timestamp": "2026-06-01T11:30:27.436Z",
         "type": "info",
         "message": "Response content type: application/json;charset=UTF-8"
       },
       {
-        "timestamp": "2026-05-31T09:45:32.067Z",
+        "timestamp": "2026-06-01T11:30:27.436Z",
         "type": "info",
         "message": "Trying to fetch works directly from /works endpoint for comparison..."
       },
       {
-        "timestamp": "2026-05-31T09:45:32.346Z",
+        "timestamp": "2026-06-01T11:30:27.557Z",
         "type": "info",
         "message": "Works endpoint returned 149 works"
       },
       {
-        "timestamp": "2026-05-31T09:45:32.346Z",
+        "timestamp": "2026-06-01T11:30:27.557Z",
         "type": "info",
         "message": "Processing JSON response"
       },
       {
-        "timestamp": "2026-05-31T09:45:32.346Z",
+        "timestamp": "2026-06-01T11:30:27.557Z",
         "type": "info",
         "message": "Found person data with keys: last-modified-date, name, other-names, biography, researcher-urls, emails, addresses, keywords, external-identifiers, path"
       },
       {
-        "timestamp": "2026-05-31T09:45:32.346Z",
+        "timestamp": "2026-06-01T11:30:27.557Z",
         "type": "info",
         "message": "Record endpoint response structure differs from expected format"
       },
       {
-        "timestamp": "2026-05-31T09:45:32.346Z",
+        "timestamp": "2026-06-01T11:30:27.557Z",
         "type": "info",
         "message": "Works endpoint has 149 works, record endpoint has 0 works"
       },
       {
-        "timestamp": "2026-05-31T09:45:32.346Z",
+        "timestamp": "2026-06-01T11:30:27.557Z",
         "type": "warning",
         "message": "DISCREPANCY: Works endpoint has 149 works, but record endpoint has 0 works"
       },
       {
-        "timestamp": "2026-05-31T09:45:32.346Z",
+        "timestamp": "2026-06-01T11:30:27.557Z",
         "type": "info",
         "message": "Using 149 works from /works endpoint instead of /record endpoint"
       },
       {
-        "timestamp": "2026-05-31T09:45:32.346Z",
+        "timestamp": "2026-06-01T11:30:27.558Z",
         "type": "info",
         "message": "Sample work structure: {\"keys\":[\"last-modified-date\",\"external-ids\",\"work-summary\"],\"hasSummary\":true,\"summaryCount\":2,\"summaryKeys\":[\"put-code\",\"created-date\",\"last-modified-date\",\"source\",\"title\",\"external-ids\",\"url\",\"type\",\"publication-date\",\"journal-title\",\"visibility\",\"path\",\"display-index\"],\"title\":\"Beyond the share button: How partisan alignment, journalistic quality, and algorithmic governance shape what millions see on Facebook\",\"type\":\"journal-article\",\"pubDate\":\"2026-05-01\"}"
       },
       {
-        "timestamp": "2026-05-31T09:45:32.346Z",
+        "timestamp": "2026-06-01T11:30:27.558Z",
         "type": "info",
         "message": "Collection completed successfully with 149 works"
       },
       {
-        "timestamp": "2026-05-31T09:45:32.346Z",
+        "timestamp": "2026-06-01T11:30:27.558Z",
         "type": "complete",
         "message": "Collection completed with 149 works retrieved"
       }
@@ -18213,7 +18301,7 @@
     "errors": [],
     "warnings": [
       {
-        "timestamp": "2026-05-31T09:45:32.346Z",
+        "timestamp": "2026-06-01T11:30:27.557Z",
         "message": "Works count discrepancy: /works endpoint: 149, /record endpoint: 0"
       }
     ],
@@ -18231,11 +18319,11 @@
         "contentType": "application/json;charset=UTF-8",
         "status": 200,
         "headers": {
-          "date": "Sun, 31 May 2026 09:45:32 GMT",
+          "date": "Mon, 01 Jun 2026 11:30:27 GMT",
           "content-type": "application/json;charset=UTF-8",
           "transfer-encoding": "chunked",
           "connection": "keep-alive",
-          "cf-ray": "a0450bd38ae1ab81-YYZ",
+          "cf-ray": "a04de2e539ad6778-DFW",
           "cf-cache-status": "DYNAMIC",
           "access-control-allow-origin": "*",
           "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
@@ -18247,10 +18335,10 @@
           "cf-apo-via": "origin,host",
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
-          "x-target": "reg-prod-papi-use2-b1",
+          "x-target": "reg-prod-papi-use2-a1",
           "x-via": "b1-newvpc",
           "x-xss-protection": "1; mode=block",
-          "set-cookie": "__cf_bm=gpgoekmfiRQ_ZpSHf0cGGIMcyW_ttQVDcadWJ3_wbc0-1780220731.4442897-1.0.1.1-u0s0E3Woq5Ie5MDTtl_SlUJiLTRRP8l3cSzZQEe2l5RsYktviCZlX0a8dPpoMftUQ7NjG7plXOcQRJsrU_W4Bo0oTL94K6MymE9L1hMTHU40m5X5V4SvDbLrcsJiXMbe; HttpOnly; SameSite=None; Secure; Path=/; Domain=orcid.org; Expires=Sun, 31 May 2026 10:15:32 GMT"
+          "set-cookie": "__cf_bm=QdawMTkUPiEXdTfHjvGBdMcsc_B7ycqawKhNNqkSb1Q-1780313426.7540884-1.0.1.1-2AqeSHbnu7EE5g6nQjPnLDm.pDgYVBMFfg.5YVsAzHoduCuHSkmZNqzp99mzyw.qaJ3GGLFBlAg0cRGHY7np23CJSvp0ej2YCsshBXjSc6kPPJOOiV8sw2XLrLyvHjer; HttpOnly; SameSite=None; Secure; Path=/; Domain=orcid.org; Expires=Mon, 01 Jun 2026 12:00:27 GMT"
         },
         "dataKeys": [
           "orcid-identifier",
