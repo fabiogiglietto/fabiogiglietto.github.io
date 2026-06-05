@@ -12,6 +12,16 @@
   },
   "repositories": [
     {
+      "name": "toread",
+      "description": "Consume a feed BibTeX export from a Paperpile folder, complete the publication metadata with Crossref and Semantic Scholar and create an RSS feed",
+      "url": "https://github.com/fabiogiglietto/toread",
+      "language": "TeX",
+      "stars": 1,
+      "forks": 0,
+      "created_at": "2025-06-07T09:12:59Z",
+      "updated_at": "2026-06-04T12:24:01Z"
+    },
+    {
       "name": "fabiogiglietto.github.io",
       "description": "Your research presence, always current, zero maintenance.                                                                                                                                  ",
       "url": "https://github.com/fabiogiglietto/fabiogiglietto.github.io",
@@ -19,7 +29,7 @@
       "stars": 7,
       "forks": 1,
       "created_at": "2025-04-21T09:41:33Z",
-      "updated_at": "2026-06-04T09:45:54Z"
+      "updated_at": "2026-06-04T10:42:12Z"
     },
     {
       "name": "research-radio",
@@ -29,7 +39,7 @@
       "stars": 3,
       "forks": 1,
       "created_at": "2025-12-29T17:46:10Z",
-      "updated_at": "2026-06-04T09:39:41Z"
+      "updated_at": "2026-06-04T10:36:05Z"
     },
     {
       "name": "fg-zettelkasten",
@@ -40,16 +50,6 @@
       "forks": 0,
       "created_at": "2026-05-17T08:10:27Z",
       "updated_at": "2026-06-04T09:20:28Z"
-    },
-    {
-      "name": "toread",
-      "description": "Consume a feed BibTeX export from a Paperpile folder, complete the publication metadata with Crossref and Semantic Scholar and create an RSS feed",
-      "url": "https://github.com/fabiogiglietto/toread",
-      "language": "TeX",
-      "stars": 1,
-      "forks": 0,
-      "created_at": "2025-06-07T09:12:59Z",
-      "updated_at": "2026-06-04T09:06:55Z"
     },
     {
       "name": "tiktok_csbn",
@@ -274,5 +274,5 @@
       "activity": {}
     }
   ],
-  "lastUpdated": "2026-06-04T09:53:49.231Z"
+  "lastUpdated": "2026-06-05T09:46:21.170Z"
 }
