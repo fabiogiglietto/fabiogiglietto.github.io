@@ -1,11 +1,12 @@
 {
-  "totalEntries": 153,
-  "lastUpdated": "2026-06-06T08:35:41.099Z",
+  "totalEntries": 154,
+  "lastUpdated": "2026-06-06T09:25:02.837Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-05-29T10:44:55.862Z"
+    "latest": "2026-06-06T09:25:02.801Z"
   },
   "byDate": {
+    "2026-06-06": 1,
     "2026-05-29": 2,
     "2026-05-28": 1,
     "2026-05-26": 1,
@@ -14,8 +15,7 @@
     "2026-05-20": 2,
     "2026-05-18": 2,
     "2026-05-16": 1,
-    "2026-05-14": 1,
-    "2026-05-13": 1
+    "2026-05-14": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 50,
@@ -25,16 +25,23 @@
     "Il Sole 24 ORE": 4,
     "aoir.org": 3,
     "ilrestodelcarlino.it": 3,
+    "snurb.net": 2,
     "conftool.org": 2,
-    "youtube.com": 2,
-    "veraai.eu": 2
+    "youtube.com": 2
   },
   "byRelevanceScore": {
-    "high": 131,
+    "high": 132,
     "medium": 22,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "M/C Journal 'twitter' Issue Now Out!",
+      "url": "https://snurb.net/2026/04/mc-journal-twitter-issue-now-out",
+      "source": "snurb.net",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-06-06T09:25:02.801Z"
+    },
     {
       "title": "teleambiente.tv",
       "url": "https://teleambiente.tv/meta-algoritmi-estremisti-politica/",
@@ -62,13 +69,6 @@
       "source": "reti.green",
       "relevanceScore": 0.9,
       "collectedAt": "2026-05-26T19:40:51.293Z"
-    },
-    {
-      "title": "Speakers - CS2Italy",
-      "url": "https://cs2italy.eu/speakers",
-      "source": "cs2italy.eu",
-      "relevanceScore": 1,
-      "collectedAt": "2026-05-25T10:06:59.596Z"
     }
   ]
 }
