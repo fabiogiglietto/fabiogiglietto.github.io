@@ -1343,6 +1343,18 @@
       "author": "Claes H. de Vreese, Rebekah Tromble",
       "doi": "10.1080/10584609.2026.2681041",
       "own": false
+    },
+    {
+      "id": "bibtex:Fan2026-af",
+      "bibtexKey": "Fan2026-af",
+      "title": "Every Tap, Swipe, and Scroll: Mining the Sequences of Digital Life",
+      "description": "AI-generated podcast discussion.\n\nReference:\nFan, Y., Ohme, J., & Wedel, L. (2026). Exploring temporal dynamics in digital trace data: mining user-sequences for communication research. https://doi.org/10.1080/19312458.2026.2664873",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Fan2026-af.mp3",
+      "pubDate": "2026-06-13T09:57:17.855433+00:00",
+      "duration": "8:58",
+      "author": "Yangliu Fan, Jakob Ohme, Lion Wedel",
+      "doi": "10.1080/19312458.2026.2664873",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -2689,6 +2701,18 @@
       "author": "Claes H. de Vreese, Rebekah Tromble",
       "doi": "10.1080/10584609.2026.2681041",
       "own": false
+    },
+    "Fan2026-af": {
+      "id": "bibtex:Fan2026-af",
+      "bibtexKey": "Fan2026-af",
+      "title": "Every Tap, Swipe, and Scroll: Mining the Sequences of Digital Life",
+      "description": "AI-generated podcast discussion.\n\nReference:\nFan, Y., Ohme, J., & Wedel, L. (2026). Exploring temporal dynamics in digital trace data: mining user-sequences for communication research. https://doi.org/10.1080/19312458.2026.2664873",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Fan2026-af.mp3",
+      "pubDate": "2026-06-13T09:57:17.855433+00:00",
+      "duration": "8:58",
+      "author": "Yangliu Fan, Jakob Ohme, Lion Wedel",
+      "doi": "10.1080/19312458.2026.2664873",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -3735,9 +3759,21 @@
       "author": "Claes H. de Vreese, Rebekah Tromble",
       "doi": "10.1080/10584609.2026.2681041",
       "own": false
+    },
+    "10.1080/19312458.2026.2664873": {
+      "id": "bibtex:Fan2026-af",
+      "bibtexKey": "Fan2026-af",
+      "title": "Every Tap, Swipe, and Scroll: Mining the Sequences of Digital Life",
+      "description": "AI-generated podcast discussion.\n\nReference:\nFan, Y., Ohme, J., & Wedel, L. (2026). Exploring temporal dynamics in digital trace data: mining user-sequences for communication research. https://doi.org/10.1080/19312458.2026.2664873",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Fan2026-af.mp3",
+      "pubDate": "2026-06-13T09:57:17.855433+00:00",
+      "duration": "8:58",
+      "author": "Yangliu Fan, Jakob Ohme, Lion Wedel",
+      "doi": "10.1080/19312458.2026.2664873",
+      "own": false
     }
   },
-  "totalEpisodes": 112,
-  "lastUpdated": "2026-06-06T11:13:06.311Z",
+  "totalEpisodes": 113,
+  "lastUpdated": "2026-06-07T08:53:58.609Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
