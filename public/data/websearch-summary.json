@@ -1,11 +1,12 @@
 {
-  "totalEntries": 155,
-  "lastUpdated": "2026-06-11T11:24:24.021Z",
+  "totalEntries": 156,
+  "lastUpdated": "2026-06-12T10:14:35.725Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-06-11T11:24:23.987Z"
+    "latest": "2026-06-12T10:14:35.687Z"
   },
   "byDate": {
+    "2026-06-12": 1,
     "2026-06-11": 1,
     "2026-06-06": 1,
     "2026-05-29": 2,
@@ -14,8 +15,7 @@
     "2026-05-25": 1,
     "2026-05-21": 1,
     "2026-05-20": 2,
-    "2026-05-18": 2,
-    "2026-05-16": 1
+    "2026-05-18": 2
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 50,
@@ -30,11 +30,18 @@
     "youtube.com": 2
   },
   "byRelevanceScore": {
-    "high": 133,
+    "high": 134,
     "medium": 22,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "International Communication Association (ICA) 2026 Conference Program: Communication and Inequalities in Context",
+      "url": "https://www.icahdq.org/page/ICA26",
+      "source": "icahdq.org",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-06-12T10:14:35.687Z"
+    },
     {
       "title": "How Facebook's Algorithmic Tweaks Affected Engagement with News URLs over Time | Snurblog — Axel Bruns",
       "url": "https://snurb.info/2026/06/07/how-facebooks-algorithmic-tweaks-affected-engagement-with-news-urls-over-time/",
@@ -62,13 +69,6 @@
       "source": "snurb.net",
       "relevanceScore": 0.9,
       "collectedAt": "2026-05-29T09:55:53.573Z"
-    },
-    {
-      "title": "complexitycat.org",
-      "url": "https://www.complexitycat.org/posts/CS2Italy-2026/",
-      "source": "complexitycat.org",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-05-28T06:16:47.979Z"
     }
   ]
 }
