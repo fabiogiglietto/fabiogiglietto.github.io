@@ -1,12 +1,12 @@
 {
-  "totalEntries": 156,
-  "lastUpdated": "2026-06-12T10:14:35.725Z",
+  "totalEntries": 157,
+  "lastUpdated": "2026-06-12T11:04:24.637Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-06-12T10:14:35.687Z"
+    "latest": "2026-06-12T11:04:24.603Z"
   },
   "byDate": {
-    "2026-06-12": 1,
+    "2026-06-12": 2,
     "2026-06-11": 1,
     "2026-06-06": 1,
     "2026-05-29": 2,
@@ -20,7 +20,7 @@
   "bySource": {
     "vertexaisearch.cloud.google.com": 50,
     "uniurb.it": 7,
-    "snurb.info": 5,
+    "snurb.info": 6,
     "open.online": 5,
     "Il Sole 24 ORE": 4,
     "aoir.org": 3,
@@ -30,11 +30,18 @@
     "youtube.com": 2
   },
   "byRelevanceScore": {
-    "high": 134,
+    "high": 135,
     "medium": 22,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Social Media | Snurblog - Axel Bruns",
+      "url": "https://snurb.info/",
+      "source": "snurb.info",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-06-12T11:04:24.603Z"
+    },
     {
       "title": "International Communication Association (ICA) 2026 Conference Program: Communication and Inequalities in Context",
       "url": "https://www.icahdq.org/page/ICA26",
@@ -62,13 +69,6 @@
       "source": "teleambiente.tv",
       "relevanceScore": 0.9,
       "collectedAt": "2026-05-29T10:44:55.862Z"
-    },
-    {
-      "title": "Twitter at Twenty: Commemoration and Commiseration | Snurblog",
-      "url": "https://snurb.net/blog/2026/04/25/twitter-at-twenty-commemoration-and-commiseration",
-      "source": "snurb.net",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-05-29T09:55:53.573Z"
     }
   ]
 }
