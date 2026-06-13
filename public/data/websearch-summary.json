@@ -1,11 +1,12 @@
 {
-  "totalEntries": 157,
-  "lastUpdated": "2026-06-12T11:04:24.637Z",
+  "totalEntries": 158,
+  "lastUpdated": "2026-06-13T09:02:38.695Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-06-12T11:04:24.603Z"
+    "latest": "2026-06-13T09:02:38.663Z"
   },
   "byDate": {
+    "2026-06-13": 1,
     "2026-06-12": 2,
     "2026-06-11": 1,
     "2026-06-06": 1,
@@ -14,8 +15,7 @@
     "2026-05-26": 1,
     "2026-05-25": 1,
     "2026-05-21": 1,
-    "2026-05-20": 2,
-    "2026-05-18": 2
+    "2026-05-20": 2
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 50,
@@ -25,16 +25,23 @@
     "Il Sole 24 ORE": 4,
     "aoir.org": 3,
     "ilrestodelcarlino.it": 3,
+    "icahdq.org": 2,
     "snurb.net": 2,
-    "conftool.org": 2,
-    "youtube.com": 2
+    "conftool.org": 2
   },
   "byRelevanceScore": {
-    "high": 135,
+    "high": 136,
     "medium": 22,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Communication and Inequalities in Context (ICA 2026 Final Program)",
+      "url": "https://cdn.ymaws.com/www.icahdq.org/resource/resmgr/2026_conference/2026_ICA_Final_Program.pdf",
+      "source": "icahdq.org",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-06-13T09:02:38.663Z"
+    },
     {
       "title": "Social Media | Snurblog - Axel Bruns",
       "url": "https://snurb.info/",
@@ -62,13 +69,6 @@
       "source": "snurb.net",
       "relevanceScore": 0.9,
       "collectedAt": "2026-06-06T09:25:02.801Z"
-    },
-    {
-      "title": "teleambiente.tv",
-      "url": "https://teleambiente.tv/meta-algoritmi-estremisti-politica/",
-      "source": "teleambiente.tv",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-05-29T10:44:55.862Z"
     }
   ]
 }
