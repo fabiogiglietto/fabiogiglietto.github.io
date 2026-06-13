@@ -1,12 +1,12 @@
 {
-  "totalEntries": 158,
-  "lastUpdated": "2026-06-13T09:02:38.695Z",
+  "totalEntries": 159,
+  "lastUpdated": "2026-06-13T09:58:51.271Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-06-13T09:02:38.663Z"
+    "latest": "2026-06-13T09:58:51.230Z"
   },
   "byDate": {
-    "2026-06-13": 1,
+    "2026-06-13": 2,
     "2026-06-12": 2,
     "2026-06-11": 1,
     "2026-06-06": 1,
@@ -30,11 +30,18 @@
     "conftool.org": 2
   },
   "byRelevanceScore": {
-    "high": 136,
+    "high": 137,
     "medium": 22,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "How Facebook's Algorithmic Tweaks Affected Engagement with News URLs over Time",
+      "url": "https://snurblog.com/2026/06/07/how-facebooks-algorithmic-tweaks-affected-engagement-with-news-urls-over-time/",
+      "source": "snurblog.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-06-13T09:58:51.230Z"
+    },
     {
       "title": "Communication and Inequalities in Context (ICA 2026 Final Program)",
       "url": "https://cdn.ymaws.com/www.icahdq.org/resource/resmgr/2026_conference/2026_ICA_Final_Program.pdf",
@@ -62,13 +69,6 @@
       "source": "snurb.info",
       "relevanceScore": 0.9,
       "collectedAt": "2026-06-11T11:24:23.987Z"
-    },
-    {
-      "title": "M/C Journal 'twitter' Issue Now Out!",
-      "url": "https://snurb.net/2026/04/mc-journal-twitter-issue-now-out",
-      "source": "snurb.net",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-06-06T09:25:02.801Z"
     }
   ]
 }
