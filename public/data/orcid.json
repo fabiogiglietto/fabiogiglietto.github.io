@@ -663,6 +663,118 @@
     },
     {
       "last-modified-date": {
+        "value": 1781522259293
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "handle",
+            "external-id-value": "11576/2777591",
+            "external-id-normalized": {
+              "value": "11576/2777591",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://ora.uniurb.it/handle/11576/2777591"
+            },
+            "external-id-relationship": "self"
+          },
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.4337/9781035325047.00023",
+            "external-id-normalized": {
+              "value": "10.4337/9781035325047.00023",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": null,
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 217706325,
+          "created-date": {
+            "value": 1781522259293
+          },
+          "last-modified-date": {
+            "value": 1781522259293
+          },
+          "source": {
+            "source-orcid": null,
+            "source-client-id": {
+              "uri": "https://orcid.org/client/APP-ERL34HCK6D9LSO6D",
+              "path": "APP-ERL34HCK6D9LSO6D",
+              "host": "orcid.org"
+            },
+            "source-name": {
+              "value": "ORA - Iris UNIURB"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Amplifying extremes: the interplay of social media and traditional media in shaping political polarization"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "handle",
+                "external-id-value": "11576/2777591",
+                "external-id-normalized": {
+                  "value": "11576/2777591",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://ora.uniurb.it/handle/11576/2777591"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.4337/9781035325047.00023",
+                "external-id-normalized": {
+                  "value": "10.4337/9781035325047.00023",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "url": {
+            "value": "https://ora.uniurb.it/handle/11576/2777591"
+          },
+          "type": "book-chapter",
+          "publication-date": {
+            "year": {
+              "value": "2026"
+            },
+            "month": {
+              "value": "01"
+            },
+            "day": {
+              "value": "01"
+            }
+          },
+          "journal-title": null,
+          "visibility": "public",
+          "path": "/0000-0001-8019-1035/work/217706325",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
         "value": 1777720484808
       },
       "external-ids": {
@@ -18193,116 +18305,116 @@
       ]
     }
   ],
-  "lastUpdated": "2026-06-15T05:40:07.271Z",
+  "lastUpdated": "2026-06-15T12:10:14.225Z",
   "logs": {
-    "timestamp": "2026-06-15T05:40:06.269Z",
+    "timestamp": "2026-06-15T12:10:13.342Z",
     "steps": [
       {
-        "timestamp": "2026-06-15T05:40:06.269Z",
+        "timestamp": "2026-06-15T12:10:13.342Z",
         "type": "start",
         "message": "Starting ORCID data collection"
       },
       {
-        "timestamp": "2026-06-15T05:40:06.269Z",
+        "timestamp": "2026-06-15T12:10:13.342Z",
         "type": "info",
         "message": "Getting OAuth token for ORCID API access..."
       },
       {
-        "timestamp": "2026-06-15T05:40:06.270Z",
+        "timestamp": "2026-06-15T12:10:13.342Z",
         "type": "info",
         "message": "Attempting to use public API without authentication"
       },
       {
-        "timestamp": "2026-06-15T05:40:06.270Z",
+        "timestamp": "2026-06-15T12:10:13.342Z",
         "type": "info",
         "message": "OAuth token response received: {\n  \"status\": 200,\n  \"data\": {\n    \"access_token\": \"public_endpoint_no_token_needed\"\n  }\n}"
       },
       {
-        "timestamp": "2026-06-15T05:40:06.270Z",
+        "timestamp": "2026-06-15T12:10:13.342Z",
         "type": "info",
         "message": "Obtained access token: public_end..."
       },
       {
-        "timestamp": "2026-06-15T05:40:06.270Z",
+        "timestamp": "2026-06-15T12:10:13.342Z",
         "type": "info",
         "message": "Attempting to fetch ORCID record with JSON format..."
       },
       {
-        "timestamp": "2026-06-15T05:40:07.156Z",
+        "timestamp": "2026-06-15T12:10:14.129Z",
         "type": "info",
         "message": "Successfully retrieved record in JSON format"
       },
       {
-        "timestamp": "2026-06-15T05:40:07.156Z",
+        "timestamp": "2026-06-15T12:10:14.129Z",
         "type": "info",
         "message": "Retrieved ORCID record in JSON format"
       },
       {
-        "timestamp": "2026-06-15T05:40:07.156Z",
+        "timestamp": "2026-06-15T12:10:14.129Z",
         "type": "info",
         "message": "Response content type: application/json;charset=UTF-8"
       },
       {
-        "timestamp": "2026-06-15T05:40:07.156Z",
+        "timestamp": "2026-06-15T12:10:14.129Z",
         "type": "info",
         "message": "Trying to fetch works directly from /works endpoint for comparison..."
       },
       {
-        "timestamp": "2026-06-15T05:40:07.270Z",
+        "timestamp": "2026-06-15T12:10:14.224Z",
         "type": "info",
-        "message": "Works endpoint returned 149 works"
+        "message": "Works endpoint returned 150 works"
       },
       {
-        "timestamp": "2026-06-15T05:40:07.270Z",
+        "timestamp": "2026-06-15T12:10:14.225Z",
         "type": "info",
         "message": "Processing JSON response"
       },
       {
-        "timestamp": "2026-06-15T05:40:07.270Z",
+        "timestamp": "2026-06-15T12:10:14.225Z",
         "type": "info",
         "message": "Found person data with keys: last-modified-date, name, other-names, biography, researcher-urls, emails, addresses, keywords, external-identifiers, path"
       },
       {
-        "timestamp": "2026-06-15T05:40:07.271Z",
+        "timestamp": "2026-06-15T12:10:14.225Z",
         "type": "info",
         "message": "Record endpoint response structure differs from expected format"
       },
       {
-        "timestamp": "2026-06-15T05:40:07.271Z",
+        "timestamp": "2026-06-15T12:10:14.225Z",
         "type": "info",
-        "message": "Works endpoint has 149 works, record endpoint has 0 works"
+        "message": "Works endpoint has 150 works, record endpoint has 0 works"
       },
       {
-        "timestamp": "2026-06-15T05:40:07.271Z",
+        "timestamp": "2026-06-15T12:10:14.225Z",
         "type": "warning",
-        "message": "DISCREPANCY: Works endpoint has 149 works, but record endpoint has 0 works"
+        "message": "DISCREPANCY: Works endpoint has 150 works, but record endpoint has 0 works"
       },
       {
-        "timestamp": "2026-06-15T05:40:07.271Z",
+        "timestamp": "2026-06-15T12:10:14.225Z",
         "type": "info",
-        "message": "Using 149 works from /works endpoint instead of /record endpoint"
+        "message": "Using 150 works from /works endpoint instead of /record endpoint"
       },
       {
-        "timestamp": "2026-06-15T05:40:07.271Z",
+        "timestamp": "2026-06-15T12:10:14.225Z",
         "type": "info",
         "message": "Sample work structure: {\"keys\":[\"last-modified-date\",\"external-ids\",\"work-summary\"],\"hasSummary\":true,\"summaryCount\":2,\"summaryKeys\":[\"put-code\",\"created-date\",\"last-modified-date\",\"source\",\"title\",\"external-ids\",\"url\",\"type\",\"publication-date\",\"journal-title\",\"visibility\",\"path\",\"display-index\"],\"title\":\"Beyond the share button: How partisan alignment, journalistic quality, and algorithmic governance shape what millions see on Facebook\",\"type\":\"journal-article\",\"pubDate\":\"2026-06-01\"}"
       },
       {
-        "timestamp": "2026-06-15T05:40:07.271Z",
+        "timestamp": "2026-06-15T12:10:14.225Z",
         "type": "info",
-        "message": "Collection completed successfully with 149 works"
+        "message": "Collection completed successfully with 150 works"
       },
       {
-        "timestamp": "2026-06-15T05:40:07.271Z",
+        "timestamp": "2026-06-15T12:10:14.225Z",
         "type": "complete",
-        "message": "Collection completed with 149 works retrieved"
+        "message": "Collection completed with 150 works retrieved"
       }
     ],
     "errors": [],
     "warnings": [
       {
-        "timestamp": "2026-06-15T05:40:07.271Z",
-        "message": "Works count discrepancy: /works endpoint: 149, /record endpoint: 0"
+        "timestamp": "2026-06-15T12:10:14.225Z",
+        "message": "Works count discrepancy: /works endpoint: 150, /record endpoint: 0"
       }
     ],
     "results": {
@@ -18319,11 +18431,11 @@
         "contentType": "application/json;charset=UTF-8",
         "status": 200,
         "headers": {
-          "date": "Mon, 15 Jun 2026 05:40:07 GMT",
+          "date": "Mon, 15 Jun 2026 12:10:14 GMT",
           "content-type": "application/json;charset=UTF-8",
           "transfer-encoding": "chunked",
           "connection": "keep-alive",
-          "cf-ray": "a0bf3cf4ceae8ea1-YYZ",
+          "cf-ray": "a0c1786add73d6ed-IAD",
           "cf-cache-status": "DYNAMIC",
           "access-control-allow-origin": "*",
           "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
@@ -18336,9 +18448,9 @@
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
           "x-target": "reg-prod-papi-use2-a1",
-          "x-via": "b1-newvpc",
+          "x-via": "a1-newvpc",
           "x-xss-protection": "1; mode=block",
-          "set-cookie": "__cf_bm=lA79K1OVidxoeSwCGBt7xBXuXNQIdzG3b9kWtpm9aFE-1781502006.527679-1.0.1.1-TkPAJHSe4flMCwvO_qLvf.9G2Zlb.VTIU1h73.cK_irVn4p_TmmgMfoEmK7zJ__EtAjsVwuPLbPIIV1JcmeG71QlbUaPNn8CCaXn.tkCVvkz87e1FmeTHDja5QKoyNjA; HttpOnly; SameSite=None; Secure; Path=/; Domain=orcid.org; Expires=Mon, 15 Jun 2026 06:10:07 GMT"
+          "set-cookie": "__cf_bm=gL9Vig1QZtW6lyEPuJ0kMNtgFfXc86_Q.VOcVijD7JE-1781525413.5731444-1.0.1.1-JOp_co7ZbmA1i_NU5RRbZZtfvD5XH_RDQ8MpV3bvk9PnYeMYWPxhnRUy48zmQAkSYbSabY0oFEEz7VhxQw5Fgt9_hiXB5t4Zjwmd3gR50TXZsM6RYIFvaaNYJh29Xqqk; HttpOnly; SameSite=None; Secure; Path=/; Domain=orcid.org; Expires=Mon, 15 Jun 2026 12:40:14 GMT"
         },
         "dataKeys": [
           "orcid-identifier",
@@ -18357,7 +18469,7 @@
           "group",
           "path"
         ],
-        "groupCount": 149
+        "groupCount": 150
       },
       "recordStructure": {
         "dataKeys": [
@@ -18398,7 +18510,7 @@
         "type": "journal-article",
         "pubDate": "2026-06-01"
       },
-      "finalWorkCount": 149,
+      "finalWorkCount": 150,
       "profileKeys": [
         "last-modified-date",
         "name",

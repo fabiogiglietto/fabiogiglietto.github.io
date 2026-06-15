@@ -1367,6 +1367,18 @@
       "author": "Megan A. Brown, James Bisbee, Angela Lai, Richard Bonneau, Jonathan Nagler, Joshua A. Tucker",
       "doi": "10.1080/10584609.2026.2671765",
       "own": false
+    },
+    {
+      "id": "bibtex:Alizadeh2026-es",
+      "bibtexKey": "Alizadeh2026-es",
+      "title": "When AI Agents Replicate Science—and When They Fake It",
+      "description": "AI-generated podcast discussion.\n\nReference:\nAlizadeh, M., Mosleh, M., Gilardi, F., Kasirzadeh, A., & Tucker, J. (2026). AI coding agents can reproduce social science findings. http://arxiv.org/abs/2606.11447v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Alizadeh2026-es.mp3",
+      "pubDate": "2026-06-15T09:57:17.855433+00:00",
+      "duration": "9:04",
+      "author": "Meysam Alizadeh, Mohsen Mosleh, Fabrizio Gilardi, Atoosa Kasirzadeh, Joshua Tucker",
+      "doi": null,
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -2737,6 +2749,18 @@
       "author": "Megan A. Brown, James Bisbee, Angela Lai, Richard Bonneau, Jonathan Nagler, Joshua A. Tucker",
       "doi": "10.1080/10584609.2026.2671765",
       "own": false
+    },
+    "Alizadeh2026-es": {
+      "id": "bibtex:Alizadeh2026-es",
+      "bibtexKey": "Alizadeh2026-es",
+      "title": "When AI Agents Replicate Science—and When They Fake It",
+      "description": "AI-generated podcast discussion.\n\nReference:\nAlizadeh, M., Mosleh, M., Gilardi, F., Kasirzadeh, A., & Tucker, J. (2026). AI coding agents can reproduce social science findings. http://arxiv.org/abs/2606.11447v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Alizadeh2026-es.mp3",
+      "pubDate": "2026-06-15T09:57:17.855433+00:00",
+      "duration": "9:04",
+      "author": "Meysam Alizadeh, Mohsen Mosleh, Fabrizio Gilardi, Atoosa Kasirzadeh, Joshua Tucker",
+      "doi": null,
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -3809,7 +3833,7 @@
       "own": false
     }
   },
-  "totalEpisodes": 114,
-  "lastUpdated": "2026-06-15T05:40:07.245Z",
+  "totalEpisodes": 115,
+  "lastUpdated": "2026-06-15T12:10:14.021Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }

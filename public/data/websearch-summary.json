@@ -1,12 +1,12 @@
 {
-  "totalEntries": 161,
-  "lastUpdated": "2026-06-15T05:45:02.622Z",
+  "totalEntries": 162,
+  "lastUpdated": "2026-06-15T12:14:10.589Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-06-15T05:45:02.587Z"
+    "latest": "2026-06-15T12:14:10.553Z"
   },
   "byDate": {
-    "2026-06-15": 2,
+    "2026-06-15": 3,
     "2026-06-13": 2,
     "2026-06-12": 2,
     "2026-06-11": 1,
@@ -25,16 +25,23 @@
     "Il Sole 24 ORE": 4,
     "aoir.org": 3,
     "ilrestodelcarlino.it": 3,
+    "snurblog.org": 2,
     "icahdq.org": 2,
-    "snurb.net": 2,
-    "conftool.org": 2
+    "snurb.net": 2
   },
   "byRelevanceScore": {
-    "high": 139,
+    "high": 140,
     "medium": 22,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "How Facebook's Algorithmic Tweaks Affected Engagement with News URLs over Time.",
+      "url": "https://snurblog.org/2026/06/08/how-facebooks-algorithmic-tweaks-affected-engagement-with-news-urls-over-time/",
+      "source": "snurblog.org",
+      "relevanceScore": 1,
+      "collectedAt": "2026-06-15T12:14:10.553Z"
+    },
     {
       "title": "Twitter at Twenty: Commemoration and Commiseration (M/C Journal issue mentioned on Snurblog)",
       "url": "https://snurb.info/node/3596",
@@ -62,13 +69,6 @@
       "source": "icahdq.org",
       "relevanceScore": 0.9,
       "collectedAt": "2026-06-13T09:02:38.663Z"
-    },
-    {
-      "title": "Social Media | Snurblog - Axel Bruns",
-      "url": "https://snurb.info/",
-      "source": "snurb.info",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-06-12T11:04:24.603Z"
     }
   ]
 }
