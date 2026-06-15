@@ -1,12 +1,12 @@
 {
-  "totalEntries": 163,
-  "lastUpdated": "2026-06-15T13:04:07.074Z",
+  "totalEntries": 164,
+  "lastUpdated": "2026-06-15T17:04:27.681Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-06-15T13:04:07.029Z"
+    "latest": "2026-06-15T17:04:27.636Z"
   },
   "byDate": {
-    "2026-06-15": 4,
+    "2026-06-15": 5,
     "2026-06-13": 2,
     "2026-06-12": 2,
     "2026-06-11": 1,
@@ -22,19 +22,26 @@
     "snurb.info": 8,
     "uniurb.it": 7,
     "open.online": 5,
+    "aoir.org": 4,
     "Il Sole 24 ORE": 4,
-    "aoir.org": 3,
     "ilrestodelcarlino.it": 3,
     "snurblog.org": 2,
     "icahdq.org": 2,
     "snurb.net": 2
   },
   "byRelevanceScore": {
-    "high": 140,
+    "high": 141,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "AoIR2025 Selected Papers - Bruna Paroni, Giada Marino, Fabio Giglietto, et al.",
+      "url": "https://aoir.org/papers/aoir2025/",
+      "source": "aoir.org",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-06-15T17:04:27.636Z"
+    },
     {
       "title": "How Facebook's Algorithmic Tweaks Affected Engagement with News URLs over Time.",
       "url": "https://snurblog.org/2026/06/08/how-facebooks-algorithmic-tweaks-affected-engagement-with-news-urls-over-time/",
@@ -62,13 +69,6 @@
       "source": "snurblog.com",
       "relevanceScore": 0.9,
       "collectedAt": "2026-06-13T09:58:51.230Z"
-    },
-    {
-      "title": "Communication and Inequalities in Context (ICA 2026 Final Program)",
-      "url": "https://cdn.ymaws.com/www.icahdq.org/resource/resmgr/2026_conference/2026_ICA_Final_Program.pdf",
-      "source": "icahdq.org",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-06-13T09:02:38.663Z"
     }
   ]
 }
