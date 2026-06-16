@@ -1,12 +1,12 @@
 {
-  "totalEntries": 165,
-  "lastUpdated": "2026-06-16T11:03:06.652Z",
+  "totalEntries": 166,
+  "lastUpdated": "2026-06-16T11:12:25.487Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-06-16T11:03:06.613Z"
+    "latest": "2026-06-16T11:12:25.453Z"
   },
   "byDate": {
-    "2026-06-16": 1,
+    "2026-06-16": 2,
     "2026-06-15": 5,
     "2026-06-13": 2,
     "2026-06-12": 2,
@@ -19,8 +19,8 @@
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 50,
+    "uniurb.it": 8,
     "snurb.info": 8,
-    "uniurb.it": 7,
     "aoir.org": 5,
     "open.online": 5,
     "Il Sole 24 ORE": 4,
@@ -30,11 +30,18 @@
     "snurb.net": 2
   },
   "byRelevanceScore": {
-    "high": 142,
+    "high": 143,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "IA GENERATIVA E MEDIA - Tenuto da Fabio Giglietto - A.A. 2025/2026 - CFU 6",
+      "url": "https://www.uniurb.it/corsi/246401052",
+      "source": "uniurb.it",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-06-16T11:12:25.453Z"
+    },
     {
       "title": "RUPTURING DIGITAL CHILDHOODS AND PARENTING IN AUSTRALIA? SOCIAL MEDIA BANS, PRIVACY, SCREEN TIME, AND GENERATIVE AI",
       "url": "https://aoir.org/aoir2025/papers-k/",
@@ -60,13 +67,6 @@
       "title": "Twitter at Twenty: Commemoration and Commiseration (M/C Journal issue mentioned on Snurblog)",
       "url": "https://snurb.info/node/3596",
       "source": "snurb.info",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-06-15T05:45:02.587Z"
-    },
-    {
-      "title": "CS2Italy - Computational Social Science Conference Italy (Conference Program Committee and Organizers)",
-      "url": "https://www.cs2italy.it/",
-      "source": "cs2italy.it",
       "relevanceScore": 0.9,
       "collectedAt": "2026-06-15T05:45:02.587Z"
     }
