@@ -1,11 +1,12 @@
 {
-  "totalEntries": 164,
-  "lastUpdated": "2026-06-15T17:04:27.681Z",
+  "totalEntries": 165,
+  "lastUpdated": "2026-06-16T11:03:06.652Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-06-15T17:04:27.636Z"
+    "latest": "2026-06-16T11:03:06.613Z"
   },
   "byDate": {
+    "2026-06-16": 1,
     "2026-06-15": 5,
     "2026-06-13": 2,
     "2026-06-12": 2,
@@ -14,15 +15,14 @@
     "2026-05-29": 2,
     "2026-05-28": 1,
     "2026-05-26": 1,
-    "2026-05-25": 1,
-    "2026-05-21": 1
+    "2026-05-25": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 50,
     "snurb.info": 8,
     "uniurb.it": 7,
+    "aoir.org": 5,
     "open.online": 5,
-    "aoir.org": 4,
     "Il Sole 24 ORE": 4,
     "ilrestodelcarlino.it": 3,
     "snurblog.org": 2,
@@ -30,11 +30,18 @@
     "snurb.net": 2
   },
   "byRelevanceScore": {
-    "high": 141,
+    "high": 142,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "RUPTURING DIGITAL CHILDHOODS AND PARENTING IN AUSTRALIA? SOCIAL MEDIA BANS, PRIVACY, SCREEN TIME, AND GENERATIVE AI",
+      "url": "https://aoir.org/aoir2025/papers-k/",
+      "source": "aoir.org",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-06-16T11:03:06.613Z"
+    },
     {
       "title": "AoIR2025 Selected Papers - Bruna Paroni, Giada Marino, Fabio Giglietto, et al.",
       "url": "https://aoir.org/papers/aoir2025/",
@@ -62,13 +69,6 @@
       "source": "cs2italy.it",
       "relevanceScore": 0.9,
       "collectedAt": "2026-06-15T05:45:02.587Z"
-    },
-    {
-      "title": "How Facebook's Algorithmic Tweaks Affected Engagement with News URLs over Time",
-      "url": "https://snurblog.com/2026/06/07/how-facebooks-algorithmic-tweaks-affected-engagement-with-news-urls-over-time/",
-      "source": "snurblog.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-06-13T09:58:51.230Z"
     }
   ]
 }
