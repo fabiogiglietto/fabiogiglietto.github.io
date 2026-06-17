@@ -1607,7 +1607,7 @@
         "wos": null,
         "scopus": null,
         "semanticScholar": null,
-        "ora": "https://ora.uniurb.it/handle/11576/2777591",
+        "ora": null,
         "crossref": "https://doi.org/10.4337/9781035325047.00023"
       },
       "source_ids": {
@@ -1616,15 +1616,12 @@
         "wos": null,
         "scopus": null,
         "semanticScholar": null,
-        "ora": "11576/2777591"
+        "ora": null
       },
       "metrics": {
         "total_citations": 0,
         "citation_sources": 0
       },
-      "oraHandle": "11576/2777591",
-      "oaPdfUrl": null,
-      "abstract": "This chapter examines how social media platforms' content distribution systems shape political discourse, focusing on Facebook's algorithmic evolution and its impact on polarization. Through three analytical dimensions—tracing Facebook's transformation from simple hyperlink sharing to sophisticated algorithmic curation, synthesizing findings from the 2020 US Election studies, and presenting original analysis using the Facebook URL Shares Dataset—we reveal a paradoxical finding: while content sharing generally amplifies visibility, this effect diminishes significantly for ideologically intense content regardless of partisan direction. This \"intensity penalty\" stems from two mechanisms: extreme content's tendency to circulate within insular network clusters and potential algorithmic constraints on polarizing material. Our analysis challenges assumptions about social media uniformly amplifying extreme voices, suggesting instead that Facebook's ecosystem contains mechanisms—whether intentional or emergent—that limit such content's reach. These findings have critical implications for understanding platform governance, algorithmic accountability, and democratic discourse in digitally mediated public spheres.",
       "crossref_type": "book-chapter",
       "publisher": "Edward Elgar Publishing"
     },
@@ -1650,7 +1647,7 @@
         "wos": null,
         "scopus": null,
         "semanticScholar": null,
-        "ora": null,
+        "ora": "https://ora.uniurb.it/handle/11576/2774611",
         "crossref": "https://doi.org/10.1007/978-3-032-11782-3_4"
       },
       "source_ids": {
@@ -1659,12 +1656,15 @@
         "wos": null,
         "scopus": null,
         "semanticScholar": null,
-        "ora": null
+        "ora": "11576/2774611"
       },
       "metrics": {
         "total_citations": 0,
         "citation_sources": 0
       },
+      "oraHandle": "11576/2774611",
+      "oaPdfUrl": "https://ora.uniurb.it/bitstream/11576/2774611/2/Vera%20Ai%20Book%20Chapter%20Uniurb%20%28pre-print%20for%20sharing%29-compressed.pdf",
+      "abstract": "This study examines visual persuasion strategies in online gambling promotion through coordinated Facebook networks. Analysing 2300+ images from 223 gambling-focused groups, we employ language models, embeddings, and clustering techniques to identify recurring patterns. Our findings reveal a sophisticated system of persuasive drivers—aspirational wealth imagery, manufactured trust signals, urgency conditioning, cultural localisation, gamification techniques, celebrity endorsements, and social relation exploitation—strategically deployed to normalise gambling behaviours. We further investigate how generative AI has transformed this ecosystem. Statistical analysis shows an exponential increase in posting volume following ChatGPT’s introduction (November 2022), with monthly posts rising from 2121 to 280,952. While this correlation doesn’t establish direct causality, qualitative evidence suggests generative AI significantly enables this expansion by intensifying established persuasion drivers through enhanced visual immersion and narrative complexity. Our findings contribute to ongoing debates around the intersection of synthetic media and manipulative content in digital spaces. Methodologically, the study demonstrates how generative AI tools can support interpretive analysis at scale. Substantively, it raises urgent questions about user vulnerability and the adequacy of current platform governance and regulatory frameworks in managing the risks posed by algorithmically amplified, AI-generated promotional content.",
       "crossref_type": "book-chapter",
       "publisher": "Springer Nature Switzerland"
     },
@@ -2900,7 +2900,7 @@
         "wos": null,
         "scopus": null,
         "semanticScholar": null,
-        "ora": null,
+        "ora": "https://ora.uniurb.it/handle/11576/2735343",
         "crossref": "https://doi.org/10.5210/spir.v2020i0.11219"
       },
       "source_ids": {
@@ -2909,12 +2909,15 @@
         "wos": null,
         "scopus": null,
         "semanticScholar": null,
-        "ora": null
+        "ora": "11576/2735343"
       },
       "metrics": {
         "total_citations": 0,
         "citation_sources": 0
       },
+      "oraHandle": "11576/2735343",
+      "oaPdfUrl": null,
+      "abstract": "Social media, as many scholars have shown, can be used to influence political behavior through coordinated disinformation campaigns in which participants pretend to be ordinary citizens. With a specific reference to Facebook, a recent study has spotlighted patterns of coordinated activity aimed at fueling online circulation of specific news stories before the 2018 and 2019 Italian elections, an activity called by the authors “Coordinated Link Sharing Behavior” (CLSB). More precisely, CLSB refers to the coordinated shares of the same news articles in a very short time by networks of entities composed by Facebook pages, groups and verified public profiles. The uncertainty related to the coronavirus outbreak is a unique chance for malicious actors to leverage the anxiety of online publics to reach their goals, filling the information void with problematic content. Considering the association between coordination, media manipulation, and problematic information, the entities involved in coordinated online activities represent a privileged perspective on these phenomena. Thus, against the backdrop of the literature and the already conducted studies, this proposal will discuss Coordinated Link Sharing Behavior in the context of the coronavirus outbreak informational void, analyzing network mutations over time and the content strategies used to exploit the ambiguity associated with the topic.",
       "crossref_type": "journal-article",
       "publisher": "University of Illinois Libraries"
     },
@@ -6238,8 +6241,8 @@
       "with_scopus": 25,
       "with_semanticScholar": 3,
       "with_crossref": 66,
-      "with_ora": 27
+      "with_ora": 28
     }
   },
-  "lastUpdated": "2026-06-17T11:02:33.009Z"
+  "lastUpdated": "2026-06-17T11:37:49.969Z"
 }
