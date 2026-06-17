@@ -2,7 +2,7 @@
   "source": "ORA UNIURB",
   "repository": "https://ora.uniurb.it",
   "oaiEndpoint": "https://ora.uniurb.it/oai/request",
-  "collectedAt": "2026-06-16T12:06:52.779Z",
+  "collectedAt": "2026-06-17T10:53:03.431Z",
   "author": "Fabio Giglietto",
   "publications": [
     {
@@ -43,7 +43,7 @@
       "pages": null,
       "language": "eng",
       "oaiIdentifier": "oai:ora.uniurb.it:11576/2774531",
-      "datestamp": "2026-05-19T06:11:26Z",
+      "datestamp": "2026-06-16T08:44:20Z",
       "url": "https://ora.uniurb.it/handle/11576/2774531",
       "oaPdfUrl": "https://ora.uniurb.it/bitstream/11576/2774531/2/Giglietto_Puschmann_2026_Wild_West_Walled_Garden_MCJournal.pdf"
     },
@@ -63,32 +63,9 @@
       "pages": null,
       "language": "eng",
       "oaiIdentifier": "oai:ora.uniurb.it:11576/2777591",
-      "datestamp": "2026-06-14T14:18:50Z",
+      "datestamp": "2026-06-16T00:16:55Z",
       "url": "https://ora.uniurb.it/handle/11576/2777591",
       "oaPdfUrl": null
-    },
-    {
-      "title": "Synthetic seduction: Evolving visual persuasion in coordinated online gambling promotion with generative {AI}",
-      "authors": "Giglietto F.; Terenzi M.; Chakraborty A.; Marino G.",
-      "authorsList": [
-        "Giglietto F.",
-        "Terenzi M.",
-        "Chakraborty A.",
-        "Marino G."
-      ],
-      "year": 2026,
-      "doi": "10.1007/978-3-032-11782-3_4",
-      "handle": "11576/2774611",
-      "type": "chapter",
-      "abstract": "This study examines visual persuasion strategies in online gambling promotion through coordinated Facebook networks. Analysing 2300+ images from 223 gambling-focused groups, we employ language models, embeddings, and clustering techniques to identify recurring patterns. Our findings reveal a sophisticated system of persuasive drivers—aspirational wealth imagery, manufactured trust signals, urgency conditioning, cultural localisation, gamification techniques, celebrity endorsements, and social relation exploitation—strategically deployed to normalise gambling behaviours. We further investigate how generative AI has transformed this ecosystem. Statistical analysis shows an exponential increase in posting volume following ChatGPT’s introduction (November 2022), with monthly posts rising from 2121 to 280,952. While this correlation doesn’t establish direct causality, qualitative evidence suggests generative AI significantly enables this expansion by intensifying established persuasion drivers through enhanced visual immersion and narrative complexity. Our findings contribute to ongoing debates around the intersection of synthetic media and manipulative content in digital spaces. Methodologically, the study demonstrates how generative AI tools can support interpretive analysis at scale. Substantively, it raises urgent questions about user vulnerability and the adequacy of current platform governance and regulatory frameworks in managing the risks posed by algorithmically amplified, AI-generated promotional content.",
-      "publisher": "Springer Nature",
-      "journal": null,
-      "pages": null,
-      "language": "eng",
-      "oaiIdentifier": "oai:ora.uniurb.it:11576/2774611",
-      "datestamp": "2026-05-04T15:31:17Z",
-      "url": "https://ora.uniurb.it/handle/11576/2774611",
-      "oaPdfUrl": "https://ora.uniurb.it/bitstream/11576/2774611/2/Vera%20Ai%20Book%20Chapter%20Uniurb%20%28pre-print%20for%20sharing%29-compressed.pdf"
     },
     {
       "title": "Manipolazione dei media ed influenza digitale. Sfide, tecnologie e risposte",
@@ -355,45 +332,21 @@
       "datestamp": "2024-03-28T00:18:13Z",
       "url": "https://ora.uniurb.it/handle/11576/2733992",
       "oaPdfUrl": null
-    },
-    {
-      "title": "Detecting Coordinated Link Sharing During The Italian Coronavirus Outbreak",
-      "authors": "Fabio Giglietto; Nicola Righetti; Giada Marino",
-      "authorsList": [
-        "Fabio Giglietto",
-        "Nicola Righetti",
-        "Giada Marino"
-      ],
-      "year": 2020,
-      "doi": "10.5210/spir.v2020i0.11219",
-      "handle": "11576/2735343",
-      "type": "conference",
-      "abstract": "Social media, as many scholars have shown, can be used to influence political behavior through coordinated disinformation campaigns in which participants pretend to be ordinary citizens. With a specific reference to Facebook, a recent study has spotlighted patterns of coordinated activity aimed at fueling online circulation of specific news stories before the 2018 and 2019 Italian elections, an activity called by the authors “Coordinated Link Sharing Behavior” (CLSB). More precisely, CLSB refers to the coordinated shares of the same news articles in a very short time by networks of entities composed by Facebook pages, groups and verified public profiles. The uncertainty related to the coronavirus outbreak is a unique chance for malicious actors to leverage the anxiety of online publics to reach their goals, filling the information void with problematic content. Considering the association between coordination, media manipulation, and problematic information, the entities involved in coordinated online activities represent a privileged perspective on these phenomena. Thus, against the backdrop of the literature and the already conducted studies, this proposal will discuss Coordinated Link Sharing Behavior in the context of the coronavirus outbreak informational void, analyzing network mutations over time and the content strategies used to exploit the ambiguity associated with the topic.",
-      "publisher": null,
-      "journal": null,
-      "pages": null,
-      "language": "eng",
-      "oaiIdentifier": "oai:ora.uniurb.it:11576/2735343",
-      "datestamp": "2024-04-22T23:38:36Z",
-      "url": "https://ora.uniurb.it/handle/11576/2735343",
-      "oaPdfUrl": null
     }
   ],
   "stats": {
-    "total": 17,
+    "total": 15,
     "byType": {
       "article": 8,
-      "chapter": 5,
-      "other": 3,
-      "conference": 1
+      "chapter": 4,
+      "other": 3
     },
     "byYear": {
-      "2020": 1,
       "2022": 3,
       "2023": 6,
       "2024": 1,
       "2025": 2,
-      "2026": 4
+      "2026": 3
     }
   }
 }

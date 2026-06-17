@@ -1,11 +1,12 @@
 {
-  "totalEntries": 166,
-  "lastUpdated": "2026-06-16T12:08:44.464Z",
+  "totalEntries": 167,
+  "lastUpdated": "2026-06-17T11:02:09.233Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-06-16T11:12:25.453Z"
+    "latest": "2026-06-17T11:02:09.193Z"
   },
   "byDate": {
+    "2026-06-17": 1,
     "2026-06-16": 2,
     "2026-06-15": 5,
     "2026-06-13": 2,
@@ -14,8 +15,7 @@
     "2026-06-06": 1,
     "2026-05-29": 2,
     "2026-05-28": 1,
-    "2026-05-26": 1,
-    "2026-05-25": 1
+    "2026-05-26": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 50,
@@ -24,17 +24,24 @@
     "aoir.org": 5,
     "open.online": 5,
     "Il Sole 24 ORE": 4,
+    "icahdq.org": 3,
     "ilrestodelcarlino.it": 3,
     "snurblog.org": 2,
-    "icahdq.org": 2,
     "snurb.net": 2
   },
   "byRelevanceScore": {
-    "high": 143,
+    "high": 144,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "ICA 2026 Conference Program",
+      "url": "https://www.icahdq.org/page/ICA26_ConfProgram",
+      "source": "icahdq.org",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-06-17T11:02:09.193Z"
+    },
     {
       "title": "IA GENERATIVA E MEDIA - Tenuto da Fabio Giglietto - A.A. 2025/2026 - CFU 6",
       "url": "https://www.uniurb.it/corsi/246401052",
@@ -62,13 +69,6 @@
       "source": "snurblog.org",
       "relevanceScore": 1,
       "collectedAt": "2026-06-15T12:14:10.553Z"
-    },
-    {
-      "title": "Twitter at Twenty: Commemoration and Commiseration (M/C Journal issue mentioned on Snurblog)",
-      "url": "https://snurb.info/node/3596",
-      "source": "snurb.info",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-06-15T05:45:02.587Z"
     }
   ]
 }
