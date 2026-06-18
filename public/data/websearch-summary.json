@@ -1,11 +1,12 @@
 {
-  "totalEntries": 167,
-  "lastUpdated": "2026-06-18T10:28:03.845Z",
+  "totalEntries": 168,
+  "lastUpdated": "2026-06-18T11:13:27.454Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-06-17T11:02:09.193Z"
+    "latest": "2026-06-18T11:13:27.408Z"
   },
   "byDate": {
+    "2026-06-18": 1,
     "2026-06-17": 1,
     "2026-06-16": 2,
     "2026-06-15": 5,
@@ -14,8 +15,7 @@
     "2026-06-11": 1,
     "2026-06-06": 1,
     "2026-05-29": 2,
-    "2026-05-28": 1,
-    "2026-05-26": 1
+    "2026-05-28": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 50,
@@ -30,11 +30,18 @@
     "snurb.net": 2
   },
   "byRelevanceScore": {
-    "high": 144,
+    "high": 145,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Panel – Meta Content Library Community Roundtable: Where to for Social Media Research?",
+      "url": "https://www.qut.edu.au/events/panel-meta-content-library-community-roundtable-where-to-for-social-media-research",
+      "source": "qut.edu.au",
+      "relevanceScore": 1,
+      "collectedAt": "2026-06-18T11:13:27.408Z"
+    },
     {
       "title": "ICA 2026 Conference Program",
       "url": "https://www.icahdq.org/page/ICA26_ConfProgram",
@@ -62,13 +69,6 @@
       "source": "aoir.org",
       "relevanceScore": 0.9,
       "collectedAt": "2026-06-15T17:04:27.636Z"
-    },
-    {
-      "title": "How Facebook's Algorithmic Tweaks Affected Engagement with News URLs over Time.",
-      "url": "https://snurblog.org/2026/06/08/how-facebooks-algorithmic-tweaks-affected-engagement-with-news-urls-over-time/",
-      "source": "snurblog.org",
-      "relevanceScore": 1,
-      "collectedAt": "2026-06-15T12:14:10.553Z"
     }
   ]
 }
