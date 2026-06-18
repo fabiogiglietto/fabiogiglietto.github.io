@@ -1607,7 +1607,7 @@
         "wos": null,
         "scopus": null,
         "semanticScholar": null,
-        "ora": null,
+        "ora": "https://ora.uniurb.it/handle/11576/2777591",
         "crossref": "https://doi.org/10.4337/9781035325047.00023"
       },
       "source_ids": {
@@ -1616,12 +1616,15 @@
         "wos": null,
         "scopus": null,
         "semanticScholar": null,
-        "ora": null
+        "ora": "11576/2777591"
       },
       "metrics": {
         "total_citations": 0,
         "citation_sources": 0
       },
+      "oraHandle": "11576/2777591",
+      "oaPdfUrl": null,
+      "abstract": "This chapter examines how social media platforms' content distribution systems shape political discourse, focusing on Facebook's algorithmic evolution and its impact on polarization. Through three analytical dimensions—tracing Facebook's transformation from simple hyperlink sharing to sophisticated algorithmic curation, synthesizing findings from the 2020 US Election studies, and presenting original analysis using the Facebook URL Shares Dataset—we reveal a paradoxical finding: while content sharing generally amplifies visibility, this effect diminishes significantly for ideologically intense content regardless of partisan direction. This \"intensity penalty\" stems from two mechanisms: extreme content's tendency to circulate within insular network clusters and potential algorithmic constraints on polarizing material. Our analysis challenges assumptions about social media uniformly amplifying extreme voices, suggesting instead that Facebook's ecosystem contains mechanisms—whether intentional or emergent—that limit such content's reach. These findings have critical implications for understanding platform governance, algorithmic accountability, and democratic discourse in digitally mediated public spheres.",
       "crossref_type": "book-chapter",
       "publisher": "Edward Elgar Publishing"
     },
@@ -6241,8 +6244,8 @@
       "with_scopus": 25,
       "with_semanticScholar": 3,
       "with_crossref": 66,
-      "with_ora": 28
+      "with_ora": 29
     }
   },
-  "lastUpdated": "2026-06-17T11:37:49.969Z"
+  "lastUpdated": "2026-06-18T10:28:27.969Z"
 }
