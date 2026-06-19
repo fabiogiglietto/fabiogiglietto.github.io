@@ -1,12 +1,12 @@
 {
-  "totalEntries": 169,
-  "lastUpdated": "2026-06-19T10:30:58.246Z",
+  "totalEntries": 170,
+  "lastUpdated": "2026-06-19T11:23:40.979Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-06-19T10:30:58.208Z"
+    "latest": "2026-06-19T11:23:40.950Z"
   },
   "byDate": {
-    "2026-06-19": 1,
+    "2026-06-19": 2,
     "2026-06-18": 1,
     "2026-06-17": 1,
     "2026-06-16": 2,
@@ -30,11 +30,18 @@
     "snurb.net": 2
   },
   "byRelevanceScore": {
-    "high": 146,
+    "high": 147,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "ICA 2026: Conference Day 2 Liveblog",
+      "url": "https://snurb.org/blog/2026-ica-conference-day-2-liveblog/",
+      "source": "snurb.org",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-06-19T11:23:40.950Z"
+    },
     {
       "title": "How Facebook’s Algorithmic Tweaks Affected Engagement with News URLs over Time",
       "url": "https://snurb.info/2026/06/08/how-facebook-s-algorithmic-tweaks-affected-engagement-with-news-urls-over-time/",
@@ -62,13 +69,6 @@
       "source": "uniurb.it",
       "relevanceScore": 0.9,
       "collectedAt": "2026-06-16T11:12:25.453Z"
-    },
-    {
-      "title": "RUPTURING DIGITAL CHILDHOODS AND PARENTING IN AUSTRALIA? SOCIAL MEDIA BANS, PRIVACY, SCREEN TIME, AND GENERATIVE AI",
-      "url": "https://aoir.org/aoir2025/papers-k/",
-      "source": "aoir.org",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-06-16T11:03:06.613Z"
     }
   ]
 }
