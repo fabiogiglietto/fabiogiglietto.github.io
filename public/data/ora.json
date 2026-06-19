@@ -2,7 +2,7 @@
   "source": "ORA UNIURB",
   "repository": "https://ora.uniurb.it",
   "oaiEndpoint": "https://ora.uniurb.it/oai/request",
-  "collectedAt": "2026-06-19T16:33:26.705Z",
+  "collectedAt": "2026-06-19T20:12:37.256Z",
   "author": "Fabio Giglietto",
   "publications": [
     {
@@ -198,6 +198,29 @@
       "oaPdfUrl": "https://ora.uniurb.it/bitstream/11576/2726579/2/Manuscript%20%281%29.pdf"
     },
     {
+      "title": "A Workflow to Detect, Monitor, and Update Lists of Coordinated Social Media Accounts Across Time: The Case of the 2022 Italian Election",
+      "authors": "Fabio Giglietto; Giada Marino; Roberto Mincigrucci; Anna Stanziano",
+      "authorsList": [
+        "Fabio Giglietto",
+        "Giada Marino",
+        "Roberto Mincigrucci",
+        "Anna Stanziano"
+      ],
+      "year": 2023,
+      "doi": "10.1177/20563051231196866",
+      "handle": "11576/2721991",
+      "type": "article",
+      "abstract": "Information operations that target public opinion often exploit breaking news, crises, and elections by using coordinated social media actors to disseminate problematic content. These events often reveal the relationships between actors, prompting the creation of lists of malicious actors and news sources. However, relying on outdated lists may underestimate the prevalence and impact of such operations. This article presents a novel workflow to detect, monitor, and update lists of coordinated social media actors during and beyond peak activity periods. Using this approach, known problematic actors are constantly monitored, allowing the detection of new actors and the update of the monitored pool. The workflow was applied to the 2022 Italian snap election, leveraging previous research on coordinated inauthentic behavior during the 2018 and 2019 Italian elections. The initial list of 435 coordinated accounts was monitored, surfacing 1,022 overly shared or commented political posts, 272 coordinated links, and detecting 66 political and 554 generic coordinated accounts not previously listed. Three case studies were identified: one politically motivated, one click-economy driven, and one religiously motivated operation. The article discusses the implications of this approach, its limitations, and potential future work.",
+      "publisher": null,
+      "journal": "SOCIAL MEDIA + SOCIETY",
+      "pages": null,
+      "language": "eng",
+      "oaiIdentifier": "oai:ora.uniurb.it:11576/2721991",
+      "datestamp": "2025-06-13T00:16:40Z",
+      "url": "https://ora.uniurb.it/handle/11576/2721991",
+      "oaPdfUrl": "https://ora.uniurb.it/bitstream/11576/2721991/1/giglietto-et-al-2023-a-workflow-to-detect-monitor-and-update-lists-of-coordinated-social-media-accounts-across-time-the.pdf"
+    },
+    {
       "title": "Hyperpartisan Networks on Facebook. The Case of the Five Star Movement Network During the 2022 Italian Election",
       "authors": "Anna Stanziano; Fabio Giglietto",
       "authorsList": [
@@ -288,6 +311,56 @@
       "oaPdfUrl": null
     },
     {
+      "title": "POLITICAL ADVERTISEMENT AND COORDINATED BEHAVIOR ON SOCIAL MEDIA IN THE LEAD-UP TO THE 2021 GERMAN FEDERAL ELECTIONS",
+      "authors": "Righetti N.; Giglietto F.; Kakavand A. E.; Kulichkina A.; Marino G.; Terenzi M.",
+      "authorsList": [
+        "Righetti N.",
+        "Giglietto F.",
+        "Kakavand A. E.",
+        "Kulichkina A.",
+        "Marino G.",
+        "Terenzi M."
+      ],
+      "year": 2022,
+      "doi": null,
+      "handle": "11576/2733992",
+      "type": "other",
+      "abstract": "In this study, we analyze organic and paid social media communication from political candidates, parties, and other social media users, in the lead-up to the 2021 German federal election. We document the investment in Facebook advertising of the main parties and their targeting strategies, the engagement they reached organically, and the activity of coordinated networks of Facebook pages and groups dealing with the election.\r\n\r\nAs in 2019 (Hegelich & Serrano, 2019), the AfD reached an exceptionally high engagement on Facebook, but Die Grünen, instead of CDU, led the standings of the Facebook advertisement investment in 2021. Nonetheless, they were both outrun in the overall number of ad impressions by the FDP, who strategically spent less on a higher number of advertisements.\r\nConsidering the area of microtargeting, our findings show that the content of some advertisements was exclusively targeted to women or young generations. They, however, represented just a modest part of the total number of advertisements run by parties and candidates.\r\nWe also found large coordinated networks on Facebook (Giglietto, Righetti, Rossi, & Marino, 2020) spreading anti-establishment narratives, as well as anti-lockdown and anti-COVID19 policies messages. In these networks, harsh comments against opponents and a wide range of sources that shared disinformation (NewsGuard, 2021) during the elections were common.\r\nThe analyses herein conducted quickly ran into limitations in data access. In particular, the lack of Facebook data on the activity of individual users prevented exploring the possible use of bots to quickly cross-post content in public groups and inflate engagement metrics. The lack of data on Facebook comments prevented the analysis of coordi- nated strategies aimed at staying under the radar of fact-checkers and platforms censoring. The lack of fine-grained data on advertising also prevented us from investigating microtargeting strategies besides general cases related to gender and age.",
+      "publisher": null,
+      "journal": null,
+      "pages": null,
+      "language": "eng",
+      "oaiIdentifier": "oai:ora.uniurb.it:11576/2733992",
+      "datestamp": "2024-03-28T00:18:13Z",
+      "url": "https://ora.uniurb.it/handle/11576/2733992",
+      "oaPdfUrl": null
+    },
+    {
+      "title": "POLITICAL ADVERTISEMENT AND COORDINATED BEHAVIOR ON SOCIAL MEDIA IN THE LEAD-UP TO THE 2021 GERMAN FEDERAL ELECTIONS",
+      "authors": "Righetti N.; Giglietto F.; Kakavand A. E.; Kulichkina A.; Marino G.; Terenzi M.",
+      "authorsList": [
+        "Righetti N.",
+        "Giglietto F.",
+        "Kakavand A. E.",
+        "Kulichkina A.",
+        "Marino G.",
+        "Terenzi M."
+      ],
+      "year": 2022,
+      "doi": null,
+      "handle": "11576/2733992",
+      "type": "other",
+      "abstract": "In this study, we analyze organic and paid social media communication from political candidates, parties, and other social media users, in the lead-up to the 2021 German federal election. We document the investment in Facebook advertising of the main parties and their targeting strategies, the engagement they reached organically, and the activity of coordinated networks of Facebook pages and groups dealing with the election.\r\n\r\nAs in 2019 (Hegelich & Serrano, 2019), the AfD reached an exceptionally high engagement on Facebook, but Die Grünen, instead of CDU, led the standings of the Facebook advertisement investment in 2021. Nonetheless, they were both outrun in the overall number of ad impressions by the FDP, who strategically spent less on a higher number of advertisements.\r\nConsidering the area of microtargeting, our findings show that the content of some advertisements was exclusively targeted to women or young generations. They, however, represented just a modest part of the total number of advertisements run by parties and candidates.\r\nWe also found large coordinated networks on Facebook (Giglietto, Righetti, Rossi, & Marino, 2020) spreading anti-establishment narratives, as well as anti-lockdown and anti-COVID19 policies messages. In these networks, harsh comments against opponents and a wide range of sources that shared disinformation (NewsGuard, 2021) during the elections were common.\r\nThe analyses herein conducted quickly ran into limitations in data access. In particular, the lack of Facebook data on the activity of individual users prevented exploring the possible use of bots to quickly cross-post content in public groups and inflate engagement metrics. The lack of data on Facebook comments prevented the analysis of coordi- nated strategies aimed at staying under the radar of fact-checkers and platforms censoring. The lack of fine-grained data on advertising also prevented us from investigating microtargeting strategies besides general cases related to gender and age.",
+      "publisher": null,
+      "journal": null,
+      "pages": null,
+      "language": "eng",
+      "oaiIdentifier": "oai:ora.uniurb.it:11576/2733992",
+      "datestamp": "2024-03-28T00:18:13Z",
+      "url": "https://ora.uniurb.it/handle/11576/2733992",
+      "oaPdfUrl": null
+    },
+    {
       "title": "Detecting Coordinated Link Sharing During The Italian Coronavirus Outbreak",
       "authors": "Fabio Giglietto; Nicola Righetti; Giada Marino",
       "authorsList": [
@@ -311,17 +384,17 @@
     }
   ],
   "stats": {
-    "total": 14,
+    "total": 17,
     "byType": {
-      "article": 6,
+      "article": 7,
       "chapter": 5,
-      "other": 2,
+      "other": 4,
       "conference": 1
     },
     "byYear": {
       "2020": 1,
-      "2022": 2,
-      "2023": 4,
+      "2022": 4,
+      "2023": 5,
       "2024": 1,
       "2025": 2,
       "2026": 4
