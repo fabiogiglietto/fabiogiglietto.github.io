@@ -1,12 +1,12 @@
 {
-  "totalEntries": 170,
-  "lastUpdated": "2026-06-19T11:23:40.979Z",
+  "totalEntries": 171,
+  "lastUpdated": "2026-06-19T16:42:58.808Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-06-19T11:23:40.950Z"
+    "latest": "2026-06-19T16:42:58.774Z"
   },
   "byDate": {
-    "2026-06-19": 2,
+    "2026-06-19": 3,
     "2026-06-18": 1,
     "2026-06-17": 1,
     "2026-06-16": 2,
@@ -30,11 +30,18 @@
     "snurb.net": 2
   },
   "byRelevanceScore": {
-    "high": 147,
+    "high": 148,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "SMSociety 2026 Conference Programme",
+      "url": "https://smsociety.org/2026-conference-programme/",
+      "source": "smsociety.org",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-06-19T16:42:58.774Z"
+    },
     {
       "title": "ICA 2026: Conference Day 2 Liveblog",
       "url": "https://snurb.org/blog/2026-ica-conference-day-2-liveblog/",
@@ -62,13 +69,6 @@
       "source": "icahdq.org",
       "relevanceScore": 0.9,
       "collectedAt": "2026-06-17T11:02:09.193Z"
-    },
-    {
-      "title": "IA GENERATIVA E MEDIA - Tenuto da Fabio Giglietto - A.A. 2025/2026 - CFU 6",
-      "url": "https://www.uniurb.it/corsi/246401052",
-      "source": "uniurb.it",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-06-16T11:12:25.453Z"
     }
   ]
 }
