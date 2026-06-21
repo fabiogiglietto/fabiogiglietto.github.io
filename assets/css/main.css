@@ -2,38 +2,50 @@
 
 /* Base styles and variables */
 :root {
-  /* Color palette */
-  --primary-color: #1a56db;          /* Deeper blue */
-  --primary-dark: #1e40af;           /* Darker blue for hover states */
-  --primary-light: #eff6ff;          /* Barely-there tint */
-  --secondary-color: #111827;        /* Darker ink-black */
-  --secondary-light: #1f2937;        /* Darker slate for headings */
-  --accent-color: #0d9488;           /* Teal — calmer, academic */
-  --success-color: #10b981;          /* Green for success states */
-  --warning-color: #f59e0b;          /* Amber for warnings */
-  --error-color: #ef4444;            /* Red for errors */
+  /* ---- FG brand palette (Urbino-derived; see /brand/) ----
+     --ink is primary/interactive/headings; --accent (gold) is a SIGNAL
+     colour only (eyebrows, live dots, active nav) — never a link colour. */
+  --ink: #232A5C;                    /* Blue-violet — primary / headings / mark */
+  --ink-deep: #16182B;               /* Darkest ink */
+  --accent: #A9772B;                 /* Gold — signal only */
 
-  /* Neutrals */
-  --background-color: #ffffff;
-  --background-alt: #fafafa;
-  --text-color: #1f2937;             /* True gray for main text */
-  --text-light: #6b7280;             /* True gray lighter */
-  --light-gray: #f3f4f6;
-  --gray: #d1d5db;
-  --dark-gray: #6b7280;
-  --border-color: #f0f0f0;
+  /* Color palette (mapped onto the brand) */
+  --primary-color: #232A5C;          /* Ink — links, interactive, headings */
+  --primary-dark: #16182B;           /* Ink deep — hover states */
+  --primary-light: #F8F3EA;          /* Panel tint */
+  --secondary-color: #232A5C;        /* Ink — headings */
+  --secondary-light: #43455E;        /* Body alt / subheads */
+  --accent-color: #A9772B;           /* Gold — signal */
+  --success-color: #4f7a4a;          /* Muted green */
+  --warning-color: #A9772B;          /* Gold */
+  --error-color: #b0543a;            /* Terracotta */
 
-  /* Typography */
-  --font-sans: 'IBM Plex Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  --font-serif: 'Source Serif 4', Georgia, 'Times New Roman', Times, serif;
-  --font-mono: 'JetBrains Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  /* Neutrals (cream + panel + hairlines) */
+  --background-color: #F1EBDE;       /* Cream page background */
+  --background-alt: #F8F3EA;         /* Panel surface */
+  --card-background: #F8F3EA;        /* Cards / cells */
+  --text-color: #43455E;             /* Body text */
+  --text-primary: #232A5C;           /* Ink — strong text */
+  --text-secondary: #6D6A5E;         /* Muted / mono captions */
+  --text-light: #6D6A5E;             /* Muted / metadata */
+  --light-gray: #EDE6D5;             /* Subtle fill (code, pills) on cream */
+  --gray: #C9C0AD;                   /* Strong 1px rule */
+  --dark-gray: #6D6A5E;
+  --border-color: #DDD5C6;           /* Soft / inner 1px rule */
 
-  /* Layout */
+  /* Typography — Saira (grotesque) + IBM Plex Mono (machine voice).
+     The brand is grotesque-only; --font-serif intentionally maps to Saira. */
+  --font-sans: 'Saira', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-serif: 'Saira', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  --font-mono: 'IBM Plex Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+  /* Layout — sharp corners everywhere (brand: radius 0) */
   --container-width: 1200px;
   --content-width: 800px;
-  --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
+  --border-radius: 0;
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
 
   /* Spacing */
   --spacing-xs: 0.25rem;
@@ -43,11 +55,15 @@
   --spacing-lg: 2rem;
   --spacing-xl: 4rem;
 
-  /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.03);
-  --shadow-md: 0 1px 3px rgba(0, 0, 0, 0.04);
-  --shadow-lg: 0 2px 8px rgba(0, 0, 0, 0.06);
+  /* Shadows — brand is flat; surfaces are defined by hairlines, not shadow */
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
 }
+
+/* Brand globals */
+::selection { background: var(--ink); color: #F1EBDE; }
+@keyframes fgpulse { 0%, 100% { opacity: 1; } 50% { opacity: .2; } }
 
 /* AI Disclaimer Styles */
 .ai-disclaimer {
@@ -136,15 +152,18 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-sans);
   font-weight: 600;
   line-height: 1.2;
-  letter-spacing: -0.01em;
-  color: var(--secondary-color);
+  letter-spacing: -0.02em;
+  color: var(--ink);
   margin-bottom: var(--spacing);
+  text-wrap: balance;
 }
 
 h1 {
@@ -293,11 +312,11 @@ th {
   margin-top: var(--spacing-xl);
 }
 
-/* Header and navigation */
+/* Header and navigation — brand chrome (cream + hairline + mono nav) */
 .site-header {
   padding: var(--spacing) 0;
-  background-color: white;
-  border-bottom: 1px solid var(--border-color);
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--gray);
   box-shadow: none;
   position: sticky;
   top: 0;
@@ -317,14 +336,25 @@ th {
 }
 
 .site-title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--secondary-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ink);
   text-decoration: none;
 }
 
+.site-title .site-mark {
+  width: 30px;
+  height: 30px;
+  flex: none;
+  color: var(--ink);
+}
+
 .site-title:hover {
-  color: var(--primary-color);
+  color: var(--ink);
   text-decoration: none;
 }
 
@@ -333,17 +363,29 @@ th {
   list-style: none;
   gap: var(--spacing-md);
   margin: 0;
+  align-items: center;
 }
 
 .nav-links a {
+  font-family: var(--font-mono);
   font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
   color: var(--text-light);
-  font-size: 0.9rem;
-  transition: color 0.2s ease;
+  font-size: 0.72rem;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
 }
 
-.nav-links a:hover, .nav-links a.active {
-  color: var(--primary-color);
+.nav-links a:hover {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav-links a.active {
+  color: var(--ink);
+  border-bottom-color: var(--accent);
   text-decoration: none;
 }
 
@@ -414,7 +456,7 @@ th {
 
 /* Profile card */
 .profile-card {
-  background-color: white;
+  background-color: var(--card-background);
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-color);
   box-shadow: none;
@@ -634,7 +676,7 @@ th {
 }
 
 .project-card {
-  background-color: white;
+  background-color: var(--card-background);
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
   box-shadow: none;
@@ -875,7 +917,7 @@ th {
   padding: var(--spacing);
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
-  background-color: white;
+  background-color: var(--card-background);
 }
 
 .post-header {
@@ -949,7 +991,7 @@ th {
 .social-media-insights {
   margin-top: var(--spacing-xl);
   padding: var(--spacing-lg);
-  background-color: white;
+  background-color: var(--card-background);
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-color);
   box-shadow: none;
@@ -1148,7 +1190,7 @@ th {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: white;
+  background: var(--card-background);
   border: 1px solid var(--border-color);
   border-radius: 50%;
   width: 40px;
@@ -1298,18 +1340,18 @@ th {
 }
 
 .status-to-read {
-  background: #f0f4ff;
-  color: #4b5563;
+  background: var(--light-gray);
+  color: var(--text-light);
 }
 
 .status-in-progress {
-  background: #fef9ee;
-  color: #78716c;
+  background: #f1e6cd;
+  color: #8a6a2e;
 }
 
 .status-completed {
-  background: #f0fdf4;
-  color: #6b7280;
+  background: var(--light-gray);
+  color: var(--text-light);
 }
 
 .paper-meta {
@@ -1425,8 +1467,8 @@ th {
   gap: 4px;
   padding: 4px 8px;
   background: transparent;
-  color: #6366f1;
-  border: 1px solid #c7c9f5;
+  color: var(--ink);
+  border: 1px solid var(--gray);
   border-radius: 12px;
   font-size: 0.75rem;
   font-weight: 500;
@@ -1440,9 +1482,9 @@ th {
 
 .notes-badge:hover,
 .notes-badge:focus {
-  background: #6366f1;
-  color: white;
-  border-color: #6366f1;
+  background: var(--ink);
+  color: #F1EBDE;
+  border-color: var(--ink);
   transform: scale(1.05);
 }
 
@@ -1630,9 +1672,9 @@ th {
 
 /* Footer */
 .site-footer {
-  background-color: var(--background-alt);
+  background-color: var(--background-color);
   color: var(--text-color);
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid var(--gray);
   padding: var(--spacing-lg) 0;
   margin-top: auto;
 }
@@ -1646,7 +1688,10 @@ th {
 }
 
 .footer-info {
-  font-size: 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   color: var(--text-light);
 }
 
@@ -1696,7 +1741,7 @@ th {
 }
 
 .course-card {
-  background-color: white;
+  background-color: var(--card-background);
   border-radius: var(--radius-md);
   border: 1px solid var(--border-color);
   box-shadow: none;
@@ -1742,7 +1787,7 @@ th {
 }
 
 .office-hours-content, .supervision-content {
-  background-color: white;
+  background-color: var(--card-background);
   border-radius: var(--radius-md);
   padding: var(--spacing);
   border: 1px solid var(--border-color);
@@ -1758,7 +1803,7 @@ th {
 }
 
 .tutorial-item {
-  background-color: white;
+  background-color: var(--card-background);
   border-radius: var(--radius-md);
   padding: var(--spacing);
   border: 1px solid var(--border-color);
@@ -1803,7 +1848,7 @@ th {
     max-width: 300px;
     height: calc(100vh - 60px);
     flex-direction: column;
-    background-color: white;
+    background-color: var(--card-background);
     padding: var(--spacing);
     box-shadow: var(--shadow-md);
     transition: right 0.3s ease;
