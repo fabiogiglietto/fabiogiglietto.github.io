@@ -4,22 +4,22 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Rodarte2026-dk",
       "topics": [
         "elections-political-communication",
-        "information-disorder"
+        "polarization-hybrid-media"
       ],
       "podcastLinked": true
     },
     "Bailard2024-pj": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Bailard2024-pj",
       "topics": [
-        "llms-for-text-analysis"
+        "computational-methods-llms",
+        "information-disorder"
       ],
       "podcastLinked": true
     },
     "Adam2026-tz": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Adam2026-tz",
       "topics": [
-        "information-disorder",
-        "health-information-online"
+        "information-disorder"
       ],
       "podcastLinked": true
     },
@@ -41,14 +41,14 @@
     "Nguyen2026-vm": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Nguyen2026-vm",
       "topics": [
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "podcastLinked": true
     },
     "Waight2026-ts": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Waight2026-ts",
       "topics": [
-        "generative-ai-and-media",
+        "generative-ai-media",
         "information-disorder"
       ],
       "podcastLinked": true
@@ -62,7 +62,7 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Yang2026-tq",
       "topics": [
         "platform-governance-data-access",
-        "computational-social-science-methods"
+        "digital-methods-tools"
       ],
       "podcastLinked": true
     },
@@ -70,21 +70,21 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Rothut2026-or",
       "topics": [
         "information-disorder",
-        "social-network-analysis"
+        "polarization-hybrid-media"
       ],
       "podcastLinked": true
     },
     "Wang2025-zy": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Wang2025-zy",
       "topics": [
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "podcastLinked": false
     },
     "Achmann-Denkler2026-lx": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Achmann-Denkler2026-lx",
       "topics": [
-        "generative-ai-and-media",
+        "computational-methods-llms",
         "elections-political-communication"
       ],
       "podcastLinked": true
@@ -99,7 +99,7 @@
     "Gerbaudo2026-fo": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Gerbaudo2026-fo",
       "topics": [
-        "tiktok-algorithmic-publics"
+        "platform-governance-data-access"
       ],
       "podcastLinked": true
     },
@@ -107,7 +107,7 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Tornberg2026-lc",
       "topics": [
         "platform-governance-data-access",
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "podcastLinked": true
     },
@@ -118,37 +118,30 @@
     },
     "Swartz2026-zb": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Swartz2026-zb",
-      "topics": [
-        "platform-era-reflections"
-      ],
+      "topics": [],
       "podcastLinked": true
     },
     "Helmond2026-ll": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Helmond2026-ll",
-      "topics": [
-        "platform-governance-data-access",
-        "generative-ai-and-media"
-      ],
+      "topics": [],
       "podcastLinked": true
     },
     "Marwick2026-ss": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Marwick2026-ss",
-      "topics": [
-        "platform-era-reflections"
-      ],
+      "topics": [],
       "podcastLinked": true
     },
     "Boyd2026-op": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Boyd2026-op",
       "topics": [
-        "platform-era-reflections"
+        "platform-governance-data-access"
       ],
       "podcastLinked": true
     },
     "van-Eck2026-xg": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/van-Eck2026-xg",
       "topics": [
-        "depolarization-deliberation"
+        "polarization-hybrid-media"
       ],
       "podcastLinked": true
     },
@@ -158,7 +151,7 @@
         "elections-political-communication",
         "information-disorder"
       ],
-      "podcastLinked": true
+      "podcastLinked": false
     },
     "Appel2026-qr": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Appel2026-qr",
@@ -171,15 +164,14 @@
     "Peters2026-mo": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Peters2026-mo",
       "topics": [
-        "platform-governance-data-access",
-        "computational-social-science-methods"
+        "platform-governance-data-access"
       ],
       "podcastLinked": true
     },
     "Marwick2026-qd": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Marwick2026-qd",
       "topics": [
-        "platform-era-reflections"
+        "information-disorder"
       ],
       "podcastLinked": true
     },
@@ -191,7 +183,8 @@
     "Nangle2026-yo": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Nangle2026-yo",
       "topics": [
-        "information-disorder"
+        "information-disorder",
+        "platform-governance-data-access"
       ],
       "podcastLinked": false
     },
@@ -206,7 +199,7 @@
     "Karo2026-dn": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Karo2026-dn",
       "topics": [
-        "tiktok-algorithmic-publics"
+        "platform-governance-data-access"
       ],
       "podcastLinked": true
     },
@@ -219,7 +212,7 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Ventura2026-yc",
       "topics": [
         "platform-governance-data-access",
-        "elections-political-communication"
+        "polarization-hybrid-media"
       ],
       "podcastLinked": true
     },
@@ -227,7 +220,7 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Efstratiou2026-ij",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "health-information-online"
+        "information-disorder"
       ],
       "podcastLinked": true
     },
@@ -238,7 +231,9 @@
     },
     "Ahuja2025-ku": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Ahuja2025-ku",
-      "topics": [],
+      "topics": [
+        "platform-governance-data-access"
+      ],
       "podcastLinked": true
     },
     "Stagnaro2025-pz": {
@@ -249,39 +244,37 @@
     "Bouchaud2026-lr": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Bouchaud2026-lr",
       "topics": [
-        "platform-governance-data-access",
-        "computational-social-science-methods"
+        "platform-governance-data-access"
       ],
       "podcastLinked": true
     },
     "Dodds2026-df": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Dodds2026-df",
       "topics": [
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "podcastLinked": true
     },
     "Lee2026-je": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Lee2026-je",
       "topics": [
-        "llms-for-text-analysis",
-        "computational-social-science-methods"
+        "computational-methods-llms",
+        "generative-ai-media"
       ],
       "podcastLinked": true
     },
     "Kulichkina2026-zk": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Kulichkina2026-zk",
       "topics": [
-        "coordinated-inauthentic-behavior",
-        "social-network-analysis"
+        "coordinated-inauthentic-behavior"
       ],
       "podcastLinked": false
     },
     "Schiffrin_undated-gi": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Schiffrin_undated-gi",
       "topics": [
-        "platform-governance-data-access",
-        "generative-ai-and-media"
+        "generative-ai-media",
+        "platform-governance-data-access"
       ],
       "podcastLinked": true
     },
@@ -296,15 +289,14 @@
     "Hackenburg2025-dj": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Hackenburg2025-dj",
       "topics": [
-        "generative-ai-and-media"
+        "generative-ai-media",
+        "computational-methods-llms"
       ],
       "podcastLinked": true
     },
     "Baym2026-tr": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Baym2026-tr",
-      "topics": [
-        "platform-era-reflections"
-      ],
+      "topics": [],
       "podcastLinked": true
     },
     "Hourigan2026-oc": {
@@ -317,7 +309,7 @@
     "DiGiuseppe2026-pu": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/DiGiuseppe2026-pu",
       "topics": [
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "podcastLinked": true
     },
@@ -341,7 +333,7 @@
     "DeVerna2025-dl": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/DeVerna2025-dl",
       "topics": [
-        "llms-for-text-analysis",
+        "computational-methods-llms",
         "information-disorder"
       ],
       "podcastLinked": true
@@ -358,15 +350,15 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Scalco2026-bd",
       "topics": [
         "information-disorder",
-        "health-information-online"
+        "digital-methods-tools"
       ],
       "podcastLinked": true
     },
     "Balluff2026-if": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Balluff2026-if",
       "topics": [
-        "llms-for-text-analysis",
-        "computational-social-science-methods"
+        "computational-methods-llms",
+        "digital-methods-tools"
       ],
       "podcastLinked": true
     },
@@ -389,21 +381,22 @@
     "Stanusch2026-ec": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Stanusch2026-ec",
       "topics": [
-        "generative-ai-and-media"
+        "generative-ai-media",
+        "digital-methods-tools"
       ],
       "podcastLinked": true
     },
     "Dierickx2026-tw": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Dierickx2026-tw",
       "topics": [
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "podcastLinked": true
     },
     "Shi2026-ko": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Shi2026-ko",
       "topics": [],
-      "podcastLinked": true
+      "podcastLinked": false
     },
     "Philipp2026-tl": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Philipp2026-tl",
@@ -416,6 +409,7 @@
     "Choi2026-bz": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Choi2026-bz",
       "topics": [
+        "generative-ai-media",
         "information-disorder"
       ],
       "podcastLinked": false
@@ -424,7 +418,7 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Inacio-da-Silva2026-zf",
       "topics": [
         "elections-political-communication",
-        "platform-governance-data-access"
+        "digital-methods-tools"
       ],
       "podcastLinked": true
     },
@@ -438,22 +432,21 @@
     "Dehghan2026-sy": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Dehghan2026-sy",
       "topics": [
-        "elections-political-communication",
-        "social-network-analysis"
+        "polarization-hybrid-media"
       ],
       "podcastLinked": true
     },
     "Yoo2026-ev": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Yoo2026-ev",
       "topics": [
-        "information-disorder"
+        "information-disorder",
+        "polarization-hybrid-media"
       ],
       "podcastLinked": true
     },
     "Lyons2026-ca": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Lyons2026-ca",
       "topics": [
-        "health-information-online",
         "information-disorder"
       ],
       "podcastLinked": true
@@ -481,13 +474,14 @@
     },
     "Szabo2026-rd": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Szabo2026-rd",
-      "topics": [],
+      "topics": [
+        "information-disorder"
+      ],
       "podcastLinked": true
     },
     "Bollenbacher2026-vz": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Bollenbacher2026-vz",
       "topics": [
-        "health-information-online",
         "information-disorder"
       ],
       "podcastLinked": true
@@ -502,15 +496,15 @@
     "Elfes2026-jb": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Elfes2026-jb",
       "topics": [
-        "llms-for-text-analysis",
-        "information-disorder"
+        "polarization-hybrid-media",
+        "computational-methods-llms"
       ],
       "podcastLinked": true
     },
     "Hollingshead2026-vx": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Hollingshead2026-vx",
       "topics": [
-        "tiktok-algorithmic-publics"
+        "information-disorder"
       ],
       "podcastLinked": true
     },
@@ -532,21 +526,22 @@
     },
     "Balluff2026-bv": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Balluff2026-bv",
-      "topics": [],
+      "topics": [
+        "elections-political-communication",
+        "computational-methods-llms"
+      ],
       "podcastLinked": true
     },
     "Gillespie2026-aa": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Gillespie2026-aa",
-      "topics": [
-        "ai-redteaming-sociotechnical"
-      ],
+      "topics": [],
       "podcastLinked": true
     },
     "Schroeder2026-im": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Schroeder2026-im",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "podcastLinked": true
     },
@@ -554,7 +549,7 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Hameleers2026-mc",
       "topics": [
         "information-disorder",
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "podcastLinked": true
     },
@@ -569,7 +564,7 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Bak-Coleman2026-mk",
       "topics": [
         "platform-governance-data-access",
-        "computational-social-science-methods"
+        "digital-methods-tools"
       ],
       "podcastLinked": true
     },
@@ -583,7 +578,7 @@
     "Emilio2026-ik": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Emilio2026-ik",
       "topics": [
-        "generative-ai-and-media",
+        "generative-ai-media",
         "information-disorder"
       ],
       "podcastLinked": true
@@ -592,15 +587,13 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Iris2026-pg",
       "topics": [
         "elections-political-communication",
-        "llms-for-text-analysis"
+        "computational-methods-llms"
       ],
       "podcastLinked": true
     },
     "Dubey2026-bl": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Dubey2026-bl",
-      "topics": [
-        "depolarization-deliberation"
-      ],
+      "topics": [],
       "podcastLinked": true
     },
     "Voelkel2026-lc": {
@@ -611,7 +604,8 @@
     "Poliakoff2026-fa": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Poliakoff2026-fa",
       "topics": [
-        "coordinated-inauthentic-behavior"
+        "coordinated-inauthentic-behavior",
+        "information-disorder"
       ],
       "podcastLinked": true
     },
@@ -642,7 +636,7 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Larsson2026-ro",
       "topics": [
         "elections-political-communication",
-        "llms-for-text-analysis"
+        "computational-methods-llms"
       ],
       "podcastLinked": true
     },
@@ -669,8 +663,7 @@
     "Efstratiou2025-gs": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Efstratiou2025-gs",
       "topics": [
-        "platform-governance-data-access",
-        "social-network-analysis"
+        "platform-governance-data-access"
       ],
       "podcastLinked": true
     },
@@ -685,36 +678,35 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Iannucci2025-eg",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "social-network-analysis"
+        "digital-methods-tools"
       ],
       "podcastLinked": true
     },
     "Gardam2025-er": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Gardam2025-er",
       "topics": [
-        "information-disorder"
+        "information-disorder",
+        "digital-methods-tools"
       ],
       "podcastLinked": false
     },
     "Lin2025-xp": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Lin2025-xp",
       "topics": [
-        "generative-ai-and-media",
+        "generative-ai-media",
         "elections-political-communication"
       ],
       "podcastLinked": true
     },
     "Matias2025-px": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Matias2025-px",
-      "topics": [
-        "ai-redteaming-sociotechnical"
-      ],
+      "topics": [],
       "podcastLinked": false
     },
     "Knupfer2025-vt": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Knupfer2025-vt",
       "topics": [
-        "information-disorder",
+        "polarization-hybrid-media",
         "elections-political-communication"
       ],
       "podcastLinked": true
@@ -737,15 +729,15 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Copland2025-em",
       "topics": [
         "information-disorder",
-        "social-network-analysis"
+        "polarization-hybrid-media"
       ],
       "podcastLinked": true
     },
     "Triedman2025-uy": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Triedman2025-uy",
       "topics": [
-        "information-disorder",
-        "generative-ai-and-media"
+        "generative-ai-media",
+        "information-disorder"
       ],
       "podcastLinked": false
     },
@@ -753,7 +745,7 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Song2025-yh",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "health-information-online"
+        "information-disorder"
       ],
       "podcastLinked": false
     },
@@ -761,7 +753,7 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Allen2025-ot",
       "topics": [
         "platform-governance-data-access",
-        "computational-social-science-methods"
+        "digital-methods-tools"
       ],
       "podcastLinked": true
     },
@@ -777,7 +769,7 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Murtfeldt2025-wu",
       "topics": [
         "platform-governance-data-access",
-        "computational-social-science-methods"
+        "digital-methods-tools"
       ],
       "podcastLinked": false
     },
@@ -792,7 +784,7 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Orlando2025-ul",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "podcastLinked": false
     },
@@ -822,7 +814,7 @@
     "Oswald2025-km": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Oswald2025-km",
       "topics": [
-        "computational-social-science-methods"
+        "digital-methods-tools"
       ],
       "podcastLinked": false
     },
@@ -837,8 +829,8 @@
     "Arminio2025-tw": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Arminio2025-tw",
       "topics": [
-        "generative-ai-and-media",
-        "computational-social-science-methods"
+        "computational-methods-llms",
+        "generative-ai-media"
       ],
       "podcastLinked": false
     },
@@ -867,7 +859,7 @@
     "Fan2025-ut": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Fan2025-ut",
       "topics": [
-        "llms-for-text-analysis"
+        "computational-methods-llms"
       ],
       "podcastLinked": false
     },
@@ -875,14 +867,15 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Mannocci2025-ig",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "social-network-analysis"
+        "digital-methods-tools"
       ],
       "podcastLinked": false
     },
     "Zhao2025-ny": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Zhao2025-ny",
       "topics": [
-        "coordinated-inauthentic-behavior"
+        "coordinated-inauthentic-behavior",
+        "information-disorder"
       ],
       "podcastLinked": false
     },
@@ -890,7 +883,7 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Kuznetsova2025-nu",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "social-network-analysis"
+        "information-disorder"
       ],
       "podcastLinked": false
     },
@@ -912,7 +905,7 @@
     "Meher2025-qb": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Meher2025-qb",
       "topics": [
-        "llms-for-text-analysis"
+        "computational-methods-llms"
       ],
       "podcastLinked": false
     },
@@ -933,7 +926,9 @@
     },
     "Paci2025-ag": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Paci2025-ag",
-      "topics": [],
+      "topics": [
+        "computational-methods-llms"
+      ],
       "podcastLinked": false
     },
     "Entrena-Serrano2025-gw": {
@@ -946,8 +941,8 @@
     "Rieder2025-ju": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Rieder2025-ju",
       "topics": [
-        "platform-governance-data-access",
-        "computational-social-science-methods"
+        "digital-methods-tools",
+        "platform-governance-data-access"
       ],
       "podcastLinked": false
     },
@@ -978,7 +973,7 @@
     "Waight2025-al": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Waight2025-al",
       "topics": [
-        "llms-for-text-analysis",
+        "computational-methods-llms",
         "information-disorder"
       ],
       "podcastLinked": false
@@ -993,14 +988,16 @@
     },
     "Marwick2025-vx": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Marwick2025-vx",
-      "topics": [],
+      "topics": [
+        "information-disorder"
+      ],
       "podcastLinked": true
     },
     "Gaisbauer2025-by": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Gaisbauer2025-by",
       "topics": [
-        "elections-political-communication",
-        "computational-social-science-methods"
+        "polarization-hybrid-media",
+        "digital-methods-tools"
       ],
       "podcastLinked": false
     },
@@ -1008,14 +1005,14 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Luceri2025-tr",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "social-network-analysis"
+        "digital-methods-tools"
       ],
       "podcastLinked": false
     },
     "Gerard2025-br": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Gerard2025-br",
       "topics": [
-        "social-network-analysis",
+        "computational-methods-llms",
         "coordinated-inauthentic-behavior"
       ],
       "podcastLinked": true
@@ -1023,7 +1020,7 @@
     "Hartmann2025-px": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Hartmann2025-px",
       "topics": [
-        "information-disorder"
+        "polarization-hybrid-media"
       ],
       "podcastLinked": false
     },
@@ -1031,7 +1028,7 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Yang2025-iv",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "social-network-analysis"
+        "digital-methods-tools"
       ],
       "podcastLinked": false
     },
@@ -1047,7 +1044,7 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Di-Marco2025-aa",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "social-network-analysis"
+        "elections-political-communication"
       ],
       "podcastLinked": false
     },
@@ -1068,9 +1065,7 @@
     },
     "Smith2025-kc": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Smith2025-kc",
-      "topics": [
-        "social-network-analysis"
-      ],
+      "topics": [],
       "podcastLinked": false
     },
     "Moran2025-qn": {
@@ -1083,15 +1078,15 @@
     "Bruns2025-fz": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Bruns2025-fz",
       "topics": [
-        "social-network-analysis",
-        "computational-social-science-methods"
+        "digital-methods-tools",
+        "computational-methods-llms"
       ],
       "podcastLinked": false
     },
     "Esau2025-tf": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Esau2025-tf",
       "topics": [
-        "depolarization-deliberation"
+        "polarization-hybrid-media"
       ],
       "podcastLinked": false
     },
@@ -1106,21 +1101,22 @@
     "Arora2025-tx": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Arora2025-tx",
       "topics": [
-        "computational-social-science-methods"
+        "computational-methods-llms"
       ],
       "podcastLinked": false
     },
     "Brown2025-jk": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Brown2025-jk",
       "topics": [
-        "llms-for-text-analysis"
+        "computational-methods-llms"
       ],
       "podcastLinked": false
     },
     "Bennett2025-xs": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Bennett2025-xs",
       "topics": [
-        "information-disorder"
+        "information-disorder",
+        "polarization-hybrid-media"
       ],
       "podcastLinked": false
     },
@@ -1142,7 +1138,8 @@
     "Pante2025-pq": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Pante2025-pq",
       "topics": [
-        "coordinated-inauthentic-behavior"
+        "coordinated-inauthentic-behavior",
+        "digital-methods-tools"
       ],
       "podcastLinked": false
     },
@@ -1157,15 +1154,15 @@
     "Le-Mens2025-qz": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Le-Mens2025-qz",
       "topics": [
-        "llms-for-text-analysis"
+        "computational-methods-llms"
       ],
       "podcastLinked": false
     },
     "Green2025-ap": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Green2025-ap",
       "topics": [
-        "elections-political-communication",
-        "social-network-analysis"
+        "polarization-hybrid-media",
+        "digital-methods-tools"
       ],
       "podcastLinked": false
     },
@@ -1180,8 +1177,8 @@
     "Graham2025-gp": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Graham2025-gp",
       "topics": [
-        "coordinated-inauthentic-behavior",
-        "information-disorder"
+        "information-disorder",
+        "coordinated-inauthentic-behavior"
       ],
       "podcastLinked": false
     },
@@ -1189,30 +1186,31 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/McNally2025-dn",
       "topics": [
         "platform-governance-data-access",
-        "computational-social-science-methods"
+        "digital-methods-tools"
       ],
       "podcastLinked": false
     },
     "Sarmiento2025-as": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Sarmiento2025-as",
       "topics": [
-        "computational-social-science-methods",
-        "social-network-analysis"
+        "computational-methods-llms",
+        "polarization-hybrid-media"
       ],
       "podcastLinked": false
     },
     "Tornberg2025-ir": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Tornberg2025-ir",
       "topics": [
-        "platform-governance-data-access",
-        "generative-ai-and-media"
+        "information-disorder",
+        "elections-political-communication"
       ],
       "podcastLinked": true
     },
     "Nenno2025-xa": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Nenno2025-xa",
       "topics": [
-        "information-disorder"
+        "information-disorder",
+        "computational-methods-llms"
       ],
       "podcastLinked": false
     },
@@ -1235,14 +1233,14 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Simeone2025-vo",
       "topics": [
         "platform-governance-data-access",
-        "social-network-analysis"
+        "information-disorder"
       ],
       "podcastLinked": false
     },
     "DiGiuseppe2025-es": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/DiGiuseppe2025-es",
       "topics": [
-        "llms-for-text-analysis"
+        "computational-methods-llms"
       ],
       "podcastLinked": false
     },
@@ -1250,21 +1248,21 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Luhring2025-od",
       "topics": [
         "information-disorder",
-        "computational-social-science-methods"
+        "digital-methods-tools"
       ],
       "podcastLinked": false
     },
     "Unknown2025-qj": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Unknown2025-qj",
       "topics": [
-        "ai-redteaming-sociotechnical"
+        "generative-ai-media"
       ],
       "podcastLinked": false
     },
     "Kristensen2025-ni": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Kristensen2025-ni",
       "topics": [
-        "elections-political-communication"
+        "polarization-hybrid-media"
       ],
       "podcastLinked": false
     },
@@ -1272,15 +1270,13 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Minici2024-tf",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "social-network-analysis"
+        "computational-methods-llms"
       ],
       "podcastLinked": false
     },
     "Cabbuag2024-me": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Cabbuag2024-me",
-      "topics": [
-        "tiktok-algorithmic-publics"
-      ],
+      "topics": [],
       "podcastLinked": true
     },
     "Gonzalez-Bailon2024-rq": {
@@ -1294,14 +1290,15 @@
     "Mosleh2024-op": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Mosleh2024-op",
       "topics": [
-        "information-disorder"
+        "information-disorder",
+        "polarization-hybrid-media"
       ],
       "podcastLinked": false
     },
     "Ulloa2024-jm": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Ulloa2024-jm",
       "topics": [
-        "computational-social-science-methods"
+        "digital-methods-tools"
       ],
       "podcastLinked": false
     },
@@ -1314,7 +1311,7 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Freelon2024-sc",
       "topics": [
         "platform-governance-data-access",
-        "computational-social-science-methods"
+        "digital-methods-tools"
       ],
       "podcastLinked": true
     },
@@ -1335,22 +1332,22 @@
     "Tan2024-vl": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Tan2024-vl",
       "topics": [
-        "llms-for-text-analysis"
+        "computational-methods-llms"
       ],
       "podcastLinked": false
     },
     "Lai2024-to": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Lai2024-to",
       "topics": [
-        "computational-social-science-methods"
+        "computational-methods-llms"
       ],
       "podcastLinked": false
     },
     "Bakshy2015-rn": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Bakshy2015-rn",
       "topics": [
-        "information-disorder",
-        "elections-political-communication"
+        "polarization-hybrid-media",
+        "platform-governance-data-access"
       ],
       "podcastLinked": false
     },
@@ -1370,8 +1367,8 @@
     "Askanius2026-de": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Askanius2026-de",
       "topics": [
-        "social-network-analysis",
-        "information-disorder"
+        "information-disorder",
+        "polarization-hybrid-media"
       ],
       "podcastLinked": true
     },
@@ -1379,7 +1376,7 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Giglietto2023-fa71a001",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "elections-political-communication"
+        "digital-methods-tools"
       ],
       "podcastLinked": false
     },
@@ -1394,8 +1391,8 @@
     "Unknown2023-9137f448": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Unknown2023-9137f448",
       "topics": [
-        "health-information-online",
-        "information-disorder"
+        "information-disorder",
+        "polarization-hybrid-media"
       ],
       "podcastLinked": false
     },
@@ -1403,15 +1400,15 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Giglietto2026-9b6a992d",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "podcastLinked": true
     },
     "Giglietto2024-cbeb3f70": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Giglietto2024-cbeb3f70",
       "topics": [
-        "llms-for-text-analysis",
-        "italian-news-ecosystem"
+        "computational-methods-llms",
+        "mine-italian-media"
       ],
       "podcastLinked": false
     },
@@ -1419,14 +1416,14 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Anwar2024-34dba628",
       "topics": [
         "elections-political-communication",
-        "information-disorder"
+        "digital-methods-tools"
       ],
       "podcastLinked": false
     },
     "Ghezzi2023-8bebc91f": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Ghezzi2023-8bebc91f",
       "topics": [
-        "health-information-online",
+        "polarization-hybrid-media",
         "information-disorder"
       ],
       "podcastLinked": false
@@ -1435,7 +1432,7 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Giglietto2022-b30e8b4e",
       "topics": [
         "platform-governance-data-access",
-        "computational-social-science-methods"
+        "digital-methods-tools"
       ],
       "podcastLinked": false
     },
@@ -1443,7 +1440,7 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Giglietto2022-0e951ac5",
       "topics": [
         "coordinated-inauthentic-behavior",
-        "health-information-online"
+        "mine-italian-media"
       ],
       "podcastLinked": false
     },
@@ -1455,7 +1452,7 @@
     "Weinbrand2026-sf": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Weinbrand2026-sf",
       "topics": [
-        "generative-ai-and-media"
+        "generative-ai-media"
       ],
       "podcastLinked": true
     },
@@ -1474,7 +1471,9 @@
     },
     "Grusauskaite2026-po": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Grusauskaite2026-po",
-      "topics": [],
+      "topics": [
+        "information-disorder"
+      ],
       "podcastLinked": true
     },
     "Schulte2026-df": {
@@ -1488,8 +1487,7 @@
     "Hepp2026-oi": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Hepp2026-oi",
       "topics": [
-        "platform-governance-data-access",
-        "elections-political-communication"
+        "generative-ai-media"
       ],
       "podcastLinked": true
     },
@@ -1497,15 +1495,13 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Giglietto2026-632ef967",
       "topics": [
         "platform-governance-data-access",
-        "information-disorder"
+        "polarization-hybrid-media"
       ],
       "podcastLinked": true
     },
     "Vertesi2026-lv": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Vertesi2026-lv",
-      "topics": [
-        "generative-ai-and-media"
-      ],
+      "topics": [],
       "podcastLinked": true
     },
     "Giglietto2025-1765bb4f": {
@@ -1520,7 +1516,7 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Unknown2025-ed60bc90",
       "topics": [
         "platform-governance-data-access",
-        "computational-social-science-methods"
+        "digital-methods-tools"
       ],
       "podcastLinked": false
     },
@@ -1528,14 +1524,14 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Giglietto2025-1e9a0917",
       "topics": [
         "platform-governance-data-access",
-        "italian-news-ecosystem"
+        "elections-political-communication"
       ],
       "podcastLinked": false
     },
     "Marino2024-2fbc690f": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Marino2024-2fbc690f",
       "topics": [
-        "llms-for-text-analysis",
+        "computational-methods-llms",
         "elections-political-communication"
       ],
       "podcastLinked": false
@@ -1551,16 +1547,16 @@
     "F2020-6278a4aa": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/F2020-6278a4aa",
       "topics": [
-        "computational-social-science-methods",
-        "elections-political-communication"
+        "elections-political-communication",
+        "polarization-hybrid-media"
       ],
       "podcastLinked": false
     },
     "Giglietto2019-882f1900": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Giglietto2019-882f1900",
       "topics": [
-        "elections-political-communication",
-        "italian-news-ecosystem"
+        "mine-italian-media",
+        "polarization-hybrid-media"
       ],
       "podcastLinked": false
     },
@@ -1568,14 +1564,14 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Giglietto2019-e9be81c1",
       "topics": [
         "information-disorder",
-        "sociocybernetics-systems-theory"
+        "polarization-hybrid-media"
       ],
       "podcastLinked": false
     },
     "Iannelli2018-ebd918b7": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Iannelli2018-ebd918b7",
       "topics": [
-        "computational-social-science-methods"
+        "digital-methods-tools"
       ],
       "podcastLinked": false
     },
@@ -1595,8 +1591,8 @@
     "Brady2026-ln": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Brady2026-ln",
       "topics": [
-        "elections-political-communication",
-        "platform-governance-data-access"
+        "platform-governance-data-access",
+        "polarization-hybrid-media"
       ],
       "podcastLinked": true
     },
@@ -1604,7 +1600,7 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Lukito2026-nb",
       "topics": [
         "platform-governance-data-access",
-        "computational-social-science-methods"
+        "elections-political-communication"
       ],
       "podcastLinked": true
     },
@@ -1625,7 +1621,8 @@
     "Fan2026-af": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Fan2026-af",
       "topics": [
-        "computational-social-science-methods"
+        "computational-methods-llms",
+        "digital-methods-tools"
       ],
       "podcastLinked": true
     },
@@ -1633,14 +1630,15 @@
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Brown2026-br",
       "topics": [
         "platform-governance-data-access",
-        "social-network-analysis"
+        "polarization-hybrid-media"
       ],
       "podcastLinked": true
     },
     "Alizadeh2026-es": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Alizadeh2026-es",
       "topics": [
-        "computational-social-science-methods"
+        "computational-methods-llms",
+        "generative-ai-media"
       ],
       "podcastLinked": true
     },
@@ -1651,32 +1649,40 @@
     },
     "Richter2026-bt": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Richter2026-bt",
-      "topics": [
-        "generative-ai-and-media"
-      ],
+      "topics": [],
       "podcastLinked": true
     },
     "Giglietto2026-855a54cb": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Giglietto2026-855a54cb",
       "topics": [
         "platform-governance-data-access",
-        "computational-social-science-methods"
+        "digital-methods-tools"
       ],
       "podcastLinked": true
     },
     "Fattorini2026-bo": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Fattorini2026-bo",
-      "topics": [],
+      "topics": [
+        "generative-ai-media"
+      ],
       "podcastLinked": true
     },
     "noauthor_undated-jo": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/noauthor_undated-jo",
       "topics": [],
       "podcastLinked": false
+    },
+    "Costello2024-bg": {
+      "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Costello2024-bg",
+      "topics": [
+        "information-disorder",
+        "generative-ai-media"
+      ],
+      "podcastLinked": false
     }
   },
-  "totalNotes": 230,
+  "totalNotes": 231,
   "siteUrl": "https://fabiogiglietto.github.io/fg-zettelkasten/",
-  "lastUpdated": "2026-06-21T12:59:53.786Z",
+  "lastUpdated": "2026-06-22T11:50:55.924Z",
   "source": "https://github.com/fabiogiglietto/fg-zettelkasten"
 }

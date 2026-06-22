@@ -1,33 +1,39 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a focused and professionally oriented social media presence across Mastodon, LinkedIn, and Bluesky. With a combined total of 3,580 followers and 7 recent posts, the profile consistently shares updates on cutting-edge research in computational social science, academic achievements, and recruitment opportunities. The overall engagement across platforms is moderate, with LinkedIn boasting the largest audience, while Bluesky demonstrates the highest per-follower engagement.",
+  "overallSummary": "Fabio Giglietto maintains an active and focused presence across Mastodon, LinkedIn, and Bluesky, primarily engaging with academic and research-oriented audiences. With a combined follower count of 3,580 and 7 recent posts, the profile demonstrates consistent activity. LinkedIn is the strongest platform for broad professional engagement, while Bluesky shows promising interaction rates, particularly for new research announcements and opportunities.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 1.7,
-    "mostEngagingPlatform": "bluesky"
+    "averageEngagementRate": 11.9,
+    "mostEngagingPlatform": "linkedin"
   },
   "contentThemes": [
     {
+      "theme": "Research Updates & Announcements",
+      "description": "Covers new grants, publications, tool releases, and general research progress."
+    },
+    {
+      "theme": "Hiring & Research Opportunities",
+      "description": "Includes calls for postdoctoral researchers, PhD students, and general research team expansion."
+    },
+    {
       "theme": "Computational Social Science & Disinformation Research",
-      "description": "Updates on research projects, methodologies (e.g., CooRnet), publications, and discussions related to coordinated behavior, information operations, and disinformation across social media."
+      "description": "Focuses on methodological approaches, coordinated behavior detection, information operations, and related academic discussions."
     },
     {
-      "theme": "Academic Achievements & Dissemination",
-      "description": "Announcements of new research papers, successful grant awards, and upcoming conference presentations."
-    },
-    {
-      "theme": "Academic & Career Opportunities",
-      "description": "Posts related to hiring postdoctoral researchers, PhD student opportunities, and calls for academic collaboration."
+      "theme": "Conference Participation",
+      "description": "Mentions upcoming presentations at academic conferences related to disinformation and computational methods."
     }
   ],
   "recommendations": [
-    "Leverage Bluesky's higher engagement rate by potentially increasing post frequency or diversifying content formats (e.g., short threads, informal discussions) to maximize reach for research dissemination and community interaction.",
-    "Continue to utilize LinkedIn for major formal announcements like grants and job opportunities, as it consistently garners strong interaction from its larger professional audience.",
-    "Explore cross-promotion strategies for significant announcements (e.g., new papers, major grants), tailoring the message slightly for each platform's audience while linking back to a central source or publication."
+    "Leverage LinkedIn for Key Announcements: Continue using LinkedIn for significant news like grant awards and hiring, as it yields the highest raw interaction numbers and professional visibility.",
+    "Cross-Promote Strategically: Implement a cross-promotion strategy for major announcements (e.g., new papers, hiring) across all platforms, tailoring the message and call to action to each platform's audience and content style.",
+    "Boost Engagement on Mastodon: Experiment with more direct questions, polls, or calls for commentary on Mastodon to foster deeper, community-specific discussions, given its academic and community-oriented nature.",
+    "Capitalize on Bluesky's Agility: Utilize Bluesky for more immediate updates, conference live-reporting, and quick calls for engagement, as it shows good per-post engagement rates for research news and opportunities, especially for attracting early-career academics.",
+    "Maintain Content Calendar Consistency: Ensure a consistent posting schedule across all platforms to keep audiences engaged and informed about ongoing research, opportunities, and insights."
   ],
   "platformInsights": {
-    "bluesky": "This platform exhibits the highest engagement rate per follower, making it particularly effective for announcing new research papers and direct calls for academic opportunities (PhD students), fostering active community interaction and reposting.",
-    "mastodon": "Serving as a dedicated academic hub within the aoir.social instance, Mastodon effectively reaches a specialized audience for research updates and discussions, though its follower count and engagement rate are moderate compared to other platforms.",
-    "linkedin": "With the largest follower base, LinkedIn is the primary platform for broad professional visibility and performs exceptionally well for formal announcements such as grant awards and significant job opportunities, demonstrating robust engagement in terms of likes and comments."
+    "bluesky": "Bluesky exhibits strong per-post engagement rates for research publications and opportunities, indicating an active and responsive audience for academic news and career-related posts. It serves effectively for rapid dissemination and attracting new talent, particularly within the academic-social sphere.",
+    "mastodon": "Mastodon primarily engages a highly specialized academic audience with a focus on detailed research updates and methodological discussions. While overall interaction numbers are lower than LinkedIn, the quality of engagement likely reflects a dedicated community interested in specific research topics and peer-to-peer discussion.",
+    "linkedin": "LinkedIn stands out as the most impactful platform for major professional announcements, securing the highest raw interaction counts for news like grant awards and job openings. This highlights its effectiveness for broader professional reach, networking, and recruitment within the academic and industry sectors."
   },
   "topPerformingContent": [
     {

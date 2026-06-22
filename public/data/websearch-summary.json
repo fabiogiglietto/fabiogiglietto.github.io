@@ -1,11 +1,12 @@
 {
-  "totalEntries": 172,
-  "lastUpdated": "2026-06-21T13:07:35.195Z",
+  "totalEntries": 174,
+  "lastUpdated": "2026-06-22T11:59:04.396Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-06-20T10:07:52.816Z"
+    "latest": "2026-06-22T11:59:04.354Z"
   },
   "byDate": {
+    "2026-06-22": 2,
     "2026-06-20": 1,
     "2026-06-19": 3,
     "2026-06-18": 1,
@@ -14,11 +15,10 @@
     "2026-06-15": 5,
     "2026-06-13": 2,
     "2026-06-12": 2,
-    "2026-06-11": 1,
-    "2026-06-06": 1
+    "2026-06-11": 1
   },
   "bySource": {
-    "vertexaisearch.cloud.google.com": 50,
+    "vertexaisearch.cloud.google.com": 51,
     "snurb.info": 9,
     "uniurb.it": 8,
     "aoir.org": 5,
@@ -30,11 +30,25 @@
     "snurb.net": 2
   },
   "byRelevanceScore": {
-    "high": 149,
+    "high": 151,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "CS2Nordics - The Nordic Conference on Computational Social Science",
+      "url": "https://cs2nordics.org/",
+      "source": "cs2nordics.org",
+      "relevanceScore": 0.95,
+      "collectedAt": "2026-06-22T11:59:04.354Z"
+    },
+    {
+      "title": "CS2Nordics - Nordic Society for Computational Social Science",
+      "url": "https://nosocss.org/conference.html",
+      "source": "vertexaisearch.cloud.google.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-06-22T11:59:04.354Z"
+    },
     {
       "title": "CS2Italy Conference Program",
       "url": "https://cs2italy.github.io/",
@@ -55,20 +69,6 @@
       "source": "snurb.org",
       "relevanceScore": 0.9,
       "collectedAt": "2026-06-19T11:23:40.950Z"
-    },
-    {
-      "title": "How Facebook’s Algorithmic Tweaks Affected Engagement with News URLs over Time",
-      "url": "https://snurb.info/2026/06/08/how-facebook-s-algorithmic-tweaks-affected-engagement-with-news-urls-over-time/",
-      "source": "snurb.info",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-06-19T10:30:58.208Z"
-    },
-    {
-      "title": "Panel – Meta Content Library Community Roundtable: Where to for Social Media Research?",
-      "url": "https://www.qut.edu.au/events/panel-meta-content-library-community-roundtable-where-to-for-social-media-research",
-      "source": "qut.edu.au",
-      "relevanceScore": 1,
-      "collectedAt": "2026-06-18T11:13:27.408Z"
     }
   ]
 }
