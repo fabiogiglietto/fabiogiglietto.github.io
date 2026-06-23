@@ -1,11 +1,12 @@
 {
-  "totalEntries": 174,
-  "lastUpdated": "2026-06-22T11:59:04.396Z",
+  "totalEntries": 175,
+  "lastUpdated": "2026-06-23T09:46:40.353Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-06-22T11:59:04.354Z"
+    "latest": "2026-06-23T09:46:40.325Z"
   },
   "byDate": {
+    "2026-06-23": 1,
     "2026-06-22": 2,
     "2026-06-20": 1,
     "2026-06-19": 3,
@@ -14,8 +15,7 @@
     "2026-06-16": 2,
     "2026-06-15": 5,
     "2026-06-13": 2,
-    "2026-06-12": 2,
-    "2026-06-11": 1
+    "2026-06-12": 2
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 51,
@@ -23,18 +23,25 @@
     "uniurb.it": 8,
     "aoir.org": 5,
     "open.online": 5,
+    "icahdq.org": 4,
     "Il Sole 24 ORE": 4,
-    "icahdq.org": 3,
     "ilrestodelcarlino.it": 3,
     "snurblog.org": 2,
     "snurb.net": 2
   },
   "byRelevanceScore": {
-    "high": 151,
+    "high": 152,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Clicking Politics on an Algorithmic Feed: Political Efficacy and Longitudinal Information. Selection. (ICA 2026 Conference Program)",
+      "url": "https://cdn.ymaws.com/www.icahdq.org/resource/resmgr/conference/ica26/ICA26_FullProgram.pdf",
+      "source": "icahdq.org",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-06-23T09:46:40.325Z"
+    },
     {
       "title": "CS2Nordics - The Nordic Conference on Computational Social Science",
       "url": "https://cs2nordics.org/",
@@ -62,13 +69,6 @@
       "source": "smsociety.org",
       "relevanceScore": 0.9,
       "collectedAt": "2026-06-19T16:42:58.774Z"
-    },
-    {
-      "title": "ICA 2026: Conference Day 2 Liveblog",
-      "url": "https://snurb.org/blog/2026-ica-conference-day-2-liveblog/",
-      "source": "snurb.org",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-06-19T11:23:40.950Z"
     }
   ]
 }
