@@ -345,28 +345,6 @@
       "crossref_score": 1
     },
     {
-      "doi": "10.3389/fsoc.2024.1379265",
-      "title": "Facebook reactions in the context of politics and social issues: a systematic literature review",
-      "authors": "Anwar, Sawood; Giglietto, Fabio",
-      "venue": "Frontiers in Sociology",
-      "year": 2024,
-      "type": "journal-article",
-      "url": "https://doi.org/10.3389/fsoc.2024.1379265",
-      "crossref_type": "journal-article",
-      "publisher": "Frontiers Media SA",
-      "container_title": "Frontiers in Sociology",
-      "volume": "9",
-      "issn": "2297-7775",
-      "isbn": null,
-      "subject": [],
-      "abstract": "<jats:p>In February 2016, Facebook expanded the original “Like” button by introducing five additional “Reactions”—Love, Haha, Wow, Sad, and Angry—using modified versions of Unicode emojis. These reactions enable users to express more nuanced emotions towards posts. This literature review investigates scholarly research on user behavior in response to these reactions, with a focus on a broad spectrum of socioeconomic and psychological issues. We conducted a systematic search across databases including Scopus and Google Scholar, using keywords such as “Facebook” and “Reaction,” combined with various key phrases and Boolean operators. Our review synthesizes sixty-four articles published from 2016 to 2023, exploring diverse topics such as political news, far-right and extremist parties, racism, and hate speech during the COVID-19 pandemic. We organized these articles by theme and publication date. Our meta-analysis reveals that lifestyle and entertainment posts predominantly receive positive reactions, while sociopolitical content tends to elicit a broader spectrum of emotions, including negative sentiments. Furthermore, emotionally charged content consistently attracts higher volumes of reactions, regardless of sentiment. This research highlights the intricate relationship between user reactions and content characteristics, providing deeper insights into the dynamics of online engagement. By understanding these interaction patterns, we gain a better grasp of emotional responses and engagement levels, which ultimately shape online discourse and user interactions.</jats:p>",
-      "license": [
-        "https://creativecommons.org/licenses/by/4.0/"
-      ],
-      "funder": [],
-      "crossref_score": 1
-    },
-    {
       "doi": "10.1177/20563051231196866",
       "title": "A Workflow to Detect, Monitor, and Update Lists of Coordinated Social Media Accounts Across Time: The Case of the 2022 Italian Election",
       "authors": "Giglietto, Fabio; Marino, Giada; Mincigrucci, Roberto; Stanziano, Anna",
@@ -385,6 +363,28 @@
       "abstract": "<jats:p> Information operations that target public opinion often exploit breaking news, crises, and elections by using coordinated social media actors to disseminate problematic content. These events often reveal the relationships between actors, prompting the creation of lists of malicious actors and news sources. However, relying on outdated lists may underestimate the prevalence and impact of such operations. This article presents a novel workflow to detect, monitor, and update lists of coordinated social media actors during and beyond peak activity periods. Using this approach, known problematic actors are constantly monitored, allowing the detection of new actors and the update of the monitored pool. The workflow was applied to the 2022 Italian snap election, leveraging previous research on coordinated inauthentic behavior during the 2018 and 2019 Italian elections. The initial list of 435 coordinated accounts was monitored, surfacing 1,022 overly shared or commented political posts, 272 coordinated links, and detecting 66 political and 554 generic coordinated accounts not previously listed. Three case studies were identified: one politically motivated, one click-economy driven, and one religiously motivated operation. The article discusses the implications of this approach, its limitations, and potential future work. </jats:p>",
       "license": [
         "https://creativecommons.org/licenses/by-nc/4.0/"
+      ],
+      "funder": [],
+      "crossref_score": 1
+    },
+    {
+      "doi": "10.3389/fsoc.2024.1379265",
+      "title": "Facebook reactions in the context of politics and social issues: a systematic literature review",
+      "authors": "Anwar, Sawood; Giglietto, Fabio",
+      "venue": "Frontiers in Sociology",
+      "year": 2024,
+      "type": "journal-article",
+      "url": "https://doi.org/10.3389/fsoc.2024.1379265",
+      "crossref_type": "journal-article",
+      "publisher": "Frontiers Media SA",
+      "container_title": "Frontiers in Sociology",
+      "volume": "9",
+      "issn": "2297-7775",
+      "isbn": null,
+      "subject": [],
+      "abstract": "<jats:p>In February 2016, Facebook expanded the original “Like” button by introducing five additional “Reactions”—Love, Haha, Wow, Sad, and Angry—using modified versions of Unicode emojis. These reactions enable users to express more nuanced emotions towards posts. This literature review investigates scholarly research on user behavior in response to these reactions, with a focus on a broad spectrum of socioeconomic and psychological issues. We conducted a systematic search across databases including Scopus and Google Scholar, using keywords such as “Facebook” and “Reaction,” combined with various key phrases and Boolean operators. Our review synthesizes sixty-four articles published from 2016 to 2023, exploring diverse topics such as political news, far-right and extremist parties, racism, and hate speech during the COVID-19 pandemic. We organized these articles by theme and publication date. Our meta-analysis reveals that lifestyle and entertainment posts predominantly receive positive reactions, while sociopolitical content tends to elicit a broader spectrum of emotions, including negative sentiments. Furthermore, emotionally charged content consistently attracts higher volumes of reactions, regardless of sentiment. This research highlights the intricate relationship between user reactions and content characteristics, providing deeper insights into the dynamics of online engagement. By understanding these interaction patterns, we gain a better grasp of emotional responses and engagement levels, which ultimately shape online discourse and user interactions.</jats:p>",
+      "license": [
+        "https://creativecommons.org/licenses/by/4.0/"
       ],
       "funder": [],
       "crossref_score": 1
@@ -1540,7 +1540,7 @@
       "crossref_score": 1
     }
   ],
-  "lastUpdated": "2026-06-23T09:47:09.096Z",
+  "lastUpdated": "2026-06-24T09:35:05.981Z",
   "metadata": {
     "total_requested": 100,
     "successful_requests": 68,

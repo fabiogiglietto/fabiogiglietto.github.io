@@ -1,11 +1,12 @@
 {
-  "totalEntries": 175,
-  "lastUpdated": "2026-06-23T09:46:40.353Z",
+  "totalEntries": 176,
+  "lastUpdated": "2026-06-24T09:34:37.213Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-06-23T09:46:40.325Z"
+    "latest": "2026-06-24T09:34:37.180Z"
   },
   "byDate": {
+    "2026-06-24": 1,
     "2026-06-23": 1,
     "2026-06-22": 2,
     "2026-06-20": 1,
@@ -14,12 +15,11 @@
     "2026-06-17": 1,
     "2026-06-16": 2,
     "2026-06-15": 5,
-    "2026-06-13": 2,
-    "2026-06-12": 2
+    "2026-06-13": 2
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 51,
-    "snurb.info": 9,
+    "snurb.info": 10,
     "uniurb.it": 8,
     "aoir.org": 5,
     "open.online": 5,
@@ -30,11 +30,18 @@
     "snurb.net": 2
   },
   "byRelevanceScore": {
-    "high": 152,
+    "high": 153,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "The Evolving Communication Strategies of Mexican Rock Band The Warning",
+      "url": "https://snurb.info/2025/10/18/the-evolving-communication-strategies-of-mexican-rock-band-the-warning/",
+      "source": "snurb.info",
+      "relevanceScore": 1,
+      "collectedAt": "2026-06-24T09:34:37.180Z"
+    },
     {
       "title": "Clicking Politics on an Algorithmic Feed: Political Efficacy and Longitudinal Information. Selection. (ICA 2026 Conference Program)",
       "url": "https://cdn.ymaws.com/www.icahdq.org/resource/resmgr/conference/ica26/ICA26_FullProgram.pdf",
@@ -62,13 +69,6 @@
       "source": "cs2italy.github.io",
       "relevanceScore": 1,
       "collectedAt": "2026-06-20T10:07:52.816Z"
-    },
-    {
-      "title": "SMSociety 2026 Conference Programme",
-      "url": "https://smsociety.org/2026-conference-programme/",
-      "source": "smsociety.org",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-06-19T16:42:58.774Z"
     }
   ]
 }
