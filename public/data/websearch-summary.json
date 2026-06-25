@@ -1,11 +1,12 @@
 {
-  "totalEntries": 176,
-  "lastUpdated": "2026-06-24T09:34:37.213Z",
+  "totalEntries": 177,
+  "lastUpdated": "2026-06-25T09:32:18.607Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-06-24T09:34:37.180Z"
+    "latest": "2026-06-25T09:32:18.571Z"
   },
   "byDate": {
+    "2026-06-25": 1,
     "2026-06-24": 1,
     "2026-06-23": 1,
     "2026-06-22": 2,
@@ -14,8 +15,7 @@
     "2026-06-18": 1,
     "2026-06-17": 1,
     "2026-06-16": 2,
-    "2026-06-15": 5,
-    "2026-06-13": 2
+    "2026-06-15": 5
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 51,
@@ -30,11 +30,18 @@
     "snurb.net": 2
   },
   "byRelevanceScore": {
-    "high": 153,
+    "high": 154,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Panel – Meta Content Library Community Roundtable: Where to for Social Media Research? – International Conference on Social Media & Society",
+      "url": "https://smsociety.net/2026-conference-programme/panel-meta-content-library-community-roundtable-where-to-for-social-media-research/",
+      "source": "smsociety.net",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-06-25T09:32:18.571Z"
+    },
     {
       "title": "The Evolving Communication Strategies of Mexican Rock Band The Warning",
       "url": "https://snurb.info/2025/10/18/the-evolving-communication-strategies-of-mexican-rock-band-the-warning/",
@@ -62,13 +69,6 @@
       "source": "vertexaisearch.cloud.google.com",
       "relevanceScore": 0.9,
       "collectedAt": "2026-06-22T11:59:04.354Z"
-    },
-    {
-      "title": "CS2Italy Conference Program",
-      "url": "https://cs2italy.github.io/",
-      "source": "cs2italy.github.io",
-      "relevanceScore": 1,
-      "collectedAt": "2026-06-20T10:07:52.816Z"
     }
   ]
 }
