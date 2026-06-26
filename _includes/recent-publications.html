@@ -17,9 +17,11 @@
         <a href="{{ publication.pdf }}" class="publication-link" target="_blank">PDF</a>
         {% endif %}
         {% if publication.urls %}
-          {% if publication.urls.doi %}
-          <a href="{{ publication.urls.doi }}" class="publication-link" target="_blank">DOI</a>
-          {% endif %}
+          {% unless publication.doi %}
+            {% if publication.urls.doi %}
+            <a href="{{ publication.urls.doi }}" class="publication-link" target="_blank">DOI</a>
+            {% endif %}
+          {% endunless %}
           {% if publication.urls.scholar %}
           <a href="{{ publication.urls.scholar }}" class="publication-link" target="_blank">Scholar</a>
           {% endif %}
