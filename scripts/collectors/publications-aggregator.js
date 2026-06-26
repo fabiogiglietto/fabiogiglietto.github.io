@@ -623,9 +623,22 @@ async function collect() {
 
     // Process Semantic Scholar publications using generic processor
     processPublicationSource(semanticScholarData, 'semanticScholar', publicationsMap, SOURCE_MAPPINGS.semanticScholar);
-    
+
+    // Final pass: merge entries that share the same DOI.
+    //
+    // A title-only match in an earlier source (ORA, WoS, Scopus, ...) sets an
+    // entry's `doi` field but leaves it under its original `title:` map key, so
+    // a later DOI-keyed source (Crossref) can't find it and inserts a duplicate
+    // with the same DOI. This pass reconciles those after all sources are in,
+    // independent of processing order. DOIs are normalised (lower-cased, with
+    // any trailing version suffix like `_v1`/`_v2` stripped) so preprint version
+    // variants of the same work collapse too. Entries without a DOI are left
+    // untouched — we deliberately do NOT merge by title here, to avoid wrongly
+    // collapsing distinct papers with similar titles.
+    const mergedByDoi = mergeDuplicateDois(publicationsMap);
+
     // Convert map to array and calculate aggregate metrics
-    const publications = Array.from(publicationsMap.values()).map(pub => {
+    const publications = Array.from(mergedByDoi.values()).map(pub => {
       // Calculate best citation count
       const citationCounts = [
         pub.citations.scholar, 
@@ -693,6 +706,91 @@ function calculateHIndex(citations) {
 }
 
 /**
+ * Normalise a DOI for duplicate detection: lower-case and strip a trailing
+ * version suffix (e.g. the `_v1` / `_v2` that OSF/preprint servers append to
+ * successive versions of the same deposit).
+ *
+ * @param {string} doi - Raw DOI
+ * @returns {string} Normalised DOI key
+ */
+function normalizeDoi(doi) {
+  return doi.toLowerCase().replace(/_v\d+$/, '');
+}
+
+/**
+ * Merge a non-null source value into a publication, only when the target is
+ * currently empty. Used to union nested {source: value} objects without letting
+ * a later duplicate overwrite a value an earlier source already provided.
+ */
+function mergeFillObject(target, source) {
+  if (!source) return;
+  Object.entries(source).forEach(([key, value]) => {
+    if (value !== null && value !== undefined && (target[key] === null || target[key] === undefined)) {
+      target[key] = value;
+    }
+  });
+}
+
+/**
+ * Final-pass de-duplication: collapse map entries that resolve to the same
+ * normalised DOI into a single record, preserving the richest information from
+ * each (max citation count per source, union of source urls/ids, first non-null
+ * scalar fields). Entries without a DOI pass through unchanged.
+ *
+ * @param {Map} publicationsMap - The fully-populated publications map
+ * @returns {Map} A new map keyed by normalised DOI (or original key when no DOI)
+ */
+function mergeDuplicateDois(publicationsMap) {
+  const merged = new Map();
+
+  for (const [key, pub] of publicationsMap.entries()) {
+    // Keep DOI-less entries exactly as they are (no safe join key to merge on).
+    if (!pub.doi) {
+      merged.set(key, pub);
+      continue;
+    }
+
+    const doiKey = `doi:${normalizeDoi(pub.doi)}`;
+    const existing = merged.get(doiKey);
+
+    if (!existing) {
+      merged.set(doiKey, pub);
+      continue;
+    }
+
+    // Merge `pub` into `existing` without dropping any source's contribution.
+    console.log(`Merging duplicate DOI entry: "${pub.title.substring(0, 60)}" (${pub.doi})`);
+
+    // Citations: keep the highest count seen from each source.
+    Object.keys(existing.citations).forEach(source => {
+      const a = existing.citations[source];
+      const b = pub.citations[source];
+      if (b !== null && b !== undefined) {
+        existing.citations[source] = a === null || a === undefined ? b : Math.max(a, b);
+      }
+    });
+
+    // Source URLs and IDs: union, preferring values already present.
+    mergeFillObject(existing.source_urls, pub.source_urls);
+    mergeFillObject(existing.source_ids, pub.source_ids);
+
+    // Scalar metadata: fill any gaps from the duplicate.
+    [
+      'authors', 'venue', 'year', 'month', 'day', 'publicationDate', 'type',
+      'crossref_type', 'publisher', 'oraHandle', 'oraType', 'oaPdfUrl', 'abstract',
+      'influentialCitations'
+    ].forEach(field => {
+      if ((existing[field] === null || existing[field] === undefined) &&
+          pub[field] !== null && pub[field] !== undefined) {
+        existing[field] = pub[field];
+      }
+    });
+  }
+
+  return merged;
+}
+
+/**
  * Check if two titles are similar enough to be considered the same paper
  * Uses Dice coefficient via string-similarity library for robust matching
  *
@@ -730,6 +828,8 @@ module.exports = {
   // Export utilities for testing
   _testing: {
     isSimilarTitle,
+    normalizeDoi,
+    mergeDuplicateDois,
     calculateHIndex,
     loadDataFile,
     processPublicationSource,

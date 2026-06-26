@@ -3872,7 +3872,7 @@
     {
       "title": "Social TV and second screen",
       "type": "encyclopedia-entry",
-      "venue": null,
+      "venue": "Elgar Encyclopedia of Technology and Politics",
       "authors": "Giglietto F.",
       "year": 2022,
       "month": 1,
@@ -3891,7 +3891,8 @@
         "wos": null,
         "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85172790603&origin=inward",
         "semanticScholar": null,
-        "ora": null
+        "ora": null,
+        "crossref": "https://doi.org/10.4337/9781800374263.social.tv.second"
       },
       "source_ids": {
         "orcid": 133838340,
@@ -3904,7 +3905,9 @@
       "metrics": {
         "total_citations": 0,
         "citation_sources": 2
-      }
+      },
+      "crossref_type": "book-chapter",
+      "publisher": "Edward Elgar Publishing"
     },
     {
       "title": "La obsolescencia programada como asunto controvertido. Un análisis del debate público online en torno a la salida de los dispositivos Apple",
@@ -4597,7 +4600,8 @@
         "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000391082300012&DestLinkType=FullRecord&DestApp=WOS_CPL",
         "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85019996457&origin=inward",
         "semanticScholar": null,
-        "ora": null
+        "ora": null,
+        "crossref": "https://doi.org/10.1609/aimag.v37i4.2692"
       },
       "source_ids": {
         "orcid": 34344536,
@@ -4610,7 +4614,9 @@
       "metrics": {
         "total_citations": 0,
         "citation_sources": 3
-      }
+      },
+      "crossref_type": "journal-article",
+      "publisher": "Wiley"
     },
     {
       "title": "Servizio Pubblico Edition 2012/2013 - Twitter #serviziopubblico Ids dataset",
@@ -5585,108 +5591,6 @@
       },
       "crossref_type": "journal-article",
       "publisher": "Elsevier BV"
-    },
-    {
-      "title": "Social TV and second screen",
-      "authors": "Giglietto, Fabio",
-      "venue": "Elgar Encyclopedia of Technology and Politics",
-      "year": 2022,
-      "doi": "10.4337/9781800374263.social.tv.second",
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "crossref": "https://doi.org/10.4337/9781800374263.social.tv.second",
-        "semanticScholar": null
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null
-      },
-      "crossref_type": "book-chapter",
-      "publisher": "Edward Elgar Publishing",
-      "metrics": {
-        "total_citations": 0,
-        "citation_sources": 0
-      }
-    },
-    {
-      "title": "Reports of the Workshops Held at the 2016 International AAAI Conference on Web and Social Media",
-      "authors": "An, Jisun; Crandall, David J.; Fedorov, Roman; Fiesler, Casey; Giglietto, Fabio; Heravi, Bahareh; Pater, Jessica; Pelechrinis, Konstantinos; Quercia, Daniele; Weller, Katrin; Zubiaga, Arkaitz",
-      "venue": "AI Magazine",
-      "year": 2016,
-      "doi": "10.1609/aimag.v37i4.2692",
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "crossref": "https://doi.org/10.1609/aimag.v37i4.2692",
-        "semanticScholar": null
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null
-      },
-      "crossref_type": "journal-article",
-      "publisher": "Wiley",
-      "metrics": {
-        "total_citations": 0,
-        "citation_sources": 0
-      }
-    },
-    {
-      "title": "\"A Pretty Blunt Approach\": Meta's Political Content Reduction Policy and Italian Parliamentarians' Facebook Visibility",
-      "authors": "Giglietto, Fabio",
-      "venue": "Center for Open Science",
-      "year": 2025,
-      "doi": "10.31235/osf.io/8dqag_v1",
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "crossref": "https://doi.org/10.31235/osf.io/8dqag_v1",
-        "semanticScholar": null
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": null,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null
-      },
-      "crossref_type": "posted-content",
-      "publisher": "Center for Open Science",
-      "metrics": {
-        "total_citations": 0,
-        "citation_sources": 0
-      }
     },
     {
       "title": "TRANSFORMATIVE TOOLS, EMERGING CHALLENGES: EMPIRICAL AND PRACTICAL EXPERIENCES WITH LARGE LANGUAGE MODELS FOR TEXT CLASSIFICATION AND ANNOTATION IN COMMUNICATION STUDIES",
@@ -6753,7 +6657,7 @@
     }
   ],
   "metrics": {
-    "total_publications": 181,
+    "total_publications": 178,
     "total_citations": 2337,
     "h_index": 21,
     "i10_index": 34,
@@ -6762,9 +6666,9 @@
       "with_wos": 19,
       "with_scopus": 25,
       "with_semanticScholar": 3,
-      "with_crossref": 67,
-      "with_ora": 28
+      "with_crossref": 66,
+      "with_ora": 25
     }
   },
-  "lastUpdated": "2026-06-26T17:21:38.772Z"
+  "lastUpdated": "2026-06-26T17:50:07.932Z"
 }
