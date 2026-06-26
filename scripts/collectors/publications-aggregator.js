@@ -365,75 +365,9 @@ async function collect() {
       }
     }
     
-    // Process Google Scholar publications
-    if (scholarData && scholarData.publications) {
-      scholarData.publications.forEach(pub => {
-        // Normalize title for matching
-        const scholarTitle = pub.title.toLowerCase().replace(/[^\w\s]/g, '');
-        
-        // Try to find a match in the map
-        let found = false;
-        for (const [key, publication] of publicationsMap.entries()) {
-          const pubTitle = publication.title.toLowerCase().replace(/[^\w\s]/g, '');
-          
-          // Check if titles are similar enough
-          if (key.startsWith('title:') && isSimilarTitle(pubTitle, scholarTitle)) {
-            // Update with Scholar data
-            publication.citations.scholar = pub.citations ? parseInt(pub.citations) : 0;
-            publication.source_urls.scholar = config.buildScholarUrl(pub.id);
-            publication.source_ids.scholar = pub.id;
-            
-            // Add year if missing
-            if (!publication.year && pub.year) {
-              publication.year = parseInt(pub.year);
-            }
-            
-            // Update authors if available and original is null
-            if (!publication.authors && pub.authors) {
-              publication.authors = pub.authors;
-            }
-            
-            found = true;
-            break;
-          }
-        }
-        
-        // If not found, add as new entry
-        if (!found) {
-          const key = `title:${scholarTitle}`;
-          publicationsMap.set(key, {
-            title: pub.title,
-            authors: pub.authors,
-            venue: pub.venue,
-            year: pub.year ? parseInt(pub.year) : null,
-            doi: null,
-            citations: {
-              scholar: pub.citations ? parseInt(pub.citations) : 0,
-              wos: null,
-              scopus: null,
-              semanticScholar: null
-            },
-            source_urls: {
-              orcid: null,
-              scholar: config.buildScholarUrl(pub.id),
-              wos: null,
-              scopus: null,
-              semanticScholar: null,
-              ora: null
-            },
-            source_ids: {
-              orcid: null,
-              scholar: pub.id,
-              wos: null,
-              scopus: null,
-              semanticScholar: null,
-              ora: null
-            },
-            metrics: {}
-          });
-        }
-      });
-    }
+    // Google Scholar is processed later (see below), after all DOI-bearing
+    // sources have populated the map, so its title-only matching can attach
+    // citations to canonical entries instead of creating duplicates.
 
     // Process ORA UNIURB publications (institutional repository)
     if (oraData && oraData.publications) {
@@ -606,6 +540,87 @@ async function collect() {
       });
     }
     
+    // Process Google Scholar publications (citation source only — matched by
+    // title against the now-populated map of canonical, mostly DOI-keyed entries).
+    if (scholarData && scholarData.publications) {
+      console.log(`Processing ${scholarData.publications.length} publications from Google Scholar`);
+      scholarData.publications.forEach(pub => {
+        // Normalize title for matching
+        const scholarTitle = pub.title.toLowerCase().replace(/[^\w\s]/g, '');
+
+        // Try to find a match in the map
+        let found = false;
+        for (const [, publication] of publicationsMap.entries()) {
+          const pubTitle = publication.title.toLowerCase().replace(/[^\w\s]/g, '');
+
+          // Check if titles are similar enough. Match against ALL existing
+          // entries (DOI-keyed included) — Scholar has no DOI, so title is the
+          // only join key. Restricting to title-keyed entries (the old bug)
+          // meant Scholar citations never reached DOI-keyed canonical papers
+          // and instead spawned duplicate entries.
+          if (isSimilarTitle(pubTitle, scholarTitle)) {
+            // A paper can appear more than once on Scholar (title variants,
+            // un-merged duplicates). Keep the highest citation count so a later,
+            // lower (or blank) entry can't clobber the real number.
+            const scholarCitations = pub.citations ? parseInt(pub.citations) : 0;
+            if (publication.citations.scholar === null || scholarCitations >= publication.citations.scholar) {
+              publication.citations.scholar = scholarCitations;
+              publication.source_urls.scholar = config.buildScholarUrl(pub.id);
+              publication.source_ids.scholar = pub.id;
+            }
+
+            // Add year if missing
+            if (!publication.year && pub.year) {
+              publication.year = parseInt(pub.year);
+            }
+
+            // Update authors if available and original is null
+            if (!publication.authors && pub.authors) {
+              publication.authors = pub.authors;
+            }
+
+            found = true;
+            break;
+          }
+        }
+
+        // If not found, add as new entry (a genuinely Scholar-only publication)
+        if (!found) {
+          const key = `title:${scholarTitle}`;
+          publicationsMap.set(key, {
+            title: pub.title,
+            authors: pub.authors,
+            venue: pub.venue,
+            year: pub.year ? parseInt(pub.year) : null,
+            doi: null,
+            citations: {
+              scholar: pub.citations ? parseInt(pub.citations) : 0,
+              wos: null,
+              scopus: null,
+              semanticScholar: null
+            },
+            source_urls: {
+              orcid: null,
+              scholar: config.buildScholarUrl(pub.id),
+              wos: null,
+              scopus: null,
+              semanticScholar: null,
+              ora: null
+            },
+            source_ids: {
+              orcid: null,
+              scholar: pub.id,
+              wos: null,
+              scopus: null,
+              semanticScholar: null,
+              ora: null
+            },
+            metrics: {}
+          });
+        }
+      });
+    }
+
     // Process Semantic Scholar publications using generic processor
     processPublicationSource(semanticScholarData, 'semanticScholar', publicationsMap, SOURCE_MAPPINGS.semanticScholar);
     
