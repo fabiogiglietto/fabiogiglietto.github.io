@@ -387,6 +387,7 @@ Weave the following into the narrative naturally, not as bullet lists. Summarize
 - CooRnet (it introduced the Coordinated Link Sharing Behavior method) and its discontinuation after CrowdTangle's shutdown; CooRTweet as the downstream independent package maintained by others.
 - Recent European role — WP4 Leader on vera.ai (concluded 2025) and Partner on PROMPT (concluded 2026) — without enumerating grant IDs.
 - Memberships in ICA, AoIR and ISA RC51 (where he has served on the board).
+- His role as a founding partner (socio fondatore) of Digit Srl, a benefit-corporation spin-off of the University of Urbino developing digital platforms for sustainability, civic participation, social innovation and scientific dissemination.
 - Current teaching: Generative AI and Media; Digital Social Network Analysis.
 
 SHARED PAPERS GUARDRAIL

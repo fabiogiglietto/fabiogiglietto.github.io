@@ -4,7 +4,7 @@ He is the founder and coordinator of the **Mapping Italian News Research Program
 
 On the European front, he served as **WP4 Leader** of the Horizon Europe project **vera.ai** (concluded October 2025), which developed AI-based tools for countering disinformation, and as Partner on **PROMPT** (European Commission, DG CNECT; concluded February 2026), dedicated to monitoring disinformation narratives in Europe. All externally funded MINE sub-projects have now concluded; the MINE programme itself remains active as the institutional umbrella for his ongoing research line, with no active external grant at present.
 
-He is a member of the International Communication Association (ICA), the Association of Internet Researchers (AoIR) and the Italian Association for Political Communication. He has participated in the board of Research Committee 51 on Sociocybernetics of the International Sociological Association.
+He is a member of the International Communication Association (ICA), the Association of Internet Researchers (AoIR) and the Italian Association for Political Communication. He has participated in the board of Research Committee 51 on Sociocybernetics of the International Sociological Association. He is a **founding partner (socio fondatore) of Digit Srl** (<https://digit.srl/>), a benefit-corporation spin-off of the University of Urbino Carlo Bo that develops digital platforms for sustainability, civic participation, social innovation and scientific dissemination.
 
 ### Competitive research projects (last 10 years)
 
