@@ -5,7 +5,7 @@
  */
 
 const { _testing } = require('../scripts/collectors/publications-aggregator');
-const { isSimilarTitle, calculateHIndex, normalizeDoi, mergeDuplicateDois } = _testing;
+const { isSimilarTitle, calculateHIndex, normalizeDoi, mergeDuplicateDois, isDataArtifact } = _testing;
 
 /**
  * Build a minimal publication record shaped like the aggregator's internal map
@@ -218,5 +218,31 @@ describe('mergeDuplicateDois', () => {
       ['b', makePub({ doi: '10.1/bbb' })]
     ]);
     expect(mergeDuplicateDois(map).size).toBe(2);
+  });
+});
+
+describe('isDataArtifact', () => {
+  test('flags entries typed data-set', () => {
+    expect(isDataArtifact(makePub({ type: 'data-set', doi: '10.7910/dvn/xnoarv/cx7khg' }))).toBe(true);
+  });
+
+  test('flags Figshare DOIs even when typed other', () => {
+    expect(isDataArtifact(makePub({ type: 'other', doi: '10.6084/M9.FIGSHARE.809555.V1' }))).toBe(true);
+  });
+
+  test('flags Figshare DOIs regardless of case', () => {
+    expect(isDataArtifact(makePub({ type: 'other', doi: '10.6084/m9.figshare.3385456' }))).toBe(true);
+  });
+
+  test('does not flag a journal article', () => {
+    expect(isDataArtifact(makePub({ type: 'journal-article', doi: '10.1111/jcom.12085' }))).toBe(false);
+  });
+
+  test('does not flag a Zenodo deposit (may be a report or software)', () => {
+    expect(isDataArtifact(makePub({ type: 'other', doi: '10.5281/zenodo.16269197' }))).toBe(false);
+  });
+
+  test('does not flag an entry without a DOI or dataset type', () => {
+    expect(isDataArtifact(makePub({ type: 'book-chapter', doi: null }))).toBe(false);
   });
 });

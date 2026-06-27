@@ -637,8 +637,12 @@ async function collect() {
     // collapsing distinct papers with similar titles.
     const mergedByDoi = mergeDuplicateDois(publicationsMap);
 
-    // Convert map to array and calculate aggregate metrics
-    const publications = Array.from(mergedByDoi.values()).map(pub => {
+    // Drop research-data artifacts (deposited datasets, R scripts, data files) —
+    // see isDataArtifact(). They are not publications and shouldn't appear in the
+    // list or count toward the metrics below.
+    const publications = Array.from(mergedByDoi.values())
+      .filter(pub => !isDataArtifact(pub))
+      .map(pub => {
       // Calculate best citation count
       const citationCounts = [
         pub.citations.scholar, 
@@ -703,6 +707,23 @@ function calculateHIndex(citations) {
   }
   
   return hIndex;
+}
+
+/**
+ * Decide whether an aggregated entry is a research-data artifact rather than a
+ * publication. ORCID surfaces deposited datasets, R scripts and data files (e.g.
+ * Harvard Dataverse "10.7910/dvn/*" components and Figshare filesets such as
+ * "itanes_data.tab", "5_sna.R", "Replication Data for: ...", "new fileset") as
+ * works. Most are typed `data-set`; a few Figshare deposits are mistyped `other`
+ * by ORCID, so we also treat any Figshare DOI as data (this author uses Figshare
+ * only for data/figures, never papers).
+ *
+ * @param {Object} pub - Aggregated publication entry
+ * @returns {boolean} True if the entry should be excluded from the publication list
+ */
+function isDataArtifact(pub) {
+  return pub.type === 'data-set' ||
+    (!!pub.doi && /^10\.6084\/m9\.figshare/i.test(pub.doi));
 }
 
 /**
@@ -828,6 +849,7 @@ module.exports = {
   // Export utilities for testing
   _testing: {
     isSimilarTitle,
+    isDataArtifact,
     normalizeDoi,
     mergeDuplicateDois,
     calculateHIndex,
