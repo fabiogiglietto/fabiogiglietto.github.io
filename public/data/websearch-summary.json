@@ -1,11 +1,12 @@
 {
-  "totalEntries": 177,
-  "lastUpdated": "2026-06-27T08:42:11.193Z",
+  "totalEntries": 178,
+  "lastUpdated": "2026-06-27T09:36:33.398Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-06-25T09:32:18.571Z"
+    "latest": "2026-06-27T09:36:33.357Z"
   },
   "byDate": {
+    "2026-06-27": 1,
     "2026-06-25": 1,
     "2026-06-24": 1,
     "2026-06-23": 1,
@@ -14,8 +15,7 @@
     "2026-06-19": 3,
     "2026-06-18": 1,
     "2026-06-17": 1,
-    "2026-06-16": 2,
-    "2026-06-15": 5
+    "2026-06-16": 2
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 51,
@@ -25,16 +25,23 @@
     "open.online": 5,
     "icahdq.org": 4,
     "Il Sole 24 ORE": 4,
+    "snurblog.org": 3,
     "ilrestodelcarlino.it": 3,
-    "snurblog.org": 2,
     "snurb.net": 2
   },
   "byRelevanceScore": {
-    "high": 154,
+    "high": 155,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Liveblog: ICA 2026: Recommending the State: How Social Media Algorithms Curate State-Created Content in China",
+      "url": "https://snurblog.org/blog/2026/06/08/liveblog-ica-2026-recommending-the-state-how-social-media-algorithms-curate-state-created-content-in-china/",
+      "source": "snurblog.org",
+      "relevanceScore": 0.95,
+      "collectedAt": "2026-06-27T09:36:33.357Z"
+    },
     {
       "title": "Panel – Meta Content Library Community Roundtable: Where to for Social Media Research? – International Conference on Social Media & Society",
       "url": "https://smsociety.net/2026-conference-programme/panel-meta-content-library-community-roundtable-where-to-for-social-media-research/",
@@ -61,13 +68,6 @@
       "url": "https://cs2nordics.org/",
       "source": "cs2nordics.org",
       "relevanceScore": 0.95,
-      "collectedAt": "2026-06-22T11:59:04.354Z"
-    },
-    {
-      "title": "CS2Nordics - Nordic Society for Computational Social Science",
-      "url": "https://nosocss.org/conference.html",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
       "collectedAt": "2026-06-22T11:59:04.354Z"
     }
   ]
