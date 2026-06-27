@@ -1048,5 +1048,15 @@
     "date": "2026-01-07",
     "confidence": "medium",
     "source": "url-path"
+  },
+  "https://cs2italy.it/": {
+    "date": "2026-01-01",
+    "confidence": "medium",
+    "source": "gemini-page-estimate"
+  },
+  "https://www.icahdq.org/page/ICA26ConferenceProgram": {
+    "date": "2024-11-01",
+    "confidence": "medium",
+    "source": "gemini-page-estimate"
   }
 }

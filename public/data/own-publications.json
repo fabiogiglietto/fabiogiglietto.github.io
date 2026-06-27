@@ -3,7 +3,7 @@
   "title": "Fabio Giglietto — own publications",
   "home_page_url": "https://fabiogiglietto.github.io/publications",
   "description": "Auto-generated feed of Fabio Giglietto's own publications, consumed downstream by research-radio and fg-zettelkasten.",
-  "_updated": "2026-06-26T10:26:47.812Z",
+  "_updated": "2026-06-27T08:44:33.389Z",
   "items": [
     {
       "id": "bibtex:Giglietto2026-79cedfa2",
@@ -87,29 +87,6 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2026-cae4a7c7",
-      "title": "Amplifying extremes: the interplay of social media and traditional media in shaping political polarization",
-      "date_published": "2026-01-01",
-      "authors": [
-        {
-          "name": "Fabio Giglietto"
-        }
-      ],
-      "url": "https://doi.org/10.4337/9781035325047.00023",
-      "content_text": "This chapter examines how social media platforms' content distribution systems shape political discourse, focusing on Facebook's algorithmic evolution and its impact on polarization. Through three analytical dimensions—tracing Facebook's transformation from simple hyperlink sharing to sophisticated algorithmic curation, synthesizing findings from the 2020 US Election studies, and presenting original analysis using the Facebook URL Shares Dataset—we reveal a paradoxical finding: while content sharing generally amplifies visibility, this effect diminishes significantly for ideologically intense content regardless of partisan direction. This \"intensity penalty\" stems from two mechanisms: extreme content's tendency to circulate within insular network clusters and potential algorithmic constraints on polarizing material. Our analysis challenges assumptions about social media uniformly amplifying extreme voices, suggesting instead that Facebook's ecosystem contains mechanisms—whether intentional or emergent—that limit such content's reach. These findings have critical implications for understanding platform governance, algorithmic accountability, and democratic discourse in digitally mediated public spheres.",
-      "_academic": {
-        "doi": "10.4337/9781035325047.00023",
-        "bibtex_key": "Giglietto2026-cae4a7c7",
-        "type": "book-chapter",
-        "venue": "Handbook of Social and Communication Networks",
-        "year": 2026,
-        "publisher": "Edward Elgar Publishing",
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
       "id": "bibtex:Giglietto2026-9b6a992d",
       "title": "Synthetic seduction: Evolving visual persuasion in coordinated online gambling promotion with generative {AI}",
       "date_published": "2026-01-01",
@@ -136,9 +113,32 @@
         "venue": "Countering Disinformation in the Era of Generative AI",
         "year": 2026,
         "publisher": "Springer Nature Switzerland",
-        "citation_count": 0,
+        "citation_count": 2,
         "open_access": true,
         "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2774611/2/Vera%20Ai%20Book%20Chapter%20Uniurb%20%28pre-print%20for%20sharing%29-compressed.pdf"
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2026-cae4a7c7",
+      "title": "Amplifying extremes: the interplay of social media and traditional media in shaping political polarization",
+      "date_published": "2026-01-01",
+      "authors": [
+        {
+          "name": "Fabio Giglietto"
+        }
+      ],
+      "url": "https://doi.org/10.4337/9781035325047.00023",
+      "content_text": "This chapter examines how social media platforms' content distribution systems shape political discourse, focusing on Facebook's algorithmic evolution and its impact on polarization. Through three analytical dimensions—tracing Facebook's transformation from simple hyperlink sharing to sophisticated algorithmic curation, synthesizing findings from the 2020 US Election studies, and presenting original analysis using the Facebook URL Shares Dataset—we reveal a paradoxical finding: while content sharing generally amplifies visibility, this effect diminishes significantly for ideologically intense content regardless of partisan direction. This \"intensity penalty\" stems from two mechanisms: extreme content's tendency to circulate within insular network clusters and potential algorithmic constraints on polarizing material. Our analysis challenges assumptions about social media uniformly amplifying extreme voices, suggesting instead that Facebook's ecosystem contains mechanisms—whether intentional or emergent—that limit such content's reach. These findings have critical implications for understanding platform governance, algorithmic accountability, and democratic discourse in digitally mediated public spheres.",
+      "_academic": {
+        "doi": "10.4337/9781035325047.00023",
+        "bibtex_key": "Giglietto2026-cae4a7c7",
+        "type": "book-chapter",
+        "venue": "Handbook of Social and Communication Networks",
+        "year": 2026,
+        "publisher": "Edward Elgar Publishing",
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
       }
     },
     {
@@ -159,40 +159,48 @@
         "venue": "Center for Open Science",
         "year": 2025,
         "publisher": "Center for Open Science",
-        "citation_count": 0,
+        "citation_count": 2,
         "open_access": true,
         "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2768231/1/fulltext_v1_2.pdf"
       }
     },
     {
-      "id": "bibtex:Unknown2025-ed60bc90",
+      "id": "bibtex:Giglietto2025-ed60bc90",
       "title": "The State of Social Media Research APIs &amp; Tools in the Digital Service Act Era",
       "date_published": "2025-07-21",
-      "authors": [],
+      "authors": [
+        {
+          "name": "M Terenzi F Giglietto"
+        }
+      ],
       "url": "https://doi.org/10.5281/zenodo.16269197",
       "content_text": "",
       "_academic": {
         "doi": "10.5281/zenodo.16269197",
-        "bibtex_key": "Unknown2025-ed60bc90",
+        "bibtex_key": "Giglietto2025-ed60bc90",
         "type": "report",
         "venue": "Zenodo",
         "year": 2025,
         "publisher": null,
-        "citation_count": 0,
+        "citation_count": 1,
         "open_access": true,
         "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2759111/1/PROMPT_whitepaper_The%20State%20of%20Social%20Media%20Research%20APIs%20%26amp%3b%20Tools%20in%20the%20Digital%20Service%20Act%20Era.pdf"
       }
     },
     {
-      "id": "bibtex:Unknown2025-4737f561",
+      "id": "bibtex:Giglietto2025-4737f561",
       "title": "Manipolazione dei media ed influenza digitale. Sfide, tecnologie e risposte",
       "date_published": "2025-01-01",
-      "authors": [],
+      "authors": [
+        {
+          "name": "N Righetti, T Graham F Giglietto"
+        }
+      ],
       "url": "https://ora.uniurb.it/handle/11576/2766471",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Unknown2025-4737f561",
+        "bibtex_key": "Giglietto2025-4737f561",
         "type": "book-chapter",
         "venue": "",
         "year": 2025,
@@ -203,15 +211,19 @@
       }
     },
     {
-      "id": "bibtex:Unknown2025-606bd121",
+      "id": "bibtex:Giglietto2025-606bd121",
       "title": "Viralità",
       "date_published": "2025-01-01",
-      "authors": [],
+      "authors": [
+        {
+          "name": "A Valeriani F Giglietto"
+        }
+      ],
       "url": "https://ora.uniurb.it/handle/11576/2765591",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Unknown2025-606bd121",
+        "bibtex_key": "Giglietto2025-606bd121",
         "type": "book-chapter",
         "venue": "",
         "year": 2025,
@@ -219,29 +231,6 @@
         "citation_count": 0,
         "open_access": false,
         "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Giglietto2025-1e9a0917",
-      "title": "\"A Pretty Blunt Approach\": Meta's Political Content Reduction Policy and Italian Parliamentarians' Facebook Visibility",
-      "date_published": "2025-01-01",
-      "authors": [
-        {
-          "name": "Fabio Giglietto"
-        }
-      ],
-      "url": "https://doi.org/10.31235/osf.io/8dqag_v1",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.31235/osf.io/8dqag_v1",
-        "bibtex_key": "Giglietto2025-1e9a0917",
-        "type": "posted-content",
-        "venue": "Center for Open Science",
-        "year": 2025,
-        "publisher": "Center for Open Science",
-        "citation_count": 0,
-        "open_access": true,
-        "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2768231/1/fulltext_v1_2.pdf"
       }
     },
     {
@@ -265,7 +254,7 @@
         "venue": "Sociologica",
         "year": 2024,
         "publisher": null,
-        "citation_count": 2,
+        "citation_count": 12,
         "open_access": true,
         "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2746851/2/19524-marino.pdf"
       }
@@ -288,32 +277,9 @@
         "venue": "Center for Open Science",
         "year": 2024,
         "publisher": "Center for Open Science",
-        "citation_count": 0,
+        "citation_count": 3,
         "open_access": true,
         "open_access_pdf_url": "https://osf.io/2j9ed/download"
-      }
-    },
-    {
-      "id": "bibtex:Anwar2024-fe37ec41",
-      "title": "Facebook reactions in the context of politics and social issues: a systematic literature review",
-      "date_published": "2024-01-01",
-      "authors": [
-        {
-          "name": "F Giglietto S Anwar"
-        }
-      ],
-      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Anwar2024-fe37ec41",
-        "type": null,
-        "venue": "Frontiers in Sociology 9, 1379265, 2024",
-        "year": 2024,
-        "publisher": null,
-        "citation_count": 23,
-        "open_access": false,
-        "open_access_pdf_url": null
       }
     },
     {
@@ -337,26 +303,30 @@
         "venue": "Frontiers in Sociology",
         "year": 2024,
         "publisher": "Frontiers Media SA",
-        "citation_count": 7,
+        "citation_count": 23,
         "open_access": true,
         "open_access_pdf_url": "https://www.frontiersin.org/articles/10.3389/fsoc.2024.1379265/pdf?isPublishedV2=False"
       }
     },
     {
-      "id": "bibtex:Unknown2024-1c12fc68",
+      "id": "bibtex:Giglietto2024-1c12fc68",
       "title": "Analisi Computazionale del Parallelismo Politico in Italia: Il Caso delle Elezioni 2022",
       "date_published": "2024-01-01",
-      "authors": [],
+      "authors": [
+        {
+          "name": "N Righetti, A Stanziano F Giglietto"
+        }
+      ],
       "url": "https://ora.uniurb.it/handle/11576/2737471",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Unknown2024-1c12fc68",
+        "bibtex_key": "Giglietto2024-1c12fc68",
         "type": "book-chapter",
         "venue": "",
         "year": 2024,
         "publisher": null,
-        "citation_count": 0,
+        "citation_count": 2,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -388,7 +358,7 @@
         "venue": "Social Media + Society",
         "year": 2023,
         "publisher": "SAGE Publications",
-        "citation_count": 8,
+        "citation_count": 20,
         "open_access": true,
         "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2721991/1/giglietto-et-al-2023-a-workflow-to-detect-monitor-and-update-lists-of-coordinated-social-media-accounts-across-time-the.pdf"
       }
@@ -446,7 +416,7 @@
         "venue": "Italy at the Polls 2022",
         "year": 2023,
         "publisher": "Springer Nature Switzerland",
-        "citation_count": 2,
+        "citation_count": 3,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -475,9 +445,32 @@
         "venue": "Journal of Quantitative Description: Digital Media",
         "year": 2023,
         "publisher": "Journal of Quantitative Description: Digital Media",
-        "citation_count": 0,
+        "citation_count": 3,
         "open_access": true,
         "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2726579/2/Manuscript%20%281%29.pdf"
+      }
+    },
+    {
+      "id": "bibtex:Marino2023-9137f448",
+      "title": "The power of Alternative Influence Networks (AIN) for spreading Covid-19 problematic information on Facebook during a year of pandemic",
+      "date_published": "2023-01-01",
+      "authors": [
+        {
+          "name": "F Giglietto G Marino"
+        }
+      ],
+      "url": "https://doi.org/10.1445/106772",
+      "content_text": "Public figures and influencers seem to play an increasingly important role in the contemporary media ecosystem. Their statements circulate quickly, seemingly moving from broadcast to digital media and from the titles of news stories to memes. This paper studies the role played by these dynamics among the Alternative Influence Network (AIN) during the Covid-19 pandemic crisis in Italy by leveraging a dataset of 175,228 Facebook posts created over one year by a list of covid-skeptic accounts. Findings contribute to shed some light on the role played by the AIN on news circulation in the contemporary hybrid media ecosystem and inter-media agenda setting. What is more, findings suggest that hybridity also takes place through remediation, where media production includes how these claims are consumed and circulated.",
+      "_academic": {
+        "doi": "10.1445/106772",
+        "bibtex_key": "Marino2023-9137f448",
+        "type": "journal-article",
+        "venue": "",
+        "year": 2023,
+        "publisher": null,
+        "citation_count": 2,
+        "open_access": true,
+        "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2714451/5/PI_fulltext.pdf"
       }
     },
     {
@@ -498,21 +491,25 @@
         "venue": "",
         "year": 2023,
         "publisher": null,
-        "citation_count": 0,
+        "citation_count": 1,
         "open_access": false,
         "open_access_pdf_url": null
       }
     },
     {
-      "id": "bibtex:Unknown2023-1d2adec8",
+      "id": "bibtex:ARTIERI2023-1d2adec8",
       "title": "I cittadini nella campagna balneare su Instagram e Facebook",
       "date_published": "2023-01-01",
-      "authors": [],
+      "authors": [
+        {
+          "name": "F Giglietto, A Stanziano G BOCCIA ARTIERI"
+        }
+      ],
       "url": "https://ora.uniurb.it/handle/11576/2716411",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Unknown2023-1d2adec8",
+        "bibtex_key": "ARTIERI2023-1d2adec8",
         "type": "book-chapter",
         "venue": "",
         "year": 2023,
@@ -523,15 +520,19 @@
       }
     },
     {
-      "id": "bibtex:Unknown2023-165daba5",
+      "id": "bibtex:Giglietto2023-165daba5",
       "title": "PARTISAN ATTENTION AND NEWS STORIES TOPICS DURING THE 2022 ITALIAN ELECTION",
       "date_published": "2023-01-01",
-      "authors": [],
+      "authors": [
+        {
+          "name": "N Righetti, A Stanziano F Giglietto"
+        }
+      ],
       "url": "https://ora.uniurb.it/handle/11576/2733994",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Unknown2023-165daba5",
+        "bibtex_key": "Giglietto2023-165daba5",
         "type": "conference-paper",
         "venue": "",
         "year": 2023,
@@ -561,22 +562,118 @@
       }
     },
     {
-      "id": "bibtex:Unknown2023-9137f448",
-      "title": "The power of Alternative Influence Networks (AIN) for spreading Covid-19 problematic information on Facebook during a year of pandemic",
+      "id": "bibtex:AlmaguerKalixto2023-8e715781",
+      "title": "Complexity in the Rise of the Far Right and Populist Movements in Europe (II)",
       "date_published": "2023-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.1445/106772",
-      "content_text": "Public figures and influencers seem to play an increasingly important role in the contemporary media ecosystem. Their statements circulate quickly, seemingly moving from broadcast to digital media and from the titles of news stories to memes. This paper studies the role played by these dynamics among the Alternative Influence Network (AIN) during the Covid-19 pandemic crisis in Italy by leveraging a dataset of 175,228 Facebook posts created over one year by a list of covid-skeptic accounts. Findings contribute to shed some light on the role played by the AIN on news circulation in the contemporary hybrid media ecosystem and inter-media agenda setting. What is more, findings suggest that hybridity also takes place through remediation, where media production includes how these claims are consumed and circulated.",
+      "authors": [
+        {
+          "name": "M Aktas, JC Barron-Pastor, F Giglietto PE Almaguer-Kalixto"
+        }
+      ],
+      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:qwy9JoKyICEC",
+      "content_text": "",
       "_academic": {
-        "doi": "10.1445/106772",
-        "bibtex_key": "Unknown2023-9137f448",
-        "type": "journal-article",
+        "doi": null,
+        "bibtex_key": "AlmaguerKalixto2023-8e715781",
+        "type": null,
+        "venue": "XX ISA World Congress of Sociology (June 25-July 1, 2023), 2023",
+        "year": 2023,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Mitchell2023-84ca24a3",
+      "title": "Understanding Political Crises in the 2020s-a Sociocybernetics Approach",
+      "date_published": "2023-01-01",
+      "authors": [
+        {
+          "name": "F Giglietto A Mitchell"
+        }
+      ],
+      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:g5Ck-dwhA_QC",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Mitchell2023-84ca24a3",
+        "type": null,
+        "venue": "XX ISA World Congress of Sociology (June 25-July 1, 2023), 2023",
+        "year": 2023,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2023-d8664eb7",
+      "title": "Unintentional Exposure to Political News on Facebook’s Religious Pages during the 2022 Italian Election Campaign",
+      "date_published": "2023-01-01",
+      "authors": [
+        {
+          "name": "N Righetti, R Marchetti, R Mincigrucci F Giglietto"
+        }
+      ],
+      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:Hck25ST_3aIC",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Giglietto2023-d8664eb7",
+        "type": null,
+        "venue": "XX ISA World Congress of Sociology (June 25-July 1, 2023), 2023",
+        "year": 2023,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2023-466d8527",
+      "title": "Mapping Coordinated Networks That Circulate Problematic Information on the war in Ukraine",
+      "date_published": "2023-01-01",
+      "authors": [
+        {
+          "name": "G Marino, R Mincigrucci, E Ghebaur, Y Arroud, A Diallo, ... F Giglietto"
+        }
+      ],
+      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:wE-fMHVdjMkC",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Giglietto2023-466d8527",
+        "type": null,
         "venue": "",
         "year": 2023,
         "publisher": null,
         "citation_count": 0,
-        "open_access": true,
-        "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2714451/5/PI_fulltext.pdf"
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2023-d2aa10c5",
+      "title": "J. Donovan, E. Dreyfuss e B. Friedberg. Meme Wars: The Untold Story of the Online Battles Upending Democracy in America",
+      "date_published": "2023-01-01",
+      "authors": [
+        {
+          "name": "F Giglietto"
+        }
+      ],
+      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:aIdbFUkbNIkC",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Giglietto2023-d2aa10c5",
+        "type": null,
+        "venue": "Comunicazione politica 24 (2), 383-385, 2023",
+        "year": 2023,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
       }
     },
     {
@@ -603,7 +700,7 @@
         "venue": "Center for Open Science",
         "year": 2022,
         "publisher": "Center for Open Science",
-        "citation_count": 0,
+        "citation_count": 2,
         "open_access": true,
         "open_access_pdf_url": "https://osf.io/2p7ws/download"
       }
@@ -641,30 +738,30 @@
         "venue": "Center for Open Science",
         "year": 2022,
         "publisher": "Center for Open Science",
-        "citation_count": 0,
+        "citation_count": 8,
         "open_access": true,
         "open_access_pdf_url": "https://osf.io/6umqs/download"
       }
     },
     {
-      "id": "bibtex:Giglietto2022-d9970489",
-      "title": "Coordinated inauthentic behavior",
+      "id": "bibtex:Righetti2022-c27c704f",
+      "title": "POLITICAL ADVERTISEMENT AND COORDINATED BEHAVIOR ON SOCIAL MEDIA IN THE LEAD-UP TO THE 2021 GERMAN FEDERAL ELECTIONS",
       "date_published": "2022-01-01",
       "authors": [
         {
-          "name": "Fabio Giglietto"
+          "name": "F Giglietto, AE Kakavand, A Kulichkina, G Marino, M Terenzi N Righetti"
         }
       ],
-      "url": "https://doi.org/10.4337/9781800374263.coordinated.inauthentic.behavior",
-      "content_text": "",
+      "url": "https://ora.uniurb.it/handle/11576/2733992",
+      "content_text": "In this study, we analyze organic and paid social media communication from political candidates, parties, and other social media users, in the lead-up to the 2021 German federal election. We document the investment in Facebook advertising of the main parties and their targeting strategies, the engagement they reached organically, and the activity of coordinated networks of Facebook pages and groups dealing with the election.\r\n\r\nAs in 2019 (Hegelich & Serrano, 2019), the AfD reached an exceptionally high engagement on Facebook, but Die Grünen, instead of CDU, led the standings of the Facebook advertisement investment in 2021. Nonetheless, they were both outrun in the overall number of ad impressions by the FDP, who strategically spent less on a higher number of advertisements.\r\nConsidering the area of microtargeting, our findings show that the content of some advertisements was exclusively targeted to women or young generations. They, however, represented just a modest part of the total number of advertisements run by parties and candidates.\r\nWe also found large coordinated networks on Facebook (Giglietto, Righetti, Rossi, & Marino, 2020) spreading anti-establishment narratives, as well as anti-lockdown and anti-COVID19 policies messages. In these networks, harsh comments against opponents and a wide range of sources that shared disinformation (NewsGuard, 2021) during the elections were common.\r\nThe analyses herein conducted quickly ran into limitations in data access. In particular, the lack of Facebook data on the activity of individual users prevented exploring the possible use of bots to quickly cross-post content in public groups and inflate engagement metrics. The lack of data on Facebook comments prevented the analysis of coordi- nated strategies aimed at staying under the radar of fact-checkers and platforms censoring. The lack of fine-grained data on advertising also prevented us from investigating microtargeting strategies besides general cases related to gender and age.",
       "_academic": {
-        "doi": "10.4337/9781800374263.coordinated.inauthentic.behavior",
-        "bibtex_key": "Giglietto2022-d9970489",
-        "type": "encyclopedia-entry",
-        "venue": "Elgar Encyclopedia of Technology and Politics",
+        "doi": null,
+        "bibtex_key": "Righetti2022-c27c704f",
+        "type": "other",
+        "venue": "",
         "year": 2022,
-        "publisher": "Edward Elgar Publishing",
-        "citation_count": 1,
+        "publisher": null,
+        "citation_count": 19,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -702,177 +799,53 @@
         "venue": "SSRN Electronic Journal",
         "year": 2022,
         "publisher": "Elsevier BV",
-        "citation_count": 0,
+        "citation_count": 4,
         "open_access": false,
         "open_access_pdf_url": null
       }
     },
     {
-      "id": "bibtex:Unknown2022-0edb1d05",
-      "title": "MAPPING NEFARIOUS SOCIAL MEDIA ACTORS TO SPEED-UP COVID-19 FACT-CHECKING - SINTESI IN ITALIANO",
+      "id": "bibtex:Giglietto2022-d9970489",
+      "title": "Coordinated inauthentic behavior",
       "date_published": "2022-01-01",
-      "authors": [],
-      "url": "https://ora.uniurb.it/handle/11576/2693790",
+      "authors": [
+        {
+          "name": "Fabio Giglietto"
+        }
+      ],
+      "url": "https://doi.org/10.4337/9781800374263.coordinated.inauthentic.behavior",
       "content_text": "",
       "_academic": {
-        "doi": null,
-        "bibtex_key": "Unknown2022-0edb1d05",
-        "type": "other",
-        "venue": "",
+        "doi": "10.4337/9781800374263.coordinated.inauthentic.behavior",
+        "bibtex_key": "Giglietto2022-d9970489",
+        "type": "encyclopedia-entry",
+        "venue": "Elgar Encyclopedia of Technology and Politics",
         "year": 2022,
-        "publisher": null,
-        "citation_count": 0,
+        "publisher": "Edward Elgar Publishing",
+        "citation_count": 3,
         "open_access": false,
         "open_access_pdf_url": null
       }
     },
     {
-      "id": "bibtex:Unknown2022-10cb5d70",
-      "title": "Media, Users And Health Online: The Propagation Dynamics Of Digital Information On Facebook And The Role Of The Online Gatekeeper Google News Italia",
-      "date_published": "2022-01-01",
-      "authors": [],
-      "url": "https://ora.uniurb.it/handle/11576/2698369",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Unknown2022-10cb5d70",
-        "type": "conference-paper",
-        "venue": "",
-        "year": 2022,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2022-c27c704f",
-      "title": "POLITICAL ADVERTISEMENT AND COORDINATED BEHAVIOR ON SOCIAL MEDIA IN THE LEAD-UP TO THE 2021 GERMAN FEDERAL ELECTIONS",
-      "date_published": "2022-01-01",
-      "authors": [],
-      "url": "https://ora.uniurb.it/handle/11576/2733992",
-      "content_text": "In this study, we analyze organic and paid social media communication from political candidates, parties, and other social media users, in the lead-up to the 2021 German federal election. We document the investment in Facebook advertising of the main parties and their targeting strategies, the engagement they reached organically, and the activity of coordinated networks of Facebook pages and groups dealing with the election.\r\n\r\nAs in 2019 (Hegelich & Serrano, 2019), the AfD reached an exceptionally high engagement on Facebook, but Die Grünen, instead of CDU, led the standings of the Facebook advertisement investment in 2021. Nonetheless, they were both outrun in the overall number of ad impressions by the FDP, who strategically spent less on a higher number of advertisements.\r\nConsidering the area of microtargeting, our findings show that the content of some advertisements was exclusively targeted to women or young generations. They, however, represented just a modest part of the total number of advertisements run by parties and candidates.\r\nWe also found large coordinated networks on Facebook (Giglietto, Righetti, Rossi, & Marino, 2020) spreading anti-establishment narratives, as well as anti-lockdown and anti-COVID19 policies messages. In these networks, harsh comments against opponents and a wide range of sources that shared disinformation (NewsGuard, 2021) during the elections were common.\r\nThe analyses herein conducted quickly ran into limitations in data access. In particular, the lack of Facebook data on the activity of individual users prevented exploring the possible use of bots to quickly cross-post content in public groups and inflate engagement metrics. The lack of data on Facebook comments prevented the analysis of coordi- nated strategies aimed at staying under the radar of fact-checkers and platforms censoring. The lack of fine-grained data on advertising also prevented us from investigating microtargeting strategies besides general cases related to gender and age.",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Unknown2022-c27c704f",
-        "type": "other",
-        "venue": "",
-        "year": 2022,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2022-74ec832f",
-      "title": "POLITICAL ADVERTISEMENT ON FACEBOOK IN THE LEAD-UP TO THE 2021 GERMAN FEDERAL ELECTIONS",
-      "date_published": "2022-01-01",
-      "authors": [],
-      "url": "https://ora.uniurb.it/handle/11576/2735336",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Unknown2022-74ec832f",
-        "type": "conference-paper",
-        "venue": "",
-        "year": 2022,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2022-f8b364cd",
+      "id": "bibtex:Righetti2022-f8b364cd",
       "title": "POLITISCHE WERBUNG UND KOORDINIERTES VERHALTEN IN SOZIALEN MEDIEN IM VORFELD DER BUNDESTAGSWAHL 2021",
       "date_published": "2022-01-01",
-      "authors": [],
+      "authors": [
+        {
+          "name": "G Fabio, KA Esther, K Aytalina, M Giada, T Massimo N Righetti"
+        }
+      ],
       "url": "https://ora.uniurb.it/handle/11576/2733993",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Unknown2022-f8b364cd",
+        "bibtex_key": "Righetti2022-f8b364cd",
         "type": "other",
         "venue": "",
         "year": 2022,
         "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:F2022-98491d5c",
-      "title": "Social TV and second screen",
-      "date_published": "2022-01-01",
-      "authors": [
-        {
-          "name": "Giglietto F."
-        }
-      ],
-      "url": "https://doi.org/10.4337/9781800374263.social.tv.second",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.4337/9781800374263.social.tv.second",
-        "bibtex_key": "F2022-98491d5c",
-        "type": "encyclopedia-entry",
-        "venue": "",
-        "year": 2022,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Marino2022-d4cd08f9",
-      "title": "Using Facebook’s Advertising Platform for Recruiting Online Survey Respondents",
-      "date_published": "2022-01-01",
-      "authors": [
-        {
-          "name": "Giada Marino"
-        },
-        {
-          "name": "Fabio Giglietto"
-        },
-        {
-          "name": "Laura Iannelli"
-        }
-      ],
-      "url": "https://doi.org/10.4135/9781529601886",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.4135/9781529601886",
-        "bibtex_key": "Marino2022-d4cd08f9",
-        "type": "book-chapter",
-        "venue": "SAGE Publications, Ltd.",
-        "year": 2022,
-        "publisher": "SAGE Publications, Ltd.",
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Giglietto2022-98491d5c",
-      "title": "Social TV and second screen",
-      "date_published": "2022-01-01",
-      "authors": [
-        {
-          "name": "Fabio Giglietto"
-        }
-      ],
-      "url": "https://doi.org/10.4337/9781800374263.social.tv.second",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.4337/9781800374263.social.tv.second",
-        "bibtex_key": "Giglietto2022-98491d5c",
-        "type": "book-chapter",
-        "venue": "Elgar Encyclopedia of Technology and Politics",
-        "year": 2022,
-        "publisher": "Edward Elgar Publishing",
-        "citation_count": 0,
+        "citation_count": 2,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -901,6 +874,123 @@
         "venue": "SSRN Electronic Journal",
         "year": 2022,
         "publisher": "Elsevier BV",
+        "citation_count": 2,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Marino2022-d4cd08f9",
+      "title": "Using Facebook’s Advertising Platform for Recruiting Online Survey Respondents",
+      "date_published": "2022-01-01",
+      "authors": [
+        {
+          "name": "Giada Marino"
+        },
+        {
+          "name": "Fabio Giglietto"
+        },
+        {
+          "name": "Laura Iannelli"
+        }
+      ],
+      "url": "https://doi.org/10.4135/9781529601886",
+      "content_text": "",
+      "_academic": {
+        "doi": "10.4135/9781529601886",
+        "bibtex_key": "Marino2022-d4cd08f9",
+        "type": "book-chapter",
+        "venue": "SAGE Publications, Ltd.",
+        "year": 2022,
+        "publisher": "SAGE Publications, Ltd.",
+        "citation_count": 1,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Unknown2022-0edb1d05",
+      "title": "MAPPING NEFARIOUS SOCIAL MEDIA ACTORS TO SPEED-UP COVID-19 FACT-CHECKING - SINTESI IN ITALIANO",
+      "date_published": "2022-01-01",
+      "authors": [],
+      "url": "https://ora.uniurb.it/handle/11576/2693790",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Unknown2022-0edb1d05",
+        "type": "other",
+        "venue": "",
+        "year": 2022,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Ducci2022-10cb5d70",
+      "title": "Media, Users And Health Online: The Propagation Dynamics Of Digital Information On Facebook And The Role Of The Online Gatekeeper Google News Italia",
+      "date_published": "2022-01-01",
+      "authors": [
+        {
+          "name": "GB Artieri, M Corsi, F Giglietto, F Manattini G Ducci"
+        }
+      ],
+      "url": "https://ora.uniurb.it/handle/11576/2698369",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Ducci2022-10cb5d70",
+        "type": "conference-paper",
+        "venue": "",
+        "year": 2022,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Righetti2022-74ec832f",
+      "title": "POLITICAL ADVERTISEMENT ON FACEBOOK IN THE LEAD-UP TO THE 2021 GERMAN FEDERAL ELECTIONS",
+      "date_published": "2022-01-01",
+      "authors": [
+        {
+          "name": "F Giglietto, A Kavakand, A Kulichkina, G Marino, M Terenzi N Righetti"
+        }
+      ],
+      "url": "https://ora.uniurb.it/handle/11576/2735336",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Righetti2022-74ec832f",
+        "type": "conference-paper",
+        "venue": "",
+        "year": 2022,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:F2022-98491d5c",
+      "title": "Social TV and second screen",
+      "date_published": "2022-01-01",
+      "authors": [
+        {
+          "name": "Giglietto F."
+        }
+      ],
+      "url": "https://doi.org/10.4337/9781800374263.social.tv.second",
+      "content_text": "",
+      "_academic": {
+        "doi": "10.4337/9781800374263.social.tv.second",
+        "bibtex_key": "F2022-98491d5c",
+        "type": "encyclopedia-entry",
+        "venue": "Elgar Encyclopedia of Technology and Politics",
+        "year": 2022,
+        "publisher": "Edward Elgar Publishing",
         "citation_count": 0,
         "open_access": false,
         "open_access_pdf_url": null
@@ -942,6 +1032,52 @@
       }
     },
     {
+      "id": "bibtex:Marino2022-72f53276",
+      "title": "Sage Research Methods: Doing Research Online",
+      "date_published": "2022-01-01",
+      "authors": [
+        {
+          "name": "F Giglietto, L Iannelli G Marino"
+        }
+      ],
+      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:AYInfyleIOsC",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Marino2022-72f53276",
+        "type": null,
+        "venue": "",
+        "year": 2022,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Ducci2021-fd53f96e",
+      "title": "Informazione e salute negli ambienti digitali, tra agenda setting e online gatekeeping.Una ricerca su Google News Italia e utenti di Facebook",
+      "date_published": "2021-01-01",
+      "authors": [
+        {
+          "name": "GB Artieri, M Corsi, F Giglietto, F Manattini G Ducci"
+        }
+      ],
+      "url": "https://doi.org/10.1445/101581",
+      "content_text": "",
+      "_academic": {
+        "doi": "10.1445/101581",
+        "bibtex_key": "Ducci2021-fd53f96e",
+        "type": "journal-article",
+        "venue": "",
+        "year": 2021,
+        "publisher": null,
+        "citation_count": 6,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
       "id": "bibtex:Gemini2021-b1b8eff6",
       "title": "Ciarlatani. Post-verità, contropubblici online e nuove articolazioni della fiducia nel sistema della medicina",
       "date_published": "2021-01-01",
@@ -974,7 +1110,7 @@
         "venue": "SALUTE E SOCIETÀ",
         "year": 2021,
         "publisher": "Franco Angeli",
-        "citation_count": 3,
+        "citation_count": 4,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -1009,45 +1145,30 @@
         "venue": "SSRN Electronic Journal",
         "year": 2021,
         "publisher": "Elsevier BV",
-        "citation_count": 0,
+        "citation_count": 4,
         "open_access": false,
         "open_access_pdf_url": null
       }
     },
     {
-      "id": "bibtex:Unknown2021-84ad96d8",
+      "id": "bibtex:Marino2021-84ad96d8",
       "title": "Economia, immigrazione, corruzione ed Europa: performance e circolazione su Facebook delle notizie sulle elezioni europee 2019",
       "date_published": "2021-01-01",
-      "authors": [],
+      "authors": [
+        {
+          "name": "F Giglietto G Marino"
+        }
+      ],
       "url": "https://ora.uniurb.it/handle/11576/2689497",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Unknown2021-84ad96d8",
+        "bibtex_key": "Marino2021-84ad96d8",
         "type": "book-chapter",
         "venue": "",
         "year": 2021,
         "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2021-fd53f96e",
-      "title": "Informazione e salute negli ambienti digitali, tra agenda setting e online gatekeeping.Una ricerca su Google News Italia e utenti di Facebook",
-      "date_published": "2021-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.1445/101581",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.1445/101581",
-        "bibtex_key": "Unknown2021-fd53f96e",
-        "type": "journal-article",
-        "venue": "",
-        "year": 2021,
-        "publisher": null,
-        "citation_count": 0,
+        "citation_count": 2,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -1088,6 +1209,29 @@
       }
     },
     {
+      "id": "bibtex:Giglietto2021-9c373777",
+      "title": "Nathaniel Persily e Joshua A. Tucker (a cura di). Social Media and Democracy. The State of the Field, Prospects for Reform",
+      "date_published": "2021-01-01",
+      "authors": [
+        {
+          "name": "F Giglietto"
+        }
+      ],
+      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:kF1pexMAQbMC",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Giglietto2021-9c373777",
+        "type": null,
+        "venue": "Comunicazione politica 22 (1), 149-151, 2021",
+        "year": 2021,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
       "id": "bibtex:Giglietto2020-9d8acdd7",
       "title": "It takes a village to manipulate the media: coordinated link sharing behavior during 2018 and 2019 Italian elections",
       "date_published": "2020-05-11",
@@ -1114,78 +1258,9 @@
         "venue": "Information, Communication &amp; Society",
         "year": 2020,
         "publisher": "Informa UK Limited",
-        "citation_count": 116,
+        "citation_count": 229,
         "open_access": true,
         "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2674874/10/AAM_with_cover.pdf"
-      }
-    },
-    {
-      "id": "bibtex:Giglietto2020-f31f05d0",
-      "title": "It takes a village to manipulate the media: coordinated link sharing behavior during 2018 and 2019 Italian elections",
-      "date_published": "2020-01-01",
-      "authors": [
-        {
-          "name": "N Righetti, L Rossi, G Marino F Giglietto"
-        }
-      ],
-      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Giglietto2020-f31f05d0",
-        "type": null,
-        "venue": "Information, Communication & Society 23 (6), 867-891, 2020",
-        "year": 2020,
-        "publisher": null,
-        "citation_count": 229,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Iannelli2020-d79c3c4e",
-      "title": "Facebook digital traces for survey research: Assessing the efficiency and effectiveness of a Facebook Ad–based procedure for recruiting online survey respondents in niche and …",
-      "date_published": "2020-01-01",
-      "authors": [
-        {
-          "name": "F Giglietto, L Rossi, E Zurovac L Iannelli"
-        }
-      ],
-      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Iannelli2020-d79c3c4e",
-        "type": null,
-        "venue": "Social Science Computer Review 38 (4), 462-476, 2020",
-        "year": 2020,
-        "publisher": null,
-        "citation_count": 87,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Giglietto2020-297ddb35",
-      "title": "Coordinated link sharing behavior as a signal to surface sources of problematic information on Facebook",
-      "date_published": "2020-01-01",
-      "authors": [
-        {
-          "name": "N Righetti, L Rossi, G Marino F Giglietto"
-        }
-      ],
-      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Giglietto2020-297ddb35",
-        "type": null,
-        "venue": "International conference on social media and society, 85-91, 2020",
-        "year": 2020,
-        "publisher": null,
-        "citation_count": 60,
-        "open_access": false,
-        "open_access_pdf_url": null
       }
     },
     {
@@ -1215,7 +1290,30 @@
         "venue": "International Conference on Social Media and Society",
         "year": 2020,
         "publisher": "ACM",
-        "citation_count": 26,
+        "citation_count": 60,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2020-d7a864e4",
+      "title": "CooRnet. Detect coordinated link sharing behavior on social media",
+      "date_published": "2020-01-01",
+      "authors": [
+        {
+          "name": "N Righetti, L Rossi F Giglietto"
+        }
+      ],
+      "url": "https://ora.uniurb.it/handle/11576/2675493",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Giglietto2020-d7a864e4",
+        "type": "other",
+        "venue": "",
+        "year": 2020,
+        "publisher": null,
+        "citation_count": 15,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -1250,9 +1348,32 @@
         "venue": "SSRN Electronic Journal",
         "year": 2020,
         "publisher": "Elsevier BV",
-        "citation_count": 0,
+        "citation_count": 6,
         "open_access": false,
         "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:F2020-6278a4aa",
+      "title": "Three Consequences of Big Data on the Practices and Scholarships of Political Communication",
+      "date_published": "2020-01-01",
+      "authors": [
+        {
+          "name": "Giglietto F."
+        }
+      ],
+      "url": "https://doi.org/10.3270/96423",
+      "content_text": "",
+      "_academic": {
+        "doi": "10.3270/96423",
+        "bibtex_key": "F2020-6278a4aa",
+        "type": "journal-article",
+        "venue": "",
+        "year": 2020,
+        "publisher": null,
+        "citation_count": 2,
+        "open_access": true,
+        "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2676145/4/compol_filltext.pdf"
       }
     },
     {
@@ -1285,40 +1406,25 @@
         "venue": "SSRN Electronic Journal",
         "year": 2020,
         "publisher": "Elsevier BV",
-        "citation_count": 0,
+        "citation_count": 1,
         "open_access": false,
         "open_access_pdf_url": null
       }
     },
     {
-      "id": "bibtex:Unknown2020-d7a864e4",
-      "title": "CooRnet. Detect coordinated link sharing behavior on social media",
-      "date_published": "2020-01-01",
-      "authors": [],
-      "url": "https://ora.uniurb.it/handle/11576/2675493",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Unknown2020-d7a864e4",
-        "type": "other",
-        "venue": "",
-        "year": 2020,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2020-15103eea",
+      "id": "bibtex:Giannini2020-15103eea",
       "title": "La obsolescencia programada como asunto controvertido. Un análisis del debate público online en torno a la salida de los dispositivos Apple",
       "date_published": "2020-01-01",
-      "authors": [],
+      "authors": [
+        {
+          "name": "R Bartoletti, F Giglietto L Giannini"
+        }
+      ],
       "url": "https://ora.uniurb.it/handle/11576/2678982",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Unknown2020-15103eea",
+        "bibtex_key": "Giannini2020-15103eea",
         "type": "book-chapter",
         "venue": "",
         "year": 2020,
@@ -1326,29 +1432,6 @@
         "citation_count": 0,
         "open_access": false,
         "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:F2020-6278a4aa",
-      "title": "Three Consequences of Big Data on the Practices and Scholarships of Political Communication",
-      "date_published": "2020-01-01",
-      "authors": [
-        {
-          "name": "Giglietto F."
-        }
-      ],
-      "url": "https://doi.org/10.3270/96423",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.3270/96423",
-        "bibtex_key": "F2020-6278a4aa",
-        "type": "journal-article",
-        "venue": "",
-        "year": 2020,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": true,
-        "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2676145/4/compol_filltext.pdf"
       }
     },
     {
@@ -1394,7 +1477,7 @@
         "venue": "Center for Open Science",
         "year": 2019,
         "publisher": "Center for Open Science",
-        "citation_count": 0,
+        "citation_count": 30,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -1426,7 +1509,7 @@
         "venue": "Information, Communication &amp; Society",
         "year": 2019,
         "publisher": "Informa UK Limited",
-        "citation_count": 21,
+        "citation_count": 43,
         "open_access": true,
         "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2668426/2/post-print%20for%20ora.uniurb.it%20.pdf"
       }
@@ -1452,7 +1535,7 @@
         "venue": "Current Sociology",
         "year": 2019,
         "publisher": "SAGE Publications",
-        "citation_count": 3,
+        "citation_count": 15,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -1484,78 +1567,9 @@
         "venue": "Current Sociology",
         "year": 2019,
         "publisher": "SAGE Publications",
-        "citation_count": 170,
+        "citation_count": 182,
         "open_access": true,
         "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2665976/2/post-print%20for%20ora.uniurb.it.pdf"
-      }
-    },
-    {
-      "id": "bibtex:Giglietto2019-1706cb7a",
-      "title": "‘Fake news’ is the invention of a liar: How false information circulates within the hybrid news system",
-      "date_published": "2019-01-01",
-      "authors": [
-        {
-          "name": "L Iannelli, A Valeriani, L Rossi F Giglietto"
-        }
-      ],
-      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Giglietto2019-1706cb7a",
-        "type": null,
-        "venue": "Current sociology 67 (4), 625-642, 2019",
-        "year": 2019,
-        "publisher": null,
-        "citation_count": 182,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Giglietto2019-4b1db0c2",
-      "title": "Diverging patterns of interaction around news on social media: Insularity and partisanship during the 2018 Italian election campaign",
-      "date_published": "2019-01-01",
-      "authors": [
-        {
-          "name": "A Valeriani, N Righetti, G Marino F Giglietto"
-        }
-      ],
-      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Giglietto2019-4b1db0c2",
-        "type": null,
-        "venue": "Information, Communication & Society 22 (11), 1610-1629, 2019",
-        "year": 2019,
-        "publisher": null,
-        "citation_count": 43,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Giglietto2019-274c76bd",
-      "title": "Understanding coordinated and inauthentic link sharing behavior on Facebook in the run-up to 2018 general election and 2019 European election in Italy",
-      "date_published": "2019-01-01",
-      "authors": [
-        {
-          "name": "N Righetti, G Marino F Giglietto"
-        }
-      ],
-      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Giglietto2019-274c76bd",
-        "type": null,
-        "venue": "OSF, 2019",
-        "year": 2019,
-        "publisher": null,
-        "citation_count": 30,
-        "open_access": false,
-        "open_access_pdf_url": null
       }
     },
     {
@@ -1576,7 +1590,7 @@
         "venue": "",
         "year": 2019,
         "publisher": null,
-        "citation_count": 12,
+        "citation_count": 23,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -1596,6 +1610,52 @@
         "doi": null,
         "bibtex_key": "F2019-1b620ef6",
         "type": "book-chapter",
+        "venue": "",
+        "year": 2019,
+        "publisher": null,
+        "citation_count": 7,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2019-cd4574ac",
+      "title": "OGNI COMUNITÀ È UN’ISOLA? POLARIZZAZIONE, AMPLIFICAZIONE E RE-FRAMING DELL’INFORMAZIONE SUI SOCIAL MEDIA",
+      "date_published": "2019-01-01",
+      "authors": [
+        {
+          "name": "A Valeriani, N Righetti, G Marino F Giglietto"
+        }
+      ],
+      "url": "https://ora.uniurb.it/handle/11576/2665408",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Giglietto2019-cd4574ac",
+        "type": "book-chapter",
+        "venue": "",
+        "year": 2019,
+        "publisher": null,
+        "citation_count": 3,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Righetti2019-6604169c",
+      "title": "L’Europa fra casa e gabbia. Tono, frame ed engagement delle notizie sulle istituzioni europee nei mesi precedenti le elezioni 2018",
+      "date_published": "2019-01-01",
+      "authors": [
+        {
+          "name": "F Giglietto, G Marino N Righetti"
+        }
+      ],
+      "url": "https://ora.uniurb.it/handle/11576/2665407",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Righetti2019-6604169c",
+        "type": "journal-article",
         "venue": "",
         "year": 2019,
         "publisher": null,
@@ -1622,44 +1682,6 @@
         "venue": "SOCIOLOGIA DELLA COMUNICAZIONE",
         "year": 2019,
         "publisher": "Franco Angeli",
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2019-6604169c",
-      "title": "L’Europa fra casa e gabbia. Tono, frame ed engagement delle notizie sulle istituzioni europee nei mesi precedenti le elezioni 2018",
-      "date_published": "2019-01-01",
-      "authors": [],
-      "url": "https://ora.uniurb.it/handle/11576/2665407",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Unknown2019-6604169c",
-        "type": "journal-article",
-        "venue": "",
-        "year": 2019,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2019-cd4574ac",
-      "title": "OGNI COMUNITÀ È UN’ISOLA? POLARIZZAZIONE, AMPLIFICAZIONE E RE-FRAMING DELL’INFORMAZIONE SUI SOCIAL MEDIA",
-      "date_published": "2019-01-01",
-      "authors": [],
-      "url": "https://ora.uniurb.it/handle/11576/2665408",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Unknown2019-cd4574ac",
-        "type": "book-chapter",
-        "venue": "",
-        "year": 2019,
-        "publisher": null,
         "citation_count": 0,
         "open_access": false,
         "open_access_pdf_url": null
@@ -1901,89 +1923,9 @@
         "venue": "Social Science Computer Review",
         "year": 2018,
         "publisher": "SAGE Publications",
-        "citation_count": 40,
+        "citation_count": 87,
         "open_access": true,
         "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2663342/11/Iannelli_Giglietto_Rossi_Zurovac_2020_Accepted_Manuscript.pdf"
-      }
-    },
-    {
-      "id": "bibtex:Giglietto2018-80111d0c",
-      "title": "Mapping italian news media political coverage in the lead-up to 2018 general election",
-      "date_published": "2018-01-01",
-      "authors": [
-        {
-          "name": "L Iannelli, L Rossi, A Valeriani, N Righetti, F Carabini, ... F Giglietto"
-        }
-      ],
-      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Giglietto2018-80111d0c",
-        "type": null,
-        "venue": "Available at SSRN 3179930, 2018",
-        "year": 2018,
-        "publisher": null,
-        "citation_count": 37,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2018-4c2d7b36",
-      "title": "Il consumo dell'informazione nei media",
-      "date_published": "2018-01-01",
-      "authors": [],
-      "url": "https://ora.uniurb.it/handle/11576/2662217",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Unknown2018-4c2d7b36",
-        "type": "book-chapter",
-        "venue": "",
-        "year": 2018,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2018-ffb2588a",
-      "title": "Il sistema dei media digitali in Italia nei sei mesi precedenti le elezioni politiche 2018",
-      "date_published": "2018-01-01",
-      "authors": [],
-      "url": "https://ora.uniurb.it/handle/11576/2665427",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Unknown2018-ffb2588a",
-        "type": "journal-article",
-        "venue": "",
-        "year": 2018,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2018-191f1ed2",
-      "title": "Media Partisanship Attention in 2018 Italian Election",
-      "date_published": "2018-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.7910/dvn/eh87vl",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.7910/dvn/eh87vl",
-        "bibtex_key": "Unknown2018-191f1ed2",
-        "type": "data-set",
-        "venue": "Harvard Dataverse",
-        "year": 2018,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
       }
     },
     {
@@ -2028,30 +1970,72 @@
         "venue": "SSRN Electronic Journal",
         "year": 2018,
         "publisher": "Elsevier BV",
+        "citation_count": 37,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2018-4c2d7b36",
+      "title": "Il consumo dell'informazione nei media",
+      "date_published": "2018-01-01",
+      "authors": [
+        {
+          "name": "F Giglietto"
+        }
+      ],
+      "url": "https://ora.uniurb.it/handle/11576/2662217",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Giglietto2018-4c2d7b36",
+        "type": "book-chapter",
+        "venue": "",
+        "year": 2018,
+        "publisher": null,
         "citation_count": 0,
         "open_access": false,
         "open_access_pdf_url": null
       }
     },
     {
-      "id": "bibtex:Giglietto2017-c668c0bb",
-      "title": "A Hashtag Worth a Thousand Words: Discursive Strategies Around #JeNeSuisPasCharlie After the 2015 Charlie Hebdo Shooting",
-      "date_published": "2017-01-01",
+      "id": "bibtex:Giglietto2018-ffb2588a",
+      "title": "Il sistema dei media digitali in Italia nei sei mesi precedenti le elezioni politiche 2018",
+      "date_published": "2018-01-01",
       "authors": [
         {
-          "name": "Y Lee F Giglietto"
+          "name": "N Righetti, G Marino F Giglietto"
         }
       ],
-      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
+      "url": "https://ora.uniurb.it/handle/11576/2665427",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giglietto2017-c668c0bb",
-        "type": null,
-        "venue": "Social Media+ Society 3 (1), 2056305116686992, 2017",
-        "year": 2017,
+        "bibtex_key": "Giglietto2018-ffb2588a",
+        "type": "journal-article",
+        "venue": "",
+        "year": 2018,
         "publisher": null,
-        "citation_count": 125,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Unknown2018-191f1ed2",
+      "title": "Media Partisanship Attention in 2018 Italian Election",
+      "date_published": "2018-01-01",
+      "authors": [],
+      "url": "https://doi.org/10.7910/dvn/eh87vl",
+      "content_text": "",
+      "_academic": {
+        "doi": "10.7910/dvn/eh87vl",
+        "bibtex_key": "Unknown2018-191f1ed2",
+        "type": "data-set",
+        "venue": "Harvard Dataverse",
+        "year": 2018,
+        "publisher": null,
+        "citation_count": 0,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -2077,32 +2061,9 @@
         "venue": "Social Media + Society",
         "year": 2017,
         "publisher": "SAGE Publications",
-        "citation_count": 57,
+        "citation_count": 125,
         "open_access": true,
         "open_access_pdf_url": "https://journals.sagepub.com/doi/pdf/10.1177/2056305116686992"
-      }
-    },
-    {
-      "id": "bibtex:Farci2017-233d9be3",
-      "title": "Networked intimacy. Intimacy and friendship among Italian Facebook users",
-      "date_published": "2017-01-01",
-      "authors": [
-        {
-          "name": "L Rossi, G Boccia Artieri, F Giglietto M Farci"
-        }
-      ],
-      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Farci2017-233d9be3",
-        "type": null,
-        "venue": "Information, Communication & Society 20 (5), 784-801, 2017",
-        "year": 2017,
-        "publisher": null,
-        "citation_count": 51,
-        "open_access": false,
-        "open_access_pdf_url": null
       }
     },
     {
@@ -2132,26 +2093,30 @@
         "venue": "Information, Communication &amp; Society",
         "year": 2017,
         "publisher": "Informa UK Limited",
-        "citation_count": 32,
+        "citation_count": 51,
         "open_access": true,
         "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2636430/1/Networked%20intimacy%20Intimacy%20and%20friendship%20among%20Italian%20Facebook%20users.pdf"
       }
     },
     {
-      "id": "bibtex:Unknown2017-df0565dc",
+      "id": "bibtex:Giglietto2017-df0565dc",
       "title": "Dai dati all'informazione",
       "date_published": "2017-01-01",
-      "authors": [],
+      "authors": [
+        {
+          "name": "F Giglietto"
+        }
+      ],
       "url": "https://ora.uniurb.it/handle/11576/2654014",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Unknown2017-df0565dc",
+        "bibtex_key": "Giglietto2017-df0565dc",
         "type": "book-chapter",
         "venue": "",
         "year": 2017,
         "publisher": null,
-        "citation_count": 0,
+        "citation_count": 1,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -2184,7 +2149,7 @@
           "name": "L Iannelli, L Rossi, A Valeriani F Giglietto"
         }
       ],
-      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
+      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:PYBJJbyH-FwC",
       "content_text": "",
       "_academic": {
         "doi": null,
@@ -2194,29 +2159,6 @@
         "year": 2016,
         "publisher": null,
         "citation_count": 72,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Rossi2016-b7dd14eb",
-      "title": "Twitter use during TV: A full-season analysis of# serviziopubblico hashtag",
-      "date_published": "2016-01-01",
-      "authors": [
-        {
-          "name": "F Giglietto L Rossi"
-        }
-      ],
-      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Rossi2016-b7dd14eb",
-        "type": null,
-        "venue": "Journal of Broadcasting & Electronic Media 60 (2), 331-346, 2016",
-        "year": 2016,
-        "publisher": null,
-        "citation_count": 36,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -2242,7 +2184,7 @@
         "venue": "Journal of Broadcasting &amp; Electronic Media",
         "year": 2016,
         "publisher": "Informa UK Limited",
-        "citation_count": 21,
+        "citation_count": 36,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -2274,7 +2216,7 @@
         "venue": "International Journal of Communication",
         "year": 2016,
         "publisher": null,
-        "citation_count": 6,
+        "citation_count": 10,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -2345,7 +2287,7 @@
         "type": "journal-article",
         "venue": "AI Magazine",
         "year": 2016,
-        "publisher": null,
+        "publisher": "Wiley",
         "citation_count": 0,
         "open_access": true,
         "open_access_pdf_url": "https://aaai.org/ojs/index.php/aimagazine/article/download/2692/2605"
@@ -2448,53 +2390,30 @@
         "venue": "SOCIOLOGIA DELLA COMUNICAZIONE",
         "year": 2015,
         "publisher": "Franco Angeli",
-        "citation_count": 0,
+        "citation_count": 8,
         "open_access": false,
         "open_access_pdf_url": null
       }
     },
     {
-      "id": "bibtex:Giglietto2015-d4b81c8c",
+      "id": "bibtex:F2015-d4b81c8c",
       "title": "To be or not to be charlie: Twitter hashtags as a discourse and counter-discourse in the aftermath of the 2015 charlie hebdo shooting in France",
       "date_published": "2015-01-01",
       "authors": [
         {
-          "name": "Y Lee F Giglietto"
+          "name": "Giglietto F."
         }
       ],
       "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84938536467&partnerID=MN8TOARS",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giglietto2015-d4b81c8c",
+        "bibtex_key": "F2015-d4b81c8c",
         "type": "conference-paper",
         "venue": "CEUR Workshop Proceedings",
         "year": 2015,
         "publisher": null,
         "citation_count": 62,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Iannelli2015-315ae942",
-      "title": "Hybrid spaces of politics: The 2013 general elections in Italy, between talk shows and Twitter",
-      "date_published": "2015-01-01",
-      "authors": [
-        {
-          "name": "F Giglietto L Iannelli"
-        }
-      ],
-      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Iannelli2015-315ae942",
-        "type": null,
-        "venue": "Information, Communication & Society 18 (9), 1006-1021, 2015",
-        "year": 2015,
-        "publisher": null,
-        "citation_count": 42,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -2520,59 +2439,71 @@
         "venue": "Information, Communication &amp; Society",
         "year": 2015,
         "publisher": "Informa UK Limited",
-        "citation_count": 22,
+        "citation_count": 42,
         "open_access": true,
         "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2610183/4/Iannelli_Giglietto_Hybrid%20Spaces%20of%20Politics.pdf"
       }
     },
     {
-      "id": "bibtex:Unknown2015-c93d0f9f",
-      "title": "#whatsapp #spuntablu \"Io so che tu sai che io so...\": narrazioni dal basso sull’innovazione tecnologica",
-      "date_published": "2015-01-01",
-      "authors": [],
-      "url": "https://ora.uniurb.it/handle/11576/2627410",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Unknown2015-c93d0f9f",
-        "type": "book-chapter",
-        "venue": "",
-        "year": 2015,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2015-e17ed95f",
-      "title": "Il Futuro dell'industria culturale fra algoritmi sociali, democrazia e nuovi autoritarismi",
-      "date_published": "2015-01-01",
-      "authors": [],
-      "url": "https://ora.uniurb.it/handle/11576/2628426",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Unknown2015-e17ed95f",
-        "type": "book-chapter",
-        "venue": "",
-        "year": 2015,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2015-d1f843d2",
+      "id": "bibtex:Giglietto2015-d1f843d2",
       "title": "Se i Mi Piace fossero voti: uno studio emprico sulle elezioni amministrative 2011",
       "date_published": "2015-01-01",
-      "authors": [],
+      "authors": [
+        {
+          "name": "F Giglietto"
+        }
+      ],
       "url": "https://ora.uniurb.it/handle/11576/2530814",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Unknown2015-d1f843d2",
+        "bibtex_key": "Giglietto2015-d1f843d2",
+        "type": "book-chapter",
+        "venue": "",
+        "year": 2015,
+        "publisher": null,
+        "citation_count": 3,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Artieri2015-c93d0f9f",
+      "title": "#whatsapp #spuntablu \"Io so che tu sai che io so...\": narrazioni dal basso sull’innovazione tecnologica",
+      "date_published": "2015-01-01",
+      "authors": [
+        {
+          "name": "F Giglietto, E Zurovac G Boccia Artieri"
+        }
+      ],
+      "url": "https://ora.uniurb.it/handle/11576/2627410",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Artieri2015-c93d0f9f",
+        "type": "book-chapter",
+        "venue": "",
+        "year": 2015,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2015-e17ed95f",
+      "title": "Il Futuro dell'industria culturale fra algoritmi sociali, democrazia e nuovi autoritarismi",
+      "date_published": "2015-01-01",
+      "authors": [
+        {
+          "name": "F Giglietto"
+        }
+      ],
+      "url": "https://ora.uniurb.it/handle/11576/2628426",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Giglietto2015-e17ed95f",
         "type": "book-chapter",
         "venue": "",
         "year": 2015,
@@ -2635,30 +2566,7 @@
         "venue": "SOCIOLOGIA DELLA COMUNICAZIONE",
         "year": 2014,
         "publisher": "Franco Angeli",
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Giglietto2014-c802738c",
-      "title": "Second Screen and Participation: A Content Analysis on a Full Season Dataset of Tweets",
-      "date_published": "2014-01-01",
-      "authors": [
-        {
-          "name": "D Selva F Giglietto"
-        }
-      ],
-      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Giglietto2014-c802738c",
-        "type": null,
-        "venue": "Journal of Communication 64 (2), 260-277, 2014",
-        "year": 2014,
-        "publisher": null,
-        "citation_count": 419,
+        "citation_count": 6,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -2684,71 +2592,7 @@
         "venue": "Journal of Communication",
         "year": 2014,
         "publisher": "Oxford University Press (OUP)",
-        "citation_count": 410,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Giglietto2014-c7743abb",
-      "title": "Il fascicolo sanitario elettronico fra micro e macro",
-      "date_published": "2014-01-01",
-      "authors": [
-        {
-          "name": "Fabio Giglietto"
-        },
-        {
-          "name": "Lella Mazzoli"
-        }
-      ],
-      "url": "https://doi.org/10.3280/sc2014-048002",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.3280/sc2014-048002",
-        "bibtex_key": "Giglietto2014-c7743abb",
-        "type": "journal-article",
-        "venue": "SOCIOLOGIA DELLA COMUNICAZIONE",
-        "year": 2014,
-        "publisher": "Franco Angeli",
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2014-67c1530e",
-      "title": "Intimità connessa. Intimità e amicizia tra gli utenti italiani di Facebook",
-      "date_published": "2014-01-01",
-      "authors": [],
-      "url": "https://ora.uniurb.it/handle/11576/2608200",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Unknown2014-67c1530e",
-        "type": "book-chapter",
-        "venue": "",
-        "year": 2014,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2014-3fef1e30",
-      "title": "Media digitali, atteggiamenti e opinioni degli italiani su un sistema dell'informazione che cambia",
-      "date_published": "2014-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.1445/78378",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.1445/78378",
-        "bibtex_key": "Unknown2014-3fef1e30",
-        "type": "journal-article",
-        "venue": "",
-        "year": 2014,
-        "publisher": null,
-        "citation_count": 0,
+        "citation_count": 419,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -2780,7 +2624,79 @@
         "venue": "SSRN Electronic Journal",
         "year": 2014,
         "publisher": "Elsevier BV",
-        "citation_count": 0,
+        "citation_count": 8,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Artieri2014-67c1530e",
+      "title": "Intimità connessa. Intimità e amicizia tra gli utenti italiani di Facebook",
+      "date_published": "2014-01-01",
+      "authors": [
+        {
+          "name": "M Farci, F Giglietto, L Rossi G Boccia Artieri"
+        }
+      ],
+      "url": "https://ora.uniurb.it/handle/11576/2608200",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Artieri2014-67c1530e",
+        "type": "book-chapter",
+        "venue": "",
+        "year": 2014,
+        "publisher": null,
+        "citation_count": 7,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2014-3fef1e30",
+      "title": "Media digitali, atteggiamenti e opinioni degli italiani su un sistema dell'informazione che cambia",
+      "date_published": "2014-01-01",
+      "authors": [
+        {
+          "name": "L Mazzoli, F Montanari, G Raimondi F Giglietto"
+        }
+      ],
+      "url": "https://doi.org/10.1445/78378",
+      "content_text": "",
+      "_academic": {
+        "doi": "10.1445/78378",
+        "bibtex_key": "Giglietto2014-3fef1e30",
+        "type": "journal-article",
+        "venue": "",
+        "year": 2014,
+        "publisher": null,
+        "citation_count": 5,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2014-c7743abb",
+      "title": "Il fascicolo sanitario elettronico fra micro e macro",
+      "date_published": "2014-01-01",
+      "authors": [
+        {
+          "name": "Fabio Giglietto"
+        },
+        {
+          "name": "Lella Mazzoli"
+        }
+      ],
+      "url": "https://doi.org/10.3280/sc2014-048002",
+      "content_text": "",
+      "_academic": {
+        "doi": "10.3280/sc2014-048002",
+        "bibtex_key": "Giglietto2014-c7743abb",
+        "type": "journal-article",
+        "venue": "SOCIOLOGIA DELLA COMUNICAZIONE",
+        "year": 2014,
+        "publisher": "Franco Angeli",
+        "citation_count": 3,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -2805,18 +2721,22 @@
       }
     },
     {
-      "id": "bibtex:Unknown2013-143a8be3",
-      "title": "Amministrazioni pubbliche e gestione degli eventi critici attraverso i social media: il caso di #firenzeneve",
-      "date_published": "2013-01-01",
-      "authors": [],
-      "url": "https://ora.uniurb.it/handle/11576/2627497",
+      "id": "bibtex:Giglietto2014-241be4ba",
+      "title": "Observing Social Systems in the Era of Big Data. Part I",
+      "date_published": "2014-01-01",
+      "authors": [
+        {
+          "name": "F Giglietto"
+        }
+      ],
+      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:27LrP4qxOz0C",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Unknown2013-143a8be3",
-        "type": "journal-article",
-        "venue": "",
-        "year": 2013,
+        "bibtex_key": "Giglietto2014-241be4ba",
+        "type": null,
+        "venue": "XVIII ISA World Congress of Sociology (July 13-19, 2014), 2014",
+        "year": 2014,
         "publisher": null,
         "citation_count": 0,
         "open_access": false,
@@ -2824,20 +2744,70 @@
       }
     },
     {
-      "id": "bibtex:Unknown2013-c28ee25e",
+      "id": "bibtex:Giglietto2013-ae6b3abf",
+      "title": "Exploring Correlations Between TV Viewership and Twitter Conversations in Italian Political Talk Shows",
+      "date_published": "2013-01-01",
+      "authors": [
+        {
+          "name": "Fabio Giglietto"
+        }
+      ],
+      "url": "https://doi.org/10.2139/ssrn.2306512",
+      "content_text": "",
+      "_academic": {
+        "doi": "10.2139/ssrn.2306512",
+        "bibtex_key": "Giglietto2013-ae6b3abf",
+        "type": "journal-article",
+        "venue": "SSRN Electronic Journal",
+        "year": 2013,
+        "publisher": "Elsevier BV",
+        "citation_count": 15,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2013-143a8be3",
+      "title": "Amministrazioni pubbliche e gestione degli eventi critici attraverso i social media: il caso di #firenzeneve",
+      "date_published": "2013-01-01",
+      "authors": [
+        {
+          "name": "A Lovari F Giglietto"
+        }
+      ],
+      "url": "https://ora.uniurb.it/handle/11576/2627497",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Giglietto2013-143a8be3",
+        "type": "journal-article",
+        "venue": "",
+        "year": 2013,
+        "publisher": null,
+        "citation_count": 8,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Mazzoli2013-c28ee25e",
       "title": "Social Systems: from Simulation to Observation",
       "date_published": "2013-01-01",
-      "authors": [],
+      "authors": [
+        {
+          "name": "F Giglietto L Mazzoli"
+        }
+      ],
       "url": "https://ora.uniurb.it/handle/11576/2531374",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Unknown2013-c28ee25e",
+        "bibtex_key": "Mazzoli2013-c28ee25e",
         "type": "book-chapter",
         "venue": "",
         "year": 2013,
         "publisher": null,
-        "citation_count": 0,
+        "citation_count": 3,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -2957,29 +2927,6 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2013-ae6b3abf",
-      "title": "Exploring Correlations Between TV Viewership and Twitter Conversations in Italian Political Talk Shows",
-      "date_published": "2013-01-01",
-      "authors": [
-        {
-          "name": "Fabio Giglietto"
-        }
-      ],
-      "url": "https://doi.org/10.2139/ssrn.2306512",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.2139/ssrn.2306512",
-        "bibtex_key": "Giglietto2013-ae6b3abf",
-        "type": "journal-article",
-        "venue": "SSRN Electronic Journal",
-        "year": 2013,
-        "publisher": "Elsevier BV",
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
       "id": "bibtex:Giglietto2013-d8a1fc8c",
       "title": "Second Screen and Participation: A Content Analysis of a Full Season Dataset of Tweets",
       "date_published": "2013-01-01",
@@ -3032,6 +2979,29 @@
       }
     },
     {
+      "id": "bibtex:Menduni2013-8742cd12",
+      "title": "I servizi e le piattaforme applicative per le comunicazioni interpersonali ei media digitali.",
+      "date_published": "2013-01-01",
+      "authors": [
+        {
+          "name": "I De Pascalis, L Massidda, A Neri, F Battisti, M Carli, M Leo, ... E Menduni"
+        }
+      ],
+      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:hSRAE-fF4OAC",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Menduni2013-8742cd12",
+        "type": null,
+        "venue": "AGCOM-Autorità per le garanzie nelle comunicazioni, 2013",
+        "year": 2013,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
       "id": "bibtex:Giglietto2012-f05d4d74",
       "title": "Ethics and Interdisciplinarity in Computational Social Science",
       "date_published": "2012-04-01",
@@ -3052,30 +3022,7 @@
         "venue": "Methodological Innovations Online",
         "year": 2012,
         "publisher": "SAGE Publications",
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Giglietto2012-ae39377b",
-      "title": "The open laboratory: Limits and possibilities of using Facebook, Twitter, and YouTube as a research data source",
-      "date_published": "2012-01-01",
-      "authors": [
-        {
-          "name": "L Rossi, D Bennato F Giglietto"
-        }
-      ],
-      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Giglietto2012-ae39377b",
-        "type": null,
-        "venue": "Journal of technology in human services 30 (3-4), 145-159, 2012",
-        "year": 2012,
-        "publisher": null,
-        "citation_count": 307,
+        "citation_count": 34,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -3104,114 +3051,33 @@
         "venue": "Journal of Technology in Human Services",
         "year": 2012,
         "publisher": "Informa UK Limited",
-        "citation_count": 289,
+        "citation_count": 307,
         "open_access": false,
         "open_access_pdf_url": null
       }
     },
     {
-      "id": "bibtex:Lovari2012-00bae918",
+      "id": "bibtex:Lovari2012-8260181d",
       "title": "Social Media and Italian Universities: An Empirical Study on the Adoption and Use of Facebook, Twitter and Youtube",
       "date_published": "2012-01-01",
       "authors": [
         {
-          "name": "F Giglietto A Lovari"
+          "name": "Alessandro Lovari"
+        },
+        {
+          "name": "Fabio Giglietto"
         }
       ],
-      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
+      "url": "https://doi.org/10.2139/ssrn.1978393",
       "content_text": "",
       "_academic": {
-        "doi": null,
-        "bibtex_key": "Lovari2012-00bae918",
-        "type": null,
-        "venue": "",
+        "doi": "10.2139/ssrn.1978393",
+        "bibtex_key": "Lovari2012-8260181d",
+        "type": "journal-article",
+        "venue": "SSRN Electronic Journal",
         "year": 2012,
-        "publisher": null,
+        "publisher": "Elsevier BV",
         "citation_count": 53,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Giglietto2012-9adb4fdd",
-      "title": "If likes were votes: An empirical study on the 2011 Italian administrative elections",
-      "date_published": "2012-01-01",
-      "authors": [
-        {
-          "name": "F Giglietto"
-        }
-      ],
-      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Giglietto2012-9adb4fdd",
-        "type": null,
-        "venue": "Proceedings of the International AAAI Conference on Web and Social Media 6 …, 2012",
-        "year": 2012,
-        "publisher": null,
-        "citation_count": 35,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Giglietto2012-68febd19",
-      "title": "Ethics and interdisciplinarity in computational social science",
-      "date_published": "2012-01-01",
-      "authors": [
-        {
-          "name": "L Rossi F Giglietto"
-        }
-      ],
-      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Giglietto2012-68febd19",
-        "type": null,
-        "venue": "Methodological Innovations Online 7 (1), 25-36, 2012",
-        "year": 2012,
-        "publisher": null,
-        "citation_count": 34,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2012-411ae846",
-      "title": "Facebook, Twitter & co. Una mutazione possibile per la ricerca sociale",
-      "date_published": "2012-01-01",
-      "authors": [],
-      "url": "https://ora.uniurb.it/handle/11576/2512186",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Unknown2012-411ae846",
-        "type": "book-chapter",
-        "venue": "",
-        "year": 2012,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2012-6c7adee4",
-      "title": "Il valore reale del denaro virtuale: dai giochi online ai mercati valutari",
-      "date_published": "2012-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.4459/12.001.WTP.IT",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.4459/12.001.WTP.IT",
-        "bibtex_key": "Unknown2012-6c7adee4",
-        "type": "other",
-        "venue": "",
-        "year": 2012,
-        "publisher": null,
-        "citation_count": 0,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -3234,7 +3100,7 @@
         "venue": "SSRN Electronic Journal",
         "year": 2012,
         "publisher": "Elsevier BV",
-        "citation_count": 0,
+        "citation_count": 35,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -3275,33 +3141,30 @@
         "venue": "ACM SIGCOMM Computer Communication Review",
         "year": 2012,
         "publisher": "Association for Computing Machinery (ACM)",
-        "citation_count": 0,
+        "citation_count": 20,
         "open_access": true,
         "open_access_pdf_url": "https://arxiv.org/pdf/1508.01087"
       }
     },
     {
-      "id": "bibtex:Lovari2012-8260181d",
-      "title": "Social Media and Italian Universities: An Empirical Study on the Adoption and Use of Facebook, Twitter and Youtube",
+      "id": "bibtex:Artieri2012-411ae846",
+      "title": "Facebook, Twitter & co. Una mutazione possibile per la ricerca sociale",
       "date_published": "2012-01-01",
       "authors": [
         {
-          "name": "Alessandro Lovari"
-        },
-        {
-          "name": "Fabio Giglietto"
+          "name": "F Giglietto, L Rossi G Boccia Artieri"
         }
       ],
-      "url": "https://doi.org/10.2139/ssrn.1978393",
+      "url": "https://ora.uniurb.it/handle/11576/2512186",
       "content_text": "",
       "_academic": {
-        "doi": "10.2139/ssrn.1978393",
-        "bibtex_key": "Lovari2012-8260181d",
-        "type": "journal-article",
-        "venue": "SSRN Electronic Journal",
+        "doi": null,
+        "bibtex_key": "Artieri2012-411ae846",
+        "type": "book-chapter",
+        "venue": "",
         "year": 2012,
-        "publisher": "Elsevier BV",
-        "citation_count": 0,
+        "publisher": null,
+        "citation_count": 9,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -3333,6 +3196,29 @@
         "venue": "SSRN Electronic Journal",
         "year": 2012,
         "publisher": "Elsevier BV",
+        "citation_count": 1,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Bogliolo2012-6c7adee4",
+      "title": "Il valore reale del denaro virtuale: dai giochi online ai mercati valutari",
+      "date_published": "2012-01-01",
+      "authors": [
+        {
+          "name": "F Giglietto, P Polidori, F Stradini A Bogliolo"
+        }
+      ],
+      "url": "https://doi.org/10.4459/12.001.WTP.IT",
+      "content_text": "",
+      "_academic": {
+        "doi": "10.4459/12.001.WTP.IT",
+        "bibtex_key": "Bogliolo2012-6c7adee4",
+        "type": "other",
+        "venue": "",
+        "year": 2012,
+        "publisher": null,
         "citation_count": 0,
         "open_access": false,
         "open_access_pdf_url": null
@@ -3356,6 +3242,29 @@
         "venue": "Information, Communication &amp; Society",
         "year": 2011,
         "publisher": "Informa UK Limited",
+        "citation_count": 1,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2011-3f146b96",
+      "title": "L’Informazione da Rito a Puzzle-Le News e Gli Italiani: Dalla Carta Stampata, Alla Rete al Mobile",
+      "date_published": "2011-01-01",
+      "authors": [
+        {
+          "name": "G Mazzoli, M Orefice, A Bellafiore F Giglietto"
+        }
+      ],
+      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:WC9gN4BGCRcC",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Giglietto2011-3f146b96",
+        "type": null,
+        "venue": "",
+        "year": 2011,
+        "publisher": null,
         "citation_count": 0,
         "open_access": false,
         "open_access_pdf_url": null
@@ -3385,15 +3294,19 @@
       }
     },
     {
-      "id": "bibtex:Unknown2010-ded08dad",
+      "id": "bibtex:Giglietto2010-ded08dad",
       "title": "Yes we(b) can: la politica dopo Obama",
       "date_published": "2010-01-01",
-      "authors": [],
+      "authors": [
+        {
+          "name": "F Giglietto"
+        }
+      ],
       "url": "https://ora.uniurb.it/handle/11576/2504760",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Unknown2010-ded08dad",
+        "bibtex_key": "Giglietto2010-ded08dad",
         "type": "book-chapter",
         "venue": "",
         "year": 2010,
@@ -3404,39 +3317,70 @@
       }
     },
     {
-      "id": "bibtex:Unknown2009-849c8fbd",
-      "title": "I social media sono qui per restare.. e ora?",
+      "id": "bibtex:Hughes2009-112da5f9",
+      "title": "TACCLE Teachers' Aids on Creating Content for Learning Environments: the E-learning Handbook for Classroom Teachers",
       "date_published": "2009-01-01",
-      "authors": [],
-      "url": "https://ora.uniurb.it/handle/11576/2535366",
+      "authors": [
+        {
+          "name": "J Vermeersch J Hughes"
+        }
+      ],
+      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:8k81kl-MbHgC",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Unknown2009-849c8fbd",
-        "type": "translation",
-        "venue": "",
+        "bibtex_key": "Hughes2009-112da5f9",
+        "type": null,
+        "venue": "GO! Internationalisering, 2009",
         "year": 2009,
         "publisher": null,
-        "citation_count": 0,
+        "citation_count": 11,
         "open_access": false,
         "open_access_pdf_url": null
       }
     },
     {
-      "id": "bibtex:Unknown2009-6af6907d",
+      "id": "bibtex:Giglietto2009-6af6907d",
       "title": "Io, i miei amici e il mondo: uno studio comparativo su Facebook e Badoo in Italia",
       "date_published": "2009-01-01",
-      "authors": [],
+      "authors": [
+        {
+          "name": "F Giglietto"
+        }
+      ],
       "url": "https://ora.uniurb.it/handle/11576/2504757",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Unknown2009-6af6907d",
+        "bibtex_key": "Giglietto2009-6af6907d",
         "type": "book-chapter",
         "venue": "",
         "year": 2009,
         "publisher": null,
-        "citation_count": 0,
+        "citation_count": 10,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2009-d303f5c8",
+      "title": "Social semantics in a networked space. New perspectives for social sciences",
+      "date_published": "2009-01-01",
+      "authors": [
+        {
+          "name": "F Giglietto"
+        }
+      ],
+      "url": "https://ora.uniurb.it/handle/11576/2504755",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Giglietto2009-d303f5c8",
+        "type": "book-chapter",
+        "venue": "",
+        "year": 2009,
+        "publisher": null,
+        "citation_count": 8,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -3459,98 +3403,49 @@
         "venue": "SOCIOLOGIA DELLA COMUNICAZIONE",
         "year": 2009,
         "publisher": "Franco Angeli",
-        "citation_count": 0,
+        "citation_count": 3,
         "open_access": false,
         "open_access_pdf_url": null
       }
     },
     {
-      "id": "bibtex:Unknown2009-9f6d6da5",
-      "title": "Networks and Communities",
-      "date_published": "2009-01-01",
-      "authors": [],
-      "url": "https://ora.uniurb.it/handle/11576/2504759",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Unknown2009-9f6d6da5",
-        "type": "book-chapter",
-        "venue": "",
-        "year": 2009,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2009-3ac3d8b3",
-      "title": "Reti e Comunità",
-      "date_published": "2009-01-01",
-      "authors": [],
-      "url": "https://ora.uniurb.it/handle/11576/2504758",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Unknown2009-3ac3d8b3",
-        "type": "book-chapter",
-        "venue": "",
-        "year": 2009,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2009-c127d040",
-      "title": "Social System Theory Between Individuals and Society. The Social Construction of Life",
-      "date_published": "2009-01-01",
-      "authors": [],
-      "url": "https://ora.uniurb.it/handle/11576/2504756",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Unknown2009-c127d040",
-        "type": "book-chapter",
-        "venue": "",
-        "year": 2009,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2009-d303f5c8",
-      "title": "Social semantics in a networked space. New perspectives for social sciences",
-      "date_published": "2009-01-01",
-      "authors": [],
-      "url": "https://ora.uniurb.it/handle/11576/2504755",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Unknown2009-d303f5c8",
-        "type": "book-chapter",
-        "venue": "",
-        "year": 2009,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2009-41676cce",
+      "id": "bibtex:Giglietto2009-41676cce",
       "title": "Toward a bridge between sociocybernetics and internet studies",
       "date_published": "2009-01-01",
-      "authors": [],
+      "authors": [
+        {
+          "name": "L Rossi F Giglietto"
+        }
+      ],
       "url": "https://ora.uniurb.it/handle/11576/2505013",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Unknown2009-41676cce",
+        "bibtex_key": "Giglietto2009-41676cce",
         "type": "journal-article",
+        "venue": "",
+        "year": 2009,
+        "publisher": null,
+        "citation_count": 2,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2009-849c8fbd",
+      "title": "I social media sono qui per restare.. e ora?",
+      "date_published": "2009-01-01",
+      "authors": [
+        {
+          "name": "F Giglietto"
+        }
+      ],
+      "url": "https://ora.uniurb.it/handle/11576/2535366",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Giglietto2009-849c8fbd",
+        "type": "translation",
         "venue": "",
         "year": 2009,
         "publisher": null,
@@ -3560,20 +3455,116 @@
       }
     },
     {
-      "id": "bibtex:Unknown2008-fadb1c50",
+      "id": "bibtex:Giglietto2009-9f6d6da5",
+      "title": "Networks and Communities",
+      "date_published": "2009-01-01",
+      "authors": [
+        {
+          "name": "F Giglietto"
+        }
+      ],
+      "url": "https://ora.uniurb.it/handle/11576/2504759",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Giglietto2009-9f6d6da5",
+        "type": "book-chapter",
+        "venue": "",
+        "year": 2009,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2009-3ac3d8b3",
+      "title": "Reti e Comunità",
+      "date_published": "2009-01-01",
+      "authors": [
+        {
+          "name": "F Giglietto"
+        }
+      ],
+      "url": "https://ora.uniurb.it/handle/11576/2504758",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Giglietto2009-3ac3d8b3",
+        "type": "book-chapter",
+        "venue": "",
+        "year": 2009,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2009-c127d040",
+      "title": "Social System Theory Between Individuals and Society. The Social Construction of Life",
+      "date_published": "2009-01-01",
+      "authors": [
+        {
+          "name": "G Caramaschi F Giglietto"
+        }
+      ],
+      "url": "https://ora.uniurb.it/handle/11576/2504756",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Giglietto2009-c127d040",
+        "type": "book-chapter",
+        "venue": "",
+        "year": 2009,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Caramaschi2009-25e3be89",
+      "title": "Social Systems Theory",
+      "date_published": "2009-01-01",
+      "authors": [
+        {
+          "name": "F Giglietto G Caramaschi"
+        }
+      ],
+      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:IjCSPb-OGe4C",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Caramaschi2009-25e3be89",
+        "type": null,
+        "venue": "Technology and Social Complexity/Tecnología y Complejidad Social 2, 155, 2009",
+        "year": 2009,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2008-fadb1c50",
       "title": "Videogiochi e sistemi sociali: prospettive di ricerca fra tempo, spazio e comunicazione",
       "date_published": "2008-01-01",
-      "authors": [],
+      "authors": [
+        {
+          "name": "F Giglietto"
+        }
+      ],
       "url": "https://ora.uniurb.it/handle/11576/2504754",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Unknown2008-fadb1c50",
+        "bibtex_key": "Giglietto2008-fadb1c50",
         "type": "book-chapter",
         "venue": "",
         "year": 2008,
         "publisher": null,
-        "citation_count": 0,
+        "citation_count": 2,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -3587,7 +3578,7 @@
           "name": "F Giglietto, R Pruno, L Rossi, S Pedrioli C Fonio"
         }
       ],
-      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:undefined",
+      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:u5HHmVD_uO8C",
       "content_text": "",
       "_academic": {
         "doi": null,
@@ -3602,34 +3593,42 @@
       }
     },
     {
-      "id": "bibtex:Unknown2006-0f9d820c",
+      "id": "bibtex:Giglietto2006-0f9d820c",
       "title": "Alle radici del futuro. Dalla teoria dell’informazione ai sistemi sociali",
       "date_published": "2006-01-01",
-      "authors": [],
+      "authors": [
+        {
+          "name": "F Giglietto"
+        }
+      ],
       "url": "https://ora.uniurb.it/handle/11576/2504787",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Unknown2006-0f9d820c",
+        "bibtex_key": "Giglietto2006-0f9d820c",
         "type": "book",
         "venue": "",
         "year": 2006,
         "publisher": null,
-        "citation_count": 0,
+        "citation_count": 17,
         "open_access": false,
         "open_access_pdf_url": null
       }
     },
     {
-      "id": "bibtex:Unknown2006-fd2cd03b",
+      "id": "bibtex:Rossi2006-fd2cd03b",
       "title": "MAKHINE: Mapping Knowledge in an Heterogenous Intelligent Environment",
       "date_published": "2006-01-01",
-      "authors": [],
+      "authors": [
+        {
+          "name": "F Giglietto L Rossi"
+        }
+      ],
       "url": "https://ora.uniurb.it/handle/11576/1893405",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Unknown2006-fd2cd03b",
+        "bibtex_key": "Rossi2006-fd2cd03b",
         "type": "conference-poster",
         "venue": "",
         "year": 2006,
@@ -3640,15 +3639,19 @@
       }
     },
     {
-      "id": "bibtex:Unknown2005-0ca22550",
+      "id": "bibtex:Giglietto2005-0ca22550",
       "title": "The Fuzziness of Communication",
       "date_published": "2005-01-01",
-      "authors": [],
+      "authors": [
+        {
+          "name": "F Giglietto"
+        }
+      ],
       "url": "https://ora.uniurb.it/handle/11576/2504858",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Unknown2005-0ca22550",
+        "bibtex_key": "Giglietto2005-0ca22550",
         "type": "conference-paper",
         "venue": "",
         "year": 2005,
@@ -3659,72 +3662,65 @@
       }
     },
     {
-      "id": "bibtex:Unknown2004-a7a35a47",
-      "title": "La realtà dell’eLearning come ambiente comunicativo",
-      "date_published": "2004-01-01",
-      "authors": [],
-      "url": "https://ora.uniurb.it/handle/11576/1893352",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Unknown2004-a7a35a47",
-        "type": "conference-paper",
-        "venue": "",
-        "year": 2004,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2004-f1589b38",
-      "title": "Mediazione tecnologica e didattica a distanza… verso una soluzione human-centered",
-      "date_published": "2004-01-01",
-      "authors": [],
-      "url": "https://ora.uniurb.it/handle/11576/2504753",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Unknown2004-f1589b38",
-        "type": "book-chapter",
-        "venue": "",
-        "year": 2004,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2004-cc7f05e1",
+      "id": "bibtex:Giglietto2004-cc7f05e1",
       "title": "No Paper Project. Consumo, Comunicazione e Tecnologie per l’apprendimento",
       "date_published": "2004-01-01",
-      "authors": [],
+      "authors": [
+        {
+          "name": "F Giglietto"
+        }
+      ],
       "url": "https://ora.uniurb.it/handle/11576/2505010",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Unknown2004-cc7f05e1",
+        "bibtex_key": "Giglietto2004-cc7f05e1",
         "type": "journal-article",
         "venue": "",
         "year": 2004,
         "publisher": null,
-        "citation_count": 0,
+        "citation_count": 2,
         "open_access": false,
         "open_access_pdf_url": null
       }
     },
     {
-      "id": "bibtex:Unknown2004-1416dd56",
-      "title": "No Paper Project. Experiencing the future of learning in Higher Education",
+      "id": "bibtex:Mazzoli2004-f1589b38",
+      "title": "Mediazione tecnologica e didattica a distanza… verso una soluzione human-centered",
       "date_published": "2004-01-01",
-      "authors": [],
-      "url": "https://ora.uniurb.it/handle/11576/2504857",
+      "authors": [
+        {
+          "name": "F Giglietto L Mazzoli"
+        }
+      ],
+      "url": "https://ora.uniurb.it/handle/11576/2504753",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Unknown2004-1416dd56",
+        "bibtex_key": "Mazzoli2004-f1589b38",
+        "type": "book-chapter",
+        "venue": "",
+        "year": 2004,
+        "publisher": null,
+        "citation_count": 1,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Artieri2004-a7a35a47",
+      "title": "La realtà dell’eLearning come ambiente comunicativo",
+      "date_published": "2004-01-01",
+      "authors": [
+        {
+          "name": "F Giglietto G Boccia Artieri"
+        }
+      ],
+      "url": "https://ora.uniurb.it/handle/11576/1893352",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Artieri2004-a7a35a47",
         "type": "conference-paper",
         "venue": "",
         "year": 2004,
@@ -3735,20 +3731,70 @@
       }
     },
     {
-      "id": "bibtex:Unknown2000-dc366291",
+      "id": "bibtex:Giglietto2004-1416dd56",
+      "title": "No Paper Project. Experiencing the future of learning in Higher Education",
+      "date_published": "2004-01-01",
+      "authors": [
+        {
+          "name": "L Rossi F Giglietto"
+        }
+      ],
+      "url": "https://ora.uniurb.it/handle/11576/2504857",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Giglietto2004-1416dd56",
+        "type": "conference-paper",
+        "venue": "",
+        "year": 2004,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2001-2b5af6f4",
+      "title": "La realtà della comunicazione dottorato di ricerca in sociologia della comunicazione e scienze dello spettacolo tesi di dottorato",
+      "date_published": "2001-01-01",
+      "authors": [
+        {
+          "name": "F Giglietto"
+        }
+      ],
+      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:0aBXIfxlw9sC",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Giglietto2001-2b5af6f4",
+        "type": null,
+        "venue": "Università degli Studi\" Carlo Bo\" di Urbino, 2001",
+        "year": 2001,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2000-dc366291",
       "title": "La proprietà fuzzy della comunicazione. Internet, Sistemi sociali e Teorie della comunicazione",
       "date_published": "2000-01-01",
-      "authors": [],
+      "authors": [
+        {
+          "name": "F Giglietto"
+        }
+      ],
       "url": "https://ora.uniurb.it/handle/11576/2505009",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Unknown2000-dc366291",
+        "bibtex_key": "Giglietto2000-dc366291",
         "type": "journal-article",
         "venue": "",
         "year": 2000,
         "publisher": null,
-        "citation_count": 0,
+        "citation_count": 7,
         "open_access": false,
         "open_access_pdf_url": null
       }
