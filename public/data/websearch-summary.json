@@ -1,12 +1,12 @@
 {
-  "totalEntries": 178,
-  "lastUpdated": "2026-06-27T12:24:42.494Z",
+  "totalEntries": 179,
+  "lastUpdated": "2026-06-27T12:34:30.567Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-06-27T09:36:33.357Z"
+    "latest": "2026-06-27T12:34:30.520Z"
   },
   "byDate": {
-    "2026-06-27": 1,
+    "2026-06-27": 2,
     "2026-06-25": 1,
     "2026-06-24": 1,
     "2026-06-23": 1,
@@ -27,14 +27,21 @@
     "Il Sole 24 ORE": 4,
     "snurblog.org": 3,
     "ilrestodelcarlino.it": 3,
-    "snurb.net": 2
+    "smsociety.org": 2
   },
   "byRelevanceScore": {
-    "high": 155,
+    "high": 156,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Full list of Panels 2026 - International Conference on Social Media & Society",
+      "url": "https://www.smsociety.org/full-list-of-panels-2026/",
+      "source": "smsociety.org",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-06-27T12:34:30.520Z"
+    },
     {
       "title": "Liveblog: ICA 2026: Recommending the State: How Social Media Algorithms Curate State-Created Content in China",
       "url": "https://snurblog.org/blog/2026/06/08/liveblog-ica-2026-recommending-the-state-how-social-media-algorithms-curate-state-created-content-in-china/",
@@ -62,13 +69,6 @@
       "source": "icahdq.org",
       "relevanceScore": 0.9,
       "collectedAt": "2026-06-23T09:46:40.325Z"
-    },
-    {
-      "title": "CS2Nordics - The Nordic Conference on Computational Social Science",
-      "url": "https://cs2nordics.org/",
-      "source": "cs2nordics.org",
-      "relevanceScore": 0.95,
-      "collectedAt": "2026-06-22T11:59:04.354Z"
     }
   ]
 }
