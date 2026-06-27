@@ -1391,6 +1391,18 @@
       "author": "Fabio Giglietto",
       "doi": "10.4337/9781035325047.00023",
       "own": true
+    },
+    {
+      "id": "bibtex:Hackenburg2026-ud",
+      "bibtexKey": "Hackenburg2026-ud",
+      "title": "When AI Out-Talks World Champion Debaters",
+      "description": "AI-generated podcast discussion.\n\nReference:\nHackenburg, K., Wagner, C., Hewitt, L., Tappin, B. M., Saunders, E., Kirk, H. R., Margetts, H., & Summerfield, C. (2026). AI systems out-persuade expert humans. http://arxiv.org/abs/2606.16475v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Hackenburg2026-ud.mp3",
+      "pubDate": "2026-06-27T13:11:17.175711+00:00",
+      "duration": "8:47",
+      "author": "Kobi Hackenburg, Caroline Wagner, Luke Hewitt, Ben M. Tappin, Ed Saunders, Hannah Rose Kirk, Helen Margetts, Christopher Summerfield",
+      "doi": null,
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -2785,6 +2797,18 @@
       "author": "Fabio Giglietto",
       "doi": "10.4337/9781035325047.00023",
       "own": true
+    },
+    "Hackenburg2026-ud": {
+      "id": "bibtex:Hackenburg2026-ud",
+      "bibtexKey": "Hackenburg2026-ud",
+      "title": "When AI Out-Talks World Champion Debaters",
+      "description": "AI-generated podcast discussion.\n\nReference:\nHackenburg, K., Wagner, C., Hewitt, L., Tappin, B. M., Saunders, E., Kirk, H. R., Margetts, H., & Summerfield, C. (2026). AI systems out-persuade expert humans. http://arxiv.org/abs/2606.16475v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Hackenburg2026-ud.mp3",
+      "pubDate": "2026-06-27T13:11:17.175711+00:00",
+      "duration": "8:47",
+      "author": "Kobi Hackenburg, Caroline Wagner, Luke Hewitt, Ben M. Tappin, Ed Saunders, Hannah Rose Kirk, Helen Margetts, Christopher Summerfield",
+      "doi": null,
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -3869,7 +3893,7 @@
       "own": true
     }
   },
-  "totalEpisodes": 116,
-  "lastUpdated": "2026-06-27T09:28:21.668Z",
+  "totalEpisodes": 117,
+  "lastUpdated": "2026-06-27T12:16:28.651Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }

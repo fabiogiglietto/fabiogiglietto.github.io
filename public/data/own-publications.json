@@ -3,7 +3,7 @@
   "title": "Fabio Giglietto — own publications",
   "home_page_url": "https://fabiogiglietto.github.io/publications",
   "description": "Auto-generated feed of Fabio Giglietto's own publications, consumed downstream by research-radio and fg-zettelkasten.",
-  "_updated": "2026-06-27T09:39:01.875Z",
+  "_updated": "2026-06-27T12:26:49.246Z",
   "items": [
     {
       "id": "bibtex:Giglietto2026-79cedfa2",
@@ -837,7 +837,7 @@
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2733993",
-      "content_text": "",
+      "content_text": "In dieser Studie analysieren wir die organische und bezahlte Social-Media-Kommunikation politischer Kandidieren- der, Parteien und anderen Social-Media-Nutzerinnen und Nutzern im Vorfeld der deutschen Bundestagswahl 2021. Wir dokumentieren die Investitionen der wichtigsten Parteien in Facebook-Werbung, ihre Targeting-Strategien und das Engagement, das sie organisch erreicht haben, sowie die Aktivität koordinierter Netzwerke von Facebook-Seiten und -Gruppen, die sich mit der Wahl befassen.\r\nWie schon im Jahr 2019 (Hegelich & Serrano, 2019) erreichte die AfD ein außergewöhnlich hohes Engagement auf Facebook. Aber nicht die CDU, sondern Die Grünen führten die Rangliste der Facebook-Werbeinvestitionen im Jahr 2021 an. Dennoch wurden beide bei der Gesamtzahl der Anzeigenaufrufe von der FDP überholt, die insgesamt weni- ger ausgab, aber eine höhere Anzahl von Anzeigen schaltete.\r\nBei der Betrachtung von Microtargeting zeigen unsere Ergebnisse, dass der Inhalt einiger Anzeigen ausschließlich auf Frauen oder junge Generationen ausgerichtet war. Sie machten jedoch nur einen geringen Anteil an der Gesamt- zahl der von Parteien und Kandidierenden geschalteten Anzeigen aus.\r\nDes Weiteren fanden wir große koordinierte Netzwerke auf Facebook (Giglietto, Righetti, Rossi, & Marino, 2020), die Anti-Establishment-Narrative sowie Botschaften gegen die Corona Schutzmaßnahmen und gegen die COVID-19- Politik im Allgemeinen verbreiteten. In diesen Netzwerken waren harsche Kommentare gegen die Gegnerinnen und Gegner und ein breites Spektrum an Quellen, die Desinformationen (NewsGuard, 2021) während der Wahlen verbreiteten, üblich.\r\nBei der Betrachtung der Ergebnisse muss beachtet werden, dass die hier durchgeführten Analysen aufgrund von Ein- schränkungen beim Datenzugang schnell an Grenzen gestoßen sind. Insbesondere das Fehlen von Facebook-Daten über die Aktivitäten einzelner Nutzerinnen und Nutzer verhindert die Untersuchung des möglichen Einsatzes von Bots, die in schneller Abfolge Inhalte in mehreren öffentlichen Gruppen posten und die Interaktionsmetriken aufblähen. Das Fehlen von Daten über Facebook-Kommentare verhindert die Analyse koordinierter Strategien, die darauf abzielen, unter dem Radar von Faktenprüferinnen und Faktenprüfern und Reglementierung durch die Plattform zu bleiben. Der Mangel an genaueren Daten über Werbung hat uns auch daran gehindert, neben den allgemeinen Fällen in Bezug auf Geschlecht und Alter auch Microtargeting-Strategien zu untersuchen.",
       "_academic": {
         "doi": null,
         "bibtex_key": "Righetti2022-f8b364cd",
@@ -1688,215 +1688,6 @@
       }
     },
     {
-      "id": "bibtex:Unknown2019-c2d2a73b",
-      "title": "0_load_rt_data.R",
-      "date_published": "2019-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.7910/dvn/xnoarv/meyzef",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.7910/dvn/xnoarv/meyzef",
-        "bibtex_key": "Unknown2019-c2d2a73b",
-        "type": "data-set",
-        "venue": "Harvard Dataverse",
-        "year": 2019,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2019-01bbe81a",
-      "title": "1_RT_contributors_political_leaning_GEN.R",
-      "date_published": "2019-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.7910/dvn/xnoarv/jtn6mt",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.7910/dvn/xnoarv/jtn6mt",
-        "bibtex_key": "Unknown2019-01bbe81a",
-        "type": "data-set",
-        "venue": "Harvard Dataverse",
-        "year": 2019,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2019-30258f30",
-      "title": "2_user_domain_feb2018.R",
-      "date_published": "2019-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.7910/dvn/xnoarv/xorhiw",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.7910/dvn/xnoarv/xorhiw",
-        "bibtex_key": "Unknown2019-30258f30",
-        "type": "data-set",
-        "venue": "Harvard Dataverse",
-        "year": 2019,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2019-b83b6940",
-      "title": "3_domain_political_leaning_feb.R",
-      "date_published": "2019-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.7910/dvn/xnoarv/jutaen",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.7910/dvn/xnoarv/jutaen",
-        "bibtex_key": "Unknown2019-b83b6940",
-        "type": "data-set",
-        "venue": "Harvard Dataverse",
-        "year": 2019,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2019-5a045a36",
-      "title": "4_insularity_and_mp-mpas_adjudication.R",
-      "date_published": "2019-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.7910/dvn/xnoarv/ahgcad",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.7910/dvn/xnoarv/ahgcad",
-        "bibtex_key": "Unknown2019-5a045a36",
-        "type": "data-set",
-        "venue": "Harvard Dataverse",
-        "year": 2019,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2019-e0672cd2",
-      "title": "5_sna.R",
-      "date_published": "2019-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.7910/dvn/xnoarv/p6kayj",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.7910/dvn/xnoarv/p6kayj",
-        "bibtex_key": "Unknown2019-e0672cd2",
-        "type": "data-set",
-        "venue": "Harvard Dataverse",
-        "year": 2019,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2019-017449ae",
-      "title": "6_mpmpas_vs_itanes.R",
-      "date_published": "2019-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.7910/dvn/xnoarv/xlp4mx",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.7910/dvn/xnoarv/xlp4mx",
-        "bibtex_key": "Unknown2019-017449ae",
-        "type": "data-set",
-        "venue": "Harvard Dataverse",
-        "year": 2019,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2019-b51ed6f5",
-      "title": "7_insularity_and_adjudication_analyses.R",
-      "date_published": "2019-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.7910/dvn/xnoarv/6p77pl",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.7910/dvn/xnoarv/6p77pl",
-        "bibtex_key": "Unknown2019-b51ed6f5",
-        "type": "data-set",
-        "venue": "Harvard Dataverse",
-        "year": 2019,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2019-98fdefd8",
-      "title": "Replication Data for: Multi-party Media Partisanship Attention Score: estimating partisan attention of news media sources using Twitter data in the lead up of the 2018 Italian election",
-      "date_published": "2019-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.7910/dvn/xnoarv",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.7910/dvn/xnoarv",
-        "bibtex_key": "Unknown2019-98fdefd8",
-        "type": "data-set",
-        "venue": "Harvard Dataverse",
-        "year": 2019,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2019-2d753dc2",
-      "title": "itanes_data .tab",
-      "date_published": "2019-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.7910/dvn/xnoarv/cx7khg",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.7910/dvn/xnoarv/cx7khg",
-        "bibtex_key": "Unknown2019-2d753dc2",
-        "type": "data-set",
-        "venue": "Harvard Dataverse",
-        "year": 2019,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2019-a9d70e6a",
-      "title": "itanes_data.tab",
-      "date_published": "2019-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.7910/dvn/xnoarv/qh6uhc",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.7910/dvn/xnoarv/qh6uhc",
-        "bibtex_key": "Unknown2019-a9d70e6a",
-        "type": "data-set",
-        "venue": "Harvard Dataverse",
-        "year": 2019,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
       "id": "bibtex:Iannelli2018-ebd918b7",
       "title": "Facebook Digital Traces for Survey Research: Assessing the Efficiency and Effectiveness of a Facebook Ad–Based Procedure for Recruiting Online Survey Respondents in Niche and Difficult-to-Reach Populations",
       "date_published": "2018-01-01",
@@ -2022,25 +1813,6 @@
       }
     },
     {
-      "id": "bibtex:Unknown2018-191f1ed2",
-      "title": "Media Partisanship Attention in 2018 Italian Election",
-      "date_published": "2018-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.7910/dvn/eh87vl",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.7910/dvn/eh87vl",
-        "bibtex_key": "Unknown2018-191f1ed2",
-        "type": "data-set",
-        "venue": "Harvard Dataverse",
-        "year": 2018,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
       "id": "bibtex:Giglietto2017-4375de2f",
       "title": "A Hashtag Worth a Thousand Words: Discursive Strategies Around #JeNeSuisPasCharlie After the 2015 Charlie Hebdo Shooting",
       "date_published": "2017-01-01",
@@ -2117,25 +1889,6 @@
         "year": 2017,
         "publisher": null,
         "citation_count": 1,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2017-88222382",
-      "title": "Retweets of Italian politicians and political parties during November 2017",
-      "date_published": "2017-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.7910/dvn/qk4mjn",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.7910/dvn/qk4mjn",
-        "bibtex_key": "Unknown2017-88222382",
-        "type": "data-set",
-        "venue": "Harvard Dataverse",
-        "year": 2017,
-        "publisher": null,
-        "citation_count": 0,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -2222,25 +1975,6 @@
       }
     },
     {
-      "id": "bibtex:Unknown2016-fcdd4be6",
-      "title": "#JeNeSuisPaCharlie",
-      "date_published": "2016-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.6084/M9.FIGSHARE.3385456",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.6084/M9.FIGSHARE.3385456",
-        "bibtex_key": "Unknown2016-fcdd4be6",
-        "type": "data-set",
-        "venue": "Figshare",
-        "year": 2016,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
       "id": "bibtex:An2016-0cdbe34d",
       "title": "Reports of the workshops held at the 2016 International AAAI Conference on Web and Social Media",
       "date_published": "2016-01-01",
@@ -2291,63 +2025,6 @@
         "citation_count": 0,
         "open_access": true,
         "open_access_pdf_url": "https://aaai.org/ojs/index.php/aimagazine/article/download/2692/2605"
-      }
-    },
-    {
-      "id": "bibtex:Unknown2016-9a33a378",
-      "title": "Servizio Pubblico Edition 2012/2013 - Twitter #serviziopubblico Ids dataset",
-      "date_published": "2016-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.6084/M9.FIGSHARE.3413560",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.6084/M9.FIGSHARE.3413560",
-        "bibtex_key": "Unknown2016-9a33a378",
-        "type": "data-set",
-        "venue": "Figshare",
-        "year": 2016,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2016-c1c085f0",
-      "title": "Twitter and Political Talk Shows in Italy (2012/2013)",
-      "date_published": "2016-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.6084/M9.FIGSHARE.809555.V3",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.6084/M9.FIGSHARE.809555.V3",
-        "bibtex_key": "Unknown2016-c1c085f0",
-        "type": "other",
-        "venue": "Figshare",
-        "year": 2016,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2016-e36a861d",
-      "title": "X-Factor 6th Italian Edition 2012 - Twitter #XF6 Ids dataset",
-      "date_published": "2016-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.6084/M9.FIGSHARE.3413557",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.6084/M9.FIGSHARE.3413557",
-        "bibtex_key": "Unknown2016-e36a861d",
-        "type": "data-set",
-        "venue": "Figshare",
-        "year": 2016,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
       }
     },
     {
@@ -2808,120 +2485,6 @@
         "year": 2013,
         "publisher": null,
         "citation_count": 3,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2013-dae9e3fe",
-      "title": "Descriptive statistics for Political Talk Shows",
-      "date_published": "2013-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.6084/M9.FIGSHARE.809553",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.6084/M9.FIGSHARE.809553",
-        "bibtex_key": "Unknown2013-dae9e3fe",
-        "type": "data-set",
-        "venue": "",
-        "year": 2013,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2013-c447504d",
-      "title": "Peaks of Season Activity",
-      "date_published": "2013-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.6084/M9.FIGSHARE.809554.V1",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.6084/M9.FIGSHARE.809554.V1",
-        "bibtex_key": "Unknown2013-c447504d",
-        "type": "data-set",
-        "venue": "Figshare",
-        "year": 2013,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2013-4d35fbd6",
-      "title": "Peaks of Twitter Activity",
-      "date_published": "2013-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.6084/M9.FIGSHARE.809554",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.6084/M9.FIGSHARE.809554",
-        "bibtex_key": "Unknown2013-4d35fbd6",
-        "type": "data-set",
-        "venue": "",
-        "year": 2013,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2013-2a38048d",
-      "title": "Twitter activity and audience rating for episode",
-      "date_published": "2013-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.6084/M9.FIGSHARE.808606",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.6084/M9.FIGSHARE.808606",
-        "bibtex_key": "Unknown2013-2a38048d",
-        "type": "data-set",
-        "venue": "",
-        "year": 2013,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2013-24ad2b6d",
-      "title": "Twitter e Talk Show Politici in Italia (2012/2013)",
-      "date_published": "2013-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.6084/M9.FIGSHARE.808606.V1",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.6084/M9.FIGSHARE.808606.V1",
-        "bibtex_key": "Unknown2013-24ad2b6d",
-        "type": "data-set",
-        "venue": "Figshare",
-        "year": 2013,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Unknown2013-0c3cb3b0",
-      "title": "new fileset",
-      "date_published": "2013-01-01",
-      "authors": [],
-      "url": "https://doi.org/10.6084/M9.FIGSHARE.809555.V1",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.6084/M9.FIGSHARE.809555.V1",
-        "bibtex_key": "Unknown2013-0c3cb3b0",
-        "type": "other",
-        "venue": "Figshare",
-        "year": 2013,
-        "publisher": null,
-        "citation_count": 0,
         "open_access": false,
         "open_access_pdf_url": null
       }
