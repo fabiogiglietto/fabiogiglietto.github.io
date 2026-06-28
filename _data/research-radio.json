@@ -1403,6 +1403,30 @@
       "author": "Kobi Hackenburg, Caroline Wagner, Luke Hewitt, Ben M. Tappin, Ed Saunders, Hannah Rose Kirk, Helen Margetts, Christopher Summerfield",
       "doi": null,
       "own": false
+    },
+    {
+      "id": "bibtex:Manovich2026-ih",
+      "bibtexKey": "Manovich2026-ih",
+      "title": "Inside WHO's Million-Dollar Bet on AI and Health Misinformation",
+      "description": "AI-generated podcast discussion.\n\nReference:\nManovich, L. (2026). A medium that thinks: Generative AI and media cognition. https://doi.org/10.1177/27523543261454458",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Manovich2026-ih.mp3",
+      "pubDate": "2026-06-28T13:11:17.175711+00:00",
+      "duration": "8:00",
+      "author": "Lev Manovich",
+      "doi": "10.1177/27523543261454458",
+      "own": false
+    },
+    {
+      "id": "bibtex:Crosset2026-mq",
+      "bibtexKey": "Crosset2026-mq",
+      "title": "How States Govern the Flow of Online Speech",
+      "description": "AI-generated podcast discussion.\n\nReference:\nCrosset, V., Venturini, T., & Dupont, B. (2026). Content moderation as traffic control: an analysis of EU and US legislation on platform regulation. https://doi.org/10.1080/21624887.2026.2692735",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Crosset2026-mq.mp3",
+      "pubDate": "2026-06-29T13:11:17.175711+00:00",
+      "duration": "8:45",
+      "author": "Valentine Crosset, Tommaso Venturini, Benoît Dupont",
+      "doi": "10.1080/21624887.2026.2692735",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -2809,6 +2833,30 @@
       "author": "Kobi Hackenburg, Caroline Wagner, Luke Hewitt, Ben M. Tappin, Ed Saunders, Hannah Rose Kirk, Helen Margetts, Christopher Summerfield",
       "doi": null,
       "own": false
+    },
+    "Manovich2026-ih": {
+      "id": "bibtex:Manovich2026-ih",
+      "bibtexKey": "Manovich2026-ih",
+      "title": "Inside WHO's Million-Dollar Bet on AI and Health Misinformation",
+      "description": "AI-generated podcast discussion.\n\nReference:\nManovich, L. (2026). A medium that thinks: Generative AI and media cognition. https://doi.org/10.1177/27523543261454458",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Manovich2026-ih.mp3",
+      "pubDate": "2026-06-28T13:11:17.175711+00:00",
+      "duration": "8:00",
+      "author": "Lev Manovich",
+      "doi": "10.1177/27523543261454458",
+      "own": false
+    },
+    "Crosset2026-mq": {
+      "id": "bibtex:Crosset2026-mq",
+      "bibtexKey": "Crosset2026-mq",
+      "title": "How States Govern the Flow of Online Speech",
+      "description": "AI-generated podcast discussion.\n\nReference:\nCrosset, V., Venturini, T., & Dupont, B. (2026). Content moderation as traffic control: an analysis of EU and US legislation on platform regulation. https://doi.org/10.1080/21624887.2026.2692735",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Crosset2026-mq.mp3",
+      "pubDate": "2026-06-29T13:11:17.175711+00:00",
+      "duration": "8:45",
+      "author": "Valentine Crosset, Tommaso Venturini, Benoît Dupont",
+      "doi": "10.1080/21624887.2026.2692735",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -3891,9 +3939,33 @@
       "author": "Fabio Giglietto",
       "doi": "10.4337/9781035325047.00023",
       "own": true
+    },
+    "10.1177/27523543261454458": {
+      "id": "bibtex:Manovich2026-ih",
+      "bibtexKey": "Manovich2026-ih",
+      "title": "Inside WHO's Million-Dollar Bet on AI and Health Misinformation",
+      "description": "AI-generated podcast discussion.\n\nReference:\nManovich, L. (2026). A medium that thinks: Generative AI and media cognition. https://doi.org/10.1177/27523543261454458",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Manovich2026-ih.mp3",
+      "pubDate": "2026-06-28T13:11:17.175711+00:00",
+      "duration": "8:00",
+      "author": "Lev Manovich",
+      "doi": "10.1177/27523543261454458",
+      "own": false
+    },
+    "10.1080/21624887.2026.2692735": {
+      "id": "bibtex:Crosset2026-mq",
+      "bibtexKey": "Crosset2026-mq",
+      "title": "How States Govern the Flow of Online Speech",
+      "description": "AI-generated podcast discussion.\n\nReference:\nCrosset, V., Venturini, T., & Dupont, B. (2026). Content moderation as traffic control: an analysis of EU and US legislation on platform regulation. https://doi.org/10.1080/21624887.2026.2692735",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Crosset2026-mq.mp3",
+      "pubDate": "2026-06-29T13:11:17.175711+00:00",
+      "duration": "8:45",
+      "author": "Valentine Crosset, Tommaso Venturini, Benoît Dupont",
+      "doi": "10.1080/21624887.2026.2692735",
+      "own": false
     }
   },
-  "totalEpisodes": 117,
-  "lastUpdated": "2026-06-27T12:27:21.740Z",
+  "totalEpisodes": 119,
+  "lastUpdated": "2026-06-28T06:49:55.929Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
