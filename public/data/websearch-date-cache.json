@@ -1088,5 +1088,15 @@
     "date": "2026-01-07",
     "confidence": "medium",
     "source": "url-path"
+  },
+  "https://www.smsociety.org/2026-panels/": {
+    "date": "2025-10-01",
+    "confidence": "medium",
+    "source": "gemini-page-estimate"
+  },
+  "https://cdn.ymaws.com/www.icahdq.org/resource/resmgr/conference/ICA2026_Program_Book_DRAFT.pdf": {
+    "date": "2025-05-01",
+    "confidence": "medium",
+    "source": "gemini-page-estimate"
   }
 }
