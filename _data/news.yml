@@ -1,27 +1,20 @@
-- date: '2026-06-28'
+- date: '2026-06-29'
   content: >-
-    Several recent studies highlight the multifaceted impact of Artificial
-    Intelligence on public discourse and cognition. Shared research explores how
-    AI systems can out-persuade expert humans, their potential in durably
-    reducing conspiracy beliefs through dialogue, and the concept of generative
-    AI as a 'medium that thinks.' Other papers delve into public attitudes
-    towards AI in specific countries and analyze the stakeholders driving AI
-    discourse, alongside investigations into how AI coding agents can reproduce
-    social science findings.
-  url: https://doi.org/10.1177/27523543261454458
+    Recent research examines cross-national information attacks, providing a
+    two-decade analysis of troll behavior specifically in Korea. This work
+    contributes to understanding long-term patterns and dynamics in digital
+    influence operations.
+  url: http://arxiv.org/abs/2606.22785v1
   platforms:
     - Mastodon
     - BlueSky
   toread: true
 - date: '2026-06-28'
   content: >-
-    Recent academic discussions address the complex landscape of digital
-    platform governance and data accessibility for research. New analyses
-    examine content moderation as 'traffic control' within EU and US legislation
-    on platform regulation. Further scholarship investigates the evolving
-    challenges and 'moving politics' concerning social media data access,
-    particularly for critical areas like election research, assessing factors
-    such as price, proficiency, and permission barriers.
+    A new study offers a critical perspective on platform regulation,
+    conceptualizing content moderation as 'traffic control.' The analysis
+    compares EU and US legislation to shed light on differing approaches to
+    governing digital platforms.
   url: https://doi.org/10.1080/21624887.2026.2692735
   platforms:
     - Mastodon
@@ -29,14 +22,33 @@
   toread: true
 - date: '2026-06-28'
   content: >-
-    Key research underscores critical issues within contemporary digital media
-    ecosystems, particularly concerning the spread and understanding of
-    information. Studies explore how alternative media are situated within the
-    broader digital news environment through audience overlap networks. Other
-    significant works analyze phenomena such as echo chambers, rabbit holes, and
-    radicalization pathways on platforms like YouTube, alongside understanding
-    disinformation as distinct narratives within hybrid media environments.
+    The evolving landscape of generative AI and its implications for media
+    cognition is explored in a recently highlighted paper titled 'A medium that
+    thinks.' This work delves into how AI systems interact with and shape our
+    understanding of media.
+  url: https://doi.org/10.1177/27523543261454458
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
+- date: '2026-06-28'
+  content: >-
+    Cross-country research investigates the position of alternative media within
+    the digital news ecosystem. The study utilizes audience overlap networks to
+    compare alternative-mainstream media relationships across different national
+    contexts.
   url: https://doi.org/10.1080/21670811.2026.2683342
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
+- date: '2026-06-27'
+  content: >-
+    The persuasive capabilities of AI systems are highlighted in a recent
+    preprint, suggesting their ability to outperform expert human persuaders.
+    This research has significant implications for understanding AI's influence
+    in communication and decision-making.
+  url: http://arxiv.org/abs/2606.16475v1
   platforms:
     - Mastodon
     - BlueSky
