@@ -1,5 +1,5 @@
 {
-  "overallSummary": "Fabio Giglietto maintains an active and diverse social media presence across Mastodon, LinkedIn, and Bluesky, focusing on computational social science, disinformation research, and academic opportunities. With a combined total of 3,580 followers, the presence effectively reaches different academic and professional communities. The average engagement rate across all posts is approximately 5.32%, indicating a moderately engaged audience, with Bluesky emerging as the most engaging platform.",
+  "overallSummary": "Fabio Giglietto maintains an active and professional social media presence across Mastodon, LinkedIn, and Bluesky, engaging a total audience of 3,580 followers with 7 recent posts. The average engagement rate across all platforms is approximately 5.32%, indicating a healthy level of audience interaction. LinkedIn commands the largest follower base, while Bluesky consistently demonstrates the highest per-post engagement rate, suggesting a highly engaged community there.",
   "engagementMetrics": {
     "totalFollowers": 3580,
     "averageEngagementRate": 5.32,
@@ -7,29 +7,32 @@
   },
   "contentThemes": [
     {
-      "theme": "Disinformation & Computational Methods",
-      "description": "Posts related to research on coordinated behavior, information operations, disinformation, and new computational tools/algorithms."
+      "theme": "Research & Publications",
+      "description": "Announcements of new papers, research tools (e.g., CooRnet), grants, and discussions on methodological approaches."
     },
     {
-      "theme": "Academic & Career Opportunities",
-      "description": "Announcements about new research grants, job openings (postdocs), and PhD student opportunities."
+      "theme": "Disinformation & Information Operations",
+      "description": "Specific focus on studying and detecting coordinated inauthentic behavior and information operations."
     },
     {
-      "theme": "Research Output & Dissemination",
-      "description": "Sharing new publications, software releases, and upcoming conference presentations."
+      "theme": "Career Opportunities & Recruitment",
+      "description": "Posts related to hiring postdoctoral researchers, PhD student opportunities, and calls for replies."
+    },
+    {
+      "theme": "Conferences & Presentations",
+      "description": "Mentions of upcoming presentations at relevant academic conferences."
     }
   ],
   "recommendations": [
-    "Leverage Bluesky's consistently high engagement by prioritizing it for announcements of new publications and research opportunities to maximize immediate reach and interaction.",
-    "Capitalize on LinkedIn's large professional audience for formal and high-impact announcements, such as major grant awards and significant hiring campaigns, which have shown strong performance on this platform.",
-    "Explore opportunities to cross-promote key content (e.g., major publications, academic openings) across platforms, tailoring the message slightly for each platform's audience to ensure broader visibility.",
-    "Consider incorporating direct calls to action or open questions in Mastodon posts to encourage more discussion and interaction, aligning with its community-oriented nature."
+    "Leverage Bluesky's high engagement for immediate announcements of new research and publications to maximize initial reach and interaction.",
+    "Continue utilizing LinkedIn for formal professional announcements such as grants and hiring, as it reaches the largest professional audience, even if the per-post engagement rate is slightly lower than Bluesky.",
+    "Consider cross-posting key research updates and opportunities across all platforms, tailoring the caption slightly for each platform's audience and format (e.g., use hashtags for conferences on Mastodon/Bluesky, more formal tone on LinkedIn).",
+    "Encourage more direct engagement on all platforms by asking questions or inviting discussions, especially on posts about new research or methodologies, to potentially boost comment/repost counts."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky exhibits the highest average engagement rate per post (6.14%), making it highly effective for sharing immediate research news like new papers and for recruiting research opportunities. It appears to be a dynamic platform for current academic dissemination.",
-    "mastodon": "Mastodon has the smallest follower count and the lowest average engagement rate (4.55%) among the platforms. Its content focuses on detailed research updates and methodological discussions, suggesting a highly specialized and niche audience.",
-    "linkedin": "LinkedIn boasts the largest follower base and demonstrates strong engagement for significant professional announcements such as grant awards and hiring opportunities. It serves as a crucial platform for broader professional outreach and career-related news.",
-    "overall": "The user maintains a strong professional profile across all platforms, but engagement varies, indicating different audience expectations and content types for each platform."
+    "bluesky": "Bluesky exhibits the highest average engagement rate per post (6.14%) and is highly effective for rapid announcements of new publications and recruitment opportunities, suggesting a very active and responsive follower base. Content on 'coordinated inauthentic behavior' performed exceptionally well here.",
+    "mastodon": "Mastodon provides stable engagement with a smaller, focused audience (780 followers). It's effective for detailed updates on research tools (like CooRnet) and discussions on methodological approaches to disinformation, aligning with its academic-leaning user base.",
+    "linkedin": "LinkedIn has the largest follower base (1,850 followers) and is the most impactful platform for significant professional announcements, such as grant awards and job opportunities. While its average engagement rate is slightly lower than Bluesky, the total interactions per post are substantial due to the larger audience size."
   },
   "topPerformingContent": [
     {
