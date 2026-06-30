@@ -1,11 +1,12 @@
 {
-  "totalEntries": 180,
-  "lastUpdated": "2026-06-30T09:41:13.749Z",
+  "totalEntries": 181,
+  "lastUpdated": "2026-06-30T10:37:11.632Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-06-28T06:59:06.341Z"
+    "latest": "2026-06-30T10:37:11.586Z"
   },
   "byDate": {
+    "2026-06-30": 1,
     "2026-06-28": 1,
     "2026-06-27": 2,
     "2026-06-25": 1,
@@ -14,8 +15,7 @@
     "2026-06-22": 2,
     "2026-06-20": 1,
     "2026-06-19": 3,
-    "2026-06-18": 1,
-    "2026-06-17": 1
+    "2026-06-18": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 51,
@@ -23,18 +23,25 @@
     "uniurb.it": 8,
     "aoir.org": 5,
     "open.online": 5,
+    "snurblog.org": 4,
     "icahdq.org": 4,
     "Il Sole 24 ORE": 4,
-    "snurblog.org": 3,
     "ilrestodelcarlino.it": 3,
     "smsociety.org": 2
   },
   "byRelevanceScore": {
-    "high": 157,
+    "high": 158,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Algorithmic Selection on Short-Video Platforms",
+      "url": "https://snurblog.org/blog/2026/06/08/algorithmic-selection-on-short-video-platforms/",
+      "source": "snurblog.org",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-06-30T10:37:11.586Z"
+    },
     {
       "title": "SMSociety 2026 Conference Programme - International Conference on Social Media & Society",
       "url": "https://socialmediaandsociety.org/2026-conference-programme/",
@@ -62,13 +69,6 @@
       "source": "smsociety.net",
       "relevanceScore": 0.9,
       "collectedAt": "2026-06-25T09:32:18.571Z"
-    },
-    {
-      "title": "The Evolving Communication Strategies of Mexican Rock Band The Warning",
-      "url": "https://snurb.info/2025/10/18/the-evolving-communication-strategies-of-mexican-rock-band-the-warning/",
-      "source": "snurb.info",
-      "relevanceScore": 1,
-      "collectedAt": "2026-06-24T09:34:37.180Z"
     }
   ]
 }
