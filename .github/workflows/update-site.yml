@@ -114,7 +114,28 @@ jobs:
           "
           
           echo "📤 Pushing updates to repository..."
-          git push
+          # Resilient push: another writer (concurrent dispatch, daily cron, or
+          # external commit) may advance main between our checkout and push.
+          # Rebase our fresh commit onto the latest main and retry. The data
+          # files are regenerated wholesale, so they conflict on a plain rebase;
+          # `-X theirs` keeps THIS run's freshly collected data (in a rebase
+          # "theirs" = the commit being replayed). Non-conflicting upstream
+          # changes (e.g. a schedule run's weekly bio) are preserved.
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              echo "✅ Pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "⚠️ Push rejected (attempt $attempt) — rebasing onto latest origin/main..."
+            if ! git pull --rebase -X theirs origin main; then
+              echo "❌ Rebase failed irrecoverably — aborting"
+              git rebase --abort || true
+              exit 1
+            fi
+            sleep $((RANDOM % 5 + attempt))
+          done
+          echo "❌ Push failed after 5 attempts"
+          exit 1
 
       # End of the chain: fg-zettelkasten's `update` leg — themes, notes
       # (with the real podcast link) and the Slack digest.
