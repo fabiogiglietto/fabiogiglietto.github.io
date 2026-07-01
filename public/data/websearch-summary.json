@@ -1,11 +1,12 @@
 {
-  "totalEntries": 181,
-  "lastUpdated": "2026-07-01T11:03:41.388Z",
+  "totalEntries": 183,
+  "lastUpdated": "2026-07-01T18:34:00.817Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-06-30T10:37:11.586Z"
+    "latest": "2026-07-01T18:34:00.771Z"
   },
   "byDate": {
+    "2026-07-01": 2,
     "2026-06-30": 1,
     "2026-06-28": 1,
     "2026-06-27": 2,
@@ -14,27 +15,40 @@
     "2026-06-23": 1,
     "2026-06-22": 2,
     "2026-06-20": 1,
-    "2026-06-19": 3,
-    "2026-06-18": 1
+    "2026-06-19": 3
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 51,
     "snurb.info": 10,
     "uniurb.it": 8,
+    "icahdq.org": 5,
     "aoir.org": 5,
     "open.online": 5,
     "snurblog.org": 4,
-    "icahdq.org": 4,
     "Il Sole 24 ORE": 4,
     "ilrestodelcarlino.it": 3,
     "smsociety.org": 2
   },
   "byRelevanceScore": {
-    "high": 158,
+    "high": 160,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Welcome to the 76th Annual Conference of the International Communication Association!",
+      "url": "https://cdn.icahdq.org/annual-conferences/2026-Gold-Coast/ICA26_ProgramBook_excerpt.pdf",
+      "source": "icahdq.org",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-07-01T18:34:00.771Z"
+    },
+    {
+      "title": "ymaws.com",
+      "url": "https://cdn.ymaws.com/www.icahdq.org/resource/resmgr/conference/2026/ica26-pdf-program-saturday.pdf",
+      "source": "cdn.ymaws.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-07-01T18:34:00.771Z"
+    },
     {
       "title": "Algorithmic Selection on Short-Video Platforms",
       "url": "https://snurblog.org/blog/2026/06/08/algorithmic-selection-on-short-video-platforms/",
@@ -55,20 +69,6 @@
       "source": "smsociety.org",
       "relevanceScore": 0.9,
       "collectedAt": "2026-06-27T12:34:30.520Z"
-    },
-    {
-      "title": "Liveblog: ICA 2026: Recommending the State: How Social Media Algorithms Curate State-Created Content in China",
-      "url": "https://snurblog.org/blog/2026/06/08/liveblog-ica-2026-recommending-the-state-how-social-media-algorithms-curate-state-created-content-in-china/",
-      "source": "snurblog.org",
-      "relevanceScore": 0.95,
-      "collectedAt": "2026-06-27T09:36:33.357Z"
-    },
-    {
-      "title": "Panel – Meta Content Library Community Roundtable: Where to for Social Media Research? – International Conference on Social Media & Society",
-      "url": "https://smsociety.net/2026-conference-programme/panel-meta-content-library-community-roundtable-where-to-for-social-media-research/",
-      "source": "smsociety.net",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-06-25T09:32:18.571Z"
     }
   ]
 }
