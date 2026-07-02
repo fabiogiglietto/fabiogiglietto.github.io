@@ -1,38 +1,29 @@
 {
-  "overallSummary": "Fabio Giglietto maintains an active and academically focused social media presence across Mastodon, LinkedIn, and Bluesky, accumulating a total of 3,580 followers. The content primarily revolves around computational social science, disinformation research, and academic opportunities. While LinkedIn boasts the largest follower count, Bluesky shows the highest overall engagement rate, indicating a highly interactive audience on that platform. The profile consistently shares updates on research, publications, grants, and hiring, successfully reaching different segments of the academic and professional communities.",
+  "overallSummary": "Fabio Giglietto maintains an active and focused presence across three social media platforms, engaging a combined follower base of 3,580. His content primarily centers around computational social science research, misinformation studies, and academic opportunities. The profile exhibits a healthy average engagement rate of approximately 5.32% across all recent posts, indicating a receptive audience for his specialized academic and research-related content.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 11.9,
+    "averageEngagementRate": 5.32,
     "mostEngagingPlatform": "bluesky"
   },
   "contentThemes": [
     {
-      "theme": "Research Dissemination & Methodology",
-      "description": "Sharing new publications, algorithms (CooRnet), discussions on methodological approaches to disinformation, and coordinated behavior."
+      "theme": "Computational Social Science & Misinformation Research",
+      "description": "Covers topics like new algorithms (CooRnet), methodological approaches, publication announcements on coordinated inauthentic behavior, and conference participation related to disinformation."
     },
     {
-      "theme": "Academic & Career Opportunities",
-      "description": "Announcing research grants, postdoctoral positions, and PhD opportunities."
-    },
-    {
-      "theme": "Academic Events & Presentations",
-      "description": "Promoting upcoming conference presentations and discussions on research topics."
-    },
-    {
-      "theme": "Disinformation & Information Operations",
-      "description": "Focus on studying and detecting information operations and disinformation across platforms."
+      "theme": "Academic & Professional Opportunities",
+      "description": "Includes announcements regarding new research grants, hiring postdoctoral researchers, and PhD student research opportunities."
     }
   ],
   "recommendations": [
-    "Cross-promote key announcements (e.g., new papers, hiring) across all platforms, tailoring the message slightly to fit each platform's audience and format. For example, a detailed LinkedIn post on a paper could link to a more concise Bluesky announcement.",
-    "Capitalize on Bluesky's high engagement by actively participating in relevant conversations, using platform-specific hashtags, and potentially hosting Q&A sessions about new research or opportunities.",
-    "Continue leveraging LinkedIn for formal announcements like grants and hiring, as it yields high direct engagement (likes/comments) for these professional updates. Consider using LinkedIn articles for deeper dives into research topics.",
-    "Maintain consistent posting schedules, especially on Bluesky and LinkedIn, where engagement is highest. Experiment with visual content (e.g., infographics, short videos) for research findings to boost engagement further."
+    "Leverage Bluesky's High Engagement: Given Bluesky's highest average engagement rate (6.14%) and the strong performance of posts announcing new publications and research opportunities, prioritize this platform for key academic announcements and direct interaction.",
+    "Strategic Cross-Posting & Platform-Specific Content: Adapt high-performing content for relevant platforms. While research updates resonate broadly, LinkedIn is ideal for formal announcements (grants, hiring) that drive professional comments, whereas Bluesky is effective for quick dissemination of new papers and conference news. Consider repurposing top-performing posts across platforms with tailored messaging.",
+    "Encourage Discussion on LinkedIn: With comments being a direct engagement metric on LinkedIn, continue to post content that invites professional discussion and networking, as demonstrated by the success of grant and hiring announcements. Actively respond to comments to foster community."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky exhibits the highest engagement rate (18.42%), suggesting a very active and responsive audience. Posts about new publications and research opportunities perform exceptionally well. This platform is ideal for timely academic updates and direct interaction.",
-    "mastodon": "Mastodon shows a moderate engagement rate (9.10%) and serves as a reliable platform for academic discourse and updates within a niche community. Content related to new tools and methodological discussions resonates well here.",
-    "linkedin": "LinkedIn has the largest follower base and a solid engagement rate (9.73%). It is particularly effective for professional announcements such as grant awards and hiring calls, demonstrating its value for career-focused networking and institutional visibility."
+    "bluesky": "Bluesky is the most engaging platform with an average engagement rate of 6.14%. Posts announcing new publications and research opportunities perform exceptionally well, indicating it's an excellent channel for academic outreach and direct engagement within the computational social science community.",
+    "mastodon": "Mastodon shows consistent, moderate engagement with an average rate of 4.55%. It serves as a valuable platform for sharing research updates and fostering discussions around methodological approaches, despite having a smaller follower count compared to LinkedIn.",
+    "linkedin": "LinkedIn boasts the largest follower base and is a strong platform for formal professional announcements, such as grant awards and hiring calls, achieving an average engagement rate of 4.87%. Content that invites comments (like hiring posts) performs well, highlighting its utility for professional networking and talent acquisition."
   },
   "topPerformingContent": [
     {
