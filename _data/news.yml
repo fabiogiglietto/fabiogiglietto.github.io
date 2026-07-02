@@ -1,51 +1,44 @@
-- date: '2026-07-01'
-  content: >-
-    Recent academic attention has focused on artificial intelligence's evolving
-    role in media and society. Studies explore how AI influences public
-    perception and engagement with news, trust in generative AI, and the shaping
-    of AI discourse across different national contexts. The latest research also
-    examines public attitudes towards AI technologies like chatbots and smart
-    devices.
-  url: https://doi.org/10.1038/s41598-026-58743-0
-  platforms:
-    - Mastodon
-    - BlueSky
-  toread: true
-- date: '2026-06-27'
-  content: >-
-    Research continues to reveal the sophisticated capabilities of artificial
-    intelligence. Recent findings demonstrate AI's potential to outperform human
-    experts in persuasion, effectively reduce conspiracy beliefs through
-    dialogue, and even reproduce social science findings, highlighting its
-    expanding utility and influence.
-  url: http://arxiv.org/abs/2606.16475v1
-  platforms:
-    - Mastodon
-    - BlueSky
-  toread: true
 - date: '2026-07-02'
   content: >-
-    Scholarly work critically examines content moderation strategies and
-    platform regulation, including the effectiveness of features like Community
-    Notes in managing polarizing content during elections. Further research
-    delves into platform collective behavior as democratic infrastructure and
-    analyzes legislative approaches to platform regulation in the EU and US,
-    alongside studies on cross-national information attacks.
+    New research highlights how platforms like Community Notes, designed to
+    moderate content, may inadvertently undermoderate polarizing material,
+    potentially creating risks for electoral processes. The paper, by Paul
+    Bouchaud and Pedro Ramaciotti, suggests inherent design limitations
+    contribute to these challenges.
   url: https://doi.org/10.1126/sciadv.aee6932
   platforms:
     - Mastodon
     - BlueSky
   toread: true
-- date: '2026-06-28'
+- date: '2026-07-01'
   content: >-
-    The dynamic nature of digital media ecosystems continues to be a focus of
-    academic inquiry, with new studies exploring the positioning of alternative
-    media, the formation of echo chambers and radicalization pathways on
-    platforms like YouTube, and how young adults perceive informativeness on
-    digital platforms. Additionally, advancements in communication research
-    methods are being highlighted, particularly for analyzing temporal dynamics
-    in digital trace data and addressing challenges in social media data access.
-  url: https://doi.org/10.1080/21670811.2026.2683342
+    A study by Fabrizio Gilardi et al. explores how quality perceptions and
+    intended engagement with news are influenced by whether content is
+    AI-generated or AI-assisted. This timely analysis contributes to
+    understanding audience responses in an evolving media landscape.
+  url: https://doi.org/10.1038/s41598-026-58743-0
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
+- date: '2026-07-01'
+  content: >-
+    Research by Anja Bechmann critically examines platform collective behavior
+    as a form of democratic infrastructure, moving beyond simple causal effects
+    in the era of the Digital Services Act (DSA). The paper advocates for a
+    nuanced understanding of these dynamics.
+  url: https://doi.org/10.1080/10584609.2026.2679475
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
+- date: '2026-06-04'
+  content: >-
+    Claes H. de Vreese and Rebekah Tromble discuss the evolving challenges of
+    social media data access for researchers in their paper 'Moving targets,
+    moving politics.' This analysis provides an important overview of the
+    current state of play in platform data accessibility.
+  url: https://doi.org/10.1080/10584609.2026.2681041
   platforms:
     - Mastodon
     - BlueSky
