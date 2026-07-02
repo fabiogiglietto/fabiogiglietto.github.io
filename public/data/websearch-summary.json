@@ -1,11 +1,12 @@
 {
-  "totalEntries": 183,
-  "lastUpdated": "2026-07-01T18:34:00.817Z",
+  "totalEntries": 185,
+  "lastUpdated": "2026-07-02T05:37:49.282Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-07-01T18:34:00.771Z"
+    "latest": "2026-07-02T05:37:49.235Z"
   },
   "byDate": {
+    "2026-07-02": 2,
     "2026-07-01": 2,
     "2026-06-30": 1,
     "2026-06-28": 1,
@@ -14,27 +15,40 @@
     "2026-06-24": 1,
     "2026-06-23": 1,
     "2026-06-22": 2,
-    "2026-06-20": 1,
-    "2026-06-19": 3
+    "2026-06-20": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 51,
-    "snurb.info": 10,
+    "snurb.info": 11,
     "uniurb.it": 8,
     "icahdq.org": 5,
     "aoir.org": 5,
     "open.online": 5,
+    "ilrestodelcarlino.it": 4,
     "snurblog.org": 4,
     "Il Sole 24 ORE": 4,
-    "ilrestodelcarlino.it": 3,
     "smsociety.org": 2
   },
   "byRelevanceScore": {
-    "high": 160,
+    "high": 162,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Tutte le ultime notizie in tempo reale su Meta - Il Resto del Carlino",
+      "url": "https://www.ilrestodelcarlino.it/organization/meta",
+      "source": "ilrestodelcarlino.it",
+      "relevanceScore": 0.95,
+      "collectedAt": "2026-07-02T05:37:49.235Z"
+    },
+    {
+      "title": "Music | Snurblog — Axel Bruns",
+      "url": "https://snurb.info/2026/03/18/music/",
+      "source": "snurb.info",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-07-02T05:37:49.235Z"
+    },
     {
       "title": "Welcome to the 76th Annual Conference of the International Communication Association!",
       "url": "https://cdn.icahdq.org/annual-conferences/2026-Gold-Coast/ICA26_ProgramBook_excerpt.pdf",
@@ -55,20 +69,6 @@
       "source": "snurblog.org",
       "relevanceScore": 0.9,
       "collectedAt": "2026-06-30T10:37:11.586Z"
-    },
-    {
-      "title": "SMSociety 2026 Conference Programme - International Conference on Social Media & Society",
-      "url": "https://socialmediaandsociety.org/2026-conference-programme/",
-      "source": "socialmediaandsociety.org",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-06-28T06:59:06.341Z"
-    },
-    {
-      "title": "Full list of Panels 2026 - International Conference on Social Media & Society",
-      "url": "https://www.smsociety.org/full-list-of-panels-2026/",
-      "source": "smsociety.org",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-06-27T12:34:30.520Z"
     }
   ]
 }
