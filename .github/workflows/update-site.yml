@@ -145,3 +145,24 @@ jobs:
           token: ${{ secrets.PIPELINE_DISPATCH_TOKEN }}
           repository: fabiogiglietto/fg-zettelkasten
           event-type: pipeline-finalize
+      # Pipeline observability — alert on any failed run. No-ops until a
+      # SLACK_WEBHOOK_URL (or SLACK_BOT_TOKEN + vars.OPS_SLACK_CHANNEL)
+      # is configured in this repo's settings.
+      - name: Notify Slack on failure
+        if: failure()
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_ALERT_CHANNEL: ${{ vars.OPS_SLACK_CHANNEL }}
+          ALERT_TEXT: ":rotating_light: ${{ github.repository }} / ${{ github.workflow }} failed (${{ github.event_name }}): ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+        run: |
+          if [ -n "$SLACK_WEBHOOK_URL" ]; then
+            jq -n --arg text "$ALERT_TEXT" '{text: $text}' \
+              | curl -sf -X POST -H 'Content-Type: application/json' -d @- "$SLACK_WEBHOOK_URL" || true
+          elif [ -n "$SLACK_BOT_TOKEN" ] && [ -n "$SLACK_ALERT_CHANNEL" ]; then
+            jq -n --arg ch "$SLACK_ALERT_CHANNEL" --arg text "$ALERT_TEXT" '{channel: $ch, text: $text}' \
+              | curl -sf -X POST -H "Authorization: Bearer $SLACK_BOT_TOKEN" -H 'Content-Type: application/json' \
+                  -d @- https://slack.com/api/chat.postMessage || true
+          else
+            echo "No Slack credentials configured — skipping failure alert"
+          fi
