@@ -34,7 +34,7 @@ A Jekyll-powered academic portfolio that writes itself. Pulls from ORCID, Google
 
 - **Frontend**: Jekyll, HTML5, CSS3, JavaScript
 - **Backend**: Node.js data collectors and generators
-- **AI Integration**: Google Gemini 1.5 Pro for content generation with Google Search grounding
+- **AI Integration**: Google Gemini 2.0 Flash for content generation with Google Search grounding
 - **APIs**: Multiple academic and social platforms
 - **Deployment**: GitHub Pages with automated workflows
 - **Hosting**: GitHub Actions for CI/CD
