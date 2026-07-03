@@ -61,15 +61,54 @@ class ToreadCollector {
     return null;
   }
 
+  /**
+   * Cheap structural check against the published feed contract
+   * (toread/schema/feed.schema.json is normative; this mirrors its
+   * load-bearing parts without pulling in a schema validator).
+   * Returns an array of problem descriptions; empty means OK.
+   */
+  validateFeedShape(feedData) {
+    const errors = [];
+    if (!feedData || typeof feedData !== 'object') {
+      errors.push('feed is not an object');
+      return errors;
+    }
+    if (feedData.version !== 'https://jsonfeed.org/version/1.1') {
+      errors.push(`unexpected feed version: ${feedData.version}`);
+    }
+    if (!Array.isArray(feedData.items)) {
+      errors.push('items is not an array');
+      return errors;
+    }
+    const badItems = feedData.items.filter(
+      (it) =>
+        !it ||
+        typeof it.id !== 'string' ||
+        !it.id.startsWith('bibtex:') ||
+        typeof it.title !== 'string'
+    );
+    if (badItems.length > 0) {
+      errors.push(
+        `${badItems.length} item(s) missing a string "bibtex:*" id or title`
+      );
+    }
+    return errors;
+  }
+
   async collect() {
     try {
       console.log('Fetching toread papers from GitHub feed...');
-      
+
       // Fetch the JSON feed from GitHub
       const feedData = await this.fetchFromUrl(this.feedUrl);
-      
-      if (!feedData || !feedData.items) {
-        console.error('Invalid feed data structure');
+
+      // Contract gate: on drift, return null so the previously collected
+      // toread.json is kept (last-good) instead of publishing garbage.
+      const contractErrors = this.validateFeedShape(feedData);
+      if (contractErrors.length > 0) {
+        console.error(
+          `toread feed violates the published contract: ${contractErrors.join('; ')}`
+        );
         return null;
       }
 
