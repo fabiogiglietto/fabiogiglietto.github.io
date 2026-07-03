@@ -1,8 +1,8 @@
 - date: '2026-07-03'
   content: >-
-    A new study critically examines the foundational assumption of survey
-    research, investigating the evidence that respondents truly understand
-    survey questions, authored by Hinck, Musashi et al.
+    A recent paper by Hinck, Musashi et al. raises crucial questions about
+    survey methodology, investigating the evidence for respondents'
+    comprehension of survey questions.
   url: >-
     https://scholar.google.com/scholar?q=Where%27s%20the%20Evidence%20that%20Respondents%20Understand%20Your%20Survey%20Questions%3F
   platforms:
@@ -11,10 +11,19 @@
   toread: true
 - date: '2026-07-02'
   content: >-
-    Recent research highlights how platforms' 'Community Notes' features,
-    despite their intent, may undermoderate polarizing content by design,
-    potentially creating risks in electoral processes. This work is by Paul
-    Bouchaud and Pedro Ramaciotti.
+    Research from Rajesh Jayaram et al. explores advancements in automating
+    scientific review processes with Google's Paper Assistant Tool, highlighting
+    potential impacts on academic peer review.
+  url: http://arxiv.org/abs/2606.28277v1
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
+- date: '2026-07-02'
+  content: >-
+    A study by Paul Bouchaud and Pedro Ramaciotti highlights concerns that
+    'Community Notes' features may undermoderate polarizing content, potentially
+    creating risks in electoral processes.
   url: https://doi.org/10.1126/sciadv.aee6932
   platforms:
     - Mastodon
@@ -22,31 +31,20 @@
   toread: true
 - date: '2026-07-01'
   content: >-
-    An academic paper delves into public perceptions of quality and intended
-    engagement when encountering AI-generated and AI-assisted news content,
-    authored by Fabrizio Gilardi et al.
+    Anja Bechmann's latest work delves into platform collective behavior,
+    re-examining it as democratic infrastructure and moving beyond causal
+    effects in the era of the Digital Services Act (DSA).
+  url: https://doi.org/10.1080/10584609.2026.2679475
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
+- date: '2026-07-01'
+  content: >-
+    Fabrizio Gilardi et al. published findings on how users perceive the quality
+    of and intend to engage with news content that is either AI-generated or
+    AI-assisted.
   url: https://doi.org/10.1038/s41598-026-58743-0
-  platforms:
-    - Mastodon
-    - BlueSky
-  toread: true
-- date: '2026-06-28'
-  content: >-
-    New analysis draws parallels between content moderation and traffic control,
-    examining the legislative approaches to platform regulation in the EU and
-    US. This study is by Valentine Crosset, Tommaso Venturini, and Benoît
-    Dupont.
-  url: https://doi.org/10.1080/21624887.2026.2692735
-  platforms:
-    - Mastodon
-    - BlueSky
-  toread: true
-- date: '2026-06-21'
-  content: >-
-    Intriguing findings from Thomas H Costello, Gordon Pennycook, and David
-    Gertler Rand suggest that engaging in dialogues with AI systems can durably
-    reduce individuals' conspiracy beliefs.
-  url: https://doi.org/10.31234/osf.io/xcwdn
   platforms:
     - Mastodon
     - BlueSky

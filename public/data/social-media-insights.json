@@ -1,38 +1,35 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a focused academic and professional social media presence across Mastodon, LinkedIn, and Bluesky, accumulating a total of 3,580 followers. His content primarily revolves around computational social science, disinformation research, and academic career opportunities. While LinkedIn boasts the largest follower count, Bluesky demonstrates the highest average engagement rate per post, indicating a highly active and responsive audience on that platform, especially for new research and opportunities.",
+  "overallSummary": "Fabio Giglietto maintains a strong academic and professional social media presence across Mastodon, LinkedIn, and Bluesky. With a combined total of 3,580 followers, the profile consistently shares updates on research, academic opportunities, and publications. LinkedIn serves as the largest platform by follower count and generates the highest total engagement, while Bluesky shows the highest average engagement rate per post. The content is highly specialized, focusing on computational social science, disinformation, and information operations.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 5.32,
+    "averageEngagementRate": 5.19,
     "mostEngagingPlatform": "bluesky"
   },
   "contentThemes": [
     {
-      "theme": "Computational Social Science & Research",
-      "description": "Posts related to new algorithms, research papers, grants, and methodological discussions in computational social science."
+      "theme": "Disinformation & Information Operations Research",
+      "description": "Posts related to research findings, methodologies, and discussions on disinformation, coordinated behavior, and information operations across platforms."
     },
     {
-      "theme": "Disinformation & Information Operations",
-      "description": "Content specifically addressing coordinated inauthentic behavior, information operations, and disinformation studies."
+      "theme": "Academic & Career Opportunities",
+      "description": "Announcements for research grants, hiring postdoctoral researchers, and PhD student opportunities."
     },
     {
-      "theme": "Academic Opportunities & Hiring",
-      "description": "Announcements for postdoctoral positions, PhD opportunities, and general research team expansions."
-    },
-    {
-      "theme": "Conference Participation",
-      "description": "Mentions of upcoming presentations at academic conferences."
+      "theme": "Research Outputs & Tools",
+      "description": "Sharing new paper publications, software releases (e.g., CooRnet v2.0), and presenting research at conferences."
     }
   ],
   "recommendations": [
-    "Leverage Bluesky's high engagement for key research announcements and direct calls to action, potentially cross-promoting these from LinkedIn and Mastodon.",
-    "Continue tailoring content to LinkedIn's professional audience with formal announcements about grants, hiring, and major team news, as this strategy yields significant engagement there.",
-    "Explore creating more short-form, engaging content or threads on Bluesky and Mastodon that delve into preliminary research insights or 'work-in-progress' updates to capitalize on the community's interest in direct academic discourse.",
-    "Implement a consistent cross-promotion strategy for significant updates (e.g., new papers, job openings) across all platforms, adapting the message slightly for each platform's tone and audience."
+    "Leverage LinkedIn's large audience for major announcements and opportunities, as it consistently generates high overall engagement.",
+    "Continue to utilize Bluesky for new research publications and conference participations, given its higher average engagement rate, and consider cross-posting highly engaging content from Bluesky to other platforms.",
+    "Actively engage with comments and replies on posts, especially on LinkedIn and Bluesky, to foster community and encourage further discussion, potentially boosting engagement.",
+    "Explore creating short, digestible summaries or visuals for research outputs to increase accessibility and shareability across all platforms.",
+    "Use relevant hashtags consistently across platforms to improve discoverability, especially for academic and research-focused content."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky is the most engaging platform, boasting the highest average engagement rate per post. It is highly effective for announcing new publications and research opportunities, indicating a very responsive academic and research-oriented audience.",
-    "mastodon": "Mastodon serves as a focused channel for sharing technical research updates and methodological discussions within the academic sphere. It maintains a dedicated audience interested in specific academic and computational social science content.",
-    "linkedin": "LinkedIn has the largest follower base and is the primary platform for formal professional announcements, such as grant awards and significant hiring opportunities. It consistently generates high engagement for these high-impact career and funding-related posts."
+    "bluesky": "Bluesky exhibits the highest average engagement rate per post (7.37% for the top post, 6.14% average), indicating a highly engaged audience receptive to direct announcements of publications and conference appearances. It's effective for timely research-related updates and academic opportunities.",
+    "mastodon": "Mastodon provides a focused environment for detailed research updates and methodological discussions within the academic community, though it shows a comparatively lower average engagement rate (4.55%). It's valuable for reaching a niche audience interested in specific tool releases like CooRnet.",
+    "linkedin": "LinkedIn is the largest platform in terms of followers and total engagement. It is exceptionally effective for professional announcements such as grant awards and hiring opportunities, consistently generating a high volume of likes and comments (average engagement rate of 4.87%)."
   },
   "topPerformingContent": [
     {
