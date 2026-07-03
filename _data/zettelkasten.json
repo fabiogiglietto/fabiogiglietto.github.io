@@ -1785,7 +1785,7 @@
       "topics": [
         "generative-ai-and-media"
       ],
-      "podcastLinked": false
+      "podcastLinked": true
     },
     "Gilardi2026-hw": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Gilardi2026-hw",
@@ -1799,12 +1799,12 @@
       "topics": [
         "platform-governance-data-access"
       ],
-      "podcastLinked": false
+      "podcastLinked": true
     },
     "Jayaram2026-wd": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Jayaram2026-wd",
       "topics": [],
-      "podcastLinked": false
+      "podcastLinked": true
     },
     "Bouchaud2026-np": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Bouchaud2026-np",
@@ -1812,11 +1812,16 @@
         "platform-governance-data-access",
         "polarization-hybrid-media"
       ],
+      "podcastLinked": true
+    },
+    "Hinck2026-yj": {
+      "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Hinck2026-yj",
+      "topics": [],
       "podcastLinked": false
     }
   },
-  "totalNotes": 245,
+  "totalNotes": 246,
   "siteUrl": "https://fabiogiglietto.github.io/fg-zettelkasten/",
-  "lastUpdated": "2026-07-03T05:57:36.036Z",
+  "lastUpdated": "2026-07-03T08:03:56.003Z",
   "source": "https://github.com/fabiogiglietto/fg-zettelkasten"
 }
