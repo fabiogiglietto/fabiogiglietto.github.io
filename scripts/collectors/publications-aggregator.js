@@ -388,6 +388,12 @@ async function collect() {
             if (pub.abstract && !publication.abstract) {
               publication.abstract = pub.abstract;
             }
+            if (!publication.authors && pub.authors) {
+              publication.authors = pub.authors;
+            }
+            if (!publication.venue && (pub.journal || pub.publisher)) {
+              publication.venue = pub.journal || pub.publisher;
+            }
             console.log(`Matched ORA publication by DOI: "${pub.title}"`);
             matched = true;
           }
@@ -407,6 +413,12 @@ async function collect() {
               publication.oaPdfUrl = pub.oaPdfUrl || null;
               if (pub.abstract && !publication.abstract) {
                 publication.abstract = pub.abstract;
+              }
+              if (!publication.authors && pub.authors) {
+                publication.authors = pub.authors;
+              }
+              if (!publication.venue && (pub.journal || pub.publisher)) {
+                publication.venue = pub.journal || pub.publisher;
               }
               // Add DOI if missing
               if (!publication.doi && pub.doi) {
