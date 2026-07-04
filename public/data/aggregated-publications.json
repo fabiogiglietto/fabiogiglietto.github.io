@@ -13,14 +13,14 @@
       "citations": {
         "scholar": 419,
         "wos": 410,
-        "scopus": 185,
+        "scopus": null,
         "semanticScholar": 145
       },
       "source_urls": {
         "orcid": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84898915306&partnerID=MN8TOARS",
         "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:NyGDZy8z5eUC",
         "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000334367600006&DestLinkType=FullRecord&DestApp=WOS_CPL",
-        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=84898915306&origin=inward",
+        "scopus": null,
         "semanticScholar": "https://www.semanticscholar.org/paper/mock-s2-id-1",
         "ora": null,
         "crossref": "https://doi.org/10.1111/jcom.12085"
@@ -29,13 +29,13 @@
         "orcid": 18425535,
         "scholar": "NyGDZy8z5eUC",
         "wos": "WOS:000334367600006",
-        "scopus": "84898915306",
+        "scopus": null,
         "semanticScholar": "mock-s2-id-1",
         "ora": null
       },
       "metrics": {
         "total_citations": 419,
-        "citation_sources": 4
+        "citation_sources": 3
       },
       "crossref_type": "journal-article",
       "publisher": "Oxford University Press (OUP)",
@@ -107,7 +107,7 @@
       "citations": {
         "scholar": 232,
         "wos": 0,
-        "scopus": 116,
+        "scopus": 117,
         "semanticScholar": null
       },
       "source_urls": {
@@ -344,7 +344,7 @@
       "citations": {
         "scholar": 61,
         "wos": 0,
-        "scopus": 26,
+        "scopus": 27,
         "semanticScholar": null
       },
       "source_urls": {
@@ -851,7 +851,7 @@
       "citations": {
         "scholar": 22,
         "wos": 0,
-        "scopus": 8,
+        "scopus": 10,
         "semanticScholar": null
       },
       "source_urls": {
@@ -2398,14 +2398,14 @@
       "citations": {
         "scholar": 2,
         "wos": null,
-        "scopus": null,
+        "scopus": 0,
         "semanticScholar": null
       },
       "source_urls": {
         "orcid": "https://ora.uniurb.it/handle/11576/2774611",
         "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:SAZ1SQo2q1kC",
         "wos": null,
-        "scopus": null,
+        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105042810186&origin=inward",
         "semanticScholar": null,
         "ora": "https://ora.uniurb.it/handle/11576/2774611",
         "crossref": "https://doi.org/10.1007/978-3-032-11782-3_4"
@@ -2414,13 +2414,13 @@
         "orcid": 213509727,
         "scholar": "SAZ1SQo2q1kC",
         "wos": null,
-        "scopus": null,
+        "scopus": "105042810186",
         "semanticScholar": null,
         "ora": "11576/2774611"
       },
       "metrics": {
         "total_citations": 2,
-        "citation_sources": 1
+        "citation_sources": 2
       },
       "oraHandle": "11576/2774611",
       "oaPdfUrl": "https://ora.uniurb.it/bitstream/11576/2774611/2/Vera%20Ai%20Book%20Chapter%20Uniurb%20%28pre-print%20for%20sharing%29-compressed.pdf",
@@ -3490,6 +3490,45 @@
       "publisher": "Edward Elgar Publishing"
     },
     {
+      "title": "Exploring the Zombie Internet: Anatomy of Three Deceptive Information Operations on Facebook",
+      "type": "journal-article",
+      "venue": null,
+      "authors": null,
+      "year": 2026,
+      "month": 1,
+      "day": 1,
+      "publicationDate": "2026-01-01",
+      "doi": null,
+      "citations": {
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": "https://ora.uniurb.it/handle/11576/2779031",
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": "https://ora.uniurb.it/handle/11576/2779031"
+      },
+      "source_ids": {
+        "orcid": 219561974,
+        "scholar": null,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": "11576/2779031"
+      },
+      "metrics": {
+        "total_citations": 0,
+        "citation_sources": 0
+      },
+      "oraHandle": "11576/2779031",
+      "oaPdfUrl": null
+    },
+    {
       "title": "Manipolazione dei media ed influenza digitale. Sfide, tecnologie e risposte",
       "type": "book-chapter",
       "venue": null,
@@ -3743,7 +3782,7 @@
         "wos": null,
         "scopus": null,
         "semanticScholar": null,
-        "ora": "https://ora.uniurb.it/handle/11576/2718711"
+        "ora": null
       },
       "source_ids": {
         "orcid": 138061876,
@@ -3751,15 +3790,12 @@
         "wos": null,
         "scopus": null,
         "semanticScholar": null,
-        "ora": "11576/2718711"
+        "ora": null
       },
       "metrics": {
         "total_citations": 0,
         "citation_sources": 0
-      },
-      "oraHandle": "11576/2718711",
-      "oaPdfUrl": null,
-      "abstract": "This chapter outlines the most relevant topics discussed during the campaign on two Italian mainstream social media. The study analyzes posts collected through CrowdTangle mentioning a set of political keywords published on Facebook Pages/groups and Instagram accounts between 21 July, when Draghi resigned as Prime Minister, and 25 September 2022, the day of the election. A breakout algorithm detector is used to identify peaks in daily engagement, and for each peak, the main topics were identified using LDA (Latent Dirichlet Allocation). The chapter provides insight into the trends and topics that were most likely to drive engagement on these platforms during the campaign period. The results of the study may be useful for understanding the role of social media in political communication and for identifying the most effective strategies for reaching and engaging with voters through these channels."
+      }
     },
     {
       "title": "MAPPING NEFARIOUS SOCIAL MEDIA ACTORS TO SPEED-UP COVID-19 FACT-CHECKING - SINTESI IN ITALIANO",
@@ -5809,7 +5845,7 @@
     }
   ],
   "metrics": {
-    "total_publications": 155,
+    "total_publications": 156,
     "total_citations": 2349,
     "h_index": 22,
     "i10_index": 34,
@@ -5822,5 +5858,5 @@
       "with_ora": 26
     }
   },
-  "lastUpdated": "2026-07-03T10:01:54.309Z"
+  "lastUpdated": "2026-07-04T05:42:45.591Z"
 }
