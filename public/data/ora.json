@@ -2,7 +2,7 @@
   "source": "ORA UNIURB",
   "repository": "https://ora.uniurb.it",
   "oaiEndpoint": "https://ora.uniurb.it/oai/request",
-  "collectedAt": "2026-07-04T05:36:43.847Z",
+  "collectedAt": "2026-07-04T08:34:30.575Z",
   "author": "Fabio Giglietto",
   "publications": [
     {
@@ -89,30 +89,6 @@
       "datestamp": "2026-05-04T15:31:17Z",
       "url": "https://ora.uniurb.it/handle/11576/2774611",
       "oaPdfUrl": "https://ora.uniurb.it/bitstream/11576/2774611/2/Vera%20Ai%20Book%20Chapter%20Uniurb%20%28pre-print%20for%20sharing%29-compressed.pdf"
-    },
-    {
-      "title": "Exploring the Zombie Internet: Anatomy of Three Deceptive Information Operations on Facebook",
-      "authors": "Marino Giada; Giglietto Fabio; Chakraborty Anwesha; Terenzi Massimo; Olaniran Samuel",
-      "authorsList": [
-        "Marino Giada",
-        "Giglietto Fabio",
-        "Chakraborty Anwesha",
-        "Terenzi Massimo",
-        "Olaniran Samuel"
-      ],
-      "year": 2026,
-      "doi": null,
-      "handle": "11576/2779031",
-      "type": "article",
-      "abstract": null,
-      "publisher": null,
-      "journal": "MEDIASCAPES JOURNAL",
-      "pages": null,
-      "language": null,
-      "oaiIdentifier": "oai:ora.uniurb.it:11576/2779031",
-      "datestamp": "2026-07-03T09:02:52Z",
-      "url": "https://ora.uniurb.it/handle/11576/2779031",
-      "oaPdfUrl": null
     },
     {
       "title": "Manipolazione dei media ed influenza digitale. Sfide, tecnologie e risposte",
@@ -361,9 +337,9 @@
     }
   ],
   "stats": {
-    "total": 16,
+    "total": 15,
     "byType": {
-      "article": 8,
+      "article": 7,
       "chapter": 4,
       "other": 3,
       "conference": 1
@@ -374,7 +350,7 @@
       "2023": 4,
       "2024": 1,
       "2025": 2,
-      "2026": 5
+      "2026": 4
     }
   }
 }
