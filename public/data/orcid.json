@@ -301,23 +301,10 @@
   "works": [
     {
       "last-modified-date": {
-        "value": 1782604872348
+        "value": 1782295299652
       },
       "external-ids": {
         "external-id": [
-          {
-            "external-id-type": "handle",
-            "external-id-value": "11576/2778671",
-            "external-id-normalized": {
-              "value": "11576/2778671",
-              "transient": true
-            },
-            "external-id-normalized-error": null,
-            "external-id-url": {
-              "value": "https://ora.uniurb.it/handle/11576/2778671"
-            },
-            "external-id-relationship": "self"
-          },
           {
             "external-id-type": "doi",
             "external-id-value": "10.4324/9781003359524-24",
@@ -398,83 +385,6 @@
           "journal-title": null,
           "visibility": "public",
           "path": "/0000-0001-8019-1035/work/218619884",
-          "display-index": "1"
-        },
-        {
-          "put-code": 218970886,
-          "created-date": {
-            "value": 1782604872348
-          },
-          "last-modified-date": {
-            "value": 1782604872348
-          },
-          "source": {
-            "source-orcid": null,
-            "source-client-id": {
-              "uri": "https://orcid.org/client/APP-ERL34HCK6D9LSO6D",
-              "path": "APP-ERL34HCK6D9LSO6D",
-              "host": "orcid.org"
-            },
-            "source-name": {
-              "value": "ORA - Iris UNIURB"
-            },
-            "assertion-origin-orcid": null,
-            "assertion-origin-client-id": null,
-            "assertion-origin-name": null
-          },
-          "title": {
-            "title": {
-              "value": "Navigating Coordination and Inauthentic Behaviour"
-            },
-            "subtitle": null,
-            "translated-title": null
-          },
-          "external-ids": {
-            "external-id": [
-              {
-                "external-id-type": "handle",
-                "external-id-value": "11576/2778671",
-                "external-id-normalized": {
-                  "value": "11576/2778671",
-                  "transient": true
-                },
-                "external-id-normalized-error": null,
-                "external-id-url": {
-                  "value": "https://ora.uniurb.it/handle/11576/2778671"
-                },
-                "external-id-relationship": "self"
-              },
-              {
-                "external-id-type": "doi",
-                "external-id-value": "10.4324/9781003359524-24",
-                "external-id-normalized": {
-                  "value": "10.4324/9781003359524-24",
-                  "transient": true
-                },
-                "external-id-normalized-error": null,
-                "external-id-url": null,
-                "external-id-relationship": "self"
-              }
-            ]
-          },
-          "url": {
-            "value": "https://ora.uniurb.it/handle/11576/2778671"
-          },
-          "type": "book-chapter",
-          "publication-date": {
-            "year": {
-              "value": "2026"
-            },
-            "month": {
-              "value": "01"
-            },
-            "day": {
-              "value": "01"
-            }
-          },
-          "journal-title": null,
-          "visibility": "public",
-          "path": "/0000-0001-8019-1035/work/218970886",
           "display-index": "1"
         }
       ]
@@ -1039,6 +949,120 @@
           "journal-title": null,
           "visibility": "public",
           "path": "/0000-0001-8019-1035/work/219561974",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1783163589630
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "handle",
+            "external-id-value": "11576/2778671",
+            "external-id-normalized": {
+              "value": "11576/2778671",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://ora.uniurb.it/handle/11576/2778671"
+            },
+            "external-id-relationship": "self"
+          },
+          {
+            "external-id-type": "doi",
+            "external-id-value": "11576/2778671",
+            "external-id-normalized": null,
+            "external-id-normalized-error": {
+              "error-code": "8001",
+              "error-message": "Cannot normalize identifier value doi:11576/2778671",
+              "transient": true
+            },
+            "external-id-url": null,
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 218970886,
+          "created-date": {
+            "value": 1782604872348
+          },
+          "last-modified-date": {
+            "value": 1783163589630
+          },
+          "source": {
+            "source-orcid": null,
+            "source-client-id": {
+              "uri": "https://orcid.org/client/APP-ERL34HCK6D9LSO6D",
+              "path": "APP-ERL34HCK6D9LSO6D",
+              "host": "orcid.org"
+            },
+            "source-name": {
+              "value": "ORA - Iris UNIURB"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Navigating Coordination and Inauthentic Behaviour"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "handle",
+                "external-id-value": "11576/2778671",
+                "external-id-normalized": {
+                  "value": "11576/2778671",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://ora.uniurb.it/handle/11576/2778671"
+                },
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "doi",
+                "external-id-value": "11576/2778671",
+                "external-id-normalized": null,
+                "external-id-normalized-error": {
+                  "error-code": "8001",
+                  "error-message": "Cannot normalize identifier value doi:11576/2778671",
+                  "transient": true
+                },
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "url": {
+            "value": "https://ora.uniurb.it/handle/11576/2778671.2"
+          },
+          "type": "book-chapter",
+          "publication-date": {
+            "year": {
+              "value": "2026"
+            },
+            "month": {
+              "value": "01"
+            },
+            "day": {
+              "value": "01"
+            }
+          },
+          "journal-title": null,
+          "visibility": "public",
+          "path": "/0000-0001-8019-1035/work/218970886",
           "display-index": "1"
         }
       ]
@@ -18575,116 +18599,116 @@
       ]
     }
   ],
-  "lastUpdated": "2026-07-04T09:16:08.811Z",
+  "lastUpdated": "2026-07-05T08:50:34.906Z",
   "logs": {
-    "timestamp": "2026-07-04T09:16:07.955Z",
+    "timestamp": "2026-07-05T08:50:33.926Z",
     "steps": [
       {
-        "timestamp": "2026-07-04T09:16:07.955Z",
+        "timestamp": "2026-07-05T08:50:33.926Z",
         "type": "start",
         "message": "Starting ORCID data collection"
       },
       {
-        "timestamp": "2026-07-04T09:16:07.955Z",
+        "timestamp": "2026-07-05T08:50:33.926Z",
         "type": "info",
         "message": "Getting OAuth token for ORCID API access..."
       },
       {
-        "timestamp": "2026-07-04T09:16:07.955Z",
+        "timestamp": "2026-07-05T08:50:33.926Z",
         "type": "info",
         "message": "Attempting to use public API without authentication"
       },
       {
-        "timestamp": "2026-07-04T09:16:07.955Z",
+        "timestamp": "2026-07-05T08:50:33.926Z",
         "type": "info",
         "message": "OAuth token response received: {\n  \"status\": 200,\n  \"data\": {\n    \"access_token\": \"public_endpoint_no_token_needed\"\n  }\n}"
       },
       {
-        "timestamp": "2026-07-04T09:16:07.955Z",
+        "timestamp": "2026-07-05T08:50:33.927Z",
         "type": "info",
         "message": "Obtained access token: public_end..."
       },
       {
-        "timestamp": "2026-07-04T09:16:07.955Z",
+        "timestamp": "2026-07-05T08:50:33.927Z",
         "type": "info",
         "message": "Attempting to fetch ORCID record with JSON format..."
       },
       {
-        "timestamp": "2026-07-04T09:16:08.710Z",
+        "timestamp": "2026-07-05T08:50:34.675Z",
         "type": "info",
         "message": "Successfully retrieved record in JSON format"
       },
       {
-        "timestamp": "2026-07-04T09:16:08.711Z",
+        "timestamp": "2026-07-05T08:50:34.675Z",
         "type": "info",
         "message": "Retrieved ORCID record in JSON format"
       },
       {
-        "timestamp": "2026-07-04T09:16:08.711Z",
+        "timestamp": "2026-07-05T08:50:34.675Z",
         "type": "info",
         "message": "Response content type: application/json;charset=UTF-8"
       },
       {
-        "timestamp": "2026-07-04T09:16:08.711Z",
+        "timestamp": "2026-07-05T08:50:34.675Z",
         "type": "info",
         "message": "Trying to fetch works directly from /works endpoint for comparison..."
       },
       {
-        "timestamp": "2026-07-04T09:16:08.810Z",
+        "timestamp": "2026-07-05T08:50:34.906Z",
         "type": "info",
-        "message": "Works endpoint returned 152 works"
+        "message": "Works endpoint returned 153 works"
       },
       {
-        "timestamp": "2026-07-04T09:16:08.810Z",
+        "timestamp": "2026-07-05T08:50:34.906Z",
         "type": "info",
         "message": "Processing JSON response"
       },
       {
-        "timestamp": "2026-07-04T09:16:08.810Z",
+        "timestamp": "2026-07-05T08:50:34.906Z",
         "type": "info",
         "message": "Found person data with keys: last-modified-date, name, other-names, biography, researcher-urls, emails, addresses, keywords, external-identifiers, path"
       },
       {
-        "timestamp": "2026-07-04T09:16:08.810Z",
+        "timestamp": "2026-07-05T08:50:34.906Z",
         "type": "info",
         "message": "Record endpoint response structure differs from expected format"
       },
       {
-        "timestamp": "2026-07-04T09:16:08.810Z",
+        "timestamp": "2026-07-05T08:50:34.906Z",
         "type": "info",
-        "message": "Works endpoint has 152 works, record endpoint has 0 works"
+        "message": "Works endpoint has 153 works, record endpoint has 0 works"
       },
       {
-        "timestamp": "2026-07-04T09:16:08.810Z",
+        "timestamp": "2026-07-05T08:50:34.906Z",
         "type": "warning",
-        "message": "DISCREPANCY: Works endpoint has 152 works, but record endpoint has 0 works"
+        "message": "DISCREPANCY: Works endpoint has 153 works, but record endpoint has 0 works"
       },
       {
-        "timestamp": "2026-07-04T09:16:08.811Z",
+        "timestamp": "2026-07-05T08:50:34.906Z",
         "type": "info",
-        "message": "Using 152 works from /works endpoint instead of /record endpoint"
+        "message": "Using 153 works from /works endpoint instead of /record endpoint"
       },
       {
-        "timestamp": "2026-07-04T09:16:08.811Z",
+        "timestamp": "2026-07-05T08:50:34.906Z",
         "type": "info",
-        "message": "Sample work structure: {\"keys\":[\"last-modified-date\",\"external-ids\",\"work-summary\"],\"hasSummary\":true,\"summaryCount\":2,\"summaryKeys\":[\"put-code\",\"created-date\",\"last-modified-date\",\"source\",\"title\",\"external-ids\",\"url\",\"type\",\"publication-date\",\"journal-title\",\"visibility\",\"path\",\"display-index\"],\"title\":\"Navigating Coordination and Inauthentic Behaviour\",\"type\":\"book-chapter\",\"pubDate\":\"2026-06-24\"}"
+        "message": "Sample work structure: {\"keys\":[\"last-modified-date\",\"external-ids\",\"work-summary\"],\"hasSummary\":true,\"summaryCount\":1,\"summaryKeys\":[\"put-code\",\"created-date\",\"last-modified-date\",\"source\",\"title\",\"external-ids\",\"url\",\"type\",\"publication-date\",\"journal-title\",\"visibility\",\"path\",\"display-index\"],\"title\":\"Navigating Coordination and Inauthentic Behaviour\",\"type\":\"book-chapter\",\"pubDate\":\"2026-06-24\"}"
       },
       {
-        "timestamp": "2026-07-04T09:16:08.811Z",
+        "timestamp": "2026-07-05T08:50:34.906Z",
         "type": "info",
-        "message": "Collection completed successfully with 152 works"
+        "message": "Collection completed successfully with 153 works"
       },
       {
-        "timestamp": "2026-07-04T09:16:08.811Z",
+        "timestamp": "2026-07-05T08:50:34.906Z",
         "type": "complete",
-        "message": "Collection completed with 152 works retrieved"
+        "message": "Collection completed with 153 works retrieved"
       }
     ],
     "errors": [],
     "warnings": [
       {
-        "timestamp": "2026-07-04T09:16:08.811Z",
-        "message": "Works count discrepancy: /works endpoint: 152, /record endpoint: 0"
+        "timestamp": "2026-07-05T08:50:34.906Z",
+        "message": "Works count discrepancy: /works endpoint: 153, /record endpoint: 0"
       }
     ],
     "results": {
@@ -18701,11 +18725,11 @@
         "contentType": "application/json;charset=UTF-8",
         "status": 200,
         "headers": {
-          "date": "Sat, 04 Jul 2026 09:16:08 GMT",
+          "date": "Sun, 05 Jul 2026 08:50:34 GMT",
           "content-type": "application/json;charset=UTF-8",
           "transfer-encoding": "chunked",
           "connection": "keep-alive",
-          "cf-ray": "a15d07868fc436c3-YYZ",
+          "cf-ray": "a1651f72abd4fac6-SJC",
           "cf-cache-status": "DYNAMIC",
           "access-control-allow-origin": "*",
           "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
@@ -18717,10 +18741,10 @@
           "cf-apo-via": "origin,host",
           "x-content-type-options": "nosniff",
           "x-frame-options": "DENY",
-          "x-target": "reg-prod-papi-use2-a1",
-          "x-via": "b1-newvpc",
+          "x-target": "reg-prod-papi-use2-b1",
+          "x-via": "a1-newvpc",
           "x-xss-protection": "1; mode=block",
-          "set-cookie": "__cf_bm=4y.MBfLcSMbl0b1BjFNlxqYMI4I0LZqpDC9p.YHf.GY-1783156568.0849612-1.0.1.1-K2ha3HW3_avc0qYIiDNo_uYJsfLwzr3CVMm4Mz3zJHV9GHLk3MbAa2Uh9HDMmyXqQLTxgR.6kUglUNuLGTqqj9u41CkRiL.yyfJ8Hfm_jIwdJc.8ujOf1hi.F_Lm59fm; HttpOnly; SameSite=None; Secure; Path=/; Domain=orcid.org; Expires=Sat, 04 Jul 2026 09:46:08 GMT"
+          "set-cookie": "__cf_bm=fmdViMKc1jHdZJq_AZ_NnA8JmLEHPH6JBBGuKLJUChs-1783241434.0243611-1.0.1.1-aPe9c9ERnIrmWgH04QRuc0iK1BzMW8fB5HdM94G9m0I0gjpxZZFse_Phl._o4ygN8SVSlSBqV94Uu5GmH7FNdZDZpaQvjyPo6pDJwWQVJ1yj7eNMe0VAi9G7LubJC7om; HttpOnly; SameSite=None; Secure; Path=/; Domain=orcid.org; Expires=Sun, 05 Jul 2026 09:20:34 GMT"
         },
         "dataKeys": [
           "orcid-identifier",
@@ -18739,7 +18763,7 @@
           "group",
           "path"
         ],
-        "groupCount": 152
+        "groupCount": 153
       },
       "recordStructure": {
         "dataKeys": [
@@ -18760,7 +18784,7 @@
           "work-summary"
         ],
         "hasSummary": true,
-        "summaryCount": 2,
+        "summaryCount": 1,
         "summaryKeys": [
           "put-code",
           "created-date",
@@ -18780,7 +18804,7 @@
         "type": "book-chapter",
         "pubDate": "2026-06-24"
       },
-      "finalWorkCount": 152,
+      "finalWorkCount": 153,
       "profileKeys": [
         "last-modified-date",
         "name",
