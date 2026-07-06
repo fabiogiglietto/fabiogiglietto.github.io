@@ -1,12 +1,12 @@
 {
-  "totalEntries": 188,
-  "lastUpdated": "2026-07-06T10:25:00.155Z",
+  "totalEntries": 189,
+  "lastUpdated": "2026-07-06T11:33:43.247Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-07-06T10:25:00.121Z"
+    "latest": "2026-07-06T11:33:43.206Z"
   },
   "byDate": {
-    "2026-07-06": 1,
+    "2026-07-06": 2,
     "2026-07-04": 1,
     "2026-07-03": 1,
     "2026-07-02": 2,
@@ -30,11 +30,18 @@
     "smsociety.org": 2
   },
   "byRelevanceScore": {
-    "high": 165,
+    "high": 166,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Communication and Inequalities in Context",
+      "url": "https://ica26.org/ICA26_program.pdf",
+      "source": "ica26.org",
+      "relevanceScore": 0.95,
+      "collectedAt": "2026-07-06T11:33:43.206Z"
+    },
     {
       "title": "EU Digital Technologies and Policies Conference",
       "url": "https://eudtp2025.sciencesconf.org/",
@@ -61,13 +68,6 @@
       "url": "https://www.ilrestodelcarlino.it/organization/meta",
       "source": "ilrestodelcarlino.it",
       "relevanceScore": 0.95,
-      "collectedAt": "2026-07-02T05:37:49.235Z"
-    },
-    {
-      "title": "Music | Snurblog — Axel Bruns",
-      "url": "https://snurb.info/2026/03/18/music/",
-      "source": "snurb.info",
-      "relevanceScore": 0.9,
       "collectedAt": "2026-07-02T05:37:49.235Z"
     }
   ]
