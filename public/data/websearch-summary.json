@@ -1,11 +1,12 @@
 {
-  "totalEntries": 187,
-  "lastUpdated": "2026-07-05T09:45:50.259Z",
+  "totalEntries": 188,
+  "lastUpdated": "2026-07-06T10:25:00.155Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-07-04T09:24:40.733Z"
+    "latest": "2026-07-06T10:25:00.121Z"
   },
   "byDate": {
+    "2026-07-06": 1,
     "2026-07-04": 1,
     "2026-07-03": 1,
     "2026-07-02": 2,
@@ -14,8 +15,7 @@
     "2026-06-28": 1,
     "2026-06-27": 2,
     "2026-06-25": 1,
-    "2026-06-24": 1,
-    "2026-06-23": 1
+    "2026-06-24": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 52,
@@ -30,11 +30,18 @@
     "smsociety.org": 2
   },
   "byRelevanceScore": {
-    "high": 164,
+    "high": 165,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "EU Digital Technologies and Policies Conference",
+      "url": "https://eudtp2025.sciencesconf.org/",
+      "source": "eudtp2025.sciencesconf.org",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-07-06T10:25:00.121Z"
+    },
     {
       "title": "Algoritmi e democrazia: il caso Meta secondo lo studio Uniurb che ha avviato un'interrogazione al Parlamento europeo - Novità Università degli Studi di Urbino Carlo Bo",
       "url": "https://www.uniurb.it/news/48577",
@@ -62,13 +69,6 @@
       "source": "snurb.info",
       "relevanceScore": 0.9,
       "collectedAt": "2026-07-02T05:37:49.235Z"
-    },
-    {
-      "title": "Welcome to the 76th Annual Conference of the International Communication Association!",
-      "url": "https://cdn.icahdq.org/annual-conferences/2026-Gold-Coast/ICA26_ProgramBook_excerpt.pdf",
-      "source": "icahdq.org",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-07-01T18:34:00.771Z"
     }
   ]
 }

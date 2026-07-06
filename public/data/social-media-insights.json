@@ -1,38 +1,33 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a focused and active presence across three academic/professional social media platforms: LinkedIn, Bluesky, and Mastodon. With a combined total of 3,580 followers and 7 recent posts, the profile primarily shares updates on research, publications, grants, and career opportunities within the computational social science and disinformation fields. Overall engagement averages around 1.70% per post relative to the total follower base, with LinkedIn having the largest audience and Bluesky demonstrating the highest average engagement rate per post.",
+  "overallSummary": "Fabio Giglietto maintains a robust multi-platform social media presence, accumulating a total of 3,580 followers across Mastodon, LinkedIn, and Bluesky. With 7 recent posts, the activity primarily revolves around academic research, publications, grants, and hiring opportunities. The average engagement rate across all platforms is approximately 5.32%, indicating a healthy level of interaction from his audience.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 1.7,
+    "averageEngagementRate": 5.32,
     "mostEngagingPlatform": "bluesky"
   },
   "contentThemes": [
     {
+      "theme": "Research & Publications",
+      "description": "Announcements of new papers, research findings, methodological advancements (e.g., CooRnet v2.0), and general discussions about disinformation and coordinated behavior."
+    },
+    {
+      "theme": "Academic & Professional Opportunities",
+      "description": "Sharing news about awarded grants, calls for postdoctoral researchers, PhD student opportunities, and upcoming conference presentations."
+    },
+    {
       "theme": "Computational Methods & Tools",
-      "description": "Updates on research methodologies, software releases (e.g., CooRnet), and expertise in computational social science and data analysis."
-    },
-    {
-      "theme": "Disinformation & Information Operations",
-      "description": "Discussions and research findings related to coordinated inauthentic behavior, disinformation, and information operations on social media."
-    },
-    {
-      "theme": "Research & Academia Updates",
-      "description": "Announcements of new papers, research grants, conference presentations, and general academic discussions."
-    },
-    {
-      "theme": "Career & Opportunities",
-      "description": "Posts related to hiring, postdoctoral positions, and PhD student opportunities within relevant research fields."
+      "description": "Focus on computational approaches for social media analysis, detection of information operations, and algorithm development."
     }
   ],
   "recommendations": [
-    "Leverage Bluesky's higher engagement rate by consistently sharing research findings, upcoming presentations, and informal calls for collaboration to maximize reach within the academic community.",
-    "Cross-promote key announcements (e.g., grant awards, major publications, hiring calls) across all platforms, tailoring the message slightly for each audience (e.g., more formal on LinkedIn, more conversational on Bluesky/Mastodon).",
-    "Consider increasing posting frequency on Mastodon or experimenting with different content formats (e.g., asking open-ended questions for discussions) to boost engagement, as its current per-post engagement is lower than other platforms.",
-    "Continue to utilize LinkedIn for formal announcements such as grants and hiring, as it reaches the largest professional audience and garners significant engagement for these types of updates."
+    "Leverage Bluesky's high engagement for key announcements like new publications and research calls, as this platform currently yields the best interaction rates.",
+    "Cross-promote significant news (e.g., grant awards, major publications) across all platforms, tailoring the message slightly to each platform's audience and format. For instance, LinkedIn for professional networking and career advancement, and Mastodon/Bluesky for academic discussions.",
+    "Continue to share hiring and funding opportunities, as these generate strong interest and engagement, particularly on LinkedIn and Bluesky. Consider adding a clear call-to-action or direct link for applications."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky exhibits the highest average engagement rate (6.14%) per post, demonstrating strong resonance for direct announcements about new publications and research opportunities. It appears to be a highly effective platform for engaging with an active academic audience.",
-    "mastodon": "Mastodon is used for academic updates and discussions, featuring a smaller follower base (780) and a lower average engagement rate (4.55%) compared to other platforms. It serves as a niche platform for connecting with specific academic peers.",
-    "linkedin": "LinkedIn boasts the largest follower count (1,850) and performs exceptionally well for formal announcements like grant awards and recruitment drives, securing a strong average engagement rate of 4.86%. It is the primary platform for professional networking and major career-related news."
+    "bluesky": "Bluesky exhibits the highest average engagement rate (6.14%) and is highly effective for immediate announcements like new papers, conference participation, and research opportunities. The audience here appears very responsive to direct academic news and calls for engagement.",
+    "mastodon": "Mastodon shows a moderate follower count and an average engagement rate of 4.55%. It serves well for technical updates (like CooRnet releases) and fostering academic discussions on methodological topics. Further engagement could be driven by asking questions or inviting direct replies.",
+    "linkedin": "LinkedIn boasts the largest follower base (1,850) and a solid average engagement rate of 4.87%. It is particularly strong for professional announcements such as grant awards and hiring for research positions, indicating a highly relevant professional network eager for career and funding news."
   },
   "topPerformingContent": [
     {

@@ -2,7 +2,7 @@
   "source": "ORA UNIURB",
   "repository": "https://ora.uniurb.it",
   "oaiEndpoint": "https://ora.uniurb.it/oai/request",
-  "collectedAt": "2026-07-05T09:37:00.606Z",
+  "collectedAt": "2026-07-06T10:17:25.876Z",
   "author": "Fabio Giglietto",
   "publications": [
     {
@@ -91,6 +91,30 @@
       "oaPdfUrl": "https://ora.uniurb.it/bitstream/11576/2774611/2/Vera%20Ai%20Book%20Chapter%20Uniurb%20%28pre-print%20for%20sharing%29-compressed.pdf"
     },
     {
+      "title": "Exploring the Zombie Internet: Anatomy of Three Deceptive Information Operations on Facebook",
+      "authors": "Marino Giada; Giglietto Fabio; Chakraborty Anwesha; Terenzi Massimo; Olaniran Samuel",
+      "authorsList": [
+        "Marino Giada",
+        "Giglietto Fabio",
+        "Chakraborty Anwesha",
+        "Terenzi Massimo",
+        "Olaniran Samuel"
+      ],
+      "year": 2026,
+      "doi": null,
+      "handle": "11576/2779031",
+      "type": "article",
+      "abstract": null,
+      "publisher": null,
+      "journal": "MEDIASCAPES JOURNAL",
+      "pages": null,
+      "language": null,
+      "oaiIdentifier": "oai:ora.uniurb.it:11576/2779031",
+      "datestamp": "2026-07-03T09:02:52Z",
+      "url": "https://ora.uniurb.it/handle/11576/2779031",
+      "oaPdfUrl": null
+    },
+    {
       "title": "Manipolazione dei media ed influenza digitale. Sfide, tecnologie e risposte",
       "authors": "Fabio Giglietto; Nicola Righetti; Timothy Graham",
       "authorsList": [
@@ -131,27 +155,6 @@
       "oaiIdentifier": "oai:ora.uniurb.it:11576/2765591",
       "datestamp": "2025-11-30T00:29:06Z",
       "url": "https://ora.uniurb.it/handle/11576/2765591",
-      "oaPdfUrl": null
-    },
-    {
-      "title": "Facebook reactions in the context of politics and social issues: a systematic literature review",
-      "authors": "Anwar, Sawood; Giglietto, Fabio",
-      "authorsList": [
-        "Anwar, Sawood",
-        "Giglietto, Fabio"
-      ],
-      "year": 2024,
-      "doi": "10.3389/fsoc.2024.1379265",
-      "handle": "11576/2740792",
-      "type": "article",
-      "abstract": "In February 2016, Facebook expanded the original \"Like\" button by introducing five additional \"Reactions\"-Love, Haha, Wow, Sad, and Angry-using modified versions of Unicode emojis. These reactions enable users to express more nuanced emotions towards posts. This literature review investigates scholarly research on user behavior in response to these reactions, with a focus on a broad spectrum of socioeconomic and psychological issues. We conducted a systematic search across databases including Scopus and Google Scholar, using keywords such as \"Facebook\" and \"Reaction,\" combined with various key phrases and Boolean operators. Our review synthesizes sixty-four articles published from 2016 to 2023, exploring diverse topics such as political news, far-right and extremist parties, racism, and hate speech during the COVID-19 pandemic. We organized these articles by theme and publication date. Our meta-analysis reveals that lifestyle and entertainment posts predominantly receive positive reactions, while sociopolitical content tends to elicit a broader spectrum of emotions, including negative sentiments. Furthermore, emotionally charged content consistently attracts higher volumes of reactions, regardless of sentiment. This research highlights the intricate relationship between user reactions and content characteristics, providing deeper insights into the dynamics of online engagement. By understanding these interaction patterns, we gain a better grasp of emotional responses and engagement levels, which ultimately shape online discourse and user interactions.",
-      "publisher": null,
-      "journal": "FRONTIERS IN SOCIOLOGY",
-      "pages": null,
-      "language": "eng",
-      "oaiIdentifier": "oai:ora.uniurb.it:11576/2740792",
-      "datestamp": "2025-06-13T00:19:09Z",
-      "url": "https://ora.uniurb.it/handle/11576/2740792",
       "oaPdfUrl": null
     },
     {
@@ -370,9 +373,8 @@
       "2020": 1,
       "2022": 3,
       "2023": 5,
-      "2024": 1,
       "2025": 2,
-      "2026": 4
+      "2026": 5
     }
   }
 }
