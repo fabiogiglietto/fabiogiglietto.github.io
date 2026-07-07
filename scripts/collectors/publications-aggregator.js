@@ -394,6 +394,9 @@ async function collect() {
             if (!publication.venue && (pub.journal || pub.publisher)) {
               publication.venue = pub.journal || pub.publisher;
             }
+            if (!publication.publisherUrl && pub.publisherUrl) {
+              publication.publisherUrl = pub.publisherUrl;
+            }
             console.log(`Matched ORA publication by DOI: "${pub.title}"`);
             matched = true;
           }
@@ -419,6 +422,9 @@ async function collect() {
               }
               if (!publication.venue && (pub.journal || pub.publisher)) {
                 publication.venue = pub.journal || pub.publisher;
+              }
+              if (!publication.publisherUrl && pub.publisherUrl) {
+                publication.publisherUrl = pub.publisherUrl;
               }
               // Add DOI if missing
               if (!publication.doi && pub.doi) {
@@ -468,6 +474,7 @@ async function collect() {
             oraHandle: pub.handle,
             oraType: pub.type,
             oaPdfUrl: pub.oaPdfUrl || null,
+            publisherUrl: pub.publisherUrl || null,
             abstract: pub.abstract,
             metrics: {}
           });

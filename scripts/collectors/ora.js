@@ -12,18 +12,38 @@
 
 const axios = require('axios');
 const xml2js = require('xml2js');
+const fs = require('fs');
+const path = require('path');
 const config = require('../config');
 
 // OAI-PMH endpoint configuration
 const OAI_BASE_URL = 'https://ora.uniurb.it/oai/request';
 const METADATA_PREFIX = 'oai_dc';
 
-// Author name variations to search for
-const AUTHOR_VARIATIONS = [
-  'giglietto',
-  'Giglietto',
-  'GIGLIETTO'
-];
+// Previous collector output, used as the baseline for incremental harvesting.
+// The repository holds 50k+ records across 500+ OAI pages, so a full harvest
+// is only done once (or with ORA_FULL_HARVEST=1); daily runs fetch only
+// records modified since the last collection and merge them in.
+const PREVIOUS_OUTPUT_PATH = path.join(__dirname, '../../public/data/ora.json');
+
+// Overlap window (days) subtracted from the last collection date, so records
+// whose datestamp lands close to the previous run are never missed.
+const INCREMENTAL_OVERLAP_DAYS = 7;
+
+/**
+ * Check whether an author string denotes the target author.
+ *
+ * ORA records write the name many ways ("Giglietto Fabio", "Giglietto, F.",
+ * "F. GIGLIETTO"), and the repository also holds records by other authors
+ * with the same surname (e.g. the physicist N. Giglietto). Require the
+ * surname plus either the first name or the bare initial "F".
+ */
+function isTargetAuthor(authorName) {
+  const name = authorName.toLowerCase();
+  if (!name.includes('giglietto')) return false;
+  const rest = name.replace(/giglietto/g, ' ');
+  return /\bfabio\b/.test(rest) || /\bf\.?(?=[\s,;]|$)/.test(rest);
+}
 
 /**
  * Parse XML response to JavaScript object
@@ -57,15 +77,20 @@ function extractDublinCore(record) {
     const handleMatch = identifier.match(/oai:ora\.uniurb\.it:(\d+\/\d+)/);
     const handle = handleMatch ? handleMatch[1] : null;
 
-    // Extract DOI if present
+    // Extract DOI and publisher URL if present. Besides the handle, records
+    // may carry a second URL identifier pointing at the publisher's page
+    // (e.g. an OJS article view) — the only external link for DOI-less items.
     const identifiers = toArray(dc.identifier);
     let doi = null;
+    let publisherUrl = null;
     for (const id of identifiers) {
       const idStr = typeof id === 'string' ? id : (id._ || id);
       if (idStr && idStr.includes('doi.org')) {
         doi = idStr.replace(/^https?:\/\/doi\.org\//, '');
       } else if (idStr && idStr.match(/^10\.\d+\//)) {
         doi = idStr;
+      } else if (idStr && /^https?:\/\//.test(idStr) && !idStr.includes('hdl.handle.net')) {
+        publisherUrl = idStr;
       }
     }
 
@@ -141,6 +166,7 @@ function extractDublinCore(record) {
       authorsList: authors,
       year,
       doi,
+      publisherUrl,
       handle,
       type: publicationType,
       abstract,
@@ -192,21 +218,18 @@ async function fetchOaPdfUrl(handleUrl) {
  */
 function isAuthorRecord(record) {
   const authors = record.authorsList || [];
-  const authorsLower = authors.map(a => a.toLowerCase());
-
-  return AUTHOR_VARIATIONS.some(variant =>
-    authorsLower.some(author => author.includes(variant.toLowerCase()))
-  );
+  return authors.some(isTargetAuthor);
 }
 
 /**
  * Fetch records from OAI-PMH with resumption token support
  */
-async function fetchOAIRecords(params = {}) {
+async function fetchOAIRecords(params = {}, maxPages = 100) {
   const allRecords = [];
+  const deletedHandles = [];
   let resumptionToken = null;
   let pageCount = 0;
-  const maxPages = 50; // Safety limit
+  let truncated = false;
 
   do {
     try {
@@ -259,8 +282,10 @@ async function fetchOAIRecords(params = {}) {
 
       // Filter for target author and extract data
       for (const record of records) {
-        // Skip deleted records
+        // Track deleted records so incremental merges can drop them
         if (record.header && record.header.$ && record.header.$.status === 'deleted') {
+          const delMatch = (record.header.identifier || '').match(/oai:ora\.uniurb\.it:(\d+\/\d+)/);
+          if (delMatch) deletedHandles.push(delMatch[1]);
           continue;
         }
 
@@ -294,7 +319,12 @@ async function fetchOAIRecords(params = {}) {
 
   } while (resumptionToken && pageCount < maxPages);
 
-  return allRecords;
+  if (resumptionToken) {
+    truncated = true;
+    console.warn(`WARNING: OAI harvest stopped at the ${maxPages}-page safety limit with records remaining — results are incomplete`);
+  }
+
+  return { records: allRecords, deletedHandles, truncated };
 }
 
 /**
@@ -318,29 +348,79 @@ async function collect() {
   };
 
   try {
-    // Fetch all records (we'll filter by author client-side since OAI-PMH
-    // doesn't support author-based queries directly)
-    // Fetch records from 1990 onwards to capture full publication history
-    const fromDateStr = '1990-01-01';
+    // OAI-PMH doesn't support author queries, so records are filtered
+    // client-side. The `from` parameter filters on datestamp (last modified):
+    // with a previous output available, only records touched since the last
+    // run are harvested and merged into it; otherwise (or with
+    // ORA_FULL_HARVEST=1) the entire repository is scanned once.
+    let previous = null;
+    if (!process.env.ORA_FULL_HARVEST && fs.existsSync(PREVIOUS_OUTPUT_PATH)) {
+      try {
+        previous = JSON.parse(fs.readFileSync(PREVIOUS_OUTPUT_PATH, 'utf8'));
+      } catch (e) {
+        console.warn(`Could not read previous ORA output (${e.message}), doing a full harvest`);
+      }
+    }
 
-    console.log(`Fetching records from ${fromDateStr} onwards...`);
+    let fromDateStr = '1990-01-01';
+    let maxPages = 1000; // Full harvest: repository is ~516 pages and growing
+    if (previous && previous.collectedAt && Array.isArray(previous.publications)) {
+      const fromDate = new Date(previous.collectedAt);
+      fromDate.setDate(fromDate.getDate() - INCREMENTAL_OVERLAP_DAYS);
+      fromDateStr = fromDate.toISOString().split('T')[0];
+      maxPages = 100;
+      console.log(`Incremental harvest: records modified since ${fromDateStr} (previous collection had ${previous.publications.length} publications)`);
+    } else {
+      console.log('Full harvest: scanning the entire repository');
+      previous = null;
+    }
 
-    const records = await fetchOAIRecords({
+    const { records: harvested, deletedHandles, truncated } = await fetchOAIRecords({
       from: fromDateStr
-    });
+    }, maxPages);
 
-    console.log(`Found ${records.length} publications by ${config.name}`);
+    console.log(`Harvested ${harvested.length} publications by ${config.name}${previous ? ' (new or updated)' : ''}`);
+
+    // Merge into the previous collection: upsert harvested records by handle,
+    // drop records the repository reports as deleted.
+    let records;
+    if (previous) {
+      const byHandle = new Map(previous.publications.map(p => [p.handle, p]));
+      for (const rec of harvested) {
+        const existing = byHandle.get(rec.handle);
+        if (existing && existing.oaPdfUrl) {
+          rec.oaPdfUrl = existing.oaPdfUrl; // Keep the resolved OA link
+        }
+        byHandle.set(rec.handle, rec);
+      }
+      for (const handle of deletedHandles) {
+        if (byHandle.delete(handle)) {
+          console.log(`Removed deleted record: ${handle}`);
+        }
+      }
+      records = Array.from(byHandle.values());
+    } else {
+      records = harvested;
+    }
+
+    if (truncated && !previous) {
+      console.warn('Full harvest was truncated — refusing to overwrite previous data with an incomplete set');
+      return null;
+    }
 
     // Resolve each record's open-access PDF URL from its landing page. This is
     // the green-OA full text consumed downstream for podcasts and vault notes.
-    console.log('Resolving open-access PDF URLs from ORA landing pages...');
+    // Only records without a resolved URL are checked (covers new records and
+    // late-deposited OA full texts).
+    const unresolved = records.filter(r => !r.oaPdfUrl);
+    console.log(`Resolving open-access PDF URLs for ${unresolved.length} records...`);
     let oaPdfCount = 0;
-    for (const record of records) {
+    for (const record of unresolved) {
       record.oaPdfUrl = await fetchOaPdfUrl(record.url);
       if (record.oaPdfUrl) oaPdfCount++;
       await new Promise(resolve => setTimeout(resolve, 500));
     }
-    console.log(`Resolved ${oaPdfCount}/${records.length} open-access PDF URLs`);
+    console.log(`Resolved ${oaPdfCount}/${unresolved.length} newly checked open-access PDF URLs`);
 
     // Sort by year (descending)
     records.sort((a, b) => (b.year || 0) - (a.year || 0));

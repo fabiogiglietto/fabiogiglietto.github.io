@@ -42,6 +42,8 @@ async function generatePublicationsData() {
             year: pub.year, // Only use the explicitly provided year
             date: pub.publicationDate || null, // Full date for sorting (YYYY-MM-DD)
             doi: pub.doi,
+            // Publisher page (from ORA) as external link when there is no DOI
+            url: !pub.doi && pub.publisherUrl ? pub.publisherUrl : null,
             bibtex_key: generateBibtexKey(pub), // Stable cross-pipeline join key
 
             citations: pub.metrics.total_citations || 0,
