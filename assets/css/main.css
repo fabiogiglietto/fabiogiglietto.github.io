@@ -1327,8 +1327,19 @@ th {
   margin: 0;
   line-height: 1.4;
   flex: 1;
-  margin-right: var(--spacing-md);
   color: var(--text-primary);
+}
+
+/* Row of action badges (podcast, notes) under the paper title */
+.paper-header:has(+ .paper-badges) {
+  margin-bottom: var(--spacing-xs);
+}
+
+.paper-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
 }
 
 .paper-status {

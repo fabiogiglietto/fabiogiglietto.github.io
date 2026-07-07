@@ -57,6 +57,9 @@
             <article class="paper-card">
               <div class="paper-header">
                 <h3 class="paper-title">{{ paper.title }}</h3>
+              </div>
+              {% if has_podcast or zettel_url %}
+              <div class="paper-badges">
                 {% if has_podcast %}
                 <button class="podcast-badge" onclick="event.preventDefault(); event.stopPropagation(); window.open('{{ podcast_url }}', '_blank');" title="Listen to podcast ({{ podcast_duration }})">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,6 +80,7 @@
                 </button>
                 {% endif %}
               </div>
+              {% endif %}
               <div class="paper-meta">
               <div class="paper-authors">
                 {% for author in paper.authors %}
