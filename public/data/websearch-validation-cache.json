@@ -466,5 +466,44 @@
       "personMatch": "confirmed",
       "isRecent": false
     }
+  },
+  "algorithmic-transparency.ec.europa.eu/news/researchers-meet-discuss-dsa-access-publicly-available-platform-data-2025-12-12_en": {
+    "v": 1,
+    "cachedAt": "2026-07-08T19:18:55.940Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The name 'Fabio Giglietto' is not mentioned in the provided title, URL, or context.",
+      "description": "An article on the European Commission's Algorithmic Transparency platform discussing a researchers' meeting about DSA access to platform data.",
+      "personMatch": "not_mentioned",
+      "isRecent": false
+    }
+  },
+  "ilrestodelcarlino.it/urbino/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto": {
+    "v": 1,
+    "cachedAt": "2026-07-08T19:19:00.777Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 1,
+      "reason": "Validated as relevant",
+      "description": "A news article detailing a major study by Fabio Giglietto on how Meta's algorithms reduced the visibility of Italian politicians, which sparked investigation by European Union regulators.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "rai.it/programmi/report/inchieste/garante-medaglie-e-poltrone-6ea788f2.html": {
+    "v": 1,
+    "cachedAt": "2026-07-08T19:19:06.622Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "N/A",
+      "description": "An investigative episode on Rai 3's flagship program 'Report' that prominently features Fabio Giglietto's research findings to analyze Meta's algorithmic filtering and content moderation transparency.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }
