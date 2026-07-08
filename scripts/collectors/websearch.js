@@ -5,16 +5,13 @@ const fs = require('fs');
 const path = require('path');
 const { promisify } = require('util');
 const writeFileAsync = promisify(fs.writeFile);
-const OpenAI = require('openai');
 const axios = require('axios');
 const cheerio = require('cheerio');
 const config = require('../config');
 const { getGeminiClient, MODELS } = require('../helpers/gemini-client');
 
-// Check for API keys in environment
+// Check for API key in environment
 const hasGeminiApiKey = !!process.env.GEMINI_API_KEY;
-const hasOpenAIApiKey = !!process.env.OPENAI_API_KEY;
-const hasValidApiKey = hasGeminiApiKey || hasOpenAIApiKey;
 
 // Check if running in GitHub Actions
 const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
@@ -154,21 +151,19 @@ async function collectWebSearchResults() {
   console.log('Starting web search collection...');
 
   try {
-    // Early check for API keys
-    if (!hasValidApiKey) {
+    // Early check for the API key
+    if (!hasGeminiApiKey) {
       if (isGitHubActions) {
-        console.error('No API keys found in GitHub Actions!');
-        console.error('Please add GEMINI_API_KEY and/or OPENAI_API_KEY secrets.');
+        console.error('No API key found in GitHub Actions!');
+        console.error('Please add the GEMINI_API_KEY secret.');
       } else {
-        console.log('No API keys found (GEMINI_API_KEY or OPENAI_API_KEY)');
+        console.log('No API key found (GEMINI_API_KEY)');
         console.log('Clearing web mentions data - section will be hidden without valid API key');
       }
 
       // Save empty results when no API key is available - DO NOT use mock data
       return await saveEmptyResults();
     }
-
-    console.log(`API keys found: Gemini=${hasGeminiApiKey}, OpenAI=${hasOpenAIApiKey}`);
 
     let allResults = [];
 
@@ -321,13 +316,6 @@ Only include results with REAL, direct URLs to news sources.`;
     }
     } // End of Gemini search block
 
-    // Also search with OpenAI if available
-    const openaiResults = await searchWithOpenAI();
-    if (openaiResults.length > 0) {
-      console.log(`Adding ${openaiResults.length} results from OpenAI search`);
-      allResults = [...allResults, ...openaiResults];
-    }
-
     // Fetch Google News RSS feed
     const googleNewsResults = await fetchGoogleNewsRSS();
     if (googleNewsResults.length > 0) {
@@ -342,7 +330,7 @@ Only include results with REAL, direct URLs to news sources.`;
       allResults = [...allResults, ...crossrefResults];
     }
 
-    console.log(`\nTotal combined results: ${allResults.length} (Gemini + OpenAI + Google News + Crossref)`);
+    console.log(`\nTotal combined results: ${allResults.length} (Gemini + Google News + Crossref)`);
 
     // If we didn't get any REAL results, save empty results (hide section)
     if (allResults.length === 0) {
@@ -360,6 +348,13 @@ Only include results with REAL, direct URLs to news sources.`;
 
     // Reuse the Gemini client (no grounding for validation — just text reasoning)
     const validationAi = geminiAi;
+
+    // Persistent verdict cache: the same URLs recur run after run (pipeline
+    // ticks + daily cron), so never re-validate an already-judged URL.
+    const validationCache = loadValidationCache();
+    let validationCacheUpdated = false;
+    let validationCacheHits = 0;
+    let validationCalls = 0;
 
     for (let i = 0; i < uniqueResults.length; i++) {
       const result = uniqueResults[i];
@@ -426,7 +421,25 @@ Only include results with REAL, direct URLs to news sources.`;
           continue;
         }
 
-        const validation = await validateWebMention(validationAi, result);
+        const cacheKey = normalizeUrl(result.url);
+        let validation = getValidVerdict(validationCache, cacheKey);
+        if (validation) {
+          validationCacheHits++;
+          console.log(`  Cached verdict (${validation.isRelevant ? 'relevant' : 'rejected'}) — no Gemini call`);
+        } else {
+          validation = await validateWebMention(validationAi, result);
+          validationCalls++;
+          // Never cache the failure fallback — it's a transient error verdict,
+          // not a judgement about the URL.
+          if (!validation._fallback) {
+            validationCache[cacheKey] = {
+              v: VALIDATION_PROMPT_VERSION,
+              cachedAt: new Date().toISOString(),
+              verdict: validation,
+            };
+            validationCacheUpdated = true;
+          }
+        }
         if (validation.isRelevant) {
           console.log(`✓ Validated: ${result.title}`);
           console.log(`  - Mentioned by name: ${validation.mentionedByName}`);
@@ -473,7 +486,11 @@ Only include results with REAL, direct URLs to news sources.`;
       }
     }
 
-    console.log(`\nValidation complete: ${validatedResults.length}/${uniqueResults.length} results passed validation`);
+    if (validationCacheUpdated) {
+      saveValidationCache(validationCache);
+    }
+    console.log(`\nValidation: ${validationCacheHits} cache hits, ${validationCalls} Gemini calls`);
+    console.log(`Validation complete: ${validatedResults.length}/${uniqueResults.length} results passed validation`);
 
     // Multi-signal date extraction pipeline
     console.log('\n=== Extracting publication dates (multi-signal pipeline) ===');
@@ -1090,6 +1107,63 @@ function saveDateCache(cache) {
   }
 }
 
+// Bump whenever the validateWebMention prompt (or the config identity fields
+// it interpolates) changes — invalidates every cached verdict at once.
+const VALIDATION_PROMPT_VERSION = 1;
+
+// A relevant verdict decays: `isRecent` means "last 6 months", so re-validate
+// positives after this long. Negative verdicts (wrong person, not mentioned,
+// already stale) are facts that don't improve with age — cached permanently.
+const POSITIVE_VERDICT_TTL_MS = 180 * 24 * 60 * 60 * 1000;
+
+const VALIDATION_CACHE_PATH = path.join(
+  __dirname, '../../public/data/websearch-validation-cache.json'
+);
+
+/**
+ * Load the persistent validation-verdict cache from disk.
+ * Maps normalizeUrl(url) → { v, cachedAt, verdict }
+ */
+function loadValidationCache() {
+  try {
+    if (fs.existsSync(VALIDATION_CACHE_PATH)) {
+      return JSON.parse(fs.readFileSync(VALIDATION_CACHE_PATH, 'utf8'));
+    }
+  } catch (e) {
+    console.log('Could not load validation cache, starting fresh');
+  }
+  return {};
+}
+
+/**
+ * Save the persistent validation-verdict cache to disk.
+ */
+function saveValidationCache(cache) {
+  try {
+    fs.writeFileSync(VALIDATION_CACHE_PATH, JSON.stringify(cache, null, 2));
+    console.log(`Validation cache saved (${Object.keys(cache).length} entries)`);
+  } catch (e) {
+    console.log(`Failed to save validation cache: ${e.message}`);
+  }
+}
+
+/**
+ * Return the cached verdict for a cache key, or null when it must be
+ * (re-)validated: unknown URL, prompt-version mismatch, or a positive
+ * verdict older than POSITIVE_VERDICT_TTL_MS.
+ */
+function getValidVerdict(cache, key, now = Date.now()) {
+  const entry = cache[key];
+  if (!entry || entry.v !== VALIDATION_PROMPT_VERSION || !entry.verdict) {
+    return null;
+  }
+  if (entry.verdict.isRelevant) {
+    const age = now - Date.parse(entry.cachedAt || 0);
+    if (!(age >= 0 && age < POSITIVE_VERDICT_TTL_MS)) return null;
+  }
+  return entry.verdict;
+}
+
 /**
  * Estimate publication date by asking Gemini to read the actual page content.
  * This is the last-resort signal — used only when URL, HTTP metadata, and
@@ -1247,13 +1321,15 @@ Respond with valid JSON only.`;
 
   } catch (error) {
     console.error('Error in validation API call:', error.message);
-    // Return a fallback validation that includes the item
+    // Return a fallback validation that includes the item. `_fallback` marks
+    // it as a transient error verdict so it is never written to the cache.
     return {
       isRelevant: true,
       relevanceScore: 0.5,
       reason: 'Validation failed, included by default',
       description: result.title,
-      personMatch: 'uncertain'
+      personMatch: 'uncertain',
+      _fallback: true
     };
   }
 }
@@ -1462,111 +1538,6 @@ function extractDomainFromUrl(url) {
 }
 
 /**
- * Search using OpenAI Responses API with web search tool
- */
-async function searchWithOpenAI() {
-  if (!hasOpenAIApiKey) {
-    console.log('OpenAI API key not configured, skipping OpenAI search');
-    return [];
-  }
-
-  console.log('\n=== Starting OpenAI Web Search ===');
-
-  try {
-    const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-
-    const searchPrompt = `Search for recent NEWS ARTICLES and MEDIA COVERAGE that mention "${config.name}" from the past 6 months.
-
-IMPORTANT CONTEXT:
-- ${config.name} is a ${config.title} at ${config.institution}
-- Specializes in: ${config.expertise.join(', ')}
-
-WHAT TO FIND (prioritize these):
-1. News articles from newspapers, magazines, or news websites that quote or mention this person
-2. Media interviews, podcasts, or TV/radio appearances
-3. Press coverage about research findings
-4. Articles where journalists cite this person as an expert source
-5. Conference or event announcements where this person is a speaker
-
-WHAT TO EXCLUDE (do NOT include):
-- Profile pages (ORCID, Google Scholar, ResearchGate, LinkedIn, personal website)
-- Direct links to academic papers or publications
-- Academic repository pages (IRIS, arXiv, SSRN)
-- ResearchGate "Request PDF" pages
-- Social media profile pages
-
-For each NEWS result found, provide a JSON array with objects containing:
-- title: The exact title of the news article
-- url: The full URL (must be a real, direct URL)
-- description: A brief description of the mention
-- source: The source domain (e.g., "bbc.com", "wired.it")
-
-Respond with ONLY a valid JSON array, no other text.`;
-
-    const response = await openai.responses.create({
-      model: 'gpt-5.4',
-      tools: [{ type: 'web_search' }],
-      input: searchPrompt
-    });
-
-    console.log('OpenAI response received');
-
-    const results = [];
-
-    // Extract text from the response
-    let responseText = '';
-    if (response.output) {
-      for (const item of response.output) {
-        if (item.type === 'message' && item.content) {
-          for (const content of item.content) {
-            if (content.type === 'output_text') {
-              responseText += content.text;
-            }
-          }
-        }
-      }
-    }
-
-    // Try to parse JSON from response
-    try {
-      const jsonMatch = responseText.match(/\[[\s\S]*\]/);
-      if (jsonMatch) {
-        const parsed = JSON.parse(jsonMatch[0]);
-        if (Array.isArray(parsed)) {
-          for (const item of parsed) {
-            if (item.url && item.title) {
-              // Skip unwanted results
-              if (shouldSkipResult(item.url, item.title)) {
-                console.log(`OpenAI: Skipping filtered result: ${item.url}`);
-                continue;
-              }
-
-              results.push({
-                title: item.title,
-                url: item.url,
-                snippet: item.description || '',
-                date: null,
-                source: item.source || extractDomainFromUrl(item.url),
-                searchEngine: 'openai'
-              });
-            }
-          }
-        }
-      }
-    } catch (parseError) {
-      console.log(`OpenAI: Failed to parse JSON: ${parseError.message}`);
-    }
-
-    console.log(`OpenAI search found ${results.length} results`);
-    return results;
-
-  } catch (error) {
-    console.error('OpenAI search error:', error.message);
-    return [];
-  }
-}
-
-/**
  * Fetch Google News RSS feed for mentions
  * Uses exact-match query and fetches both Italian and English locale feeds
  */
@@ -1761,6 +1732,9 @@ module.exports = {
     extractDateFromHTTP,
     extractDateFromUrl,
     extractJsonLdDate,
-    parseToYMD
+    parseToYMD,
+    getValidVerdict,
+    VALIDATION_PROMPT_VERSION,
+    POSITIVE_VERDICT_TTL_MS
   }
 };

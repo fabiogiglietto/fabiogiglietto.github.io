@@ -9,7 +9,7 @@
 const { GoogleGenAI } = require('@google/genai');
 
 const MODELS = {
-  FLASH: 'gemini-2.5-flash',
+  FLASH: 'gemini-3.5-flash',
   FLASH_LATEST: 'gemini-flash-latest',
 };
 

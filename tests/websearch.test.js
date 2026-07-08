@@ -437,3 +437,58 @@ describe('extractDateFromUrl', () => {
     )).toBe('2025-12-12');
   });
 });
+
+describe('getValidVerdict (validation-verdict cache)', () => {
+  const { getValidVerdict, VALIDATION_PROMPT_VERSION, POSITIVE_VERDICT_TTL_MS } = _testing;
+  const NOW = Date.parse('2026-07-08T00:00:00Z');
+  const KEY = 'example.com/article';
+
+  const entry = (verdict, { v = VALIDATION_PROMPT_VERSION, ageMs = 0 } = {}) => ({
+    [KEY]: {
+      v,
+      cachedAt: new Date(NOW - ageMs).toISOString(),
+      verdict
+    }
+  });
+
+  const negative = {
+    isRelevant: false,
+    mentionedByName: false,
+    relevanceScore: 0.1,
+    reason: 'Different person',
+    description: 'x',
+    personMatch: 'different_person',
+    isRecent: false
+  };
+  const positive = { ...negative, isRelevant: true, personMatch: 'confirmed', isRecent: true };
+
+  test('unknown URL is a miss', () => {
+    expect(getValidVerdict({}, KEY, NOW)).toBeNull();
+  });
+
+  test('prompt-version mismatch is a miss', () => {
+    const cache = entry(negative, { v: VALIDATION_PROMPT_VERSION - 1 });
+    expect(getValidVerdict(cache, KEY, NOW)).toBeNull();
+  });
+
+  test('negative verdicts hit permanently (no TTL)', () => {
+    const tenYears = 10 * 365 * 24 * 60 * 60 * 1000;
+    const cache = entry(negative, { ageMs: tenYears });
+    expect(getValidVerdict(cache, KEY, NOW)).toEqual(negative);
+  });
+
+  test('fresh positive verdict hits', () => {
+    const cache = entry(positive, { ageMs: 24 * 60 * 60 * 1000 });
+    expect(getValidVerdict(cache, KEY, NOW)).toEqual(positive);
+  });
+
+  test('stale positive verdict (past TTL) is a miss', () => {
+    const cache = entry(positive, { ageMs: POSITIVE_VERDICT_TTL_MS + 1 });
+    expect(getValidVerdict(cache, KEY, NOW)).toBeNull();
+  });
+
+  test('positive verdict with unparseable cachedAt is a miss', () => {
+    const cache = { [KEY]: { v: VALIDATION_PROMPT_VERSION, cachedAt: 'garbage', verdict: positive } };
+    expect(getValidVerdict(cache, KEY, NOW)).toBeNull();
+  });
+});
