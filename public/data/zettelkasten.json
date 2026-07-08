@@ -1823,7 +1823,7 @@
       "topics": [
         "information-disorder"
       ],
-      "podcastLinked": false
+      "podcastLinked": true
     },
     "Beacken2026-zb": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Beacken2026-zb",
@@ -1839,11 +1839,27 @@
         "information-disorder",
         "polarization-hybrid-media"
       ],
+      "podcastLinked": true
+    },
+    "Ducci2022-10cb5d70": {
+      "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Ducci2022-10cb5d70",
+      "topics": [
+        "italian-media-ecosystem",
+        "information-disorder"
+      ],
+      "podcastLinked": false
+    },
+    "Giglietto2020-6278a4aa": {
+      "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Giglietto2020-6278a4aa",
+      "topics": [
+        "polarization-hybrid-media",
+        "computational-social-science"
+      ],
       "podcastLinked": false
     }
   },
-  "totalNotes": 250,
+  "totalNotes": 252,
   "siteUrl": "https://fabiogiglietto.github.io/fg-zettelkasten/",
-  "lastUpdated": "2026-07-08T07:32:35.862Z",
+  "lastUpdated": "2026-07-08T08:25:27.954Z",
   "source": "https://github.com/fabiogiglietto/fg-zettelkasten"
 }
