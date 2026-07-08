@@ -142,3 +142,6 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Playwright MCP browser-session artifacts
+.playwright-mcp/
