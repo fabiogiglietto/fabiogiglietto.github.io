@@ -3,7 +3,7 @@
   "title": "Fabio Giglietto — own publications",
   "home_page_url": "https://fabiogiglietto.github.io/publications",
   "description": "Auto-generated feed of Fabio Giglietto's own publications, consumed downstream by research-radio and fg-zettelkasten.",
-  "_updated": "2026-07-07T10:30:14.905Z",
+  "_updated": "2026-07-08T07:42:15.263Z",
   "items": [
     {
       "id": "bibtex:Unknown2026-286210a6",
@@ -40,7 +40,7 @@
         }
       ],
       "url": "https://doi.org/10.4324/9781003359524-24",
-      "content_text": "",
+      "content_text": "This chapter examines the emergence, detection, and ethical implications of coordinated and inauthentic behaviour on social media platforms. It traces the origins of the concept within platform governance frameworks, particularly Meta's efforts to define and police problematic online activity, before exploring how scholars and industry researchers have adopted and adapted the term in their own work. The chapter provides a critical overview of current detection methods and tools, highlighting both their technical innovations and the methodological challenges they face in distinguishing between legitimate activism and manipulative influence operations. It also considers how technological shifts, such as the rise of short-form video and generative artificial intelligence, are reshaping the dynamics of coordination and complicating detection efforts. Beyond technical debates, the chapter foregrounds the ethical and normative dimensions of this evolving field, emphasising the risks of false positives, the silencing of activism, and the lack of transparency in platform enforcement. By situating these issues within wider questions of accountability, legitimacy, and free expression, the chapter offers critical insights and recommendations for researchers, policymakers, and platforms navigating the complex terrain of online coordination and authenticity.",
       "_academic": {
         "doi": "10.4324/9781003359524-24",
         "bibtex_key": "Giglietto2026-79cedfa2",
@@ -205,7 +205,7 @@
         }
       ],
       "url": "https://doi.org/10.31235/osf.io/8dqag_v2",
-      "content_text": "",
+      "content_text": "In February 2021, Meta announced it would reduce the distribution of political content in users' News Feeds, implementing the policy globally by July 2022 before reversing course in January 2025. Despite the significance of these changes for democratic communication, no independent research has quantified their effects on elected officials. This study examines Meta's political content reduction policy using a dataset of over 2.5 million Facebook posts from Italian parliamentarians, prominent politicians, and political extremist accounts spanning 2021–2025, collected via the Meta Content Library API. Employing a discovery-validation design with structural breakpoint detection methods, the analysis identifies three cross-validated breakpoints that reveal policy effects emerged in Italy approximately ten months before Meta's announced global implementation. The findings document a 72% reduction in average reach for re-elected Members of Parliament, declining from approximately 53,000 views per post before the policy to 15,000 at the trough. Although Meta's January 2025 reversal produced a significant rebound, post-reversal reach recovered to only 65% of pre-policy levels. A robustness check reveals asymmetric effects: while mainstream politicians experienced substantial visibility losses, extremist accounts' high posting volume more than compensated for modest per-post declines, resulting in increased total weekly reach during the policy period. These findings expose significant transparency deficits in Meta's policy communication while also demonstrating the research value of the transparency infrastructure that made this study possible.",
       "_academic": {
         "doi": "10.31235/osf.io/8dqag_v2",
         "bibtex_key": "Giglietto2025-1765bb4f",
@@ -224,7 +224,10 @@
       "date_published": "2025-07-21",
       "authors": [
         {
-          "name": "M Terenzi F Giglietto"
+          "name": "Fabio Giglietto"
+        },
+        {
+          "name": "Massimo Terenzi"
         }
       ],
       "url": "https://doi.org/10.5281/zenodo.16269197",
@@ -309,7 +312,7 @@
         }
       ],
       "url": "https://doi.org/10.6092/issn.1971-8853/19524",
-      "content_text": "",
+      "content_text": "The integration of Large Language Models (LLMs) into research workflows has the potential to transform the study of political content on social media. This essay discusses a validation protocol addressing three key aspects of LLM-integrated research: the versatility of LLMs as general-purpose models, the granularity and nuance in LLM-uncovered narratives, and the limitations of human assessment capabilities. The protocol includes phases for fine-tuning and validating a binary political classifier, evaluating cluster coherence, and assessing machine-generated cluster label accuracy. We applied this protocol to validate an LLMs-in-the-loop research pipeline designed to analyze political content on Facebook during the Italian general elections of 2018 and 2022. Our approach classifies political links, clusters them by similarity, and generates descriptive labels for clusters. This methodology presents unique validation challenges, prompting a reevaluation of accuracy assessment strategies. By sharing our experiences, this essay aims to guide social scientists in employing LLM-based methodologies, highlighting challenges and advancing recommendations for colleagues intending to integrate these tools for political content analysis on social media.",
       "_academic": {
         "doi": "10.6092/issn.1971-8853/19524",
         "bibtex_key": "Marino2024-2fbc690f",
@@ -358,12 +361,12 @@
         }
       ],
       "url": "https://doi.org/10.3389/fsoc.2024.1379265",
-      "content_text": "",
+      "content_text": "In February 2016, Facebook expanded the original \"Like\" button by introducing five additional \"Reactions\"-Love, Haha, Wow, Sad, and Angry-using modified versions of Unicode emojis. These reactions enable users to express more nuanced emotions towards posts. This literature review investigates scholarly research on user behavior in response to these reactions, with a focus on a broad spectrum of socioeconomic and psychological issues. We conducted a systematic search across databases including Scopus and Google Scholar, using keywords such as \"Facebook\" and \"Reaction,\" combined with various key phrases and Boolean operators. Our review synthesizes sixty-four articles published from 2016 to 2023, exploring diverse topics such as political news, far-right and extremist parties, racism, and hate speech during the COVID-19 pandemic. We organized these articles by theme and publication date. Our meta-analysis reveals that lifestyle and entertainment posts predominantly receive positive reactions, while sociopolitical content tends to elicit a broader spectrum of emotions, including negative sentiments. Furthermore, emotionally charged content consistently attracts higher volumes of reactions, regardless of sentiment. This research highlights the intricate relationship between user reactions and content characteristics, providing deeper insights into the dynamics of online engagement. By understanding these interaction patterns, we gain a better grasp of emotional responses and engagement levels, which ultimately shape online discourse and user interactions.",
       "_academic": {
         "doi": "10.3389/fsoc.2024.1379265",
         "bibtex_key": "Anwar2024-34dba628",
         "type": "journal-article",
-        "venue": "Frontiers in Sociology",
+        "venue": "FRONTIERS IN SOCIOLOGY",
         "year": 2024,
         "publisher": "Frontiers Media SA",
         "citation_count": 24,
@@ -372,21 +375,27 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2024-1c12fc68",
+      "id": "bibtex:F2024-1c12fc68",
       "title": "Analisi Computazionale del Parallelismo Politico in Italia: Il Caso delle Elezioni 2022",
       "date_published": "2024-01-01",
       "authors": [
         {
-          "name": "N Righetti, A Stanziano F Giglietto"
+          "name": "Giglietto F."
+        },
+        {
+          "name": "Righetti N."
+        },
+        {
+          "name": "Stanziano A."
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2737471",
-      "content_text": "",
+      "content_text": "This study explores the application of large language models (LLMs) to analyze political communication on social media during the 2022 Italian general elections. Leveraging OpenAI’s ChatGPT and the text-embedding-ada-002 model, we conducted an exploratory analysis to identify the themes in Facebook posts from 12 major Italian news outlets. These posts were collected in the three months leading up to the election. By clustering these posts and mapping their political parallelism, we examined the extent to which the ideological alignment of media sources influences the coverage of political topics. We employed a novel methodology combining supervised fine-tuning of an LLM for classifying political content and unsupervised clustering for thematic analysis. Our approach included the use of the Multi-Party Media Partisanship Attention Score (MP-MPAS) to quantify the partisan attention received by different news sources on Twitter. The integration of these methods allowed us to address two primary research questions: whether political parallelism is evident on social media and whether it extends to the topics covered. The results reveal significant political parallelism in the Italian media system, observable in the alignment of news sources with specific political parties and the distribution of themes across these sources. This study demonstrates the potential of LLMs to enhance the analysis of political communication, offering insights into the dynamics of media coverage and ideological biases during electoral campaigns.",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giglietto2024-1c12fc68",
+        "bibtex_key": "F2024-1c12fc68",
         "type": "book-chapter",
-        "venue": "",
+        "venue": "Il Mulino",
         "year": 2024,
         "publisher": null,
         "citation_count": 2,
@@ -471,7 +480,7 @@
         }
       ],
       "url": "https://doi.org/10.1007/978-3-031-29298-9_4",
-      "content_text": "",
+      "content_text": "This chapter outlines the most relevant topics discussed during the campaign on two Italian mainstream social media platforms. The study analyses posts, collected through CrowdTangle, mentioning a set of political keywords published on Facebook Pages/groups and Instagram accounts between 21 July, when Mario Draghi resigned as Prime Minister, and 25 September 2022, the day of the election. A breakout algorithm detector is used to identify peaks in daily engagement, and for each peak, the main topics were identified using LDA (Latent Dirichlet Allocation). The chapter provides insight into the trends and topics that were most likely to drive engagement on these platforms during the campaign period. The results of the study may be useful for understanding the role of social media in political communication and for identifying the most effective strategies for reaching and engaging with voters through these channels.",
       "_academic": {
         "doi": "10.1007/978-3-031-29298-9_4",
         "bibtex_key": "Artieri2023-133f8d65",
@@ -540,24 +549,21 @@
       }
     },
     {
-      "id": "bibtex:Stanziano2023-7ce379f6",
+      "id": "bibtex:A2023-7ce379f6",
       "title": "Hyperpartisan Networks on Facebook. The Case of the Five Star Movement Network During the 2022 Italian Election",
       "date_published": "2023-01-01",
       "authors": [
         {
-          "name": "Anna Stanziano"
-        },
-        {
-          "name": "Fabio Giglietto"
+          "name": "Stanziano A."
         }
       ],
       "url": "https://doi.org/11576/2740791",
-      "content_text": "This paper aims to shed light on networks consisting of subjects that share similar opinions and worldviews. This is not a new phenomenon, but undoubtedly social media, thanks to the possibility of finding affinities with subjects who have shared interests, even if geographically distant, has facilitated the collaboration among networks of like-minded individuals. Several studies have shown that the tendency of people to interact with other people with similar values and points of view is widespread among populist networks, so, following this assumption, this work focuses on a specific network: that of the unofficial Facebook pages and groups close to the Five Star Movement. In this work, we looked at the activities of the unofficial Facebook pages and groups close to the 5SM and explored the main topics discussed and the dynamics of the discussion within the network during the last Italian general election. In particular, we focused on how Facebook pages and groups used Facebook native or external sources of information in generating content. This study, although still partly descriptive, helps to understand the information ecosystem of the 5SM network on Facebook and also offers useful insights into the role played on social media by partisan communities, with particular reference to the populist ones",
+      "content_text": "",
       "_academic": {
         "doi": "11576/2740791",
-        "bibtex_key": "Stanziano2023-7ce379f6",
+        "bibtex_key": "A2023-7ce379f6",
         "type": "journal-article",
-        "venue": "COMUNICAZIONE POLITICA",
+        "venue": "",
         "year": 2023,
         "publisher": null,
         "citation_count": 1,
@@ -566,21 +572,27 @@
       }
     },
     {
-      "id": "bibtex:ARTIERI2023-1d2adec8",
+      "id": "bibtex:Artieri2023-1d2adec8",
       "title": "I cittadini nella campagna balneare su Instagram e Facebook",
       "date_published": "2023-01-01",
       "authors": [
         {
-          "name": "F Giglietto, A Stanziano G BOCCIA ARTIERI"
+          "name": "Giovanni Boccia Artieri"
+        },
+        {
+          "name": "Fabio Giglietto"
+        },
+        {
+          "name": "Anna Stanziano"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2716411",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "ARTIERI2023-1d2adec8",
+        "bibtex_key": "Artieri2023-1d2adec8",
         "type": "book-chapter",
-        "venue": "",
+        "venue": "Fondazione Giangiacomo Feltrinelli",
         "year": 2023,
         "publisher": null,
         "citation_count": 0,
@@ -594,7 +606,13 @@
       "date_published": "2023-01-01",
       "authors": [
         {
-          "name": "N Righetti, A Stanziano F Giglietto"
+          "name": "Fabio Giglietto"
+        },
+        {
+          "name": "Nicola Righetti"
+        },
+        {
+          "name": "Anna Stanziano"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2733994",
@@ -809,7 +827,7 @@
         }
       ],
       "url": "https://doi.org/10.31235/osf.io/6umqs",
-      "content_text": "",
+      "content_text": "Questo report descrive i risultati di un progetto finalizzato a sviluppare il prototipo di un tool che supporti e acceleri il lavoro di fact-checkers e debunkers identificando e classificando informazioni potenzialmente problematiche circolate sui social media con un approccio agnostico rispetto ai contenuti.",
       "_academic": {
         "doi": "10.31235/osf.io/6umqs",
         "bibtex_key": "Giglietto2022-0e951ac5",
@@ -819,7 +837,7 @@
         "publisher": "Center for Open Science",
         "citation_count": 8,
         "open_access": true,
-        "open_access_pdf_url": "https://osf.io/6umqs/download"
+        "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2693790/1/Final%20report%20%28Exec%20ITA%29.pdf"
       }
     },
     {
@@ -908,7 +926,7 @@
         }
       ],
       "url": "https://doi.org/10.4337/9781800374263.coordinated.inauthentic.behavior",
-      "content_text": "",
+      "content_text": "The Elgar Encyclopedia of Technology and Politics is a landmark resource that offers a comprehensive overview of the ways in which technological development is reshaping politics. Providing an unparalleled starting point for research, it addresses all the major contemporary aspects of the field, comprising entries written by over 90 scholars from 33 different countries on 5 continents.",
       "_academic": {
         "doi": "10.4337/9781800374263.coordinated.inauthentic.behavior",
         "bibtex_key": "Giglietto2022-d9970489",
@@ -1004,7 +1022,7 @@
         }
       ],
       "url": "https://doi.org/10.4135/9781529601886",
-      "content_text": "",
+      "content_text": "In this case study, we discuss two research projects that employed Facebook advertising tools as entry points for recruitment of online survey respondents and as sources of observational data on the interviewees’ interests and demographic profiles, which can be combined with self-reported information. Based on these two research projects, we discuss the opportunities and challenges of Facebook ad-based surveys. The case study describes the practicalities of the research design concerning the building of the online survey, planning the advertising campaign, and running/monitoring the campaign. Additionally, it provides evidence of the efficiency of a Facebook ad-based procedure for online recruiting in terms of costs and researchers’ direct control on survey performances. Lastly, it offers scholars a set of guidelines to implement comparable research designs necessary to understand the effects of the Facebook system of targeting on survey performances.",
       "_academic": {
         "doi": "10.4135/9781529601886",
         "bibtex_key": "Marino2022-d4cd08f9",
@@ -1042,37 +1060,64 @@
       "date_published": "2022-01-01",
       "authors": [
         {
-          "name": "GB Artieri, M Corsi, F Giglietto, F Manattini G Ducci"
+          "name": "Gea Ducci"
+        },
+        {
+          "name": "Giovanni Boccia Artieri"
+        },
+        {
+          "name": "Mario Corsi"
+        },
+        {
+          "name": "Fabio Giglietto"
+        },
+        {
+          "name": "Fabrizio Manattini"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2698369",
-      "content_text": "",
+      "content_text": "In the network society, how many health topics are generated and disseminated by online media, and which ones? What impact does online media have on users, in terms of reactions and levels of engagement? These research questions were investigated in the study illustrated in this full paper, the theoretical background of which consists of literature on Health Communication, on the e-patient phenomenon and on the role played by information systems in the dissemination of health information in digital environments (with consequent risks of disinformation\r\nand misinformation). The intertwining between digital and traditional media and the proliferation of user-generated content affects the production, circulation and consumption of health news in the connected society.\r\nThe main purpose of our study is to identify the role played by an online gatekeeper, in this case Google News Italia, in the process of influencing online health agenda setting.\r\nThe methodology adopted is quantitative and consists of the collection and thematic analysis of the news that Google News Italia aggregates in the area “Health”, and the impact that this activity has on Facebook users, in terms of engagement.\r\nThe study’s principal results indicate that a relevant role for online gatekeepers such as Google News has emerged in the digital public spheres relating to health. The Facebook user’s interest is focused also on those health news topics that can help to increase health literacy. At the same time, user engagement (in the shape of comments) is greater when the news topics are more “popular” and emotionally engaging.",
       "_academic": {
         "doi": null,
         "bibtex_key": "Ducci2022-10cb5d70",
         "type": "conference-paper",
-        "venue": "",
+        "venue": "UNICApress",
         "year": 2022,
         "publisher": null,
         "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
+        "open_access": true,
+        "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2698369/1/49-Libro-544-2-10-20220405.pdf"
       }
     },
     {
-      "id": "bibtex:Righetti2022-74ec832f",
+      "id": "bibtex:N2022-74ec832f",
       "title": "POLITICAL ADVERTISEMENT ON FACEBOOK IN THE LEAD-UP TO THE 2021 GERMAN FEDERAL ELECTIONS",
       "date_published": "2022-01-01",
       "authors": [
         {
-          "name": "F Giglietto, A Kavakand, A Kulichkina, G Marino, M Terenzi N Righetti"
+          "name": "Righetti N."
+        },
+        {
+          "name": "Giglietto F."
+        },
+        {
+          "name": "Kavakand A."
+        },
+        {
+          "name": "Kulichkina A."
+        },
+        {
+          "name": "Marino G."
+        },
+        {
+          "name": "Terenzi M."
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2735336",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Righetti2022-74ec832f",
+        "bibtex_key": "N2022-74ec832f",
         "type": "conference-paper",
         "venue": "",
         "year": 2022,
@@ -1083,21 +1128,21 @@
       }
     },
     {
-      "id": "bibtex:F2022-98491d5c",
+      "id": "bibtex:giglietto2022-98491d5c",
       "title": "Social TV and second screen",
       "date_published": "2022-01-01",
       "authors": [
         {
-          "name": "Giglietto F."
+          "name": "fabio giglietto"
         }
       ],
       "url": "https://doi.org/10.4337/9781800374263.social.tv.second",
-      "content_text": "",
+      "content_text": "The Elgar Encyclopedia of Technology and Politics is a landmark resource that offers a comprehensive overview of the ways in which technological development is reshaping politics. Providing an unparalleled starting point for research, it addresses all the major contemporary aspects of the field, comprising entries written by over 90 scholars from 33 different countries on 5 continents.",
       "_academic": {
         "doi": "10.4337/9781800374263.social.tv.second",
-        "bibtex_key": "F2022-98491d5c",
+        "bibtex_key": "giglietto2022-98491d5c",
         "type": "encyclopedia-entry",
-        "venue": "Elgar Encyclopedia of Technology and Politics",
+        "venue": "Edward Elgar Publishing Limited",
         "year": 2022,
         "publisher": "Edward Elgar Publishing",
         "citation_count": 0,
@@ -1169,16 +1214,28 @@
       "date_published": "2021-01-01",
       "authors": [
         {
-          "name": "GB Artieri, M Corsi, F Giglietto, F Manattini G Ducci"
+          "name": "Gea Ducci"
+        },
+        {
+          "name": "Giovanni Boccia Artieri"
+        },
+        {
+          "name": "Mario Corsi"
+        },
+        {
+          "name": "Fabio Giglietto"
+        },
+        {
+          "name": "Fabrizio Manattini"
         }
       ],
       "url": "https://doi.org/10.1445/101581",
-      "content_text": "",
+      "content_text": "The construction of the public discourse on health is affected by the transformations of the media ecosystem. The spread of the internet and social media that have entered the citizens’ media diets , the intertwining between digital and traditional media and the proliferation of user-generated content, have an impact on the production, circulation and consumption of health news in the connected society. The article focuses on the role played by an online gatekeeper such as Google News, in the process of building the online health agenda setting. Principal reference is made to study concerning the collection and thematic analysis of the news that Google News Italia aggregates in the «Health» area and the impact that this activity produces on Facebook users, in terms of engagemen",
       "_academic": {
         "doi": "10.1445/101581",
         "bibtex_key": "Ducci2021-fd53f96e",
         "type": "journal-article",
-        "venue": "",
+        "venue": "PROBLEMI DELL'INFORMAZIONE",
         "year": 2021,
         "publisher": null,
         "citation_count": 6,
@@ -1211,12 +1268,12 @@
         }
       ],
       "url": "https://doi.org/10.3280/SES2021-002014",
-      "content_text": "",
+      "content_text": "In the context of the cultural debate around the post-truth emerged in the last decade, the field of medicine seems to be an interesting place to observe the dialectic between traditional media and social media from which the action of counter-publics and polarized argumentative strategies emerge to defence their opinions. The paper presents the results of a research that concerns the analysis of the comments made on the Presa Diretta Facebook page, a Rai3 television program conducted by Riccardo Iacona, related to an episode – titling Charlatans – dedicated to cancer treatments. The research, using a mixed-methods approach related to the field of Internet Studies, draws on the analysis of 4,672 comments published by 1,377 unique users and collected from 35 posts on the page, in order to observe and to understand the typologies of comments and the quantitative volume of interactions, showing how the discursive strategies of Presa Diretta’s counterpublics are clear examples of the cultural debate around the concept of post-truth and its contradictions.",
       "_academic": {
         "doi": "10.3280/SES2021-002014",
         "bibtex_key": "Gemini2021-b1b8eff6",
         "type": "journal-article",
-        "venue": "SALUTE E SOCIETÀ",
+        "venue": "SALUTE E SOCIETÀ",
         "year": 2021,
         "publisher": "Franco Angeli",
         "citation_count": 4,
@@ -1260,21 +1317,24 @@
       }
     },
     {
-      "id": "bibtex:Marino2021-84ad96d8",
+      "id": "bibtex:G2021-84ad96d8",
       "title": "Economia, immigrazione, corruzione ed Europa: performance e circolazione su Facebook delle notizie sulle elezioni europee 2019",
       "date_published": "2021-01-01",
       "authors": [
         {
-          "name": "F Giglietto G Marino"
+          "name": "Marino G."
+        },
+        {
+          "name": "Giglietto F."
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2689497",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Marino2021-84ad96d8",
+        "bibtex_key": "G2021-84ad96d8",
         "type": "book-chapter",
-        "venue": "",
+        "venue": "Luiss University Press – LuissX srl",
         "year": 2021,
         "publisher": null,
         "citation_count": 2,
@@ -1359,7 +1419,7 @@
         }
       ],
       "url": "https://doi.org/10.1080/1369118X.2020.1739732",
-      "content_text": "",
+      "content_text": "Over the last few years, a proliferation of attempts to define, understand and fight the spread of problematic information in contemporary media ecosystems emerged. Most of these attempts focus on false content and/or bad actors detection. In this paper, we argue for a wider ecological focus. Using the frame of media manipulation and a revised version of the ‘coordinated inauthentic behavior’ original definition, the paper presents a study based on an unprecedented combination of Facebook data, accessed through the CrowdTangle API, and two datasets of Italian political news stories published in the run-up to the 2018 Italian general election and 2019 European election. By focusing on actors’ collective behavior, we identified several networks of pages, groups, and verified public profiles (‘entities’), that shared the same political news articles on Facebook within a very short period of time. Some entities in our networks were openly political, while others, despite sharing political content too, deceptively presented themselves as entertainment venues. The proportion of inauthentic entities in a network affects the wideness of the range of news media sources they shared, thus pointing to different strategies and possible motivations. The paper has both theoretical and empirical implications: it frames the concept of ‘coordinated inauthentic behavior’ in existing literature, introduces a method to detect coordinated link sharing behavior and points out different strategies and methods employed by networks of actors willing to manipulate the media and public opinion.",
       "_academic": {
         "doi": "10.1080/1369118X.2020.1739732",
         "bibtex_key": "Giglietto2020-9d8acdd7",
@@ -1391,7 +1451,7 @@
         }
       ],
       "url": "https://doi.org/10.1145/3400806.3400817",
-      "content_text": "",
+      "content_text": "Despite widespread concern over the role played by disinformation during recent electoral processes, the intrinsic elusiveness of the subject hinders efforts aimed at estimating its prevalence and effect. While there has been proliferation of attempts to define, understand and fight the spread of problematic information in contemporary media ecosystems, most of these attempts focus on detecting false content and/or bad actors. For instance, several existing studies rely on lists of problematic content or news media sources compiled by fact-checkers. However, these lists may quickly become obsolete leading to unreliable estimates. Using media manipulation as a frame, along with a revised version of the “coordinated inauthentic behavior” original definition, in this paper, we argue for a wider ecological focus. Leveraging a method designed to detect “coordinated links sharing behavior” (CLSB), we introduce and assess an approach aimed at creating and keeping lists of potentially problematic sources updated by analyzing the URLs shared on Facebook by public groups, pages, and verified profiles. We show how CLSB is consistently associated with higher risks of encountering problematic news sources across three different datasets of news stories and can be thus used as a signal to support manual and automatic detection of problematic information.",
       "_academic": {
         "doi": "10.1145/3400806.3400817",
         "bibtex_key": "Giglietto2020-37b1a5a0",
@@ -1410,11 +1470,17 @@
       "date_published": "2020-01-01",
       "authors": [
         {
-          "name": "N Righetti, L Rossi F Giglietto"
+          "name": "F. Giglietto"
+        },
+        {
+          "name": "N. Righetti"
+        },
+        {
+          "name": "L. Rossi"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2675493",
-      "content_text": "",
+      "content_text": "Given a set of URLs, this package detects coordinated link sharing behavior (CLSB) and outputs the network of entities that performed such behavior.",
       "_academic": {
         "doi": null,
         "bibtex_key": "Giglietto2020-d7a864e4",
@@ -1463,21 +1529,21 @@
       }
     },
     {
-      "id": "bibtex:F2020-6278a4aa",
+      "id": "bibtex:Giglietto2020-6278a4aa",
       "title": "Three Consequences of Big Data on the Practices and Scholarships of Political Communication",
       "date_published": "2020-01-01",
       "authors": [
         {
-          "name": "Giglietto F."
+          "name": "Fabio Giglietto"
         }
       ],
       "url": "https://doi.org/10.3270/96423",
-      "content_text": "",
+      "content_text": "The advent of pervasive and connected digital technologies has profoundly affected both the way in which politicians interact with citizens and supporters and the way in which scholars study political communication. In the context of this ongoing transformation, this paper focuses on the role played by \"big data\" analytics. The large availability of digital footprints left by citizens in their everyday use of digital technologies have created possibilities for new forms of collaboration, advertisement, and propaganda. While political actors embrace these new strategies, media scholars studying political communication must adjust their methodologies in order to make sense of this mutated environment. This paper describes and discusses these three vectors of transformation in light of the new opportunities and challenges posed to scholars in the field of political communication.",
       "_academic": {
         "doi": "10.3270/96423",
-        "bibtex_key": "F2020-6278a4aa",
+        "bibtex_key": "Giglietto2020-6278a4aa",
         "type": "journal-article",
-        "venue": "",
+        "venue": "COMUNICAZIONE POLITICA",
         "year": 2020,
         "publisher": null,
         "citation_count": 2,
@@ -1521,21 +1587,27 @@
       }
     },
     {
-      "id": "bibtex:Giannini2020-15103eea",
+      "id": "bibtex:L2020-15103eea",
       "title": "La obsolescencia programada como asunto controvertido. Un análisis del debate público online en torno a la salida de los dispositivos Apple",
       "date_published": "2020-01-01",
       "authors": [
         {
-          "name": "R Bartoletti, F Giglietto L Giannini"
+          "name": "Giannini L."
+        },
+        {
+          "name": "Bartoletti R."
+        },
+        {
+          "name": "Giglietto F"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2678982",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giannini2020-15103eea",
+        "bibtex_key": "L2020-15103eea",
         "type": "book-chapter",
-        "venue": "",
+        "venue": "Editorial Fragua",
         "year": 2020,
         "publisher": null,
         "citation_count": 0,
@@ -1578,7 +1650,7 @@
         }
       ],
       "url": "https://doi.org/10.31235/osf.io/3jteh",
-      "content_text": "",
+      "content_text": "The year 2016 marked a turning point in the history of relations between the Internet, social media, public opinion, and politics. Online practices of grassroots participation, which used to be considered the prerogative of democratizing forces fighting established powers, turned out to be an effective platform for far-right extremists. In the attempt to make sense of what happened and develop workable solutions, stakeholders rapidly moved through the different stages of grief, ranging from denial to anger and acceptance. As a case in point, we trace the path through these stages which moved from an initial denial of the problem to concern over “fake news” and hoaxes, to finally focusing on the behavior of certain actors on the platform. Starting from the current phase, we analyze “coordinated inauthentic behavior”, a concept only briefly defined in Facebook public statements which, nevertheless, is useful to frame future studies insofar as both the idea of coordination and authenticity have been studied in the literature. Leveraging these works, we suggest a definition that is at once framed in this literature and easy to operationalize. Using this definition and an unprecedented combination of CrowdTangle API (a tool for accessing Facebook and other social media data) and two datasets of Italian political news stories published in the run-up to the 2018 Italian general election and 2019 European election, we developed a method that led to the identification of several networks of pages/groups/verified public profiles (“entities”) that shared the same political news stories on Facebook within a very short period of time (10 in 2018, composed of 28 entities, and 50 in 2019, composed of 143 entities). We call this behavior “coordinated link sharing”. By analyzing the social media profiles of such coordinated entities, we observed that while some of them were clearly political, others presented themselves as entertainment venues, despite sharing political content too. Since the political news stories shared by these non-political entities can reach a broad audience which is largely unguarded against attempts to influence, we describe their behavior as “inauthentic”. Further analyses showed that the news shared by the coordinated networks received a Facebook engagement higher than other news included in our dataset, that much news boosted anti-immigration and far-right propaganda and that several of the news outlets shared by these networks were already blacklisted by fact-checkers.",
       "_academic": {
         "doi": "10.31235/osf.io/3jteh",
         "bibtex_key": "Giglietto2019-0bd8b768",
@@ -1610,7 +1682,7 @@
         }
       ],
       "url": "https://doi.org/10.1080/1369118X.2019.1629692",
-      "content_text": "",
+      "content_text": "The paper considers how social media ecologies are affecting partisan engagement around political news and online attention economies by investigating the case of the 2018 Italian general election. By analyzing Twitter and Facebook interactions around political news in the lead-up to the election, we shed light on levels of insularity characterizing sources preferred by different partisan communities and investigate how specific patterns of active attention emerge around different sources and around stories proposing different framing of specific political actors. Our findings indicate that, on Twitter, sources mainly shared by supporters of populist parties (the Five Star Movement and the League) are characterized by higher levels of insularity compared to those shared by supporters of other parties. We also find that, on Facebook, news items published by highly insular sources receive a higher number of shares per comment. Finally, our analyses show that news presenting a positive framing of the Five Star Movement – the unique ‘cyber party’ in the system – receives a higher number of shares per comment compared to items presenting the Movement in a negative light, while the opposite is true for stories on all other political parties.",
       "_academic": {
         "doi": "10.1080/1369118X.2019.1629692",
         "bibtex_key": "Giglietto2019-882f1900",
@@ -1636,7 +1708,7 @@
         }
       ],
       "url": "https://doi.org/10.1177/0011392119837573",
-      "content_text": "",
+      "content_text": "The concept of sociocybernetics has been shaped over the past 40 years at the intersection between first- and second-order cybernetics, constructive epistemology and systems science. This has produced a common language to bridge these different disciplines and a common basis for research analysing complex social problems. Sociocybernetics applies second-order cybernetics concepts to the study of societies, communities and groups in which first- and second-order reflexivity may play an important part, but it is not only a theoretical perspective in the abstract; it is also an approach that is applied to the analysis of cross-disciplinary issues such as systemic violence, the role of technology in society, environmental challenges, urban planning, community development, social identity and media representation, among many others. This article provides an introduction and a general conceptual description of second-order cybernetics in the broader context of cybernetics and systems sciences. It also presents the sociocybernetics debate as it stands today, after the 20-year anniversary of the Research Committee on Sociocybernetics’ (RC51) activities within the International Sociological Association (ISA) and its contributions to understanding and acting upon an increasingly complex social world. Sociocybernetics is the science of turbulent societies that somehow continue to adapt themselves, despite the complexities they are confronted with. The articles in this monograph introduce some of the current work of the research committee and showcase the extensive potential for sociocybernetics’ interaction with other areas of sociology and contemporary debate.",
       "_academic": {
         "doi": "10.1177/0011392119837573",
         "bibtex_key": "AlmaguerKalixto2019-28ff227a",
@@ -1668,7 +1740,7 @@
         }
       ],
       "url": "https://doi.org/10.1177/0011392119837536",
-      "content_text": "",
+      "content_text": "Alarmed by the oversimplifications related to the ‘fake news’ buzzword, researchers have started to unpack the concept, defining diverse types and forms of misleading news. Most of the existing works in the area consider crucial the intent of the content creator in order to differentiate among different types of problematic information. This article argues for a change of perspective that, by leveraging the conceptual framework of sociocybernetics, shifts from exclusive attention to creators of misleading information to a broader approach that focuses on propagators and, as a result, on the dynamics of the propagation processes. The analytical implications of this perspective are discussed at a micro level (criteria to judge the falsehood of news and to decide to spread it), at a meso level (four possible relations between individual judgements and decisions), and at a macro level (global circulation cascades). The authors apply this theoretical gaze to analyse ‘fake news’ stories that challenge existing models.",
       "_academic": {
         "doi": "10.1177/0011392119837536",
         "bibtex_key": "Giglietto2019-e9be81c1",
@@ -1682,21 +1754,30 @@
       }
     },
     {
-      "id": "bibtex:F2019-9da344c7",
+      "id": "bibtex:Giglietto2019-9da344c7",
       "title": "Multi-Party Media Partisanship Attention Score. Estimating Partisan Attention of News Media Sources Using Twitter Data in the Lead-up to 2018 Italian Election",
       "date_published": "2019-01-01",
       "authors": [
         {
-          "name": "Giglietto F."
+          "name": "Fabio Giglietto"
+        },
+        {
+          "name": "Nicola Righetti"
+        },
+        {
+          "name": "Giada Marino"
+        },
+        {
+          "name": "Luca Rossi"
         }
       ],
       "url": "https://doi.org/10.3270/93030",
-      "content_text": "",
+      "content_text": "The ongoing radical transformations in communication ecosystems have brought up concerns about the risks of partisan selective exposure and ideological polarization. Tra- ditionally, partisan selective exposure is measured by cross-tabulating survey responses to questions on vote intentions and media consumption. This process is expensive, limits the number of news outlets taken into account and is prone to the typical biases of self-reported data. Building upon previous works and with a specific focus on the online media environment, we introduce a new method to measure partisan media attention in a multi-party political system using Twitter data from 2018 Italian general election. Our first research question addresses the effectiveness of this method by measuring the extent to which our estimates correlate with partisan newspaper consumption measured by the latest Italian National Election Studies (ITANES) survey. Once established the reliability of our method, we employ these scores and measures to analyze the Italian digital media ecosystem in the lead-up to March 2018 election. The traditionally high level of political parallelism that characterizes both the Italian press and TV sectors is only partially reflected in a digital media ecosystem where partisan news sources seem to coexist with cross-partisan outlets. Results also point out that certain online partisan communities tend to rely more on exclusive news media sources.",
       "_academic": {
         "doi": "10.3270/93030",
-        "bibtex_key": "F2019-9da344c7",
+        "bibtex_key": "Giglietto2019-9da344c7",
         "type": "journal-article",
-        "venue": "",
+        "venue": "COMUNICAZIONE POLITICA",
         "year": 2019,
         "publisher": null,
         "citation_count": 23,
@@ -1705,21 +1786,30 @@
       }
     },
     {
-      "id": "bibtex:F2019-1b620ef6",
+      "id": "bibtex:Giglietto2019-1b620ef6",
       "title": "Binge-watching the Algorithmic Catalog: Making Sense of Netflix in the Aftermath of the Italian Launch",
       "date_published": "2019-01-01",
       "authors": [
         {
-          "name": "Giglietto F."
+          "name": "Fabio Giglietto"
+        },
+        {
+          "name": "Chiara Checcaglini"
+        },
+        {
+          "name": "Giada Marino"
+        },
+        {
+          "name": "Lella Mazzoli"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2754418.5",
-      "content_text": "",
+      "content_text": "Following the end of September announcement, the on-demand streaming service Netflix was officially launched in Italy on 22 October 2015. Longly awaited by local fans and enthusiasts of TV series, the launch of the platform in the Italian market provided an opportunity to study the ways viewers expected, reacted, consumed and made sense of the innovative features provided by platform. Framed in the existing literature on TV consumption, binge-watching and algorithms, the study presents the results of a multimethod and multi-staged research effort that combines a quanti-qualitative content analysis of Twitter’s conversations sparked by the launch, and a qualitative analysis of 15 in-depth interviews with younger and older Italian users. Results point out the way Netflix has been incorporated in a set of pre-existing but evolving practices and routines with specific reference to time, space and the process of selecting contents.",
       "_academic": {
         "doi": null,
-        "bibtex_key": "F2019-1b620ef6",
+        "bibtex_key": "Giglietto2019-1b620ef6",
         "type": "book-chapter",
-        "venue": "",
+        "venue": "Peter Lang",
         "year": 2019,
         "publisher": null,
         "citation_count": 7,
@@ -1733,7 +1823,16 @@
       "date_published": "2019-01-01",
       "authors": [
         {
-          "name": "A Valeriani, N Righetti, G Marino F Giglietto"
+          "name": "Fabio Giglietto"
+        },
+        {
+          "name": "Augusto Valeriani"
+        },
+        {
+          "name": "Nicola Righetti"
+        },
+        {
+          "name": "Giada Marino"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2665408",
@@ -1742,7 +1841,7 @@
         "doi": null,
         "bibtex_key": "Giglietto2019-cd4574ac",
         "type": "book-chapter",
-        "venue": "",
+        "venue": "FrancoAngeli",
         "year": 2019,
         "publisher": null,
         "citation_count": 3,
@@ -1756,16 +1855,22 @@
       "date_published": "2019-01-01",
       "authors": [
         {
-          "name": "F Giglietto, G Marino N Righetti"
+          "name": "Nicola Righetti"
+        },
+        {
+          "name": "Fabio Giglietto"
+        },
+        {
+          "name": "Giada Marino"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2665407",
-      "content_text": "",
+      "content_text": "Starting from the association between Euroscepticism and new media suggested by recent studies, this paper examines whether a eurosceptic tendency characterized the online information environment in the lead-up to the 2018 Italian general election. With both quantitative and qualitative methods, about 2850 news stories on European Union, published online and shared on Facebook in the six months before the elections, were analyzed. The main findings are as follows: 1) among the main news topics, there were themes associated, in literature, to eurosceptic perspectives, like immigration and economy; 2) among the most engaging news stories, negative tone overcame the positive one; 3) positive and negative news articles turned out to be associated with different interaction patterns on Facebook, explainable as traces of the activism of online eurosceptic partisan communities; 4) positive and negative news frames were mainly focused on utilitarian or moral support for European Union. Overall, these findings unveil the role played by partisan social media online communities as a key driver fostering the relationship between Euroscepticism and the online information environment.",
       "_academic": {
         "doi": null,
         "bibtex_key": "Righetti2019-6604169c",
         "type": "journal-article",
-        "venue": "",
+        "venue": "PROBLEMI DELL'INFORMAZIONE",
         "year": 2019,
         "publisher": null,
         "citation_count": 2,
@@ -1815,7 +1920,7 @@
         }
       ],
       "url": "https://doi.org/10.1177/0894439318816638",
-      "content_text": "",
+      "content_text": "Survey-based studies are increasingly experimenting with strategies that employ digital footprints left by users on social media as entry points for recruiting participants and complementary data\r\nsources. In this perspective, the Facebook advertising platform provides unique opportunities and challenges through its marketing tools that target advertisements based on users’ demographics, behaviors, and interests. This article presents a procedure that employed the most recent developments in Facebook marketing tools to evaluate the efficiency and effectiveness of an innovative method for recruiting niche and traditionally hard-to-reach respondents. Although the multiple innovations introduced in the method hinder a proper comparison with previous studies, the survey provides evidence concerning the efficacy of the procedure and offers scholars a set of implementations to design future comparable Facebook ad–based surveys. Challenges, opportunities, and results for effectiveness are discussed in light of a previous survey on Italian adults carried out with a panel-based computer-assisted web interviewing method.",
       "_academic": {
         "doi": "10.1177/0894439318816638",
         "bibtex_key": "Iannelli2018-ebd918b7",
@@ -1876,21 +1981,21 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2018-4c2d7b36",
+      "id": "bibtex:giglietto2018-4c2d7b36",
       "title": "Il consumo dell'informazione nei media",
       "date_published": "2018-01-01",
       "authors": [
         {
-          "name": "F Giglietto"
+          "name": "F. giglietto"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2662217",
-      "content_text": "",
+      "content_text": "Il contributo presenta i risultati di una indagine quantitativa sul consumo di informazione in rete (n=1006). La ricerca traccia il profilo del consumatore di news in mobilità e di quello partecipativo evidenziandone le motivazioni e le più diffuse pratiche.",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giglietto2018-4c2d7b36",
+        "bibtex_key": "giglietto2018-4c2d7b36",
         "type": "book-chapter",
-        "venue": "",
+        "venue": "FrancoAngeli",
         "year": 2018,
         "publisher": null,
         "citation_count": 0,
@@ -1904,16 +2009,22 @@
       "date_published": "2018-01-01",
       "authors": [
         {
-          "name": "N Righetti, G Marino F Giglietto"
+          "name": "F. Giglietto"
+        },
+        {
+          "name": "N. Righetti"
+        },
+        {
+          "name": "G. Marino"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2665427",
-      "content_text": "",
+      "content_text": "Gli appuntamenti elettorali rappresentano da sempre un’occasione preziosa per chi studia il rapporto fra media e politica. In un contesto di rapido cambiamento innescato dall’avvento del digitale, il progetto Mapping Italian News ha analizzato la copertura informativa dei media italiani online durante i sei mesi che hanno preceduto le elezioni politiche 2018. Partendo da un dataset di 84.815 notizie e sfruttando un innovativo set di tecniche e metodologie volte ad analizzare il comportamento delle comunità online di utenti interessati alla politica, questo paper offre uno spaccato inedito dei rapporti fra fonti di informazione e partiti politici",
       "_academic": {
         "doi": null,
         "bibtex_key": "Giglietto2018-ffb2588a",
         "type": "journal-article",
-        "venue": "",
+        "venue": "COMUNICAZIONEPUNTODOC",
         "year": 2018,
         "publisher": null,
         "citation_count": 0,
@@ -1934,7 +2045,7 @@
         }
       ],
       "url": "https://doi.org/10.1177/2056305116686992",
-      "content_text": "",
+      "content_text": "Following a shooting attack by two self-proclaimed Islamist gunmen at the offices of French satirical weekly Charlie Hebdo on 7 January 2015, there emerged the hashtag #JeSuisCharlie on Twitter as an expression of solidarity and support for the magazine’s right to free speech. Almost simultaneously, however, there was also #JeNeSuisPasCharlie explicitly countering the former, affirmative hashtag. Based on a multimethod analysis of 74,047 tweets containing #JeNeSuisPasCharlie posted between 7 and 11 January, this article reveals that users of the hashtag under study employed various discursive strategies and tactics to challenge the mainstream framing of the shooting as the universal value of freedom of expression being threatened by religious extremism, while protecting themselves from the risk of being viewed as disrespecting victims or endorsing the violence committed. The significance of this study is twofold. First, it extends the literature on strategic speech acts by examining how such acts take place in a social media context. Second, it highlights the need for a multidimensional and reflective methodology when dealing with data mined from social media.",
       "_academic": {
         "doi": "10.1177/2056305116686992",
         "bibtex_key": "Giglietto2017-4375de2f",
@@ -1966,7 +2077,7 @@
         }
       ],
       "url": "https://doi.org/10.1080/1369118X.2016.1203970",
-      "content_text": "",
+      "content_text": "In this paper, we describe the results of a qualitative study conducted with 120 Italian Facebook users to investigate how Facebook enables people to achieve a mutually constitutive intimacy with their own friendship network: a negotiation of intimacy in public through self-disclosure, where the affordances\r\nof the platform are useful to elicit significant reactions, validations and demonstrations of affection from others. We observed that, in order to achieve various levels of intimacy on Facebook, people engage in various strategies: Showing rather than telling, Sharing implicit content, Tagging, Expectation of mutual understanding and Liking. These strategies produce a collaborative disclosure that relies on others’ cooperation to maintain the boundaries between private and public space. Based on these premises, we developed a framework of collaborative strategies for managing public intimacy that both systematizes and extends the findings identified in previous studies of intimacy on Facebook. We describe this framework as networked intimacy and we discuss the consequences of it in the light of already existing research on online self-disclosure.",
       "_academic": {
         "doi": "10.1080/1369118X.2016.1203970",
         "bibtex_key": "Farci2017-2a88c00e",
@@ -1980,21 +2091,21 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2017-df0565dc",
+      "id": "bibtex:GIGLIETTO2017-df0565dc",
       "title": "Dai dati all'informazione",
       "date_published": "2017-01-01",
       "authors": [
         {
-          "name": "F Giglietto"
+          "name": "FABIO GIGLIETTO"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2654014",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giglietto2017-df0565dc",
+        "bibtex_key": "GIGLIETTO2017-df0565dc",
         "type": "book-chapter",
-        "venue": "",
+        "venue": "Mondadori Università",
         "year": 2017,
         "publisher": null,
         "citation_count": 1,
@@ -2038,7 +2149,7 @@
         }
       ],
       "url": "https://doi.org/10.1080/08838151.2016.1164162",
-      "content_text": "",
+      "content_text": "Several recent reports pointed out how the practice of using a “second screen” while following a television program is becoming an increasingly widespread 5 phenomenon. When the secondary device is used to read or to comment about a watched program, most of the discussion takes place on popular\r\nsocial media such as Facebook and Twitter. Previous research has shown that the analysis of these contents could lead to a better understanding of the behavior of networked publics and of the structure of the show itself. Nevertheless most of the existing research is focused on the content only and focused on a single episode analysis or on big media events. Leveraging this background, this article presents instead a study focused on the relationships between content and users across an entire airing season of a TV program. Through a quantitative network analysis of the tweets produced during episodes of the Italian political talks show Servizio Pubblico, we identified a small loyal group of viewers. Despite the differences in quantity of content produced, the loyal viewers do not show any sign of forming a community-like structure. We also performed a qualitative analysis of the tweets produced during one specific episode and discussed the elements of the TV show that generated the higher level of engagement on Twitter.",
       "_academic": {
         "doi": "10.1080/08838151.2016.1164162",
         "bibtex_key": "Rossi2016-393c1322",
@@ -2052,28 +2163,28 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2016-bb55fad7",
+      "id": "bibtex:GIGLIETTO2016-bb55fad7",
       "title": "Understanding engagement and willingness to speak up in social television: A full-season, cross-genre analysis of TV audience participation on Twitter",
       "date_published": "2016-01-01",
       "authors": [
         {
-          "name": "Fabio Giglietto"
+          "name": "FABIO GIGLIETTO"
         },
         {
-          "name": "Giovanni Boccia Artieri"
+          "name": "GIOVANNI BOCCIA ARTIERI"
         },
         {
-          "name": "Laura Gemini"
+          "name": "LAURA GEMINI"
         },
         {
-          "name": "Mario Orefice"
+          "name": "Orefice Mario"
         }
       ],
       "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85030472910&partnerID=MN8TOARS",
-      "content_text": "",
+      "content_text": "The widespread use of digital platforms has changed the way people watch television. Despite an abundance of empirical studies, full-season, cross-genre analyses of different TV formats are rare. Based on a data set of 1,383,414 tweets, this study aims to close this gap by comparing Twitter commentaries around the 2012–2013 seasons of the Italian edition of The X Factor and the political talk show Servizio Pubblico. For each episode, we identify peaks of Twitter engagement and analyze the corresponding TV scene, revealing the role played by suspense and surprise in catalyzing the engagement of online audiences. A content analysis of 12,640 tweets created during peaks of engagement reveals how willingness to speak up varies when the topic is politics rather than entertainment.",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giglietto2016-bb55fad7",
+        "bibtex_key": "GIGLIETTO2016-bb55fad7",
         "type": "journal-article",
         "venue": "International Journal of Communication",
         "year": 2016,
@@ -2168,7 +2279,7 @@
         }
       ],
       "url": "https://doi.org/10.3280/sc2015-049002",
-      "content_text": "",
+      "content_text": "Il progressivo passaggio di molte attività quotidiane al digitale ha comportato, fra gli altri effetti, una straordinaria disponibilità di dati per la ricerca nelle scienze sociali. Se, da un lato, questa ricchezza apre inedite prospettive di sviluppo per molti settori della ricerca, dall’altro pone nuove sfide ed espone a nuovi rischi. Le competenze necessarie per l’analisi di grandi quantità di dati, il rapporto fra quantità e qualità e quello fra ricercatore e piattaforme private dalla natura instabile sono alcune delle questioni aperte affrontate in questo articolo.",
       "_academic": {
         "doi": "10.3280/sc2015-049002",
         "bibtex_key": "Giglietto2015-b57dba49",
@@ -2182,19 +2293,22 @@
       }
     },
     {
-      "id": "bibtex:F2015-d4b81c8c",
+      "id": "bibtex:GIGLIETTO2015-d4b81c8c",
       "title": "To be or not to be charlie: Twitter hashtags as a discourse and counter-discourse in the aftermath of the 2015 charlie hebdo shooting in France",
       "date_published": "2015-01-01",
       "authors": [
         {
-          "name": "Giglietto F."
+          "name": "FABIO GIGLIETTO"
+        },
+        {
+          "name": "Yenn Lee"
         }
       ],
       "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84938536467&partnerID=MN8TOARS",
-      "content_text": "",
+      "content_text": "Following a shooting attack by two self-proclaimed Islamist gunmen at the offices of French satirical weekly Charlie Hebdo on 7th January 2015, there emerged the hashtag #JeSuisCharlie on Twitter as an expression of condolences for the victims, solidarity, and support for the magazine's right to free speech. Almost simultaneously, however, there was also #JeNeSuisPasCharlie explicitly countering the former, affirmative hashtag. In this paper, we analyse 74,047 tweets containing #JeNeSuisPasCharlie posted between 7th and 11th January. Our network analysis and semantic cluster analysis of those 74,047 tweets reveal that the hashtag in question constitutes a form of resistance to the mainstream framing of the issue as freedom of expression being threatened by religious intolerance and violence. The resistance was manifested through three phases: sharing condolences but indicating a reservation against the mainstream frame (Grief); voicing out resistance against the frame (Resistance); and developing and deploying alternative frames such as hate speech, Eurocentrism, and Islamophobia (Alternatives). The hashtag in this context served as a vehicle through which users formed, enhanced, and declared their self-identity.",
       "_academic": {
         "doi": null,
-        "bibtex_key": "F2015-d4b81c8c",
+        "bibtex_key": "GIGLIETTO2015-d4b81c8c",
         "type": "conference-paper",
         "venue": "CEUR Workshop Proceedings",
         "year": 2015,
@@ -2217,7 +2331,7 @@
         }
       ],
       "url": "https://doi.org/10.1080/1369118x.2015.1006658",
-      "content_text": "",
+      "content_text": "This article analyses the relationship between mediated politics and participation, adopting a hybrid approach that stresses the connections between older and newer media. The study adopts a practice-based approach, considering the ways TV audiences, politicians, and journalists used Twitter in order to participate in the discourses activated around Italian political talk shows, during the ‘permanent’ campaign for the 2013 general elections (from September 2012 to June 2013; 11 shows; 1076 episodes). We analysed these communication practices referring, at first, to the complete collection of tweets, including\r\nthe official hashtags of Italian political talk shows (2,489,669 tweets). The analysis pointed out that a narrow audience had access to these practices, and that the potential for media\r\nand politicians to interact with audiences/citizens and to manage their ‘interpretive engagement’ in the construction of agendas has not been actualized. Furthermore, focusing on a sample of tweets produced around the three main parties (15,737) and the relative TV scene (23), the analysis showed that connected audiences were engaged especially in two forms of participation ‘through’ Twitter during talk shows (opinions/comments and requests for interaction with the TV hosts and guests). The article suggests a newer way to work on big data in order to gather a first-hand narrative of participation, left online by networked publics, without forgetting the contribution older techniques could make to the understanding of hybrid practices of political communication and participation.",
       "_academic": {
         "doi": "10.1080/1369118x.2015.1006658",
         "bibtex_key": "Iannelli2015-e0818c3e",
@@ -2231,21 +2345,21 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2015-d1f843d2",
+      "id": "bibtex:GIGLIETTO2015-d1f843d2",
       "title": "Se i Mi Piace fossero voti: uno studio emprico sulle elezioni amministrative 2011",
       "date_published": "2015-01-01",
       "authors": [
         {
-          "name": "F Giglietto"
+          "name": "FABIO GIGLIETTO"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2530814",
-      "content_text": "",
+      "content_text": "Le elezioni amministrative italiane del 15 e 16 Maggio 2011 hanno rappresentato un importante appuntamento elettorale che è coinciso con un particolare momento di sviluppo della diffusione e uso di Internet in Italia. Si è, infatti, trattato - con oltre la metà dei cittadini che accedono in rete - delle prime votazioni di cui si è parlato diffusamente anche online. Queste conversazioni contribuiscono al formarsi di un’opinione politica fra pari, in altre parole senza la mediazione dei mezzi di comunicazione di massa. Inoltre, a differenza delle conversazioni fra pari sulla politica che da sempre avvengono nelle famiglie come nei bar e nelle piazze, i discorsi che hanno luogo sulle piattaforme di social media lasciano traccia.\nSeguendo alcune suggestioni presenti sui media e in letteratura, si è dunque provato a seguire queste tracce per comprendere se, e fino a che punto, esse potessero anticipare l’esito stesso delle elezioni.\nLo studio si è concentrato sui 229 candidati sindaco dei 29 capoluoghi di provincia coinvolti in questa tornata elettorale. Per ciascun candidato sono state individuate le pagine di riferimento aperte su Facebook. Su queste pagine è stato svolto un monitoraggio del numero di Mi Piace/Likes ricevuto.\nAl termine del primo turno della tornata elettorale, il consenso ricevuto dai candidati su Facebook è stato messo a confronto, attraverso due diversi modelli, con il consenso effettivamente ricevuto in termini di percentuali di voto.\nNel 39% dei casi il candidato che era primo su Facebook ha effettivamente vinto le elezioni raccogliendo il maggior numero di voti. Nel 43% dei casi il candidato risultato primo su Facebook è invece arrivato secondo alle elezioni. In altri termini il candidato sindaco che raccoglie il maggior consenso sul social network, ha oltre l’80% di possibilità di diventare sindaco o di arrivare secondo nella competizione elettorale.\nNell’articolo sono discussi questi risultati alla luce di studi simili presenti in letteratura e tracciate alcune possibili prospettive di ricerca.",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giglietto2015-d1f843d2",
+        "bibtex_key": "GIGLIETTO2015-d1f843d2",
         "type": "book-chapter",
-        "venue": "",
+        "venue": "FrancoAngeli",
         "year": 2015,
         "publisher": null,
         "citation_count": 3,
@@ -2254,21 +2368,27 @@
       }
     },
     {
-      "id": "bibtex:Artieri2015-c93d0f9f",
+      "id": "bibtex:ARTIERI2015-c93d0f9f",
       "title": "#whatsapp #spuntablu \"Io so che tu sai che io so...\": narrazioni dal basso sull’innovazione tecnologica",
       "date_published": "2015-01-01",
       "authors": [
         {
-          "name": "F Giglietto, E Zurovac G Boccia Artieri"
+          "name": "GIOVANNI BOCCIA ARTIERI"
+        },
+        {
+          "name": "FABIO GIGLIETTO"
+        },
+        {
+          "name": "ELISABETTA ZUROVAC"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2627410",
-      "content_text": "",
+      "content_text": "L’innovazione tecnica chiamata “Spunta Blu”, introdotta da WhatsApp il cinque Novembre 2014, ha generato immediatamente una intensa discussione sui social media e su Twitter in particolare. La conversazione seguita, nei giorni dal 05/11/2014 al 07/11/2014, ha generato 1375 tweet aggregati dall’hashtag #spuntablu. L’analisi ha portato all’individuazione di diverse tipologie di tweet che hanno restituito le modalità di narrazione impiegate dagli utenti, nella tensione tra commento sul caso e rappresentazione identitaria. L’interpretazione di tali narrazioni dal basso ha consentito di sviluppare una riflessione sulla centralità per gli utenti di tematiche come l’incertezza comunicativa che viene messa a rischio dal controllo, portando a galla il desiderio di strategie per avere indietro la possibilità di uno scarto in cui muoversi nelle piattaforme di instant messanging (IM). Ciò che emerge dalla messa a tema di questi punti è che quando la comunicazione diventa certa, è la relazione interpersonale a venir messa in dubbio in seguito alla mancata risposta, permettendoci di ricostruire i discorsi sull’innovazione in una dimensione tesa tra processi di mediatizzazione e addomesticamento. A un ulteriore grado di astrazione, inoltre, è chiaro come il caso dell’innovazione tecnologica sia un pretesto per parlare di sé da parte di utenti abituati a prender parte alle conversazioni di pubblici in pubblico, in un ambiente ad alta riflessività connessa che come conseguenza sviluppa narrazioni di meta-commento.",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Artieri2015-c93d0f9f",
+        "bibtex_key": "ARTIERI2015-c93d0f9f",
         "type": "book-chapter",
-        "venue": "",
+        "venue": "FrancoAngeli",
         "year": 2015,
         "publisher": null,
         "citation_count": 0,
@@ -2277,21 +2397,21 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2015-e17ed95f",
+      "id": "bibtex:GIGLIETTO2015-e17ed95f",
       "title": "Il Futuro dell'industria culturale fra algoritmi sociali, democrazia e nuovi autoritarismi",
       "date_published": "2015-01-01",
       "authors": [
         {
-          "name": "F Giglietto"
+          "name": "FABIO GIGLIETTO"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2628426",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giglietto2015-e17ed95f",
+        "bibtex_key": "GIGLIETTO2015-e17ed95f",
         "type": "book-chapter",
-        "venue": "",
+        "venue": "FrancoAngeli",
         "year": 2015,
         "publisher": null,
         "citation_count": 0,
@@ -2344,7 +2464,7 @@
         }
       ],
       "url": "https://doi.org/10.3280/sc2013-046005",
-      "content_text": "",
+      "content_text": "La social tv può essere studiata come modalità di fruizione della televisione che contribuisce a creare uno spazio discorsivo pubblico in cui le modalità di rappresentazione della politica da parte della televisione entrano in dialogo con le grammatiche di auto-rappresentazione dei networked publics, secondo diversi gradi di coinvolgimento e diverse tipologie espressive. Attraverso metodi quantitativi e qualitativi è stata evidenziata una tendenza all’uso di Twitter per la social tv di tipo prevalentemente informativo, anche in presenza di espressione di opinioni personali, suggerendo una stretta sinergia tra tempi e modalità espressive televisive e le audience connesse",
       "_academic": {
         "doi": "10.3280/sc2013-046005",
         "bibtex_key": "Giglietto2014-7bed4008",
@@ -2370,7 +2490,7 @@
         }
       ],
       "url": "https://doi.org/10.1111/jcom.12085",
-      "content_text": "",
+      "content_text": "The practice of using a “second screen” while following a television program is quickly becoming a widespread phenomenon. When the secondary device is used for comments about programs, most discussions take place on popular social media such as Facebook and Twitter. Previous research pointed out the value of these conversations in understanding the behavior of “networked publics.” Building upon this background, this article presents the first study on a complete dataset of tweets (2,489,669) that span an entire season of a TV genre (1,076 episodes of talk shows). A content analysis of the tweets created during the season's most engaging moments indicates a relationship between typology of broadcasted scenes, style of comments, and the way participation (audience and political) is played.",
       "_academic": {
         "doi": "10.1111/jcom.12085",
         "bibtex_key": "Giglietto2014-337391ab",
@@ -2416,21 +2536,30 @@
       }
     },
     {
-      "id": "bibtex:Artieri2014-67c1530e",
+      "id": "bibtex:ARTIERI2014-67c1530e",
       "title": "Intimità connessa. Intimità e amicizia tra gli utenti italiani di Facebook",
       "date_published": "2014-01-01",
       "authors": [
         {
-          "name": "M Farci, F Giglietto, L Rossi G Boccia Artieri"
+          "name": "GIOVANNI BOCCIA ARTIERI"
+        },
+        {
+          "name": "MANOLO FARCI"
+        },
+        {
+          "name": "FABIO GIGLIETTO"
+        },
+        {
+          "name": "LUCA ROSSI"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2608200",
-      "content_text": "",
+      "content_text": "Per molti degli oltre 20 milioni utenti italiani, Facebook è diventato parte integrante della routine quotidiana. Lungi dal sostituire, come temuto da qualcuno, i rapporti interpersonali, Facebook ha senza dubbio cambiato le forme della relazione (boyd & Ellison 2008) e ampliato le opportunità di costruzione performativa dell’identità (Papacharissi 2011; Liu 2008; Zhao, Grasmuck, Martin 2008). \n\nPer comprendere l’impatto di questo fenomeno nel contesto italiano, il lavoro si è proposto di indagare il modo in cui Facebook contribuisce a ridefinire i confini tra pubblico e privato, focalizzandosi in particolare sul concetto di intimità. \n\nNella tradizione degli studi sociali, l’idea di intimità è stata considerata come una conseguenza dell’allentamento dei legami familiari e delle forme di vita comunitarie tipiche della modernità (Giddens 1992). L’intimità, cioè, ha rappresentato una esigenza di affermazione del sé in contrapposizione alla crescente complessificazione della vita pubblica. In conseguenza di ciò, l’idea che possano esistere manifestazioni di intimità in pubblico è stata spesso interpretata esclusivamente come una forma di “snaturamento” e oggettivazione della sfera privata dell'individuo (Illouz 2007; Bauman 2007) o come l’ennesima conferma di una cultura del narcisismo e dell’esposizione ostentata di sé (Lasch 1979).  \n\nIn accordo con queste teorie, l’avvento di uno spazio come Facebook, che per sua natura tende a far collassare i confini tra pubblico e privato, non fa che confermare questa idea confessionale-narcisistica dell’intimità: non a caso, per molti studiosi l’esposizione della propria sfera privata su Facebook costituisce esclusivamente un mezzo per ottenere gratificazione e validazione personale (Turkle 2011) o per catturare l’attenzione (Rosen 2007). \n\nLa nostra ricerca, in realtà, ha individuato come una delle peculiarità di Facebook sia quella di consentire una diversa forma di intimità che, pur restando fortemente ancorata alla sfera privata dell’individuo, mantiene una natura fortemente relazionale e pubblica. Abbiamo chiamato tale fenomeno come intimità connessa. L’intimità connessa è una pratica di relazione di “vicinanza” tra due o più utenti che avviene dentro uno spazio pubblico interconnesso. Si ha una forma di intimità connessa, cioè, ogni qualvolta un utente - attraverso l’uso degli strumenti offerti dalla piattaforma (status update, liking, tagging, commenti) - mette in pubblico una esperienza di relazione che rinvia ad una dimensione privata, e come tale accessibile solo a coloro che sono parte dell’esperienza condivisa a cui si fa riferimento. Da un lato, dunque, l’intimità connessa lavora come una forma di limitazione dell’accesso altrui alla propria sfera privata, attraverso l’uso di un’ampia varietà di segnali linguistici e strutturali, riferimenti culturali o allusioni ironiche che tendono automaticamente ad escludere gli altri (boyd & Marvick 2011). Dall’altro lato, però, è proprio attraverso questo meccanismo di esclusione del più vasto pubblico dei propri contatti, che gli utenti possono costruire uno spazio privato entro cui valorizzare il piacere dell’appartenenza e del riconoscimento comune. \n\nL’intimità connessa, dunque, è una pratica di messa in pubblico del privato deliberatamente prodotta per identificarsi con il proprio gruppo di amici e differenziarsi dal più vasto pubblico dei contatti. Ma, lungi dall’essere frutto di una scelta invariabile, tale processo è effimero, in quanto dipende dai gruppi che di volta in volta vengono mobilitati dagli utenti. Per questo possiamo considerare l’intimità connessa come un meccanismo riflessivo di apertura e chiusura del sé che ridefinisce continuamente i concetti di privato e pubblico.",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Artieri2014-67c1530e",
+        "bibtex_key": "ARTIERI2014-67c1530e",
         "type": "book-chapter",
-        "venue": "",
+        "venue": "FrancoAngeli",
         "year": 2014,
         "publisher": null,
         "citation_count": 7,
@@ -2439,21 +2568,30 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2014-3fef1e30",
+      "id": "bibtex:GIGLIETTO2014-3fef1e30",
       "title": "Media digitali, atteggiamenti e opinioni degli italiani su un sistema dell'informazione che cambia",
       "date_published": "2014-01-01",
       "authors": [
         {
-          "name": "L Mazzoli, F Montanari, G Raimondi F Giglietto"
+          "name": "FABIO GIGLIETTO"
+        },
+        {
+          "name": "GRAZIELLA MAZZOLI"
+        },
+        {
+          "name": "FEDERICO MONTANARI"
+        },
+        {
+          "name": "GIULIA RAIMONDI"
         }
       ],
       "url": "https://doi.org/10.1445/78378",
-      "content_text": "",
+      "content_text": "Based on telephone interviews with a representative sample of the Italian adult population (18 +), the survey NEWS-ITALY has investigated – since 2011 – the views and preferences of Italian news consumers. The article presents the results of a research that, drawing on the data of NEWS-ITALY 2014 survey (N = 1,013), has focused on the relationship between different ways of consuming news in digital format and the opinions and attitudes of respondents regarding their search and consumption of information. More specifically, through a comparison between different regression models, we were able to assess the role played by the use of internet, smartphone/tablet and social networking sites for getting information, in influencing Italians’ opinions regarding their experience with news. The analysis shows a significant effect of the use of the internet for getting news on respondents’ opinions regarding their experience of information overload, their encounter with news as a result of relatives and friends’ suggestions and their preference for getting news form sources contradicting their own opinions and views.",
       "_academic": {
         "doi": "10.1445/78378",
-        "bibtex_key": "Giglietto2014-3fef1e30",
+        "bibtex_key": "GIGLIETTO2014-3fef1e30",
         "type": "journal-article",
-        "venue": "",
+        "venue": "PROBLEMI DELL'INFORMAZIONE",
         "year": 2014,
         "publisher": null,
         "citation_count": 5,
@@ -2474,7 +2612,7 @@
         }
       ],
       "url": "https://doi.org/10.3280/sc2014-048002",
-      "content_text": "",
+      "content_text": "Ormai da anni, anche nel nostro Paese, si discute attivamente del Fascicolo Sanitario Elettronico. Si tratta di un servizio finalizzato ad aggregare le informazionisulla salute del singolo cittadino. Introdotto legislativamente nel 2012, il sistema dovrebbe essere operativo su scala nazionale per la metà del 2015. Ricerche precedenti hanno evidenziato la disomogeneità nei modelli e livello di sviluppo del progetto sul territorio nazionale. L’articolo presenta i risultati di una survey nazionale che indaga il fenomeno a partire dalle singole Aziende Ospedaliere, Aziende Sanitarie Locali e Istituti di Ricovero e Cura a Carattere Scientifico (n=238). I risultati confermano l’esistenza di aree di eccellenza in un panorama che rimane tuttavia\nfortemente disomogeneo. Le conclusioni mettono in luce l’importanza di un ruolo di coordinamento più attivo da parte del Ministero della Salute.",
       "_academic": {
         "doi": "10.3280/sc2014-048002",
         "bibtex_key": "Giglietto2014-c7743abb",
@@ -2553,21 +2691,24 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2013-143a8be3",
+      "id": "bibtex:GIGLIETTO2013-143a8be3",
       "title": "Amministrazioni pubbliche e gestione degli eventi critici attraverso i social media: il caso di #firenzeneve",
       "date_published": "2013-01-01",
       "authors": [
         {
-          "name": "A Lovari F Giglietto"
+          "name": "FABIO GIGLIETTO"
+        },
+        {
+          "name": "A. Lovari"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2627497",
-      "content_text": "",
+      "content_text": "Il presente contributo indaga l’uso dei social media, e in particolar modo di Twitter, da parte delle pubbliche amministrazioni in occasione di eventi critici ed emergenze ambientali. In particolare il paper si concentra sul caso del Comune di Firenze che durante le nevicate del mese di febbraio 2012 ha promosso l’utilizzo, tramite una specifica conferenza stampa, dell’hashtag #firenzeneve per informare i cittadini e i media locali delle possibili criticità e dei disservizi legati alle imminenti nevicate. Una rivoluzione nel modo di fare comunicazione pubblica da parte delle amministrazioni, spesso ancora troppo conservatrici nella definizione di strategie di comunicazione verso la cittadinanza e il sistema dei media. Alla luce della ormai vasta letteratura sulla gestione degli eventi di crisi internazionali attraverso i social media, si è proceduto ad una analisi quanti-qualitativa dei 6581 Tweet recanti l’hashtag #firenzeneve pubblicati fra il 31 Gennaio e il 28 Febbraio 2012.",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giglietto2013-143a8be3",
+        "bibtex_key": "GIGLIETTO2013-143a8be3",
         "type": "journal-article",
-        "venue": "",
+        "venue": "MEDIASCAPES JOURNAL",
         "year": 2013,
         "publisher": null,
         "citation_count": 8,
@@ -2576,21 +2717,24 @@
       }
     },
     {
-      "id": "bibtex:Mazzoli2013-c28ee25e",
+      "id": "bibtex:MAZZOLI2013-c28ee25e",
       "title": "Social Systems: from Simulation to Observation",
       "date_published": "2013-01-01",
       "authors": [
         {
-          "name": "F Giglietto L Mazzoli"
+          "name": "GRAZIELLA MAZZOLI"
+        },
+        {
+          "name": "FABIO GIGLIETTO"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2531374",
-      "content_text": "",
+      "content_text": "The cognition-computing short circuit, one of the most important legacies of Alan Turing’s work, is still affecting today both neuroscience and computer science. Starting from the proposals formulated by the British logician and mathematician, this paper underlines the rarely studied impact his ideas have had on the study of society. Social systems theories on the one hand and agent-based simulations on the other hand, have pinpointed once more the traditional sociological dualism between macro and micro-sociology. However, the advent of ‘’Big Data’ has paved the way to new techniques of investigation based on the study of new types of data, such as conversations taking place on popular web sites like Twitter and Facebook. Thanks to these techniques, we can go beyond simulation and observe the operation within the social “black box” in the same way as neuronal functional magnetic resonance imaging (fMRI) does as regards to the brain. This paper discusses the potential and limitations of these new methods of sociological investigation and their spillover effects on the theoretical development of the discipline.",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Mazzoli2013-c28ee25e",
+        "bibtex_key": "MAZZOLI2013-c28ee25e",
         "type": "book-chapter",
-        "venue": "",
+        "venue": "FrancoAngeli",
         "year": 2013,
         "publisher": null,
         "citation_count": 3,
@@ -2686,7 +2830,7 @@
         }
       ],
       "url": "https://doi.org/10.4256/mio.2012.003",
-      "content_text": "",
+      "content_text": "During the last few years a growing amount of content produced by Internet users has become publicly available online. These data come from a variety of places, including popular social web services like Facebook and Twitter, consumer services like Amazon or weblogs.\n\nThe research opportunities opened up by this socio-technological innovation are, as shown by the growing literature on the topic, huge. At the same time new challenges for social scientists arise. In this paper we will focus on two of the main challenges posed to the growth of the so-called computational social science: interdisciplinarity and ethics. While the searchability and persistence of this information make it ideal for sociological research, a quantitative approach is still challenging because of the size and complexity of the data.\n\nCollecting, storing and analyzing these data often require technical skills beyond the traditional curricula of social scientists. These projects require, in fact, collaboration with computer scientists. Nevertheless developing a common interdisciplinary project is often challenging because of the different backgrounds of the researchers.\n\nAt the same time the availability of this content poses a challenge concerning privacy and research ethics. Due to the amount of data and the fact that the real identity of the author is often hidden behind a nickname, it is often impossible to ask the subject involved to consent to the use of their data. On the other hand, especially in the first wave of web 2.0, this information has been - intentionally or not - publicly shared by the users. While a technique of dis-embedding the identity of the user from the content analyzed is often the solution used to bypass this issue, an even more important privacy-related challenge for computational social science is emerging. Due to the wide adoption of social network sites such Facebook or Google+, where a user may decide to share his content with his/her group of friends only, the amount of public data will change and decrease in the future. We will discuss this issue by enumerating a number of possible future scenarios.",
       "_academic": {
         "doi": "10.4256/mio.2012.003",
         "bibtex_key": "Giglietto2012-f05d4d74",
@@ -2715,7 +2859,7 @@
         }
       ],
       "url": "https://doi.org/10.1080/15228835.2012.743797",
-      "content_text": "",
+      "content_text": "A growing amount of content is published worldwide every day by millions of social media users. Most of this content is public, permanent and searchable. At the same time, the number of studies proposing different techniques and methodologies to exploit this content as data for researchers in different disciplines is also growing. The paper presents an up-to-date literature review that frames available studies using Facebook, Twitter and YouTube as data sources, in the perspective of traditional approaches for social scientists: ethnographical, statistical and computational. The aim is to offer an overview of strengths and weaknesses of different approaches in the context of the possibilities offered by the different platforms.",
       "_academic": {
         "doi": "10.1080/15228835.2012.743797",
         "bibtex_key": "Giglietto2012-186416e2",
@@ -2741,7 +2885,7 @@
         }
       ],
       "url": "https://doi.org/10.2139/ssrn.1978393",
-      "content_text": "",
+      "content_text": "The aim of the paper is to investigate the use of social media by Italian universities as communication and relational tools. An analysis of the 95 Italian higher education institutions highlights how nearly half of the universities (51.6\\%) have an official presence on at least one social media. In particular, private institutions and small-medium size universities are those that are mostly embracing the relational potentialities of these participatory media. Finally, in order to evaluate the social media performances of the analyzed institutions, we introduce the 'university social media performance index' (USMPI).Implications for public relation research and practices are discussed.",
       "_academic": {
         "doi": "10.2139/ssrn.1978393",
         "bibtex_key": "Lovari2012-8260181d",
@@ -2764,7 +2908,7 @@
         }
       ],
       "url": "https://doi.org/10.2139/ssrn.1982736",
-      "content_text": "",
+      "content_text": "Is it possible to forecast electoral results by analyzing social media conversations? This paper aims to contribute to the debate raised by authors claiming to have successfully predicted the outcomes of an election from Twitter or Facebook data. Our work tested the purported predictive power of social media metrics against the 2011 Italian administrative elections. During the months before the election day, we collected the amount of Likes received on the Facebook pages of 229 candidates running for the mayor offices of the 29 provincial capitals. We built two forecast models with the goal of predicting the outcomes of the elections: the aim of the first one was to predict the candidates\\’ vote shares, while the second was to forecast the name of the winning candidate. We found a non-significant correlation between the share of candidate popularity on Facebook and the respective share of votes. However, in 39\\% of the cases, the most popular candidate on Facebook actually won the contest, and in another 43\\%, that candidate came in second. The contribution to the ongoing debate is therefore two-sided: on the one hand, we provide a new case study from a cultural context and political system never analyzed before by this kind of study; on the other side, we propose two forecasting models that, although proven to be partially unsuccessful, can provide a foundation for improved forecasting models.",
       "_academic": {
         "doi": "10.2139/ssrn.1982736",
         "bibtex_key": "Giglietto2012-32b6b551",
@@ -2805,7 +2949,7 @@
         }
       ],
       "url": "https://doi.org/10.1145/2317307.2317316",
-      "content_text": "",
+      "content_text": "This paper provides an interdisciplinary perspective concerning the role of prosumers on future Internet design based on the current trend of Internet user empowerment. The paper debates the prosumer role, and addresses models to develop a symmetric Internet architecture and supply-chain based on the integration of social capital aspects. It has as goal to ignite the discussion concerning a socially-driven Internet architectural design.",
       "_academic": {
         "doi": "10.1145/2317307.2317316",
         "bibtex_key": "Sofia2012-802a21dc",
@@ -2819,21 +2963,27 @@
       }
     },
     {
-      "id": "bibtex:Artieri2012-411ae846",
+      "id": "bibtex:ARTIERI2012-411ae846",
       "title": "Facebook, Twitter & co. Una mutazione possibile per la ricerca sociale",
       "date_published": "2012-01-01",
       "authors": [
         {
-          "name": "F Giglietto, L Rossi G Boccia Artieri"
+          "name": "GIOVANNI BOCCIA ARTIERI"
+        },
+        {
+          "name": "FABIO GIGLIETTO"
+        },
+        {
+          "name": "LUCA ROSSI"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2512186",
-      "content_text": "",
+      "content_text": "Nel corso degli ultimi anni si è assistito ad una straordinaria crescita della disponibilità di contenuti generati dagli utenti (UGC) in rete. Questi contenuti rappresentano un materiale di straordinario interesse per la ricerca sociologica. Blog, piattaforme per la condivisione dei contenuti e siti di social network (da ora in poi social media) consentono ad un pubblico mai vasto come oggi di creare e diffondere contenuti permanenti, ricercabili, scalabili e replicabili. L’idea stessa di pubblico, tanto inteso come aggettivo che caratterizza uno spazio quanto inteso come audience, sta cambiando. Con esso cambia anche il concetto tradizionale di sfera pubblica.\nA partire da una introduzione che - muovendo da queste riflessioni - discuterà l’impatto dei social media sul concetto di sfera pubblica introducendo l’idea delle sfere pubbliche connesse, il contributo proposto tratterà dei limiti e potenzialità della ricerca sociologica sugli UGC (in particolare le esigenze di collaborazione fra discipline diverse e le questioni etiche) concentrando l’attenzione sul fenomeno Facebook. Facebook è il sito di social network più diffuso al mondo ed ospita dunque molta parte degli UGC prodotti in Italia e nel mondo. A renderlo un caso di particolare interesse non sono tuttavia solo le sue dimensioni, ma anche la sua particolare struttura basata su un complesso sistema di privacy che lo rende un oggetto di studio particolarmente impegnativo tanto sul piano della riflessione teorica che su quello della ricerca empirica.",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Artieri2012-411ae846",
+        "bibtex_key": "ARTIERI2012-411ae846",
         "type": "book-chapter",
-        "venue": "",
+        "venue": "Nutrimenti",
         "year": 2012,
         "publisher": null,
         "citation_count": 9,
@@ -2860,7 +3010,7 @@
         }
       ],
       "url": "https://doi.org/10.2139/ssrn.1963743",
-      "content_text": "",
+      "content_text": "In the digital era, news has become omnipresent. The Internet is at the center of the story of how people’s relationship to news is changing. Italy is, under this perspective, an interesting laboratory. Ownership of traditional media is concentrated in the hands of a relative small elite and public broadcasters are often strongly influenced by politicians.\n\nAt the same time, according to a recent report issued by the national Institute of Statistics, Internet is finally becoming widely adopted by young people.\n\nThe paper contains the results of a CATI survey conducted during December 2010 by the \"Advanced Communication Research Lab\" (LaRiCA) of the University of Urbino on a sample of 1209 respondents representative of the Italian population (200 of whose have been interviewed on mobile phones). In order to foster a comparative analysis, the survey questions set was translated and adapted for the different national context from a previous survey conducted during January 2010 by Pew Internet in United States.\n\nAim of the research was investigating how Italians inform themselves, which combination of media platforms they do use, what profiles of use and trust emerge in relation to the different parts of the media system, how mobile, personal and participatory news consumption is affecting information.\n\nThe results show how Italians, on one hand, remain strongly tied to traditional mass media, with little differences to the past, and, on the other hand, they behave on the Web in a surprisingly similar way to the American Internet users. A further generational analysis clearly pinpoint a common path that describe how the process of news consumption is shifting from the traditional rite of appointment based information toward a new way mainly influenced by foraging and opportunism. In this new multi-platform media environment people seem to access news when the spirit moves them or they have a chance to check up on headlines.",
       "_academic": {
         "doi": "10.2139/ssrn.1963743",
         "bibtex_key": "Giglietto2012-f7a760bb",
@@ -2874,19 +3024,28 @@
       }
     },
     {
-      "id": "bibtex:Bogliolo2012-6c7adee4",
+      "id": "bibtex:BOGLIOLO2012-6c7adee4",
       "title": "Il valore reale del denaro virtuale: dai giochi online ai mercati valutari",
       "date_published": "2012-01-01",
       "authors": [
         {
-          "name": "F Giglietto, P Polidori, F Stradini A Bogliolo"
+          "name": "ALESSANDRO BOGLIOLO"
+        },
+        {
+          "name": "FABIO GIGLIETTO"
+        },
+        {
+          "name": "PAOLO POLIDORI"
+        },
+        {
+          "name": "F. Stradini"
         }
       ],
       "url": "https://doi.org/10.4459/12.001.WTP.IT",
-      "content_text": "",
+      "content_text": "Il denaro virtuale sta diventando un terreno di conquista per i grandi della rete. Più o meno consapevolmente siamo tutti coinvolti in questa corsa. Ogni nostra azione online segna un punto a favore dell’uno o dell’altro dei contendenti. Ma cos’e’ il denaro virtuale? Quali sono i meccanismi che ne regolano il funzionamento? Che garanzie offre a chi lo usa? Qual e’ il suo valore? Che effetti produce sul mondo reale? Cosa succederebbe se le centinaia di milioni di utenti di Google, Facebook o Twitter adottassero la stessa moneta virtuale? Che effetto produrrebbe sui mercati valutari e che potere darebbe a chi la gestisce? Che rilevanza fiscale hanno le transazioni online? Questo documento raccoglie le riflessioni e gli spunti emersi dal seminario interdisciplinare tenuto a Urbino il 17 novembre 2011 da Alessandro Bogliolo (Sistemi di elaborazione delle informazioni), Fabio Giglietto (Sociologia dei processi culturali e comunicativi), Paolo Polidori (Scienza delle finanze) e Francesca Stradini (Diritto tributario). Dal baratto al denaro virtuale si ripercorrono velocemente le tappe principali della storia della moneta per analizzarne le nuove forme e le potenzialità discutendo gli aspetti tecnici, economici, sociali e fiscali di un fenomeno dirompente e sempre più rilevante.",
       "_academic": {
         "doi": "10.4459/12.001.WTP.IT",
-        "bibtex_key": "Bogliolo2012-6c7adee4",
+        "bibtex_key": "BOGLIOLO2012-6c7adee4",
         "type": "other",
         "venue": "",
         "year": 2012,
@@ -2906,7 +3065,7 @@
         }
       ],
       "url": "https://doi.org/10.1080/1369118x.2010.516760",
-      "content_text": "",
+      "content_text": "Invited review for ICS of  Ito, M., Baumer, S., Bittanti, M., Boyd, D., Cody, R., Herr-Stephenson, B., et al., Hanging Out, Messing Around, and Geeking Out: Kids Living and Learning with New Media (John D. and Catherine T. MacArthur Foundation Series on Digital Media and Learning) (Cambridge, MA and London: MIT Press, 2009), 432\r\npp., ISBN 0-262-01336-3 (hbk), £25.95.",
       "_academic": {
         "doi": "10.1080/1369118x.2010.516760",
         "bibtex_key": "Giglietto2011-c1d7b69f",
@@ -2966,21 +3125,21 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2010-ded08dad",
+      "id": "bibtex:GIGLIETTO2010-ded08dad",
       "title": "Yes we(b) can: la politica dopo Obama",
       "date_published": "2010-01-01",
       "authors": [
         {
-          "name": "F Giglietto"
+          "name": "FABIO GIGLIETTO"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2504760",
-      "content_text": "",
+      "content_text": "Le elezioni presidenziali del 2008 hanno segnato un punto di svolta nel rapporto fra web e politica. A partire dall'analisi di questa esperienza, l'articolo passa in rassegna opportunità e rischi della comunicazione politica che passa da web e social media",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giglietto2010-ded08dad",
+        "bibtex_key": "GIGLIETTO2010-ded08dad",
         "type": "book-chapter",
-        "venue": "",
+        "venue": "Hoepli",
         "year": 2010,
         "publisher": null,
         "citation_count": 0,
@@ -3012,21 +3171,21 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2009-6af6907d",
+      "id": "bibtex:GIGLIETTO2009-6af6907d",
       "title": "Io, i miei amici e il mondo: uno studio comparativo su Facebook e Badoo in Italia",
       "date_published": "2009-01-01",
       "authors": [
         {
-          "name": "F Giglietto"
+          "name": "FABIO GIGLIETTO"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2504757",
-      "content_text": "",
+      "content_text": "Lo studio presentato in questo articolo analizza le prime fasi di penetrazione in Italia del fenomeno dei social network. Gli utenti dei due social network più utilizzati sono messi a confronto, con una tecnica di indagine quantitativa CAWI,  dal punto di vista della percezione della privacy e capitale sociale.",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giglietto2009-6af6907d",
+        "bibtex_key": "GIGLIETTO2009-6af6907d",
         "type": "book-chapter",
-        "venue": "",
+        "venue": "Codice Edizioni",
         "year": 2009,
         "publisher": null,
         "citation_count": 10,
@@ -3035,21 +3194,21 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2009-d303f5c8",
+      "id": "bibtex:GIGLIETTO2009-d303f5c8",
       "title": "Social semantics in a networked space. New perspectives for social sciences",
       "date_published": "2009-01-01",
       "authors": [
         {
-          "name": "F Giglietto"
+          "name": "FABIO GIGLIETTO"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2504755",
-      "content_text": "",
+      "content_text": "During the last few years the Internet has been increasingly used by people as a read-write medium.  Thanks to the dropped prices and skills necessary to afford and use technologies aimed to create digital contents, a large amount of people in the world is now able to produce persistent digital information. A large share of this information is today exposed to a mass audience on the Internet. The aim of this paper is to present a vision and few examples of how this large amount of data might be used for sociological research. From the theoretical point of view this kind of researches drawn on the concept of social semantics developed by Niklas Luhmann. Social semantics, once crystallized in books is today also available in online conversations. The networks of interpersonal communications, when computer mediated, becomes observable and, as a consequence, social scientists have access to invaluable new data. Today, the online data have four characteristics that tend to increase even more the sociological value of this conversations. As a matter of fact, the online network of communications is in fact persistent, searchable, replicable and addressed to an invisible audience. Due to these properties online conversations may be analyzed with standard content analysis qualitative or quantitative techniques. The paper presents the theoretical framework for researches based upon the analysis of online conversations.",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giglietto2009-d303f5c8",
+        "bibtex_key": "GIGLIETTO2009-d303f5c8",
         "type": "book-chapter",
-        "venue": "",
+        "venue": "EDITUM",
         "year": 2009,
         "publisher": null,
         "citation_count": 8,
@@ -3067,7 +3226,7 @@
         }
       ],
       "url": "https://doi.org/10.3280/SC2009-039004",
-      "content_text": "",
+      "content_text": "Nel corso degli ultimi anni Internet è stato sempre più spesso utilizzato come uno strumento di consultazione e produzione di contenuti. La diffusione di tecnologia digitali per la produzione di contenuti e l'avvento di Internet hanno prodotto un'esplosione di contenuti generati dagli utenti. L'articolo descrive, nel contesto della teoria dei sistemi sociali, le nuove opportunità di ricerca per lo scienziato sociale.",
       "_academic": {
         "doi": "10.3280/SC2009-039004",
         "bibtex_key": "Giglietto2009-44c69221",
@@ -3081,21 +3240,21 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2009-41676cce",
+      "id": "bibtex:GIGLIETTO2009-41676cce",
       "title": "Toward a bridge between sociocybernetics and internet studies",
       "date_published": "2009-01-01",
       "authors": [
         {
-          "name": "L Rossi F Giglietto"
+          "name": "FABIO GIGLIETTO"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2505013",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giglietto2009-41676cce",
+        "bibtex_key": "GIGLIETTO2009-41676cce",
         "type": "journal-article",
-        "venue": "",
+        "venue": "JOURNAL OF SOCIOCYBERNETICS",
         "year": 2009,
         "publisher": null,
         "citation_count": 2,
@@ -3104,21 +3263,21 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2009-849c8fbd",
+      "id": "bibtex:GIGLIETTO2009-849c8fbd",
       "title": "I social media sono qui per restare.. e ora?",
       "date_published": "2009-01-01",
       "authors": [
         {
-          "name": "F Giglietto"
+          "name": "FABIO GIGLIETTO"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2535366",
-      "content_text": "",
+      "content_text": "Social media is the latest buzzword in a long line of buzzwords. It is often used to describe the collection of software that enables individuals and communities to gather, communicate, share, and in some cases collaborate or play. In tech circles, social media has replaced the earlier fave \"social software.\" Academics still tend to prefer terms like \"computer-mediated communication\" or \"computer-supported cooperative work\" to describe the practices that emerge from these tools and the old skool academics might even categorize these tools as \"groupwork\" tools. Social media is driven by another buzzword: \"user-generated content\" or content that is contributed by participants rather than editors.",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giglietto2009-849c8fbd",
+        "bibtex_key": "GIGLIETTO2009-849c8fbd",
         "type": "translation",
-        "venue": "",
+        "venue": "SOCIOLOGIA DELLA COMUNICAZIONE",
         "year": 2009,
         "publisher": null,
         "citation_count": 0,
@@ -3127,21 +3286,21 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2009-9f6d6da5",
+      "id": "bibtex:GIGLIETTO2009-9f6d6da5",
       "title": "Networks and Communities",
       "date_published": "2009-01-01",
       "authors": [
         {
-          "name": "F Giglietto"
+          "name": "FABIO GIGLIETTO"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2504759",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giglietto2009-9f6d6da5",
+        "bibtex_key": "GIGLIETTO2009-9f6d6da5",
         "type": "book-chapter",
-        "venue": "",
+        "venue": "GO! Internationalisering",
         "year": 2009,
         "publisher": null,
         "citation_count": 0,
@@ -3150,21 +3309,21 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2009-3ac3d8b3",
+      "id": "bibtex:GIGLIETTO2009-3ac3d8b3",
       "title": "Reti e Comunità",
       "date_published": "2009-01-01",
       "authors": [
         {
-          "name": "F Giglietto"
+          "name": "FABIO GIGLIETTO"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2504758",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giglietto2009-3ac3d8b3",
+        "bibtex_key": "GIGLIETTO2009-3ac3d8b3",
         "type": "book-chapter",
-        "venue": "",
+        "venue": "GO! Internationalisering",
         "year": 2009,
         "publisher": null,
         "citation_count": 0,
@@ -3173,21 +3332,68 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2009-c127d040",
+      "id": "bibtex:GIGLIETTO2009-c127d040",
       "title": "Social System Theory Between Individuals and Society. The Social Construction of Life",
       "date_published": "2009-01-01",
       "authors": [
         {
-          "name": "G Caramaschi F Giglietto"
+          "name": "FABIO GIGLIETTO"
+        },
+        {
+          "name": "G. CARAMASCHI"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2504756",
+      "content_text": "This paper presents the results of a study concerning the definition of the problematic relationship between individuals and society mediated by technology. It is the result of an empirical research based on Niklas Luhmann’s theory of social systems; its general objective is to outline the modalities through which society observes individuals and defines, also by means of communication, the forms of life, also seen in its biological complexity. It is therefore an analysis carried\nout within the so-called society semantics which takes place within the system of mass media, in the communications which make up its operational network and in its observations. The specific subject of investigation through which the individualsociety\nrelationship was explored derives from observations of the media system in respect of an event which is particularly related to the definition of life and person status: the debate on euthanasia following the Terri Schiavo case in the United States.",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "GIGLIETTO2009-c127d040",
+        "type": "book-chapter",
+        "venue": "EDITUM",
+        "year": 2009,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:L2009-d66fb471",
+      "title": "Network effect. Quando la rete diventa pop",
+      "date_published": "2009-01-01",
+      "authors": [
+        {
+          "name": "MAZZOLI L"
+        },
+        {
+          "name": "BOCCIA ARTIERI G"
+        },
+        {
+          "name": "GIGLIETTO F"
+        },
+        {
+          "name": "BARTOLETTI R"
+        },
+        {
+          "name": "GEMINI L"
+        },
+        {
+          "name": "DUCCI G"
+        },
+        {
+          "name": "ROSSI L"
+        },
+        {
+          "name": "Graziella Mazzoli"
+        }
+      ],
+      "url": null,
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giglietto2009-c127d040",
-        "type": "book-chapter",
-        "venue": "",
+        "bibtex_key": "L2009-d66fb471",
+        "type": null,
+        "venue": "Codice Edizioni",
         "year": 2009,
         "publisher": null,
         "citation_count": 0,
@@ -3219,21 +3425,21 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2008-fadb1c50",
+      "id": "bibtex:GIGLIETTO2008-fadb1c50",
       "title": "Videogiochi e sistemi sociali: prospettive di ricerca fra tempo, spazio e comunicazione",
       "date_published": "2008-01-01",
       "authors": [
         {
-          "name": "F Giglietto"
+          "name": "FABIO GIGLIETTO"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2504754",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giglietto2008-fadb1c50",
+        "bibtex_key": "GIGLIETTO2008-fadb1c50",
         "type": "book-chapter",
-        "venue": "",
+        "venue": "Liguori",
         "year": 2008,
         "publisher": null,
         "citation_count": 2,
@@ -3265,21 +3471,21 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2006-0f9d820c",
+      "id": "bibtex:GIGLIETTO2006-0f9d820c",
       "title": "Alle radici del futuro. Dalla teoria dell’informazione ai sistemi sociali",
       "date_published": "2006-01-01",
       "authors": [
         {
-          "name": "F Giglietto"
+          "name": "FABIO GIGLIETTO"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2504787",
-      "content_text": "",
+      "content_text": "Il volume ripercorre in quattro tappe il cammino che, nel corso di poco più di cinquanta anni, ha portato dalla teoria dell'informazione alle teorie dei sistemi sociali. Ogni tappa ha (almeno) un protagonista: Claude Elwood Shannon, Norbert Wiener, Ludwig von Bertalanffy, Heinz von Foerster, Talcott Parsons e Niklas Luhmann. Ripercorrere la vita di questi personaggi rappresenta un pretesto per rendere conto del contesto storico e sociale nel quale gli strumenti teorici e concettuali presentati nel libro sono stati sviluppati. Ogni tappa è pensata per offrire al lettore uno o più strumenti che torneranno utili durante il proseguimento del percorso.",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giglietto2006-0f9d820c",
+        "bibtex_key": "GIGLIETTO2006-0f9d820c",
         "type": "book",
-        "venue": "",
+        "venue": "FrancoAngeli",
         "year": 2006,
         "publisher": null,
         "citation_count": 17,
@@ -3288,21 +3494,24 @@
       }
     },
     {
-      "id": "bibtex:Rossi2006-fd2cd03b",
+      "id": "bibtex:ROSSI2006-fd2cd03b",
       "title": "MAKHINE: Mapping Knowledge in an Heterogenous Intelligent Environment",
       "date_published": "2006-01-01",
       "authors": [
         {
-          "name": "F Giglietto L Rossi"
+          "name": "LUCA ROSSI"
+        },
+        {
+          "name": "FABIO GIGLIETTO"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/1893405",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Rossi2006-fd2cd03b",
+        "bibtex_key": "ROSSI2006-fd2cd03b",
         "type": "conference-poster",
-        "venue": "",
+        "venue": "Microsoft Research",
         "year": 2006,
         "publisher": null,
         "citation_count": 0,
@@ -3311,21 +3520,21 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2005-0ca22550",
+      "id": "bibtex:GIGLIETTO2005-0ca22550",
       "title": "The Fuzziness of Communication",
       "date_published": "2005-01-01",
       "authors": [
         {
-          "name": "F Giglietto"
+          "name": "FABIO GIGLIETTO"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2504858",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giglietto2005-0ca22550",
+        "bibtex_key": "GIGLIETTO2005-0ca22550",
         "type": "conference-paper",
-        "venue": "",
+        "venue": "University of Maribor",
         "year": 2005,
         "publisher": null,
         "citation_count": 0,
@@ -3334,21 +3543,21 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2004-cc7f05e1",
+      "id": "bibtex:GIGLIETTO2004-cc7f05e1",
       "title": "No Paper Project. Consumo, Comunicazione e Tecnologie per l’apprendimento",
       "date_published": "2004-01-01",
       "authors": [
         {
-          "name": "F Giglietto"
+          "name": "FABIO GIGLIETTO"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2505010",
-      "content_text": "",
+      "content_text": "L'articolo rende conto dei risultati di una ricerca pionieristica sull'utilizzo di notebook e connessione wifi in aula. A dodici studenti di tre classi diverse è stato chiesto di utilizzare un notebook wifi al posto dei tradizionali strumenti per prendere appunti in aula. L'analisi delle interviste in profondità condotte con i soggetti coinvolti mettono in luce potenzialità e limiti dell'utilizzo di un dispositivo mobile connesso a Internet come strumento per la didattica.",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giglietto2004-cc7f05e1",
+        "bibtex_key": "GIGLIETTO2004-cc7f05e1",
         "type": "journal-article",
-        "venue": "",
+        "venue": "SOCIOLOGIA DELLA COMUNICAZIONE",
         "year": 2004,
         "publisher": null,
         "citation_count": 2,
@@ -3357,21 +3566,24 @@
       }
     },
     {
-      "id": "bibtex:Mazzoli2004-f1589b38",
+      "id": "bibtex:MAZZOLI2004-f1589b38",
       "title": "Mediazione tecnologica e didattica a distanza… verso una soluzione human-centered",
       "date_published": "2004-01-01",
       "authors": [
         {
-          "name": "F Giglietto L Mazzoli"
+          "name": "GRAZIELLA MAZZOLI"
+        },
+        {
+          "name": "FABIO GIGLIETTO"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2504753",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Mazzoli2004-f1589b38",
+        "bibtex_key": "MAZZOLI2004-f1589b38",
         "type": "book-chapter",
-        "venue": "",
+        "venue": "Pensa MultiMedia",
         "year": 2004,
         "publisher": null,
         "citation_count": 1,
@@ -3380,21 +3592,24 @@
       }
     },
     {
-      "id": "bibtex:Artieri2004-a7a35a47",
+      "id": "bibtex:ARTIERI2004-a7a35a47",
       "title": "La realtà dell’eLearning come ambiente comunicativo",
       "date_published": "2004-01-01",
       "authors": [
         {
-          "name": "F Giglietto G Boccia Artieri"
+          "name": "GIOVANNI BOCCIA ARTIERI"
+        },
+        {
+          "name": "FABIO GIGLIETTO"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/1893352",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Artieri2004-a7a35a47",
+        "bibtex_key": "ARTIERI2004-a7a35a47",
         "type": "conference-paper",
-        "venue": "",
+        "venue": "Università degli Studi di Ferrara",
         "year": 2004,
         "publisher": null,
         "citation_count": 0,
@@ -3403,21 +3618,21 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2004-1416dd56",
+      "id": "bibtex:GIGLIETTO2004-1416dd56",
       "title": "No Paper Project. Experiencing the future of learning in Higher Education",
       "date_published": "2004-01-01",
       "authors": [
         {
-          "name": "L Rossi F Giglietto"
+          "name": "FABIO GIGLIETTO"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2504857",
       "content_text": "",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giglietto2004-1416dd56",
+        "bibtex_key": "GIGLIETTO2004-1416dd56",
         "type": "conference-paper",
-        "venue": "",
+        "venue": "Kassel University Press",
         "year": 2004,
         "publisher": null,
         "citation_count": 0,
@@ -3449,21 +3664,21 @@
       }
     },
     {
-      "id": "bibtex:Giglietto2000-dc366291",
+      "id": "bibtex:GIGLIETTO2000-dc366291",
       "title": "La proprietà fuzzy della comunicazione. Internet, Sistemi sociali e Teorie della comunicazione",
       "date_published": "2000-01-01",
       "authors": [
         {
-          "name": "F Giglietto"
+          "name": "FABIO GIGLIETTO"
         }
       ],
       "url": "https://ora.uniurb.it/handle/11576/2505009",
-      "content_text": "",
+      "content_text": "Può una macchina comunicare? Seguendo argomentazioni logiche, l'articolo porta alle estreme conseguenze le definizioni offerte dalla teoria dei sistemi sociali. Nello specifico la definizione di comunicazione come unità delle tre selezioni (informazione, emissione e comprensione) è utilizzata per dimostrare come sia impossibile escludere che le macchine possano, partendo da questa definizione, comunicare. La paradossale conclusione alla quale si giunge offre l'opportunità per sottolineare la necessità di una definizione più completa di comunicazione in grado di dare conto anche delle dimensioni individuali e relazionali.",
       "_academic": {
         "doi": null,
-        "bibtex_key": "Giglietto2000-dc366291",
+        "bibtex_key": "GIGLIETTO2000-dc366291",
         "type": "journal-article",
-        "venue": "",
+        "venue": "SOCIOLOGIA DELLA COMUNICAZIONE",
         "year": 2000,
         "publisher": null,
         "citation_count": 7,

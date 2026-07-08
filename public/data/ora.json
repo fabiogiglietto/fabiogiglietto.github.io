@@ -2,7 +2,7 @@
   "source": "ORA UNIURB",
   "repository": "https://ora.uniurb.it",
   "oaiEndpoint": "https://ora.uniurb.it/oai/request",
-  "collectedAt": "2026-07-07T10:39:55.225Z",
+  "collectedAt": "2026-07-08T07:32:35.128Z",
   "author": "Fabio Giglietto",
   "publications": [
     {
@@ -871,29 +871,6 @@
       "oaiIdentifier": "oai:ora.uniurb.it:11576/2735342",
       "datestamp": "2024-04-22T23:38:31Z",
       "url": "https://ora.uniurb.it/handle/11576/2735342",
-      "oaPdfUrl": null
-    },
-    {
-      "title": "Detecting Coordinated Link Sharing During The Italian Coronavirus Outbreak",
-      "authors": "Fabio Giglietto; Nicola Righetti; Giada Marino",
-      "authorsList": [
-        "Fabio Giglietto",
-        "Nicola Righetti",
-        "Giada Marino"
-      ],
-      "year": 2020,
-      "doi": "10.5210/spir.v2020i0.11219",
-      "publisherUrl": null,
-      "handle": "11576/2735343",
-      "type": "conference",
-      "abstract": "Social media, as many scholars have shown, can be used to influence political behavior through coordinated disinformation campaigns in which participants pretend to be ordinary citizens. With a specific reference to Facebook, a recent study has spotlighted patterns of coordinated activity aimed at fueling online circulation of specific news stories before the 2018 and 2019 Italian elections, an activity called by the authors “Coordinated Link Sharing Behavior” (CLSB). More precisely, CLSB refers to the coordinated shares of the same news articles in a very short time by networks of entities composed by Facebook pages, groups and verified public profiles. The uncertainty related to the coronavirus outbreak is a unique chance for malicious actors to leverage the anxiety of online publics to reach their goals, filling the information void with problematic content. Considering the association between coordination, media manipulation, and problematic information, the entities involved in coordinated online activities represent a privileged perspective on these phenomena. Thus, against the backdrop of the literature and the already conducted studies, this proposal will discuss Coordinated Link Sharing Behavior in the context of the coronavirus outbreak informational void, analyzing network mutations over time and the content strategies used to exploit the ambiguity associated with the topic.",
-      "publisher": null,
-      "journal": null,
-      "pages": null,
-      "language": "eng",
-      "oaiIdentifier": "oai:ora.uniurb.it:11576/2735343",
-      "datestamp": "2024-04-22T23:38:36Z",
-      "url": "https://ora.uniurb.it/handle/11576/2735343",
       "oaPdfUrl": null
     },
     {
@@ -2473,38 +2450,38 @@
     }
   ],
   "stats": {
-    "total": 108,
+    "total": 107,
     "byType": {
       "article": 41,
       "chapter": 36,
       "other": 17,
-      "conference": 13,
+      "conference": 12,
       "book": 1
     },
     "byYear": {
-      "2026": 7,
-      "2025": 3,
-      "2024": 4,
-      "2023": 7,
-      "2022": 11,
-      "2021": 5,
-      "2020": 10,
-      "2019": 10,
-      "2018": 2,
-      "2017": 2,
-      "2016": 3,
-      "2015": 6,
-      "2014": 5,
-      "2013": 3,
-      "2012": 8,
-      "2011": 2,
-      "2010": 2,
-      "2009": 9,
-      "2008": 1,
-      "2006": 2,
-      "2005": 1,
+      "2000": 1,
       "2004": 4,
-      "2000": 1
+      "2005": 1,
+      "2006": 2,
+      "2008": 1,
+      "2009": 9,
+      "2010": 2,
+      "2011": 2,
+      "2012": 8,
+      "2013": 3,
+      "2014": 5,
+      "2015": 6,
+      "2016": 3,
+      "2017": 2,
+      "2018": 2,
+      "2019": 10,
+      "2020": 9,
+      "2021": 5,
+      "2022": 11,
+      "2023": 7,
+      "2024": 4,
+      "2025": 3,
+      "2026": 7
     }
   }
 }

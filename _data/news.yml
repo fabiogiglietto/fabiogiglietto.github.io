@@ -1,30 +1,59 @@
-- date: '2026-07-07'
+- date: '2026-07-08'
   content: >-
-    Several key studies analyzing critical aspects of online information
-    environments, from disinformation to platform governance, have been brought
-    to attention. Recent research investigates state media propaganda tactics in
-    conflicts such as the Russo-Ukrainian war, the strategic deployment of fake
-    news, and the efficacy of content moderation mechanisms like 'Community
-    Notes' in addressing polarizing content. Further insights include analyses
-    of content moderation legislation in the EU and US, cross-national
-    information attacks, and the intricate dynamics of alternative media within
-    digital news ecosystems.
-  url: >-
-    https://scholar.google.com/scholar?q=Selling%20war%20at%20home%20and%20abroad%3A%20The%20dual%20objective%20of%20state%20media%20propaganda%20in%20the%20Russo-Ukrainian%20war
+    Recent academic discussions underscore the multifaceted impact of Artificial
+    Intelligence on society, particularly concerning its role in propaganda and
+    digital authoritarianism. Studies explore how generative AI influences
+    public trust, perceptions of news quality, and even its persuasive
+    capabilities compared to human experts. Further insights shed light on
+    evolving public attitudes towards AI, including efforts to reduce conspiracy
+    beliefs through AI-driven dialogues, and an analysis of stakeholders driving
+    the AI hype.
+  url: https://doi.org/10.1177/20539517251410064
   platforms:
     - Mastodon
     - BlueSky
   toread: true
-- date: '2026-07-02'
+- date: '2026-07-08'
   content: >-
-    Recent scholarship highlighted delves into the profound impact of Artificial
-    Intelligence on society and media. Featured research explores public trust
-    and perceptions of generative AI, its role in shaping public attitudes, and
-    the dynamics of 'AI hype.' Other studies examine the persuasive power of AI
-    systems, their potential applications in scientific review and social
-    science research, and their influence on news consumption, especially
-    concerning AI-generated content.
-  url: http://arxiv.org/abs/2606.28277v1
+    New scholarship investigates critical aspects of media polarization,
+    election interference, and the spread of misinformation in contemporary
+    digital landscapes. Key studies examine the impact of media narratives on
+    political polarization during elections, the dual objectives of state media
+    propaganda in conflicts like the Russo-Ukrainian war, and the strategic use
+    of fake news as a rhetorical weapon in national contexts. Additionally,
+    research highlights risks in electoral processes due to potential
+    undermoderation of polarizing content by platforms like Community Notes,
+    alongside a two-decade analysis of cross-national troll behavior.
+  url: https://doi.org/10.1177/14614448251410509
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
+- date: '2026-07-01'
+  content: >-
+    Recent analyses address crucial aspects of platform governance and their
+    role within democratic media ecosystems. Research examines platform
+    collective behavior as a form of democratic infrastructure, moving beyond
+    mere causal effects in the Digital Services Act (DSA) era. Further studies
+    analyze content moderation as 'traffic control,' comparing EU and US
+    legislative approaches to platform regulation, and investigate how
+    alternative media integrates into the broader digital news ecosystem through
+    audience overlap networks.
+  url: https://doi.org/10.1080/10584609.2026.2679475
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
+- date: '2026-07-03'
+  content: >-
+    Insights are shared on advancements and challenges in research methodology
+    and scientific processes. Featured work addresses the fundamental question
+    of whether survey respondents truly understand the questions posed to them,
+    a critical concern for data validity. Additionally, an exploration into
+    automating scientific review via tools like Google's Paper Assistant Tool
+    indicates emerging trends in enhancing research efficiency.
+  url: >-
+    https://scholar.google.com/scholar?q=Where%27s%20the%20Evidence%20that%20Respondents%20Understand%20Your%20Survey%20Questions%3F
   platforms:
     - Mastodon
     - BlueSky
