@@ -1,11 +1,12 @@
 {
-  "totalEntries": 189,
-  "lastUpdated": "2026-07-08T09:29:37.885Z",
+  "totalEntries": 191,
+  "lastUpdated": "2026-07-08T10:33:49.419Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-07-06T11:33:43.206Z"
+    "latest": "2026-07-08T10:33:49.333Z"
   },
   "byDate": {
+    "2026-07-08": 2,
     "2026-07-06": 2,
     "2026-07-04": 1,
     "2026-07-03": 1,
@@ -14,8 +15,7 @@
     "2026-06-30": 1,
     "2026-06-28": 1,
     "2026-06-27": 2,
-    "2026-06-25": 1,
-    "2026-06-24": 1
+    "2026-06-25": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 52,
@@ -27,14 +27,28 @@
     "ilrestodelcarlino.it": 4,
     "snurblog.org": 4,
     "Il Sole 24 ORE": 4,
-    "smsociety.org": 2
+    "socialmediaandsociety.org": 2
   },
   "byRelevanceScore": {
-    "high": 166,
+    "high": 168,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "socialmediaandsociety.org",
+      "url": "https://socialmediaandsociety.org/2026/smsociety-2026-conference-programme/",
+      "source": "socialmediaandsociety.org",
+      "relevanceScore": 0.95,
+      "collectedAt": "2026-07-08T10:33:49.333Z"
+    },
+    {
+      "title": "Report (Rai 3) - Inchiesta del 12 Aprile 2026",
+      "url": "https://www.raiplay.it/programmi/report",
+      "source": "raiplay.it",
+      "relevanceScore": 0.95,
+      "collectedAt": "2026-07-08T10:33:49.333Z"
+    },
     {
       "title": "Communication and Inequalities in Context",
       "url": "https://ica26.org/ICA26_program.pdf",
@@ -55,20 +69,6 @@
       "source": "vertexaisearch.cloud.google.com",
       "relevanceScore": 0.9,
       "collectedAt": "2026-07-04T09:24:40.733Z"
-    },
-    {
-      "title": "Axel Bruns on Fabio Giglietto's ICA 2026 paper",
-      "url": "https://snurb.info/item/2026/06/08/fabio-giglietto-s-paper-at-ica-2026",
-      "source": "snurb.info",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-07-03T06:06:37.131Z"
-    },
-    {
-      "title": "Tutte le ultime notizie in tempo reale su Meta - Il Resto del Carlino",
-      "url": "https://www.ilrestodelcarlino.it/organization/meta",
-      "source": "ilrestodelcarlino.it",
-      "relevanceScore": 0.95,
-      "collectedAt": "2026-07-02T05:37:49.235Z"
     }
   ]
 }
