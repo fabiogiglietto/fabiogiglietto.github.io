@@ -1081,6 +1081,51 @@
       "crossref_score": 1
     },
     {
+      "doi": "10.1080/1369118x.2026.2696929",
+      "title": "Measuring partisan community dynamics: a longitudinal analysis of affective engagement in pro-Bolsonaro Facebook networks",
+      "authors": "Marino, Giada; Paroni, Bruna; Giglietto, Fabio",
+      "venue": "Information, Communication &amp; Society",
+      "year": 2026,
+      "type": "journal-article",
+      "url": "https://doi.org/10.1080/1369118x.2026.2696929",
+      "crossref_type": "journal-article",
+      "publisher": "Informa UK Limited",
+      "container_title": "Information, Communication &amp; Society",
+      "page": "1-20",
+      "issn": "1369-118X",
+      "isbn": null,
+      "subject": [],
+      "abstract": null,
+      "license": [
+        "https://doi.org/10.1080/policies-text-data-mining"
+      ],
+      "funder": [
+        {
+          "DOI": "10.13039/100010661",
+          "name": "Horizon 2020 Framework Programme",
+          "doi-asserted-by": "publisher",
+          "award": [
+            "101070093"
+          ],
+          "award-info": [
+            {
+              "award-number": [
+                "101070093"
+              ]
+            }
+          ],
+          "id": [
+            {
+              "id": "10.13039/100010661",
+              "id-type": "DOI",
+              "asserted-by": "publisher"
+            }
+          ]
+        }
+      ],
+      "crossref_score": 1
+    },
+    {
       "doi": "10.1177/29768624261452529",
       "title": "Beyond the share button: How partisan alignment, journalistic quality, and algorithmic governance shape what millions see on Facebook",
       "authors": "Giglietto, Fabio; Marino, Giada",
@@ -1496,10 +1541,10 @@
       "crossref_score": 1
     }
   ],
-  "lastUpdated": "2026-07-08T19:20:00.819Z",
+  "lastUpdated": "2026-07-09T09:44:57.128Z",
   "metadata": {
-    "total_requested": 76,
-    "successful_requests": 66,
+    "total_requested": 77,
+    "successful_requests": 67,
     "failed_requests": 10
   }
 }

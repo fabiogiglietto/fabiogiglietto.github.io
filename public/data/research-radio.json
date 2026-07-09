@@ -1547,6 +1547,30 @@
       "author": "Makeev, M, Alley, J, Bastos, M",
       "doi": null,
       "own": false
+    },
+    {
+      "id": "bibtex:Mosca2026-yh",
+      "bibtexKey": "Mosca2026-yh",
+      "title": "Fake News as a Political Weapon: Who Accuses, Who Gets Accused",
+      "description": "AI-generated podcast discussion.\n\nReference:\nMosca, L., & Paxton, F. (2026). Fake news as a rhetorical weapon: Strategic delegitimization and selective amplification in Italian newspapers. https://doi.org/10.1177/02673231261458935",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Mosca2026-yh.mp3",
+      "pubDate": "2026-07-11T13:11:17.175711+00:00",
+      "duration": "11:17",
+      "author": "Lorenzo Mosca, Fred Paxton",
+      "doi": "10.1177/02673231261458935",
+      "own": false
+    },
+    {
+      "id": "bibtex:Giada2026-fc9a3833",
+      "bibtexKey": "Giada2026-fc9a3833",
+      "title": "When Lies Aren't the Real Problem: Inside Deceptive Information Operations",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGiada, M., Fabio, G., Anwesha, C., Massimo, T., & Samuel, O. (2026). Exploring the Zombie Internet: Anatomy of Three Deceptive Information Operations on Facebook. https://ora.uniurb.it/handle/11576/2779031",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Giada2026-fc9a3833.mp3",
+      "pubDate": "2026-07-12T13:11:17.175711+00:00",
+      "duration": "11:09",
+      "author": "Marino Giada, Giglietto Fabio, Chakraborty Anwesha, Terenzi Massimo, Olaniran Samuel",
+      "doi": null,
+      "own": true
     }
   ],
   "episodesByBibtexKey": {
@@ -3097,6 +3121,30 @@
       "author": "Makeev, M, Alley, J, Bastos, M",
       "doi": null,
       "own": false
+    },
+    "Mosca2026-yh": {
+      "id": "bibtex:Mosca2026-yh",
+      "bibtexKey": "Mosca2026-yh",
+      "title": "Fake News as a Political Weapon: Who Accuses, Who Gets Accused",
+      "description": "AI-generated podcast discussion.\n\nReference:\nMosca, L., & Paxton, F. (2026). Fake news as a rhetorical weapon: Strategic delegitimization and selective amplification in Italian newspapers. https://doi.org/10.1177/02673231261458935",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Mosca2026-yh.mp3",
+      "pubDate": "2026-07-11T13:11:17.175711+00:00",
+      "duration": "11:17",
+      "author": "Lorenzo Mosca, Fred Paxton",
+      "doi": "10.1177/02673231261458935",
+      "own": false
+    },
+    "Giada2026-fc9a3833": {
+      "id": "bibtex:Giada2026-fc9a3833",
+      "bibtexKey": "Giada2026-fc9a3833",
+      "title": "When Lies Aren't the Real Problem: Inside Deceptive Information Operations",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGiada, M., Fabio, G., Anwesha, C., Massimo, T., & Samuel, O. (2026). Exploring the Zombie Internet: Anatomy of Three Deceptive Information Operations on Facebook. https://ora.uniurb.it/handle/11576/2779031",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Giada2026-fc9a3833.mp3",
+      "pubDate": "2026-07-12T13:11:17.175711+00:00",
+      "duration": "11:09",
+      "author": "Marino Giada, Giglietto Fabio, Chakraborty Anwesha, Terenzi Massimo, Olaniran Samuel",
+      "doi": null,
+      "own": true
     }
   },
   "episodesByDoi": {
@@ -4275,9 +4323,21 @@
       "author": "Emelie Karlsson",
       "doi": "10.1177/14614448251410509",
       "own": false
+    },
+    "10.1177/02673231261458935": {
+      "id": "bibtex:Mosca2026-yh",
+      "bibtexKey": "Mosca2026-yh",
+      "title": "Fake News as a Political Weapon: Who Accuses, Who Gets Accused",
+      "description": "AI-generated podcast discussion.\n\nReference:\nMosca, L., & Paxton, F. (2026). Fake news as a rhetorical weapon: Strategic delegitimization and selective amplification in Italian newspapers. https://doi.org/10.1177/02673231261458935",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Mosca2026-yh.mp3",
+      "pubDate": "2026-07-11T13:11:17.175711+00:00",
+      "duration": "11:17",
+      "author": "Lorenzo Mosca, Fred Paxton",
+      "doi": "10.1177/02673231261458935",
+      "own": false
     }
   },
-  "totalEpisodes": 129,
-  "lastUpdated": "2026-07-08T19:10:03.484Z",
+  "totalEpisodes": 131,
+  "lastUpdated": "2026-07-09T09:36:08.740Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
