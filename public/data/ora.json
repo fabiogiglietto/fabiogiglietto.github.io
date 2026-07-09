@@ -2,7 +2,7 @@
   "source": "ORA UNIURB",
   "repository": "https://ora.uniurb.it",
   "oaiEndpoint": "https://ora.uniurb.it/oai/request",
-  "collectedAt": "2026-07-09T09:36:08.089Z",
+  "collectedAt": "2026-07-09T10:36:20.400Z",
   "author": "Fabio Giglietto",
   "publications": [
     {
@@ -115,7 +115,7 @@
       "pages": null,
       "language": null,
       "oaiIdentifier": "oai:ora.uniurb.it:11576/2779031",
-      "datestamp": "2026-07-03T09:02:52Z",
+      "datestamp": "2026-07-08T13:11:30Z",
       "url": "https://ora.uniurb.it/handle/11576/2779031",
       "oaPdfUrl": "https://ora.uniurb.it/bitstream/11576/2779031/1/22.%2bMSJ_N27_2026_Exploring%2bthe%2bZombie%2bInternet%2b430-457.pdf"
     },
@@ -162,6 +162,29 @@
       "datestamp": "2026-05-05T08:52:19Z",
       "url": "https://ora.uniurb.it/handle/11576/2768231",
       "oaPdfUrl": "https://ora.uniurb.it/bitstream/11576/2768231/1/fulltext_v1_2.pdf"
+    },
+    {
+      "title": "Measuring partisan community dynamics: a longitudinal analysis of affective engagement in pro-Bolsonaro Facebook networks",
+      "authors": "Giada Marino; Bruna Paroni; Fabio Giglietto",
+      "authorsList": [
+        "Giada Marino",
+        "Bruna Paroni",
+        "Fabio Giglietto"
+      ],
+      "year": 2026,
+      "doi": "10.1080/1369118X.2026.2696929",
+      "publisherUrl": null,
+      "handle": "11576/2779452",
+      "type": "article",
+      "abstract": null,
+      "publisher": null,
+      "journal": "INFORMATION, COMMUNICATION & SOCIETY",
+      "pages": null,
+      "language": null,
+      "oaiIdentifier": "oai:ora.uniurb.it:11576/2779452",
+      "datestamp": "2026-07-08T16:38:41Z",
+      "url": "https://ora.uniurb.it/handle/11576/2779452",
+      "oaPdfUrl": null
     },
     {
       "title": "Manipolazione dei media ed influenza digitale. Sfide, tecnologie e risposte",
@@ -2450,9 +2473,9 @@
     }
   ],
   "stats": {
-    "total": 107,
+    "total": 108,
     "byType": {
-      "article": 41,
+      "article": 42,
       "chapter": 36,
       "other": 17,
       "conference": 12,
@@ -2481,7 +2504,7 @@
       "2023": 7,
       "2024": 4,
       "2025": 3,
-      "2026": 7
+      "2026": 8
     }
   }
 }

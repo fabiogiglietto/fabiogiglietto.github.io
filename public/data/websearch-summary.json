@@ -1,11 +1,12 @@
 {
-  "totalEntries": 191,
-  "lastUpdated": "2026-07-09T09:44:39.700Z",
+  "totalEntries": 193,
+  "lastUpdated": "2026-07-09T10:46:56.717Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-07-08T10:33:49.333Z"
+    "latest": "2026-07-09T10:46:56.688Z"
   },
   "byDate": {
+    "2026-07-09": 2,
     "2026-07-08": 2,
     "2026-07-06": 2,
     "2026-07-04": 1,
@@ -14,8 +15,7 @@
     "2026-07-01": 2,
     "2026-06-30": 1,
     "2026-06-28": 1,
-    "2026-06-27": 2,
-    "2026-06-25": 1
+    "2026-06-27": 2
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 52,
@@ -30,11 +30,25 @@
     "socialmediaandsociety.org": 2
   },
   "byRelevanceScore": {
-    "high": 168,
+    "high": 170,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Referendum. Bonelli e Fratoianni (Avs) scrivono al Presidente Agcom, preoccupati per le fake news veicolate sui social",
+      "url": "https://www.verdisinistra.it/referendum-bonelli-e-fratoianni-avs-scrivono-al-presidente-agcom-preoccupati-per-le-fake-news-veicolate-sui-social/",
+      "source": "verdisinistra.it",
+      "relevanceScore": 0.95,
+      "collectedAt": "2026-07-09T10:46:56.688Z"
+    },
+    {
+      "title": "Referendum. Bonelli e Fratoianni (Avs) scrivono al Presidente Agcom, preoccupati per le fake news veicolate sui social...",
+      "url": "https://www.alleanzaverdisinistra.it/referendum-bonelli-e-fratoianni-avs-scrivono-al-presidente-agcom/",
+      "source": "alleanzaverdisinistra.it",
+      "relevanceScore": 0.95,
+      "collectedAt": "2026-07-09T10:46:56.688Z"
+    },
     {
       "title": "socialmediaandsociety.org",
       "url": "https://socialmediaandsociety.org/2026/smsociety-2026-conference-programme/",
@@ -55,20 +69,6 @@
       "source": "ica26.org",
       "relevanceScore": 0.95,
       "collectedAt": "2026-07-06T11:33:43.206Z"
-    },
-    {
-      "title": "EU Digital Technologies and Policies Conference",
-      "url": "https://eudtp2025.sciencesconf.org/",
-      "source": "eudtp2025.sciencesconf.org",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-07-06T10:25:00.121Z"
-    },
-    {
-      "title": "Algoritmi e democrazia: il caso Meta secondo lo studio Uniurb che ha avviato un'interrogazione al Parlamento europeo - Novità Università degli Studi di Urbino Carlo Bo",
-      "url": "https://www.uniurb.it/news/48577",
-      "source": "vertexaisearch.cloud.google.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-07-04T09:24:40.733Z"
     }
   ]
 }
