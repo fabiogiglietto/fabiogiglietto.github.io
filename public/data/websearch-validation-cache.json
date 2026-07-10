@@ -804,5 +804,135 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "podcasts.apple.com/rs/podcast/research-radio/id1866587707?l=hr": {
+    "v": 1,
+    "cachedAt": "2026-07-10T09:40:03.069Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The provided web mention does not contain the name 'Fabio Giglietto' in the title, URL, or context, making it impossible to verify any mention or relevance.",
+      "description": "An Apple Podcasts link to 'Research Radio' without any context or snippet mentioning the target person.",
+      "personMatch": "not_mentioned",
+      "isRecent": false
+    }
+  },
+  "github.com/fabiogiglietto/research-radio": {
+    "v": 1,
+    "cachedAt": "2026-07-10T09:40:08.420Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": true,
+      "relevanceScore": 0.3,
+      "reason": "The content is a first-party GitHub repository owned by the target person, not a third-party mention, and its recency within the last 6 months cannot be verified.",
+      "description": "A GitHub repository titled 'research-radio' under Fabio Giglietto's personal account.",
+      "personMatch": "confirmed",
+      "isRecent": false
+    }
+  },
+  "open.online/2026/01/07/meta-algoritmo-facebook-studio-universita-urbino-legge-bipartisan": {
+    "v": 1,
+    "cachedAt": "2026-07-10T09:40:13.522Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A news article discussing a study co-authored by Professor Fabio Giglietto from the University of Urbino on how Meta's algorithms impact political and extremist content reach on Facebook.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-7f05eb42": {
+    "v": 1,
+    "cachedAt": "2026-07-10T09:40:18.459Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 1,
+      "reason": "Validated as relevant",
+      "description": "A news feature from Il Resto del Carlino detailing Professor Fabio Giglietto's study on the asymmetric impact of Facebook's algorithms and content reduction policies on political discourse.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "teleambiente.it/algoritmi-meta-piu-spazio-estremisti-politica": {
+    "v": 1,
+    "cachedAt": "2026-07-10T09:40:23.573Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "N/A",
+      "description": "News coverage highlighting Fabio Giglietto's research on how Meta's algorithms limit mainstream political reach while inadvertently boosting visibility for extremist and eurosceptic groups.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "terzogiornale.it/2026/01/19/larticolo-21-nella-gabbia-di-facebook": {
+    "v": 1,
+    "cachedAt": "2026-07-10T09:40:28.487Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The provided web mention metadata does not contain the name 'Fabio Giglietto' in the title, URL, or context, making it impossible to confirm he is mentioned.",
+      "description": "An article from terzogiornale.it discussing Italian constitutional right 'Article 21' (freedom of expression) in the context of Facebook.",
+      "personMatch": "not_mentioned",
+      "isRecent": true
+    }
+  },
+  "snurb.info/node/3175": {
+    "v": 1,
+    "cachedAt": "2026-07-10T09:40:33.958Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "N/A",
+      "description": "A detailed blog summary of Fabio Giglietto's co-authored paper on Facebook's algorithmic amplification and news engagement, presented at the 2026 ICA conference.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "snurb.info/node/3159": {
+    "v": 1,
+    "cachedAt": "2026-07-10T09:40:40.891Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": true,
+      "relevanceScore": 0.5,
+      "reason": "The blog post and special journal issue were published in May 2024, which is older than the strict 6-month recency window.",
+      "description": "A blog post by Axel Bruns announcing the release of the M/C Journal's special issue on Twitter, featuring Fabio Giglietto as an academic contributor.",
+      "personMatch": "confirmed",
+      "isRecent": false
+    }
+  },
+  "uniurb.it/novita-ed-eventi/comunicati-stampa/algoritmi-e-democrazia-il-caso-meta-secondo-lo-studio-uniurb": {
+    "v": 1,
+    "cachedAt": "2026-07-10T09:40:47.661Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An official press release from the University of Urbino detailing the significant political and public impact of Fabio Giglietto's research on Meta's algorithmic reduction of political content.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "alleanzaverdisinistra.it/referendum-bonelli-e-fratoianni-avs-scrivono-al-presidente-agcom-preoccupati-per-le-fake-news-veicolate-sui-social": {
+    "v": 1,
+    "cachedAt": "2026-07-10T09:40:52.451Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "Italian political leaders Bonelli and Fratoianni cite research by Fabio Giglietto in an official letter to AGCOM regarding social media manipulation and algorithm bias.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }
