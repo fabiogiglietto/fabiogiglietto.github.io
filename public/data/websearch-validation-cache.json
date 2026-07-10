@@ -934,5 +934,122 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "podcasts.apple.com/us/podcast/research-radio/id1729094031": {
+    "v": 1,
+    "cachedAt": "2026-07-10T10:25:03.086Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "The mention explicitly names Fabio Giglietto as the creator of a podcast focusing on his exact areas of research (computational social science and misinformation) and is highly recent (mid-2026).",
+      "description": "Fabio Giglietto is featured as the creator and curator of 'Research Radio', an AI-driven podcast series covering computational social science and misinformation research.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "ecat.ec.europa.eu/news/researchers-meet-discuss-dsa-access-publicly-available-platform-data": {
+    "v": 1,
+    "cachedAt": "2026-07-10T10:25:07.507Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An official news release by the European Centre for Algorithmic Transparency (ECAT) naming Fabio Giglietto as part of an expert group collaborating on platform data access under the Digital Services Act.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "socialmediaandsociety.org/workshops/panel-meta-content-library": {
+    "v": 1,
+    "cachedAt": "2026-07-10T10:25:11.686Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The provided text, title, and URL do not contain the name 'Fabio Giglietto', making it impossible to verify his mention.",
+      "description": "A workshop panel page about the Meta Content Library on the Social Media & Society website.",
+      "personMatch": "not_mentioned",
+      "isRecent": true
+    }
+  },
+  "podcasts.apple.com/us/podcast/research-radio/id1866587707": {
+    "v": 1,
+    "cachedAt": "2026-07-10T10:25:14.825Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The provided web mention does not contain the name 'Fabio Giglietto' in the title, URL, or context.",
+      "description": "An Apple Podcasts page for 'Research Radio' with no available context or mention of Fabio Giglietto.",
+      "personMatch": "not_mentioned",
+      "isRecent": false
+    }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-1.9272304": {
+    "v": 1,
+    "cachedAt": "2026-07-10T10:25:19.035Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An article in Il Resto del Carlino detailing a study led by Professor Fabio Giglietto on how social media recommendation algorithms, specifically Facebook's political content reduction policy, impact democratic processes.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "open.online/2026/01/07/studio-universita-urbino-algoritmo-facebook-punisce-politici-promuove-estremisti": {
+    "v": 1,
+    "cachedAt": "2026-07-10T10:25:23.559Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An Italian news article reporting on the legislative reactions to Fabio Giglietto's research regarding the impact of Meta's algorithmic changes on political content.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "news.uniurb.it/algoritmi-e-democrazia-il-caso-meta-secondo-lo-studio-uniurb-che-ha-avviato-un-interrogazione-al-parlamento-europeo": {
+    "v": 1,
+    "cachedAt": "2026-07-10T10:25:28.092Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A university press report detailing how a research study on Meta's content reduction algorithms co-authored by Professor Fabio Giglietto sparked a formal inquiry in the European Parliament.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "terzogiornale.it/2026/01/19/l-articolo-21-nella-gabbia-di-facebook": {
+    "v": 1,
+    "cachedAt": "2026-07-10T10:25:32.619Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An analytical article discussing the impact of Facebook's content moderation algorithms on free speech, citing research by Fabio Giglietto on how these policies affect the organic reach of Italian politicians.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "lumsanews.it/facebook-troppa-visibilita-a-estremisti-e-complottisti-echo-come-impatta-meta-sulle-elezioni": {
+    "v": 1,
+    "cachedAt": "2026-07-10T10:25:36.576Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A news article detailing a computational study led by Professor Fabio Giglietto on how Meta's algorithms and political content filters impact elections by favoring extreme and conspiracy-driven narratives on Facebook.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }

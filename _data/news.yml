@@ -1,52 +1,47 @@
-- date: '2026-07-08'
-  content: >-
-    Recent scholarship highlights the evolving threat of digital election
-    interference and state-sponsored propaganda. Key newly published studies
-    analyze the impact of media narratives on polarization during elections,
-    comparative insights into generative AI-driven propaganda across
-    democratically weakened nations, and the dual domestic and international
-    objectives of Russian state media during the Russo-Ukrainian war.
-  url: https://doi.org/10.1177/14614448251410509
-  platforms:
-    - Mastodon
-    - BlueSky
-  toread: true
-- date: '2026-07-03'
-  content: >-
-    Emerging tools and methodology assessments are reshaping academic workflows
-    and survey design. Notable new papers investigate the automation of
-    scientific reviews using Google's Paper Assistant Tool, alongside critical
-    evaluations of whether survey respondents genuinely comprehend standard
-    questionnaire items.
-  url: >-
-    https://scholar.google.com/scholar?q=Where%27s%20the%20Evidence%20that%20Respondents%20Understand%20Your%20Survey%20Questions%3F
-  platforms:
-    - Mastodon
-    - BlueSky
-  toread: true
 - date: '2026-07-02'
   content: >-
-    As global regulatory frameworks shift, new research evaluates the mechanisms
-    and legalities of online content moderation. Key studies investigate how
-    decentralized moderation systems like X’s Community Notes may undermoderate
-    polarizing content during elections, compare EU and US platform regulations
-    through the lens of traffic control, and conceptualize platform collective
-    behavior as vital democratic infrastructure under the Digital Services Act
-    (DSA).
+    A critical assessment of crowdsourced fact-checking reveals that X's
+    'Community Notes' system systemically undermoderates highly polarizing
+    content. The study, co-authored by Paul Bouchaud and Pedro Ramaciotti,
+    suggests that the platform's design introduces significant risks during
+    electoral processes by failing to address divisive narratives.
   url: https://doi.org/10.1126/sciadv.aee6932
   platforms:
     - Mastodon
     - BlueSky
   toread: true
-- date: '2026-07-01'
+- date: '2026-06-21'
   content: >-
-    New cognitive and behavioral research explores the growing influence of
-    generative artificial intelligence on public trust and persuasion. Studies
-    examine how AI systems can out-persuade human experts, the potential for AI
-    dialogues to durably reduce conspiracy beliefs, and a newly proposed
-    multi-level framework for mapping how trust in generative AI travels across
-    different media layers.
-  url: https://doi.org/10.1080/08838151.2026.2694048
+    Can artificial intelligence help combat misinformation? Promising new
+    research published by Thomas H. Costello, Gordon Pennycook, and David G.
+    Rand demonstrates that engaging in personalized dialogues with generative AI
+    can durably reduce conspiracy beliefs, opening up potential new avenues for
+    scalable cognitive interventions.
+  url: https://doi.org/10.31234/osf.io/xcwdn
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
+- date: '2026-07-08'
+  content: >-
+    Investigating the geopolitical impact of emerging technologies, a
+    comparative study by Gabrielle D. Beacken, Inga K. Trauthig, and Samuel C.
+    Woolley examines the role of generative AI in state propaganda. The authors
+    provide insights into how democratically weakened nations are leveraging
+    these tools to reinforce digital authoritarianism.
+  url: https://doi.org/10.1177/20539517251410064
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
+- date: '2026-07-04'
+  content: >-
+    New research by Lorenzo Mosca and Fred Paxton shines a light on the Italian
+    news ecosystem, mapping how domestic newspapers utilize the 'fake news'
+    framing. Rather than acting as neutral arbiters, some outlets are found to
+    use the label as a rhetorical weapon for strategic delegitimization and
+    selective narrative amplification.
+  url: https://doi.org/10.1177/02673231261458935
   platforms:
     - Mastodon
     - BlueSky
