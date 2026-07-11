@@ -1052,69 +1052,82 @@
       "isRecent": true
     }
   },
-  "ilrestodelcarlino.it/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto": {
+  "open.online/2026/01/07/secondo-uno-studio-delluniversita-di-urbino-lalgoritmo-di-facebook-ora-punisce-la-politica-ufficiale-e-premia-gli-estremisti-antieuropei-pd-e-fdi-verso-una-legge-bipartisan-sulle-piattaforme": {
     "v": 1,
-    "cachedAt": "2026-07-11T08:00:01.849Z",
+    "cachedAt": "2026-07-11T08:40:42.488Z",
     "verdict": {
       "isRelevant": true,
       "mentionedByName": true,
       "relevanceScore": 0.95,
       "reason": "Validated as relevant",
-      "description": "A news article from Il Resto del Carlino covering Prof. Fabio Giglietto's investigation into how algorithms influence voting behavior, highlighting his use of the EU's Digital Services Act transparency tools.",
+      "description": "An Italian news article reporting on a major study led by Fabio Giglietto analyzing how Facebook's algorithm impacts the visibility of political and extremist content.",
       "personMatch": "confirmed",
       "isRecent": true
     }
   },
-  "uniurb.it/novita/algoritmi-e-democrazia-caso-meta-studio-uniurb": {
+  "snurb.info/node/3313": {
     "v": 1,
-    "cachedAt": "2026-07-11T08:00:06.392Z",
+    "cachedAt": "2026-07-11T08:40:47.061Z",
     "verdict": {
       "isRelevant": true,
       "mentionedByName": true,
       "relevanceScore": 0.98,
       "reason": "Validated as relevant",
-      "description": "An official press release from the University of Urbino highlighting how Professor Fabio Giglietto's research on Meta's algorithmic suppression of political visibility triggered a formal inquiry in the European Parliament.",
+      "description": "A detailed third-party academic review on snurb.info summarizing Fabio Giglietto's research paper on Facebook's algorithmic tweaks and news engagement, presented at the 2026 ICA conference.",
       "personMatch": "confirmed",
       "isRecent": true
     }
   },
-  "snurb.info/node/3642": {
+  "ilrestodelcarlino.it/rimini/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-7bb39682": {
     "v": 1,
-    "cachedAt": "2026-07-11T08:00:10.823Z",
+    "cachedAt": "2026-07-11T08:40:51.792Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "N/A",
+      "description": "A news article reporting on Fabio Giglietto's research at the University of Urbino concerning the asymmetric impact of Meta's political content reduction algorithms.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "vivereurbino.it/2026/04/17/algoritmi-e-democrazia-il-caso-meta-secondo-lo-studio-di-uniurb/154625": {
+    "v": 1,
+    "cachedAt": "2026-07-11T08:41:06.258Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.3,
+      "reason": "The full name 'Fabio Giglietto' does not appear in the title, URL, or provided context, which only refers to 'Giglietto's study'.",
+      "description": "An article discussing the media and political impact of a study from the University of Urbino regarding Meta's political content reduction policy.",
+      "personMatch": "not_mentioned",
+      "isRecent": true
+    }
+  },
+  "snurb.info/node/3342": {
+    "v": 1,
+    "cachedAt": "2026-07-11T08:41:11.790Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.9,
+      "reason": "Validated as relevant",
+      "description": "A media announcement on snurb.info highlighting the launch of the M/C Journal 'twitter' special issue, featuring Fabio Giglietto as a contributing global social media researcher.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "uniurb.it/novita/algoritmi-e-democrazia-il-caso-meta-secondo-lo-studio-uniurb-che-ha-avviato-uninterrogazione-al-parlamento-europeo": {
+    "v": 1,
+    "cachedAt": "2026-07-11T08:41:17.275Z",
     "verdict": {
       "isRelevant": true,
       "mentionedByName": true,
       "relevanceScore": 0.95,
       "reason": "Validated as relevant",
-      "description": "A conference liveblog report from the 2026 ICA conference covering Fabio Giglietto's presentation on how Facebook's algorithmic tweaks impact news URL engagement.",
+      "description": "An official University of Urbino press release highlighting media coverage of Fabio Giglietto's research on Meta's algorithms, which utilized EU Digital Services Act provisions and prompted a European Parliament inquiry.",
       "personMatch": "confirmed",
       "isRecent": true
-    }
-  },
-  "snurb.info/node/3621": {
-    "v": 1,
-    "cachedAt": "2026-07-11T08:00:18.791Z",
-    "verdict": {
-      "isRelevant": false,
-      "mentionedByName": true,
-      "relevanceScore": 0.5,
-      "reason": "The content was published in December 2023, which is older than the 6-month recency threshold.",
-      "description": "An article on snurb.info announcing the release of the M/C Journal's special 'twitter' issue, featuring Fabio Giglietto alongside other prominent internet studies researchers analyzing the platform's legacy.",
-      "personMatch": "confirmed",
-      "isRecent": false
-    }
-  },
-  "snurb.info/node/3610": {
-    "v": 1,
-    "cachedAt": "2026-07-11T08:00:24.198Z",
-    "verdict": {
-      "isRelevant": false,
-      "mentionedByName": true,
-      "relevanceScore": 0.5,
-      "reason": "The content is from the CORIT roundtable event which took place in June 2023, making it older than the required 6-month window.",
-      "description": "An academic blog post covering Fabio Giglietto's presentation at the CORIT roundtable on mapping Brazilian pro-Bolsonaro narratives on Facebook.",
-      "personMatch": "confirmed",
-      "isRecent": false
     }
   }
 }

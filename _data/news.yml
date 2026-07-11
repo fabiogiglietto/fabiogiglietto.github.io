@@ -1,11 +1,10 @@
 - date: '2026-07-08'
   content: >-
-    Recent research highlights how generative AI is reshaping human persuasion,
-    trust, and public discourse. Newly published studies demonstrate that AI
-    systems can out-persuade human experts and durably reduce conspiracy beliefs
-    through targeted dialogue, while comparative frameworks analyze how public
-    trust and quality perceptions of AI-assisted news vary across different
-    democratic contexts.
+    Democratically weakened nations face distinct threats from modern
+    disinformation campaigns, according to a comparative study by Gabrielle D.
+    Beacken, Inga K. Trauthig, and Samuel C. Woolley. The authors analyze how
+    generative AI and state propaganda intersect to foster digital
+    authoritarianism across six different countries.
   url: https://doi.org/10.1177/20539517251410064
   platforms:
     - Mastodon
@@ -13,38 +12,37 @@
   toread: true
 - date: '2026-07-02'
   content: >-
-    Crucial questions about digital governance and algorithm design are raised
-    in a series of studies analyzing platform moderation. Researchers critique
-    the limitations of crowd-sourced moderation—showing that systems like X's
-    Community Notes may undermoderate polarizing content during elections by
-    design—and explore how legislative frameworks like the EU's Digital Services
-    Act (DSA) redefine platforms as democratic infrastructure.
+    A critical study published in Science Advances examines the design of X's
+    (formerly Twitter) Community Notes, suggesting that the crowdsourced
+    moderation system inherently undermoderates highly polarizing content.
+    Authors Paul Bouchaud and Pedro Ramaciotti argue that this structural
+    limitation poses significant risks, particularly during crucial electoral
+    processes.
   url: https://doi.org/10.1126/sciadv.aee6932
   platforms:
     - Mastodon
     - BlueSky
   toread: true
-- date: '2026-07-08'
+- date: '2026-06-27'
   content: >-
-    Fresh insights into state-sponsored influence operations reveal the evolving
-    strategies of digital propaganda and election interference. Analytical
-    papers investigate how media narratives surrounding foreign interference
-    shape public polarization, the strategic dual-targeting of state propaganda
-    in the Russo-Ukrainian war, and the long-term patterns of state-backed
-    trolling across borders.
-  url: https://doi.org/10.1177/14614448251410509
+    New research on the communicative capabilities of large language models
+    shows that AI systems are now capable of out-persuading expert humans in
+    debate environments. The pre-print study, authored by Kobi Hackenburg and
+    colleagues, highlights the rapidly evolving social and political
+    implications of persuasive AI technologies.
+  url: http://arxiv.org/abs/2606.16475v1
   platforms:
     - Mastodon
     - BlueSky
   toread: true
-- date: '2026-07-04'
+- date: '2026-06-21'
   content: >-
-    An empirical study examines the weaponization of disinformation narratives
-    in Southern European media. Focusing on the Italian press, the research
-    analyzes how the term 'fake news' is strategically deployed by mainstream
-    newspapers as a rhetorical tool to delegitimize political opponents and
-    selectively amplify partisan agendas.
-  url: https://doi.org/10.1177/02673231261458935
+    In a novel intervention study, researchers Thomas H. Costello, Gordon
+    Pennycook, and David G. Rand demonstrate that personalized dialogues with
+    generative AI can durably reduce individuals' conspiracy beliefs. The
+    findings point to potential scalable avenues for addressing misinformation
+    through conversational technology.
+  url: https://doi.org/10.31234/osf.io/xcwdn
   platforms:
     - Mastodon
     - BlueSky
