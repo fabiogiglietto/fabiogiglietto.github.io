@@ -1051,5 +1051,70 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "ilrestodelcarlino.it/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto": {
+    "v": 1,
+    "cachedAt": "2026-07-11T08:00:01.849Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A news article from Il Resto del Carlino covering Prof. Fabio Giglietto's investigation into how algorithms influence voting behavior, highlighting his use of the EU's Digital Services Act transparency tools.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "uniurb.it/novita/algoritmi-e-democrazia-caso-meta-studio-uniurb": {
+    "v": 1,
+    "cachedAt": "2026-07-11T08:00:06.392Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.98,
+      "reason": "Validated as relevant",
+      "description": "An official press release from the University of Urbino highlighting how Professor Fabio Giglietto's research on Meta's algorithmic suppression of political visibility triggered a formal inquiry in the European Parliament.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "snurb.info/node/3642": {
+    "v": 1,
+    "cachedAt": "2026-07-11T08:00:10.823Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A conference liveblog report from the 2026 ICA conference covering Fabio Giglietto's presentation on how Facebook's algorithmic tweaks impact news URL engagement.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "snurb.info/node/3621": {
+    "v": 1,
+    "cachedAt": "2026-07-11T08:00:18.791Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": true,
+      "relevanceScore": 0.5,
+      "reason": "The content was published in December 2023, which is older than the 6-month recency threshold.",
+      "description": "An article on snurb.info announcing the release of the M/C Journal's special 'twitter' issue, featuring Fabio Giglietto alongside other prominent internet studies researchers analyzing the platform's legacy.",
+      "personMatch": "confirmed",
+      "isRecent": false
+    }
+  },
+  "snurb.info/node/3610": {
+    "v": 1,
+    "cachedAt": "2026-07-11T08:00:24.198Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": true,
+      "relevanceScore": 0.5,
+      "reason": "The content is from the CORIT roundtable event which took place in June 2023, making it older than the required 6-month window.",
+      "description": "An academic blog post covering Fabio Giglietto's presentation at the CORIT roundtable on mapping Brazilian pro-Bolsonaro narratives on Facebook.",
+      "personMatch": "confirmed",
+      "isRecent": false
+    }
   }
 }
