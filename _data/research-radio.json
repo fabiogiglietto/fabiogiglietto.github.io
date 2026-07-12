@@ -1583,6 +1583,18 @@
       "author": "Hinck, Musashi, King, Gary, Nakamura, Kentaro, Stewart, Brandon M",
       "doi": null,
       "own": false
+    },
+    {
+      "id": "bibtex:Kotz2026-lk",
+      "bibtexKey": "Kotz2026-lk",
+      "title": "Can AI Really Change Skeptics' Minds? The Surprising Answer",
+      "description": "AI-generated podcast discussion.\n\nReference:\nKotz, J., Tiede, K. E., Meyer, J., Sterba, M., Breunig, C., & Gaissmaier, W. (2026). Conversational AI shifts beliefs and policy support among skeptics across contested societal issues. https://doi.org/10.31234/osf.io/7szrn_v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Kotz2026-lk.mp3",
+      "pubDate": "2026-07-14T13:11:17.175711+00:00",
+      "duration": "10:19",
+      "author": "Johannes Kotz, Kevin E. Tiede, Jelena Meyer, Maj-Britt Sterba, Christian Breunig, Wolfgang Gaissmaier",
+      "doi": "10.31234/osf.io/7szrn_v1",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -3169,6 +3181,18 @@
       "author": "Hinck, Musashi, King, Gary, Nakamura, Kentaro, Stewart, Brandon M",
       "doi": null,
       "own": false
+    },
+    "Kotz2026-lk": {
+      "id": "bibtex:Kotz2026-lk",
+      "bibtexKey": "Kotz2026-lk",
+      "title": "Can AI Really Change Skeptics' Minds? The Surprising Answer",
+      "description": "AI-generated podcast discussion.\n\nReference:\nKotz, J., Tiede, K. E., Meyer, J., Sterba, M., Breunig, C., & Gaissmaier, W. (2026). Conversational AI shifts beliefs and policy support among skeptics across contested societal issues. https://doi.org/10.31234/osf.io/7szrn_v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Kotz2026-lk.mp3",
+      "pubDate": "2026-07-14T13:11:17.175711+00:00",
+      "duration": "10:19",
+      "author": "Johannes Kotz, Kevin E. Tiede, Jelena Meyer, Maj-Britt Sterba, Christian Breunig, Wolfgang Gaissmaier",
+      "doi": "10.31234/osf.io/7szrn_v1",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -4359,9 +4383,21 @@
       "author": "Lorenzo Mosca, Fred Paxton",
       "doi": "10.1177/02673231261458935",
       "own": false
+    },
+    "10.31234/osf.io/7szrn_v1": {
+      "id": "bibtex:Kotz2026-lk",
+      "bibtexKey": "Kotz2026-lk",
+      "title": "Can AI Really Change Skeptics' Minds? The Surprising Answer",
+      "description": "AI-generated podcast discussion.\n\nReference:\nKotz, J., Tiede, K. E., Meyer, J., Sterba, M., Breunig, C., & Gaissmaier, W. (2026). Conversational AI shifts beliefs and policy support among skeptics across contested societal issues. https://doi.org/10.31234/osf.io/7szrn_v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Kotz2026-lk.mp3",
+      "pubDate": "2026-07-14T13:11:17.175711+00:00",
+      "duration": "10:19",
+      "author": "Johannes Kotz, Kevin E. Tiede, Jelena Meyer, Maj-Britt Sterba, Christian Breunig, Wolfgang Gaissmaier",
+      "doi": "10.31234/osf.io/7szrn_v1",
+      "own": false
     }
   },
-  "totalEpisodes": 132,
-  "lastUpdated": "2026-07-12T07:36:50.144Z",
+  "totalEpisodes": 133,
+  "lastUpdated": "2026-07-12T08:14:00.851Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
