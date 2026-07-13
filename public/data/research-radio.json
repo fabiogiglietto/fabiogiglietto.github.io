@@ -1595,6 +1595,18 @@
       "author": "Johannes Kotz, Kevin E. Tiede, Jelena Meyer, Maj-Britt Sterba, Christian Breunig, Wolfgang Gaissmaier",
       "doi": "10.31234/osf.io/7szrn_v1",
       "own": false
+    },
+    {
+      "id": "bibtex:Schemer2026-mh",
+      "bibtexKey": "Schemer2026-mh",
+      "title": "The Measurement Problem: Why Studies Disagree on Media Polarization",
+      "description": "AI-generated podcast discussion.\n\nReference:\nSchemer, C., Langmann, K., Hasell, A., & Weeks, B. (2026). Does the method affect the outcome? How measures of partisan slant of media outlets and affective polarization drive results about polarization in the United States. https://doi.org/10.1080/10584609.2026.2699105",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Schemer2026-mh.mp3",
+      "pubDate": "2026-07-15T13:11:17.175711+00:00",
+      "duration": "10:58",
+      "author": "Christian Schemer, Klara Langmann, Ariel Hasell, Brian Weeks",
+      "doi": "10.1080/10584609.2026.2699105",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -3193,6 +3205,18 @@
       "author": "Johannes Kotz, Kevin E. Tiede, Jelena Meyer, Maj-Britt Sterba, Christian Breunig, Wolfgang Gaissmaier",
       "doi": "10.31234/osf.io/7szrn_v1",
       "own": false
+    },
+    "Schemer2026-mh": {
+      "id": "bibtex:Schemer2026-mh",
+      "bibtexKey": "Schemer2026-mh",
+      "title": "The Measurement Problem: Why Studies Disagree on Media Polarization",
+      "description": "AI-generated podcast discussion.\n\nReference:\nSchemer, C., Langmann, K., Hasell, A., & Weeks, B. (2026). Does the method affect the outcome? How measures of partisan slant of media outlets and affective polarization drive results about polarization in the United States. https://doi.org/10.1080/10584609.2026.2699105",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Schemer2026-mh.mp3",
+      "pubDate": "2026-07-15T13:11:17.175711+00:00",
+      "duration": "10:58",
+      "author": "Christian Schemer, Klara Langmann, Ariel Hasell, Brian Weeks",
+      "doi": "10.1080/10584609.2026.2699105",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -4395,9 +4419,21 @@
       "author": "Johannes Kotz, Kevin E. Tiede, Jelena Meyer, Maj-Britt Sterba, Christian Breunig, Wolfgang Gaissmaier",
       "doi": "10.31234/osf.io/7szrn_v1",
       "own": false
+    },
+    "10.1080/10584609.2026.2699105": {
+      "id": "bibtex:Schemer2026-mh",
+      "bibtexKey": "Schemer2026-mh",
+      "title": "The Measurement Problem: Why Studies Disagree on Media Polarization",
+      "description": "AI-generated podcast discussion.\n\nReference:\nSchemer, C., Langmann, K., Hasell, A., & Weeks, B. (2026). Does the method affect the outcome? How measures of partisan slant of media outlets and affective polarization drive results about polarization in the United States. https://doi.org/10.1080/10584609.2026.2699105",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Schemer2026-mh.mp3",
+      "pubDate": "2026-07-15T13:11:17.175711+00:00",
+      "duration": "10:58",
+      "author": "Christian Schemer, Klara Langmann, Ariel Hasell, Brian Weeks",
+      "doi": "10.1080/10584609.2026.2699105",
+      "own": false
     }
   },
-  "totalEpisodes": 133,
-  "lastUpdated": "2026-07-12T09:05:10.728Z",
+  "totalEpisodes": 134,
+  "lastUpdated": "2026-07-13T09:23:07.455Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
