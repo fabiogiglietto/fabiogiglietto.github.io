@@ -1,10 +1,13 @@
 - date: '2026-07-12'
   content: >-
-    Emerging research highlights the expanding role of artificial intelligence
-    in shaping public belief systems. Recent studies demonstrate that
-    conversational AI models cannot only shift opinions on contested societal
-    issues but also durably reduce conspiracy beliefs through interactive
-    dialogue, in some cases out-persuading human experts.
+    A growing body of cognitive and political research examines how
+    conversational AI models can actively shift human beliefs and mitigate
+    conspiracy theories. Recent studies, including work by Johannes Kotz et al.,
+    explore AI's capacity to sway policy support among skeptics, while research
+    from Kobi Hackenburg et al. suggests AI systems can now out-persuade expert
+    humans. Additionally, Thomas H. Costello and colleagues demonstrate how
+    personalized dialogues with AI can durably reduce entrenched conspiracy
+    beliefs.
   url: https://doi.org/10.31234/osf.io/7szrn_v1
   platforms:
     - Mastodon
@@ -12,38 +15,43 @@
   toread: true
 - date: '2026-07-02'
   content: >-
-    Platform governance faces critical scrutiny as new analyses assess
-    democratic infrastructure in the Digital Services Act (DSA) era. Key
-    findings suggest that decentralized moderation tools like X's 'Community
-    Notes' may undermoderate polarizing content by design, while broader
-    comparative studies analogize content moderation to traffic control under
-    evolving Western regulatory frameworks.
+    The shifting landscape of digital platform regulation and content moderation
+    is the focus of several key publications. In Science Advances, Paul Bouchaud
+    and Pedro Ramaciotti analyze how X's Community Notes may undermoderate
+    polarizing content by design, presenting electoral risks. This aligns with
+    work by Anja Bechmann reimagining collective platform behavior as democratic
+    infrastructure under the Digital Services Act (DSA), and Valentine Crosset
+    et al.'s comparative analysis of EU and US platform legislation.
   url: https://doi.org/10.1126/sciadv.aee6932
-  platforms:
-    - Mastodon
-    - BlueSky
-  toread: true
-- date: '2026-07-12'
-  content: >-
-    Unpacking the dynamics of political polarization, scholars are investigating
-    how research methodologies and narrative framing affect our understanding of
-    media slant. Recent publications highlight how choices in measuring partisan
-    bias drive conclusions about polarization in the US, while related work
-    explores the impact of media narratives on digital election interference.
-  url: https://doi.org/10.1080/10584609.2026.2699105
   platforms:
     - Mastodon
     - BlueSky
   toread: true
 - date: '2026-07-08'
   content: >-
-    The intersection of technology and state-sponsored messaging remains a
-    critical focus of political communication research. New comparative studies
-    examine how generative AI is leveraged for digital authoritarianism across
-    democratically weakened nations, alongside analyses of Russian state media
-    propaganda objectives and the strategic use of fake news rhetoric in
-    European journalism.
-  url: https://doi.org/10.1177/20539517251410064
+    Scholars are advancing the study of digital propaganda and polarization
+    across diverse global contexts. Emelie Karlsson's work investigates how
+    media narratives shape the perceived impact of digital election
+    interference. Concurrently, Gabrielle D. Beacken et al. analyze the
+    intersection of generative AI, propaganda, and digital authoritarianism
+    across six weakened democracies, while studies by Makeev et al. and Lorenzo
+    Mosca et al. explore state-sponsored media strategies in the Russo-Ukrainian
+    war and rhetorical weaponization in European journalism.
+  url: https://doi.org/10.1177/14614448251410509
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
+- date: '2026-07-01'
+  content: >-
+    Emerging research explores how the public perceives and interacts with
+    generative AI in the communication ecosystem. A study by Fabrizio Gilardi et
+    al. assesses quality perceptions and intended user engagement with
+    AI-assisted news, complemented by Jiyoun Suk and Yini Zhang's multi-level
+    framework for understanding trust in generative AI. Additionally, new survey
+    data from the Pew Research Center (Gottfried et al.) details American public
+    opinion on chatbots and smart devices.
+  url: https://doi.org/10.1038/s41598-026-58743-0
   platforms:
     - Mastodon
     - BlueSky
