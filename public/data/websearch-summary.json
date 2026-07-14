@@ -1,11 +1,12 @@
 {
-  "totalEntries": 197,
-  "lastUpdated": "2026-07-13T10:26:06.476Z",
+  "totalEntries": 198,
+  "lastUpdated": "2026-07-14T06:55:50.738Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-07-12T07:46:19.011Z"
+    "latest": "2026-07-14T06:55:50.683Z"
   },
   "byDate": {
+    "2026-07-14": 1,
     "2026-07-12": 3,
     "2026-07-11": 1,
     "2026-07-09": 2,
@@ -14,8 +15,7 @@
     "2026-07-04": 1,
     "2026-07-03": 1,
     "2026-07-02": 2,
-    "2026-07-01": 2,
-    "2026-06-30": 1
+    "2026-07-01": 2
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 52,
@@ -24,17 +24,24 @@
     "open.online": 6,
     "icahdq.org": 5,
     "aoir.org": 5,
+    "socialmediaandsociety.org": 4,
     "ilrestodelcarlino.it": 4,
     "snurblog.org": 4,
-    "Il Sole 24 ORE": 4,
-    "socialmediaandsociety.org": 3
+    "Il Sole 24 ORE": 4
   },
   "byRelevanceScore": {
-    "high": 174,
+    "high": 175,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "#SMSociety 2026 Conference Programme",
+      "url": "https://socialmediaandsociety.org/",
+      "source": "socialmediaandsociety.org",
+      "relevanceScore": 0.95,
+      "collectedAt": "2026-07-14T06:55:50.683Z"
+    },
     {
       "title": "Algoritmi di Meta e democrazia, S&D: \"Ridotta la visibilità dei rappresentanti politici\"",
       "url": "https://www.sardegnagol.it/articolo/algoritmi-di-meta-e-democrazia-sd-ridotta-la-visibilita-dei-rappresentanti-politici/",
@@ -62,13 +69,6 @@
       "source": "socialmediaandsociety.org",
       "relevanceScore": 0.95,
       "collectedAt": "2026-07-11T09:01:55.631Z"
-    },
-    {
-      "title": "Referendum. Bonelli e Fratoianni (Avs) scrivono al Presidente Agcom, preoccupati per le fake news veicolate sui social",
-      "url": "https://www.verdisinistra.it/referendum-bonelli-e-fratoianni-avs-scrivono-al-presidente-agcom-preoccupati-per-le-fake-news-veicolate-sui-social/",
-      "source": "verdisinistra.it",
-      "relevanceScore": 0.95,
-      "collectedAt": "2026-07-09T10:46:56.688Z"
     }
   ]
 }

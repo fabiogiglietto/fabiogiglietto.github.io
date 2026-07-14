@@ -1,57 +1,62 @@
+- date: '2026-07-14'
+  content: >-
+    Methodological advancements in social media research are highlighted in a
+    new paper introducing TubeStats and TokStats. Developed by Kevin Zheng and
+    co-authors, these open-source tools address a major bottleneck in digital
+    research by enabling the extraction of random samples from YouTube and
+    TikTok, offering critical infrastructure for studying contemporary
+    video-centric platforms.
+  url: https://doi.org/10.17645/mac.12085
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
 - date: '2026-07-12'
   content: >-
-    A growing body of cognitive and political research examines how
-    conversational AI models can actively shift human beliefs and mitigate
-    conspiracy theories. Recent studies, including work by Johannes Kotz et al.,
-    explore AI's capacity to sway policy support among skeptics, while research
-    from Kobi Hackenburg et al. suggests AI systems can now out-persuade expert
-    humans. Additionally, Thomas H. Costello and colleagues demonstrate how
-    personalized dialogues with AI can durably reduce entrenched conspiracy
-    beliefs.
+    New research exploring the persuasive power of generative technologies
+    reveals how conversational AI can significantly shift beliefs and policy
+    support. The study, authored by Johannes Kotz and colleagues, demonstrates
+    how interactive AI agents successfully influence skeptical audiences across
+    highly contested societal issues, raising vital questions about the future
+    of digital discourse.
   url: https://doi.org/10.31234/osf.io/7szrn_v1
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
+- date: '2026-07-04'
+  content: >-
+    The strategic weaponization of media discourse is examined in a new study
+    focusing on Italian newspapers. Authors Lorenzo Mosca and Fred Paxton
+    analyze how 'fake news' is deployed as a rhetorical weapon, detailing how
+    domestic outlets use the term for strategic delegitimization and selective
+    amplification within the national political landscape.
+  url: https://doi.org/10.1177/02673231261458935
   platforms:
     - Mastodon
     - BlueSky
   toread: true
 - date: '2026-07-02'
   content: >-
-    The shifting landscape of digital platform regulation and content moderation
-    is the focus of several key publications. In Science Advances, Paul Bouchaud
-    and Pedro Ramaciotti analyze how X's Community Notes may undermoderate
-    polarizing content by design, presenting electoral risks. This aligns with
-    work by Anja Bechmann reimagining collective platform behavior as democratic
-    infrastructure under the Digital Services Act (DSA), and Valentine Crosset
-    et al.'s comparative analysis of EU and US platform legislation.
+    A critical evaluation of decentralized platform governance finds that
+    Twitter/X's Community Notes feature may fall short of its democratic goals.
+    In a study published in Science Advances, researchers Paul Bouchaud and
+    Pedro Ramaciotti argue that the system's underlying design systematically
+    undermoderates polarizing content, presenting distinct risks to electoral
+    processes.
   url: https://doi.org/10.1126/sciadv.aee6932
   platforms:
     - Mastodon
     - BlueSky
   toread: true
-- date: '2026-07-08'
+- date: '2026-06-28'
   content: >-
-    Scholars are advancing the study of digital propaganda and polarization
-    across diverse global contexts. Emelie Karlsson's work investigates how
-    media narratives shape the perceived impact of digital election
-    interference. Concurrently, Gabrielle D. Beacken et al. analyze the
-    intersection of generative AI, propaganda, and digital authoritarianism
-    across six weakened democracies, while studies by Makeev et al. and Lorenzo
-    Mosca et al. explore state-sponsored media strategies in the Russo-Ukrainian
-    war and rhetorical weaponization in European journalism.
-  url: https://doi.org/10.1177/14614448251410509
-  platforms:
-    - Mastodon
-    - BlueSky
-  toread: true
-- date: '2026-07-01'
-  content: >-
-    Emerging research explores how the public perceives and interacts with
-    generative AI in the communication ecosystem. A study by Fabrizio Gilardi et
-    al. assesses quality perceptions and intended user engagement with
-    AI-assisted news, complemented by Jiyoun Suk and Yini Zhang's multi-level
-    framework for understanding trust in generative AI. Additionally, new survey
-    data from the Pew Research Center (Gottfried et al.) details American public
-    opinion on chatbots and smart devices.
-  url: https://doi.org/10.1038/s41598-026-58743-0
+    Platform governance is reconceptualized as traffic control in a comparative
+    analysis of EU and US regulatory efforts. Scholars Valentine Crosset,
+    Tommaso Venturini, and Benoît Dupont dissect current legislative approaches
+    to content moderation, offering a novel framework for understanding the
+    systemic challenges of digital governance.
+  url: https://doi.org/10.1080/21624887.2026.2692735
   platforms:
     - Mastodon
     - BlueSky

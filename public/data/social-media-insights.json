@@ -1,48 +1,48 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a strong, highly targeted professional presence across Bluesky, Mastodon, and LinkedIn. His content, which centers on computational social science, disinformation, and tool development, resonates deeply with an academic and research-focused audience, yielding high qualitative engagement relative to follower sizes.",
+  "overallSummary": "Fabio Giglietto maintains a strong and highly engaged professional presence across decentralized platforms (Mastodon, Bluesky) and professional networks (LinkedIn), totaling 3,580 followers. Content is highly academic, focusing on computational social science, disinformation, and research announcements. While LinkedIn holds the largest audience and drives the highest absolute volume of interactions, Bluesky exhibits the highest relative engagement rate, demonstrating a highly active and receptive audience for academic research and opportunities.",
   "engagementMetrics": {
     "totalFollowers": 3580,
     "averageEngagementRate": 5.32,
-    "mostEngagingPlatform": "bluesky"
+    "mostEngagingPlatform": "Bluesky"
   },
   "contentThemes": [
     {
       "theme": "Coordinated Inauthentic Behavior & Disinformation",
-      "description": "Academic papers, event presentations, and discussions centered on tracking coordinated link sharing and information operations."
+      "description": "Announcements of research papers, conference presentations, and software updates (CooRnet) related to detecting coordinated link sharing and information operations."
     },
     {
-      "theme": "Academic Opportunities & Recruitment",
-      "description": "Hiring announcements for postdocs and PhD candidate opportunities within his research team."
+      "theme": "Academic Recruitment & Opportunities",
+      "description": "Job openings for postdoctoral researchers and PhD opportunities in computational social science."
     },
     {
-      "theme": "Research Tool Updates",
-      "description": "Announcements and updates regarding open-source tools developed by the team, such as CooRnet."
+      "theme": "Methodological Discussions",
+      "description": "Conversations around computational methods and platform-cross approaches to studying social media dynamics."
     }
   ],
   "recommendations": [
-    "Leverage LinkedIn's larger reach for recruitment and high-impact funding milestones to tap into a broader professional pool.",
-    "Utilize Bluesky's highly active and responsive ecosystem to drive early discussion on newly published papers and upcoming conference presentations.",
-    "Incorporate visual assets, such as screenshots or system diagrams, when announcing software updates (e.g., CooRnet v2.0) on Mastodon to improve visual hook."
+    "Increase post frequency on Mastodon to foster stronger community ties, as it currently lags in overall engagement volume.",
+    "Utilize rich media, such as infographics or screenshots of research findings, to further boost engagement on high-performing announcements.",
+    "Capitalize on Bluesky's high repost rates by framing research announcements with discussion-starting questions to increase viral reach."
   ],
   "platformInsights": {
-    "bluesky": "Delivers the highest engagement rate per post (average 6.14%), driven by strong sharing behaviors (reposts) on academic and research opportunity content.",
-    "mastodon": "Serves as a dedicated niche channel for technical tool releases and research methodologies, though total volume of interactions is lower.",
-    "linkedin": "Generates the highest absolute engagement volume, making it the most effective channel for professional networking, institutional grant announcements, and job postings."
+    "bluesky": "Bluesky is the most interactive platform by rate (averaging 6.14% engagement), driven by high repost counts. It serves as an excellent hub for real-time academic discussions and sharing publications.",
+    "mastodon": "Mastodon provides steady engagement (averaging 4.55% engagement) from a highly specialized audience. It is ideal for technical announcements like software releases (CooRnet v2.0), but suffers from lower overall volume.",
+    "linkedin": "LinkedIn drives the highest absolute engagement, averaging 90 engagements per post. It is highly effective for institutional announcements, grant success, and recruitment drives due to its larger professional reach."
   },
   "topPerformingContent": [
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
-      "platform": "bluesky",
+      "platform": "Bluesky",
       "engagementRate": 7.37
     },
     {
       "content": "New research opportunity for PhD students interested in computational social science. Reply for details!",
-      "platform": "bluesky",
+      "platform": "Bluesky",
       "engagementRate": 5.79
     },
     {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
-      "platform": "linkedin",
+      "platform": "LinkedIn",
       "engagementRate": 5.78
     }
   ]

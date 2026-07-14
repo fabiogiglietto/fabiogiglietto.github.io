@@ -1597,5 +1597,70 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-79178bb0": {
+    "v": 1,
+    "cachedAt": "2026-07-14T06:54:50.210Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A news article from Il Resto del Carlino discussing Fabio Giglietto's study on how Meta's algorithms reduced the Facebook visibility of Italian parliamentarians.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "vivereurbino.it/2026/04/17/algoritmi-e-democrazia-il-caso-meta-secondo-lo-studio-di-uniurb/68": {
+    "v": 1,
+    "cachedAt": "2026-07-14T06:54:55.772Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "Press coverage from Vivere Urbino highlighting Fabio Giglietto's research on Meta's recommendation algorithms, which was featured on Rai3's 'Report' and discussed in the European Parliament.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "socialmediaandsociety.org/panel-meta-content-library-community-roundtable-where-to-for-social-media-research": {
+    "v": 1,
+    "cachedAt": "2026-07-14T06:55:00.192Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An academic panel announcement for the International Conference on Social Media & Society featuring Professor Fabio Giglietto as an expert speaker discussing the transition of researchers to the Meta Content Library.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "snurb.info?page=2": {
+    "v": 1,
+    "cachedAt": "2026-07-14T06:55:03.541Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The provided web mention does not contain any text, snippet, or URL query that explicitly mentions 'Fabio Giglietto' by name.",
+      "description": "A page from Axel Bruns' personal academic blog (snurb.info), which covers internet and media research, but lacks any visible mention of Fabio Giglietto in the provided context.",
+      "personMatch": "not_mentioned",
+      "isRecent": false
+    }
+  },
+  "podcasts.apple.com/podcast/research-radio/id1653457912": {
+    "v": 1,
+    "cachedAt": "2026-07-14T06:55:08.697Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.85,
+      "reason": "Validated as relevant",
+      "description": "An ongoing AI-driven podcast series curated by Fabio Giglietto that utilizes generative AI to create audio deep dives into computational social science, public opinion, and disinformation research.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }
