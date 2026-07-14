@@ -1662,5 +1662,70 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "snurb.info/node/3358": {
+    "v": 1,
+    "cachedAt": "2026-07-14T08:09:07.529Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "N/A",
+      "description": "An academic liveblog post summarizing Fabio Giglietto's presentation at the 2026 ICA conference regarding how Facebook's algorithmic shifts impact engagement with news URLs over time.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "disinfo.eu/publications/disinfo-update-10-06-2026": {
+    "v": 1,
+    "cachedAt": "2026-07-14T08:09:11.839Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An EU DisinfoLab newsletter featuring Fabio Giglietto's co-authored research on how partisan alignment, journalistic quality, and algorithmic governance influence content visibility on Facebook.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-b2862a9c": {
+    "v": 1,
+    "cachedAt": "2026-07-14T08:09:15.510Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An Italian news article detailing research by University of Urbino sociologist Fabio Giglietto on how Meta's recommendation algorithms influence voting behavior by suppressing mainstream political figures and amplifying extremist content.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "terzogiornale.it/opinioni/l-articolo-21-nella-gabbia-di-facebook": {
+    "v": 1,
+    "cachedAt": "2026-07-14T08:09:19.971Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A journalistic analysis of the threats posed by Facebook's algorithmic curation to freedom of speech, heavily citing Fabio Giglietto's research on algorithmic visibility drops for democratic representatives.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "open.online/2026/01/07/universita-urbino-facebook-algoritmo-politica-estremisti": {
+    "v": 1,
+    "cachedAt": "2026-07-14T08:09:24.372Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.98,
+      "reason": "Validated as relevant",
+      "description": "An investigative news article by Open covering a study led by Fabio Giglietto on how Facebook's algorithm disproportionately penalizes mainstream political content while failing to restrict extremist ecosystems.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }

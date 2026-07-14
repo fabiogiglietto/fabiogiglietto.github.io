@@ -1,12 +1,12 @@
 {
-  "totalEntries": 198,
-  "lastUpdated": "2026-07-14T06:55:50.738Z",
+  "totalEntries": 199,
+  "lastUpdated": "2026-07-14T08:10:19.309Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-07-14T06:55:50.683Z"
+    "latest": "2026-07-14T08:10:19.264Z"
   },
   "byDate": {
-    "2026-07-14": 1,
+    "2026-07-14": 2,
     "2026-07-12": 3,
     "2026-07-11": 1,
     "2026-07-09": 2,
@@ -30,11 +30,18 @@
     "Il Sole 24 ORE": 4
   },
   "byRelevanceScore": {
-    "high": 175,
+    "high": 176,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Disinfo Update: Civil Society Mobilises | Council of Europe Actions | MFF Budgets",
+      "url": "https://www.disinfo.eu/publications/disinfo-update-10-06-2026/",
+      "source": "disinfo.eu",
+      "relevanceScore": 0.95,
+      "collectedAt": "2026-07-14T08:10:19.264Z"
+    },
     {
       "title": "#SMSociety 2026 Conference Programme",
       "url": "https://socialmediaandsociety.org/",
@@ -62,13 +69,6 @@
       "source": "open.online",
       "relevanceScore": 0.95,
       "collectedAt": "2026-07-12T07:46:19.011Z"
-    },
-    {
-      "title": "Panel – Meta Content Library Community Roundtable: Where to for Social Media Research? – #SMSociety 2026",
-      "url": "https://socialmediaandsociety.org/2026/panels/panel-meta-content-library-community-roundtable-where-to-for-social-media-research/",
-      "source": "socialmediaandsociety.org",
-      "relevanceScore": 0.95,
-      "collectedAt": "2026-07-11T09:01:55.631Z"
     }
   ]
 }

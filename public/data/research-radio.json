@@ -1607,6 +1607,30 @@
       "author": "Christian Schemer, Klara Langmann, Ariel Hasell, Brian Weeks",
       "doi": "10.1080/10584609.2026.2699105",
       "own": false
+    },
+    {
+      "id": "bibtex:Zheng2026-bi",
+      "bibtexKey": "Zheng2026-bi",
+      "title": "How to Actually Sample YouTube and TikTok Without Permission",
+      "description": "AI-generated podcast discussion.\n\nReference:\nZheng, K., Keeney, R., McGrady, R., Jaisingh, V., & Zuckerman, E. (2026). TubeStats and TokStats: Research tools for random samples of YouTube and TikTok. https://doi.org/10.17645/mac.12085",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Zheng2026-bi.mp3",
+      "pubDate": "2026-07-16T13:11:17.175711+00:00",
+      "duration": "12:04",
+      "author": "Kevin Zheng, Reagan Keeney, Ryan McGrady, Vikramaditya Jaisingh, Ethan Zuckerman",
+      "doi": "10.17645/mac.12085",
+      "own": false
+    },
+    {
+      "id": "bibtex:Goldberg2026-eb",
+      "bibtexKey": "Goldberg2026-eb",
+      "title": "Can AI Fix Our Broken Online Public Squares?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGoldberg, B., Acosta-Navas, D., Bakker, M., Beacock, I., Botvinick, M., Buch, P., DiResta, R., Donthi, N., Fast, N., Iyer, R., Jalan, Z., Konya, A., Danciu, G. K., Landemore, H., Marwick, A., Miller, C., Ovadya, A., Saltz, E., Schirch, L., Shalom, D., Siddarth, D., Sieker, F., Small, C., Stray, J., Tang, A., Tessler, M. H., & Zhang, A. (2026). AI and the future of digital public squares. https://doi.org/10.1177/26339137261459441",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Goldberg2026-eb.mp3",
+      "pubDate": "2026-07-17T13:11:17.175711+00:00",
+      "duration": "11:44",
+      "author": "Beth Goldberg, Diana Acosta-Navas, Michiel Bakker, Ian Beacock, Matt Botvinick, Prateek Buch, Renée DiResta, Nandika Donthi, Nathanael Fast, Ravi Iyer, Zaria Jalan, Andrew Konya, Grace Kwak Danciu, Hélène Landemore, Alice Marwick, Carl Miller, Aviv Ovadya, Emily Saltz, Lisa Schirch, Dalit Shalom, Divya Siddarth, Felix Sieker, Christopher Small, Jonathan Stray, Audrey Tang, Michael Henry Tessler, Amy Zhang",
+      "doi": "10.1177/26339137261459441",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -3217,6 +3241,30 @@
       "author": "Christian Schemer, Klara Langmann, Ariel Hasell, Brian Weeks",
       "doi": "10.1080/10584609.2026.2699105",
       "own": false
+    },
+    "Zheng2026-bi": {
+      "id": "bibtex:Zheng2026-bi",
+      "bibtexKey": "Zheng2026-bi",
+      "title": "How to Actually Sample YouTube and TikTok Without Permission",
+      "description": "AI-generated podcast discussion.\n\nReference:\nZheng, K., Keeney, R., McGrady, R., Jaisingh, V., & Zuckerman, E. (2026). TubeStats and TokStats: Research tools for random samples of YouTube and TikTok. https://doi.org/10.17645/mac.12085",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Zheng2026-bi.mp3",
+      "pubDate": "2026-07-16T13:11:17.175711+00:00",
+      "duration": "12:04",
+      "author": "Kevin Zheng, Reagan Keeney, Ryan McGrady, Vikramaditya Jaisingh, Ethan Zuckerman",
+      "doi": "10.17645/mac.12085",
+      "own": false
+    },
+    "Goldberg2026-eb": {
+      "id": "bibtex:Goldberg2026-eb",
+      "bibtexKey": "Goldberg2026-eb",
+      "title": "Can AI Fix Our Broken Online Public Squares?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGoldberg, B., Acosta-Navas, D., Bakker, M., Beacock, I., Botvinick, M., Buch, P., DiResta, R., Donthi, N., Fast, N., Iyer, R., Jalan, Z., Konya, A., Danciu, G. K., Landemore, H., Marwick, A., Miller, C., Ovadya, A., Saltz, E., Schirch, L., Shalom, D., Siddarth, D., Sieker, F., Small, C., Stray, J., Tang, A., Tessler, M. H., & Zhang, A. (2026). AI and the future of digital public squares. https://doi.org/10.1177/26339137261459441",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Goldberg2026-eb.mp3",
+      "pubDate": "2026-07-17T13:11:17.175711+00:00",
+      "duration": "11:44",
+      "author": "Beth Goldberg, Diana Acosta-Navas, Michiel Bakker, Ian Beacock, Matt Botvinick, Prateek Buch, Renée DiResta, Nandika Donthi, Nathanael Fast, Ravi Iyer, Zaria Jalan, Andrew Konya, Grace Kwak Danciu, Hélène Landemore, Alice Marwick, Carl Miller, Aviv Ovadya, Emily Saltz, Lisa Schirch, Dalit Shalom, Divya Siddarth, Felix Sieker, Christopher Small, Jonathan Stray, Audrey Tang, Michael Henry Tessler, Amy Zhang",
+      "doi": "10.1177/26339137261459441",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -4431,9 +4479,33 @@
       "author": "Christian Schemer, Klara Langmann, Ariel Hasell, Brian Weeks",
       "doi": "10.1080/10584609.2026.2699105",
       "own": false
+    },
+    "10.17645/mac.12085": {
+      "id": "bibtex:Zheng2026-bi",
+      "bibtexKey": "Zheng2026-bi",
+      "title": "How to Actually Sample YouTube and TikTok Without Permission",
+      "description": "AI-generated podcast discussion.\n\nReference:\nZheng, K., Keeney, R., McGrady, R., Jaisingh, V., & Zuckerman, E. (2026). TubeStats and TokStats: Research tools for random samples of YouTube and TikTok. https://doi.org/10.17645/mac.12085",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Zheng2026-bi.mp3",
+      "pubDate": "2026-07-16T13:11:17.175711+00:00",
+      "duration": "12:04",
+      "author": "Kevin Zheng, Reagan Keeney, Ryan McGrady, Vikramaditya Jaisingh, Ethan Zuckerman",
+      "doi": "10.17645/mac.12085",
+      "own": false
+    },
+    "10.1177/26339137261459441": {
+      "id": "bibtex:Goldberg2026-eb",
+      "bibtexKey": "Goldberg2026-eb",
+      "title": "Can AI Fix Our Broken Online Public Squares?",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGoldberg, B., Acosta-Navas, D., Bakker, M., Beacock, I., Botvinick, M., Buch, P., DiResta, R., Donthi, N., Fast, N., Iyer, R., Jalan, Z., Konya, A., Danciu, G. K., Landemore, H., Marwick, A., Miller, C., Ovadya, A., Saltz, E., Schirch, L., Shalom, D., Siddarth, D., Sieker, F., Small, C., Stray, J., Tang, A., Tessler, M. H., & Zhang, A. (2026). AI and the future of digital public squares. https://doi.org/10.1177/26339137261459441",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Goldberg2026-eb.mp3",
+      "pubDate": "2026-07-17T13:11:17.175711+00:00",
+      "duration": "11:44",
+      "author": "Beth Goldberg, Diana Acosta-Navas, Michiel Bakker, Ian Beacock, Matt Botvinick, Prateek Buch, Renée DiResta, Nandika Donthi, Nathanael Fast, Ravi Iyer, Zaria Jalan, Andrew Konya, Grace Kwak Danciu, Hélène Landemore, Alice Marwick, Carl Miller, Aviv Ovadya, Emily Saltz, Lisa Schirch, Dalit Shalom, Divya Siddarth, Felix Sieker, Christopher Small, Jonathan Stray, Audrey Tang, Michael Henry Tessler, Amy Zhang",
+      "doi": "10.1177/26339137261459441",
+      "own": false
     }
   },
-  "totalEpisodes": 134,
-  "lastUpdated": "2026-07-14T06:47:16.699Z",
+  "totalEpisodes": 136,
+  "lastUpdated": "2026-07-14T08:01:12.279Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
