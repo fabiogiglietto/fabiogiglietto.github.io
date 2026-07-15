@@ -1,11 +1,9 @@
 - date: '2026-07-15'
   content: >-
     A newly highlighted paper by Celia Ramos, Clara Jiménez-Cruz, and Pablo
-    Hernández-Escayola explores the frontiers of combating digital
-    misinformation. The research proposes moving beyond traditional
-    fact-checking toward narrative monitoring and argument-checking, a
-    methodological transition argued to significantly enhance the effectiveness
-    of counter-disinformation strategies.
+    Hernández-Escayola explores the limitations of traditional fact-checking,
+    proposing 'narrative monitoring' and 'argument-checking' as more robust
+    frameworks to counter sophisticated disinformation campaigns.
   url: https://doi.org/10.37016/mr-2020-198
   platforms:
     - Mastodon
@@ -13,36 +11,35 @@
   toread: true
 - date: '2026-07-14'
   content: >-
-    The complex politics of academic access to platform data are examined in a
-    study by Zoë Natalia Cullen, Nicole B. Ellison, and Irene V. Pasquetto.
-    Entitled 'Seeing like an API: Platform-mediated research and the politics of
-    access,' the paper provides a critical look at how platform-designed APIs
-    and access barriers shape contemporary computational social science.
-  url: https://doi.org/10.1177/20539517261461463
+    New methodology tools offer a breakthrough for social media researchers.
+    Developed by Kevin Zheng and colleagues, 'TubeStats' and 'TokStats' enable
+    academics to generate random, representative samples from YouTube and
+    TikTok, addressing a critical bottleneck in platform-mediated public sphere
+    research.
+  url: https://doi.org/10.17645/mac.12085
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
+- date: '2026-07-12'
+  content: >-
+    Addressing the power of conversational AI, a study by Johannes Kotz et al.
+    demonstrates how interactive AI systems can successfully shift beliefs and
+    build policy support among skeptics facing highly contested societal issues,
+    outlining new dimensions in AI-driven persuasion.
+  url: https://doi.org/10.31234/osf.io/7szrn_v1
   platforms:
     - Mastodon
     - BlueSky
   toread: true
 - date: '2026-07-02'
   content: >-
-    A recent study published in Science Advances raises concerns over
-    crowd-sourced platform moderation schemes. Scholars Paul Bouchaud and Pedro
-    Ramaciotti analyze X's 'Community Notes' mechanism, demonstrating that the
-    system's collaborative design tends to undermoderate polarizing content,
-    introducing systemic risks during democratic electoral processes.
+    Crowdsourced moderation systems are under the microscope in a new study
+    published in Science Advances. Researchers Paul Bouchaud and Pedro
+    Ramaciotti reveal that X's (formerly Twitter) 'Community Notes' system
+    structurally undermoderates highly polarizing content, introducing potential
+    integrity risks during critical electoral cycles.
   url: https://doi.org/10.1126/sciadv.aee6932
-  platforms:
-    - Mastodon
-    - BlueSky
-  toread: true
-- date: '2026-07-01'
-  content: >-
-    How does the public perceive automated journalism? Research led by Fabrizio
-    Gilardi investigates audience responses to AI-generated versus AI-assisted
-    news. Published in Scientific Reports, the study measures quality
-    perceptions and intended user engagement to offer critical insights into
-    public trust in generative media environments.
-  url: https://doi.org/10.1038/s41598-026-58743-0
   platforms:
     - Mastodon
     - BlueSky
