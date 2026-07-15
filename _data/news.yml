@@ -1,9 +1,13 @@
 - date: '2026-07-15'
   content: >-
-    A newly highlighted paper by Celia Ramos, Clara Jiménez-Cruz, and Pablo
-    Hernández-Escayola explores the limitations of traditional fact-checking,
-    proposing 'narrative monitoring' and 'argument-checking' as more robust
-    frameworks to counter sophisticated disinformation campaigns.
+    Understanding and countering digital propaganda remains a primary focus of
+    global communication research. Newly highlighted work by Ramos et al.
+    advocates for narrative monitoring to elevate disinformation countermeasures
+    beyond traditional fact-checking. Complementing this, research from Karlsson
+    explores how media narratives during digital election interference shape
+    polarization, while Beacken et al. investigate the intersection of
+    generative AI, propaganda, and digital authoritarianism across six
+    democratically weakened nations.
   url: https://doi.org/10.37016/mr-2020-198
   platforms:
     - Mastodon
@@ -11,35 +15,43 @@
   toread: true
 - date: '2026-07-14'
   content: >-
-    New methodology tools offer a breakthrough for social media researchers.
-    Developed by Kevin Zheng and colleagues, 'TubeStats' and 'TokStats' enable
-    academics to generate random, representative samples from YouTube and
-    TikTok, addressing a critical bottleneck in platform-mediated public sphere
-    research.
+    A series of newly published papers explore the growing influence of
+    generative AI on media trust, journalism, and public discourse. Research by
+    Goldberg et al. examines the future of digital public squares under AI
+    influence, while Gilardi et al. analyze how audiences perceive the quality
+    of and engage with AI-generated news. Additionally, Suk and Zhang propose a
+    multilevel framework to understand public trust in generative AI.
+  url: https://doi.org/10.1177/26339137261459441
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
+- date: '2026-07-14'
+  content: >-
+    Recent academic literature draws critical attention to platform governance
+    and the methodologies of digital research. Key contributions include an
+    analysis of platform-mediated research and API access politics by Cullen et
+    al., alongside a study by Bouchaud and Ramaciotti exposing how X's Community
+    Notes system may systematically undermoderate polarizing content during
+    elections. Furthering this policy debate, Bechmann and Crosset et al. offer
+    critical frameworks for platform collective behavior and content moderation
+    under current European and US legislation.
+  url: https://doi.org/10.1177/20539517261461463
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
+- date: '2026-07-14'
+  content: >-
+    Innovations and critical assessments in digital research methods are
+    reshaping how scholars analyze modern media ecosystems. A study by Zheng et
+    al. introduces TubeStats and TokStats, novel tools designed to extract
+    random samples from YouTube and TikTok for academic study. Addressing
+    structural measurement issues, Schemer et al. investigate how methodological
+    choices regarding partisan slant and affective polarization influence
+    research findings, while Mosca and Paxton examine the rhetorical use of
+    'fake news' as a strategic weapon in mainstream Italian newspapers.
   url: https://doi.org/10.17645/mac.12085
-  platforms:
-    - Mastodon
-    - BlueSky
-  toread: true
-- date: '2026-07-12'
-  content: >-
-    Addressing the power of conversational AI, a study by Johannes Kotz et al.
-    demonstrates how interactive AI systems can successfully shift beliefs and
-    build policy support among skeptics facing highly contested societal issues,
-    outlining new dimensions in AI-driven persuasion.
-  url: https://doi.org/10.31234/osf.io/7szrn_v1
-  platforms:
-    - Mastodon
-    - BlueSky
-  toread: true
-- date: '2026-07-02'
-  content: >-
-    Crowdsourced moderation systems are under the microscope in a new study
-    published in Science Advances. Researchers Paul Bouchaud and Pedro
-    Ramaciotti reveal that X's (formerly Twitter) 'Community Notes' system
-    structurally undermoderates highly polarizing content, introducing potential
-    integrity risks during critical electoral cycles.
-  url: https://doi.org/10.1126/sciadv.aee6932
   platforms:
     - Mastodon
     - BlueSky

@@ -1961,5 +1961,70 @@
       "personMatch": "not_mentioned",
       "isRecent": false
     }
+  },
+  "vivereurbino.it/news/attualita/algoritmi-e-democrazia-il-caso-meta-secondo-lo-studio-di-uniurb": {
+    "v": 1,
+    "cachedAt": "2026-07-15T09:13:47.440Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.98,
+      "reason": "Validated as relevant",
+      "description": "Press coverage of Fabio Giglietto's research at the University of Urbino on Meta's algorithmic filtering, which was featured on Rai3's 'Report' and prompted a European Parliament inquiry.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-b57f0067": {
+    "v": 1,
+    "cachedAt": "2026-07-15T09:13:52.588Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A news article covering Professor Fabio Giglietto's investigation at the University of Urbino into how Meta's social media algorithms impact democratic processes and political voting.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "editorialedomani.it/economia/piu-visibilita-agli-estremisti-che-ai-parlamentari-limpatto-del-filtro-di-meta-sulle-elezioni-vsnay8m2": {
+    "v": 1,
+    "cachedAt": "2026-07-15T09:13:56.937Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An investigative news report analyzing Professor Fabio Giglietto's research on the impact of Meta's political content reduction filter on the political communication landscape.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "snurb.info/node/3313": {
+    "v": 1,
+    "cachedAt": "2026-07-15T09:14:02.519Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "The mention is highly relevant as it is a third-party live-blog coverage of Fabio Giglietto's research presentation at the ICA 2026 conference, directly aligned with his expertise in social media analysis and computational social science.",
+      "description": "Media live-blog coverage of Fabio Giglietto's research presentation at the ICA 2026 conference regarding Facebook's algorithmic impacts on news URL engagement.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "open.online/2026/01/07/algoritmo-facebook-punisce-politica-ufficiale-premia-estremisti-studio-urbino": {
+    "v": 1,
+    "cachedAt": "2026-07-15T09:14:06.383Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "National news coverage highlighting how Fabio Giglietto's University of Urbino study on Facebook's algorithm prompted Italian political parties to propose bipartisan regulations for big tech.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }
