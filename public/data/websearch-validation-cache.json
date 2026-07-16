@@ -2091,5 +2091,83 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-b570be0e": {
+    "v": 1,
+    "cachedAt": "2026-07-16T09:17:30.162Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 1,
+      "reason": "Validated as relevant",
+      "description": "An Italian news article covering a study led by Fabio Giglietto at the University of Urbino on how Meta's algorithms and political content reduction policies impact the visibility of political figures on Facebook.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "snurb.info/node/3172": {
+    "v": 1,
+    "cachedAt": "2026-07-16T09:17:34.868Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A live-blog coverage of Fabio Giglietto's presentation at the 2026 ICA conference, analyzing how Facebook's algorithmic tweaks over six years affected engagement with news URLs.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "podcasts.apple.com/us/podcast/research-radio/id1721528659": {
+    "v": 1,
+    "cachedAt": "2026-07-16T09:17:40.558Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.85,
+      "reason": "Validated as relevant",
+      "description": "An ongoing AI-powered podcast series produced and curated by Fabio Giglietto, translating complex research in computational social science and disinformation into audio format.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "vivereurbino.it/2026/04/18/algoritmi-e-democrazia-il-caso-meta-secondo-lo-studio-di-uniurb/241857": {
+    "v": 1,
+    "cachedAt": "2026-07-16T09:17:45.502Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A news article discussing the public and political impact of Fabio Giglietto's study at the University of Urbino regarding Meta's algorithmic filtering of political content.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "ora.uniurb.it/retrieve/e4a12f8a-811a-4915-b360-f45616379019/fulltext_v1_2.pdf": {
+    "v": 1,
+    "cachedAt": "2026-07-16T09:17:49.575Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The name 'Fabio Giglietto' does not appear in the title, URL, or available context, making it impossible to verify the mention.",
+      "description": "A PDF document hosted on the University of Urbino's institutional repository, but there is no explicit mention of Fabio Giglietto in the provided metadata.",
+      "personMatch": "not_mentioned",
+      "isRecent": false
+    }
+  },
+  "verdisinistra.it/referendum-bonelli-e-fratoianni-avs-scrivono-al-presidente-agcom-preoccupati-per-le-fake-news-veicolate-sui-social-chiesto-incontro-piccolotti-inquietante-che-tecnologie-opache-abbia": {
+    "v": 1,
+    "cachedAt": "2026-07-16T09:17:53.752Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An Italian political news report detailing a formal complaint to AGCOM that cites Professor Fabio Giglietto's study on Meta's political content reduction policy as evidence of algorithmic impact on democratic representation.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }
