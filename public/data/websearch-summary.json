@@ -1,11 +1,12 @@
 {
-  "totalEntries": 199,
-  "lastUpdated": "2026-07-16T09:18:27.491Z",
+  "totalEntries": 200,
+  "lastUpdated": "2026-07-17T08:16:28.266Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-07-14T08:10:19.264Z"
+    "latest": "2026-07-17T08:16:28.220Z"
   },
   "byDate": {
+    "2026-07-17": 1,
     "2026-07-14": 2,
     "2026-07-12": 3,
     "2026-07-11": 1,
@@ -14,8 +15,7 @@
     "2026-07-06": 2,
     "2026-07-04": 1,
     "2026-07-03": 1,
-    "2026-07-02": 2,
-    "2026-07-01": 2
+    "2026-07-02": 2
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 52,
@@ -30,11 +30,18 @@
     "Il Sole 24 ORE": 4
   },
   "byRelevanceScore": {
-    "high": 176,
+    "high": 177,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Il ruolo di Meta nelle elezioni italiane, Floridia (Vigilanza Rai): “Necessario convocare i vertici americani della società”",
+      "url": "https://www.ilfattoquotidiano.it/2026/04/12/il-ruolo-di-meta-nelle-elezioni-italiane-floridia-vigilanza-rai-necessario-convocare-i-vertici-americani-della-societa/",
+      "source": "ilfattoquotidiano.it",
+      "relevanceScore": 0.95,
+      "collectedAt": "2026-07-17T08:16:28.220Z"
+    },
     {
       "title": "Disinfo Update: Civil Society Mobilises | Council of Europe Actions | MFF Budgets",
       "url": "https://www.disinfo.eu/publications/disinfo-update-10-06-2026/",
@@ -60,13 +67,6 @@
       "title": "Utenti profilati e algoritmi: così Meta ha interferito nelle elezioni del 2022",
       "url": "https://www.ilfattoquotidiano.it/in-edicola/articoli/2026/04/12/utenti-profilati-e-algoritmi-cosi-meta-ha-interferito-nelle-elezioni-del-2022/8352829/",
       "source": "ilfattoquotidiano.it",
-      "relevanceScore": 0.95,
-      "collectedAt": "2026-07-12T07:46:19.011Z"
-    },
-    {
-      "title": "Report accusa Meta di interferenze nelle elezioni del 2022: «Così ha profilato gli utenti». La replica dell'azienda",
-      "url": "https://www.open.online/2026/04/12/report-rai3-meta-interferenze-elezioni-2022/",
-      "source": "open.online",
       "relevanceScore": 0.95,
       "collectedAt": "2026-07-12T07:46:19.011Z"
     }
