@@ -1,11 +1,12 @@
 {
-  "totalEntries": 200,
-  "lastUpdated": "2026-07-18T08:53:51.911Z",
+  "totalEntries": 201,
+  "lastUpdated": "2026-07-18T11:00:27.130Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-07-17T08:16:28.220Z"
+    "latest": "2026-07-18T11:00:27.077Z"
   },
   "byDate": {
+    "2026-07-18": 1,
     "2026-07-17": 1,
     "2026-07-14": 2,
     "2026-07-12": 3,
@@ -14,8 +15,7 @@
     "2026-07-08": 2,
     "2026-07-06": 2,
     "2026-07-04": 1,
-    "2026-07-03": 1,
-    "2026-07-02": 2
+    "2026-07-03": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 52,
@@ -30,11 +30,18 @@
     "Il Sole 24 ORE": 4
   },
   "byRelevanceScore": {
-    "high": 177,
+    "high": 178,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "FG's Research Radio on Apple Podcasts",
+      "url": "https://podcasts.apple.com/us/podcast/research-radio/id1772421711",
+      "source": "podcasts.apple.com",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-07-18T11:00:27.077Z"
+    },
     {
       "title": "Il ruolo di Meta nelle elezioni italiane, Floridia (Vigilanza Rai): “Necessario convocare i vertici americani della società”",
       "url": "https://www.ilfattoquotidiano.it/2026/04/12/il-ruolo-di-meta-nelle-elezioni-italiane-floridia-vigilanza-rai-necessario-convocare-i-vertici-americani-della-societa/",
@@ -60,13 +67,6 @@
       "title": "Algoritmi di Meta e democrazia, S&D: \"Ridotta la visibilità dei rappresentanti politici\"",
       "url": "https://www.sardegnagol.it/articolo/algoritmi-di-meta-e-democrazia-sd-ridotta-la-visibilita-dei-rappresentanti-politici/",
       "source": "sardegnagol.it",
-      "relevanceScore": 0.95,
-      "collectedAt": "2026-07-12T07:46:19.011Z"
-    },
-    {
-      "title": "Utenti profilati e algoritmi: così Meta ha interferito nelle elezioni del 2022",
-      "url": "https://www.ilfattoquotidiano.it/in-edicola/articoli/2026/04/12/utenti-profilati-e-algoritmi-cosi-meta-ha-interferito-nelle-elezioni-del-2022/8352829/",
-      "source": "ilfattoquotidiano.it",
       "relevanceScore": 0.95,
       "collectedAt": "2026-07-12T07:46:19.011Z"
     }
