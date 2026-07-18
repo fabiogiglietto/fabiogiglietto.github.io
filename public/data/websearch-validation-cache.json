@@ -2429,5 +2429,96 @@
       "personMatch": "not_mentioned",
       "isRecent": false
     }
+  },
+  "uniurb.it/novita-ed-eventi/5631": {
+    "v": 1,
+    "cachedAt": "2026-07-18T08:52:45.690Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An official press release from the University of Urbino detailing how Professor Fabio Giglietto's research on Meta's algorithmic feed suppression sparked a formal political query in the European Parliament.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "verdi-sinistra.it/referendum-bonelli-e-fratoianni-avs-scrivono-al-presidente-agcom-preoccupati-per-le-fake-news-veicolate-sui-social": {
+    "v": 1,
+    "cachedAt": "2026-07-18T08:52:51.306Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "N/A",
+      "description": "A political news report detailing a formal letter to Agcom by Italian politicians who explicitly cite Fabio Giglietto's academic research on Meta's algorithms to argue against social media bias and misinformation.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "editorialedomani.it/economia/piu-visibilita-agli-estremisti-che-ai-parlamentari-limpatto-del-filtro-di-meta-sulle-elezioni-c020586e": {
+    "v": 1,
+    "cachedAt": "2026-07-18T08:52:54.895Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An investigative feature and interview with Fabio Giglietto by Domani analyzing how Meta's political content reduction algorithm impacted mainstream political visibility during elections.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "vivereurbino.it/2026/04/17/algoritmi-e-democrazia-il-caso-meta-secondo-lo-studio-di-uniurb/105436": {
+    "v": 1,
+    "cachedAt": "2026-07-18T08:53:02.167Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "Press coverage from Vivere Urbino detailing how Fabio Giglietto's research at the University of Urbino regarding Meta's political content suppression prompted European Parliament inquiries and influenced a Digital Services Act investigation.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "socialmediaandsociety.org/2026/07/panel-meta-content-library-community-roundtable-where-to-for-social-media-research-smsociety-2026": {
+    "v": 1,
+    "cachedAt": "2026-07-18T08:53:08.179Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "Fabio Giglietto is announced as a featured panelist for the Meta Content Library Community Roundtable at the International Conference on Social Media & Society, discussing social media research challenges in the post-CrowdTangle era.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "snurb.info/index.php/taxonomy/term/170": {
+    "v": 1,
+    "cachedAt": "2026-07-18T08:53:12.828Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The provided title, URL, and lack of snippet context do not contain the name 'Fabio Giglietto', making it impossible to verify a mention, person match, or recency.",
+      "description": "A taxonomy term page on snurb.info (the blog of media researcher Axel Bruns) with no snippet or text available to confirm a mention of Fabio Giglietto.",
+      "personMatch": "not_mentioned",
+      "isRecent": false
+    }
+  },
+  "open.online/2026/01/07/algoritmo-facebook-studio-universita-urbino-politica-estremisti": {
+    "v": 1,
+    "cachedAt": "2026-07-18T08:53:17.909Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A prominent news feature detailing Fabio Giglietto's research at the University of Urbino on how Meta's Facebook algorithm changes suppressed institutional politics and boosted extremist content, sparking legislative debate in Italy.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }
