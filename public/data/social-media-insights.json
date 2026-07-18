@@ -1,49 +1,49 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a strong, highly targeted professional social media presence across Bluesky, LinkedIn, and Mastodon, with a total following of 3,580. His content effectively caters to an academic and research-oriented audience, focusing heavily on computational social science, disinformation studies, and academic recruitment. Across all platforms, he enjoys healthy engagement, leveraging LinkedIn for major milestones and recruitment, and Bluesky/Mastodon for real-time academic discussion and software releases.",
+  "overallSummary": "Fabio Giglietto maintains a highly active and specialized social media presence across Bluesky, LinkedIn, and Mastodon, reaching a combined audience of 3,580 followers. His content consistently attracts strong engagement from academic and research communities, focusing primarily on computational social science, disinformation studies, and platform analysis tools. With a total of 426 engagement actions across 7 posts, his overall profile-level engagement rate stands at an impressive 11.9%, indicating a highly receptive and interactive audience.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 5.32,
-    "mostEngagingPlatform": "bluesky"
+    "averageEngagementRate": 11.9,
+    "mostEngagingPlatform": "Bluesky"
   },
   "contentThemes": [
     {
-      "theme": "Coordinated Inauthentic Behavior & Disinformation",
-      "description": "Research findings, paper publications, and event presentations surrounding the tracking of information operations, coordinated link sharing, and disinformation."
+      "theme": "Coordinated Inauthentic Behavior & Tool Releases",
+      "description": "Announcements of research tools and algorithms, specifically the CooRnet v2.0 release for detecting coordinated link sharing."
     },
     {
-      "theme": "Academic Career & Research Opportunities",
-      "description": "Announcements of new research grants, postdoctoral job openings, and PhD opportunities within his research team."
+      "theme": "Academic Career & Funding Opportunities",
+      "description": "Postings for research grants, postdoctoral vacancies, and PhD student recruitment in computational social science."
     },
     {
-      "theme": "Computational Social Science Tooling",
-      "description": "Updates and releases of software and algorithms designed for social science research, such as the CooRnet package."
+      "theme": "Disinformation & Research Methodology",
+      "description": "Sharing newly published papers, conference presentations, and theoretical discussions on platform disinformation research."
     }
   ],
   "recommendations": [
-    "Increase posting frequency on Mastodon and LinkedIn to match the consistency seen on Bluesky, as both platforms show highly receptive audiences.",
-    "Include direct links, visual graphics, or code snippets when announcing tool updates (like CooRnet v2.0) to improve click-through and repost metrics.",
-    "Leverage LinkedIn's larger follower base by sharing more bite-sized summaries or key takeaways from newly published papers to drive higher scientific engagement."
+    "Maximize the high engagement rate on Bluesky (18.4% platform-specific ER) by sharing multi-post threads that break down methodology and technical insights of newly published papers.",
+    "Utilize LinkedIn's larger follower base (1,850 followers) more frequently for career opportunity postings, as professional opportunities generate high absolute interaction volumes and comments.",
+    "Introduce visual assets, such as system architecture diagrams for CooRnet or data visualizations from recent papers, to further boost click-through and sharing metrics across all platforms."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky currently delivers the highest average engagement rate (6.14%), showcasing a highly active academic community that is particularly responsive to new research papers and PhD recruitment drives.",
-    "mastodon": "Mastodon provides a highly focused niche audience interested in open science and technical tool updates like CooRnet, though content volume remains low.",
-    "linkedin": "LinkedIn is the largest platform by follower size (1,850) and excels at professional milestones (grant awards) and recruitment, driving the highest absolute number of likes and comments."
+    "bluesky": "Bluesky serves as the most interactive platform, yielding an outstanding 18.4% collective engagement rate across its posts. It is an ideal space for immediate community discussions, sharing paper publications, and student recruitment.",
+    "mastodon": "Mastodon represents a highly dedicated and technical niche, achieving a 9.1% engagement rate. Technical tool updates like CooRnet v2.0 perform well here, showing an audience that values software-level research advancements.",
+    "linkedin": "LinkedIn is the primary driver of absolute engagement metrics (180 total interactions) due to its larger reach. It behaves as a key professional channel, particularly effective for high-impact achievements like grant awards and postdoctoral hiring."
   },
   "topPerformingContent": [
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
-      "platform": "bluesky",
+      "platform": "Bluesky",
       "engagementRate": 7.37
     },
     {
-      "content": "New research opportunity for PhD students interested in computational social science. Reply for details!",
-      "platform": "bluesky",
-      "engagementRate": 5.79
+      "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
+      "platform": "LinkedIn",
+      "engagementRate": 5.78
     },
     {
-      "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
-      "platform": "linkedin",
-      "engagementRate": 5.78
+      "content": "Our team has just released v2.0 of CooRnet, with improved algorithms for detecting coordinated link sharing behavior.",
+      "platform": "Mastodon",
+      "engagementRate": 5.64
     }
   ]
 }
