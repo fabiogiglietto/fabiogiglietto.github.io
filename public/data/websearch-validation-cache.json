@@ -2390,5 +2390,44 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "vivereurbino.it/notizie/algoritmi-e-democrazia-il-caso-meta-secondo-lo-studio-di-uniurb": {
+    "v": 1,
+    "cachedAt": "2026-07-18T07:54:48.426Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "Media coverage from Vivere Urbino detailing Fabio Giglietto's research on how Meta's 2021 algorithmic changes affected the visibility of political actors on Facebook.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "open.online/2026/01/07/facebook-algoritmo-politici-estremisti-studio-universita-urbino": {
+    "v": 1,
+    "cachedAt": "2026-07-18T07:54:51.863Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.98,
+      "reason": "Validated as relevant",
+      "description": "An extensive news article detailing a study led by Fabio Giglietto from the University of Urbino on how Meta's algorithmic changes suppressed mainstream political content while increasing the visibility of extremist voices.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "socialmediaandsociety.org/smsociety-2026": {
+    "v": 1,
+    "cachedAt": "2026-07-18T07:54:55.929Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The target person Fabio Giglietto is not mentioned in the provided web page title, URL, or context.",
+      "description": "A webpage for the Social Media & Society 2026 conference, which does not contain any reference to Fabio Giglietto in the available metadata.",
+      "personMatch": "not_mentioned",
+      "isRecent": false
+    }
   }
 }

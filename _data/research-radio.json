@@ -1643,6 +1643,18 @@
       "author": "Celia Ramos, Clara Jiménez-Cruz, Pablo Hernández-Escayola",
       "doi": "10.37016/mr-2020-198",
       "own": false
+    },
+    {
+      "id": "bibtex:Bruns2026-pn",
+      "bibtexKey": "Bruns2026-pn",
+      "title": "When Platforms Lock the Doors to Research",
+      "description": "AI-generated podcast discussion.\n\nReference:\nBruns, A., & Vodden, L. (2026). The challenges of working with platform data from clean room environments. https://doi.org/10.25358/openscience-15825",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Bruns2026-pn.mp3",
+      "pubDate": "2026-07-19T13:11:17.175711+00:00",
+      "duration": "10:34",
+      "author": "Axel Bruns, Laura Vodden",
+      "doi": "10.25358/openscience-15825",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -3289,6 +3301,18 @@
       "author": "Celia Ramos, Clara Jiménez-Cruz, Pablo Hernández-Escayola",
       "doi": "10.37016/mr-2020-198",
       "own": false
+    },
+    "Bruns2026-pn": {
+      "id": "bibtex:Bruns2026-pn",
+      "bibtexKey": "Bruns2026-pn",
+      "title": "When Platforms Lock the Doors to Research",
+      "description": "AI-generated podcast discussion.\n\nReference:\nBruns, A., & Vodden, L. (2026). The challenges of working with platform data from clean room environments. https://doi.org/10.25358/openscience-15825",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Bruns2026-pn.mp3",
+      "pubDate": "2026-07-19T13:11:17.175711+00:00",
+      "duration": "10:34",
+      "author": "Axel Bruns, Laura Vodden",
+      "doi": "10.25358/openscience-15825",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -4539,9 +4563,21 @@
       "author": "Celia Ramos, Clara Jiménez-Cruz, Pablo Hernández-Escayola",
       "doi": "10.37016/mr-2020-198",
       "own": false
+    },
+    "10.25358/openscience-15825": {
+      "id": "bibtex:Bruns2026-pn",
+      "bibtexKey": "Bruns2026-pn",
+      "title": "When Platforms Lock the Doors to Research",
+      "description": "AI-generated podcast discussion.\n\nReference:\nBruns, A., & Vodden, L. (2026). The challenges of working with platform data from clean room environments. https://doi.org/10.25358/openscience-15825",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Bruns2026-pn.mp3",
+      "pubDate": "2026-07-19T13:11:17.175711+00:00",
+      "duration": "10:34",
+      "author": "Axel Bruns, Laura Vodden",
+      "doi": "10.25358/openscience-15825",
+      "own": false
     }
   },
-  "totalEpisodes": 137,
-  "lastUpdated": "2026-07-18T06:03:13.471Z",
+  "totalEpisodes": 138,
+  "lastUpdated": "2026-07-18T07:46:47.544Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
