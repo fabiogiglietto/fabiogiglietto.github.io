@@ -1,5 +1,5 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a strong, highly targeted professional presence across decentralized and professional networks (LinkedIn, Bluesky, and Mastodon) totaling 3,580 followers. Content is highly academic, focusing on computational social science, disinformation, and coordinated inauthentic behavior. Across all 7 analyzed posts, there is exceptionally high engagement relative to audience size, indicating a deeply invested and relevant audience of peers and researchers.",
+  "overallSummary": "Fabio Giglietto maintains a strong, multi-platform professional presence with a total follower base of 3,580. His content highly resonates within the academic and computational social science communities, focusing on disinformation, coordinated behavior, and research opportunities. Engagement is robust across all channels, driven by milestone announcements such as new publications, software releases, and hiring opportunities.",
   "engagementMetrics": {
     "totalFollowers": 3580,
     "averageEngagementRate": 5.32,
@@ -7,28 +7,27 @@
   },
   "contentThemes": [
     {
-      "theme": "Coordinated Inauthentic Behavior & Disinformation",
-      "description": "Research updates, tool releases (CooRnet v2.0), and conference announcements focusing on computational methods to detect coordinated social media sharing."
+      "theme": "Coordinated Behavior & Disinformation",
+      "description": "Discussion and research updates on coordinated link sharing, CooRnet software updates, and platform-wide disinformation campaigns."
     },
     {
-      "theme": "Academic Career Opportunities",
-      "description": "Job listings and research opportunities for Postdoc and PhD candidates in computational social science."
+      "theme": "Academic & Research Opportunities",
+      "description": "Recruitment posts for postdoc positions and research opportunities for PhD students in computational social science."
     },
     {
-      "theme": "Research Funding & Milestones",
-      "description": "Announcements regarding major milestones such as newly awarded research grants and publication of new academic papers."
+      "theme": "Research Milestones",
+      "description": "Announcements of newly published papers, research grants, and upcoming conference presentations."
     }
   ],
   "recommendations": [
-    "Leverage Bluesky's high sharing culture (reposts) to amplify recruitment drives and call for papers.",
-    "Include direct links to publication repositories or project websites in LinkedIn posts to capitalize on high visibility and drive traffic.",
-    "Utilize Mastodon for deep technical discussions and algorithm documentation, which resonates well with its developer and academic community.",
-    "Maintain a consistent cross-posting schedule, ensuring tone is adapted (more formal on LinkedIn, conversational on Bluesky and Mastodon)."
+    "Increase posting frequency on LinkedIn to maximize the reach of its larger follower base (1,850 followers).",
+    "Leverage Bluesky's high interaction rates by initiating discussions and asking open-ended questions related to research methodology.",
+    "Include direct links to publications and the CooRnet tool on Mastodon and Bluesky to convert engagement into platform traffic."
   ],
   "platformInsights": {
-    "bluesky": "Strongest relative engagement (avg. 6.14% ER). Users are highly collaborative, as shown by high repost-to-like ratios, making it the best platform for spreading news rapidly.",
-    "mastodon": "Niche but responsive tech-academic audience (avg. 4.55% ER). Very receptive to specific open-source tool updates like CooRnet.",
-    "linkedin": "Highest absolute engagement volume (avg. 90 interactions per post). Highly effective for professional networking, institutional announcements, and talent recruitment."
+    "bluesky": "Bluesky represents the most engaging platform with an average engagement rate of 6.14%, showing a strong community response to academic opportunities and publication announcements.",
+    "mastodon": "Mastodon provides steady engagement (4.55% average rate) particularly for software updates like CooRnet, serving as an effective channel for reaching niche technical audiences.",
+    "linkedin": "LinkedIn generates the highest absolute volume of engagement, proving highly effective for professional announcements like research grants (107 interactions) and postdoctoral recruitment (73 interactions)."
   },
   "topPerformingContent": [
     {
