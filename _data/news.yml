@@ -1,37 +1,53 @@
 - date: '2026-07-18'
   content: >-
-    Methodological challenges and opportunities in platform-mediated research
-    are highlighted in a series of recently curated papers. The featured work
-    addresses the complexities of working with platform data in clean room
-    environments, the political dynamics of API access, and innovative
-    open-source tools like TubeStats and TokStats designed for TikTok and
-    YouTube research.
+    As major digital platforms tighten access to their APIs, researchers are
+    actively evaluating new methodologies and infrastructure. Recent studies
+    highlight the operational challenges of utilizing 'clean room' environments
+    for platform data analysis and introduce innovative open-source sampling
+    tools like TubeStats and TokStats to enable independent, representative
+    research on YouTube and TikTok.
   url: https://doi.org/10.25358/openscience-15825
-  platforms:
-    - Mastodon
-    - BlueSky
-  toread: true
-- date: '2026-07-14'
-  content: >-
-    A collection of newly highlighted studies explores the evolving intersection
-    of generative AI and public discourse. The research spans multiple facets of
-    this transformation, analyzing how conversational AI shifts user beliefs on
-    contested societal issues, its strategic deployment for propaganda in
-    digitally authoritarian contexts, and how audiences perceive the credibility
-    of AI-assisted news.
-  url: https://doi.org/10.1177/26339137261459441
   platforms:
     - Mastodon
     - BlueSky
   toread: true
 - date: '2026-07-18'
   content: >-
-    Recent research spotlighted on social media delves into the systemic threats
-    facing modern democratic processes and election integrity. The selected
-    publications examine how informational pathways and misinformation shape
-    trust in election results, the structural limitations of moderation features
-    like Community Notes, and how media narratives drive political polarization.
+    The complex relationship between digital misinformation and democratic
+    integrity continues to drive communication research. Recent scholarly work
+    investigates how distinct informational pathways shape citizens' trust in
+    election results, critiques the design of crowdsourced moderation systems
+    like Community Notes for potentially undermoderating polarizing content, and
+    proposes 'narrative monitoring' as an effective defense against strategic
+    disinformation campaigns.
   url: https://doi.org/10.1080/17457289.2026.2701896
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
+- date: '2026-07-14'
+  content: >-
+    The societal impact of generative artificial intelligence on public
+    discourse and trust is undergoing intense academic scrutiny. New empirical
+    research demonstrates how conversational AI agents can shift the core
+    beliefs of skeptics on contested policy issues, maps the rising threat of
+    generative propaganda in weakened democracies, and analyzes how public trust
+    varies between AI-generated and human-assisted journalism.
+  url: https://doi.org/10.1177/26339137261459441
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
+- date: '2026-07-07'
+  content: >-
+    Investigating the mechanics of state-sponsored influence, recent comparative
+    studies analyze the dual objectives of Russian state media propaganda during
+    the Russo-Ukrainian war. This research aligns with longer-term analyses
+    mapping cross-national information attacks, including a two-decade
+    retrospective on state-aligned troll behaviors and coordinated digital
+    interference.
+  url: >-
+    https://scholar.google.com/scholar?q=Selling%20war%20at%20home%20and%20abroad%3A%20The%20dual%20objective%20of%20state%20media%20propaganda%20in%20the%20Russo-Ukrainian%20war
   platforms:
     - Mastodon
     - BlueSky
