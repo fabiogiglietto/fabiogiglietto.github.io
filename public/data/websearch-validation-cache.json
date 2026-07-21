@@ -2858,5 +2858,70 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "editorialedomani.it/politica/piu-visibilita-agli-estremisti-che-ai-parlamentari-limpatto-del-filtro-di-meta-sulle-elezioni-m9d7sc8f": {
+    "v": 1,
+    "cachedAt": "2026-07-21T07:47:59.572Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 1,
+      "reason": "N/A",
+      "description": "An article in the national Italian newspaper Domani discussing Fabio Giglietto's study on how Meta's political content filters affected the visibility of mainstream politicians versus extremist groups.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "uniurb.it/novita-ed-eventi/algoritmi-e-democrazia-il-caso-meta-secondo-lo-studio-uniurb-che-ha-avviato-un-interrogazione-al-parlamento-europeo": {
+    "v": 1,
+    "cachedAt": "2026-07-21T07:48:05.448Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 1,
+      "reason": "Highly relevant university press coverage detailing Professor Giglietto's impactful research on Meta's algorithms and political visibility.",
+      "description": "An article from the University of Urbino detailing Professor Fabio Giglietto's research on Meta's algorithm changes and their impact on the visibility of Italian politicians, which sparked an EU investigation.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "open.online/2026/01/07/facebook-algoritmo-studio-universita-urbino-politica-estremisti": {
+    "v": 1,
+    "cachedAt": "2026-07-21T07:48:14.929Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.3,
+      "reason": "The full name 'Fabio Giglietto' does not appear in the title, URL, or context (which only mentions 'Giglietto's' and 'università di Urbino').",
+      "description": "An Italian news report from Open discussing a study from the University of Urbino regarding how Facebook's algorithm impacts political communication and favors extremist narratives.",
+      "personMatch": "not_mentioned",
+      "isRecent": true
+    }
+  },
+  "podcasts.apple.com/us/podcast/research-radio/id1714571999": {
+    "v": 1,
+    "cachedAt": "2026-07-21T07:48:20.058Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.9,
+      "reason": "Validated as relevant",
+      "description": "The Apple Podcasts feed for Fabio Giglietto's 'Research Radio' podcast, featuring AI-generated audio summaries of complex academic papers in computational social science and political communication.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "verdisinistra.it/referendum-bonelli-e-fratoianni-avs-scrivono-al-presidente-agcom-preoccupati-per-le-fake-news-veicolate-sui-social-chiesto-incontro-piccolotti-inquietante-che-tecnologie-opache-abbia-cosi": {
+    "v": 1,
+    "cachedAt": "2026-07-21T07:48:24.195Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A political news release detailing a formal request to Agcom that cites Professor Fabio Giglietto's research on Meta's political content reduction policy and its impact on Italian parliamentarians' visibility.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }
