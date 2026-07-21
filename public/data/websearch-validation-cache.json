@@ -2923,5 +2923,70 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "podcasts.apple.com/us/podcast/research-radio/id1747805167": {
+    "v": 1,
+    "cachedAt": "2026-07-21T08:33:20.535Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An AI-curated science podcast by Fabio Giglietto that utilizes advanced AI tools to discuss computational social science, misinformation, and digital platform analysis.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "sociocybernetics.org/conference/19th-international-conference-of-sociocybernetics": {
+    "v": 1,
+    "cachedAt": "2026-07-21T08:33:24.331Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": true,
+      "relevanceScore": 0.3,
+      "reason": "The content is not recent, as the 19th International Conference of Sociocybernetics in Oaxaca, Mexico was held in June 2018.",
+      "description": "An event announcement listing Fabio Giglietto of the University of Urbino 'Carlo Bo' as a member of the organizing committee for the 19th International Conference of Sociocybernetics.",
+      "personMatch": "confirmed",
+      "isRecent": false
+    }
+  },
+  "open.online/2026/01/07/facebook-algoritmo-politica-estremisti-studio-urbino": {
+    "v": 1,
+    "cachedAt": "2026-07-21T08:33:29.599Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.98,
+      "reason": "Validated as relevant",
+      "description": "Media coverage of a study by Fabio Giglietto and his team at the University of Urbino analyzing how Facebook's algorithm suppresses mainstream politics while boosting extremist content.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-b6b3e8a7": {
+    "v": 1,
+    "cachedAt": "2026-07-21T08:33:33.596Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.98,
+      "reason": "Validated as relevant",
+      "description": "An Italian news article reporting on a significant study led by Professor Fabio Giglietto at the University of Urbino regarding how Meta's algorithm affects political content reach, which subsequently triggered a European Parliament inquiry.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "icahdq.org": {
+    "v": 1,
+    "cachedAt": "2026-07-21T08:33:37.884Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "Official program announcement for the 2026 International Communication Association (ICA) Annual Conference, listing Professor Fabio Giglietto as a featured speaker on digital media and political communication.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }

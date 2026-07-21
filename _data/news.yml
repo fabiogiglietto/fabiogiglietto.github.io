@@ -1,43 +1,46 @@
-- date: '2026-07-18'
-  content: >-
-    A new methodological study by Axel Bruns and Laura Vodden explores the
-    practical and systemic challenges researchers face when working with
-    platform data inside restricted clean room environments, highlighting
-    critical implications for open science.
-  url: https://doi.org/10.25358/openscience-15825
-  platforms:
-    - Mastodon
-    - BlueSky
-  toread: true
 - date: '2026-07-02'
   content: >-
-    In a study published in Science Advances, researchers Paul Bouchaud and
-    Pedro Ramaciotti analyze X's Community Notes, demonstrating how the system's
-    collaborative moderation design inherently undermoderates polarizing
-    content, creating potential risks during elections.
-  url: https://doi.org/10.1126/sciadv.aee6932
+    A newly published study in Science Advances investigates how crowdsourced
+    moderation systems like X's Community Notes function during elections.
+    Authors Paul Bouchaud and Pedro Ramaciotti argue that the system's design
+    inherently undermoderates highly polarizing content, posing significant
+    risks to the integrity of democratic electoral processes.
+  url: https://aoir.social/@fabiogiglietto/116848735402994028
   platforms:
     - Mastodon
     - BlueSky
   toread: true
-- date: '2026-07-01'
+- date: '2026-07-18'
   content: >-
-    Under the regulatory shifts of the Digital Services Act (DSA), Anja Bechmann
-    proposes a new conceptual framework in Political Communication that urges
-    researchers to look beyond traditional causal effects and treat platform
-    collective behavior as core democratic infrastructure.
-  url: https://doi.org/10.1080/10584609.2026.2679475
+    Methodological hurdles in platform governance research are the focus of a
+    new paper by Axel Bruns and Laura Vodden. The study details the practical
+    and analytical challenges academics encounter when working with platform
+    data restricted to secure, clean room environments.
+  url: https://aoir.social/@fabiogiglietto/116939450343343743
   platforms:
     - Mastodon
     - BlueSky
   toread: true
-- date: '2026-07-01'
+- date: '2026-07-14'
   content: >-
-    A newly proposed multilevel framework by Jiyoun Suk and Yini Zhang mapping
-    the transition from mass media to generative AI explores how trust in
-    emerging technologies is negotiated across individual, social, and
-    institutional layers.
-  url: https://doi.org/10.1080/08838151.2026.2694048
+    To address the persistent difficulty of extracting representative data from
+    black-box video platforms, a research team has developed TubeStats and
+    TokStats. These open-source tools facilitate the generation of random,
+    systematic samples from YouTube and TikTok, offering a significant boon for
+    digital media researchers.
+  url: https://aoir.social/@fabiogiglietto/116916978067512949
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
+- date: '2026-07-08'
+  content: >-
+    Exploring the intersection of emerging technology and state control, a
+    comparative study by Gabrielle D. Beacken, Inga K. Trauthig, and Samuel C.
+    Woolley sheds light on how generative AI is utilized for propaganda. The
+    research analyzes deployments across six democratically weakened nations to
+    map the evolving tactics of digital authoritarianism.
+  url: https://aoir.social/@fabiogiglietto/116883181119840106
   platforms:
     - Mastodon
     - BlueSky

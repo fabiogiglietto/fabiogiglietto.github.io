@@ -1,33 +1,33 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a highly cohesive, professional presence across LinkedIn, Bluesky, and Mastodon, focusing on computational social science, disinformation, and academic recruitment. His content enjoys strong engagement across all platforms, with announcements regarding research funding, tools like CooRnet, and academic opportunities generating high relative interaction rates.",
+  "overallSummary": "Fabio Giglietto maintains a strong, highly targeted academic presence across Bluesky, LinkedIn, and Mastodon, with a total follower base of 3,580. His content effectively reaches researchers, students, and professionals in computational social science, generating solid engagement particularly around new publications, software releases like CooRnet, and academic career opportunities.",
   "engagementMetrics": {
     "totalFollowers": 3580,
     "averageEngagementRate": 5.32,
-    "mostEngagingPlatform": "Bluesky"
+    "mostEngagingPlatform": "bluesky"
   },
   "contentThemes": [
     {
       "theme": "Coordinated Inauthentic Behavior & Disinformation",
-      "description": "Research updates, paper publications, and event announcements focused on computational methods for analyzing coordinated campaigns on social media."
+      "description": "Research updates, paper publications, and event presentations on detecting coordinated networks and social media manipulation."
     },
     {
-      "theme": "Academic Recruitment & Mentorship",
-      "description": "Job openings, postdoctoral roles, and research opportunities for PhD students within the research team."
+      "theme": "Academic Recruiting & Career Opportunities",
+      "description": "Job openings, postdoctoral roles, and PhD opportunities within the computational social science research team."
     },
     {
-      "theme": "Research Tools & Methodology",
-      "description": "Announcements related to updates of proprietary research tools, such as the CooRnet package."
+      "theme": "Research Funding & Tool Infrastructure",
+      "description": "Announcements regarding major research grants and updates on open-source tools like CooRnet."
     }
   ],
   "recommendations": [
-    "Leverage Bluesky's highly active academic community by publishing visual previews of new research findings and tools to further boost interaction.",
-    "Utilize external links, hashtags, and media elements in LinkedIn hiring posts to maximize reach beyond the immediate follower network.",
-    "Increase posting frequency on Mastodon to build deeper, continuous engagement with the decentralized scholarly community."
+    "Leverage Bluesky's highly active academic community by continuing to share student opportunities and publication drafts, as it yields the highest relative engagement rate.",
+    "Increase visual media usage on LinkedIn, such as slide decks or infographics, to capture more attention from its larger, professional audience.",
+    "Cross-promote major research tool updates across all three networks using platform-specific hashtags to capture niche technical audiences."
   ],
   "platformInsights": {
-    "bluesky": "With an average engagement rate of 6.14%, Bluesky is the most interactive platform, proving highly receptive to research paper publications and recruitment opportunities.",
-    "mastodon": "Mastodon yields a 4.55% average engagement rate; it serves as a valuable niche channel for developer-focused updates but has lower overall interaction volume.",
-    "linkedin": "Accounting for over half of the total follower base, LinkedIn delivers an average engagement rate of 4.87%, serving as the premier network for professional milestone announcements and job offerings."
+    "bluesky": "Bluesky currently delivers the highest average engagement rate (6.14%), indicating a highly receptive and dense network of academic peers who actively repost and interact with publication news.",
+    "mastodon": "Mastodon provides steady engagement (4.55% average ER) from a highly technical audience, making it ideal for software releases and methodological discussions.",
+    "linkedin": "LinkedIn has the largest audience, driving the highest absolute volume of interactions (likes and comments) for professional milestones such as grants and recruitment."
   },
   "topPerformingContent": [
     {

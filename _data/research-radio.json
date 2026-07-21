@@ -1667,6 +1667,30 @@
       "author": "Patrícia Rossini, Camila Mont'Alverne, Antonis Kalogeropoulos",
       "doi": "10.1080/17457289.2026.2701896",
       "own": false
+    },
+    {
+      "id": "bibtex:Rogers2026-cy",
+      "bibtexKey": "Rogers2026-cy",
+      "title": "Bridging the Fringe: How Borderline Content Secretly Shapes Online Influence",
+      "description": "AI-generated podcast discussion.\n\nReference:\nRogers, R., & Koronska, K. (2026). Beyond verification| post-truth spaces: Studying authenticity and influence on the internet. https://doi.org/10.65476/1fw44702",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Rogers2026-cy.mp3",
+      "pubDate": "2026-07-21T13:11:17.175711+00:00",
+      "duration": "11:31",
+      "author": "Richard Rogers, Kamila Koronska",
+      "doi": "10.65476/1fw44702",
+      "own": false
+    },
+    {
+      "id": "bibtex:Eady2025-vm",
+      "bibtexKey": "Eady2025-vm",
+      "title": "Safe Seats and Extreme Feeds: Who's Really Polarizing Our Politics",
+      "description": "AI-generated podcast discussion.\n\nReference:\nEady, G., Bonneau, R., Tucker, J. A., & Nagler, J. (2025). News sharing on social media: Mapping the ideology of news media, politicians, and the mass public. https://doi.org/10.31219/osf.io/ch8gj",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Eady2025-vm.mp3",
+      "pubDate": "2026-07-22T13:11:17.175711+00:00",
+      "duration": "11:59",
+      "author": "Gregory Eady, Richard Bonneau, Joshua A Tucker, Jonathan Nagler",
+      "doi": "10.31219/osf.io/ch8gj",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -3337,6 +3361,30 @@
       "author": "Patrícia Rossini, Camila Mont'Alverne, Antonis Kalogeropoulos",
       "doi": "10.1080/17457289.2026.2701896",
       "own": false
+    },
+    "Rogers2026-cy": {
+      "id": "bibtex:Rogers2026-cy",
+      "bibtexKey": "Rogers2026-cy",
+      "title": "Bridging the Fringe: How Borderline Content Secretly Shapes Online Influence",
+      "description": "AI-generated podcast discussion.\n\nReference:\nRogers, R., & Koronska, K. (2026). Beyond verification| post-truth spaces: Studying authenticity and influence on the internet. https://doi.org/10.65476/1fw44702",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Rogers2026-cy.mp3",
+      "pubDate": "2026-07-21T13:11:17.175711+00:00",
+      "duration": "11:31",
+      "author": "Richard Rogers, Kamila Koronska",
+      "doi": "10.65476/1fw44702",
+      "own": false
+    },
+    "Eady2025-vm": {
+      "id": "bibtex:Eady2025-vm",
+      "bibtexKey": "Eady2025-vm",
+      "title": "Safe Seats and Extreme Feeds: Who's Really Polarizing Our Politics",
+      "description": "AI-generated podcast discussion.\n\nReference:\nEady, G., Bonneau, R., Tucker, J. A., & Nagler, J. (2025). News sharing on social media: Mapping the ideology of news media, politicians, and the mass public. https://doi.org/10.31219/osf.io/ch8gj",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Eady2025-vm.mp3",
+      "pubDate": "2026-07-22T13:11:17.175711+00:00",
+      "duration": "11:59",
+      "author": "Gregory Eady, Richard Bonneau, Joshua A Tucker, Jonathan Nagler",
+      "doi": "10.31219/osf.io/ch8gj",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -4611,9 +4659,33 @@
       "author": "Patrícia Rossini, Camila Mont'Alverne, Antonis Kalogeropoulos",
       "doi": "10.1080/17457289.2026.2701896",
       "own": false
+    },
+    "10.65476/1fw44702": {
+      "id": "bibtex:Rogers2026-cy",
+      "bibtexKey": "Rogers2026-cy",
+      "title": "Bridging the Fringe: How Borderline Content Secretly Shapes Online Influence",
+      "description": "AI-generated podcast discussion.\n\nReference:\nRogers, R., & Koronska, K. (2026). Beyond verification| post-truth spaces: Studying authenticity and influence on the internet. https://doi.org/10.65476/1fw44702",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Rogers2026-cy.mp3",
+      "pubDate": "2026-07-21T13:11:17.175711+00:00",
+      "duration": "11:31",
+      "author": "Richard Rogers, Kamila Koronska",
+      "doi": "10.65476/1fw44702",
+      "own": false
+    },
+    "10.31219/osf.io/ch8gj": {
+      "id": "bibtex:Eady2025-vm",
+      "bibtexKey": "Eady2025-vm",
+      "title": "Safe Seats and Extreme Feeds: Who's Really Polarizing Our Politics",
+      "description": "AI-generated podcast discussion.\n\nReference:\nEady, G., Bonneau, R., Tucker, J. A., & Nagler, J. (2025). News sharing on social media: Mapping the ideology of news media, politicians, and the mass public. https://doi.org/10.31219/osf.io/ch8gj",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Eady2025-vm.mp3",
+      "pubDate": "2026-07-22T13:11:17.175711+00:00",
+      "duration": "11:59",
+      "author": "Gregory Eady, Richard Bonneau, Joshua A Tucker, Jonathan Nagler",
+      "doi": "10.31219/osf.io/ch8gj",
+      "own": false
     }
   },
-  "totalEpisodes": 139,
-  "lastUpdated": "2026-07-21T07:40:19.804Z",
+  "totalEpisodes": 141,
+  "lastUpdated": "2026-07-21T08:25:17.784Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
