@@ -3066,5 +3066,70 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-7ee82522": {
+    "v": 1,
+    "cachedAt": "2026-07-22T08:33:29.112Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A news article detailing a major study led by Fabio Giglietto at the University of Urbino, which examines how Meta's algorithms and political content policies impacted the visibility of Italian politicians on Facebook.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "open.online/2026/01/07/facebook-algoritmo-politica-ufficiale-estremisti-studio-urbino": {
+    "v": 1,
+    "cachedAt": "2026-07-22T08:33:32.987Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 1,
+      "reason": "Validated as relevant",
+      "description": "An in-depth news report from open.online analyzing Fabio Giglietto's study on the asymmetric effects of Facebook's recommendation algorithms on political discourse.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "socialmediaandsociety.org/schedule": {
+    "v": 1,
+    "cachedAt": "2026-07-22T08:33:37.870Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "The mention is highly relevant as it places Professor Giglietto on an expert panel at a major social media research conference discussing post-CrowdTangle data access.",
+      "description": "Professor Fabio Giglietto is featured as an expert panelist at the SMSociety 2026 conference roundtable, discussing social media research methodologies and data access alternatives after the CrowdTangle shutdown.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "socialmediaandsociety.org/2024/conference-schedule": {
+    "v": 1,
+    "cachedAt": "2026-07-22T08:33:42.645Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The target name 'Fabio Giglietto' is not mentioned in the provided title, URL, or context snippet.",
+      "description": "Conference schedule for the 2024 Social Media & Society conference.",
+      "personMatch": "not_mentioned",
+      "isRecent": false
+    }
+  },
+  "editorialedomani.it/politica/piu-visibilita-agli-estremisti-che-ai-parlamentari-limpatto-del-filtro-di-meta-sulle-elezioni-v7d8p1l0": {
+    "v": 1,
+    "cachedAt": "2026-07-22T08:33:47.730Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An article in Domani analyzing Fabio Giglietto's research on how Meta's political content filter restricted the reach of mainstream democratic representatives while inadvertently boosting extremist channels during elections.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }
