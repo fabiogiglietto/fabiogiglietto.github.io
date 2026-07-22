@@ -1,54 +1,47 @@
-- date: '2026-07-21'
+- date: '2026-07-22'
   content: >-
-    How digital environments shape democratic stability is the focus of several
-    curated studies on election integrity and online polarization. Key findings
-    address how specific informational pathways and misinformation erode public
-    trust in election results, the systemic design vulnerabilities that cause
-    platforms' Community Notes to undermoderate polarizing content during
-    elections, and the rise of post-truth digital spaces where authenticity is
-    negotiated beyond traditional fact-verification.
-  url: https://aoir.social/@fabiogiglietto/116956791169197559
-  platforms:
-    - Mastodon
-    - BlueSky
-  toread: true
-- date: '2026-07-14'
-  content: >-
-    The societal impact of generative artificial intelligence is being mapped
-    through a growing body of research on trust and public discourse. Recent
-    literature evaluates how conversational AI can shift beliefs and policy
-    support among skeptics on highly contested issues, provides a multilevel
-    framework for understanding trust in these new technologies, and measures
-    how audience perceptions of news quality change when content is AI-generated
-    versus AI-assisted.
-  url: https://aoir.social/@fabiogiglietto/116916978635429067
+    A new co-authored study published in Information, Communication & Society
+    examines partisan community dynamics on social media. The paper, 'Measuring
+    partisan community dynamics: a longitudinal analysis of affective engagement
+    in pro-Bolsonaro Facebook networks,' offers a longitudinal analysis of how
+    affective engagement shapes political networks on Facebook.
+  url: https://doi.org/10.1080/1369118x.2026.2696929
   platforms:
     - Mastodon
     - BlueSky
   toread: true
 - date: '2026-07-18'
   content: >-
-    Navigating the complexities of platform-mediated research remains a critical
-    challenge for social scientists. Crucial updates in methodology include
-    critiques of the politics of API access, practical insights into the
-    limitations of working with platform data in restricted clean room
-    environments, and the release of new open-source research tools like
-    TubeStats and TokStats designed to extract random samples from YouTube and
-    TikTok.
-  url: https://aoir.social/@fabiogiglietto/116939450343343743
+    Methodological challenges in the era of restricted API access are the focus
+    of a recent paper by Axel Bruns and Laura Vodden. The authors evaluate the
+    practical hurdles researchers face when analyzing social media data within
+    secure 'clean room' environments, pointing to crucial implications for
+    independent platform oversight.
+  url: https://doi.org/10.25358/openscience-15825
   platforms:
     - Mastodon
     - BlueSky
   toread: true
-- date: '2026-07-08'
+- date: '2026-07-02'
   content: >-
-    State-sponsored propaganda and rhetorical manipulation are undergoing deep
-    structural shifts worldwide. Recent studies dissect the dual-objective
-    strategies used by state media during the Russo-Ukrainian war, the strategic
-    use of 'fake news' as a delegitimization weapon within mainstream Italian
-    news outlets, and the compounding threats of generative AI and digital
-    authoritarianism in democratically weakened nations.
-  url: https://aoir.social/@fabiogiglietto/116883181119840106
+    Newly released research in Science Advances reveals that crowdsourced
+    fact-checking systems may fall short during elections. The study
+    demonstrates how X's Community Notes feature, by design, undermoderates
+    highly polarizing content, highlighting potential vulnerabilities in
+    platform-led democratic safeguards.
+  url: https://doi.org/10.1126/sciadv.aee6932
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
+- date: '2026-07-01'
+  content: >-
+    An investigation into public trust in automated journalism suggests that AI
+    involvement affects reader engagement. Published in Scientific Reports, the
+    paper analyzes how audience perceptions of news quality and their
+    willingness to engage change when encountering AI-generated versus
+    AI-assisted articles.
+  url: https://doi.org/10.1038/s41598-026-58743-0
   platforms:
     - Mastodon
     - BlueSky
