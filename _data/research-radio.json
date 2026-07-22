@@ -1691,6 +1691,30 @@
       "author": "Gregory Eady, Richard Bonneau, Joshua A Tucker, Jonathan Nagler",
       "doi": "10.31219/osf.io/ch8gj",
       "own": false
+    },
+    {
+      "id": "bibtex:Marino2026-he",
+      "bibtexKey": "Marino2026-he",
+      "title": "Echo Chambers Under Siege: When Partisan Communities Crack",
+      "description": "AI-generated podcast discussion.\n\nReference:\nMarino, G., Paroni, B., & Giglietto, F. (2026). Measuring partisan community dynamics: a longitudinal analysis of affective engagement in pro-Bolsonaro Facebook networks. https://doi.org/10.1080/1369118x.2026.2696929",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Marino2026-he.mp3",
+      "pubDate": "2026-07-23T13:11:17.175711+00:00",
+      "duration": "9:47",
+      "author": "Giada Marino, Bruna Paroni, Fabio Giglietto",
+      "doi": "10.1080/1369118x.2026.2696929",
+      "own": false
+    },
+    {
+      "id": "bibtex:Marino2026-14665e93",
+      "bibtexKey": "Marino2026-14665e93",
+      "title": "Echo Chambers Aren't Forever: What Happened to Brazil's Political Communities",
+      "description": "AI-generated podcast discussion.\n\nReference:\nMarino, G., Paroni, B., & Giglietto, F. (2026). Measuring partisan community dynamics: a longitudinal analysis of affective engagement in pro-Bolsonaro Facebook networks. https://doi.org/10.1080/1369118X.2026.2696929",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Marino2026-14665e93.mp3",
+      "pubDate": "2026-07-24T13:11:17.175711+00:00",
+      "duration": "11:15",
+      "author": "Giada Marino, Bruna Paroni, Fabio Giglietto",
+      "doi": "10.1080/1369118X.2026.2696929",
+      "own": true
     }
   ],
   "episodesByBibtexKey": {
@@ -3385,6 +3409,30 @@
       "author": "Gregory Eady, Richard Bonneau, Joshua A Tucker, Jonathan Nagler",
       "doi": "10.31219/osf.io/ch8gj",
       "own": false
+    },
+    "Marino2026-he": {
+      "id": "bibtex:Marino2026-he",
+      "bibtexKey": "Marino2026-he",
+      "title": "Echo Chambers Under Siege: When Partisan Communities Crack",
+      "description": "AI-generated podcast discussion.\n\nReference:\nMarino, G., Paroni, B., & Giglietto, F. (2026). Measuring partisan community dynamics: a longitudinal analysis of affective engagement in pro-Bolsonaro Facebook networks. https://doi.org/10.1080/1369118x.2026.2696929",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Marino2026-he.mp3",
+      "pubDate": "2026-07-23T13:11:17.175711+00:00",
+      "duration": "9:47",
+      "author": "Giada Marino, Bruna Paroni, Fabio Giglietto",
+      "doi": "10.1080/1369118x.2026.2696929",
+      "own": false
+    },
+    "Marino2026-14665e93": {
+      "id": "bibtex:Marino2026-14665e93",
+      "bibtexKey": "Marino2026-14665e93",
+      "title": "Echo Chambers Aren't Forever: What Happened to Brazil's Political Communities",
+      "description": "AI-generated podcast discussion.\n\nReference:\nMarino, G., Paroni, B., & Giglietto, F. (2026). Measuring partisan community dynamics: a longitudinal analysis of affective engagement in pro-Bolsonaro Facebook networks. https://doi.org/10.1080/1369118X.2026.2696929",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Marino2026-14665e93.mp3",
+      "pubDate": "2026-07-24T13:11:17.175711+00:00",
+      "duration": "11:15",
+      "author": "Giada Marino, Bruna Paroni, Fabio Giglietto",
+      "doi": "10.1080/1369118X.2026.2696929",
+      "own": true
     }
   },
   "episodesByDoi": {
@@ -4683,9 +4731,21 @@
       "author": "Gregory Eady, Richard Bonneau, Joshua A Tucker, Jonathan Nagler",
       "doi": "10.31219/osf.io/ch8gj",
       "own": false
+    },
+    "10.1080/1369118x.2026.2696929": {
+      "id": "bibtex:Marino2026-14665e93",
+      "bibtexKey": "Marino2026-14665e93",
+      "title": "Echo Chambers Aren't Forever: What Happened to Brazil's Political Communities",
+      "description": "AI-generated podcast discussion.\n\nReference:\nMarino, G., Paroni, B., & Giglietto, F. (2026). Measuring partisan community dynamics: a longitudinal analysis of affective engagement in pro-Bolsonaro Facebook networks. https://doi.org/10.1080/1369118X.2026.2696929",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Marino2026-14665e93.mp3",
+      "pubDate": "2026-07-24T13:11:17.175711+00:00",
+      "duration": "11:15",
+      "author": "Giada Marino, Bruna Paroni, Fabio Giglietto",
+      "doi": "10.1080/1369118X.2026.2696929",
+      "own": true
     }
   },
-  "totalEpisodes": 141,
-  "lastUpdated": "2026-07-22T09:17:42.934Z",
+  "totalEpisodes": 143,
+  "lastUpdated": "2026-07-22T09:28:00.191Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
