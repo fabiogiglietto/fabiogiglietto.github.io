@@ -1,33 +1,33 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a strong, highly targeted academic and professional presence across LinkedIn, Bluesky, and Mastodon. His content effectively bridges the gap between academic research, computational social science methods, and tool development, generating high-quality engagement from specialized audiences interested in disinformation and coordinated behavior studies.",
+  "overallSummary": "Fabio Giglietto maintains a strong, highly targeted academic presence across Mastodon, LinkedIn, and Bluesky, focusing on computational social science, disinformation, and coordinated inauthentic behavior. With a total follower base of 3,580, LinkedIn serves as the primary driver of absolute engagement and reach, particularly for professional milestones and recruitment. However, Bluesky and Mastodon exhibit significantly higher relative engagement rates, indicating a highly active and specialized peer community on these decentralized platforms.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 5.18,
+    "averageEngagementRate": 5.32,
     "mostEngagingPlatform": "Bluesky"
   },
   "contentThemes": [
     {
       "theme": "Coordinated Inauthentic Behavior & Disinformation",
-      "description": "Research updates, paper publications, and presentations focused on detecting coordinated link sharing and information operations."
+      "description": "Research updates, software releases (like CooRnet v2.0), and conference presentations focusing on identifying coordinated link-sharing and information operations."
     },
     {
-      "theme": "Research Software and Tools",
-      "description": "Announcements regarding tool releases, such as CooRnet v2.0, focusing on computational methods."
+      "theme": "Academic Career & Research Opportunities",
+      "description": "Active recruitment posts for postdoctoral researchers and research opportunities for PhD students in computational social science."
     },
     {
-      "theme": "Academic Recruitment and Opportunities",
-      "description": "Hiring posts for postdocs and calls for PhD students to join computational social science research initiatives."
+      "theme": "Academic Milestones & Grants",
+      "description": "Announcements regarding newly awarded research grants, paper publications, and upcoming presentations at specialized academic conferences."
     }
   ],
   "recommendations": [
-    "Leverage Bluesky's highly collaborative network for academic recruitment, as PhD and research opportunity posts generate exceptional repost-to-like ratios.",
-    "Cross-promote major software releases like CooRnet on LinkedIn to reach a broader audience of professionals and institutional stakeholders.",
-    "Incorporate visual elements, such as charts or tool interface screenshots, to further boost the engagement rates of technical posts on Mastodon."
+    "Leverage LinkedIn's larger follower base by increasing posting frequency, specifically translating specialized research findings into broader professional insights.",
+    "Capitalize on Bluesky's exceptionally high engagement rate for recruitment by sharing more details on candidate expectations and lab culture.",
+    "Include direct links to publications and code repositories on Mastodon to cater to the platform's highly technical, academic-focused user base."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky exhibits the highest relative engagement rate (6.14% average), with users highly eager to repost and share academic opportunities and newly published papers.",
-    "mastodon": "Mastodon provides a solid baseline of engagement from a technically minded audience, reacting favorably to specific software updates (CooRnet) and methodological discussions.",
-    "linkedin": "LinkedIn serves as the primary driver for broad organizational reach, yielding the highest absolute engagement for major milestones like research grants and postdoctoral job openings."
+    "bluesky": "Bluesky acts as the most engaging platform on a per-follower basis, showing exceptional interest in new publications and student opportunities, driven by a vibrant community of academic peers.",
+    "mastodon": "Based on the aoir.social instance, Mastodon serves as a highly specialized hub where technical product updates like CooRnet v2.0 receive strong, targeted engagement.",
+    "linkedin": "LinkedIn is the largest platform by follower size, achieving the highest absolute interaction volume and proving highly effective for broad professional announcements and job hiring."
   },
   "topPerformingContent": [
     {
