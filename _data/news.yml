@@ -1,8 +1,10 @@
 - date: '2026-07-22'
   content: >-
-    A new co-authored study presents a longitudinal analysis of affective
-    engagement within pro-Bolsonaro Facebook networks, offering critical
-    insights into the dynamics of online partisan communities.
+    A newly published study in Information, Communication & Society conducts a
+    longitudinal analysis of affective engagement within pro-Bolsonaro Facebook
+    networks. Co-authored by Giada Marino, Bruna Paroni, and Fabio Giglietto,
+    the paper introduces a methodology for measuring partisan community dynamics
+    through user engagement patterns on social media.
   url: https://doi.org/10.1080/1369118x.2026.2696929
   platforms:
     - Mastodon
@@ -10,9 +12,25 @@
   toread: true
 - date: '2026-07-18'
   content: >-
-    Investigating the erosion of democratic trust, a recent paper explores how
-    diverse informational pathways and misinformation combine to actively shape
-    public confidence in election results.
+    The shifting landscape of academic access to platform data is the focus of
+    several recent research recommendations. Key discussions address the
+    challenges of conducting research within 'clean room' environments, the
+    broader politics of API-mediated access, and the introduction of new
+    open-source sampling tools like TubeStats and TokStats designed to audit
+    YouTube and TikTok.
+  url: https://doi.org/10.25358/openscience-15825
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
+- date: '2026-07-18'
+  content: >-
+    Recent literature highlights explore how digital pathways and platform
+    architecture influence democratic processes. Featured papers examine the
+    impact of media narratives on digital election interference, how
+    misinformation shapes voter trust, and how platform-native moderation
+    systems, such as Community Notes, can inadvertently undermoderate polarizing
+    content during elections.
   url: https://doi.org/10.1080/17457289.2026.2701896
   platforms:
     - Mastodon
@@ -20,22 +38,12 @@
   toread: true
 - date: '2026-07-14'
   content: >-
-    Navigating the increasingly restricted landscape of academic data
-    collection, a new study analyzes platform-mediated research to critique the
-    politics of API access and how social media networks shape scientific
-    inquiry.
-  url: https://doi.org/10.1177/20539517261461463
-  platforms:
-    - Mastodon
-    - BlueSky
-  toread: true
-- date: '2026-07-02'
-  content: >-
-    Analyzing the effectiveness of crowd-sourced moderation, recent findings
-    reveal that platform systems like Community Notes, by design, systematically
-    undermoderate polarizing content and introduce critical risks during
-    elections.
-  url: https://doi.org/10.1126/sciadv.aee6932
+    The intersection of artificial intelligence and public discourse is central
+    to several newly highlighted studies. Key research investigates how
+    generative AI influences digital authoritarianism, the ways conversational
+    AI shifts skeptic beliefs on contested issues, and how audiences perceive
+    the quality of AI-generated versus AI-assisted news.
+  url: https://doi.org/10.1177/26339137261459441
   platforms:
     - Mastodon
     - BlueSky
