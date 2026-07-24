@@ -1,11 +1,12 @@
 {
-  "totalEntries": 202,
-  "lastUpdated": "2026-07-24T08:33:33.523Z",
+  "totalEntries": 204,
+  "lastUpdated": "2026-07-24T09:26:29.308Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-07-23T08:35:42.354Z"
+    "latest": "2026-07-24T09:26:29.258Z"
   },
   "byDate": {
+    "2026-07-24": 2,
     "2026-07-23": 1,
     "2026-07-18": 1,
     "2026-07-17": 1,
@@ -14,8 +15,7 @@
     "2026-07-11": 1,
     "2026-07-09": 2,
     "2026-07-08": 2,
-    "2026-07-06": 2,
-    "2026-07-04": 1
+    "2026-07-06": 2
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 52,
@@ -30,11 +30,25 @@
     "Il Sole 24 ORE": 4
   },
   "byRelevanceScore": {
-    "high": 179,
+    "high": 181,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Social media, l'Agcom avvia verifiche con la Commissione Ue sugli algoritmi di Meta. Focus sui contenuti politici",
+      "url": "https://www.milanofinanza.it/news/social-media-l-agcom-avvia-verifiche-con-la-commissione-ue-sugli-algoritmi-di-meta-focus-sui-contenuti-politici-202604141753177651",
+      "source": "milanofinanza.it",
+      "relevanceScore": 0.95,
+      "collectedAt": "2026-07-24T09:26:29.258Z"
+    },
+    {
+      "title": "Report: \"La fermata del Garante\" (April 12, 2026 Episode)",
+      "url": "https://www.rai.it/ufficiostampa/news/2026/04/Report-anticipazioni-12-aprile-2026.html",
+      "source": "rai.it",
+      "relevanceScore": 0.95,
+      "collectedAt": "2026-07-24T09:26:29.258Z"
+    },
     {
       "title": "Meta Content Library Community Roundtable: Where to for Social Media Research?",
       "url": "https://socialmediaandsociety.org/2026/07/05/smsociety-2026-conference-programme/",
@@ -55,20 +69,6 @@
       "source": "ilfattoquotidiano.it",
       "relevanceScore": 0.95,
       "collectedAt": "2026-07-17T08:16:28.220Z"
-    },
-    {
-      "title": "Disinfo Update: Civil Society Mobilises | Council of Europe Actions | MFF Budgets",
-      "url": "https://www.disinfo.eu/publications/disinfo-update-10-06-2026/",
-      "source": "disinfo.eu",
-      "relevanceScore": 0.95,
-      "collectedAt": "2026-07-14T08:10:19.264Z"
-    },
-    {
-      "title": "#SMSociety 2026 Conference Programme",
-      "url": "https://socialmediaandsociety.org/",
-      "source": "socialmediaandsociety.org",
-      "relevanceScore": 0.95,
-      "collectedAt": "2026-07-14T06:55:50.683Z"
     }
   ]
 }
