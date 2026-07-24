@@ -3534,5 +3534,44 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-b5f7918a": {
+    "v": 1,
+    "cachedAt": "2026-07-24T11:44:05.523Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An Italian news article highlighting a study by Fabio Giglietto on how Meta's algorithms and political content reduction policies affect the visibility of political figures on social media.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "open.online/2026/01/07/facebook-meta-studio-universita-urbino-politica-estremisti": {
+    "v": 1,
+    "cachedAt": "2026-07-24T11:44:11.090Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 1,
+      "reason": "The article explicitly mentions Fabio Giglietto and his research at the University of Urbino regarding social media algorithms and political content reach, matching his academic profile perfectly.",
+      "description": "A news article reporting on a landmark study led by Professor Fabio Giglietto analyzing how Facebook's algorithm policies reduced the reach of mainstream political figures while amplifying extremist content.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "uniurb.it/novita-ed-eventi/5855": {
+    "v": 1,
+    "cachedAt": "2026-07-24T11:44:16.995Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An official University of Urbino press release detailing how the investigative news program 'Report' featured Professor Fabio Giglietto's research on Meta's algorithms, sparking an inquiry in the European Parliament.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }
