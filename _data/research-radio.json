@@ -1715,6 +1715,18 @@
       "author": "Giada Marino, Bruna Paroni, Fabio Giglietto",
       "doi": "10.1080/1369118X.2026.2696929",
       "own": true
+    },
+    {
+      "id": "bibtex:Wack2026-bt",
+      "bibtexKey": "Wack2026-bt",
+      "title": "When Comments Matter More Than the Deepfake Itself",
+      "description": "AI-generated podcast discussion.\n\nReference:\nWack, M., & Prochaska, S. (2026). Making sense of AI-generated disinformation: How audience interpretations influence the impact of deepfakes in Kenya. https://doi.org/10.1177/20563051261462092",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Wack2026-bt.mp3",
+      "pubDate": "2026-07-25T13:11:17.175711+00:00",
+      "duration": "10:43",
+      "author": "Morgan Wack, Stephen Prochaska",
+      "doi": "10.1177/20563051261462092",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -3433,6 +3445,18 @@
       "author": "Giada Marino, Bruna Paroni, Fabio Giglietto",
       "doi": "10.1080/1369118X.2026.2696929",
       "own": true
+    },
+    "Wack2026-bt": {
+      "id": "bibtex:Wack2026-bt",
+      "bibtexKey": "Wack2026-bt",
+      "title": "When Comments Matter More Than the Deepfake Itself",
+      "description": "AI-generated podcast discussion.\n\nReference:\nWack, M., & Prochaska, S. (2026). Making sense of AI-generated disinformation: How audience interpretations influence the impact of deepfakes in Kenya. https://doi.org/10.1177/20563051261462092",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Wack2026-bt.mp3",
+      "pubDate": "2026-07-25T13:11:17.175711+00:00",
+      "duration": "10:43",
+      "author": "Morgan Wack, Stephen Prochaska",
+      "doi": "10.1177/20563051261462092",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -4743,9 +4767,21 @@
       "author": "Giada Marino, Bruna Paroni, Fabio Giglietto",
       "doi": "10.1080/1369118X.2026.2696929",
       "own": true
+    },
+    "10.1177/20563051261462092": {
+      "id": "bibtex:Wack2026-bt",
+      "bibtexKey": "Wack2026-bt",
+      "title": "When Comments Matter More Than the Deepfake Itself",
+      "description": "AI-generated podcast discussion.\n\nReference:\nWack, M., & Prochaska, S. (2026). Making sense of AI-generated disinformation: How audience interpretations influence the impact of deepfakes in Kenya. https://doi.org/10.1177/20563051261462092",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Wack2026-bt.mp3",
+      "pubDate": "2026-07-25T13:11:17.175711+00:00",
+      "duration": "10:43",
+      "author": "Morgan Wack, Stephen Prochaska",
+      "doi": "10.1177/20563051261462092",
+      "own": false
     }
   },
-  "totalEpisodes": 143,
-  "lastUpdated": "2026-07-24T11:36:27.546Z",
+  "totalEpisodes": 144,
+  "lastUpdated": "2026-07-25T08:03:29.672Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }

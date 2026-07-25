@@ -3573,5 +3573,57 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "verdisinistra.it": {
+    "v": 1,
+    "cachedAt": "2026-07-25T08:09:55.288Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "The mention is highly relevant as it features prominent political figures citing Fabio Giglietto's specific academic research on social media algorithms and information disorder to regulatory authorities.",
+      "description": "Media coverage of Italian political leaders writing to AGCOM, citing Fabio Giglietto's research on Meta's algorithms as evidence of systemic online visibility imbalances.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "lumsanews.it": {
+    "v": 1,
+    "cachedAt": "2026-07-25T08:09:59.048Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A news feature analyzing Professor Fabio Giglietto's research on Meta's Content Library data and the impact of Facebook's moderation filters during elections.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "open.online/2026/01/07/algoritmo-facebook-politica-estremisti-studio-urbino-giglietto": {
+    "v": 1,
+    "cachedAt": "2026-07-25T08:10:03.065Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 1,
+      "reason": "All validation criteria met successfully.",
+      "description": "An article detailing a study led by Professor Fabio Giglietto of the University of Urbino on how Facebook's algorithm impacts political content, sparking discussion on bipartisan platform regulation in Italy.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "milanofinanza.it/news/social-media-l-agcom-avvia-verifiche-con-la-commissione-ue-sugli-algoritmi-di-meta-focus-sui-contenuti-politici-202604141641001234": {
+    "v": 1,
+    "cachedAt": "2026-07-25T08:10:07.518Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 1,
+      "reason": "Validated as relevant",
+      "description": "Milano Finanza reports on Agcom initiating joint investigations with the EU Commission into Meta's algorithms, triggered by Fabio Giglietto's academic findings on political bias and visibility drops.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }
