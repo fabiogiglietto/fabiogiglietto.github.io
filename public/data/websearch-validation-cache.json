@@ -3703,5 +3703,57 @@
       "personMatch": "not_mentioned",
       "isRecent": false
     }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-7cb19266": {
+    "v": 1,
+    "cachedAt": "2026-07-26T09:17:07.748Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 1,
+      "reason": "Validated as relevant",
+      "description": "An Italian news article covering a study led by sociologist Fabio Giglietto on how Meta's algorithms reduced the Facebook visibility of mainstream Italian parliamentarians.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "snurb.info/node/3169": {
+    "v": 1,
+    "cachedAt": "2026-07-26T09:17:16.377Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": true,
+      "relevanceScore": 0.7,
+      "reason": "The content was published in May 2024, which is outside the 6-month recency window.",
+      "description": "An announcement for a special 'twitter' issue of M/C Journal, highlighting Fabio Giglietto as a contributing researcher discussing the evolution of social media data access.",
+      "personMatch": "confirmed",
+      "isRecent": false
+    }
+  },
+  "podcasts.apple.com/podcast/research-radio/id1725515099": {
+    "v": 1,
+    "cachedAt": "2026-07-26T09:17:21.297Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.9,
+      "reason": "Validated as relevant",
+      "description": "An AI-generated science podcast curated by Fabio Giglietto that translates complex computational social science research into audio deep-dives using advanced AI tools.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "podcasts.apple.com/us/podcast/research-radio/id1728286940": {
+    "v": 1,
+    "cachedAt": "2026-07-26T09:17:28.670Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.85,
+      "reason": "Validated as relevant",
+      "description": "An Apple Podcast series curated by Fabio Giglietto that translates academic findings in computational social science and misinformation research into accessible audio discussions.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }

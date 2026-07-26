@@ -1,10 +1,22 @@
+- date: '2026-07-24'
+  content: >-
+    Understanding the real-world impact of AI-generated disinformation requires
+    analyzing how local audiences decode false media. A study by Morgan Wack and
+    Stephen Prochaska investigates these dynamics in Kenya, demonstrating how
+    audience interpretations play a crucial role in shaping the persuasive power
+    of deepfakes.
+  url: https://doi.org/10.1177/20563051261462092
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
 - date: '2026-07-22'
   content: >-
-    A new co-authored study published in Information, Communication & Society
-    maps partisan community dynamics on social media. Together with Giada Marino
-    and Bruna Paroni, a longitudinal analysis was conducted to track affective
-    engagement within pro-Bolsonaro Facebook networks, shedding light on the
-    long-term mechanics of online political polarization.
+    A new longitudinal study co-authored by Fabio Giglietto, Giada Marino, and
+    Bruna Paroni explores affective engagement within pro-Bolsonaro Facebook
+    networks. The research provides critical insights into the temporal dynamics
+    of partisan communities online and how emotional ties sustain digital
+    networks.
   url: https://doi.org/10.1080/1369118x.2026.2696929
   platforms:
     - Mastodon
@@ -12,10 +24,11 @@
   toread: true
 - date: '2026-07-14'
   content: >-
-    Addressing the shifting landscape of digital research methods, a new paper
-    in Big Data & Society examines 'the politics of access' in platform-mediated
-    research. The authors analyze how API dependencies and infrastructure
-    control shape contemporary academic inquiries into social media spaces.
+    The structural limitations of modern academic data access are placed under
+    the microscope in a new study on platform-mediated research. Scholars Zoë
+    Natalia Cullen, Nicole B. Ellison, and Irene V. Pasquetto critique how
+    platform APIs construct political and technical boundaries that reshape
+    social science research.
   url: https://doi.org/10.1177/20539517261461463
   platforms:
     - Mastodon
@@ -23,10 +36,11 @@
   toread: true
 - date: '2026-07-12'
   content: >-
-    Can artificial intelligence change minds on contentious public issues?
-    Experimental research indicates that conversational AI has the capacity to
-    significantly shift beliefs and policy support, demonstrating persuasive
-    capabilities even when interacting with highly skeptical audiences.
+    Conversational AI agents may hold surprising power to influence public
+    opinion on highly debated social issues. According to new research by
+    Johannes Kotz and colleagues, interactive dialogue with AI models
+    successfully shifted beliefs and policy preferences, even among deeply
+    skeptical audiences.
   url: https://doi.org/10.31234/osf.io/7szrn_v1
   platforms:
     - Mastodon
@@ -34,11 +48,11 @@
   toread: true
 - date: '2026-07-02'
   content: >-
-    A critical evaluation of crowdsourced content moderation reveals potential
-    electoral risks. Published in Science Advances, the study shows how systems
-    like X's Community Notes may systematically undermoderate polarizing
-    content, highlighting design-level vulnerabilities during democratic
-    processes.
+    Electoral integrity faces systemic vulnerabilities as platform features like
+    X's Community Notes may be structurally prone to undermoderating polarizing
+    content. Research by Paul Bouchaud and Pedro Ramaciotti details how the
+    tool's design compromises effective content moderation during high-stakes
+    democratic processes.
   url: https://doi.org/10.1126/sciadv.aee6932
   platforms:
     - Mastodon
