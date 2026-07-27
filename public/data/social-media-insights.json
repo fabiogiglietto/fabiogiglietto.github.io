@@ -1,5 +1,5 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a highly active and influential professional presence across academic and decentralized social networks, capturing a combined audience of 3,580 followers. Content focusing on actionable academic updates, tool releases, and career opportunities drives strong community amplification, resulting in highly competitive engagement rates across all analyzed channels.",
+  "overallSummary": "Fabio Giglietto maintains a strong, highly targeted professional presence across Bluesky, LinkedIn, and Mastodon, focusing on computational social science, disinformation, and coordinated behavior. With a combined following of 3,580, his posts generate high-quality academic and professional engagement. LinkedIn serves as the primary driver for raw reach and career announcements, while Bluesky and Mastodon foster deeper niche conversations and research-sharing with impressive engagement rates relative to follower counts.",
   "engagementMetrics": {
     "totalFollowers": 3580,
     "averageEngagementRate": 5.32,
@@ -7,27 +7,27 @@
   },
   "contentThemes": [
     {
-      "theme": "Research & Tool Releases",
-      "description": "Announcements showcasing published papers and updates to software tools such as CooRnet."
+      "theme": "Coordinated Inauthentic Behavior & Disinformation",
+      "description": "Sharing research papers, tool releases (like CooRnet v2.0), and conference announcements focused on detecting coordinated link sharing and disinformation campaigns."
     },
     {
-      "theme": "Academic Career Opportunities",
-      "description": "Callouts for open academic positions, postdocs, and PhD opportunities within computational social science."
+      "theme": "Academic & Career Opportunities",
+      "description": "Recruiting postdoctoral researchers and PhD candidates for computational social science and social media analysis roles."
     },
     {
-      "theme": "Methodological & Disinformation Conferences",
-      "description": "Discussion of industry events, conferences, and methodologies for analyzing coordinated platform behavior."
+      "theme": "Research Funding & Milestones",
+      "description": "Announcing new grants, publications, and major funding achievements related to studying information operations."
     }
   ],
   "recommendations": [
-    "Leverage Bluesky's highly receptive audience by prioritizing it for early drafts and collaborative research calls.",
-    "Include rich media such as screenshots of CooRnet dashboards or diagrams of study designs to boost visual interest on LinkedIn.",
-    "Foster deeper community discussion on Mastodon and Bluesky by asking open-ended research questions to increase comment volume."
+    "Leverage Bluesky's highly active academic community by prioritizing open academic positions and research paper announcements on that platform.",
+    "Increase the use of professional hashtags and rich media on LinkedIn to further expand the organic reach of recruitment posts.",
+    "Utilize Mastodon primarily for technical tool updates and open-source software releases to appeal to its tech-savvy, developer-aligned audience."
   ],
   "platformInsights": {
-    "bluesky": "Acts as the most engaging platform with an average engagement rate of 6.14%, showing high virality and repost actions on research sharing and study opportunities.",
-    "mastodon": "Provides strong niche targeting for technical developments, yielding a stable 4.55% engagement rate and highly relevant peer-to-peer amplification.",
-    "linkedin": "Generates the highest absolute volume of engagement and comments, making it the ideal channel for official announcements like grant awards and recruitment drives."
+    "bluesky": "Bluesky demonstrates the highest relative engagement rate (6.14% average per post), proving to be an excellent venue for academic networking, paper launches, and research recruitment.",
+    "mastodon": "While having a smaller audience, Mastodon shows reliable engagement for specific software tools and methodological discussions, making it ideal for community-driven software development.",
+    "linkedin": "LinkedIn is the powerhouse for absolute reach and engagement, performing exceptionally well for institutional career-related announcements like grant awards and postdoc hiring."
   },
   "topPerformingContent": [
     {

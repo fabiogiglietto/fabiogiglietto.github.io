@@ -1727,6 +1727,18 @@
       "author": "Morgan Wack, Stephen Prochaska",
       "doi": "10.1177/20563051261462092",
       "own": false
+    },
+    {
+      "id": "bibtex:Mattis2026-gu",
+      "bibtexKey": "Mattis2026-gu",
+      "title": "When AI Fact-Checks, Trust Falls: The Disclosure Dilemma",
+      "description": "AI-generated podcast discussion.\n\nReference:\nMattis, N., Kieslich, K., & Vreese, C. H. D. (2026). Feeling iffy about generative AI: Investigating audiences’ trustworthiness perceptions of task-specific AI disclosures. https://doi.org/10.1080/21670811.2026.2703599",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Mattis2026-gu.mp3",
+      "pubDate": "2026-07-27T15:28:47.771873+00:00",
+      "duration": "13:42",
+      "author": "Nicolas Mattis, Kimon Kieslich, Claes Holger de Vreese",
+      "doi": "10.1080/21670811.2026.2703599",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -3457,6 +3469,18 @@
       "author": "Morgan Wack, Stephen Prochaska",
       "doi": "10.1177/20563051261462092",
       "own": false
+    },
+    "Mattis2026-gu": {
+      "id": "bibtex:Mattis2026-gu",
+      "bibtexKey": "Mattis2026-gu",
+      "title": "When AI Fact-Checks, Trust Falls: The Disclosure Dilemma",
+      "description": "AI-generated podcast discussion.\n\nReference:\nMattis, N., Kieslich, K., & Vreese, C. H. D. (2026). Feeling iffy about generative AI: Investigating audiences’ trustworthiness perceptions of task-specific AI disclosures. https://doi.org/10.1080/21670811.2026.2703599",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Mattis2026-gu.mp3",
+      "pubDate": "2026-07-27T15:28:47.771873+00:00",
+      "duration": "13:42",
+      "author": "Nicolas Mattis, Kimon Kieslich, Claes Holger de Vreese",
+      "doi": "10.1080/21670811.2026.2703599",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -4779,9 +4803,21 @@
       "author": "Morgan Wack, Stephen Prochaska",
       "doi": "10.1177/20563051261462092",
       "own": false
+    },
+    "10.1080/21670811.2026.2703599": {
+      "id": "bibtex:Mattis2026-gu",
+      "bibtexKey": "Mattis2026-gu",
+      "title": "When AI Fact-Checks, Trust Falls: The Disclosure Dilemma",
+      "description": "AI-generated podcast discussion.\n\nReference:\nMattis, N., Kieslich, K., & Vreese, C. H. D. (2026). Feeling iffy about generative AI: Investigating audiences’ trustworthiness perceptions of task-specific AI disclosures. https://doi.org/10.1080/21670811.2026.2703599",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Mattis2026-gu.mp3",
+      "pubDate": "2026-07-27T15:28:47.771873+00:00",
+      "duration": "13:42",
+      "author": "Nicolas Mattis, Kimon Kieslich, Claes Holger de Vreese",
+      "doi": "10.1080/21670811.2026.2703599",
+      "own": false
     }
   },
-  "totalEpisodes": 144,
-  "lastUpdated": "2026-07-27T10:35:03.602Z",
+  "totalEpisodes": 145,
+  "lastUpdated": "2026-07-27T15:29:29.336Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
