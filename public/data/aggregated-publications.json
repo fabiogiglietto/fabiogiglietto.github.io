@@ -11,7 +11,7 @@
       "publicationDate": "2014-01-01",
       "doi": "10.1111/jcom.12085",
       "citations": {
-        "scholar": 420,
+        "scholar": 421,
         "wos": 410,
         "scopus": null,
         "semanticScholar": 145
@@ -34,7 +34,7 @@
         "ora": "11576/2595583"
       },
       "metrics": {
-        "total_citations": 420,
+        "total_citations": 421,
         "citation_sources": 3
       },
       "oraHandle": "11576/2595583",
@@ -113,7 +113,7 @@
       "publicationDate": "2020-05-11",
       "doi": "10.1080/1369118X.2020.1739732",
       "citations": {
-        "scholar": 235,
+        "scholar": 236,
         "wos": 0,
         "scopus": 118,
         "semanticScholar": null
@@ -136,7 +136,7 @@
         "ora": "11576/2674874"
       },
       "metrics": {
-        "total_citations": 235,
+        "total_citations": 236,
         "citation_sources": 3
       },
       "oraHandle": "11576/2674874",
@@ -157,7 +157,7 @@
       "publicationDate": "2019-07-08",
       "doi": "10.1177/0011392119837536",
       "citations": {
-        "scholar": 182,
+        "scholar": 183,
         "wos": 170,
         "scopus": 97,
         "semanticScholar": 89
@@ -180,7 +180,7 @@
         "ora": "11576/2665976"
       },
       "metrics": {
-        "total_citations": 182,
+        "total_citations": 183,
         "citation_sources": 4
       },
       "oraHandle": "11576/2665976",
@@ -208,7 +208,7 @@
       "publicationDate": "2017-01-01",
       "doi": "10.1177/2056305116686992",
       "citations": {
-        "scholar": 126,
+        "scholar": 125,
         "wos": 0,
         "scopus": 57,
         "semanticScholar": null
@@ -231,7 +231,7 @@
         "ora": "11576/2641753"
       },
       "metrics": {
-        "total_citations": 126,
+        "total_citations": 125,
         "citation_sources": 3
       },
       "oraHandle": "11576/2641753",
@@ -319,6 +319,47 @@
       }
     },
     {
+      "title": "To be or not to be charlie: Twitter hashtags as a discourse and counter-discourse in the aftermath of the 2015 charlie hebdo shooting in France",
+      "type": "conference-paper",
+      "venue": "CEUR Workshop Proceedings",
+      "authors": "GIGLIETTO, FABIO; Lee, Yenn",
+      "year": 2015,
+      "month": null,
+      "day": null,
+      "publicationDate": "2015-01-01",
+      "doi": null,
+      "citations": {
+        "scholar": 63,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84938536467&partnerID=MN8TOARS",
+        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:zCSUwVk65WsC",
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": "https://ora.uniurb.it/handle/11576/2626909"
+      },
+      "source_ids": {
+        "orcid": 18425538,
+        "scholar": "zCSUwVk65WsC",
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": "11576/2626909"
+      },
+      "metrics": {
+        "total_citations": 63,
+        "citation_sources": 1
+      },
+      "oraHandle": "11576/2626909",
+      "oaPdfUrl": null,
+      "abstract": "Following a shooting attack by two self-proclaimed Islamist gunmen at the offices of French satirical weekly Charlie Hebdo on 7th January 2015, there emerged the hashtag #JeSuisCharlie on Twitter as an expression of condolences for the victims, solidarity, and support for the magazine's right to free speech. Almost simultaneously, however, there was also #JeNeSuisPasCharlie explicitly countering the former, affirmative hashtag. In this paper, we analyse 74,047 tweets containing #JeNeSuisPasCharlie posted between 7th and 11th January. Our network analysis and semantic cluster analysis of those 74,047 tweets reveal that the hashtag in question constitutes a form of resistance to the mainstream framing of the issue as freedom of expression being threatened by religious intolerance and violence. The resistance was manifested through three phases: sharing condolences but indicating a reservation against the mainstream frame (Grief); voicing out resistance against the frame (Resistance); and developing and deploying alternative frames such as hate speech, Eurocentrism, and Islamophobia (Alternatives). The hashtag in this context served as a vehicle through which users formed, enhanced, and declared their self-identity.",
+      "publisherUrl": "http://ceur-ws.org/Vol-1395/paper_12.pdf"
+    },
+    {
       "title": "Coordinated Link Sharing Behavior as a Signal to Surface Sources of Problematic Information on Facebook",
       "type": "conference-paper",
       "venue": "International Conference on Social Media and Society",
@@ -360,47 +401,6 @@
       "abstract": "Despite widespread concern over the role played by disinformation during recent electoral processes, the intrinsic elusiveness of the subject hinders efforts aimed at estimating its prevalence and effect. While there has been proliferation of attempts to define, understand and fight the spread of problematic information in contemporary media ecosystems, most of these attempts focus on detecting false content and/or bad actors. For instance, several existing studies rely on lists of problematic content or news media sources compiled by fact-checkers. However, these lists may quickly become obsolete leading to unreliable estimates. Using media manipulation as a frame, along with a revised version of the “coordinated inauthentic behavior” original definition, in this paper, we argue for a wider ecological focus. Leveraging a method designed to detect “coordinated links sharing behavior” (CLSB), we introduce and assess an approach aimed at creating and keeping lists of potentially problematic sources updated by analyzing the URLs shared on Facebook by public groups, pages, and verified profiles. We show how CLSB is consistently associated with higher risks of encountering problematic news sources across three different datasets of news stories and can be thus used as a signal to support manual and automatic detection of problematic information.",
       "crossref_type": "proceedings-article",
       "publisher": "ACM"
-    },
-    {
-      "title": "To be or not to be charlie: Twitter hashtags as a discourse and counter-discourse in the aftermath of the 2015 charlie hebdo shooting in France",
-      "type": "conference-paper",
-      "venue": "CEUR Workshop Proceedings",
-      "authors": "GIGLIETTO, FABIO; Lee, Yenn",
-      "year": 2015,
-      "month": null,
-      "day": null,
-      "publicationDate": "2015-01-01",
-      "doi": null,
-      "citations": {
-        "scholar": 62,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null
-      },
-      "source_urls": {
-        "orcid": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84938536467&partnerID=MN8TOARS",
-        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:zCSUwVk65WsC",
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null,
-        "ora": "https://ora.uniurb.it/handle/11576/2626909"
-      },
-      "source_ids": {
-        "orcid": 18425538,
-        "scholar": "zCSUwVk65WsC",
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null,
-        "ora": "11576/2626909"
-      },
-      "metrics": {
-        "total_citations": 62,
-        "citation_sources": 1
-      },
-      "oraHandle": "11576/2626909",
-      "oaPdfUrl": null,
-      "abstract": "Following a shooting attack by two self-proclaimed Islamist gunmen at the offices of French satirical weekly Charlie Hebdo on 7th January 2015, there emerged the hashtag #JeSuisCharlie on Twitter as an expression of condolences for the victims, solidarity, and support for the magazine's right to free speech. Almost simultaneously, however, there was also #JeNeSuisPasCharlie explicitly countering the former, affirmative hashtag. In this paper, we analyse 74,047 tweets containing #JeNeSuisPasCharlie posted between 7th and 11th January. Our network analysis and semantic cluster analysis of those 74,047 tweets reveal that the hashtag in question constitutes a form of resistance to the mainstream framing of the issue as freedom of expression being threatened by religious intolerance and violence. The resistance was manifested through three phases: sharing condolences but indicating a reservation against the mainstream frame (Grief); voicing out resistance against the frame (Resistance); and developing and deploying alternative frames such as hate speech, Eurocentrism, and Islamophobia (Alternatives). The hashtag in this context served as a vehicle through which users formed, enhanced, and declared their self-identity.",
-      "publisherUrl": "http://ceur-ws.org/Vol-1395/paper_12.pdf"
     },
     {
       "title": "Social Media and Italian Universities: An Empirical Study on the Adoption and Use of Facebook, Twitter and Youtube",
@@ -1203,7 +1203,7 @@
       "publicationDate": "2024-10-30",
       "doi": "10.6092/issn.1971-8853/19524",
       "citations": {
-        "scholar": 13,
+        "scholar": 14,
         "wos": 0,
         "scopus": 3,
         "semanticScholar": null
@@ -1225,7 +1225,7 @@
         "ora": "11576/2746851"
       },
       "metrics": {
-        "total_citations": 13,
+        "total_citations": 14,
         "citation_sources": 3
       },
       "oraHandle": "11576/2746851",
@@ -6232,7 +6232,7 @@
   ],
   "metrics": {
     "total_publications": 159,
-    "total_citations": 2369,
+    "total_citations": 2373,
     "h_index": 22,
     "i10_index": 34,
     "citation_sources": {
@@ -6244,5 +6244,5 @@
       "with_ora": 115
     }
   },
-  "lastUpdated": "2026-07-26T09:18:19.631Z"
+  "lastUpdated": "2026-07-27T09:57:56.259Z"
 }
