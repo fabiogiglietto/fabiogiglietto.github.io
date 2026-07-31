@@ -1,29 +1,33 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a strong, highly engaged scholarly presence across LinkedIn, Bluesky, and Mastodon, totaling 3,580 followers. His content successfully bridges advanced computational social science research with academic opportunities. While LinkedIn serves as his largest reach channel for major announcements like grants and hiring, Bluesky yields the highest relative engagement rates, especially for new publications and academic opportunities.",
+  "overallSummary": "Fabio Giglietto maintains a highly focused and academically prestigious social media presence across Mastodon, LinkedIn, and Bluesky, with a total following of 3,580. The content primarily revolves around computational social science, disinformation, coordinated inauthentic behavior, and academic hiring/funding opportunities. Engagement across all platforms is exceptionally strong, driven by a highly targeted audience of researchers, data scientists, and academic peers who actively interact with posts regarding publications, software updates (such as CooRnet v2.0), and career opportunities.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 5.32,
+    "averageEngagementRate": 11.9,
     "mostEngagingPlatform": "Bluesky"
   },
   "contentThemes": [
     {
       "theme": "Coordinated Inauthentic Behavior & Disinformation",
-      "description": "Updates on research publications, conferences, and custom software tools like CooRnet aimed at detecting coordinated link sharing and information operations."
+      "description": "Research updates, software releases (CooRnet v2.0), and methodology discussions regarding online information operations."
     },
     {
-      "theme": "Academic Career Opportunities & Funding",
-      "description": "Announcements regarding research grants, postdoctoral hiring, and PhD opportunities within computational social science."
+      "theme": "Academic Career & Funding Opportunities",
+      "description": "Announcements of new research grants, hiring notices for postdocs, and research opportunities for PhD students."
+    },
+    {
+      "theme": "Conference Presentations & Community Engagement",
+      "description": "Promoting upcoming presentations at academic conferences like DisinfoConf2025 and engaging in platform discussions."
     }
   ],
   "recommendations": [
-    "Leverage Bluesky's high engagement and repost rates to seed discussion questions and gather early feedback on ongoing research projects.",
-    "Utilize LinkedIn's larger audience network by adding rich media (images, PDFs) to hiring and grant posts to maximize professional reach.",
-    "Increase posting frequency on Mastodon with niche, technical deep-dives into computational social science methodologies to re-engage the specialist community."
+    "Leverage Bluesky's high organic engagement rate by increasing post frequency and shares of early-stage research ideas.",
+    "Utilize LinkedIn's larger follower base for broad organizational announcements, ensuring posts contain direct links to application portals or publications to capture high intent.",
+    "Include more visual media, such as charts or diagrams of coordinated networks, to boost interactions and reposts on Mastodon."
   ],
   "platformInsights": {
-    "bluesky": "The platform shows outstanding virality and audience engagement, with strong repost rates particularly for new papers and PhD opportunities.",
-    "mastodon": "Serves as an academic niche hub, showing positive reception for tool updates like CooRnet and deep methodological discussions.",
-    "linkedin": "The largest channel by reach, driving high absolute volumes of likes and comments, making it highly effective for institutional announcements, hiring, and grant wins."
+    "bluesky": "The most engaging platform on a per-follower basis, showing exceptional resonance with research calls and new papers (averaging an 18.4% engagement rate overall). Repost counts here are remarkably high.",
+    "mastodon": "Serves as an effective, highly technical channel for software releases and methodology discussions, yielding deep peer-to-peer engagement despite a smaller follower base.",
+    "linkedin": "The largest channel by audience size. It acts as the primary hub for professional milestones, funding news, and recruitment, securing the highest absolute number of likes and comments."
   },
   "topPerformingContent": [
     {
