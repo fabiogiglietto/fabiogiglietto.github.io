@@ -4704,5 +4704,57 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-3686884d": {
+    "v": 1,
+    "cachedAt": "2026-08-01T09:09:04.506Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.98,
+      "reason": "Validated as relevant",
+      "description": "An article in Il Resto del Carlino covering Fabio Giglietto's research at the University of Urbino, which demonstrated how Meta's algorithms reduced the visibility of Italian parliamentarians and prompted a European inquiry.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "snurb.info/node/3120": {
+    "v": 1,
+    "cachedAt": "2026-08-01T09:09:07.875Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An academic blog post by Axel Bruns summarizing Professor Fabio Giglietto's presentation at the ICA 2026 conference on how Facebook's algorithmic shifts affect engagement with political news URLs.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "editorialedomani.it/fatti/lalgoritmo-di-meta-e-i-rischi-per-la-democrazia-lindagine-della-commissione-europea-e-ancora-ferma-w18tqf3g": {
+    "v": 1,
+    "cachedAt": "2026-08-01T09:09:12.753Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An investigative news article discussing the European Commission's inquiry into Meta's algorithms, highlighting Professor Fabio Giglietto's research on how automated filters impact the reach of political figures and extremist content.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "tdhj.org/blog/post/emerging-tech-educate-officers": {
+    "v": 1,
+    "cachedAt": "2026-08-01T09:09:15.887Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The provided web mention does not contain the name 'Fabio Giglietto' in the title, URL, or context.",
+      "description": "An article about emerging technologies for educating officers, with no mention of Fabio Giglietto.",
+      "personMatch": "not_mentioned",
+      "isRecent": false
+    }
   }
 }

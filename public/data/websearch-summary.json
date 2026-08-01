@@ -1,11 +1,12 @@
 {
-  "totalEntries": 205,
-  "lastUpdated": "2026-08-01T08:25:18.891Z",
+  "totalEntries": 206,
+  "lastUpdated": "2026-08-01T09:10:07.686Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-07-28T08:39:46.082Z"
+    "latest": "2026-08-01T09:10:07.636Z"
   },
   "byDate": {
+    "2026-08-01": 1,
     "2026-07-28": 1,
     "2026-07-24": 2,
     "2026-07-23": 1,
@@ -14,27 +15,33 @@
     "2026-07-14": 2,
     "2026-07-12": 3,
     "2026-07-11": 1,
-    "2026-07-09": 2,
-    "2026-07-08": 2
+    "2026-07-09": 2
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 52,
     "snurb.info": 12,
     "uniurb.it": 8,
+    "icahdq.org": 6,
     "open.online": 6,
     "socialmediaandsociety.org": 5,
-    "icahdq.org": 5,
     "aoir.org": 5,
     "ilrestodelcarlino.it": 4,
     "snurblog.org": 4,
     "Il Sole 24 ORE": 4
   },
   "byRelevanceScore": {
-    "high": 182,
+    "high": 183,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "ICA 2026 Annual Conference: Communication and Inequalities in Context",
+      "url": "https://www.icahdq.org",
+      "source": "icahdq.org",
+      "relevanceScore": 0.95,
+      "collectedAt": "2026-08-01T09:10:07.636Z"
+    },
     {
       "title": "Agcom accende i fari su Meta: “L'algoritmo favorisce gli account estremisti”",
       "url": "https://www.dire.it/14-04-2026/1199342-agcom-accende-i-fari-su-meta-lalgoritmo-favorisce-gli-account-estremisti/",
@@ -62,13 +69,6 @@
       "source": "socialmediaandsociety.org",
       "relevanceScore": 0.9,
       "collectedAt": "2026-07-23T08:35:42.354Z"
-    },
-    {
-      "title": "FG's Research Radio on Apple Podcasts",
-      "url": "https://podcasts.apple.com/us/podcast/research-radio/id1772421711",
-      "source": "podcasts.apple.com",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-07-18T11:00:27.077Z"
     }
   ]
 }
