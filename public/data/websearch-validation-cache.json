@@ -4886,5 +4886,70 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-7267ce29": {
+    "v": 1,
+    "cachedAt": "2026-08-03T09:47:38.101Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A news article detailing a study by Fabio Giglietto at the University of Urbino on how Meta's algorithmic reduction of political content impacts the online visibility of Italian politicians.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "uniurb.it/novita-ed-eventi/5634": {
+    "v": 1,
+    "cachedAt": "2026-08-03T09:47:43.314Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A university press release detailing Fabio Giglietto's research on Meta's algorithm changes, which showed a 72% visibility drop for elected officials and prompted a European Parliament inquiry.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "socialmediaandsociety.org/2026/07/03/smsociety-2026-conference-programme": {
+    "v": 1,
+    "cachedAt": "2026-08-03T09:47:51.278Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.9,
+      "reason": "Validated as relevant",
+      "description": "Conference programme announcement for SMSociety 2026, listing Professor Fabio Giglietto as an expert panelist for a roundtable on the Meta Content Library and the future of social media research.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "bsky.app/profile/zemki.bsky.social": {
+    "v": 1,
+    "cachedAt": "2026-08-03T09:47:54.049Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The provided web mention is a link to the ZeMKI Bluesky profile and does not contain any mention of Fabio Giglietto by name in the title, URL, or context.",
+      "description": "A Bluesky profile link for ZeMKI (Centre for Media, Communication and Information Research) at the University of Bremen.",
+      "personMatch": "not_mentioned",
+      "isRecent": false
+    }
+  },
+  "cdn.ymaws.com/www.icahdq.org/resource/resmgr/conference/2026/ica26-pdf-program-sunday.pdf": {
+    "v": 1,
+    "cachedAt": "2026-08-03T09:47:58.045Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The name 'Fabio Giglietto' is not present in the title, URL, or context provided, so a mention cannot be verified.",
+      "description": "A PDF conference program for Sunday sessions at the International Communication Association (ICA) 2026 conference.",
+      "personMatch": "not_mentioned",
+      "isRecent": false
+    }
   }
 }
