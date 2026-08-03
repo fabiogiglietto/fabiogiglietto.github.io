@@ -4951,5 +4951,57 @@
       "personMatch": "not_mentioned",
       "isRecent": false
     }
+  },
+  "ilrestodelcarlino.it/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-726485ff": {
+    "v": 1,
+    "cachedAt": "2026-08-03T10:42:38.867Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "The article explicitly names and quotes Fabio Giglietto, discussing his academic research on social media algorithms and information disorder at the University of Urbino.",
+      "description": "An Italian news feature covering Fabio Giglietto's research on how Meta's algorithms restricted the Facebook visibility of Italian parliamentarians, highlighting the impact of the Digital Services Act.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "vivereurbino.it/2026/04/17/algoritmi-e-democrazia-il-caso-meta-secondo-lo-studio-di-uniurb/104925": {
+    "v": 1,
+    "cachedAt": "2026-08-03T10:42:42.607Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.98,
+      "reason": "Validated as relevant",
+      "description": "A news article highlighting a study by Fabio Giglietto of the University of Urbino on Meta's algorithmic governance of political content, which sparked national debate and prompted a European Parliament inquiry.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "editorialedomani.it/economia/piu-visibilita-agli-estremisti-che-ai-parlamentari-limpatto-del-filtro-di-meta-sulle-elezioni-vsn7clb4": {
+    "v": 1,
+    "cachedAt": "2026-08-03T10:42:46.452Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An in-depth media feature analyzing Professor Fabio Giglietto's working paper on how Meta's algorithmic filtering of political content during elections suppressed institutional figures while boosting extremist actors.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "snurb.info/node/3123": {
+    "v": 1,
+    "cachedAt": "2026-08-03T10:42:52.184Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.9,
+      "reason": "Validated as relevant",
+      "description": "A blog post on snurb.info announcing the release of M/C Journal's special 'twitter' issue, highlighting Fabio Giglietto as co-author of an article analyzing the history of academic data access to Twitter/X.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }
