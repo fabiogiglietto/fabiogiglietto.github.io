@@ -5055,5 +5055,122 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "disinfo.eu/disinfo-update-10-06-2026": {
+    "v": 1,
+    "cachedAt": "2026-08-04T09:44:25.347Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The target person 'Fabio Giglietto' is not mentioned in the title, URL, or context of the provided web mention.",
+      "description": "An update from disinfo.eu dated June or October 2026, but it does not contain any verifiable mention of Fabio Giglietto.",
+      "personMatch": "not_mentioned",
+      "isRecent": true
+    }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-753bc57b": {
+    "v": 1,
+    "cachedAt": "2026-08-04T09:44:29.203Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A news article reporting on Professor Fabio Giglietto's study concerning the impact of Meta's algorithms on political content reach, which prompted an EU Parliament inquiry and a feature on Rai3's 'Report'.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "editorialedomani.it/fatti/lalgoritmo-di-meta-e-i-rischi-per-la-democrazia-lindagine-della-commissione-europea-e-ancora-ferma-uoxscwgu": {
+    "v": 1,
+    "cachedAt": "2026-08-04T09:44:32.630Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An article in Domani analyzing the European Commission's investigation into Meta's political content filtering, citing Fabio Giglietto's research on how Meta's algorithms restrict the reach of political figures.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "editorialedomani.it/economia/piu-visibilita-agli-estremisti-che-ai-parlamentari-limpatto-del-filtro-di-meta-sulle-elezioni-ooxscwgu": {
+    "v": 1,
+    "cachedAt": "2026-08-04T09:44:36.719Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An in-depth journalistic article by Domani covering Fabio Giglietto's research paper 'A Pretty Blunt Approach' and its findings on the impact of Meta's content moderation on European elections.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "snurb.info/node/3248": {
+    "v": 1,
+    "cachedAt": "2026-08-04T09:44:40.589Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An academic blog post covering Fabio Giglietto's research presentation at the ICA 2026 conference, focusing on how Facebook's algorithmic changes affect engagement with news links.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "snurb.info/node/3233": {
+    "v": 1,
+    "cachedAt": "2026-08-04T09:44:45.409Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": true,
+      "relevanceScore": 0.5,
+      "reason": "The content is from mid-2024 (more than 6 months ago) and therefore does not meet the recency requirement.",
+      "description": "An announcement on snurb.info regarding the release of a special 'twitter' issue of M/C Journal, featuring Fabio Giglietto as a contributing researcher.",
+      "personMatch": "confirmed",
+      "isRecent": false
+    }
+  },
+  "editorialedomani.it/fatti/lalgoritmo-di-meta-e-i-rischi-per-la-democrazia-lindagine-della-commissione-europea-e-ancora-ferma-v1dhyib3": {
+    "v": 1,
+    "cachedAt": "2026-08-04T09:44:49.598Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The provided web mention lacks a text snippet or context confirming that Fabio Giglietto is explicitly mentioned by name.",
+      "description": "An article from Domani discussing Meta's algorithm, risks to democracy, and the European Commission's investigation.",
+      "personMatch": "not_mentioned",
+      "isRecent": true
+    }
+  },
+  "open.online/2026/01/07/algoritmo-facebook-meta-elezioni-politica-estremisti-studio-universita-urbino": {
+    "v": 1,
+    "cachedAt": "2026-08-04T09:44:53.650Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.98,
+      "reason": "Validated as relevant",
+      "description": "A major news article covering a study led by Fabio Giglietto at the University of Urbino, which reveals how Facebook's algorithm suppresses mainstream political accounts while boosting anti-European and extremist content.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "podcasts.apple.com/us/podcast/research-radio/id1786524350": {
+    "v": 1,
+    "cachedAt": "2026-08-04T09:45:02.951Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.8,
+      "reason": "Validated as relevant",
+      "description": "Apple Podcasts listing for 'FG's Research Radio', a podcast program curated by Prof. Fabio Giglietto featuring AI-generated discussions on computational social science and online disinformation.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }

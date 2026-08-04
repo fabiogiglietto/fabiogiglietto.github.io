@@ -1,11 +1,12 @@
 {
-  "totalEntries": 207,
-  "lastUpdated": "2026-08-04T08:42:49.620Z",
+  "totalEntries": 209,
+  "lastUpdated": "2026-08-04T09:45:49.993Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-08-02T09:13:33.645Z"
+    "latest": "2026-08-04T09:45:49.960Z"
   },
   "byDate": {
+    "2026-08-04": 2,
     "2026-08-02": 1,
     "2026-08-01": 1,
     "2026-07-28": 1,
@@ -14,8 +15,7 @@
     "2026-07-18": 1,
     "2026-07-17": 1,
     "2026-07-14": 2,
-    "2026-07-12": 3,
-    "2026-07-11": 1
+    "2026-07-12": 3
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 52,
@@ -30,11 +30,25 @@
     "Il Sole 24 ORE": 4
   },
   "byRelevanceScore": {
-    "high": 184,
+    "high": 186,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "FG's Research Radio",
+      "url": "https://podcasts.apple.com/us/podcast/research-radio/id1786524350",
+      "source": "podcasts.apple.com",
+      "relevanceScore": 0.8,
+      "collectedAt": "2026-08-04T09:45:49.960Z"
+    },
+    {
+      "title": "L'algoritmo di Meta e i rischi per la democrazia, l'indagine della Commissione europea è ancora ferma",
+      "url": "https://www.editorialedomani.it/fatti/lalgoritmo-di-meta-e-i-rischi-per-la-democrazia-lindagine-della-commissione-europea-e-ancora-ferma-uoxscwgu",
+      "source": "editorialedomani.it",
+      "relevanceScore": 0.95,
+      "collectedAt": "2026-08-04T09:45:49.960Z"
+    },
     {
       "title": "Algoritmi e democrazia: il caso Meta secondo lo studio Uniurb che ha avviato un'interrogazione al Parlamento europeo",
       "url": "https://news.uniurb.it/algoritmi-e-democrazia-il-caso-meta-secondo-lo-studio-uniurb-che-ha-avviato-uninterrogazione-al-parlamento-europeo/",
@@ -55,20 +69,6 @@
       "source": "dire.it",
       "relevanceScore": 0.95,
       "collectedAt": "2026-07-28T08:39:46.082Z"
-    },
-    {
-      "title": "Social media, l'Agcom avvia verifiche con la Commissione Ue sugli algoritmi di Meta. Focus sui contenuti politici",
-      "url": "https://www.milanofinanza.it/news/social-media-l-agcom-avvia-verifiche-con-la-commissione-ue-sugli-algoritmi-di-meta-focus-sui-contenuti-politici-202604141753177651",
-      "source": "milanofinanza.it",
-      "relevanceScore": 0.95,
-      "collectedAt": "2026-07-24T09:26:29.258Z"
-    },
-    {
-      "title": "Report: \"La fermata del Garante\" (April 12, 2026 Episode)",
-      "url": "https://www.rai.it/ufficiostampa/news/2026/04/Report-anticipazioni-12-aprile-2026.html",
-      "source": "rai.it",
-      "relevanceScore": 0.95,
-      "collectedAt": "2026-07-24T09:26:29.258Z"
     }
   ]
 }
