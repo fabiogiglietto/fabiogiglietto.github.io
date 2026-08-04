@@ -12,6 +12,46 @@
   },
   "repositories": [
     {
+      "name": "mine-toread",
+      "description": "MINE team toread feed — fork of toread with team Slack submissions (Mapping Italian News)",
+      "url": "https://github.com/fabiogiglietto/mine-toread",
+      "language": "TeX",
+      "stars": 0,
+      "forks": 0,
+      "created_at": "2026-06-29T08:06:51Z",
+      "updated_at": "2026-08-03T13:46:19Z"
+    },
+    {
+      "name": "toread",
+      "description": "Consume a feed BibTeX export from a Paperpile folder, complete the publication metadata with Crossref and Semantic Scholar and create an RSS feed",
+      "url": "https://github.com/fabiogiglietto/toread",
+      "language": "TeX",
+      "stars": 1,
+      "forks": 0,
+      "created_at": "2025-06-07T09:12:59Z",
+      "updated_at": "2026-08-03T11:53:29Z"
+    },
+    {
+      "name": "fabiogiglietto.github.io",
+      "description": "Your research presence, always current, zero maintenance.                                                                                                                                  ",
+      "url": "https://github.com/fabiogiglietto/fabiogiglietto.github.io",
+      "language": "JavaScript",
+      "stars": 7,
+      "forks": 1,
+      "created_at": "2025-04-21T09:41:33Z",
+      "updated_at": "2026-08-03T10:47:48Z"
+    },
+    {
+      "name": "research-radio",
+      "description": "Convert academic papers into AI podcast episodes with Anthropic Claude and Google Gemini. Powers FG's Research Radio.",
+      "url": "https://github.com/fabiogiglietto/research-radio",
+      "language": "Python",
+      "stars": 4,
+      "forks": 1,
+      "created_at": "2025-12-29T17:46:10Z",
+      "updated_at": "2026-08-03T10:34:59Z"
+    },
+    {
       "name": "fg-zettelkasten",
       "description": null,
       "url": "https://github.com/fabiogiglietto/fg-zettelkasten",
@@ -30,46 +70,6 @@
       "forks": 0,
       "created_at": "2026-06-29T08:06:47Z",
       "updated_at": "2026-08-03T07:19:33Z"
-    },
-    {
-      "name": "toread",
-      "description": "Consume a feed BibTeX export from a Paperpile folder, complete the publication metadata with Crossref and Semantic Scholar and create an RSS feed",
-      "url": "https://github.com/fabiogiglietto/toread",
-      "language": "TeX",
-      "stars": 1,
-      "forks": 0,
-      "created_at": "2025-06-07T09:12:59Z",
-      "updated_at": "2026-08-02T09:29:17Z"
-    },
-    {
-      "name": "fabiogiglietto.github.io",
-      "description": "Your research presence, always current, zero maintenance.                                                                                                                                  ",
-      "url": "https://github.com/fabiogiglietto/fabiogiglietto.github.io",
-      "language": "JavaScript",
-      "stars": 7,
-      "forks": 1,
-      "created_at": "2025-04-21T09:41:33Z",
-      "updated_at": "2026-08-02T09:15:02Z"
-    },
-    {
-      "name": "research-radio",
-      "description": "Convert academic papers into AI podcast episodes with Anthropic Claude and Google Gemini. Powers FG's Research Radio.",
-      "url": "https://github.com/fabiogiglietto/research-radio",
-      "language": "Python",
-      "stars": 4,
-      "forks": 1,
-      "created_at": "2025-12-29T17:46:10Z",
-      "updated_at": "2026-08-02T09:05:51Z"
-    },
-    {
-      "name": "mine-toread",
-      "description": "MINE team toread feed — fork of toread with team Slack submissions (Mapping Italian News)",
-      "url": "https://github.com/fabiogiglietto/mine-toread",
-      "language": "TeX",
-      "stars": 0,
-      "forks": 0,
-      "created_at": "2026-06-29T08:06:51Z",
-      "updated_at": "2026-07-31T07:24:55Z"
     },
     {
       "name": "tiktok_csbn",
@@ -294,5 +294,5 @@
       "activity": {}
     }
   ],
-  "lastUpdated": "2026-08-03T09:40:36.582Z"
+  "lastUpdated": "2026-08-04T08:33:25.631Z"
 }
