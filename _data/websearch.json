@@ -1,48 +1,18 @@
 [
   {
     "title": "How Facebook's Algorithmic Tweaks Affected Engagement with News URLs over Time",
-    "snippet": "Media coverage and a live-blog summary of Fabio Giglietto's presentation at the 2026 International Communication Association (ICA) conference in Cape Town. The article summarizes Giglietto's research on how partisan alignment, journalistic quality (using NewsGuard ratings), and Facebook's shifting algorithmic governance have collectively shaped user engagement and amplification on the platform over a six-year period.",
-    "url": "https://snurb.info/node/3123",
-    "date": "2026-08-03",
+    "snippet": "A detailed media summary and live blog coverage by digital media scholar Axel Bruns on Professor Fabio Giglietto's presentation at the International Communication Association (ICA 2026) conference in Cape Town. The write-up outlines Giglietto's key findings regarding Facebook's algorithmic interventions, news domain quality (using NewsGuard metrics), and the partisan alignment of sharing networks.",
+    "url": "https://snurb.info/node/3412",
+    "date": "2026-08-05",
     "source": "snurb.info",
-    "description": "A blog post on snurb.info announcing the release of M/C Journal's special 'twitter' issue, highlighting Fabio Giglietto as co-author of an article analyzing the history of academic data access to Twitter/X.",
-    "relevanceScore": 0.9,
-    "mentionedByName": true,
-    "personMatch": "confirmed",
-    "isRecent": true,
-    "searchEngine": "gemini",
-    "dateConfidence": "low",
-    "dateSource": "http-header"
-  },
-  {
-    "title": "Algoritmi e democrazia, il caso Meta secondo lo studio di UniUrb",
-    "snippet": "Press coverage detailing Giglietto's research paper, 'A Pretty Blunt Approach,' which analyzed 2.5 million social media posts and exposed how Meta's content reduction policies caused a 72% drop in visibility for Italian parliamentarians. The article highlights how this research spurred a formal inquiry in the European Parliament and was featured on the investigative TV program 'Report' on Rai3.",
-    "url": "https://vivere.me/gHu6",
-    "date": "2026-07-31",
-    "source": "vivereurbino.it",
-    "description": "Press coverage detailing Fabio Giglietto's research paper 'A Pretty Blunt Approach' on how Meta's algorithms reduced visibility for Italian politicians, which sparked a European Parliament inquiry.",
-    "relevanceScore": 0.98,
-    "mentionedByName": true,
-    "personMatch": "confirmed",
-    "isRecent": true,
-    "searchEngine": "gemini",
-    "dateConfidence": "low",
-    "dateSource": "http-header"
-  },
-  {
-    "title": "SMSociety 2026 Conference Programme",
-    "snippet": "Program announcement of the 2026 International Conference on Social Media & Society in Glasgow, UK, where Fabio Giglietto served as an expert panelist on the 'Meta Content Library Community Roundtable: Where to for Social Media Research?', discussing data access and the transition away from CrowdTangle.",
-    "url": "https://socialmediaandsociety.org/",
-    "date": "2026-06-01",
-    "source": "socialmediaandsociety.org",
-    "description": "Fabio Giglietto is featured as a panelist for the 'Meta Content Library Community Roundtable' at the International Conference on Social Media & Society 2026.",
+    "description": "A detailed third-party summary by digital media scholar Axel Bruns covering Professor Fabio Giglietto's ICA conference presentation on how Facebook's algorithmic tweaks affected news engagement over time.",
     "relevanceScore": 0.95,
     "mentionedByName": true,
     "personMatch": "confirmed",
     "isRecent": true,
     "searchEngine": "gemini",
-    "dateConfidence": "medium",
-    "dateSource": "cache (gemini-page-estimate)"
+    "dateConfidence": "low",
+    "dateSource": "http-header"
   },
   {
     "title": "Indagine urbinate: \"Così l’algoritmo influenza il voto\" - Il Resto del Carlino",
@@ -58,6 +28,36 @@
     "searchEngine": "google-news-rss",
     "dateConfidence": "high",
     "dateSource": "rss-pubdate"
+  },
+  {
+    "title": "Algoritmi e democrazia, il caso Meta secondo lo studio di UniUrb",
+    "snippet": "Local media coverage of Professor Fabio Giglietto's research findings regarding Meta's algorithmic suppression of democratic political discourse. The article describes how the study served as the source material for an investigative segment on Rai3's 'Report' and prompted European political groups to call for an inquiry.",
+    "url": "https://www.vivereurbino.it/2026/04/17/algoritmi-e-democrazia-il-caso-meta-secondo-lo-studio-di-uniurb/116964",
+    "date": "2026-04-17",
+    "source": "vivereurbino.it",
+    "description": "Media coverage of Professor Fabio Giglietto's research at the University of Urbino regarding Meta's algorithmic suppression of democratic political discourse, which sparked political inquiry and media interest.",
+    "relevanceScore": 1,
+    "mentionedByName": true,
+    "personMatch": "confirmed",
+    "isRecent": true,
+    "searchEngine": "gemini",
+    "dateConfidence": "medium",
+    "dateSource": "url-path"
+  },
+  {
+    "title": "L'articolo 21 nella gabbia di Facebook",
+    "snippet": "An analytical essay examining freedom of expression (Article 21 of the Italian Constitution) in the age of dominant social media algorithms. The author relies on Fabio Giglietto's research analyzing millions of political Facebook posts as central evidence of platform-enforced 'political invisibility'.",
+    "url": "https://www.terzogiornale.it/opinioni/larticolo-21-nella-gabbia-di-facebook/",
+    "date": "2026-01-19",
+    "source": "terzogiornale.it",
+    "description": "An opinion piece analyzing digital free speech in Italy that heavily cites Fabio Giglietto's research on the impacts of Facebook's political content reduction policy.",
+    "relevanceScore": 0.95,
+    "mentionedByName": true,
+    "personMatch": "confirmed",
+    "isRecent": true,
+    "searchEngine": "gemini",
+    "dateConfidence": "high",
+    "dateSource": "cache (og-meta)"
   },
   {
     "title": "Facebook premia gli estremisti: la ricerca dell'Università di Urbino - Lumsanews",
@@ -105,6 +105,21 @@
     "dateSource": "rss-pubdate"
   },
   {
+    "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme",
+    "snippet": "Open.online covers Giglietto's independent academic study analyzing Meta's algorithmic distribution policies. The report details the study's findings that official democratic figures saw their digital reach plummet while extremist accounts maintained or grew their presence, sparking Italian lawmakers to advocate for bipartisan regulatory intervention.",
+    "url": "https://www.open.online/2026/01/07/studio-universita-urbino-algoritmo-facebook-politica-estremisti-antieuropa/",
+    "date": "2026-01-07",
+    "source": "open.online",
+    "description": "A news report from Open.online detailing Fabio Giglietto's academic study at the University of Urbino on how Meta's algorithms impact the distribution of political and extremist content.",
+    "relevanceScore": 0.95,
+    "mentionedByName": true,
+    "personMatch": "confirmed",
+    "isRecent": true,
+    "searchEngine": "gemini",
+    "dateConfidence": "medium",
+    "dateSource": "url-path"
+  },
+  {
     "title": "Secondo uno studio dell'università di Urbino l'algoritmo di Facebook ora punisce la politica ufficiale e premia gli estremisti antieuropei. Pd e FdI verso una legge bipartisan sulle piattaforme - Open",
     "snippet": "",
     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQNUpwb2VURm9yX1p6TFRaVWNScC1HVW1oTGxnaHJKZ2s5N0ZQMlp4SDZPQ0FQa3FBN0VZUTcyYlROTHd4UHBvU1FQVG5sNmNOb09OdUFCUGhPYlRSb2MzNzlMbXFJOVh4OGZya1pvdlhhSlB4eUI4bWMyZ0ZGR2hnN2JDSUQ0TkNxaEJGX21JbDhtTWY5Q3lZOWtKUE00U1BzaDVrZWRBQVN5TTdBMlFKbUs0V0ttY0xkMzZNTnl0MjE0WHA5WmhMUWxR?oc=5&hl=en-US&gl=US&ceid=US:en",
@@ -133,20 +148,5 @@
     "searchEngine": "google-news-rss",
     "dateConfidence": "high",
     "dateSource": "rss-pubdate"
-  },
-  {
-    "title": "ICA 2026 Annual Conference Sessions",
-    "snippet": "Program and coverage of the 2026 International Communication Association (ICA) conference in Cape Town, South Africa, featuring Fabio Giglietto presenting his research on partisan alignment, journalistic quality, and algorithmic amplification on Facebook.",
-    "url": "https://www.icahdq.org/",
-    "date": "2025-06-01",
-    "source": "icahdq.org",
-    "description": "Official program announcement for the 2026 International Communication Association (ICA) Annual Conference, listing Professor Fabio Giglietto as a featured speaker on digital media and political communication.",
-    "relevanceScore": 0.95,
-    "mentionedByName": true,
-    "personMatch": "confirmed",
-    "isRecent": true,
-    "searchEngine": "gemini",
-    "dateConfidence": "medium",
-    "dateSource": "cache (gemini-page-estimate)"
   }
 ]
