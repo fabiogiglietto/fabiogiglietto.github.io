@@ -5445,5 +5445,44 @@
       "personMatch": "not_mentioned",
       "isRecent": false
     }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-b570693a": {
+    "v": 1,
+    "cachedAt": "2026-08-07T07:19:21.247Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 1,
+      "reason": "Validated as relevant",
+      "description": "A news feature from Il Resto del Carlino detailing a study by Professor Fabio Giglietto on how Meta's algorithms impact the visibility of Italian political figures and influence democratic processes.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "alleanzaverdisinistra.it/referendum-bonelli-e-fratoianni-avs-scrivono-al-presidente-agcom-preoccupati-per-le-fake-news-veicolate-sui-social-chiesto-incontro-piccolotti-inquietante-che-tecnologie-opache-abbia": {
+    "v": 1,
+    "cachedAt": "2026-08-07T07:19:26.774Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "Italian politicians Bonelli and Fratoianni cited Fabio Giglietto's study on Meta's political content reduction policy in an official letter to Agcom regarding social media disinformation.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "snurb.info/node/3409": {
+    "v": 1,
+    "cachedAt": "2026-08-07T07:19:34.323Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.9,
+      "reason": "Validated as relevant",
+      "description": "An academic blog post by Axel Bruns covering Fabio Giglietto's ICA conference presentation on how partisan alignment and Meta's algorithmic changes affect reach on Facebook.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }

@@ -1,11 +1,12 @@
 {
-  "totalEntries": 209,
-  "lastUpdated": "2026-08-06T09:43:59.069Z",
+  "totalEntries": 210,
+  "lastUpdated": "2026-08-07T07:20:44.061Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-08-04T09:45:49.960Z"
+    "latest": "2026-08-07T07:20:44.024Z"
   },
   "byDate": {
+    "2026-08-07": 1,
     "2026-08-04": 2,
     "2026-08-02": 1,
     "2026-08-01": 1,
@@ -14,12 +15,11 @@
     "2026-07-23": 1,
     "2026-07-18": 1,
     "2026-07-17": 1,
-    "2026-07-14": 2,
-    "2026-07-12": 3
+    "2026-07-14": 2
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 52,
-    "snurb.info": 12,
+    "snurb.info": 13,
     "uniurb.it": 9,
     "icahdq.org": 6,
     "open.online": 6,
@@ -30,11 +30,18 @@
     "Il Sole 24 ORE": 4
   },
   "byRelevanceScore": {
-    "high": 186,
+    "high": 187,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Facebook | Snurblog — Axel Bruns",
+      "url": "https://snurb.info/node/3409",
+      "source": "snurb.info",
+      "relevanceScore": 0.9,
+      "collectedAt": "2026-08-07T07:20:44.024Z"
+    },
     {
       "title": "FG's Research Radio",
       "url": "https://podcasts.apple.com/us/podcast/research-radio/id1786524350",
@@ -62,13 +69,6 @@
       "source": "icahdq.org",
       "relevanceScore": 0.95,
       "collectedAt": "2026-08-01T09:10:07.636Z"
-    },
-    {
-      "title": "Agcom accende i fari su Meta: “L'algoritmo favorisce gli account estremisti”",
-      "url": "https://www.dire.it/14-04-2026/1199342-agcom-accende-i-fari-su-meta-lalgoritmo-favorisce-gli-account-estremisti/",
-      "source": "dire.it",
-      "relevanceScore": 0.95,
-      "collectedAt": "2026-07-28T08:39:46.082Z"
     }
   ]
 }
