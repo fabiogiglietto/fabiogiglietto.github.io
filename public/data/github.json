@@ -12,36 +12,6 @@
   },
   "repositories": [
     {
-      "name": "fg-zettelkasten",
-      "description": null,
-      "url": "https://github.com/fabiogiglietto/fg-zettelkasten",
-      "language": "TypeScript",
-      "stars": 1,
-      "forks": 0,
-      "created_at": "2026-05-17T08:10:27Z",
-      "updated_at": "2026-08-07T07:24:24Z"
-    },
-    {
-      "name": "fabiogiglietto.github.io",
-      "description": "Your research presence, always current, zero maintenance.                                                                                                                                  ",
-      "url": "https://github.com/fabiogiglietto/fabiogiglietto.github.io",
-      "language": "JavaScript",
-      "stars": 7,
-      "forks": 1,
-      "created_at": "2025-04-21T09:41:33Z",
-      "updated_at": "2026-08-07T07:23:48Z"
-    },
-    {
-      "name": "research-radio",
-      "description": "Convert academic papers into AI podcast episodes with Anthropic Claude and Google Gemini. Powers FG's Research Radio.",
-      "url": "https://github.com/fabiogiglietto/research-radio",
-      "language": "Python",
-      "stars": 4,
-      "forks": 1,
-      "created_at": "2025-12-29T17:46:10Z",
-      "updated_at": "2026-08-06T09:36:40Z"
-    },
-    {
       "name": "mine-toread",
       "description": "MINE team toread feed — fork of toread with team Slack submissions (Mapping Italian News)",
       "url": "https://github.com/fabiogiglietto/mine-toread",
@@ -49,7 +19,7 @@
       "stars": 0,
       "forks": 0,
       "created_at": "2026-06-29T08:06:51Z",
-      "updated_at": "2026-08-03T13:46:19Z"
+      "updated_at": "2026-08-07T09:40:02Z"
     },
     {
       "name": "toread",
@@ -59,7 +29,37 @@
       "stars": 1,
       "forks": 0,
       "created_at": "2025-06-07T09:12:59Z",
-      "updated_at": "2026-08-03T11:53:29Z"
+      "updated_at": "2026-08-07T09:35:05Z"
+    },
+    {
+      "name": "fg-zettelkasten",
+      "description": null,
+      "url": "https://github.com/fabiogiglietto/fg-zettelkasten",
+      "language": "TypeScript",
+      "stars": 1,
+      "forks": 0,
+      "created_at": "2026-05-17T08:10:27Z",
+      "updated_at": "2026-08-07T09:34:56Z"
+    },
+    {
+      "name": "fabiogiglietto.github.io",
+      "description": "Your research presence, always current, zero maintenance.                                                                                                                                  ",
+      "url": "https://github.com/fabiogiglietto/fabiogiglietto.github.io",
+      "language": "JavaScript",
+      "stars": 7,
+      "forks": 1,
+      "created_at": "2025-04-21T09:41:33Z",
+      "updated_at": "2026-08-07T08:21:24Z"
+    },
+    {
+      "name": "research-radio",
+      "description": "Convert academic papers into AI podcast episodes with Anthropic Claude and Google Gemini. Powers FG's Research Radio.",
+      "url": "https://github.com/fabiogiglietto/research-radio",
+      "language": "Python",
+      "stars": 4,
+      "forks": 1,
+      "created_at": "2025-12-29T17:46:10Z",
+      "updated_at": "2026-08-07T08:10:29Z"
     },
     {
       "name": "mine-zettelkasten",
@@ -2325,5 +2325,5 @@
       "activity": {}
     }
   ],
-  "lastUpdated": "2026-08-07T08:09:16.367Z"
+  "lastUpdated": "2026-08-07T09:40:57.123Z"
 }

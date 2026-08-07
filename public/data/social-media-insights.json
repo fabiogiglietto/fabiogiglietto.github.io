@@ -1,5 +1,5 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a highly specialized and impactful social media presence across professional and academic networks (LinkedIn, Bluesky, and Mastodon), boasting a combined following of 3,580. His content strictly revolves around computational social science, disinformation, and academic opportunities, yielding deep and active engagement from a targeted community of researchers and peers.",
+  "overallSummary": "Fabio Giglietto maintains a strong, highly specialized professional presence across Bluesky, LinkedIn, and Mastodon. His content effectively reaches academic and research-oriented communities, driving high engagement rates on research updates, tool releases, and recruitment opportunities. While LinkedIn provides the highest absolute engagement due to a larger follower base, Bluesky commands the highest average engagement rate, indicating a highly active and responsive peer network.",
   "engagementMetrics": {
     "totalFollowers": 3580,
     "averageEngagementRate": 5.32,
@@ -7,27 +7,27 @@
   },
   "contentThemes": [
     {
-      "theme": "Disinformation & Coordinated Behavior",
-      "description": "Sharing research updates, publications, and tools targeted at detecting coordinated inauthentic behavior and information operations."
+      "theme": "Coordinated Inauthentic Behavior & Disinformation",
+      "description": "Updates on research, methodology, and software tools (like CooRnet v2.0) designed to detect coordinated link-sharing and disinformation campaigns."
     },
     {
-      "theme": "Academic Recruitment & Career Opportunities",
-      "description": "Actively hiring and promoting career pathways, including PhD opportunities and postdoctoral positions within his research team."
+      "theme": "Academic Career Opportunities",
+      "description": "Recruitment posts for postdoctoral and PhD positions in computational social science, which drive strong sharing and interaction."
     },
     {
-      "theme": "Open Source Tooling & Methodology",
-      "description": "Announcements regarding updates to research software, such as CooRnet v2.0, and technical discussions around multi-platform analysis."
+      "theme": "Research Milestones",
+      "description": "Announcements of newly published papers, research grants, and upcoming conference presentations."
     }
   ],
   "recommendations": [
-    "Capitalize on Bluesky's highly active and receptive audience by posting visual summaries, key charts, or short threads breaking down newly published research papers.",
-    "Increase posting consistency on Mastodon to foster deeper, threaded discussions around methodologies and academic tool development.",
-    "Optimize LinkedIn recruitment and grant posts by prompting viewers to share or tag potential candidates, maximizing external organic reach."
+    "Capitalize on the highly active Bluesky audience by sharing more frequent, informal progress updates and behind-the-scenes insights into ongoing research.",
+    "Diversify LinkedIn content by publishing shorter, high-impact key findings from newly funded projects to engage industry practitioners and policy makers who may not read academic papers.",
+    "Introduce interactive elements, such as questions or discussion prompts in Mastodon posts, to foster more peer-to-peer conversations within the specialized aoir.social instance."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky stands out as the most engaging platform by rate (6.14% average), demonstrating strong community interest in fresh publications and academic opportunities.",
-    "mastodon": "Mastodon serves as a solid niche channel for methodological and technical tool announcements, capturing highly focused, peer-level attention.",
-    "linkedin": "LinkedIn is the primary driver of absolute reach and high-volume engagement, making it highly effective for major professional milestones, funding news, and job hiring."
+    "bluesky": "Acts as the most dynamically engaging platform (average 6.14% engagement rate), where research-related posts and student opportunities are shared heavily through reposts, indicating high peer alignment.",
+    "mastodon": "Provides a highly technical audience (average 4.55% engagement rate) suitable for tool-specific updates, though post volume and raw interaction numbers remain lower compared to other platforms.",
+    "linkedin": "Serves as the primary channel for high-profile professional milestones like grant announcements and job openings, bringing in the highest total engagement volume (180 total interactions) due to its larger reach."
   },
   "topPerformingContent": [
     {
