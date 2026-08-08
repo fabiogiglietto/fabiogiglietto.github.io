@@ -12,14 +12,14 @@
   },
   "repositories": [
     {
-      "name": "mine-toread",
-      "description": "MINE team toread feed — fork of toread with team Slack submissions (Mapping Italian News)",
-      "url": "https://github.com/fabiogiglietto/mine-toread",
-      "language": "TeX",
+      "name": "mine-zettelkasten",
+      "description": "MINE team Zettelkasten — multi-user fork of fg-zettelkasten (Mapping Italian News)",
+      "url": "https://github.com/fabiogiglietto/mine-zettelkasten",
+      "language": "TypeScript",
       "stars": 0,
       "forks": 0,
-      "created_at": "2026-06-29T08:06:51Z",
-      "updated_at": "2026-08-07T09:40:02Z"
+      "created_at": "2026-06-29T08:06:47Z",
+      "updated_at": "2026-08-08T05:36:29Z"
     },
     {
       "name": "toread",
@@ -29,7 +29,7 @@
       "stars": 1,
       "forks": 0,
       "created_at": "2025-06-07T09:12:59Z",
-      "updated_at": "2026-08-07T09:35:05Z"
+      "updated_at": "2026-08-07T10:24:37Z"
     },
     {
       "name": "fg-zettelkasten",
@@ -39,7 +39,7 @@
       "stars": 1,
       "forks": 0,
       "created_at": "2026-05-17T08:10:27Z",
-      "updated_at": "2026-08-07T09:34:56Z"
+      "updated_at": "2026-08-07T09:54:54Z"
     },
     {
       "name": "fabiogiglietto.github.io",
@@ -49,7 +49,7 @@
       "stars": 7,
       "forks": 1,
       "created_at": "2025-04-21T09:41:33Z",
-      "updated_at": "2026-08-07T08:21:24Z"
+      "updated_at": "2026-08-07T09:52:01Z"
     },
     {
       "name": "research-radio",
@@ -59,17 +59,17 @@
       "stars": 4,
       "forks": 1,
       "created_at": "2025-12-29T17:46:10Z",
-      "updated_at": "2026-08-07T08:10:29Z"
+      "updated_at": "2026-08-07T09:41:05Z"
     },
     {
-      "name": "mine-zettelkasten",
-      "description": "MINE team Zettelkasten — multi-user fork of fg-zettelkasten (Mapping Italian News)",
-      "url": "https://github.com/fabiogiglietto/mine-zettelkasten",
-      "language": "TypeScript",
+      "name": "mine-toread",
+      "description": "MINE team toread feed — fork of toread with team Slack submissions (Mapping Italian News)",
+      "url": "https://github.com/fabiogiglietto/mine-toread",
+      "language": "TeX",
       "stars": 0,
       "forks": 0,
-      "created_at": "2026-06-29T08:06:47Z",
-      "updated_at": "2026-08-03T07:19:33Z"
+      "created_at": "2026-06-29T08:06:51Z",
+      "updated_at": "2026-08-07T09:40:02Z"
     },
     {
       "name": "tiktok_csbn",
@@ -2322,8 +2322,8 @@
       "url": "https://github.com/fabiogiglietto/research-radio",
       "stars": 4,
       "forks": 1,
-      "activity": {}
+      "activity": null
     }
   ],
-  "lastUpdated": "2026-08-07T09:40:57.123Z"
+  "lastUpdated": "2026-08-08T06:49:44.304Z"
 }

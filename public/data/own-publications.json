@@ -3,7 +3,7 @@
   "title": "Fabio Giglietto — own publications",
   "home_page_url": "https://fabiogiglietto.github.io/publications",
   "description": "Auto-generated feed of Fabio Giglietto's own publications, consumed downstream by research-radio and fg-zettelkasten.",
-  "_updated": "2026-08-07T09:51:18.614Z",
+  "_updated": "2026-08-08T06:59:33.171Z",
   "items": [
     {
       "id": "bibtex:Marino2026-14665e93",
@@ -398,7 +398,7 @@
         "venue": "FRONTIERS IN SOCIOLOGY",
         "year": 2024,
         "publisher": "Frontiers Media SA",
-        "citation_count": 23,
+        "citation_count": 24,
         "open_access": true,
         "open_access_pdf_url": "https://www.frontiersin.org/articles/10.3389/fsoc.2024.1379265/pdf?isPublishedV2=False"
       }
@@ -1160,7 +1160,7 @@
       }
     },
     {
-      "id": "bibtex:giglietto2022-98491d5c",
+      "id": "bibtex:giglietto2022-6d263d9d",
       "title": "Social TV and second screen",
       "date_published": "2022-01-01",
       "authors": [
@@ -1168,13 +1168,36 @@
           "name": "fabio giglietto"
         }
       ],
-      "url": "https://doi.org/10.4337/9781800374263.social.tv.second",
+      "url": "https://ora.uniurb.it/handle/11576/2706570",
       "content_text": "The Elgar Encyclopedia of Technology and Politics is a landmark resource that offers a comprehensive overview of the ways in which technological development is reshaping politics. Providing an unparalleled starting point for research, it addresses all the major contemporary aspects of the field, comprising entries written by over 90 scholars from 33 different countries on 5 continents.",
       "_academic": {
-        "doi": "10.4337/9781800374263.social.tv.second",
-        "bibtex_key": "giglietto2022-98491d5c",
+        "doi": null,
+        "bibtex_key": "giglietto2022-6d263d9d",
         "type": "encyclopedia-entry",
         "venue": "Edward Elgar Publishing Limited",
+        "year": 2022,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2022-98491d5c",
+      "title": "Social TV and second screen",
+      "date_published": "2022-01-01",
+      "authors": [
+        {
+          "name": "Fabio Giglietto"
+        }
+      ],
+      "url": "https://doi.org/10.4337/9781800374263.social.tv.second",
+      "content_text": "",
+      "_academic": {
+        "doi": "10.4337/9781800374263.social.tv.second",
+        "bibtex_key": "Giglietto2022-98491d5c",
+        "type": "book-chapter",
+        "venue": "Elgar Encyclopedia of Technology and Politics",
         "year": 2022,
         "publisher": "Edward Elgar Publishing",
         "citation_count": 0,
@@ -1253,6 +1276,41 @@
       }
     },
     {
+      "id": "bibtex:Giglietto2021-4cf62320",
+      "title": "Coordinated Hateful Disinformation on Italian Politics and Social Issues, since 2017",
+      "date_published": "2021-01-01",
+      "authors": [
+        {
+          "name": "Fabio Giglietto"
+        },
+        {
+          "name": "Giada Marino"
+        },
+        {
+          "name": "Massimo Terenzi"
+        },
+        {
+          "name": "Nicola Righetti"
+        },
+        {
+          "name": "Luca Rossi"
+        }
+      ],
+      "url": "https://doi.org/10.2139/ssrn.3777263",
+      "content_text": "",
+      "_academic": {
+        "doi": "10.2139/ssrn.3777263",
+        "bibtex_key": "Giglietto2021-4cf62320",
+        "type": "other",
+        "venue": "SSRN Electronic Journal",
+        "year": 2021,
+        "publisher": "Elsevier BV",
+        "citation_count": 5,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
       "id": "bibtex:Gemini2021-b1b8eff6",
       "title": "Ciarlatani. Post-verità, contropubblici online e nuove articolazioni della fiducia nel sistema della medicina",
       "date_published": "2021-01-01",
@@ -1285,41 +1343,6 @@
         "venue": "SALUTE E SOCIETÀ",
         "year": 2021,
         "publisher": "Franco Angeli",
-        "citation_count": 4,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Giglietto2021-4cf62320",
-      "title": "Coordinated Hateful Disinformation on Italian Politics and Social Issues, since 2017",
-      "date_published": "2021-01-01",
-      "authors": [
-        {
-          "name": "Fabio Giglietto"
-        },
-        {
-          "name": "Giada Marino"
-        },
-        {
-          "name": "Massimo Terenzi"
-        },
-        {
-          "name": "Nicola Righetti"
-        },
-        {
-          "name": "Luca Rossi"
-        }
-      ],
-      "url": "https://doi.org/10.2139/ssrn.3777263",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.2139/ssrn.3777263",
-        "bibtex_key": "Giglietto2021-4cf62320",
-        "type": "other",
-        "venue": "SSRN Electronic Journal",
-        "year": 2021,
-        "publisher": "Elsevier BV",
         "citation_count": 4,
         "open_access": false,
         "open_access_pdf_url": null
@@ -1436,7 +1459,7 @@
         "venue": "Information, Communication &amp; Society",
         "year": 2020,
         "publisher": "Informa UK Limited",
-        "citation_count": 241,
+        "citation_count": 244,
         "open_access": true,
         "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2674874/10/AAM_with_cover.pdf"
       }
@@ -1468,7 +1491,7 @@
         "venue": "International Conference on Social Media and Society",
         "year": 2020,
         "publisher": "ACM",
-        "citation_count": 60,
+        "citation_count": 61,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -1532,32 +1555,9 @@
         "venue": "SSRN Electronic Journal",
         "year": 2020,
         "publisher": "Elsevier BV",
-        "citation_count": 6,
+        "citation_count": 7,
         "open_access": false,
         "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Giglietto2020-6278a4aa",
-      "title": "Three Consequences of Big Data on the Practices and Scholarships of Political Communication",
-      "date_published": "2020-01-01",
-      "authors": [
-        {
-          "name": "Fabio Giglietto"
-        }
-      ],
-      "url": "https://doi.org/10.3270/96423",
-      "content_text": "The advent of pervasive and connected digital technologies has profoundly affected both the way in which politicians interact with citizens and supporters and the way in which scholars study political communication. In the context of this ongoing transformation, this paper focuses on the role played by \"big data\" analytics. The large availability of digital footprints left by citizens in their everyday use of digital technologies have created possibilities for new forms of collaboration, advertisement, and propaganda. While political actors embrace these new strategies, media scholars studying political communication must adjust their methodologies in order to make sense of this mutated environment. This paper describes and discusses these three vectors of transformation in light of the new opportunities and challenges posed to scholars in the field of political communication.",
-      "_academic": {
-        "doi": "10.3270/96423",
-        "bibtex_key": "Giglietto2020-6278a4aa",
-        "type": "journal-article",
-        "venue": "COMUNICAZIONE POLITICA",
-        "year": 2020,
-        "publisher": null,
-        "citation_count": 2,
-        "open_access": true,
-        "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2676145/4/compol_filltext.pdf"
       }
     },
     {
@@ -1590,9 +1590,32 @@
         "venue": "SSRN Electronic Journal",
         "year": 2020,
         "publisher": "Elsevier BV",
-        "citation_count": 1,
+        "citation_count": 2,
         "open_access": false,
         "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2020-6278a4aa",
+      "title": "Three Consequences of Big Data on the Practices and Scholarships of Political Communication",
+      "date_published": "2020-01-01",
+      "authors": [
+        {
+          "name": "Fabio Giglietto"
+        }
+      ],
+      "url": "https://doi.org/10.3270/96423",
+      "content_text": "The advent of pervasive and connected digital technologies has profoundly affected both the way in which politicians interact with citizens and supporters and the way in which scholars study political communication. In the context of this ongoing transformation, this paper focuses on the role played by \"big data\" analytics. The large availability of digital footprints left by citizens in their everyday use of digital technologies have created possibilities for new forms of collaboration, advertisement, and propaganda. While political actors embrace these new strategies, media scholars studying political communication must adjust their methodologies in order to make sense of this mutated environment. This paper describes and discusses these three vectors of transformation in light of the new opportunities and challenges posed to scholars in the field of political communication.",
+      "_academic": {
+        "doi": "10.3270/96423",
+        "bibtex_key": "Giglietto2020-6278a4aa",
+        "type": "journal-article",
+        "venue": "COMUNICAZIONE POLITICA",
+        "year": 2020,
+        "publisher": null,
+        "citation_count": 2,
+        "open_access": true,
+        "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2676145/4/compol_filltext.pdf"
       }
     },
     {
@@ -1667,7 +1690,7 @@
         "venue": "Center for Open Science",
         "year": 2019,
         "publisher": "Center for Open Science",
-        "citation_count": 29,
+        "citation_count": 30,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -1699,7 +1722,7 @@
         "venue": "Information, Communication &amp; Society",
         "year": 2019,
         "publisher": "Informa UK Limited",
-        "citation_count": 46,
+        "citation_count": 48,
         "open_access": true,
         "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2668426/2/post-print%20for%20ora.uniurb.it%20.pdf"
       }
@@ -1757,7 +1780,7 @@
         "venue": "Current Sociology",
         "year": 2019,
         "publisher": "SAGE Publications",
-        "citation_count": 182,
+        "citation_count": 183,
         "open_access": true,
         "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2665976/2/post-print%20for%20ora.uniurb.it.pdf"
       }
@@ -1789,7 +1812,7 @@
         "venue": "COMUNICAZIONE POLITICA",
         "year": 2019,
         "publisher": null,
-        "citation_count": 22,
+        "citation_count": 23,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -1984,7 +2007,7 @@
         "venue": "SSRN Electronic Journal",
         "year": 2018,
         "publisher": "Elsevier BV",
-        "citation_count": 37,
+        "citation_count": 38,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -2204,8 +2227,61 @@
       }
     },
     {
-      "id": "bibtex:An2016-0cdbe34d",
+      "id": "bibtex:An2016-da9b4205",
       "title": "Reports of the workshops held at the 2016 International AAAI Conference on Web and Social Media",
+      "date_published": "2016-01-01",
+      "authors": [
+        {
+          "name": "Jisun An"
+        },
+        {
+          "name": "David J. Crandall"
+        },
+        {
+          "name": "Roman Fedorov"
+        },
+        {
+          "name": "Casey Fiesler"
+        },
+        {
+          "name": "Fabio Giglietto"
+        },
+        {
+          "name": "Bahareh Heravi"
+        },
+        {
+          "name": "Jessica Pater"
+        },
+        {
+          "name": "Konstantinos Pelechrinis"
+        },
+        {
+          "name": "Daniele Quercia"
+        },
+        {
+          "name": "Katrin Weller"
+        },
+        {
+          "name": "Arkaitz Zubiaga"
+        }
+      ],
+      "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85019996457&partnerID=MN8TOARS",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "An2016-da9b4205",
+        "type": "journal-article",
+        "venue": "AI Magazine",
+        "year": 2016,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:An2016-0cdbe34d",
+      "title": "Reports of the Workshops Held at the 2016 International AAAI Conference on Web and Social Media",
       "date_published": "2016-01-01",
       "authors": [
         {

@@ -1751,6 +1751,18 @@
       "author": "Paul Balluff, Hajo G. Boomgaarden, Annie Waldherr",
       "doi": "10.31235/osf.io/43nvp_v1",
       "own": false
+    },
+    {
+      "id": "bibtex:Galip2026-ix",
+      "bibtexKey": "Galip2026-ix",
+      "title": "When AI Eats Itself: The Gimmick of Generative Slop",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGalip, I., & Lupinacci, L. (2026). Degenerative AI: AI slop, brainrot, and the gimmick of generative culture. https://doi.org/10.1177/13675494261468638",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Galip2026-ix.mp3",
+      "pubDate": "2026-08-07T09:40:20.097142+00:00",
+      "duration": "11:05",
+      "author": "Idil Galip, Ludmila Lupinacci",
+      "doi": "10.1177/13675494261468638",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -3505,6 +3517,18 @@
       "author": "Paul Balluff, Hajo G. Boomgaarden, Annie Waldherr",
       "doi": "10.31235/osf.io/43nvp_v1",
       "own": false
+    },
+    "Galip2026-ix": {
+      "id": "bibtex:Galip2026-ix",
+      "bibtexKey": "Galip2026-ix",
+      "title": "When AI Eats Itself: The Gimmick of Generative Slop",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGalip, I., & Lupinacci, L. (2026). Degenerative AI: AI slop, brainrot, and the gimmick of generative culture. https://doi.org/10.1177/13675494261468638",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Galip2026-ix.mp3",
+      "pubDate": "2026-08-07T09:40:20.097142+00:00",
+      "duration": "11:05",
+      "author": "Idil Galip, Ludmila Lupinacci",
+      "doi": "10.1177/13675494261468638",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -4851,9 +4875,21 @@
       "author": "Paul Balluff, Hajo G. Boomgaarden, Annie Waldherr",
       "doi": "10.31235/osf.io/43nvp_v1",
       "own": false
+    },
+    "10.1177/13675494261468638": {
+      "id": "bibtex:Galip2026-ix",
+      "bibtexKey": "Galip2026-ix",
+      "title": "When AI Eats Itself: The Gimmick of Generative Slop",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGalip, I., & Lupinacci, L. (2026). Degenerative AI: AI slop, brainrot, and the gimmick of generative culture. https://doi.org/10.1177/13675494261468638",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Galip2026-ix.mp3",
+      "pubDate": "2026-08-07T09:40:20.097142+00:00",
+      "duration": "11:05",
+      "author": "Idil Galip, Ludmila Lupinacci",
+      "doi": "10.1177/13675494261468638",
+      "own": false
     }
   },
-  "totalEpisodes": 146,
-  "lastUpdated": "2026-08-07T09:40:54.904Z",
+  "totalEpisodes": 147,
+  "lastUpdated": "2026-08-08T06:49:43.345Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
