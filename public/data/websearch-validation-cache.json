@@ -5666,5 +5666,44 @@
       "personMatch": "not_mentioned",
       "isRecent": true
     }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-7463f8cb": {
+    "v": 1,
+    "cachedAt": "2026-08-08T07:50:30.660Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 1,
+      "reason": "Validated as relevant",
+      "description": "An article covering a study led by Fabio Giglietto at the University of Urbino analyzing how Meta's algorithms affect the visibility of Italian politicians on Facebook.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "podcasts.apple.com/us/podcast/research-radio/id1735492110": {
+    "v": 1,
+    "cachedAt": "2026-08-08T07:50:35.851Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.85,
+      "reason": "Validated as relevant",
+      "description": "Research Radio is a podcast series created and curated by Fabio Giglietto that utilizes AI workflows to translate complex, peer-reviewed computational social science research into accessible audio discussions.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "podcasts.apple.com/us/podcast/research-radio/id1721532026": {
+    "v": 1,
+    "cachedAt": "2026-08-08T07:50:42.040Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.9,
+      "reason": "The mention is highly relevant as it is an Apple Podcasts directory listing for a show created and curated by the target researcher, focusing directly on his field of computational social science.",
+      "description": "An Apple Podcasts listing for 'Research Radio', a podcast curated by Fabio Giglietto that uses AI tools to translate complex computational social science and platform governance research into audio discussions.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }
