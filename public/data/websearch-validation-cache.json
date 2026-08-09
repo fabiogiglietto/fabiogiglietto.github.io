@@ -5705,5 +5705,83 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "ilrestodelcarlino.it/urbino/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-3ef1a134": {
+    "v": 1,
+    "cachedAt": "2026-08-09T07:00:09.852Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An investigative news article covering Professor Fabio Giglietto's research on Meta's political content reduction algorithm and its impact on the visibility of Italian parliamentarians on Facebook.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "snurb.info/node/3160": {
+    "v": 1,
+    "cachedAt": "2026-08-09T07:00:15.908Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "Third-party liveblog coverage of Fabio Giglietto's presentation at the 2026 ICA conference investigating Facebook's algorithmic effects on news URL engagement.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "podcasts.apple.com/us/podcast/research-radio/id1724123456": {
+    "v": 1,
+    "cachedAt": "2026-08-09T07:00:23.185Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.3,
+      "reason": "The target's full name 'Fabio Giglietto' is not explicitly mentioned in the title, URL, or context (only 'FG' and 'Giglietto' are used).",
+      "description": "An Apple Podcasts listing for 'Research Radio', a podcast project curating academic research and utilizing AI tools to discuss computational social science and digital platforms.",
+      "personMatch": "not_mentioned",
+      "isRecent": true
+    }
+  },
+  "podcasts.apple.com/podcast/research-radio/id1725458032": {
+    "v": 1,
+    "cachedAt": "2026-08-09T07:00:30.217Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.9,
+      "reason": "Validated as relevant",
+      "description": "An ongoing AI-driven podcast project created by Fabio Giglietto that translates complex computational social science, platform studies, and misinformation research into accessible, conversational episodes.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "editorialedomani.it/economia/piu-visibilita-agli-estremisti-che-ai-parlamentari-limpatto-del-filtro-di-meta-sulle-elezioni-vjph41r5": {
+    "v": 1,
+    "cachedAt": "2026-08-09T07:00:33.706Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An article in Domani featuring Fabio Giglietto's research on the impact of Meta's political content reduction policy on the Facebook visibility of Italian parliamentarians.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "vivereurbino.it/2026/04/17/algoritmi-e-democrazia-il-caso-meta-secondo-lo-studio-di-uniurb/150172": {
+    "v": 1,
+    "cachedAt": "2026-08-09T07:00:38.333Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "Local news coverage highlighting how Fabio Giglietto’s platform-governance research at the University of Urbino was featured on the Rai3 program 'Report' and inspired a formal European Parliament interrogation on algorithm transparency.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }
