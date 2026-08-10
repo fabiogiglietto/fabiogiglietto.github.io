@@ -3,7 +3,7 @@
   "title": "Fabio Giglietto — own publications",
   "home_page_url": "https://fabiogiglietto.github.io/publications",
   "description": "Auto-generated feed of Fabio Giglietto's own publications, consumed downstream by research-radio and fg-zettelkasten.",
-  "_updated": "2026-08-10T07:48:54.848Z",
+  "_updated": "2026-08-10T08:32:07.882Z",
   "items": [
     {
       "id": "bibtex:Marino2026-14665e93",
@@ -1160,7 +1160,7 @@
       }
     },
     {
-      "id": "bibtex:giglietto2022-6d263d9d",
+      "id": "bibtex:giglietto2022-98491d5c",
       "title": "Social TV and second screen",
       "date_published": "2022-01-01",
       "authors": [
@@ -1168,36 +1168,13 @@
           "name": "fabio giglietto"
         }
       ],
-      "url": "https://ora.uniurb.it/handle/11576/2706570",
+      "url": "https://doi.org/10.4337/9781800374263.social.tv.second",
       "content_text": "The Elgar Encyclopedia of Technology and Politics is a landmark resource that offers a comprehensive overview of the ways in which technological development is reshaping politics. Providing an unparalleled starting point for research, it addresses all the major contemporary aspects of the field, comprising entries written by over 90 scholars from 33 different countries on 5 continents.",
       "_academic": {
-        "doi": null,
-        "bibtex_key": "giglietto2022-6d263d9d",
+        "doi": "10.4337/9781800374263.social.tv.second",
+        "bibtex_key": "giglietto2022-98491d5c",
         "type": "encyclopedia-entry",
         "venue": "Edward Elgar Publishing Limited",
-        "year": 2022,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Giglietto2022-98491d5c",
-      "title": "Social TV and second screen",
-      "date_published": "2022-01-01",
-      "authors": [
-        {
-          "name": "Fabio Giglietto"
-        }
-      ],
-      "url": "https://doi.org/10.4337/9781800374263.social.tv.second",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.4337/9781800374263.social.tv.second",
-        "bibtex_key": "Giglietto2022-98491d5c",
-        "type": "book-chapter",
-        "venue": "Elgar Encyclopedia of Technology and Politics",
         "year": 2022,
         "publisher": "Edward Elgar Publishing",
         "citation_count": 0,
@@ -2227,61 +2204,8 @@
       }
     },
     {
-      "id": "bibtex:An2016-da9b4205",
-      "title": "Reports of the workshops held at the 2016 International AAAI Conference on Web and Social Media",
-      "date_published": "2016-01-01",
-      "authors": [
-        {
-          "name": "Jisun An"
-        },
-        {
-          "name": "David J. Crandall"
-        },
-        {
-          "name": "Roman Fedorov"
-        },
-        {
-          "name": "Casey Fiesler"
-        },
-        {
-          "name": "Fabio Giglietto"
-        },
-        {
-          "name": "Bahareh Heravi"
-        },
-        {
-          "name": "Jessica Pater"
-        },
-        {
-          "name": "Konstantinos Pelechrinis"
-        },
-        {
-          "name": "Daniele Quercia"
-        },
-        {
-          "name": "Katrin Weller"
-        },
-        {
-          "name": "Arkaitz Zubiaga"
-        }
-      ],
-      "url": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85019996457&partnerID=MN8TOARS",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "An2016-da9b4205",
-        "type": "journal-article",
-        "venue": "AI Magazine",
-        "year": 2016,
-        "publisher": null,
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
       "id": "bibtex:An2016-0cdbe34d",
-      "title": "Reports of the Workshops Held at the 2016 International AAAI Conference on Web and Social Media",
+      "title": "Reports of the workshops held at the 2016 International AAAI Conference on Web and Social Media",
       "date_published": "2016-01-01",
       "authors": [
         {
