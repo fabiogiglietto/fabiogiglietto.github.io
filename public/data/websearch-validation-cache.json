@@ -6186,5 +6186,57 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-79fc7ce3": {
+    "v": 1,
+    "cachedAt": "2026-08-13T07:03:07.466Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 1,
+      "reason": "N/A",
+      "description": "An interview with Professor Fabio Giglietto in Il Resto del Carlino discussing his research on how Meta's algorithms influence political communication and the impact of the Digital Services Act.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "alleanzaverdisinistra.it/referendum-bonelli-e-fratoianni-avs-scrivono-al-presidente-agcom-preoccupati-per-le-fake-news-veicolate-sui-social-chiesto-incontro-piccolotti-inquietante-che-tecnologie-opache-abbiano-cos": {
+    "v": 1,
+    "cachedAt": "2026-08-13T07:03:13.150Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "Italian political leaders formally cite Fabio Giglietto's research on Meta's political content reduction policies in an official complaint to AGCOM concerning algorithmic bias and disinformation.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "editorialedomani.it/politica/italia/piu-visibilita-agli-estremisti-che-ai-parlamentari-limpatto-del-filtro-di-meta-sulle-elezioni-ma4mj5tc": {
+    "v": 1,
+    "cachedAt": "2026-08-13T07:03:18.182Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An investigative news article in Domani analyzing Fabio Giglietto's study on how Meta's algorithmic filters affected political reach during the elections.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "open.online/2026/01/07/facebook-algoritmo-politica-estremisti-studio-universita-urbino-proposta-legge": {
+    "v": 1,
+    "cachedAt": "2026-08-13T07:03:31.811Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.4,
+      "reason": "The full name 'Fabio Giglietto' does not explicitly appear in the title, URL, or provided context (only the last name 'Giglietto' is mentioned).",
+      "description": "An Italian news article reporting on a University of Urbino study about Facebook's algorithm favoring extremist content over institutional politics.",
+      "personMatch": "uncertain",
+      "isRecent": true
+    }
   }
 }
