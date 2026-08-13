@@ -6317,68 +6317,42 @@
       "isRecent": true
     }
   },
-  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-703c3938": {
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-7ba3513a": {
     "v": 1,
-    "cachedAt": "2026-08-13T08:19:18.972Z",
+    "cachedAt": "2026-08-13T08:30:11.677Z",
     "verdict": {
       "isRelevant": true,
       "mentionedByName": true,
       "relevanceScore": 0.95,
       "reason": "Validated as relevant",
-      "description": "An Italian news article discussing Prof. Fabio Giglietto's research from the University of Urbino on how Meta's algorithms impact the visibility of elected representatives and influence democratic processes.",
+      "description": "A news article reporting on a study led by Professor Fabio Giglietto from the University of Urbino, which analyzes how Facebook's recommendation algorithm impacts the visibility of Italian politicians' posts.",
       "personMatch": "confirmed",
       "isRecent": true
     }
   },
-  "open.online/2026/01/07/facebook-algoritmo-penalizza-politica-ufficiale-studio-urbino": {
+  "vivereurbino.it/2026/04/17/algoritmi-e-democrazia-il-caso-meta-secondo-lo-studio-di-uniurb/2100438344": {
     "v": 1,
-    "cachedAt": "2026-08-13T08:19:24.711Z",
+    "cachedAt": "2026-08-13T08:30:17.356Z",
     "verdict": {
       "isRelevant": true,
       "mentionedByName": true,
-      "relevanceScore": 0.95,
-      "reason": "N/A",
-      "description": "An in-depth media report on Open.online detailing Fabio Giglietto's study on Facebook's algorithm and its impact on political discourse, which has prompted bipartisan interest in platform regulation.",
+      "relevanceScore": 0.98,
+      "reason": "The content is a highly relevant third-party press report about Fabio Giglietto's research on Meta's algorithms and its political impact, confirming his academic affiliation with UniUrb.",
+      "description": "A news article detailing the public and institutional impact of Fabio Giglietto's research on Meta's political content reduction policy, including its feature on Rai3's 'Report' and discussions in the European Parliament.",
       "personMatch": "confirmed",
       "isRecent": true
     }
   },
-  "open.online/2026/04/12/report-accusa-meta-interferenze-elezioni-2022": {
+  "podcasts.apple.com/us/podcast/research-radio/id1724823126": {
     "v": 1,
-    "cachedAt": "2026-08-13T08:19:30.096Z",
+    "cachedAt": "2026-08-13T08:30:26.775Z",
     "verdict": {
-      "isRelevant": true,
-      "mentionedByName": true,
-      "relevanceScore": 0.95,
-      "reason": "Validated as relevant",
-      "description": "An investigative news article from open.online reporting on Meta's algorithmic political biases, which highlights and relies on research findings by Fabio Giglietto from the University of Urbino.",
-      "personMatch": "confirmed",
-      "isRecent": true
-    }
-  },
-  "vivereurbino.it/2026/04/17/algoritmi-e-democrazia-il-caso-meta-secondo-lo-studio-di-uniurb/167732": {
-    "v": 1,
-    "cachedAt": "2026-08-13T08:19:35.160Z",
-    "verdict": {
-      "isRelevant": true,
-      "mentionedByName": true,
-      "relevanceScore": 0.95,
-      "reason": "Validated as relevant",
-      "description": "An article from Vivere Urbino discussing how Fabio Giglietto's research at UniUrb ('A Pretty Blunt Approach') sparked investigative action by the European Commission against Meta under the Digital Services Act.",
-      "personMatch": "confirmed",
-      "isRecent": true
-    }
-  },
-  "podcasts.apple.com/us/podcast/research-radio/id1747806540": {
-    "v": 1,
-    "cachedAt": "2026-08-13T08:19:40.653Z",
-    "verdict": {
-      "isRelevant": true,
-      "mentionedByName": true,
-      "relevanceScore": 0.9,
-      "reason": "Validated as relevant",
-      "description": "An active weekly AI-assisted podcast titled 'Research Radio' created and curated by Fabio Giglietto, which translates complex computational social science and misinformation research into digestible audio discussions.",
-      "personMatch": "confirmed",
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.3,
+      "reason": "The content does not explicitly mention the full name 'Fabio Giglietto' in the title, URL, or context, referring only to 'FG' and 'Giglietto'.",
+      "description": "An episode of the 'Research Radio' podcast discussing longitudinal research on partisan dynamics and echo chambers on Facebook.",
+      "personMatch": "not_mentioned",
       "isRecent": true
     }
   }
