@@ -6394,5 +6394,57 @@
       "personMatch": "not_mentioned",
       "isRecent": false
     }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-b570259e": {
+    "v": 1,
+    "cachedAt": "2026-08-14T08:32:21.417Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 1,
+      "reason": "Validated as relevant",
+      "description": "A news article covering Fabio Giglietto's research at the University of Urbino regarding the impact of Meta's algorithms on political content visibility and democratic processes.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "vivereurbino.it/2026/04/17/algoritmi-e-democrazia-il-caso-meta-secondo-lo-studio-di-uniurb/1535497": {
+    "v": 1,
+    "cachedAt": "2026-08-14T08:32:29.648Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "Media coverage from Vivere Urbino discussing Fabio Giglietto's study on how Meta's algorithm changes and political content reduction policies on Facebook impacted democratic representatives.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "open.online/2026/04/12/report-meta-elezioni-2022-utenti-profilati": {
+    "v": 1,
+    "cachedAt": "2026-08-14T08:32:41.455Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The name 'Fabio Giglietto' does not appear in the title, URL, or provided context, making it impossible to verify his mention.",
+      "description": "An article on open.online discussing a Meta report concerning user profiling during the 2022 elections.",
+      "personMatch": "not_mentioned",
+      "isRecent": false
+    }
+  },
+  "facebook.com/reportrai3/videos/nel-2021-meta-crea-un-filtro-che-riduce-la-visibilit%c3%a0-dei-contenuti-politici-sul/2177020173098638": {
+    "v": 1,
+    "cachedAt": "2026-08-14T08:32:53.487Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The provided metadata (title, URL, and lack of context snippet) does not contain the name 'Fabio Giglietto' or confirm his association with this video link.",
+      "description": "A Facebook video from Report Rai 3 about Meta's 2021 filter that reduced the visibility of political content.",
+      "personMatch": "not_mentioned",
+      "isRecent": false
+    }
   }
 }

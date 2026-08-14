@@ -1099,6 +1099,26 @@
       "crossref_score": 1
     },
     {
+      "doi": "10.31235/osf.io/gba57_v1",
+      "title": "Ten months of continuous coordinated-behaviour monitoring on Facebook: the VERA-AI Alert system and its empirical yield",
+      "authors": "Giglietto, Fabio; Marino, Giada; Chakraborty, Anwesha; Righetti, Nicola",
+      "venue": "Center for Open Science",
+      "year": 2026,
+      "type": "posted-content",
+      "url": "https://doi.org/10.31235/osf.io/gba57_v1",
+      "crossref_type": "posted-content",
+      "publisher": "Center for Open Science",
+      "issn": null,
+      "isbn": null,
+      "subject": [],
+      "abstract": "<p>What does a coordination detector find when it is seeded once and then left to follow its own detections for ten months? Evidence on coordinated behaviour and influence operations comes almost entirely from retrospective case studies selected for their political salience. We report ten months (October 2023 – August 2024) of continuous monitoring by VERA-AI Alert, which wraps coordinated link-, message- and image-text-sharing engines in a recursive discovery loop, promotes recurring accounts into a watched pool, and alerts analysts in quasi-real time; we document the implementation in full. From a seed of 1,225 accounts anchored in fact-checked political and health misinformation, the deployment discovered 14,832 coordinated accounts forming 207 communities across 11 operational categories. Entertainment is 4.5% of the fact-checked URLs the seed was built from and gambling one URL in a thousand, yet entertainment/fan communities came to hold 36.4% of all discovered accounts and five gambling operations a further 6.3%. Matching on account identifiers, 0.26% of those entertainment accounts and 0.11% of the gambling ones had been on the seed watched list, against 3.92% of the political ones: new populations the loop reached, not the seed under new names. Political, entertainment and commercial coordination are thus not parallel ecosystems but spaces connected by sparse brokerage, and research scoped to political content cannot observe the bridges between them. Most detected coordination is low-intensity (80.7% sporadic or weak); the structure departs from a marginal-preserving null on all five metrics (p ≤ 0.001); and a strict filter recovers a 19-community core, matching a prior, separate analysis of the same data. The deployment ran on CrowdTangle; reproducing it now needs four things of a data-access route — programmatic export, scheduled unattended execution, a live engagement baseline, and identifiers that resolve to platform content — that no route available to us supplies together. Code and data: https://github.com/GiaMa/VeraAI-Global-CSB-Alert (DOI 10.5281/zenodo.21225024).</p>",
+      "license": [
+        "https://creativecommons.org/licenses/by/4.0/legalcode"
+      ],
+      "funder": [],
+      "crossref_score": 1
+    },
+    {
       "doi": "10.1080/1369118x.2026.2696929",
       "title": "Measuring partisan community dynamics: a longitudinal analysis of affective engagement in pro-Bolsonaro Facebook networks",
       "authors": "Marino, Giada; Paroni, Bruna; Giglietto, Fabio",
@@ -1265,6 +1285,24 @@
       "isbn": "9781800374263",
       "subject": [],
       "abstract": null,
+      "license": [],
+      "funder": [],
+      "crossref_score": 1
+    },
+    {
+      "doi": "10.2139/ssrn.3908944",
+      "title": "Research Note: Top 10 Most Viewed Links on Facebook during 2020",
+      "authors": "Giglietto, Fabio; Rossi, Luca; Righetti, Nicola; Marino, Giada; Terenzi, Massimo",
+      "venue": "Elsevier BV",
+      "year": 2021,
+      "type": "posted-content",
+      "url": "https://doi.org/10.2139/ssrn.3908944",
+      "crossref_type": "posted-content",
+      "publisher": "Elsevier BV",
+      "issn": null,
+      "isbn": null,
+      "subject": [],
+      "abstract": "<jats:p>With the goal of contributing to the ongoing debate on widely viewed external links of Facebook, we relied on the latest version of the URL Shares Dataset to address the following question: what were the most viewed URLs shared on Facebook during 2020 in US*, UK and the EU countries?&lt;br&gt;&lt;br&gt;* please note that due to a recently discovered issue, the current version of the URL Shares Dataset only includes views from users who had a political page-affinity score (approximately 50% of the total population of US users).</jats:p>",
       "license": [],
       "funder": [],
       "crossref_score": 1
@@ -1447,24 +1485,6 @@
       "crossref_score": 1
     },
     {
-      "doi": "10.2139/ssrn.3908944",
-      "title": "Research Note: Top 10 Most Viewed Links on Facebook during 2020",
-      "authors": "Giglietto, Fabio; Rossi, Luca; Righetti, Nicola; Marino, Giada; Terenzi, Massimo",
-      "venue": "Elsevier BV",
-      "year": 2021,
-      "type": "posted-content",
-      "url": "https://doi.org/10.2139/ssrn.3908944",
-      "crossref_type": "posted-content",
-      "publisher": "Elsevier BV",
-      "issn": null,
-      "isbn": null,
-      "subject": [],
-      "abstract": "<jats:p>With the goal of contributing to the ongoing debate on widely viewed external links of Facebook, we relied on the latest version of the URL Shares Dataset to address the following question: what were the most viewed URLs shared on Facebook during 2020 in US*, UK and the EU countries?&lt;br&gt;&lt;br&gt;* please note that due to a recently discovered issue, the current version of the URL Shares Dataset only includes views from users who had a political page-affinity score (approximately 50% of the total population of US users).</jats:p>",
-      "license": [],
-      "funder": [],
-      "crossref_score": 1
-    },
-    {
       "doi": "10.1080/1369118x.2020.1755558",
       "title": "Correction",
       "authors": null,
@@ -1533,10 +1553,10 @@
       "crossref_score": 1
     }
   ],
-  "lastUpdated": "2026-08-14T07:30:01.155Z",
+  "lastUpdated": "2026-08-14T08:33:47.360Z",
   "metadata": {
-    "total_requested": 77,
-    "successful_requests": 67,
+    "total_requested": 78,
+    "successful_requests": 68,
     "failed_requests": 10
   }
 }
