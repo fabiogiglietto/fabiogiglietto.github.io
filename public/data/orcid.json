@@ -301,6 +301,96 @@
   "works": [
     {
       "last-modified-date": {
+        "value": 1786653889025
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.31235/osf.io/gba57_v1",
+            "external-id-normalized": {
+              "value": "10.31235/osf.io/gba57_v1",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.31235/osf.io/gba57_v1"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 223657518,
+          "created-date": {
+            "value": 1786653889025
+          },
+          "last-modified-date": {
+            "value": 1786653889025
+          },
+          "source": {
+            "source-orcid": null,
+            "source-client-id": {
+              "uri": "https://orcid.org/client/0000-0001-9884-1913",
+              "path": "0000-0001-9884-1913",
+              "host": "orcid.org"
+            },
+            "source-name": {
+              "value": "Crossref"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Ten months of continuous coordinated-behaviour monitoring on Facebook: the VERA-AI Alert system and its empirical yield"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.31235/osf.io/gba57_v1",
+                "external-id-normalized": {
+                  "value": "10.31235/osf.io/gba57_v1",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.31235/osf.io/gba57_v1"
+                },
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "url": {
+            "value": "https://doi.org/10.31235/osf.io/gba57_v1"
+          },
+          "type": "preprint",
+          "publication-date": {
+            "year": {
+              "value": "2026"
+            },
+            "month": {
+              "value": "08"
+            },
+            "day": {
+              "value": "13"
+            }
+          },
+          "journal-title": null,
+          "visibility": "public",
+          "path": "/0000-0001-8019-1035/work/223657518",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
         "value": 1783555967404
       },
       "external-ids": {
@@ -483,7 +573,7 @@
     },
     {
       "last-modified-date": {
-        "value": 1785329363640
+        "value": 1786626290484
       },
       "external-ids": {
         "external-id": [
@@ -503,6 +593,17 @@
             "external-id-value": "10.5281/zenodo.21234935",
             "external-id-normalized": {
               "value": "10.5281/zenodo.21234935",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": null,
+            "external-id-relationship": "self"
+          },
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.5281/zenodo.21919084",
+            "external-id-normalized": {
+              "value": "10.5281/zenodo.21919084",
               "transient": true
             },
             "external-id-normalized-error": null,
@@ -821,6 +922,156 @@
           },
           "visibility": "public",
           "path": "/0000-0001-8019-1035/work/222145937",
+          "display-index": "1"
+        },
+        {
+          "put-code": 223576822,
+          "created-date": {
+            "value": 1786626290482
+          },
+          "last-modified-date": {
+            "value": 1786626290482
+          },
+          "source": {
+            "source-orcid": null,
+            "source-client-id": {
+              "uri": "https://orcid.org/client/0000-0001-8099-6984",
+              "path": "0000-0001-8099-6984",
+              "host": "orcid.org"
+            },
+            "source-name": {
+              "value": "DataCite"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "VERA-AI Alert: Self-updating detection of coordinated sharing behaviour on Facebook"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.5281/zenodo.21919084",
+                "external-id-normalized": {
+                  "value": "10.5281/zenodo.21919084",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.5281/zenodo.21225024",
+                "external-id-normalized": {
+                  "value": "10.5281/zenodo.21225024",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "version-of"
+              }
+            ]
+          },
+          "url": null,
+          "type": "software",
+          "publication-date": {
+            "year": {
+              "value": "2026"
+            },
+            "month": {
+              "value": "08"
+            },
+            "day": {
+              "value": "13"
+            }
+          },
+          "journal-title": {
+            "value": "Zenodo"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-8019-1035/work/223576822",
+          "display-index": "1"
+        },
+        {
+          "put-code": 223576823,
+          "created-date": {
+            "value": 1786626290484
+          },
+          "last-modified-date": {
+            "value": 1786626290484
+          },
+          "source": {
+            "source-orcid": null,
+            "source-client-id": {
+              "uri": "https://orcid.org/client/0000-0001-8099-6984",
+              "path": "0000-0001-8099-6984",
+              "host": "orcid.org"
+            },
+            "source-name": {
+              "value": "DataCite"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "VERA-AI Alert: Self-updating detection of coordinated sharing behaviour on Facebook"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.5281/zenodo.21919084",
+                "external-id-normalized": {
+                  "value": "10.5281/zenodo.21919084",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              },
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.5281/zenodo.21225024",
+                "external-id-normalized": {
+                  "value": "10.5281/zenodo.21225024",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "version-of"
+              }
+            ]
+          },
+          "url": null,
+          "type": "software",
+          "publication-date": {
+            "year": {
+              "value": "2026"
+            },
+            "month": {
+              "value": "08"
+            },
+            "day": {
+              "value": "13"
+            }
+          },
+          "journal-title": {
+            "value": "Zenodo"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-8019-1035/work/223576823",
           "display-index": "1"
         }
       ]
@@ -6014,6 +6265,92 @@
           "visibility": "public",
           "path": "/0000-0001-8019-1035/work/133838389",
           "display-index": "0"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1786635100186
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.2139/ssrn.3908944",
+            "external-id-normalized": {
+              "value": "10.2139/ssrn.3908944",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": {
+              "value": "https://doi.org/10.2139/ssrn.3908944"
+            },
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 223602963,
+          "created-date": {
+            "value": 1786635100186
+          },
+          "last-modified-date": {
+            "value": 1786635100186
+          },
+          "source": {
+            "source-orcid": null,
+            "source-client-id": {
+              "uri": "https://orcid.org/client/0000-0001-9884-1913",
+              "path": "0000-0001-9884-1913",
+              "host": "orcid.org"
+            },
+            "source-name": {
+              "value": "Crossref"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Research Note: Top 10 Most Viewed Links on Facebook during 2020"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.2139/ssrn.3908944",
+                "external-id-normalized": {
+                  "value": "10.2139/ssrn.3908944",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": {
+                  "value": "https://doi.org/10.2139/ssrn.3908944"
+                },
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "url": {
+            "value": "https://doi.org/10.2139/ssrn.3908944"
+          },
+          "type": "preprint",
+          "publication-date": {
+            "year": {
+              "value": "2021"
+            },
+            "month": null,
+            "day": null
+          },
+          "journal-title": null,
+          "visibility": "public",
+          "path": "/0000-0001-8019-1035/work/223602963",
+          "display-index": "1"
         }
       ]
     },
@@ -19569,116 +19906,116 @@
       ]
     }
   ],
-  "lastUpdated": "2026-08-13T08:22:29.043Z",
+  "lastUpdated": "2026-08-14T07:21:28.538Z",
   "logs": {
-    "timestamp": "2026-08-13T08:22:28.212Z",
+    "timestamp": "2026-08-14T07:21:27.383Z",
     "steps": [
       {
-        "timestamp": "2026-08-13T08:22:28.212Z",
+        "timestamp": "2026-08-14T07:21:27.383Z",
         "type": "start",
         "message": "Starting ORCID data collection"
       },
       {
-        "timestamp": "2026-08-13T08:22:28.212Z",
+        "timestamp": "2026-08-14T07:21:27.383Z",
         "type": "info",
         "message": "Getting OAuth token for ORCID API access..."
       },
       {
-        "timestamp": "2026-08-13T08:22:28.212Z",
+        "timestamp": "2026-08-14T07:21:27.384Z",
         "type": "info",
         "message": "Attempting to use public API without authentication"
       },
       {
-        "timestamp": "2026-08-13T08:22:28.212Z",
+        "timestamp": "2026-08-14T07:21:27.384Z",
         "type": "info",
         "message": "OAuth token response received: {\n  \"status\": 200,\n  \"data\": {\n    \"access_token\": \"public_endpoint_no_token_needed\"\n  }\n}"
       },
       {
-        "timestamp": "2026-08-13T08:22:28.212Z",
+        "timestamp": "2026-08-14T07:21:27.384Z",
         "type": "info",
         "message": "Obtained access token: public_end..."
       },
       {
-        "timestamp": "2026-08-13T08:22:28.212Z",
+        "timestamp": "2026-08-14T07:21:27.384Z",
         "type": "info",
         "message": "Attempting to fetch ORCID record with JSON format..."
       },
       {
-        "timestamp": "2026-08-13T08:22:28.952Z",
+        "timestamp": "2026-08-14T07:21:28.202Z",
         "type": "info",
         "message": "Successfully retrieved record in JSON format"
       },
       {
-        "timestamp": "2026-08-13T08:22:28.952Z",
+        "timestamp": "2026-08-14T07:21:28.202Z",
         "type": "info",
         "message": "Retrieved ORCID record in JSON format"
       },
       {
-        "timestamp": "2026-08-13T08:22:28.952Z",
+        "timestamp": "2026-08-14T07:21:28.202Z",
         "type": "info",
         "message": "Response content type: application/json;charset=UTF-8"
       },
       {
-        "timestamp": "2026-08-13T08:22:28.952Z",
+        "timestamp": "2026-08-14T07:21:28.202Z",
         "type": "info",
         "message": "Trying to fetch works directly from /works endpoint for comparison..."
       },
       {
-        "timestamp": "2026-08-13T08:22:29.042Z",
+        "timestamp": "2026-08-14T07:21:28.538Z",
         "type": "info",
-        "message": "Works endpoint returned 154 works"
+        "message": "Works endpoint returned 156 works"
       },
       {
-        "timestamp": "2026-08-13T08:22:29.042Z",
+        "timestamp": "2026-08-14T07:21:28.538Z",
         "type": "info",
         "message": "Processing JSON response"
       },
       {
-        "timestamp": "2026-08-13T08:22:29.042Z",
+        "timestamp": "2026-08-14T07:21:28.538Z",
         "type": "info",
         "message": "Found person data with keys: last-modified-date, name, other-names, biography, researcher-urls, emails, addresses, keywords, external-identifiers, path"
       },
       {
-        "timestamp": "2026-08-13T08:22:29.042Z",
+        "timestamp": "2026-08-14T07:21:28.538Z",
         "type": "info",
         "message": "Record endpoint response structure differs from expected format"
       },
       {
-        "timestamp": "2026-08-13T08:22:29.042Z",
+        "timestamp": "2026-08-14T07:21:28.538Z",
         "type": "info",
-        "message": "Works endpoint has 154 works, record endpoint has 0 works"
+        "message": "Works endpoint has 156 works, record endpoint has 0 works"
       },
       {
-        "timestamp": "2026-08-13T08:22:29.042Z",
+        "timestamp": "2026-08-14T07:21:28.538Z",
         "type": "warning",
-        "message": "DISCREPANCY: Works endpoint has 154 works, but record endpoint has 0 works"
+        "message": "DISCREPANCY: Works endpoint has 156 works, but record endpoint has 0 works"
       },
       {
-        "timestamp": "2026-08-13T08:22:29.042Z",
+        "timestamp": "2026-08-14T07:21:28.538Z",
         "type": "info",
-        "message": "Using 154 works from /works endpoint instead of /record endpoint"
+        "message": "Using 156 works from /works endpoint instead of /record endpoint"
       },
       {
-        "timestamp": "2026-08-13T08:22:29.042Z",
+        "timestamp": "2026-08-14T07:21:28.538Z",
         "type": "info",
-        "message": "Sample work structure: {\"keys\":[\"last-modified-date\",\"external-ids\",\"work-summary\"],\"hasSummary\":true,\"summaryCount\":2,\"summaryKeys\":[\"put-code\",\"created-date\",\"last-modified-date\",\"source\",\"title\",\"external-ids\",\"url\",\"type\",\"publication-date\",\"journal-title\",\"visibility\",\"path\",\"display-index\"],\"title\":\"Measuring partisan community dynamics: a longitudinal analysis of affective engagement in pro-Bolsonaro Facebook networks\",\"type\":\"journal-article\",\"pubDate\":\"2026-07-08\"}"
+        "message": "Sample work structure: {\"keys\":[\"last-modified-date\",\"external-ids\",\"work-summary\"],\"hasSummary\":true,\"summaryCount\":1,\"summaryKeys\":[\"put-code\",\"created-date\",\"last-modified-date\",\"source\",\"title\",\"external-ids\",\"url\",\"type\",\"publication-date\",\"journal-title\",\"visibility\",\"path\",\"display-index\"],\"title\":\"Ten months of continuous coordinated-behaviour monitoring on Facebook: the VERA-AI Alert system and its empirical yield\",\"type\":\"preprint\",\"pubDate\":\"2026-08-13\"}"
       },
       {
-        "timestamp": "2026-08-13T08:22:29.042Z",
+        "timestamp": "2026-08-14T07:21:28.538Z",
         "type": "info",
-        "message": "Collection completed successfully with 154 works"
+        "message": "Collection completed successfully with 156 works"
       },
       {
-        "timestamp": "2026-08-13T08:22:29.042Z",
+        "timestamp": "2026-08-14T07:21:28.538Z",
         "type": "complete",
-        "message": "Collection completed with 154 works retrieved"
+        "message": "Collection completed with 156 works retrieved"
       }
     ],
     "errors": [],
     "warnings": [
       {
-        "timestamp": "2026-08-13T08:22:29.042Z",
-        "message": "Works count discrepancy: /works endpoint: 154, /record endpoint: 0"
+        "timestamp": "2026-08-14T07:21:28.538Z",
+        "message": "Works count discrepancy: /works endpoint: 156, /record endpoint: 0"
       }
     ],
     "results": {
@@ -19695,7 +20032,7 @@
         "contentType": "application/json;charset=UTF-8",
         "status": 200,
         "headers": {
-          "date": "Thu, 13 Aug 2026 08:22:28 GMT",
+          "date": "Fri, 14 Aug 2026 07:21:28 GMT",
           "content-type": "application/json;charset=UTF-8",
           "transfer-encoding": "chunked",
           "connection": "keep-alive",
@@ -19709,12 +20046,12 @@
           "x-frame-options": "DENY",
           "x-content-type-options": "nosniff",
           "vary": "accept-encoding",
-          "x-target": "reg-prod-papi-use2-b1",
+          "x-target": "reg-prod-papi-use2-c1",
           "x-via": "a1-newvpc",
           "cf-cache-status": "DYNAMIC",
           "cf-apo-via": "origin,host",
-          "set-cookie": "__cf_bm=Xgplmk6iXsCUxxZlLYD.9hYcleUB009j8GFD3CQSq50-1786609348.4547434-1.0.1.1-L2WdxtFs4J0UUg6vwj4Np6mrZDwpcWf72xJXa0fbxHFdjOB8PiI9b5TUd.oit3Y08IgOk2RsKbEFdnibYyIdUcJntausqY3Xvb2TmukpilEln334YqKFotckhx2XlfBo; HttpOnly; SameSite=None; Secure; Path=/; Domain=orcid.org; Expires=Thu, 13 Aug 2026 08:52:28 GMT",
-          "cf-ray": "a2a64febdec1d6c0-IAD"
+          "set-cookie": "__cf_bm=gLxy9XZaEuxJEQAFjrhVyWHzgATkdy5VYNa6k1hCDZE-1786692087.490949-1.0.1.1-HPDe0WAWL1DivAm4_fRWZIvmcE9gTsRRQxz6rVZ5mXZLOYSTpktQUzAaWaHaw4IN5NN7_sC1d.IS8nCLPVUlLvwc8jk4Q4AhiR_aNOt0ieEKiphbXwDnEHC70SCp8_8p; HttpOnly; SameSite=None; Secure; Path=/; Domain=orcid.org; Expires=Fri, 14 Aug 2026 07:51:28 GMT",
+          "cf-ray": "a2ae33eadbeaeb36-SJC"
         },
         "dataKeys": [
           "orcid-identifier",
@@ -19733,7 +20070,7 @@
           "group",
           "path"
         ],
-        "groupCount": 154
+        "groupCount": 156
       },
       "recordStructure": {
         "dataKeys": [
@@ -19754,7 +20091,7 @@
           "work-summary"
         ],
         "hasSummary": true,
-        "summaryCount": 2,
+        "summaryCount": 1,
         "summaryKeys": [
           "put-code",
           "created-date",
@@ -19770,11 +20107,11 @@
           "path",
           "display-index"
         ],
-        "title": "Measuring partisan community dynamics: a longitudinal analysis of affective engagement in pro-Bolsonaro Facebook networks",
-        "type": "journal-article",
-        "pubDate": "2026-07-08"
+        "title": "Ten months of continuous coordinated-behaviour monitoring on Facebook: the VERA-AI Alert system and its empirical yield",
+        "type": "preprint",
+        "pubDate": "2026-08-13"
       },
-      "finalWorkCount": 154,
+      "finalWorkCount": 156,
       "profileKeys": [
         "last-modified-date",
         "name",

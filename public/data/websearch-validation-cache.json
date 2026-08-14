@@ -6355,5 +6355,44 @@
       "personMatch": "not_mentioned",
       "isRecent": true
     }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-bba55bc4": {
+    "v": 1,
+    "cachedAt": "2026-08-14T07:29:07.405Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An article in the Italian daily newspaper Il Resto del Carlino profiling Professor Fabio Giglietto's research on how Facebook's algorithms and policies impact democratic elections.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "open.online/2026/01/07/facebook-meta-algoritmo-penalizza-politica-istituzionale-premia-estremisti-studio-universita-urbino": {
+    "v": 1,
+    "cachedAt": "2026-08-14T07:29:13.743Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.98,
+      "reason": "Validated as relevant",
+      "description": "A news article detailing a study by Professor Fabio Giglietto from the University of Urbino on how Facebook's algorithm penalizes mainstream political content, which has sparked bipartisan legislative discussions in Italy.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "podcasts.apple.com/us/podcast/fgs-research-radio/id1866587707?l=ru": {
+    "v": 1,
+    "cachedAt": "2026-08-14T07:29:19.141Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The provided web mention does not contain the name 'Fabio Giglietto' in the title, URL, or context, making it impossible to verify any connection to the target person.",
+      "description": "An Apple Podcasts link for 'fgs-research-radio' which lacks explicit mentions of Fabio Giglietto or his academic work.",
+      "personMatch": "not_mentioned",
+      "isRecent": false
+    }
   }
 }
