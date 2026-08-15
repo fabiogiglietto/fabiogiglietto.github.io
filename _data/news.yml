@@ -1,23 +1,9 @@
-- date: '2026-07-22'
-  content: >-
-    A new longitudinal study co-authored with Giada Marino and Bruna Paroni,
-    published in Information, Communication & Society, investigates partisan
-    community dynamics. The research analyzes affective engagement within
-    pro-Bolsonaro Facebook networks, offering critical insights into digital
-    political communication and polarized online environments.
-  url: https://doi.org/10.1080/1369118x.2026.2696929
-  platforms:
-    - Mastodon
-    - BlueSky
-  toread: true
 - date: '2026-08-13'
   content: >-
-    Recent academic publications are drawing attention to the rise of 'AI slop'
-    and degenerative generative AI. Key studies—including Jiaru Tang et al.'s
-    analysis of viral short video production in China and Idil Galip and Ludmila
-    Lupinacci's critique of 'brainrot' in generative culture—explore the
-    mechanics and cultural implications of low-quality, AI-generated content
-    distribution.
+    Exploring the emerging phenomenon of low-quality digital content, a new
+    study by Jiaru Tang and co-authors investigates the production of viral,
+    AI-generated short videos in China, shedding light on the economic and
+    technological drivers behind the rise of 'AI slop.'
   url: https://doi.org/10.1007/s00146-026-03254-9
   platforms:
     - Mastodon
@@ -25,24 +11,33 @@
   toread: true
 - date: '2026-07-31'
   content: >-
-    Understanding the real-world effects of digital misinformation remains a
-    central focus of communication research. Key new papers examine these
-    dynamics, including an investigation by Olivier Bergeron-Boutin et al. on
-    Facebook and Instagram exposure in 2020, and a study by Patrícia Rossini et
-    al. mapping how informational pathways shape public trust in election
-    results.
+    New research published in Science Advances investigates the impact of
+    untrustworthy sources on Facebook and Instagram during the 2020 election
+    cycle. The multi-authored study reveals that while exposure to untrustworthy
+    content was highly concentrated among specific audiences, it did not result
+    in measurable attitudinal changes.
   url: https://doi.org/10.1126/sciadv.adz6502
+  platforms:
+    - Mastodon
+    - BlueSky
+  toread: true
+- date: '2026-07-22'
+  content: >-
+    A new longitudinal study co-authored by Giada Marino, Bruna Paroni, and
+    Fabio Giglietto maps the dynamics of partisan online communities. The paper
+    analyzes affective engagement over time within pro-Bolsonaro Facebook
+    networks to understand how political identities are sustained online.
+  url: https://doi.org/10.1080/1369118x.2026.2696929
   platforms:
     - Mastodon
     - BlueSky
   toread: true
 - date: '2026-07-18'
   content: >-
-    Acquiring and analyzing social media data continues to pose major hurdles
-    for researchers. Addressing these methodological barriers, a new paper by
-    Axel Bruns and Laura Vodden critiques the operational and technical
-    challenges of working with restricted platform data within secure 'clean
-    room' environments.
+    Addressing the growing constraints on independent academic inquiry,
+    researchers Axel Bruns and Laura Vodden have published an analysis detailing
+    the operational and methodological challenges of analyzing social media data
+    within platform-controlled 'clean room' environments.
   url: https://doi.org/10.25358/openscience-15825
   platforms:
     - Mastodon

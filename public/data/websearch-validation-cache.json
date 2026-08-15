@@ -6446,5 +6446,31 @@
       "personMatch": "not_mentioned",
       "isRecent": false
     }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cos-lalgoritmo-influenza-il-voto-b570e3bd": {
+    "v": 1,
+    "cachedAt": "2026-08-15T06:42:44.832Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A news article covering a study led by Fabio Giglietto at the University of Urbino on how Facebook's recommendation algorithm impacts the reach of political accounts and potentially influences elections.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "verdisinistra.it/referendum-bonelli-e-fratoianni-avs-scrivono-al-presidente-agcom-preoccupati-per-le-fake-news-veicolate-sui-social-chiesto-incontro-piccolotti": {
+    "v": 1,
+    "cachedAt": "2026-08-15T06:42:49.524Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A political news report detailing a formal complaint to Agcom that explicitly cites Professor Fabio Giglietto's research regarding the effects of Meta's algorithmic filtering on political discourse.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }
