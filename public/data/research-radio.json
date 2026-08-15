@@ -1799,6 +1799,18 @@
       "author": "Fabian Anicker, Golo Flaßhoff, Frank Marcinkowski",
       "doi": "10.1177/07352751241289925",
       "own": false
+    },
+    {
+      "id": "bibtex:Tang2026-gu",
+      "bibtexKey": "Tang2026-gu",
+      "title": "The Post-Creator: Inside AI's Viral Content Factories",
+      "description": "AI-generated podcast discussion.\n\nReference:\nTang, J., Yu, X., Wikström, P., & Pappalardo, K. (2026). Behind the “AI slop”: exploring the AI-generated viral short video production in China. https://doi.org/10.1007/s00146-026-03254-9",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Tang2026-gu.mp3",
+      "pubDate": "2026-08-16T08:19:36.156752+00:00",
+      "duration": "12:00",
+      "author": "Jiaru Tang, Xiaoting Yu, Patrik Wikström, Kylie Pappalardo",
+      "doi": "10.1007/s00146-026-03254-9",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -3601,6 +3613,18 @@
       "author": "Fabian Anicker, Golo Flaßhoff, Frank Marcinkowski",
       "doi": "10.1177/07352751241289925",
       "own": false
+    },
+    "Tang2026-gu": {
+      "id": "bibtex:Tang2026-gu",
+      "bibtexKey": "Tang2026-gu",
+      "title": "The Post-Creator: Inside AI's Viral Content Factories",
+      "description": "AI-generated podcast discussion.\n\nReference:\nTang, J., Yu, X., Wikström, P., & Pappalardo, K. (2026). Behind the “AI slop”: exploring the AI-generated viral short video production in China. https://doi.org/10.1007/s00146-026-03254-9",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Tang2026-gu.mp3",
+      "pubDate": "2026-08-16T08:19:36.156752+00:00",
+      "duration": "12:00",
+      "author": "Jiaru Tang, Xiaoting Yu, Patrik Wikström, Kylie Pappalardo",
+      "doi": "10.1007/s00146-026-03254-9",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -4995,9 +5019,21 @@
       "author": "Fabian Anicker, Golo Flaßhoff, Frank Marcinkowski",
       "doi": "10.1177/07352751241289925",
       "own": false
+    },
+    "10.1007/s00146-026-03254-9": {
+      "id": "bibtex:Tang2026-gu",
+      "bibtexKey": "Tang2026-gu",
+      "title": "The Post-Creator: Inside AI's Viral Content Factories",
+      "description": "AI-generated podcast discussion.\n\nReference:\nTang, J., Yu, X., Wikström, P., & Pappalardo, K. (2026). Behind the “AI slop”: exploring the AI-generated viral short video production in China. https://doi.org/10.1007/s00146-026-03254-9",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Tang2026-gu.mp3",
+      "pubDate": "2026-08-16T08:19:36.156752+00:00",
+      "duration": "12:00",
+      "author": "Jiaru Tang, Xiaoting Yu, Patrik Wikström, Kylie Pappalardo",
+      "doi": "10.1007/s00146-026-03254-9",
+      "own": false
     }
   },
-  "totalEpisodes": 150,
-  "lastUpdated": "2026-08-15T07:29:36.469Z",
+  "totalEpisodes": 151,
+  "lastUpdated": "2026-08-15T07:57:17.022Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
