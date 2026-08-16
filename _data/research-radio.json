@@ -1811,6 +1811,18 @@
       "author": "Jiaru Tang, Xiaoting Yu, Patrik Wikström, Kylie Pappalardo",
       "doi": "10.1007/s00146-026-03254-9",
       "own": false
+    },
+    {
+      "id": "bibtex:Rauchfleisch2026-fa",
+      "bibtexKey": "Rauchfleisch2026-fa",
+      "title": "When AI Says What It's Doing, Persuasion Drops in Half",
+      "description": "AI-generated podcast discussion.\n\nReference:\nRauchfleisch, A., & Jungherr, A. (2026). Toward meaningful transparency for AI chatbots: Disclosing persuasive intent reduces persuasion. http://arxiv.org/abs/2608.11794v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Rauchfleisch2026-fa.mp3",
+      "pubDate": "2026-08-17T08:19:36.156752+00:00",
+      "duration": "11:42",
+      "author": "Adrian Rauchfleisch, Andreas Jungherr",
+      "doi": null,
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -3625,6 +3637,18 @@
       "author": "Jiaru Tang, Xiaoting Yu, Patrik Wikström, Kylie Pappalardo",
       "doi": "10.1007/s00146-026-03254-9",
       "own": false
+    },
+    "Rauchfleisch2026-fa": {
+      "id": "bibtex:Rauchfleisch2026-fa",
+      "bibtexKey": "Rauchfleisch2026-fa",
+      "title": "When AI Says What It's Doing, Persuasion Drops in Half",
+      "description": "AI-generated podcast discussion.\n\nReference:\nRauchfleisch, A., & Jungherr, A. (2026). Toward meaningful transparency for AI chatbots: Disclosing persuasive intent reduces persuasion. http://arxiv.org/abs/2608.11794v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Rauchfleisch2026-fa.mp3",
+      "pubDate": "2026-08-17T08:19:36.156752+00:00",
+      "duration": "11:42",
+      "author": "Adrian Rauchfleisch, Andreas Jungherr",
+      "doi": null,
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -5033,7 +5057,7 @@
       "own": false
     }
   },
-  "totalEpisodes": 151,
-  "lastUpdated": "2026-08-15T07:57:17.022Z",
+  "totalEpisodes": 152,
+  "lastUpdated": "2026-08-16T06:36:20.060Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }

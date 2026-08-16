@@ -6576,5 +6576,70 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-33cb9fe0": {
+    "v": 1,
+    "cachedAt": "2026-08-16T06:43:03.990Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "The article explicitly mentions Fabio Giglietto by name and discusses his recent research on social media algorithms and political content reach.",
+      "description": "An Italian news article covering a study led by Professor Fabio Giglietto on how Meta's algorithms filter and impact the reach of political content on Facebook.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "youtube.com/watch?v=s0njrihuqe": {
+    "v": 1,
+    "cachedAt": "2026-08-16T06:43:07.823Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A video interview featuring Professor Fabio Giglietto explaining the University of Urbino's study on how Meta's recommendation algorithm changes impact democratic debate.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "open.online/2026/01/07/universita-urbino-algoritmo-facebook-estremisti-politici": {
+    "v": 1,
+    "cachedAt": "2026-08-16T06:43:19.156Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A major Italian news article covering a breakthrough study by Fabio Giglietto and his team at the University of Urbino, analyzing Facebook's algorithm and its impact on political content exposure.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "podcasts.apple.com/us/podcast/research-radio/id1722502441": {
+    "v": 1,
+    "cachedAt": "2026-08-16T06:43:24.538Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.9,
+      "reason": "Validated as relevant",
+      "description": "Research Radio is an ongoing podcast series co-created by Fabio Giglietto that translates academic papers on computational social science and online disinformation into narrated discussions.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "podcasts.apple.com/is/podcast/research-radio/id1866587707": {
+    "v": 1,
+    "cachedAt": "2026-08-16T06:43:27.880Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The provided web mention does not contain any reference to Fabio Giglietto in the title, URL, or context.",
+      "description": "A link to an Apple Podcast page for 'Research Radio' with no content or metadata indicating a mention of Fabio Giglietto.",
+      "personMatch": "not_mentioned",
+      "isRecent": false
+    }
   }
 }
