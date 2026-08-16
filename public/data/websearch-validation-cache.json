@@ -6641,5 +6641,70 @@
       "personMatch": "not_mentioned",
       "isRecent": false
     }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-771cb992": {
+    "v": 1,
+    "cachedAt": "2026-08-16T07:14:27.834Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A news article detailing a study led by Fabio Giglietto on how Meta's algorithms and political content policies affected the visibility of politicians on Facebook.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "facebook.com/uniurbit/videos/-algoritmi-e-democrazia-la-ricerca-su-metameta-%c3%a8-di-destra-o-di-sinistra-questa-/1654602452273436": {
+    "v": 1,
+    "cachedAt": "2026-08-16T07:14:31.439Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The target name 'Fabio Giglietto' does not appear in the title, URL, or context of the web mention.",
+      "description": "A Facebook video from the University of Urbino (uniurbit) discussing algorithms, democracy, and Meta research.",
+      "personMatch": "not_mentioned",
+      "isRecent": false
+    }
+  },
+  "vivereurbino.it/2026/04/17/algoritmi-e-democrazia-il-caso-meta-secondo-lo-studio-di-uniurb/153134": {
+    "v": 1,
+    "cachedAt": "2026-08-16T07:14:36.935Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An article detailing how Fabio Giglietto’s research at UniUrb on Meta's political content reduction policy was featured on Rai3's 'Report' and led to inquiries in the European Parliament.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "dire.it/14-04-2026/agcom-accende-i-fari-su-meta-lalgoritmo-favorisce-gli-account-estremisti": {
+    "v": 1,
+    "cachedAt": "2026-08-16T07:14:41.991Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "National news coverage of the Italian Communications Regulatory Authority (Agcom) summoning Fabio Giglietto and his research team from the University of Urbino to discuss their study on Meta's algorithms and political communication.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "dire.it/14-04-2026/1231917-agcom-accende-i-fari-su-meta-lalgoritmo-favorisce-gli-account-estremisti": {
+    "v": 1,
+    "cachedAt": "2026-08-16T07:14:46.929Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The name 'Fabio Giglietto' does not appear in the title, URL, or provided context.",
+      "description": "An article from dire.it regarding AGCOM's investigation into Meta's algorithm and its promotion of extremist accounts.",
+      "personMatch": "not_mentioned",
+      "isRecent": false
+    }
   }
 }
