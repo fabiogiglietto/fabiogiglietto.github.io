@@ -1,5 +1,5 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a strong, highly targeted academic and professional social media presence across LinkedIn, Bluesky, and Mastodon, totaling 3,580 followers. His content is highly focused on computational social science, disinformation, and academic opportunities. Across all platforms, he achieves an impressive average engagement rate of 5.32% per post, driven by active community interest in his research updates, software releases, and recruitment drives.",
+  "overallSummary": "Fabio Giglietto maintains a highly targeted and engaged social media presence across LinkedIn, Bluesky, and Mastodon, focusing on computational social science, disinformation, and coordinated inauthentic behavior. Across all channels, professional milestones such as grant announcements, job openings, and tool releases generate robust interaction, indicating a highly relevant academic and professional audience.",
   "engagementMetrics": {
     "totalFollowers": 3580,
     "averageEngagementRate": 5.32,
@@ -8,26 +8,26 @@
   "contentThemes": [
     {
       "theme": "Coordinated Inauthentic Behavior & Disinformation",
-      "description": "Research findings, paper publications, and presentations about coordinated sharing, information operations, and online campaigns."
+      "description": "Discussions, research papers, and conference presentations on computational methods for identifying disinformation campaigns."
     },
     {
-      "theme": "Computational Methods & Tool Development",
-      "description": "Announcements regarding software updates (e.g., CooRnet v2.0) and methodological approaches to platform analysis."
+      "theme": "Academic & Career Opportunities",
+      "description": "Recruitment drives for postdoctoral researchers and PhD opportunities in computational social science."
     },
     {
-      "theme": "Academic Recruitment & Grants",
-      "description": "Hiring posts for postdoc positions, PhD opportunities, and major research grant announcements."
+      "theme": "Software & Tool Releases",
+      "description": "Updates on proprietary research tools and algorithms, such as the release of CooRnet v2.0."
     }
   ],
   "recommendations": [
-    "Leverage LinkedIn's large audience by posting more frequently, particularly focusing on translating research papers into digestible professional insights.",
-    "Capitalize on Bluesky's exceptionally high engagement rate by using it as a primary channel for real-time discussion, QA about newly published papers, and interactive academic networking.",
-    "Include media elements such as screenshots of tools (CooRnet) or visual data diagrams in future posts to further improve sharing and repost rates across all platforms."
+    "Capitalize on LinkedIn's high volume of professional contacts by using it as the primary channel for recruitment and funding announcements.",
+    "Increase posting frequency on Bluesky and Mastodon to take advantage of high niche audience engagement and active academic communities.",
+    "Utilize rich media, threads, or direct external links to further drive conversion rates and interactions on research-focused posts."
   ],
   "platformInsights": {
-    "bluesky": "Bluesky is the most highly engaging platform with an average engagement rate of 6.14%. Audiences here are exceptionally receptive to paper announcements and networking opportunities, showing a strong propensity to repost.",
-    "mastodon": "Mastodon provides a dedicated niche audience with a solid 4.55% engagement rate. It is particularly effective for highly technical or developer-focused announcements like the CooRnet v2.0 release.",
-    "linkedin": "LinkedIn has the largest overall reach (1,850 followers) and generates the highest absolute volume of interactions. It serves as the primary hub for professional announcements, such as grant funding and job opportunities."
+    "bluesky": "Yields the highest average engagement rate per post (6.14%), driven by strong sharing behavior (reposts) within the academic community, especially regarding new papers and student opportunities.",
+    "mastodon": "Provides a highly concentrated and responsive audience (4.55% average engagement) with a strong preference for technical tool updates like CooRnet.",
+    "linkedin": "Serves as the high-reach foundation with 1,850 followers. It yields the highest absolute volume of interactions, particularly for organizational milestones and recruitment campaigns."
   },
   "topPerformingContent": [
     {
@@ -36,14 +36,14 @@
       "engagementRate": 7.37
     },
     {
-      "content": "New research opportunity for PhD students interested in computational social science. Reply for details!",
-      "platform": "Bluesky",
-      "engagementRate": 5.79
-    },
-    {
       "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
       "platform": "LinkedIn",
       "engagementRate": 5.78
+    },
+    {
+      "content": "Our team has just released v2.0 of CooRnet, with improved algorithms for detecting coordinated link sharing behavior.",
+      "platform": "Mastodon",
+      "engagementRate": 5.64
     }
   ]
 }

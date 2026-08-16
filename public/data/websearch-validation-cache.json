@@ -6706,5 +6706,96 @@
       "personMatch": "not_mentioned",
       "isRecent": false
     }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-79bbd2a8": {
+    "v": 1,
+    "cachedAt": "2026-08-16T07:32:12.364Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 1,
+      "reason": "Validated as relevant",
+      "description": "An article in Il Resto del Carlino detailing a study led by University of Urbino researcher Fabio Giglietto on how Meta's algorithms impact the reach of political representatives.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "editorialedomani.it/fatti/piu-visibilita-agli-estremisti-che-ai-parlamentari-limpatto-del-filtro-di-meta-sulle-elezioni-vsn7qjpx": {
+    "v": 1,
+    "cachedAt": "2026-08-16T07:32:17.771Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.98,
+      "reason": "Validated as relevant",
+      "description": "An in-depth media article in Domani analyzing Fabio Giglietto's co-authored study on how Meta's political content reduction policies impacted the Facebook visibility of Italian parliamentarians.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "snurb.info/node/3400": {
+    "v": 1,
+    "cachedAt": "2026-08-16T07:32:22.501Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "N/A",
+      "description": "An academic blog post by Axel Bruns covering Fabio Giglietto's presentation at the ICA 2026 conference regarding Facebook's algorithmic impacts on news engagement.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "podcasts.apple.com/us/podcast/research-radio/id1733230504": {
+    "v": 1,
+    "cachedAt": "2026-08-16T07:32:28.643Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.9,
+      "reason": "Validated as relevant",
+      "description": "An Apple Podcasts page for 'Research Radio', an active podcast series by Fabio Giglietto that uses generative AI to convert computational social science and digital platform research into accessible audio episodes.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "osf.io/preprints/socarxiv/8dqag_v2": {
+    "v": 1,
+    "cachedAt": "2026-08-16T07:32:32.625Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The provided title, URL, and context do not contain the name 'Fabio Giglietto' to confirm a mention.",
+      "description": "A preprint link on osf.io (SocArXiv) with no metadata or text indicating a mention of Fabio Giglietto.",
+      "personMatch": "not_mentioned",
+      "isRecent": false
+    }
+  },
+  "milanofinanza.it/news/social-media-l-agcom-avvia-verifiche-con-la-commissione-ue-sugli-algoritmi-di-meta-focus-sui-contenuti-politici-202604141846124589": {
+    "v": 1,
+    "cachedAt": "2026-08-16T07:32:38.720Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "N/A",
+      "description": "An Italian news article reporting on regulatory authority Agcom's investigation into Meta's algorithms, driven directly by Fabio Giglietto's academic research on social media moderation patterns.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "open.online/2026/01/07/facebook-algoritmo-politica-istituzionale-estremisti-studio-urbino": {
+    "v": 1,
+    "cachedAt": "2026-08-16T07:32:42.941Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A news feature analyzing a study from the University of Urbino, quoting Fabio Giglietto on how Meta's algorithms suppress mainstream political content while boosting extremist accounts.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }
