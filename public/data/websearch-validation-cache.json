@@ -6823,5 +6823,57 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "ilrestodelcarlino.it": {
+    "v": 1,
+    "cachedAt": "2026-08-17T07:00:05.254Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 1,
+      "reason": "Validated as relevant",
+      "description": "A news article detailing a study by Fabio Giglietto on how Meta's algorithmic adjustments have drastically reduced the Facebook reach of mainstream Italian politicians.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "vivereurbino.it": {
+    "v": 1,
+    "cachedAt": "2026-08-17T07:00:09.337Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.98,
+      "reason": "Validated as relevant",
+      "description": "An article detailing how Fabio Giglietto's research on Meta's algorithmic demotion of political content was featured on Rai3's 'Report' and sparked an official European Parliament inquiry under the Digital Services Act.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "rai.it/ufficiostampa/assets/template/us-articolo.html?ssipath=/articoli/2026/04/ascolti-tv-di-domenica-12-aprile-3ef1b8a6-50a0-4397-8678-c60996970ad5-ssi.html": {
+    "v": 1,
+    "cachedAt": "2026-08-17T07:00:14.178Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The web mention does not contain the name 'Fabio Giglietto' in the title, URL, or available context. The content appears to be a standard TV ratings report from Rai.",
+      "description": "A TV ratings report for Sunday, April 12, published by Rai Ufficio Stampa, with no evidence of mentioning Fabio Giglietto.",
+      "personMatch": "not_mentioned",
+      "isRecent": false
+    }
+  },
+  "open.online/2026/01/07/algoritmo-facebook-politica-ufficiale-estremisti-legge-piattaforme": {
+    "v": 1,
+    "cachedAt": "2026-08-17T07:00:21.711Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "Italian news coverage discussing the legislative and political reactions to Professor Giglietto's research on how Facebook's algorithm impacts political party visibility.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }

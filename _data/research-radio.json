@@ -1823,6 +1823,18 @@
       "author": "Adrian Rauchfleisch, Andreas Jungherr",
       "doi": null,
       "own": false
+    },
+    {
+      "id": "bibtex:Groebner2026-pc",
+      "bibtexKey": "Groebner2026-pc",
+      "title": "The Transnational Far-Right Audience YouTube Won't Talk About",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGroebner, K. (2026). From national outlets to transnational audiences: far-right hyperpartisan news sources on YouTube. https://doi.org/10.1177/1329878x261474201",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Groebner2026-pc.mp3",
+      "pubDate": "2026-08-18T08:19:36.156752+00:00",
+      "duration": "13:18",
+      "author": "Klaus Groebner",
+      "doi": "10.1177/1329878x261474201",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -3649,6 +3661,18 @@
       "author": "Adrian Rauchfleisch, Andreas Jungherr",
       "doi": null,
       "own": false
+    },
+    "Groebner2026-pc": {
+      "id": "bibtex:Groebner2026-pc",
+      "bibtexKey": "Groebner2026-pc",
+      "title": "The Transnational Far-Right Audience YouTube Won't Talk About",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGroebner, K. (2026). From national outlets to transnational audiences: far-right hyperpartisan news sources on YouTube. https://doi.org/10.1177/1329878x261474201",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Groebner2026-pc.mp3",
+      "pubDate": "2026-08-18T08:19:36.156752+00:00",
+      "duration": "13:18",
+      "author": "Klaus Groebner",
+      "doi": "10.1177/1329878x261474201",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -5055,9 +5079,21 @@
       "author": "Jiaru Tang, Xiaoting Yu, Patrik Wikström, Kylie Pappalardo",
       "doi": "10.1007/s00146-026-03254-9",
       "own": false
+    },
+    "10.1177/1329878x261474201": {
+      "id": "bibtex:Groebner2026-pc",
+      "bibtexKey": "Groebner2026-pc",
+      "title": "The Transnational Far-Right Audience YouTube Won't Talk About",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGroebner, K. (2026). From national outlets to transnational audiences: far-right hyperpartisan news sources on YouTube. https://doi.org/10.1177/1329878x261474201",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Groebner2026-pc.mp3",
+      "pubDate": "2026-08-18T08:19:36.156752+00:00",
+      "duration": "13:18",
+      "author": "Klaus Groebner",
+      "doi": "10.1177/1329878x261474201",
+      "own": false
     }
   },
-  "totalEpisodes": 152,
-  "lastUpdated": "2026-08-17T06:06:08.317Z",
+  "totalEpisodes": 153,
+  "lastUpdated": "2026-08-17T06:51:15.549Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }

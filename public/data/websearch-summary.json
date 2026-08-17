@@ -1,11 +1,12 @@
 {
-  "totalEntries": 212,
-  "lastUpdated": "2026-08-17T06:15:06.820Z",
+  "totalEntries": 213,
+  "lastUpdated": "2026-08-17T07:00:54.177Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-08-10T07:46:29.560Z"
+    "latest": "2026-08-17T07:00:54.148Z"
   },
   "byDate": {
+    "2026-08-17": 1,
     "2026-08-10": 1,
     "2026-08-09": 1,
     "2026-08-07": 1,
@@ -14,8 +15,7 @@
     "2026-08-01": 1,
     "2026-07-28": 1,
     "2026-07-24": 2,
-    "2026-07-23": 1,
-    "2026-07-18": 1
+    "2026-07-23": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 52,
@@ -23,18 +23,25 @@
     "uniurb.it": 9,
     "icahdq.org": 6,
     "open.online": 6,
+    "ilrestodelcarlino.it": 5,
     "socialmediaandsociety.org": 5,
     "aoir.org": 5,
-    "ilrestodelcarlino.it": 4,
     "snurblog.org": 4,
     "Il Sole 24 ORE": 4
   },
   "byRelevanceScore": {
-    "high": 189,
+    "high": 190,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Indagine urbinate: \"Così l'algoritmo influenza il voto\"",
+      "url": "https://www.ilrestodelcarlino.it",
+      "source": "ilrestodelcarlino.it",
+      "relevanceScore": 1,
+      "collectedAt": "2026-08-17T07:00:54.148Z"
+    },
     {
       "title": "Disinfo Update 10/06/2026",
       "url": "https://www.disinfo.eu/",
@@ -61,13 +68,6 @@
       "url": "https://podcasts.apple.com/us/podcast/research-radio/id1786524350",
       "source": "podcasts.apple.com",
       "relevanceScore": 0.8,
-      "collectedAt": "2026-08-04T09:45:49.960Z"
-    },
-    {
-      "title": "L'algoritmo di Meta e i rischi per la democrazia, l'indagine della Commissione europea è ancora ferma",
-      "url": "https://www.editorialedomani.it/fatti/lalgoritmo-di-meta-e-i-rischi-per-la-democrazia-lindagine-della-commissione-europea-e-ancora-ferma-uoxscwgu",
-      "source": "editorialedomani.it",
-      "relevanceScore": 0.95,
       "collectedAt": "2026-08-04T09:45:49.960Z"
     }
   ]
