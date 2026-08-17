@@ -6797,5 +6797,31 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-b570cb66": {
+    "v": 1,
+    "cachedAt": "2026-08-17T06:14:14.699Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 1,
+      "reason": "Validated as relevant",
+      "description": "An investigative news article reporting on a study led by Fabio Giglietto from the University of Urbino on how Meta's algorithms affect the visibility of political content.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "open.online/2026/01/07/facebook-algoritmo-politica-ufficiale-estremisti-studio-universita-urbino": {
+    "v": 1,
+    "cachedAt": "2026-08-17T06:14:29.432Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An Italian news article covering research from the University of Urbino led by Fabio Giglietto, which analyzes how Facebook's algorithm suppresses moderate political figures while boosting extremist content.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }
