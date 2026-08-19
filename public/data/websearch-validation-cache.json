@@ -6966,5 +6966,44 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-b6cc9ba5": {
+    "v": 1,
+    "cachedAt": "2026-08-19T06:46:14.569Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 1,
+      "reason": "Validated as relevant",
+      "description": "A news article covering a study by Fabio Giglietto from the University of Urbino analyzing how Meta's recommendation algorithms reduce the visibility of mainstream politicians while boosting extremist content.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "milanofinanza.it/news/social-media-l-agcom-avvia-verifiche-con-la-commissione-ue-sugli-algoritmi-di-meta-focus-sui-202604141753127814": {
+    "v": 1,
+    "cachedAt": "2026-08-19T06:46:20.930Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "News article reporting on the Italian communications authority (AGCOM) launching investigations into Meta's algorithms, a regulatory action prompted by Professor Fabio Giglietto's research on political content suppression.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "vivereurbino.it/2026/04/17/algoritmi-e-democrazia-il-caso-meta-secondo-lo-studio-di-uniurb/153205": {
+    "v": 1,
+    "cachedAt": "2026-08-19T06:46:27.063Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.98,
+      "reason": "The article explicitly covers the real-world political and media impact of Professor Fabio Giglietto's UniUrb research on Meta's algorithms, referencing his work directly.",
+      "description": "A news feature detailing the public and political impact of Professor Fabio Giglietto's research on Meta's algorithms, which was featured on Rai3's 'Report' and sparked an inquiry in the European Parliament.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }
