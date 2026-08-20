@@ -119,3 +119,39 @@ describe('HTML Sanitization', () => {
     });
   });
 });
+
+describe('formatDataForPrompt — recent web mentions', () => {
+  const { _testing } = require('../scripts/generators/about-generator');
+  const { formatDataForPrompt } = _testing;
+
+  // websearch.json is a flat array of validated mentions. It was previously read
+  // as `data.websearch.mentions`, which is always undefined — the section silently
+  // never rendered, and the grounded call was masking the gap.
+  const mentions = [
+    { title: 'Older piece', url: 'https://example.com/a', date: '2026-01-02', source: 'Il Resto del Carlino', description: 'An older article.' },
+    { title: 'Newer piece', url: 'https://example.com/b', date: '2026-08-01', source: 'Wired Italia', description: 'A newer article.' },
+  ];
+
+  test('renders mentions from the flat array shape', () => {
+    const out = formatDataForPrompt({ websearch: mentions });
+    expect(out).toContain('RECENT WEB MENTIONS');
+    expect(out).toContain('Newer piece');
+    expect(out).toContain('Wired Italia');
+    expect(out).toContain('2026-08-01');
+  });
+
+  test('orders mentions most recent first', () => {
+    const out = formatDataForPrompt({ websearch: mentions });
+    expect(out.indexOf('Newer piece')).toBeLessThan(out.indexOf('Older piece'));
+  });
+
+  test('omits the section entirely when there are no mentions', () => {
+    expect(formatDataForPrompt({ websearch: [] })).not.toContain('RECENT WEB MENTIONS');
+    expect(formatDataForPrompt({})).not.toContain('RECENT WEB MENTIONS');
+  });
+
+  test('does not resurrect the old {mentions:[...]} shape', () => {
+    const out = formatDataForPrompt({ websearch: { mentions } });
+    expect(out).not.toContain('RECENT WEB MENTIONS');
+  });
+});

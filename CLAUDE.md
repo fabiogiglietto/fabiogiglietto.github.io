@@ -36,7 +36,7 @@ The pipeline runs in phases:
 1. **Phase 1 — Parallel collection**: All collectors in `scripts/collectors/` run via `Promise.all`, each fetching from an external API. Output saved to `public/data/*.json`.
 2. **Phase 2 — Publications aggregation**: `publications-aggregator.js` merges and deduplicates publications from ORCID, Scholar, WoS, Scopus, Semantic Scholar, Crossref, and ORA into `aggregated-publications.json`.
 3. **Phase 3 — Social media aggregation**: Merges social posts into `_data/news.yml` with AI-powered deduplication.
-4. **Phase 4 — AI generation**: Generators produce HTML/JSON using the Gemini API, ungrounded — the one exception is the weekly `about-generator.js` bio call; see [Gemini cost controls](#gemini-cost-controls). Output goes to `_includes/generated-*.html` and `public/data/`.
+4. **Phase 4 — AI generation**: Generators produce HTML/JSON using the Gemini API, ungrounded — recency comes from the mentions `websearch.js` collected in Phase 1; see [Gemini cost controls](#gemini-cost-controls). Output goes to `_includes/generated-*.html` and `public/data/`.
 
 ### Collector Interface
 All collectors export `{ collect: async () => data | null }`. See `scripts/collectors/README.md` for the full standard and how to add new collectors. Register new collectors in `collect-all.js`.
@@ -71,11 +71,12 @@ Google Search grounding is billed **per search query** (~€0.012 each) and one
 grounded call runs an agentic multi-query loop, so it dominates the API bill.
 Thinking tokens are billed as **output** (~6x the input rate) on every call.
 
-- **Grounding is confined to two call sites**: `websearch.js` discovery (TTL-cached,
-  below) and the weekly `about-generator.js` primary call. Every other call site —
-  including every retry — runs ungrounded. Google News RSS and Crossref Event Data
-  cover fresh mentions for free. Whether the about-generator call keeps its grounding
-  is still open; it is ~4-5 grounded calls/month against websearch's daily cadence.
+- **Only `websearch.js` may enable `googleSearch`** — one call site, TTL-cached
+  (below). Every other call site, including every retry, runs ungrounded. Google
+  News RSS and Crossref Event Data cover fresh mentions for free. Generators that
+  need recency read the validated mentions in `public/data/websearch.json` rather
+  than issuing a grounded call of their own; `about-generator.js` is the worked
+  example.
 - Grounded discovery runs at most once per `WEBSEARCH_DISCOVERY_TTL_HOURS`
   (default 72), cached in `public/data/websearch-discovery-cache.json`. Set
   `FORCE_WEBSEARCH_DISCOVERY=1` to bypass the cache.

@@ -3,7 +3,8 @@
  *
  * This module uses Google Gemini API to generate a personalized "About Me" section
  * based on collected data from various sources (ORCID, Google Scholar, GitHub, etc.)
- * Features Google Search grounding for up-to-date information about recent activities.
+ * Runs ungrounded: recency comes from the validated web mentions collected by
+ * scripts/collectors/websearch.js, not from a per-search-billed grounding loop.
  */
 
 const fs = require('fs');
@@ -305,13 +306,24 @@ function formatDataForPrompt(data) {
     }
   }
   
-  // Format Web Search data
-  if (data.websearch && data.websearch.mentions) {
-    formattedData += `\n--- WEB MENTIONS ---\n`;
-    data.websearch.mentions.slice(0, 3).forEach((mention, index) => {
-      formattedData += `${index + 1}. ${mention.title} - ${mention.url}\n`;
-      if (mention.snippet) {
-        formattedData += `   ${mention.snippet}\n`;
+  // Format Web Search data. websearch.json is a flat array of mentions already
+  // validated and deduplicated by the collector — this is the generator's only
+  // source of recent third-party coverage now that the call runs ungrounded, so
+  // include dates and pass through the collector's one-line description.
+  if (Array.isArray(data.websearch) && data.websearch.length > 0) {
+    formattedData += `\n--- RECENT WEB MENTIONS (third-party coverage) ---\n`;
+    formattedData += `Validated mentions of the person in news and other third-party sources, most recent first. This is the ONLY source of recent-activity information available:\n`;
+    const sorted = [...data.websearch].sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
+    sorted.slice(0, 6).forEach((mention, index) => {
+      formattedData += `${index + 1}. ${mention.date || 'undated'} — ${mention.title}`;
+      // RSS titles usually already end in " - <outlet>"; don't repeat it.
+      if (mention.source && !mention.title?.includes(mention.source)) {
+        formattedData += ` (${mention.source})`;
+      }
+      formattedData += `\n`;
+      const gist = mention.description || mention.snippet;
+      if (gist) {
+        formattedData += `   ${gist.substring(0, 200)}\n`;
       }
     });
   }
@@ -359,7 +371,7 @@ function formatDataForPrompt(data) {
 }
 
 /**
- * Generates content using Gemini API with Google Search grounding
+ * Generates content using the Gemini API (ungrounded)
  * @param {String} formattedData Formatted data for the prompt
  * @return {String} Generated HTML content
  */
@@ -393,8 +405,8 @@ Weave the following into the narrative naturally, not as bullet lists. Summarize
 SHARED PAPERS GUARDRAIL
 If a "CURRENT RESEARCH INTERESTS (shared papers by others)" block is present, those papers are shared by Fabio but authored by others. They must NEVER be attributed as his own work — use them only to indicate topics he is currently following.
 
-GOOGLE SEARCH GROUNDING
-You may use Google Search to verify very recent activity, but treat the authoritative biography as the dominant source. Do not use search results to override the authoritative biography's statements about status, dates, roles, or tool authorship.
+RECENT ACTIVITY
+You have no web access. The "RECENT WEB MENTIONS" block, if present, is the only evidence of recent third-party coverage — do not assert recent activity, news coverage, or current events that it does not support, and do not infer dates beyond those it states. If that block is absent, write from the authoritative biography alone and omit claims about recency entirely. The authoritative biography remains dominant: never let a mention override its statements about status, dates, roles, or tool authorship.
 
 FORMAT
 - Output 3–4 concise paragraphs of clean HTML, each wrapped in <p>…</p>. Aim for roughly 80–140 words per paragraph — tight, not telegraphic.
@@ -408,14 +420,16 @@ DATA
 ${formattedData}
 `;
 
-    console.log(`Calling Gemini API with ${MODELS.FLASH} and Google Search grounding...`);
+    console.log(`Calling Gemini API with ${MODELS.FLASH} (ungrounded)...`);
 
     try {
       const response = await ai.models.generateContent({
         model: MODELS.FLASH,
         contents: prompt,
         config: {
-          tools: [{ googleSearch: {} }],
+          // Ungrounded: recency now comes from the validated mentions in
+          // websearch.json (collected once per discovery TTL), not from a
+          // second per-search-billed grounding loop.
           temperature: 0.7,
           maxOutputTokens: 3500,
         },
@@ -464,9 +478,10 @@ ${formattedData}
         }
       }
 
-      // Log if grounding metadata is available
-      if (response.candidates && response.candidates[0].groundingMetadata) {
-        console.log('Google Search grounding was used for this generation');
+      // This call declares no tools, so grounding metadata should never appear.
+      // If it does, something re-enabled billed searches — say so loudly.
+      if (response.candidates?.[0]?.groundingMetadata) {
+        console.warn('[cost] WARNING: grounding metadata present on an ungrounded call — searches may have been billed');
       }
 
       console.log(`Successfully generated content with ${MODELS.FLASH}`);
@@ -484,11 +499,7 @@ ${formattedData}
 
       console.log(`Trying fallback model ${MODELS.FLASH_LATEST}...`);
       try {
-        // The fallback runs WITHOUT Google Search grounding. Grounding is
-        // billed per search query and the failed primary call may already have
-        // issued (and been charged for) its searches; the authoritative bio in
-        // the prompt is the dominant source anyway, so the retry only loses the
-        // optional freshness check.
+        // Ungrounded, like the primary call above.
         const response = await ai.models.generateContent({
           model: MODELS.FLASH_LATEST,
           contents: prompt,
@@ -550,4 +561,4 @@ ${formattedData}
   }
 }
 
-module.exports = { generateAboutMe };
+module.exports = { generateAboutMe, _testing: { formatDataForPrompt } };
