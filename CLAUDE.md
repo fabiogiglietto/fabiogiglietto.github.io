@@ -66,6 +66,19 @@ GitHub Actions workflow (`.github/workflows/`) runs daily at 06:00 UTC:
 - Social media deduplication uses Gemini API with fallback to string-similarity
 - `sanitize-html` is used to clean AI-generated HTML before writing to includes
 
+## Dependency pins
+
+`sanitize-html` is pinned **exactly** to `2.17.5` — the only exact pin in
+`package.json`, and not a mistake. `2.17.6` switched to an ESM-only
+`htmlparser2@12` and declares `node >= 22.12`, while CI and local development
+run node 20. There it still loads at runtime (node 20.19 supports
+`require(ESM)`), but it breaks Jest's CJS transform: `require('sanitize-html')`
+throws `Cannot use import statement outside a module`, which fails
+`tests/about-generator.test.js` as a whole and silently drops the suite from
+179 tests to 144. A caret range would let a plain `npm install` reintroduce
+that; `npm ci` alone would not catch it. Lift the pin when
+`.github/workflows/update-site.yml` moves `node-version` to 22.
+
 ## AI cost controls
 
 ### Gemini
