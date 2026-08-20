@@ -14,6 +14,7 @@ const sanitizeHtml = require('sanitize-html');
 const config = require('../config');
 const { getGeminiClient, MODELS } = require('../helpers/gemini-client');
 const { readBioSeed } = require('../helpers/bio-seed');
+const { reviewBio } = require('./bio-reviewer');
 
 /**
  * Reads all collected data and generates an "About Me" section
@@ -102,9 +103,14 @@ async function generateAboutMe() {
       console.error('Failed to generate About Me content');
       return generateFallbackContent();
     }
-    
+
+    // Second-model review pass. Fails open: a null return publishes the Gemini
+    // output unchanged, so a reviewer outage never blocks the weekly bio.
+    const review = await reviewBio(aboutMeContent, formattedData);
+    const contentToPublish = review ? review.html : aboutMeContent;
+
     // Sanitize the generated content to prevent XSS attacks
-    const sanitizedContent = sanitizeHtml(aboutMeContent, {
+    const sanitizedContent = sanitizeHtml(contentToPublish, {
       allowedTags: ['p', 'strong', 'em', 'a', 'ul', 'ol', 'li', 'h2', 'h3', 'h4', 'br', 'div', 'section'],
       allowedAttributes: {
         'a': ['href', 'target', 'rel']

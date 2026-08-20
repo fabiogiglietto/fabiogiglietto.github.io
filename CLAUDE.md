@@ -66,7 +66,9 @@ GitHub Actions workflow (`.github/workflows/`) runs daily at 06:00 UTC:
 - Social media deduplication uses Gemini API with fallback to string-similarity
 - `sanitize-html` is used to clean AI-generated HTML before writing to includes
 
-## Gemini cost controls
+## AI cost controls
+
+### Gemini
 Google Search grounding is billed **per search query** (~€0.012 each) and one
 grounded call runs an agentic multi-query loop, so it dominates the API bill.
 Thinking tokens are billed as **output** (~6x the input rate) on every call.
@@ -91,3 +93,42 @@ Thinking tokens are billed as **output** (~6x the input rate) on every call.
   `webSearchQueries` even when searches *were* billed. Treat token counts and
   grounding chunks as the reliable signals; the query count only ever confirms
   searches happened, never that they didn't.
+
+### Anthropic (bio reviewer)
+`scripts/generators/bio-reviewer.js` runs a second-model pass over the generated
+biography before it is published — a **source-consistency check, not a
+fact-check**: the call is ungrounded, so it can only verify the bio against the
+sources it is handed, never against the world.
+
+- Thinking bills as **output** here too, and on Fable 5 it is always on:
+  omitting `output_config.effort` silently defaults to `high`. **Every Anthropic
+  call must pass explicit `max_tokens` and `output_config.effort`**;
+  `tests/bio-reviewer.test.js` asserts it. Drop `effort` to `low` to roughly
+  halve the per-call cost.
+- The reviewer **fails open** in every path — no credentials, refusal, cap hit,
+  malformed revision — and publishes the Gemini output unchanged. A rewriter in
+  a publish path must never make the result worse than not running. Look for one
+  of `reviewer skipped` / `reviewer ran` / `reviewer failed` in the Actions log.
+- Flags are written to `public/data/bio-review.json` as well as the log, since
+  Actions logs age out and the flags are the half a human needs to read.
+
+### Anthropic auth (Workload Identity Federation)
+CI holds **no `ANTHROPIC_API_KEY`**. The workflow mints a GitHub OIDC token and
+the SDK exchanges it for a short-lived access token. Configure via the Claude
+Console (Settings → Workload identity → Connect workload → GitHub Actions); it
+creates a service account, federation issuer and federation rule. Put the three
+resulting IDs in repository **variables** (not secrets — they are identifiers,
+not credentials): `ANTHROPIC_FEDERATION_RULE_ID`, `ANTHROPIC_ORGANIZATION_ID`,
+`ANTHROPIC_SERVICE_ACCOUNT_ID`.
+
+- **Never set `ANTHROPIC_API_KEY` anywhere the workflow can see it** — including
+  `.env`, which the collectors load. It outranks federation in the SDK's
+  credential precedence and shadows it silently.
+- Scope the federation rule to `refs/heads/main` on this repo specifically. A
+  loose `subject_prefix` without a `ref` constraint also matches `pull_request`
+  runs from forks, and this repository is public.
+- The workflow's `permissions:` block must keep `contents: write` enumerated
+  alongside `id-token: write` — declaring the block drops every scope not listed,
+  and the auto-commit step needs write access.
+- The OIDC token is fetched inside the Monday bio step, not at job start: it
+  expires ~5 minutes after issuance and `npm run collect` runs long before it.

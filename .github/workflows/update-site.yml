@@ -14,6 +14,15 @@ concurrency:
   group: update-site
   cancel-in-progress: false
 
+# contents:write is required by the auto-commit step. Declaring any permissions
+# block drops every scope not listed here, so it must stay enumerated.
+# id-token:write lets the job mint the GitHub OIDC token that the Anthropic SDK
+# exchanges for a short-lived access token (Workload Identity Federation) — no
+# ANTHROPIC_API_KEY secret is stored in this repository.
+permissions:
+  contents: write
+  id-token: write
+
 jobs:
   update-data:
     runs-on: ubuntu-latest
@@ -50,9 +59,29 @@ jobs:
         if: github.event.schedule && github.event_name == 'schedule'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # Workload Identity Federation for the bio reviewer. No secret is
+          # stored: the SDK exchanges the OIDC token fetched below. Leave
+          # ANTHROPIC_API_KEY unset — it outranks federation in the SDK's
+          # credential precedence and would silently shadow it.
+          ANTHROPIC_FEDERATION_RULE_ID: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
+          ANTHROPIC_ORGANIZATION_ID: ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
+          ANTHROPIC_SERVICE_ACCOUNT_ID: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
+          ANTHROPIC_IDENTITY_TOKEN_FILE: ${{ runner.temp }}/anthropic-oidc-jwt
         run: |
           if [ $(date +%u) -eq 1 ]; then
             echo "Monday detected - updating bio"
+            # Fetched here rather than at job start: the GitHub OIDC token
+            # expires ~5 minutes after issuance and the collect step above runs
+            # long. Non-fatal — the reviewer degrades to "skipped" and the bio
+            # still publishes if this fails.
+            if [ -n "$ACTIONS_ID_TOKEN_REQUEST_URL" ] && [ -n "$ANTHROPIC_FEDERATION_RULE_ID" ]; then
+              curl -sS -H "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
+                "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://api.anthropic.com" \
+                | jq -r .value > "$ANTHROPIC_IDENTITY_TOKEN_FILE" \
+                || echo "OIDC token fetch failed - bio reviewer will be skipped"
+            else
+              echo "Federation not configured - bio reviewer will be skipped"
+            fi
             npm run generate-about
           else
             echo "Not Monday - skipping bio update"
