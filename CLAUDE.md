@@ -109,6 +109,12 @@ guards the publish path: shared 12-word runs above `MAX_SEED_OVERLAP` (0.3)
 trigger one retry that names the failure, then the fallback. Measured, a dump
 scores ~88% and a genuine generation under 1%.
 
+The stamp is maintained by hand — nothing in the pipeline refreshes it.
+`readBioSeed()` checks it on every read and logs in the Actions log: a warning at
+6 months, an error at 12 ("no longer verified"). When either fires, review the
+"as of" claims — current title, active programmes, live appointments — and
+re-stamp the file.
+
 Keep the seed free of instructions to the writer. Notes like "do not claim X"
 belong in the prompts; putting them in the facts file is what tipped the model
 into copy mode in the first place, and they get published.

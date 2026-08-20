@@ -199,3 +199,66 @@ describe('seedOverlapRatio (anti-copying guard)', () => {
     expect(seedOverlapRatio('<p>short</p>', '')).toBe(0);
   });
 });
+
+describe('bio-seed status stamp staleness', () => {
+  const { _testing } = require('../scripts/helpers/bio-seed');
+  const { parseSeedStamp, seedStampAgeMonths, checkSeedStamp, STAMP_WARN_MONTHS, STAMP_STALE_MONTHS } = _testing;
+
+  // The fact sheet stamps status claims with a month so a generator can tell a
+  // current role from a concluded one. Nothing refreshes that stamp, so a stale
+  // one silently turns "as of" claims into assertions about a year gone by.
+  const sheet = (label) => `*Status information in this document is stamped "as of ${label}".*\n\nAs of ${label}, he is Full Professor.`;
+  const AUG_2026 = new Date('2026-08-20T00:00:00Z');
+
+  let warn, error;
+  beforeEach(() => {
+    warn = jest.spyOn(console, 'warn').mockImplementation(() => {});
+    error = jest.spyOn(console, 'error').mockImplementation(() => {});
+  });
+  afterEach(() => { warn.mockRestore(); error.mockRestore(); });
+
+  test('parses the stamp', () => {
+    expect(parseSeedStamp(sheet('August 2026'))).toMatchObject({ month: 7, year: 2026, label: 'August 2026' });
+    expect(parseSeedStamp('no stamp here')).toBeNull();
+    expect(parseSeedStamp('as of Smarch 2026')).toBeNull();
+  });
+
+  test('measures age in whole months', () => {
+    expect(seedStampAgeMonths(sheet('August 2026'), AUG_2026)).toBe(0);
+    expect(seedStampAgeMonths(sheet('February 2026'), AUG_2026)).toBe(6);
+    expect(seedStampAgeMonths(sheet('August 2025'), AUG_2026)).toBe(12);
+    expect(seedStampAgeMonths('unstamped', AUG_2026)).toBeNull();
+  });
+
+  test('stays quiet while the stamp is fresh', () => {
+    expect(checkSeedStamp(sheet('August 2026'), AUG_2026)).toBe('ok');
+    expect(warn).not.toHaveBeenCalled();
+    expect(error).not.toHaveBeenCalled();
+  });
+
+  test('warns once the stamp passes the warn threshold', () => {
+    const label = 'February 2026'; // exactly STAMP_WARN_MONTHS old
+    expect(seedStampAgeMonths(sheet(label), AUG_2026)).toBe(STAMP_WARN_MONTHS);
+    expect(checkSeedStamp(sheet(label), AUG_2026)).toBe('warn');
+    expect(warn).toHaveBeenCalledWith(expect.stringContaining('February 2026'));
+  });
+
+  test('escalates to an error once it is a year old', () => {
+    const label = 'August 2025';
+    expect(seedStampAgeMonths(sheet(label), AUG_2026)).toBe(STAMP_STALE_MONTHS);
+    expect(checkSeedStamp(sheet(label), AUG_2026)).toBe('stale');
+    expect(error).toHaveBeenCalledWith(expect.stringContaining('no longer verified'));
+  });
+
+  test('flags an unstamped sheet and a future stamp', () => {
+    expect(checkSeedStamp('no stamp at all', AUG_2026)).toBe('missing');
+    expect(checkSeedStamp(sheet('January 2027'), AUG_2026)).toBe('future');
+  });
+
+  test('the committed fact sheet is currently fresh', () => {
+    const fs = require('fs');
+    const { BIO_SEED_PATH } = require('../scripts/helpers/bio-seed');
+    const text = fs.readFileSync(BIO_SEED_PATH, 'utf8');
+    expect(parseSeedStamp(text)).not.toBeNull();
+  });
+});
