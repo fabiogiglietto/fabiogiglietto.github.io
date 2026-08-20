@@ -53,7 +53,7 @@ async function generateTeachingData() {
     const yamlData = yaml.dump(teachingData, {
       lineWidth: 100,
       noRefs: true,
-      quotingType: '"'
+      quoteStyle: 'double'
     });
     
     // Add comment header

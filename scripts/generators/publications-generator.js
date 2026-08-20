@@ -125,7 +125,7 @@ async function generatePublicationsData() {
     
     // Convert to YAML and write to _data directory
     const yamlStr = yaml.dump(publications, {
-      quotingType: '"',
+      quoteStyle: 'double',
       lineWidth: 120,
     });
     
