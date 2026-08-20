@@ -169,16 +169,21 @@ async function collectWebSearchResults() {
 
     // Run Gemini search if API key is available
     const geminiAi = getGeminiClient();
-    if (geminiAi) {
+    const cachedDiscovery = loadDiscoveryCache();
+    if (cachedDiscovery) {
+      allResults = [...allResults, ...cachedDiscovery];
+    }
+
+    if (geminiAi && !cachedDiscovery) {
       console.log('\n=== Starting Gemini Web Search ===');
 
-      // Search queries - focused on NEWS coverage, not academic papers
+      // A single grounded call. The four earlier name-variant queries returned
+      // heavily overlapping results that deduplicateMentions merged anyway,
+      // while each one paid for its own agentic search loop.
       const queries = [
-      `"${config.name}" news article -site:researchgate.net -site:academia.edu`,
-      `"${config.name}" interview OR quoted OR commented -site:researchgate.net`,
-      `"${config.name}" ${config.expertise.slice(0, 2).join(' OR ')} news coverage`,
-      `"${config.name}" expert OR researcher mentioned in news`
+      `"${config.name}" news coverage, interviews and expert mentions`
       ];
+      const discoveryResults = [];
 
       // Run searches for each query using Gemini with Google Search
     for (const query of queries) {
@@ -223,9 +228,19 @@ Only include results with REAL, direct URLs to news sources.`;
         const response = await geminiAi.models.generateContent({
           model: MODELS.FLASH,
           contents: searchPrompt,
-          config: { tools: [{ googleSearch: {} }] },
+          config: DISCOVERY_CALL_CONFIG,
         });
         const text = response.text || '';
+        // webSearchQueries is frequently absent from the response even when the
+        // call was billed for searches, so log the grounding-chunk count too and
+        // never read a zero here as "no searches were charged".
+        const gm = response.candidates?.[0]?.groundingMetadata || {};
+        const searchQueryCount = (gm.webSearchQueries || []).length;
+        const usage = response.usageMetadata || {};
+        console.log(`  [cost] grounded call: ${searchQueryCount} search queries reported ` +
+          `(0 = not surfaced by the API, not necessarily unbilled), ${(gm.groundingChunks || []).length} grounding chunks, ` +
+          `${usage.candidatesTokenCount || 0} output + ${usage.thoughtsTokenCount || 0} thinking tokens, ` +
+          `${usage.promptTokenCount || 0} input (${usage.cachedContentTokenCount || 0} cached)`);
 
         console.log(`API response received for query "${query}"`);
 
@@ -307,12 +322,20 @@ Only include results with REAL, direct URLs to news sources.`;
 
         // Add results to collection
         allResults = [...allResults, ...searchResults];
+        discoveryResults.push(...searchResults);
         console.log(`Total Gemini results so far: ${allResults.length}`);
 
       } catch (queryError) {
         console.error(`Error searching for "${query}":`, queryError.message);
         // Continue with other queries even if one fails
       }
+    }
+    // Only cache a non-empty run: caching an empty result set (e.g. the
+    // grounded call threw) would suppress discovery for the whole TTL window.
+    if (discoveryResults.length > 0) {
+      saveDiscoveryCache(discoveryResults);
+    } else {
+      console.log('Grounded discovery returned no results — not caching');
     }
     } // End of Gemini search block
 
@@ -1111,6 +1134,83 @@ function saveDateCache(cache) {
 // it interpolates) changes — invalidates every cached verdict at once.
 const VALIDATION_PROMPT_VERSION = 1;
 
+// Token budget for the ungrounded validation call. Thinking tokens bill as
+// output at 6x the input rate, so classification calls run with thinking off.
+const VALIDATION_CALL_CONFIG = {
+  thinkingConfig: { thinkingBudget: 0 },
+  maxOutputTokens: 600,
+};
+
+// The date call returns a single YYYY-MM-DD token — no reasoning required.
+const DATE_CALL_CONFIG = {
+  thinkingConfig: { thinkingBudget: 0 },
+  maxOutputTokens: 40,
+};
+
+// Grounded discovery is the single most expensive call in the whole site
+// pipeline: each one runs an agentic multi-query Google Search loop that is
+// billed per search query. 'low' thinking keeps the loop short (measured:
+// 41s/5.3k thinking tokens at default vs 16s/1.7k at low, same usable
+// results), and the output cap bounds the JSON array it returns.
+const DISCOVERY_CALL_CONFIG = {
+  tools: [{ googleSearch: {} }],
+  thinkingConfig: { thinkingLevel: 'low' },
+  maxOutputTokens: 2500,
+};
+
+// Grounded discovery re-finds the same handful of news items run after run
+// (the workflow fires ~2-3x/day on every pipeline tick). Google News RSS and
+// Crossref Event Data still run on every invocation and cost nothing, so
+// same-day coverage is unaffected by rerunning discovery only every few days.
+const DISCOVERY_TTL_HOURS = Number(process.env.WEBSEARCH_DISCOVERY_TTL_HOURS || 72);
+const DISCOVERY_CACHE_PATH = path.join(__dirname, '../../public/data/websearch-discovery-cache.json');
+
+/**
+ * Age of a discovery-cache payload in hours, or null when it is unusable
+ * (missing, malformed, or stamped in the future).
+ */
+function discoveryCacheAgeHours(raw, now = Date.now(), ttlHours = DISCOVERY_TTL_HOURS) {
+  if (!raw || !Array.isArray(raw.results) || !raw.lastRunAt) return null;
+  const ageHours = (now - new Date(raw.lastRunAt).getTime()) / 36e5;
+  if (!isFinite(ageHours) || ageHours < 0 || ageHours >= ttlHours) return null;
+  return ageHours;
+}
+
+/**
+ * Load cached grounded-discovery results, or null when absent/stale/forced.
+ */
+function loadDiscoveryCache() {
+  if (process.env.FORCE_WEBSEARCH_DISCOVERY === '1') {
+    console.log('FORCE_WEBSEARCH_DISCOVERY=1 — running grounded discovery regardless of cache');
+    return null;
+  }
+  try {
+    const raw = JSON.parse(fs.readFileSync(DISCOVERY_CACHE_PATH, 'utf8'));
+    const ageHours = discoveryCacheAgeHours(raw);
+    if (ageHours === null) return null;
+    console.log(`Grounded discovery cache is ${ageHours.toFixed(1)}h old (TTL ${DISCOVERY_TTL_HOURS}h) — reusing ${raw.results.length} results, no grounded search`);
+    return raw.results;
+  } catch (e) {
+    return null;
+  }
+}
+
+/**
+ * Persist grounded-discovery results so the next few runs can reuse them.
+ */
+function saveDiscoveryCache(results) {
+  try {
+    fs.writeFileSync(DISCOVERY_CACHE_PATH, JSON.stringify({
+      lastRunAt: new Date().toISOString(),
+      ttlHours: DISCOVERY_TTL_HOURS,
+      results,
+    }, null, 2));
+    console.log(`Grounded discovery cache saved (${results.length} results)`);
+  } catch (e) {
+    console.log(`Failed to save discovery cache: ${e.message}`);
+  }
+}
+
 // A relevant verdict decays: `isRecent` means "last 6 months", so re-validate
 // positives after this long. Negative verdicts (wrong person, not mentioned,
 // already stale) are facts that don't improve with age — cached permanently.
@@ -1199,6 +1299,7 @@ unknown`;
     const response = await ai.models.generateContent({
       model: MODELS.FLASH,
       contents: prompt,
+      config: DATE_CALL_CONFIG,
     });
     const text = (response.text || '').trim();
 
@@ -1235,7 +1336,7 @@ unknown`;
 /**
  * Validate a web mention using Gemini to verify relevance and generate description
  */
-async function validateWebMention(ai, result) {
+async function validateWebMention(ai, result, configOverride) {
   try {
     const prompt = `You are analyzing a web mention to determine if it's about the correct person, if it actually mentions them, and if the content is recent.
 
@@ -1285,6 +1386,7 @@ Respond with valid JSON only.`;
     const response = await ai.models.generateContent({
       model: MODELS.FLASH,
       contents: prompt,
+      config: configOverride || VALIDATION_CALL_CONFIG,
     });
     const content = (response.text || '').trim();
 
@@ -1725,6 +1827,13 @@ module.exports = {
   collect: collectWebSearchResults,
   name: 'websearch',
   _testing: {
+    validateWebMention,
+    extractPublicationDate,
+    discoveryCacheAgeHours,
+    DISCOVERY_TTL_HOURS,
+    VALIDATION_CALL_CONFIG,
+    DATE_CALL_CONFIG,
+    DISCOVERY_CALL_CONFIG,
     normalizeUrl,
     normalizeTitle,
     shouldSkipResult,

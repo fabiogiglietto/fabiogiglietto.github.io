@@ -433,6 +433,12 @@ Respond with valid JSON only, no other text.`;
     const result = await ai.models.generateContent({
       model: MODELS.FLASH,
       contents: prompt,
+      config: {
+        // Deduplicating and rewriting a short list of posts — bounded work,
+        // so cap thinking (billed as output) and the response length.
+        thinkingConfig: { thinkingLevel: 'low' },
+        maxOutputTokens: 2000,
+      },
     });
     const aiResponse = result.text || '';
     console.log('AI response received, length:', aiResponse?.length);

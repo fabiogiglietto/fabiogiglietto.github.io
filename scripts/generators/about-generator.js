@@ -474,13 +474,25 @@ ${formattedData}
     } catch (apiError) {
       console.error('Error calling Gemini API:', apiError.message);
 
+      // Do not retry client-side rejections (bad request, quota, auth): the
+      // second call would fail the same way and still be billed.
+      const status = apiError.status || apiError.code;
+      if (typeof status === 'number' && status >= 400 && status < 500 && status !== 429) {
+        console.error(`Non-transient error (${status}); skipping fallback model`);
+        return null;
+      }
+
       console.log(`Trying fallback model ${MODELS.FLASH_LATEST}...`);
       try {
+        // The fallback runs WITHOUT Google Search grounding. Grounding is
+        // billed per search query and the failed primary call may already have
+        // issued (and been charged for) its searches; the authoritative bio in
+        // the prompt is the dominant source anyway, so the retry only loses the
+        // optional freshness check.
         const response = await ai.models.generateContent({
           model: MODELS.FLASH_LATEST,
           contents: prompt,
           config: {
-            tools: [{ googleSearch: {} }],
             temperature: 0.7,
             maxOutputTokens: 3500,
           },

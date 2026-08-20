@@ -140,6 +140,13 @@ Respond with ONLY the JSON object, no markdown code blocks, no explanation.`;
       const result = await ai.models.generateContent({
         model: MODELS.FLASH,
         contents: prompt,
+        config: {
+          // Summarising pre-computed engagement stats into fixed JSON fields:
+          // thinking tokens bill as output at 6x the input rate and buy
+          // nothing here.
+          thinkingConfig: { thinkingLevel: 'low' },
+          maxOutputTokens: 1500,
+        },
       });
       let text = (result.text || '').trim();
 

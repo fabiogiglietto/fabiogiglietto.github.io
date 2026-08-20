@@ -492,3 +492,62 @@ describe('getValidVerdict (validation-verdict cache)', () => {
     expect(getValidVerdict(cache, KEY, NOW)).toBeNull();
   });
 });
+
+describe('discoveryCacheAgeHours (grounded-discovery TTL)', () => {
+  const { discoveryCacheAgeHours } = _testing;
+  const hoursAgo = (h) => new Date(Date.now() - h * 36e5).toISOString();
+
+  test('returns the age for a fresh cache', () => {
+    const age = discoveryCacheAgeHours({ lastRunAt: hoursAgo(10), results: [{ url: 'x' }] });
+    expect(age).toBeCloseTo(10, 1);
+  });
+
+  test('returns null once the cache is older than the TTL', () => {
+    expect(discoveryCacheAgeHours({ lastRunAt: hoursAgo(100), results: [{ url: 'x' }] })).toBeNull();
+  });
+
+  test('respects an explicit TTL override', () => {
+    const raw = { lastRunAt: hoursAgo(10), results: [{ url: 'x' }] };
+    expect(discoveryCacheAgeHours(raw, Date.now(), 6)).toBeNull();
+    expect(discoveryCacheAgeHours(raw, Date.now(), 24)).toBeCloseTo(10, 1);
+  });
+
+  test('rejects malformed, empty and future-stamped payloads', () => {
+    expect(discoveryCacheAgeHours(null)).toBeNull();
+    expect(discoveryCacheAgeHours({})).toBeNull();
+    expect(discoveryCacheAgeHours({ lastRunAt: hoursAgo(1) })).toBeNull();
+    expect(discoveryCacheAgeHours({ results: [] })).toBeNull();
+    expect(discoveryCacheAgeHours({ lastRunAt: 'not-a-date', results: [] })).toBeNull();
+    expect(discoveryCacheAgeHours({ lastRunAt: hoursAgo(-5), results: [] })).toBeNull();
+  });
+});
+
+describe('Gemini call token budgets', () => {
+  // Thinking tokens bill as output at ~6x the input rate, so every call site
+  // must declare both an output cap and a thinking budget. Regressions here
+  // are invisible until the monthly bill arrives.
+  const cases = [
+    ['validation', _testing.VALIDATION_CALL_CONFIG],
+    ['date extraction', _testing.DATE_CALL_CONFIG],
+    ['grounded discovery', _testing.DISCOVERY_CALL_CONFIG],
+  ];
+
+  test.each(cases)('%s config caps output tokens', (_name, cfg) => {
+    expect(typeof cfg.maxOutputTokens).toBe('number');
+    expect(cfg.maxOutputTokens).toBeGreaterThan(0);
+    expect(cfg.maxOutputTokens).toBeLessThanOrEqual(2500);
+  });
+
+  test.each(cases)('%s config constrains thinking', (_name, cfg) => {
+    expect(cfg.thinkingConfig).toBeDefined();
+    const constrained =
+      cfg.thinkingConfig.thinkingBudget === 0 || cfg.thinkingConfig.thinkingLevel === 'low';
+    expect(constrained).toBe(true);
+  });
+
+  test('only the discovery call enables Google Search grounding', () => {
+    expect(_testing.VALIDATION_CALL_CONFIG.tools).toBeUndefined();
+    expect(_testing.DATE_CALL_CONFIG.tools).toBeUndefined();
+    expect(_testing.DISCOVERY_CALL_CONFIG.tools).toEqual([{ googleSearch: {} }]);
+  });
+});

@@ -65,3 +65,25 @@ GitHub Actions workflow (`.github/workflows/`) runs daily at 06:00 UTC:
 - Generated content files are prefixed with `generated-`
 - Social media deduplication uses Gemini API with fallback to string-similarity
 - `sanitize-html` is used to clean AI-generated HTML before writing to includes
+
+## Gemini cost controls
+Google Search grounding is billed **per search query** (~€0.012 each) and one
+grounded call runs an agentic multi-query loop, so it dominates the API bill.
+Thinking tokens are billed as **output** (~6x the input rate) on every call.
+
+- **Only `websearch.js` may enable `googleSearch`.** Every other call site runs
+  ungrounded. Google News RSS and Crossref Event Data cover fresh mentions for free.
+- Grounded discovery runs at most once per `WEBSEARCH_DISCOVERY_TTL_HOURS`
+  (default 72), cached in `public/data/websearch-discovery-cache.json`. Set
+  `FORCE_WEBSEARCH_DISCOVERY=1` to bypass the cache.
+- Every `generateContent` call must pass a `config` with `maxOutputTokens` and a
+  `thinkingConfig` (`thinkingBudget: 0` for extraction/classification,
+  `thinkingLevel: 'low'` for generation). `tests/websearch.test.js` asserts this.
+- Retries must not re-issue grounding — the failed call may already have been
+  billed for its searches (see `about-generator.js`).
+- The collector logs a `[cost]` line per grounded call (grounding chunks + token
+  counts); check it in the Actions log rather than waiting for the monthly bill.
+  Its `search queries reported` figure is usually 0 — the API often omits
+  `webSearchQueries` even when searches *were* billed. Treat token counts and
+  grounding chunks as the reliable signals; the query count only ever confirms
+  searches happened, never that they didn't.
