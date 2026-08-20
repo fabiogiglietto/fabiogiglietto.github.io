@@ -1541,6 +1541,9 @@ function isMedicalResult(title, url) {
     'trapianto midollo osseo', 'bone marrow transplant', 'BMT',
     'san raffaele', 'scientific institute',
     'oncologia', 'oncology',
+    // Outlet names, matched via the " - <outlet>" suffix Google News RSS appends
+    // to titles. Its article URLs are opaque, so medicalDomains never fires on them.
+    'oncodaily',
     'leucemia', 'leukemia', 'leukaemia',
     'chemioterapia', 'chemotherapy',
     'medicina', 'medical', 'medico',

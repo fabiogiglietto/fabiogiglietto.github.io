@@ -551,3 +551,28 @@ describe('Gemini call token budgets', () => {
     expect(_testing.DISCOVERY_CALL_CONFIG.tools).toEqual([{ googleSearch: {} }]);
   });
 });
+
+describe('wrong-person filtering for medical outlets', () => {
+  const { shouldSkipResult } = _testing;
+
+  // Google News RSS appends " - <outlet>" to titles and gives opaque
+  // news.google.com article URLs, so the outlet name in the title is the only
+  // usable signal — the medicalDomains check can never fire on those URLs.
+  const RSS_URL = 'https://news.google.com/rss/articles/CBMiX0FVX3lxTE1fVzlRQ1hiYlBkVno1?oc=5';
+
+  test('skips an Oncodaily item that reached the published mentions', () => {
+    // This one was live on the site: validated as personMatch "confirmed" with
+    // relevanceScore 0.75, despite the title naming a different researcher.
+    expect(shouldSkipResult(RSS_URL, 'Katharina Esau Was Awarded an ARC Discovery Early Career Researcher Award 2026 - Oncodaily')).toBe(true);
+  });
+
+  test('still skips the other wrong-Fabio medical hits', () => {
+    expect(shouldSkipResult('https://example.com/a', 'Trapianto midollo osseo, nuovi risultati')).toBe(true);
+    expect(shouldSkipResult('https://www.hsr.it/x', 'Ematologia: San Raffaele')).toBe(true);
+  });
+
+  test('does not skip genuine Italian press coverage', () => {
+    expect(shouldSkipResult('https://www.ilsole24ore.com/art/x', 'Meno contenuti politici nei feed, la stretta di Meta - Il Sole 24 ORE')).toBe(false);
+    expect(shouldSkipResult(RSS_URL, "Indagine urbinate: \"Così l'algoritmo influenza il voto\" - Il Resto del Carlino")).toBe(false);
+  });
+});
