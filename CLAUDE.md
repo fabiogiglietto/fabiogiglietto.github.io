@@ -94,6 +94,25 @@ Thinking tokens are billed as **output** (~6x the input rate) on every call.
   grounding chunks as the reliable signals; the query count only ever confirms
   searches happened, never that they didn't.
 
+### Sourcing rule for generated prose
+**Nothing may be asserted that is not stated in Fabio's own publications, his own
+social media posts, or `scripts/data/bio-seed.md`.** Web mentions establish THAT
+his work was covered and where — never what the research found.
+
+This is not pedantry. The Meta political-content paper finds that extremist
+accounts offset a per-post reach decline by *posting more often*; Italian
+coverage rendered that as "Facebook premia gli estremisti", asserting algorithmic
+promotion the paper does not claim. An earlier bio repeated the press framing.
+
+`scripts/collectors/own-paper-claims.js` supplies the authority: it pulls the
+Summary / Key Contributions / Findings sections of his own fg-zettelkasten notes
+into `public/data/own-paper-claims.json`. Own papers are found by intersecting
+`own-publications.json` bibtex keys with the kasten's `state.json`, then
+confirming `kind: own` in the note frontmatter — so only ~26 notes are fetched,
+not all ~278, and note bodies are cached by the kasten's `content_hash`.
+
+Both the generator and the reviewer receive this block, ranked above web mentions.
+
 ### Anthropic (bio reviewer)
 `scripts/generators/bio-reviewer.js` runs a second-model pass over the generated
 biography before it is published — a **source-consistency check, not a

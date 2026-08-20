@@ -28,6 +28,7 @@ const toreadCollector = require('./collectors/toread');
 const oraCollector = require('./collectors/ora');
 const researchRadioCollector = require('./collectors/research-radio');
 const zettelkastenCollector = require('./collectors/zettelkasten');
+const ownPaperClaimsCollector = require('./collectors/own-paper-claims');
 
 // Import generators
 const aboutGenerator = require('./generators/about-generator');
@@ -64,7 +65,7 @@ async function collectAll() {
     
     // Phase 1: Collect basic data sources in parallel
     console.log('Phase 1: Collecting basic data sources...');
-    const [orcidData, scholarData, universityData, githubData, newsData, webSearchData, socialMediaData, wosData, scopusData, semanticScholarData, toreadData, oraData, researchRadioData, zettelkastenData] = await Promise.all([
+    const [orcidData, scholarData, universityData, githubData, newsData, webSearchData, socialMediaData, wosData, scopusData, semanticScholarData, toreadData, oraData, researchRadioData, zettelkastenData, ownPaperClaimsData] = await Promise.all([
       orcidCollector.collect().catch(err => {
         console.error('ORCID collection error:', err.message);
         return null;
@@ -134,6 +135,10 @@ async function collectAll() {
       zettelkastenCollector.collect().catch(err => {
         console.error('Zettelkasten collection error:', err.message);
         return null;
+      }),
+      ownPaperClaimsCollector.collect().catch(err => {
+        console.error('Own paper claims collection failed:', err.message);
+        return null;
       })
     ]);
     
@@ -163,6 +168,7 @@ async function collectAll() {
       // Also copy to Jekyll _data directory for site.data.researchRadio access
       fs.writeFileSync(path.join(__dirname, '../_data/research-radio.json'), JSON.stringify(researchRadioData, null, 2));
     }
+    if (ownPaperClaimsData) fs.writeFileSync(path.join(dataDir, 'own-paper-claims.json'), JSON.stringify(ownPaperClaimsData, null, 2));
     if (zettelkastenData) {
       fs.writeFileSync(path.join(dataDir, 'zettelkasten.json'), JSON.stringify(zettelkastenData, null, 2));
       // Also copy to Jekyll _data directory for site.data.zettelkasten access

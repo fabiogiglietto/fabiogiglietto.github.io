@@ -41,6 +41,7 @@ async function generateAboutMe() {
       'university.json',
       'github.json',
       'websearch.json',
+      'own-paper-claims.json',
       'summary.json',
       'teaching.json'
     ];
@@ -312,13 +313,33 @@ function formatDataForPrompt(data) {
     }
   }
   
+  // What his own papers actually claim, straight from the zettelkasten notes.
+  // This is the ONLY authority for statements about his research findings —
+  // press coverage routinely sharpens a finding into something the paper does
+  // not say. Capped to the most recent papers so it cannot crowd out the prompt.
+  const ownClaims = data['own-paper-claims'] && data['own-paper-claims'].papers;
+  if (Array.isArray(ownClaims) && ownClaims.length > 0) {
+    formattedData += `\n--- OWN RESEARCH FINDINGS (AUTHORITATIVE FOR ALL CLAIMS ABOUT THE RESEARCH) ---\n`;
+    formattedData += `Summaries and findings taken from his own papers. Any statement about what his research shows must be supported here, in his own words — not by how the press described it:\n`;
+    ownClaims.slice(0, 8).forEach((paper, index) => {
+      formattedData += `\n${index + 1}. "${paper.title}" (${paper.year || 'n.d.'})\n`;
+      if (typeof paper.Summary === 'string') {
+        formattedData += `   ${paper.Summary.substring(0, 600)}\n`;
+      }
+      const findings = Array.isArray(paper.Findings) ? paper.Findings : [];
+      findings.slice(0, 5).forEach(finding => {
+        formattedData += `   - ${String(finding).substring(0, 220)}\n`;
+      });
+    });
+  }
+
   // Format Web Search data. websearch.json is a flat array of mentions already
   // validated and deduplicated by the collector — this is the generator's only
   // source of recent third-party coverage now that the call runs ungrounded, so
   // include dates and pass through the collector's one-line description.
   if (Array.isArray(data.websearch) && data.websearch.length > 0) {
-    formattedData += `\n--- RECENT WEB MENTIONS (third-party coverage) ---\n`;
-    formattedData += `Validated mentions of the person in news and other third-party sources, most recent first. This is the ONLY source of recent-activity information available:\n`;
+    formattedData += `\n--- RECENT WEB MENTIONS (third-party coverage — NOT a source for research claims) ---\n`;
+    formattedData += `Validated mentions in news and other third-party sources, most recent first. These establish THAT his work was covered and where. They do NOT establish what his research found: press summaries routinely overstate or invert findings. For any claim about the research itself, use OWN RESEARCH FINDINGS above:\n`;
     const sorted = [...data.websearch].sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
     sorted.slice(0, 6).forEach((mention, index) => {
       formattedData += `${index + 1}. ${mention.date || 'undated'} — ${mention.title}`;
@@ -410,6 +431,9 @@ Weave the following into the narrative naturally, not as bullet lists. Summarize
 
 SHARED PAPERS GUARDRAIL
 If a "CURRENT RESEARCH INTERESTS (shared papers by others)" block is present, those papers are shared by Fabio but authored by others. They must NEVER be attributed as his own work — use them only to indicate topics he is currently following.
+
+SOURCING RULE (OVERRIDES EVERY OTHER INSTRUCTION)
+Assert nothing that is not stated in his own publications (OWN RESEARCH FINDINGS), his own social media posts, or the authoritative biography. Web mentions establish that coverage happened and where — never what the research concluded. Never repeat a journalist's characterisation of a finding as if it were the finding.
 
 RECENT ACTIVITY
 You have no web access. The "RECENT WEB MENTIONS" block, if present, is the only evidence of recent third-party coverage — do not assert recent activity, news coverage, or current events that it does not support, and do not infer dates beyond those it states. If that block is absent, write from the authoritative biography alone and omit claims about recency entirely. The authoritative biography remains dominant: never let a mention override its statements about status, dates, roles, or tool authorship.

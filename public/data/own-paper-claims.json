@@ -1,0 +1,590 @@
+{
+  "lastUpdated": "2026-08-20T07:53:33.174Z",
+  "source": "https://raw.githubusercontent.com/fabiogiglietto/fg-zettelkasten/main/data/state.json",
+  "papers": [
+    {
+      "bibtexKey": "Giglietto2026-9b6a992d",
+      "title": "Synthetic seduction: Evolving visual persuasion in coordinated online gambling promotion with generative {AI}",
+      "year": 2026,
+      "doi": "10.1007/978-3-032-11782-3_4",
+      "Summary": "This paper investigates how generative AI has reshaped coordinated organic gambling promotion on Facebook. Analyzing 2,323 images from 223 coordinated public groups (surfaced via the Vera AI alerts workflow), the authors build a mixed-methods pipeline — VLM-generated denotative/connotative descriptions, embeddings, UMAP+HDBSCAN clustering, and qualitative co-occurrence coding — to derive a typology of visual persuasion drivers. They argue that generative AI has not replaced established persuasion strategies (aspirational wealth, manufactured trust, FOMO, gamification, celebrity endorsement, cultural localization, social-relations exploitation) but intensified and recombined them into hyper-real, immersive imagery deployed at industrial scale. A structural break in July 2023, following ChatGPT's launch, marks an exponential jump in posting volume, exploiting Meta's asymmetric governance that regulates paid but not organic gambling content.",
+      "KeyContributions": [
+        "An empirically grounded typology of visual persuasion drivers in coordinated organic gambling promotion.",
+        "Evidence that generative AI *accelerates and intensifies* — rather than replaces — existing persuasive architectures.",
+        "A reproducible mixed-methods pipeline combining VLM-based image description, dual denotative/connotative embeddings, density-based clustering, and human qualitative coding.",
+        "Identification of Meta's paid-vs-organic regulatory asymmetry and algorithmic amplification as central governance blind spots.",
+        "Reflexive discussion of using LLMs both as analytic instruments and as the very technologies producing the studied manipulative content."
+      ],
+      "Findings": [
+        "Aspirational wealth/hyper-masculine motifs appeared in ~55% of analyzed cluster combinations; transactional \"trust proof\" visuals (payment receipts, cash-out screenshots) in ~37%.",
+        "Drivers include aspirational wealth, manufactured trust, FOMO/urgency, gamification, celebrity endorsements (e.g., Manny Pacquiao), social-relations exploitation, and cultural localization (Filipino, Urdu).",
+        "An Urdu-language cluster embeds gambling within emotionally charged, morally conservative family narratives — an ideologically inflected localization strategy.",
+        "Mean monthly posts rose from 2,121 (pre-ChatGPT) to 280,952 (post-ChatGPT), a 13,242% increase; regression confirmed level and slope shifts (p<0.0001), with a structural break in July 2023.",
+        "Post-2022 imagery shows consistent AI-generation markers (hyper-real lighting, smoothed surfaces, dreamlike saturation, improbable juxtapositions such as sharks with slot machines) and stacks multiple drivers per image.",
+        "Two emblematic AI-generated posts reached 4.3M and 3.3M views, propagating across coordinated groups."
+      ],
+      "contentHash": "3e1fc597d891c59df345b4a61c2f8d1ec90c4229caf9a15793cea82b345538ad"
+    },
+    {
+      "bibtexKey": "Giglietto2026-632ef967",
+      "title": "Beyond the share button: How partisan alignment, journalistic quality, and algorithmic governance shape what millions see on Facebook",
+      "year": 2026,
+      "doi": "10.1177/29768624261452529",
+      "Summary": "This paper leverages Meta's Privacy-Protected Full URLs Dataset to examine how sharing translates into viewership on Facebook across 130,448 highly circulated URLs shared in the US between 2017 and 2022. The authors show that while shares reliably predict views, this amplification is systematically dampened for URLs shared by strongly partisan audiences and boosted for URLs from sources meeting professional journalistic standards. Crucially, these effects vary sharply over time — intensifying during the 2020 election and pandemic period — providing empirical fingerprints of Facebook's known \"break the glass\" governance interventions. The paper argues this temporal volatility is inconsistent with a purely structural (homophily-based) explanation and evidences Facebook's role as an active algorithmic curator rather than a neutral conduit.",
+      "KeyContributions": [
+        "Empirically links sharing behavior to actual viewership at scale using data historically inaccessible to researchers.",
+        "Distinguishes structural network homophily from active algorithmic suppression as competing explanations for reduced partisan reach, using temporal variation as the identifying strategy.",
+        "Provides independent quantitative corroboration of Facebook's \"break the glass\" emergency interventions previously known chiefly through leaks and journalism.",
+        "Extends European amplification frameworks (Trilling et al.) to the US, integrating Political Page Affinity and NewsGuard scores.",
+        "Advances platform studies methodology by demonstrating how longitudinal discontinuities in amplification coefficients can surface otherwise opaque governance decisions."
+      ],
+      "Findings": [
+        "Each additional share corresponds to ~56 additional views, controlling for clicks.",
+        "A one-SD increase in audience partisan alignment strength is associated with ~2.3–2.4 million fewer views, holding shares and clicks constant.",
+        "A one-point increase on NewsGuard's 100-point scale yields ~28,700 additional views, independent of sharing volume.",
+        "The shares-to-views amplification rate ranged from ~71 views/share (2017-Q4, 2019-Q2) down to ~46 (2020-Q3).",
+        "The partisan penalty intensified dramatically in 2020-Q3 (~-2.90 million views), aligning with reported \"break the glass\" measures.",
+        "The journalistic quality reward surged from ~31,500 to over 76,900 views per quality point between 2020-Q2 and mid-2021.",
+        "The click coefficient stayed stable (6–7.5 views/click), highlighting the volatility of shares and partisanship coefficients as distinctive."
+      ],
+      "contentHash": "dc2819c4a9dfeed337eeca518b6a89dfbc37cd3cf6e13a740cb24172adb78ab1"
+    },
+    {
+      "bibtexKey": "Giglietto2026-855a54cb",
+      "title": "From the Wild West to the Walled Garden",
+      "year": 2026,
+      "doi": "10.5204/mcj.3257",
+      "Summary": "Giglietto and Puschmann trace two decades of academic data access to Twitter/X, arguing that the platform's trajectory — from an open API \"Wild West\" (2006–2020), through the brief \"Golden Age\" of the Academic API (2020–2023), to the current commercial paywall era — exemplifies a broader structural pattern across major social media platforms rather than an idiosyncratic Musk-era rupture. They contend that voluntary, platform-led access regimes are inherently fragile, and that the EU's Digital Services Act, particularly Article 40, represents a paradigm shift from discretionary \"data philanthropy\" to a regulatory right — though one hampered by uneven implementation, information asymmetries, and geographic limits. The core argument is that independent platform research must be treated as a public good sustained by institutional infrastructure, not corporate goodwill.",
+      "KeyContributions": [
+        "A synthesized three-phase periodization of Twitter/X data access spanning two decades.",
+        "Generalization of the Twitter case into a cross-platform structural pattern (Meta/CrowdTangle, Reddit, TikTok).",
+        "An early empirical assessment of DSA Article 40 implementation, drawing on EDMO reports and Commission enforcement actions.",
+        "Concrete forward-looking proposals: academic consortia for collective bargaining, public data intermediaries/trusts, multi-method resilience, and extension of DSA-like frameworks beyond the EU.",
+        "A normative reframing of platform research access as public infrastructure rather than platform philanthropy."
+      ],
+      "Findings": [
+        "Early \"data philanthropy\" (Facebook's 61-million-person experiment, Emotional Contagion, Twitter Data Grants, Yahoo Webscope) was opaque and relationship-based — \"independence by permission.\"",
+        "The 2014 Data Grants and 2020 Academic API briefly created sanctioned, merit-based access hailed as best-practice.",
+        "Musk's 2023 closure of the Academic API and disbanding of policy/trust teams returned access to a financially-determined regime.",
+        "DSA implementation is highly uneven: response times of 2 to 100+ days, boilerplate denials, conflation of access tracks, and offers of scraping whitelists instead of structured data.",
+        "The Commission has opened formal proceedings against X, TikTok, and Meta; 2025 preliminary findings held that TikTok and Meta breached Article 40.12.",
+        "The DSA's EU-only reach creates a two-tier global research system, disproportionately excluding Global South researchers, early-career scholars, and civil society, while data donations, browser-based collection, and scraping remain limited workarounds."
+      ],
+      "contentHash": "946cdaf1a586f653b55b2920324849e62e5ea2fcf52dac5ee41fdeb430edc583"
+    },
+    {
+      "bibtexKey": "Giada2026-fc9a3833",
+      "title": "Exploring the Zombie Internet: Anatomy of Three Deceptive Information Operations on Facebook",
+      "year": 2026,
+      "doi": "bibtex_key: Giada2026-fc9a3833",
+      "Summary": "This paper introduces **Deceptive Information Operations (DIOs)** as an analytical framework designed to move beyond false-news taxonomies and capture a wider spectrum of manipulative activity on social media. Rather than treating false content as the defining feature of manipulation, the authors argue that DIOs are constituted by the convergence of three dimensions: deceptive intent in content and identity, strategic exploitation of platform affordances, and multi-account coordination. Through three empirical cases on Facebook — a pro-Putin propaganda network, a coordinated gambling promotion campaign, and a cluster of poorly moderated groups distributing adult content and fraudulent links — they show that structurally distinct operations pursuing different harms share a common operational logic. The paper operationalises the notion of a \"Zombie Internet,\" where engagement-driven design and inconsistent moderation blur the line between human and automated, authentic and manipulated activity, and argues that Meta's enforcement categories (CIB and CSH) are drawn too narrowly to address these structural conditions.",
+      "KeyContributions": [
+        "Proposes the **DIOs framework**, synthesising deception theory, strategic information operations, and coordinated inauthentic behaviour into a single analytical lens.",
+        "Demonstrates empirically that operations differing in actor, content, and intent nonetheless share a common structural logic, making motivational distinctions analytically secondary.",
+        "Identifies critical gaps in platform governance frameworks that focus on content inauthenticity rather than structural enabling conditions, with direct evidence of enforcement failure.",
+        "Offers a reusable codebook and an automated, cyclical detection workflow using the Meta Content Library for scalable monitoring of coordinated deceptive activity.",
+        "Empirically operationalises Koebler's \"Zombie Internet\" concept as a systemic ecosystem condition emerging from engagement-oriented design."
+      ],
+      "Findings": [
+        "**Pro-Putin network:** 27 public groups with replicated naming conventions and synchronised name changes preceding geopolitical events; an anti-Zelenskyy meme was shared across six groups within a six-minute window, accumulating over 1.1 million views. AI-generated heroic imagery of Putin was blended with benign urban-development content to obscure intent.",
+        "**Gambling network:** 260 groups (30,000 to ~600,000 members) using automation and generative AI, some producing up to 10,000 posts per month; anomalous metrics (e.g. 169.1K views, 44.1K comments, 7 reactions, 0 shares) indicated artificial comment inflation, alongside brandjacking of names like Orion Stars and Juwa. 368 of the 500 top posts were removed by analysis time.",
+        "**Unmoderated groups:** 222 groups in two communities exploiting weak moderation, with repeated renaming (one group changed names 13 times) and adult content disguised via activity-status links, empty Musician/Band pages, and unrelated BMW-history blurbs with tinyurl links to evade CIB detection; a Coca-Cola alcohol hoax reached 3.5 million views and 37,300 shares.",
+        "**Cross-case synthesis:** all three conceal intent behind benign content, rely on coordinated sharing and synthetic/AI-generated material, and exploit engagement-driven ranking, differing mainly in user engagement (genuine amplification, near-total synthetic activity, and inadvertent amplification).",
+        "Facebook's enforcement framework failed across all cases to distinguish automated from genuine participation; reports to Meta in 2023 and 2024 received acknowledgement but limited follow-up."
+      ],
+      "contentHash": "6366542548a6695d2e09b4bcf6f7ede62ba864b13744ea7da61dc4f0664d789d"
+    },
+    {
+      "bibtexKey": "Giglietto2025-1765bb4f",
+      "title": "\\\"A Pretty Blunt Approach\\\": Meta's Political Content Reduction Policy and Italian Parliamentarians' Facebook Visibility",
+      "year": 2025,
+      "doi": "10.31235/osf.io/8dqag_v2",
+      "Summary": "This working paper provides the first independent empirical audit of how Meta's 2021–2025 political content reduction policy affected the Facebook visibility of Italian elected officials and other political actors. Analyzing 2.5 million posts from 901 accounts via the Meta Content Library API, the author uses a discovery-validation design with structural breakpoint detection to show that the policy took effect in Italy roughly ten months before Meta's publicly announced July 2022 global rollout, cut re-elected MPs' average per-post reach by 72% at trough, and only partially reverted after Meta's January 2025 reversal. Crucially, extremist accounts offset per-post declines by dramatically increasing posting volume, ending the policy period with *more* aggregate weekly reach than mainstream politicians. The paper frames these results as evidence of significant transparency deficits in Meta's DSA compliance while nevertheless defending the DSA-enabled infrastructure as a genuine research advance worth building on collaboratively.",
+      "KeyContributions": [
+        "First independent quantification of Meta's political content reduction policy on parliamentarians in a European democracy.",
+        "A reusable discovery-validation breakpoint-detection methodology for auditing platform policy changes with opaque implementation timelines.",
+        "Empirical documentation of asymmetric policy effects, including a volume-compensation mechanism through which extremist actors circumvented the intended suppression.",
+        "Concrete evidence of gaps between Meta's DSA transparency reports and observable ranking effects on democratic communication.",
+        "A fully documented, reproducible R pipeline and public producer lists enabling cross-country replication via the Meta Content Library.",
+        "A normative articulation of collaborative platform governance research, drawing on the Knight-Georgetown Institute's \"Better Access\" framework."
+      ],
+      "Findings": [
+        "Three cross-validated breakpoints: implementation (Sept 19, 2021), post-election adjustment (Jan 1, 2023), and reversal (March 9, 2025).",
+        "The implementation breakpoint precedes Meta's announced global rollout by ~303 days; the reversal follows Meta's January 2025 announcement by ~61 days.",
+        "Re-elected MPs: mean weekly views per post fell from 53,368 to a trough of 14,869 (–72%) and only recovered to 34,918 (~65% of baseline) after the reversal.",
+        "Peak-to-trough declines: 72.1% (re-elected MPs), 51.2% (new MPs), 57.3% (prominent politicians), 24.3% (extremists).",
+        "The expected DOWN→DOWN→UP pattern held for all three mainstream groups but not for extremists, whose per-post reach continued declining after the reversal.",
+        "In *total weekly reach*, extremists grew 13.7% from Phase 0 to Phase 2 and overtook mainstream politicians, driven by a 61.5–140.5% increase in posting frequency.",
+        "Meta did not disclose this policy in its DSA compliance reports, a substantive transparency gap."
+      ],
+      "contentHash": "723fcf0805b00f9c125a9bf45b8164c26235b1d3dc4d7bb991c09ce970defe4c"
+    },
+    {
+      "bibtexKey": "Giglietto2025-ed60bc90",
+      "title": "The State of Social Media Research APIs &amp; Tools in the Digital Service Act Era",
+      "year": 2025,
+      "doi": "10.5281/zenodo.16269197",
+      "Summary": "Terenzi and Giglietto (2025) survey the shifting landscape of social media research APIs and tools in the wake of the European Union's Digital Services Act (DSA). The piece situates this stocktaking within ongoing debates over researcher access to platform data, asking how the regulatory regime introduced by the DSA — particularly its Article 40 provisions on vetted researcher access — reshapes the practical infrastructure available to scholars studying online platforms. As a landscape assessment, it bridges the policy framing of platform governance with the day-to-day methodological realities of computational social science and digital methods.",
+      "KeyContributions": [
+        "A stocktaking of the current state of social media research APIs and tooling under the DSA regulatory regime.",
+        "A bridge between policy-level discussion of platform data access and the practical methodological infrastructure researchers actually rely on.",
+        "Implicit mapping of the gap between what the DSA promises in terms of access and what is operationally available to the research community."
+      ],
+      "Findings": [
+        "Specific findings are not available from the provided metadata; the paper signals that the API and tooling environment has been materially reshaped by the DSA era, but concrete results would require the full text."
+      ],
+      "contentHash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+    },
+    {
+      "bibtexKey": "Giglietto2024-cbeb3f70",
+      "title": "Evaluating Embedding Models for Clustering Italian Political News: A Comparative Study of Text-Embedding-3-Large and UmBERTo",
+      "year": 2024,
+      "doi": "10.31219/osf.io/2j9ed",
+      "Summary": "This paper benchmarks OpenAI's `text-embedding-3-large` against the Italian-specific BERT model UmBERTo for unsupervised clustering of Italian political news URLs shared on Facebook before the 2018 and 2022 national elections. Using K-means and HDBSCAN (with and without UMAP), the author evaluates 1,650 clustering configurations via an adapted Grimmer & King (2011) cluster-quality metric, where thematic coherence between document pairs is rated by a fine-tuned GPT-4o-mini classifier substituting for human coders. The LLM-based embedding model consistently produces more semantically coherent clusters than UmBERTo across both election periods and both clustering algorithms, extending earlier English-language findings to Italian political text.",
+      "KeyContributions": [
+        "First systematic comparison of LLM-based versus BERT-based embeddings for unsupervised clustering of Italian political news.",
+        "Empirical evidence that the LLM-embedding advantage observed in English generalizes to Italian.",
+        "A scalable adaptation of the Grimmer & King (2011) interpretive cluster validity framework, replacing human coders with a fine-tuned GPT-4o-mini rater (76.7% accuracy, 0.765 macro-F1).",
+        "A methodological warning about HDBSCAN: high quality scores can correlate strongly with massive noise inflation, undermining representativeness.",
+        "Publicly released code and data for replication and further benchmarking."
+      ],
+      "Findings": [
+        "In 2018, K-means + `text-embedding-3-large` (no UMAP) achieved the highest mean quality (1.862); HDBSCAN + UmBERTo scored lowest (0.694).",
+        "In 2022, HDBSCAN + `text-embedding-3-large` (no UMAP) led at 1.681; HDBSCAN + UmBERTo again scored lowest (0.538).",
+        "Embedding model and clustering algorithm had highly significant effects (p < 2e-16); UMAP did not. Models explained 51.6% (2018) and 42.6% (2022) of variance.",
+        "K-means significantly outperformed HDBSCAN overall (2018: 1.745 vs. 1.278; 2022: 1.347 vs. 0.959).",
+        "Cluster quality scores were uniformly lower in 2022 than in 2018 across configurations.",
+        "HDBSCAN quality scores correlated strongly with the proportion of points discarded as noise (r = 0.775, p < 0.001), sometimes exceeding 90% of the data.",
+        "Total cost of fine-tuning and running GPT-4o-mini inferences was under $3, suggesting affordability of LLM-as-judge evaluation."
+      ],
+      "contentHash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+    },
+    {
+      "bibtexKey": "Anwar2024-34dba628",
+      "title": "Facebook reactions in the context of politics and social issues: a systematic literature review",
+      "year": 2024,
+      "doi": "10.3389/fsoc.2024.1379265",
+      "Summary": "This systematic literature review synthesizes 64 peer-reviewed studies published between 2016 and 2023 on Facebook's Reactions feature (Love, Haha, Wow, Sad, Angry), introduced in 2016 as an expansion of the Like button. Anwar and Giglietto organize the fragmented, interdisciplinary literature into three thematic clusters — the introduction of Reactions, politics and far-right groups, and other social issues — and extract cross-study regularities via a comparative naturalistic method. The central argument is that Reactions operate as paralinguistic digital affordances that expose systematic emotional signatures of online content: lifestyle and entertainment posts skew positive, while political and controversial content elicits broader, more negative emotional profiles, with anger-driven posts consistently generating higher engagement — a pattern especially pronounced for populist and far-right actors.",
+      "KeyContributions": [
+        "First comprehensive systematic synthesis of Facebook Reactions research spanning 2016–2023 across political, social, health, and business domains.",
+        "A thematic taxonomy that organizes an otherwise scattered interdisciplinary literature into coherent categories.",
+        "Cross-study identification of anger as a robust driver of engagement with political and populist content.",
+        "Diagnosis of methodological gaps: fragmented data sources, limited cross-cultural comparison, and underexplored event-based/tabloid topics.",
+        "Research agenda pointing toward LLM-based categorization of reactions and applications in misinformation, fact-checking, and digital activism."
+      ],
+      "Findings": [
+        "Distribution of the corpus: 6 articles on the introduction of Reactions, 19 on politics and far-right groups, 39 on other social issues.",
+        "Negative appeals — especially anger — generate significantly more engagement and sharing in political campaigns (Mexico, Brexit, EU Parliament elections).",
+        "Populist and far-right leaders receive disproportionately more Angry and Haha reactions than mainstream politicians; anger-triggering content boosts sharing.",
+        "Hyperpartisan and junk news exhibit a bivalent logic: Love and Anger rarely co-occur, while Anger clusters with Sad and Wow.",
+        "Reactions have been used computationally to predict emotion classes, controversy (via entropy of reaction distributions), and sentiment, though reaction-to-emotion mappings remain ambiguous — Haha and Wow can carry negative or disbelieving meanings in political contexts.",
+        "Reactions serve as effective sentiment labels for low-resource languages (e.g., Sinhala, Bangla).",
+        "Cultural context shapes reaction patterns (e.g., China-critical vs. China-supporting audiences in Hong Kong)."
+      ],
+      "contentHash": "3cb0d1b609ce1b66a38145c9bb959ee96781f985ffd52ebf9b31ed77f54f9dc0"
+    },
+    {
+      "bibtexKey": "Marino2024-2fbc690f",
+      "title": "Integrating Large Language Models in Political Discourse Studies on Social Media: Challenges of Validating an LLMs-in-the-loop Pipeline",
+      "year": 2024,
+      "doi": "10.6092/issn.1971-8853/19524",
+      "Summary": "This methodological essay documents the design and validation of an \"LLMs-in-the-loop\" pipeline for studying political discourse on Italian Facebook during the 2018 and 2022 general elections. The authors integrate OpenAI models at three distinct pipeline stages — a fine-tuned GPT-3 Curie binary political classifier, `text-embedding-3-large` embeddings feeding k-means clustering, and GPT-4-turbo cluster labeling — and propose a three-phase, task-specific human validation protocol. Their central argument is that fully LLM-integrated pipelines demand novel validation strategies distinct from those developed for fine-tuned transformer models, because LLMs are general-purpose, produce narratives at variable granularity, and often surpass low-skilled crowd workers, forcing reliance on expert annotators.",
+      "KeyContributions": [
+        "An end-to-end, reproducible LLMs-in-the-loop pipeline applied to a non-English (Italian) political communication corpus of ~85k URLs.",
+        "A three-phase validation protocol matched to each LLM-integrated task (classification, clustering coherence, label accuracy), with publicly shared codebooks and rubrics.",
+        "Articulation of three generalizable validation challenges: LLM general-purposeness, variable narrative granularity, and the limits of crowdsourced human evaluation.",
+        "Reusable prompt templates and annotation guidelines for researchers adopting similar workflows.",
+        "A methodological argument for early, competent adoption of LLMs by political communication scholars as a counterweight to manipulative uses."
+      ],
+      "Findings": [
+        "Binary classifier reached F1 = 0.897 (precision 0.911, recall 0.883) on held-out data.",
+        "54% of 2018 posts and 53% of 2022 posts were classified as political.",
+        "`text-embedding-3-large` outperformed `text-embedding-ada-002` and `e5-mistral-7b-instruct` on internal metrics for Italian political news.",
+        "Resulting clusters spanned drastically different levels of granularity, from broad policy domains to individual news events, motivating a multi-level coherence rubric.",
+        "Fiverr/MTurk-style crowd annotators were deemed inadequate because LLM outputs already exceed their quality on nuanced political tasks; PhD-level expert coders were required.",
+        "Labeling all 397 clusters via the GPT-4-turbo API cost roughly $30."
+      ],
+      "contentHash": "58c9266ae6ab0d3c874b86ecbf35f3e8f813d2d829f7797de3c65c71459b7973"
+    },
+    {
+      "bibtexKey": "Giglietto2023-fa71a001",
+      "title": "A Workflow to Detect, Monitor, and Update Lists of Coordinated Social Media Accounts Across Time: The Case of the 2022 Italian Election",
+      "year": 2023,
+      "doi": "10.1177/20563051231196866",
+      "Summary": "This paper introduces a circular, iterative workflow for keeping lists of coordinated social media accounts current, addressing the well-known decay of static actor lists as malicious operators adapt, get suspended, or shift assets. Starting from a seed list of known coordinated accounts, the system polls their overperforming posts every six hours via platform APIs and applies near-duplicate detection across links, image-text pairs, and message content to surface previously unknown accounts engaged in the same coordinated behaviors. Applied to the 2022 Italian snap election, the workflow expanded an initial 435-account seed into hundreds of newly detected coordinated accounts, revealing three qualitatively distinct operations: a hyperpartisan Five Star Movement echo-chamber network, a religious-clickbait click-economy scheme, and a Church of Almighty God proselytism operation using Messenger bots. The authors argue the approach is behavior- and content-agnostic, portable across platforms, and better suited than static lists or content-based methods to producing accurate prevalence estimates of information operations.",
+      "KeyContributions": [
+        "A near-real-time iterative workflow that dynamically updates coordinated-account lists rather than relying on manual, static compilations.",
+        "Extension of Coordinated Link Sharing Behavior (CLSB) detection with Coordinated Image-Text Sharing Behavior (CITSB) and Coordinated Message Sharing Behavior (CMSB), capturing adaptation tactics such as moving links into comments.",
+        "Empirical demonstration on the 2022 Italian election with three documented case studies spanning ideological, economic, and religious motivations.",
+        "A behaviorally agnostic alert system for journalists, fact-checkers, and researchers, framed with appropriate caveats about not equating coordination with harm.",
+        "Discussion of portability to other platforms under the EU Digital Services Act Article 40 data access regime."
+      ],
+      "Findings": [
+        "The workflow surfaced 1,022 overperforming political posts, 272 coordinated links, 66 new coordinated political accounts, and 554 additional generic coordinated accounts beyond the seed.",
+        "The M5S network (90 entities, ~1.5M potential reach) produced 534,353 posts in two months, averaging 6.2 posts/minute on election day and peaking above 50/minute, with 80% link-free posts and heavy Facebook-internal circulation — an echo chamber amplifying fabricated pro-M5S polls.",
+        "A clickbait operation used two large religious Pages (~768,000 combined followers) to funnel devotional audiences toward misleading political clickbait headlines, with roughly two-thirds of their content unrelated to religion.",
+        "A Church of Almighty God proselytism cluster spanned 1,390 groups in seven language clusters; the Italian subset (61 groups, 13 Pages, ~2M combined audience) exhibited anomalously high admin counts (avg 72.6/Page) and used Messenger bots to route users into undisclosed catechism chats.",
+        "In the M5S network, only 2% of external links were NewsGuard-rated unreliable, but 76% were unrated; reliable links skewed toward ideologically aligned outlets."
+      ],
+      "contentHash": "f2c5c99ba774c8e3dd39f84f62e95eab7c0629c58f4cb504d78c5f77f05e48b7"
+    },
+    {
+      "bibtexKey": "Rossi2023-847d5a9f",
+      "title": "Cracking Open the European Newsfeed",
+      "year": 2023,
+      "doi": "10.51685/jqd.2023.020",
+      "Summary": "This paper extends Guess et al.'s (2021) US-based analysis of Facebook news quality to Germany, France, and Italy from 2019–2022, using Meta's URL Shares Dataset paired with NewsGuard domain ratings. The authors find that while the overall volume of URLs shared on Facebook declined across all three countries, the share of URLs from untrustworthy domains rose in Germany and Italy — peaking in national election years — even as the proportion of *Views* from untrustworthy sources remained relatively stable. As in the US, older cohorts dominate both exposure to and sharing of low-quality content. The paper doubles as a methodological reflection on the limits of privacy-protected platform datasets and third-party trust ratings for cross-national research.",
+      "KeyContributions": [
+        "First systematic cross-national quantitative description of trustworthy vs. untrustworthy news circulation on Facebook in France, Germany, and Italy.",
+        "Temporal (through 2022) and geographic (EU) extension of Guess et al. (2021).",
+        "Methodological critique of Meta's URL Shares Dataset (especially the 100-share threshold) and of using NewsGuard ratings longitudinally, with explicit stability checks.",
+        "Empirical documentation of age-skewed engagement with untrustworthy content in European contexts.",
+        "Framing of findings against forthcoming EU Digital Services Act transparency and researcher access obligations."
+      ],
+      "Findings": [
+        "URL volumes on Facebook declined steadily 2019–2022 in all three countries; France leads in volume, Germany trails (consistent with lower Facebook news use).",
+        "Untrustworthy URL shares started around 13–14% across countries in 2019 but diverged by 2022: France ~11%, Germany ~21% (peak 2021), Italy 22% (peak 2022) — peaks aligning with election years.",
+        "Absolute Views and Shares of untrustworthy URLs peaked in 2020 before declining with the overall volume.",
+        "The *proportion* of Views from untrustworthy sources stayed stable or slightly declined despite rising untrustworthy URL shares, suggesting platform-level dampening of exposure.",
+        "Sharing of untrustworthy content skews older than exposure: 65+ dominates in France (28%), 55–64 in Germany (36%), 45–54 in Italy (33%); under-34 users play a marginal role.",
+        "US data show a stronger correlation between untrustworthy-domain coverage in NewsGuard and untrustworthy URLs in the dataset than European data — a key reason to restrict comparative analysis to the EU."
+      ],
+      "contentHash": "56cf2a6e45f2bd1c33c79d6977a82fff91f6af5b1caae5e7bf7f9dd8da5adf9b"
+    },
+    {
+      "bibtexKey": "Ghezzi2023-8bebc91f",
+      "title": "Political polarization in the frequency British newspapers mention scientists with different views on COVID-19",
+      "year": 2023,
+      "doi": "10.31235/osf.io/4cyfu",
+      "Summary": "This paper investigates whether the political leaning of UK newspapers shapes which COVID-19 scientists they cite, focusing on two opposing expert camps: signatories of the Great Barrington Declaration (GBD, favouring less precautionary non-pharmacological interventions) and authors of the John Snow Memorandum (JSM, favouring more precautionary measures). Combining MediaCloud mention counts across ten national newspapers with bibliometric co-authorship mapping and Twitter link-sharing analysis, the authors show that right-leaning outlets disproportionately cite GBD scientists while left-leaning outlets disproportionately cite JSM scientists, and that the two camps remain largely separated in academic and social media networks as well. They argue this reflects a political *use* of science by partisan media rather than political bias among the scientists themselves, and emphasise that — unlike many US cases — both UK groups consist of mainstream, credentialed researchers rather than fringe or misinformation-adjacent figures.",
+      "KeyContributions": [
+        "Empirical evidence of polarized media sourcing of scientists in UK COVID-19 coverage, extending a largely US-centric literature.",
+        "A distinction between the UK case (mainstream scientists with differing precautionary views) and US polarization patterns that often involve fringe actors.",
+        "A triangulated methodology combining media mention counts, co-authorship networks, and Twitter sharing of scientific publications.",
+        "A conceptual reframing — drawing on Floridi — of polarization as media political use of science rather than scientists' political bias."
+      ],
+      "Findings": [
+        "910 articles mentioned GBD signatories versus 2,553 mentioning JSM authors across UK national news.",
+        "GBD/JSM mention ratios were 1.343 (Telegraph) and 0.868 (Express) at the right end versus 0.195 (Guardian) and 0.248 (Mirror) at the left, with several outlets significantly deviating from expected ratios (p<0.01 corrected).",
+        "Co-authorship analysis showed a single connected cluster composed exclusively of JSM authors; GBD authors did not co-publish meaningfully with each other or with JSM authors during the period.",
+        "On Twitter, the less-precautionary group shared 78 unique scientific publications and the more-precautionary group 133, with only one paper shared across both groups.",
+        "Most-tweeted papers were typically authored by members of the sharing group, suggesting in-group self-promotion rather than cross-camp scientific dialogue.",
+        "Shared publications showed no misinformation \"red flags\" (only one retraction), supporting the claim that both camps are mainstream science."
+      ],
+      "contentHash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+    },
+    {
+      "bibtexKey": "Marino2023-9137f448",
+      "title": "The power of Alternative Influence Networks (AIN) for spreading Covid-19 problematic information on Facebook during a year of pandemic",
+      "year": 2023,
+      "doi": "10.1445/106772",
+      "Summary": "This paper maps how Alternative Influence Networks (AIN) circulated problematic Covid-19 information on Italian Facebook during the pandemic's first year (March 2020–March 2021). Working from a dataset of 175,228 posts by previously identified covid-skeptic accounts, the authors extract mentioned public figures, cluster them into five categories, and analyse engagement patterns and content. They argue that an \"Intellectual Dark Web\" (IDW) subset of influencers produces disproportionately shareable content, that legacy media outlets and journalists remain central conduits for these voices, and that *remediation* — the recycling of expert statements from TV and newspapers — is a key mechanism by which AIN actors amplify covid-skeptic narratives while evading fact-checking.",
+      "KeyContributions": [
+        "Empirical mapping of the Italian AIN during Covid-19, identifying an IDW subnetwork with a distinctive share-heavy engagement signature.",
+        "Analytical use of a comments/shares ratio metric to distinguish hyperpartisan amplification from contested debate.",
+        "Extension of remediation theory to alternative media, showing how AIN actors weaponise legacy-media-produced expert statements.",
+        "Contribution to inter-media agenda-setting research by documenting co-production of visibility across AIN, alternative outlets, and legacy media.",
+        "A replicable mixed-methods workflow combining coordinated-behaviour detection, named-entity extraction, clustering, engagement metrics, and stratified content analysis."
+      ],
+      "Findings": [
+        "Five clusters emerged: Politicians, Other Public Figures, Journalists, Doctors/Scientists/Experts, and IDW Influencers.",
+        "IDW Influencers had the lowest comments/shares ratio (−0.28), indicating pure amplification; Doctors/Scientists/Experts also skewed to shares (−0.21).",
+        "Journalist-related posts had the highest ratio (+0.16), indicating contested/commented framings; Politicians produced the most posts (9,879) with moderate engagement.",
+        "Despite low volume, IDW Influencers (1,649 posts) and Other Public Figures (1,958 posts) achieved the highest mean interactions (1,030 and 983).",
+        "Top amplifying pages were dominated by mainstream-affiliated journalists (Nicola Porro, Gianluigi Paragone) and right-wing newspapers (*La Verità*, *Libero*); covid-skeptic micro-celebrities (Montanari, Messora) appeared further down.",
+        "Recurring themes: immigration and anti-government framings among politicians; judicial scandals among Other Public Figures; covid-skepticism citing figures like Zangrillo or Tarro in the science cluster; and conspiracy narratives (microchips, global tyranny) in the IDW cluster, often sourced from TV talk-show clips."
+      ],
+      "contentHash": "7fe0a3fc99f8cebc6b18df207c4c78ab25786851770b644bfbd99e7546ab5fa9"
+    },
+    {
+      "bibtexKey": "Giglietto2022-b30e8b4e",
+      "title": "Unexpected consequences of a simple threshold: the effect of the 100 public shares on Meta’s URL Shares Dataset",
+      "year": 2022,
+      "doi": "10.31235/osf.io/2p7ws",
+      "Summary": "This paper exposes a previously unrecognized artifact in Meta's URL Shares Dataset (released through Social Science One): the 100-public-shares threshold used for anonymization, when combined with platform-wide changes to Feed ranking, produces systematic distortions that can swamp the social signals researchers aim to study. Analyzing monthly URL, share, and comment volumes across 46 countries from 2017 to 2021, the authors find that highly heterogeneous national contexts produce nearly identical temporal trajectories—a similarity they attribute to algorithmic forces (notably Meaningful Social Interactions optimization) shifting the probability that URLs cross the censoring threshold. The apparent COVID-19 spike in early 2020, they show, is largely the tail of a trend that began in mid-2019. The paper is both a methodological warning and a concrete demonstration of how privacy-preserving data engineering and algorithmic curation become entangled in research datasets.",
+      "KeyContributions": [
+        "Identifies a cross-country, platform-wide artifact in the URL Shares Dataset caused by the interaction between the 100-share threshold and Feed ranking changes.",
+        "Provides empirical evidence that comparative and longitudinal analyses on this dataset risk mistaking algorithmic effects for social phenomena (including the COVID-19 \"shock\").",
+        "Introduces a standardized shares–comments delta score that accounts for the dataset's differential-privacy noise (Appendix A).",
+        "Links observed dataset patterns to documented and leaked changes in Meta's MSI Feed optimization, offering a plausible causal mechanism."
+      ],
+      "Findings": [
+        "Global shares and comments declined through 2017, rebounded in 2018, and peaked in February–March 2020 alongside the WHO pandemic declaration.",
+        "The top ten countries by share volume exhibit nearly identical monthly trajectories; India (and partly Argentina) deviate only because of a known 2019 data gap.",
+        "Restricting to local URLs and applying the standardized delta does not dissolve the cross-country similarity.",
+        "Hierarchical clustering produces four country groups, but differences trace mostly to dataset artifacts (late onboarding, the India gap) rather than substantive local variation.",
+        "From mid-2019 onward URL counts converge across nearly all countries (except four African ones), indicating algorithmic acceleration well before COVID-19."
+      ],
+      "contentHash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+    },
+    {
+      "bibtexKey": "Giglietto2022-0e951ac5",
+      "title": "Mapping Nefarious Social Media Actors to Speed-up Covid-19 Fact-checking",
+      "year": 2022,
+      "doi": "10.31235/osf.io/6umqs",
+      "Summary": "This report documents the MINE-FACTS project, an Italian collaboration between researchers and the fact-checking outlet Facta.news that built a content-agnostic prototype for accelerating COVID-19 fact-checking on Facebook. Building on the authors' prior work on Coordinated Link Sharing Behavior (CLSB) and the CooRnet R package, the paper maps Italian \"nefarious\" actors at macro, meso, and micro scales; traces the emergence of a covid-skeptic coordinated network as an offshoot of pre-existing partisan clusters; and catalogues the evasion tactics these actors use to circumvent platform mitigations. A one-month operational test showed that behaviour-based triage surfaces problematic content at roughly 40% — significantly above the ~28% baseline rate of routine third-party fact-checking.",
+      "KeyContributions": [
+        "An operational prototype integrating CooRnet, CrowdTangle, and IFCN databases into a fact-checker's workflow.",
+        "A multi-scale (macro/meso/micro) map of Italian coordinated networks spreading COVID-19 misinformation.",
+        "Documentation of novel evasion tactics: first-comment link placement, image-macro \"link laundering,\" cross-site monetization via shared AdSense IDs, and Page rebranding.",
+        "Empirical evidence that content-agnostic, behaviour-based detection outperforms content-based triage in surfacing problematic material.",
+        "A methodological demonstration of iterative CooRnet seeding to dynamically expand inventories of coordinated accounts.",
+        "OSINT reconstructions attributing specific disinformation operations (notably the Mag24 network) to identifiable individuals."
+      ],
+      "Findings": [
+        "Top-circulating Italian Facebook links in early 2020 included a Tgcom24 piece amplifying an \"American expert\" bioweapon claim (15M+ views) and removed YouTube videos linking 5G to COVID; partisan, oversimplified framings outperformed balanced ones.",
+        "The initial iteration found 30 Pages (2.1M followers) and 308 groups (2.73M members) engaged in CLSB; interactions in conspiracy groups roughly tripled during lockdown versus a modest rise in non-conspiracy groups.",
+        "A second iteration on October 2020 links yielded 344 coordinated accounts forming a giant political component with 5 conspiracy sub-clusters; the largest covid-skeptic cluster overlapped with League- and Five Star Movement-affiliated accounts.",
+        "The 2021 iteration on 403,071 links produced 2,151 accounts across 89 components, with bridging groups tying together covid-skeptic, political, and religious clusters.",
+        "Case studies exposed: a Blogspot conspiracy network monetized via shared AdSense IDs; a 62-group Catholic network intermittently injected with covid-skeptic content; a 31-Page network laundering links through GEDI-group outlets (Repubblica, tvzap, caffeinamagazine); and the long-running Mag24 network tied via WHOIS/AdSense to a named individual, using image macros with links in first comments.",
+        "The prototype test surfaced 70 links / 360 posts with ~40% rated problematic, versus ~28% in routine fact-checking.",
+        "Problematic content shows a distinctive comments-to-shares ratio, whereas non-problematic content is dominated by shares — a useful ranking signal."
+      ],
+      "contentHash": "f0cfd46364ab5d4cdf8ded4392550ef9e9b0d35d53be29ffc09f432e58c15c15"
+    },
+    {
+      "bibtexKey": "Ducci2022-10cb5d70",
+      "title": "Media, Users And Health Online: The Propagation Dynamics Of Digital Information On Facebook And The Role Of The Online Gatekeeper Google News Italia",
+      "year": 2022,
+      "doi": "bibtex_key: Ducci2022-10cb5d70",
+      "Summary": "This conference paper investigates how Google News Italia functions as an algorithmic gatekeeper for health information and how the news it aggregates translates into user engagement on Facebook. Drawing on health communication scholarship and classic gatekeeping/agenda-setting theory, the authors analyze nine months (Feb–Nov 2019) of health-related items surfaced by Google News Italia, matching each to Facebook interaction data. They argue that while medical-scientific and healthcare-system topics dominate aggregation, emotionally charged items — celebrity health stories and healthcare malfunction reports — command the greatest user engagement. The paper contends that algorithmic gatekeepers now play a non-negligible role in constructing digital public spheres around health, with dual implications for health literacy and misinformation.",
+      "KeyContributions": [
+        "Empirical mapping of Google News Italia's gatekeeping role in shaping the Italian online health agenda.",
+        "A seven-category thematic coding scheme for health news suitable for reuse in agenda-setting and audience research.",
+        "A comparison index (Ic) distinguishing comment- vs. share-oriented engagement modalities.",
+        "A theoretical bridging of health communication, gatekeeping theory, and platform-based engagement analysis.",
+        "Practical implications for health organizations planning strategic communication in algorithmically mediated environments."
+      ],
+      "Findings": [
+        "78.3% of aggregated health items received at least one Facebook interaction.",
+        "Medical science (18.5%) and healthcare system (18.4%) dominated the highly-engaged set; celebrity was rarest (5.3%).",
+        "Celebrity news drove the highest average engagement (1,862 interactions per item) and disproportionate commenting.",
+        "Shares outnumbered comments overall; technical topics skewed toward sharing, celebrity content toward commenting.",
+        "Production was concentrated: news agencies (esp. Ansa) and national dailies led, and 1% of sources produced 17% of items.",
+        "Sources showed thematic specialization (e.g., Quotidiano Sanità on system news, Vanity Fair on celebrity, Fanpage on malfunctions).",
+        "Within-source engagement variance exceeded between-source variance, indicating article-level topic matters more than outlet identity."
+      ],
+      "contentHash": "ff325c33297c1e349b0c56ea92a422e4e07ff08e35be9ef897bed571a7c16945"
+    },
+    {
+      "bibtexKey": "Giglietto2020-9d8acdd7",
+      "title": "It takes a village to manipulate the media: coordinated link sharing behavior during 2018 and 2019 Italian elections",
+      "year": 2020,
+      "doi": "10.1080/1369118X.2020.1739732",
+      "Summary": "This paper argues that disinformation research should pivot from content-veracity and bad-actor detection toward identifying **coordinated collective action** on platforms. Using CrowdTangle data on Facebook shares of Italian political news during the run-ups to the 2018 general and 2019 European elections, the authors develop a reproducible algorithm to detect entities that repeatedly share the same URLs near-simultaneously. These \"coordinated link sharing behavior\" (CLSB) networks are shown to be strongly associated with the diffusion of problematic domains and with entities previously flagged as disinformation sources. The paper further distinguishes networks by their self-presentation (openly political vs. deceptively non-political), linking these to different — likely ideological vs. commercial — sharing strategies.",
+      "KeyContributions": [
+        "Grounds Facebook's operational label \"coordinated inauthentic behavior\" in scholarly work on online coordination, participatory culture, and cloaked identities.",
+        "Introduces a reproducible two-step algorithm (open-source R code) for detecting CLSB from CrowdTangle data, based on a data-driven time threshold and repeated co-sharing.",
+        "Provides empirical evidence that coordinated sharing patterns are linked to problematic information across two Italian elections.",
+        "Differentiates ideologically-motivated from commercially-motivated coordinated networks via the interaction of politicalness and domain-sharing breadth.",
+        "Identifies two recurring structural configurations of coordinated networks — highly centralized and highly clustered — as an open puzzle for future work."
+      ],
+      "Findings": [
+        "Identified 24 coordinated networks (82 entities) in 2018 and 92 networks (606 entities) in 2019.",
+        "Coordinated entities shared problematic domains 1.79× more often (2018) and 2.22× more often (2019) than non-coordinated entities.",
+        "Coordinated entities were 19.24× (2018) and 23.19× (2019) more likely to appear on the Avaaz list of problematic Facebook pages.",
+        "Network composition shifted between elections: in 2018, 44% of networks were fully political; in 2019, 64% were of mixed composition.",
+        "Strong negative Spearman correlations between politicalness and domain concentration (r_s = -0.76 in 2018; -0.63 in 2019): non-political networks amplified a narrow band of (often problematic) domains, while political networks drew from broader source repertoires.",
+        "Networks fell into two structural ideal-types (star-like centralized vs. densely clustered), but neither politicalness nor concentration explained which form emerged."
+      ],
+      "contentHash": "0f0e33b159e54151370ca073b17ee3b7473fa426f2fd485d9f7ae6776182c257"
+    },
+    {
+      "bibtexKey": "Giglietto2020-6278a4aa",
+      "title": "Three Consequences of Big Data on the Practices and Scholarships of Political Communication",
+      "year": 2020,
+      "doi": "10.3270/96423",
+      "Summary": "This conceptual essay argues that big data and pervasive connected technologies have reshaped political communication along three interlocking vectors: the blurring of political organizational boundaries through networked publics, the rise of micro-targeted political advertising, and new dynamics of strategic attention and amplification within a hybrid media system. Giglietto contends that each vector generates distinct methodological and conceptual difficulties for researchers — particularly around measuring exposure, accessing platform data, and distinguishing official from unofficial political actors — and that these vectors interact to produce a state of \"permanent potential influence\" that eludes existing regulatory and analytical frameworks.",
+      "KeyContributions": [
+        "Proposes an integrative three-vector framework (networked publics, micro-targeting, attention/amplification) for analyzing how big data restructures political communication.",
+        "Diagnoses specific methodological problems for the field: obsolete source lists, weakened exposure concepts, and inadequate platform APIs (notably Facebook's Ad Library).",
+        "Bridges contemporary platform phenomena with classical communication theory (Lazarsfeld, Granovetter, Meyrowitz).",
+        "Frames a policy tension between platform transparency initiatives and the persistence of unregulated fringe amplification."
+      ],
+      "Findings": [
+        "Networked collaboration yields skewed contribution distributions — small dedicated cores plus many occasional participants — enabling loose coalitions to rival formal organizations.",
+        "Unofficially affiliated fringe groups can support mainstream candidates while granting plausible deniability, undermining analyses tied to official channels.",
+        "Facebook's Ad Library, despite its scale (5M+ ads, ~$900M in U.S. spend from May 2018), lacks the targeting granularity needed to assess exposure.",
+        "Social media's flattened display format weakens outlet brand cues, making self-reported media exposure unreliable.",
+        "Engagement metrics (likes, shares, retweets) are only weak proxies for actual attention or exposure.",
+        "Micro-targeting enables contradictory messaging to narrow audiences, though evidence of strong persuasive effects remains thin."
+      ],
+      "contentHash": "c7e116c288d22cc16f9e3a029297f1cfbece435e24bba098ecf3eab6f231cfb8"
+    },
+    {
+      "bibtexKey": "Unknown2020-d568b728",
+      "title": "Correction",
+      "year": 2020,
+      "doi": "10.1080/1369118x.2020.1755558",
+      "Summary": "This item could not be meaningfully summarized because no substantive content was provided. The source consists only of a title — \"Correction\" — and a publication year of 2020, with no abstract, author information, or body text available. The title suggests the item may be a published erratum or corrigendum to a prior article, but there is no supporting text to confirm this interpretation or to identify the original work being corrected.",
+      "KeyContributions": [
+        "None can be determined from the available material."
+      ],
+      "Findings": [
+        "No findings are available for review."
+      ],
+      "contentHash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+    },
+    {
+      "bibtexKey": "Giglietto2019-882f1900",
+      "title": "Diverging patterns of interaction around news on social media: insularity and partisanship during the 2018 Italian election campaign",
+      "year": 2019,
+      "doi": "10.1080/1369118X.2019.1629692",
+      "Summary": "This paper investigates how partisan communities engaged with political news on social media during Italy's 2018 general election. Combining Twitter data to classify news sources by partisan attention and Facebook engagement metrics on 84,815 political news stories, the authors introduce an \"insularity\" measure and examine how it shapes patterns of sharing versus commenting. They find that sources favored by supporters of populist parties (Five Star Movement/M5S and the League) are more insular; insular sources are amplified through shares while cross-partisan sources become sites of comment-based contestation; and M5S uniquely benefits from a strategic pattern where positive stories are amplified and negative stories contested. The authors argue that populist success rests on both ideological affinity with fragmented hybrid media and long-term investment in digital infrastructure, exemplified by M5S as an \"anti-elitist cyber party.\"",
+      "KeyContributions": [
+        "Extends Faris et al.'s Media Partisanship Attention Score (MPAS) into a Multi-Party MPAS (MP-MPAS) applicable to multiparty systems beyond the US two-party context.",
+        "Introduces a novel source-level \"insularity\" index combining maximum partisan attention with a Gini coefficient of partisan dispersion.",
+        "Triangulates Twitter (for partisan attention estimation) with Facebook (for engagement patterns), offering a methodological template that navigates platform data-access constraints.",
+        "Provides empirical evidence from a polarized-pluralist multiparty system, complementing the mostly US-based literature.",
+        "Nuances the echo-chamber thesis by showing cross-partisan sources are loci of contestation, not merely absent from partisan diets.",
+        "Advances a \"cyber party\" argument linking populism with strategic exploitation of social media attention economies."
+      ],
+      "Findings": [
+        "Median insularity: M5S sources = 0.73, League = 0.67, LeU = 0.63, PD = 0.63 (system mean 0.65); M5S significantly higher than all others (p < .001).",
+        "Attribution of 634 sources: League 33.9%, M5S 27.9%, cross-partisan 19.1%, PD 9.5%, LeU 7.7%; Forza Italia and FdI attracted almost no adjudicated sources.",
+        "Insularity is negatively correlated with the comments/shares ratio (Spearman ρ = -.31, p < .001): insular sources are amplified via shares; cross-partisan sources attract commenting.",
+        "M5S: positive stories → more shares per comment; negative stories → more comments per share (p < .001).",
+        "PD, Forza Italia, League: the opposite pattern — negative stories were amplified, positive stories contested.",
+        "Cross-partisan, low-insularity sources functioned as arenas of contestation rather than echo-chamber amplification."
+      ],
+      "contentHash": "050e8a793fb5b64f8c03fe3c4c01cd58c552ef47579ad40298f49d961734be80"
+    },
+    {
+      "bibtexKey": "Giglietto2019-e9be81c1",
+      "title": "‘Fake news’ is the invention of a liar: How false information circulates within the hybrid news system",
+      "year": 2019,
+      "doi": "10.1177/0011392119837536",
+      "Summary": "Giglietto and colleagues offer a theoretical critique of the dominant creator-centric framing of \"fake news,\" arguing that it cannot capture how false information actually moves through Chadwick's hybrid media system. Drawing on second-order cybernetics, Bateson's information theory, and Luhmann's systems theory, they propose refocusing analysis on *propagators* — the chain of actors who each judge and re-share content — rather than on the original injector's intent. A three-level (micro/meso/macro) framework and a 2x2 typology of injector/propagator truth judgments allow them to reconceptualise circulation as heterogeneous cascades in which satire, mistake, and deception can flow together. They also reject the term \"fake news\" itself as a rhetorical weapon that positions its user as truth-claimer.",
+      "KeyContributions": [
+        "Shifts the analytical center of gravity from content creators/injectors to propagators and propagation dynamics.",
+        "Introduces second-order cybernetics into misinformation studies, treating information as observer-dependent (\"a difference that makes a difference\").",
+        "Develops a 2x2 propagation typology based on the truth judgments of injector and propagator, yielding four cases: pure disinformation, misinformation-via-disinformation, disinformation-via-misinformation, and pure misinformation.",
+        "Articulates a micro/meso/macro model linking individual truthfulness judgments, dyadic propagation, and emergent global cascades.",
+        "Distinguishes lowercase true/false (actors' judgments) from capitalized True/False (researcher assessment), staking out a constructivist-but-not-relativist position.",
+        "Provides a normative critique of the label \"fake news\" as inherently divisive."
+      ],
+      "Findings": [
+        "Existing definitions overweight the \"generative act\" and neglect what happens once content enters circulation.",
+        "Propagators judge truth using cues from source (authority, proximity), content (confirmation bias, congruence, relevance), and context (overload, limited attention, \"tweet first, verify later\").",
+        "Authority and proximity increasingly collapse into one another on social media, degrading expertise-based evaluation.",
+        "Original intent does not determine downstream fate: satire, honest error, and deliberate deception can all be re-propagated as true by mainstream actors.",
+        "Real cascades are composite — no single typology (disinformation vs. misinformation) captures them.",
+        "Societal consensus on truth is unlikely; coexisting opposing beliefs are the normal state of the hybrid news system."
+      ],
+      "contentHash": "a0b1e8f909040e268c3dd6e00beb9441ccde0526f6a26182b1810f098cbf71ae"
+    },
+    {
+      "bibtexKey": "Iannelli2018-ebd918b7",
+      "title": "Facebook Digital Traces for Survey Research: Assessing the Efficiency and Effectiveness of a Facebook Ad–Based Procedure for Recruiting Online Survey Respondents in Niche and Difficult-to-Reach Populations",
+      "year": 2018,
+      "doi": "10.1177/0894439318816638",
+      "Summary": "This paper develops and stress-tests a Facebook ad–based procedure for recruiting online survey respondents in niche, difficult-to-reach populations, using Italian supporters of vaccine and chemtrails conspiracy theories as a test case. The authors exploit recent Facebook marketing features — Pixel conversion tracking, URL parameter passing, and Pixel-derived custom audience exclusion — to build a replicable protocol that also yields a more precise response-rate measure than the click-through rates used in prior work. Across a 53-day campaign they recruited 1,069 valid respondents at €0.46 each with a 3.28% conversion rate, demonstrating clear efficiency. However, when compared to an ITANES CAWI benchmark, the Facebook-recruited sample was not meaningfully more conspiracy-endorsing, leaving the *effectiveness* of interest-based targeting for stigmatized opinions unresolved.",
+      "KeyContributions": [
+        "A replicable, technically detailed Facebook ad recruitment protocol integrating Pixel, URL parameters, and custom audience exclusion.",
+        "Introduction of a **conversion rate** metric (valid completions / reach) as a more accurate response-rate proxy than CTR.",
+        "Empirical cost and yield benchmarks (€0.46 per respondent; 3.28% conversion) for future campaigns.",
+        "Extension of Facebook ad–recruitment methodology from health/political domains to controversial-belief targeting.",
+        "Practical design guidance on ad creatives, image rotation, comment moderation, and using brevity/anonymity in place of monetary incentives."
+      ],
+      "Findings": [
+        "53-day campaign: 82,233 impressions, 32,613 unique users reached, 1,140 conversions, 1,069 valid after cleaning.",
+        "3.28% conversion rate — higher than nearly all CTRs reported in prior Facebook ad-survey studies.",
+        "Total spend of €488, i.e., €0.46 per valid respondent — well below typical panel costs.",
+        "No significant difference in conspiracy-belief distributions between the Facebook sample and the ITANES general-population sample; effect sizes were negligible.",
+        "Some evidence of polarization: 68% of the Facebook sample endorsed no conspiracy theory vs. 53% in ITANES, though comparability transformations complicate this reading.",
+        "Pixel + URL parameter machinery successfully excluded 45 duplicate-IP and 26 socially-shared completions."
+      ],
+      "contentHash": "56352809301e3fa7cd2ab2fcc350c56100e88a7001c4fd5657eee520e6022f6e"
+    },
+    {
+      "bibtexKey": "Giglietto2017-4375de2f",
+      "title": "A Hashtag Worth a Thousand Words: Discursive Strategies Around #JeNeSuisPasCharlie After the 2015 Charlie Hebdo Shooting",
+      "year": 2017,
+      "doi": "10.1177/2056305116686992",
+      "Summary": "This paper investigates how Twitter users mobilised the hashtag #JeNeSuisPasCharlie (\"I am not Charlie\") in the wake of the January 2015 Charlie Hebdo shooting in Paris. Positioning the tag as a counter-hashtag to the massively circulated #JeSuisCharlie, the authors treat it as a strategic site where dissenting voices negotiated their position against a dominant expression of mass solidarity. The paper argues that participants developed distinct discursive strategies to articulate nuance, critique, and disagreement — often without condoning the violence — thereby complicating the apparently unified public response to the attack.",
+      "KeyContributions": [
+        "Offers a focused case study of *counter-hashtag* practices during a high-salience, emotionally charged news event.",
+        "Extends work on hashtag activism by examining dissent within, rather than opposition to, moments of ostensible collective solidarity.",
+        "Illuminates how users manage the rhetorical difficulty of dissenting from a solidarity frame without appearing to legitimise terrorist violence."
+      ],
+      "Findings": [
+        "#JeNeSuisPasCharlie operated as a discursive space for dissent and nuance rather than as an endorsement of the attackers.",
+        "Users deployed identifiable rhetorical strategies to distance themselves from the dominant solidarity frame while pre-empting accusations of sympathising with violence.",
+        "Solidarity hashtags and their counter-hashtags coexist in tension, with the latter revealing pluralism obscured by aggregate metrics of participation in the former."
+      ],
+      "contentHash": "0d6437636a56ae84dac5bd6b4c0c3928be1dbf0fb95cfd0e3ecd724c2674fb3f"
+    },
+    {
+      "bibtexKey": "Farci2017-2a88c00e",
+      "title": "Networked intimacy. Intimacy and friendship among Italian Facebook users",
+      "year": 2017,
+      "doi": "10.1080/1369118X.2016.1203970",
+      "Summary": "This paper develops the concept of \"networked intimacy\" to describe how Italian Facebook users construct and sustain intimate relationships through public, collaborative practices rather than private self-disclosure. Drawing on 118 semi-structured interviews, the authors argue that intimacy on Facebook is not the confessional act of a narcissistic self but a relational achievement that depends on the cooperation of one's friendship network. They identify five interlocking practices — showing rather than telling, sharing implicit content, tagging, expectation of mutual understanding, and liking — that together allow users to disclose intimately in public while restricting meaningful reception to targeted audiences. The concept reframes SNS intimacy as community-oriented and reconfigures, rather than dissolves, the public/private boundary.",
+      "KeyContributions": [
+        "Proposes **networked intimacy** as a theoretical framework synthesizing prior work on Facebook self-disclosure and intimacy.",
+        "Identifies five collaborative disclosure practices, extending earlier accounts by adding **tagging** and **liking** to the repertoire.",
+        "Provides empirical grounding from the Italian context, broadening SNS intimacy research beyond largely Anglo-American samples.",
+        "Offers a counterpoint to narcissism-based critiques of social media (Turkle, Lasch, Bauman), reframing public intimacy as relational and community-forming.",
+        "Bridges classical sociology of intimacy and friendship (Giddens, Jamieson, Pahl) with platform studies and affordance theory."
+      ],
+      "Findings": [
+        "Participants' central concern was managing visibility and avoiding undesired consequences of disclosure.",
+        "**Showing rather than telling**: images and visual cues carry layered meanings legible only to intended audiences.",
+        "**Sharing implicit content**: quotes, lyrics, and cryptic posts encode messages for select friends — akin to but distinct from social steganography.",
+        "**Tagging** marks exclusive relational events publicly while directing content toward specific individuals.",
+        "**Expectation of mutual understanding**: close friends are assumed to recognize targeted content without explicit cues, functioning as a tacit relational competence.",
+        "**Liking** operates as a low-cost signal of proximity and \"thinking of you,\" sustaining intimacy with minimal effort.",
+        "These practices produce ephemeral, semi-public symbolic spaces where intimate audiences are continually reconstituted.",
+        "Users did not spontaneously link \"intimacy\" to Facebook but described practices fitting the concept once prompted."
+      ],
+      "contentHash": "c862f17527d664382c3434044d80727137c48aac3e6d0f628d94758534d5acf3"
+    },
+    {
+      "bibtexKey": "Iannelli2015-e0818c3e",
+      "title": "Hybrid spaces of politics: the 2013 general elections in Italy, between talk shows and Twitter",
+      "year": 2015,
+      "doi": "10.1080/1369118x.2015.1006658",
+      "Summary": "This article investigates the hybrid entanglement of television and Twitter during Italy's 2013 general election campaign, treating second-screen tweeting around political talk shows as a site where broadcast logic and networked publics meet. Combining a firehose collection of nearly 2.5 million hashtagged tweets across 11 talk shows and 1,076 episodes with a scene-anchored content analysis of 8,031 tweets sampled around 23 conversation peaks tied to the PD, PDL, and M5S, Iannelli and Giglietto map who participates and how. They argue that the democratic promise of second-screen practices is largely unrealized in Italy: participation is narrow, politicians and broadcasters barely engage, and tweeting mostly amplifies rather than reshapes the televised agenda.",
+      "KeyContributions": [
+        "One of the first large-scale empirical mappings of TV–Twitter hybrid practices in an Italian national election context.",
+        "Operationalizes Carpentier, Dahlgren, and Pasquali's distinction between participation *in* and *through* the media for second-screen Twitter, adapting Wohn and Na's typology.",
+        "Develops a mixed-method workflow linking firehose-level Twitter capture, peak detection, stratified sampling, and content analysis of tweets paired with their corresponding on-air scene.",
+        "Releases an open dataset of episodes and per-minute engagement metrics on figshare for replication.",
+        "Contributes to hybrid-media-systems theory by showing empirically how TV logic continues to structure networked political talk."
+      ],
+      "Findings": [
+        "Only 187,031 unique users tweeted during airtime — a small fraction of Italy's ~4M Twitter users — signaling narrow access to the practice.",
+        "Just 3 of 11 talk shows displayed tweets on screen; party/leader official accounts produced only 969 tweets, and Grillo/M5S were almost absent from these conversations.",
+        "Tweet volumes across the three parties were roughly comparable (PDL 11%, PD 10%, M5S 8%) and tracked the broadcast and political event calendar.",
+        "77.3% of tweets were politics-oriented; opinions/comments (79.8%) and requests for interaction (28.6%) dominated, while introducing new issues/angles/sources was residual (2.4%).",
+        "Party profiles diverged: PDL tweets skewed to media-oriented opinions (notably around Berlusconi on *Servizio Pubblico*), PD tweets to politics-oriented streaming, M5S tweets to requests for interaction.",
+        "Requests for interaction were disproportionately marked by irony (35% vs. 27% average) and violent/vulgar language (11% vs. 8%)."
+      ],
+      "contentHash": "6bb3cb5d0ad83ac5a55e39a9ed6c3100fc72bf02418d68917f93ce991dd56ca5"
+    },
+    {
+      "bibtexKey": "Sofia2012-802a21dc",
+      "title": "Moving towards a socially-driven internet architectural design",
+      "year": 2012,
+      "doi": "10.1145/2317307.2317316",
+      "Summary": "This position paper argues that Internet architectural design should evolve from a purely technological discipline into an interdisciplinary practice that treats social capital as a first-class design concern. The authors trace the user's evolution from consumer to prosumer, and further to a \"network prosumer\" whose participatory behaviour extends into lower OSI layers through User-centric Networks (UCNs). They diagnose the current 7-stage Internet supply chain as asymmetric — some stages profit from traffic growth while others stagnate — and contend that accommodating prosumers requires a symmetric supply chain and networking metrics grounded in reach, engagement, influence, and trust. A comparative reading of centrality concepts across networking and social capital theory highlights specific conceptual misalignments that a socially-driven redesign must resolve.",
+      "KeyContributions": [
+        "Articulates a vision for a socially-driven Internet architecture that fuses social capital theory with networking design.",
+        "Extends prosumerism into the network layer via the \"network prosumer\" concept, grounded in User-centric Networks.",
+        "Proposes a symmetric variant of the 7-stage Internet supply chain that explicitly includes prosumers and UCNs.",
+        "Provides a comparative mapping between social capital and networking notions of centrality (degree, betweenness, closeness), identifying misalignments.",
+        "Identifies reach, engagement, and influence as the most actionable social properties for operationalization, with candidate networking metrics for each."
+      ],
+      "Findings": [
+        "Operator vertical integration conflicts with the modular TCP/IP stack, throttling innovation and misaligning costs with price models.",
+        "Supply-chain stages 2, 3, 5, and 7 have benefited from traffic growth; stages 1, 4, and 6 have stagnated due to weak price signals.",
+        "UCNs rest on four properties — resource sharing, cooperation, trust, and self-organization — that push prosumer behaviour to lower OSI layers.",
+        "Centrality is interpreted differently across domains: high-betweenness nodes are social \"bridgers\" but treated as mere relays in networking; high-closeness nodes imply diffusion socially yet often become bottlenecks in networks.",
+        "The bridger role and the transitivity of strong ties are underrepresented in current pervasive networking models.",
+        "Prosumer activity on the Internet displays power-law characteristics, evidencing coexistence of consumer and prosumer modes.",
+        "Social capital operates at both individual and collective levels, with trust and reciprocity central in Putnam's framing."
+      ],
+      "contentHash": "46d4355f96ebc8315a991fcd0e80821c11d722c274f340c8c161611ed1f95fd7"
+    }
+  ]
+}

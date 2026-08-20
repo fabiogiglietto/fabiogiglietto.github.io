@@ -3,10 +3,19 @@
  *
  * This is a SOURCE-CONSISTENCY check, not a fact-check. The call is ungrounded
  * and has no web access, so it can only verify that the bio is supported by the
- * sources handed to it (authoritative bio seed, validated web mentions, Scholar
- * figures). That is the right check for the actual failure mode here: the
- * generator overreaching beyond its evidence. It cannot catch an error that is
- * already present in the bio seed.
+ * sources handed to it. That is the right check for the actual failure mode
+ * here: the generator overreaching beyond its evidence. It cannot catch an
+ * error already present in the bio seed.
+ *
+ * The sources are ranked, and the ranking is the substance of the review:
+ * claims about the research must trace to his OWN papers (collected from the
+ * zettelkasten by collectors/own-paper-claims.js), and claims about status,
+ * roles and dates to the authoritative bio seed. Web mentions establish only
+ * that coverage happened — never what the research found. That distinction is
+ * load-bearing: the Meta political-content paper reports that extremist
+ * accounts offset a per-post reach decline by posting more often, which the
+ * press rendered as "Facebook rewards extremists" — a claim about algorithmic
+ * promotion the paper does not make.
  *
  * Fails open in every failure mode — a null return means "publish the original
  * unchanged". A rewriter sitting in a publish path must never be able to make
@@ -64,18 +73,24 @@ const REVIEW_OUTPUT_PATH = path.join(__dirname, '../../public/data/bio-review.js
 function buildPrompt(html, sources) {
   return `You are reviewing a biography generated for an academic's personal website before it is published. You have no web access: the SOURCES below are the complete evidence base.
 
+THE SOURCING RULE — this is the point of the review, and it overrides everything else:
+**Assert nothing that is not stated in his own publications (OWN RESEARCH FINDINGS), his own social media posts, or the AUTHORITATIVE BIOGRAPHY.**
+
+Web mentions are evidence that coverage happened and where. They are NOT evidence of what the research found. Press summaries routinely sharpen, overstate or invert a finding — a headline saying an algorithm "rewards extremists" is not interchangeable with a paper finding that extremist accounts offset a per-post reach decline by posting more often. Any sentence about the research that is not traceable to OWN RESEARCH FINDINGS is a defect, even when a newspaper said it, and even when it is flattering.
+
 Do two things.
 
 1. REVISE for style. Tighten the prose, cut filler and empty abstraction, vary sentence structure, and keep a professional but readable register. Preserve every well-supported fact. Do not add facts. Keep it to 3-4 paragraphs of a similar total length to the original.
 
 2. CHECK every claim against the SOURCES and flag:
-   - "unsupported": the claim appears in no source.
-   - "overstated": a source supports something weaker or narrower than what the biography asserts. Journalists' causal framing restated in the subject's own voice belongs here.
+   - "unsupported": the claim appears in no source, OR it is a claim about the research that rests only on a web mention rather than on OWN RESEARCH FINDINGS.
+   - "overstated": a source supports something weaker or narrower than what the biography asserts. Journalists' causal framing restated in the subject's own voice belongs here, as does any finding stated more strongly or more simply than his own paper states it.
    - "omission": the AUTHORITATIVE BIOGRAPHY contains a relevant fact the biography dropped.
    - "style": prose problems worth a human's attention.
 
 Rules:
-- The AUTHORITATIVE BIOGRAPHY section is ground truth. Never let another source override it on status, dates, roles, or tool authorship.
+- The AUTHORITATIVE BIOGRAPHY section is ground truth for status, dates, roles, affiliations and tool authorship. OWN RESEARCH FINDINGS is ground truth for everything the research shows. Never let a web mention override either.
+- Prefer his paper's own precision to a rounded paraphrase: if the paper quantifies an effect, keep the quantification rather than replacing it with a vague intensifier.
 - Do not remove a claim just because you would not have written it; flag it and leave it in, unless it is outright unsupported by any source.
 - Fix factual problems you are certain of directly in revised_html, and still flag what you changed.
 - revised_html must contain only <p> and <em> tags.

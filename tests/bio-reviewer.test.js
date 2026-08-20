@@ -145,3 +145,79 @@ describe('credentialSource (Workload Identity Federation detection)', () => {
     expect(credentialSource()).toBe('api-key');
   });
 });
+
+describe('own-paper-claims note parsing', () => {
+  const { _testing: collector } = require('../scripts/collectors/own-paper-claims');
+  const { parseNote, extractSection, frontmatterValue } = collector;
+
+  const NOTE = `---
+title: "A Paper Title"
+authors: ["Fabio Giglietto"]
+year: 2025
+doi: 10.31235/osf.io/abc
+kind: own
+---
+
+# A Paper Title
+
+## Summary
+
+Prose summary of the paper.
+
+## Key Contributions
+
+- First contribution.
+- Second contribution.
+
+## Methods
+
+Methods prose that should not be extracted.
+
+## Findings
+
+- Reach fell 72% from baseline to trough.
+- Extremists offset per-post decline by posting more.
+`;
+
+  test('reads scalars out of frontmatter', () => {
+    expect(frontmatterValue(NOTE, 'kind')).toBe('own');
+    expect(frontmatterValue(NOTE, 'doi')).toBe('10.31235/osf.io/abc');
+    expect(frontmatterValue(NOTE, 'title')).toBe('A Paper Title');
+    expect(frontmatterValue(NOTE, 'nope')).toBeNull();
+  });
+
+  test('extracts bullet sections as arrays and prose as a string', () => {
+    expect(extractSection(NOTE, 'Findings')).toEqual([
+      'Reach fell 72% from baseline to trough.',
+      'Extremists offset per-post decline by posting more.',
+    ]);
+    expect(extractSection(NOTE, 'Summary')).toBe('Prose summary of the paper.');
+    expect(extractSection(NOTE, 'Absent')).toBeNull();
+  });
+
+  test('does not bleed one section into the next', () => {
+    expect(extractSection(NOTE, 'Key Contributions')).toEqual([
+      'First contribution.',
+      'Second contribution.',
+    ]);
+  });
+
+  test('parses an own note into claims, excluding Methods', () => {
+    const parsed = parseNote(NOTE, 'Giglietto2025-x');
+    expect(parsed.bibtexKey).toBe('Giglietto2025-x');
+    expect(parsed.year).toBe(2025);
+    expect(parsed.Findings).toHaveLength(2);
+    expect(parsed.Methods).toBeUndefined();
+  });
+
+  test("rejects a note that is not the subject's own work", () => {
+    // The bibtex-key intersection should already prevent this; the frontmatter
+    // check is what stops a mis-keyed publication smuggling in someone else's
+    // paper as an authority on "his" findings.
+    expect(parseNote(NOTE.replace('kind: own', 'kind: reference'), 'X2025-y')).toBeNull();
+  });
+
+  test('rejects a note with no substantive sections', () => {
+    expect(parseNote('---\nkind: own\nyear: 2025\n---\n\n# Title\n', 'X2025-y')).toBeNull();
+  });
+});
