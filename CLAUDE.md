@@ -97,7 +97,14 @@ Thinking tokens are billed as **output** (~6x the input rate) on every call.
   `FORCE_WEBSEARCH_DISCOVERY=1` to bypass the cache.
 - Every `generateContent` call must pass a `config` with `maxOutputTokens` and a
   `thinkingConfig` (`thinkingBudget: 0` for extraction/classification,
-  `thinkingLevel: 'low'` for generation). `tests/websearch.test.js` asserts this.
+  `thinkingLevel: 'low'` for generation). `tests/websearch.test.js` asserts this
+  on the config objects, and `tests/gemini-wire.test.js` asserts it one layer
+  down — it points a real client at a local HTTP server via
+  `httpOptions.baseUrl` and checks the cost controls actually survive into the
+  request body, so an SDK upgrade that silently stops forwarding
+  `thinkingConfig` fails a test instead of the invoice. No network, no key, no
+  billing. Run it by hand when bumping `@google/genai`: nothing runs on
+  `pull_request`, so Dependabot will not run it for you.
 - Retries must not re-issue grounding — the failed call may already have been
   billed for its searches (see `about-generator.js`).
 - The collector logs a `[cost]` line per grounded call (grounding chunks + token
