@@ -155,3 +155,47 @@ describe('formatDataForPrompt — recent web mentions', () => {
     expect(out).not.toContain('RECENT WEB MENTIONS');
   });
 });
+
+describe('seedOverlapRatio (anti-copying guard)', () => {
+  const { seedOverlapRatio, MAX_SEED_OVERLAP } = require('../scripts/generators/about-generator')._testing;
+
+  // The authoritative biography is polished prose, so the model is tempted to
+  // reproduce it rather than write from it. A measured dump scored 88% overlap;
+  // a normal generation scored 1.7%.
+  const seed = `As of August 2026, Fabio Giglietto is Full Professor of Internet Studies at the
+    Università di Urbino Carlo Bo, where his teaching has included Generative AI and Media and
+    Digital Social Network Analysis. In 2017 he founded the Mapping Italian News Research Program
+    at the University of Urbino, and has coordinated it since. Between 2017 and February 2026 it
+    hosted a succession of externally funded sub-projects supported by many bodies.`;
+
+  test('scores a verbatim copy near 1', () => {
+    expect(seedOverlapRatio(`<p>${seed}</p>`, seed)).toBeGreaterThan(0.9);
+  });
+
+  test('scores independent prose near 0', () => {
+    const original = `<p>Giglietto researches how information disorder spreads through social
+      platforms. He leads a programme in Urbino studying elections and public opinion, and built
+      open-source tooling that other researchers now maintain downstream.</p>`;
+    expect(seedOverlapRatio(original, seed)).toBeLessThan(0.1);
+  });
+
+  test('separates the two cases across the configured threshold', () => {
+    const copied = seedOverlapRatio(`<p>${seed}</p>`, seed);
+    expect(copied).toBeGreaterThan(MAX_SEED_OVERLAP);
+    expect(MAX_SEED_OVERLAP).toBeGreaterThan(0);
+    expect(MAX_SEED_OVERLAP).toBeLessThan(0.5);
+  });
+
+  test('tolerates the short phrases any bio shares with its source', () => {
+    const natural = `<p>Fabio Giglietto is Full Professor of Internet Studies at the Università di
+      Urbino Carlo Bo. His work examines coordinated behaviour online, and he has advised European
+      institutions on platform transparency.</p>`;
+    expect(seedOverlapRatio(natural, seed)).toBeLessThan(MAX_SEED_OVERLAP);
+  });
+
+  test('handles empty and missing input without throwing', () => {
+    expect(seedOverlapRatio('', seed)).toBe(0);
+    expect(seedOverlapRatio(null, seed)).toBe(0);
+    expect(seedOverlapRatio('<p>short</p>', '')).toBe(0);
+  });
+});

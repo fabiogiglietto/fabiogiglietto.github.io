@@ -94,6 +94,25 @@ Thinking tokens are billed as **output** (~6x the input rate) on every call.
   grounding chunks as the reliable signals; the query count only ever confirms
   searches happened, never that they didn't.
 
+### `bio-seed.md` is a fact sheet, not a draft
+`scripts/data/bio-seed.md` holds **confirmed facts that generated prose may never
+contradict** — it is not a biography to reuse. The prompt block is labelled
+`CONFIRMED FACT SHEET (CONSTRAINTS — NOT TEXT TO REUSE)` and carries two rules:
+never contradict it (it outranks every other source on titles, roles, funders,
+appointments, memberships and software authorship), and never reproduce it.
+
+That second rule is load-bearing. While the block was labelled "AUTHORITATIVE
+BIOGRAPHY (PRIMARY GROUND TRUTH)" the model treated it as finished copy and
+published it verbatim — headings, `as of <date>` stamps and a "see the table
+below" pointing at a table the web page does not have. `seedOverlapRatio()`
+guards the publish path: shared 12-word runs above `MAX_SEED_OVERLAP` (0.3)
+trigger one retry that names the failure, then the fallback. Measured, a dump
+scores ~88% and a genuine generation under 1%.
+
+Keep the seed free of instructions to the writer. Notes like "do not claim X"
+belong in the prompts; putting them in the facts file is what tipped the model
+into copy mode in the first place, and they get published.
+
 ### Sourcing rule for generated prose
 **Nothing may be asserted that is not stated in Fabio's own publications, his own
 social media posts, or `scripts/data/bio-seed.md`.** Web mentions establish THAT

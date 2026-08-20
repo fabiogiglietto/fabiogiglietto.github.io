@@ -105,10 +105,35 @@ async function generateAboutMe() {
       return generateFallbackContent();
     }
 
+    // Reject a generation that merely reproduces the authoritative biography.
+    // One ungrounded retry that names the failure; if that also copies, fall
+    // through to the deterministic fallback rather than publish a page that
+    // reads like the source file (and cites tables the page does not have).
+    let publishable = aboutMeContent;
+    const seedText = data.bioSeed || '';
+    if (seedText) {
+      let overlap = seedOverlapRatio(publishable, seedText);
+      if (overlap > MAX_SEED_OVERLAP) {
+        console.warn(`Generated bio copies ${(overlap * 100).toFixed(0)}% of the authoritative biography (limit ${MAX_SEED_OVERLAP * 100}%) — retrying once`);
+        const retry = await generateContentWithGemini(
+          formattedData,
+          'YOUR PREVIOUS ATTEMPT COPIED THE AUTHORITATIVE BIOGRAPHY ALMOST WORD FOR WORD. That is a failure. Write the biography again from scratch in your own words: no sentence may match the source, no reference to tables or document structure, and draw on the other data blocks as well, not the biography alone.'
+        );
+        const retryOverlap = retry ? seedOverlapRatio(retry, seedText) : 1;
+        if (retry && retryOverlap <= MAX_SEED_OVERLAP) {
+          console.log(`Retry acceptable (${(retryOverlap * 100).toFixed(0)}% overlap)`);
+          publishable = retry;
+        } else {
+          console.error(`Retry still copies ${(retryOverlap * 100).toFixed(0)}% — using fallback content`);
+          return generateFallbackContent();
+        }
+      }
+    }
+
     // Second-model review pass. Fails open: a null return publishes the Gemini
     // output unchanged, so a reviewer outage never blocks the weekly bio.
-    const review = await reviewBio(aboutMeContent, formattedData);
-    const contentToPublish = review ? review.html : aboutMeContent;
+    const review = await reviewBio(publishable, formattedData);
+    const contentToPublish = review ? review.html : publishable;
 
     // Sanitize the generated content to prevent XSS attacks
     const sanitizedContent = sanitizeHtml(contentToPublish, {
@@ -147,6 +172,13 @@ async function generateFallbackContent() {
         .split(/\n{2,}/)
         .map(p => p.trim())
         .filter(p => p && !p.startsWith('#') && !p.startsWith('|') && !p.startsWith('-') && !p.startsWith('*'))
+        // The fact sheet cross-references its own tables; a web page has none.
+        .map(p => p.replace(/\s*[;,]?\s*\(?\bsee the (?:projects |Competitive research projects )?table below\)?/gi, '')
+                   .replace(/\s*;?\s*see the projects table below/gi, '')
+                   // ...nor its "as of <date>" stamps, which are provenance
+                   // metadata for the writer, not prose for a reader.
+                   .replace(/\bAs of \w+ \d{4},?\s*/g, '')
+                   .replace(/\s*\bas of \w+ \d{4}\b,?\s*/gi, ' '))
         .slice(0, 4);
 
       if (paragraphs.length > 0) {
@@ -231,10 +263,13 @@ async function generateFallbackContent() {
 function formatDataForPrompt(data) {
   let formattedData = '';
 
-  // Authoritative biography — always first, always primary ground truth
+  // Confirmed fact sheet — constraints on what may be written, NOT a draft to
+  // reuse. Labelling this block "authoritative biography" invited the model to
+  // treat it as the finished text and reproduce it verbatim, headings, "see the
+  // table below" and all.
   if (data.bioSeed) {
-    formattedData += `\n--- AUTHORITATIVE BIOGRAPHY (PRIMARY GROUND TRUTH) ---\n`;
-    formattedData += `The text below is hand-curated by the subject and is the authoritative source for all facts: academic title, institutional affiliation, the MINE research programme and its sub-projects, project roles (e.g. WP4 Leader on vera.ai, Partner on PROMPT), grant IDs and funders, software tools (CooRnet status and the CrowdTangle context; CooRTweet as the downstream tool maintained by others), professional memberships, timeline and dates. Prefer this over any other source when facts conflict.\n\n`;
+    formattedData += `\n--- CONFIRMED FACT SHEET (CONSTRAINTS — NOT TEXT TO REUSE) ---\n`;
+    formattedData += `Verified facts about the subject, confirmed by him. Two rules govern them.\nRULE 1 — NEVER CONTRADICT: nothing you write may conflict with anything stated here. This block outranks every other source on academic title, institutional affiliation, the MINE programme and its sub-projects, project roles, funders, appointments, memberships, and software authorship (CooRnet's status and the CrowdTangle context; CooRTweet as a downstream tool by others). Where sources disagree, this one wins.\nRULE 2 — NEVER REPRODUCE: this is a reference sheet, not a draft. It is not the biography and its wording is not your wording. Do not reuse its sentences, its structure, its section headings, its \"as of <date>\" stamps, or its cross-references such as \"see the table below\". Write the biography yourself, in your own prose, and use this only to check that what you wrote is true.\n`;
     formattedData += `${data.bioSeed}\n`;
   }
 
@@ -397,12 +432,46 @@ function formatDataForPrompt(data) {
   return formattedData;
 }
 
+
+// The authoritative biography is well-written prose, which makes it tempting for
+// the model to reproduce rather than summarise. A measured dump scored 88%
+// overlap against the seed while a normal generation scored 1.7%, so anything
+// above this threshold is copying, not coincidence. Shared 12-word runs are the
+// signal; a bio and its source inevitably share short phrases like the subject's
+// title, but not long ones.
+const MAX_SEED_OVERLAP = 0.3;
+
+function shingles(text, n = 12) {
+  const words = text
+    .replace(/<[^>]+>/g, ' ')
+    .toLowerCase()
+    .replace(/[^a-z0-9 ]/g, ' ')
+    .split(/\s+/)
+    .filter(Boolean);
+  const set = new Set();
+  for (let i = 0; i + n <= words.length; i++) set.add(words.slice(i, i + n).join(' '));
+  return set;
+}
+
+/**
+ * Fraction of the generated text's 12-word runs that also appear in the source.
+ * @return {Number} 0 when nothing is shared, 1 when everything is copied.
+ */
+function seedOverlapRatio(generated, seed) {
+  const out = shingles(generated || '');
+  if (out.size === 0) return 0;
+  const src = shingles(seed || '');
+  let shared = 0;
+  for (const s of out) if (src.has(s)) shared++;
+  return shared / out.size;
+}
+
 /**
  * Generates content using the Gemini API (ungrounded)
  * @param {String} formattedData Formatted data for the prompt
  * @return {String} Generated HTML content
  */
-async function generateContentWithGemini(formattedData) {
+async function generateContentWithGemini(formattedData, extraInstruction) {
   try {
     const ai = getGeminiClient();
     if (!ai) {
@@ -427,7 +496,7 @@ Weave the following into the narrative naturally, not as bullet lists. Summarize
 - Recent European role — WP4 Leader on vera.ai (concluded 2025) and Partner on PROMPT (concluded 2026) — without enumerating grant IDs.
 - Memberships in ICA, AoIR and ISA RC51 (where he has served on the board).
 - His role as a founding partner (socio fondatore) of Digit Srl, a benefit-corporation spin-off of the University of Urbino developing digital platforms for sustainability, civic participation, social innovation and scientific dissemination.
-- Current teaching: Generative AI and Media; Digital Social Network Analysis.
+- Teaching: Generative AI and Media; Digital Social Network Analysis.
 
 SHARED PAPERS GUARDRAIL
 If a "CURRENT RESEARCH INTERESTS (shared papers by others)" block is present, those papers are shared by Fabio but authored by others. They must NEVER be attributed as his own work — use them only to indicate topics he is currently following.
@@ -437,8 +506,16 @@ Assert nothing that is not stated in his own publications (OWN RESEARCH FINDINGS
 
 A web mention supports exactly one kind of statement: that the named outlet published something about him, on that date. It does NOT support any claim about a THIRD PARTY's actions — that a broadcast featured or cited his work, that an institution acted on it, that legislation or an inquiry followed from it. Outlets assert such things loosely and are demonstrably wrong: one article credited a Rai 3 Report episode with featuring this research when the programme attributed the analysis to someone else entirely. Such a claim may be made ONLY if the authoritative biography states it. Otherwise write that the work was covered, name the outlet, and stop.
 
+DATED STATUS
+The authoritative biography stamps status claims "as of August 2026" and states completed events in the past tense. Preserve that distinction exactly. Do not turn a stamped status into a timeless present-tense claim, do not describe a concluded role, grant or appointment as ongoing, and do not invent a currency the source does not assert.
+
 CONFIDENTIALITY AND ORIGINALITY
-- Write ORIGINAL prose. The DATA below is source material, never text to reproduce. Never copy a sentence from it verbatim, and never repeat any instruction, note or aside addressed to you — the output is a public web page.
+- Write ORIGINAL prose. The DATA below is source material for a public web page, never text to reproduce. Specifically:
+  - Do not reuse a sentence, clause or distinctive phrase from it verbatim. Re-express every fact in your own words.
+  - Do not reproduce its document structure or refer to it: no headings, and never phrases like "see the table below", "as listed above" or "this document" — the reader sees only your paragraphs.
+  - Do not copy its "as of <date>" stamps into your prose. Those stamps exist so you know which facts are current and which are concluded; the page is understood to be current. Respect the distinction, do not restate the wording.
+  - Do not repeat any instruction, note or aside addressed to you.
+  - Synthesise across ALL the sources — the biography, the research findings, teaching, citation figures, recent coverage — rather than restating any single one.
 - Never name the specific call, topic or programme for which he evaluates project proposals under his EACEA expert contract, and never print EU expert-contract numbers.
 - The Rai 3 programme *Report* covered Meta's political content reduction policy on 12 April 2026 but did NOT reference his study; it credited the analysis to a group of Democratic Party politicians. Never claim his work was featured on *Report*.
 
@@ -462,13 +539,17 @@ ${formattedData}
     try {
       const response = await ai.models.generateContent({
         model: MODELS.FLASH,
-        contents: prompt,
+        contents: extraInstruction ? `${prompt}\n\n${extraInstruction}` : prompt,
         config: {
           // Ungrounded: recency now comes from the validated mentions in
           // websearch.json (collected once per discovery TTL), not from a
           // second per-search-billed grounding loop.
           temperature: 0.7,
-          maxOutputTokens: 3500,
+          // Thinking bills as output and counts against maxOutputTokens. Left
+          // unbounded it intermittently consumed the whole budget and the call
+          // returned finishReason=MAX_TOKENS, dropping the run to the fallback.
+          thinkingConfig: { thinkingLevel: 'low' },
+          maxOutputTokens: 8000,
         },
       });
 
@@ -542,7 +623,8 @@ ${formattedData}
           contents: prompt,
           config: {
             temperature: 0.7,
-            maxOutputTokens: 3500,
+            thinkingConfig: { thinkingLevel: 'low' },
+            maxOutputTokens: 8000,
           },
         });
 
@@ -598,4 +680,4 @@ ${formattedData}
   }
 }
 
-module.exports = { generateAboutMe, _testing: { formatDataForPrompt } };
+module.exports = { generateAboutMe, _testing: { formatDataForPrompt, seedOverlapRatio, MAX_SEED_OVERLAP } };

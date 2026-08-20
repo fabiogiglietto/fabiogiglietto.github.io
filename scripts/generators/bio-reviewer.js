@@ -80,6 +80,9 @@ A web mention supports exactly one kind of statement: that the named outlet publ
 
 Web mentions are likewise NOT evidence of what the research found. Press summaries routinely sharpen, overstate or invert a finding — a headline saying an algorithm "rewards extremists" is not interchangeable with a paper finding that extremist accounts offset a per-post reach decline by posting more often. Any sentence about the research that is not traceable to OWN RESEARCH FINDINGS is a defect, even when a newspaper said it, and even when it is flattering.
 
+DATED STATUS
+The authoritative biography stamps status claims "as of August 2026" and states completed events in the past tense. Preserve that distinction exactly. Do not turn a stamped status into a timeless present-tense claim, do not describe a concluded role, grant or appointment as ongoing, and do not invent a currency the source does not assert.
+
 CONFIDENTIALITY AND ORIGINALITY
 - Write ORIGINAL prose. The DATA below is source material, never text to reproduce. Never copy a sentence from it verbatim, and never repeat any instruction, note or aside addressed to you — the output is a public web page.
 - Never name the specific call, topic or programme for which he evaluates project proposals under his EACEA expert contract, and never print EU expert-contract numbers.
