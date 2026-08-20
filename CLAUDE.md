@@ -16,7 +16,7 @@ Jekyll-based GitHub Pages academic website for Fabio Giglietto. Integrates autom
 - **Individual generators**: `npm run generate-about`, `npm run generate-teaching`, `npm run generate-social-insights`, `npm run generate-bibtex`
 
 ## API Keys (`.env` file)
-- `GEMINI_API_KEY`: Required for AI content generation and web search grounding (Gemini 2.0 Flash)
+- `GEMINI_API_KEY`: Required for AI content generation and web search grounding. Model IDs live in `scripts/helpers/gemini-client.js` (`MODELS.FLASH`, `MODELS.FLASH_LATEST`) — reference those rather than hardcoding a version here.
 - `WOS_API_KEY`, `SCOPUS_API_KEY`, `S2_API_KEY`: Publication citation sources
 - `LINKEDIN_ACCESS_TOKEN`, `LINKEDIN_PERSON_ID`, `MASTODON_ACCESS_TOKEN`: Social media collection
 - All collectors handle missing keys gracefully (return `null`, don't throw)
