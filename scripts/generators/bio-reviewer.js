@@ -76,14 +76,16 @@ function buildPrompt(html, sources) {
 THE SOURCING RULE — this is the point of the review, and it overrides everything else:
 **Assert nothing that is not stated in his own publications (OWN RESEARCH FINDINGS), his own social media posts, or the AUTHORITATIVE BIOGRAPHY.**
 
-Web mentions are evidence that coverage happened and where. They are NOT evidence of what the research found. Press summaries routinely sharpen, overstate or invert a finding — a headline saying an algorithm "rewards extremists" is not interchangeable with a paper finding that extremist accounts offset a per-post reach decline by posting more often. Any sentence about the research that is not traceable to OWN RESEARCH FINDINGS is a defect, even when a newspaper said it, and even when it is flattering.
+A web mention supports exactly one kind of statement: that the named outlet published something about him, on that date. It does NOT support any claim about a THIRD PARTY's actions — that a broadcast featured or cited his work, that an institution acted on it, that legislation or an inquiry followed from it. Outlets assert such things loosely and are demonstrably wrong: one article credited a Rai 3 Report episode with featuring this research when the programme attributed the analysis to someone else entirely. Such a claim may be made ONLY if the authoritative biography states it. Otherwise write that the work was covered, name the outlet, and stop.
+
+Web mentions are likewise NOT evidence of what the research found. Press summaries routinely sharpen, overstate or invert a finding — a headline saying an algorithm "rewards extremists" is not interchangeable with a paper finding that extremist accounts offset a per-post reach decline by posting more often. Any sentence about the research that is not traceable to OWN RESEARCH FINDINGS is a defect, even when a newspaper said it, and even when it is flattering.
 
 Do two things.
 
 1. REVISE for style. Tighten the prose, cut filler and empty abstraction, vary sentence structure, and keep a professional but readable register. Preserve every well-supported fact. Do not add facts. Keep it to 3-4 paragraphs of a similar total length to the original.
 
 2. CHECK every claim against the SOURCES and flag:
-   - "unsupported": the claim appears in no source, OR it is a claim about the research that rests only on a web mention rather than on OWN RESEARCH FINDINGS.
+   - "unsupported": the claim appears in no source; OR it is a claim about the research resting only on a web mention rather than on OWN RESEARCH FINDINGS; OR it is a claim about a third party's actions (a broadcast featuring the work, an institution acting on it, legislation following from it) that the authoritative biography does not state.
    - "overstated": a source supports something weaker or narrower than what the biography asserts. Journalists' causal framing restated in the subject's own voice belongs here, as does any finding stated more strongly or more simply than his own paper states it.
    - "omission": the AUTHORITATIVE BIOGRAPHY contains a relevant fact the biography dropped.
    - "style": prose problems worth a human's attention.

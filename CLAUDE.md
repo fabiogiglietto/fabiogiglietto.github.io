@@ -99,6 +99,15 @@ Thinking tokens are billed as **output** (~6x the input rate) on every call.
 social media posts, or `scripts/data/bio-seed.md`.** Web mentions establish THAT
 his work was covered and where — never what the research found.
 
+A web mention supports one statement only: that the named outlet published
+something about him, on that date. It does **not** support claims about a third
+party's actions — a broadcast featuring the work, an institution acting on it,
+legislation following from it. Those may be asserted only if the bio seed states
+them. Verified 2026-08-20: an article credited Rai 3's *Report* (12 Apr 2026)
+with featuring this research; the episode in fact attributed the analysis to "a
+group of Democratic Party politicians" and never mentioned Uniurb. A generated
+bio published the false claim.
+
 This is not pedantry. The Meta political-content paper finds that extremist
 accounts offset a per-post reach decline by *posting more often*; Italian
 coverage rendered that as "Facebook premia gli estremisti", asserting algorithmic
