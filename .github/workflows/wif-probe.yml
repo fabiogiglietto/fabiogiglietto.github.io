@@ -1,0 +1,56 @@
+# TEMPORARY — Workload Identity Federation bring-up probe.
+# This repo's Anthropic step only runs on a scheduled event on a Monday, so it
+# cannot otherwise be verified on demand. Also confirms the `:ref:` subject
+# shape (this job declares no environment, unlike the zettelkasten repos).
+# Delete once the migration is verified.
+name: WIF claims probe
+
+on: workflow_dispatch
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dump claims, exchange, and call
+        env:
+          ANTHROPIC_FEDERATION_RULE_ID: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
+          ANTHROPIC_ORGANIZATION_ID:    ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
+          ANTHROPIC_SERVICE_ACCOUNT_ID: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
+        run: |
+          set -euo pipefail
+          JWT=$(curl -sS -H "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
+            "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://api.anthropic.com" | jq -r .value)
+
+          echo "--- claims ---"
+          jq -rR 'split(".")[1] | gsub("-";"+") | gsub("_";"/") | @base64d | fromjson
+                  | {iss,sub,aud,ref,repository_owner,event_name}' <<< "$JWT"
+
+          echo "--- exchange ---"
+          RESP=$(curl -sS https://api.anthropic.com/v1/oauth/token \
+            -H "content-type: application/json" \
+            -d "$(jq -n --arg a "$JWT" \
+                   --arg r "$ANTHROPIC_FEDERATION_RULE_ID" \
+                   --arg o "$ANTHROPIC_ORGANIZATION_ID" \
+                   --arg s "$ANTHROPIC_SERVICE_ACCOUNT_ID" \
+                   '{grant_type:"urn:ietf:params:oauth:grant-type:jwt-bearer",
+                     assertion:$a, federation_rule_id:$r,
+                     organization_id:$o, service_account_id:$s}')")
+          echo "$RESP" | jq -r 'if .access_token then
+                "exchange OK — scope=\(.scope) expires_in=\(.expires_in)s"
+              else "EXCHANGE FAILED: \(.)" end'
+          TOKEN=$(echo "$RESP" | jq -r '.access_token // empty')
+          test -n "$TOKEN" || exit 1
+
+          echo "--- messages call ---"
+          curl -sS https://api.anthropic.com/v1/messages \
+            -H "authorization: Bearer $TOKEN" \
+            -H "anthropic-version: 2023-06-01" \
+            -H "content-type: application/json" \
+            -d '{"model":"claude-opus-5","max_tokens":16,
+                 "messages":[{"role":"user","content":"reply with the single word OK"}]}' \
+            | jq -r 'if .content then "federated call OK -> \(.content[] | select(.type=="text") | .text)"
+                     else "CALL FAILED: \(.)" end'
