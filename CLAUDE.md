@@ -119,6 +119,23 @@ Keep the seed free of instructions to the writer. Notes like "do not claim X"
 belong in the prompts; putting them in the facts file is what tipped the model
 into copy mode in the first place, and they get published.
 
+### Google News RSS gives titles, not evidence
+Its `<description>` repeats the title and outlet (verified live: three sampled
+items added zero words), and its `/rss/articles/` URLs serve an interstitial —
+`resolveGoogleNewsUrl` currently resolves **none** of them, and the token carries
+no embedded URL to decode. So the validator judges person-match from a headline
+alone for every Google-News-sourced mention. That is how an article about a
+different researcher was confirmed as being about Fabio.
+
+`fetchSnippet()` reads the article's own `og:description` (cached in
+`public/data/websearch-snippet-cache.json`; hits kept, misses retried after 30
+days) and closes the gap **wherever the URL resolves** — today that means
+Gemini-discovered mentions, not RSS ones. It refuses `news.google.com` URLs
+outright and rejects aggregator boilerplate, because storing "Comprehensive
+up-to-date news coverage… by Google News" as a snippet is worse than storing
+nothing. Making this help RSS items requires fixing URL resolution, which needs
+Google's undocumented `batchexecute` RPC.
+
 ### Sourcing rule for generated prose
 **Nothing may be asserted that is not stated in Fabio's own publications, his own
 social media posts, or `scripts/data/bio-seed.md`.** Web mentions establish THAT

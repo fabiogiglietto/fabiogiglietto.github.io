@@ -576,3 +576,44 @@ describe('wrong-person filtering for medical outlets', () => {
     expect(shouldSkipResult(RSS_URL, "Indagine urbinate: \"Così l'algoritmo influenza il voto\" - Il Resto del Carlino")).toBe(false);
   });
 });
+
+describe('article snippet extraction', () => {
+  const { extractSnippetFromHtml, isAggregatorBoilerplate, isSnippetCacheUsable, SNIPPET_RETRY_DAYS } = _testing;
+
+  // Google News RSS supplies no usable summary: its <description> repeats the
+  // title and outlet, and its /rss/articles/ URLs serve an interstitial. The
+  // validator was therefore judging person-match from a headline alone. Reading
+  // the article's own summary fixes that wherever the URL actually resolves.
+  test('prefers og:description', () => {
+    const html = '<html><head><meta property="og:description" content="A study by the University of Urbino found that Meta reduced the reach of parliamentarians."></head></html>';
+    expect(extractSnippetFromHtml(html)).toMatch(/University of Urbino/);
+  });
+
+  test('falls back to meta description, then to a substantial paragraph', () => {
+    expect(extractSnippetFromHtml('<html><head><meta name="description" content="' + 'a'.repeat(50) + '"></head></html>')).toHaveLength(50);
+    const para = 'b'.repeat(120);
+    expect(extractSnippetFromHtml(`<html><body><p>too short</p><article><p>${para}</p></article></body></html>`)).toBe(para);
+  });
+
+  test('ignores boilerplate too short to be evidence', () => {
+    expect(extractSnippetFromHtml('<html><head><meta name="description" content="News"></head><body><p>Accept cookies</p></body></html>')).toBeNull();
+  });
+
+  test("rejects an aggregator's description of itself", () => {
+    // Verified against the live site: this is exactly what an unresolved Google
+    // News URL returns, and storing it would feed the validator a sentence about
+    // Google News as though it were about the subject.
+    const blurb = 'Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News.';
+    expect(isAggregatorBoilerplate(blurb)).toBe(true);
+    expect(extractSnippetFromHtml(`<html><head><meta name="description" content="${blurb}"></head></html>`)).toBeNull();
+  });
+
+  test('snippet cache keeps hits and retries misses after the backoff', () => {
+    const daysAgo = (d) => new Date(Date.now() - d * 864e5).toISOString();
+    expect(isSnippetCacheUsable({ snippet: 'text' })).toBe(true);
+    expect(isSnippetCacheUsable({ snippet: null, fetchedAt: daysAgo(1) })).toBe(true);
+    expect(isSnippetCacheUsable({ snippet: null, fetchedAt: daysAgo(SNIPPET_RETRY_DAYS + 1) })).toBe(false);
+    expect(isSnippetCacheUsable(null)).toBe(false);
+    expect(isSnippetCacheUsable({ snippet: null })).toBe(false);
+  });
+});

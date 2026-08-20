@@ -988,6 +988,110 @@ function extractDateFromUrl(urlString) {
   }
 }
 
+
+// Google News RSS gives titles and opaque redirect URLs, and its <description>
+// is only the title plus the outlet again (verified against the live feed: three
+// sampled items added zero words beyond the title). That left the validator
+// judging person-match from a headline alone, which is how an article about a
+// different researcher was confirmed as being about Fabio. Fetching the resolved
+// article and reading its own summary gives the validator real evidence.
+const SNIPPET_CACHE_PATH = path.join(__dirname, '../../public/data/websearch-snippet-cache.json');
+// Re-attempt a page that yielded nothing only after this long: paywalls and
+// dead links do not improve on a daily retry.
+const SNIPPET_RETRY_DAYS = 30;
+const SNIPPET_MAX_CHARS = 600;
+
+function loadSnippetCache() {
+  try {
+    return JSON.parse(fs.readFileSync(SNIPPET_CACHE_PATH, 'utf8'));
+  } catch (e) {
+    return {};
+  }
+}
+
+function saveSnippetCache(cache) {
+  try {
+    fs.writeFileSync(SNIPPET_CACHE_PATH, JSON.stringify(cache, null, 2));
+  } catch (e) {
+    console.log(`Failed to save snippet cache: ${e.message}`);
+  }
+}
+
+/**
+ * Whether a cached snippet entry can be reused. A hit is kept forever; a miss
+ * is retried after SNIPPET_RETRY_DAYS.
+ */
+function isSnippetCacheUsable(entry, now = Date.now()) {
+  if (!entry || typeof entry !== 'object') return false;
+  if (entry.snippet) return true;
+  if (!entry.fetchedAt) return false;
+  const ageDays = (now - new Date(entry.fetchedAt).getTime()) / 864e5;
+  return isFinite(ageDays) && ageDays >= 0 && ageDays < SNIPPET_RETRY_DAYS;
+}
+
+/**
+ * Pull a page's own summary from its metadata, falling back to its first
+ * substantial paragraph.
+ * @return {String|null}
+ */
+// Text an aggregator serves about itself, which is not evidence about anything.
+// Google News returns exactly this for an unresolved /rss/articles/ URL.
+const AGGREGATOR_BOILERPLATE = [
+  /aggregated from sources all over the world by google news/i,
+  /comprehensive up-to-date news coverage/i,
+];
+
+function isAggregatorBoilerplate(text) {
+  return AGGREGATOR_BOILERPLATE.some(pattern => pattern.test(text || ''));
+}
+
+function extractSnippetFromHtml(html) {
+  const $ = cheerio.load(html);
+  const candidates = [
+    $('meta[property="og:description"]').attr('content'),
+    $('meta[name="description"]').attr('content'),
+    $('meta[name="twitter:description"]').attr('content'),
+  ];
+  for (const candidate of candidates) {
+    const text = (candidate || '').replace(/\s+/g, ' ').trim();
+    if (text.length >= 40 && !isAggregatorBoilerplate(text)) return text.substring(0, SNIPPET_MAX_CHARS);
+  }
+  // Paragraph fallback — skip cookie banners and other boilerplate shorter than
+  // a real sentence of body copy.
+  let best = null;
+  $('article p, main p, p').each((_, el) => {
+    if (best) return;
+    const text = $(el).text().replace(/\s+/g, ' ').trim();
+    if (text.length >= 80 && !isAggregatorBoilerplate(text)) best = text.substring(0, SNIPPET_MAX_CHARS);
+  });
+  return best;
+}
+
+/**
+ * Fetch a resolved article URL and return its summary, or null.
+ */
+async function fetchSnippet(url) {
+  // An unresolved Google News redirect serves the aggregator's landing page, not
+  // the article. Fetching it costs a round trip to learn nothing.
+  if (/(^|\.)news\.google\.com/i.test((url || '').replace(/^https?:\/\//, '').split('/')[0])) {
+    return null;
+  }
+  try {
+    const response = await axios.get(url, {
+      timeout: 8000,
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+      },
+      maxRedirects: 5,
+      maxContentLength: 1024 * 1024
+    });
+    return extractSnippetFromHtml(response.data);
+  } catch (error) {
+    console.log(`  Snippet fetch failed for ${url}: ${error.message}`);
+    return null;
+  }
+}
+
 /**
  * Extract publication date from a web page's HTML metadata
  * Returns { date: 'YYYY-MM-DD', confidence: 'high'|'medium'|'low', source: string } or null
@@ -1649,6 +1753,10 @@ function extractDomainFromUrl(url) {
 async function fetchGoogleNewsRSS() {
   console.log('\n=== Fetching Google News RSS Feed ===');
 
+  const snippetCache = loadSnippetCache();
+  let snippetCacheHits = 0;
+  let snippetCacheMisses = 0;
+
   // Use exact-match quotes for more precise results
   const encodedName = encodeURIComponent(`"${config.name}"`).replace(/%20/g, '+');
   const feeds = [
@@ -1717,10 +1825,23 @@ async function fetchGoogleNewsRSS() {
             continue;
           }
 
+          // RSS carries no usable summary, so read the article's own. Cached by
+          // URL: a hit is kept, a miss retried after SNIPPET_RETRY_DAYS.
+          let snippet = '';
+          const cached = snippetCache[resolvedUrl];
+          if (isSnippetCacheUsable(cached)) {
+            snippet = cached.snippet || '';
+            snippetCacheHits++;
+          } else {
+            snippet = (await fetchSnippet(resolvedUrl)) || '';
+            snippetCache[resolvedUrl] = { snippet: snippet || null, fetchedAt: new Date().toISOString() };
+            snippetCacheMisses++;
+          }
+
           allResults.push({
             title: decodeHtmlEntities(title),
             url: resolvedUrl,
-            snippet: '',
+            snippet,
             date: dateStr,
             source: source ? decodeHtmlEntities(source) : extractDomainFromUrl(resolvedUrl),
             searchEngine: 'google-news-rss'
@@ -1741,7 +1862,9 @@ async function fetchGoogleNewsRSS() {
     return true;
   });
 
-  console.log(`Google News RSS: Found ${uniqueResults.length} unique recent items (from ${allResults.length} total)`);
+  saveSnippetCache(snippetCache);
+  const withSnippet = uniqueResults.filter(r => r.snippet).length;
+  console.log(`Google News RSS: Found ${uniqueResults.length} unique recent items (from ${allResults.length} total); ${withSnippet} have an article summary (${snippetCacheHits} cached, ${snippetCacheMisses} fetched)`);
   return uniqueResults;
 }
 
@@ -1830,6 +1953,11 @@ module.exports = {
   collect: collectWebSearchResults,
   name: 'websearch',
   _testing: {
+    extractSnippetFromHtml,
+    isAggregatorBoilerplate,
+    fetchSnippet,
+    isSnippetCacheUsable,
+    SNIPPET_RETRY_DAYS,
     validateWebMention,
     extractPublicationDate,
     discoveryCacheAgeHours,
