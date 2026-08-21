@@ -189,13 +189,22 @@ jobs:
           SLACK_ALERT_CHANNEL: ${{ vars.OPS_SLACK_CHANNEL }}
           ALERT_TEXT: ":rotating_light: ${{ github.repository }} / ${{ github.workflow }} failed (${{ github.event_name }}): ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
         run: |
-          if [ -n "$SLACK_WEBHOOK_URL" ]; then
+          # Ops alerts belong in the channel OPS_SLACK_CHANNEL names, so the
+          # explicit channel wins over the webhook. The webhook is bound to
+          # #toread at creation and cannot be redirected from here; it stays
+          # only as a last resort for a repo with no bot token.
+          if [ -n "$SLACK_BOT_TOKEN" ] && [ -n "$SLACK_ALERT_CHANNEL" ]; then
+            resp=$(jq -n --arg ch "$SLACK_ALERT_CHANNEL" --arg text "$ALERT_TEXT" '{channel: $ch, text: $text}' \
+              | curl -s -X POST -H "Authorization: Bearer $SLACK_BOT_TOKEN" -H 'Content-Type: application/json' \
+                  -d @- https://slack.com/api/chat.postMessage)
+            # chat.postMessage answers HTTP 200 with {"ok":false} for a channel the
+            # bot is not in, so curl -f cannot see it and `|| true` would bury it.
+            [ "$(jq -r '.ok' <<<"$resp")" = "true" ] \
+              || echo "::error::Slack rejected the failure alert: $resp"
+          elif [ -n "$SLACK_WEBHOOK_URL" ]; then
             jq -n --arg text "$ALERT_TEXT" '{text: $text}' \
-              | curl -sf -X POST -H 'Content-Type: application/json' -d @- "$SLACK_WEBHOOK_URL" || true
-          elif [ -n "$SLACK_BOT_TOKEN" ] && [ -n "$SLACK_ALERT_CHANNEL" ]; then
-            jq -n --arg ch "$SLACK_ALERT_CHANNEL" --arg text "$ALERT_TEXT" '{channel: $ch, text: $text}' \
-              | curl -sf -X POST -H "Authorization: Bearer $SLACK_BOT_TOKEN" -H 'Content-Type: application/json' \
-                  -d @- https://slack.com/api/chat.postMessage || true
+              | curl -sf -X POST -H 'Content-Type: application/json' -d @- "$SLACK_WEBHOOK_URL" \
+              || echo "::error::Slack webhook rejected the failure alert"
           else
             echo "No Slack credentials configured — skipping failure alert"
           fi
