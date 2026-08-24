@@ -79,9 +79,13 @@ jobs:
             # long. Non-fatal — the reviewer degrades to "skipped" and the bio
             # still publishes if this fails.
             if [ -n "$ACTIONS_ID_TOKEN_REQUEST_URL" ] && [ -n "$ANTHROPIC_FEDERATION_RULE_ID" ]; then
-              curl -sS -H "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
-                "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=https://api.anthropic.com" \
-                | jq -r .value > "$ANTHROPIC_IDENTITY_TOKEN_FILE" \
+              # Minted immediately before the process that exchanges it: the
+              # assertion is single use (Anthropic burns its `jti` on first
+              # exchange and rejects a replay with `jti_reused`), so a token
+              # minted once per job is replayed by any second consumer. Still
+              # non-fatal — the reviewer degrades to "skipped" and the bio
+              # still publishes.
+              bash .github/scripts/mint-oidc-token.sh \
                 || echo "OIDC token fetch failed - bio reviewer will be skipped"
             else
               echo "Federation not configured - bio reviewer will be skipped"
