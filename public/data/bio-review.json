@@ -1,0 +1,48 @@
+{
+  "reviewedAt": "2026-08-24T07:00:03.575Z",
+  "model": "claude-fable-5",
+  "effort": "medium",
+  "summary": "Tightened the prose, anchored current statuses to August 2026, corrected the plural 'written questions' to the single supported citation, removed unsupported embellishments ('trains the next generation', 'significant public interest', 'deeply committed'), and restored omitted dates for MINE's founding and the EU projects' conclusions.",
+  "flags": [
+    {
+      "claim": "earning citations in written questions within the European Parliament",
+      "issue": "The authoritative biography records exactly one citation, in a single written question to the European Commission (document E-10-2026-000086); the plural 'citations in written questions' overstates this. Corrected to the singular in the revision.",
+      "severity": "overstated"
+    },
+    {
+      "claim": "he trains the next generation of researchers and media professionals",
+      "issue": "No source supports this characterization; the authoritative biography only states that his teaching has included the two named courses. Replaced with the supported teaching facts.",
+      "severity": "overstated"
+    },
+    {
+      "claim": "has generated significant public interest",
+      "issue": "Sources support only that the paper was cited in one written question and covered by the four named Italian outlets between January and April 2026; 'significant public interest' is an unanchored intensifier. Replaced with the specific, supported facts.",
+      "severity": "overstated"
+    },
+    {
+      "claim": "Deeply committed to translating academic insights into societal benefits",
+      "issue": "This characterization of his motives appears in no source; only the Digit Srl founding-partner fact is supported. Removed as filler.",
+      "severity": "unsupported"
+    },
+    {
+      "claim": "Fabio Giglietto is a Full Professor of Internet Studies",
+      "issue": "The authoritative biography stamps this status 'as of August 2026'; the biography stated it (and other current statuses such as memberships and the EACEA role) as timeless present tense. Anchored current statuses to August 2026 in the revision.",
+      "severity": "style"
+    },
+    {
+      "claim": "the shutdown of Meta's CrowdTangle API",
+      "issue": "The authoritative biography refers to the shutdown of CrowdTangle (the tool, on 14 August 2024), not of a 'CrowdTangle API'; corrected in the revision.",
+      "severity": "style"
+    },
+    {
+      "claim": "He is the founder and coordinator of the Mapping Italian News Research Program (MINE).",
+      "issue": "The authoritative biography dates MINE's founding to 2017; the biography dropped the date. Restored in the revision.",
+      "severity": "omission"
+    },
+    {
+      "claim": "He recently served as a work package leader for the vera.ai project",
+      "issue": "The authoritative biography gives concrete end dates (vera.ai concluded October 2025; PROMPT concluded February 2026) which the biography replaced with a vague 'recently'. Restored the dates.",
+      "severity": "omission"
+    }
+  ]
+}
