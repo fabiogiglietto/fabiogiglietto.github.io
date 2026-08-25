@@ -3,7 +3,7 @@
   "title": "Fabio Giglietto — own publications",
   "home_page_url": "https://fabiogiglietto.github.io/publications",
   "description": "Auto-generated feed of Fabio Giglietto's own publications, consumed downstream by research-radio and fg-zettelkasten.",
-  "_updated": "2026-08-24T07:57:04.004Z",
+  "_updated": "2026-08-25T06:32:50.106Z",
   "items": [
     {
       "id": "bibtex:Giglietto2026-4d203b9f",
@@ -526,6 +526,35 @@
       }
     },
     {
+      "id": "bibtex:Rossi2023-847d5a9f",
+      "title": "Cracking Open the European Newsfeed",
+      "date_published": "2023-01-01",
+      "authors": [
+        {
+          "name": "Luca Rossi"
+        },
+        {
+          "name": "Fabio Giglietto"
+        },
+        {
+          "name": "Giada Marino"
+        }
+      ],
+      "url": "https://doi.org/10.51685/jqd.2023.020",
+      "content_text": "This  paper  contributes  to  the  ongoing  effort  to  describe  and  quantify  the quality of information that is shared on large social media platforms. We  do  this  by  complementing  existing  research  that  provided  the  first quantitative  assessment  of  the  quality  of  the  information  circulating  on Facebook among US users. Leveraging an updated version of the same data source —Meta’s URL Shares Dataset —and  replicating  much  of  the methodology,  we  quantify  the  trustworthy  and  untrustworthy  links  to external websites that have been shared on Facebook in the period between 2019 and 2022 in three  major European countries (Germany,  France,  and Italy).  We  observe  a  clear  decline  in  the  number  of  URLs  present  in  the dataset  and  an  increase  in  the  URLs  from  untrustworthy  domains  as  a percentage  of  the  total  URLs  shared  in  a  year.  This  increase  seems  to  be higher in electoral years (in Germany and in Italy) but itdoes not translate into an increase of Views received from untrustworthy sources.",
+      "_academic": {
+        "doi": "10.51685/jqd.2023.020",
+        "bibtex_key": "Rossi2023-847d5a9f",
+        "type": "journal-article",
+        "venue": "JOURNAL OF QUANTITATIVE DESCRIPTION: DIGITAL MEDIA",
+        "year": 2023,
+        "publisher": "Journal of Quantitative Description: Digital Media",
+        "citation_count": 4,
+        "open_access": true,
+        "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2726579/2/Manuscript%20%281%29.pdf"
+      }
+    },
+    {
       "id": "bibtex:Artieri2023-133f8d65",
       "title": "Citizens’ Engagement with the ‘Seaside Campaign’ on Instagram and Facebook",
       "date_published": "2023-01-01",
@@ -552,35 +581,6 @@
         "citation_count": 3,
         "open_access": false,
         "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Rossi2023-847d5a9f",
-      "title": "Cracking Open the European Newsfeed",
-      "date_published": "2023-01-01",
-      "authors": [
-        {
-          "name": "Luca Rossi"
-        },
-        {
-          "name": "Fabio Giglietto"
-        },
-        {
-          "name": "Giada Marino"
-        }
-      ],
-      "url": "https://doi.org/10.51685/jqd.2023.020",
-      "content_text": "This  paper  contributes  to  the  ongoing  effort  to  describe  and  quantify  the quality of information that is shared on large social media platforms. We  do  this  by  complementing  existing  research  that  provided  the  first quantitative  assessment  of  the  quality  of  the  information  circulating  on Facebook among US users. Leveraging an updated version of the same data source —Meta’s URL Shares Dataset —and  replicating  much  of  the methodology,  we  quantify  the  trustworthy  and  untrustworthy  links  to external websites that have been shared on Facebook in the period between 2019 and 2022 in three  major European countries (Germany,  France,  and Italy).  We  observe  a  clear  decline  in  the  number  of  URLs  present  in  the dataset  and  an  increase  in  the  URLs  from  untrustworthy  domains  as  a percentage  of  the  total  URLs  shared  in  a  year.  This  increase  seems  to  be higher in electoral years (in Germany and in Italy) but itdoes not translate into an increase of Views received from untrustworthy sources.",
-      "_academic": {
-        "doi": "10.51685/jqd.2023.020",
-        "bibtex_key": "Rossi2023-847d5a9f",
-        "type": "journal-article",
-        "venue": "JOURNAL OF QUANTITATIVE DESCRIPTION: DIGITAL MEDIA",
-        "year": 2023,
-        "publisher": "Journal of Quantitative Description: Digital Media",
-        "citation_count": 3,
-        "open_access": true,
-        "open_access_pdf_url": "https://ora.uniurb.it/bitstream/11576/2726579/2/Manuscript%20%281%29.pdf"
       }
     },
     {
@@ -1780,7 +1780,7 @@
         "venue": "Current Sociology",
         "year": 2019,
         "publisher": "SAGE Publications",
-        "citation_count": 16,
+        "citation_count": 17,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -2377,7 +2377,7 @@
         "venue": "CEUR Workshop Proceedings",
         "year": 2015,
         "publisher": null,
-        "citation_count": 62,
+        "citation_count": 63,
         "open_access": false,
         "open_access_pdf_url": null
       }
