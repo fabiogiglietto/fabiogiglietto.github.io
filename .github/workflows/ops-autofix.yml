@@ -1,0 +1,327 @@
+name: Ops autofix
+
+# Closes the loop on the failure alerts this repo posts into #pipeline-ops.
+#
+# When "Update Website Data" fails, this runs Claude Code against the failed run:
+# it reads the failing step's log, classifies the failure, and either lands a
+# branch and a PR ready for a human to merge, or reports in #pipeline-ops that
+# a human has to intervene and exactly what they have to do. Either way it
+# posts once — silence is never the outcome.
+#
+# See PIPELINE.md, "Automatic failure triage", for the cross-repo picture and
+# for what this deliberately does not cover.
+#
+# Two things it must never do: push to main, or edit generated content
+# (data/, output/, vault/, cache/). A "fix" in generated content is erased by
+# the next producing run and hides the real bug in the meantime.
+
+on:
+  workflow_run:
+    workflows: ["Update Website Data"]
+    types: [completed]
+
+  # Manual replay — triage a past run by id. This is how the workflow is
+  # rehearsed against a known historical failure instead of waiting for a new
+  # one, and how a skipped failure is picked up by hand.
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: "Failed run id to triage"
+        required: true
+      skip_guards:
+        description: "Ignore the preflight guards (self-healed / already in flight)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write        # push the fix branch
+  pull-requests: write   # open the PR
+  actions: read          # read the failed run's logs
+  id-token: write        # mint the OIDC JWT the action exchanges with Anthropic
+
+# One triage at a time per repo, and never cancel-in-progress: a second
+# failure arriving while the first is being fixed is a different bug, and
+# killing the first would leave a half-pushed branch behind.
+concurrency:
+  group: ops-autofix-${{ github.repository }}
+  cancel-in-progress: false
+
+jobs:
+  autofix:
+    # The head_branch test is the loop break. Without it, a test failure on an
+    # autofix PR would trigger another autofix, forever.
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.conclusion == 'failure' &&
+       !startsWith(github.event.workflow_run.head_branch, 'ops/autofix-'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      RUN_ID: ${{ inputs.run_id || github.event.workflow_run.id }}
+
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      # Everything that can cheaply prove there is nothing worth doing runs
+      # here, before a single token is spent. The pipeline's alerting is
+      # deliberately quiet (one silent Pages retry before alerting;
+      # hold_until_confirmed in the health check) and auto-repair must not
+      # undo that by opening a PR for every flake.
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - name: Preflight
+        id: pre
+        run: |
+          set -euo pipefail
+
+          run_json=$(gh run view "$RUN_ID" --json \
+            databaseId,workflowName,workflowDatabaseId,conclusion,attempt,createdAt,headBranch,event,url,jobs)
+
+          workflow_name=$(jq -r .workflowName <<<"$run_json")
+          run_url=$(jq -r .url <<<"$run_json")
+          attempt=$(jq -r .attempt <<<"$run_json")
+
+          # The failing step is the failure's identity: two runs that die in
+          # the same step of the same workflow are the same bug, whatever
+          # their run ids. That is what we deduplicate on.
+          failing_step=$(jq -r '[.jobs[] | .steps[]
+                                 | select(.conclusion == "failure") | .name] | first // "unknown"' <<<"$run_json")
+          signature=$(printf '%s\n%s' "$workflow_name" "$failing_step" | sha1sum | cut -c1-12)
+
+          {
+            echo "workflow_name=$workflow_name"
+            echo "run_url=$run_url"
+            echo "failing_step=$failing_step"
+            echo "signature=$signature"
+          } >> "$GITHUB_OUTPUT"
+
+          skip() {
+            echo "should_fix=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Ops autofix skipped — $1"
+            exit 0
+          }
+
+          if [ "${{ inputs.skip_guards }}" != "true" ]; then
+            # A re-run that fails again is a human's re-run. They are already
+            # watching it, and the alert names the attempt.
+            [ "$attempt" = "1" ] || skip "run attempt $attempt — a human is already on it"
+
+            # Transient failures self-heal on the next tick. update_feed runs
+            # every 30 minutes, so by the time we look a later run may be green.
+            wf_id=$(jq -r .workflowDatabaseId <<<"$run_json")
+            failed_at=$(jq -r .createdAt <<<"$run_json")
+            newer_ok=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/$wf_id/runs?status=success&per_page=1" \
+                         --jq '.workflow_runs[0].created_at // ""')
+            if [ -n "$newer_ok" ] && [[ "$newer_ok" > "$failed_at" ]]; then
+              skip "a later run of the same workflow succeeded at $newer_ok"
+            fi
+
+            # One open PR per failure signature, however many times it recurs.
+            if gh pr list --state open --label ops-autofix --json body --jq '.[].body' \
+                 | grep -qF "autofix-signature: $signature"; then
+              skip "an open autofix PR already covers signature $signature"
+            fi
+          fi
+
+          echo "should_fix=true" >> "$GITHUB_OUTPUT"
+
+      - name: Configure git identity
+        if: steps.pre.outputs.should_fix == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Triage and repair
+        if: steps.pre.outputs.should_fix == 'true'
+        uses: anthropics/claude-code-action@v1
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          # Workload identity federation — no API key is stored anywhere. The
+          # action exchanges the OIDC JWT minted by `id-token: write` above.
+          # Do not add anthropic_api_key here: it outranks federation in the
+          # credential chain and would silently shadow it.
+          anthropic_federation_rule_id: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
+          anthropic_organization_id: ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
+          anthropic_service_account_id: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
+          # Required when the federation rule is scoped to more than one
+          # workspace: without it the exchange 401s. Harmless when the rule
+          # resolves to a single workspace, and empty if the var is unset.
+          anthropic_workspace_id: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
+          claude_args: |
+            --model claude-opus-5
+            --max-turns 40
+            --allowedTools Read,Edit,Write,Glob,Grep,Bash
+          prompt: |
+            A run of this repository's pipeline workflow just failed, and an
+            alert for it has been posted in the team's #pipeline-ops Slack
+            channel. You are the first responder. Triage it.
+
+              repository:   ${{ github.repository }}
+              workflow:     ${{ steps.pre.outputs.workflow_name }}
+              failed run:   ${{ steps.pre.outputs.run_url }}
+              run id:       ${{ env.RUN_ID }}
+              failing step: ${{ steps.pre.outputs.failing_step }}
+              signature:    ${{ steps.pre.outputs.signature }}
+
+            ## 1. Read the actual failure
+
+            Start with `gh run view ${{ env.RUN_ID }} --log-failed` — the
+            failing step's log, not the whole run. Then read the workflow file
+            and the source it calls. Form your theory from the log and the
+            code, never from the step name alone.
+
+            Read PIPELINE.md before you touch anything: this repo is one stage
+            of a chain, and the failure may belong to a stage upstream of it.
+
+            ## 2. Classify the failure as exactly one of
+
+              transient   An upstream 5xx, a rate limit, a runner flake, a
+                          GitHub Pages deploy wobble. The next run will pass.
+              credential  An expired or mis-scoped token, an OIDC exchange
+                          401, the Slack bot missing from a channel, Google
+                          Drive auth, an exhausted API quota. Only a human
+                          can fix it — you cannot see or set a secret.
+              code        A real defect in this repo's code, tests, workflow
+                          or config. This is the only class you fix.
+              upstream    A published artifact this repo consumes (feed.json,
+                          data/summaries/<key>.json, docs/episodes.json)
+                          changed shape under us. See SCHEMA.md and
+                          PIPELINE.md, "Changing the contract". Fix it here
+                          only if the fix genuinely belongs here; otherwise
+                          escalate and name the producing repo.
+
+            ## 3. If and only if it is `code`, fix it
+
+            Work on a branch named `ops/autofix-${{ env.RUN_ID }}`.
+
+            You may edit: src/, scripts/, tests/, .github/workflows/,
+            .github/scripts/, config.yml, requirements*.txt.
+
+            You may NOT edit: data/, output/, vault/, cache/, quartz/public/ —
+            all generated, and a change there is erased by the next producing
+            run while hiding the real bug. Never push to main. Never try to
+            read, print or set a secret's value.
+
+            Make the smallest change that fixes the root cause. A workaround
+            that silences the symptom is worse than an escalation, because it
+            looks like a fix.
+
+            Then verify, from the repo root:
+
+                npm ci && npm test
+
+            Paste that output into the PR body verbatim, pass or fail. If it
+            fails, do not open the PR — escalate instead and say what you
+            tried.
+
+            Open the PR with `gh pr create --label ops-autofix`. The body must
+            contain, in this order:
+
+              - a link to the failed run
+              - the root cause, in two or three plain sentences
+              - what you changed and why that fixes it
+              - the verification output
+              - any risk a reviewer should weigh
+              - the literal line: `<!-- autofix-signature: ${{ steps.pre.outputs.signature }} -->`
+              - the closing line: `Ready to merge. Please merge into ` + "`main`" + ` and delete the branch.`
+
+            The signature line is load-bearing: the preflight guard greps for
+            it to avoid opening a second PR for the same recurring failure.
+
+            ## 4. Report, always
+
+            Write your outcome to `/tmp/autofix-result.json` as the very last
+            thing you do. Write it even if you achieved nothing — a missing
+            file is reported to Slack as a broken triage run.
+
+                {
+                  "status": "fixed" | "escalated",
+                  "class": "transient" | "credential" | "code" | "upstream",
+                  "summary": "one line, plain language, what actually broke",
+                  "action_required": "the exact thing the human must do, or \"\" if none",
+                  "pr_url": "the PR url, or \"\" if you opened none"
+                }
+
+            `action_required` is read by a human on their phone. Make it
+            specific: "rotate PIPELINE_DISPATCH_TOKEN, it expired on
+            2026-08-20" beats "fix the credentials".
+
+            ## The rule that overrides the rest
+
+            You are not required to produce a fix. A confident, well-evidenced
+            "here is what broke and here is what you must do about it" is a
+            complete and successful outcome. A guessed patch is not. If you
+            are not sure your change fixes the root cause, escalate instead.
+
+      # if: always() so the report survives the Claude step failing, hitting
+      # --max-turns, or the job timing out. `!= 'false'` rather than
+      # `== 'true'` so that a preflight crash is reported too — only a
+      # deliberate skip is silent.
+      - name: Report to #pipeline-ops
+        if: always() && steps.pre.outputs.should_fix != 'false'
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_ALERT_CHANNEL: ${{ vars.OPS_SLACK_CHANNEL }}
+          REPO: ${{ github.repository }}
+          WORKFLOW_NAME: ${{ steps.pre.outputs.workflow_name }}
+          RUN_URL: ${{ steps.pre.outputs.run_url }}
+          TRIAGE_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set -uo pipefail
+          result=/tmp/autofix-result.json
+
+          if [ -f "$result" ] && jq -e . "$result" >/dev/null 2>&1; then
+            status=$(jq -r '.status          // "escalated"' "$result")
+            summary=$(jq -r '.summary        // "no summary given"' "$result")
+            action=$(jq -r '.action_required // ""'  "$result")
+            pr=$(jq -r '.pr_url              // ""'  "$result")
+          else
+            # No result file means the triage itself died — a crash, --max-turns,
+            # the job timeout. Staying quiet here would look exactly like success.
+            status="broken"
+            summary="the triage run produced no result"
+            action="triage ${WORKFLOW_NAME} by hand"
+            pr=""
+          fi
+
+          # printf, not a multi-line literal: the continuation lines of a
+          # literal would have to start at column 0 to avoid carrying the
+          # YAML block indentation into the Slack message, and that closes
+          # the block scalar.
+          case "$status" in
+            fixed)
+              ALERT_TEXT=$(printf ':wrench: *%s* / %s \xe2\x80\x94 autofix opened %s\n> %s\nPlease merge it into `main` and delete the branch.\nFailed run: %s' \
+                "$REPO" "$WORKFLOW_NAME" "$pr" "$summary" "$RUN_URL")
+              ;;
+            *)
+              ALERT_TEXT=$(printf ':raising_hand: *%s* / %s \xe2\x80\x94 I could not fix this.\n> %s\n*You need to:* %s\nFailed run: %s \xc2\xb7 triage: %s' \
+                "$REPO" "$WORKFLOW_NAME" "$summary" "${action:-triage this by hand}" "$RUN_URL" "$TRIAGE_URL")
+              ;;
+          esac
+
+          # Same shape as the failure alert in update-site.yml: the explicit
+          # channel wins over the webhook, because the webhook is bound to
+          # #toread at creation and cannot be redirected from here.
+          if [ -n "$SLACK_BOT_TOKEN" ] && [ -n "$SLACK_ALERT_CHANNEL" ]; then
+            resp=$(jq -n --arg ch "$SLACK_ALERT_CHANNEL" --arg text "$ALERT_TEXT" '{channel: $ch, text: $text}' \
+              | curl -s -X POST -H "Authorization: Bearer $SLACK_BOT_TOKEN" -H 'Content-Type: application/json' \
+                  -d @- https://slack.com/api/chat.postMessage)
+            # chat.postMessage answers HTTP 200 with {"ok":false} for a channel
+            # the bot is not in, so curl -f cannot see it and `|| true` would
+            # bury it.
+            [ "$(jq -r '.ok' <<<"$resp")" = "true" ] \
+              || echo "::error::Slack rejected the autofix report: $resp"
+          elif [ -n "$SLACK_WEBHOOK_URL" ]; then
+            jq -n --arg text "$ALERT_TEXT" '{text: $text}' \
+              | curl -sf -X POST -H 'Content-Type: application/json' -d @- "$SLACK_WEBHOOK_URL" \
+              || echo "::error::Slack webhook rejected the autofix report"
+          else
+            echo "No Slack credentials configured — skipping autofix report"
+          fi
