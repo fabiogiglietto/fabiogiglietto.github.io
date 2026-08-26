@@ -189,6 +189,10 @@ jobs:
                           can fix it — you cannot see or set a secret.
               code        A real defect in this repo's code, tests, workflow
                           or config. This is the only class you fix.
+              stale       The failure has already been addressed on main since
+                          this run - a later commit or PR fixed it. Do not
+                          re-patch it. Escalate with an EMPTY action_required
+                          and a summary naming the commit or PR that fixed it.
               upstream    A published artifact this repo consumes (feed.json,
                           data/summaries/<key>.json, docs/episodes.json)
                           changed shape under us. See SCHEMA.md and
@@ -242,9 +246,9 @@ jobs:
 
                 {
                   "status": "fixed" | "escalated",
-                  "class": "transient" | "credential" | "code" | "upstream",
+                  "class": "transient" | "credential" | "code" | "stale" | "upstream",
                   "summary": "one line, plain language, what actually broke",
-                  "action_required": "the exact thing the human must do, or \"\" if none",
+                  "action_required": "the exact thing the human must do. Leave it \"\" only\n                                       when there is genuinely nothing to do - it is\n                                       reported as \"nothing for you to do\"",
                   "pr_url": "the PR url, or \"\" if you opened none"
                 }
 
@@ -301,8 +305,18 @@ jobs:
                 "$REPO" "$WORKFLOW_NAME" "$pr" "$summary" "$RUN_URL")
               ;;
             *)
-              ALERT_TEXT=$(printf ':raising_hand: *%s* / %s \xe2\x80\x94 I could not fix this.\n> %s\n*You need to:* %s\nFailed run: %s \xc2\xb7 triage: %s' \
-                "$REPO" "$WORKFLOW_NAME" "$summary" "${action:-triage this by hand}" "$RUN_URL" "$TRIAGE_URL")
+              # An empty action_required is meaningful: the agent concluded
+              # that nothing needs doing (a stale alert, a failure already
+              # fixed on main). Inventing "triage this by hand" here would
+              # contradict the summary directly above it, which is what the
+              # first rehearsal did on 2026-08-26.
+              if [ -n "$action" ]; then
+                ALERT_TEXT=$(printf ':raising_hand: *%s* / %s \xe2\x80\x94 I could not fix this.\n> %s\n*You need to:* %s\nFailed run: %s \xc2\xb7 triage: %s' \
+                  "$REPO" "$WORKFLOW_NAME" "$summary" "$action" "$RUN_URL" "$TRIAGE_URL")
+              else
+                ALERT_TEXT=$(printf ':information_source: *%s* / %s \xe2\x80\x94 no fix needed.\n> %s\n*Nothing for you to do.*\nFailed run: %s \xc2\xb7 triage: %s' \
+                  "$REPO" "$WORKFLOW_NAME" "$summary" "$RUN_URL" "$TRIAGE_URL")
+              fi
               ;;
           esac
 
