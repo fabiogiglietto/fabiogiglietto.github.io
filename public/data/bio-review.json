@@ -1,48 +1,53 @@
 {
-  "reviewedAt": "2026-08-24T07:00:03.575Z",
+  "reviewedAt": "2026-08-31T12:51:02.661Z",
   "model": "claude-fable-5",
   "effort": "medium",
-  "summary": "Tightened the prose, anchored current statuses to August 2026, corrected the plural 'written questions' to the single supported citation, removed unsupported embellishments ('trains the next generation', 'significant public interest', 'deeply committed'), and restored omitted dates for MINE's founding and the EU projects' conclusions.",
+  "summary": "Tightened the prose, restored 'as of August 2026' status stamps, replaced vague claims with the paper's own quantification (72% reach decline), corrected the CrowdTangle date and publication count, removed the unsupported 'guided regulatory frameworks' assertion, and restored omitted JRC and EACEA details.",
   "flags": [
     {
-      "claim": "earning citations in written questions within the European Parliament",
-      "issue": "The authoritative biography records exactly one citation, in a single written question to the European Commission (document E-10-2026-000086); the plural 'citations in written questions' overstates this. Corrected to the singular in the revision.",
+      "claim": "Following the shutdown of Meta's CrowdTangle in late 2024",
+      "issue": "The authoritative biography dates the CrowdTangle shutdown to 14 August 2024, not 'late 2024'. Corrected to the exact date.",
       "severity": "overstated"
     },
     {
-      "claim": "he trains the next generation of researchers and media professionals",
-      "issue": "No source supports this characterization; the authoritative biography only states that his teaching has included the two named courses. Replaced with the supported teaching facts.",
+      "claim": "His expertise has also guided European regulatory frameworks",
+      "issue": "No source says his work guided regulatory frameworks. The authoritative biography states only that he was a member of the JRC expert group, provided scientific oversight, monitored the data-access request process and authored summary reports. Reworded to those supported facts.",
       "severity": "overstated"
     },
     {
-      "claim": "has generated significant public interest",
-      "issue": "Sources support only that the paper was cited in one written question and covered by the four named Italian outlets between January and April 2026; 'significant public interest' is an unanchored intensifier. Replaced with the specific, supported facts.",
+      "claim": "demonstrating a significant drop in Facebook visibility for Italian parliamentarians",
+      "issue": "His own paper quantifies the effect (72% peak-to-trough decline in re-elected MPs' per-post reach, partial recovery to ~65% of baseline). The vague intensifier 'significant' replaces the paper's precision; the quantification was restored.",
       "severity": "overstated"
     },
     {
-      "claim": "Deeply committed to translating academic insights into societal benefits",
-      "issue": "This characterization of his motives appears in no source; only the Digit Srl founding-partner fact is supported. Removed as filler.",
-      "severity": "unsupported"
+      "claim": "over one hundred and sixty papers with thousands of citations",
+      "issue": "The publications data states exactly 160 publications and 2,395 citations; 'over one hundred and sixty' overstates the count. Corrected to 160 publications and roughly 2,400 citations.",
+      "severity": "overstated"
+    },
+    {
+      "claim": "He is an active member of the International Communication Association",
+      "issue": "Memberships are stamped 'as of August 2026' in the authoritative biography, which does not describe him as 'active'. Revised to a dated statement without the unsupported qualifier.",
+      "severity": "overstated"
+    },
+    {
+      "claim": "and has evaluated project proposals for the European Education and Culture Executive Agency",
+      "issue": "The authoritative biography states he was appointed evaluator and rapporteur and that, as of August 2026, the appointment ran to September 2026; the biography's past-tense phrasing dropped both the rapporteur role and the dated status. Restored (without naming any call or programme, per the confidentiality rule).",
+      "severity": "omission"
+    },
+    {
+      "claim": "he served on a Joint Research Centre expert group assessing systemic risks on large online platforms",
+      "issue": "The authoritative biography specifies concrete duties in that role — scientific oversight of the group's research projects, monitoring the platform data-access request process, and authoring its summary reports delivered in 2026 — which the biography omitted. Restored.",
+      "severity": "omission"
     },
     {
       "claim": "Fabio Giglietto is a Full Professor of Internet Studies",
-      "issue": "The authoritative biography stamps this status 'as of August 2026'; the biography stated it (and other current statuses such as memberships and the EACEA role) as timeless present tense. Anchored current statuses to August 2026 in the revision.",
+      "issue": "The authoritative biography stamps this status 'as of August 2026'; the biography stated it as a timeless present. The stamp was restored here and for MINE's active status and the memberships.",
       "severity": "style"
     },
     {
-      "claim": "the shutdown of Meta's CrowdTangle API",
-      "issue": "The authoritative biography refers to the shutdown of CrowdTangle (the tool, on 14 August 2024), not of a 'CrowdTangle API'; corrected in the revision.",
+      "claim": "introduced the coordinated link sharing behavior detection method to identify coordinated activity",
+      "issue": "Redundant phrasing ('coordinated... to identify coordinated activity'); tightened in the revision.",
       "severity": "style"
-    },
-    {
-      "claim": "He is the founder and coordinator of the Mapping Italian News Research Program (MINE).",
-      "issue": "The authoritative biography dates MINE's founding to 2017; the biography dropped the date. Restored in the revision.",
-      "severity": "omission"
-    },
-    {
-      "claim": "He recently served as a work package leader for the vera.ai project",
-      "issue": "The authoritative biography gives concrete end dates (vera.ai concluded October 2025; PROMPT concluded February 2026) which the biography replaced with a vague 'recently'. Restored the dates.",
-      "severity": "omission"
     }
   ]
 }
