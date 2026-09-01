@@ -12,46 +12,6 @@
   },
   "repositories": [
     {
-      "name": "fabiogiglietto.github.io",
-      "description": "Your research presence, always current, zero maintenance.                                                                                                                                  ",
-      "url": "https://github.com/fabiogiglietto/fabiogiglietto.github.io",
-      "language": "JavaScript",
-      "stars": 7,
-      "forks": 1,
-      "created_at": "2025-04-21T09:41:33Z",
-      "updated_at": "2026-09-01T11:16:35Z"
-    },
-    {
-      "name": "toread",
-      "description": "Consume a feed BibTeX export from a Paperpile folder, complete the publication metadata with Crossref and Semantic Scholar and create an RSS feed",
-      "url": "https://github.com/fabiogiglietto/toread",
-      "language": "TeX",
-      "stars": 1,
-      "forks": 0,
-      "created_at": "2025-06-07T09:12:59Z",
-      "updated_at": "2026-09-01T10:48:38Z"
-    },
-    {
-      "name": "mine-toread",
-      "description": "MINE team toread feed — fork of toread with team Slack submissions (Mapping Italian News)",
-      "url": "https://github.com/fabiogiglietto/mine-toread",
-      "language": "TeX",
-      "stars": 0,
-      "forks": 0,
-      "created_at": "2026-06-29T08:06:51Z",
-      "updated_at": "2026-09-01T10:47:08Z"
-    },
-    {
-      "name": "mine-zettelkasten",
-      "description": "MINE team Zettelkasten — multi-user fork of fg-zettelkasten (Mapping Italian News)",
-      "url": "https://github.com/fabiogiglietto/mine-zettelkasten",
-      "language": "TypeScript",
-      "stars": 0,
-      "forks": 0,
-      "created_at": "2026-06-29T08:06:47Z",
-      "updated_at": "2026-09-01T10:45:20Z"
-    },
-    {
       "name": "research-radio",
       "description": "Convert academic papers into AI podcast episodes with Anthropic Claude and Google Gemini. Powers FG's Research Radio.",
       "url": "https://github.com/fabiogiglietto/research-radio",
@@ -59,7 +19,7 @@
       "stars": 4,
       "forks": 1,
       "created_at": "2025-12-29T17:46:10Z",
-      "updated_at": "2026-09-01T10:40:48Z"
+      "updated_at": "2026-09-01T20:04:05Z"
     },
     {
       "name": "fg-zettelkasten",
@@ -69,7 +29,47 @@
       "stars": 1,
       "forks": 0,
       "created_at": "2026-05-17T08:10:27Z",
-      "updated_at": "2026-09-01T09:43:59Z"
+      "updated_at": "2026-09-01T20:03:09Z"
+    },
+    {
+      "name": "mine-zettelkasten",
+      "description": "MINE team Zettelkasten — multi-user fork of fg-zettelkasten (Mapping Italian News)",
+      "url": "https://github.com/fabiogiglietto/mine-zettelkasten",
+      "language": "TypeScript",
+      "stars": 0,
+      "forks": 0,
+      "created_at": "2026-06-29T08:06:47Z",
+      "updated_at": "2026-09-01T19:55:07Z"
+    },
+    {
+      "name": "mine-toread",
+      "description": "MINE team toread feed — fork of toread with team Slack submissions (Mapping Italian News)",
+      "url": "https://github.com/fabiogiglietto/mine-toread",
+      "language": "TeX",
+      "stars": 0,
+      "forks": 0,
+      "created_at": "2026-06-29T08:06:51Z",
+      "updated_at": "2026-09-01T19:46:52Z"
+    },
+    {
+      "name": "toread",
+      "description": "Consume a feed BibTeX export from a Paperpile folder, complete the publication metadata with Crossref and Semantic Scholar and create an RSS feed",
+      "url": "https://github.com/fabiogiglietto/toread",
+      "language": "TeX",
+      "stars": 1,
+      "forks": 0,
+      "created_at": "2025-06-07T09:12:59Z",
+      "updated_at": "2026-09-01T13:03:55Z"
+    },
+    {
+      "name": "fabiogiglietto.github.io",
+      "description": "Your research presence, always current, zero maintenance.                                                                                                                                  ",
+      "url": "https://github.com/fabiogiglietto/fabiogiglietto.github.io",
+      "language": "JavaScript",
+      "stars": 7,
+      "forks": 1,
+      "created_at": "2025-04-21T09:41:33Z",
+      "updated_at": "2026-09-01T12:27:54Z"
     },
     {
       "name": "tiktok_csbn",
@@ -2325,5 +2325,5 @@
       "activity": {}
     }
   ],
-  "lastUpdated": "2026-09-01T12:15:55.682Z"
+  "lastUpdated": "2026-09-01T20:04:21.378Z"
 }

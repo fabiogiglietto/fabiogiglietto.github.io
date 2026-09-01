@@ -7083,5 +7083,44 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "ilrestodelcarlino.it/urbino/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-7ca8f01b": {
+    "v": 1,
+    "cachedAt": "2026-09-01T20:08:02.520Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A news article discussing Professor Fabio Giglietto's research at the University of Urbino regarding how Meta's algorithms reduced the visibility of official Italian political accounts, which sparked a European Parliament inquiry.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "uniurb.it/novita-ed-eventi/5848": {
+    "v": 1,
+    "cachedAt": "2026-09-01T20:08:04.307Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A press feature from the University of Urbino detailing Fabio Giglietto's study on Meta's algorithmic reach reduction, which prompted a European Commission investigation into Meta's systemic risk mitigations under the Digital Services Act.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "podcasts.apple.com/us/podcast/fgs-research-radio/id1750275822": {
+    "v": 1,
+    "cachedAt": "2026-09-01T20:08:05.436Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.9,
+      "reason": "The content explicitly mentions Fabio Giglietto as the host/curator, matches his academic profile, is highly recent (podcast launched in mid-2024, within the last 6 months), and directly relates to his work in Computational Social Science and AI.",
+      "description": "An episode of 'FG's Research Radio', a podcast hosted and curated by Fabio Giglietto that uses AI-driven technologies to explain complex academic research in computational social science and artificial intelligence.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }
