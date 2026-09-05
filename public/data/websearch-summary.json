@@ -1,11 +1,12 @@
 {
-  "totalEntries": 213,
-  "lastUpdated": "2026-09-04T12:03:53.135Z",
+  "totalEntries": 214,
+  "lastUpdated": "2026-09-05T10:02:37.201Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-08-17T07:00:54.148Z"
+    "latest": "2026-09-05T10:02:37.170Z"
   },
   "byDate": {
+    "2026-09-05": 1,
     "2026-08-17": 1,
     "2026-08-10": 1,
     "2026-08-09": 1,
@@ -14,8 +15,7 @@
     "2026-08-02": 1,
     "2026-08-01": 1,
     "2026-07-28": 1,
-    "2026-07-24": 2,
-    "2026-07-23": 1
+    "2026-07-24": 2
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 52,
@@ -26,15 +26,22 @@
     "ilrestodelcarlino.it": 5,
     "socialmediaandsociety.org": 5,
     "aoir.org": 5,
-    "snurblog.org": 4,
-    "Il Sole 24 ORE": 4
+    "podcasts.apple.com": 4,
+    "snurblog.org": 4
   },
   "byRelevanceScore": {
-    "high": 190,
+    "high": 191,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Research Radio on Apple Podcasts",
+      "url": "https://podcasts.apple.com/us/podcast/research-radio/id1772648792",
+      "source": "podcasts.apple.com",
+      "relevanceScore": 0.95,
+      "collectedAt": "2026-09-05T10:02:37.170Z"
+    },
     {
       "title": "Indagine urbinate: \"Così l'algoritmo influenza il voto\"",
       "url": "https://www.ilrestodelcarlino.it",
@@ -62,13 +69,6 @@
       "source": "snurb.info",
       "relevanceScore": 0.9,
       "collectedAt": "2026-08-07T07:20:44.024Z"
-    },
-    {
-      "title": "FG's Research Radio",
-      "url": "https://podcasts.apple.com/us/podcast/research-radio/id1786524350",
-      "source": "podcasts.apple.com",
-      "relevanceScore": 0.8,
-      "collectedAt": "2026-08-04T09:45:49.960Z"
     }
   ]
 }
