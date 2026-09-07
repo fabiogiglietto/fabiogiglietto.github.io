@@ -1,53 +1,48 @@
 {
-  "reviewedAt": "2026-08-31T12:51:02.661Z",
+  "reviewedAt": "2026-09-07T11:45:16.577Z",
   "model": "claude-fable-5",
   "effort": "medium",
-  "summary": "Tightened the prose, restored 'as of August 2026' status stamps, replaced vague claims with the paper's own quantification (72% reach decline), corrected the CrowdTangle date and publication count, removed the unsupported 'guided regulatory frameworks' assertion, and restored omitted JRC and EACEA details.",
+  "summary": "Tightened the prose, restored the 'as of August 2026' status stamps and concluded-project dates, corrected imprecise or inflated claims (European Parliament citation, 'regularly served' at EACEA, Digit Srl's scope, 'informed public debate'), added omitted co-developers and dated details, and cut filler.",
   "flags": [
     {
-      "claim": "Following the shutdown of Meta's CrowdTangle in late 2024",
-      "issue": "The authoritative biography dates the CrowdTangle shutdown to 14 August 2024, not 'late 2024'. Corrected to the exact date.",
-      "severity": "overstated"
-    },
-    {
-      "claim": "His expertise has also guided European regulatory frameworks",
-      "issue": "No source says his work guided regulatory frameworks. The authoritative biography states only that he was a member of the JRC expert group, provided scientific oversight, monitored the data-access request process and authored summary reports. Reworded to those supported facts.",
-      "severity": "overstated"
-    },
-    {
-      "claim": "demonstrating a significant drop in Facebook visibility for Italian parliamentarians",
-      "issue": "His own paper quantifies the effect (72% peak-to-trough decline in re-elected MPs' per-post reach, partial recovery to ~65% of baseline). The vague intensifier 'significant' replaces the paper's precision; the quantification was restored.",
-      "severity": "overstated"
-    },
-    {
-      "claim": "over one hundred and sixty papers with thousands of citations",
-      "issue": "The publications data states exactly 160 publications and 2,395 citations; 'over one hundred and sixty' overstates the count. Corrected to 160 publications and roughly 2,400 citations.",
-      "severity": "overstated"
-    },
-    {
-      "claim": "He is an active member of the International Communication Association",
-      "issue": "Memberships are stamped 'as of August 2026' in the authoritative biography, which does not describe him as 'active'. Revised to a dated statement without the unsupported qualifier.",
-      "severity": "overstated"
-    },
-    {
-      "claim": "and has evaluated project proposals for the European Education and Culture Executive Agency",
-      "issue": "The authoritative biography states he was appointed evaluator and rapporteur and that, as of August 2026, the appointment ran to September 2026; the biography's past-tense phrasing dropped both the rapporteur role and the dated status. Restored (without naming any call or programme, per the confidentiality rule).",
-      "severity": "omission"
-    },
-    {
-      "claim": "he served on a Joint Research Centre expert group assessing systemic risks on large online platforms",
-      "issue": "The authoritative biography specifies concrete duties in that role — scientific oversight of the group's research projects, monitoring the platform data-access request process, and authoring its summary reports delivered in 2026 — which the biography omitted. Restored.",
-      "severity": "omission"
-    },
-    {
-      "claim": "Fabio Giglietto is a Full Professor of Internet Studies",
-      "issue": "The authoritative biography stamps this status 'as of August 2026'; the biography stated it as a timeless present. The stamp was restored here and for MINE's active status and the memberships.",
+      "claim": "he shapes the next generation of researchers by teaching courses",
+      "issue": "Empty abstraction not supported by any source; the fact sheet only lists the courses he has taught. Removed in revision.",
       "severity": "style"
     },
     {
-      "claim": "introduced the coordinated link sharing behavior detection method to identify coordinated activity",
-      "issue": "Redundant phrasing ('coordinated... to identify coordinated activity'); tightened in the revision.",
-      "severity": "style"
+      "claim": "established and continues to direct the Mapping Italian News Research Program (MINE)",
+      "issue": "The authoritative biography stamps MINE's ongoing status 'as of August 2026' and says he has coordinated it; the biography turned this into a timeless present-tense claim and used 'direct' rather than 'coordinate'. Revised to restore the dated stamp.",
+      "severity": "overstated"
+    },
+    {
+      "claim": "has regularly served as an independent evaluator and rapporteur for the European Education and Culture Executive Agency",
+      "issue": "The authoritative biography records a single appointment as evaluator and rapporteur, running to September 2026 as of August 2026; 'regularly served' implies repeated service no source asserts. Revised to a single dated appointment.",
+      "severity": "overstated"
+    },
+    {
+      "claim": "have informed public debate",
+      "issue": "A claim about third-party effects. Sources support only that the work drew named media coverage and was cited in a written question to the European Commission; 'informed public debate' goes beyond what the authoritative biography states. Replaced with the specific supported facts.",
+      "severity": "overstated"
+    },
+    {
+      "claim": "receiving formal citation in the European Parliament",
+      "issue": "Imprecise: the authoritative biography states the 2025 working paper was cited in a written question to the European Commission (European Parliament document E-10-2026-000086), not that Parliament formally cited it. Restated precisely.",
+      "severity": "overstated"
+    },
+    {
+      "claim": "dedicated to creating digital platforms for civic engagement and environmental sustainability",
+      "issue": "The fact sheet describes Digit Srl's platforms as for sustainability, civic participation, social innovation and scientific dissemination; 'environmental' is an added qualifier and two fields were dropped. Corrected.",
+      "severity": "overstated"
+    },
+    {
+      "claim": "This initiative has served as the primary framework for a series of externally funded investigations",
+      "issue": "The authoritative biography states all funded MINE sub-projects had concluded by February 2026 and that his professional memberships and MINE's active status hold 'as of August 2026'; the original omitted the concluded/ongoing distinction and the dated stamps. Restored in revision.",
+      "severity": "omission"
+    },
+    {
+      "claim": "he co-developed CooRnet, an open-source R package",
+      "issue": "The original omitted co-developers Nicola Righetti and Luca Rossi, whom the authoritative biography names. Added.",
+      "severity": "omission"
     }
   ]
 }
