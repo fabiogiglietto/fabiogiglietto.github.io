@@ -20206,107 +20206,107 @@
       ]
     }
   ],
-  "lastUpdated": "2026-09-08T09:56:05.962Z",
+  "lastUpdated": "2026-09-08T10:36:34.698Z",
   "logs": {
-    "timestamp": "2026-09-08T09:56:04.628Z",
+    "timestamp": "2026-09-08T10:36:34.032Z",
     "steps": [
       {
-        "timestamp": "2026-09-08T09:56:04.629Z",
+        "timestamp": "2026-09-08T10:36:34.033Z",
         "type": "start",
         "message": "Starting ORCID data collection"
       },
       {
-        "timestamp": "2026-09-08T09:56:04.629Z",
+        "timestamp": "2026-09-08T10:36:34.033Z",
         "type": "info",
         "message": "Getting OAuth token for ORCID API access..."
       },
       {
-        "timestamp": "2026-09-08T09:56:04.629Z",
+        "timestamp": "2026-09-08T10:36:34.033Z",
         "type": "info",
         "message": "Attempting to use public API without authentication"
       },
       {
-        "timestamp": "2026-09-08T09:56:04.629Z",
+        "timestamp": "2026-09-08T10:36:34.033Z",
         "type": "info",
         "message": "OAuth token response received: {\n  \"status\": 200,\n  \"data\": {\n    \"access_token\": \"public_endpoint_no_token_needed\"\n  }\n}"
       },
       {
-        "timestamp": "2026-09-08T09:56:04.629Z",
+        "timestamp": "2026-09-08T10:36:34.033Z",
         "type": "info",
         "message": "Obtained access token: public_end..."
       },
       {
-        "timestamp": "2026-09-08T09:56:04.629Z",
+        "timestamp": "2026-09-08T10:36:34.033Z",
         "type": "info",
         "message": "Attempting to fetch ORCID record with JSON format..."
       },
       {
-        "timestamp": "2026-09-08T09:56:05.889Z",
+        "timestamp": "2026-09-08T10:36:34.614Z",
         "type": "info",
         "message": "Successfully retrieved record in JSON format"
       },
       {
-        "timestamp": "2026-09-08T09:56:05.889Z",
+        "timestamp": "2026-09-08T10:36:34.614Z",
         "type": "info",
         "message": "Retrieved ORCID record in JSON format"
       },
       {
-        "timestamp": "2026-09-08T09:56:05.889Z",
+        "timestamp": "2026-09-08T10:36:34.614Z",
         "type": "info",
         "message": "Response content type: application/json;charset=UTF-8"
       },
       {
-        "timestamp": "2026-09-08T09:56:05.889Z",
+        "timestamp": "2026-09-08T10:36:34.614Z",
         "type": "info",
         "message": "Trying to fetch works directly from /works endpoint for comparison..."
       },
       {
-        "timestamp": "2026-09-08T09:56:05.961Z",
+        "timestamp": "2026-09-08T10:36:34.698Z",
         "type": "info",
         "message": "Works endpoint returned 158 works"
       },
       {
-        "timestamp": "2026-09-08T09:56:05.961Z",
+        "timestamp": "2026-09-08T10:36:34.698Z",
         "type": "info",
         "message": "Processing JSON response"
       },
       {
-        "timestamp": "2026-09-08T09:56:05.961Z",
+        "timestamp": "2026-09-08T10:36:34.698Z",
         "type": "info",
         "message": "Found person data with keys: last-modified-date, name, other-names, biography, researcher-urls, emails, addresses, keywords, external-identifiers, path"
       },
       {
-        "timestamp": "2026-09-08T09:56:05.961Z",
+        "timestamp": "2026-09-08T10:36:34.698Z",
         "type": "info",
         "message": "Record endpoint response structure differs from expected format"
       },
       {
-        "timestamp": "2026-09-08T09:56:05.961Z",
+        "timestamp": "2026-09-08T10:36:34.698Z",
         "type": "info",
         "message": "Works endpoint has 158 works, record endpoint has 0 works"
       },
       {
-        "timestamp": "2026-09-08T09:56:05.962Z",
+        "timestamp": "2026-09-08T10:36:34.698Z",
         "type": "warning",
         "message": "DISCREPANCY: Works endpoint has 158 works, but record endpoint has 0 works"
       },
       {
-        "timestamp": "2026-09-08T09:56:05.962Z",
+        "timestamp": "2026-09-08T10:36:34.698Z",
         "type": "info",
         "message": "Using 158 works from /works endpoint instead of /record endpoint"
       },
       {
-        "timestamp": "2026-09-08T09:56:05.962Z",
+        "timestamp": "2026-09-08T10:36:34.698Z",
         "type": "info",
         "message": "Sample work structure: {\"keys\":[\"last-modified-date\",\"external-ids\",\"work-summary\"],\"hasSummary\":true,\"summaryCount\":1,\"summaryKeys\":[\"put-code\",\"created-date\",\"last-modified-date\",\"source\",\"title\",\"external-ids\",\"url\",\"type\",\"publication-date\",\"journal-title\",\"visibility\",\"path\",\"display-index\"],\"title\":\"Ten months of continuous coordinated-behaviour monitoring on Facebook: the VERA-AI Alert system and its empirical yield\",\"type\":\"preprint\",\"pubDate\":\"2026-08-13\"}"
       },
       {
-        "timestamp": "2026-09-08T09:56:05.962Z",
+        "timestamp": "2026-09-08T10:36:34.698Z",
         "type": "info",
         "message": "Collection completed successfully with 158 works"
       },
       {
-        "timestamp": "2026-09-08T09:56:05.962Z",
+        "timestamp": "2026-09-08T10:36:34.698Z",
         "type": "complete",
         "message": "Collection completed with 158 works retrieved"
       }
@@ -20314,7 +20314,7 @@
     "errors": [],
     "warnings": [
       {
-        "timestamp": "2026-09-08T09:56:05.962Z",
+        "timestamp": "2026-09-08T10:36:34.698Z",
         "message": "Works count discrepancy: /works endpoint: 158, /record endpoint: 0"
       }
     ],
@@ -20332,7 +20332,7 @@
         "contentType": "application/json;charset=UTF-8",
         "status": 200,
         "headers": {
-          "date": "Tue, 08 Sep 2026 09:56:05 GMT",
+          "date": "Tue, 08 Sep 2026 10:36:34 GMT",
           "content-type": "application/json;charset=UTF-8",
           "transfer-encoding": "chunked",
           "connection": "keep-alive",
@@ -20350,8 +20350,8 @@
           "x-via": "b1-newvpc",
           "cf-cache-status": "DYNAMIC",
           "cf-apo-via": "origin,host",
-          "set-cookie": "__cf_bm=Uu.Vj.nNIOarv.E0c6W1u1fFQMfgGWnewAcejfclmYA-1788861364.7244868-1.0.1.1-Q04yVQZQodgI0kBq44ANWrPzWjCLY6pLzSMPkvk8tgF0PRztKqKH8xDU7WhT1edW28tMP6RfXNIP02NGsCLe36CZtv.MExyyfXn3W4O0lnsGPoPD6g7eW8x09Ky8Lqro; HttpOnly; SameSite=None; Secure; Path=/; Domain=orcid.org; Expires=Tue, 08 Sep 2026 10:26:05 GMT",
-          "cf-ray": "a37d14c98f83c9b0-IAD"
+          "set-cookie": "__cf_bm=Fz9loiaZim6h41448c21UZjmmzmojqXizHgtofmF.6w-1788863794.1467648-1.0.1.1-LS5W16KkCKCNAirLkEtBknNNG1MnCiCI8cU5BEW3T1U8g1aqyPtXMFBYerwzolWTqUldF70aoSrXUPf_u5nx47yw_jl_pj_I_VMEe6DarRSrVEwkO2oGeW9jIfaYcrrk; HttpOnly; SameSite=None; Secure; Path=/; Domain=orcid.org; Expires=Tue, 08 Sep 2026 11:06:34 GMT",
+          "cf-ray": "a37d50196db0c984-IAD"
         },
         "dataKeys": [
           "orcid-identifier",
