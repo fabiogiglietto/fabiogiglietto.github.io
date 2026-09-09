@@ -1956,6 +1956,88 @@
     },
     {
       "last-modified-date": {
+        "value": 1788874702393
+      },
+      "external-ids": {
+        "external-id": [
+          {
+            "external-id-type": "doi",
+            "external-id-value": "10.17605/osf.io/bfwv4",
+            "external-id-normalized": {
+              "value": "10.17605/osf.io/bfwv4",
+              "transient": true
+            },
+            "external-id-normalized-error": null,
+            "external-id-url": null,
+            "external-id-relationship": "self"
+          }
+        ]
+      },
+      "work-summary": [
+        {
+          "put-code": 226101958,
+          "created-date": {
+            "value": 1788874702393
+          },
+          "last-modified-date": {
+            "value": 1788874702393
+          },
+          "source": {
+            "source-orcid": null,
+            "source-client-id": {
+              "uri": "https://orcid.org/client/0000-0001-8099-6984",
+              "path": "0000-0001-8099-6984",
+              "host": "orcid.org"
+            },
+            "source-name": {
+              "value": "DataCite"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Links in comments: how much do post-only studies of Facebook link sharing miss?"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": [
+              {
+                "external-id-type": "doi",
+                "external-id-value": "10.17605/osf.io/bfwv4",
+                "external-id-normalized": {
+                  "value": "10.17605/osf.io/bfwv4",
+                  "transient": true
+                },
+                "external-id-normalized-error": null,
+                "external-id-url": null,
+                "external-id-relationship": "self"
+              }
+            ]
+          },
+          "url": null,
+          "type": "other",
+          "publication-date": {
+            "year": {
+              "value": "2026"
+            },
+            "month": null,
+            "day": null
+          },
+          "journal-title": {
+            "value": "OSF Registries"
+          },
+          "visibility": "public",
+          "path": "/0000-0001-8019-1035/work/226101958",
+          "display-index": "1"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
         "value": 1767788058328
       },
       "external-ids": {
@@ -20206,116 +20288,116 @@
       ]
     }
   ],
-  "lastUpdated": "2026-09-08T11:59:24.783Z",
+  "lastUpdated": "2026-09-09T10:47:13.537Z",
   "logs": {
-    "timestamp": "2026-09-08T11:59:23.771Z",
+    "timestamp": "2026-09-09T10:47:12.310Z",
     "steps": [
       {
-        "timestamp": "2026-09-08T11:59:23.772Z",
+        "timestamp": "2026-09-09T10:47:12.310Z",
         "type": "start",
         "message": "Starting ORCID data collection"
       },
       {
-        "timestamp": "2026-09-08T11:59:23.772Z",
+        "timestamp": "2026-09-09T10:47:12.311Z",
         "type": "info",
         "message": "Getting OAuth token for ORCID API access..."
       },
       {
-        "timestamp": "2026-09-08T11:59:23.772Z",
+        "timestamp": "2026-09-09T10:47:12.311Z",
         "type": "info",
         "message": "Attempting to use public API without authentication"
       },
       {
-        "timestamp": "2026-09-08T11:59:23.772Z",
+        "timestamp": "2026-09-09T10:47:12.311Z",
         "type": "info",
         "message": "OAuth token response received: {\n  \"status\": 200,\n  \"data\": {\n    \"access_token\": \"public_endpoint_no_token_needed\"\n  }\n}"
       },
       {
-        "timestamp": "2026-09-08T11:59:23.772Z",
+        "timestamp": "2026-09-09T10:47:12.311Z",
         "type": "info",
         "message": "Obtained access token: public_end..."
       },
       {
-        "timestamp": "2026-09-08T11:59:23.772Z",
+        "timestamp": "2026-09-09T10:47:12.311Z",
         "type": "info",
         "message": "Attempting to fetch ORCID record with JSON format..."
       },
       {
-        "timestamp": "2026-09-08T11:59:24.689Z",
+        "timestamp": "2026-09-09T10:47:13.169Z",
         "type": "info",
         "message": "Successfully retrieved record in JSON format"
       },
       {
-        "timestamp": "2026-09-08T11:59:24.689Z",
+        "timestamp": "2026-09-09T10:47:13.169Z",
         "type": "info",
         "message": "Retrieved ORCID record in JSON format"
       },
       {
-        "timestamp": "2026-09-08T11:59:24.689Z",
+        "timestamp": "2026-09-09T10:47:13.169Z",
         "type": "info",
         "message": "Response content type: application/json;charset=UTF-8"
       },
       {
-        "timestamp": "2026-09-08T11:59:24.689Z",
+        "timestamp": "2026-09-09T10:47:13.169Z",
         "type": "info",
         "message": "Trying to fetch works directly from /works endpoint for comparison..."
       },
       {
-        "timestamp": "2026-09-08T11:59:24.783Z",
+        "timestamp": "2026-09-09T10:47:13.536Z",
         "type": "info",
-        "message": "Works endpoint returned 158 works"
+        "message": "Works endpoint returned 159 works"
       },
       {
-        "timestamp": "2026-09-08T11:59:24.783Z",
+        "timestamp": "2026-09-09T10:47:13.537Z",
         "type": "info",
         "message": "Processing JSON response"
       },
       {
-        "timestamp": "2026-09-08T11:59:24.783Z",
+        "timestamp": "2026-09-09T10:47:13.537Z",
         "type": "info",
         "message": "Found person data with keys: last-modified-date, name, other-names, biography, researcher-urls, emails, addresses, keywords, external-identifiers, path"
       },
       {
-        "timestamp": "2026-09-08T11:59:24.783Z",
+        "timestamp": "2026-09-09T10:47:13.537Z",
         "type": "info",
         "message": "Record endpoint response structure differs from expected format"
       },
       {
-        "timestamp": "2026-09-08T11:59:24.783Z",
+        "timestamp": "2026-09-09T10:47:13.537Z",
         "type": "info",
-        "message": "Works endpoint has 158 works, record endpoint has 0 works"
+        "message": "Works endpoint has 159 works, record endpoint has 0 works"
       },
       {
-        "timestamp": "2026-09-08T11:59:24.783Z",
+        "timestamp": "2026-09-09T10:47:13.537Z",
         "type": "warning",
-        "message": "DISCREPANCY: Works endpoint has 158 works, but record endpoint has 0 works"
+        "message": "DISCREPANCY: Works endpoint has 159 works, but record endpoint has 0 works"
       },
       {
-        "timestamp": "2026-09-08T11:59:24.783Z",
+        "timestamp": "2026-09-09T10:47:13.537Z",
         "type": "info",
-        "message": "Using 158 works from /works endpoint instead of /record endpoint"
+        "message": "Using 159 works from /works endpoint instead of /record endpoint"
       },
       {
-        "timestamp": "2026-09-08T11:59:24.783Z",
+        "timestamp": "2026-09-09T10:47:13.537Z",
         "type": "info",
         "message": "Sample work structure: {\"keys\":[\"last-modified-date\",\"external-ids\",\"work-summary\"],\"hasSummary\":true,\"summaryCount\":1,\"summaryKeys\":[\"put-code\",\"created-date\",\"last-modified-date\",\"source\",\"title\",\"external-ids\",\"url\",\"type\",\"publication-date\",\"journal-title\",\"visibility\",\"path\",\"display-index\"],\"title\":\"Ten months of continuous coordinated-behaviour monitoring on Facebook: the VERA-AI Alert system and its empirical yield\",\"type\":\"preprint\",\"pubDate\":\"2026-08-13\"}"
       },
       {
-        "timestamp": "2026-09-08T11:59:24.783Z",
+        "timestamp": "2026-09-09T10:47:13.537Z",
         "type": "info",
-        "message": "Collection completed successfully with 158 works"
+        "message": "Collection completed successfully with 159 works"
       },
       {
-        "timestamp": "2026-09-08T11:59:24.783Z",
+        "timestamp": "2026-09-09T10:47:13.537Z",
         "type": "complete",
-        "message": "Collection completed with 158 works retrieved"
+        "message": "Collection completed with 159 works retrieved"
       }
     ],
     "errors": [],
     "warnings": [
       {
-        "timestamp": "2026-09-08T11:59:24.783Z",
-        "message": "Works count discrepancy: /works endpoint: 158, /record endpoint: 0"
+        "timestamp": "2026-09-09T10:47:13.537Z",
+        "message": "Works count discrepancy: /works endpoint: 159, /record endpoint: 0"
       }
     ],
     "results": {
@@ -20332,7 +20414,7 @@
         "contentType": "application/json;charset=UTF-8",
         "status": 200,
         "headers": {
-          "date": "Tue, 08 Sep 2026 11:59:24 GMT",
+          "date": "Wed, 09 Sep 2026 10:47:13 GMT",
           "content-type": "application/json;charset=UTF-8",
           "transfer-encoding": "chunked",
           "connection": "keep-alive",
@@ -20350,8 +20432,8 @@
           "x-via": "a1-newvpc",
           "cf-cache-status": "DYNAMIC",
           "cf-apo-via": "origin,host",
-          "set-cookie": "__cf_bm=7rfeoyDjlXybk6QdtFixoBMLbla4Q_3DT86Ff9E68cg-1788868764.1432743-1.0.1.1-G75IDmbzB2HQM8LCGSwJw1IVGnpCUwCFcogmZsECE4GBM7mUXJA.iq7sWyycAkKUhm8OAP.YtGSSBQbhVXzmA0X5edbbWTsI186J9mJHlrRCiue23DJBwIvATTa7sqcl; HttpOnly; SameSite=None; Secure; Path=/; Domain=orcid.org; Expires=Tue, 08 Sep 2026 12:29:24 GMT",
-          "cf-ray": "a37dc96fed41f3ee-ORD"
+          "set-cookie": "__cf_bm=N2JpI7ly4BLksYLADb9drs6NSggu2DfwsEghg.Zcnyg-1788950832.4486597-1.0.1.1-HxcS7bl.ggebLQ2odSluzU6.ygA0Q4POj2W34dU6GtCfm.eUEX73Vb5EfAWER.pvPFnLFPd8i3wwYIQ1afY3I6t._DF26gSKCYtDQ4BnH41yAAY0JK.T_HsUN43NvzI6; HttpOnly; SameSite=None; Secure; Path=/; Domain=orcid.org; Expires=Wed, 09 Sep 2026 11:17:13 GMT",
+          "cf-ray": "a3859d0eced96de4-LAX"
         },
         "dataKeys": [
           "orcid-identifier",
@@ -20370,7 +20452,7 @@
           "group",
           "path"
         ],
-        "groupCount": 158
+        "groupCount": 159
       },
       "recordStructure": {
         "dataKeys": [
@@ -20411,7 +20493,7 @@
         "type": "preprint",
         "pubDate": "2026-08-13"
       },
-      "finalWorkCount": 158,
+      "finalWorkCount": 159,
       "profileKeys": [
         "last-modified-date",
         "name",
