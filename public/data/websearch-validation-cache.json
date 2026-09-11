@@ -7187,5 +7187,31 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "podcasts.apple.com/us/podcast/research-radio/id1729606138": {
+    "v": 1,
+    "cachedAt": "2026-09-11T10:42:06.842Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An apple podcast curated by Fabio Giglietto that features AI-generated discussions on computational social science research, co-developed with advanced LLMs.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "socialmediaandsociety.org/wp-content/uploads/2026/07/smsociety-2026-abstracts.pdf": {
+    "v": 1,
+    "cachedAt": "2026-09-11T10:42:08.080Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": false,
+      "relevanceScore": 0.1,
+      "reason": "The provided title, URL, and lack of context do not contain any explicit mention of 'Fabio Giglietto' by name.",
+      "description": "An abstract booklet from the Social Media & Society conference, but there is no verifiable mention of Fabio Giglietto in the available text.",
+      "personMatch": "not_mentioned",
+      "isRecent": false
+    }
   }
 }
