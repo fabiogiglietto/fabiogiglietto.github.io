@@ -1,43 +1,43 @@
 {
-  "reviewedAt": "2026-09-14T11:57:25.929Z",
+  "reviewedAt": "2026-09-21T12:08:26.700Z",
   "model": "claude-fable-5",
   "effort": "medium",
-  "summary": "Tightened the prose, corrected the written-question addressee to the European Commission, restored past tense and conclusion dates for the JRC role and the vera.ai and PROMPT projects, fixed the RC51 claim to board service only, and re-anchored MINE's active status to the August 2026 stamp.",
+  "summary": "Corrected the written-question claim (Commission, not Parliament), restored 'as of August 2026' stamps on MINE, memberships and the EACEA appointment, replaced the vague 'significant discussion' with the specific supported impact facts, added CooRnet's co-developers, and tightened the prose throughout.",
   "flags": [
     {
-      "claim": "earning a citation in a written question to the European Parliament",
+      "claim": "cited in a formal written question to the European Parliament",
       "issue": "The authoritative biography states the paper was cited in a written question to the European Commission (a European Parliament document, E-10-2026-000086), not a question addressed to the Parliament. Corrected in the revision.",
       "severity": "overstated"
     },
     {
-      "claim": "serving on the Joint Research Centre expert group",
-      "issue": "The authoritative biography states this role in the past tense (he 'was a member', with summary reports delivered in 2026). The present participle implies an ongoing role the source does not assert. Changed to past tense.",
+      "claim": "have generated significant academic and public discussion",
+      "issue": "No source supports 'significant academic discussion'. The sources support only that the paper was cited in a written question to the European Commission and covered by named Italian outlets. Replaced with the specific, supported facts.",
       "severity": "overstated"
     },
     {
-      "claim": "holding memberships in ... the International Sociological Association's Research Committee 51 on Sociocybernetics",
-      "issue": "The authoritative biography supports only past board service on RC51 ('has served on the board'), not a current membership of RC51 as of August 2026. Revised to state the board service only.",
+      "claim": "which continues to serve as the primary institutional umbrella for his research line",
+      "issue": "The authoritative biography stamps MINE's active status 'as of August 2026'; the bio rendered it as a timeless present. Restored the dated stamp.",
       "severity": "overstated"
     },
     {
-      "claim": "which continues to serve as the primary institutional umbrella for his research",
-      "issue": "The authoritative biography stamps MINE's active status 'as of August 2026'; the biography converted this into a timeless present-tense claim. The date stamp was restored in the revision.",
+      "claim": "He maintains active professional ties with global research communities as a member of",
+      "issue": "Memberships are stamped 'as of August 2026' in the authoritative biography; the bio stated them as a timeless present. Restored the dated stamp.",
       "severity": "overstated"
     },
     {
-      "claim": "roles as a work package leader for the vera.ai consortium and as a partner on the PROMPT project",
-      "issue": "The authoritative biography states both projects concluded (vera.ai in October 2025, PROMPT in February 2026); the biography omitted this, leaving the roles ambiguously current. Conclusion dates added in the revision.",
+      "claim": "evaluating project proposals for the European Education and Culture Executive Agency",
+      "issue": "Stated as an open-ended ongoing activity; the authoritative biography stamps the appointment 'as of August 2026' as running to September 2026. Revision preserves the dated status (and, per confidentiality rules, no call, topic or contract number is named).",
+      "severity": "overstated"
+    },
+    {
+      "claim": "he shares his expertise through courses such as Generative AI and Media alongside Digital Social Network Analysis",
+      "issue": "The authoritative biography says his teaching 'has included' these courses (completed/past framing), not that he currently teaches them; also awkward phrasing. Reworded to match the source's tense.",
+      "severity": "style"
+    },
+    {
+      "claim": "co-developed CooRnet",
+      "issue": "The bio omitted the co-developers Nicola Righetti and Luca Rossi, named in the authoritative biography; added in the revision.",
       "severity": "omission"
-    },
-    {
-      "claim": "gained significant traction",
-      "issue": "Vague intensifier not grounded in any source; the sources support only the specific citation in a written question and named national media coverage. Replaced with the concrete facts.",
-      "severity": "style"
-    },
-    {
-      "claim": "Through these initiatives, he explores how emerging technologies reshape public discourse and social systems.",
-      "issue": "Empty abstraction unsupported as a specific claim by any source; cut in the revision.",
-      "severity": "style"
     }
   ]
 }
