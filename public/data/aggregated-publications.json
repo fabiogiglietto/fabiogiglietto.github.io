@@ -62,7 +62,7 @@
       "publicationDate": "2012-01-01",
       "doi": "10.1080/15228835.2012.743797",
       "citations": {
-        "scholar": 307,
+        "scholar": 308,
         "wos": 289,
         "scopus": null,
         "semanticScholar": 178
@@ -85,7 +85,7 @@
         "ora": "11576/2529385"
       },
       "metrics": {
-        "total_citations": 307,
+        "total_citations": 308,
         "citation_sources": 3
       },
       "oraHandle": "11576/2529385",
@@ -113,7 +113,7 @@
       "publicationDate": "2020-05-11",
       "doi": "10.1080/1369118X.2020.1739732",
       "citations": {
-        "scholar": 250,
+        "scholar": 251,
         "wos": 0,
         "scopus": 125,
         "semanticScholar": null
@@ -136,7 +136,7 @@
         "ora": "11576/2674874"
       },
       "metrics": {
-        "total_citations": 250,
+        "total_citations": 251,
         "citation_sources": 3
       },
       "oraHandle": "11576/2674874",
@@ -829,6 +829,50 @@
       "publisher": "Frontiers Media SA"
     },
     {
+      "title": "A Workflow to Detect, Monitor, and Update Lists of Coordinated Social Media Accounts Across Time: The Case of the 2022 Italian Election",
+      "type": "journal-article",
+      "venue": "Social Media + Society",
+      "authors": "Giglietto, Fabio; Marino, Giada; Mincigrucci, Roberto; Stanziano, Anna",
+      "year": 2023,
+      "month": 7,
+      "day": null,
+      "publicationDate": "2023-07-01",
+      "doi": "10.1177/20563051231196866",
+      "citations": {
+        "scholar": 25,
+        "wos": 0,
+        "scopus": 13,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": "https://doi.org/10.1177/20563051231196866",
+        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:Xl6nMSl579sC",
+        "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:001070115200001&DestLinkType=FullRecord&DestApp=WOS_CPL",
+        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85170566346&origin=inward",
+        "semanticScholar": null,
+        "ora": "https://ora.uniurb.it/handle/11576/2721991",
+        "crossref": "https://doi.org/10.1177/20563051231196866"
+      },
+      "source_ids": {
+        "orcid": 142028666,
+        "scholar": "Xl6nMSl579sC",
+        "wos": "WOS:001070115200001",
+        "scopus": "85170566346",
+        "semanticScholar": null,
+        "ora": "11576/2721991"
+      },
+      "metrics": {
+        "total_citations": 25,
+        "citation_sources": 3
+      },
+      "oraHandle": "11576/2721991",
+      "oaPdfUrl": "https://ora.uniurb.it/bitstream/11576/2721991/1/giglietto-et-al-2023-a-workflow-to-detect-monitor-and-update-lists-of-coordinated-social-media-accounts-across-time-the.pdf",
+      "abstract": "Information operations that target public opinion often exploit breaking news, crises, and elections by using coordinated social media actors to disseminate problematic content. These events often reveal the relationships between actors, prompting the creation of lists of malicious actors and news sources. However, relying on outdated lists may underestimate the prevalence and impact of such operations. This article presents a novel workflow to detect, monitor, and update lists of coordinated social media actors during and beyond peak activity periods. Using this approach, known problematic actors are constantly monitored, allowing the detection of new actors and the update of the monitored pool. The workflow was applied to the 2022 Italian snap election, leveraging previous research on coordinated inauthentic behavior during the 2018 and 2019 Italian elections. The initial list of 435 coordinated accounts was monitored, surfacing 1,022 overly shared or commented political posts, 272 coordinated links, and detecting 66 political and 554 generic coordinated accounts not previously listed. Three case studies were identified: one politically motivated, one click-economy driven, and one religiously motivated operation. The article discusses the implications of this approach, its limitations, and potential future work.",
+      "publisherUrl": "https://journals.sagepub.com/doi/10.1177/20563051231196866",
+      "crossref_type": "journal-article",
+      "publisher": "SAGE Publications"
+    },
+    {
       "title": "Eyes on You: Analyzing User Generated Content for Social Science",
       "authors": "C Fonio, F Giglietto, R Pruno, L Rossi, S Pedrioli",
       "venue": "Towards a Social Science of Web 2.0 2, 2007",
@@ -860,50 +904,6 @@
         "total_citations": 25,
         "citation_sources": 1
       }
-    },
-    {
-      "title": "A Workflow to Detect, Monitor, and Update Lists of Coordinated Social Media Accounts Across Time: The Case of the 2022 Italian Election",
-      "type": "journal-article",
-      "venue": "Social Media + Society",
-      "authors": "Giglietto, Fabio; Marino, Giada; Mincigrucci, Roberto; Stanziano, Anna",
-      "year": 2023,
-      "month": 7,
-      "day": null,
-      "publicationDate": "2023-07-01",
-      "doi": "10.1177/20563051231196866",
-      "citations": {
-        "scholar": 24,
-        "wos": 0,
-        "scopus": 13,
-        "semanticScholar": null
-      },
-      "source_urls": {
-        "orcid": "https://doi.org/10.1177/20563051231196866",
-        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:Xl6nMSl579sC",
-        "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:001070115200001&DestLinkType=FullRecord&DestApp=WOS_CPL",
-        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85170566346&origin=inward",
-        "semanticScholar": null,
-        "ora": "https://ora.uniurb.it/handle/11576/2721991",
-        "crossref": "https://doi.org/10.1177/20563051231196866"
-      },
-      "source_ids": {
-        "orcid": 142028666,
-        "scholar": "Xl6nMSl579sC",
-        "wos": "WOS:001070115200001",
-        "scopus": "85170566346",
-        "semanticScholar": null,
-        "ora": "11576/2721991"
-      },
-      "metrics": {
-        "total_citations": 24,
-        "citation_sources": 3
-      },
-      "oraHandle": "11576/2721991",
-      "oaPdfUrl": "https://ora.uniurb.it/bitstream/11576/2721991/1/giglietto-et-al-2023-a-workflow-to-detect-monitor-and-update-lists-of-coordinated-social-media-accounts-across-time-the.pdf",
-      "abstract": "Information operations that target public opinion often exploit breaking news, crises, and elections by using coordinated social media actors to disseminate problematic content. These events often reveal the relationships between actors, prompting the creation of lists of malicious actors and news sources. However, relying on outdated lists may underestimate the prevalence and impact of such operations. This article presents a novel workflow to detect, monitor, and update lists of coordinated social media actors during and beyond peak activity periods. Using this approach, known problematic actors are constantly monitored, allowing the detection of new actors and the update of the monitored pool. The workflow was applied to the 2022 Italian snap election, leveraging previous research on coordinated inauthentic behavior during the 2018 and 2019 Italian elections. The initial list of 435 coordinated accounts was monitored, surfacing 1,022 overly shared or commented political posts, 272 coordinated links, and detecting 66 political and 554 generic coordinated accounts not previously listed. Three case studies were identified: one politically motivated, one click-economy driven, and one religiously motivated operation. The article discusses the implications of this approach, its limitations, and potential future work.",
-      "publisherUrl": "https://journals.sagepub.com/doi/10.1177/20563051231196866",
-      "crossref_type": "journal-article",
-      "publisher": "SAGE Publications"
     },
     {
       "title": "Multi-Party Media Partisanship Attention Score. Estimating Partisan Attention of News Media Sources Using Twitter Data in the Lead-up to 2018 Italian Election",
@@ -1030,6 +1030,47 @@
       "publisher": "Association for Computing Machinery (ACM)"
     },
     {
+      "title": "Integrating Large Language Models in Political Discourse Studies on Social Media: Challenges of Validating an LLMs-in-the-loop Pipeline",
+      "type": "journal-article",
+      "venue": "Sociologica",
+      "authors": "Marino, Giada; Giglietto, Fabio",
+      "year": 2024,
+      "month": 10,
+      "day": 30,
+      "publicationDate": "2024-10-30",
+      "doi": "10.6092/issn.1971-8853/19524",
+      "citations": {
+        "scholar": 17,
+        "wos": 0,
+        "scopus": 3,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": null,
+        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:-DxkuPiZhfEC",
+        "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:001356688800005&DestLinkType=FullRecord&DestApp=WOS_CPL",
+        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85213417206&origin=inward",
+        "semanticScholar": null,
+        "ora": "https://ora.uniurb.it/handle/11576/2746851"
+      },
+      "source_ids": {
+        "orcid": 170629178,
+        "scholar": "-DxkuPiZhfEC",
+        "wos": "WOS:001356688800005",
+        "scopus": "85213417206",
+        "semanticScholar": null,
+        "ora": "11576/2746851"
+      },
+      "metrics": {
+        "total_citations": 17,
+        "citation_sources": 3
+      },
+      "oraHandle": "11576/2746851",
+      "oaPdfUrl": "https://ora.uniurb.it/bitstream/11576/2746851/2/19524-marino.pdf",
+      "abstract": "The integration of Large Language Models (LLMs) into research workflows has the potential to transform the study of political content on social media. This essay discusses a validation protocol addressing three key aspects of LLM-integrated research: the versatility of LLMs as general-purpose models, the granularity and nuance in LLM-uncovered narratives, and the limitations of human assessment capabilities. The protocol includes phases for fine-tuning and validating a binary political classifier, evaluating cluster coherence, and assessing machine-generated cluster label accuracy. We applied this protocol to validate an LLMs-in-the-loop research pipeline designed to analyze political content on Facebook during the Italian general elections of 2018 and 2022. Our approach classifies political links, clusters them by similarity, and generates descriptive labels for clusters. This methodology presents unique validation challenges, prompting a reevaluation of accuracy assessment strategies. By sharing our experiences, this essay aims to guide social scientists in employing LLM-based methodologies, highlighting challenges and advancing recommendations for colleagues intending to integrate these tools for political content analysis on social media.",
+      "publisherUrl": "https://sociologica.unibo.it/article/view/19524"
+    },
+    {
       "title": "Steering the world from where we are: An introduction to the sociocybernetics perspective",
       "type": "journal-article",
       "venue": "Current Sociology",
@@ -1111,47 +1152,6 @@
       "oraHandle": "11576/2504787",
       "oaPdfUrl": null,
       "abstract": "Il volume ripercorre in quattro tappe il cammino che, nel corso di poco più di cinquanta anni, ha portato dalla teoria dell'informazione alle teorie dei sistemi sociali. Ogni tappa ha (almeno) un protagonista: Claude Elwood Shannon, Norbert Wiener, Ludwig von Bertalanffy, Heinz von Foerster, Talcott Parsons e Niklas Luhmann. Ripercorrere la vita di questi personaggi rappresenta un pretesto per rendere conto del contesto storico e sociale nel quale gli strumenti teorici e concettuali presentati nel libro sono stati sviluppati. Ogni tappa è pensata per offrire al lettore uno o più strumenti che torneranno utili durante il proseguimento del percorso."
-    },
-    {
-      "title": "Integrating Large Language Models in Political Discourse Studies on Social Media: Challenges of Validating an LLMs-in-the-loop Pipeline",
-      "type": "journal-article",
-      "venue": "Sociologica",
-      "authors": "Marino, Giada; Giglietto, Fabio",
-      "year": 2024,
-      "month": 10,
-      "day": 30,
-      "publicationDate": "2024-10-30",
-      "doi": "10.6092/issn.1971-8853/19524",
-      "citations": {
-        "scholar": 16,
-        "wos": 0,
-        "scopus": 3,
-        "semanticScholar": null
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:-DxkuPiZhfEC",
-        "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:001356688800005&DestLinkType=FullRecord&DestApp=WOS_CPL",
-        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85213417206&origin=inward",
-        "semanticScholar": null,
-        "ora": "https://ora.uniurb.it/handle/11576/2746851"
-      },
-      "source_ids": {
-        "orcid": 170629178,
-        "scholar": "-DxkuPiZhfEC",
-        "wos": "WOS:001356688800005",
-        "scopus": "85213417206",
-        "semanticScholar": null,
-        "ora": "11576/2746851"
-      },
-      "metrics": {
-        "total_citations": 16,
-        "citation_sources": 3
-      },
-      "oraHandle": "11576/2746851",
-      "oaPdfUrl": "https://ora.uniurb.it/bitstream/11576/2746851/2/19524-marino.pdf",
-      "abstract": "The integration of Large Language Models (LLMs) into research workflows has the potential to transform the study of political content on social media. This essay discusses a validation protocol addressing three key aspects of LLM-integrated research: the versatility of LLMs as general-purpose models, the granularity and nuance in LLM-uncovered narratives, and the limitations of human assessment capabilities. The protocol includes phases for fine-tuning and validating a binary political classifier, evaluating cluster coherence, and assessing machine-generated cluster label accuracy. We applied this protocol to validate an LLMs-in-the-loop research pipeline designed to analyze political content on Facebook during the Italian general elections of 2018 and 2022. Our approach classifies political links, clusters them by similarity, and generates descriptive labels for clusters. This methodology presents unique validation challenges, prompting a reevaluation of accuracy assessment strategies. By sharing our experiences, this essay aims to guide social scientists in employing LLM-based methodologies, highlighting challenges and advancing recommendations for colleagues intending to integrate these tools for political content analysis on social media.",
-      "publisherUrl": "https://sociologica.unibo.it/article/view/19524"
     },
     {
       "title": "CooRnet. Detect coordinated link sharing behavior on social media",
@@ -1434,6 +1434,46 @@
       "abstract": "Il presente contributo indaga l’uso dei social media, e in particolar modo di Twitter, da parte delle pubbliche amministrazioni in occasione di eventi critici ed emergenze ambientali. In particolare il paper si concentra sul caso del Comune di Firenze che durante le nevicate del mese di febbraio 2012 ha promosso l’utilizzo, tramite una specifica conferenza stampa, dell’hashtag #firenzeneve per informare i cittadini e i media locali delle possibili criticità e dei disservizi legati alle imminenti nevicate. Una rivoluzione nel modo di fare comunicazione pubblica da parte delle amministrazioni, spesso ancora troppo conservatrici nella definizione di strategie di comunicazione verso la cittadinanza e il sistema dei media. Alla luce della ormai vasta letteratura sulla gestione degli eventi di crisi internazionali attraverso i social media, si è proceduto ad una analisi quanti-qualitativa dei 6581 Tweet recanti l’hashtag #firenzeneve pubblicati fra il 31 Gennaio e il 28 Febbraio 2012."
     },
     {
+      "title": "Facebook, Twitter & co. Una mutazione possibile per la ricerca sociale",
+      "type": "book-chapter",
+      "venue": "Nutrimenti",
+      "authors": "BOCCIA ARTIERI, GIOVANNI; GIGLIETTO, FABIO; ROSSI, LUCA",
+      "year": 2012,
+      "month": 1,
+      "day": 1,
+      "publicationDate": "2012-01-01",
+      "doi": null,
+      "citations": {
+        "scholar": 10,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": "https://ora.uniurb.it/handle/11576/2512186",
+        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:7Hz3ACDFbsoC",
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": "https://ora.uniurb.it/handle/11576/2512186"
+      },
+      "source_ids": {
+        "orcid": 133838437,
+        "scholar": "7Hz3ACDFbsoC",
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": "11576/2512186"
+      },
+      "metrics": {
+        "total_citations": 10,
+        "citation_sources": 1
+      },
+      "oraHandle": "11576/2512186",
+      "oaPdfUrl": null,
+      "abstract": "Nel corso degli ultimi anni si è assistito ad una straordinaria crescita della disponibilità di contenuti generati dagli utenti (UGC) in rete. Questi contenuti rappresentano un materiale di straordinario interesse per la ricerca sociologica. Blog, piattaforme per la condivisione dei contenuti e siti di social network (da ora in poi social media) consentono ad un pubblico mai vasto come oggi di creare e diffondere contenuti permanenti, ricercabili, scalabili e replicabili. L’idea stessa di pubblico, tanto inteso come aggettivo che caratterizza uno spazio quanto inteso come audience, sta cambiando. Con esso cambia anche il concetto tradizionale di sfera pubblica.\nA partire da una introduzione che - muovendo da queste riflessioni - discuterà l’impatto dei social media sul concetto di sfera pubblica introducendo l’idea delle sfere pubbliche connesse, il contributo proposto tratterà dei limiti e potenzialità della ricerca sociologica sugli UGC (in particolare le esigenze di collaborazione fra discipline diverse e le questioni etiche) concentrando l’attenzione sul fenomeno Facebook. Facebook è il sito di social network più diffuso al mondo ed ospita dunque molta parte degli UGC prodotti in Italia e nel mondo. A renderlo un caso di particolare interesse non sono tuttavia solo le sue dimensioni, ma anche la sua particolare struttura basata su un complesso sistema di privacy che lo rende un oggetto di studio particolarmente impegnativo tanto sul piano della riflessione teorica che su quello della ricerca empirica."
+    },
+    {
       "title": "Io, i miei amici e il mondo: uno studio comparativo su Facebook e Badoo in Italia",
       "type": "book-chapter",
       "venue": "Codice Edizioni",
@@ -1515,46 +1555,6 @@
       "abstract": "Questo report descrive i risultati di un progetto finalizzato a sviluppare il prototipo di un tool che supporti e acceleri il lavoro di fact-checkers e debunkers identificando e classificando informazioni potenzialmente problematiche circolate sui social media con un approccio agnostico rispetto ai contenuti.",
       "crossref_type": "posted-content",
       "publisher": "Center for Open Science"
-    },
-    {
-      "title": "Facebook, Twitter & co. Una mutazione possibile per la ricerca sociale",
-      "type": "book-chapter",
-      "venue": "Nutrimenti",
-      "authors": "BOCCIA ARTIERI, GIOVANNI; GIGLIETTO, FABIO; ROSSI, LUCA",
-      "year": 2012,
-      "month": 1,
-      "day": 1,
-      "publicationDate": "2012-01-01",
-      "doi": null,
-      "citations": {
-        "scholar": 9,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null
-      },
-      "source_urls": {
-        "orcid": "https://ora.uniurb.it/handle/11576/2512186",
-        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:7Hz3ACDFbsoC",
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null,
-        "ora": "https://ora.uniurb.it/handle/11576/2512186"
-      },
-      "source_ids": {
-        "orcid": 133838437,
-        "scholar": "7Hz3ACDFbsoC",
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null,
-        "ora": "11576/2512186"
-      },
-      "metrics": {
-        "total_citations": 9,
-        "citation_sources": 1
-      },
-      "oraHandle": "11576/2512186",
-      "oaPdfUrl": null,
-      "abstract": "Nel corso degli ultimi anni si è assistito ad una straordinaria crescita della disponibilità di contenuti generati dagli utenti (UGC) in rete. Questi contenuti rappresentano un materiale di straordinario interesse per la ricerca sociologica. Blog, piattaforme per la condivisione dei contenuti e siti di social network (da ora in poi social media) consentono ad un pubblico mai vasto come oggi di creare e diffondere contenuti permanenti, ricercabili, scalabili e replicabili. L’idea stessa di pubblico, tanto inteso come aggettivo che caratterizza uno spazio quanto inteso come audience, sta cambiando. Con esso cambia anche il concetto tradizionale di sfera pubblica.\nA partire da una introduzione che - muovendo da queste riflessioni - discuterà l’impatto dei social media sul concetto di sfera pubblica introducendo l’idea delle sfere pubbliche connesse, il contributo proposto tratterà dei limiti e potenzialità della ricerca sociologica sugli UGC (in particolare le esigenze di collaborazione fra discipline diverse e le questioni etiche) concentrando l’attenzione sul fenomeno Facebook. Facebook è il sito di social network più diffuso al mondo ed ospita dunque molta parte degli UGC prodotti in Italia e nel mondo. A renderlo un caso di particolare interesse non sono tuttavia solo le sue dimensioni, ma anche la sua particolare struttura basata su un complesso sistema di privacy che lo rende un oggetto di studio particolarmente impegnativo tanto sul piano della riflessione teorica che su quello della ricerca empirica."
     },
     {
       "title": "Limiti e possibilità degli online social data",
@@ -2169,6 +2169,50 @@
       "abstract": "In the context of the cultural debate around the post-truth emerged in the last decade, the field of medicine seems to be an interesting place to observe the dialectic between traditional media and social media from which the action of counter-publics and polarized argumentative strategies emerge to defence their opinions. The paper presents the results of a research that concerns the analysis of the comments made on the Presa Diretta Facebook page, a Rai3 television program conducted by Riccardo Iacona, related to an episode – titling Charlatans – dedicated to cancer treatments. The research, using a mixed-methods approach related to the field of Internet Studies, draws on the analysis of 4,672 comments published by 1,377 unique users and collected from 35 posts on the page, in order to observe and to understand the typologies of comments and the quantitative volume of interactions, showing how the discursive strategies of Presa Diretta’s counterpublics are clear examples of the cultural debate around the concept of post-truth and its contradictions.",
       "crossref_type": "journal-article",
       "publisher": "Franco Angeli"
+    },
+    {
+      "title": "Navigating Coordination and Inauthentic Behaviour",
+      "type": "book-chapter",
+      "venue": "The Routledge Companion to Social Media and Politics",
+      "authors": "Giglietto, Fabio; Graham, Timothy; Righetti, Nicola",
+      "year": 2026,
+      "month": 6,
+      "day": 24,
+      "publicationDate": "2026-06-24",
+      "doi": "10.4324/9781003359524-24",
+      "citations": {
+        "scholar": 3,
+        "wos": null,
+        "scopus": 0,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": "https://doi.org/10.4324/9781003359524-24",
+        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:unp9ATQDT5gC",
+        "wos": null,
+        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105045453312&origin=inward",
+        "semanticScholar": null,
+        "ora": "https://ora.uniurb.it/handle/11576/2778671",
+        "crossref": "https://doi.org/10.4324/9781003359524-24"
+      },
+      "source_ids": {
+        "orcid": 218619884,
+        "scholar": "unp9ATQDT5gC",
+        "wos": null,
+        "scopus": "105045453312",
+        "semanticScholar": null,
+        "ora": "11576/2778671"
+      },
+      "metrics": {
+        "total_citations": 3,
+        "citation_sources": 2
+      },
+      "oraHandle": "11576/2778671",
+      "oaPdfUrl": null,
+      "abstract": "This chapter examines the emergence, detection, and ethical implications of coordinated and inauthentic behaviour on social media platforms. It traces the origins of the concept within platform governance frameworks, particularly Meta's efforts to define and police problematic online activity, before exploring how scholars and industry researchers have adopted and adapted the term in their own work. The chapter provides a critical overview of current detection methods and tools, highlighting both their technical innovations and the methodological challenges they face in distinguishing between legitimate activism and manipulative influence operations. It also considers how technological shifts, such as the rise of short-form video and generative artificial intelligence, are reshaping the dynamics of coordination and complicating detection efforts. Beyond technical debates, the chapter foregrounds the ethical and normative dimensions of this evolving field, emphasising the risks of false positives, the silencing of activism, and the lack of transparency in platform enforcement. By situating these issues within wider questions of accountability, legitimacy, and free expression, the chapter offers critical insights and recommendations for researchers, policymakers, and platforms navigating the complex terrain of online coordination and authenticity.",
+      "publisherUrl": "https://www.taylorfrancis.com/chapters/edit/10.4324/9781003359524-24/navigating-coordination-inauthentic-behaviour-fabio-giglietto-timothy-graham-nicola-righetti",
+      "crossref_type": "book-chapter",
+      "publisher": "Routledge"
     },
     {
       "title": "Synthetic seduction: Evolving visual persuasion in coordinated online gambling promotion with generative {AI}",
@@ -3844,50 +3888,6 @@
         "total_citations": 0,
         "citation_sources": 0
       }
-    },
-    {
-      "title": "Navigating Coordination and Inauthentic Behaviour",
-      "type": "book-chapter",
-      "venue": "The Routledge Companion to Social Media and Politics",
-      "authors": "Giglietto, Fabio; Graham, Timothy; Righetti, Nicola",
-      "year": 2026,
-      "month": 6,
-      "day": 24,
-      "publicationDate": "2026-06-24",
-      "doi": "10.4324/9781003359524-24",
-      "citations": {
-        "scholar": null,
-        "wos": null,
-        "scopus": 0,
-        "semanticScholar": null
-      },
-      "source_urls": {
-        "orcid": "https://doi.org/10.4324/9781003359524-24",
-        "scholar": null,
-        "wos": null,
-        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105045453312&origin=inward",
-        "semanticScholar": null,
-        "ora": "https://ora.uniurb.it/handle/11576/2778671",
-        "crossref": "https://doi.org/10.4324/9781003359524-24"
-      },
-      "source_ids": {
-        "orcid": 218619884,
-        "scholar": null,
-        "wos": null,
-        "scopus": "105045453312",
-        "semanticScholar": null,
-        "ora": "11576/2778671"
-      },
-      "metrics": {
-        "total_citations": 0,
-        "citation_sources": 1
-      },
-      "oraHandle": "11576/2778671",
-      "oaPdfUrl": null,
-      "abstract": "This chapter examines the emergence, detection, and ethical implications of coordinated and inauthentic behaviour on social media platforms. It traces the origins of the concept within platform governance frameworks, particularly Meta's efforts to define and police problematic online activity, before exploring how scholars and industry researchers have adopted and adapted the term in their own work. The chapter provides a critical overview of current detection methods and tools, highlighting both their technical innovations and the methodological challenges they face in distinguishing between legitimate activism and manipulative influence operations. It also considers how technological shifts, such as the rise of short-form video and generative artificial intelligence, are reshaping the dynamics of coordination and complicating detection efforts. Beyond technical debates, the chapter foregrounds the ethical and normative dimensions of this evolving field, emphasising the risks of false positives, the silencing of activism, and the lack of transparency in platform enforcement. By situating these issues within wider questions of accountability, legitimacy, and free expression, the chapter offers critical insights and recommendations for researchers, policymakers, and platforms navigating the complex terrain of online coordination and authenticity.",
-      "publisherUrl": "https://www.taylorfrancis.com/chapters/edit/10.4324/9781003359524-24/navigating-coordination-inauthentic-behaviour-fabio-giglietto-timothy-graham-nicola-righetti",
-      "crossref_type": "book-chapter",
-      "publisher": "Routledge"
     },
     {
       "title": "Beyond the share button: How partisan alignment, journalistic quality, and algorithmic governance shape what millions see on Facebook",
@@ -6294,11 +6294,11 @@
   ],
   "metrics": {
     "total_publications": 160,
-    "total_citations": 2404,
+    "total_citations": 2412,
     "h_index": 22,
-    "i10_index": 35,
+    "i10_index": 36,
     "citation_sources": {
-      "with_scholar": 148,
+      "with_scholar": 149,
       "with_wos": 20,
       "with_scopus": 25,
       "with_semanticScholar": 3,
@@ -6306,5 +6306,5 @@
       "with_ora": 112
     }
   },
-  "lastUpdated": "2026-09-25T11:15:30.616Z"
+  "lastUpdated": "2026-09-25T12:32:40.148Z"
 }
