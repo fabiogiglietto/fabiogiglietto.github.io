@@ -191,7 +191,7 @@ jobs:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
           SLACK_ALERT_CHANNEL: ${{ vars.OPS_SLACK_CHANNEL }}
-          ALERT_TEXT: ":rotating_light: ${{ github.repository }} / ${{ github.workflow }} failed (${{ github.event_name }}): ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          ALERT_TEXT: ":rotating_light: ${{ github.repository }} / ${{ github.workflow }} failed (${{ github.event_name }}${{ github.run_attempt != '1' && format(', attempt {0}', github.run_attempt) || '' }}): ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}${{ github.run_attempt != '1' && format('/attempts/{0}', github.run_attempt) || '' }}"
         run: |
           # Ops alerts belong in the channel OPS_SLACK_CHANNEL names, so the
           # explicit channel wins over the webhook. The webhook is bound to
