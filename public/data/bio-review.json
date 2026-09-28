@@ -1,43 +1,43 @@
 {
-  "reviewedAt": "2026-09-21T12:08:26.700Z",
+  "reviewedAt": "2026-09-28T13:03:33.305Z",
   "model": "claude-fable-5",
   "effort": "medium",
-  "summary": "Corrected the written-question claim (Commission, not Parliament), restored 'as of August 2026' stamps on MINE, memberships and the EACEA appointment, replaced the vague 'significant discussion' with the specific supported impact facts, added CooRnet's co-developers, and tightened the prose throughout.",
+  "summary": "Tightened the prose, stamped all status claims 'as of August 2026', dated the concluded vera.ai, PROMPT and EACEA roles, added the omitted European Parliament written-question citation, toned down the media-coverage framing to the sourced facts, and cut the unsourced closing filler.",
   "flags": [
     {
-      "claim": "cited in a formal written question to the European Parliament",
-      "issue": "The authoritative biography states the paper was cited in a written question to the European Commission (a European Parliament document, E-10-2026-000086), not a question addressed to the Parliament. Corrected in the revision.",
+      "claim": "Fabio Giglietto is a Full Professor of Internet Studies",
+      "issue": "The authoritative biography stamps this and other status claims 'as of August 2026'; the biography renders them as timeless present tense. Fixed by adding the date stamp to status statements (professorship, MINE activity, memberships).",
       "severity": "overstated"
     },
     {
-      "claim": "have generated significant academic and public discussion",
-      "issue": "No source supports 'significant academic discussion'. The sources support only that the paper was cited in a written question to the European Commission and covered by named Italian outlets. Replaced with the specific, supported facts.",
+      "claim": "In addition to evaluating project proposals as an independent expert for the European Education and Culture Executive Agency",
+      "issue": "Present-tense phrasing implies an open-ended ongoing role; the authoritative biography states the EACEA appointment ran to September 2026, stamped as of August 2026. Fixed by dating the appointment.",
       "severity": "overstated"
     },
     {
-      "claim": "which continues to serve as the primary institutional umbrella for his research line",
-      "issue": "The authoritative biography stamps MINE's active status 'as of August 2026'; the bio rendered it as a timeless present. Restored the dated stamp.",
+      "claim": "his recent empirical work on platform algorithms and political content visibility has attracted significant domestic media attention",
+      "issue": "The authoritative biography supports only that the 2025 Meta working paper drew national media coverage in the named outlets between January and April 2026; 'significant' and the broader framing are the writer's intensification. Rewritten to match the source's scope.",
       "severity": "overstated"
     },
     {
-      "claim": "He maintains active professional ties with global research communities as a member of",
-      "issue": "Memberships are stamped 'as of August 2026' in the authoritative biography; the bio stated them as a timeless present. Restored the dated stamp.",
-      "severity": "overstated"
+      "claim": "coverage appearing in outlets such as Il Sole 24 Ore, Il Resto del Carlino, Open, and Lumsanews",
+      "issue": "The biography omits the authoritative biography's fact that the 2025 Meta working paper was cited in a written question to the European Commission (European Parliament, 2026). Added to revised_html. Note: the vivereurbino.it web mention's claims of a Rai 3 'Report' feature and 'European Parliament inquiries' must NOT be used — the biography correctly avoided them and the revision keeps only the authoritative-biography-supported citation fact.",
+      "severity": "omission"
     },
     {
-      "claim": "evaluating project proposals for the European Education and Culture Executive Agency",
-      "issue": "Stated as an open-ended ongoing activity; the authoritative biography stamps the appointment 'as of August 2026' as running to September 2026. Revision preserves the dated status (and, per confidentiality rules, no call, topic or contract number is named).",
-      "severity": "overstated"
+      "claim": "serving as a work package leader for the vera.ai project",
+      "issue": "The authoritative biography states vera.ai concluded in October 2025 and PROMPT in February 2026; the biography leaves both undated, blurring the completed-event/status distinction. Dates added.",
+      "severity": "omission"
     },
     {
-      "claim": "he shares his expertise through courses such as Generative AI and Media alongside Digital Social Network Analysis",
-      "issue": "The authoritative biography says his teaching 'has included' these courses (completed/past framing), not that he currently teaches them; also awkward phrasing. Reworded to match the source's tense.",
+      "claim": "Through these collaborative networks and his ongoing research, he continues to investigate how digital platforms shape public discourse and the systemic challenges of information governance.",
+      "issue": "Empty closing abstraction that asserts an undated ongoing activity and adds no sourced fact; removed in the revision.",
       "severity": "style"
     },
     {
-      "claim": "co-developed CooRnet",
-      "issue": "The bio omitted the co-developers Nicola Righetti and Luca Rossi, named in the authoritative biography; added in the revision.",
-      "severity": "omission"
+      "claim": "To support the broader academic community, he maintains active memberships in several international organizations",
+      "issue": "Filler framing ('to support the broader academic community') not supported by any source, and memberships stated as timeless rather than as of August 2026; rewritten and stamped.",
+      "severity": "style"
     }
   ]
 }
