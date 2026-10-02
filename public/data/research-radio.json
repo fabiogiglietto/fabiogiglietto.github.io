@@ -1979,6 +1979,18 @@
       "author": "Niccolò Di Marco, Matteo Cinelli, Shinichi Nakano, Andrea Frosini",
       "doi": null,
       "own": false
+    },
+    {
+      "id": "bibtex:Tuters2026-vo",
+      "bibtexKey": "Tuters2026-vo",
+      "title": "How Conspiracy Spreads Without a Story",
+      "description": "AI-generated podcast discussion.\n\nReference:\nTuters, M. (2026). The Memeplex: Platform grammars and conspiratorial alignment around the Great Reset. https://doi.org/10.1177/14614448261446931",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Tuters2026-vo.mp3",
+      "pubDate": "2026-10-02T14:09:27.007721+00:00",
+      "duration": "10:43",
+      "author": "Marc Tuters",
+      "doi": "10.1177/14614448261446931",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -3961,6 +3973,18 @@
       "author": "Niccolò Di Marco, Matteo Cinelli, Shinichi Nakano, Andrea Frosini",
       "doi": null,
       "own": false
+    },
+    "Tuters2026-vo": {
+      "id": "bibtex:Tuters2026-vo",
+      "bibtexKey": "Tuters2026-vo",
+      "title": "How Conspiracy Spreads Without a Story",
+      "description": "AI-generated podcast discussion.\n\nReference:\nTuters, M. (2026). The Memeplex: Platform grammars and conspiratorial alignment around the Great Reset. https://doi.org/10.1177/14614448261446931",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Tuters2026-vo.mp3",
+      "pubDate": "2026-10-02T14:09:27.007721+00:00",
+      "duration": "10:43",
+      "author": "Marc Tuters",
+      "doi": "10.1177/14614448261446931",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -5499,9 +5523,21 @@
       "author": "Philipp Darius, Wiebke Drews, Andreas Neumeier, Jasmin Riedl",
       "doi": "10.1057/s41599-026-08773-w",
       "own": false
+    },
+    "10.1177/14614448261446931": {
+      "id": "bibtex:Tuters2026-vo",
+      "bibtexKey": "Tuters2026-vo",
+      "title": "How Conspiracy Spreads Without a Story",
+      "description": "AI-generated podcast discussion.\n\nReference:\nTuters, M. (2026). The Memeplex: Platform grammars and conspiratorial alignment around the Great Reset. https://doi.org/10.1177/14614448261446931",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Tuters2026-vo.mp3",
+      "pubDate": "2026-10-02T14:09:27.007721+00:00",
+      "duration": "10:43",
+      "author": "Marc Tuters",
+      "doi": "10.1177/14614448261446931",
+      "own": false
     }
   },
-  "totalEpisodes": 165,
-  "lastUpdated": "2026-10-01T17:07:32.161Z",
+  "totalEpisodes": 166,
+  "lastUpdated": "2026-10-02T06:50:52.991Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
