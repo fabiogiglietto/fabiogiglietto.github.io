@@ -1991,6 +1991,18 @@
       "author": "Marc Tuters",
       "doi": "10.1177/14614448261446931",
       "own": false
+    },
+    {
+      "id": "bibtex:Crichton2026-kn",
+      "bibtexKey": "Crichton2026-kn",
+      "title": "When AI Models Can't See Hate: The Politics of Sanitization",
+      "description": "AI-generated podcast discussion.\n\nReference:\nCrichton, F., & Torres, G. (2026). Re-generating hate. https://doi.org/10.1177/29768624261449726",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Crichton2026-kn.mp3",
+      "pubDate": "2026-10-03T14:09:27.007721+00:00",
+      "duration": "10:34",
+      "author": "Fraser Crichton, Guillen Torres",
+      "doi": "10.1177/29768624261449726",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -3985,6 +3997,18 @@
       "author": "Marc Tuters",
       "doi": "10.1177/14614448261446931",
       "own": false
+    },
+    "Crichton2026-kn": {
+      "id": "bibtex:Crichton2026-kn",
+      "bibtexKey": "Crichton2026-kn",
+      "title": "When AI Models Can't See Hate: The Politics of Sanitization",
+      "description": "AI-generated podcast discussion.\n\nReference:\nCrichton, F., & Torres, G. (2026). Re-generating hate. https://doi.org/10.1177/29768624261449726",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Crichton2026-kn.mp3",
+      "pubDate": "2026-10-03T14:09:27.007721+00:00",
+      "duration": "10:34",
+      "author": "Fraser Crichton, Guillen Torres",
+      "doi": "10.1177/29768624261449726",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -5535,9 +5559,21 @@
       "author": "Marc Tuters",
       "doi": "10.1177/14614448261446931",
       "own": false
+    },
+    "10.1177/29768624261449726": {
+      "id": "bibtex:Crichton2026-kn",
+      "bibtexKey": "Crichton2026-kn",
+      "title": "When AI Models Can't See Hate: The Politics of Sanitization",
+      "description": "AI-generated podcast discussion.\n\nReference:\nCrichton, F., & Torres, G. (2026). Re-generating hate. https://doi.org/10.1177/29768624261449726",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Crichton2026-kn.mp3",
+      "pubDate": "2026-10-03T14:09:27.007721+00:00",
+      "duration": "10:34",
+      "author": "Fraser Crichton, Guillen Torres",
+      "doi": "10.1177/29768624261449726",
+      "own": false
     }
   },
-  "totalEpisodes": 166,
-  "lastUpdated": "2026-10-02T06:50:52.991Z",
+  "totalEpisodes": 167,
+  "lastUpdated": "2026-10-02T11:54:45.909Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }

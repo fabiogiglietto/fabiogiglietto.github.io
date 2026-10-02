@@ -1030,6 +1030,49 @@
       "publisher": "Association for Computing Machinery (ACM)"
     },
     {
+      "title": "Steering the world from where we are: An introduction to the sociocybernetics perspective",
+      "type": "journal-article",
+      "venue": "Current Sociology",
+      "authors": "Almaguer-Kalixto, Patricia Eugenia; Giglietto, Fabio",
+      "year": 2019,
+      "month": 7,
+      "day": 15,
+      "publicationDate": "2019-07-15",
+      "doi": "10.1177/0011392119837573",
+      "citations": {
+        "scholar": 18,
+        "wos": 0,
+        "scopus": 3,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": "https://doi.org/10.1177/0011392119837573",
+        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:1DsIQWDZLl8C",
+        "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000471719800002&DestLinkType=FullRecord&DestApp=WOS_CPL",
+        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85064685029&origin=inward",
+        "semanticScholar": null,
+        "ora": "https://ora.uniurb.it/handle/11576/2668052",
+        "crossref": "https://doi.org/10.1177/0011392119837573"
+      },
+      "source_ids": {
+        "orcid": 56446314,
+        "scholar": "1DsIQWDZLl8C",
+        "wos": "WOS:000471719800002",
+        "scopus": "85064685029",
+        "semanticScholar": null,
+        "ora": "11576/2668052"
+      },
+      "metrics": {
+        "total_citations": 18,
+        "citation_sources": 3
+      },
+      "oraHandle": "11576/2668052",
+      "oaPdfUrl": null,
+      "abstract": "The concept of sociocybernetics has been shaped over the past 40 years at the intersection between first- and second-order cybernetics, constructive epistemology and systems science. This has produced a common language to bridge these different disciplines and a common basis for research analysing complex social problems. Sociocybernetics applies second-order cybernetics concepts to the study of societies, communities and groups in which first- and second-order reflexivity may play an important part, but it is not only a theoretical perspective in the abstract; it is also an approach that is applied to the analysis of cross-disciplinary issues such as systemic violence, the role of technology in society, environmental challenges, urban planning, community development, social identity and media representation, among many others. This article provides an introduction and a general conceptual description of second-order cybernetics in the broader context of cybernetics and systems sciences. It also presents the sociocybernetics debate as it stands today, after the 20-year anniversary of the Research Committee on Sociocybernetics’ (RC51) activities within the International Sociological Association (ISA) and its contributions to understanding and acting upon an increasingly complex social world. Sociocybernetics is the science of turbulent societies that somehow continue to adapt themselves, despite the complexities they are confronted with. The articles in this monograph introduce some of the current work of the research committee and showcase the extensive potential for sociocybernetics’ interaction with other areas of sociology and contemporary debate.",
+      "crossref_type": "journal-article",
+      "publisher": "SAGE Publications"
+    },
+    {
       "title": "Integrating Large Language Models in Political Discourse Studies on Social Media: Challenges of Validating an LLMs-in-the-loop Pipeline",
       "type": "journal-article",
       "venue": "Sociologica",
@@ -1069,49 +1112,6 @@
       "oaPdfUrl": "https://ora.uniurb.it/bitstream/11576/2746851/2/19524-marino.pdf",
       "abstract": "The integration of Large Language Models (LLMs) into research workflows has the potential to transform the study of political content on social media. This essay discusses a validation protocol addressing three key aspects of LLM-integrated research: the versatility of LLMs as general-purpose models, the granularity and nuance in LLM-uncovered narratives, and the limitations of human assessment capabilities. The protocol includes phases for fine-tuning and validating a binary political classifier, evaluating cluster coherence, and assessing machine-generated cluster label accuracy. We applied this protocol to validate an LLMs-in-the-loop research pipeline designed to analyze political content on Facebook during the Italian general elections of 2018 and 2022. Our approach classifies political links, clusters them by similarity, and generates descriptive labels for clusters. This methodology presents unique validation challenges, prompting a reevaluation of accuracy assessment strategies. By sharing our experiences, this essay aims to guide social scientists in employing LLM-based methodologies, highlighting challenges and advancing recommendations for colleagues intending to integrate these tools for political content analysis on social media.",
       "publisherUrl": "https://sociologica.unibo.it/article/view/19524"
-    },
-    {
-      "title": "Steering the world from where we are: An introduction to the sociocybernetics perspective",
-      "type": "journal-article",
-      "venue": "Current Sociology",
-      "authors": "Almaguer-Kalixto, Patricia Eugenia; Giglietto, Fabio",
-      "year": 2019,
-      "month": 7,
-      "day": 15,
-      "publicationDate": "2019-07-15",
-      "doi": "10.1177/0011392119837573",
-      "citations": {
-        "scholar": 17,
-        "wos": 0,
-        "scopus": 3,
-        "semanticScholar": null
-      },
-      "source_urls": {
-        "orcid": "https://doi.org/10.1177/0011392119837573",
-        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:1DsIQWDZLl8C",
-        "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000471719800002&DestLinkType=FullRecord&DestApp=WOS_CPL",
-        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85064685029&origin=inward",
-        "semanticScholar": null,
-        "ora": "https://ora.uniurb.it/handle/11576/2668052",
-        "crossref": "https://doi.org/10.1177/0011392119837573"
-      },
-      "source_ids": {
-        "orcid": 56446314,
-        "scholar": "1DsIQWDZLl8C",
-        "wos": "WOS:000471719800002",
-        "scopus": "85064685029",
-        "semanticScholar": null,
-        "ora": "11576/2668052"
-      },
-      "metrics": {
-        "total_citations": 17,
-        "citation_sources": 3
-      },
-      "oraHandle": "11576/2668052",
-      "oaPdfUrl": null,
-      "abstract": "The concept of sociocybernetics has been shaped over the past 40 years at the intersection between first- and second-order cybernetics, constructive epistemology and systems science. This has produced a common language to bridge these different disciplines and a common basis for research analysing complex social problems. Sociocybernetics applies second-order cybernetics concepts to the study of societies, communities and groups in which first- and second-order reflexivity may play an important part, but it is not only a theoretical perspective in the abstract; it is also an approach that is applied to the analysis of cross-disciplinary issues such as systemic violence, the role of technology in society, environmental challenges, urban planning, community development, social identity and media representation, among many others. This article provides an introduction and a general conceptual description of second-order cybernetics in the broader context of cybernetics and systems sciences. It also presents the sociocybernetics debate as it stands today, after the 20-year anniversary of the Research Committee on Sociocybernetics’ (RC51) activities within the International Sociological Association (ISA) and its contributions to understanding and acting upon an increasingly complex social world. Sociocybernetics is the science of turbulent societies that somehow continue to adapt themselves, despite the complexities they are confronted with. The articles in this monograph introduce some of the current work of the research committee and showcase the extensive potential for sociocybernetics’ interaction with other areas of sociology and contemporary debate.",
-      "crossref_type": "journal-article",
-      "publisher": "SAGE Publications"
     },
     {
       "title": "Alle radici del futuro. Dalla teoria dell’informazione ai sistemi sociali",
@@ -6294,7 +6294,7 @@
   ],
   "metrics": {
     "total_publications": 160,
-    "total_citations": 2414,
+    "total_citations": 2415,
     "h_index": 22,
     "i10_index": 36,
     "citation_sources": {
@@ -6306,5 +6306,5 @@
       "with_ora": 112
     }
   },
-  "lastUpdated": "2026-10-02T06:54:37.226Z"
+  "lastUpdated": "2026-10-02T11:58:29.856Z"
 }
