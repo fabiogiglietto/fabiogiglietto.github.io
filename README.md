@@ -110,7 +110,8 @@ S2_API_KEY=your-semantic-scholar-key
 
 # Social Media APIs (optional)
 LINKEDIN_ACCESS_TOKEN=your-linkedin-token
-LINKEDIN_PERSON_ID=your-person-id
+LINKEDIN_CLIENT_ID=your-linkedin-client-id
+LINKEDIN_CLIENT_SECRET=your-linkedin-client-secret
 MASTODON_ACCESS_TOKEN=your-mastodon-token
 ```
 
@@ -125,7 +126,8 @@ Add these secrets to your repository settings:
    - `WOS_API_KEY`
    - `S2_API_KEY`
    - `LINKEDIN_ACCESS_TOKEN`
-   - `LINKEDIN_PERSON_ID`
+   - `LINKEDIN_CLIENT_ID`
+   - `LINKEDIN_CLIENT_SECRET`
    - `MASTODON_ACCESS_TOKEN`
 
 ## 📅 Automated Workflows

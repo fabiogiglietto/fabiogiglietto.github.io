@@ -23,10 +23,10 @@ function checkAPISetup() {
     },
     linkedin: {
       name: 'LinkedIn',
-      required: process.env.LINKEDIN_ACCESS_TOKEN && process.env.LINKEDIN_PERSON_ID,
+      required: process.env.LINKEDIN_ACCESS_TOKEN,
       partial: process.env.LINKEDIN_CLIENT_ID && process.env.LINKEDIN_CLIENT_SECRET,
       description: 'Optional for LinkedIn posts collection',
-      setup: 'Run: node scripts/helpers/setup-linkedin.js'
+      setup: 'See the LinkedIn section of API_SETUP.md'
     },
     mastodon: {
       name: 'Mastodon',
@@ -101,8 +101,7 @@ function checkAPISetup() {
   
   if (apis.linkedin.partial && !apis.linkedin.required) {
     console.log('🔗 LinkedIn Setup In Progress:');
-    console.log('   Run: node scripts/helpers/linkedin-oauth.js');
-    console.log('   Then: node scripts/helpers/get-linkedin-person-id.js');
+    console.log('   Generate an access token: see the LinkedIn section of API_SETUP.md');
     console.log('');
   }
   
