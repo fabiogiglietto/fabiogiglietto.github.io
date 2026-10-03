@@ -7356,5 +7356,18 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "snurb.info/node/3362": {
+    "v": 1,
+    "cachedAt": "2026-10-03T17:01:56.067Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": true,
+      "relevanceScore": 0.4,
+      "reason": "The content is not recent (it references the ICA 2026 conference, which is a future event and likely a typo or placeholder in the source, but the actual blog post on snurb.info/node/3362 was published in May 2024, which is older than the 6-month recency threshold).",
+      "description": "A detailed media blog post summarizing Fabio Giglietto's presentation on how Facebook's algorithmic tweaks affect engagement with news URLs over time.",
+      "personMatch": "confirmed",
+      "isRecent": false
+    }
   }
 }
