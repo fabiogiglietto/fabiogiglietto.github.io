@@ -18,7 +18,7 @@ Jekyll-based GitHub Pages academic website for Fabio Giglietto. Integrates autom
 ## API Keys (`.env` file)
 - `GEMINI_API_KEY`: Required for AI content generation and web search grounding. Model IDs live in `scripts/helpers/gemini-client.js` (`MODELS.FLASH`, `MODELS.FLASH_LATEST`) — reference those rather than hardcoding a version here.
 - `WOS_API_KEY`, `SCOPUS_API_KEY`, `S2_API_KEY`: Publication citation sources
-- `LINKEDIN_ACCESS_TOKEN`, `LINKEDIN_PERSON_ID`, `MASTODON_ACCESS_TOKEN`: Social media collection
+- `LINKEDIN_ACCESS_TOKEN`, `MASTODON_ACCESS_TOKEN`: Social media collection. `LINKEDIN_CLIENT_ID` / `LINKEDIN_CLIENT_SECRET` are optional and used only to check when the LinkedIn token expires — see [LinkedIn posts](#linkedin-posts)
 - All collectors handle missing keys gracefully (return `null`, don't throw)
 
 ## Pipeline position
@@ -65,6 +65,43 @@ GitHub Actions workflow (`.github/workflows/`) runs daily at 06:00 UTC:
 - Generated content files are prefixed with `generated-`
 - Social media deduplication uses Gemini API with fallback to string-similarity
 - `sanitize-html` is used to clean AI-generated HTML before writing to includes
+
+## LinkedIn posts
+
+The News & Updates aggregator reads LinkedIn through the **Member Data
+Portability API** (`scripts/helpers/linkedin-portability.js`): Snapshot API,
+`MEMBER_SHARE_INFO` domain, scope `r_dma_portability_self_serve`. It is the
+EU-DMA self-serve product, open to members in the EEA and Switzerland, and the
+app must be attached to LinkedIn's "Member Data Portability (Member) Default
+Company" page. Setup: `API_SETUP.md`.
+
+Do not go back to `/v2/posts`, `/v2/ugcPosts` or `/v2/shares`. They need
+`r_member_social`, which LinkedIn grants to approved partners only; the earlier
+integration was built on them and no LinkedIn post ever reached `news.yml`.
+
+- **The token is renewed by hand.** It lasts one year — the current one expires
+  on 2027-10-01 — and nothing refreshes it. The previous one
+  expired on 2025-08-08 and went unnoticed for fourteen months, because
+  LinkedIn collection never fails the run — the 401 was only a log line. It now
+  raises a `LinkedIn` warning annotation on the Actions run — on failure, and
+  from 14 days before expiry when the client ID and secret are set.
+- **Only public feed posts are published.** `selectPublicPosts()` keeps
+  visibility `MEMBER_NETWORK` (the snapshot's label for an ordinary "Anyone"
+  post) and `PUBLIC`, and drops every other value, including ones it has never
+  seen. Verified 2026-10-02: all 122 rows were `MEMBER_NETWORK`, and 11 of 12
+  sampled — every recent one — were readable logged-out; the exception was a
+  2011 post. The label for a connections-only post has not been observed, so
+  do not widen the allow-list on a guess. Each run logs the values it saw.
+- **Group posts are dropped by their link, not their visibility.** They carry
+  `MEMBER_NETWORK` too; only the `urn:li:groupPost` in `ShareLink` tells them
+  apart. Undated rows are dropped rather than dated today.
+- The snapshot is built after consent, one domain at a time: profile data came
+  within minutes, `MEMBER_SHARE_INFO` between 7 and 24 hours later. Until then
+  the domain answers 404.
+- The snapshot endpoint accepts `Linkedin-Version: 202312` only (anything else
+  is a 426), and its `paging.total` is unreliable — pages are followed until
+  there is no `next` link or a 404. In practice all 122 rows came on one page,
+  newest first.
 
 ## Dependency pins
 

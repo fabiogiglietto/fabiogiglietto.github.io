@@ -21,9 +21,11 @@ S2_API_KEY=your-semantic-scholar-api-key
 ### Social Media APIs (For News & Updates section)
 
 ```env
-# LinkedIn API (Optional)
+# LinkedIn Member Data Portability API (Optional)
 LINKEDIN_ACCESS_TOKEN=your-linkedin-access-token
-LINKEDIN_PERSON_ID=your-linkedin-person-id
+# Optional: lets a run warn before the token above expires
+LINKEDIN_CLIENT_ID=your-linkedin-client-id
+LINKEDIN_CLIENT_SECRET=your-linkedin-client-secret
 
 # Mastodon API (Optional, for enhanced access)
 MASTODON_ACCESS_TOKEN=your-mastodon-access-token
@@ -33,85 +35,71 @@ MASTODON_ACCESS_TOKEN=your-mastodon-access-token
 
 ### LinkedIn API
 
-LinkedIn integration requires several steps to set up properly. 
+LinkedIn posts are read through the **Member Data Portability API**, the
+self-serve product LinkedIn offers under the EU Digital Markets Act. It is
+available only to members located in the EEA or Switzerland.
 
-#### Quick Start (Recommended)
-Run the guided setup helper:
-```bash
-node scripts/helpers/setup-linkedin.js
-```
+The ordinary post endpoints (`/v2/posts`, `/v2/ugcPosts`, `/v2/shares`) are not
+an option: they require `r_member_social`, which LinkedIn grants to approved
+partners only. An app with "Sign In with LinkedIn" and "Share on LinkedIn" can
+write posts but never read them back.
 
-This script will guide you through the entire process and check your setup status.
+#### Step 1: Create the developer app
+1. Go to the [LinkedIn Developer Portal](https://www.linkedin.com/developers/apps/) and click "Create app".
+2. For **LinkedIn Page**, select
+   [Member Data Portability (Member) Default Company](https://www.linkedin.com/company/member-data-portability-member-default-company).
+   The product in step 2 is offered only to apps attached to this page — an app
+   attached to any other page (including the one created for the old
+   integration) cannot request it.
+3. Fill in the remaining fields and create the app.
 
-#### Manual Setup Guide
-If you prefer to set up manually, follow this complete guide:
+#### Step 2: Request the product
+In the app's **Products** tab, request access to **Member Data Portability API
+(Member)** and accept the terms. Access is granted immediately.
 
-#### Step 1: Create LinkedIn Developer Application
-1. Go to [LinkedIn Developer Portal](https://developer.linkedin.com/)
-2. Sign in with your LinkedIn account
-3. Click "Create app"
-4. Fill out the application form:
-   - **App name**: Your website name (e.g., "Fabio Giglietto Academic Website")
-   - **LinkedIn Page**: Your LinkedIn company/personal page
-   - **Privacy policy URL**: Your website privacy policy
-   - **App logo**: Upload a logo (optional)
-5. Click "Create app"
+#### Step 3: Generate an access token
+1. Open [OAuth Token Tools](https://www.linkedin.com/developers/tools/oauth)
+   (Developer Portal → Docs and tools) and click "Create token".
+2. Select the app from step 1 and the scope `r_dma_portability_self_serve`.
+3. Click "Request access token", sign in and allow access.
+4. Copy the token.
 
-#### Step 2: Configure App Settings
-1. In your app dashboard, go to the "Auth" tab
-2. Add authorized redirect URLs:
-   ```
-   http://localhost:3000/callback
-   ```
-3. In the "Products" tab, request access to:
-   - **Sign In with LinkedIn using OpenID Connect**
-   - **Share on LinkedIn** (if available)
-4. Note your Client ID and Client Secret from the "Auth" tab
+#### Step 4: Store the credentials
+- `LINKEDIN_ACCESS_TOKEN`: the token from step 3.
+- `LINKEDIN_CLIENT_ID` / `LINKEDIN_CLIENT_SECRET` (optional): from the app's
+  **Auth** tab. They are used only to ask LinkedIn when the token expires. They
+  must belong to the same app as the token.
 
-#### Step 3: Set Up Environment Variables
-Add these to your `.env` file:
-```env
-LINKEDIN_CLIENT_ID=your_client_id_from_step_2
-LINKEDIN_CLIENT_SECRET=your_client_secret_from_step_2
-```
+Put them in `.env` for local runs and in the repository secrets for the daily
+workflow (`gh secret set LINKEDIN_ACCESS_TOKEN`).
 
-#### Step 4: Generate Access Token and Person ID
-Run the automated setup script:
-```bash
-# Install dependencies if needed
-npm install express axios dotenv
+#### Token renewal
+The token lasts one year (issued 2026-10-01, expires 2027-10-01) and is renewed
+by repeating step 3 and updating the secret. Collection never fails the run, so
+watch for the **LinkedIn** warning annotation on the Actions run summary:
+- `access token expires in N day(s)` — raised from 14 days before expiry, if
+  the client ID and secret are set.
+- `posts not collected: access token expired or revoked` — the token is dead
+  and LinkedIn posts have stopped appearing.
 
-# Run the OAuth helper
-node scripts/helpers/linkedin-oauth.js
-```
+#### What gets published
+Only feed posts with visibility `MEMBER_NETWORK` or `PUBLIC` that carry a date
+and text of their own. `MEMBER_NETWORK` is the snapshot's label for an ordinary
+"Anyone" post. Posts made inside a group, bare reshares and any other visibility
+value are dropped.
 
-This will:
-1. Start a local server on http://localhost:3000
-2. Open your browser to authorize the application
-3. Automatically generate both your access token AND Person ID
-4. Display both values for you to copy to your `.env` file
+The visibility label for a connections-only post has not been observed. Each
+run logs the values it saw (`LinkedIn visibility values: {...}`); if a new value
+appears, check what it means before adding it to `PUBLIC_VISIBILITIES` in
+`scripts/helpers/linkedin-portability.js`.
 
-#### Step 5: Verify Setup
-Test your LinkedIn integration:
-```bash
-# Test Person ID retrieval (if you need to get it separately)
-node scripts/helpers/get-linkedin-person-id.js
-
-# Test the full social media collection
-node scripts/collectors/social-media-aggregator.js
-```
-
-#### LinkedIn API Limitations
-- **Rate Limits**: LinkedIn API has strict rate limits
-- **Token Expiration**: Access tokens expire (usually 60 days)
-- **Scope Limitations**: Some APIs require special approval
-- **Testing**: Use LinkedIn's testing tools for development
-
-#### Troubleshooting LinkedIn Setup
-- **"Invalid redirect URI"**: Make sure `http://localhost:3000/callback` is added to your app
-- **"Invalid client"**: Check your Client ID and Secret are correct
-- **"Insufficient permissions"**: Request additional products in your app dashboard
-- **Token expired**: Re-run the OAuth flow to get a new token
+#### Troubleshooting
+- **401**: token expired or revoked — generate a new one.
+- **403**: the app lacks the Member Data Portability API (Member) product, or
+  the token was generated without the `r_dma_portability_self_serve` scope.
+- **`no post data available` right after the first token**: LinkedIn builds the
+  snapshot after consent is given, one domain at a time. Profile data was served
+  within minutes; `MEMBER_SHARE_INFO` took between 7 and 24 hours.
 
 ### Mastodon API
 1. Go to your Mastodon instance (aoir.social) 
@@ -125,7 +113,7 @@ node scripts/collectors/social-media-aggregator.js
 
 ## API Usage Notes
 
-- **LinkedIn**: Requires proper OAuth flow and has rate limits
+- **LinkedIn**: Member Data Portability API (EEA/Switzerland only); token renewed by hand
 - **BlueSky**: Public API, no authentication needed for public posts
 - **Mastodon**: Public posts accessible without token, token provides enhanced access
 - **Gemini**: Required for AI content generation, web search grounding, and smart summarization
@@ -134,7 +122,7 @@ node scripts/collectors/social-media-aggregator.js
 
 The system will work with partial API availability:
 - Without Gemini: Uses basic deduplication instead of AI summarization
-- Without LinkedIn: Skips LinkedIn posts
+- Without LinkedIn (no token, or an expired one): Skips LinkedIn posts and raises a warning
 - Without Mastodon token: Uses public API (limited)
 - Without any social APIs: Falls back to manual news entries in `_data/news.yml`
 
