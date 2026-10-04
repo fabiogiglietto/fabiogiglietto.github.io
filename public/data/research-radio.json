@@ -2003,6 +2003,18 @@
       "author": "Fraser Crichton, Guillen Torres",
       "doi": "10.1177/29768624261449726",
       "own": false
+    },
+    {
+      "id": "bibtex:Rogers2026-zz",
+      "bibtexKey": "Rogers2026-zz",
+      "title": "How Facebook Redefined Fake News Out of Existence",
+      "description": "AI-generated podcast discussion.\n\nReference:\nRogers, R., & Koronska, K. (2026). The performance of borderline content on Facebook. https://doi.org/10.4324/9781003693192-4",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Rogers2026-zz.mp3",
+      "pubDate": "2026-10-04T14:09:27.007721+00:00",
+      "duration": "10:28",
+      "author": "Richard Rogers, Kamila Koronska",
+      "doi": "10.4324/9781003693192-4",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -4009,6 +4021,18 @@
       "author": "Fraser Crichton, Guillen Torres",
       "doi": "10.1177/29768624261449726",
       "own": false
+    },
+    "Rogers2026-zz": {
+      "id": "bibtex:Rogers2026-zz",
+      "bibtexKey": "Rogers2026-zz",
+      "title": "How Facebook Redefined Fake News Out of Existence",
+      "description": "AI-generated podcast discussion.\n\nReference:\nRogers, R., & Koronska, K. (2026). The performance of borderline content on Facebook. https://doi.org/10.4324/9781003693192-4",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Rogers2026-zz.mp3",
+      "pubDate": "2026-10-04T14:09:27.007721+00:00",
+      "duration": "10:28",
+      "author": "Richard Rogers, Kamila Koronska",
+      "doi": "10.4324/9781003693192-4",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -5571,9 +5595,21 @@
       "author": "Fraser Crichton, Guillen Torres",
       "doi": "10.1177/29768624261449726",
       "own": false
+    },
+    "10.4324/9781003693192-4": {
+      "id": "bibtex:Rogers2026-zz",
+      "bibtexKey": "Rogers2026-zz",
+      "title": "How Facebook Redefined Fake News Out of Existence",
+      "description": "AI-generated podcast discussion.\n\nReference:\nRogers, R., & Koronska, K. (2026). The performance of borderline content on Facebook. https://doi.org/10.4324/9781003693192-4",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Rogers2026-zz.mp3",
+      "pubDate": "2026-10-04T14:09:27.007721+00:00",
+      "duration": "10:28",
+      "author": "Richard Rogers, Kamila Koronska",
+      "doi": "10.4324/9781003693192-4",
+      "own": false
     }
   },
-  "totalEpisodes": 167,
-  "lastUpdated": "2026-10-03T16:58:15.427Z",
+  "totalEpisodes": 168,
+  "lastUpdated": "2026-10-04T11:48:33.936Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
