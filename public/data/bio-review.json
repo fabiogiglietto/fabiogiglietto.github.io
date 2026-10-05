@@ -1,42 +1,37 @@
 {
-  "reviewedAt": "2026-09-28T13:03:33.305Z",
+  "reviewedAt": "2026-10-05T13:45:10.375Z",
   "model": "claude-fable-5",
   "effort": "medium",
-  "summary": "Tightened the prose, stamped all status claims 'as of August 2026', dated the concluded vera.ai, PROMPT and EACEA roles, added the omitted European Parliament written-question citation, toned down the media-coverage framing to the sourced facts, and cut the unsourced closing filler.",
+  "summary": "Tightened the prose, restored the dated 'as of August 2026' status framing for teaching, MINE and the EU expert roles, corrected the mischaracterized vera.ai/PROMPT project aims, and added the omitted European Parliament citation and Lumsanews coverage.",
   "flags": [
     {
-      "claim": "Fabio Giglietto is a Full Professor of Internet Studies",
-      "issue": "The authoritative biography stamps this and other status claims 'as of August 2026'; the biography renders them as timeless present tense. Fixed by adding the date stamp to status statements (professorship, MINE activity, memberships).",
+      "claim": "both of which completed their mandates to analyze digital narrative propagation and systemic platform risks",
+      "issue": "The fact sheet describes vera.ai as developing AI-based tools for countering disinformation and PROMPT as monitoring disinformation narratives in Europe; 'systemic platform risks' belongs to his separate JRC expert-group role, not to either project. Reworded to match the authoritative descriptions.",
       "severity": "overstated"
     },
     {
-      "claim": "In addition to evaluating project proposals as an independent expert for the European Education and Culture Executive Agency",
-      "issue": "Present-tense phrasing implies an open-ended ongoing role; the authoritative biography states the EACEA appointment ran to September 2026, stamped as of August 2026. Fixed by dating the appointment.",
+      "claim": "Beyond his university duties, Giglietto collaborates with European institutions",
+      "issue": "Present tense implies an ongoing collaboration. The authoritative biography states the JRC expert-group work in the past tense (reports delivered in 2026) and stamps only the EACEA appointment as current 'as of August 2026' (running to September 2026). Revised to past tense with the dated stamp preserved.",
       "severity": "overstated"
     },
     {
-      "claim": "his recent empirical work on platform algorithms and political content visibility has attracted significant domestic media attention",
-      "issue": "The authoritative biography supports only that the 2025 Meta working paper drew national media coverage in the named outlets between January and April 2026; 'significant' and the broader framing are the writer's intensification. Rewritten to match the source's scope.",
+      "claim": "In the classroom, he instructs students in areas such as Generative AI and Media alongside Digital Social Network Analysis",
+      "issue": "The authoritative biography says his teaching 'has included' these courses; the present-tense 'instructs' asserts a currency the source does not stamp. Revised to 'his teaching has included'.",
       "severity": "overstated"
     },
     {
-      "claim": "coverage appearing in outlets such as Il Sole 24 Ore, Il Resto del Carlino, Open, and Lumsanews",
-      "issue": "The biography omits the authoritative biography's fact that the 2025 Meta working paper was cited in a written question to the European Commission (European Parliament, 2026). Added to revised_html. Note: the vivereurbino.it web mention's claims of a Rai 3 'Report' feature and 'European Parliament inquiries' must NOT be used — the biography correctly avoided them and the revision keeps only the authoritative-biography-supported citation fact.",
+      "claim": "His recent research examining platform policies has been covered by national Italian outlets including Il Sole 24 Ore, Il Resto del Carlino, and Open.",
+      "issue": "The authoritative biography also states that the 2025 Meta working paper was cited in a written question to the European Commission (European Parliament, 2026) and lists Lumsanews among the covering outlets; both facts were dropped. Restored in the revision.",
       "severity": "omission"
     },
     {
-      "claim": "serving as a work package leader for the vera.ai project",
-      "issue": "The authoritative biography states vera.ai concluded in October 2025 and PROMPT in February 2026; the biography leaves both undated, blurring the completed-event/status distinction. Dates added.",
-      "severity": "omission"
+      "claim": "which serves as the active institutional umbrella for his research line following a succession of completed, externally funded sub-projects",
+      "issue": "MINE's active status is stamped 'as of August 2026' in the authoritative biography; the bio states it as a timeless present. Revised to carry the date stamp.",
+      "severity": "overstated"
     },
     {
-      "claim": "Through these collaborative networks and his ongoing research, he continues to investigate how digital platforms shape public discourse and the systemic challenges of information governance.",
-      "issue": "Empty closing abstraction that asserts an undated ongoing activity and adds no sourced fact; removed in the revision.",
-      "severity": "style"
-    },
-    {
-      "claim": "To support the broader academic community, he maintains active memberships in several international organizations",
-      "issue": "Filler framing ('to support the broader academic community') not supported by any source, and memberships stated as timeless rather than as of August 2026; rewritten and stamped.",
+      "claim": "Giglietto has also contributed significantly to European research consortia",
+      "issue": "Filler intensifier ('significantly') and empty abstraction; similar padding appears throughout ('operates at the intersection', 'completed their mandates'). Tightened in the revision.",
       "severity": "style"
     }
   ]
