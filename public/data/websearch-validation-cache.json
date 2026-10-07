@@ -7369,5 +7369,31 @@
       "personMatch": "confirmed",
       "isRecent": false
     }
+  },
+  "podcasts.apple.com/us/podcast/research-radio/id1772648873": {
+    "v": 1,
+    "cachedAt": "2026-10-07T12:44:32.837Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An AI-generated podcast curated by Fabio Giglietto that features deep-dive discussions on computational social science, platform data governance, and online disinformation.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "veraai.eu/news/who-is-behind-veraai-meet-the-people-and-teams-that-make-up-the-veraai-project-8-team-of-university-of-urbino-carlo-bo": {
+    "v": 1,
+    "cachedAt": "2026-10-07T12:44:33.820Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A profile feature on the University of Urbino Carlo Bo's research team led by Fabio Giglietto, detailing their work on detecting coordinated sharing behavior and disinformation for the European vera.ai project.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }
