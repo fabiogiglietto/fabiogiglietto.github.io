@@ -1,43 +1,54 @@
-- date: '2026-09-11'
+- date: '2026-10-09'
   content: >-
-    A new Agent Skill has been released to assist researchers in navigating the
-    Meta Content Library API through Large Language Models. The tool automates
-    complex coding workflows, handling API quotas, secure research environment
-    constraints, and query structures for academic data extraction.
-  url: >-
-    https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7504087293931053056
+    A new theoretical framework examines how generative AI systems mark a
+    structural shift from the 2010s 'platform society', shifting market
+    dominance from network-driven platform architectures to cognitive lock-in
+    and concentrated capital investments.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7514348708734386177
   platforms:
     - LinkedIn
-- date: '2026-09-24'
-  content: >-
-    Sage has launched *Disinformation: An Interdisciplinary Journal*, a diamond
-    open-access publication operating with zero author fees. Joining the
-    editorial board, the initiative aims to advance international, critical
-    scholarship on information ecosystems and label definitions.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7508912820802203652
-  platforms:
-    - LinkedIn
-- date: '2026-10-02'
-  content: >-
-    Recent research highlights how commercial generative AI systems reshape
-    far-right propaganda rather than eliminating it. By translating extremist
-    images into text prompts, the study demonstrates that regenerated outputs
-    sanitize explicit hate symbols while retaining underlying ideological cues.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7511680888590610432
-  platforms:
     - BlueSky
+    - Mastodon
+  toread: true
+- date: '2026-10-06'
+  content: >-
+    Recent research scrutinizes the EU's Digital Services Act researcher access
+    provision, demonstrating how platform corporations strategically narrow the
+    legal definition of 'data' to restrict external academic oversight.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7513129394480218113
+  platforms:
     - LinkedIn
+    - BlueSky
     - Mastodon
   toread: true
 - date: '2026-10-03'
   content: >-
-    An election-cycle analysis of Facebook content moderation shows that while
-    overall engagement with problematic material dropped significantly by 2024,
-    high-performing borderline content shifted almost exclusively to right-wing
-    sources.
+    An empirical study tracking Meta's moderation across three US presidential
+    elections highlights how right-wing borderline content increasingly
+    dominates high-reach engagement despite overall declines in problematic
+    material performance.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7512196136351383552
   platforms:
-    - BlueSky
     - LinkedIn
+    - BlueSky
     - Mastodon
   toread: true
+- date: '2026-09-24'
+  content: >-
+    A newly launched open-access publication, *Disinformation: An
+    Interdisciplinary Journal*, is now accepting submissions. Published by Sage
+    with zero article processing charges, the peer-reviewed venue focuses on
+    critical, globally inclusive perspectives on information disorders.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7508912820802203652
+  platforms:
+    - LinkedIn
+- date: '2026-09-11'
+  content: >-
+    A custom Agent Skill for Large Language Models has been released to automate
+    and streamline the creation of valid Meta Content Library API code, easing
+    the technical barrier for social media researchers navigating complex API
+    restrictions.
+  url: >-
+    https://www.linkedin.com/feed/update/urn%3Ali%3AugcPost%3A7504087293931053056
+  platforms:
+    - LinkedIn
