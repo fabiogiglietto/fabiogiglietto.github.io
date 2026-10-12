@@ -1,37 +1,47 @@
 {
-  "reviewedAt": "2026-10-05T13:45:10.375Z",
+  "reviewedAt": "2026-10-12T14:33:56.167Z",
   "model": "claude-fable-5",
   "effort": "medium",
-  "summary": "Tightened the prose, restored the dated 'as of August 2026' status framing for teaching, MINE and the EU expert roles, corrected the mischaracterized vera.ai/PROMPT project aims, and added the omitted European Parliament citation and Lumsanews coverage.",
+  "summary": "Tightened the prose, corrected five overstated or wrongly tensed claims (teaching, concluded EU projects, the Meta paper's scope, the EU citation, and RC51 membership), restored CooRnet's co-developers and the paper's own quantified findings, and flagged the omitted JRC and EACEA expert roles.",
   "flags": [
     {
-      "claim": "both of which completed their mandates to analyze digital narrative propagation and systemic platform risks",
-      "issue": "The fact sheet describes vera.ai as developing AI-based tools for countering disinformation and PROMPT as monitoring disinformation narratives in Europe; 'systemic platform risks' belongs to his separate JRC expert-group role, not to either project. Reworded to match the authoritative descriptions.",
+      "claim": "he teaches courses on Generative AI and Media as well as Digital Social Network Analysis",
+      "issue": "The authoritative biography says his teaching 'has included' these courses, a dated status stamped as of August 2026; the present-tense 'teaches courses' asserts a currency the source does not. Revised to 'his teaching has included'.",
       "severity": "overstated"
     },
     {
-      "claim": "Beyond his university duties, Giglietto collaborates with European institutions",
-      "issue": "Present tense implies an ongoing collaboration. The authoritative biography states the JRC expert-group work in the past tense (reports delivered in 2026) and stamps only the EACEA appointment as current 'as of August 2026' (running to September 2026). Revised to past tense with the dated stamp preserved.",
+      "claim": "His recent European research appointments include leading Work Package 4 on the vera.ai project and serving as a partner on the PROMPT initiative",
+      "issue": "Both projects are concluded per the authoritative biography (vera.ai in October 2025, PROMPT in February 2026); the original framing reads as ongoing appointments. Revised to past tense with end dates.",
       "severity": "overstated"
     },
     {
-      "claim": "In the classroom, he instructs students in areas such as Generative AI and Media alongside Digital Social Network Analysis",
-      "issue": "The authoritative biography says his teaching 'has included' these courses; the present-tense 'instructs' asserts a currency the source does not stamp. Revised to 'his teaching has included'.",
+      "claim": "an empirical audit evaluating Meta's political content reduction policies and their influence on electoral visibility",
+      "issue": "OWN RESEARCH FINDINGS describe an audit of the policy's effect on Italian parliamentarians' Facebook visibility, quantified (e.g. -72% per-post reach at trough for re-elected MPs); 'electoral visibility' is a vaguer, broader framing not stated in the paper. Revised to the paper's own scope and quantification.",
       "severity": "overstated"
     },
     {
-      "claim": "His recent research examining platform policies has been covered by national Italian outlets including Il Sole 24 Ore, Il Resto del Carlino, and Open.",
-      "issue": "The authoritative biography also states that the 2025 Meta working paper was cited in a written question to the European Commission (European Parliament, 2026) and lists Lumsanews among the covering outlets; both facts were dropped. Restored in the revision.",
+      "claim": "was formally cited in parliamentary proceedings at the European level",
+      "issue": "The authoritative biography states the paper was cited in a written question to the European Commission (E-10-2026-000086); 'parliamentary proceedings' suggests something broader. Revised to the precise fact.",
+      "severity": "overstated"
+    },
+    {
+      "claim": "an active member of the International Communication Association, the Association of Internet Researchers, the Italian Association for Political Communication, and Research Committee 51 of the International Sociological Association",
+      "issue": "The authoritative biography lists current membership (as of August 2026) only in ICA, AoIR, and the Italian Association for Political Communication; for RC51 it states he 'has served on the board' — a completed role, not a current membership. Revised accordingly.",
+      "severity": "overstated"
+    },
+    {
+      "claim": "co-developed CooRnet",
+      "issue": "The biography omitted the co-developers Nicola Righetti and Luca Rossi named in the authoritative biography. Restored in the revision.",
       "severity": "omission"
     },
     {
-      "claim": "which serves as the active institutional umbrella for his research line following a succession of completed, externally funded sub-projects",
-      "issue": "MINE's active status is stamped 'as of August 2026' in the authoritative biography; the bio states it as a timeless present. Revised to carry the date stamp.",
-      "severity": "overstated"
+      "claim": "(entire biography)",
+      "issue": "The authoritative biography records his service as a member of the Joint Research Centre expert group on systemic risks of very large online platforms (contributing to ECAT under DSA Article 40(12)) and his appointment as evaluator and rapporteur for EACEA (running to September 2026 as of August 2026); the biography drops both. If added, the EACEA mention must not name the specific call, topic or programme, nor print contract numbers.",
+      "severity": "omission"
     },
     {
-      "claim": "Giglietto has also contributed significantly to European research consortia",
-      "issue": "Filler intensifier ('significantly') and empty abstraction; similar padding appears throughout ('operates at the intersection', 'completed their mandates'). Tightened in the revision.",
+      "claim": "guiding students in the computational mapping and critical analysis of complex communication ecosystems, algorithmic visibility, and emerging media technologies",
+      "issue": "Empty abstraction unsupported by any source and adding no information; cut in the revision.",
       "severity": "style"
     }
   ]
