@@ -7421,5 +7421,31 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-74d1bfcd": {
+    "v": 1,
+    "cachedAt": "2026-10-16T14:41:46.571Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "A news article covering Professor Fabio Giglietto's study at the University of Urbino analyzing Meta's algorithm and its impact on political content visibility and engagement during elections.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "ilrestodelcarlino.it/rimini/cronaca/la-citta-incorona-i-protagonisti-della-promozione-congressuale-aef617d3": {
+    "v": 1,
+    "cachedAt": "2026-10-16T14:41:47.813Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": true,
+      "relevanceScore": 0.4,
+      "reason": "The content focuses on a local tourism/congress ambassador award ceremony rather than academic research in social media analysis, computational social science, or information disorder.",
+      "description": "News coverage of the Premio Rimini Mundi award ceremony naming Fabio Giglietto as an ambassador for promoting international academic and scientific events in the Rimini region.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }
