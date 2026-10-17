@@ -2111,6 +2111,18 @@
       "author": "Ernesto de León, Jakob Bæk Kristensen, Mykola Makhortykh, Eva Mayerhöffer, Silke Adam",
       "doi": "10.31235/osf.io/grne7_v1",
       "own": false
+    },
+    {
+      "id": "bibtex:Miller2026-cp",
+      "bibtexKey": "Miller2026-cp",
+      "title": "When AI Writers Meet Crowdsourced Fact-Checking at Scale",
+      "description": "AI-generated podcast discussion.\n\nReference:\nMiller, B., Baxter, J., Chao, J., Coleman, K., Hilgard, S., & Ortiz, D. (2026). Community-driven API and AI writer design for openly scaling Community Notes. http://arxiv.org/abs/2609.40067v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Miller2026-cp.mp3",
+      "pubDate": "2026-10-18T16:26:55.993096+00:00",
+      "duration": "9:03",
+      "author": "Brad Miller, Jay Baxter, Jiansong Chao, Keith Coleman, Sophie Hilgard, Daniel Ortiz",
+      "doi": null,
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -4225,6 +4237,18 @@
       "author": "Ernesto de León, Jakob Bæk Kristensen, Mykola Makhortykh, Eva Mayerhöffer, Silke Adam",
       "doi": "10.31235/osf.io/grne7_v1",
       "own": false
+    },
+    "Miller2026-cp": {
+      "id": "bibtex:Miller2026-cp",
+      "bibtexKey": "Miller2026-cp",
+      "title": "When AI Writers Meet Crowdsourced Fact-Checking at Scale",
+      "description": "AI-generated podcast discussion.\n\nReference:\nMiller, B., Baxter, J., Chao, J., Coleman, K., Hilgard, S., & Ortiz, D. (2026). Community-driven API and AI writer design for openly scaling Community Notes. http://arxiv.org/abs/2609.40067v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Miller2026-cp.mp3",
+      "pubDate": "2026-10-18T16:26:55.993096+00:00",
+      "duration": "9:03",
+      "author": "Brad Miller, Jay Baxter, Jiansong Chao, Keith Coleman, Sophie Hilgard, Daniel Ortiz",
+      "doi": null,
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -5897,7 +5921,7 @@
       "own": false
     }
   },
-  "totalEpisodes": 176,
-  "lastUpdated": "2026-10-16T14:38:10.376Z",
+  "totalEpisodes": 177,
+  "lastUpdated": "2026-10-17T10:09:56.721Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
