@@ -1,47 +1,42 @@
 {
-  "reviewedAt": "2026-10-12T14:33:56.167Z",
+  "reviewedAt": "2026-10-19T12:16:44.694Z",
   "model": "claude-fable-5",
   "effort": "medium",
-  "summary": "Tightened the prose, corrected five overstated or wrongly tensed claims (teaching, concluded EU projects, the Meta paper's scope, the EU citation, and RC51 membership), restored CooRnet's co-developers and the paper's own quantified findings, and flagged the omitted JRC and EACEA expert roles.",
+  "summary": "Replaced the unsupported causal claim that the Meta paper 'informed parliamentary debates' with the sourced fact that it was cited in a written question to the European Commission, restored date-stamped status framing for memberships and the EACEA role (adding 'rapporteur'), corrected 'extensive' coverage and 'platform architecture' to the sources' weaker wording, and tightened the prose throughout.",
   "flags": [
     {
-      "claim": "he teaches courses on Generative AI and Media as well as Digital Social Network Analysis",
-      "issue": "The authoritative biography says his teaching 'has included' these courses, a dated status stamped as of August 2026; the present-tense 'teaches courses' asserts a currency the source does not. Revised to 'his teaching has included'.",
+      "claim": "informed parliamentary debates, leading to a written inquiry in the European Parliament",
+      "issue": "The authoritative biography states only that the paper was cited in a written question to the European Commission (European Parliament document E-10-2026-000086). It does not say the study informed debates or caused the question; the causal 'leading to' framing of a third party's action is not supported. Revised to 'was cited in a written question to the European Commission tabled in the European Parliament'.",
       "severity": "overstated"
     },
     {
-      "claim": "His recent European research appointments include leading Work Package 4 on the vera.ai project and serving as a partner on the PROMPT initiative",
-      "issue": "Both projects are concluded per the authoritative biography (vera.ai in October 2025, PROMPT in February 2026); the original framing reads as ongoing appointments. Revised to past tense with end dates.",
+      "claim": "extensive news coverage across Italian media outlets",
+      "issue": "The authoritative biography says the paper drew national media coverage in Italy between January and April 2026; 'extensive' adds an intensity the source does not assert. Revised to 'national media coverage'.",
       "severity": "overstated"
     },
     {
-      "claim": "an empirical audit evaluating Meta's political content reduction policies and their influence on electoral visibility",
-      "issue": "OWN RESEARCH FINDINGS describe an audit of the policy's effect on Italian parliamentarians' Facebook visibility, quantified (e.g. -72% per-post reach at trough for re-elected MPs); 'electoral visibility' is a vaguer, broader framing not stated in the paper. Revised to the paper's own scope and quantification.",
+      "claim": "digital platform architecture",
+      "issue": "The authoritative biography describes his research as the 'analysis of digital platforms', not platform architecture. Revised to match the source's wording in original prose.",
       "severity": "overstated"
     },
     {
-      "claim": "was formally cited in parliamentary proceedings at the European level",
-      "issue": "The authoritative biography states the paper was cited in a written question to the European Commission (E-10-2026-000086); 'parliamentary proceedings' suggests something broader. Revised to the precise fact.",
+      "claim": "He is an active member of the International Communication Association",
+      "issue": "Membership and professorship are status claims stamped 'as of August 2026' in the authoritative biography; the draft stated them as timeless present. Revised to carry the date stamp.",
       "severity": "overstated"
     },
     {
-      "claim": "an active member of the International Communication Association, the Association of Internet Researchers, the Italian Association for Political Communication, and Research Committee 51 of the International Sociological Association",
-      "issue": "The authoritative biography lists current membership (as of August 2026) only in ICA, AoIR, and the Italian Association for Political Communication; for RC51 it states he 'has served on the board' — a completed role, not a current membership. Revised accordingly.",
-      "severity": "overstated"
-    },
-    {
-      "claim": "co-developed CooRnet",
-      "issue": "The biography omitted the co-developers Nicola Righetti and Luca Rossi named in the authoritative biography. Restored in the revision.",
+      "claim": "serving as a project proposal evaluator for the European Education and Culture Executive Agency",
+      "issue": "Two problems: the authoritative biography names the role as 'evaluator and rapporteur', and the appointment is a dated status (as of August 2026, running to September 2026), not an open-ended ongoing role. Revised to include the rapporteur designation and the dated framing. The call/topic was correctly left unnamed, as required.",
       "severity": "omission"
     },
     {
-      "claim": "(entire biography)",
-      "issue": "The authoritative biography records his service as a member of the Joint Research Centre expert group on systemic risks of very large online platforms (contributing to ECAT under DSA Article 40(12)) and his appointment as evaluator and rapporteur for EACEA (running to September 2026 as of August 2026); the biography drops both. If added, the EACEA mention must not name the specific call, topic or programme, nor print contract numbers.",
+      "claim": "co-created CooRnet",
+      "issue": "The authoritative biography names the co-developers (Nicola Righetti and Luca Rossi) and specifies that CooRTweet is an independent package by Righetti and Balluff that Giglietto did not co-develop; the draft left both attributions implicit. Added to prevent misattribution.",
       "severity": "omission"
     },
     {
-      "claim": "guiding students in the computational mapping and critical analysis of complex communication ecosystems, algorithmic visibility, and emerging media technologies",
-      "issue": "Empty abstraction unsupported by any source and adding no information; cut in the revision.",
+      "claim": "His 2025 study on Meta's political content reduction policy",
+      "issue": "The authoritative biography and his own publication list describe it as a working paper (SocArXiv preprint); 'study' slightly inflates its publication status. Revised to 'working paper'.",
       "severity": "style"
     }
   ]

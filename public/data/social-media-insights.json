@@ -1,33 +1,38 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a strong, highly targeted academic and professional presence across decentralized and professional platforms (LinkedIn, Bluesky, Mastodon), totaling 3,580 followers. His audience shows exceptionally high engagement with updates on computational social science research, tool releases, grant announcements, and academic hiring opportunities.",
+  "overallSummary": "Fabio Giglietto maintains an active professional presence across niche social and professional platforms (LinkedIn, Bluesky, Mastodon) with a combined follower base of 3,580. His posts focus on academic accomplishments, research findings, tool releases (CooRnet v2.0), and recruitment, yielding strong relative engagement from a highly targeted audience in academic and computational social science communities.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 5.18,
+    "averageEngagementRate": 5.32,
     "mostEngagingPlatform": "Bluesky"
   },
   "contentThemes": [
     {
-      "theme": "Coordinated Inauthentic Behavior & Disinformation",
-      "description": "Posts discussing research methodology, tools (like CooRnet v2.0), and publications on detecting coordinated campaigns."
+      "theme": "Research Announcements & Publications",
+      "description": "Sharing newly published papers, grants, and study findings on coordinated inauthentic behavior and information operations."
     },
     {
-      "theme": "Academic Hiring & Opportunities",
-      "description": "Announcements regarding open postdoc positions and PhD research opportunities."
+      "theme": "Software & Tool Releases",
+      "description": "Updates on open-source tools developed by the research team, such as CooRnet v2.0."
     },
     {
-      "theme": "Grants & Milestones",
-      "description": "Celebratory posts regarding team awards, grant wins, and upcoming conference presentations."
+      "theme": "Academic Opportunities & Hiring",
+      "description": "Postdoctoral and PhD recruitment announcements for computational social science roles."
+    },
+    {
+      "theme": "Conference & Event Participation",
+      "description": "Promoting upcoming presentations and methodological discussions on disinformation research."
     }
   ],
   "recommendations": [
-    "Increase post frequency on Mastodon, leveraging its niche academic tech audience with deeper technical breakdowns of software updates like CooRnet.",
-    "Cross-promote engagement on LinkedIn by attaching visual assets, infographics, or link previews to publication and hiring posts to boost organic reach further.",
-    "Utilize interactive formats such as Q&A threads or polls on Bluesky to convert high repost numbers into active comment discussions."
+    "Increase posting frequency on LinkedIn, as it holds the largest raw audience (1,850 followers) and generates high total interactions per post.",
+    "Leverage Bluesky's high amplification (reposts) by featuring direct links or visuals (charts, paper summaries) to expand reach beyond existing followers.",
+    "Cross-promote tool releases like CooRnet across all platforms simultaneously with tailored messaging for both technical and general academic audiences.",
+    "Encourage active community discussions by ending posts with open questions regarding methodology or policy implications."
   ],
   "platformInsights": {
-    "bluesky": "Highest overall engagement rate (~6.14%) per post, with particularly strong share/repost rates for research calls and publication announcements.",
-    "mastodon": "Niche but responsive audience focused heavily on tool updates and methodological discussion, achieving solid engagement relative to audience size.",
-    "linkedin": "Drives the largest absolute engagement volume (likes and comments), making it the most effective platform for major career milestones, funding announcements, and recruitment."
+    "bluesky": "Yields the highest relative engagement rate (6.14% average ER) with a strong repost-to-like ratio, showing high audience willingness to amplify research papers and academic opportunities.",
+    "mastodon": "Provides steady baseline engagement among a specialized academic audience (aoir.social instance), with tool updates performing significantly better than general discussions.",
+    "linkedin": "Drives the highest total interaction volume per post (average of 90 interactions per post), making it the most effective platform for grant announcements and hiring posts."
   },
   "topPerformingContent": [
     {
