@@ -62,7 +62,7 @@
       "publicationDate": "2012-01-01",
       "doi": "10.1080/15228835.2012.743797",
       "citations": {
-        "scholar": 309,
+        "scholar": 310,
         "wos": 289,
         "scopus": null,
         "semanticScholar": 178
@@ -85,7 +85,7 @@
         "ora": "11576/2529385"
       },
       "metrics": {
-        "total_citations": 309,
+        "total_citations": 310,
         "citation_sources": 3
       },
       "oraHandle": "11576/2529385",
@@ -113,7 +113,7 @@
       "publicationDate": "2020-05-11",
       "doi": "10.1080/1369118X.2020.1739732",
       "citations": {
-        "scholar": 255,
+        "scholar": 254,
         "wos": 0,
         "scopus": 125,
         "semanticScholar": null
@@ -136,7 +136,7 @@
         "ora": "11576/2674874"
       },
       "metrics": {
-        "total_citations": 255,
+        "total_citations": 254,
         "citation_sources": 3
       },
       "oraHandle": "11576/2674874",
@@ -319,49 +319,6 @@
       }
     },
     {
-      "title": "Coordinated Link Sharing Behavior as a Signal to Surface Sources of Problematic Information on Facebook",
-      "type": "conference-paper",
-      "venue": "International Conference on Social Media and Society",
-      "authors": "Giglietto, Fabio; Righetti, Nicola; Rossi, Luca; Marino, Giada",
-      "year": 2020,
-      "month": 1,
-      "day": 1,
-      "publicationDate": "2020-01-01",
-      "doi": "10.1145/3400806.3400817",
-      "citations": {
-        "scholar": 63,
-        "wos": 0,
-        "scopus": 27,
-        "semanticScholar": null
-      },
-      "source_urls": {
-        "orcid": "https://ora.uniurb.it/handle/11576/2677666",
-        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:-nhnvRiOwuoC",
-        "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000779244300011&DestLinkType=FullRecord&DestApp=WOS_CPL",
-        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85088113452&origin=inward",
-        "semanticScholar": null,
-        "ora": "https://ora.uniurb.it/handle/11576/2677666",
-        "crossref": "https://doi.org/10.1145/3400806.3400817"
-      },
-      "source_ids": {
-        "orcid": 133838365,
-        "scholar": "-nhnvRiOwuoC",
-        "wos": "WOS:000779244300011",
-        "scopus": "85088113452",
-        "semanticScholar": null,
-        "ora": "11576/2677666"
-      },
-      "metrics": {
-        "total_citations": 63,
-        "citation_sources": 3
-      },
-      "oraHandle": "11576/2677666",
-      "oaPdfUrl": null,
-      "abstract": "Despite widespread concern over the role played by disinformation during recent electoral processes, the intrinsic elusiveness of the subject hinders efforts aimed at estimating its prevalence and effect. While there has been proliferation of attempts to define, understand and fight the spread of problematic information in contemporary media ecosystems, most of these attempts focus on detecting false content and/or bad actors. For instance, several existing studies rely on lists of problematic content or news media sources compiled by fact-checkers. However, these lists may quickly become obsolete leading to unreliable estimates. Using media manipulation as a frame, along with a revised version of the “coordinated inauthentic behavior” original definition, in this paper, we argue for a wider ecological focus. Leveraging a method designed to detect “coordinated links sharing behavior” (CLSB), we introduce and assess an approach aimed at creating and keeping lists of potentially problematic sources updated by analyzing the URLs shared on Facebook by public groups, pages, and verified profiles. We show how CLSB is consistently associated with higher risks of encountering problematic news sources across three different datasets of news stories and can be thus used as a signal to support manual and automatic detection of problematic information.",
-      "crossref_type": "proceedings-article",
-      "publisher": "ACM"
-    },
-    {
       "title": "To be or not to be charlie: Twitter hashtags as a discourse and counter-discourse in the aftermath of the 2015 charlie hebdo shooting in France",
       "type": "conference-paper",
       "venue": "CEUR Workshop Proceedings",
@@ -401,6 +358,49 @@
       "oaPdfUrl": null,
       "abstract": "Following a shooting attack by two self-proclaimed Islamist gunmen at the offices of French satirical weekly Charlie Hebdo on 7th January 2015, there emerged the hashtag #JeSuisCharlie on Twitter as an expression of condolences for the victims, solidarity, and support for the magazine's right to free speech. Almost simultaneously, however, there was also #JeNeSuisPasCharlie explicitly countering the former, affirmative hashtag. In this paper, we analyse 74,047 tweets containing #JeNeSuisPasCharlie posted between 7th and 11th January. Our network analysis and semantic cluster analysis of those 74,047 tweets reveal that the hashtag in question constitutes a form of resistance to the mainstream framing of the issue as freedom of expression being threatened by religious intolerance and violence. The resistance was manifested through three phases: sharing condolences but indicating a reservation against the mainstream frame (Grief); voicing out resistance against the frame (Resistance); and developing and deploying alternative frames such as hate speech, Eurocentrism, and Islamophobia (Alternatives). The hashtag in this context served as a vehicle through which users formed, enhanced, and declared their self-identity.",
       "publisherUrl": "http://ceur-ws.org/Vol-1395/paper_12.pdf"
+    },
+    {
+      "title": "Coordinated Link Sharing Behavior as a Signal to Surface Sources of Problematic Information on Facebook",
+      "type": "conference-paper",
+      "venue": "International Conference on Social Media and Society",
+      "authors": "Giglietto, Fabio; Righetti, Nicola; Rossi, Luca; Marino, Giada",
+      "year": 2020,
+      "month": 1,
+      "day": 1,
+      "publicationDate": "2020-01-01",
+      "doi": "10.1145/3400806.3400817",
+      "citations": {
+        "scholar": 62,
+        "wos": 0,
+        "scopus": 27,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": "https://ora.uniurb.it/handle/11576/2677666",
+        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:-nhnvRiOwuoC",
+        "wos": "https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000779244300011&DestLinkType=FullRecord&DestApp=WOS_CPL",
+        "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85088113452&origin=inward",
+        "semanticScholar": null,
+        "ora": "https://ora.uniurb.it/handle/11576/2677666",
+        "crossref": "https://doi.org/10.1145/3400806.3400817"
+      },
+      "source_ids": {
+        "orcid": 133838365,
+        "scholar": "-nhnvRiOwuoC",
+        "wos": "WOS:000779244300011",
+        "scopus": "85088113452",
+        "semanticScholar": null,
+        "ora": "11576/2677666"
+      },
+      "metrics": {
+        "total_citations": 62,
+        "citation_sources": 3
+      },
+      "oraHandle": "11576/2677666",
+      "oaPdfUrl": null,
+      "abstract": "Despite widespread concern over the role played by disinformation during recent electoral processes, the intrinsic elusiveness of the subject hinders efforts aimed at estimating its prevalence and effect. While there has been proliferation of attempts to define, understand and fight the spread of problematic information in contemporary media ecosystems, most of these attempts focus on detecting false content and/or bad actors. For instance, several existing studies rely on lists of problematic content or news media sources compiled by fact-checkers. However, these lists may quickly become obsolete leading to unreliable estimates. Using media manipulation as a frame, along with a revised version of the “coordinated inauthentic behavior” original definition, in this paper, we argue for a wider ecological focus. Leveraging a method designed to detect “coordinated links sharing behavior” (CLSB), we introduce and assess an approach aimed at creating and keeping lists of potentially problematic sources updated by analyzing the URLs shared on Facebook by public groups, pages, and verified profiles. We show how CLSB is consistently associated with higher risks of encountering problematic news sources across three different datasets of news stories and can be thus used as a signal to support manual and automatic detection of problematic information.",
+      "crossref_type": "proceedings-article",
+      "publisher": "ACM"
     },
     {
       "title": "Social Media and Italian Universities: An Empirical Study on the Adoption and Use of Facebook, Twitter and Youtube",
@@ -501,7 +501,7 @@
       "publicationDate": "2019-09-19",
       "doi": "10.1080/1369118X.2019.1629692",
       "citations": {
-        "scholar": 49,
+        "scholar": 48,
         "wos": 0,
         "scopus": 22,
         "semanticScholar": null
@@ -524,7 +524,7 @@
         "ora": "11576/2668426"
       },
       "metrics": {
-        "total_citations": 49,
+        "total_citations": 48,
         "citation_sources": 3
       },
       "oraHandle": "11576/2668426",
@@ -578,6 +578,40 @@
       "publisher": "Informa UK Limited"
     },
     {
+      "title": "Mapping Italian News Media Political Coverage in the Lead-Up of 2018 General Election",
+      "authors": "Giglietto, Fabio; Iannelli, Laura; Rossi, Luca; Valeriani, Augusto; Righetti, Nicola; Carabini, Francesca; Marino, Giada; Usai, Stefano; Zurovac, Elisabetta",
+      "venue": "SSRN Electronic Journal",
+      "year": 2018,
+      "doi": "10.2139/ssrn.3179930",
+      "citations": {
+        "scholar": 39,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": null,
+        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:Dem6FJhTUoYC",
+        "wos": null,
+        "scopus": null,
+        "crossref": "https://doi.org/10.2139/ssrn.3179930",
+        "semanticScholar": null
+      },
+      "source_ids": {
+        "orcid": null,
+        "scholar": "Dem6FJhTUoYC",
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "crossref_type": "journal-article",
+      "publisher": "Elsevier BV",
+      "metrics": {
+        "total_citations": 39,
+        "citation_sources": 1
+      }
+    },
+    {
       "title": "Twitter Use During TV: A Full-Season Analysis of #serviziopubblico Hashtag",
       "type": "journal-article",
       "venue": "Journal of Broadcasting &amp; Electronic Media",
@@ -620,40 +654,6 @@
       "publisherUrl": "https://www.tandfonline.com/eprint/4ZPDdZvvzye7ZgHbwPac/full?target=10.1080/08838151.2016.1164162",
       "crossref_type": "journal-article",
       "publisher": "Informa UK Limited"
-    },
-    {
-      "title": "Mapping Italian News Media Political Coverage in the Lead-Up of 2018 General Election",
-      "authors": "Giglietto, Fabio; Iannelli, Laura; Rossi, Luca; Valeriani, Augusto; Righetti, Nicola; Carabini, Francesca; Marino, Giada; Usai, Stefano; Zurovac, Elisabetta",
-      "venue": "SSRN Electronic Journal",
-      "year": 2018,
-      "doi": "10.2139/ssrn.3179930",
-      "citations": {
-        "scholar": 38,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null
-      },
-      "source_urls": {
-        "orcid": null,
-        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:Dem6FJhTUoYC",
-        "wos": null,
-        "scopus": null,
-        "crossref": "https://doi.org/10.2139/ssrn.3179930",
-        "semanticScholar": null
-      },
-      "source_ids": {
-        "orcid": null,
-        "scholar": "Dem6FJhTUoYC",
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null
-      },
-      "crossref_type": "journal-article",
-      "publisher": "Elsevier BV",
-      "metrics": {
-        "total_citations": 38,
-        "citation_sources": 1
-      }
     },
     {
       "title": "Ethics and Interdisciplinarity in Computational Social Science",
@@ -743,49 +743,6 @@
       "publisher": "Elsevier BV"
     },
     {
-      "title": "Understanding Coordinated and Inauthentic Link Sharing Behavior on Facebook in the Run-up to 2018 General Election and 2019 European Election in Italy",
-      "type": "preprint",
-      "venue": "Center for Open Science",
-      "authors": "Giglietto, Fabio; Righetti, Nicola; Marino, Giada",
-      "year": 2019,
-      "month": 9,
-      "day": 20,
-      "publicationDate": "2019-09-20",
-      "doi": "10.31235/osf.io/3jteh",
-      "citations": {
-        "scholar": 30,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null
-      },
-      "source_urls": {
-        "orcid": "https://doi.org/10.31235/osf.io/3jteh",
-        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:uVUOdF_882EC",
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null,
-        "ora": "https://ora.uniurb.it/handle/11576/2671453",
-        "crossref": "https://doi.org/10.31235/osf.io/3jteh"
-      },
-      "source_ids": {
-        "orcid": 61895054,
-        "scholar": "uVUOdF_882EC",
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null,
-        "ora": "11576/2671453"
-      },
-      "metrics": {
-        "total_citations": 30,
-        "citation_sources": 1
-      },
-      "oraHandle": "11576/2671453",
-      "oaPdfUrl": null,
-      "abstract": "The year 2016 marked a turning point in the history of relations between the Internet, social media, public opinion, and politics. Online practices of grassroots participation, which used to be considered the prerogative of democratizing forces fighting established powers, turned out to be an effective platform for far-right extremists. In the attempt to make sense of what happened and develop workable solutions, stakeholders rapidly moved through the different stages of grief, ranging from denial to anger and acceptance. As a case in point, we trace the path through these stages which moved from an initial denial of the problem to concern over “fake news” and hoaxes, to finally focusing on the behavior of certain actors on the platform. Starting from the current phase, we analyze “coordinated inauthentic behavior”, a concept only briefly defined in Facebook public statements which, nevertheless, is useful to frame future studies insofar as both the idea of coordination and authenticity have been studied in the literature. Leveraging these works, we suggest a definition that is at once framed in this literature and easy to operationalize. Using this definition and an unprecedented combination of CrowdTangle API (a tool for accessing Facebook and other social media data) and two datasets of Italian political news stories published in the run-up to the 2018 Italian general election and 2019 European election, we developed a method that led to the identification of several networks of pages/groups/verified public profiles (“entities”) that shared the same political news stories on Facebook within a very short period of time (10 in 2018, composed of 28 entities, and 50 in 2019, composed of 143 entities). We call this behavior “coordinated link sharing”. By analyzing the social media profiles of such coordinated entities, we observed that while some of them were clearly political, others presented themselves as entertainment venues, despite sharing political content too. Since the political news stories shared by these non-political entities can reach a broad audience which is largely unguarded against attempts to influence, we describe their behavior as “inauthentic”. Further analyses showed that the news shared by the coordinated networks received a Facebook engagement higher than other news included in our dataset, that much news boosted anti-immigration and far-right propaganda and that several of the news outlets shared by these networks were already blacklisted by fact-checkers.",
-      "crossref_type": "posted-content",
-      "publisher": "Center for Open Science"
-    },
-    {
       "title": "Facebook reactions in the context of politics and social issues: a systematic literature review",
       "type": "journal-article",
       "venue": "FRONTIERS IN SOCIOLOGY",
@@ -796,7 +753,7 @@
       "publicationDate": "2024-01-01",
       "doi": "10.3389/fsoc.2024.1379265",
       "citations": {
-        "scholar": 28,
+        "scholar": 29,
         "wos": 0,
         "scopus": 12,
         "semanticScholar": null
@@ -819,7 +776,7 @@
         "ora": "11576/2740792"
       },
       "metrics": {
-        "total_citations": 28,
+        "total_citations": 29,
         "citation_sources": 3
       },
       "oraHandle": "11576/2740792",
@@ -827,6 +784,49 @@
       "abstract": "In February 2016, Facebook expanded the original \"Like\" button by introducing five additional \"Reactions\"-Love, Haha, Wow, Sad, and Angry-using modified versions of Unicode emojis. These reactions enable users to express more nuanced emotions towards posts. This literature review investigates scholarly research on user behavior in response to these reactions, with a focus on a broad spectrum of socioeconomic and psychological issues. We conducted a systematic search across databases including Scopus and Google Scholar, using keywords such as \"Facebook\" and \"Reaction,\" combined with various key phrases and Boolean operators. Our review synthesizes sixty-four articles published from 2016 to 2023, exploring diverse topics such as political news, far-right and extremist parties, racism, and hate speech during the COVID-19 pandemic. We organized these articles by theme and publication date. Our meta-analysis reveals that lifestyle and entertainment posts predominantly receive positive reactions, while sociopolitical content tends to elicit a broader spectrum of emotions, including negative sentiments. Furthermore, emotionally charged content consistently attracts higher volumes of reactions, regardless of sentiment. This research highlights the intricate relationship between user reactions and content characteristics, providing deeper insights into the dynamics of online engagement. By understanding these interaction patterns, we gain a better grasp of emotional responses and engagement levels, which ultimately shape online discourse and user interactions.",
       "crossref_type": "journal-article",
       "publisher": "Frontiers Media SA"
+    },
+    {
+      "title": "Understanding Coordinated and Inauthentic Link Sharing Behavior on Facebook in the Run-up to 2018 General Election and 2019 European Election in Italy",
+      "type": "preprint",
+      "venue": "Center for Open Science",
+      "authors": "Giglietto, Fabio; Righetti, Nicola; Marino, Giada",
+      "year": 2019,
+      "month": 9,
+      "day": 20,
+      "publicationDate": "2019-09-20",
+      "doi": "10.31235/osf.io/3jteh",
+      "citations": {
+        "scholar": 29,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": "https://doi.org/10.31235/osf.io/3jteh",
+        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:uVUOdF_882EC",
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": "https://ora.uniurb.it/handle/11576/2671453",
+        "crossref": "https://doi.org/10.31235/osf.io/3jteh"
+      },
+      "source_ids": {
+        "orcid": 61895054,
+        "scholar": "uVUOdF_882EC",
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": "11576/2671453"
+      },
+      "metrics": {
+        "total_citations": 29,
+        "citation_sources": 1
+      },
+      "oraHandle": "11576/2671453",
+      "oaPdfUrl": null,
+      "abstract": "The year 2016 marked a turning point in the history of relations between the Internet, social media, public opinion, and politics. Online practices of grassroots participation, which used to be considered the prerogative of democratizing forces fighting established powers, turned out to be an effective platform for far-right extremists. In the attempt to make sense of what happened and develop workable solutions, stakeholders rapidly moved through the different stages of grief, ranging from denial to anger and acceptance. As a case in point, we trace the path through these stages which moved from an initial denial of the problem to concern over “fake news” and hoaxes, to finally focusing on the behavior of certain actors on the platform. Starting from the current phase, we analyze “coordinated inauthentic behavior”, a concept only briefly defined in Facebook public statements which, nevertheless, is useful to frame future studies insofar as both the idea of coordination and authenticity have been studied in the literature. Leveraging these works, we suggest a definition that is at once framed in this literature and easy to operationalize. Using this definition and an unprecedented combination of CrowdTangle API (a tool for accessing Facebook and other social media data) and two datasets of Italian political news stories published in the run-up to the 2018 Italian general election and 2019 European election, we developed a method that led to the identification of several networks of pages/groups/verified public profiles (“entities”) that shared the same political news stories on Facebook within a very short period of time (10 in 2018, composed of 28 entities, and 50 in 2019, composed of 143 entities). We call this behavior “coordinated link sharing”. By analyzing the social media profiles of such coordinated entities, we observed that while some of them were clearly political, others presented themselves as entertainment venues, despite sharing political content too. Since the political news stories shared by these non-political entities can reach a broad audience which is largely unguarded against attempts to influence, we describe their behavior as “inauthentic”. Further analyses showed that the news shared by the coordinated networks received a Facebook engagement higher than other news included in our dataset, that much news boosted anti-immigration and far-right propaganda and that several of the news outlets shared by these networks were already blacklisted by fact-checkers.",
+      "crossref_type": "posted-content",
+      "publisher": "Center for Open Science"
     },
     {
       "title": "A Workflow to Detect, Monitor, and Update Lists of Coordinated Social Media Accounts Across Time: The Case of the 2022 Italian Election",
@@ -1680,48 +1680,6 @@
       "abstract": "During the last few years the Internet has been increasingly used by people as a read-write medium.  Thanks to the dropped prices and skills necessary to afford and use technologies aimed to create digital contents, a large amount of people in the world is now able to produce persistent digital information. A large share of this information is today exposed to a mass audience on the Internet. The aim of this paper is to present a vision and few examples of how this large amount of data might be used for sociological research. From the theoretical point of view this kind of researches drawn on the concept of social semantics developed by Niklas Luhmann. Social semantics, once crystallized in books is today also available in online conversations. The networks of interpersonal communications, when computer mediated, becomes observable and, as a consequence, social scientists have access to invaluable new data. Today, the online data have four characteristics that tend to increase even more the sociological value of this conversations. As a matter of fact, the online network of communications is in fact persistent, searchable, replicable and addressed to an invisible audience. Due to these properties online conversations may be analyzed with standard content analysis qualitative or quantitative techniques. The paper presents the theoretical framework for researches based upon the analysis of online conversations."
     },
     {
-      "title": "Adapting to Mitigation Efforts: Evolving Strategies of Coordinated Link Sharing on Facebook",
-      "type": "other",
-      "venue": "SSRN Electronic Journal",
-      "authors": "Giglietto, Fabio; Terenzi, Massimo; Marino, Giada; Righetti, Nicola; Rossi, Luca",
-      "year": 2020,
-      "month": 1,
-      "day": 1,
-      "publicationDate": "2020-01-01",
-      "doi": "10.2139/ssrn.3775469",
-      "citations": {
-        "scholar": 7,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null
-      },
-      "source_urls": {
-        "orcid": "https://ora.uniurb.it/handle/11576/2703873",
-        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:YsrPvlHIBpEC",
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null,
-        "ora": "https://ora.uniurb.it/handle/11576/2703873",
-        "crossref": "https://doi.org/10.2139/ssrn.3775469"
-      },
-      "source_ids": {
-        "orcid": 133838370,
-        "scholar": "YsrPvlHIBpEC",
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null,
-        "ora": "11576/2703873"
-      },
-      "metrics": {
-        "total_citations": 7,
-        "citation_sources": 1
-      },
-      "oraHandle": "11576/2703873",
-      "oaPdfUrl": null,
-      "crossref_type": "journal-article",
-      "publisher": "Elsevier BV"
-    },
-    {
       "title": "Intimità connessa. Intimità e amicizia tra gli utenti italiani di Facebook",
       "type": "book-chapter",
       "venue": "FrancoAngeli",
@@ -1874,6 +1832,48 @@
       "oaPdfUrl": null,
       "abstract": "The construction of the public discourse on health is affected by the transformations of the media ecosystem. The spread of the internet and social media that have entered the citizens’ media diets , the intertwining between digital and traditional media and the proliferation of user-generated content, have an impact on the production, circulation and consumption of health news in the connected society. The article focuses on the role played by an online gatekeeper such as Google News, in the process of building the online health agenda setting. Principal reference is made to study concerning the collection and thematic analysis of the news that Google News Italia aggregates in the «Health» area and the impact that this activity produces on Facebook users, in terms of engagemen",
       "publisherUrl": "https://www.rivisteweb.it/doi/10.1445/101581"
+    },
+    {
+      "title": "Adapting to Mitigation Efforts: Evolving Strategies of Coordinated Link Sharing on Facebook",
+      "type": "other",
+      "venue": "SSRN Electronic Journal",
+      "authors": "Giglietto, Fabio; Terenzi, Massimo; Marino, Giada; Righetti, Nicola; Rossi, Luca",
+      "year": 2020,
+      "month": 1,
+      "day": 1,
+      "publicationDate": "2020-01-01",
+      "doi": "10.2139/ssrn.3775469",
+      "citations": {
+        "scholar": 6,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": "https://ora.uniurb.it/handle/11576/2703873",
+        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:YsrPvlHIBpEC",
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": "https://ora.uniurb.it/handle/11576/2703873",
+        "crossref": "https://doi.org/10.2139/ssrn.3775469"
+      },
+      "source_ids": {
+        "orcid": 133838370,
+        "scholar": "YsrPvlHIBpEC",
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": "11576/2703873"
+      },
+      "metrics": {
+        "total_citations": 6,
+        "citation_sources": 1
+      },
+      "oraHandle": "11576/2703873",
+      "oaPdfUrl": null,
+      "crossref_type": "journal-article",
+      "publisher": "Elsevier BV"
     },
     {
       "title": "Binge-watching the Algorithmic Catalog: Making Sense of Netflix in the Aftermath of the Italian Launch",
@@ -2046,48 +2046,6 @@
       "publisher": "Franco Angeli"
     },
     {
-      "title": "Coordinated Hateful Disinformation on Italian Politics and Social Issues, since 2017",
-      "type": "preprint",
-      "venue": "Elsevier BV",
-      "authors": "Giglietto, Fabio; Marino, Giada; Terenzi, Massimo; Righetti, Nicola; Rossi, Luca",
-      "year": 2021,
-      "month": null,
-      "day": null,
-      "publicationDate": "2021-01-01",
-      "doi": "10.2139/ssrn.3777263",
-      "citations": {
-        "scholar": 5,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null
-      },
-      "source_urls": {
-        "orcid": "https://doi.org/10.2139/ssrn.3777263",
-        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:raTqNPD5sRQC",
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null,
-        "ora": "https://ora.uniurb.it/handle/11576/2703872",
-        "crossref": "https://doi.org/10.2139/ssrn.3777263"
-      },
-      "source_ids": {
-        "orcid": 223793885,
-        "scholar": "raTqNPD5sRQC",
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null,
-        "ora": "11576/2703872"
-      },
-      "metrics": {
-        "total_citations": 5,
-        "citation_sources": 1
-      },
-      "oraHandle": "11576/2703872",
-      "oaPdfUrl": null,
-      "crossref_type": "posted-content",
-      "publisher": "Elsevier BV"
-    },
-    {
       "title": "Media digitali, atteggiamenti e opinioni degli italiani su un sistema dell'informazione che cambia",
       "type": "journal-article",
       "venue": "PROBLEMI DELL'INFORMAZIONE",
@@ -2166,6 +2124,48 @@
         "citation_sources": 1
       },
       "oraHandle": "11576/2703875",
+      "oaPdfUrl": null,
+      "crossref_type": "posted-content",
+      "publisher": "Elsevier BV"
+    },
+    {
+      "title": "Coordinated Hateful Disinformation on Italian Politics and Social Issues, since 2017",
+      "type": "preprint",
+      "venue": "Elsevier BV",
+      "authors": "Giglietto, Fabio; Marino, Giada; Terenzi, Massimo; Righetti, Nicola; Rossi, Luca",
+      "year": 2021,
+      "month": null,
+      "day": null,
+      "publicationDate": "2021-01-01",
+      "doi": "10.2139/ssrn.3777263",
+      "citations": {
+        "scholar": 4,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": "https://doi.org/10.2139/ssrn.3777263",
+        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:raTqNPD5sRQC",
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": "https://ora.uniurb.it/handle/11576/2703872",
+        "crossref": "https://doi.org/10.2139/ssrn.3777263"
+      },
+      "source_ids": {
+        "orcid": 223793885,
+        "scholar": "raTqNPD5sRQC",
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": "11576/2703872"
+      },
+      "metrics": {
+        "total_citations": 4,
+        "citation_sources": 1
+      },
+      "oraHandle": "11576/2703872",
       "oaPdfUrl": null,
       "crossref_type": "posted-content",
       "publisher": "Elsevier BV"
@@ -3076,48 +3076,6 @@
       "oaPdfUrl": null
     },
     {
-      "title": "An Italian Network of Memes, News, Spam Pages, and Dietary Supplements",
-      "type": "other",
-      "venue": "SSRN Electronic Journal",
-      "authors": "Giglietto, Fabio; Terenzi, Massimo; Marino, Giada; Righetti, Nicola; Rossi, Luca",
-      "year": 2020,
-      "month": 1,
-      "day": 1,
-      "publicationDate": "2020-01-01",
-      "doi": "10.2139/ssrn.3743531",
-      "citations": {
-        "scholar": 2,
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null
-      },
-      "source_urls": {
-        "orcid": "https://ora.uniurb.it/handle/11576/2703874",
-        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:WAzi4Gm8nLoC",
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null,
-        "ora": "https://ora.uniurb.it/handle/11576/2703874",
-        "crossref": "https://doi.org/10.2139/ssrn.3743531"
-      },
-      "source_ids": {
-        "orcid": 133838359,
-        "scholar": "WAzi4Gm8nLoC",
-        "wos": null,
-        "scopus": null,
-        "semanticScholar": null,
-        "ora": "11576/2703874"
-      },
-      "metrics": {
-        "total_citations": 2,
-        "citation_sources": 1
-      },
-      "oraHandle": "11576/2703874",
-      "oaPdfUrl": null,
-      "crossref_type": "journal-article",
-      "publisher": "Elsevier BV"
-    },
-    {
       "title": "L’Europa fra casa e gabbia. Tono, frame ed engagement delle notizie sulle istituzioni europee nei mesi precedenti le elezioni 2018",
       "type": "journal-article",
       "venue": "PROBLEMI DELL'INFORMAZIONE",
@@ -3481,6 +3439,48 @@
       "publisherUrl": "https://methods.sagepub.com/case/using-facebook-advertising-platform-recruiting-online-survey-respondents",
       "crossref_type": "book",
       "publisher": "SAGE Publications, Ltd."
+    },
+    {
+      "title": "An Italian Network of Memes, News, Spam Pages, and Dietary Supplements",
+      "type": "other",
+      "venue": "SSRN Electronic Journal",
+      "authors": "Giglietto, Fabio; Terenzi, Massimo; Marino, Giada; Righetti, Nicola; Rossi, Luca",
+      "year": 2020,
+      "month": 1,
+      "day": 1,
+      "publicationDate": "2020-01-01",
+      "doi": "10.2139/ssrn.3743531",
+      "citations": {
+        "scholar": 1,
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null
+      },
+      "source_urls": {
+        "orcid": "https://ora.uniurb.it/handle/11576/2703874",
+        "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:WAzi4Gm8nLoC",
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": "https://ora.uniurb.it/handle/11576/2703874",
+        "crossref": "https://doi.org/10.2139/ssrn.3743531"
+      },
+      "source_ids": {
+        "orcid": 133838359,
+        "scholar": "WAzi4Gm8nLoC",
+        "wos": null,
+        "scopus": null,
+        "semanticScholar": null,
+        "ora": "11576/2703874"
+      },
+      "metrics": {
+        "total_citations": 1,
+        "citation_sources": 1
+      },
+      "oraHandle": "11576/2703874",
+      "oaPdfUrl": null,
+      "crossref_type": "journal-article",
+      "publisher": "Elsevier BV"
     },
     {
       "title": "Dai dati all'informazione",
@@ -6327,7 +6327,7 @@
   ],
   "metrics": {
     "total_publications": 161,
-    "total_citations": 2427,
+    "total_citations": 2423,
     "h_index": 22,
     "i10_index": 36,
     "citation_sources": {
@@ -6339,5 +6339,5 @@
       "with_ora": 112
     }
   },
-  "lastUpdated": "2026-10-20T11:00:51.670Z"
+  "lastUpdated": "2026-10-20T12:31:15.795Z"
 }
