@@ -1,5 +1,5 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a strong, research-focused cross-platform social media presence across LinkedIn, Bluesky, and Mastodon, totaling 3,580 followers. His content consistently focuses on computational social science, disinformation, coordinated behavior, academic opportunities, and tool releases (like CooRnet v2.0), driving high engagement among academic and professional networks.",
+  "overallSummary": "Fabio Giglietto maintains a strong academic and professional social media presence across LinkedIn, Bluesky, and Mastodon, totaling 3,580 followers. Content primarily focuses on computational social science, research grants, tool releases (CooRnet v2.0), and academic recruitment. Engagement is robust across all channels, with high amplification rates on Bluesky and substantial professional interactions on LinkedIn.",
   "engagementMetrics": {
     "totalFollowers": 3580,
     "averageEngagementRate": 5.32,
@@ -8,30 +8,26 @@
   "contentThemes": [
     {
       "theme": "Research Announcements & Publications",
-      "description": "Sharing new research papers, grant awards, and insights into coordinated inauthentic behavior and information operations."
+      "description": "Sharing newly published papers, grants, and study findings on coordinated inauthentic behavior and disinformation."
     },
     {
-      "theme": "Tool Releases & Software Updates",
-      "description": "Updates on computational tools like CooRnet v2.0 developed for social media analysis."
+      "theme": "Methodological & Software Tools",
+      "description": "Updates on software development like CooRnet v2.0 and discussions on computational social science methodology."
     },
     {
-      "theme": "Academic Hiring & Recruitment",
-      "description": "Promoting postdoctoral and PhD research opportunities within the computational social science team."
-    },
-    {
-      "theme": "Conferences & Methodological Discussions",
-      "description": "Announcements about upcoming speaking engagements and discussions on cross-platform disinformation methodologies."
+      "theme": "Academic Hiring & Opportunities",
+      "description": "Recruitment posts for postdoctoral researchers and PhD opportunities."
     }
   ],
   "recommendations": [
-    "Cross-promote content across platforms more dynamically, using visual assets or links to detailed research to boost interactions.",
-    "Increase posting frequency on high-engagement platforms like Bluesky to capitalize on the active community interested in computational social science.",
-    "Engage with comment threads on LinkedIn and Mastodon to foster deeper discussions around academic findings and hiring posts."
+    "Increase posting frequency on Mastodon to leverage its audience interest in open science and research tools.",
+    "Cross-promote major research milestones across all three platforms simultaneously using tailored tone for each platform.",
+    "Incorporate visual elements or direct links to published papers to boost click-through rates and comments."
   ],
   "platformInsights": {
-    "bluesky": "Demonstrates the highest average engagement rate (6.14%), driven significantly by high repost rates on publication announcements and student research opportunities.",
-    "mastodon": "Yields strong engagement relative to audience size (780 followers), particularly when sharing open-source tools and technical methodological updates.",
-    "linkedin": "Generates the highest absolute volume of engagement (likes and comments), making it the most effective channel for professional milestone announcements and recruitment."
+    "bluesky": "Highest engagement rate overall (6.14% average), driven strongly by paper announcements and student opportunities with high repost counts.",
+    "mastodon": "Niche, highly receptive audience for software tools like CooRnet, yielding good boost rates relative to audience size.",
+    "linkedin": "Largest follower base (1,850) generating the highest absolute likes and comments, particularly effective for grant announcements and hiring."
   },
   "topPerformingContent": [
     {
