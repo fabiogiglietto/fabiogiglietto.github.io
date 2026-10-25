@@ -2123,6 +2123,18 @@
       "author": "Brad Miller, Jay Baxter, Jiansong Chao, Keith Coleman, Sophie Hilgard, Daniel Ortiz",
       "doi": null,
       "own": false
+    },
+    {
+      "id": "bibtex:Kuznetsova2026-hw",
+      "bibtexKey": "Kuznetsova2026-hw",
+      "title": "All Talk, No Rules: How Platforms Govern Climate Misinformation",
+      "description": "AI-generated podcast discussion.\n\nReference:\nKuznetsova, V. (2026). All talk, no rules: Content moderation practices and discursive strategies in platform governance of climate misinformation. https://doi.org/10.1177/29768624261499168",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Kuznetsova2026-hw.mp3",
+      "pubDate": "2026-10-25T12:00:47.474563+00:00",
+      "duration": "10:55",
+      "author": "Vasilisa Kuznetsova",
+      "doi": "10.1177/29768624261499168",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -4249,6 +4261,18 @@
       "author": "Brad Miller, Jay Baxter, Jiansong Chao, Keith Coleman, Sophie Hilgard, Daniel Ortiz",
       "doi": null,
       "own": false
+    },
+    "Kuznetsova2026-hw": {
+      "id": "bibtex:Kuznetsova2026-hw",
+      "bibtexKey": "Kuznetsova2026-hw",
+      "title": "All Talk, No Rules: How Platforms Govern Climate Misinformation",
+      "description": "AI-generated podcast discussion.\n\nReference:\nKuznetsova, V. (2026). All talk, no rules: Content moderation practices and discursive strategies in platform governance of climate misinformation. https://doi.org/10.1177/29768624261499168",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Kuznetsova2026-hw.mp3",
+      "pubDate": "2026-10-25T12:00:47.474563+00:00",
+      "duration": "10:55",
+      "author": "Vasilisa Kuznetsova",
+      "doi": "10.1177/29768624261499168",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -5919,9 +5943,21 @@
       "author": "Ernesto de León, Jakob Bæk Kristensen, Mykola Makhortykh, Eva Mayerhöffer, Silke Adam",
       "doi": "10.31235/osf.io/grne7_v1",
       "own": false
+    },
+    "10.1177/29768624261499168": {
+      "id": "bibtex:Kuznetsova2026-hw",
+      "bibtexKey": "Kuznetsova2026-hw",
+      "title": "All Talk, No Rules: How Platforms Govern Climate Misinformation",
+      "description": "AI-generated podcast discussion.\n\nReference:\nKuznetsova, V. (2026). All talk, no rules: Content moderation practices and discursive strategies in platform governance of climate misinformation. https://doi.org/10.1177/29768624261499168",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Kuznetsova2026-hw.mp3",
+      "pubDate": "2026-10-25T12:00:47.474563+00:00",
+      "duration": "10:55",
+      "author": "Vasilisa Kuznetsova",
+      "doi": "10.1177/29768624261499168",
+      "own": false
     }
   },
-  "totalEpisodes": 177,
-  "lastUpdated": "2026-10-25T12:01:16.417Z",
+  "totalEpisodes": 178,
+  "lastUpdated": "2026-10-25T12:14:48.792Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
