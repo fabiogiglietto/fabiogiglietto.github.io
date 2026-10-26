@@ -1,42 +1,42 @@
 {
-  "reviewedAt": "2026-10-19T12:16:44.694Z",
+  "reviewedAt": "2026-10-26T12:23:03.158Z",
   "model": "claude-fable-5",
   "effort": "medium",
-  "summary": "Replaced the unsupported causal claim that the Meta paper 'informed parliamentary debates' with the sourced fact that it was cited in a written question to the European Commission, restored date-stamped status framing for memberships and the EACEA role (adding 'rapporteur'), corrected 'extensive' coverage and 'platform architecture' to the sources' weaker wording, and tightened the prose throughout.",
+  "summary": "Tightened the prose, restored the 'as of August 2026' dating on status claims, converted concluded EU roles (vera.ai, PROMPT, JRC expert group) to the past tense, corrected the overstated 'European Parliament inquiries' to the single written question to the European Commission, and added the omitted Urbino doctorate.",
   "flags": [
     {
-      "claim": "informed parliamentary debates, leading to a written inquiry in the European Parliament",
-      "issue": "The authoritative biography states only that the paper was cited in a written question to the European Commission (European Parliament document E-10-2026-000086). It does not say the study informed debates or caused the question; the causal 'leading to' framing of a third party's action is not supported. Revised to 'was cited in a written question to the European Commission tabled in the European Parliament'.",
+      "claim": "formal citation within European Parliament inquiries",
+      "issue": "The authoritative biography supports only that the 2025 working paper was cited in a single written question to the European Commission (document E-10-2026-000086); 'inquiries' (plural, and implying a formal parliamentary inquiry) asserts a stronger institutional action than any source states. Corrected to 'a written question to the European Commission'.",
       "severity": "overstated"
     },
     {
-      "claim": "extensive news coverage across Italian media outlets",
-      "issue": "The authoritative biography says the paper drew national media coverage in Italy between January and April 2026; 'extensive' adds an intensity the source does not assert. Revised to 'national media coverage'.",
+      "claim": "leading Work Package 4 on the Horizon Europe vera.ai consortium and participating as a partner on the PROMPT project",
+      "issue": "Both roles are concluded per the authoritative biography (vera.ai ended October 2025, PROMPT February 2026); the present-participle framing reads as ongoing. Rewritten in the past tense with conclusion dates.",
       "severity": "overstated"
     },
     {
-      "claim": "digital platform architecture",
-      "issue": "The authoritative biography describes his research as the 'analysis of digital platforms', not platform architecture. Revised to match the source's wording in original prose.",
+      "claim": "contributing scientific oversight to the Joint Research Centre's work on Very Large Online Platforms",
+      "issue": "The authoritative biography states this role in the past tense ('was a member', reports 'delivered in 2026'); the present-tense framing turns a completed appointment into an ongoing one. Rewritten in the past tense.",
       "severity": "overstated"
     },
     {
-      "claim": "He is an active member of the International Communication Association",
-      "issue": "Membership and professorship are status claims stamped 'as of August 2026' in the authoritative biography; the draft stated them as timeless present. Revised to carry the date stamp.",
+      "claim": "acting as a proposal evaluator for EACEA",
+      "issue": "The authoritative biography stamps this status 'as of August 2026' with the appointment running to September 2026; the biography presents it as a timeless present-tense role. Restored the dated status.",
       "severity": "overstated"
     },
     {
-      "claim": "serving as a project proposal evaluator for the European Education and Culture Executive Agency",
-      "issue": "Two problems: the authoritative biography names the role as 'evaluator and rapporteur', and the appointment is a dated status (as of August 2026, running to September 2026), not an open-ended ongoing role. Revised to include the rapporteur designation and the dated framing. The call/topic was correctly left unnamed, as required.",
+      "claim": "Fabio Giglietto is Full Professor of Internet Studies",
+      "issue": "Current-status claims (professorship, memberships, Digit Srl partnership, MINE's active status) are stamped 'as of August 2026' in the authoritative biography but were stated as timeless present in the draft. Dating restored in the revision.",
+      "severity": "overstated"
+    },
+    {
+      "claim": "(entire biography)",
+      "issue": "The authoritative biography states he earned his doctorate at the University of Urbino; the draft dropped this. Restored.",
       "severity": "omission"
     },
     {
-      "claim": "co-created CooRnet",
-      "issue": "The authoritative biography names the co-developers (Nicola Righetti and Luca Rossi) and specifies that CooRTweet is an independent package by Righetti and Balluff that Giglietto did not co-develop; the draft left both attributions implicit. Added to prevent misattribution.",
-      "severity": "omission"
-    },
-    {
-      "claim": "His 2025 study on Meta's political content reduction policy",
-      "issue": "The authoritative biography and his own publication list describe it as a working paper (SocArXiv preprint); 'study' slightly inflates its publication status. Revised to 'working paper'.",
+      "claim": "Complementing his academic commitments, he is a founding partner of Digit Srl",
+      "issue": "Throat-clearing opener ('Complementing his academic commitments') and similar filler ('Internationally, he has held key research roles') add no information; tightened throughout.",
       "severity": "style"
     }
   ]
