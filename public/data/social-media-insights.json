@@ -1,5 +1,5 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a focused and highly engaged professional presence across LinkedIn, BlueSky, and Mastodon, with a total audience of 3,580 followers. His content predominantly revolves around computational social science, disinformation research, academic hiring, and tool updates (such as CooRnet). While LinkedIn holds his largest raw audience, BlueSky exhibits the highest engagement rate driven by community reposts and discussion surrounding new research and academic opportunities.",
+  "overallSummary": "Fabio Giglietto maintains a strong professional academic presence across niche and professional social media platforms (LinkedIn, Bluesky, Mastodon) with a combined audience of 3,580 followers. Engagement is consistently high across all channels, driven primarily by announcements of research publications, open positions, software releases (CooRnet v2.0), and conference participation in computational social science and disinformation studies.",
   "engagementMetrics": {
     "totalFollowers": 3580,
     "averageEngagementRate": 5.32,
@@ -7,27 +7,31 @@
   },
   "contentThemes": [
     {
-      "theme": "Disinformation & Coordinated Behavior",
-      "description": "Research updates, publications, and conference presentations regarding coordinated inauthentic behavior and information operations."
+      "theme": "Research & Publications",
+      "description": "Announcements of new papers, research grants, and findings on coordinated inauthentic behavior and information operations."
     },
     {
-      "theme": "Academic & Research Opportunities",
-      "description": "Announcements for research grants, hiring postdoctoral researchers, and recruiting PhD students."
+      "theme": "Open Source Tools & Methods",
+      "description": "Updates regarding software releases like CooRnet v2.0 and discussion around methodological approaches."
     },
     {
-      "theme": "Software & Methodological Tools",
-      "description": "Updates on research software releases like CooRnet v2.0 and discussions on computational methods."
+      "theme": "Academic Opportunities & Recruitment",
+      "description": "Postings for PhD opportunities, postdoctoral hiring, and academic calls to action."
+    },
+    {
+      "theme": "Conferences & Events",
+      "description": "Posts highlighting upcoming speaking engagements such as #DisinfoConf2025."
     }
   ],
   "recommendations": [
-    "Cross-promote high-performing research announcements across all platforms to maximize reach given differing platform demographics.",
-    "Leverage call-to-actions on LinkedIn posts to drive comment interaction, matching the high amplification seen on BlueSky.",
-    "Maintain consistent posting schedules across Mastodon to grow its engagement rate closer to BlueSky levels."
+    "Cross-post engaging academic recruitment opportunities to Mastodon and LinkedIn to maximize visibility among diverse academic demographics.",
+    "Incorporate visual media (infographics, publication figures, or tool interface screenshots) to further boost engagement on Bluesky and LinkedIn.",
+    "Increase direct audience interaction on Bluesky and Mastodon by asking open-ended questions about methodology to spark commentary alongside reposts."
   ],
   "platformInsights": {
-    "bluesky": "Highest overall engagement rate (~6.14%) with notable strength in reposts/amplification for publications and student recruitment opportunities.",
-    "mastodon": "Serves a dedicated niche audience interested in technical tool updates like CooRnet and methodology, yielding moderate engagement (~4.55%).",
-    "linkedin": "Largest follower base (1,850) generating the highest absolute volume of likes and comments, particularly around major career achievements like research grants and job postings."
+    "bluesky": "Achieves the highest overall engagement rate (avg ~6.14%) and high amplification via reposts, making it the top platform for sharing immediate publication announcements and opportunity calls.",
+    "mastodon": "Serves as an effective channel for specialized methodology discussions and software updates (e.g., CooRnet v2.0) with solid organic reach relative to follower count.",
+    "linkedin": "Generates the highest raw interaction counts (likes and comments), demonstrating strong professional authority for grant announcements and hiring posts."
   },
   "topPerformingContent": [
     {
