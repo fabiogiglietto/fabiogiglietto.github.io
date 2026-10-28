@@ -1,50 +1,53 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a focused and highly impactful academic cross-platform presence across LinkedIn, Bluesky, and Mastodon, catering to a total audience of 3,580 followers. His content consistently focuses on computational social science, coordinated inauthentic behavior, tool releases (CooRnet v2.0), and academic opportunities, generating strong engagement particularly around research milestones and hiring announcements.",
+  "overallSummary": "Fabio Giglietto maintains a strong academic and professional social media presence across LinkedIn, Bluesky, and Mastodon, totaling 3,580 followers. His content consistently focuses on computational social science, coordinated inauthentic behavior, tool releases (CooRnet), and research team hiring, driving high engagement relative to audience size across all three channels.",
   "engagementMetrics": {
     "totalFollowers": 3580,
     "averageEngagementRate": 5.32,
-    "mostEngagingPlatform": "Bluesky"
+    "mostEngagingPlatform": "bluesky"
   },
   "contentThemes": [
     {
-      "theme": "Coordinated Inauthentic Behavior & Disinformation",
-      "description": "Posts highlighting methodologies, research papers, tool updates (CooRnet v2.0), and conference presentations around social media manipulation."
+      "theme": "Research & Publications",
+      "description": "Announcements of new papers, research grants, and study findings related to information operations and coordinated behavior."
     },
     {
-      "theme": "Academic Grants & Recruitment",
-      "description": "Announcements regarding research funding, postdoctoral hiring, and PhD research opportunities."
+      "theme": "Open Source & Tool Releases",
+      "description": "Updates regarding software tools like CooRnet v2.0 for detecting coordinated link sharing."
+    },
+    {
+      "theme": "Academic Recruitment & Opportunities",
+      "description": "Hiring posts for postdoctoral researchers and research opportunities for PhD students."
+    },
+    {
+      "theme": "Conferences & Methodological Discussions",
+      "description": "Promoting upcoming conference talks (#DisinfoConf2025) and reflections on multi-platform research methods."
     }
   ],
   "recommendations": [
-    "Increase posting frequency on LinkedIn to capitalize on its high audience reach and professional interest in funding and hiring news.",
-    "Cross-promote tool releases like CooRnet across all platforms simultaneously to maximize direct audience reach and community adoption.",
-    "Leverage media, links, or visual assets (charts, graphics) in text posts to boost visual appeal and organic sharing."
+    "Cross-promote major research milestones and hiring notices on all platforms, as job/opportunity posts drive high viral sharing on Bluesky and interaction on LinkedIn.",
+    "Increase visual media usage (e.g., charts, tool screenshots, paper cover pages) to boost engagement rates further.",
+    "Engage actively in comments on Mastodon and Bluesky to convert higher repost rates into community discussions."
   ],
   "platformInsights": {
-    "bluesky": "Demonstrates the highest average engagement rate relative to follower count, driven by high repost/share counts on research papers and opportunities.",
-    "mastodon": "Yields strong niche discussions among academic peers, particularly regarding open-source tools like CooRnet and methodology discussions.",
-    "linkedin": "Generates the highest raw volume of interactions (likes and direct comments), serving as the main platform for career, grant, and institutional milestones."
+    "bluesky": "Highest engagement rate per follower (6.14% avg ER), driven by high repost/amplification rates on paper publications and student opportunity calls.",
+    "mastodon": "Provides steady, targeted engagement from an academic niche audience (aoir.social), performing best when sharing tangible tool releases like CooRnet.",
+    "linkedin": "Largest follower base (1,850 followers) generating the highest raw numbers of likes and comments, particularly effective for professional grant announcements and recruitment."
   },
   "topPerformingContent": [
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
-      "platform": "Bluesky",
+      "platform": "bluesky",
       "engagementRate": 7.37
     },
     {
-      "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
-      "platform": "LinkedIn",
-      "engagementRate": 5.78
-    },
-    {
       "content": "New research opportunity for PhD students interested in computational social science. Reply for details!",
-      "platform": "Bluesky",
+      "platform": "bluesky",
       "engagementRate": 5.79
     },
     {
-      "content": "Our team has just released v2.0 of CooRnet, with improved algorithms for detecting coordinated link sharing behavior.",
-      "platform": "Mastodon",
-      "engagementRate": 5.64
+      "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
+      "platform": "linkedin",
+      "engagementRate": 5.78
     }
   ]
 }
