@@ -1,11 +1,12 @@
 {
-  "totalEntries": 214,
-  "lastUpdated": "2026-10-30T13:48:21.518Z",
+  "totalEntries": 215,
+  "lastUpdated": "2026-10-31T11:45:49.710Z",
   "dateRange": {
     "earliest": "2025-06-10T06:45:26.015Z",
-    "latest": "2026-09-05T10:02:37.170Z"
+    "latest": "2026-10-31T11:45:49.646Z"
   },
   "byDate": {
+    "2026-10-31": 1,
     "2026-09-05": 1,
     "2026-08-17": 1,
     "2026-08-10": 1,
@@ -14,8 +15,7 @@
     "2026-08-04": 2,
     "2026-08-02": 1,
     "2026-08-01": 1,
-    "2026-07-28": 1,
-    "2026-07-24": 2
+    "2026-07-28": 1
   },
   "bySource": {
     "vertexaisearch.cloud.google.com": 52,
@@ -30,11 +30,18 @@
     "snurblog.org": 4
   },
   "byRelevanceScore": {
-    "high": 191,
+    "high": 192,
     "medium": 23,
     "low": 0
   },
   "recentHighQuality": [
+    {
+      "title": "Meno contenuti politici nei feed, la stretta di Meta è stata meno efficace contro gli estremisti",
+      "url": "https://www.ilsole24ore.com/art/meno-contenuti-politici-feed-stretta-meta-e-stata-meno-efficace-contro-estremisti-AGR9W14C",
+      "source": "ilsole24ore.com",
+      "relevanceScore": 0.95,
+      "collectedAt": "2026-10-31T11:45:49.646Z"
+    },
     {
       "title": "Research Radio on Apple Podcasts",
       "url": "https://podcasts.apple.com/us/podcast/research-radio/id1772648792",
@@ -62,13 +69,6 @@
       "source": "rai.it",
       "relevanceScore": 0.95,
       "collectedAt": "2026-08-09T07:56:09.863Z"
-    },
-    {
-      "title": "Facebook | Snurblog — Axel Bruns",
-      "url": "https://snurb.info/node/3409",
-      "source": "snurb.info",
-      "relevanceScore": 0.9,
-      "collectedAt": "2026-08-07T07:20:44.024Z"
     }
   ]
 }
