@@ -1,5 +1,5 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a strong, academically focused cross-platform presence across LinkedIn, Bluesky, and Mastodon with a total reach of 3,580 followers. His content centers around computational social science, disinformation research, software releases (CooRnet), and academic recruitment. Engagement is robust across all channels, with LinkedIn driving the highest total volume of interactions and Bluesky showing strong amplification through reposts.",
+  "overallSummary": "Fabio Giglietto maintains an active cross-platform academic presence across LinkedIn, Bluesky, and Mastodon, totaling 3,580 followers. His content focuses heavily on computational social science, disinformation research, software releases (CooRnet), grant announcements, and academic hiring. LinkedIn drives the highest total interaction counts (likes and comments), while Bluesky shows strong viral amplification (high repost-to-like ratios).",
   "engagementMetrics": {
     "totalFollowers": 3580,
     "averageEngagementRate": 4.12,
@@ -7,38 +7,29 @@
   },
   "contentThemes": [
     {
-      "theme": "Research Publications & Grants",
-      "description": "Announcements of new research papers, grants awarded, and conference presentations regarding coordinated inauthentic behavior."
+      "theme": "Research Announcements & Publications",
+      "description": "Sharing new research papers, software tools like CooRnet v2.0, and grant wins related to coordinated inauthentic behavior and disinformation."
     },
     {
-      "theme": "Tool & Software Releases",
-      "description": "Updates on open-source tools developed by the research team, such as CooRnet v2.0."
+      "theme": "Academic Hiring & Opportunities",
+      "description": "Promoting postdoctoral positions and PhD opportunities within computational social science."
     },
     {
-      "theme": "Academic Recruitment & Opportunities",
-      "description": "Hiring posts for postdoctoral researchers and research opportunities for PhD students."
-    },
-    {
-      "theme": "Methodological Discussions",
-      "description": "Reflections on multi-platform computational research methods and disinformation studies."
+      "theme": "Conferences & Methodological Discussions",
+      "description": "Discussing platform methodologies and upcoming speaking engagements like #DisinfoConf2025."
     }
   ],
   "recommendations": [
-    "Cross-promote major research breakthroughs and tool releases simultaneously across all platforms to maximize initial reach.",
-    "Leverage LinkedIn specifically for career and recruitment updates, as it generates high comment-based interaction.",
-    "Increase posting frequency on Mastodon and Bluesky to build stronger community ties and encourage continuous resharing of academic open-source tools."
+    "Cross-post high-performing professional milestones (like grant wins) across Bluesky and Mastodon to capitalize on audience interest in research updates.",
+    "Increase engagement on LinkedIn by encouraging discussions around newly released tools and methodological papers, not just hiring and funding announcements.",
+    "Leverage Bluesky's high repost rate by including call-to-action links and visuals to drive traffic to published research papers."
   ],
   "platformInsights": {
-    "bluesky": "Demonstrates high engagement-per-follower with exceptional repost rates, making it highly effective for spreading new research papers and academic calls.",
-    "mastodon": "Serves as an effective niche audience hub for open-source tool updates (CooRnet) and technical methodological discussions, though engagement volume is lower.",
-    "linkedin": "Commands the largest follower base (1,850) and yields the highest absolute engagement per post, particularly for grant announcements and hiring opportunities."
+    "bluesky": "Demonstrates high audience resonance with research releases and PhD opportunities, yielding strong repost ratios relative to follower count.",
+    "mastodon": "Serves a focused academic niche with steady engagement around open-source tools (CooRnet) and methodological discussions.",
+    "linkedin": "Commands the largest single audience (1,850 followers) and generates the highest raw engagement (likes and comments) for career milestones and grant announcements."
   },
   "topPerformingContent": [
-    {
-      "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
-      "platform": "linkedin",
-      "engagementRate": 5.78
-    },
     {
       "content": "Just published our new paper on coordinated inauthentic behavior on social media platforms!",
       "platform": "bluesky",
@@ -48,6 +39,11 @@
       "content": "New research opportunity for PhD students interested in computational social science. Reply for details!",
       "platform": "bluesky",
       "engagementRate": 5.79
+    },
+    {
+      "content": "Excited to announce that our research team has been awarded a new grant to study information operations across social media platforms.",
+      "platform": "linkedin",
+      "engagementRate": 5.78
     }
   ]
 }
