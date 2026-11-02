@@ -2159,6 +2159,18 @@
       "author": "Stephen Prochaska, Mert Bayar, Ashlyn B. Aske, Joseph Schafer, Kate Starbird",
       "doi": null,
       "own": false
+    },
+    {
+      "id": "bibtex:Farjam2026-zg",
+      "bibtexKey": "Farjam2026-zg",
+      "title": "Teaching Machines to Code: Inside the LLM Content Analysis Pipeline",
+      "description": "AI-generated podcast discussion.\n\nReference:\nFarjam, M., Meyer, H., & Lohkamp, M. (2026). A practical guide and case study on how to instruct LLMs for automated coding during content analysis. https://doi.org/10.1177/08944393251349541",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Farjam2026-zg.mp3",
+      "pubDate": "2026-11-02T00:07:03.418952+00:00",
+      "duration": "10:55",
+      "author": "Mike Farjam, Hendrik Meyer, Meike Lohkamp",
+      "doi": "10.1177/08944393251349541",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -4321,6 +4333,18 @@
       "author": "Stephen Prochaska, Mert Bayar, Ashlyn B. Aske, Joseph Schafer, Kate Starbird",
       "doi": null,
       "own": false
+    },
+    "Farjam2026-zg": {
+      "id": "bibtex:Farjam2026-zg",
+      "bibtexKey": "Farjam2026-zg",
+      "title": "Teaching Machines to Code: Inside the LLM Content Analysis Pipeline",
+      "description": "AI-generated podcast discussion.\n\nReference:\nFarjam, M., Meyer, H., & Lohkamp, M. (2026). A practical guide and case study on how to instruct LLMs for automated coding during content analysis. https://doi.org/10.1177/08944393251349541",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Farjam2026-zg.mp3",
+      "pubDate": "2026-11-02T00:07:03.418952+00:00",
+      "duration": "10:55",
+      "author": "Mike Farjam, Hendrik Meyer, Meike Lohkamp",
+      "doi": "10.1177/08944393251349541",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -6015,9 +6039,21 @@
       "author": "Zoë Natalia Cullen, Nicole B Ellison, Irene V Pasquetto",
       "doi": "10.1177/20539517261461463",
       "own": false
+    },
+    "10.1177/08944393251349541": {
+      "id": "bibtex:Farjam2026-zg",
+      "bibtexKey": "Farjam2026-zg",
+      "title": "Teaching Machines to Code: Inside the LLM Content Analysis Pipeline",
+      "description": "AI-generated podcast discussion.\n\nReference:\nFarjam, M., Meyer, H., & Lohkamp, M. (2026). A practical guide and case study on how to instruct LLMs for automated coding during content analysis. https://doi.org/10.1177/08944393251349541",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Farjam2026-zg.mp3",
+      "pubDate": "2026-11-02T00:07:03.418952+00:00",
+      "duration": "10:55",
+      "author": "Mike Farjam, Hendrik Meyer, Meike Lohkamp",
+      "doi": "10.1177/08944393251349541",
+      "own": false
     }
   },
-  "totalEpisodes": 180,
-  "lastUpdated": "2026-11-02T00:07:30.447Z",
+  "totalEpisodes": 181,
+  "lastUpdated": "2026-11-02T14:48:27.327Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }

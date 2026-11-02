@@ -1,42 +1,52 @@
 {
-  "reviewedAt": "2026-10-26T12:23:03.158Z",
+  "reviewedAt": "2026-11-02T14:54:29.853Z",
   "model": "claude-fable-5",
   "effort": "medium",
-  "summary": "Tightened the prose, restored the 'as of August 2026' dating on status claims, converted concluded EU roles (vera.ai, PROMPT, JRC expert group) to the past tense, corrected the overstated 'European Parliament inquiries' to the single written question to the European Commission, and added the omitted Urbino doctorate.",
+  "summary": "Corrected the misattributed parliamentary-question claim, removed an unsupported methods description, restored dated 'as of August 2026' status stamps, project end dates, MINE's 2017 founding and the accurate Digit Srl and media-coverage details, and tightened the prose throughout.",
   "flags": [
     {
-      "claim": "formal citation within European Parliament inquiries",
-      "issue": "The authoritative biography supports only that the 2025 working paper was cited in a single written question to the European Commission (document E-10-2026-000086); 'inquiries' (plural, and implying a formal parliamentary inquiry) asserts a stronger institutional action than any source states. Corrected to 'a written question to the European Commission'.",
+      "claim": "Through empirical methodologies leveraging machine learning, natural language processing, and network analysis",
+      "issue": "No source describes his methods in these terms; the authoritative biography characterises his research as computational social science, digital platform analysis and political communication with a focus on information disorders and coordinated behaviour. Replaced with the supported description.",
+      "severity": "unsupported"
+    },
+    {
+      "claim": "was cited in a written question to the European Parliament",
+      "issue": "The authoritative biography states the paper was cited in a European Parliament written question addressed to the European Commission (E-10-2026-000086) — the question was put TO the Commission, not to Parliament. Corrected in the revision.",
+      "severity": "unsupported"
+    },
+    {
+      "claim": "drew wide national news coverage in Italy",
+      "issue": "The authoritative biography supports 'national media coverage' between January and April 2026 in four named outlets; 'wide' is an intensifier the source does not assert. Replaced with the named outlets and dates.",
       "severity": "overstated"
     },
     {
-      "claim": "leading Work Package 4 on the Horizon Europe vera.ai consortium and participating as a partner on the PROMPT project",
-      "issue": "Both roles are concluded per the authoritative biography (vera.ai ended October 2025, PROMPT February 2026); the present-participle framing reads as ongoing. Rewritten in the past tense with conclusion dates.",
-      "severity": "overstated"
-    },
-    {
-      "claim": "contributing scientific oversight to the Joint Research Centre's work on Very Large Online Platforms",
-      "issue": "The authoritative biography states this role in the past tense ('was a member', reports 'delivered in 2026'); the present-tense framing turns a completed appointment into an ongoing one. Rewritten in the past tense.",
-      "severity": "overstated"
-    },
-    {
-      "claim": "acting as a proposal evaluator for EACEA",
-      "issue": "The authoritative biography stamps this status 'as of August 2026' with the appointment running to September 2026; the biography presents it as a timeless present-tense role. Restored the dated status.",
-      "severity": "overstated"
-    },
-    {
-      "claim": "Fabio Giglietto is Full Professor of Internet Studies",
-      "issue": "Current-status claims (professorship, memberships, Digit Srl partnership, MINE's active status) are stamped 'as of August 2026' in the authoritative biography but were stated as timeless present in the draft. Dating restored in the revision.",
-      "severity": "overstated"
-    },
-    {
-      "claim": "(entire biography)",
-      "issue": "The authoritative biography states he earned his doctorate at the University of Urbino; the draft dropped this. Restored.",
+      "claim": "He directs the Mapping Italian News Research Program (MINE)",
+      "issue": "The authoritative biography states he founded MINE in 2017 and has coordinated it since, and that the programme is active 'as of August 2026'; the biography dropped the founding and the dated status stamp. Restored.",
       "severity": "omission"
     },
     {
-      "claim": "Complementing his academic commitments, he is a founding partner of Digit Srl",
-      "issue": "Throat-clearing opener ('Complementing his academic commitments') and similar filler ('Internationally, he has held key research roles') add no information; tightened throughout.",
+      "claim": "serving as Work Package Leader on the Horizon Europe project vera.ai and as a partner on the PROMPT initiative",
+      "issue": "Both projects concluded (vera.ai October 2025, PROMPT February 2026) per the authoritative biography; omitting the end dates risks presenting concluded roles as ongoing. Dates added.",
+      "severity": "omission"
+    },
+    {
+      "claim": "evaluated project proposals for the European Education and Culture Executive Agency",
+      "issue": "The authoritative biography stamps this as a current appointment: as of August 2026 it ran to September 2026. The past-tense phrasing misrepresents its status; revised to the stamped formulation. (The specific call and contract details are correctly omitted.)",
+      "severity": "overstated"
+    },
+    {
+      "claim": "civic participation, environmental sustainability, and scientific dissemination",
+      "issue": "The authoritative biography says Digit Srl develops platforms for sustainability, civic participation, social innovation and scientific dissemination; 'environmental' is an unsupported qualifier and 'social innovation' was dropped. Corrected.",
+      "severity": "overstated"
+    },
+    {
+      "claim": "Fabio Giglietto is Full Professor of Internet Studies ... He maintains active ties with international scholarly organizations",
+      "issue": "These status claims are stamped 'as of August 2026' in the authoritative biography but were rendered as timeless present tense. Stamps restored in the revision.",
+      "severity": "omission"
+    },
+    {
+      "claim": "investigates the structural mechanics of online information disorders ... across digital platform ecosystems",
+      "issue": "Abstraction-heavy, jargon-dense phrasing ('structural mechanics', 'platform ecosystems') that adds no verifiable content; tightened to plainer, source-backed language.",
       "severity": "style"
     }
   ]
