@@ -1,5 +1,5 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a strong, specialized academic presence across LinkedIn, Bluesky, and Mastodon, with a total audience of 3,580 followers. His content consistently focuses on computational social science, disinformation research, software releases, and academic recruitment, yielding high engagement across all channels.",
+  "overallSummary": "Fabio Giglietto maintains a strong, specialized social media presence across academic and professional platforms (LinkedIn, Bluesky, and Mastodon) with a total audience of 3,580 followers. His content consistently focuses on computational social science, coordinated inauthentic behavior, tool releases, and academic recruitment, achieving healthy engagement across all platforms.",
   "engagementMetrics": {
     "totalFollowers": 3580,
     "averageEngagementRate": 5.32,
@@ -7,27 +7,31 @@
   },
   "contentThemes": [
     {
-      "theme": "Disinformation & Information Operations Research",
-      "description": "Posts highlighting publications, conference presentations, and methodology discussions regarding coordinated inauthentic behavior."
+      "theme": "Research Announcements & Publications",
+      "description": "Sharing newly published papers, grants awarded, and research findings on coordinated inauthentic behavior."
     },
     {
-      "theme": "Academic Hiring & Opportunities",
-      "description": "Announcements seeking PhD candidates and postdoctoral researchers for computational social science projects."
+      "theme": "Software & Tool Releases",
+      "description": "Updates on analytical tools developed by the team, such as CooRnet v2.0."
     },
     {
-      "theme": "Tool & Software Releases",
-      "description": "Updates regarding open-source research tools like CooRnet."
+      "theme": "Recruitment & Opportunities",
+      "description": "Hiring posts for postdoctoral researchers and PhD opportunities in computational social science."
+    },
+    {
+      "theme": "Academic Conferences & Methodologies",
+      "description": "Discussions on methodological approaches to studying cross-platform disinformation and conference presentations."
     }
   ],
   "recommendations": [
-    "Increase posting frequency on LinkedIn to leverage its large follower base and high raw engagement potential for major milestones.",
-    "Cross-promote call-for-applications across platforms simultaneously, using interactive prompts on conversational networks like Bluesky.",
-    "Incorporate visual elements or links to full research papers to further boost post shareability."
+    "Increase posting frequency on Bluesky to capitalize on high interaction rates (reposts and likes).",
+    "Tailor recruitment posts with visual media or direct links to job descriptions on LinkedIn to convert high impression numbers into direct applications.",
+    "Cross-promote major research breakthroughs and software releases across all platforms simultaneously using visual assets or summary infographics."
   ],
   "platformInsights": {
-    "bluesky": "Highest engagement rate overall (avg 6.14%), driven by strong repost numbers on research releases and student opportunities.",
-    "mastodon": "Solid community reaction to technical updates (e.g., CooRnet v2.0) and methodological discussions among an academic/research-oriented audience.",
-    "linkedin": "Largest follower base generating the highest total likes and comments, particularly effective for major professional updates such as grant awards and recruitment."
+    "bluesky": "Yields the highest overall engagement rate, driven by a highly active academic network that heavily reposts research announcements and student opportunities.",
+    "mastodon": "Provides steady niche engagement on specialized technical updates like CooRnet releases and methodological discussions among decentralized web users.",
+    "linkedin": "Commands the largest follower base (1,850 followers) and yields the highest absolute engagement numbers for major career milestones and research grants."
   },
   "topPerformingContent": [
     {
