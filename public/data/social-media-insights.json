@@ -1,37 +1,33 @@
 {
-  "overallSummary": "Fabio Giglietto maintains a strong, specialized academic and professional presence across LinkedIn, Bluesky, and Mastodon, totaling 3,580 followers. His audience shows high engagement with posts regarding research milestones, tool releases (CooRnet v2.0), hiring opportunities, and publications in computational social science and disinformation studies.",
+  "overallSummary": "Fabio Giglietto maintains a strong professional cross-platform presence across LinkedIn, Bluesky, and Mastodon with a total reach of 3,580 followers. Content primarily focuses on academic research, computational methods, disinformation, tool releases (CooRnet), and academic recruitment, driving high engagement rates particularly among research and academic communities.",
   "engagementMetrics": {
     "totalFollowers": 3580,
-    "averageEngagementRate": 5.19,
+    "averageEngagementRate": 5.32,
     "mostEngagingPlatform": "Bluesky"
   },
   "contentThemes": [
     {
-      "theme": "Research Announcements & Papers",
-      "description": "Updates on published academic papers, grants awarded, and computational methodologies for studying coordinated inauthentic behavior."
+      "theme": "Coordinated Inauthentic Behavior & Disinformation",
+      "description": "Posts related to research, conference presentations, and methodological approaches for analyzing online information operations."
     },
     {
-      "theme": "Tool & Software Releases",
-      "description": "Product updates for research tools like CooRnet v2.0 for link sharing detection."
+      "theme": "Research Software & Tools",
+      "description": "Announcements of new software updates and releases like CooRnet v2.0."
     },
     {
-      "theme": "Academic Recruitment & Opportunities",
-      "description": "Job openings for postdoctoral researchers and PhD opportunities in data science and computational social science."
-    },
-    {
-      "theme": "Conferences & Discussions",
-      "description": "Promotional and reflective updates on upcoming presentations (e.g., #DisinfoConf2025) and methodological discussions."
+      "theme": "Academic Grants & Hiring",
+      "description": "Announcements regarding research funding awards, postdoctoral hiring, and PhD research opportunities."
     }
   ],
   "recommendations": [
-    "Cross-post high-performing Bluesky research announcements to LinkedIn to leverage its larger audience base of 1,850 followers.",
-    "Increase posting frequency on Mastodon and Bluesky by initiating interactive discussions or sharing threads on methodological insights.",
-    "Include direct links and calls to action (e.g., paper preprints or job application links) directly in posts to drive external traffic."
+    "Increase posting frequency on LinkedIn to leverage its large follower base (1,850 followers) for driving high absolute interaction numbers.",
+    "Cross-post successful interactive content (e.g., student/postdoc recruitment calls) across all networks, as these generate high amplification via reposts on Bluesky and comments on LinkedIn.",
+    "Incorporate visual assets, links to publications, or media previews to further enhance post visibility and engagement across decentralized networks."
   ],
   "platformInsights": {
-    "bluesky": "Demonstrates the highest engagement rate (~6.14%), driven by strong repost activity on new paper announcements and student recruitment opportunities.",
-    "mastodon": "Yields consistent niche engagement among academic peers, particularly regarding tool releases like CooRnet, though with slightly lower overall interaction volume.",
-    "linkedin": "Generates the highest absolute volume of interactions (likes and comments) due to a larger follower count, particularly on major professional milestones such as research grant awards."
+    "bluesky": "Yields the highest relative engagement rate (averaging ~6.14%), driven strongly by reposts on publication updates and research opportunities.",
+    "mastodon": "Serves a focused academic niche on aoir.social, generating solid engagement for specialized tool updates like CooRnet v2.0.",
+    "linkedin": "Represents the largest audience base (51.7% of total followers), delivering the highest volume of total interactions per post, particularly around major professional milestones like grant awards."
   },
   "topPerformingContent": [
     {
