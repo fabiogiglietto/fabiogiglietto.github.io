@@ -1,10 +1,20 @@
+- date: '2026-11-06'
+  content: >-
+    Recent research in *Internet Histories* by K. Hegarty examines how
+    narratives of online decline shape contemporary digital discourse, analyzing
+    the historical framing behind questions regarding when the internet became
+    systematically degraded.
+  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mzmzpl2j6a2r
+  platforms:
+    - BlueSky
+    - Mastodon
+  toread: true
 - date: '2026-11-03'
   content: >-
-    Recent research reframes social media coordination detection as a problem of
-    statistical detectability rather than mere co-activity, offering a critique
-    of standard methods that project account interactions into similarity
-    networks and identify dense clusters regardless of whether genuine
-    coordination exists.
+    A study by Iannucci et al. reframes the detection of social media
+    coordination through the lens of statistical detectability, offering a
+    critique of standard network projection techniques that often identify
+    co-activation regardless of actual underlying coordination.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7523455632449155072
   platforms:
     - BlueSky
@@ -13,24 +23,11 @@
   toread: true
 - date: '2026-11-02'
   content: >-
-    A practical workflow demonstrates how open-weight large language models can
-    be instructed for automated content analysis on consumer-grade hardware. By
-    incorporating a 'Judge agent' to resolve conflicting codings, the method
-    achieves reliability scores comparable to human expert performance.
+    A practical workflow published in *Social Science Computer Review*
+    demonstrates how open-weight large language models on consumer-grade
+    hardware can automate content analysis, utilizing a judge-agent architecture
+    to achieve inter-coder reliability scores above 0.7.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7522813418509340672
-  platforms:
-    - BlueSky
-    - LinkedIn
-    - Mastodon
-  toread: true
-- date: '2026-10-31'
-  content: >-
-    Analysis of over 500 election rumors across recent voting cycles reveals a
-    underlying 'grammar' of election narratives. Despite appearing chaotic,
-    these rumors combine predictable actors, objects, and actions within
-    recurring meta-categories like foreign interference and voting-machine
-    manipulation.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7522267811960840193
   platforms:
     - BlueSky
     - LinkedIn
@@ -38,18 +35,19 @@
   toread: true
 - date: '2026-10-14'
   content: >-
-    Researchers from the University of Urbino Carlo Bo presented ten pieces of
-    research at AoIR 2026 in Mexico City, featuring work on digital activism,
-    platform governance, and online political communication.
+    Researchers from the University of Urbino Carlo Bo presented ten scholarly
+    works at the Association of Internet Researchers (AoIR 2026) conference in
+    Mexico City, covering topics from digital fandom and political communication
+    to platform governance.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7516139699506380800
   platforms:
     - LinkedIn
 - date: '2026-10-09'
   content: >-
-    A new theoretical framework traces the shift from a 'platform society' to an
-    'AI society,' arguing that current AI monopolies operate via cognitive
-    lock-in from interaction histories rather than traditional platform network
-    effects.
+    Theoretical work by Törnberg and Uitermark in *Dialogues on Digital Society*
+    outlines the structural transition from the platform society to the AI
+    society, arguing that modern AI dominance is driven by cognitive lock-in and
+    concentrated capital expenditure rather than traditional network effects.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7514348708734386177
   platforms:
     - BlueSky
