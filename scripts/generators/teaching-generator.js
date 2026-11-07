@@ -179,11 +179,14 @@ function formatTeachingData(teachingData) {
       code: course.code || course.discipline_code || `CRS${formatted.courses.length + 1}`,
       description: course.description || course.english_title || course.title,
       level: determineCourseLevel(course),
-      academic_year: course.academic_year || '2024-2025',
-      credits: course.credits || 6,
+      // Missing facts stay missing: no default year, credits or semester, and
+      // no schedule unless the source has one (until 2026-11-07 a hash of the
+      // title invented class times and rooms, and they were published).
+      ...(course.academic_year ? { academic_year: course.academic_year } : {}),
+      ...(course.credits ? { credits: course.credits } : {}),
       current: typeof course.current === 'boolean' ? course.current : false,
-      semester: course.semester || 'Fall',
-      schedule: course.schedule || '',
+      ...(course.semester ? { semester: course.semester } : {}),
+      ...(course.schedule ? { schedule: course.schedule } : {}),
       syllabus_url: course.syllabus_url || ''
     }));
     
@@ -234,35 +237,9 @@ function formatTeachingData(teachingData) {
     
     // Combine current and past courses
     formatted.courses = [...currentCourses, ...pastCourses];
-    
-    // Add schedule information to current courses if missing
-    // This is helpful for display purposes
-    formatted.courses.forEach(course => {
-      if (course.current && !course.schedule) {
-        // Generate a placeholder schedule based on course name
-        const hash = hashString(course.title);
-        const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
-        const day = days[hash % days.length];
-        const hour = 9 + (hash % 8); // Classes between 9-17
-        course.schedule = `${day} ${hour}:00-${hour+2}:00, Room ${Math.floor(hash % 5) + 1}.${Math.floor(hash % 10) + 1}`;
-      }
-    });
   }
   
   return formatted;
-}
-
-/**
- * Simple hash function for generating consistent pseudo-random values from strings
- * Used to generate placeholder schedules that remain consistent for the same course name
- */
-function hashString(str) {
-  let hash = 0;
-  for (let i = 0; i < str.length; i++) {
-    hash = ((hash << 5) - hash) + str.charCodeAt(i);
-    hash = hash & hash; // Convert to 32bit integer
-  }
-  return Math.abs(hash);
 }
 
 // Run the generator if this file is called directly

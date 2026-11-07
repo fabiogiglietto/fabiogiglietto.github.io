@@ -114,8 +114,8 @@ jobs:
             echo "Not first of month - skipping teaching update"
           fi
       
-      # Soft failures never fail the run: collectors return null or mock data
-      # and the site keeps the last good copy. This folds the run's per-source
+      # Soft failures never fail the run: collectors return null and the site
+      # keeps the last good copy. This folds the run's per-source
       # observations (written by collect-all.js) and checks on the published
       # bio into public/data/health.json, committed below, and records what
       # changed. See scripts/health.js.

@@ -30,7 +30,6 @@ module.exports = {
 | `semantic-scholar.js` | Semantic Scholar | Optional (`S2_API_KEY`) | Citation and influence data |
 | `crossref.js` | Crossref API | No | DOI metadata |
 | `university.js` | University website | No | Teaching and profile data |
-| `social-media.js` | Various | Yes | Social media profiles |
 | `social-media-aggregator.js` | Various | Yes | Aggregated social posts |
 | `websearch.js` | Gemini | Yes (`GEMINI_API_KEY`) | Web mentions |
 | `toread.js` | GitHub | No | Reading list |

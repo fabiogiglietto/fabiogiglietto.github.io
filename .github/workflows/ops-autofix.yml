@@ -10,9 +10,8 @@ name: Ops autofix
 # posts once — silence is never the outcome.
 #
 # It also runs in HEALTH mode, dispatched by update-site.yml's health step,
-# for soft failures that never fail a run: a collector returning nothing or
-# mock data, a record count collapsing, the published bio failing a content
-# check. Those are reported once, when they start (scripts/health.js).
+# for soft failures that never fail a run: a collector returning nothing,
+# a record count collapsing, the published bio failing a content check. Those are reported once, when they start (scripts/health.js).
 #
 # See toread's PIPELINE.md, "Automatic failure triage", for the cross-repo
 # picture and for what this deliberately does not cover.
@@ -237,8 +236,8 @@ jobs:
             the generator that wrote it, never in the generated file.
 
             **mode = health** — the run PASSED, but these checks degraded
-            (from scripts/health.js; status is failed, mock, empty, dropped
-            or bad):
+            (from scripts/health.js; status is failed, empty, dropped or
+            bad):
 
                 ${{ env.PROBLEMS }}
 

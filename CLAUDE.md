@@ -13,7 +13,7 @@ Jekyll-based GitHub Pages academic website for Fabio Giglietto. Integrates autom
 - **Tests**: `npm test` (Jest, tests in `tests/`), `npm run test:watch`, `npm run test:coverage`
 - **Lint**: `npm run lint` (ESLint on `scripts/` and `tests/`), `npm run lint:fix`
 - **Format**: `npm run format:check` (Prettier), `npm run format`
-- **Individual generators**: `npm run generate-about`, `npm run generate-teaching`, `npm run generate-social-insights`, `npm run generate-bibtex`
+- **Individual generators**: `npm run generate-about`, `npm run generate-teaching`, `npm run generate-bibtex`
 
 ## API Keys (`.env` file)
 - `GEMINI_API_KEY`: Required for AI content generation and web search grounding. Model IDs live in `scripts/helpers/gemini-client.js` (`MODELS.FLASH`, `MODELS.FLASH_LATEST`) — reference those rather than hardcoding a version here.
@@ -51,7 +51,7 @@ All collectors export `{ collect: async () => data | null }`. See `scripts/colle
 - `_layouts/` — Jekyll page layouts (`default`, `page`, `publication`, `publications`, `project`, `projects`, `teaching`)
 
 ### Jekyll Site Structure
-`index.html` composes the homepage from includes: `profile-card`, `generated-about`, `recent-publications`, `research-projects`, `toread-papers`, `news-updates`, `social-feed`, `web-mentions`, `social-media-insights`. Top-level pages: `publications.html`, `projects.html`, `teaching.html`.
+`index.html` composes the homepage from includes: `profile-card`, `generated-about`, `recent-publications`, `research-projects`, `toread-papers`, `web-mentions`, plus an inline News & Updates list from `_data/news.yml`. Top-level pages: `publications.html`, `projects.html`, `teaching.html`.
 
 ### CI/CD
 GitHub Actions workflow (`.github/workflows/`) runs daily at 06:00 UTC:
@@ -66,21 +66,22 @@ escalation that tells a human exactly what to do):
 - **Hard failures** — a step of Update Website Data or `pages-build-deployment`
   fails.
 - **Soft failures** — the run passes but a source degrades. Collectors never fail
-  a run, so `scripts/health.js` classifies each result (`failed`, `mock`,
-  `empty`, `dropped`) and checks the published bio. `public/data/health.json`
+  a run, so `scripts/health.js` classifies each result (`failed`, `empty`,
+  `dropped`) and checks the published bio. `public/data/health.json`
   keeps the state. Alerts fire **only on transitions**: a source degrades after 3
   consecutive bad runs (content checks after 1), and recovers after 2 good ones.
   A chronic problem is posted once. Dry run: `node scripts/health-report.js --dry-run`.
 - Escalations are recorded as `ops-autofix` issues carrying the signature, so the
   same failure is not re-triaged on every run. Health issues close themselves on
   recovery; close the others by hand when fixed.
-- **Mock data is never committed in CI.** Scopus, Semantic Scholar and WoS return
-  `_mock: true` stand-ins when their API fails; `collect-all.js` keeps the last
-  real file instead, and the aggregator ignores `_mock` / `unavailable` files.
-  Semantic Scholar published invented citation counts this way from 2026-02-24
-  to 2026-11-07. Separately, `wos.js` hardcoded counts for three papers in its
-  *real* API path; WoS returns `citations: []` on this subscription, so its
-  counts are now `null` (unknown), not 0 and not invented.
+- **No mock data, anywhere.** A collector that fails returns `null` and the last
+  real file is kept; a fact the source does not give stays missing (no default
+  credits, years or class times). Mock fallbacks used to publish invented data:
+  Semantic Scholar citation counts (2026-02-24 to 2026-11-07), hardcoded WoS
+  counts for three papers, a fake social-media feed, and made-up class times
+  and rooms on the teaching page. WoS returns `citations: []` on this
+  subscription, so its counts are `null` (unknown). `tests/health.test.js`
+  fails if a mock fallback reappears in `scripts/` or `assets/js/`.
 
 ## Key Conventions
 - Collectors return `null` on failure — never throw from the top-level `collect()` function

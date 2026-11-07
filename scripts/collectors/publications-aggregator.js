@@ -25,10 +25,9 @@ async function loadDataFile(filePath) {
   try {
     if (fs.existsSync(filePath)) {
       const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-      // Mock data and placeholders for an unavailable source must never
-      // contribute citation counts to the published aggregate.
-      if (data && (data._mock || data.unavailable)) {
-        console.log(`Ignoring ${path.basename(filePath)}: ${data._mock ? 'mock data' : 'source marked unavailable'}`);
+      // A placeholder for an unavailable source contributes nothing.
+      if (data && data.unavailable) {
+        console.log(`Ignoring ${path.basename(filePath)}: source marked unavailable`);
         return null;
       }
       return data;

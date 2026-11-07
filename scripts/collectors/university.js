@@ -26,12 +26,25 @@ async function collect() {
     
     // Extract teaching data directly from the profile page
     // Specifically from the "Insegnamenti e Programmi" tab
-    const teaching = extractTeachingFromProfilePage($);
-    
-    // Save teaching data to a dedicated file for the teaching generator
+    const extracted = extractTeachingFromProfilePage($);
+
+    // Save teaching data to a dedicated file for the teaching generator. If
+    // the page yielded no courses, keep the last real file rather than
+    // inventing courses or blanking the teaching page.
     const teachingDataPath = path.join(__dirname, '../../public/data/teaching.json');
-    fs.writeFileSync(teachingDataPath, JSON.stringify(teaching, null, 2));
-    console.log(`Teaching data saved to ${teachingDataPath}`);
+    let teaching = extracted;
+    if (extracted) {
+      fs.writeFileSync(teachingDataPath, JSON.stringify(extracted, null, 2));
+      console.log(`Teaching data saved to ${teachingDataPath}`);
+    } else {
+      try {
+        teaching = JSON.parse(fs.readFileSync(teachingDataPath, 'utf8'));
+        console.warn('No courses extracted from the profile page — keeping the previous teaching.json');
+      } catch {
+        console.warn('No courses extracted and no previous teaching.json — teaching data unavailable');
+        teaching = null;
+      }
+    }
     
     return {
       profile,
@@ -42,8 +55,8 @@ async function collect() {
     console.error('Error fetching University data:', error.message);
     console.error(error.stack);
     
-    // Return minimal mockup data when real data cannot be fetched
-    return getMockData();
+    // Never invent a profile: returning null keeps the last real university.json.
+    return null;
   }
 }
 
@@ -161,14 +174,13 @@ function extractTeachingFromProfilePage($) {
     
     console.log(`Extracted ${courseData.length} courses from the table`);
   } else {
-    console.log('No course table found on the profile page. Falling back to mock data.');
-    return getMockTeachingData();
+    console.log('No course table found on the profile page.');
+    return null;
   }
   
-  // If we still have no courses, fallback to mock data
   if (courseData.length === 0) {
-    console.log('No courses found in the table. Falling back to mock data.');
-    return getMockTeachingData();
+    console.log('No courses found in the table.');
+    return null;
   }
   
   // Extract office hours if available, otherwise use default
@@ -411,85 +423,6 @@ function getDefaultSupervision() {
     "- Media Studies\n" +
     "- Online Misinformation and Disinformation\n\n" +
     "If you are interested in working with me, please email me with a brief outline of your research interests.";
-}
-
-/**
- * Returns mock data for when real data cannot be fetched
- */
-function getMockData() {
-  return {
-    profile: {
-      name: config.name,
-      title: config.title,
-      department: config.department,
-      email: config.email,
-      phone: config.phone,
-      office: config.office,
-      bio: "",
-      research_interests: config.researchInterests,
-      office_hours: config.officeHours
-    },
-    teaching: getMockTeachingData(),
-    lastUpdated: new Date().toISOString()
-  };
-}
-
-/**
- * Returns mock teaching data
- */
-function getMockTeachingData() {
-  return {
-    courses: [
-      {
-        title: "Digital Media Analysis",
-        english_title: "Digital Media Analysis",
-        code: "DMA2024",
-        academic_year: "2024-2025",
-        degree: "Laurea Magistrale in Comunicazione e Pubblicità per le Organizzazioni",
-        degree_english: "Master's Degree in Communication and Advertising for Organizations",
-        credits: 9,
-        discipline_code: "SPS/08",
-        current: true,
-        syllabus_url: "https://www.uniurb.it/syllabi/digitalmedia2024",
-        semester: "Fall",
-        level: "Master",
-        description: "Introduction to digital and social media data analysis using computational methods"
-      },
-      {
-        title: "Metodi di Ricerca per la Comunicazione",
-        english_title: "Research Methods for Communication",
-        code: "RMC2024",
-        academic_year: "2024-2025",
-        degree: "Laurea in Informazione, Media, Pubblicità",
-        degree_english: "Bachelor's Degree in Information, Media, Advertising",
-        credits: 6,
-        discipline_code: "SPS/08",
-        current: true,
-        syllabus_url: "https://www.uniurb.it/syllabi/metodiricerca2024",
-        semester: "Spring",
-        level: "Bachelor",
-        description: "Introduction to research methods for communication studies with focus on digital media"
-      },
-      {
-        title: "Big Data e Social Media Analytics",
-        english_title: "Big Data and Social Media Analytics",
-        code: "BDA2023",
-        academic_year: "2023-2024",
-        degree: "Laurea Magistrale in Comunicazione e Pubblicità per le Organizzazioni",
-        degree_english: "Master's Degree in Communication and Advertising for Organizations",
-        credits: 6,
-        discipline_code: "SPS/08",
-        current: false,
-        syllabus_url: "https://www.uniurb.it/syllabi/bigdata2023",
-        semester: "Fall",
-        level: "Master",
-        description: "Advanced techniques for large-scale data analysis in social science research"
-      }
-    ],
-    office_hours: `${config.officeHours}\nOr by appointment (email: ${config.email})`,
-    tutorials: getDefaultTutorials(),
-    supervision: getDefaultSupervision()
-  };
 }
 
 module.exports = {

@@ -178,7 +178,6 @@ All workflows can be triggered manually via GitHub Actions interface for immedia
 npm run collect                    # Full data collection
 npm run generate-about            # AI biography generation
 npm run generate-teaching         # Teaching data generation
-npm run generate-social-insights  # Social media analysis
 
 # Development
 npm run serve                     # Start Jekyll development server

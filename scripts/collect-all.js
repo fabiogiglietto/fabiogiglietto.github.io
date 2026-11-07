@@ -18,7 +18,6 @@ const universityCollector = require('./collectors/university');
 const githubCollector = require('./collectors/github');
 const newsCollector = require('./collectors/news');
 const webSearchCollector = require('./collectors/websearch');
-const socialMediaCollector = require('./collectors/social-media');
 const socialMediaAggregator = require('./collectors/social-media-aggregator');
 const wosCollector = require('./collectors/wos');
 const scopusCollector = require('./collectors/scopus');
@@ -34,7 +33,6 @@ const health = require('./health');
 // Import generators
 const aboutGenerator = require('./generators/about-generator');
 const teachingGenerator = require('./generators/teaching-generator');
-const socialMediaInsightsGenerator = require('./generators/social-media-insights');
 const publicationsGenerator = require('./generators/publications-generator');
 const bibtexGenerator = require('./generators/bibtex-generator');
 const ownPublicationsFeedGenerator = require('./generators/own-publications-feed');
@@ -66,7 +64,7 @@ async function collectAll() {
     
     // Phase 1: Collect basic data sources in parallel
     console.log('Phase 1: Collecting basic data sources...');
-    const [orcidData, scholarData, universityData, githubData, newsData, webSearchData, socialMediaData, wosResult, scopusResult, semanticScholarResult, toreadData, oraData, researchRadioData, zettelkastenData, ownPaperClaimsData] = await Promise.all([
+    const [orcidData, scholarData, universityData, githubData, newsData, webSearchData, wosData, scopusData, semanticScholarData, toreadData, oraData, researchRadioData, zettelkastenData, ownPaperClaimsData] = await Promise.all([
       orcidCollector.collect().catch(err => {
         console.error('ORCID collection error:', err.message);
         return null;
@@ -90,14 +88,10 @@ async function collectAll() {
       webSearchCollector.collect().catch(err => {
         // Don't show detailed errors for Gemini when not in GitHub Actions
         if (!isGitHubActions && err.message.includes('Gemini')) {
-          console.log('Web Search requires Gemini API key, using mock data');
+          console.log('Web Search requires a Gemini API key — skipped');
         } else {
           console.error('Web Search collection error:', err.message);
         }
-        return null;
-      }),
-      socialMediaCollector.collect().catch(err => {
-        console.error('Social Media collection error:', err.message);
         return null;
       }),
       wosCollector.collect().catch(err => {
@@ -143,19 +137,6 @@ async function collectAll() {
       })
     ]);
     
-    // Mock data is a stand-in for local development without API keys. In CI
-    // it means the API failed, and committing it publishes invented numbers
-    // (Semantic Scholar served mock citation counts from 2026-02-24 to
-    // 2026-11-07). Keep the last real file instead; health.json reports it.
-    const keepReal = (name, data) => {
-      if (!isGitHubActions || !health.isMock(data)) return data;
-      console.warn(`${name}: API failed and returned mock data — not saving it`);
-      return null;
-    };
-    const wosData = keepReal('wos', wosResult);
-    const scopusData = keepReal('scopus', scopusResult);
-    const semanticScholarData = keepReal('semanticScholar', semanticScholarResult);
-
     // Save Phase 1 data
     if (orcidData) fs.writeFileSync(path.join(dataDir, 'orcid.json'), JSON.stringify(orcidData, null, 2));
     if (scholarData) fs.writeFileSync(path.join(dataDir, 'scholar.json'), JSON.stringify(scholarData, null, 2));
@@ -167,7 +148,6 @@ async function collectAll() {
       // Also copy to Jekyll _data directory for site.data.websearch access
       fs.writeFileSync(path.join(__dirname, '../_data/websearch.json'), JSON.stringify(webSearchData, null, 2));
     }
-    if (socialMediaData) fs.writeFileSync(path.join(dataDir, 'social-media.json'), JSON.stringify(socialMediaData, null, 2));
     if (wosData) fs.writeFileSync(path.join(dataDir, 'wos.json'), JSON.stringify(wosData, null, 2));
     if (scopusData) fs.writeFileSync(path.join(dataDir, 'scopus.json'), JSON.stringify(scopusData, null, 2));
     if (semanticScholarData) fs.writeFileSync(path.join(dataDir, 'semantic-scholar.json'), JSON.stringify(semanticScholarData, null, 2));
@@ -209,7 +189,6 @@ async function collectAll() {
         github: !!githubData,
         news: !!newsData,
         websearch: !!webSearchData,
-        socialMedia: !!socialMediaData,
         wos: !!wosData,
         scopus: !!scopusData,
         semanticScholar: !!semanticScholarData,
@@ -231,11 +210,9 @@ async function collectAll() {
       github: githubData,
       news: newsData,
       websearch: webSearchData,
-      socialMedia: socialMediaData,
-      // Mock (nulled above in CI) is reported as mock, not as a plain failure.
-      wos: wosResult,
-      scopus: scopusResult,
-      semanticScholar: semanticScholarResult,
+      wos: wosData,
+      scopus: scopusData,
+      semanticScholar: semanticScholarData,
       toread: toreadData,
       ora: oraData,
       researchRadio: researchRadioData,
@@ -290,18 +267,6 @@ async function collectAll() {
       console.log('Skipping Teaching generation (will be handled separately)');
     }
     
-    // Generate Social Media Insights
-    try {
-      const insightsGenerated = await socialMediaInsightsGenerator.generateSocialMediaInsights();
-      if (insightsGenerated) {
-        console.log('Social media insights generated successfully');
-      } else {
-        console.log('Social media insights generation skipped or failed');
-      }
-    } catch (genError) {
-      console.error('Error generating social media insights:', genError);
-      // Continue execution even if the generation fails
-    }
     
     // Generate Publications Data from Scholar
     try {

@@ -1,9 +1,9 @@
 /**
  * Site health record — catches the failures that never fail a run.
  *
- * Collectors swallow their errors by design (they return null, or fall back to
- * mock data), so a run can be green while Scholar 403s, Semantic Scholar serves
- * invented numbers, or the published bio carries a stale date. This module
+ * Collectors swallow their errors by design (they return null and the last
+ * real file is kept), so a run can be green while Scholar 403s for days or the
+ * published bio carries a stale date. This module
  * turns each run into per-check observations, folds them into a persistent
  * state (public/data/health.json, committed by the workflow) and reports only
  * TRANSITIONS: a check that has just become degraded or just recovered. A
@@ -42,7 +42,6 @@ const SOURCES = {
   news: { label: 'News (Mastodon)', count: d => d.news?.length },
   // Zero validated mentions is a legitimate outcome, not an outage.
   websearch: { label: 'Web mentions', count: d => (Array.isArray(d) ? d.length : d.results?.length), allowEmpty: true },
-  socialMedia: { label: 'Social media', count: d => d.recentActivity?.length },
   wos: { label: 'Web of Science', count: d => d.publications?.length },
   scopus: { label: 'Scopus', count: d => d.publications?.length },
   semanticScholar: { label: 'Semantic Scholar', count: d => d.publications?.length },
@@ -56,16 +55,10 @@ const SOURCES = {
 
 const STATUS_TEXT = {
   failed: 'collector returned nothing',
-  mock: 'API failed — fell back to mock data (not published)',
   empty: 'returned 0 records',
   dropped: 'record count dropped sharply',
   bad: 'check failed',
 };
-
-/** True when a collector result is hard-coded mock data, not a real response. */
-function isMock(data) {
-  return !!(data && data._mock);
-}
 
 /**
  * Classify one collector result.
@@ -76,8 +69,9 @@ function isMock(data) {
  */
 function classifySource(key, data, lastOkCount) {
   const spec = SOURCES[key] || { count: () => null };
-  if (data === null || data === undefined) return { status: 'failed', count: null };
-  if (isMock(data)) return { status: 'mock', count: null };
+  // `unavailable` marks a placeholder file standing in for a source that has
+  // never returned real data (semantic-scholar.json since 2026-11-07).
+  if (data === null || data === undefined || data.unavailable) return { status: 'failed', count: null };
   let count = null;
   try {
     const c = spec.count(data);
@@ -108,7 +102,7 @@ function observeSources(results, previousState) {
 
 const SOURCE_FILES = {
   orcid: 'orcid.json', scholar: 'scholar.json', university: 'university.json', github: 'github.json',
-  news: 'news.json', websearch: 'websearch.json', socialMedia: 'social-media.json', wos: 'wos.json',
+  news: 'news.json', websearch: 'websearch.json', wos: 'wos.json',
   scopus: 'scopus.json', semanticScholar: 'semantic-scholar.json', toread: 'toread.json', ora: 'ora.json',
   researchRadio: 'research-radio.json', zettelkasten: 'zettelkasten.json',
   ownPaperClaims: 'own-paper-claims.json', aggregatedPublications: 'aggregated-publications.json',
@@ -122,11 +116,7 @@ const SOURCE_FILES = {
 function observeFromDisk(dataDir = DATA_DIR) {
   const results = {};
   for (const [key, file] of Object.entries(SOURCE_FILES)) {
-    const data = readJson(path.join(dataDir, file));
-    // Files saved before the _mock marker existed carry mock IDs instead.
-    const legacyMock = ['wos', 'scopus', 'semanticScholar'].includes(key) &&
-      data && JSON.stringify(data.publications || []).includes('"mock-');
-    results[key] = legacyMock ? { ...data, _mock: true } : data;
+    results[key] = readJson(path.join(dataDir, file));
   }
   return observeSources(results, readState());
 }
@@ -266,7 +256,6 @@ module.exports = {
   STATE_FILE,
   BAD_RUNS_TO_DEGRADE,
   OK_RUNS_TO_RECOVER,
-  isMock,
   classifySource,
   observeSources,
   observeFromDisk,

@@ -50,9 +50,9 @@ async function collect() {
     if (isGitHubActions) {
       console.warn('Web of Science API key not found. Add WOS_API_KEY to repository secrets for live data.');
     } else {
-      console.warn('Web of Science API key not found in .env file. Using mock data.');
+      console.warn('Web of Science API key not found — skipping (the last real data is kept).');
     }
-    return getMockData();
+    return null;
   }
   
   // API key is available and validated
@@ -84,7 +84,7 @@ async function collect() {
     if (!response.data || !response.data.hits || !Array.isArray(response.data.hits)) {
       console.error('Query response did not contain expected publication data structure');
       console.error('Response data preview:', JSON.stringify(response.data).substring(0, 300));
-      return getMockData();
+      return null;
     }
     
     const records = response.data.hits;
@@ -204,57 +204,8 @@ async function collect() {
         console.error('Response data:', JSON.stringify(error.response.data).substring(0, 300));
       }
     }
-    return getMockData();
+    return null;
   }
-}
-
-/**
- * Provides mock Web of Science data
- */
-function getMockData() {
-  return {
-    // Marks this as a stand-in, not an API response: collect-all.js refuses to
-    // commit it in CI and the aggregator ignores it.
-    _mock: true,
-    publications: [
-      {
-        title: "Second Screen and Participation: A Content Analysis on a Full Season Dataset of Tweets",
-        authors: "Giglietto, Fabio; Selva, Donatella",
-        venue: "JOURNAL OF COMMUNICATION",
-        year: "2014",
-        doi: "10.1111/jcom.12085",
-        citations: 410,
-        wosId: "WOS:000334266300005",
-        url: "https://www.webofscience.com/wos/woscc/full-record/WOS:000334266300005"
-      },
-      {
-        title: "The open laboratory: Limits and possibilities of using Facebook, Twitter, and YouTube as a research data source",
-        authors: "Giglietto, Fabio; Rossi, Luca; Bennato, Davide",
-        venue: "JOURNAL OF TECHNOLOGY IN HUMAN SERVICES",
-        year: "2012",
-        doi: "10.1080/15228835.2012.743797",
-        citations: 289,
-        wosId: "WOS:000313276900002",
-        url: "https://www.webofscience.com/wos/woscc/full-record/WOS:000313276900002"
-      },
-      {
-        title: "'Fake news' is the invention of a liar: How false information circulates within the hybrid news system",
-        authors: "Giglietto, Fabio; Iannelli, Laura; Valeriani, Augusto; Rossi, Luca",
-        venue: "CURRENT SOCIOLOGY",
-        year: "2019",
-        doi: "10.1177/0011392119837536",
-        citations: 170,
-        wosId: "WOS:000468984900005",
-        url: "https://www.webofscience.com/wos/woscc/full-record/WOS:000468984900005"
-      }
-    ],
-    metrics: {
-      hIndex: 15,
-      documentCount: 45,
-      citationCount: 1620
-    },
-    lastUpdated: new Date().toISOString()
-  };
 }
 
 module.exports = {

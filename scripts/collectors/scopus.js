@@ -54,9 +54,9 @@ async function collect() {
     if (isGitHubActions) {
       console.warn('Scopus API key not found. Add SCOPUS_API_KEY to repository secrets for live data.');
     } else {
-      console.warn('Scopus API key not found in .env file. Using mock data.');
+      console.warn('Scopus API key not found — skipping (the last real data is kept).');
     }
-    return getMockData();
+    return null;
   }
   
   // API key is available and validated
@@ -247,8 +247,8 @@ async function collect() {
         lastUpdated: new Date().toISOString()
       };
     } else {
-      console.warn('Scopus API returned unexpected data structure, falling back to mock data');
-      return getMockData();
+      console.warn('Scopus API returned unexpected data structure, returning nothing (the last real data is kept)');
+      return null;
     }
   } catch (error) {
     if (error.response) {
@@ -282,68 +282,8 @@ async function collect() {
     } else {
       console.error('Error fetching Scopus data:', error.message);
     }
-    
-    console.log('Falling back to mock data...');
-    // Fall back to mock data on error
-    return getMockData();
+    return null;
   }
-}
-
-/**
- * Provides mock Scopus data when API key is not available
- */
-function getMockData() {
-  const mockPublications = [
-    {
-      title: "Second Screen and Participation: A Content Analysis on a Full Season Dataset of Tweets",
-      authors: "Giglietto F., Selva D.",
-      venue: "Journal of Communication",
-      year: "2014",
-      doi: "10.1111/jcom.12085",
-      citations: 402,
-      scopusId: "84897640661",
-      url: "https://www.scopus.com/record/display.uri?eid=2-s2.0-84897640661"
-    },
-    {
-      title: "'Fake news' is the invention of a liar: How false information circulates within the hybrid news system",
-      authors: "Giglietto F., Iannelli L., Valeriani A., Rossi L.",
-      venue: "Current Sociology",
-      year: "2019",
-      doi: "10.1177/0011392119837536",
-      citations: 163,
-      scopusId: "85064248987",
-      url: "https://www.scopus.com/record/display.uri?eid=2-s2.0-85064248987"
-    },
-    {
-      title: "The open laboratory: Limits and possibilities of using Facebook, Twitter, and YouTube as a research data source",
-      authors: "Giglietto F., Rossi L., Bennato D.",
-      venue: "Journal of Technology in Human Services",
-      year: "2012",
-      doi: "10.1080/15228835.2012.743797",
-      citations: 280,
-      scopusId: "84871345071",
-      url: "https://www.scopus.com/record/display.uri?eid=2-s2.0-84871345071"
-    }
-  ];
-  
-  // Calculate citation count
-  const citationCount = mockPublications.reduce((sum, pub) => sum + pub.citations, 0);
-  
-  // Calculate h-index (for mock data we'll assume h-index is 3 since all 3 publications have >3 citations)
-  const hIndex = 3;
-  
-  return {
-    // Marks this as a stand-in, not an API response: collect-all.js refuses to
-    // commit it in CI and the aggregator ignores it.
-    _mock: true,
-    publications: mockPublications,
-    metrics: {
-      hIndex: hIndex,
-      documentCount: mockPublications.length,
-      citationCount: citationCount
-    },
-    lastUpdated: new Date().toISOString()
-  };
 }
 
 module.exports = {

@@ -161,7 +161,7 @@ async function collectWebSearchResults() {
         console.log('Clearing web mentions data - section will be hidden without valid API key');
       }
 
-      // Save empty results when no API key is available - DO NOT use mock data
+      // Save empty results when no API key is available - never invent results
       return await saveEmptyResults();
     }
 
@@ -659,7 +659,7 @@ Only include results with REAL, direct URLs to news sources.`;
     return recentResults;
   } catch (error) {
     console.error('Error collecting web search results:', error);
-    // Return empty results if there's an error - DO NOT use mock data
+    // Return empty results if there's an error - never invent results
     return await saveEmptyResults();
   }
 }

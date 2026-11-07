@@ -7,7 +7,7 @@ const os = require('os');
 const path = require('path');
 const health = require('../scripts/health');
 
-const { classifySource, nextState, formatMessage, contentChecks, isMock } = health;
+const { classifySource, nextState, formatMessage, contentChecks } = health;
 
 const src = (status, extra = {}) => ({ kind: 'source', label: 'Google Scholar', status, count: status === 'ok' ? 163 : null, ...extra });
 
@@ -28,9 +28,8 @@ describe('classifySource', () => {
     expect(classifySource('scholar', null, 163)).toEqual({ status: 'failed', count: null });
   });
 
-  test('mock data is flagged even though it has records', () => {
-    expect(classifySource('semanticScholar', { _mock: true, publications: [1, 2, 3] }, null).status).toBe('mock');
-    expect(isMock({ publications: [] })).toBe(false);
+  test('a placeholder for an unavailable source is a failure, not "0 records"', () => {
+    expect(classifySource('semanticScholar', { unavailable: true, publications: [] }, null).status).toBe('failed');
   });
 
   test('zero records is empty, unless the source allows it', () => {
@@ -164,5 +163,36 @@ describe('contentChecks (published bio)', () => {
 
   test('the bio published today passes', () => {
     expect(contentChecks(path.join(__dirname, '..')).bio.status).toBe('ok');
+  });
+});
+
+describe('no mock data anywhere', () => {
+  // Mock fallbacks published invented data: Semantic Scholar citation counts
+  // (2026-02-24 to 2026-11-07), hardcoded WoS counts, a fake social-media
+  // feed, and made-up class times and rooms on the teaching page.
+  const SCAN_DIRS = ['scripts/collectors', 'scripts/generators', 'assets/js'];
+  const root = path.join(__dirname, '..');
+
+  test.each(SCAN_DIRS)('%s has no mock-data fallback', dir => {
+    for (const file of fs.readdirSync(path.join(root, dir)).filter(f => f.endsWith('.js'))) {
+      const src = fs.readFileSync(path.join(root, dir, file), 'utf8');
+      expect({ file, hit: /getMock\w*\(|mock data|sample data|placeholder schedule/i.test(src) })
+        .toEqual({ file, hit: false });
+    }
+  });
+
+  test('a failing collector returns null instead of invented data', async () => {
+    const saved = { ...process.env };
+    delete process.env.S2_API_KEY;
+    delete process.env.SCOPUS_API_KEY;
+    delete process.env.WOS_API_KEY;
+    try {
+      for (const name of ['semantic-scholar', 'scopus', 'wos']) {
+        const collector = require(`../scripts/collectors/${name}`);
+        await expect(collector.collect()).resolves.toBeNull();
+      }
+    } finally {
+      process.env = saved;
+    }
   });
 });

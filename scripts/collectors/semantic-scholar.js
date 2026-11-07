@@ -58,9 +58,9 @@ async function collect() {
     if (isGitHubActions) {
       console.warn('Semantic Scholar API key not found. Add S2_API_KEY to repository secrets for live data.');
     } else {
-      console.warn('Semantic Scholar API key not found in .env file. Using mock data.');
+      console.warn('Semantic Scholar API key not found — skipping (the last real data is kept).');
     }
-    return getMockData();
+    return null;
   }
   
   // API key is available and validated
@@ -196,83 +196,8 @@ async function collect() {
     } else {
       console.error('Error fetching Semantic Scholar data:', error.message);
     }
-    
-    console.log('Falling back to mock data...');
-    // Fall back to mock data on error
-    return getMockData();
+    return null;
   }
-}
-
-/**
- * Provides mock Semantic Scholar data when API key is not available
- */
-function getMockData() {
-  const mockPublications = [
-    {
-      title: "Second Screen and Participation: A Content Analysis on a Full Season Dataset of Tweets",
-      authors: "Fabio Giglietto, Donatella Selva",
-      venue: "Journal of Communication",
-      year: 2014,
-      doi: "10.1111/jcom.12085",
-      citations: 145,
-      influentialCitations: 12,
-      references: 45,
-      semanticScholarId: "mock-s2-id-1",
-      isOpenAccess: false,
-      openAccessPdf: null,
-      abstract: "This study examines second screen participation during television programming...",
-      fieldsOfStudy: ["Computer Science", "Sociology"]
-    },
-    {
-      title: "'Fake news' is the invention of a liar: How false information circulates within the hybrid news system",
-      authors: "Fabio Giglietto, Laura Iannelli, Augusto Valeriani, Luca Rossi",
-      venue: "Current Sociology",
-      year: 2019,
-      doi: "10.1177/0011392119837536",
-      citations: 89,
-      influentialCitations: 8,
-      references: 67,
-      semanticScholarId: "mock-s2-id-2",
-      isOpenAccess: true,
-      openAccessPdf: "https://example.com/paper.pdf",
-      abstract: "This paper analyzes how false information circulates in contemporary media ecosystems...",
-      fieldsOfStudy: ["Sociology", "Political Science"]
-    },
-    {
-      title: "The open laboratory: Limits and possibilities of using Facebook, Twitter, and YouTube as a research data source",
-      authors: "Fabio Giglietto, Luca Rossi, Davide Bennato",
-      venue: "Journal of Technology in Human Services",
-      year: 2012,
-      doi: "10.1080/15228835.2012.743797",
-      citations: 178,
-      influentialCitations: 15,
-      references: 52,
-      semanticScholarId: "mock-s2-id-3",
-      isOpenAccess: false,
-      openAccessPdf: null,
-      abstract: "This article explores the opportunities and challenges of using social media platforms as research data sources...",
-      fieldsOfStudy: ["Computer Science", "Sociology"]
-    }
-  ];
-  
-  return {
-    // Marks this as a stand-in, not an API response: collect-all.js refuses to
-    // commit it in CI and the aggregator ignores it.
-    _mock: true,
-    profile: {
-      name: "Fabio Giglietto",
-      affiliations: ["Università di Urbino Carlo Bo"],
-      homepage: null
-    },
-    publications: mockPublications,
-    metrics: {
-      hIndex: 12,
-      documentCount: mockPublications.length,
-      citationCount: mockPublications.reduce((sum, pub) => sum + pub.citations, 0),
-      influentialCitationCount: mockPublications.reduce((sum, pub) => sum + pub.influentialCitations, 0)
-    },
-    lastUpdated: new Date().toISOString()
-  };
 }
 
 module.exports = {
