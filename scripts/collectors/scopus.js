@@ -333,6 +333,9 @@ function getMockData() {
   const hIndex = 3;
   
   return {
+    // Marks this as a stand-in, not an API response: collect-all.js refuses to
+    // commit it in CI and the aggregator ignores it.
+    _mock: true,
     publications: mockPublications,
     metrics: {
       hIndex: hIndex,

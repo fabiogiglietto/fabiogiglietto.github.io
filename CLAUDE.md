@@ -60,6 +60,28 @@ GitHub Actions workflow (`.github/workflows/`) runs daily at 06:00 UTC:
 - Teaching generation runs monthly (1st of month only)
 - Environment variables `SKIP_ABOUT_GENERATION` and `SKIP_TEACHING_GENERATION` control skipping in `collect-all.js`
 
+### Failure alerting (#pipeline-ops)
+Two paths, both ending in `ops-autofix.yml` (Claude triage → fix PR, or an
+escalation that tells a human exactly what to do):
+- **Hard failures** — a step of Update Website Data or `pages-build-deployment`
+  fails.
+- **Soft failures** — the run passes but a source degrades. Collectors never fail
+  a run, so `scripts/health.js` classifies each result (`failed`, `mock`,
+  `empty`, `dropped`) and checks the published bio. `public/data/health.json`
+  keeps the state. Alerts fire **only on transitions**: a source degrades after 3
+  consecutive bad runs (content checks after 1), and recovers after 2 good ones.
+  A chronic problem is posted once. Dry run: `node scripts/health-report.js --dry-run`.
+- Escalations are recorded as `ops-autofix` issues carrying the signature, so the
+  same failure is not re-triaged on every run. Health issues close themselves on
+  recovery; close the others by hand when fixed.
+- **Mock data is never committed in CI.** Scopus, Semantic Scholar and WoS return
+  `_mock: true` stand-ins when their API fails; `collect-all.js` keeps the last
+  real file instead, and the aggregator ignores `_mock` / `unavailable` files.
+  Semantic Scholar published invented citation counts this way from 2026-02-24
+  to 2026-11-07. Separately, `wos.js` hardcoded counts for three papers in its
+  *real* API path; WoS returns `citations: []` on this subscription, so its
+  counts are now `null` (unknown), not 0 and not invented.
+
 ## Key Conventions
 - Collectors return `null` on failure — never throw from the top-level `collect()` function
 - Generated content files are prefixed with `generated-`

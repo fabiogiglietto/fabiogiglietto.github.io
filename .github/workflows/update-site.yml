@@ -19,9 +19,13 @@ concurrency:
 # id-token:write lets the job mint the GitHub OIDC token that the Anthropic SDK
 # exchanges for a short-lived access token (Workload Identity Federation) — no
 # ANTHROPIC_API_KEY secret is stored in this repository.
+# actions:write lets the health step dispatch ops-autofix for a soft failure;
+# issues:write lets it close ops-autofix escalation issues on recovery.
 permissions:
   contents: write
   id-token: write
+  actions: write
+  issues: write
 
 jobs:
   update-data:
@@ -110,6 +114,16 @@ jobs:
             echo "Not first of month - skipping teaching update"
           fi
       
+      # Soft failures never fail the run: collectors return null or mock data
+      # and the site keeps the last good copy. This folds the run's per-source
+      # observations (written by collect-all.js) and checks on the published
+      # bio into public/data/health.json, committed below, and records what
+      # changed. See scripts/health.js.
+      - name: Evaluate site health
+        id: health
+        continue-on-error: true
+        run: node scripts/health-report.js
+
       - name: Commit and push if changed
         run: |
           git config --global user.name 'Website Data Bot'
@@ -185,6 +199,19 @@ jobs:
           token: ${{ secrets.PIPELINE_DISPATCH_TOKEN }}
           repository: fabiogiglietto/fg-zettelkasten
           event-type: pipeline-finalize
+      # Posts only when a check has just become degraded or just recovered,
+      # never per run, so a chronic problem is reported once. New problems are
+      # handed to ops-autofix (health mode) for triage.
+      - name: Report site health to #pipeline-ops
+        if: always() && steps.health.outputs.has_transitions == 'true'
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_ALERT_CHANNEL: ${{ vars.OPS_SLACK_CHANNEL }}
+        run: node scripts/health-report.js notify
+
       # Pipeline observability — alert on any failed run. No-ops until a
       # SLACK_WEBHOOK_URL (or SLACK_BOT_TOKEN + vars.OPS_SLACK_CHANNEL)
       # is configured in this repo's settings.

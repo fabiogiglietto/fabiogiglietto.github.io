@@ -24,8 +24,14 @@ const _semanticScholarCollector = require('./semantic-scholar');
 async function loadDataFile(filePath) {
   try {
     if (fs.existsSync(filePath)) {
-      const data = fs.readFileSync(filePath, 'utf8');
-      return JSON.parse(data);
+      const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+      // Mock data and placeholders for an unavailable source must never
+      // contribute citation counts to the published aggregate.
+      if (data && (data._mock || data.unavailable)) {
+        console.log(`Ignoring ${path.basename(filePath)}: ${data._mock ? 'mock data' : 'source marked unavailable'}`);
+        return null;
+      }
+      return data;
     } else {
       console.log(`Data file not found: ${filePath}`);
       return null;
@@ -102,7 +108,8 @@ function processPublicationSource(sourceData, sourceName, publicationsMap, field
  * Updates an existing publication with data from a source
  */
 function updatePublicationFromSource(publication, sourcePub, sourceName, fieldMapping) {
-  publication.citations[sourceName] = sourcePub.citations || 0;
+  // Unknown stays null so it is not counted as a source reporting zero.
+  publication.citations[sourceName] = Number.isFinite(sourcePub.citations) ? sourcePub.citations : null;
   publication.source_urls[sourceName] = fieldMapping.buildUrl ? fieldMapping.buildUrl(sourcePub) : sourcePub.url;
   publication.source_ids[sourceName] = sourcePub[fieldMapping.idField];
 
@@ -153,7 +160,8 @@ function createNewPublication(sourcePub, sourceName, fieldMapping) {
   };
 
   // Set source-specific fields
-  publication.citations[sourceName] = sourcePub.citations || 0;
+  // Unknown stays null so it is not counted as a source reporting zero.
+  publication.citations[sourceName] = Number.isFinite(sourcePub.citations) ? sourcePub.citations : null;
   publication.source_urls[sourceName] = fieldMapping.buildUrl ? fieldMapping.buildUrl(sourcePub) : sourcePub.url;
   publication.source_ids[sourceName] = sourcePub[fieldMapping.idField];
 

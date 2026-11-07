@@ -145,3 +145,6 @@ dist
 
 # Playwright MCP browser-session artifacts
 .playwright-mcp/
+
+# Per-run health observations (transient; folded into public/data/health.json)
+public/data/.health-run.json

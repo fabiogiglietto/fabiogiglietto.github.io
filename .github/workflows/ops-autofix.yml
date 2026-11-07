@@ -2,22 +2,32 @@ name: Ops autofix
 
 # Closes the loop on the failure alerts this repo posts into #pipeline-ops.
 #
-# When "Update Website Data" fails, this runs Claude Code against the failed run:
+# When "Update Website Data" or the GitHub Pages build fails, this runs Claude
+# Code against the failed run:
 # it reads the failing step's log, classifies the failure, and either lands a
 # branch and a PR ready for a human to merge, or reports in #pipeline-ops that
 # a human has to intervene and exactly what they have to do. Either way it
 # posts once — silence is never the outcome.
 #
-# See PIPELINE.md, "Automatic failure triage", for the cross-repo picture and
-# for what this deliberately does not cover.
+# It also runs in HEALTH mode, dispatched by update-site.yml's health step,
+# for soft failures that never fail a run: a collector returning nothing or
+# mock data, a record count collapsing, the published bio failing a content
+# check. Those are reported once, when they start (scripts/health.js).
+#
+# See toread's PIPELINE.md, "Automatic failure triage", for the cross-repo
+# picture and for what this deliberately does not cover.
 #
 # Two things it must never do: push to main, or edit generated content
-# (data/, output/, vault/, cache/). A "fix" in generated content is erased by
-# the next producing run and hides the real bug in the meantime.
+# (public/data/, _data/, _includes/generated-*.html). A "fix" in generated
+# content is erased by the next producing run and hides the real bug in the
+# meantime.
 
 on:
   workflow_run:
-    workflows: ["Update Website Data"]
+    # pages-build-deployment is GitHub's own Pages workflow. If the Jekyll
+    # build breaks, Update Website Data has already passed and nothing else
+    # alerts — this job's report step is the alert.
+    workflows: ["Update Website Data", "pages-build-deployment"]
     types: [completed]
 
   # Manual replay — triage a past run by id. This is how the workflow is
@@ -26,8 +36,17 @@ on:
   workflow_dispatch:
     inputs:
       run_id:
-        description: "Failed run id to triage"
+        description: "Failed run id to triage (health mode: the run that observed the problems)"
         required: true
+      mode:
+        description: "failure = a failed run; health = soft failures on a green run"
+        type: choice
+        options: [failure, health]
+        default: failure
+      problems:
+        description: "health mode only: JSON list of newly degraded checks from scripts/health.js"
+        required: false
+        default: "[]"
       skip_guards:
         description: "Ignore the preflight guards (self-healed / already in flight)"
         type: boolean
@@ -37,6 +56,7 @@ permissions:
   contents: write        # push the fix branch
   pull-requests: write   # open the PR
   actions: read          # read the failed run's logs
+  issues: write          # escalations are recorded as issues, for dedup
   id-token: write        # mint the OIDC JWT the action exchanges with Anthropic
 
 # One triage at a time per repo, and never cancel-in-progress: a second
@@ -59,6 +79,8 @@ jobs:
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       RUN_ID: ${{ inputs.run_id || github.event.workflow_run.id }}
+      MODE: ${{ inputs.mode || 'failure' }}
+      PROBLEMS: ${{ inputs.problems || '[]' }}
 
     steps:
       - uses: actions/checkout@v7
@@ -91,6 +113,17 @@ jobs:
           # their run ids. That is what we deduplicate on.
           failing_step=$(jq -r '[.jobs[] | .steps[]
                                  | select(.conclusion == "failure") | .name] | first // "unknown"' <<<"$run_json")
+          health_keys=""
+          if [ "$MODE" = "health" ]; then
+            # The run is green; the failure's identity is the set of checks
+            # that degraded, not a step.
+            health_keys=$(jq -r '[.[].key] | sort | join(",")' <<<"$PROBLEMS")
+            [ -n "$health_keys" ] || { echo "should_fix=false" >> "$GITHUB_OUTPUT"; echo "::notice::health mode with no problems"; exit 0; }
+            failing_step="health: $health_keys"
+            # Dispatched from inside the run that observed the problems, which
+            # is still finishing; its log is not readable until it completes.
+            timeout 900 gh run watch "$RUN_ID" >/dev/null 2>&1 || true
+          fi
           signature=$(printf '%s\n%s' "$workflow_name" "$failing_step" | sha1sum | cut -c1-12)
 
           {
@@ -98,6 +131,7 @@ jobs:
             echo "run_url=$run_url"
             echo "failing_step=$failing_step"
             echo "signature=$signature"
+            echo "health_keys=$health_keys"
           } >> "$GITHUB_OUTPUT"
 
           skip() {
@@ -106,13 +140,14 @@ jobs:
             exit 0
           }
 
-          if [ "${{ inputs.skip_guards }}" != "true" ]; then
+          if [ "${{ inputs.skip_guards }}" != "true" ] && [ "$MODE" = "failure" ]; then
             # A re-run that fails again is a human's re-run. They are already
             # watching it, and the alert names the attempt.
             [ "$attempt" = "1" ] || skip "run attempt $attempt — a human is already on it"
 
-            # Transient failures self-heal on the next tick. update_feed runs
-            # every 30 minutes, so by the time we look a later run may be green.
+            # Transient failures self-heal on the next tick. This workflow runs
+            # several times a day (pipeline dispatches plus the daily cron), so
+            # by the time we look a later run may be green.
             wf_id=$(jq -r .workflowDatabaseId <<<"$run_json")
             failed_at=$(jq -r .createdAt <<<"$run_json")
             newer_ok=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/$wf_id/runs?status=success&per_page=1" \
@@ -121,10 +156,23 @@ jobs:
               skip "a later run of the same workflow succeeded at $newer_ok"
             fi
 
+          fi
+
+          if [ "${{ inputs.skip_guards }}" != "true" ]; then
             # One open PR per failure signature, however many times it recurs.
             if gh pr list --state open --label ops-autofix --json body --jq '.[].body' \
                  | grep -qF "autofix-signature: $signature"; then
               skip "an open autofix PR already covers signature $signature"
+            fi
+
+            # Likewise one escalation: without this a lasting credential
+            # failure is re-triaged and re-posted on every run. Only recent
+            # issues count, so a forgotten one cannot silence a recurrence.
+            cutoff=$(date -u -d '14 days ago' +%Y-%m-%dT%H:%M:%SZ)
+            if gh issue list --state open --label ops-autofix --json body,updatedAt \
+                 --jq ".[] | select(.updatedAt > \"$cutoff\") | .body" \
+                 | grep -qF "autofix-signature: $signature"; then
+              skip "an open escalation issue (updated in the last 14 days) already covers signature $signature"
             fi
           fi
 
@@ -158,35 +206,71 @@ jobs:
             --max-turns 40
             --allowedTools Read,Edit,Write,Glob,Grep,Bash
           prompt: |
-            A run of this repository's pipeline workflow just failed, and an
-            alert for it has been posted in the team's #pipeline-ops Slack
-            channel. You are the first responder. Triage it.
+            Something has gone wrong in this repository's pipeline and it has
+            been reported in the team's #pipeline-ops Slack channel. You are
+            the first responder. Triage it.
 
               repository:   ${{ github.repository }}
+              mode:         ${{ env.MODE }}
               workflow:     ${{ steps.pre.outputs.workflow_name }}
-              failed run:   ${{ steps.pre.outputs.run_url }}
+              run:          ${{ steps.pre.outputs.run_url }}
               run id:       ${{ env.RUN_ID }}
               failing step: ${{ steps.pre.outputs.failing_step }}
               signature:    ${{ steps.pre.outputs.signature }}
 
+            This repo is a Jekyll site on GitHub Pages fed by Node collectors
+            (scripts/collectors/) and Gemini generators (scripts/generators/),
+            run by .github/workflows/update-site.yml. Read CLAUDE.md first: it
+            records the cost rules, the sourcing rule and several past
+            incidents, and it overrides your instincts. Collector conventions
+            are in scripts/collectors/README.md.
+
             ## 1. Read the actual failure
 
-            Start with `gh run view ${{ env.RUN_ID }} --log-failed` — the
-            failing step's log, not the whole run. Then read the workflow file
-            and the source it calls. Form your theory from the log and the
-            code, never from the step name alone.
+            **mode = failure** — a run failed. Start with
+            `gh run view ${{ env.RUN_ID }} --log-failed`: the failing step's
+            log, not the whole run.
 
-            Read PIPELINE.md before you touch anything: this repo is one stage
-            of a chain, and the failure may belong to a stage upstream of it.
+            If the workflow is `pages-build-deployment`, the Jekyll build or
+            the Pages deploy failed after the data update had already passed.
+            A Liquid/Jekyll error caused by generated content must be fixed in
+            the generator that wrote it, never in the generated file.
+
+            **mode = health** — the run PASSED, but these checks degraded
+            (from scripts/health.js; status is failed, mock, empty, dropped
+            or bad):
+
+                ${{ env.PROBLEMS }}
+
+            `--log-failed` is empty for a green run. Use
+            `gh run view ${{ env.RUN_ID }} --log | grep -iE '<source name>|error|fail|40[0-9]|429|5[0-9][0-9]'`
+            for each named source. Note the run's history in
+            public/data/health.json (consecutiveBad, lastOkCount, since).
+            Collectors swallow errors by design, so the cause is a log line,
+            not a stack trace. Triage every listed problem. A single outcome
+            covers them all; name each in the summary.
+
+            Either way, read the workflow file and the source it calls next.
+            Form your theory from the log and the code, never from a step name
+            or status alone.
+
+            This repo is the third stage of a chain
+            (toread → research-radio → this site → fg-zettelkasten), and the
+            failure may belong upstream. The contract is in toread's
+            PIPELINE.md and SCHEMA.md:
+            `gh api repos/fabiogiglietto/toread/contents/PIPELINE.md --jq .content | base64 -d`
+            (same for SCHEMA.md).
 
             ## 2. Classify the failure as exactly one of
 
               transient   An upstream 5xx, a rate limit, a runner flake, a
                           GitHub Pages deploy wobble. The next run will pass.
-              credential  An expired or mis-scoped token, an OIDC exchange
-                          401, the Slack bot missing from a channel, Google
-                          Drive auth, an exhausted API quota. Only a human
-                          can fix it — you cannot see or set a secret.
+              credential  An expired or mis-scoped token or API key (a
+                          collector answering 401/403 is usually this), an
+                          OIDC exchange 401, the Slack bot missing from a
+                          channel, an exhausted API quota. Only a human can
+                          fix it — you cannot see or set a secret. Say which
+                          secret, and where it is issued.
               code        A real defect in this repo's code, tests, workflow
                           or config. This is the only class you fix.
               stale       The failure has already been addressed on main since
@@ -195,7 +279,7 @@ jobs:
                           and a summary naming the commit or PR that fixed it.
               upstream    A published artifact this repo consumes (feed.json,
                           data/summaries/<key>.json, docs/episodes.json)
-                          changed shape under us. See SCHEMA.md and
+                          changed shape under us. See toread's SCHEMA.md and
                           PIPELINE.md, "Changing the contract". Fix it here
                           only if the fix genuinely belongs here; otherwise
                           escalate and name the producing repo.
@@ -204,13 +288,18 @@ jobs:
 
             Work on a branch named `ops/autofix-${{ env.RUN_ID }}`.
 
-            You may edit: src/, scripts/, tests/, .github/workflows/,
-            .github/scripts/, config.yml, requirements*.txt.
+            You may edit: scripts/, tests/, .github/workflows/,
+            .github/scripts/, _layouts/, hand-written files in _includes/,
+            top-level *.html pages, package.json. Read "Dependency pins" in
+            CLAUDE.md before touching package.json: `sanitize-html` is pinned
+            exactly on purpose.
 
-            You may NOT edit: data/, output/, vault/, cache/, quartz/public/ —
-            all generated, and a change there is erased by the next producing
-            run while hiding the real bug. Never push to main. Never try to
-            read, print or set a secret's value.
+            You may NOT edit: public/data/, _data/, _includes/generated-*.html,
+            or the generated .bib files — all written by the pipeline, and a
+            change there is erased by the next run while hiding the real bug.
+            Never push to main. Never try to read, print or set a secret's
+            value. Never enable Gemini grounding or add a paid API call (see
+            "AI cost controls" in CLAUDE.md).
 
             Make the smallest change that fixes the root cause. A workaround
             that silences the symptom is worse than an escalation, because it
@@ -277,6 +366,9 @@ jobs:
           WORKFLOW_NAME: ${{ steps.pre.outputs.workflow_name }}
           RUN_URL: ${{ steps.pre.outputs.run_url }}
           TRIAGE_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          SIGNATURE: ${{ steps.pre.outputs.signature }}
+          HEALTH_KEYS: ${{ steps.pre.outputs.health_keys }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -uo pipefail
           result=/tmp/autofix-result.json
@@ -286,7 +378,9 @@ jobs:
             summary=$(jq -r '.summary        // "no summary given"' "$result")
             action=$(jq -r '.action_required // ""'  "$result")
             pr=$(jq -r '.pr_url              // ""'  "$result")
+            class=$(jq -r '.class            // ""'  "$result")
           else
+            class=""
             # No result file means the triage itself died — a crash, --max-turns,
             # the job timeout. Staying quiet here would look exactly like success.
             status="broken"
@@ -338,4 +432,31 @@ jobs:
               || echo "::error::Slack webhook rejected the autofix report"
           else
             echo "No Slack credentials configured — skipping autofix report"
+          fi
+
+          # Record the escalation as an issue. The preflight greps open issues
+          # for the signature, so the same lasting failure is not re-triaged
+          # and re-posted on every run; for health problems, health-report.js
+          # closes the issue once every health-key below has recovered.
+          # Failure mode records only what a human must act on: a transient
+          # triage often says "re-run X", and an issue for it would mute the
+          # next, unrelated failure in the same step for 14 days. Health mode
+          # always records, because recovery closes the issue.
+          case "$class" in credential|upstream|code) lasting=true ;; *) lasting=false ;; esac
+          if [ "$status" != "fixed" ] && { [ -n "$HEALTH_KEYS" ] || { [ "$lasting" = true ] && [ -n "$action" ]; }; }; then
+            existing=$(gh issue list --state open --label ops-autofix --json number,body \
+              --jq ".[] | select(.body | contains(\"autofix-signature: $SIGNATURE\")) | .number" | head -1)
+            if [ -n "$existing" ]; then
+              gh issue comment "$existing" --body "Still failing. Triage: $TRIAGE_URL" >/dev/null \
+                || echo "::warning::could not comment on issue #$existing"
+            else
+              keys_md=""
+              for k in ${HEALTH_KEYS//,/ }; do keys_md+="<!-- health-key: $k -->"$'\n'; done
+              body=$(printf '%s\n\n**You need to:** %s\n\nRun: %s\nTriage: %s\n\n<!-- autofix-signature: %s -->\n%s' \
+                "$summary" "${action:-nothing — recorded so this is not re-triaged}" "$RUN_URL" "$TRIAGE_URL" "$SIGNATURE" "$keys_md")
+              gh issue create --label ops-autofix \
+                --title "ops: ${HEALTH_KEYS:+health ($HEALTH_KEYS) — }$(printf '%.80s' "$summary")" \
+                --body "$body" >/dev/null \
+                || echo "::warning::could not record the escalation as an issue"
+            fi
           fi

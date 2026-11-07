@@ -29,6 +29,7 @@ const oraCollector = require('./collectors/ora');
 const researchRadioCollector = require('./collectors/research-radio');
 const zettelkastenCollector = require('./collectors/zettelkasten');
 const ownPaperClaimsCollector = require('./collectors/own-paper-claims');
+const health = require('./health');
 
 // Import generators
 const aboutGenerator = require('./generators/about-generator');
@@ -65,7 +66,7 @@ async function collectAll() {
     
     // Phase 1: Collect basic data sources in parallel
     console.log('Phase 1: Collecting basic data sources...');
-    const [orcidData, scholarData, universityData, githubData, newsData, webSearchData, socialMediaData, wosData, scopusData, semanticScholarData, toreadData, oraData, researchRadioData, zettelkastenData, ownPaperClaimsData] = await Promise.all([
+    const [orcidData, scholarData, universityData, githubData, newsData, webSearchData, socialMediaData, wosResult, scopusResult, semanticScholarResult, toreadData, oraData, researchRadioData, zettelkastenData, ownPaperClaimsData] = await Promise.all([
       orcidCollector.collect().catch(err => {
         console.error('ORCID collection error:', err.message);
         return null;
@@ -142,6 +143,19 @@ async function collectAll() {
       })
     ]);
     
+    // Mock data is a stand-in for local development without API keys. In CI
+    // it means the API failed, and committing it publishes invented numbers
+    // (Semantic Scholar served mock citation counts from 2026-02-24 to
+    // 2026-11-07). Keep the last real file instead; health.json reports it.
+    const keepReal = (name, data) => {
+      if (!isGitHubActions || !health.isMock(data)) return data;
+      console.warn(`${name}: API failed and returned mock data — not saving it`);
+      return null;
+    };
+    const wosData = keepReal('wos', wosResult);
+    const scopusData = keepReal('scopus', scopusResult);
+    const semanticScholarData = keepReal('semanticScholar', semanticScholarResult);
+
     // Save Phase 1 data
     if (orcidData) fs.writeFileSync(path.join(dataDir, 'orcid.json'), JSON.stringify(orcidData, null, 2));
     if (scholarData) fs.writeFileSync(path.join(dataDir, 'scholar.json'), JSON.stringify(scholarData, null, 2));
@@ -207,6 +221,28 @@ async function collectAll() {
     };
     
     fs.writeFileSync(path.join(dataDir, 'summary.json'), JSON.stringify(summary, null, 2));
+
+    // Per-source health observations; scripts/health-report.js folds them into
+    // public/data/health.json and reports transitions to #pipeline-ops.
+    health.writeRunObservations({
+      orcid: orcidData,
+      scholar: scholarData,
+      university: universityData,
+      github: githubData,
+      news: newsData,
+      websearch: webSearchData,
+      socialMedia: socialMediaData,
+      // Mock (nulled above in CI) is reported as mock, not as a plain failure.
+      wos: wosResult,
+      scopus: scopusResult,
+      semanticScholar: semanticScholarResult,
+      toread: toreadData,
+      ora: oraData,
+      researchRadio: researchRadioData,
+      zettelkasten: zettelkastenData,
+      ownPaperClaims: ownPaperClaimsData,
+      aggregatedPublications: aggregatedPublicationsData,
+    });
     
     console.log('Data collection completed successfully');
     

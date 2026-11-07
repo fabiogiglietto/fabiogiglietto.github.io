@@ -114,34 +114,20 @@ async function collect() {
           year = record.publicationDate.split('-')[0];
         }
         
-        // Extract citation count - the API documentation mentions "times cited" is available
-        // but we need to find where it's located in the response
-        let citations = 0;
-        
-        // Print the full record for debugging to see all available fields
-        console.log(`Full record structure for ${record.uid}: ${JSON.stringify(record)}`);
-        
-        // Check all known possible locations for citation data
-        if (record.timesCited !== undefined) {
-          citations = parseInt(record.timesCited) || 0;
-        } else if (record.citationCount !== undefined) {
-          citations = parseInt(record.citationCount) || 0;
-        } else if (record.citations !== undefined) {
-          citations = parseInt(record.citations) || 0;
+        // Times cited. The Starter API returns `citations: [{ db, count }]`,
+        // and an empty array when the subscription carries no counts — which
+        // is what it returns for every record today. Unknown is null, never 0
+        // and never a made-up figure: until 2026-11-07 three papers were
+        // given hardcoded counts (410/289/170) here and they were published.
+        let citations = null;
+        if (Array.isArray(record.citations)) {
+          const wosCount = record.citations.find(c => /wos/i.test(c.db || '')) || record.citations[0];
+          if (wosCount && Number.isFinite(Number(wosCount.count))) citations = Number(wosCount.count);
+        } else if (record.timesCited !== undefined) {
+          citations = parseInt(record.timesCited, 10);
+          if (!Number.isFinite(citations)) citations = null;
         }
-        
-        // For now, use mock citation data for key publications
-        if (record.uid === "WOS:000334367600006" || record.uid === "WOS:000334266300005") { // Second Screen paper
-          citations = 410;
-        } else if (record.uid === "WOS:000212197600002" || record.uid === "WOS:000313276900002") { // Open Laboratory paper
-          citations = 289;
-        } else if (record.uid === "WOS:000471719800011" || record.uid === "WOS:000468984900005") { // Fake News paper
-          citations = 170;
-        }
-        
-        // Note: in a production environment, you would make a separate API call
-        // to get accurate citation data if it's not included in the initial response
-        
+
         // Extract DOI if available - WoS may include it in identifiers
         let doi = null;
         if (record.doi) {
@@ -227,6 +213,9 @@ async function collect() {
  */
 function getMockData() {
   return {
+    // Marks this as a stand-in, not an API response: collect-all.js refuses to
+    // commit it in CI and the aggregator ignores it.
+    _mock: true,
     publications: [
       {
         title: "Second Screen and Participation: A Content Analysis on a Full Season Dataset of Tweets",
