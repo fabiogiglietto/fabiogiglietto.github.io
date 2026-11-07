@@ -177,7 +177,7 @@ function formatTeachingData(teachingData) {
     const allCourses = teachingData.courses.map(course => ({
       title: course.title,
       code: course.code || course.discipline_code || `CRS${formatted.courses.length + 1}`,
-      description: course.description || course.english_title || course.title,
+      ...(course.description ? { description: course.description } : {}),
       level: determineCourseLevel(course),
       // Missing facts stay missing: no default year, credits or semester, and
       // no schedule unless the source has one (until 2026-11-07 a hash of the

@@ -17,7 +17,7 @@ layout: default
             <div class="course-card">
               <h3 class="course-title">{{ course.title }}</h3>
               <p class="course-code">{{ course.code }}</p>
-              <p class="course-description">{{ course.description }}</p>
+              {% if course.description %}<p class="course-description">{{ course.description }}</p>{% endif %}
               <div class="course-details">
                 <p><strong>Level:</strong> {{ course.level }}</p>
                 {% if course.academic_year %}<p><strong>Academic Year:</strong> {{ course.academic_year }}</p>{% endif %}
@@ -45,7 +45,7 @@ layout: default
             <div class="course-card">
               <h3 class="course-title">{{ course.title }}</h3>
               <p class="course-code">{{ course.code }}</p>
-              <p class="course-description">{{ course.description }}</p>
+              {% if course.description %}<p class="course-description">{{ course.description }}</p>{% endif %}
               <div class="course-details">
                 <p><strong>Level:</strong> {{ course.level }}</p>
                 {% if course.academic_year %}<p><strong>Academic Year:</strong> {{ course.academic_year }}</p>{% endif %}

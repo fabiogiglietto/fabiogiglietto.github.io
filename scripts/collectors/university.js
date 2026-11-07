@@ -165,9 +165,9 @@ function extractTeachingFromProfilePage($) {
           syllabus_url: syllabusUrl.startsWith('/') ? `https://www.uniurb.it${syllabusUrl}` : syllabusUrl,
           // Try to determine semester and level from degree info
           semester: determineSemester(courseTitle, degreeTitle),
-          level: determineLevel(degreeFullText),  // Use full text for better detection
-          // Add a basic description based on the course title
-          description: generateCourseDescription(courseTitle, englishTitle)
+          level: determineLevel(degreeFullText)  // Use full text for better detection
+          // No description: the profile page has none, and a keyword template
+          // is not one (until 2026-11-07 every published description was).
         });
       }
     });
@@ -212,38 +212,6 @@ function generateCourseCode(title, academicYear) {
   
   // Combine initials and year
   return (initials + year).toUpperCase();
-}
-
-/**
- * Generates a course description based on the title and English title
- */
-function generateCourseDescription(title, englishTitle) {
-  // Use English title if available, otherwise use the original title
-  const baseTitle = englishTitle || title;
-  
-  // Map of common course subjects to descriptions
-  const descriptionMap = {
-    'ANALISI DELLE RETI SOCIALI DIGITALI': 'Analysis of social network structures and dynamics in digital contexts using computational methods',
-    'DIGITAL SOCIAL NETWORK ANALYSIS': 'Analysis of social network structures and dynamics in digital contexts using computational methods',
-    'INTERNET STUDIES': 'Critical examination of the social, cultural, and economic aspects of the internet and digital technologies',
-    'INTRODUCTION TO DATA ANALYSIS': 'Fundamentals of data analysis techniques with applications in media and communication research',
-    'WEB MARKETING': 'Strategies and tools for effective digital marketing campaigns in the current media landscape',
-    'LABORATORIO': 'Practical laboratory sessions providing hands-on experience with digital tools and methodologies'
-  };
-  
-  // Check if the title contains keywords from our map
-  for (const [keyword, description] of Object.entries(descriptionMap)) {
-    if (baseTitle.toUpperCase().includes(keyword)) {
-      return description;
-    }
-  }
-  
-  // Default description based on whether it's in English or Italian
-  if (englishTitle) {
-    return `Introduction to ${englishTitle.toLowerCase()} concepts and methodologies`;
-  } else {
-    return `Course covering key concepts and methodologies in ${title.toLowerCase()}`;
-  }
 }
 
 /**

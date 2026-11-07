@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="course-card">
         <h3 class="course-title">${course.title}</h3>
         <p class="course-code">${course.code}</p>
-        <p class="course-description">${course.description}</p>
+        ${course.description ? `<p class="course-description">${course.description}</p>` : ''}
         <div class="course-details">
           <p><strong>Level:</strong> ${course.level}</p>
           <p><strong>Academic Year:</strong> ${course.academic_year}</p>
