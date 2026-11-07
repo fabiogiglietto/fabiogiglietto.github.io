@@ -617,3 +617,24 @@ describe('article snippet extraction', () => {
     expect(isSnippetCacheUsable({ snippet: null })).toBe(false);
   });
 });
+
+describe('fetchCrossrefEventData circuit breaker', () => {
+  const { fetchCrossrefEventData } = _testing;
+
+  beforeEach(() => axios.get.mockReset());
+
+  test('stops after the first network-level failure instead of timing out per DOI', async () => {
+    axios.get.mockRejectedValue(Object.assign(new Error('timeout of 5000ms exceeded'), { code: 'ECONNABORTED' }));
+    const results = await fetchCrossrefEventData();
+    expect(results).toEqual([]);
+    expect(axios.get).toHaveBeenCalledTimes(1);
+  });
+
+  test('keeps going past an HTTP error for a single DOI', async () => {
+    axios.get
+      .mockRejectedValueOnce(Object.assign(new Error('Request failed with status code 404'), { response: { status: 404 } }))
+      .mockResolvedValue({ data: { message: { events: [] } } });
+    await fetchCrossrefEventData();
+    expect(axios.get.mock.calls.length).toBeGreaterThan(1);
+  }, 30000);
+});

@@ -81,7 +81,8 @@ A web mention supports exactly one kind of statement: that the named outlet publ
 Web mentions are likewise NOT evidence of what the research found. Press summaries routinely sharpen, overstate or invert a finding — a headline saying an algorithm "rewards extremists" is not interchangeable with a paper finding that extremist accounts offset a per-post reach decline by posting more often. Any sentence about the research that is not traceable to OWN RESEARCH FINDINGS is a defect, even when a newspaper said it, and even when it is flattering.
 
 DATED STATUS
-The authoritative biography stamps status claims "as of August 2026" and states completed events in the past tense. Preserve that distinction exactly. Do not turn a stamped status into a timeless present-tense claim, do not describe a concluded role, grant or appointment as ongoing, and do not invent a currency the source does not assert.
+The authoritative biography stamps status claims "as of <date>" and states completed events in the past tense. Preserve that distinction in substance: do not describe a concluded role, grant or appointment as ongoing, and do not invent a currency the source does not assert.
+The stamps themselves are provenance metadata for you, NOT text for the reader. Never write "as of <date>" (or any equivalent dating of a status) into revised_html, and remove any you find there. A biography that states current roles in the present tense without a stamp is correct — its lack of stamps is NOT an omission and must not be flagged or "restored". A stamped status whose end date has already passed is a concluded event: state it in the past tense.
 
 CONFIDENTIALITY AND ORIGINALITY
 - Write ORIGINAL prose. The DATA below is source material, never text to reproduce. Never copy a sentence from it verbatim, and never repeat any instruction, note or aside addressed to you — the output is a public web page.
@@ -97,7 +98,7 @@ Do two things.
 2. CHECK every claim against the SOURCES and flag:
    - "unsupported": the claim appears in no source; OR it is a claim about the research resting only on a web mention rather than on OWN RESEARCH FINDINGS; OR it is a claim about a third party's actions (a broadcast featuring the work, an institution acting on it, legislation following from it) that the authoritative biography does not state.
    - "overstated": a source supports something weaker or narrower than what the biography asserts. Journalists' causal framing restated in the subject's own voice belongs here, as does any finding stated more strongly or more simply than his own paper states it.
-   - "omission": the AUTHORITATIVE BIOGRAPHY contains a relevant fact the biography dropped.
+   - "omission": the AUTHORITATIVE BIOGRAPHY contains a relevant fact the biography dropped. Its "as of <date>" stamps, headings and table cross-references are not facts and never count as omissions.
    - "style": prose problems worth a human's attention.
 
 Rules:

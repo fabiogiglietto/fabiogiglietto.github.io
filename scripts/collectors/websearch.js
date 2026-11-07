@@ -1551,6 +1551,8 @@ async function saveEmptyResults() {
   return emptyData;
 }
 
+const CROSSREF_EVENT_TIMEOUT_MS = 5000;
+
 /**
  * Fetch Crossref Event Data to find DOI-based mentions of publications
  */
@@ -1595,7 +1597,7 @@ async function fetchCrossrefEventData() {
     try {
       const apiUrl = `https://api.eventdata.crossref.org/v1/events?obj-id=${encodeURIComponent(doi)}&from-occurred-date=${fromDate}&rows=10&mailto=${config.email}`;
 
-      const response = await axios.get(apiUrl, { timeout: 10000 });
+      const response = await axios.get(apiUrl, { timeout: CROSSREF_EVENT_TIMEOUT_MS });
       const events = response.data?.message?.events || [];
 
       for (const event of events) {
@@ -1627,6 +1629,14 @@ async function fetchCrossrefEventData() {
       await new Promise(resolve => setTimeout(resolve, 500));
     } catch (error) {
       console.log(`Crossref Event Data error for DOI ${doi}: ${error.message}`);
+      // No HTTP response at all (timeout, DNS, refused) means the service is
+      // down, not that this DOI is bad. Every DOI then waits out the full
+      // timeout — 20 x 10s added ~3.5 min to each run while it was unreachable
+      // (Oct-Nov 2026) — so stop at the first one.
+      if (!error.response) {
+        console.log('Crossref Event Data unreachable — skipping remaining DOIs');
+        break;
+      }
     }
   }
 
@@ -1953,6 +1963,7 @@ module.exports = {
   collect: collectWebSearchResults,
   name: 'websearch',
   _testing: {
+    fetchCrossrefEventData,
     extractSnippetFromHtml,
     isAggregatorBoilerplate,
     fetchSnippet,

@@ -262,3 +262,37 @@ describe('bio-seed status stamp staleness', () => {
     expect(parseSeedStamp(text)).not.toBeNull();
   });
 });
+
+describe('stripStatusStamps (publish-path guard)', () => {
+  const { _testing } = require('../scripts/generators/about-generator');
+  const { stripStatusStamps } = _testing;
+
+  test('removes a parenthetical stamp', () => {
+    expect(stripStatusStamps('<p>Fabio Giglietto is, as of August 2026, Full Professor of Internet Studies.</p>'))
+      .toBe('<p>Fabio Giglietto is Full Professor of Internet Studies.</p>');
+  });
+
+  test('removes a sentence-initial stamp and recapitalises', () => {
+    expect(stripStatusStamps('<p>As of August 2026 he is a member of the ICA.</p>'))
+      .toBe('<p>He is a member of the ICA.</p>');
+    expect(stripStatusStamps('since 2017. As of August 2026, the programme remains active.'))
+      .toBe('since 2017. The programme remains active.');
+  });
+
+  test('removes a mid-sentence stamp', () => {
+    expect(stripStatusStamps('coordinated it ever since; as of August 2026 the programme remains active'))
+      .toBe('coordinated it ever since; the programme remains active');
+  });
+
+  test('leaves no stamp in the 2026-11-02 reviewed bio', () => {
+    const fs = require('fs');
+    const path = require('path');
+    const html = fs.readFileSync(path.join(__dirname, '../_includes/generated-about.html'), 'utf8');
+    expect(stripStatusStamps(html)).not.toMatch(/\bas of \w+ \d{4}/i);
+  });
+
+  test('leaves unrelated "as of" phrases alone', () => {
+    const text = 'the dataset as of 2020 and as of now';
+    expect(stripStatusStamps(text)).toBe(text);
+  });
+});

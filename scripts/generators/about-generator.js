@@ -133,7 +133,10 @@ async function generateAboutMe() {
     // Second-model review pass. Fails open: a null return publishes the Gemini
     // output unchanged, so a reviewer outage never blocks the weekly bio.
     const review = await reviewBio(publishable, formattedData);
-    const contentToPublish = review ? review.html : publishable;
+    // Strip "as of <date>" stamps whichever model wrote the text. Prompts
+    // forbid them, but the reviewer has treated their absence as an omission
+    // and restored them (2026-11-02), publishing a stale date on the page.
+    const contentToPublish = stripStatusStamps(review ? review.html : publishable);
 
     // Sanitize the generated content to prevent XSS attacks
     const sanitizedContent = sanitizeHtml(contentToPublish, {
@@ -174,11 +177,10 @@ async function generateFallbackContent() {
         .filter(p => p && !p.startsWith('#') && !p.startsWith('|') && !p.startsWith('-') && !p.startsWith('*'))
         // The fact sheet cross-references its own tables; a web page has none.
         .map(p => p.replace(/\s*[;,]?\s*\(?\bsee the (?:projects |Competitive research projects )?table below\)?/gi, '')
-                   .replace(/\s*;?\s*see the projects table below/gi, '')
-                   // ...nor its "as of <date>" stamps, which are provenance
-                   // metadata for the writer, not prose for a reader.
-                   .replace(/\bAs of \w+ \d{4},?\s*/g, '')
-                   .replace(/\s*\bas of \w+ \d{4}\b,?\s*/gi, ' '))
+                   .replace(/\s*;?\s*see the projects table below/gi, ''))
+        // ...nor its "as of <date>" stamps, which are provenance metadata
+        // for the writer, not prose for a reader.
+        .map(stripStatusStamps)
         .slice(0, 4);
 
       if (paragraphs.length > 0) {
@@ -457,6 +459,28 @@ function shingles(text, n = 12) {
  * Fraction of the generated text's 12-word runs that also appear in the source.
  * @return {Number} 0 when nothing is shared, 1 when everything is copied.
  */
+/**
+ * Remove "as of <Month> <Year>" status stamps from prose. They are provenance
+ * metadata in bio-seed.md; on a live page they read as a stale date.
+ *   "is, as of August 2026, Full Professor" -> "is Full Professor"
+ *   "<p>As of August 2026 he is a member"   -> "<p>He is a member"
+ *   "; as of August 2026 the programme"     -> "; the programme"
+ */
+function stripStatusStamps(text) {
+  if (!text) return text;
+  const STAMP = '\\bas of (?:January|February|March|April|May|June|July|August|September|October|November|December) \\d{4}\\b';
+  return text
+    // Parenthetical: ", as of X, " -> " "
+    .replace(new RegExp(`\\s*,\\s*${STAMP}\\s*,\\s*`, 'gi'), ' ')
+    // Sentence-initial: "As of X, he" -> "He"
+    .replace(new RegExp(`(^|[>.!?]\\s*|\\n\\s*)${STAMP},?\\s+(\\S)`, 'gi'),
+      (_, lead, ch) => lead + ch.toUpperCase())
+    // Anywhere else: drop the stamp and an adjoining comma
+    .replace(new RegExp(`\\s*,?\\s*${STAMP},?`, 'gi'), '')
+    .replace(/ {2,}/g, ' ')
+    .replace(/ +([;,.])/g, '$1');
+}
+
 function seedOverlapRatio(generated, seed) {
   const out = shingles(generated || '');
   if (out.size === 0) return 0;
@@ -680,4 +704,4 @@ ${formattedData}
   }
 }
 
-module.exports = { generateAboutMe, _testing: { formatDataForPrompt, seedOverlapRatio, MAX_SEED_OVERLAP } };
+module.exports = { generateAboutMe, _testing: { formatDataForPrompt, seedOverlapRatio, stripStatusStamps, MAX_SEED_OVERLAP } };

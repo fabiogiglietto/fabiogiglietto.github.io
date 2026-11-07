@@ -80,6 +80,12 @@ describe('buildPrompt', () => {
   test('states that the reviewer has no web access', () => {
     expect(buildPrompt('<p>x</p>', 'y')).toMatch(/no web access/i);
   });
+
+  test('forbids restoring "as of <date>" stamps and excludes them from omissions', () => {
+    const prompt = buildPrompt('<p>x</p>', 'y');
+    expect(prompt).toMatch(/Never write "as of <date>"/);
+    expect(prompt).toMatch(/NOT an omission/);
+  });
 });
 
 describe('credentialSource (Workload Identity Federation detection)', () => {
