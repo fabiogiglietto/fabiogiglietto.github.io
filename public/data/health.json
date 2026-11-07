@@ -1,0 +1,182 @@
+{
+  "updatedAt": "2026-11-07T14:15:00.662Z",
+  "runUrl": "https://github.com/fabiogiglietto/fabiogiglietto.github.io/actions/runs/42380466525",
+  "checks": {
+    "orcid": {
+      "kind": "source",
+      "label": "ORCID",
+      "status": "ok",
+      "count": 159,
+      "lastOkCount": 159,
+      "consecutiveBad": 0,
+      "consecutiveOk": 1,
+      "degraded": false,
+      "since": null
+    },
+    "scholar": {
+      "kind": "source",
+      "label": "Google Scholar",
+      "status": "failed",
+      "count": null,
+      "lastOkCount": null,
+      "consecutiveBad": 1,
+      "consecutiveOk": 0,
+      "degraded": true,
+      "since": "2026-11-07T14:15:00.662Z"
+    },
+    "university": {
+      "kind": "source",
+      "label": "University profile",
+      "status": "ok",
+      "count": 1,
+      "lastOkCount": 1,
+      "consecutiveBad": 0,
+      "consecutiveOk": 1,
+      "degraded": false,
+      "since": null
+    },
+    "github": {
+      "kind": "source",
+      "label": "GitHub",
+      "status": "ok",
+      "count": 25,
+      "lastOkCount": 25,
+      "consecutiveBad": 0,
+      "consecutiveOk": 1,
+      "degraded": false,
+      "since": null
+    },
+    "news": {
+      "kind": "source",
+      "label": "News (Mastodon)",
+      "status": "empty",
+      "count": 0,
+      "lastOkCount": null,
+      "consecutiveBad": 1,
+      "consecutiveOk": 0,
+      "degraded": true,
+      "since": "2026-11-07T14:15:00.662Z"
+    },
+    "websearch": {
+      "kind": "source",
+      "label": "Web mentions",
+      "status": "ok",
+      "count": 5,
+      "lastOkCount": 5,
+      "consecutiveBad": 0,
+      "consecutiveOk": 1,
+      "degraded": false,
+      "since": null
+    },
+    "wos": {
+      "kind": "source",
+      "label": "Web of Science",
+      "status": "ok",
+      "count": 21,
+      "lastOkCount": 21,
+      "consecutiveBad": 0,
+      "consecutiveOk": 1,
+      "degraded": false,
+      "since": null
+    },
+    "scopus": {
+      "kind": "source",
+      "label": "Scopus",
+      "status": "ok",
+      "count": 25,
+      "lastOkCount": 25,
+      "consecutiveBad": 0,
+      "consecutiveOk": 1,
+      "degraded": false,
+      "since": null
+    },
+    "semanticScholar": {
+      "kind": "source",
+      "label": "Semantic Scholar",
+      "status": "failed",
+      "count": null,
+      "lastOkCount": null,
+      "consecutiveBad": 1,
+      "consecutiveOk": 0,
+      "degraded": true,
+      "since": "2026-11-07T14:15:00.662Z"
+    },
+    "toread": {
+      "kind": "source",
+      "label": "toread feed",
+      "status": "ok",
+      "count": 320,
+      "lastOkCount": 320,
+      "consecutiveBad": 0,
+      "consecutiveOk": 1,
+      "degraded": false,
+      "since": null
+    },
+    "ora": {
+      "kind": "source",
+      "label": "ORA UNIURB",
+      "status": "ok",
+      "count": 109,
+      "lastOkCount": 109,
+      "consecutiveBad": 0,
+      "consecutiveOk": 1,
+      "degraded": false,
+      "since": null
+    },
+    "researchRadio": {
+      "kind": "source",
+      "label": "Research Radio",
+      "status": "ok",
+      "count": 184,
+      "lastOkCount": 184,
+      "consecutiveBad": 0,
+      "consecutiveOk": 1,
+      "degraded": false,
+      "since": null
+    },
+    "zettelkasten": {
+      "kind": "source",
+      "label": "fg-zettelkasten",
+      "status": "ok",
+      "count": 360,
+      "lastOkCount": 360,
+      "consecutiveBad": 0,
+      "consecutiveOk": 1,
+      "degraded": false,
+      "since": null
+    },
+    "ownPaperClaims": {
+      "kind": "source",
+      "label": "Own paper claims",
+      "status": "ok",
+      "count": 27,
+      "lastOkCount": 27,
+      "consecutiveBad": 0,
+      "consecutiveOk": 1,
+      "degraded": false,
+      "since": null
+    },
+    "aggregatedPublications": {
+      "kind": "source",
+      "label": "Aggregated publications",
+      "status": "ok",
+      "count": 161,
+      "lastOkCount": 161,
+      "consecutiveBad": 0,
+      "consecutiveOk": 1,
+      "degraded": false,
+      "since": null
+    },
+    "bio": {
+      "kind": "content",
+      "label": "Published bio",
+      "status": "ok",
+      "count": null,
+      "lastOkCount": null,
+      "consecutiveBad": 0,
+      "consecutiveOk": 1,
+      "degraded": false,
+      "since": null
+    }
+  }
+}
