@@ -212,12 +212,12 @@ document.addEventListener('DOMContentLoaded', () => {
     return `
       <div class="course-card">
         <h3 class="course-title">${course.title}</h3>
-        <p class="course-code">${course.code}</p>
+        ${course.code ? `<p class="course-code">${course.code}</p>` : ''}
         ${course.description ? `<p class="course-description">${course.description}</p>` : ''}
         <div class="course-details">
           <p><strong>Level:</strong> ${course.level}</p>
           <p><strong>Academic Year:</strong> ${course.academic_year}</p>
-          <p><strong>Credits:</strong> ${course.credits} CFU</p>
+          ${course.credits ? `<p><strong>Credits:</strong> ${course.credits} CFU</p>` : ''}
           ${course.schedule ? `<p><strong>Schedule:</strong> ${course.schedule}</p>` : ''}
         </div>
         ${course.syllabus_url ? 

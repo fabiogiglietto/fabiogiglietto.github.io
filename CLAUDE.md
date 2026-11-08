@@ -78,8 +78,9 @@ escalation that tells a human exactly what to do):
   real file is kept; a fact the source does not give stays missing (no default
   credits, years or class times). Mock fallbacks used to publish invented data:
   Semantic Scholar citation counts (2026-02-24 to 2026-11-07), hardcoded WoS
-  counts for three papers, a fake social-media feed, and made-up class times
-  and rooms on the teaching page. WoS returns `citations: []` on this
+  counts for three papers, a fake social-media feed, made-up class times
+  and rooms on the teaching page, and course codes, semesters and credits
+  guessed when the university page did not give them. WoS returns `citations: []` on this
   subscription, so its counts are `null` (unknown). `tests/health.test.js`
   fails if a mock fallback reappears in `scripts/` or `assets/js/`.
 

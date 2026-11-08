@@ -176,7 +176,9 @@ function formatTeachingData(teachingData) {
     // First, format and sort all courses
     const allCourses = teachingData.courses.map(course => ({
       title: course.title,
-      code: course.code || course.discipline_code || `CRS${formatted.courses.length + 1}`,
+      // No invented code: the profile page has none (until 2026-11-08 one was
+      // built from the title's initials plus the year).
+      ...(course.code ? { code: course.code } : {}),
       ...(course.description ? { description: course.description } : {}),
       level: determineCourseLevel(course),
       // Missing facts stay missing: no default year, credits or semester, and

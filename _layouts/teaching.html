@@ -16,7 +16,7 @@ layout: default
           {% if course.current %}
             <div class="course-card">
               <h3 class="course-title">{{ course.title }}</h3>
-              <p class="course-code">{{ course.code }}</p>
+              {% if course.code %}<p class="course-code">{{ course.code }}</p>{% endif %}
               {% if course.description %}<p class="course-description">{{ course.description }}</p>{% endif %}
               <div class="course-details">
                 <p><strong>Level:</strong> {{ course.level }}</p>
@@ -44,7 +44,7 @@ layout: default
           {% unless course.current %}
             <div class="course-card">
               <h3 class="course-title">{{ course.title }}</h3>
-              <p class="course-code">{{ course.code }}</p>
+              {% if course.code %}<p class="course-code">{{ course.code }}</p>{% endif %}
               {% if course.description %}<p class="course-description">{{ course.description }}</p>{% endif %}
               <div class="course-details">
                 <p><strong>Level:</strong> {{ course.level }}</p>

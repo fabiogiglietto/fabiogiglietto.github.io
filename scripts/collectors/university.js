@@ -137,7 +137,8 @@ function extractTeachingFromProfilePage($) {
         const degreeTitleEnglish = degreeColumn.find('small a').first().text().trim();
         
         // Credits and discipline code
-        const credits = parseInt($(columns[3]).text().trim(), 10) || 6;
+        const parsedCredits = parseInt($(columns[3]).text().trim(), 10);
+        const credits = Number.isFinite(parsedCredits) ? parsedCredits : null;
         const disciplineCode = $(columns[4]).text().trim();
         
         // Parse academic year (format: "2024/2025")
@@ -146,25 +147,22 @@ function extractTeachingFromProfilePage($) {
         
         // Determine if course is current based on academic year
         const isCurrentCourse = isCurrentAcademicYear(academicYear);
-        
-        // Create a code from the course title for display purposes
-        const courseCode = generateCourseCode(courseTitle, academicYear);
+        const semester = determineSemester(courseTitle, degreeTitle);
         
         // Create course object
         courseData.push({
           title: courseTitle,
           english_title: englishTitle,
-          code: courseCode,
           academic_year: academicYear,
           degree: degreeTitle,
           degree_english: degreeTitleEnglish,
           degree_full_text: degreeFullText,  // Store full text with codes
-          credits: credits,
+          ...(credits ? { credits } : {}),
           discipline_code: disciplineCode,
           current: isCurrentCourse,
           syllabus_url: syllabusUrl.startsWith('/') ? `https://www.uniurb.it${syllabusUrl}` : syllabusUrl,
-          // Try to determine semester and level from degree info
-          semester: determineSemester(courseTitle, degreeTitle),
+          // Semester only when the page states it; no guess from today's month.
+          ...(semester ? { semester } : {}),
           level: determineLevel(degreeFullText)  // Use full text for better detection
           // No description: the profile page has none, and a keyword template
           // is not one (until 2026-11-07 every published description was).
@@ -193,25 +191,6 @@ function extractTeachingFromProfilePage($) {
     tutorials: getDefaultTutorials(),
     supervision: getDefaultSupervision()
   };
-}
-
-/**
- * Generates a course code from the title and academic year
- * Example: "DIGITAL MEDIA ANALYSIS" 2024-2025 -> "DMA2024"
- */
-function generateCourseCode(title, academicYear) {
-  // Extract the first letters of each word in the title
-  const initials = title.split(/\s+/)
-    .filter(word => word.length > 0)
-    .map(word => word[0])
-    .join('');
-  
-  // Extract the starting year from the academic year (e.g., 2024 from 2024-2025)
-  const yearMatch = academicYear.match(/(\d{4})/);
-  const year = yearMatch ? yearMatch[1] : '';
-  
-  // Combine initials and year
-  return (initials + year).toUpperCase();
 }
 
 /**
@@ -261,9 +240,9 @@ function determineSemester(title, details) {
     return "Spring";
   }
   
-  // If semester can't be determined, make a guess based on current month
-  const currentMonth = new Date().getMonth(); // 0-11
-  return currentMonth >= 2 && currentMonth <= 8 ? "Fall" : "Spring";
+  // Unknown stays unknown (until 2026-11-08 this guessed from the current
+  // month, so every course was published as "Spring").
+  return null;
 }
 
 /**

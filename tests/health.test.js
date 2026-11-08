@@ -176,7 +176,7 @@ describe('no mock data anywhere', () => {
   test.each(SCAN_DIRS)('%s has no mock-data fallback', dir => {
     for (const file of fs.readdirSync(path.join(root, dir)).filter(f => f.endsWith('.js'))) {
       const src = fs.readFileSync(path.join(root, dir, file), 'utf8');
-      expect({ file, hit: /getMock\w*\(|mock data|sample data|placeholder schedule/i.test(src) })
+      expect({ file, hit: /getMock\w*\(|mock data|sample data|placeholder schedule|generateCourseCode|guess based on current month/i.test(src) })
         .toEqual({ file, hit: false });
     }
   });
