@@ -2207,6 +2207,30 @@
       "author": "Letizia Iannucci, Antonis Matakos, Mikko Kivelä",
       "doi": null,
       "own": false
+    },
+    {
+      "id": "bibtex:Li2026-zv",
+      "bibtexKey": "Li2026-zv",
+      "title": "When AI Content Drowns Out Human Creativity",
+      "description": "AI-generated podcast discussion.\n\nReference:\nLi, Z., & Banks, J. (2026). Defective, amplified, contested: Folk conceptualizations of AI slop. http://arxiv.org/abs/2610.14231v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Li2026-zv.mp3",
+      "pubDate": "2026-11-09T08:47:17.010242+00:00",
+      "duration": "10:55",
+      "author": "Zhixin Li, Jaime Banks",
+      "doi": null,
+      "own": false
+    },
+    {
+      "id": "bibtex:Altoe2026-wu",
+      "bibtexKey": "Altoe2026-wu",
+      "title": "Catching Lies Before They Spread: The Twenty-Three Hour Window",
+      "description": "AI-generated podcast discussion.\n\nReference:\nAltoe, F., Pinto, S. M. G., & Pinto, H. S. (2026). Predicting narrative virality on social media streams for pre-peak misinformation triage. https://doi.org/10.1145/3799682.3840688",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Altoe2026-wu.mp3",
+      "pubDate": "2026-11-10T08:47:17.010242+00:00",
+      "duration": "10:18",
+      "author": "Filipe Altoe, Sérgio Miguel Gonçalves Pinto, H. Sofia Pinto",
+      "doi": "10.1145/3799682.3840688",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -4417,6 +4441,30 @@
       "author": "Letizia Iannucci, Antonis Matakos, Mikko Kivelä",
       "doi": null,
       "own": false
+    },
+    "Li2026-zv": {
+      "id": "bibtex:Li2026-zv",
+      "bibtexKey": "Li2026-zv",
+      "title": "When AI Content Drowns Out Human Creativity",
+      "description": "AI-generated podcast discussion.\n\nReference:\nLi, Z., & Banks, J. (2026). Defective, amplified, contested: Folk conceptualizations of AI slop. http://arxiv.org/abs/2610.14231v1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Li2026-zv.mp3",
+      "pubDate": "2026-11-09T08:47:17.010242+00:00",
+      "duration": "10:55",
+      "author": "Zhixin Li, Jaime Banks",
+      "doi": null,
+      "own": false
+    },
+    "Altoe2026-wu": {
+      "id": "bibtex:Altoe2026-wu",
+      "bibtexKey": "Altoe2026-wu",
+      "title": "Catching Lies Before They Spread: The Twenty-Three Hour Window",
+      "description": "AI-generated podcast discussion.\n\nReference:\nAltoe, F., Pinto, S. M. G., & Pinto, H. S. (2026). Predicting narrative virality on social media streams for pre-peak misinformation triage. https://doi.org/10.1145/3799682.3840688",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Altoe2026-wu.mp3",
+      "pubDate": "2026-11-10T08:47:17.010242+00:00",
+      "duration": "10:18",
+      "author": "Filipe Altoe, Sérgio Miguel Gonçalves Pinto, H. Sofia Pinto",
+      "doi": "10.1145/3799682.3840688",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -6135,9 +6183,21 @@
       "author": "Kieran Hegarty",
       "doi": "10.1080/24701475.2026.2760136",
       "own": false
+    },
+    "10.1145/3799682.3840688": {
+      "id": "bibtex:Altoe2026-wu",
+      "bibtexKey": "Altoe2026-wu",
+      "title": "Catching Lies Before They Spread: The Twenty-Three Hour Window",
+      "description": "AI-generated podcast discussion.\n\nReference:\nAltoe, F., Pinto, S. M. G., & Pinto, H. S. (2026). Predicting narrative virality on social media streams for pre-peak misinformation triage. https://doi.org/10.1145/3799682.3840688",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Altoe2026-wu.mp3",
+      "pubDate": "2026-11-10T08:47:17.010242+00:00",
+      "duration": "10:18",
+      "author": "Filipe Altoe, Sérgio Miguel Gonçalves Pinto, H. Sofia Pinto",
+      "doi": "10.1145/3799682.3840688",
+      "own": false
     }
   },
-  "totalEpisodes": 184,
-  "lastUpdated": "2026-11-08T08:25:12.586Z",
+  "totalEpisodes": 186,
+  "lastUpdated": "2026-11-08T12:46:54.933Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-08T08:27:45.291Z",
-  "runUrl": "https://github.com/fabiogiglietto/fabiogiglietto.github.io/actions/runs/42462838414",
+  "updatedAt": "2026-11-08T12:49:33.257Z",
+  "runUrl": "https://github.com/fabiogiglietto/fabiogiglietto.github.io/actions/runs/42481817947",
   "checks": {
     "orcid": {
       "kind": "source",
@@ -9,18 +9,18 @@
       "count": 159,
       "lastOkCount": 159,
       "consecutiveBad": 0,
-      "consecutiveOk": 2,
+      "consecutiveOk": 3,
       "degraded": false,
       "since": null
     },
     "scholar": {
       "kind": "source",
       "label": "Google Scholar",
-      "status": "failed",
-      "count": null,
-      "lastOkCount": null,
-      "consecutiveBad": 2,
-      "consecutiveOk": 0,
+      "status": "ok",
+      "count": 164,
+      "lastOkCount": 164,
+      "consecutiveBad": 0,
+      "consecutiveOk": 1,
       "degraded": true,
       "since": "2026-11-07T14:15:00.662Z"
     },
@@ -31,7 +31,7 @@
       "count": 1,
       "lastOkCount": 1,
       "consecutiveBad": 0,
-      "consecutiveOk": 2,
+      "consecutiveOk": 3,
       "degraded": false,
       "since": null
     },
@@ -42,7 +42,7 @@
       "count": 25,
       "lastOkCount": 25,
       "consecutiveBad": 0,
-      "consecutiveOk": 2,
+      "consecutiveOk": 3,
       "degraded": false,
       "since": null
     },
@@ -52,7 +52,7 @@
       "status": "empty",
       "count": 0,
       "lastOkCount": null,
-      "consecutiveBad": 2,
+      "consecutiveBad": 3,
       "consecutiveOk": 0,
       "degraded": true,
       "since": "2026-11-07T14:15:00.662Z"
@@ -64,7 +64,7 @@
       "count": 5,
       "lastOkCount": 5,
       "consecutiveBad": 0,
-      "consecutiveOk": 2,
+      "consecutiveOk": 3,
       "degraded": false,
       "since": null
     },
@@ -75,7 +75,7 @@
       "count": 21,
       "lastOkCount": 21,
       "consecutiveBad": 0,
-      "consecutiveOk": 2,
+      "consecutiveOk": 3,
       "degraded": false,
       "since": null
     },
@@ -86,7 +86,7 @@
       "count": 25,
       "lastOkCount": 25,
       "consecutiveBad": 0,
-      "consecutiveOk": 2,
+      "consecutiveOk": 3,
       "degraded": false,
       "since": null
     },
@@ -96,7 +96,7 @@
       "status": "failed",
       "count": null,
       "lastOkCount": null,
-      "consecutiveBad": 2,
+      "consecutiveBad": 3,
       "consecutiveOk": 0,
       "degraded": true,
       "since": "2026-11-07T14:15:00.662Z"
@@ -108,7 +108,7 @@
       "count": 322,
       "lastOkCount": 322,
       "consecutiveBad": 0,
-      "consecutiveOk": 2,
+      "consecutiveOk": 3,
       "degraded": false,
       "since": null
     },
@@ -119,7 +119,7 @@
       "count": 109,
       "lastOkCount": 109,
       "consecutiveBad": 0,
-      "consecutiveOk": 2,
+      "consecutiveOk": 3,
       "degraded": false,
       "since": null
     },
@@ -127,10 +127,10 @@
       "kind": "source",
       "label": "Research Radio",
       "status": "ok",
-      "count": 184,
-      "lastOkCount": 184,
+      "count": 186,
+      "lastOkCount": 186,
       "consecutiveBad": 0,
-      "consecutiveOk": 2,
+      "consecutiveOk": 3,
       "degraded": false,
       "since": null
     },
@@ -138,10 +138,10 @@
       "kind": "source",
       "label": "fg-zettelkasten",
       "status": "ok",
-      "count": 360,
-      "lastOkCount": 360,
+      "count": 362,
+      "lastOkCount": 362,
       "consecutiveBad": 0,
-      "consecutiveOk": 2,
+      "consecutiveOk": 3,
       "degraded": false,
       "since": null
     },
@@ -152,7 +152,7 @@
       "count": 27,
       "lastOkCount": 27,
       "consecutiveBad": 0,
-      "consecutiveOk": 2,
+      "consecutiveOk": 3,
       "degraded": false,
       "since": null
     },
@@ -160,10 +160,10 @@
       "kind": "source",
       "label": "Aggregated publications",
       "status": "ok",
-      "count": 161,
-      "lastOkCount": 161,
+      "count": 162,
+      "lastOkCount": 162,
       "consecutiveBad": 0,
-      "consecutiveOk": 2,
+      "consecutiveOk": 3,
       "degraded": false,
       "since": null
     },
@@ -174,7 +174,7 @@
       "count": null,
       "lastOkCount": null,
       "consecutiveBad": 0,
-      "consecutiveOk": 2,
+      "consecutiveOk": 3,
       "degraded": false,
       "since": null
     }
