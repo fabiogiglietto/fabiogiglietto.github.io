@@ -1,53 +1,43 @@
 {
-  "reviewedAt": "2026-11-02T14:54:29.853Z",
+  "reviewedAt": "2026-11-09T15:17:40.956Z",
   "model": "claude-fable-5",
   "effort": "medium",
-  "summary": "Corrected the misattributed parliamentary-question claim, removed an unsupported methods description, restored dated 'as of August 2026' status stamps, project end dates, MINE's 2017 founding and the accurate Digit Srl and media-coverage details, and tightened the prose throughout.",
+  "summary": "Tightened the prose, replaced the unsupported claim that his research 'informed European legislative inquiries' with the sourced fact that his 2025 working paper was cited in a written question to the European Commission, corrected the teaching claim to past tense, and restored omitted details (MINE's 2017 founding, doctorate at Urbino, CooRnet co-developers, rapporteur role).",
   "flags": [
     {
-      "claim": "Through empirical methodologies leveraging machine learning, natural language processing, and network analysis",
-      "issue": "No source describes his methods in these terms; the authoritative biography characterises his research as computational social science, digital platform analysis and political communication with a focus on information disorders and coordinated behaviour. Replaced with the supported description.",
-      "severity": "unsupported"
-    },
-    {
-      "claim": "was cited in a written question to the European Parliament",
-      "issue": "The authoritative biography states the paper was cited in a European Parliament written question addressed to the European Commission (E-10-2026-000086) — the question was put TO the Commission, not to Parliament. Corrected in the revision.",
-      "severity": "unsupported"
-    },
-    {
-      "claim": "drew wide national news coverage in Italy",
-      "issue": "The authoritative biography supports 'national media coverage' between January and April 2026 in four named outlets; 'wide' is an intensifier the source does not assert. Replaced with the named outlets and dates.",
+      "claim": "His empirical research auditing platform content policies has informed European legislative inquiries",
+      "issue": "A claim about third-party institutional action. The authoritative biography supports only that the 2025 Meta working paper was cited in a written question to the European Commission (E-10-2026-000086); 'informed European legislative inquiries' goes beyond that. Replaced with the precise, supported statement.",
       "severity": "overstated"
     },
     {
-      "claim": "He directs the Mapping Italian News Research Program (MINE)",
-      "issue": "The authoritative biography states he founded MINE in 2017 and has coordinated it since, and that the programme is active 'as of August 2026'; the biography dropped the founding and the dated status stamp. Restored.",
-      "severity": "omission"
-    },
-    {
-      "claim": "serving as Work Package Leader on the Horizon Europe project vera.ai and as a partner on the PROMPT initiative",
-      "issue": "Both projects concluded (vera.ai October 2025, PROMPT February 2026) per the authoritative biography; omitting the end dates risks presenting concluded roles as ongoing. Dates added.",
-      "severity": "omission"
-    },
-    {
-      "claim": "evaluated project proposals for the European Education and Culture Executive Agency",
-      "issue": "The authoritative biography stamps this as a current appointment: as of August 2026 it ran to September 2026. The past-tense phrasing misrepresents its status; revised to the stamped formulation. (The specific call and contract details are correctly omitted.)",
+      "claim": "his teaching portfolio includes courses on Generative AI and Media and Digital Social Network Analysis",
+      "issue": "The authoritative biography states his teaching 'has included' these courses; the present-tense 'includes' asserts a currency the source does not. Changed to 'has included'.",
       "severity": "overstated"
     },
     {
-      "claim": "civic participation, environmental sustainability, and scientific dissemination",
-      "issue": "The authoritative biography says Digit Srl develops platforms for sustainability, civic participation, social innovation and scientific dissemination; 'environmental' is an unsupported qualifier and 'social innovation' was dropped. Corrected.",
-      "severity": "overstated"
-    },
-    {
-      "claim": "Fabio Giglietto is Full Professor of Internet Studies ... He maintains active ties with international scholarly organizations",
-      "issue": "These status claims are stamped 'as of August 2026' in the authoritative biography but were rendered as timeless present tense. Stamps restored in the revision.",
+      "claim": "He is the founder and coordinator of the Mapping Italian News Research Program (MINE)",
+      "issue": "The authoritative biography dates the founding to 2017; the biography dropped the date. Restored.",
       "severity": "omission"
     },
     {
-      "claim": "investigates the structural mechanics of online information disorders ... across digital platform ecosystems",
-      "issue": "Abstraction-heavy, jargon-dense phrasing ('structural mechanics', 'platform ecosystems') that adds no verifiable content; tightened to plainer, source-backed language.",
+      "claim": "Fabio Giglietto is Full Professor of Internet Studies in the Department of Communication Sciences, Humanities and International Studies at the University of Urbino Carlo Bo",
+      "issue": "The authoritative biography notes he earned his doctorate at the same institution, a fact the biography omitted. Restored.",
+      "severity": "omission"
+    },
+    {
+      "claim": "he co-developed CooRnet",
+      "issue": "The authoritative biography names the co-developers (Nicola Righetti and Luca Rossi) and notes the method was also used by fact-checkers; the biography dropped both. Restored.",
+      "severity": "omission"
+    },
+    {
+      "claim": "bridging theoretical frameworks with advanced empirical methodologies",
+      "issue": "Empty abstraction that asserts nothing concrete; removed in revision.",
       "severity": "style"
+    },
+    {
+      "claim": "he has served as an independent proposal evaluator for the European Education and Culture Executive Agency",
+      "issue": "The authoritative biography describes the role as 'evaluator and rapporteur'; the rapporteur element was dropped. Restored (without naming the call or programme, per confidentiality rules; the appointment's end date has passed, so it is stated in the past tense).",
+      "severity": "omission"
     }
   ]
 }
