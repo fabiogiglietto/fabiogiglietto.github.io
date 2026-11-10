@@ -2,42 +2,30 @@
   content: >-
     Researchers from the University of Urbino Carlo Bo presented ten scholarly
     works at the Association of Internet Researchers (AoIR 2026) conference in
-    Mexico City, showcasing departmental research spanning digital fandom,
-    platform governance, and political communication.
+    Mexico City, showcasing research ranging from political influencer dynamics
+    to digital culture.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7516139699506380800
   platforms:
     - LinkedIn
+- date: '2026-11-08'
+  content: >-
+    A new methodological approach to social media monitoring introduces a
+    streaming pipeline capable of predicting the virality of false narratives
+    nearly 23 hours before maximum spread, offering fact-checkers a vital
+    pre-peak triage tool.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7525112668777553922
+  platforms:
+    - BlueSky
+    - LinkedIn
+    - Mastodon
+  toread: true
 - date: '2026-11-03'
   content: >-
-    A new methodological study reframes the challenge of detecting coordinated
-    inauthentic behavior on social media as a problem of statistical
-    detectability, critiquing conventional similarity network clustering
-    approaches that often surface false positives.
+    Recent findings in network analysis critique conventional community
+    detection methods for network co-activity, reframing coordinated online
+    behavior through the lens of statistical detectability to reduce false
+    positives.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7523455632449155072
-  platforms:
-    - BlueSky
-    - LinkedIn
-    - Mastodon
-  toread: true
-- date: '2026-11-02'
-  content: >-
-    Recent research introduces an open-weight LLM workflow incorporating a
-    'Judge agent' to automate content analysis on consumer hardware, achieving
-    inter-coder reliability scores above 0.7 that rival expert human performance
-    across multi-lingual corpora.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7522813418509340672
-  platforms:
-    - BlueSky
-    - LinkedIn
-    - Mastodon
-  toread: true
-- date: '2026-10-31'
-  content: >-
-    An analysis of 568 election rumors reveals a stable grammatical structure
-    combining actors, objects, and actions into predictable meta-categories,
-    demonstrating how recurring tropes structure electoral disinformation
-    campaigns over time.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7522267811960840193
   platforms:
     - BlueSky
     - LinkedIn
@@ -45,10 +33,9 @@
   toread: true
 - date: '2026-10-23'
   content: >-
-    Comparative evaluation of AI-generated peer reviews against high-quality
-    human expert reviews indicates that large language models can equal or
-    exceed human performance across multiple evaluation metrics in academic
-    publishing.
+    An evaluation of academic peer review standards demonstrates that automated
+    AI-generated reviews can match or exceed top-tier human expert evaluations
+    across multiple key performance measures.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7519453664319614976
   platforms:
     - BlueSky
