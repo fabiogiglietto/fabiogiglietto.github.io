@@ -1,22 +1,11 @@
 - date: '2026-11-08'
   content: >-
-    Recent research in *ACM CIKM* introduces a novel computational pipeline
-    capable of detecting and predicting the virality of false narratives on
-    social media up to 23 hours before peak spread, providing a vital tool for
-    early fact-checking triage.
+    Predicting narrative virality hours before peak spread occurs is the focus
+    of a new streaming pipeline developed for pre-peak misinformation triage
+    (Altoe et al., CIKM 2026). The approach clusters semantically similar posts
+    into evolving narratives and normalizes claims using language models to
+    prioritize candidates for fact-checkers up to 23 hours in advance.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7525112668777553922
-  platforms:
-    - BlueSky
-    - LinkedIn
-    - Mastodon
-  toread: true
-- date: '2026-11-02'
-  content: >-
-    A new methodological study in *Social Science Computer Review* evaluates the
-    use of open-weight large language models for automated content analysis,
-    highlighting a 'Judge agent' approach that achieves human-level coding
-    reliability on standard consumer hardware.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7522813418509340672
   platforms:
     - BlueSky
     - LinkedIn
@@ -24,19 +13,33 @@
   toread: true
 - date: '2026-10-14'
   content: >-
-    Researchers at the Association of Internet Researchers conference
-    (#AoIR2026) in Mexico City are representing the University of Urbino Carlo
-    Bo with ten presentations covering digital culture, platform governance, and
-    online dynamics.
+    University of Urbino Carlo Bo scholars presented ten research papers at the
+    Association of Internet Researchers conference (#AoIR2026) in Mexico City,
+    covering topics ranging from feminist influ-activism to platform governance.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7516139699506380800
   platforms:
     - LinkedIn
-- date: '2026-10-31'
+- date: '2026-11-03'
   content: >-
-    An analysis of election rumors from 2020 and 2022 uncovers a consistent
-    structural 'grammar' composed of recurring meta-categories and nested tropes
-    that shape electoral misinformation across social platforms.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7522267811960840193
+    A statistical detectability framework challenges conventional social media
+    coordination detection methods (Iannucci et al., 2026). The study critiques
+    standard approaches that project account co-activity into similarity
+    networks, demonstrating how traditional clustering often identifies
+    co-activation patterns regardless of whether genuine coordination exists.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7523455632449155072
+  platforms:
+    - BlueSky
+    - LinkedIn
+    - Mastodon
+  toread: true
+- date: '2026-11-02'
+  content: >-
+    Practical workflows for leveraging open-weight large language models to
+    automate computational content analysis were introduced by Farjam et al.
+    (2026) in Social Science Computer Review. By introducing a secondary 'Judge
+    agent' to adjudicate conflicting codings, the method achieves coding
+    reliability comparable to human expert performance on standard hardware.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7522813418509340672
   platforms:
     - BlueSky
     - LinkedIn
