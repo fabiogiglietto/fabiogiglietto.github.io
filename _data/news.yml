@@ -1,11 +1,9 @@
 - date: '2026-11-08'
   content: >-
-    A new study published in the Proceedings of the 35th ACM International
-    Conference on Information and Knowledge Management introduces an automated
-    streaming pipeline capable of predicting the virality of false social media
-    narratives nearly 23 hours before peak spread, offering critical
-    early-triage tools for fact-checkers.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7525112668777553922
+    A novel streaming pipeline developed by Altoe et al. addresses critical
+    timing gaps in misinformation response by predicting the virality of false
+    narratives up to 23 hours before maximum spread occurs.
+  url: https://doi.org/10.1145/3799682.3840688
   platforms:
     - BlueSky
     - LinkedIn
@@ -13,23 +11,22 @@
   toread: true
 - date: '2026-11-08'
   content: >-
-    Emerging research analyzes how internet users understand mass-produced AI
-    content, demonstrating how audiences navigate algorithmic amplification,
-    articulate frustration with low-quality feed flooding, and develop organic
-    strategies of reporting and resistance.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7525112601350057984
+    New research by Li and Banks investigates how social media users
+    conceptualize 'AI slop', highlighting user frustration with algorithmic
+    amplification and emerging resistance tactics against mass-produced
+    low-quality content.
+  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mzryp2c6fm25
   platforms:
     - BlueSky
     - LinkedIn
     - Mastodon
   toread: true
-- date: '2026-11-03'
+- date: '2026-11-02'
   content: >-
-    A novel methodological paper reframes the detection of coordinated
-    inauthentic behavior on social media through the lens of statistical
-    detectability, demonstrating why standard network projection techniques
-    frequently mistake routine account co-activity for deliberate coordination.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7523455632449155072
+    A practical methodological study introduces a robust workflow for automating
+    social science content analysis using open-weight large language models and
+    a novel 'Judge agent' adjudication framework.
+  url: https://doi.org/10.1177/08944393251349541
   platforms:
     - BlueSky
     - LinkedIn
@@ -37,10 +34,10 @@
   toread: true
 - date: '2026-10-14'
   content: >-
-    Researchers from the University of Urbino Carlo Bo are presenting ten
-    academic studies at the Association of Internet Researchers conference (AoIR
-    2026) in Mexico City, spanning subjects from influencer activism to digital
-    platform governance.
+    Researchers from the University of Urbino Carlo Bo represented the
+    institution at the Association of Internet Researchers (AoIR 2026)
+    conference in Mexico City, presenting ten academic contributions spanning
+    internet activism, platform governance, and digital culture.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7516139699506380800
   platforms:
     - LinkedIn
