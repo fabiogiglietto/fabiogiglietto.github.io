@@ -1,10 +1,21 @@
 - date: '2026-11-08'
   content: >-
-    Published in the Proceedings of the 35th ACM CIKM conference, new research
-    introduces a streaming pipeline that predicts the virality of false social
-    media narratives 23 hours prior to peak spread, enabling early
-    misinformation triage.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7525112668777553922
+    A novel streaming pipeline developed by researchers predicts the virality of
+    false narratives on social media up to 23 hours before peak spread occurs,
+    offering fact-checkers a critical window for pre-peak misinformation triage.
+  url: https://doi.org/10.1145/3799682.3840688
+  platforms:
+    - BlueSky
+    - LinkedIn
+    - Mastodon
+  toread: true
+- date: '2026-11-08'
+  content: >-
+    New research analyzing user experiences on Reddit highlights how social
+    media users conceptualize and navigate 'AI slop'—low-quality, mass-produced
+    AI content—focusing on algorithmic amplification, content defects, and user
+    resistance tactics.
+  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mzryp2c6fm25
   platforms:
     - BlueSky
     - LinkedIn
@@ -12,34 +23,11 @@
   toread: true
 - date: '2026-11-03'
   content: >-
-    A recent study published in arXiv reframes social media coordination
-    detection as a challenge of statistical detectability, demonstrating how
-    traditional similarity network clustering often misidentifies
-    non-coordinated co-activity as intentional manipulation.
+    Critical evaluation of social media analytics reframes the detection of
+    coordinated inauthentic behavior, questioning conventional methods that
+    project account interactions into similarity networks and risk identifying
+    false clusters.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7523455632449155072
-  platforms:
-    - BlueSky
-    - LinkedIn
-    - Mastodon
-  toread: true
-- date: '2026-11-02'
-  content: >-
-    A practical workflow featured in Social Science Computer Review demonstrates
-    how consumer-grade open-weight large language models paired with an
-    adjudication agent can automate content coding to achieve reliability scores
-    matching expert human coders.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7522813418509340672
-  platforms:
-    - BlueSky
-    - LinkedIn
-    - Mastodon
-  toread: true
-- date: '2026-10-23'
-  content: >-
-    Comparative research by Gary King and Stephen Worthington reveals that
-    AI-generated manuscript evaluations systematically equal or surpass
-    high-quality human expert peer reviews across standard assessment metrics.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7519453664319614976
   platforms:
     - BlueSky
     - LinkedIn
@@ -47,9 +35,10 @@
   toread: true
 - date: '2026-10-14'
   content: >-
-    Researchers from the University of Urbino Carlo Bo participated in the
-    Association of Internet Researchers (AoIR 2026) conference in Mexico City,
-    presenting ten contributions under the conference theme 'Régénérations'.
+    Researchers from the University of Urbino Carlo Bo presented ten scholarly
+    works at the annual Association of Internet Researchers (AoIR 2026)
+    conference in Mexico City, highlighting research on platform governance,
+    influence, and digital culture.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7516139699506380800
   platforms:
     - LinkedIn
