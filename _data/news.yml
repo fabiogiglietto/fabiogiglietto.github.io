@@ -1,11 +1,43 @@
 - date: '2026-11-08'
   content: >-
-    Predicting narrative virality hours before peak spread occurs is the focus
-    of a new streaming pipeline developed for pre-peak misinformation triage
-    (Altoe et al., CIKM 2026). The approach clusters semantically similar posts
-    into evolving narratives and normalizes claims using language models to
-    prioritize candidates for fact-checkers up to 23 hours in advance.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7525112668777553922
+    A novel streaming pipeline developed by Altoe et al. addresses critical
+    timing gaps in misinformation response by predicting the virality of false
+    narratives up to 23 hours before maximum spread occurs.
+  url: https://doi.org/10.1145/3799682.3840688
+  platforms:
+    - BlueSky
+    - LinkedIn
+    - Mastodon
+  toread: true
+- date: '2026-11-08'
+  content: >-
+    New research by Li and Banks investigates how social media users
+    conceptualize low-quality, mass-produced 'AI slop', highlighting user
+    frustration with algorithmic amplification and emerging resistance tactics
+    across platforms.
+  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mzryp2c6fm25
+  platforms:
+    - BlueSky
+    - LinkedIn
+    - Mastodon
+  toread: true
+- date: '2026-11-03'
+  content: >-
+    A methodological paper by Iannucci et al. reframes social media coordination
+    detection as a problem of statistical detectability, offering critical
+    evaluation of standard co-activity clustering techniques.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7523455632449155072
+  platforms:
+    - BlueSky
+    - LinkedIn
+    - Mastodon
+  toread: true
+- date: '2026-10-23'
+  content: >-
+    Comparative evaluation of AI-generated article reviews by Gary King and
+    Stephen Worthington indicates LLM output can equal or surpass high-quality
+    human peer reviews across standard quality metrics.
+  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mykq5v7gsk2b
   platforms:
     - BlueSky
     - LinkedIn
@@ -13,35 +45,9 @@
   toread: true
 - date: '2026-10-14'
   content: >-
-    University of Urbino Carlo Bo scholars presented ten research papers at the
-    Association of Internet Researchers conference (#AoIR2026) in Mexico City,
-    covering topics ranging from feminist influ-activism to platform governance.
+    Researchers from the University of Urbino Carlo Bo presented ten scholarly
+    contributions at the Association of Internet Researchers (AoIR 2026)
+    conference in Mexico City.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7516139699506380800
   platforms:
     - LinkedIn
-- date: '2026-11-03'
-  content: >-
-    A statistical detectability framework challenges conventional social media
-    coordination detection methods (Iannucci et al., 2026). The study critiques
-    standard approaches that project account co-activity into similarity
-    networks, demonstrating how traditional clustering often identifies
-    co-activation patterns regardless of whether genuine coordination exists.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7523455632449155072
-  platforms:
-    - BlueSky
-    - LinkedIn
-    - Mastodon
-  toread: true
-- date: '2026-11-02'
-  content: >-
-    Practical workflows for leveraging open-weight large language models to
-    automate computational content analysis were introduced by Farjam et al.
-    (2026) in Social Science Computer Review. By introducing a secondary 'Judge
-    agent' to adjudicate conflicting codings, the method achieves coding
-    reliability comparable to human expert performance on standard hardware.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7522813418509340672
-  platforms:
-    - BlueSky
-    - LinkedIn
-    - Mastodon
-  toread: true
