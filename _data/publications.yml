@@ -177,14 +177,14 @@
   citation_sources:
     scholar: 0
     wos: null
-    scopus: null
+    scopus: 0
   type: book
   urls:
     doi: https://doi.org/10.4337/9781035325047.00023
     orcid: https://ora.uniurb.it/handle/11576/2777591
     scholar: https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:-6RzNnnwWf8C
     wos: null
-    scopus: null
+    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=105055708516&origin=inward
 - title: "Links in comments: how much do post-only studies of Facebook link sharing miss?"
   authors: Giglietto, F.
   venue: OSF Registries
@@ -1239,7 +1239,7 @@
   citation_sources:
     scholar: 261
     wos: null
-    scopus: 131
+    scopus: 133
   type: article
   urls:
     doi: https://doi.org/10.1080/1369118X.2020.1739732
@@ -1260,7 +1260,7 @@
   citation_sources:
     scholar: 64
     wos: null
-    scopus: 28
+    scopus: 29
   type: conference
   urls:
     doi: https://doi.org/10.1145/3400806.3400817
@@ -1846,7 +1846,7 @@
   citation_sources:
     scholar: 10
     wos: null
-    scopus: 7
+    scopus: null
   type: journal
   urls:
     doi: null
@@ -1854,7 +1854,7 @@
     scholar: https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:MhiOAD_qIWkC
     wos: >-
       https://www.webofscience.com/api/gateway?GWVersion=2&SrcApp=fg_cv&SrcAuth=WosAPI&KeyUT=WOS:000386944800001&DestLinkType=FullRecord&DestApp=WOS_CPL
-    scopus: https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85030472910&origin=inward
+    scopus: null
 - title: "Binge watching the algorithmic catalog: an analysis of Twitter’s reaction to the launch of Netflix Italia"
   authors: F Giglietto, C Checcaglini, L Mazzoli
   venue: AoIR Selected Papers of Internet Research, 2016

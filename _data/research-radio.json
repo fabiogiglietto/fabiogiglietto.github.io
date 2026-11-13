@@ -2231,6 +2231,18 @@
       "author": "Filipe Altoe, Sérgio Miguel Gonçalves Pinto, H. Sofia Pinto",
       "doi": "10.1145/3799682.3840688",
       "own": false
+    },
+    {
+      "id": "bibtex:Larsson2026-nl",
+      "bibtexKey": "Larsson2026-nl",
+      "title": "Why Going Negative Doesn't Always Win Online",
+      "description": "AI-generated podcast discussion.\n\nReference:\nLarsson, A. O. (2026). “I share your sentiment”—A longitudinal study of Facebook post sentiment and sharing. https://doi.org/10.1177/20563051261501463",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Larsson2026-nl.mp3",
+      "pubDate": "2026-11-12T22:41:02.679241+00:00",
+      "duration": "10:14",
+      "author": "Anders Olof Larsson",
+      "doi": "10.1177/20563051261501463",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -4465,6 +4477,18 @@
       "author": "Filipe Altoe, Sérgio Miguel Gonçalves Pinto, H. Sofia Pinto",
       "doi": "10.1145/3799682.3840688",
       "own": false
+    },
+    "Larsson2026-nl": {
+      "id": "bibtex:Larsson2026-nl",
+      "bibtexKey": "Larsson2026-nl",
+      "title": "Why Going Negative Doesn't Always Win Online",
+      "description": "AI-generated podcast discussion.\n\nReference:\nLarsson, A. O. (2026). “I share your sentiment”—A longitudinal study of Facebook post sentiment and sharing. https://doi.org/10.1177/20563051261501463",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Larsson2026-nl.mp3",
+      "pubDate": "2026-11-12T22:41:02.679241+00:00",
+      "duration": "10:14",
+      "author": "Anders Olof Larsson",
+      "doi": "10.1177/20563051261501463",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -6195,9 +6219,21 @@
       "author": "Filipe Altoe, Sérgio Miguel Gonçalves Pinto, H. Sofia Pinto",
       "doi": "10.1145/3799682.3840688",
       "own": false
+    },
+    "10.1177/20563051261501463": {
+      "id": "bibtex:Larsson2026-nl",
+      "bibtexKey": "Larsson2026-nl",
+      "title": "Why Going Negative Doesn't Always Win Online",
+      "description": "AI-generated podcast discussion.\n\nReference:\nLarsson, A. O. (2026). “I share your sentiment”—A longitudinal study of Facebook post sentiment and sharing. https://doi.org/10.1177/20563051261501463",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Larsson2026-nl.mp3",
+      "pubDate": "2026-11-12T22:41:02.679241+00:00",
+      "duration": "10:14",
+      "author": "Anders Olof Larsson",
+      "doi": "10.1177/20563051261501463",
+      "own": false
     }
   },
-  "totalEpisodes": 186,
-  "lastUpdated": "2026-11-12T22:41:25.832Z",
+  "totalEpisodes": 187,
+  "lastUpdated": "2026-11-13T10:42:28.617Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
