@@ -1,10 +1,22 @@
-- date: '2026-11-12'
+- date: '2026-11-08'
   content: >-
-    A decade-long longitudinal study examining political Facebook posts reveals
-    that while positive tone dominates overall communications, negative posts
-    have steadily increased and consistently generated higher sharing rates
-    across platform networks.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7526777467437682689
+    Early misinformation detection receives a significant advancement with a
+    novel streaming pipeline designed to predict the virality of false
+    narratives nearly 24 hours before they reach peak spread, enabling proactive
+    fact-checking triage.
+  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mzrypjcwyr2b
+  platforms:
+    - BlueSky
+    - LinkedIn
+    - Mastodon
+  toread: true
+- date: '2026-11-08'
+  content: >-
+    Investigation into user experiences with low-quality AI-generated content
+    reveals that social media users conceptualize 'AI slop' through content
+    defects, algorithmic frustration, and active resistance strategies on
+    digital platforms.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7525112601350057984
   platforms:
     - BlueSky
     - LinkedIn
@@ -12,34 +24,23 @@
   toread: true
 - date: '2026-11-03'
   content: >-
-    New research in social network methodology reframes the detection of
-    coordinated online behavior around statistical detectability, offering a
-    critique of standard clustering algorithms that frequently misidentify
-    simple co-activity as intentional manipulation.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7523455632449155072
+    Methodological research reframes online coordination detection as a problem
+    of statistical detectability, challenging conventional co-activity
+    clustering techniques that often detect co-activation rather than true
+    intent.
+  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mzgirks2jf2b
   platforms:
     - BlueSky
     - LinkedIn
     - Mastodon
   toread: true
-- date: '2026-11-02'
+- date: '2026-10-23'
   content: >-
-    A methodological framework published in Social Science Computer Review
-    demonstrates how researchers can utilize open-weight large language models
-    on consumer-grade hardware for content analysis, achieving agreement metrics
-    matching human expert coders.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7522813418509340672
-  platforms:
-    - BlueSky
-    - LinkedIn
-    - Mastodon
-  toread: true
-- date: '2026-10-31'
-  content: >-
-    An empirical analysis of hundreds of political rumors highlights how online
-    disinformation relies on a stable grammatical framework, mapping recurring
-    actors, actions, and tropes into predictable narrative patterns.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7522267811960840193
+    Comparative evaluation of automated peer review suggests AI-generated paper
+    reviews can match or exceed high-quality human expert reviews across
+    multiple evaluation metrics, highlighting potential shifts in scholarly
+    publishing workflows.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7519453664319614976
   platforms:
     - BlueSky
     - LinkedIn
