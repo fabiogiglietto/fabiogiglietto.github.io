@@ -1,32 +1,46 @@
 - date: '2026-11-12'
   content: >-
-    #toread 📚 From my reading list · 🤖 Auto-posted
-
-
-    Larsson, A. O. (2026). “I share your sentiment”—A longitudinal study of
-    Facebook post sentiment and ...
-  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3n25kemnnn227
+    A longitudinal study by A. O. Larsson examining nearly 39,000 Facebook posts
+    over a decade demonstrates how negative sentiment increasingly drives social
+    media sharing, particularly for challenger political parties.
+  url: https://doi.org/10.1177/20563051261501463
   platforms:
     - BlueSky
-  toread: true
-- date: '2026-11-12'
-  content: >-
-    #toread 📚 From my reading list · 🤖 Auto-posted"
-
-    ""
-
-    "The study analyzes nearly 39,000 Facebook posts from Norwegian
-    parliamentary parties over a deca...
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7526777467437682689
-  platforms:
     - LinkedIn
+    - Mastodon
   toread: true
-- date: '2026-11-12'
+- date: '2026-11-08'
   content: >-
-    #toread 📚 From my reading list · 🤖 Auto-postedNote:
-    https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Larsson2026-nlLarsson,
-    A. O. (2026). “I ...
-  url: https://aoir.social/@fabiogiglietto/117605896075256891
+    New research presented at ACM CIKM introduces an automated streaming
+    pipeline capable of predicting the virality of false narratives up to 23
+    hours before they peak, offering fact-checkers a crucial window for pre-peak
+    misinformation triage.
+  url: https://doi.org/10.1145/3799682.3840688
   platforms:
+    - BlueSky
+    - LinkedIn
+    - Mastodon
+  toread: true
+- date: '2026-11-03'
+  content: >-
+    Reframing online network analysis, a study on the statistical detectability
+    of coordination critically re-evaluates standard co-activity clustering
+    techniques used to identify coordinated inauthentic behavior on social media
+    platforms.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7523455632449155072
+  platforms:
+    - BlueSky
+    - LinkedIn
+    - Mastodon
+  toread: true
+- date: '2026-10-23'
+  content: >-
+    Emerging research on academic peer review by Gary King and Stephen
+    Worthington finds that top-tier AI-generated manuscript reviews rival or
+    surpass expert human evaluations across multiple qualitative parameters.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7519453664319614976
+  platforms:
+    - BlueSky
+    - LinkedIn
     - Mastodon
   toread: true
