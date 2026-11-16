@@ -9,9 +9,7 @@ const axios = require('axios');
 const yaml = require('js-yaml');
 const { getGeminiClient, MODELS } = require('../helpers/gemini-client');
 const linkedin = require('../helpers/linkedin-portability');
-
-// Check for API keys
-const hasMastodonKey = process.env.MASTODON_ACCESS_TOKEN;
+const mastodon = require('../helpers/mastodon-api');
 
 // Check if running in GitHub Actions
 const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
@@ -201,40 +199,16 @@ async function collectBlueSkyPosts() {
 }
 
 /**
- * Collect posts from Mastodon using Mastodon API
+ * Collect posts from Mastodon through the Mastodon API (helpers/mastodon-api.js).
+ * Only public posts are returned: the owner's token would also expose
+ * followers-only and direct ones.
  */
 async function collectMastodonPosts() {
   try {
-    const instance = 'aoir.social';
-    const username = 'fabiogiglietto';
-    
     console.log('Collecting Mastodon posts...');
-    
-    // Get user ID first
-    const searchResponse = await axios.get(`https://${instance}/api/v1/accounts/lookup`, {
-      params: { acct: username },
-      timeout: 10000 // 10 second timeout
-    });
-    
-    const userId = searchResponse.data.id;
-    console.log(`Found Mastodon user ID: ${userId}`);
-    
-    // Get user's statuses/posts
-    const postsResponse = await axios.get(`https://${instance}/api/v1/accounts/${userId}/statuses`, {
-      params: {
-        limit: 20,
-        exclude_replies: true,
-        exclude_reblogs: true
-      },
-      headers: hasMastodonKey ? {
-        'Authorization': `Bearer ${process.env.MASTODON_ACCESS_TOKEN}`
-      } : {},
-      timeout: 10000 // 10 second timeout
-    });
+    const posts = await mastodon.fetchPublicStatuses();
+    console.log(`Found ${posts.length} public Mastodon posts`);
 
-    const posts = postsResponse.data || [];
-    console.log(`Found ${posts.length} Mastodon posts`);
-    
     return posts.map(post => ({
       id: post.id,
       content: stripHtmlTags(post.content || ''),
@@ -245,14 +219,6 @@ async function collectMastodonPosts() {
     }));
   } catch (error) {
     console.error('Error collecting Mastodon posts:', error.message);
-    if (error.code === 'ECONNABORTED') {
-      console.log('Mastodon API request timed out');
-    } else if (error.response?.status) {
-      console.log(`Mastodon API returned status ${error.response.status}`);
-      if (error.response.status === 404) {
-        console.log('Mastodon user not found or instance unavailable');
-      }
-    }
     return [];
   }
 }

@@ -1,139 +1,50 @@
 /**
- * News data collector
- * 
- * Fetches recent news mentions or publications
+ * News collector — Fabio's recent Mastodon posts, via the Mastodon API.
+ *
+ * Writes public/data/news.json, which the health check reports as
+ * "News (Mastodon)". It used to scrape six HTML pages (Mastodon, Threads,
+ * LinkedIn, BlueSky, the university news page, Google News) with generic CSS
+ * selectors; none of them yielded posts and aoir.social answered 403. No
+ * scraping here: the posts come from the platform API (helpers/mastodon-api.js).
+ *
+ * Returns null on failure, so health records "failed" rather than "empty".
  */
 
-const axios = require('axios');
-const cheerio = require('cheerio');
-const config = require('../config');
+const mastodon = require('../helpers/mastodon-api');
 
-async function collect() {
-  console.log('Collecting News data...');
+const MAX_ITEMS = 10;
+const TITLE_CHARS = 100;
 
-  // News sources to search for mentions
-  const sources = [
-    {
-      name: 'University News',
-      url: 'https://www.uniurb.it/novita-ed-eventi/notizie',
-      searchTerm: config.name
-    },
-    {
-      name: 'Research Blog',
-      url: 'https://news.google.com/topics/CAAqKAgKIiJDQkFTRXdvTkwyY3ZNVEZtTUhvMmJtc3phaElDYVhRb0FBUAE?ceid=IT:it&oc=3',
-      searchTerm: config.name
-    },
-    {
-      name: 'Threads',
-      url: config.social.threads.url,
-      searchTerm: ''
-    },
-    {
-      name: 'LinkedIn',
-      url: config.social.linkedin.url,
-      searchTerm: ''
-    },
-    {
-      name: 'Mastodon',
-      url: config.social.mastodon.url,
-      searchTerm: ''
-    },
-    {
-      name: 'BlueSky',
-      url: config.social.bluesky.url,
-      searchTerm: ''
-    }
-  ];
-  
+function toNewsItem(status) {
+  const text = mastodon.stripHtml(status.content);
+  const firstLine = text.split('\n').find(line => line.trim()) || 'Mastodon post';
+  return {
+    title: firstLine.length > TITLE_CHARS ? `${firstLine.slice(0, TITLE_CHARS - 1)}…` : firstLine,
+    date: status.created_at,
+    summary: text,
+    url: status.url,
+    source: 'Mastodon'
+  };
+}
+
+async function collect({ http } = {}) {
+  console.log('Collecting News data (Mastodon API)...');
   try {
-    // Collect news from all sources
-    const newsItems = await Promise.all(
-      sources.map(async (source) => {
-        try {
-          // Use a common browser user agent
-          const response = await axios.get(source.url, {
-            headers: {
-              'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-              'Accept': 'text/html,application/xhtml+xml,application/xml',
-              'Accept-Language': 'en-US,en;q=0.9'
-            },
-            timeout: 10000 // 10 second timeout
-          });
-          const $ = cheerio.load(response.data);
-          
-          // Search for mentions or get posts
-          // Adjust the selectors based on the actual website structure
-          const items = [];
-          
-          // For social media profiles, collect posts without searching for terms
-          if (source.searchTerm === '') {
-            // Social media profiles - collect posts directly
-            let selector = 'article, .post, .feed-item';
-            
-            // Platform-specific selectors
-            if (source.name === 'Threads') {
-              selector = 'article, div[role="article"]';
-            } else if (source.name === 'LinkedIn') {
-              selector = '.feed-shared-update-v2, .occludable-update';
-            } else if (source.name === 'Mastodon') {
-              selector = '.status, .entry';
-            } else if (source.name === 'BlueSky') {
-              selector = '.post, .feed-post';
-            }
-            
-            $(selector).each((i, element) => {
-              if (i < 5) { // Limit to most recent 5 posts
-                items.push({
-                  title: $(element).find('h2, .title, .post-title').text().trim() || `${source.name} Post`,
-                  date: $(element).find('.date, time, .timestamp').text().trim() || 'Recent',
-                  summary: $(element).find('.content, .post-content, p').first().text().trim(),
-                  url: $(element).find('a').attr('href') || source.url,
-                  source: source.name
-                });
-              }
-            });
-          } else {
-            // News sources - search for mentions
-            $('article, .news-item').each((i, element) => {
-              const content = $(element).text();
-              
-              // Check if the search term appears in the content
-              if (content.includes(source.searchTerm)) {
-                items.push({
-                  title: $(element).find('h2, .title').text().trim(),
-                  date: $(element).find('.date, time').text().trim(),
-                  summary: $(element).find('.summary, p').first().text().trim(),
-                  url: $(element).find('a').attr('href'),
-                  source: source.name
-                });
-              }
-            });
-          }
-          
-          return items;
-        } catch (error) {
-          console.warn(`Error fetching news from ${source.name}:`, error.message);
-          return [];
-        }
-      })
-    );
-    
-    // Flatten the array of arrays and sort by date (most recent first)
-    const allNews = newsItems
-      .flat()
-      .sort((a, b) => new Date(b.date) - new Date(a.date));
-    
-    return {
-      news: allNews,
-      lastUpdated: new Date().toISOString()
-    };
+    const statuses = await mastodon.fetchPublicStatuses(http ? { http } : {});
+    const news = statuses
+      .map(toNewsItem)
+      .sort((a, b) => new Date(b.date) - new Date(a.date))
+      .slice(0, MAX_ITEMS);
+    console.log(`News: ${news.length} Mastodon posts`);
+    return { news, lastUpdated: new Date().toISOString() };
   } catch (error) {
-    console.error('Error fetching News data:', error.message);
-    throw error;
+    console.error('News collection error:', error.message);
+    return null;
   }
 }
 
 module.exports = {
   collect,
-  name: 'news'
+  name: 'news',
+  _testing: { toNewsItem }
 };
