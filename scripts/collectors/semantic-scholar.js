@@ -13,31 +13,39 @@ const axios = require('axios');
  * @param {number} delay - Delay between retries in ms
  * @returns {Promise} - The response from the API
  */
-async function withRetry(requestFn, maxRetries = 3, delay = 1000) {
+// The S2 key allows 1 request per second, cumulative across all endpoints.
+const MIN_REQUEST_GAP_MS = 1100;
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+async function withRetry(requestFn, maxRetries = 4, delay = 2000) {
   let lastError;
-  
+
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
     try {
-      // Rate limiting: wait 1 second between requests as per S2 API limits
-      if (attempt > 1) {
-        await new Promise(resolve => setTimeout(resolve, 1000));
-      }
       return await requestFn();
     } catch (error) {
       lastError = error;
-      // Don't retry on 401 (authentication errors)
-      if (error.response && error.response.status === 401) {
+      const status = error.response?.status;
+      // S2 answers an invalid or revoked key with 403, not 401: retrying cannot help.
+      if (status === 401 || status === 403) {
         throw error;
       }
-      console.log(`Attempt ${attempt} failed. ${attempt < maxRetries ? `Retrying in ${delay/1000}s...` : 'No more retries.'}`);
+      let wait = delay;
+      if (status === 429) {
+        const retryAfter = Number(error.response.headers?.['retry-after']);
+        if (Number.isFinite(retryAfter) && retryAfter > 0) {
+          wait = Math.max(wait, retryAfter * 1000);
+        }
+      }
+      console.log(`Semantic Scholar attempt ${attempt} failed${status ? ` (${status})` : ''}. ${attempt < maxRetries ? `Retrying in ${wait / 1000}s...` : 'No more retries.'}`);
       if (attempt < maxRetries) {
-        await new Promise(resolve => setTimeout(resolve, delay));
-        // Exponential backoff
-        delay *= 2;
+        await sleep(wait);
+        delay *= 2; // 2s, 4s, 8s
       }
     }
   }
-  
+
   throw lastError;
 }
 
@@ -89,6 +97,7 @@ async function collect() {
     console.log(`Author profile retrieved: ${authorResponse.data.name}`);
     
     // Get author's papers with detailed information
+    await sleep(MIN_REQUEST_GAP_MS);
     console.log('Fetching author papers...');
     const papersResponse = await withRetry(async () => {
       return await axios.get(`${baseUrl}/author/${authorId}/papers`, {
@@ -173,8 +182,8 @@ async function collect() {
       console.error(`Semantic Scholar API error - Status code: ${status}`);
       
       // Handle specific HTTP status codes
-      if (status === 401) {
-        console.error('Authentication error: Invalid API key');
+      if (status === 401 || status === 403) {
+        console.error(`Authentication error (${status}): S2_API_KEY is invalid or revoked`);
         console.log('Please make sure the S2_API_KEY is correctly entered in your .env file or GitHub secrets');
       } else if (status === 429) {
         console.error('Rate limit exceeded: Too many requests to the Semantic Scholar API');
