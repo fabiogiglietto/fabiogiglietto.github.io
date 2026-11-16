@@ -1,11 +1,9 @@
 - date: '2026-11-12'
   content: >-
-    A decade-long study of Norwegian parliamentary party Facebook posts by A. O.
-    Larsson reveals how post sentiment influences user sharing. While positive
-    posts predominated, negative posts consistently generated higher share rates
-    over time—a dynamic particularly pronounced among political challenger
-    parties.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7526777467437682689
+    A decade-long study of Facebook posting patterns reveals that negative
+    sentiment generates significantly more shares than positive content, though
+    the engagement advantage of negative posts has weakened in recent years.
+  url: https://doi.org/10.1177/20563051261501463
   platforms:
     - BlueSky
     - LinkedIn
@@ -13,11 +11,11 @@
   toread: true
 - date: '2026-11-08'
   content: >-
-    New research presented at ACM CIKM 2026 introduces a streaming pipeline
-    capable of predicting false narrative virality up to 23 hours before peak
-    spread. By semantically clustering evolving claims and detecting anomalous
-    surges, the system allows fact-checkers to prioritize early interventions.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7525112668777553922
+    New computer science research introduces an automated streaming pipeline
+    capable of predicting the virality of false narratives nearly 24 hours
+    before they reach peak spread, offering a promising tool for pre-peak
+    misinformation triage.
+  url: https://doi.org/10.1145/3799682.3840688
   platforms:
     - BlueSky
     - LinkedIn
@@ -25,11 +23,10 @@
   toread: true
 - date: '2026-11-03'
   content: >-
-    Fresh methodological insights on network coordination detection challenge
-    conventional co-activity clustering approaches. A new preprint by Iannucci
-    et al. reframes the detection of coordinated inauthentic behavior as a
-    problem of statistical detectability to avoid false positives in network
-    partitioning.
+    A newly published preprint critically reframes social media coordination
+    detection around statistical detectability, demonstrating how standard
+    network clustering techniques often falsely infer deliberate coordination
+    from simple co-activity.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7523455632449155072
   platforms:
     - BlueSky
@@ -38,23 +35,22 @@
   toread: true
 - date: '2026-11-02'
   content: >-
-    Published in Social Science Computer Review, a practical case study
-    demonstrates how open-weight LLMs combined with a 'Judge agent' architecture
-    can automate social science content analysis on consumer hardware, achieving
-    reliability scores matching expert human coders.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7522813418509340672
+    Methodological advancements in computational social science outline a
+    practical workflow using open-weight large language models and a multi-agent
+    'judge' framework to achieve human-level reliability in automated content
+    analysis.
+  url: https://doi.org/10.1177/08944393251349541
   platforms:
     - BlueSky
     - LinkedIn
     - Mastodon
   toread: true
-- date: '2026-10-23'
+- date: '2026-10-31'
   content: >-
-    Comparative evaluation by King and Worthington indicates that AI-generated
-    peer reviews can meet or exceed the standard of high-quality human expert
-    reviews across multiple quality metrics, raising key policy considerations
-    for future academic publishing workflows.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7519453664319614976
+    Analysis of hundreds of online election rumors demonstrates that viral
+    disinformation narratives rely on a consistent structural 'grammar'
+    combining predictable tropes across different election cycles.
+  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mz6azlsvde2u
   platforms:
     - BlueSky
     - LinkedIn
