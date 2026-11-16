@@ -33,7 +33,7 @@ module.exports = {
 | `social-media-aggregator.js` | Various | Yes | Aggregated social posts |
 | `websearch.js` | Gemini | Yes (`GEMINI_API_KEY`) | Web mentions |
 | `toread.js` | GitHub | No | Reading list |
-| `news.js` | Static | No | News and updates |
+| `news.js` | Mastodon API | Optional (`MASTODON_ACCESS_TOKEN`) | Recent public Mastodon posts (no scraping) |
 
 ## Adding a New Collector
 
