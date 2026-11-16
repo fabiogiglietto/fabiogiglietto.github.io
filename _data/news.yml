@@ -1,9 +1,22 @@
+- date: '2026-11-12'
+  content: >-
+    A decade-long study of Norwegian parliamentary party Facebook posts by A. O.
+    Larsson reveals how post sentiment influences user sharing. While positive
+    posts predominated, negative posts consistently generated higher share rates
+    over time—a dynamic particularly pronounced among political challenger
+    parties.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7526777467437682689
+  platforms:
+    - BlueSky
+    - LinkedIn
+    - Mastodon
+  toread: true
 - date: '2026-11-08'
   content: >-
-    A novel streaming pipeline offers a proactive approach to misinformation
-    triage by predicting the virality of false narratives up to 23 hours before
-    peak spread, using semantic clustering and language models to assist
-    fact-checkers.
+    New research presented at ACM CIKM 2026 introduces a streaming pipeline
+    capable of predicting false narrative virality up to 23 hours before peak
+    spread. By semantically clustering evolving claims and detecting anomalous
+    surges, the system allows fact-checkers to prioritize early interventions.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7525112668777553922
   platforms:
     - BlueSky
@@ -12,10 +25,11 @@
   toread: true
 - date: '2026-11-03'
   content: >-
-    Recent methodological research reframes social media coordination detection
-    around statistical detectability rather than raw co-activity, challenging
-    conventional network projection techniques that often output false-positive
-    clusters.
+    Fresh methodological insights on network coordination detection challenge
+    conventional co-activity clustering approaches. A new preprint by Iannucci
+    et al. reframes the detection of coordinated inauthentic behavior as a
+    problem of statistical detectability to avoid false positives in network
+    partitioning.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7523455632449155072
   platforms:
     - BlueSky
@@ -24,10 +38,10 @@
   toread: true
 - date: '2026-11-02'
   content: >-
-    New findings in computational social science present a validated workflow
-    using open-weight large language models and a 'Judge agent' system on
-    consumer hardware to achieve content analysis coding reliability on par with
-    human experts.
+    Published in Social Science Computer Review, a practical case study
+    demonstrates how open-weight LLMs combined with a 'Judge agent' architecture
+    can automate social science content analysis on consumer hardware, achieving
+    reliability scores matching expert human coders.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7522813418509340672
   platforms:
     - BlueSky
@@ -36,10 +50,10 @@
   toread: true
 - date: '2026-10-23'
   content: >-
-    Comparative evaluation of scholarly review processes indicates that
-    AI-generated peer reviews can match or exceed high-quality human expert
-    reviews across standard evaluation measures, raising key policy choices for
-    journal editors.
+    Comparative evaluation by King and Worthington indicates that AI-generated
+    peer reviews can meet or exceed the standard of high-quality human expert
+    reviews across multiple quality metrics, raising key policy considerations
+    for future academic publishing workflows.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7519453664319614976
   platforms:
     - BlueSky
