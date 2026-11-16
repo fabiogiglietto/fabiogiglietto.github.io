@@ -9,6 +9,8 @@ const { _testing } = require('../scripts/collectors/websearch');
 const {
   normalizeUrl,
   normalizeTitle,
+  areDuplicateMentions,
+  deduplicateMentions,
   shouldSkipResult,
   isDatePlausible,
   extractDateFromHTTP,
@@ -637,4 +639,48 @@ describe('fetchCrossrefEventData circuit breaker', () => {
     await fetchCrossrefEventData();
     expect(axios.get.mock.calls.length).toBeGreaterThan(1);
   }, 30000);
+});
+
+describe('deduplicateMentions', () => {
+  const gn = id => `https://news.google.com/rss/articles/${id}?oc=5`;
+
+  test('merges a Google News copy into the direct link despite differing source labels', () => {
+    const out = deduplicateMentions([
+      { title: 'Indagine urbinate: “Così l’algoritmo influenza il voto” - Il Resto del Carlino',
+        url: gn('A1'), source: 'Il Resto del Carlino', date: '2026-04-23' },
+      { title: 'Indagine urbinate: "Così l\'algoritmo influenza il voto"',
+        url: 'https://www.ilrestodelcarlino.it/pesaro/cronaca/indagine', source: 'ilrestodelcarlino.it', date: '2025-01-26' }
+    ]);
+    expect(out).toHaveLength(1);
+    expect(out[0].url).toContain('ilrestodelcarlino.it');
+  });
+
+  test('merges a headline with an extra sentence appended by the same outlet', () => {
+    const out = deduplicateMentions([
+      { title: 'Secondo uno studio di Urbino l\'algoritmo premia gli estremisti',
+        url: 'https://www.open.online/2026/01/07/facebook-algoritmo/', source: 'open.online', date: '2026-01-07' },
+      { title: 'Secondo uno studio di Urbino l\'algoritmo premia gli estremisti. Pd e FdI verso una legge - Open',
+        url: gn('B1'), source: 'Open', date: '2026-01-07' }
+    ]);
+    expect(out).toHaveLength(1);
+    expect(out[0].source).toBe('open.online');
+  });
+
+  test('merges an article and its translation from the same outlet on the same day', () => {
+    expect(areDuplicateMentions(
+      { title: 'Meno contenuti politici nei feed - Il Sole 24 ORE', url: gn('C1'), source: 'Il Sole 24 ORE', date: '2026-01-08' },
+      { title: 'Less political content in feeds - Il Sole 24 ORE', url: gn('C2'), source: 'Il Sole 24 ORE', date: '2026-01-08' }
+    )).toBe(true);
+  });
+
+  test('keeps distinct articles from different outlets or days', () => {
+    expect(areDuplicateMentions(
+      { title: 'Story one about platforms', url: gn('D1'), source: 'Il Sole 24 ORE', date: '2026-01-08' },
+      { title: 'Story two about elections', url: gn('D2'), source: 'Il Sole 24 ORE', date: '2026-01-09' }
+    )).toBe(false);
+    expect(areDuplicateMentions(
+      { title: 'Facebook algorithm study', url: gn('E1'), source: 'Open', date: '2026-01-07' },
+      { title: 'Facebook algorithm study in Urbino', url: gn('E2'), source: 'Il Post', date: '2026-01-07' }
+    )).toBe(false);
+  });
 });

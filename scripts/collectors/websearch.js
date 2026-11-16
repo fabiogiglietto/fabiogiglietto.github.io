@@ -90,53 +90,105 @@ function normalizeTitle(title) {
 }
 
 /**
+ * Normalize a source name so a Google News outlet label ("Il Resto del
+ * Carlino", "Open") and the bare domain of the direct link
+ * ("ilrestodelcarlino.it", "open.online") compare equal.
+ */
+function normalizeSource(source) {
+  if (!source) return '';
+  return source
+    .toLowerCase()
+    .replace(/^https?:\/\//, '')
+    .replace(/^www\./, '')
+    .replace(/\.[a-z]{2,10}$/, '') // drop the TLD of a bare domain
+    .replace(/[^a-z0-9]/g, '');
+}
+
+/**
+ * Title key for duplicate matching: normalizeTitle, minus a trailing
+ * " - <source>" (Google News appends the outlet name to every title),
+ * with quotes and punctuation dropped so typographic variants collapse.
+ */
+function titleKey(mention) {
+  let title = normalizeTitle(mention.title);
+  const source = normalizeSource(mention.source);
+  const dash = title.lastIndexOf(' - ');
+  if (source && dash > 0 && normalizeSource(title.slice(dash + 3)) === source) {
+    title = title.slice(0, dash);
+  }
+  return title.replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
+}
+
+// Redirect hosts that front many unrelated pages: never an outlet identity
+const REDIRECT_SOURCES = new Set(['vertexaisearchcloudgoogle', 'newsgoogle']);
+
+/** Outlet identity of a mention: its source label, else its link's domain. */
+function sourceKey(mention) {
+  let source = normalizeSource(mention.source);
+  if (!source) source = normalizeSource(normalizeUrl(mention.url || '').split('/')[0]);
+  return REDIRECT_SOURCES.has(source) ? '' : source;
+}
+
+/** True for a Google News redirect link (the direct article link is preferred). */
+function isGoogleNewsUrl(url) {
+  return /^https?:\/\/news\.google\.com\//i.test(url || '');
+}
+
+/**
  * Check if two mentions are duplicates based on normalized URL and title
  */
 function areDuplicateMentions(mention1, mention2) {
   // Check normalized URL match
-  const normalizedUrl1 = normalizeUrl(mention1.url);
-  const normalizedUrl2 = normalizeUrl(mention2.url);
-
-  if (normalizedUrl1 === normalizedUrl2) {
+  if (normalizeUrl(mention1.url) === normalizeUrl(mention2.url)) {
     return true;
   }
 
-  // Check title match (for cases where URLs differ but content is same)
-  const normalizedTitle1 = normalizeTitle(mention1.title);
-  const normalizedTitle2 = normalizeTitle(mention2.title);
+  const title1 = titleKey(mention1);
+  const title2 = titleKey(mention2);
 
-  // Exact title match
-  if (normalizedTitle1 && normalizedTitle2 && normalizedTitle1 === normalizedTitle2) {
+  // Exact title match (for cases where URLs differ but content is same)
+  if (title1 && title2 && title1 === title2) {
     return true;
   }
 
-  // Check if one title is a significant subset of another (for truncated titles)
-  if (normalizedTitle1.length > 20 && normalizedTitle2.length > 20) {
-    if (normalizedTitle1.startsWith(normalizedTitle2.substring(0, 30)) ||
-        normalizedTitle2.startsWith(normalizedTitle1.substring(0, 30))) {
-      // Also check if same source domain
-      const source1 = (mention1.source || '').toLowerCase();
-      const source2 = (mention2.source || '').toLowerCase();
-      if (source1 === source2 ||
-          normalizeUrl(mention1.url).split('/')[0] === normalizeUrl(mention2.url).split('/')[0]) {
-        return true;
-      }
+  const sameSource = sourceKey(mention1) !== '' && sourceKey(mention1) === sourceKey(mention2);
+
+  // One title is a prefix of the other (truncated, or an extra sentence
+  // appended by the Google News headline) from the same outlet
+  if (sameSource && title1.length > 20 && title2.length > 20) {
+    if (title1.startsWith(title2.substring(0, 30)) ||
+        title2.startsWith(title1.substring(0, 30))) {
+      return true;
     }
+  }
+
+  // Two Google News items from the same outlet on the same day: one story
+  // listed twice, e.g. Il Sole 24 ORE's Italian article and its English
+  // translation. Limited to Google News, where outlets rarely mention the
+  // same person twice a day; direct links from one site often do.
+  if (sameSource && isGoogleNewsUrl(mention1.url) && isGoogleNewsUrl(mention2.url) &&
+      mention1.date && mention2.date &&
+      String(mention1.date).slice(0, 10) === String(mention2.date).slice(0, 10)) {
+    return true;
   }
 
   return false;
 }
 
 /**
- * Deduplicate an array of mentions using normalized URL and title matching
+ * Deduplicate an array of mentions using normalized URL and title matching.
+ * Order is kept; when a duplicate pairs a Google News redirect with the
+ * direct article link, the direct link wins (it carries the real date).
  */
 function deduplicateMentions(mentions) {
   const uniqueMentions = [];
 
   for (const mention of mentions) {
-    const isDuplicate = uniqueMentions.some(existing => areDuplicateMentions(existing, mention));
-    if (!isDuplicate) {
+    const index = uniqueMentions.findIndex(existing => areDuplicateMentions(existing, mention));
+    if (index === -1) {
       uniqueMentions.push(mention);
+    } else if (isGoogleNewsUrl(uniqueMentions[index].url) && !isGoogleNewsUrl(mention.url)) {
+      uniqueMentions[index] = mention;
     }
   }
 
@@ -645,8 +697,9 @@ Only include results with REAL, direct URLs to news sources.`;
       return new Date(b.date) - new Date(a.date);
     });
 
-    // Limit to most recent/relevant 10 results
-    const recentResults = datedResults.slice(0, 10);
+    // Second dedup pass now that every result has a date (the same-outlet,
+    // same-day rule needs it), then limit to the 10 most recent
+    const recentResults = deduplicateMentions(datedResults).slice(0, 10);
 
     // Write current results to JSON file
     const outputPath = path.join(__dirname, '../../public/data/websearch.json');
@@ -1978,6 +2031,8 @@ module.exports = {
     DISCOVERY_CALL_CONFIG,
     normalizeUrl,
     normalizeTitle,
+    areDuplicateMentions,
+    deduplicateMentions,
     shouldSkipResult,
     isDatePlausible,
     extractDateFromHTTP,
