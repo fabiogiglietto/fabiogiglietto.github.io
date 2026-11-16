@@ -200,6 +200,12 @@ jobs:
           # workspace: without it the exchange 401s. Harmless when the rule
           # resolves to a single workspace, and empty if the var is unset.
           anthropic_workspace_id: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
+          # Health mode is dispatched by update-site.yml with GITHUB_TOKEN, so
+          # its actor is github-actions[bot]; the action refuses non-human
+          # actors unless listed here ("Workflow initiated by non-human actor"),
+          # which made every health triage end with "produced no result".
+          # Only this repo's own GITHUB_TOKEN can act as this bot.
+          allowed_bots: github-actions[bot]
           claude_args: |
             --model claude-opus-5
             --max-turns 40
