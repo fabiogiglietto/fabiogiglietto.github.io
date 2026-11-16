@@ -3,7 +3,7 @@
   "title": "Fabio Giglietto — own publications",
   "home_page_url": "https://fabiogiglietto.github.io/publications",
   "description": "Auto-generated feed of Fabio Giglietto's own publications, consumed downstream by research-radio and fg-zettelkasten.",
-  "_updated": "2026-11-16T14:52:41.145Z",
+  "_updated": "2026-11-16T15:01:51.386Z",
   "items": [
     {
       "id": "bibtex:Giglietto2026-4d203b9f",
@@ -1269,6 +1269,29 @@
       }
     },
     {
+      "id": "bibtex:Giglietto2021-bb88f58c",
+      "title": "Nathaniel Persily e Joshua A. Tucker (a cura di). Social Media and Democracy. The State of the Field, Prospects for Reform",
+      "date_published": "2021-01-01",
+      "authors": [
+        {
+          "name": "F Giglietto"
+        }
+      ],
+      "url": "https://doi.org/10.3270/100321",
+      "content_text": "",
+      "_academic": {
+        "doi": "10.3270/100321",
+        "bibtex_key": "Giglietto2021-bb88f58c",
+        "type": null,
+        "venue": "Comunicazione politica 22 (1), 149-151, 2021",
+        "year": 2021,
+        "publisher": null,
+        "citation_count": 118,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
       "id": "bibtex:Ducci2021-fd53f96e",
       "title": "Informazione e salute negli ambienti digitali, tra agenda setting e online gatekeeping.Una ricerca su Google News Italia e utenti di Facebook",
       "date_published": "2021-01-01",
@@ -1432,29 +1455,6 @@
         "venue": "Elsevier BV",
         "year": 2021,
         "publisher": "Elsevier BV",
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Giglietto2021-9c373777",
-      "title": "Nathaniel Persily e Joshua A. Tucker (a cura di). Social Media and Democracy. The State of the Field, Prospects for Reform",
-      "date_published": "2021-01-01",
-      "authors": [
-        {
-          "name": "F Giglietto"
-        }
-      ],
-      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:kF1pexMAQbMC",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Giglietto2021-9c373777",
-        "type": null,
-        "venue": "Comunicazione politica 22 (1), 149-151, 2021",
-        "year": 2021,
-        "publisher": null,
         "citation_count": 0,
         "open_access": false,
         "open_access_pdf_url": null
@@ -1699,15 +1699,19 @@
       }
     },
     {
-      "id": "bibtex:Unknown2020-d568b728",
+      "id": "bibtex:Giglietto2020-d568b728",
       "title": "Correction",
       "date_published": "2020-01-01",
-      "authors": [],
+      "authors": [
+        {
+          "name": "Nicola Righetti, L. Rossi, Giada Marino Fabio Giglietto"
+        }
+      ],
       "url": "https://doi.org/10.1080/1369118x.2020.1755558",
       "content_text": "",
       "_academic": {
         "doi": "10.1080/1369118x.2020.1755558",
-        "bibtex_key": "Unknown2020-d568b728",
+        "bibtex_key": "Giglietto2020-d568b728",
         "type": "journal-article",
         "venue": "Information, Communication &amp; Society",
         "year": 2020,
@@ -1985,6 +1989,75 @@
       }
     },
     {
+      "id": "bibtex:Giglietto2019-d93abb7c",
+      "title": "Patterns of Facebook Interactions around Insular and Cross-Partisan Media Sources in the Run-up of the 2018 Italian Election",
+      "date_published": "2019-01-01",
+      "authors": [
+        {
+          "name": "L. Iannelli, Giada Marino, Nicola Righetti, L. Rossi, A. Valeriani Fabio Giglietto"
+        }
+      ],
+      "url": null,
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Giglietto2019-d93abb7c",
+        "type": null,
+        "venue": "",
+        "year": 2019,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2019-3e3dfe28",
+      "title": "Page Proof Instructions and Queries",
+      "date_published": "2019-01-01",
+      "authors": [
+        {
+          "name": "L. Iannelli, A. Valeriani, Luca Rossi Fabio Giglietto"
+        }
+      ],
+      "url": null,
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Giglietto2019-3e3dfe28",
+        "type": null,
+        "venue": "",
+        "year": 2019,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Righetti2019-f2779204",
+      "title": "Europe as home, Europe as cage. Tone, frames and engagment on European Union before 2018 Italian election",
+      "date_published": "2019-01-01",
+      "authors": [
+        {
+          "name": "Fabio Giglietto, Giada Marino Nicola Righetti"
+        }
+      ],
+      "url": "https://doi.org/10.1445/92856",
+      "content_text": "",
+      "_academic": {
+        "doi": "10.1445/92856",
+        "bibtex_key": "Righetti2019-f2779204",
+        "type": null,
+        "venue": "",
+        "year": 2019,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
       "id": "bibtex:Iannelli2018-ebd918b7",
       "title": "Facebook Digital Traces for Survey Research: Assessing the Efficiency and Effectiveness of a Facebook Ad–Based Procedure for Recruiting Online Survey Respondents in Niche and Difficult-to-Reach Populations",
       "date_published": "2018-01-01",
@@ -2059,6 +2132,29 @@
         "year": 2018,
         "publisher": "Elsevier BV",
         "citation_count": 38,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2018-58bb993c",
+      "title": "You Are Fake News",
+      "date_published": "2018-01-01",
+      "authors": [
+        {
+          "name": "Fabio Giglietto"
+        }
+      ],
+      "url": null,
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Giglietto2018-58bb993c",
+        "type": null,
+        "venue": "",
+        "year": 2018,
+        "publisher": null,
+        "citation_count": 11,
         "open_access": false,
         "open_access_pdf_url": null
       }
@@ -2278,6 +2374,29 @@
       }
     },
     {
+      "id": "bibtex:Giglietto2016-f55c0d6c",
+      "title": "Data and Society",
+      "date_published": "2016-01-01",
+      "authors": [
+        {
+          "name": "C Mesjasz F Giglietto"
+        }
+      ],
+      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:-yGd096yOn8C",
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Giglietto2016-f55c0d6c",
+        "type": null,
+        "venue": "Third ISA Forum of Sociology (July 10-14, 2016), 2016",
+        "year": 2016,
+        "publisher": null,
+        "citation_count": 6,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
       "id": "bibtex:An2016-0cdbe34d",
       "title": "Reports of the workshops held at the 2016 International AAAI Conference on Web and Social Media",
       "date_published": "2016-01-01",
@@ -2331,42 +2450,23 @@
       }
     },
     {
-      "id": "bibtex:Unknown2016-80e0d789",
+      "id": "bibtex:Zaman2016-80e0d789",
       "title": "Index to Volume 60, 2016",
       "date_published": "2016-01-01",
-      "authors": [],
+      "authors": [
+        {
+          "name": "M. Nouwen, Jeroen Vanattenhoven, Evelien de Ferrerre, J. van Looy, T. Kim, David J. Atkin, W. Xu, Ji Young Park, J. Y. Kim, Dong-Hee Shin, Patricia F. Phalen, Thomas B. Ksiazek, Jacob B. Garber, R. A. Hayes, C. Carr, D. Y. Wohn, Natalya N. Bazarova, Brian E. Weeks, Fabio Giglietto Bieke Zaman"
+        }
+      ],
       "url": "https://doi.org/10.1080/08838151.2016.1238236",
       "content_text": "",
       "_academic": {
         "doi": "10.1080/08838151.2016.1238236",
-        "bibtex_key": "Unknown2016-80e0d789",
+        "bibtex_key": "Zaman2016-80e0d789",
         "type": "journal-article",
         "venue": "Journal of Broadcasting &amp; Electronic Media",
         "year": 2016,
         "publisher": "Informa UK Limited",
-        "citation_count": 0,
-        "open_access": false,
-        "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Giglietto2016-f55c0d6c",
-      "title": "Data and Society",
-      "date_published": "2016-01-01",
-      "authors": [
-        {
-          "name": "C Mesjasz F Giglietto"
-        }
-      ],
-      "url": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:-yGd096yOn8C",
-      "content_text": "",
-      "_academic": {
-        "doi": null,
-        "bibtex_key": "Giglietto2016-f55c0d6c",
-        "type": null,
-        "venue": "Third ISA Forum of Sociology (July 10-14, 2016), 2016",
-        "year": 2016,
-        "publisher": null,
         "citation_count": 0,
         "open_access": false,
         "open_access_pdf_url": null
@@ -2451,6 +2551,38 @@
       }
     },
     {
+      "id": "bibtex:Giglietto2015-320951c4",
+      "title": "Understanding Engagement and Willingness to Speak Up in Social-Television: A Full-Season, Cross-Genre Analysis of TV Audience Participation on Twitter",
+      "date_published": "2015-01-01",
+      "authors": [
+        {
+          "name": "Fabio Giglietto"
+        },
+        {
+          "name": "Giovanni Boccia Artieri"
+        },
+        {
+          "name": "Laura Gemini"
+        },
+        {
+          "name": "Mario Orefice"
+        }
+      ],
+      "url": "https://doi.org/10.2139/ssrn.2611083",
+      "content_text": "",
+      "_academic": {
+        "doi": "10.2139/ssrn.2611083",
+        "bibtex_key": "Giglietto2015-320951c4",
+        "type": "preprint",
+        "venue": "Elsevier BV",
+        "year": 2015,
+        "publisher": "Elsevier BV",
+        "citation_count": 6,
+        "open_access": true,
+        "open_access_pdf_url": "https://ijoc.org/index.php/ijoc/article/download/4906/1660"
+      }
+    },
+    {
       "id": "bibtex:GIGLIETTO2015-d1f843d2",
       "title": "Se i Mi Piace fossero voti: uno studio emprico sulle elezioni amministrative 2011",
       "date_published": "2015-01-01",
@@ -2523,38 +2655,6 @@
         "citation_count": 0,
         "open_access": false,
         "open_access_pdf_url": null
-      }
-    },
-    {
-      "id": "bibtex:Giglietto2015-320951c4",
-      "title": "Understanding Engagement and Willingness to Speak Up in Social-Television: A Full-Season, Cross-Genre Analysis of TV Audience Participation on Twitter",
-      "date_published": "2015-01-01",
-      "authors": [
-        {
-          "name": "Fabio Giglietto"
-        },
-        {
-          "name": "Giovanni Boccia Artieri"
-        },
-        {
-          "name": "Laura Gemini"
-        },
-        {
-          "name": "Mario Orefice"
-        }
-      ],
-      "url": "https://doi.org/10.2139/ssrn.2611083",
-      "content_text": "",
-      "_academic": {
-        "doi": "10.2139/ssrn.2611083",
-        "bibtex_key": "Giglietto2015-320951c4",
-        "type": "preprint",
-        "venue": "Elsevier BV",
-        "year": 2015,
-        "publisher": "Elsevier BV",
-        "citation_count": 0,
-        "open_access": true,
-        "open_access_pdf_url": "https://ijoc.org/index.php/ijoc/article/download/4906/1660"
       }
     },
     {
@@ -2732,15 +2832,19 @@
       }
     },
     {
-      "id": "bibtex:Unknown2014-d0285144",
+      "id": "bibtex:Giglietto2014-d0285144",
       "title": "<i>Klaus Bredl, Julia Hünniger and Jakob Linaa Jensen</i>\n                    (eds), Methods for Analyzing Social Media",
       "date_published": "2014-01-01",
-      "authors": [],
+      "authors": [
+        {
+          "name": "L. Rossi, Davide Bennato, Stefan Stieglitz, Tim Highfield, A. Siibak, M. Forsman Fabio Giglietto"
+        }
+      ],
       "url": "https://doi.org/10.1177/0267323114531873h",
       "content_text": "",
       "_academic": {
         "doi": "10.1177/0267323114531873h",
-        "bibtex_key": "Unknown2014-d0285144",
+        "bibtex_key": "Giglietto2014-d0285144",
         "type": "journal-article",
         "venue": "European Journal of Communication",
         "year": 2014,
@@ -2766,6 +2870,29 @@
         "bibtex_key": "Giglietto2014-241be4ba",
         "type": null,
         "venue": "XVIII ISA World Congress of Sociology (July 13-19, 2014), 2014",
+        "year": 2014,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Giglietto2014-3e138a60",
+      "title": "Connected Audiences of Politics: Analyzing Twitter Conversation on Beppe Grillo and Five Star Movement Generated during Political TV Talk-Shows",
+      "date_published": "2014-01-01",
+      "authors": [
+        {
+          "name": "Fabio Giglietto"
+        }
+      ],
+      "url": null,
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Giglietto2014-3e138a60",
+        "type": null,
+        "venue": "",
         "year": 2014,
         "publisher": null,
         "citation_count": 0,
@@ -3185,6 +3312,29 @@
       }
     },
     {
+      "id": "bibtex:Hornung2011-e0a1e01c",
+      "title": "SOCIOCYBERNETICS AND THE INCREASING COMPLEXITY OF SOCIAL LIFE 2 . Violence as an adaptive system : An example in Mexico",
+      "date_published": "2011-01-01",
+      "authors": [
+        {
+          "name": "E. Buchinger, M. Paetau, F. Lara-Rosano, B. Scott, B. Hornung, Fabio Giglietto B. Hornung"
+        }
+      ],
+      "url": null,
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Hornung2011-e0a1e01c",
+        "type": null,
+        "venue": "",
+        "year": 2011,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
       "id": "bibtex:Giglietto2010-9c3328de",
       "title": "Modernity 2.0: dove sociocibernetica e internet studies si incontrano",
       "date_published": "2010-01-01",
@@ -3223,6 +3373,29 @@
         "bibtex_key": "GIGLIETTO2010-ded08dad",
         "type": "book-chapter",
         "venue": "Hoepli",
+        "year": 2010,
+        "publisher": null,
+        "citation_count": 0,
+        "open_access": false,
+        "open_access_pdf_url": null
+      }
+    },
+    {
+      "id": "bibtex:Rossi2010-4d89636c",
+      "title": "SIGSNA: Special Interest Group on Social Network Analysis",
+      "date_published": "2010-01-01",
+      "authors": [
+        {
+          "name": "Fabio Giglietto L. Rossi"
+        }
+      ],
+      "url": null,
+      "content_text": "",
+      "_academic": {
+        "doi": null,
+        "bibtex_key": "Rossi2010-4d89636c",
+        "type": null,
+        "venue": "",
         "year": 2010,
         "publisher": null,
         "citation_count": 0,
