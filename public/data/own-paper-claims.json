@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-16T14:58:57.479Z",
+  "lastUpdated": "2026-11-16T16:39:43.972Z",
   "source": "https://raw.githubusercontent.com/fabiogiglietto/fg-zettelkasten/main/data/state.json",
   "papers": [
     {
@@ -412,16 +412,16 @@
       "contentHash": "c7e116c288d22cc16f9e3a029297f1cfbece435e24bba098ecf3eab6f231cfb8"
     },
     {
-      "bibtexKey": "Unknown2020-d568b728",
+      "bibtexKey": "Giglietto2020-d568b728",
       "title": "Correction",
       "year": 2020,
       "doi": "10.1080/1369118x.2020.1755558",
-      "Summary": "This item could not be meaningfully summarized because no substantive content was provided. The source consists only of a title — \"Correction\" — and a publication year of 2020, with no abstract, author information, or body text available. The title suggests the item may be a published erratum or corrigendum to a prior article, but there is no supporting text to confirm this interpretation or to identify the original work being corrected.",
+      "Summary": "This item is a formal correction notice (erratum/corrigendum) attributed to Nicola Righetti, L. Rossi, Giada Marino, and Fabio Giglietto (2020). No abstract, body text, or substantive content was provided. As a correction, it presumably amends an earlier publication by the same authors, but the details of the original work and the nature of the amendment are not available from the material supplied.",
       "KeyContributions": [
-        "None can be determined from the available material."
+        "None can be determined from the provided material. As a correction notice, the item has no independent scholarly contribution of its own."
       ],
       "Findings": [
-        "No findings are available for review."
+        "No findings are available; the item contains no substantive content in the material provided."
       ],
       "contentHash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
     },
@@ -561,6 +561,29 @@
         "Requests for interaction were disproportionately marked by irony (35% vs. 27% average) and violent/vulgar language (11% vs. 8%)."
       ],
       "contentHash": "6bb3cb5d0ad83ac5a55e39a9ed6c3100fc72bf02418d68917f93ce991dd56ca5"
+    },
+    {
+      "bibtexKey": "Giglietto2015-320951c4",
+      "title": "Understanding Engagement and Willingness to Speak Up in Social-Television: A Full-Season, Cross-Genre Analysis of TV Audience Participation on Twitter",
+      "year": 2015,
+      "doi": "10.2139/ssrn.2611083",
+      "Summary": "This paper examines Twitter audience participation around two Italian television programmes from the 2012–2013 season — the talent show *The X Factor* and the political talk show *Servizio Pubblico* — using a full-season, cross-genre design. Analysing nearly 1.4 million tweets, the authors move beyond the single-episode or single-event focus that characterised much early social-TV research, arguing that this broader lens surfaces both genre-dependent and genre-independent audience behaviours. Their central claim is that television exerts a strong framing effect on the structure, volume, and topics of online conversation, and that the narrative selectors of suspense and surprise catalyse engagement differently across entertainment and political genres. A further finding concerns \"willingness to speak up\": viewers express political opinions more cautiously — via jokes or information-bolstered claims — than they do about entertainment.",
+      "KeyContributions": [
+        "A methodological strategy pairing peak-detection algorithms with hybrid scene/tweet content analysis, enabling study of large, skewed social-TV datasets without conventional sampling.",
+        "A rare full-season, cross-genre comparison that reveals a strong TV framing effect, nuancing earlier single-event studies that emphasised user agency and divergence.",
+        "Introduces Luhmann's surprise/suspense media selectors as analytical tools for understanding what triggers online audience engagement.",
+        "Advances the notion of \"willingness to speak up\" in social TV, linking shifts in opinion-expression strategy (jokes, retweets, information-bolstering) to topic sensitivity and to spiral-of-silence / couch-participation debates."
+      ],
+      "Findings": [
+        "*The X Factor* generated far more activity per minute (337.78 vs. 99.61 tweets/min), more original tweets (62% vs. 55% seasonally; 70% vs. 63% in peaks), and fewer retweets within peaks (25% vs. 33%).",
+        "*The X Factor* drew on both surprise (50% of peaks) and suspense (56.2%); *Servizio Pubblico* relied mainly on surprise (48.7%) with almost no suspense (5.1%).",
+        "Original tweets were relatively more frequent during scenes featuring a peer-like figure (an audience member speaking or a contestant performing).",
+        "Opinion was the most common tweet category for both shows (64% political, 58% entertainment), but emotional tweets were far more common in entertainment (33% vs. 3%).",
+        "Political tweets were more often framed as jokes (25% vs. 11%) and more often combined opinion with information (10% vs. 4%).",
+        "The opinion-plus-information combination for politics was significantly more frequent in low-original-share peaks (13% vs. 7%), suggesting credibility-bolstering or avoidance of risky direct opinion; no equivalent effect for entertainment.",
+        "Explicit requests for change (interaction) were only ~10–11% of coded tweets and not higher for politics."
+      ],
+      "contentHash": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
     },
     {
       "bibtexKey": "Sofia2012-802a21dc",
