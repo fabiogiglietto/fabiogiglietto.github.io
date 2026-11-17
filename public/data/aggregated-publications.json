@@ -1843,14 +1843,14 @@
         "scholar": 8,
         "wos": null,
         "scopus": null,
-        "semanticScholar": null
+        "semanticScholar": 0
       },
       "source_urls": {
         "orcid": "https://doi.org/10.2139/ssrn.2501856",
         "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:otzGkya1bYkC",
         "wos": null,
         "scopus": null,
-        "semanticScholar": null,
+        "semanticScholar": "https://www.semanticscholar.org/paper/341ceeaf6695835d81033927bc267a951bb043fd",
         "ora": null,
         "crossref": "https://doi.org/10.2139/ssrn.2501856"
       },
@@ -1859,15 +1859,22 @@
         "scholar": "otzGkya1bYkC",
         "wos": null,
         "scopus": null,
-        "semanticScholar": null,
+        "semanticScholar": "341ceeaf6695835d81033927bc267a951bb043fd",
         "ora": null
       },
       "metrics": {
         "total_citations": 8,
-        "citation_sources": 1
+        "citation_sources": 2
       },
       "crossref_type": "posted-content",
-      "publisher": "Elsevier BV"
+      "publisher": "Elsevier BV",
+      "influentialCitations": 0,
+      "isOpenAccess": true,
+      "openAccessPdf": "https://doi.org/10.2139/ssrn.2501856",
+      "fieldsOfStudy": [
+        "Geography",
+        "Engineering"
+      ]
     },
     {
       "title": "Social semantics in a networked space. New perspectives for social sciences",
@@ -2359,14 +2366,14 @@
         "scholar": 5,
         "wos": null,
         "scopus": 3,
-        "semanticScholar": null
+        "semanticScholar": 1
       },
       "source_urls": {
         "orcid": "https://ora.uniurb.it/handle/11576/2689498",
         "scholar": "https://scholar.google.com/citations?user=FmenbcUAAAAJ&citation_for_view=FmenbcUAAAAJ:EPG8bYD4jVwC",
         "wos": null,
         "scopus": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85109552617&origin=inward",
-        "semanticScholar": null,
+        "semanticScholar": "https://www.semanticscholar.org/paper/5c17c8353296fae457306bf96205edb56be48336",
         "ora": "https://ora.uniurb.it/handle/11576/2689498",
         "crossref": "https://doi.org/10.3280/ses2021-002014"
       },
@@ -2375,18 +2382,24 @@
         "scholar": "EPG8bYD4jVwC",
         "wos": null,
         "scopus": "85109552617",
-        "semanticScholar": null,
+        "semanticScholar": "5c17c8353296fae457306bf96205edb56be48336",
         "ora": "11576/2689498"
       },
       "metrics": {
         "total_citations": 5,
-        "citation_sources": 2
+        "citation_sources": 3
       },
       "oraHandle": "11576/2689498",
       "oaPdfUrl": null,
       "abstract": "In the context of the cultural debate around the post-truth emerged in the last decade, the field of medicine seems to be an interesting place to observe the dialectic between traditional media and social media from which the action of counter-publics and polarized argumentative strategies emerge to defence their opinions. The paper presents the results of a research that concerns the analysis of the comments made on the Presa Diretta Facebook page, a Rai3 television program conducted by Riccardo Iacona, related to an episode – titling Charlatans – dedicated to cancer treatments. The research, using a mixed-methods approach related to the field of Internet Studies, draws on the analysis of 4,672 comments published by 1,377 unique users and collected from 35 posts on the page, in order to observe and to understand the typologies of comments and the quantitative volume of interactions, showing how the discursive strategies of Presa Diretta’s counterpublics are clear examples of the cultural debate around the concept of post-truth and its contradictions.",
       "crossref_type": "journal-article",
-      "publisher": "Franco Angeli"
+      "publisher": "Franco Angeli",
+      "influentialCitations": 1,
+      "isOpenAccess": false,
+      "openAccessPdf": null,
+      "fieldsOfStudy": [
+        "Sociology"
+      ]
     },
     {
       "title": "Coordinated Hateful Disinformation on Italian Politics and Social Issues, since 2017",
@@ -7048,10 +7061,10 @@
       "with_scholar": 151,
       "with_wos": 0,
       "with_scopus": 25,
-      "with_semanticScholar": 82,
+      "with_semanticScholar": 84,
       "with_crossref": 71,
       "with_ora": 115
     }
   },
-  "lastUpdated": "2026-11-17T15:32:03.747Z"
+  "lastUpdated": "2026-11-17T16:38:06.446Z"
 }
