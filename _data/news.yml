@@ -1,64 +1,60 @@
 - date: '2026-11-17'
   content: >-
-    A new research framework by Richard Jean So and Hoyt Long explores the
-    social and cultural life of low-quality, mass-produced AI-generated
-    content—often referred to as 'AI slop.' Published in Big Data & Society, the
-    paper proposes a theoretical approach to studying the proliferation and
-    cultural impact of synthetic media.
+    A research framework published in *Big Data & Society* examines the social
+    and cultural dynamics of 'AI slop'—low-quality, mass-produced AI
+    content—alongside emerging folk conceptualizations of how users experience
+    and resist algorithmic amplification of these feeds.
   url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3n2jngwdnox2b
   platforms:
     - BlueSky
+    - LinkedIn
     - Mastodon
   toread: true
 - date: '2026-11-12'
   content: >-
-    A decade-long study of Facebook posts from Norwegian political parties sheds
-    light on how emotional tone influences social media sharing. Published in
-    Social Media + Society, the research shows that while positive sentiment was
-    more common overall, negative posts consistently generated higher
-    engagement, particularly for challenger parties.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7526777467437682689
+    A decade-long study analyzing nearly 39,000 Facebook posts from Norwegian
+    parliamentary parties reveals that while positive sentiment remains
+    dominant, negative sentiment has increased over time and consistently drives
+    higher sharing, particularly for challenger parties.
+  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3n25kemnnn227
   platforms:
-    - LinkedIn
     - BlueSky
+    - LinkedIn
     - Mastodon
   toread: true
 - date: '2026-11-08'
   content: >-
-    Predicting the spread of false narratives before they reach peak virality is
-    the focus of a new study presented at ACM CIKM 2026. Researchers developed a
-    real-time streaming pipeline designed to assist fact-checkers by identifying
-    anomalous surges in semantically related content up to 23 hours before
-    maximum reach.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7525112668777553922
+    Innovations in computational misinformation triage introduce a streaming
+    pipeline designed to predict narrative virality on social media up to 23
+    hours before reaching peak spread, facilitating faster intervention by
+    fact-checkers.
+  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mzrypjcwyr2b
   platforms:
-    - LinkedIn
     - BlueSky
-    - Mastodon
-  toread: true
-- date: '2026-11-03'
-  content: >-
-    Methods for detecting coordinated inauthentic behavior on social platforms
-    face new scrutiny in a preprint by Iannucci, Matakos, and Kivelä. The
-    authors reframe coordination detection as a statistical detectability
-    problem, arguing that standard network clustering approaches often identify
-    co-activity rather than true coordination.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7523455632449155072
-  platforms:
     - LinkedIn
-    - BlueSky
     - Mastodon
   toread: true
 - date: '2026-11-02'
   content: >-
-    A practical guide published in Social Science Computer Review demonstrates
-    how open-weight large language models can be instructed to perform automated
-    content analysis. The methodology incorporates a 'Judge agent' to resolve
-    coding disagreements, achieving inter-coder reliability comparable to expert
-    human coders.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7522813418509340672
+    New methodology published in *Social Science Computer Review* outlines a
+    practical workflow for instructing open-weight large language models to
+    automate qualitative content analysis, achieving human-expert reliability
+    through a novel judge-agent adjudication system.
+  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mzc26dz6kf2w
   platforms:
-    - LinkedIn
     - BlueSky
+    - LinkedIn
+    - Mastodon
+  toread: true
+- date: '2026-10-31'
+  content: >-
+    Analysis of over 500 election rumors across recent U.S. election cycles
+    reveals a predictable 'grammar' of narratives, mapping recurring tropes,
+    actors, and objects into a structured framework for monitoring online
+    disinformation.
+  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mz6azlsvde2u
+  platforms:
+    - BlueSky
+    - LinkedIn
     - Mastodon
   toread: true
