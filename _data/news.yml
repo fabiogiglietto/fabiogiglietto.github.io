@@ -1,9 +1,10 @@
 - date: '2026-11-17'
   content: >-
-    A new research framework by Richard Jean So and Hoyt Long (Big Data &
-    Society) introduces a theoretical and empirical structure to analyze the
-    social and cultural lifecycle of mass-produced, low-quality AI-generated
-    content, commonly referred to as 'AI slop.'
+    A new research framework by Richard Jean So and Hoyt Long explores the
+    social and cultural life of low-quality, mass-produced AI-generated
+    content—often referred to as 'AI slop.' Published in Big Data & Society, the
+    paper proposes a theoretical approach to studying the proliferation and
+    cultural impact of synthetic media.
   url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3n2jngwdnox2b
   platforms:
     - BlueSky
@@ -11,49 +12,53 @@
   toread: true
 - date: '2026-11-12'
   content: >-
-    Longitudinal analysis of Facebook sharing behavior reveals that negative
-    post sentiment significantly amplifies sharing rates over time, particularly
-    for political challenger parties, according to a ten-year study of Norwegian
-    parliamentary communications published in Social Media + Society.
+    A decade-long study of Facebook posts from Norwegian political parties sheds
+    light on how emotional tone influences social media sharing. Published in
+    Social Media + Society, the research shows that while positive sentiment was
+    more common overall, negative posts consistently generated higher
+    engagement, particularly for challenger parties.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7526777467437682689
   platforms:
-    - BlueSky
     - LinkedIn
+    - BlueSky
     - Mastodon
   toread: true
 - date: '2026-11-08'
   content: >-
-    Pre-peak misinformation triage gets a major boost from a novel streaming
-    pipeline presented at ACM CIKM 2026. The system clusters semantic social
-    media streams to predict and flag high-virality false narratives nearly a
-    day before reaching maximum spread.
+    Predicting the spread of false narratives before they reach peak virality is
+    the focus of a new study presented at ACM CIKM 2026. Researchers developed a
+    real-time streaming pipeline designed to assist fact-checkers by identifying
+    anomalous surges in semantically related content up to 23 hours before
+    maximum reach.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7525112668777553922
   platforms:
-    - BlueSky
     - LinkedIn
+    - BlueSky
     - Mastodon
   toread: true
 - date: '2026-11-03'
   content: >-
-    Addressing key methodological challenges in network analysis, recent work by
-    Iannucci et al. reframes social media coordination detection as a problem of
-    statistical detectability, highlighting critical limitations in traditional
-    co-activity and similarity network clustering algorithms.
+    Methods for detecting coordinated inauthentic behavior on social platforms
+    face new scrutiny in a preprint by Iannucci, Matakos, and Kivelä. The
+    authors reframe coordination detection as a statistical detectability
+    problem, arguing that standard network clustering approaches often identify
+    co-activity rather than true coordination.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7523455632449155072
   platforms:
-    - BlueSky
     - LinkedIn
+    - BlueSky
     - Mastodon
   toread: true
 - date: '2026-11-02'
   content: >-
-    Automated computational content analysis takes a step forward in Social
-    Science Computer Review, where researchers demonstrate an open-weight LLM
-    workflow incorporating a 'Judge agent' that achieves inter-coder reliability
-    scores comparable to expert human annotators on standard consumer hardware.
+    A practical guide published in Social Science Computer Review demonstrates
+    how open-weight large language models can be instructed to perform automated
+    content analysis. The methodology incorporates a 'Judge agent' to resolve
+    coding disagreements, achieving inter-coder reliability comparable to expert
+    human coders.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7522813418509340672
   platforms:
-    - BlueSky
     - LinkedIn
+    - BlueSky
     - Mastodon
   toread: true
