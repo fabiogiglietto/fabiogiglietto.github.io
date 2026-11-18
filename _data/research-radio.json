@@ -2243,6 +2243,18 @@
       "author": "Anders Olof Larsson",
       "doi": "10.1177/20563051261501463",
       "own": false
+    },
+    {
+      "id": "bibtex:So2026-up",
+      "bibtexKey": "So2026-up",
+      "title": "When AI Makes Competence Cheap: Rethinking the Slop Crisis",
+      "description": "AI-generated podcast discussion.\n\nReference:\nSo, R. J., & Long, H. (2026). The social and cultural life of artificial intelligence (AI) slop: A research framework. https://doi.org/10.1177/20539517261506941",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/So2026-up.mp3",
+      "pubDate": "2026-11-17T18:07:45.590961+00:00",
+      "duration": "10:55",
+      "author": "Richard Jean So, Hoyt Long",
+      "doi": "10.1177/20539517261506941",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -4489,6 +4501,18 @@
       "author": "Anders Olof Larsson",
       "doi": "10.1177/20563051261501463",
       "own": false
+    },
+    "So2026-up": {
+      "id": "bibtex:So2026-up",
+      "bibtexKey": "So2026-up",
+      "title": "When AI Makes Competence Cheap: Rethinking the Slop Crisis",
+      "description": "AI-generated podcast discussion.\n\nReference:\nSo, R. J., & Long, H. (2026). The social and cultural life of artificial intelligence (AI) slop: A research framework. https://doi.org/10.1177/20539517261506941",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/So2026-up.mp3",
+      "pubDate": "2026-11-17T18:07:45.590961+00:00",
+      "duration": "10:55",
+      "author": "Richard Jean So, Hoyt Long",
+      "doi": "10.1177/20539517261506941",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -6231,9 +6255,21 @@
       "author": "Anders Olof Larsson",
       "doi": "10.1177/20563051261501463",
       "own": false
+    },
+    "10.1177/20539517261506941": {
+      "id": "bibtex:So2026-up",
+      "bibtexKey": "So2026-up",
+      "title": "When AI Makes Competence Cheap: Rethinking the Slop Crisis",
+      "description": "AI-generated podcast discussion.\n\nReference:\nSo, R. J., & Long, H. (2026). The social and cultural life of artificial intelligence (AI) slop: A research framework. https://doi.org/10.1177/20539517261506941",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/So2026-up.mp3",
+      "pubDate": "2026-11-17T18:07:45.590961+00:00",
+      "duration": "10:55",
+      "author": "Richard Jean So, Hoyt Long",
+      "doi": "10.1177/20539517261506941",
+      "own": false
     }
   },
-  "totalEpisodes": 187,
-  "lastUpdated": "2026-11-17T18:08:14.173Z",
+  "totalEpisodes": 188,
+  "lastUpdated": "2026-11-18T15:07:30.630Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }

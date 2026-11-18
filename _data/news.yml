@@ -1,10 +1,20 @@
+- date: '2026-11-17'
+  content: >-
+    A new research framework by Richard Jean So and Hoyt Long (Big Data &
+    Society) introduces a theoretical and empirical structure to analyze the
+    social and cultural lifecycle of mass-produced, low-quality AI-generated
+    content, commonly referred to as 'AI slop.'
+  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3n2jngwdnox2b
+  platforms:
+    - BlueSky
+    - Mastodon
+  toread: true
 - date: '2026-11-12'
   content: >-
-    A longitudinal investigation of Facebook sharing behavior reveals that
-    negative sentiment generates disproportionate user engagement over time,
-    though this advantage has weakened in recent years. The study, analyzing a
-    decade of political party posts, highlights distinct emotional strategies
-    between challenger and incumbent parties.
+    Longitudinal analysis of Facebook sharing behavior reveals that negative
+    post sentiment significantly amplifies sharing rates over time, particularly
+    for political challenger parties, according to a ten-year study of Norwegian
+    parliamentary communications published in Social Media + Society.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7526777467437682689
   platforms:
     - BlueSky
@@ -13,10 +23,10 @@
   toread: true
 - date: '2026-11-08'
   content: >-
-    Addressing the timing gap in misinformation triage, a new computational
-    framework predicts the virality of emerging false narratives nearly 24 hours
-    before their peak spread. The method leverages semantic clustering and
-    anomaly detection to help fact-checkers prioritize emerging threats.
+    Pre-peak misinformation triage gets a major boost from a novel streaming
+    pipeline presented at ACM CIKM 2026. The system clusters semantic social
+    media streams to predict and flag high-virality false narratives nearly a
+    day before reaching maximum spread.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7525112668777553922
   platforms:
     - BlueSky
@@ -25,22 +35,23 @@
   toread: true
 - date: '2026-11-03'
   content: >-
-    New methodological research critiques standard network-clustering techniques
-    for detecting coordinated online behavior, reframing the challenge around
-    statistical detectability to reduce false positives in co-activity analysis.
+    Addressing key methodological challenges in network analysis, recent work by
+    Iannucci et al. reframes social media coordination detection as a problem of
+    statistical detectability, highlighting critical limitations in traditional
+    co-activity and similarity network clustering algorithms.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7523455632449155072
   platforms:
     - BlueSky
     - LinkedIn
     - Mastodon
   toread: true
-- date: '2026-10-23'
+- date: '2026-11-02'
   content: >-
-    Comparative evaluation of peer review mechanisms indicates that modern
-    artificial intelligence models can meet or exceed human expert standards
-    across several quality metrics, raising key policy considerations for future
-    academic publishing.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7519453664319614976
+    Automated computational content analysis takes a step forward in Social
+    Science Computer Review, where researchers demonstrate an open-weight LLM
+    workflow incorporating a 'Judge agent' that achieves inter-coder reliability
+    scores comparable to expert human annotators on standard consumer hardware.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7522813418509340672
   platforms:
     - BlueSky
     - LinkedIn

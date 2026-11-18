@@ -1138,6 +1138,27 @@
       "crossref_score": 1
     },
     {
+      "doi": "10.3280/sc2019-057010",
+      "title": "Il patchwork mediale",
+      "authors": "Giglietto, Fabio",
+      "venue": "SOCIOLOGIA DELLA COMUNICAZIONE",
+      "year": 2019,
+      "type": "journal-article",
+      "url": "https://doi.org/10.3280/sc2019-057010",
+      "crossref_type": "journal-article",
+      "publisher": "Franco Angeli",
+      "container_title": "SOCIOLOGIA DELLA COMUNICAZIONE",
+      "page": "120-123",
+      "issue": "57",
+      "issn": "1121-1733",
+      "isbn": null,
+      "subject": [],
+      "abstract": null,
+      "license": [],
+      "funder": [],
+      "crossref_score": 1
+    },
+    {
       "doi": "10.1080/1369118x.2010.516760",
       "title": "Hanging Out, Messing Around, and Geeking Out: Kids Living and Learning with New Media (John D. and Catherine T. MacArthur Foundation Series on Digital Media and Learning)",
       "authors": "Giglietto, Fabio",
@@ -1355,27 +1376,6 @@
       "isbn": null,
       "subject": [],
       "abstract": "<jats:p>With the goal of contributing to the ongoing debate on widely viewed external links of Facebook, we relied on the latest version of the URL Shares Dataset to address the following question: what were the most viewed URLs shared on Facebook during 2020 in US*, UK and the EU countries?&lt;br&gt;&lt;br&gt;* please note that due to a recently discovered issue, the current version of the URL Shares Dataset only includes views from users who had a political page-affinity score (approximately 50% of the total population of US users).</jats:p>",
-      "license": [],
-      "funder": [],
-      "crossref_score": 1
-    },
-    {
-      "doi": "10.3280/sc2019-057010",
-      "title": "Il patchwork mediale",
-      "authors": "Giglietto, Fabio",
-      "venue": "SOCIOLOGIA DELLA COMUNICAZIONE",
-      "year": 2019,
-      "type": "journal-article",
-      "url": "https://doi.org/10.3280/sc2019-057010",
-      "crossref_type": "journal-article",
-      "publisher": "Franco Angeli",
-      "container_title": "SOCIOLOGIA DELLA COMUNICAZIONE",
-      "page": "120-123",
-      "issue": "57",
-      "issn": "1121-1733",
-      "isbn": null,
-      "subject": [],
-      "abstract": null,
       "license": [],
       "funder": [],
       "crossref_score": 1
@@ -1604,12 +1604,32 @@
       "license": [],
       "funder": [],
       "crossref_score": 1
+    },
+    {
+      "doi": "10.5210/spir.v2019i0.10964",
+      "title": "API AND BEYOND: DETECTING COORDINATED BEHAVIOURS IN FACEBOOK INTERACTIONS AROUND POLITICAL NEWS STORIES",
+      "authors": "Fabio, Giglietto; Righetti, Nicola; Marino, Giada",
+      "venue": "AoIR Selected Papers of Internet Research",
+      "year": 2019,
+      "type": "journal-article",
+      "url": "https://doi.org/10.5210/spir.v2019i0.10964",
+      "crossref_type": "journal-article",
+      "publisher": "University of Illinois Libraries",
+      "container_title": "AoIR Selected Papers of Internet Research",
+      "volume": "2019",
+      "issn": "2162-3317",
+      "isbn": null,
+      "subject": [],
+      "abstract": "<jats:p>This proposal is a follow-up of the project “Mapping Italian News Media Political Coverage in the Lead-up to 2018 General Election” (MINE). MINE aimed at creating a comprehensive map of the political news coverage created by the Italian online news media in the lead-up to 2018 general election. The final report of the project highlighted how the populist narrative dominated the news (both in terms of volume of coverage and Facebook engagement), and pinpointed the diverging patterns of Facebook interactions employed by different partisan communities to amplify the reach of the contents aligned with their worldview by sharing the news stories on social media, while trying to reframe, through comments, the negative coverage of the party they support. These insights led to further questions concerning the nature of the observed diverging patterns of Facebook interactions around political news. In particular, we wondered if the observed patterns were the result of a spontaneous grassroots effort or instead of a strategically organised attempt to manipulate the online news media landscape in order to game platforms algorithms in support of specific viewpoints, candidates and parties. Data originally collected for MINE during 2018 via publically available Facebook API proved useful to identify the patterns, but fall short of providing compelling evidence on the nature of these behaviours. In order to shed some light on this question, we thus requested and obtained access to two additional datasets directly provided by Facebook and made available through the Social Science One (SSO) initiative.</jats:p>",
+      "license": [],
+      "funder": [],
+      "crossref_score": 1
     }
   ],
-  "lastUpdated": "2026-11-17T18:10:00.819Z",
+  "lastUpdated": "2026-11-18T15:09:32.108Z",
   "metadata": {
-    "total_requested": 84,
-    "successful_requests": 71,
+    "total_requested": 85,
+    "successful_requests": 72,
     "failed_requests": 13
   }
 }
