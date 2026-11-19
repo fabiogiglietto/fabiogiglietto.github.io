@@ -1,60 +1,58 @@
+- date: '2026-11-18'
+  content: >-
+    A landmark study examining political unfriending on Facebook across more
+    than 180 million users has been published in *The Journal of Politics*. The
+    research provides unprecedented empirical evidence on how political
+    disagreement drives social network pruning on digital platforms.
+  url: https://doi.org/10.1086/744929
+  platforms:
+    - BlueSky
+    - Mastodon
 - date: '2026-11-17'
   content: >-
-    A research framework published in *Big Data & Society* examines the social
-    and cultural dynamics of 'AI slop'—low-quality, mass-produced AI
-    content—alongside emerging folk conceptualizations of how users experience
-    and resist algorithmic amplification of these feeds.
-  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3n2jngwdnox2b
+    New research in *Big Data & Society* introduces a conceptual framework for
+    analyzing the social and cultural lifecycle of 'AI slop'—low-quality,
+    mass-produced synthetic content. Complementary findings from arXiv highlight
+    how user communities perceive and actively contest algorithmically amplified
+    AI content in their feeds.
+  url: https://doi.org/10.1177/20539517261506941
   platforms:
     - BlueSky
-    - LinkedIn
     - Mastodon
-  toread: true
-- date: '2026-11-12'
-  content: >-
-    A decade-long study analyzing nearly 39,000 Facebook posts from Norwegian
-    parliamentary parties reveals that while positive sentiment remains
-    dominant, negative sentiment has increased over time and consistently drives
-    higher sharing, particularly for challenger parties.
-  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3n25kemnnn227
-  platforms:
-    - BlueSky
     - LinkedIn
-    - Mastodon
   toread: true
 - date: '2026-11-08'
   content: >-
-    Innovations in computational misinformation triage introduce a streaming
-    pipeline designed to predict narrative virality on social media up to 23
-    hours before reaching peak spread, facilitating faster intervention by
-    fact-checkers.
-  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mzrypjcwyr2b
+    A novel streaming pipeline for pre-peak misinformation triage was presented
+    at the 35th ACM International Conference on Information and Knowledge
+    Management (CIKM). The methodology successfully predicts narrative virality
+    approximately 23 hours before maximum spread occurs on social streams.
+  url: https://doi.org/10.1145/3799682.3840688
   platforms:
     - BlueSky
-    - LinkedIn
     - Mastodon
+    - LinkedIn
   toread: true
 - date: '2026-11-02'
   content: >-
-    New methodology published in *Social Science Computer Review* outlines a
-    practical workflow for instructing open-weight large language models to
-    automate qualitative content analysis, achieving human-expert reliability
-    through a novel judge-agent adjudication system.
-  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mzc26dz6kf2w
+    Methodological advancements in computational text analysis demonstrate how
+    open-weight large language models combined with 'Judge agents' can automate
+    content coding on standard hardware, achieving reliability scores comparable
+    to human expert performance.
+  url: https://doi.org/10.1177/08944393251349541
   platforms:
     - BlueSky
-    - LinkedIn
     - Mastodon
+    - LinkedIn
   toread: true
-- date: '2026-10-31'
+- date: '2026-10-23'
   content: >-
-    Analysis of over 500 election rumors across recent U.S. election cycles
-    reveals a predictable 'grammar' of narratives, mapping recurring tropes,
-    actors, and objects into a structured framework for monitoring online
-    disinformation.
-  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mz6azlsvde2u
+    Critical evaluation of AI-generated peer reviews suggests synthetic
+    assessments can equal or exceed editor-selected human expert reviews,
+    raising key policy questions for the future of academic publishing.
+  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mykq5v7gsk2b
   platforms:
     - BlueSky
-    - LinkedIn
     - Mastodon
+    - LinkedIn
   toread: true
