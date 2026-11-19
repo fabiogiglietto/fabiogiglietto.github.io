@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-19T15:16:13.775Z",
+  "lastUpdated": "2026-11-19T16:17:39.453Z",
   "source": "https://raw.githubusercontent.com/fabiogiglietto/fg-zettelkasten/main/data/state.json",
   "papers": [
     {
@@ -472,6 +472,28 @@
         "Societal consensus on truth is unlikely; coexisting opposing beliefs are the normal state of the hybrid news system."
       ],
       "contentHash": "a0b1e8f909040e268c3dd6e00beb9441ccde0526f6a26182b1810f098cbf71ae"
+    },
+    {
+      "bibtexKey": "Giglietto2019-0bd8b768",
+      "title": "Understanding Coordinated and Inauthentic Link Sharing Behavior on Facebook in the Run-up to 2018 General Election and 2019 European Election in Italy",
+      "year": 2019,
+      "doi": "10.31235/osf.io/3jteh",
+      "Summary": "This paper confronts a problem Facebook itself created: the platform coined the term \"coordinated inauthentic behavior\" to describe manipulative networked activity but never defined it with any precision. Giglietto, Righetti, and Marino respond by building a literature-grounded, operationalizable definition and an accompanying detection method they call **coordinated link sharing** — the behavior of multiple Facebook entities rapidly sharing the same political news story within a very short time window. Applying this to two Italian electoral periods (the 2018 general election and the 2019 European election), they show that such coordinated networks exist, amplify engagement, skew toward anti-immigration and far-right content, and frequently circulate news from outlets already blacklisted by fact-checkers.",
+      "KeyContributions": [
+        "An operationalizable, literature-grounded definition of \"coordinated inauthentic behavior\" that bridges Facebook's vague operational concept with academic work on coordination and authenticity.",
+        "The concept and detection method of **coordinated link sharing** on Facebook.",
+        "A novel empirical pipeline combining the CrowdTangle API with curated datasets of Italian political news.",
+        "Empirical evidence of coordinated inauthentic link sharing across two Italian elections, tying it to elevated engagement, far-right/anti-immigration propaganda, and blacklisted sources."
+      ],
+      "Findings": [
+        "In 2018, 10 coordinated networks were detected, comprising 28 entities.",
+        "In 2019, 50 coordinated networks were detected, comprising 143 entities.",
+        "Coordinating entities were mixed: some overtly political, others presenting as entertainment venues while sharing political content — the basis for the \"inauthentic\" label, since such framing reaches audiences unguarded against influence.",
+        "News shared by coordinated networks received higher Facebook engagement than other news in the dataset.",
+        "Much of the shared content boosted anti-immigration and far-right propaganda.",
+        "Several of the shared outlets had already been blacklisted by fact-checkers."
+      ],
+      "contentHash": "ec505bb0bdae46f92237a3697eefed57c095169b72c61cb0cf5af60745249c97"
     },
     {
       "bibtexKey": "Iannelli2018-ebd918b7",
