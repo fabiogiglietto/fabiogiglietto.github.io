@@ -7655,5 +7655,44 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "ilrestodelcarlino.it/pesaro/cronaca/indagine-urbinate-cosi-lalgoritmo-influenza-il-voto-acepublic": {
+    "v": 1,
+    "cachedAt": "2026-11-20T14:55:01.952Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An article in Il Resto del Carlino detailing research led by Professor Fabio Giglietto at the University of Urbino, which analyzed 2.5 million Facebook posts to show how Meta's algorithms impact political visibility.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "open.online/2026/01/07/facebook-algoritmo-politica-ufficiale-estremisti-studio-uniurb": {
+    "v": 1,
+    "cachedAt": "2026-11-20T14:55:03.873Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "An Italian news article reporting on a study led by Professor Fabio Giglietto at the University of Urbino regarding the impact of Facebook's algorithm on political content and anti-European extremism.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "ilrestodelcarlino.it/rimini/cronaca/la-citta-incorona-i-protagonisti-della-promozione-congressuale-648be4bf": {
+    "v": 1,
+    "cachedAt": "2026-11-20T14:55:05.686Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": true,
+      "relevanceScore": 0.3,
+      "reason": "The content focuses on a local award ceremony for conference promotion rather than Professor Giglietto's academic research in social media analysis, computational social science, or information disorder.",
+      "description": "Coverage of the Premio Rimini Mundi awards ceremony recognizing Professor Fabio Giglietto as an ambassador for hosting academic conferences in the region.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
   }
 }
