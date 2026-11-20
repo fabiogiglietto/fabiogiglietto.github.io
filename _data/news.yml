@@ -1,11 +1,9 @@
 - date: '2026-11-18'
   content: >-
-    Evidence from over 180 million Facebook users reveals that while unfriending
-    is overall relatively rare, social media users disproportionately sever ties
-    across political lines during major events like Election Day and January
-    6th. Published in The Journal of Politics, the multi-author study
-    demonstrates that politically engaged users and strong partisans drive the
-    highest rates of cross-ideological friendship termination.
+    A landmark study examining over 180 million social media profiles provides
+    broad empirical evidence on political unfriending, revealing that users
+    disproportionately sever cross-ideological ties during major political
+    events.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7528864622095835136
   platforms:
     - BlueSky
@@ -14,13 +12,9 @@
   toread: true
 - date: '2026-11-17'
   content: >-
-    A novel conceptual framework published in Big Data & Society proposes
-    analyzing 'AI slop'—low-quality synthetic content—through social and
-    cultural dynamics rather than treating it merely as digital pollution. The
-    authors argue that automated detection tools cannot fully address the
-    degradation of online credibility signals, calling instead for
-    context-driven research into how users produce, consume, and resist
-    mass-generated synthetic media.
+    A novel theoretical framework proposes analyzing 'AI slop' through a
+    socio-cultural lens, arguing that the true impact of synthetic content
+    depends on usage context rather than mere algorithmic detection.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7528520684650803200
   platforms:
     - BlueSky
@@ -29,13 +23,22 @@
   toread: true
 - date: '2026-11-08'
   content: >-
-    Addressing a critical timing gap in digital misinformation response, new
-    computational research presented at the ACM CIKM conference introduces a
-    streaming pipeline that predicts the virality of false narratives roughly 23
-    hours before maximum spread. The methodology clusters semantically similar
-    social posts into evolving claims to help fact-checking organizations triage
-    viral threats efficiently.
+    New computational methodologies introduced for information triage
+    demonstrate how streaming pipelines can successfully predict the virality of
+    false narratives nearly 23 hours before reaching peak spread.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7525112668777553922
+  platforms:
+    - BlueSky
+    - LinkedIn
+    - Mastodon
+  toread: true
+- date: '2026-11-03'
+  content: >-
+    Critical advances in social network analysis challenge traditional methods
+    of measuring online coordinated behavior by reframing the challenge as a
+    question of statistical detectability rather than basic co-activity
+    clustering.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7523455632449155072
   platforms:
     - BlueSky
     - LinkedIn
@@ -43,10 +46,9 @@
   toread: true
 - date: '2026-10-23'
   content: >-
-    Comparative evaluation of peer review methodologies indicates that advanced
-    artificial intelligence language models now match or surpass high-quality
-    human expert reviews across multiple evaluation criteria, raising important
-    policy and practical considerations for the future of academic publishing.
+    Comparative research assessing academic peer review found that specialized
+    AI-generated evaluation models regularly match or exceed standard metrics
+    set by top-tier human expert reviewers.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7519453664319614976
   platforms:
     - BlueSky
