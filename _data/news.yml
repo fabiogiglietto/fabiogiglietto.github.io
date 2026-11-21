@@ -1,10 +1,12 @@
 - date: '2026-11-18'
   content: >-
-    A landmark study examining over 180 million social media profiles provides
-    broad empirical evidence on political unfriending, revealing that users
-    disproportionately sever cross-ideological ties during major political
-    events.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7528864622095835136
+    A new large-scale study published in *The Journal of Politics* examines
+    political unfriending patterns among more than 180 million Facebook users.
+    The research reveals that while unfriending is relatively rare overall,
+    users selectively sever cross-ideological connections around major political
+    events like Election Day and the January 6th Capitol riots, with strong
+    partisans driving the highest rates of disconnection.
+  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3n2lzsr6ta72a
   platforms:
     - BlueSky
     - LinkedIn
@@ -12,9 +14,11 @@
   toread: true
 - date: '2026-11-17'
   content: >-
-    A novel theoretical framework proposes analyzing 'AI slop' through a
-    socio-cultural lens, arguing that the true impact of synthetic content
-    depends on usage context rather than mere algorithmic detection.
+    Emerging research in *Big Data & Society* introduces SLOP as a conceptual
+    framework for evaluating information environments saturated by synthetic
+    content. Rather than viewing AI-generated material merely as digital
+    pollution, the paper argues its societal impact is deeply contextual,
+    rendering automated detection tools insufficient on their own.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7528520684650803200
   platforms:
     - BlueSky
@@ -23,10 +27,12 @@
   toread: true
 - date: '2026-11-08'
   content: >-
-    New computational methodologies introduced for information triage
-    demonstrate how streaming pipelines can successfully predict the virality of
-    false narratives nearly 23 hours before reaching peak spread.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7525112668777553922
+    Recent methodological developments presented at the ACM International
+    Conference on Information and Knowledge Management showcase a real-time
+    streaming framework capable of predicting viral misinformation narratives up
+    to 23 hours before peak reach. The pipeline clusters semantic claims and
+    detects early anomalous activity to assist fact-checkers with early triage.
+  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mzrypjcwyr2b
   platforms:
     - BlueSky
     - LinkedIn
@@ -34,22 +40,25 @@
   toread: true
 - date: '2026-11-03'
   content: >-
-    Critical advances in social network analysis challenge traditional methods
-    of measuring online coordinated behavior by reframing the challenge as a
-    question of statistical detectability rather than basic co-activity
-    clustering.
+    Critical evaluation of social media network analysis methodologies
+    highlights key challenges in identifying coordinated inauthentic behavior.
+    The study reframes coordination detection through a statistical
+    detectability lens, noting that standard clustering algorithms frequently
+    surface routine co-activity rather than deliberate coordination.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7523455632449155072
   platforms:
     - BlueSky
     - LinkedIn
     - Mastodon
   toread: true
-- date: '2026-10-23'
+- date: '2026-10-31'
   content: >-
-    Comparative research assessing academic peer review found that specialized
-    AI-generated evaluation models regularly match or exceed standard metrics
-    set by top-tier human expert reviewers.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7519453664319614976
+    Evaluating the structural patterns of election disinformation, new findings
+    published on arXiv demonstrate that political rumors operate through a
+    consistent 'grammar' of recurring tropes. Analyzing hundreds of narratives
+    from recent election cycles, researchers mapped stable structural
+    combinations of actors, actions, and manipulating objects.
+  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mz6azlsvde2u
   platforms:
     - BlueSky
     - LinkedIn
