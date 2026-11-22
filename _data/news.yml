@@ -1,25 +1,11 @@
 - date: '2026-11-18'
   content: >-
-    A new large-scale study published in *The Journal of Politics* examines
-    political unfriending among over 180 million Facebook users. The research
-    demonstrates that while unfriending is relatively rare overall, users
-    selectively sever ties across political lines during major events like
-    elections, with partisans exhibiting the highest rates of cross-cutting
-    disconnection.
-  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3n2lzsr6ta72a
-  platforms:
-    - BlueSky
-    - LinkedIn
-    - Mastodon
-  toread: true
-- date: '2026-11-17'
-  content: >-
-    Innovative research introduces 'SLOP' as a novel analytical framework in
-    *Big Data & Society* for studying digital ecosystems flooded with
-    AI-generated content. Rather than viewing synthetic material merely as
-    noise, the framework emphasizes how its impact depends heavily on social
-    context and audience perception.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7528520684650803200
+    A large-scale study analyzing over 180 million Facebook users in The Journal
+    of Politics examines patterns of political unfriending. The research reveals
+    that while unfriending is generally rare, users disproportionately
+    disconnect from cross-ideological ties around major political events like
+    elections, with partisans exhibiting the highest rates of severance.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7528864622095835136
   platforms:
     - BlueSky
     - LinkedIn
@@ -27,10 +13,11 @@
   toread: true
 - date: '2026-11-08'
   content: >-
-    Presented at the 35th ACM Conference on Information and Knowledge
-    Management, a new computational streaming pipeline enables early prediction
-    of viral false narratives on social media up to 23 hours before reaching
-    peak spread, facilitating faster fact-checker triage.
+    A novel streaming pipeline published at ACM CIKM 2026 offers a system for
+    predicting the virality of false narratives before they reach their peak. By
+    clustering semantically similar posts and evaluating anomalous activity
+    surges, the framework enables early triage for fact-checkers up to 23 hours
+    ahead of maximum spread.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7525112668777553922
   platforms:
     - BlueSky
@@ -39,23 +26,26 @@
   toread: true
 - date: '2026-11-03'
   content: >-
-    Methodological advancements in computational social science rethink how
-    coordinated online behavior is detected. The paper challenges conventional
-    network clustering approaches, reframing the identification of coordinated
-    manipulation as a problem of statistical detectability.
+    New methodology from Iannucci et al. reframes coordinated inauthentic
+    behavior detection as a problem of statistical detectability rather than
+    mere co-activity. The study critiques traditional network projection and
+    clustering techniques, demonstrating how standard approaches often identify
+    false clusters of co-activated accounts regardless of genuine underlying
+    coordination.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7523455632449155072
   platforms:
     - BlueSky
     - LinkedIn
     - Mastodon
   toread: true
-- date: '2026-11-02'
+- date: '2026-10-23'
   content: >-
-    A practical guide published in *Social Science Computer Review* highlights
-    how open-weight large language models can be instructed to automate content
-    analysis on consumer-grade hardware, matching expert human coding
-    reliability through multi-agent validation.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7522813418509340672
+    Comparative research on peer review quality finds that AI-generated article
+    evaluations perform at levels surpassing high-quality human expert reviews
+    across standard quality metrics. The study highlights both structural
+    opportunities and systemic policy choices facing academic publishing as AI
+    tools enter scholarly evaluation workflows.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7519453664319614976
   platforms:
     - BlueSky
     - LinkedIn
