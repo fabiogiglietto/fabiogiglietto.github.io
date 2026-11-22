@@ -1,10 +1,11 @@
 - date: '2026-11-18'
   content: >-
-    A landmark study examining over 180 million Facebook users sheds light on
-    political unfriending patterns. Published in The Journal of Politics, the
-    findings reveal that while severing ties remains rare overall, users
-    disproportionately unfriend across political lines during major events like
-    Election Day, with partisan and engaged users driving the trend.
+    A new large-scale study published in *The Journal of Politics* examines
+    political unfriending among over 180 million Facebook users. The research
+    demonstrates that while unfriending is relatively rare overall, users
+    selectively sever ties across political lines during major events like
+    elections, with partisans exhibiting the highest rates of cross-cutting
+    disconnection.
   url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3n2lzsr6ta72a
   platforms:
     - BlueSky
@@ -13,11 +14,11 @@
   toread: true
 - date: '2026-11-17'
   content: >-
-    A new research framework published in Big Data & Society introduces 'SLOP'
-    as a lens to analyze information ecosystems overrun by AI-generated content.
-    Rather than treating synthetic content merely as environmental pollution to
-    filter out, the study argues that its societal impact depends heavily on
-    context and usage.
+    Innovative research introduces 'SLOP' as a novel analytical framework in
+    *Big Data & Society* for studying digital ecosystems flooded with
+    AI-generated content. Rather than viewing synthetic material merely as
+    noise, the framework emphasizes how its impact depends heavily on social
+    context and audience perception.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7528520684650803200
   platforms:
     - BlueSky
@@ -26,11 +27,23 @@
   toread: true
 - date: '2026-11-08'
   content: >-
-    Innovative methodologies for early misinformation triage are highlighted in
-    recent research from the ACM International Conference on Information and
-    Knowledge Management. The study presents a streaming pipeline that predicts
-    the virality of false narratives nearly a day before peak spread occurs.
+    Presented at the 35th ACM Conference on Information and Knowledge
+    Management, a new computational streaming pipeline enables early prediction
+    of viral false narratives on social media up to 23 hours before reaching
+    peak spread, facilitating faster fact-checker triage.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7525112668777553922
+  platforms:
+    - BlueSky
+    - LinkedIn
+    - Mastodon
+  toread: true
+- date: '2026-11-03'
+  content: >-
+    Methodological advancements in computational social science rethink how
+    coordinated online behavior is detected. The paper challenges conventional
+    network clustering approaches, reframing the identification of coordinated
+    manipulation as a problem of statistical detectability.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7523455632449155072
   platforms:
     - BlueSky
     - LinkedIn
@@ -38,24 +51,11 @@
   toread: true
 - date: '2026-11-02'
   content: >-
-    New insights into algorithmic content moderation demonstrate how open-weight
-    large language models can be deployed on consumer hardware for automated
-    content coding. Published in Social Science Computer Review, the paper
-    introduces a 'Judge agent' approach that reaches reliability levels
-    comparable to human expert coding.
-  url: https://bsky.app/profile/fabiogiglietto.bsky.social/post/3mzc26dz6kf2w
-  platforms:
-    - BlueSky
-    - LinkedIn
-    - Mastodon
-  toread: true
-- date: '2026-10-31'
-  content: >-
-    The structural underlying logic of election misinformation is explored in
-    new research examining rumor patterns from recent US election cycles. The
-    study outlines a stable 'grammar of election rumors' consisting of recurring
-    actors, objects, and actions across viral narratives.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7522267811960840193
+    A practical guide published in *Social Science Computer Review* highlights
+    how open-weight large language models can be instructed to automate content
+    analysis on consumer-grade hardware, matching expert human coding
+    reliability through multi-agent validation.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7522813418509340672
   platforms:
     - BlueSky
     - LinkedIn
