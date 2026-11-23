@@ -1,38 +1,38 @@
 {
-  "reviewedAt": "2026-11-16T14:53:31.096Z",
+  "reviewedAt": "2026-11-23T17:29:48.694Z",
   "model": "claude-fable-5",
   "effort": "medium",
-  "summary": "Tightened the prose, replaced the unsupported 'European Parliament discussions' impact claim with the documented written question to the European Commission and named media coverage, corrected the CooRTweet developer description, restored the omitted doctorate, and moved the EACEA role to the past tense.",
+  "summary": "Tightened the prose, corrected present-tense framing of concluded teaching, project and expert roles, removed an invented pedagogical claim, and added the omitted impact of the 2025 Meta working paper (European Parliament written question and Italian media coverage).",
   "flags": [
     {
-      "claim": "have informed discussions in the European Parliament",
-      "issue": "The authoritative biography supports only that the 2025 working paper was cited in a written question to the European Commission (European Parliament document E-10-2026-000086); 'informed discussions in the European Parliament' asserts a broader third-party effect than the source states. The uniurb.it press release claiming the study 'prompted a European Parliament inquiry' is a web mention and cannot support this. Replaced with the precise, supported claim.",
+      "claim": "In his teaching, he offers courses on Generative AI and Media alongside Digital Social Network Analysis",
+      "issue": "The authoritative biography says his teaching 'has included' these courses; stating he currently offers them asserts a currency the source does not. Revised to 'has included'.",
       "severity": "overstated"
     },
     {
-      "claim": "independently maintained by external teams",
-      "issue": "The fact sheet states CooRTweet was developed by Nicola Righetti (Uniurb DISCUI) and Paul Balluff (GESIS); describing the developers as 'external teams' is inaccurate since Righetti is at Urbino. Corrected to name the developers.",
+      "claim": "guiding students to critically examine how emerging media technologies and platform mechanics reconfigure modern public discourse",
+      "issue": "No source describes his pedagogical approach; this is invented embellishment. Removed.",
+      "severity": "unsupported"
+    },
+    {
+      "claim": "Giglietto's international collaborative research includes recent roles leading Work Package 4 on the Horizon Europe vera.ai project and serving as a partner on PROMPT",
+      "issue": "Both projects concluded (vera.ai in October 2025, PROMPT in February 2026) per the authoritative biography; the present-tense 'includes' framing blurs that. Revised to past tense with a note that both have concluded.",
       "severity": "overstated"
     },
     {
-      "claim": "guiding students and scholars through computational approaches to studying digital media ecosystem dynamics",
-      "issue": "Empty abstraction unsupported by any source and adding no information; removed in revision.",
-      "severity": "style"
+      "claim": "Beyond academic research, Giglietto contributes to regulatory oversight and enterprise initiatives",
+      "issue": "The JRC expert-group role is a completed engagement (summary reports delivered in 2026) and the present-tense 'contributes' overstates its currency. Revised to past tense.",
+      "severity": "overstated"
     },
     {
-      "claim": "Fabio Giglietto is Full Professor of Internet Studies at the University of Urbino Carlo Bo",
-      "issue": "The authoritative biography also states he earned his doctorate at the same institution; the draft omitted this. Restored.",
+      "claim": "(entire biography)",
+      "issue": "The biography omitted the impact of his 2025 Meta working paper, which the authoritative biography states was cited in a written question to the European Commission and received national Italian media coverage. Added a paragraph covering this.",
       "severity": "omission"
     },
     {
-      "claim": "alongside performing expert proposal evaluations for the European Education and Culture Executive Agency",
-      "issue": "The EACEA appointment was stamped as running to September 2026; the draft's present-progressive phrasing implies ongoing currency the source does not assert beyond its stamp. Rephrased in the past tense as an appointment.",
-      "severity": "overstated"
-    },
-    {
-      "claim": "His recent empirical audits of platform algorithmic shifts and content reach restrictions",
-      "issue": "Vague plural ('audits') where the sources support one specific 2025 working paper on Meta's political content reduction policy; replaced with the specific, supported description.",
-      "severity": "overstated"
+      "claim": "an institutional umbrella framing his ongoing empirical inquiries into platform dynamics, health communication, and election integrity",
+      "issue": "Vague abstraction ('framing his ongoing empirical inquiries') replaced with the authoritative description of MINE's focus on Italian media coverage and social media's impact on elections, public opinion and health information.",
+      "severity": "style"
     }
   ]
 }
