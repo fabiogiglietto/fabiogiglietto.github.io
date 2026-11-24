@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-24T00:16:26.105Z",
-  "runUrl": "https://github.com/fabiogiglietto/fabiogiglietto.github.io/actions/runs/45295167812",
+  "updatedAt": "2026-11-24T16:56:15.609Z",
+  "runUrl": "https://github.com/fabiogiglietto/fabiogiglietto.github.io/actions/runs/45442226422",
   "checks": {
     "orcid": {
       "kind": "source",
@@ -9,7 +9,7 @@
       "count": 159,
       "lastOkCount": 159,
       "consecutiveBad": 0,
-      "consecutiveOk": 41,
+      "consecutiveOk": 42,
       "degraded": false,
       "since": null
     },
@@ -19,7 +19,7 @@
       "status": "failed",
       "count": null,
       "lastOkCount": 164,
-      "consecutiveBad": 5,
+      "consecutiveBad": 6,
       "consecutiveOk": 0,
       "degraded": true,
       "since": "2026-11-13T13:59:58.153Z"
@@ -31,7 +31,7 @@
       "count": 1,
       "lastOkCount": 1,
       "consecutiveBad": 0,
-      "consecutiveOk": 41,
+      "consecutiveOk": 42,
       "degraded": false,
       "since": null
     },
@@ -42,7 +42,7 @@
       "count": 25,
       "lastOkCount": 25,
       "consecutiveBad": 0,
-      "consecutiveOk": 2,
+      "consecutiveOk": 3,
       "degraded": false,
       "since": null
     },
@@ -53,7 +53,7 @@
       "count": 10,
       "lastOkCount": 10,
       "consecutiveBad": 0,
-      "consecutiveOk": 21,
+      "consecutiveOk": 22,
       "degraded": false,
       "since": null
     },
@@ -64,7 +64,7 @@
       "count": 4,
       "lastOkCount": 4,
       "consecutiveBad": 0,
-      "consecutiveOk": 41,
+      "consecutiveOk": 42,
       "degraded": false,
       "since": null
     },
@@ -75,7 +75,7 @@
       "count": 21,
       "lastOkCount": 21,
       "consecutiveBad": 0,
-      "consecutiveOk": 41,
+      "consecutiveOk": 42,
       "degraded": false,
       "since": null
     },
@@ -86,18 +86,18 @@
       "count": 25,
       "lastOkCount": 25,
       "consecutiveBad": 0,
-      "consecutiveOk": 41,
+      "consecutiveOk": 42,
       "degraded": false,
       "since": null
     },
     "semanticScholar": {
       "kind": "source",
       "label": "Semantic Scholar",
-      "status": "ok",
-      "count": 101,
+      "status": "failed",
+      "count": null,
       "lastOkCount": 101,
-      "consecutiveBad": 0,
-      "consecutiveOk": 3,
+      "consecutiveBad": 1,
+      "consecutiveOk": 0,
       "degraded": false,
       "since": null
     },
@@ -105,10 +105,10 @@
       "kind": "source",
       "label": "toread feed",
       "status": "ok",
-      "count": 329,
-      "lastOkCount": 329,
+      "count": 330,
+      "lastOkCount": 330,
       "consecutiveBad": 0,
-      "consecutiveOk": 41,
+      "consecutiveOk": 42,
       "degraded": false,
       "since": null
     },
@@ -119,7 +119,7 @@
       "count": 109,
       "lastOkCount": 109,
       "consecutiveBad": 0,
-      "consecutiveOk": 41,
+      "consecutiveOk": 42,
       "degraded": false,
       "since": null
     },
@@ -127,10 +127,10 @@
       "kind": "source",
       "label": "Research Radio",
       "status": "ok",
-      "count": 189,
-      "lastOkCount": 189,
+      "count": 191,
+      "lastOkCount": 191,
       "consecutiveBad": 0,
-      "consecutiveOk": 41,
+      "consecutiveOk": 42,
       "degraded": false,
       "since": null
     },
@@ -138,10 +138,10 @@
       "kind": "source",
       "label": "fg-zettelkasten",
       "status": "ok",
-      "count": 371,
-      "lastOkCount": 371,
+      "count": 373,
+      "lastOkCount": 373,
       "consecutiveBad": 0,
-      "consecutiveOk": 41,
+      "consecutiveOk": 42,
       "degraded": false,
       "since": null
     },
@@ -152,7 +152,7 @@
       "count": 29,
       "lastOkCount": 29,
       "consecutiveBad": 0,
-      "consecutiveOk": 41,
+      "consecutiveOk": 42,
       "degraded": false,
       "since": null
     },
@@ -163,7 +163,7 @@
       "count": 170,
       "lastOkCount": 170,
       "consecutiveBad": 0,
-      "consecutiveOk": 41,
+      "consecutiveOk": 42,
       "degraded": false,
       "since": null
     },
@@ -174,7 +174,7 @@
       "count": null,
       "lastOkCount": null,
       "consecutiveBad": 0,
-      "consecutiveOk": 41,
+      "consecutiveOk": 42,
       "degraded": false,
       "since": null
     }

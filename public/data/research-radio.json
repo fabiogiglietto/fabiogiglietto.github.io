@@ -2267,6 +2267,30 @@
       "author": "Neil Malhotra, Jaime Settle, Magdalena Wojcieszak, Olivier Bergeron-Boutin, Fang Guo, Annie Franco, Amac Herdagdelen, Winter Mason, Hunt Allcott, Pablo Barbera, Taylor Brown, Adriana Crespo-Tenorio, Deen Freelon, Matthew Gentzkow, Sandra Gonzalez-Bailon, Andrew Guess, Shanto Iyengar, Young Mie Kim, David Lazer, Devra Moehler, Brendan Nyhan, Jennifer Pan, Carlos Velasco Rivera, Daniel Thomas, Emily Thorson, Rebekah Tromble, Arjun Wilkins, Beixian Xiong, Chad Kiewiet de Jonge, Natalie Jomini Stroud, Joshua Tucker",
       "doi": "10.1086/744929",
       "own": false
+    },
+    {
+      "id": "bibtex:Simon2012-pe",
+      "bibtexKey": "Simon2012-pe",
+      "title": "Half the World Uses AI Weekly—And Barely Trusts the News",
+      "description": "AI-generated podcast discussion.\n\nReference:\nFelix, S., Kleis, N. R., & Richard, F. (2012). Generative AI and News Report 2026: From standalone tools to information infrastructure. https://scholar.google.com/scholar?q=Generative%20AI%20and%20News%20Report%202026%3A%20From%20standalone%20tools%20to%20information%20infrastructure",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Simon2012-pe.mp3",
+      "pubDate": "2026-11-24T00:07:18.070967+00:00",
+      "duration": "9:59",
+      "author": "Simon, Felix, Nielsen, Rasmus Kleis, Fletcher, Richard",
+      "doi": null,
+      "own": false
+    },
+    {
+      "id": "bibtex:Lompe2026-vm",
+      "bibtexKey": "Lompe2026-vm",
+      "title": "Links Never Died: Following Controversy Across Platforms",
+      "description": "AI-generated podcast discussion.\n\nReference:\nLompe, M. (2026). The link has died; Long live the link! Cross-platform controversy mapping with the use of URLs. https://doi.org/10.1007/s10606-026-09557-1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Lompe2026-vm.mp3",
+      "pubDate": "2026-11-25T00:07:18.070967+00:00",
+      "duration": "10:13",
+      "author": "Maria Lompe",
+      "doi": "10.1007/s10606-026-09557-1",
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -4537,6 +4561,30 @@
       "author": "Neil Malhotra, Jaime Settle, Magdalena Wojcieszak, Olivier Bergeron-Boutin, Fang Guo, Annie Franco, Amac Herdagdelen, Winter Mason, Hunt Allcott, Pablo Barbera, Taylor Brown, Adriana Crespo-Tenorio, Deen Freelon, Matthew Gentzkow, Sandra Gonzalez-Bailon, Andrew Guess, Shanto Iyengar, Young Mie Kim, David Lazer, Devra Moehler, Brendan Nyhan, Jennifer Pan, Carlos Velasco Rivera, Daniel Thomas, Emily Thorson, Rebekah Tromble, Arjun Wilkins, Beixian Xiong, Chad Kiewiet de Jonge, Natalie Jomini Stroud, Joshua Tucker",
       "doi": "10.1086/744929",
       "own": false
+    },
+    "Simon2012-pe": {
+      "id": "bibtex:Simon2012-pe",
+      "bibtexKey": "Simon2012-pe",
+      "title": "Half the World Uses AI Weekly—And Barely Trusts the News",
+      "description": "AI-generated podcast discussion.\n\nReference:\nFelix, S., Kleis, N. R., & Richard, F. (2012). Generative AI and News Report 2026: From standalone tools to information infrastructure. https://scholar.google.com/scholar?q=Generative%20AI%20and%20News%20Report%202026%3A%20From%20standalone%20tools%20to%20information%20infrastructure",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Simon2012-pe.mp3",
+      "pubDate": "2026-11-24T00:07:18.070967+00:00",
+      "duration": "9:59",
+      "author": "Simon, Felix, Nielsen, Rasmus Kleis, Fletcher, Richard",
+      "doi": null,
+      "own": false
+    },
+    "Lompe2026-vm": {
+      "id": "bibtex:Lompe2026-vm",
+      "bibtexKey": "Lompe2026-vm",
+      "title": "Links Never Died: Following Controversy Across Platforms",
+      "description": "AI-generated podcast discussion.\n\nReference:\nLompe, M. (2026). The link has died; Long live the link! Cross-platform controversy mapping with the use of URLs. https://doi.org/10.1007/s10606-026-09557-1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Lompe2026-vm.mp3",
+      "pubDate": "2026-11-25T00:07:18.070967+00:00",
+      "duration": "10:13",
+      "author": "Maria Lompe",
+      "doi": "10.1007/s10606-026-09557-1",
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -6303,9 +6351,21 @@
       "author": "Neil Malhotra, Jaime Settle, Magdalena Wojcieszak, Olivier Bergeron-Boutin, Fang Guo, Annie Franco, Amac Herdagdelen, Winter Mason, Hunt Allcott, Pablo Barbera, Taylor Brown, Adriana Crespo-Tenorio, Deen Freelon, Matthew Gentzkow, Sandra Gonzalez-Bailon, Andrew Guess, Shanto Iyengar, Young Mie Kim, David Lazer, Devra Moehler, Brendan Nyhan, Jennifer Pan, Carlos Velasco Rivera, Daniel Thomas, Emily Thorson, Rebekah Tromble, Arjun Wilkins, Beixian Xiong, Chad Kiewiet de Jonge, Natalie Jomini Stroud, Joshua Tucker",
       "doi": "10.1086/744929",
       "own": false
+    },
+    "10.1007/s10606-026-09557-1": {
+      "id": "bibtex:Lompe2026-vm",
+      "bibtexKey": "Lompe2026-vm",
+      "title": "Links Never Died: Following Controversy Across Platforms",
+      "description": "AI-generated podcast discussion.\n\nReference:\nLompe, M. (2026). The link has died; Long live the link! Cross-platform controversy mapping with the use of URLs. https://doi.org/10.1007/s10606-026-09557-1",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Lompe2026-vm.mp3",
+      "pubDate": "2026-11-25T00:07:18.070967+00:00",
+      "duration": "10:13",
+      "author": "Maria Lompe",
+      "doi": "10.1007/s10606-026-09557-1",
+      "own": false
     }
   },
-  "totalEpisodes": 189,
-  "lastUpdated": "2026-11-24T00:12:11.120Z",
+  "totalEpisodes": 191,
+  "lastUpdated": "2026-11-24T16:53:13.903Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }
