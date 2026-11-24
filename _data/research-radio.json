@@ -2291,6 +2291,30 @@
       "author": "Maria Lompe",
       "doi": "10.1007/s10606-026-09557-1",
       "own": false
+    },
+    {
+      "id": "bibtex:Fenis2027-sv",
+      "bibtexKey": "Fenis2027-sv",
+      "title": "The Machinery Never Stops: Political Coordination Between Elections",
+      "description": "AI-generated podcast discussion.\n\nReference:\nFenis, M. R. B., Agonos, M. J. M., & Figueroa, P. D. (2027). From polls to persistence: Examining coordinated political discourse outside the Philippine election period on Facebook. https://doi.org/10.1111/aspp.70113",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Fenis2027-sv.mp3",
+      "pubDate": "2026-11-26T00:07:18.070967+00:00",
+      "duration": "7:45",
+      "author": "Magello Rainer B. Fenis, Mariam Jayne M. Agonos, Petronilo D. Figueroa",
+      "doi": "10.1111/aspp.70113",
+      "own": false
+    },
+    {
+      "id": "bibtex:King2026-av",
+      "bibtexKey": "King2026-av",
+      "title": "When AI Reviews Beat the Best Human Experts",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGary, K., & Steven, W. (2026). AI article reviews dominate human peer reviews at their best: Evidence and policy choices. https://scholar.google.com/scholar?q=AI%20article%20reviews%20dominate%20human%20peer%20reviews%20at%20their%20best%3A%20Evidence%20and%20policy%20choices",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/King2026-av.mp3",
+      "pubDate": "2026-11-27T00:07:18.070967+00:00",
+      "duration": "9:44",
+      "author": "King, Gary, Worthington, Steven",
+      "doi": null,
+      "own": false
     }
   ],
   "episodesByBibtexKey": {
@@ -4585,6 +4609,30 @@
       "author": "Maria Lompe",
       "doi": "10.1007/s10606-026-09557-1",
       "own": false
+    },
+    "Fenis2027-sv": {
+      "id": "bibtex:Fenis2027-sv",
+      "bibtexKey": "Fenis2027-sv",
+      "title": "The Machinery Never Stops: Political Coordination Between Elections",
+      "description": "AI-generated podcast discussion.\n\nReference:\nFenis, M. R. B., Agonos, M. J. M., & Figueroa, P. D. (2027). From polls to persistence: Examining coordinated political discourse outside the Philippine election period on Facebook. https://doi.org/10.1111/aspp.70113",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Fenis2027-sv.mp3",
+      "pubDate": "2026-11-26T00:07:18.070967+00:00",
+      "duration": "7:45",
+      "author": "Magello Rainer B. Fenis, Mariam Jayne M. Agonos, Petronilo D. Figueroa",
+      "doi": "10.1111/aspp.70113",
+      "own": false
+    },
+    "King2026-av": {
+      "id": "bibtex:King2026-av",
+      "bibtexKey": "King2026-av",
+      "title": "When AI Reviews Beat the Best Human Experts",
+      "description": "AI-generated podcast discussion.\n\nReference:\nGary, K., & Steven, W. (2026). AI article reviews dominate human peer reviews at their best: Evidence and policy choices. https://scholar.google.com/scholar?q=AI%20article%20reviews%20dominate%20human%20peer%20reviews%20at%20their%20best%3A%20Evidence%20and%20policy%20choices",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/King2026-av.mp3",
+      "pubDate": "2026-11-27T00:07:18.070967+00:00",
+      "duration": "9:44",
+      "author": "King, Gary, Worthington, Steven",
+      "doi": null,
+      "own": false
     }
   },
   "episodesByDoi": {
@@ -6363,9 +6411,21 @@
       "author": "Maria Lompe",
       "doi": "10.1007/s10606-026-09557-1",
       "own": false
+    },
+    "10.1111/aspp.70113": {
+      "id": "bibtex:Fenis2027-sv",
+      "bibtexKey": "Fenis2027-sv",
+      "title": "The Machinery Never Stops: Political Coordination Between Elections",
+      "description": "AI-generated podcast discussion.\n\nReference:\nFenis, M. R. B., Agonos, M. J. M., & Figueroa, P. D. (2027). From polls to persistence: Examining coordinated political discourse outside the Philippine election period on Facebook. https://doi.org/10.1111/aspp.70113",
+      "audioUrl": "https://github.com/fabiogiglietto/research-radio/releases/download/audio/Fenis2027-sv.mp3",
+      "pubDate": "2026-11-26T00:07:18.070967+00:00",
+      "duration": "7:45",
+      "author": "Magello Rainer B. Fenis, Mariam Jayne M. Agonos, Petronilo D. Figueroa",
+      "doi": "10.1111/aspp.70113",
+      "own": false
     }
   },
-  "totalEpisodes": 191,
-  "lastUpdated": "2026-11-24T16:53:13.903Z",
+  "totalEpisodes": 193,
+  "lastUpdated": "2026-11-24T16:58:44.608Z",
   "source": "https://fabiogiglietto.github.io/research-radio/"
 }

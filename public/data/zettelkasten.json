@@ -2760,7 +2760,7 @@
         "llm-augmented-research-methods",
         "research-methods-data-access"
       ],
-      "podcastLinked": false
+      "podcastLinked": true
     },
     "Bucher2017-qh": {
       "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Bucher2017-qh",
@@ -2928,10 +2928,18 @@
         "computational-network-structure-analysis"
       ],
       "podcastLinked": true
+    },
+    "Fenis2027-sv": {
+      "url": "https://fabiogiglietto.github.io/fg-zettelkasten/Papers/Fenis2027-sv",
+      "topics": [
+        "coordinated-inauthentic-behavior",
+        "political-communication-elections"
+      ],
+      "podcastLinked": true
     }
   },
-  "totalNotes": 373,
+  "totalNotes": 374,
   "siteUrl": "https://fabiogiglietto.github.io/fg-zettelkasten/",
-  "lastUpdated": "2026-11-24T16:53:14.010Z",
+  "lastUpdated": "2026-11-24T16:58:44.640Z",
   "source": "https://github.com/fabiogiglietto/fg-zettelkasten"
 }
