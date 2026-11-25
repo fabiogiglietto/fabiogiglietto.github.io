@@ -424,26 +424,6 @@
       "crossref_score": 1
     },
     {
-      "doi": "10.31235/osf.io/3jteh",
-      "title": "Understanding Coordinated and Inauthentic Link Sharing Behavior on Facebook in the Run-up to 2018 General Election and 2019 European Election in Italy",
-      "authors": "Giglietto, Fabio; Righetti, Nicola; Marino, Giada",
-      "venue": "Center for Open Science",
-      "year": 2019,
-      "type": "posted-content",
-      "url": "https://doi.org/10.31235/osf.io/3jteh",
-      "crossref_type": "posted-content",
-      "publisher": "Center for Open Science",
-      "issn": null,
-      "isbn": null,
-      "subject": [],
-      "abstract": "<p>The year 2016 marked a turning point in the history of relations between the Internet, social media, public opinion, and politics. Online practices of grassroots participation, which used to be considered the prerogative of democratizing forces fighting established powers, turned out to be an effective platform for far-right extremists. In the attempt to make sense of what happened and develop workable solutions, stakeholders rapidly moved through the different stages of grief, ranging from denial to anger and acceptance.As a case in point, we trace the path through these stages which moved from an initial denial of the problem to concern over “fake news” and hoaxes, to finally focusing on the behavior of certain actors on the platform. Starting from the current phase, we analyze “coordinated inauthentic behavior”, a concept only briefly defined in Facebook public statements which, nevertheless, is useful to frame future studies insofar as both the idea of coordination and authenticity have been studied in the literature. Leveraging these works, we suggest a definition that is at once framed in this literature and easy to operationalize.Using this definition and an unprecedented combination of CrowdTangle API (a tool for accessing Facebook and other social media data) and two datasets of Italian political news stories published in the run-up to the 2018 Italian general election and 2019 European election, we developed a method that led to the identification of several networks of pages/groups/verified public profiles (“entities”) that shared the same political news stories on Facebook within a very short period of time (10 in 2018, composed of 28 entities, and 50 in 2019, composed of 143 entities). We call this behavior “coordinated link sharing”. By analyzing the social media profiles of such coordinated entities, we observed that while some of them were clearly political, others presented themselves as entertainment venues, despite sharing political content too. Since the political news stories shared by these non-political entities can reach a broad audience which is largely unguarded against attempts to influence, we describe their behavior as “inauthentic”.Further analyses showed that the news shared by the coordinated networks received a Facebook engagement higher than other news included in our dataset, that much news boosted anti-immigration and far-right propaganda and that several of the news outlets shared by these networks were already blacklisted by fact-checkers.</p>",
-      "license": [
-        "https://creativecommons.org/licenses/by/4.0/legalcode"
-      ],
-      "funder": [],
-      "crossref_score": 1
-    },
-    {
       "doi": "10.3389/fsoc.2024.1379265",
       "title": "Facebook reactions in the context of politics and social issues: a systematic literature review",
       "authors": "Anwar, Sawood; Giglietto, Fabio",
@@ -461,6 +441,26 @@
       "abstract": "<jats:p>In February 2016, Facebook expanded the original “Like” button by introducing five additional “Reactions”—Love, Haha, Wow, Sad, and Angry—using modified versions of Unicode emojis. These reactions enable users to express more nuanced emotions towards posts. This literature review investigates scholarly research on user behavior in response to these reactions, with a focus on a broad spectrum of socioeconomic and psychological issues. We conducted a systematic search across databases including Scopus and Google Scholar, using keywords such as “Facebook” and “Reaction,” combined with various key phrases and Boolean operators. Our review synthesizes sixty-four articles published from 2016 to 2023, exploring diverse topics such as political news, far-right and extremist parties, racism, and hate speech during the COVID-19 pandemic. We organized these articles by theme and publication date. Our meta-analysis reveals that lifestyle and entertainment posts predominantly receive positive reactions, while sociopolitical content tends to elicit a broader spectrum of emotions, including negative sentiments. Furthermore, emotionally charged content consistently attracts higher volumes of reactions, regardless of sentiment. This research highlights the intricate relationship between user reactions and content characteristics, providing deeper insights into the dynamics of online engagement. By understanding these interaction patterns, we gain a better grasp of emotional responses and engagement levels, which ultimately shape online discourse and user interactions.</jats:p>",
       "license": [
         "https://creativecommons.org/licenses/by/4.0/"
+      ],
+      "funder": [],
+      "crossref_score": 1
+    },
+    {
+      "doi": "10.31235/osf.io/3jteh",
+      "title": "Understanding Coordinated and Inauthentic Link Sharing Behavior on Facebook in the Run-up to 2018 General Election and 2019 European Election in Italy",
+      "authors": "Giglietto, Fabio; Righetti, Nicola; Marino, Giada",
+      "venue": "Center for Open Science",
+      "year": 2019,
+      "type": "posted-content",
+      "url": "https://doi.org/10.31235/osf.io/3jteh",
+      "crossref_type": "posted-content",
+      "publisher": "Center for Open Science",
+      "issn": null,
+      "isbn": null,
+      "subject": [],
+      "abstract": "<p>The year 2016 marked a turning point in the history of relations between the Internet, social media, public opinion, and politics. Online practices of grassroots participation, which used to be considered the prerogative of democratizing forces fighting established powers, turned out to be an effective platform for far-right extremists. In the attempt to make sense of what happened and develop workable solutions, stakeholders rapidly moved through the different stages of grief, ranging from denial to anger and acceptance.As a case in point, we trace the path through these stages which moved from an initial denial of the problem to concern over “fake news” and hoaxes, to finally focusing on the behavior of certain actors on the platform. Starting from the current phase, we analyze “coordinated inauthentic behavior”, a concept only briefly defined in Facebook public statements which, nevertheless, is useful to frame future studies insofar as both the idea of coordination and authenticity have been studied in the literature. Leveraging these works, we suggest a definition that is at once framed in this literature and easy to operationalize.Using this definition and an unprecedented combination of CrowdTangle API (a tool for accessing Facebook and other social media data) and two datasets of Italian political news stories published in the run-up to the 2018 Italian general election and 2019 European election, we developed a method that led to the identification of several networks of pages/groups/verified public profiles (“entities”) that shared the same political news stories on Facebook within a very short period of time (10 in 2018, composed of 28 entities, and 50 in 2019, composed of 143 entities). We call this behavior “coordinated link sharing”. By analyzing the social media profiles of such coordinated entities, we observed that while some of them were clearly political, others presented themselves as entertainment venues, despite sharing political content too. Since the political news stories shared by these non-political entities can reach a broad audience which is largely unguarded against attempts to influence, we describe their behavior as “inauthentic”.Further analyses showed that the news shared by the coordinated networks received a Facebook engagement higher than other news included in our dataset, that much news boosted anti-immigration and far-right propaganda and that several of the news outlets shared by these networks were already blacklisted by fact-checkers.</p>",
+      "license": [
+        "https://creativecommons.org/licenses/by/4.0/legalcode"
       ],
       "funder": [],
       "crossref_score": 1
@@ -1626,7 +1626,7 @@
       "crossref_score": 1
     }
   ],
-  "lastUpdated": "2026-11-24T18:33:12.181Z",
+  "lastUpdated": "2026-11-25T16:50:28.768Z",
   "metadata": {
     "total_requested": 85,
     "successful_requests": 72,
