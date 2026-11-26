@@ -7707,5 +7707,31 @@
       "personMatch": "confirmed",
       "isRecent": true
     }
+  },
+  "open.online/2026/01/07/algoritmo-facebook-meta-estremisti-politica-ufficiale-studio-universita-urbino-giglietto": {
+    "v": 1,
+    "cachedAt": "2026-11-26T17:28:18.869Z",
+    "verdict": {
+      "isRelevant": true,
+      "mentionedByName": true,
+      "relevanceScore": 0.95,
+      "reason": "Validated as relevant",
+      "description": "Media coverage by Open discussing a study led by Professor Fabio Giglietto from the University of Urbino, analyzing Facebook's algorithm shifts that reduced visibility for mainstream political parties while boosting extremist accounts.",
+      "personMatch": "confirmed",
+      "isRecent": true
+    }
+  },
+  "ilfattoquotidiano.it/2022/03/17/social-chiusi-in-russia-ma-i-blocchi-sono-aggirabili-arma-per-scardinare-la-propaganda-ecco-come-funziona-non-solo-a-mosca-la-bolla-della-disinformazione/6527814": {
+    "v": 1,
+    "cachedAt": "2026-11-26T17:28:20.510Z",
+    "verdict": {
+      "isRelevant": false,
+      "mentionedByName": true,
+      "relevanceScore": 0.3,
+      "reason": "The content is from March 2022, which falls outside the required 6-month recency window.",
+      "description": "An article by Il Fatto Quotidiano discussing social media blocks in Russia, featuring expert commentary from Fabio Giglietto on misinformation networks and propaganda tactics.",
+      "personMatch": "confirmed",
+      "isRecent": false
+    }
   }
 }

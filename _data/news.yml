@@ -1,11 +1,10 @@
 - date: '2026-11-24'
   content: >-
-    Recent research in Asian Politics & Policy sheds light on coordinated
-    political behavior outside election periods on Facebook. By examining
-    Philippine political discourse, the study demonstrates how orchestrated
-    account networks swiftly amplify partisan messaging—averaging just 61
-    seconds between posts—to simulate consensus and sustain factional
-    polarization rather than aiming for viral reach.
+    Recent research in *Asian Politics & Policy* investigates post-election
+    coordinated political behavior on Facebook in the Philippines. The study
+    reveals that organized networks leverage standardized messaging and rapid
+    co-post timing (averaging 61 seconds) to project artificial consensus and
+    sustain partisan polarization, even when post engagement remains low.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7531039128495222784
   platforms:
     - BlueSky
@@ -14,26 +13,13 @@
   toread: true
 - date: '2026-11-24'
   content: >-
-    A cross-platform study published in Computer Supported Cooperative Work
-    demonstrates that URL analysis remains vital for mapping digital
-    controversies across platforms like X (Twitter) and Facebook. The findings
-    highlight how links function differently across ecosystems: serving as dense
-    clustering markers for political alignment on X, while diffusing differently
-    across Facebook networks.
+    Published in *Computer Supported Cooperative Work*, a new cross-platform
+    study demonstrates the enduring value of URL analysis for controversy
+    mapping across social platforms. By comparing debate structures across
+    Twitter and Facebook, the research shows how links act as political
+    alignment markers within dense Twitter clusters while playing distinct
+    structural roles on Facebook.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7530787731665219584
-  platforms:
-    - BlueSky
-    - LinkedIn
-    - Mastodon
-  toread: true
-- date: '2026-11-24'
-  content: >-
-    Findings from the Generative AI and News Report 2026 indicate a major shift
-    in public consumption, with weekly generative AI usage reaching 51% in
-    high-income democracies. As AI becomes embedded into search engines and
-    social platforms as basic infrastructure, comfort with AI-generated news
-    remains low at 12%, driven predominantly by trust and transparency concerns.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7530787666402009089
   platforms:
     - BlueSky
     - LinkedIn
@@ -41,25 +27,39 @@
   toread: true
 - date: '2026-11-18'
   content: >-
-    A massive study analyzing over 180 million Facebook users in The Journal of
-    Politics highlights patterns of cross-ideological unfriending. While overall
-    connection severing remains rare, highly partisan and politically engaged
-    users disproportionately unfriend individuals across the political spectrum,
-    particularly around high-profile political events and elections.
+    Findings published in *The Journal of Politics* analyze cross-ideological
+    unfriending patterns on Facebook using a dataset of over 180 million users.
+    The study reveals that while unfriending is relatively rare overall,
+    users—particularly strong partisans—disproportionately sever social ties
+    across political lines during high-stakes events like major elections.
   url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7528864622095835136
   platforms:
     - BlueSky
     - LinkedIn
     - Mastodon
   toread: true
-- date: '2026-11-08'
+- date: '2026-11-17'
   content: >-
-    A new methodological pipeline presented at the ACM Conference on Information
-    and Knowledge Management enables early triage for misinformation. By
-    clustering semantically similar posts and identifying early activity surges,
-    the model predicts the virality of false narratives up to 23 hours before
-    reaching peak spread, giving fact-checkers a crucial lead time.
-  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7525112668777553922
+    A new conceptual framework published in *Big Data & Society* introduces
+    'SLOP' to analyze information environments saturated with synthetic content.
+    Rather than viewing AI-generated material purely as digital noise to filter,
+    the authors emphasize assessing its social context, arguing that technical
+    detection tools alone cannot address systemic degradation of online
+    credibility.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7528520684650803200
+  platforms:
+    - BlueSky
+    - LinkedIn
+    - Mastodon
+  toread: true
+- date: '2026-11-02'
+  content: >-
+    A methodological study in *Social Science Computer Review* presents a
+    practical workflow for leveraging open-weight large language models for
+    computational content analysis. By deploying a multi-agent system featuring
+    a 'Judge agent' to resolve coding disagreements, the approach achieves
+    inter-coder reliability scores comparable to human expert coding.
+  url: https://www.linkedin.com/feed/update/urn%3Ali%3Ashare%3A7522813418509340672
   platforms:
     - BlueSky
     - LinkedIn
